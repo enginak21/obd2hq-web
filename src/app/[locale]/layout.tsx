@@ -59,7 +59,7 @@ export default async function RootLayout({
   const { locale } = await params;
 
   // Validate locale
-  if (!['en', 'de', 'es', 'tr', 'fr'].includes(locale as any)) {
+  if (!['en', 'de', 'es', 'tr', 'fr'].includes(locale)) {
     notFound();
   }
 
