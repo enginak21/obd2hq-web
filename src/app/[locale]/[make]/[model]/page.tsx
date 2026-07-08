@@ -37,6 +37,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   const resolvedParams = await params;
   const { locale, make, model } = resolvedParams;
   setRequestLocale(locale);
+  const tCode = await getTranslations({ locale, namespace: 'CodePage' });
   const resolvedSearchParams = await searchParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));

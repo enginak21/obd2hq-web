@@ -42,8 +42,8 @@ export default async function CodePage({ params }: PageProps) {
   
   setRequestLocale(locale);
 
-  const t = await getTranslations('CodePage');
-  const tDb = await getTranslations('DB');
+  const t = await getTranslations({ locale, namespace: 'CodePage' });
+  const tDb = await getTranslations({ locale, namespace: 'DB' });
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
@@ -227,7 +227,7 @@ export default async function CodePage({ params }: PageProps) {
           {/* {t('repairEstimate')} Widget */}
           <div className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:border-blue-500/30 transition-colors">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Repair Estimate</h3>
+            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('repairEstimate')}</h3>
             <div className="flex items-baseline space-x-2 mb-2">
               <span className="text-4xl font-black text-white">{obdData.estimatedCost}</span>
             </div>

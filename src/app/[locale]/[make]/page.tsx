@@ -33,6 +33,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, make } = resolvedParams;
   setRequestLocale(locale);
+  const tCode = await getTranslations({ locale, namespace: 'CodePage' });
   
   const carData = cars.find(c => c.make === make);
   if (!carData) notFound();
