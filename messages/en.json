@@ -10,5 +10,31 @@
     "description": "The ultimate database for vehicle diagnostic trouble codes (DTC) and dashboard warning lights. Find symptoms, causes, and fixes.",
     "links": "Quick Links",
     "legal": "Legal"
+  },
+  "CodePage": {
+    "whatDoesItMean": "What does this mean?",
+    "commonCauses": "Common Causes",
+    "symptomsToWatch": "Symptoms to Watch For",
+    "repairEstimate": "Repair Estimate",
+    "diyDifficulty": "DIY Difficulty",
+    "disclaimer": "Disclaimer: This diagnostic code is part of the standard OBD2 system and can apply to {make} {model} models manufactured from 1996 to 2026. However, please note that the presence of this specific code depends on your vehicle's exact engine configuration, options, and production year.",
+    "costIncludesParts": "Includes parts and labor. May vary by location.",
+    "home": "Home",
+    "years": "Years"
+  },
+  "DB": {
+    "symp_check_engine": "Check Engine Light is illuminated",
+    "symp_engine_perf": "Decreased engine performance",
+    "symp_fuel_econ": "Noticeable drop in fuel economy",
+    "cause_sensor": "Faulty sensor or damaged wiring",
+    "cause_vacuum": "Vacuum or exhaust leak",
+    "cause_wear": "Internal component wear and tear",
+    "diff_moderate": "Moderate"
+  },
+  "MakeModel": {
+    "selectMake": "Select a Make",
+    "selectModel": "Select a Model",
+    "commonCodes": "Common OBD2 Codes for {make}",
+    "viewCodes": "View Codes"
   }
 }

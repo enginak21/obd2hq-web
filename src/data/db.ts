@@ -75,9 +75,9 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     code: upperCode,
     title: baseData.title,
     description: baseData.description,
-    symptoms: ['Check Engine Light is illuminated', 'Decreased engine performance', 'Noticeable drop in fuel economy'],
-    causes: ['Faulty sensor or damaged wiring', 'Vacuum or exhaust leak', 'Internal component wear and tear'],
-    fixDifficulty: 'Moderate',
+    symptoms: ['symp_check_engine', 'symp_engine_perf', 'symp_fuel_econ'],
+    causes: ['cause_sensor', 'cause_vacuum', 'cause_wear'],
+    fixDifficulty: 'diff_moderate',
     estimatedCost: '$100 - $450'
   };
 

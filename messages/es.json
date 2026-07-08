@@ -10,5 +10,31 @@
     "description": "La base de datos definitiva de códigos de falla de vehículos (DTC) y luces de advertencia del tablero. Encuentre síntomas, causas y soluciones.",
     "links": "Enlaces Rápidos",
     "legal": "Legal"
+  },
+  "CodePage": {
+    "whatDoesItMean": "¿Qué significa esto?",
+    "commonCauses": "Causas comunes",
+    "symptomsToWatch": "Síntomas",
+    "repairEstimate": "Costo estimado de reparación",
+    "diyDifficulty": "Dificultad de reparación",
+    "disclaimer": "Descargo de responsabilidad: Este código es parte del sistema OBD2 estándar y puede aplicarse a los modelos {make} {model} de 1996 a 2026. Sin embargo, tenga en cuenta que la presencia de este código depende de la configuración exacta del motor y el año de producción.",
+    "costIncludesParts": "Incluye piezas y mano de obra. Puede variar según la ubicación.",
+    "home": "Inicio",
+    "years": "Años"
+  },
+  "DB": {
+    "symp_check_engine": "La luz de Check Engine está encendida",
+    "symp_engine_perf": "Disminución del rendimiento del motor",
+    "symp_fuel_econ": "Caída notable en el ahorro de combustible",
+    "cause_sensor": "Sensor defectuoso o cableado dañado",
+    "cause_vacuum": "Fuga de vacío o de escape",
+    "cause_wear": "Desgaste de componentes internos",
+    "diff_moderate": "Moderada"
+  },
+  "MakeModel": {
+    "selectMake": "Seleccione una marca",
+    "selectModel": "Seleccione un modelo",
+    "commonCodes": "Códigos OBD2 comunes para {make}",
+    "viewCodes": "Ver códigos"
   }
 }

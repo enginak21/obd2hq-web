@@ -10,5 +10,31 @@
     "description": "La base de données ultime des codes de panne (DTC) et des voyants d'avertissement de tableau de bord. Trouvez des symptômes, des causes et des correctifs.",
     "links": "Liens Rapides",
     "legal": "Légal"
+  },
+  "CodePage": {
+    "whatDoesItMean": "Qu'est-ce que cela signifie?",
+    "commonCauses": "Causes fréquentes",
+    "symptomsToWatch": "Symptômes",
+    "repairEstimate": "Coût de réparation estimé",
+    "diyDifficulty": "Difficulté de réparation",
+    "disclaimer": "Avis de non-responsabilité: Ce code fait partie du système OBD2 standard et peut s'appliquer aux modèles {make} {model} de 1996 à 2026. Notez toutefois que la présence de ce code dépend de la configuration exacte du moteur et de l'année de production.",
+    "costIncludesParts": "Comprend les pièces et la main-d'œuvre. Peut varier selon l'emplacement.",
+    "home": "Accueil",
+    "years": "Années"
+  },
+  "DB": {
+    "symp_check_engine": "Le voyant moteur (Check Engine) est allumé",
+    "symp_engine_perf": "Baisse des performances du moteur",
+    "symp_fuel_econ": "Baisse notable de l'économie de carburant",
+    "cause_sensor": "Capteur défectueux ou câblage endommagé",
+    "cause_vacuum": "Fuite de vide ou d'échappement",
+    "cause_wear": "Usure des composants internes",
+    "diff_moderate": "Modérée"
+  },
+  "MakeModel": {
+    "selectMake": "Sélectionnez une marque",
+    "selectModel": "Sélectionnez un modèle",
+    "commonCodes": "Codes OBD2 courants pour {make}",
+    "viewCodes": "Voir les codes"
   }
 }

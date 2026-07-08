@@ -10,5 +10,31 @@
     "description": "Die ultimative Datenbank für Kfz-Fehlercodes (DTC) und Armaturenbrett-Warnleuchten. Finden Sie Symptome, Ursachen und Lösungen.",
     "links": "Schnelllinks",
     "legal": "Rechtliches"
+  },
+  "CodePage": {
+    "whatDoesItMean": "Was bedeutet das?",
+    "commonCauses": "Häufige Ursachen",
+    "symptomsToWatch": "Symptome",
+    "repairEstimate": "Geschätzte Reparaturkosten",
+    "diyDifficulty": "Schwierigkeitsgrad",
+    "disclaimer": "Haftungsausschluss: Dieser Fehlercode ist Teil des Standard-OBD2-Systems und kann für {make} {model}-Modelle von 1996 bis 2026 gelten. Bitte beachten Sie jedoch, dass das Vorhandensein dieses Codes von der genauen Motorkonfiguration und dem Baujahr abhängt.",
+    "costIncludesParts": "Inklusive Teile und Arbeitszeit. Kann je nach Standort variieren.",
+    "home": "Startseite",
+    "years": "Jahre"
+  },
+  "DB": {
+    "symp_check_engine": "Motorkontrollleuchte leuchtet",
+    "symp_engine_perf": "Verringerte Motorleistung",
+    "symp_fuel_econ": "Spürbarer Rückgang der Kraftstoffeffizienz",
+    "cause_sensor": "Defekter Sensor oder beschädigte Verkabelung",
+    "cause_vacuum": "Vakuum- oder Auspuffabgasleck",
+    "cause_wear": "Verschleiß interner Komponenten",
+    "diff_moderate": "Mittel"
+  },
+  "MakeModel": {
+    "selectMake": "Marke auswählen",
+    "selectModel": "Modell auswählen",
+    "commonCodes": "Häufige OBD2-Codes für {make}",
+    "viewCodes": "Codes anzeigen"
   }
 }

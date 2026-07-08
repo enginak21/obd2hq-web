@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { cars, codes } from '@/data/db';
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 
 interface PageProps {
@@ -25,6 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  
   return { 
     title: `1996-2026 ${capMake} ${capModel} OBD2 Codes & Warning Lights`,
     description: `Complete diagnostic data for ${capMake} ${capModel} (1996-2026). Search all OBD2 trouble codes and dashboard warning light meanings.`
@@ -65,7 +67,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{tCode('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
             <Link href={`/${locale}/${make}`} className="hover:text-blue-400 transition-colors capitalize shrink-0">{make}</Link>
             <span className="mx-2 shrink-0">/</span>

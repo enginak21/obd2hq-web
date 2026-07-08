@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { blogPosts } from '@/data/blog';
+import { getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -10,10 +10,10 @@ interface PageProps {
   }>;
 }
 
-
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const resolvedParams = await params;
+  const { locale, slug } = resolvedParams;
+  const blogPosts = getBlogPosts(locale);
   const post = blogPosts.find(p => p.slug === slug);
   if (!post) return { title: 'Post Not Found' };
   
@@ -24,7 +24,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { locale, slug } = await params;
+  const resolvedParams = await params;
+  const { locale, slug } = resolvedParams;
+  const blogPosts = getBlogPosts(locale);
   const post = blogPosts.find(p => p.slug === slug);
 
   if (!post) notFound();

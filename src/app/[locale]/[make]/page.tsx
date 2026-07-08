@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
 
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!carData) return { title: 'Not Found' };
   
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
+  
   return { 
     title: `${capMake} OBD2 Codes & Dashboard Warning Lights`,
     description: `Complete diagnostic guide for all ${capMake} models. Find out what your ${capMake} OBD2 trouble code or dashboard warning light means and how to fix it.`
@@ -43,7 +45,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{tCode('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="text-white capitalize shrink-0">{make}</span>
           </nav>
