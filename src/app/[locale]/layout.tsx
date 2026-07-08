@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
     description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs for all car makes and models.",
+    verification: {
+      google: "4G3G4_xUQnE6Ss724YJkBp9Tmc41qJmd-etzpEFS1H4",
+    },
     alternates: {
       canonical: `https://obd2hq.com/${locale}`,
       languages: {
