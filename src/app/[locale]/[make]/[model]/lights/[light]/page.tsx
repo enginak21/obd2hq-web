@@ -3,6 +3,7 @@ import { cars } from '@/data/db';
 import { warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 interface PageProps {
   params: Promise<{
@@ -35,6 +36,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function LightDetailPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, make, model, light } = resolvedParams;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'LightDetailPage' });
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   const lightData = warningLights[light];
@@ -62,13 +65,13 @@ export default async function LightDetailPage({ params }: PageProps) {
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{make}</span>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{model}</span>
             <span className="mx-2 shrink-0">/</span>
-            <Link href={`/${locale}/${make}/${model}/lights`} className="hover:text-blue-400 transition-colors shrink-0">Lights</Link>
+            <Link href={`/${locale}/${make}/${model}/lights`} className="hover:text-blue-400 transition-colors shrink-0">{t('lights')}</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="text-white truncate max-w-[200px] block shrink-0">{lightData.name}</span>
           </nav>
@@ -85,7 +88,7 @@ export default async function LightDetailPage({ params }: PageProps) {
                   {capMake} {capModel}
                 </span>
                 <span className={`px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-bold uppercase tracking-widest ${lightData.urgency === 'Critical' ? 'bg-red-500/10 border-red-500/30 text-red-400' : lightData.urgency === 'Moderate' ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}>
-                  {lightData.urgency} URGENCY
+                  {t('urgency', { urgency: lightData.urgency })}
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
@@ -107,10 +110,10 @@ export default async function LightDetailPage({ params }: PageProps) {
              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-400 to-blue-600"></div>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              What does this mean on a {capMake} {capModel}?
+              {t('whatItMeans', { make: capMake, model: capModel })}
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed font-light">
-              When you see the {lightData.name.toLowerCase()} illuminate on the dashboard of your {capMake} {capModel}, it is a direct warning from the vehicle&apos;s onboard computer. {lightData.description}
+              {t('description', { lightName: lightData.name.toLowerCase(), make: capMake, model: capModel, description: lightData.description })}
             </p>
           </section>
 
@@ -118,7 +121,7 @@ export default async function LightDetailPage({ params }: PageProps) {
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-              Common Causes for {capMake} {capModel}
+              {t('commonCauses', { make: capMake, model: capModel })}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {lightData.commonCauses.map((cause, idx) => (
@@ -136,7 +139,7 @@ export default async function LightDetailPage({ params }: PageProps) {
           <section className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-              What To Do Next
+              {t('whatToDo')}
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed">
               {lightData.whatToDo}

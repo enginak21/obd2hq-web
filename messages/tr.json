@@ -36,5 +36,102 @@
     "selectModel": "Bir Model Seçin",
     "commonCodes": "{make} İçin Yaygın Arıza Kodları",
     "viewCodes": "Kodları Görüntüle"
+  },
+  "HomePage": {
+    "databaseUpdated": "Veritabanı Güncellendi: 10.000+ Kod & 48 Marka",
+    "title1": "Motorunuzu Çözümleyin.",
+    "title2": "Daha Hızlı Tamir Edin.",
+    "subtitle": "En kapsamlı ve doğru OBD2 arıza teşhis veritabanı. Belirtileri, doğrudan nedenleri ve tahmini onarım maliyetlerini saniyeler içinde bulun.",
+    "mechanicVerified": "Usta Onaylı",
+    "instantSearch": "Anında Arama",
+    "diyGuides": "Kendin Yap (DIY) Tamir Rehberleri",
+    "browseByMake": "Markaya Göre Göz Atın",
+    "selectBrand": "Modelleri görmek için araç markanızı seçin"
+  },
+  "BlogPage": {
+    "title1": "Rehberler ve ",
+    "title2": "İncelemeler",
+    "subtitle": "Piyasadaki en iyi arıza teşhis cihazları hakkında uzman görüşleri, adım adım öğreticiler ve tarafsız incelemeler.",
+    "readArticle": "Makaleyi Oku"
+  },
+  "BlogPostPage": {
+    "home": "Anasayfa",
+    "blog": "Blog",
+    "affiliateDisclaimer": "Bağlı Kuruluş (Affiliate) Bildirimi:",
+    "affiliateText": "Bu sayfadaki bağlantıların bazıları satış ortaklığı linkleridir. Bu, size hiçbir ek maliyeti olmadan, linke tıklayıp satın alma işlemi yapmanız durumunda OBD2HQ'nun bir komisyon kazanacağı anlamına gelir. Yalnızca bizzat test ettiğimiz ve okuyucularımıza değer katacağına inandığımız ürünleri tavsiye ediyoruz."
+  },
+  "LightsPage": {
+    "home": "Anasayfa",
+    "lights": "İkaz Işıkları",
+    "title": "Gösterge Paneli İkaz Işıkları",
+    "subtitle": "{make} {model} aracınızda aşağıdaki ikaz ışıklarından birini seçerek ne anlama geldiğini, yaygın nedenlerini ve anında nasıl tamir edebileceğinizi görün."
+  },
+  "LightDetailPage": {
+    "home": "Anasayfa",
+    "lights": "İkaz Işıkları",
+    "urgency": "{urgency} ACİLİYET",
+    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?",
+    "description": "{make} {model} aracınızın gösterge panelinde {lightName} ışığının yandığını gördüğünüzde, bu aracın bilgisayarından gelen doğrudan bir uyarıdır. {description}",
+    "commonCauses": "{make} {model} İçin Yaygın Nedenler",
+    "whatToDo": "Ne Yapmalı"
+  },
+  "AboutPage": {
+    "title1": "Oto Tamiri ",
+    "title2": "Herkes İçin",
+    "subtitle": "OBD2HQ'yu kurduk çünkü her araç sahibinin tamirciye para ödemeden önce aracında neyin yanlış olduğunu tam olarak bilmeyi hak ettiğine inanıyoruz.",
+    "mission": "Misyonumuz",
+    "missionDesc": "Dünyanın en doğru, kolay erişilebilir ve kapsamlı OBD-II arıza kodları veritabanını sunmak.",
+    "verified": "Doğrulanmış Veri",
+    "verifiedDesc": "Verilerimiz OEM tamir kılavuzlarından toplanmakta ve ASE sertifikalı uzman teknisyenler tarafından doğrulanmaktadır.",
+    "everyone": "Herkes İçin",
+    "everyoneDesc": "İster garajınızda kendi işini kendi yapan (DIY) bir meraklı olun, ister profesyonel bir tamirci, platformumuz sizin için tasarlandı.",
+    "story": "Hikayemiz",
+    "storyP1": "Otomotiv endüstrisi, arıza teşhis bilgilerini geleneksel olarak pahalı ve tescilli yazılım aboneliklerinin arkasında kilitli tuttu. Tamirciler sırf \"tarayıcıyı bağlamak\" için yüzlerce dolar talep ediyor. Bu tekeli yıkmak için OBD2HQ'yu kurduk.",
+    "storyP2": "48'den fazla küresel otomobil üreticisinden veri derleyerek ve 10.000'den fazla özel Arıza Teşhis Kodunu (DTC) analiz ederek, aracınızın beynine özel bir arama motoru oluşturduk. Gevşek bir gaz kapağından (P0456) feci bir hibrit batarya arızasına (P0A80) kadar, artık daha hızlı tamir etmek için gerekli bilgiye sahipsiniz."
+  },
+  "ContactPage": {
+    "title": "İletişim",
+    "subtitle": "Belirli bir arıza koduyla ilgili sorunuz mu var veya veritabanımızda bir yanlışlık mı buldunuz? Bize bildirin.",
+    "emailUs": "Bize E-Posta Gönderin",
+    "name": "İsim",
+    "email": "E-Posta",
+    "message": "Mesajınız",
+    "send": "Mesaj Gönder"
+  },
+  "DisclaimerPage": {
+    "title": "Tıbbi ve Teknik Sorumluluk Reddi",
+    "warning": "UYARI:",
+    "warningText": "Oto tamiri yanlış yapıldığında tehlikeli ve potansiyel olarak ölümcül olabilir. Yeteneklerinizden emin değilseniz daima sertifikalı bir tamirciye danışın.",
+    "noAdvice": "Profesyonel Tavsiye Değildir",
+    "noAdviceText": "OBD2HQ'da yer alan bilgiler yalnızca bilgilendirme ve eğitim amaçlı sunulmaktadır. Profesyonel mekanik veya mühendislik tavsiyesi olarak yorumlanmamalıdır. Bilgileri güncel ve doğru tutmaya çalışsak da, sağlanan arıza teşhis bilgilerinin eksiksizliği, doğruluğu, güvenilirliği veya uygunluğu hakkında hiçbir türden beyan veya garanti vermiyoruz.",
+    "risk": "Riskin Üstlenilmesi",
+    "riskText": "Bu tür bilgilere güvenmeniz bu nedenle kesinlikle kendi riskinizdedir. Araçlar üzerinde, özellikle yüksek voltajlı elektrik sistemlerinde (Hibrit/EV) veya yakıt sistemlerinde çalışmak muazzam yaralanma, ölüm veya felaket niteliğinde maddi hasar riski taşır. OBD2HQ ve yaratıcıları, veritabanımızı kullanmaktan kaynaklanan herhangi bir hasar, yaralanma veya finansal kayıptan sorumlu değildir."
+  },
+  "PrivacyPage": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme:",
+    "h1": "1. Bilgi Toplama",
+    "p1": "OBD2HQ halka açık bir arıza teşhis veritabanıdır. Kullanıcıların OBD2 kodlarını aramak için hesap oluşturmasını veya kişisel bilgilerini vermesini istemiyoruz. Veritabanı doğruluğumuzu artırmak için anonim analiz verileri (ziyaret edilen sayfalar veya arama sorguları gibi) toplayabiliriz.",
+    "h2": "2. Çerezler ve Reklamlar",
+    "p2": "Web sitemizi ziyaret ettiğinizde reklam sunmak için üçüncü taraf reklam ortaklarını (Google AdSense gibi) kullanıyoruz. Bu şirketler, web sitemize veya diğer web sitelerine yaptığınız önceki ziyaretlere dayalı olarak reklam sunmak için çerezler kullanabilir.",
+    "h3": "3. Veri Güvenliği",
+    "p3": "Hassas kişisel bilgileri saklamasak da, arıza teşhis veritabanımızın bütünlüğünü korumak ve güvenli bir gezinme deneyimi sağlamak için endüstri standardı güvenlik önlemleri uyguluyoruz."
+  },
+  "TermsPage": {
+    "title": "Kullanım Şartları",
+    "lastUpdated": "Son güncelleme:",
+    "h1": "1. Şartların Kabulü",
+    "p1": "OBD2HQ'ya erişerek ve kullanarak, bu anlaşmanın şartlarını ve hükümlerini kabul etmiş sayılırsınız.",
+    "h2": "2. Bilginin Kullanımı",
+    "p2": "OBD2HQ'da sağlanan bilgiler yalnızca eğitim ve bilgilendirme amaçlıdır. Arıza teşhis verilerinin mutlak doğruluğunu garanti etmiyoruz. Otomotiv tamiri doğal riskler içerir."
+  },
+  "SearchPage": {
+    "title": "\"{query}\" İçin Arama Sonuçları",
+    "codeFound": "Arıza Kodu Bulundu: {code}",
+    "codeDesc": "{code} için standart tanımı bulduk: {title}. Ancak, size doğru tamir talimatlarını verebilmemiz için önce araç üreticinizi seçmelisiniz.",
+    "selectCar": "{code} ayrıntılarını görmek için araç üreticinizi seçin:",
+    "matchingVehicles": "Eşleşen Araçlar",
+    "noResults": "Sonuç bulunamadı",
+    "noResultsDesc": "\"{query}\" ile eşleşen hiçbir OBD2 kodu veya araç modeli bulamadık. \"P0420\" gibi standart bir P-kodu veya \"Ford\" gibi bir araç markası aramayı deneyin."
   }
 }

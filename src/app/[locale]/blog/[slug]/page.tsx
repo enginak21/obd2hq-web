@@ -28,6 +28,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, slug } = resolvedParams;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'BlogPostPage' });
   const blogPosts = getBlogPosts(locale);
   const post = blogPosts.find(p => p.slug === slug);
 
@@ -40,9 +41,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <nav className="flex items-center text-sm text-slate-400 mb-8 font-medium">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">{t('home')}</Link>
             <span className="mx-2">/</span>
-            <Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">Blog</Link>
+            <Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">{t('blog')}</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-300 truncate">{post.title}</span>
           </nav>
@@ -70,7 +71,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         {/* Affiliate Disclaimer */}
         <div className="mt-16 p-6 bg-white/5 border border-white/10 rounded-2xl text-sm text-slate-400">
-          <strong>Affiliate Disclosure:</strong> Some of the links on this page are affiliate links. This means that, at zero cost to you, OBD2HQ will earn an affiliate commission if you click through the link and finalize a purchase. We only recommend products we personally test and believe will add value to our readers.
+          <strong>{t('affiliateDisclaimer')}</strong> {t('affiliateText')}
         </div>
       </div>
     </main>

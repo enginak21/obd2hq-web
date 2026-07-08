@@ -3,6 +3,7 @@ import { cars } from '@/data/db';
 import { warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 interface PageProps {
   params: Promise<{
@@ -29,6 +30,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function LightsDirectoryPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, make, model } = resolvedParams;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'LightsPage' });
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) notFound();
@@ -48,13 +51,13 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{make}</span>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{model}</span>
             <span className="mx-2 shrink-0">/</span>
-            <span className="text-white shrink-0">Lights</span>
+            <span className="text-white shrink-0">{t('lights')}</span>
           </nav>
 
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
@@ -65,10 +68,10 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                Dashboard Warning Lights
+                {t('title')}
               </h1>
               <p className="text-lg text-slate-400 max-w-2xl font-light">
-                Select a warning light below to see what it means on your {capMake} {capModel}, common causes, and how to fix it immediately.
+                {t('subtitle', { make: capMake, model: capModel })}
               </p>
             </div>
           </div>

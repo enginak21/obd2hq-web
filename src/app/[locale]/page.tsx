@@ -2,9 +2,13 @@ import Link from 'next/link';
 import { cars } from '@/data/db';
 import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'HomePage' });
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 selection:bg-blue-500/30 font-sans flex flex-col items-center">
       
@@ -17,30 +21,30 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-32 flex flex-col items-center text-center">
           <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md shadow-xl">
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
-            <span className="text-sm font-medium text-slate-300 tracking-wide">Database Updated: 10,000+ Codes & 48 Brands</span>
+            <span className="text-sm font-medium text-slate-300 tracking-wide">{t('databaseUpdated')}</span>
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-slate-400">
-            Decode Your Engine. <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Fix It Faster.</span>
+            {t('title1')} <br className="hidden sm:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>
           
           <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mb-12 font-light leading-relaxed">
-            The most comprehensive and accurate OBD2 diagnostic database. Find symptoms, direct causes, and estimated repair costs in seconds.
+            {t('subtitle')}
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-300">
               <ShieldCheck className="w-5 h-5 text-green-400" />
-              <span className="font-medium text-sm">Mechanic Verified</span>
+              <span className="font-medium text-sm">{t('mechanicVerified')}</span>
             </div>
             <div className="flex items-center space-x-2 text-slate-300">
               <Zap className="w-5 h-5 text-amber-400" />
-              <span className="font-medium text-sm">Instant Search</span>
+              <span className="font-medium text-sm">{t('instantSearch')}</span>
             </div>
             <div className="flex items-center space-x-2 text-slate-300">
               <Wrench className="w-5 h-5 text-blue-400" />
-              <span className="font-medium text-sm">DIY Repair Guides</span>
+              <span className="font-medium text-sm">{t('diyGuides')}</span>
             </div>
           </div>
         </div>
@@ -58,9 +62,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <div className="flex flex-col sm:flex-row items-center justify-between mb-12 border-b border-white/5 pb-6">
             <h2 className="text-3xl font-bold text-white tracking-tight flex items-center">
               <Car className="w-8 h-8 mr-3 text-blue-500" />
-              Browse by Manufacturer
+              {t('browseByMake')}
             </h2>
-            <p className="text-slate-500 font-medium text-sm mt-2 sm:mt-0">Select your car brand to view models</p>
+            <p className="text-slate-500 font-medium text-sm mt-2 sm:mt-0">{t('selectBrand')}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

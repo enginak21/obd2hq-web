@@ -2,6 +2,7 @@ import { cars, codes } from '@/data/db';
 import Link from 'next/link';
 import { Search as SearchIcon, AlertTriangle, Car } from 'lucide-react';
 import { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: 'Search Results - OBD2HQ',
@@ -9,13 +10,19 @@ export const metadata: Metadata = {
 };
 
 export default async function SearchPage({
+  params,
   searchParams,
 }: {
+  params: Promise<{ locale: string }>;
   searchParams: Promise<{ q: string }>;
 }) {
   const resolvedParams = await searchParams;
   const rawQuery = resolvedParams.q || '';
   const query = rawQuery.toLowerCase().trim();
+
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'SearchPage' });
 
   // 1. Search for a specific code
   const exactCodeMatch = Object.keys(codes).find(c => c.toLowerCase() === query);
@@ -43,7 +50,7 @@ export default async function SearchPage({
         <div className="max-w-5xl mx-auto px-6">
           <h1 className="text-3xl font-bold text-white flex items-center">
             <SearchIcon className="w-8 h-8 mr-4 text-blue-500" />
-            Search Results for &quot;{rawQuery}&quot;
+            {t('title', { query: rawQuery })}
           </h1>
         </div>
       </header>
@@ -56,15 +63,18 @@ export default async function SearchPage({
             <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-6 mb-8 flex items-start space-x-4">
               <AlertTriangle className="w-8 h-8 text-amber-500 shrink-0 mt-1" />
               <div>
-                <h2 className="text-xl font-bold text-white mb-2">Diagnostic Code Found: {exactCodeMatch}</h2>
+                <h2 className="text-xl font-bold text-white mb-2">{t('codeFound', { code: exactCodeMatch })}</h2>
                 <p className="text-slate-300">
-                  We found the standard definition for <strong>{exactCodeMatch}</strong>: {codes[exactCodeMatch].title}. 
-                  However, to give you accurate repair instructions, you must select your car manufacturer first.
+                  {t.rich('codeDesc', {
+                    code: exactCodeMatch,
+                    title: codes[exactCodeMatch].title,
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
                 </p>
               </div>
             </div>
 
-            <h3 className="text-xl font-bold text-white mb-6">Select your car manufacturer to view {exactCodeMatch} details:</h3>
+            <h3 className="text-xl font-bold text-white mb-6">{t('selectCar', { code: exactCodeMatch })}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
               {cars.map((car) => (
                 <Link 
@@ -84,7 +94,7 @@ export default async function SearchPage({
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <Car className="w-6 h-6 mr-3 text-blue-500" />
-              Matching Vehicles
+              {t('matchingVehicles')}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {matchedModels.map((m, idx) => (
@@ -105,9 +115,9 @@ export default async function SearchPage({
         {!exactCodeMatch && matchedModels.length === 0 && (
           <div className="text-center py-24">
             <SearchIcon className="w-16 h-16 text-slate-600 mx-auto mb-6" />
-            <h2 className="text-2xl font-bold text-white mb-2">No results found</h2>
+            <h2 className="text-2xl font-bold text-white mb-2">{t('noResults')}</h2>
             <p className="text-slate-400 max-w-md mx-auto">
-              We couldn&apos;t find any OBD2 codes or car models matching &quot;{rawQuery}&quot;. Try searching for a standard P-code like &quot;P0420&quot; or a car brand like &quot;Ford&quot;.
+              {t('noResultsDesc', { query: rawQuery })}
             </p>
           </div>
         )}

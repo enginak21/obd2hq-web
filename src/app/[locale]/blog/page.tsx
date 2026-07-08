@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default async function BlogIndex({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'BlogPage' });
   const blogPosts = getBlogPosts(locale);
 
   return (
@@ -21,10 +22,10 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
-            Guides & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Reviews</span>
+            {t('title1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light">
-            Expert insights, step-by-step tutorials, and unbiased reviews of the best diagnostic tools on the market.
+            {t('subtitle')}
           </p>
         </div>
       </header>
@@ -49,7 +50,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
                 {post.description}
               </p>
               <div className="mt-auto flex items-center text-blue-400 font-medium group-hover:translate-x-2 transition-transform">
-                Read Article
+                {t('readArticle')}
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
               </div>
             </div>
