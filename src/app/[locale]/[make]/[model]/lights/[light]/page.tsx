@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 interface PageProps {
   params: Promise<{
+    locale: string;
     make: string;
     model: string;
     light: string;
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function LightDetailPage({ params }: PageProps) {
   const resolvedParams = await params;
-  const { make, model, light } = resolvedParams;
+  const { locale, make, model, light } = resolvedParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   const lightData = warningLights[light];
@@ -63,13 +64,13 @@ export default async function LightDetailPage({ params }: PageProps) {
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href="/" className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{make}</span>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{model}</span>
             <span className="mx-2 shrink-0">/</span>
-            <Link href={`/${make}/${model}/lights`} className="hover:text-blue-400 transition-colors shrink-0">Lights</Link>
+            <Link href={`/${locale}/${make}/${model}/lights`} className="hover:text-blue-400 transition-colors shrink-0">Lights</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="text-white truncate max-w-[200px] block shrink-0">{lightData.name}</span>
           </nav>

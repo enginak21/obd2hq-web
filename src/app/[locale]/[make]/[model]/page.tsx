@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface PageProps {
   params: Promise<{
+    locale: string;
     make: string;
     model: string;
   }>;
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ModelDirectoryPage({ params, searchParams }: PageProps) {
   const resolvedParams = await params;
-  const { make, model } = resolvedParams;
+  const { locale, make, model } = resolvedParams;
   const resolvedSearchParams = await searchParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
@@ -64,9 +65,9 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href="/" className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
             <span className="mx-2 shrink-0">/</span>
-            <Link href={`/${make}`} className="hover:text-blue-400 transition-colors capitalize shrink-0">{make}</Link>
+            <Link href={`/${locale}/${make}`} className="hover:text-blue-400 transition-colors capitalize shrink-0">{make}</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="text-white uppercase shrink-0">{model}</span>
           </nav>
@@ -87,7 +88,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             </div>
             
             <Link 
-              href={`/${make}/${model}/lights`}
+              href={`/${locale}/${make}/${model}/lights`}
               className="group flex flex-col items-center justify-center p-6 bg-amber-500/10 border border-amber-500/30 rounded-2xl hover:bg-amber-500/20 transition-all duration-300 w-full md:w-64 shrink-0"
             >
               <svg className="w-10 h-10 text-amber-500 mb-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path></svg>
@@ -112,7 +113,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           {displayCodes.map((code) => (
             <Link 
               key={code} 
-              href={`/${make}/${model}/${code.toLowerCase()}`}
+              href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
               className="group flex items-center justify-center py-4 bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)]"
             >
               <span className="text-slate-300 group-hover:text-blue-300 text-sm font-bold tracking-wider">
@@ -127,7 +128,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           <div className="mt-12 flex items-center justify-center space-x-4">
             {currentPage > 1 ? (
               <Link
-                href={`/${make}/${model}?page=${currentPage - 1}`}
+                href={`/${locale}/${make}/${model}?page=${currentPage - 1}`}
                 className="px-6 py-3 bg-[#131b2f] border border-white/10 hover:border-blue-500 hover:text-white rounded-xl text-slate-300 font-bold transition-all shadow-lg hover:shadow-blue-500/20"
               >
                 Previous
@@ -144,7 +145,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
             {currentPage < totalPages ? (
               <Link
-                href={`/${make}/${model}?page=${currentPage + 1}`}
+                href={`/${locale}/${make}/${model}?page=${currentPage + 1}`}
                 className="px-6 py-3 bg-[#131b2f] border border-white/10 hover:border-blue-500 hover:text-white rounded-xl text-slate-300 font-bold transition-all shadow-lg hover:shadow-blue-500/20"
               >
                 Next

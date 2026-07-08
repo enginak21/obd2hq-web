@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 interface PageProps {
   params: Promise<{
+    locale: string;
     make: string;
     model: string;
   }>;
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function LightsDirectoryPage({ params }: PageProps) {
   const resolvedParams = await params;
-  const { make, model } = resolvedParams;
+  const { locale, make, model } = resolvedParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) notFound();
@@ -51,7 +52,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href="/" className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{make}</span>
             <span className="mx-2 shrink-0">/</span>
@@ -98,7 +99,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
             return (
               <Link 
                 key={light.id} 
-                href={`/${make}/${model}/lights/${light.id}`}
+                href={`/${locale}/${make}/${model}/lights/${light.id}`}
                 className={`group bg-[#131b2f] border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${glowClasses} flex flex-col items-center text-center`}
               >
                 <div 

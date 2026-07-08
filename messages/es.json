@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "searchPlaceholder": "Buscar código (ej., P0420) o marca de auto...",
+    "makes": "Marcas",
+    "aboutUs": "Sobre Nosotros",
+    "contact": "Contacto",
+    "blog": "Blog y Reseñas"
+  },
+  "Footer": {
+    "description": "La base de datos definitiva de códigos de falla de vehículos (DTC) y luces de advertencia del tablero. Encuentre síntomas, causas y soluciones.",
+    "links": "Enlaces Rápidos",
+    "legal": "Legal"
+  }
+}

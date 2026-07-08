@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "searchPlaceholder": "Search code (e.g., P0420) or car make...",
+    "makes": "Makes",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "blog": "Blog & Reviews"
+  },
+  "Footer": {
+    "description": "The ultimate database for vehicle diagnostic trouble codes (DTC) and dashboard warning lights. Find symptoms, causes, and fixes.",
+    "links": "Quick Links",
+    "legal": "Legal"
+  }
+}

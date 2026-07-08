@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "searchPlaceholder": "Fehlercode (z. B. P0420) oder Automarke suchen...",
+    "makes": "Marken",
+    "aboutUs": "Über Uns",
+    "contact": "Kontakt",
+    "blog": "Blog & Tests"
+  },
+  "Footer": {
+    "description": "Die ultimative Datenbank für Kfz-Fehlercodes (DTC) und Armaturenbrett-Warnleuchten. Finden Sie Symptome, Ursachen und Lösungen.",
+    "links": "Schnelllinks",
+    "legal": "Rechtliches"
+  }
+}

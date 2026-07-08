@@ -3,20 +3,22 @@
 import Link from 'next/link';
 import { Search, Menu, Activity } from 'lucide-react';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [query, setQuery] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
+  const params = useParams();
+  const locale = (params.locale as string) || 'en';
+  const t = useTranslations('Navbar');
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim().length > 2) {
-      // Basic client side routing. For now, we will route to a search page (to be built) or try to interpret the code
-      // If it looks like a code (e.g. P0420), we could route directly to it, but we need make/model for that.
-      // So we just route to a global search.
-      router.push(`/search?q=${encodeURIComponent(query.trim())}`);
+      router.push(`/${locale}/search?q=${encodeURIComponent(query.trim())}`);
     }
   };
 
@@ -25,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-3 group shrink-0">
+        <Link href={`/${locale}`} className="flex items-center space-x-3 group shrink-0">
           <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-xl group-hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all hidden sm:block">
             <Activity className="w-6 h-6 text-white" />
           </div>
@@ -44,37 +46,44 @@ export default function Navbar() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search code (e.g., P0420) or car make..."
+              placeholder={t('searchPlaceholder')}
               className="w-full bg-[#131b2f] border border-white/5 rounded-2xl py-2.5 pl-11 pr-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all"
             />
           </form>
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
-          <Link href="/" className="hover:text-white transition-colors">Makes</Link>
-          <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
-          <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+        <div className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-300">
+          <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('makes')}</Link>
+          <Link href={`/${locale}/blog`} className="hover:text-white transition-colors text-blue-400">{t('blog')}</Link>
+          <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
+          <Link href={`/${locale}/contact`} className="hover:text-white transition-colors">{t('contact')}</Link>
+          <div className="w-px h-5 bg-white/10 mx-2"></div>
+          <LanguageSwitcher />
         </div>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-slate-300 hover:text-white shrink-0"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-expanded={isMenuOpen}
-          aria-label="Toggle navigation menu"
-          aria-controls="mobile-menu"
-        >
-          <Menu className="w-6 h-6" />
-        </button>
+        {/* Mobile Actions */}
+        <div className="md:hidden flex items-center space-x-2">
+          <LanguageSwitcher />
+          <button 
+            className="text-slate-300 hover:text-white shrink-0 p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-expanded={isMenuOpen}
+            aria-label="Toggle navigation menu"
+            aria-controls="mobile-menu"
+          >
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div id="mobile-menu" className="md:hidden bg-[#131b2f] border-b border-white/10 px-6 py-4 flex flex-col space-y-4">
-          <Link href="/" className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>Makes</Link>
-          <Link href="/about" className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-          <Link href="/contact" className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+          <Link href={`/${locale}`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('makes')}</Link>
+          <Link href={`/${locale}/blog`} className="text-blue-400 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('blog')}</Link>
+          <Link href={`/${locale}/about`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('aboutUs')}</Link>
+          <Link href={`/${locale}/contact`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('contact')}</Link>
         </div>
       )}
     </nav>

@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { Activity } from 'lucide-react';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('Footer');
+  const locale = useLocale();
+
   return (
     <footer className="bg-[#0a0f1c] border-t border-white/5 pt-16 pb-8 mt-auto">
       <div className="max-w-7xl mx-auto px-6">
@@ -9,7 +13,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center space-x-3 mb-6">
+            <Link href={`/${locale}`} className="flex items-center space-x-3 mb-6">
               <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-xl">
                 <Activity className="w-5 h-5 text-white" />
               </div>
@@ -18,32 +22,33 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
-              The world&apos;s most comprehensive and technically accurate OBD2 diagnostic and warning light database. Find the fix faster.
+              {t('description')}
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="text-white font-bold mb-4">Diagnostics</h4>
+            <h4 className="text-white font-bold mb-4">{t('links')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/" className="hover:text-blue-400 transition-colors">Search by Make</Link></li>
+              <li><Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">Search by Make</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold mb-4">Resources</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link href={`/${locale}/about`} className="hover:text-blue-400 transition-colors">About Us</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">Blog</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4">Legal</h4>
+            <h4 className="text-white font-bold mb-4">{t('legal')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
-              <li><Link href="/disclaimer" className="hover:text-blue-400 transition-colors">Medical & Tech Disclaimer</Link></li>
+              <li><Link href={`/${locale}/privacy`} className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link href={`/${locale}/terms`} className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
+              <li><Link href={`/${locale}/disclaimer`} className="hover:text-blue-400 transition-colors">Medical & Tech Disclaimer</Link></li>
             </ul>
           </div>
         </div>

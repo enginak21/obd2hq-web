@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "searchPlaceholder": "Arıza kodu (Örn: P0420) veya marka ara...",
+    "makes": "Markalar",
+    "aboutUs": "Hakkımızda",
+    "contact": "İletişim",
+    "blog": "Blog & İncelemeler"
+  },
+  "Footer": {
+    "description": "Araç arıza kodları (DTC) ve gösterge paneli ikaz ışıkları için nihai veritabanı. Belirtileri, nedenleri ve çözümleri bulun.",
+    "links": "Hızlı Bağlantılar",
+    "legal": "Yasal"
+  }
+}

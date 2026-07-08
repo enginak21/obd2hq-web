@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "searchPlaceholder": "Rechercher un code (ex., P0420) ou une marque...",
+    "makes": "Marques",
+    "aboutUs": "À Propos",
+    "contact": "Contact",
+    "blog": "Blog & Avis"
+  },
+  "Footer": {
+    "description": "La base de données ultime des codes de panne (DTC) et des voyants d'avertissement de tableau de bord. Trouvez des symptômes, des causes et des correctifs.",
+    "links": "Liens Rapides",
+    "legal": "Légal"
+  }
+}

@@ -2,9 +2,11 @@ import { notFound } from 'next/navigation';
 import { cars, getHybridObdData } from '@/data/db';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import DisqusComments from '@/components/DisqusComments';
 
 interface PageProps {
   params: Promise<{
+    locale: string;
     make: string;
     model: string;
     code: string;
@@ -12,11 +14,6 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  // We have 266,000+ potential pages. 
-  // Pre-rendering all of them at build time would crash the server (and Vercel).
-  // By returning an empty array, Next.js will use Incremental Static Regeneration (ISR).
-  // Pages will be generated lightning-fast on-the-fly the first time a user visits them, 
-  // and then permanently cached at the CDN level for all future visitors.
   return [];
 }
 
@@ -36,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function CodePage({ params }: PageProps) {
   const resolvedParams = await params;
-  const { make, model, code } = resolvedParams;
+  const { locale, make, model, code } = resolvedParams;
   
   const obdData = getHybridObdData(make, model, code);
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
@@ -95,7 +92,7 @@ export default async function CodePage({ params }: PageProps) {
           
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
-            <Link href="/" className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">Home</Link>
             <span className="mx-2 shrink-0">/</span>
             <span className="capitalize shrink-0">{make}</span>
             <span className="mx-2 shrink-0">/</span>
@@ -190,6 +187,15 @@ export default async function CodePage({ params }: PageProps) {
                 ))}
               </ul>
             </div>
+          </section>
+
+          {/* Disqus Comments */}
+          <section className="pt-8">
+            <DisqusComments 
+              url={`https://obd2hq.com/${locale}/${make}/${model}/${code}`}
+              identifier={`${make}-${model}-${code}`}
+              title={`${upperCode} on ${capMake} ${capModel} - OBD2HQ Discussion`}
+            />
           </section>
 
           {/* Bottom Banner Ad Placeholder */}
