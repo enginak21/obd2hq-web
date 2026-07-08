@@ -133,5 +133,22 @@
     "matchingVehicles": "Matching Vehicles",
     "noResults": "No results found",
     "noResultsDesc": "We couldn't find any OBD2 codes or car models matching \"{query}\". Try searching for a standard P-code like \"P0420\" or a car brand like \"Ford\"."
+  },
+  "MakePage": {
+    "title": "{make} Diagnostics Hub",
+    "desc": "Select your {make} model below to find specific OBD2 trouble codes, dashboard warning light meanings, and step-by-step repair guides for vehicles from 1996 to 2026.",
+    "selectModel": "Select {make} Model"
+  },
+  "ModelPage": {
+    "years": "Years: 1996 - 2026",
+    "title": "{make} {model} Diagnostics",
+    "desc": "Comprehensive diagnostic database for all {make} {model} vehicles manufactured between 1996 and 2026.",
+    "dashboardLights": "Dashboard Warning Lights",
+    "powertrain": "Powertrain (P) Codes",
+    "showing": "Showing {start} - {end} of {total} codes",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of"
   }
 }

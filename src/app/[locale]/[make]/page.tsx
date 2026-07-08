@@ -34,6 +34,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   const { locale, make } = resolvedParams;
   setRequestLocale(locale);
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
+  const tMake = await getTranslations({ locale, namespace: 'MakePage' });
   
   const carData = cars.find(c => c.make === make);
   if (!carData) notFound();
@@ -54,10 +55,10 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
 
           <div>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-              {capMake} Diagnostics Hub
+              {tMake('title', { make: capMake })}
             </h1>
             <p className="text-lg text-slate-400 max-w-2xl font-light">
-              Select your {capMake} model below to find specific OBD2 trouble codes, dashboard warning light meanings, and step-by-step repair guides for vehicles from 1996 to 2026.
+              {tMake('desc', { make: capMake })}
             </p>
           </div>
         </div>
@@ -66,7 +67,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
       <div className="max-w-5xl mx-auto px-6 mt-12">
         <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
           <Car className="w-6 h-6 mr-3 text-blue-500" />
-          Select {capMake} Model
+          {tMake('selectModel', { make: capMake })}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {carData.models.map((model) => (

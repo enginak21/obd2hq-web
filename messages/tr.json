@@ -133,5 +133,22 @@
     "matchingVehicles": "Eşleşen Araçlar",
     "noResults": "Sonuç bulunamadı",
     "noResultsDesc": "\"{query}\" ile eşleşen hiçbir OBD2 kodu veya araç modeli bulamadık. \"P0420\" gibi standart bir P-kodu veya \"Ford\" gibi bir araç markası aramayı deneyin."
+  },
+  "MakePage": {
+    "title": "{make} Arıza Teşhis Merkezi",
+    "desc": "1996'dan 2026'ya kadar olan araçlar için özel OBD2 arıza kodlarını, gösterge paneli uyarı ışığı anlamlarını ve adım adım onarım kılavuzlarını bulmak için aşağıdan {make} modelinizi seçin.",
+    "selectModel": "{make} Modelini Seçin"
+  },
+  "ModelPage": {
+    "years": "Yıllar: 1996 - 2026",
+    "title": "{make} {model} Arıza Teşhisi",
+    "desc": "1996 ile 2026 yılları arasında üretilen tüm {make} {model} araçlar için kapsamlı arıza teşhis veritabanı.",
+    "dashboardLights": "Gösterge Paneli Uyarı Işıkları",
+    "powertrain": "Güç Aktarma Organı (P) Kodları",
+    "showing": "{total} koddan {start} - {end} arası gösteriliyor",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "page": "Sayfa",
+    "of": "/"
   }
 }

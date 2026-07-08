@@ -38,6 +38,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   const { locale, make, model } = resolvedParams;
   setRequestLocale(locale);
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
+  const tModel = await getTranslations({ locale, namespace: 'ModelPage' });
   const resolvedSearchParams = await searchParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
@@ -80,14 +81,14 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             <div>
               <div className="inline-flex items-center space-x-3 mb-4">
                 <span className="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-semibold tracking-wide">
-                  Years: 1996 - 2026
+                  {tModel('years')}
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                {capMake} <span className="uppercase">{model}</span> Diagnostics
+                {tModel('title', { make: capMake, model: model.toUpperCase() })}
               </h1>
               <p className="text-lg text-slate-400 max-w-2xl font-light">
-                Comprehensive diagnostic database for all {capMake} {capModel} vehicles manufactured between 1996 and 2026.
+                {tModel('desc', { make: capMake, model: capModel })}
               </p>
             </div>
             
@@ -96,7 +97,9 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
               className="group flex flex-col items-center justify-center p-6 bg-amber-500/10 border border-amber-500/30 rounded-2xl hover:bg-amber-500/20 transition-all duration-300 w-full md:w-64 shrink-0"
             >
               <svg className="w-10 h-10 text-amber-500 mb-3 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path></svg>
-              <span className="text-amber-500 font-bold text-lg text-center leading-tight">Dashboard<br/>Warning Lights</span>
+              <span className="text-amber-500 font-bold text-lg text-center leading-tight">
+                {tModel.rich('dashboardLights', { br: () => <br /> })}
+              </span>
             </Link>
           </div>
         </div>
@@ -106,10 +109,10 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
         <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-white/5 pb-4">
           <h2 className="text-2xl font-bold text-white flex items-center mb-4 sm:mb-0">
             <svg className="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-            Powertrain (P) Codes
+            {tModel('powertrain')}
           </h2>
           <span className="text-sm text-slate-500 font-medium bg-[#131b2f] px-3 py-1 rounded-full border border-white/5">
-            Showing {startIndex + 1} - {Math.min(endIndex, totalCodes)} of {totalCodes.toLocaleString()} codes
+            {tModel('showing', { start: startIndex + 1, end: Math.min(endIndex, totalCodes), total: totalCodes.toLocaleString() })}
           </span>
         </div>
         
@@ -135,16 +138,16 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 href={`/${locale}/${make}/${model}?page=${currentPage - 1}`}
                 className="px-6 py-3 bg-[#131b2f] border border-white/10 hover:border-blue-500 hover:text-white rounded-xl text-slate-300 font-bold transition-all shadow-lg hover:shadow-blue-500/20"
               >
-                Previous
+                {tModel('prev')}
               </Link>
             ) : (
               <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-600 font-bold cursor-not-allowed">
-                Previous
+                {tModel('prev')}
               </span>
             )}
             
             <span className="text-slate-400 font-medium bg-[#0d1425] px-4 py-2 rounded-lg border border-white/5">
-              Page <span className="text-white font-bold">{currentPage}</span> of {totalPages}
+              {tModel('page')} <span className="text-white font-bold">{currentPage}</span> {tModel('of')} {totalPages}
             </span>
 
             {currentPage < totalPages ? (
@@ -152,11 +155,11 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 href={`/${locale}/${make}/${model}?page=${currentPage + 1}`}
                 className="px-6 py-3 bg-[#131b2f] border border-white/10 hover:border-blue-500 hover:text-white rounded-xl text-slate-300 font-bold transition-all shadow-lg hover:shadow-blue-500/20"
               >
-                Next
+                {tModel('next')}
               </Link>
             ) : (
               <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-600 font-bold cursor-not-allowed">
-                Next
+                {tModel('next')}
               </span>
             )}
           </div>
