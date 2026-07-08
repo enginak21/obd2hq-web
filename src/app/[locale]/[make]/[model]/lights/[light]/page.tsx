@@ -13,9 +13,7 @@ interface PageProps {
   }>;
 }
 
-export async function generateStaticParams() {
-  return []; // ISR
-}
+
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;

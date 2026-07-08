@@ -45,9 +45,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'de' }, { locale: 'es' }, { locale: 'tr' }, { locale: 'fr' }];
-}
+
 
 export default async function RootLayout({
   children,
