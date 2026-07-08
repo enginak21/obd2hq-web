@@ -1,0 +1,98 @@
+{
+  "nissan": {
+    "altima": {
+      "P0420": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      },
+      "P0300": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      }
+    }
+  },
+  "ford": {
+    "f150": {
+      "P0420": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      },
+      "P0300": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      }
+    }
+  },
+  "toyota": {
+    "camry": {
+      "P0420": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      },
+      "P0300": {
+        "symptoms": [
+          "Check Engine Light is illuminated",
+          "Decreased engine performance",
+          "Noticeable drop in fuel economy"
+        ],
+        "causes": [
+          "Faulty sensor or damaged wiring",
+          "Vacuum or exhaust leak",
+          "Internal component wear and tear"
+        ],
+        "fixDifficulty": "Moderate",
+        "estimatedCost": "$100 - $450"
+      }
+    }
+  }
+}
