@@ -1,40 +1,154 @@
 {
   "Navbar": {
-    "searchPlaceholder": "Fehlercode (z. B. P0420) oder Automarke suchen...",
+    "searchPlaceholder": "Code suchen (z. B. P0420) oder Automarke...",
     "makes": "Marken",
-    "aboutUs": "Über Uns",
+    "aboutUs": "Über uns",
     "contact": "Kontakt",
-    "blog": "Blog & Tests"
+    "blog": "Blog & Bewertungen"
   },
   "Footer": {
-    "description": "Die ultimative Datenbank für Kfz-Fehlercodes (DTC) und Armaturenbrett-Warnleuchten. Finden Sie Symptome, Ursachen und Lösungen.",
+    "description": "Die ultimative Datenbank für Kfz-Fehlercodes (DTC) und Warnleuchten im Armaturenbrett. Finden Sie Symptome, Ursachen und Lösungen.",
     "links": "Schnelllinks",
     "legal": "Rechtliches"
   },
   "CodePage": {
     "whatDoesItMean": "Was bedeutet das?",
     "commonCauses": "Häufige Ursachen",
-    "symptomsToWatch": "Symptome",
-    "repairEstimate": "Geschätzte Reparaturkosten",
-    "diyDifficulty": "Schwierigkeitsgrad",
-    "disclaimer": "Haftungsausschluss: Dieser Fehlercode ist Teil des Standard-OBD2-Systems und kann für {make} {model}-Modelle von 1996 bis 2026 gelten. Bitte beachten Sie jedoch, dass das Vorhandensein dieses Codes von der genauen Motorkonfiguration und dem Baujahr abhängt.",
-    "costIncludesParts": "Inklusive Teile und Arbeitszeit. Kann je nach Standort variieren.",
+    "symptomsToWatch": "Zu beachtende Symptome",
+    "repairEstimate": "Reparaturkosten",
+    "diyDifficulty": "DIY-Schwierigkeitsgrad",
+    "disclaimer": "Haftungsausschluss: Dieser Diagnosecode ist Teil des OBD2-Standards und gilt für {make} {model} Modelle von 1996 bis 2026. Bitte beachten Sie jedoch, dass dies von der genauen Motorkonfiguration abhängt.",
+    "costIncludesParts": "Beinhaltet Teile und Arbeit. Kann je nach Standort variieren.",
     "home": "Startseite",
     "years": "Jahre"
   },
   "DB": {
     "symp_check_engine": "Motorkontrollleuchte leuchtet",
     "symp_engine_perf": "Verringerte Motorleistung",
-    "symp_fuel_econ": "Spürbarer Rückgang der Kraftstoffeffizienz",
+    "symp_fuel_econ": "Spürbarer Rückgang des Kraftstoffverbrauchs",
     "cause_sensor": "Defekter Sensor oder beschädigte Verkabelung",
-    "cause_vacuum": "Vakuum- oder Auspuffabgasleck",
+    "cause_vacuum": "Vakuum- oder Auspuffleck",
     "cause_wear": "Verschleiß interner Komponenten",
-    "diff_moderate": "Mittel"
+    "diff_moderate": "Moderat"
   },
   "MakeModel": {
-    "selectMake": "Marke auswählen",
-    "selectModel": "Modell auswählen",
+    "selectMake": "Wählen Sie eine Marke",
+    "selectModel": "Wählen Sie ein Modell",
     "commonCodes": "Häufige OBD2-Codes für {make}",
     "viewCodes": "Codes anzeigen"
+  },
+  "HomePage": {
+    "databaseUpdated": "Datenbank aktualisiert: 10.000+ Codes & 48 Marken",
+    "title1": "Entschlüssele deinen Motor.",
+    "title2": "Repariere ihn schneller.",
+    "subtitle": "Die umfassendste und genaueste OBD2-Diagnosedatenbank. Finden Sie Symptome, Ursachen und Reparaturkosten in Sekunden.",
+    "mechanicVerified": "Vom Mechaniker verifiziert",
+    "instantSearch": "Sofortsuche",
+    "diyGuides": "DIY-Reparaturanleitungen",
+    "browseByMake": "Nach Hersteller durchsuchen",
+    "selectBrand": "Wählen Sie Ihre Automarke"
+  },
+  "BlogPage": {
+    "title1": "Ratgeber & ",
+    "title2": "Bewertungen",
+    "subtitle": "Experteneinblicke, Schritt-für-Schritt-Anleitungen und unvoreingenommene Bewertungen.",
+    "readArticle": "Artikel lesen"
+  },
+  "BlogPostPage": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "affiliateDisclaimer": "Affiliate-Offenlegung:",
+    "affiliateText": "Einige Links sind Affiliate-Links. Das bedeutet, dass OBD2HQ eine Provision verdient, wenn Sie kaufen, ohne zusätzliche Kosten für Sie."
+  },
+  "LightsPage": {
+    "home": "Startseite",
+    "lights": "Warnleuchten",
+    "title": "Warnleuchten im Armaturenbrett",
+    "subtitle": "Wählen Sie unten eine Warnleuchte aus, um zu sehen, was sie in Ihrem {make} {model} bedeutet."
+  },
+  "LightDetailPage": {
+    "home": "Startseite",
+    "lights": "Warnleuchten",
+    "urgency": "{urgency} DRINGLICHKEIT",
+    "whatItMeans": "Was bedeutet das bei einem {make} {model}?",
+    "description": "Wenn {lightName} auf dem Armaturenbrett Ihres {make} {model} aufleuchtet, ist das eine Warnung. {description}",
+    "commonCauses": "Häufige Ursachen für {make} {model}",
+    "whatToDo": "Was als nächstes zu tun ist"
+  },
+  "AboutPage": {
+    "title1": "Demokratisierung der ",
+    "title2": "Autoreparatur",
+    "subtitle": "Wir haben OBD2HQ entwickelt, weil jeder Autobesitzer wissen sollte, was los ist, bevor er bezahlt.",
+    "mission": "Unsere Mission",
+    "missionDesc": "Die genaueste OBD-II-Datenbank der Welt bereitzustellen.",
+    "verified": "Verifizierte Daten",
+    "verifiedDesc": "Unsere Daten werden von zertifizierten Technikern verifiziert.",
+    "everyone": "Für jeden",
+    "everyoneDesc": "Egal ob DIY-Enthusiast oder professioneller Mechaniker.",
+    "story": "Die Geschichte",
+    "storyP1": "Mechaniker verlangen Hunderte von Dollar, nur um den Scanner anzuschließen. Wir brechen dieses Monopol.",
+    "storyP2": "Wir haben Daten von über 48 Herstellern zusammengestellt."
+  },
+  "ContactPage": {
+    "title": "Kontaktiere uns",
+    "subtitle": "Haben Sie eine Frage oder einen Fehler gefunden? Lass es uns wissen.",
+    "emailUs": "Schreiben Sie uns",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden"
+  },
+  "DisclaimerPage": {
+    "title": "Medizinischer und technischer Haftungsausschluss",
+    "warning": "WARNUNG:",
+    "warningText": "Autoreparaturen können gefährlich sein. Konsultieren Sie immer einen Mechaniker.",
+    "noAdvice": "Keine professionelle Beratung",
+    "noAdviceText": "Informationen dienen nur zu Bildungszwecken.",
+    "risk": "Risikoübernahme",
+    "riskText": "Jedes Vertrauen in diese Informationen erfolgt auf eigenes Risiko."
+  },
+  "PrivacyPage": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "h1": "1. Informationssammlung",
+    "p1": "Wir verlangen nicht, dass Sie persönliche Daten angeben.",
+    "h2": "2. Cookies und Werbung",
+    "p2": "Wir verwenden Werbepartner, die Cookies verwenden können.",
+    "h3": "3. Datensicherheit",
+    "p3": "Wir verwenden Standardmaßnahmen zum Schutz unserer Datenbank."
+  },
+  "TermsPage": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "h1": "1. Annahme der Bedingungen",
+    "p1": "Durch die Nutzung von OBD2HQ akzeptieren Sie diese Bedingungen.",
+    "h2": "2. Nutzung von Informationen",
+    "p2": "Die Informationen dienen nur zu Bildungszwecken."
+  },
+  "SearchPage": {
+    "title": "Suchergebnisse für \"{query}\"",
+    "codeFound": "Diagnosecode gefunden: {code}",
+    "codeDesc": "Wir haben die Definition für {code} gefunden: {title}. Wählen Sie Ihre Marke aus.",
+    "selectCar": "Wählen Sie Ihren Hersteller aus, um Details zu {code} anzuzeigen:",
+    "matchingVehicles": "Passende Fahrzeuge",
+    "noResults": "Keine Ergebnisse",
+    "noResultsDesc": "Wir konnten keine passenden OBD2-Codes für \"{query}\" finden."
+  },
+  "MakePage": {
+    "title": "{make} Diagnosezentrum",
+    "desc": "Wählen Sie Ihr {make} Modell aus, um Codes und Anleitungen zu finden.",
+    "selectModel": "Wählen Sie das {make} Modell"
+  },
+  "ModelPage": {
+    "years": "Jahre: 1996 - 2026",
+    "title": "{make} {model} Diagnose",
+    "desc": "Umfassende Diagnosedatenbank für alle {make} {model} Fahrzeuge.",
+    "dashboardLights": "Warnleuchten im Armaturenbrett",
+    "powertrain": "Antriebsstrang (P) Codes",
+    "showing": "Zeige {start} - {end} von {total} Codes",
+    "prev": "Vorherige",
+    "next": "Nächste",
+    "page": "Seite",
+    "of": "von"
   }
 }

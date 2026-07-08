@@ -1,24 +1,24 @@
 {
   "Navbar": {
-    "searchPlaceholder": "Buscar código (ej., P0420) o marca de auto...",
+    "searchPlaceholder": "Buscar código (ej: P0420) o marca...",
     "makes": "Marcas",
-    "aboutUs": "Sobre Nosotros",
+    "aboutUs": "Sobre nosotros",
     "contact": "Contacto",
     "blog": "Blog y Reseñas"
   },
   "Footer": {
-    "description": "La base de datos definitiva de códigos de falla de vehículos (DTC) y luces de advertencia del tablero. Encuentre síntomas, causas y soluciones.",
-    "links": "Enlaces Rápidos",
+    "description": "La base de datos definitiva de códigos de diagnóstico (DTC) y luces de advertencia. Encuentra síntomas, causas y soluciones.",
+    "links": "Enlaces rápidos",
     "legal": "Legal"
   },
   "CodePage": {
     "whatDoesItMean": "¿Qué significa esto?",
     "commonCauses": "Causas comunes",
-    "symptomsToWatch": "Síntomas",
-    "repairEstimate": "Costo estimado de reparación",
-    "diyDifficulty": "Dificultad de reparación",
-    "disclaimer": "Descargo de responsabilidad: Este código es parte del sistema OBD2 estándar y puede aplicarse a los modelos {make} {model} de 1996 a 2026. Sin embargo, tenga en cuenta que la presencia de este código depende de la configuración exacta del motor y el año de producción.",
-    "costIncludesParts": "Incluye piezas y mano de obra. Puede variar según la ubicación.",
+    "symptomsToWatch": "Síntomas a tener en cuenta",
+    "repairEstimate": "Estimación de reparación",
+    "diyDifficulty": "Dificultad de reparación (DIY)",
+    "disclaimer": "Aviso legal: Este código de diagnóstico forma parte del sistema OBD2 estándar y puede aplicarse a los modelos {make} {model} fabricados de 1996 a 2026. Sin embargo, tenga en cuenta que la presencia de este código específico depende de la configuración del motor de su vehículo, las opciones y el año de producción.",
+    "costIncludesParts": "Incluye repuestos y mano de obra. Puede variar por ubicación.",
     "home": "Inicio",
     "years": "Años"
   },
@@ -29,12 +29,126 @@
     "cause_sensor": "Sensor defectuoso o cableado dañado",
     "cause_vacuum": "Fuga de vacío o de escape",
     "cause_wear": "Desgaste de componentes internos",
-    "diff_moderate": "Moderada"
+    "diff_moderate": "Moderado"
   },
   "MakeModel": {
     "selectMake": "Seleccione una marca",
     "selectModel": "Seleccione un modelo",
     "commonCodes": "Códigos OBD2 comunes para {make}",
-    "viewCodes": "Ver códigos"
+    "viewCodes": "Ver Códigos"
+  },
+  "HomePage": {
+    "databaseUpdated": "Base de datos actualizada: más de 10 000 códigos y 48 marcas",
+    "title1": "Decodifica tu motor.",
+    "title2": "Repáralo más rápido.",
+    "subtitle": "La base de datos de diagnóstico OBD2 más completa. Encuentre síntomas, causas y costos de reparación en segundos.",
+    "mechanicVerified": "Verificado por mecánicos",
+    "instantSearch": "Búsqueda instantánea",
+    "diyGuides": "Guías de reparación DIY",
+    "browseByMake": "Navegar por fabricante",
+    "selectBrand": "Selecciona la marca para ver los modelos"
+  },
+  "BlogPage": {
+    "title1": "Guías y ",
+    "title2": "Reseñas",
+    "subtitle": "Información de expertos, tutoriales y reseñas imparciales sobre las mejores herramientas de diagnóstico.",
+    "readArticle": "Leer Artículo"
+  },
+  "BlogPostPage": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "affiliateDisclaimer": "Divulgación de afiliados:",
+    "affiliateText": "Algunos enlaces son de afiliados. Esto significa que sin costo para usted, OBD2HQ ganará una comisión si compra a través de ellos. Solo recomendamos lo que probamos personalmente."
+  },
+  "LightsPage": {
+    "home": "Inicio",
+    "lights": "Luces",
+    "title": "Luces de advertencia del tablero",
+    "subtitle": "Seleccione una luz para ver qué significa en su {make} {model}, causas comunes y cómo solucionarlo."
+  },
+  "LightDetailPage": {
+    "home": "Inicio",
+    "lights": "Luces",
+    "urgency": "URGENCIA {urgency}",
+    "whatItMeans": "¿Qué significa esto en un {make} {model}?",
+    "description": "Cuando {lightName} se ilumina en su {make} {model}, es una advertencia directa de la computadora. {description}",
+    "commonCauses": "Causas comunes para {make} {model}",
+    "whatToDo": "Qué hacer a continuación"
+  },
+  "AboutPage": {
+    "title1": "Democratizando la ",
+    "title2": "reparación de autos",
+    "subtitle": "Creamos OBD2HQ porque creemos que todo dueño de auto merece saber qué le pasa a su vehículo antes de pagarle a un mecánico.",
+    "mission": "Nuestra misión",
+    "missionDesc": "Proveer la base de datos de códigos OBD-II más precisa, accesible y completa del mundo.",
+    "verified": "Datos verificados",
+    "verifiedDesc": "Datos verificados por técnicos certificados ASE.",
+    "everyone": "Para todos",
+    "everyoneDesc": "Ya sea un entusiasta en su garaje o un mecánico profesional.",
+    "story": "La Historia",
+    "storyP1": "La industria automotriz siempre mantuvo en secreto esta información. Iniciamos OBD2HQ para romper este monopolio.",
+    "storyP2": "Al recopilar datos de más de 48 fabricantes, creamos un motor de búsqueda para el cerebro de su automóvil."
+  },
+  "ContactPage": {
+    "title": "Contáctenos",
+    "subtitle": "¿Tiene una pregunta o encontró un error? Háganoslo saber.",
+    "emailUs": "Envíenos un correo",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "DisclaimerPage": {
+    "title": "Aviso legal médico y técnico",
+    "warning": "ADVERTENCIA:",
+    "warningText": "La reparación de automóviles puede ser peligrosa. Siempre consulte a un mecánico certificado.",
+    "noAdvice": "Sin asesoramiento profesional",
+    "noAdviceText": "La información en OBD2HQ es solo para fines educativos e informativos.",
+    "risk": "Asunción de riesgos",
+    "riskText": "Cualquier confianza que deposite en esta información es estrictamente bajo su propio riesgo."
+  },
+  "PrivacyPage": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización:",
+    "h1": "1. Recopilación de información",
+    "p1": "OBD2HQ es público. No requerimos que cree una cuenta o proporcione información personal.",
+    "h2": "2. Cookies y publicidad",
+    "p2": "Usamos socios externos que pueden usar cookies para mostrar anuncios.",
+    "h3": "3. Seguridad de los datos",
+    "p3": "Empleamos medidas estándar para proteger nuestra base de datos."
+  },
+  "TermsPage": {
+    "title": "Términos de servicio",
+    "lastUpdated": "Última actualización:",
+    "h1": "1. Aceptación de los términos",
+    "p1": "Al usar OBD2HQ, usted acepta estos términos.",
+    "h2": "2. Uso de la información",
+    "p2": "La información es solo educativa. No garantizamos la exactitud absoluta de los datos."
+  },
+  "SearchPage": {
+    "title": "Resultados de \"{query}\"",
+    "codeFound": "Código encontrado: {code}",
+    "codeDesc": "Encontramos la definición de {code}: {title}. Seleccione su marca para ver instrucciones precisas.",
+    "selectCar": "Seleccione su fabricante para ver los detalles de {code}:",
+    "matchingVehicles": "Vehículos coincidentes",
+    "noResults": "No hay resultados",
+    "noResultsDesc": "No pudimos encontrar códigos ni modelos que coincidan con \"{query}\"."
+  },
+  "MakePage": {
+    "title": "Centro de Diagnóstico {make}",
+    "desc": "Seleccione su modelo {make} a continuación para encontrar códigos y guías.",
+    "selectModel": "Seleccione el modelo {make}"
+  },
+  "ModelPage": {
+    "years": "Años: 1996 - 2026",
+    "title": "Diagnóstico de {make} {model}",
+    "desc": "Base de datos de diagnóstico completa para vehículos {make} {model}.",
+    "dashboardLights": "Luces del tablero",
+    "powertrain": "Códigos de tren motriz (P)",
+    "showing": "Mostrando {start} - {end} de {total} códigos",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "of": "de"
   }
 }
