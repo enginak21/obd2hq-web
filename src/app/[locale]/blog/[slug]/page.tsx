@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 
 interface PageProps {
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function BlogPostPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, slug } = resolvedParams;
+  setRequestLocale(locale);
   const blogPosts = getBlogPosts(locale);
   const post = blogPosts.find(p => p.slug === slug);
 

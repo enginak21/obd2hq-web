@@ -2,6 +2,8 @@ import { getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+
 export const metadata: Metadata = {
   title: 'OBD2HQ Blog - Car Diagnostic Tips & Guides',
   description: 'Expert guides, tool reviews, and step-by-step tutorials on diagnosing and fixing your car.',
@@ -9,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function BlogIndex({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const blogPosts = getBlogPosts(locale);
 
   return (

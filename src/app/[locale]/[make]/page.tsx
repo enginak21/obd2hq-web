@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
 
@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function MakeDirectoryPage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, make } = resolvedParams;
+  setRequestLocale(locale);
   
   const carData = cars.find(c => c.make === make);
   if (!carData) notFound();

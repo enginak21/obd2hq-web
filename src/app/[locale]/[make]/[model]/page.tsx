@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { cars, codes } from '@/data/db';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 
 interface PageProps {
@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ModelDirectoryPage({ params, searchParams }: PageProps) {
   const resolvedParams = await params;
   const { locale, make, model } = resolvedParams;
+  setRequestLocale(locale);
   const resolvedSearchParams = await searchParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));

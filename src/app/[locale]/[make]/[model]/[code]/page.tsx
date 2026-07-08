@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { cars, getHybridObdData } from '@/data/db';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 
@@ -39,6 +39,8 @@ export default async function CodePage({ params }: PageProps) {
   if (!obdData || !isValidCar) notFound();
 
   const upperCode = obdData.code;
+  
+  setRequestLocale(locale);
 
   const t = await getTranslations('CodePage');
   const tDb = await getTranslations('DB');
