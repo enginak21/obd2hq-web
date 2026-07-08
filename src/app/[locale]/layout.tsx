@@ -14,32 +14,46 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
-  description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs for all car makes and models.",
-  openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
     title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
-    description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs.",
-    url: "https://obd2hq.com",
-    siteName: "OBD2HQ",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
-    description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights.",
-  },
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/favicon.ico', // In production, replace with high-res PNG
-  },
-  appleWebApp: {
-    title: 'OBD2HQ',
-    statusBarStyle: 'black-translucent',
-    capable: true,
-  },
-};
+    description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs for all car makes and models.",
+    alternates: {
+      canonical: `https://obd2hq.com/${locale}`,
+      languages: {
+        'en': 'https://obd2hq.com/en',
+        'de': 'https://obd2hq.com/de',
+        'es': 'https://obd2hq.com/es',
+        'tr': 'https://obd2hq.com/tr',
+        'fr': 'https://obd2hq.com/fr',
+      },
+    },
+    openGraph: {
+      title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
+      description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs.",
+      url: `https://obd2hq.com/${locale}`,
+      siteName: "OBD2HQ",
+      locale: locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
+      description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights.",
+    },
+    icons: {
+      icon: '/favicon.ico',
+      apple: '/favicon.ico',
+    },
+    appleWebApp: {
+      title: 'OBD2HQ',
+      statusBarStyle: 'black-translucent',
+      capable: true,
+    },
+  };
+}
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
