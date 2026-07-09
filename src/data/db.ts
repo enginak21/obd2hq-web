@@ -63,7 +63,8 @@ export const cars: CarModel[] = [
   { "make": "volvo", "models": ["xc90", "xc60", "s60", "xc40", "v60", "s90"] }
 ];
 
-export const codes = baseCodes as Record<string, { title: string; description: string }>;
+export const codes = baseCodes as Record<string, any>;
+export { baseCodes };
 
 export function getHybridObdData(make: string, model: string, code: string): OBD2Code | null {
   const upperCode = code.toUpperCase();
@@ -75,10 +76,10 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     code: upperCode,
     title: baseData.title,
     description: baseData.description,
-    symptoms: ['symp_check_engine', 'symp_engine_perf', 'symp_fuel_econ'],
-    causes: ['cause_sensor', 'cause_vacuum', 'cause_wear'],
-    fixDifficulty: 'diff_moderate',
-    estimatedCost: '$100 - $450'
+    symptoms: baseData.symptoms || ['symp_check_engine', 'symp_engine_perf', 'symp_fuel_econ'],
+    causes: baseData.causes || ['cause_sensor', 'cause_vacuum', 'cause_wear'],
+    fixDifficulty: baseData.fixDifficulty || 'diff_moderate',
+    estimatedCost: baseData.estimatedCost || '$100 - $450'
   };
 
   const typedAiData = aiData as Record<string, Record<string, Record<string, Partial<OBD2Code>>>>;

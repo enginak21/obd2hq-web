@@ -20,7 +20,9 @@
     "disclaimer": "Aviso legal: Este código de diagnóstico forma parte del sistema OBD2 estándar y puede aplicarse a los modelos {make} {model} fabricados de 1996 a 2026. Sin embargo, tenga en cuenta que la presencia de este código específico depende de la configuración del motor de su vehículo, las opciones y el año de producción.",
     "costIncludesParts": "Incluye repuestos y mano de obra. Puede variar por ubicación.",
     "home": "Inicio",
-    "years": "Años"
+    "years": "Años",
+    "aseCertified": "Revisado por Técnico Certificado ASE",
+    "relatedCodes": "Otros Códigos Populares de {make}"
   },
   "DB": {
     "symp_check_engine": "La luz de Check Engine está encendida",

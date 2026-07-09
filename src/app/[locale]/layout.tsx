@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-
+import Script from 'next/script';
 
 
 export default async function RootLayout({
@@ -88,6 +88,17 @@ export default async function RootLayout({
       lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
+      </head>
       <body className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

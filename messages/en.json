@@ -20,7 +20,9 @@
     "disclaimer": "Disclaimer: This diagnostic code is part of the standard OBD2 system and can apply to {make} {model} models manufactured from 1996 to 2026. However, please note that the presence of this specific code depends on your vehicle's exact engine configuration, options, and production year.",
     "costIncludesParts": "Includes parts and labor. May vary by location.",
     "home": "Home",
-    "years": "Years"
+    "years": "Years",
+    "aseCertified": "Reviewed by ASE Certified Technician",
+    "relatedCodes": "Other Popular {make} Codes"
   },
   "DB": {
     "symp_check_engine": "Check Engine Light is illuminated",

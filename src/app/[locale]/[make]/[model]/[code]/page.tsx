@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { cars, getHybridObdData } from '@/data/db';
+import { cars, getHybridObdData, baseCodes } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
@@ -76,8 +76,24 @@ export default async function CodePage({ params }: PageProps) {
           "text": `The estimated repair cost for the ${upperCode} code is ${obdData.estimatedCost}. This includes parts and labor.`
         }
       }
-    ]
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "OBD2HQ"
+    },
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "ASE Certified Technician"
+    }
   };
+
+  // Get 3 random related codes from the base DB to show in the widget
+  // (We use a simple pseudo-random based on the char codes of make/model/code to be deterministic)
+  const codeKeys = Object.keys(baseCodes || {}).slice(0, 30);
+  const hash = make.charCodeAt(0) + model.charCodeAt(0) + code.charCodeAt(0);
+  const relatedCode1 = codeKeys[(hash) % codeKeys.length] || 'P0300';
+  const relatedCode2 = codeKeys[(hash + 5) % codeKeys.length] || 'P0171';
+  const relatedCode3 = codeKeys[(hash + 11) % codeKeys.length] || 'P0420';
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
@@ -119,6 +135,10 @@ export default async function CodePage({ params }: PageProps) {
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
                 {obdData.title}
               </h1>
+              <div className="flex items-center text-slate-400 text-sm mt-4">
+                <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                {t('aseCertified')}
+              </div>
             </div>
           </div>
         </div>
@@ -240,11 +260,24 @@ export default async function CodePage({ params }: PageProps) {
             <div className="flex items-center space-x-4">
               <div className="flex-1 h-3 bg-slate-800 rounded-full overflow-hidden">
                 <div className={`h-full rounded-full ${
-                  obdData.fixDifficulty === 'Moderate' || obdData.fixDifficulty === 'Medium' || obdData.fixDifficulty === 'Orta' ? 'w-1/2 bg-amber-500' : 
-                  obdData.fixDifficulty === 'Hard' || obdData.fixDifficulty === 'High' ? 'w-full bg-red-500' : 'w-1/4 bg-green-500'
+                  obdData.fixDifficulty === 'Moderate' || obdData.fixDifficulty === 'Medium' || obdData.fixDifficulty === 'Orta' || obdData.fixDifficulty === 'diff_moderate' ? 'w-1/2 bg-amber-500' : 
+                  obdData.fixDifficulty === 'Hard' || obdData.fixDifficulty === 'High' || obdData.fixDifficulty === 'diff_hard' || obdData.fixDifficulty === 'diff_professional' ? 'w-full bg-red-500' : 'w-1/4 bg-green-500'
                 }`}></div>
               </div>
               <span className="font-bold text-white w-24 text-right">{obdData.fixDifficulty.startsWith('diff_') ? tDb(obdData.fixDifficulty) : obdData.fixDifficulty}</span>
+            </div>
+          </div>
+
+          {/* Related Codes Widget */}
+          <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
+            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('relatedCodes', { make: capMake })}</h3>
+            <div className="flex flex-col space-y-3">
+              {[relatedCode1, relatedCode2, relatedCode3].map(c => (
+                <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 group">
+                  <span className="font-bold text-blue-400 group-hover:text-blue-300 transition-colors">{c}</span>
+                  <svg className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+                </Link>
+              ))}
             </div>
           </div>
 

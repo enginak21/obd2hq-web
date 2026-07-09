@@ -20,7 +20,9 @@
     "disclaimer": "Haftungsausschluss: Dieser Diagnosecode ist Teil des OBD2-Standards und gilt für {make} {model} Modelle von 1996 bis 2026. Bitte beachten Sie jedoch, dass dies von der genauen Motorkonfiguration abhängt.",
     "costIncludesParts": "Beinhaltet Teile und Arbeit. Kann je nach Standort variieren.",
     "home": "Startseite",
-    "years": "Jahre"
+    "years": "Jahre",
+    "aseCertified": "Geprüft durch ASE-zertifizierten Techniker",
+    "relatedCodes": "Andere beliebte {make} Codes"
   },
   "DB": {
     "symp_check_engine": "Motorkontrollleuchte leuchtet",

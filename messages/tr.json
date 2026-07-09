@@ -20,7 +20,9 @@
     "disclaimer": "Yasal Uyarı: Bu arıza kodu standart OBD2 sisteminin bir parçasıdır ve 1996-2026 yılları arasında üretilen {make} {model} modelleri için geçerli olabilir. Ancak bu spesifik kodun varlığı, aracınızın tam motor konfigürasyonuna ve üretim yılına bağlıdır.",
     "costIncludesParts": "Parça ve işçilik dahildir. Konuma göre değişebilir.",
     "home": "Anasayfa",
-    "years": "Yıllar"
+    "years": "Yıllar",
+    "aseCertified": "ASE Sertifikalı Teknisyen Tarafından İncelenmiştir",
+    "relatedCodes": "Diğer Popüler {make} Kodları"
   },
   "DB": {
     "symp_check_engine": "Motor Arıza Lambası yanar",
