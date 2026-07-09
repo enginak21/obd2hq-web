@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights.",
     },
     icons: {
-      icon: '/favicon.ico',
-      apple: '/favicon.ico',
+      icon: '/icon.jpg',
+      apple: '/apple-icon.jpg',
     },
     appleWebApp: {
       title: 'OBD2HQ',

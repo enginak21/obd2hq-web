@@ -62,7 +62,28 @@
       "cause_fuel_filter"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$80 - $350"
+    "estimatedCost": "$80 - $350",
+    "diagnosticSteps": [
+      "Thorough Visual Inspection of Air Intake System and MAF Circuitry: Begin by meticulously inspecting the entire air intake path from the air filter housing to the throttle body. Look for any signs of cracks, tears, loose clamps, or disconnected hoses (especially *after* the MAF sensor, indicating unmetered air). Pay close attention to the MAF sensor connector and wiring harness for corrosion, fraying, or damage. Ensure the air filter is clean and properly seated. A restricted air filter can also cause P0101.",
+      "Live Data Analysis with a Scan Tool: Connect a professional scan tool and monitor the MAF sensor's live data (grams/second or lbs/min) at idle, 2500 RPM steady, and during a gradual acceleration. Compare these readings to manufacturer specifications or known good values for your specific vehicle. Simultaneously observe Short Term Fuel Trim (STFT) and Long Term Fuel Trim (LTFT), Engine RPM, and Throttle Position Sensor (TPS) data. Look for MAF readings that are consistently too low (suggesting unmetered air or a restricted intake) or too high (suggesting a faulty sensor or exhaust restriction). Perform a \"wiggle test\" on the MAF connector and wiring while monitoring live data for intermittent signal drops.",
+      "Comprehensive Vacuum Leak Detection: Since unmetered air is a primary cause of P0101, a thorough vacuum leak test is critical. Use a smoke machine to introduce smoke into the intake system (post-MAF) to visually identify leaks in intake manifold gaskets, vacuum hoses, PCV system components, brake booster hose, and any other vacuum-operated accessories. If a smoke machine isn't available, an unlit propane torch or carb cleaner can be used carefully around suspected leak areas while monitoring STFT for a sudden drop or engine RPM increase, indicating the engine is drawing in the substance.",
+      "MAF Sensor Electrical and Performance Verification: If the above steps don't reveal the issue, proceed to test the MAF sensor itself. With the ignition on and engine off, use a multimeter to verify the reference voltage (typically 5V) and ground at the MAF sensor connector. Check the signal wire for continuity back to the PCM. If the sensor is suspected, carefully remove it and inspect the sensing element for contamination (oil, dirt, debris). Attempt to clean it *only* with a dedicated MAF sensor cleaner. Reinstall and re-evaluate. If cleaning doesn't resolve the issue or if electrical tests indicate a fault, the sensor itself is likely defective.",
+      "PCM Software and System Correlation Check: In rare cases, the PCM's calibration might be outdated or corrupted, leading to incorrect interpretation of MAF signals. Check for any available Technical Service Bulletins (TSBs) or software updates for your vehicle's PCM related to P0101. If all other components test good and the issue persists, and especially if other sensor readings (MAP, TPS, RPM) seem to correlate correctly but the MAF is an outlier, a PCM reflash or, in extreme cases, replacement might be necessary."
+    ],
+    "commonFixes": [
+      "Clean or Replace Mass Air Flow (MAF) Sensor: Often, the MAF sensor's hot wire or film becomes contaminated with dirt, oil, or debris, leading to inaccurate readings. Cleaning with a specialized MAF sensor cleaner can resolve this. If cleaning fails or the sensor is electrically faulty, replacement is necessary.",
+      "Repair Vacuum Leaks and Intake System Integrity: Identify and seal any leaks in the air intake system, including cracked intake tubes, loose clamps, faulty intake manifold gaskets, or deteriorated vacuum hoses. Any unmetered air entering the engine after the MAF sensor will cause a P0101.",
+      "Repair or Replace Damaged Wiring and Connectors: Inspect and repair any corroded, frayed, or broken wires in the MAF sensor's electrical circuit, including the connector itself. A poor electrical connection can lead to intermittent or incorrect signal transmission to the PCM.",
+      "Replace Restricted Air Filter: A severely clogged air filter can restrict airflow, causing the MAF sensor to read lower than expected for the engine's demand, triggering a P0101."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0101 code can lead to significant issues such as reduced engine performance, poor fuel economy, rough idle, stalling, and potential activation of 'limp mode.' While it may not cause immediate catastrophic failure, prolonged driving with an incorrect air-fuel mixture can lead to more severe and costly damage, particularly to the catalytic converter."
+    },
+    "costBreakdown": {
+      "parts": "$10 - $300",
+      "labor": "$60 - $375"
+    }
   },
   "P0102": {
     "title": "Mass Air Flow (MAF) Circuit Low Input",
@@ -82,7 +103,27 @@
       "cause_vacuum_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$80 - $350"
+    "estimatedCost": "$80 - $350",
+    "diagnosticSteps": [
+      "**Step 1: Thorough Visual Inspection of Air Intake System and MAF Circuitry.** Begin by carefully inspecting the entire air intake system. Check the air filter for excessive clogging, dirt, or damage, as a restricted filter can genuinely cause low airflow. Examine the intake ducting from the air filter box to the throttle body for any cracks, loose clamps, or disconnections *before* the MAF sensor. Pay close attention to the MAF sensor's electrical connector; look for corrosion, bent pins, pushed-out terminals, or any signs of damage. Wiggle the connector gently while monitoring live data (if possible) to see if the signal fluctuates, indicating a poor connection. Trace the MAF sensor wiring harness for any signs of chafing, cuts, or damage, especially where it passes near hot engine components or sharp edges.",
+      "**Step 2: Verify MAF Sensor Power, Ground, and Signal Voltage.** With the ignition ON (engine OFF or running, as appropriate for the specific pin), use a digital multimeter to back-probe the MAF sensor connector. First, confirm the presence of the correct reference voltage (typically 12V or 5V, depending on the vehicle's design) on the power supply wire. Next, verify a solid ground connection by checking for less than 0.1V resistance between the ground wire and chassis ground. Finally, back-probe the MAF signal wire. At idle, compare the voltage reading to manufacturer specifications (typically 0.5V to 1.5V, but varies significantly by make/model). A P0102 code indicates this reading will be abnormally low, often near 0V or stuck at a very low value. Perform a 'snap throttle' test: rapidly open the throttle and observe the MAF signal voltage. It should quickly rise to 3.5V-4.5V and then drop back down. If it remains low or shows no significant response, the sensor or its circuit is suspect. Utilize a scan tool to monitor MAF sensor grams per second (g/s) or pounds per minute (lb/min) in live data; a P0102 will typically show values significantly lower than expected for the engine's displacement and RPM.",
+      "**Step 3: Test for Air Intake Restrictions and Sensor Contamination.** If the electrical checks in Step 2 suggest a low signal, remove the MAF sensor and visually inspect the sensing element. Look for any dirt, oil residue, spider webs, or debris that could be obstructing the sensor's ability to accurately measure airflow. While contamination often causes incorrect readings, severe buildup can lead to an artificially low output. If the air filter appeared clean, consider temporarily removing it and retesting the MAF signal (briefly, in a clean environment) to definitively rule out a subtle restriction in the filter or airbox. Also, check for any foreign objects lodged within the intake tract *before* the MAF sensor that could impede airflow.",
+      "**Step 4: Advanced Circuit Diagnosis and PCM Input Check.** If the MAF sensor itself tests good (e.g., it produces expected voltage/g/s when bench-tested or tested with a known good power/ground source), the issue likely lies in the wiring between the MAF sensor and the Powertrain Control Module (PCM), or less commonly, the PCM's input circuit. Disconnect both the MAF sensor and PCM connectors. Perform a continuity test on the MAF signal wire from the MAF connector back to the PCM connector, checking for high resistance or an open circuit. Also, check for any shorts to ground or shorts to voltage on the signal wire. If all wiring checks out perfectly, and power/ground to the sensor are confirmed good, and the sensor itself is known to be functional, then a faulty PCM input circuit, though rare, should be considered."
+    ],
+    "commonFixes": [
+      "**Replace the Mass Air Flow (MAF) Sensor:** This is the most frequent solution for a P0102 code, as internal failure of the MAF sensor often results in an abnormally low voltage output to the PCM.",
+      "**Repair or Replace Damaged MAF Sensor Wiring/Connector:** Frayed wires, corroded terminals, or a loose/damaged connector can interrupt the MAF signal, leading to a low input reading at the PCM. Repairing or replacing the affected section of the harness or connector will resolve this.",
+      "**Clean the MAF Sensor:** While less common for a direct \"low input\" code, severe contamination (e.g., oil residue from an over-oiled air filter or dirt) can sometimes impede the sensor's ability to accurately measure airflow, leading to an artificially low reading. Use only specialized MAF sensor cleaner.",
+      "**Replace Clogged Air Filter or Repair Air Intake Restriction:** A severely restricted air filter or an obstruction within the air intake tract *before* the MAF sensor can genuinely reduce the actual airflow into the engine, causing the MAF sensor to accurately report a low value, which the PCM then interprets as a circuit low input."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "A P0102 code indicates the engine's computer is receiving an abnormally low reading of incoming air. This can lead to an incorrect fuel mixture, causing symptoms such as rough idle, stalling, poor acceleration, reduced engine power, and increased fuel consumption. While you might be able to drive short distances, the engine's performance will be compromised, and there's an increased risk of stalling in traffic or during critical maneuvers, making it a significant safety concern. Prolonged driving with an incorrect fuel mixture can also lead to long-term damage to expensive components like catalytic converters."
+    },
+    "costBreakdown": {
+      "parts": "$80 - $350 (MAF sensor, aftermarket to OEM; wiring repair kits $10-$50; air filter $20-$50)",
+      "labor": "$60 - $280 (Diagnosis 0.5-1.5 hours; MAF sensor replacement 0.2-0.5 hours; wiring repair 0.5-2 hours)"
+    }
   },
   "P0103": {
     "title": "Mass Air Flow (MAF) Circuit High Input",
@@ -101,7 +142,27 @@
       "cause_pcm_software"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$80 - $350"
+    "estimatedCost": "$80 - $350",
+    "diagnosticSteps": [
+      "**Step 1: Comprehensive Visual Inspection of Air Intake System and MAF Sensor Wiring.** Begin by thoroughly inspecting the entire air intake tract, from the air filter housing to the throttle body, for any obstructions, cracks, loose clamps, or aftermarket components that could disrupt airflow or cause turbulence. Pay close attention to the MAF sensor housing for physical damage or signs of tampering. Crucially, examine the MAF sensor electrical connector and its wiring harness for corrosion, frayed wires, bent pins, or signs of rodent damage. Focus on the signal wire, 5V reference, and ground circuits. Ensure the connector is fully seated and locked.",
+      "**Step 2: MAF Sensor Electrical Signal Verification and Power Supply Test.** With the ignition ON (engine OFF), use a digital multimeter (DMM) to verify the 5V reference voltage and a solid ground at the MAF sensor connector. Then, start the engine and back-probe the MAF signal wire while monitoring the voltage at idle and during a gradual increase in RPM. A P0103 indicates a high input, so expect to see a voltage reading significantly above the normal idle range (typically 0.5V-1.5V at idle, increasing smoothly with RPM). Compare your readings to manufacturer specifications. Alternatively, use a scan tool to monitor the MAF sensor's grams per second (g/s) or pounds per minute (lb/min) reading. At idle, a typical 4-cylinder engine might show 2-6 g/s; a P0103 would likely show an abnormally high g/s reading, even at idle, or an erratic spike.",
+      "**Step 3: Check for Vacuum Leaks, Exhaust Restrictions, and PCV System Integrity.** While P0103 primarily points to the MAF sensor or its circuit, severe vacuum leaks *after* the MAF sensor can sometimes cause the PCM to misinterpret airflow if it's trying to compensate, though this is less direct for a 'high input' code. Perform a smoke test on the intake manifold and all associated vacuum lines to identify any leaks. Inspect the PCV valve and its hoses for clogs or leaks. Additionally, a restricted exhaust system (e.g., clogged catalytic converter) can cause back pressure, affecting engine vacuum and potentially influencing MAF readings or the PCM's interpretation. Monitor exhaust back pressure with a gauge to rule this out.",
+      "**Step 4: PCM Input Correlation and Sensor Contamination Assessment.** Using a professional scan tool, compare the MAF sensor's g/s reading with other relevant sensor data such as Manifold Absolute Pressure (MAP) sensor, Throttle Position Sensor (TPS), and engine RPM. If the MAF reading is excessively high while MAP, TPS, and RPM are low (e.g., at idle), it strongly points to a faulty MAF sensor or an issue with its circuit. Next, remove the MAF sensor and carefully inspect the hot wire or film elements for contamination (oil residue, dirt, debris, or excessive oil from an aftermarket 'oiled' air filter). Even a thin film can insulate the element, causing it to cool slower and report higher airflow than actual. If contaminated, proceed with cleaning."
+    ],
+    "commonFixes": [
+      "**Clean the Mass Air Flow (MAF) Sensor:** If contamination is observed or suspected, use a specialized MAF sensor cleaner (never use carburetor cleaner or brake cleaner, as these can damage the sensor). Thoroughly spray the hot wire or film elements and allow it to air dry completely before reinstallation. This is often a highly effective solution if the sensor is merely dirty.",
+      "**Repair or Replace Damaged MAF Sensor Wiring/Connector:** If the visual inspection or electrical tests reveal frayed wires, corroded pins, or a damaged connector, the circuit integrity must be restored. Repair the wiring using proper soldering and heat-shrink techniques, or replace the connector pigtail if damage is extensive. Ensure all connections are secure and free of corrosion.",
+      "**Replace the Faulty Mass Air Flow (MAF) Sensor:** If cleaning does not resolve the issue, and electrical tests consistently confirm the sensor output is abnormally high or erratic despite proper power and ground, the MAF sensor itself is likely faulty and requires replacement. Always use an OEM quality replacement part to ensure proper function and longevity.",
+      "**Address Intake Air Leaks or Obstructions:** While P0103 specifically indicates a high input, ensuring the entire air intake system is sealed and free of obstructions is critical. Repair any identified vacuum leaks, replace cracked intake hoses, and ensure the air filter is clean and properly installed. Although less common for a 'high input' code, severe turbulence or unmetered air *before* the MAF (e.g., a poorly sealed airbox) can sometimes cause erratic readings."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0103 code can lead to significant drivability issues and potential long-term damage. The PCM, receiving an abnormally high airflow signal, will inject excessive fuel, leading to an overly rich condition. This can cause poor fuel economy, rough idle, hesitation, misfires, black smoke from the exhaust, and a strong fuel odor. Prolonged operation in a rich condition can severely damage the catalytic converter due to overheating and melting, which is an extremely expensive repair. It's advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe, reliable operation."
+    },
+    "costBreakdown": {
+      "parts": "$10 - $350",
+      "labor": "$80 - $250"
+    }
   },
   "P0104": {
     "title": "Mass Air Flow (MAF) Circuit Intermittent",
@@ -120,7 +181,27 @@
       "cause_maf_faulty"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$80 - $350"
+    "estimatedCost": "$80 - $350",
+    "diagnosticSteps": [
+      "Perform a thorough visual inspection of the MAF sensor, its electrical connector, and the entire wiring harness leading to the Powertrain Control Module (PCM). Look for any signs of physical damage, such as frayed or chafed wires, bent or corroded pins within the connector, loose terminals, or evidence of rodent damage. Pay close attention to the air intake tube for cracks or loose clamps, especially between the MAF sensor and the throttle body, as this can introduce unmetered air. With the engine running, gently wiggle the MAF sensor connector and the wiring harness while monitoring live data for any fluctuations.",
+      "Utilize a professional scan tool to monitor the MAF sensor's live data stream. Observe the MAF sensor's output in grams/second (g/s) or Hertz (Hz) at idle, during a steady cruise, and under various acceleration and deceleration conditions. For an intermittent circuit, you're specifically looking for sudden, momentary drops to zero, erratic spikes, or readings that do not correlate smoothly with engine RPM and throttle position. Simultaneously monitor short-term fuel trims (STFT) and long-term fuel trims (LTFT); an intermittent MAF signal will often cause these values to swing erratically as the PCM attempts to compensate for perceived air/fuel ratio discrepancies.",
+      "Conduct electrical circuit integrity tests using a digital multimeter (DMM). With the ignition ON and MAF sensor disconnected, verify proper power supply (typically 12V or 5V) and a solid ground connection at the MAF connector. Then, back-probe the MAF signal wire with the sensor connected and the engine running, monitoring the voltage or frequency output. An oscilloscope is highly recommended for this step, as it can reveal momentary signal dropouts or excessive electrical noise that a DMM might miss. Perform a voltage drop test on both the power and ground circuits to ensure they can carry the necessary current without excessive resistance.",
+      "Thoroughly inspect for any post-MAF vacuum leaks. An intermittent vacuum leak in the intake system after the MAF sensor can introduce unmetered air, causing the PCM to receive an incorrect MAF signal and trigger P0104 due to the resulting erratic fuel trim corrections. Use a smoke machine to pressurize the intake system and visually identify any leaks around intake manifold gaskets, vacuum hoses, PCV system components, and the brake booster hose. Even small, intermittent leaks can cause significant issues with MAF readings."
+    ],
+    "commonFixes": [
+      "Clean the Mass Air Flow (MAF) Sensor: Contamination from dirt, oil vapor, or debris on the hot wire or film element can cause erratic readings. Use only a specialized MAF sensor cleaner (never carburetor or brake cleaner) and allow it to air dry completely before reinstallation.",
+      "Repair or Replace Damaged Wiring or Connector: If the visual inspection or electrical testing reveals damaged, corroded, or loose wiring/terminals at the MAF sensor connector or in the harness, these components must be repaired or replaced. Ensure proper crimping and use heat-shrink tubing for durable, weather-resistant repairs.",
+      "Replace the Mass Air Flow (MAF) Sensor: If cleaning and wiring checks do not resolve the intermittent issue, and live data continues to show erratic or implausible readings, the MAF sensor itself is likely faulty internally. Always use a high-quality, OEM-equivalent replacement part.",
+      "Repair Post-MAF Vacuum Leaks: If a vacuum leak was identified during diagnostics, repairing it is critical. This may involve replacing cracked vacuum hoses, intake manifold gaskets, PCV valves, or other components of the intake system."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent MAF sensor can lead to unpredictable engine performance, including rough idle, stalling, hesitation during acceleration, reduced power, and significantly decreased fuel economy. The erratic air/fuel mixture can also cause long-term damage to the catalytic converter due to prolonged rich or lean conditions, which is a very expensive repair. It is advisable to diagnose and repair this issue promptly to prevent further complications and ensure reliable vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$10 - $350",
+      "labor": "$120 - $500"
+    }
   },
   "P0105": {
     "title": "Manifold Absolute Pressure (MAP) / Barometric Pressure Circuit Malfunction",
@@ -140,7 +221,27 @@
       "cause_vacuum_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "**1. Initial Visual Inspection and Vacuum System Check:** Begin by thoroughly inspecting the MAP sensor and its electrical connector for any signs of damage, corrosion, or loose connections. Trace the vacuum hose from the MAP sensor to the intake manifold, checking for cracks, kinks, or disconnections. Pay close attention to any other vacuum lines, PCV hoses, and the intake manifold gasket area for potential vacuum leaks, which can significantly affect MAP sensor readings. Use a smoke machine if available, or spray a small amount of unlit propane/carb cleaner around suspected leak areas while monitoring engine RPM for changes, indicating a leak.",
+      "**2. Verify MAP Sensor Electrical Circuit Integrity:** With the ignition ON (KOEO - Key On Engine Off), use a digital multimeter to check the voltage at the MAP sensor connector. You should typically find a 5-volt reference signal, a good ground, and a signal wire. Back-probe the signal wire with the sensor connected and the engine off; it should read close to ambient barometric pressure (e.g., 4.5-5.0V at sea level, decreasing with altitude). Start the engine and observe the signal voltage at idle; it should drop significantly (e.g., to 1.0-1.8V) as manifold vacuum increases. If any of these voltages are incorrect, proceed to check continuity and resistance of the individual wires back to the PCM, looking for opens, shorts, or high resistance.",
+      "**3. Monitor MAP Sensor Live Data and Compare to Barometric Pressure:** Connect a professional scan tool and access live data for the MAP sensor. With the engine off (KOEO), the MAP sensor reading (in kPa or inHg) should closely match the Barometric Pressure (BARO) reading displayed by the PCM (if available) or the local atmospheric pressure for your elevation. If there's a significant discrepancy (more than 1-2 kPa or 0.5 inHg), the MAP sensor itself is likely faulty, or there's an issue with its reference voltage/ground. Start the engine and observe the MAP reading at idle; it should drop to a steady value (typically 20-40 kPa or 6-12 inHg) and respond smoothly to throttle input. A sluggish, erratic, or stuck reading indicates a sensor or circuit problem.",
+      "**4. Test MAP Sensor Response with a Hand Vacuum Pump:** Disconnect the vacuum hose from the MAP sensor and connect a hand-held vacuum pump with a gauge directly to the sensor's vacuum port. With the ignition ON and the scan tool monitoring live data, apply varying amounts of vacuum to the MAP sensor. The scan tool's MAP reading should smoothly and accurately correspond to the vacuum applied by the pump. For example, as you apply 10 inHg of vacuum, the MAP reading should decrease accordingly. If the sensor's output is erratic, sticky, or doesn't change proportionally to the vacuum applied, the MAP sensor is confirmed faulty."
+    ],
+    "commonFixes": [
+      "**Replace the Manifold Absolute Pressure (MAP) Sensor:** This is the most common fix if the sensor itself is determined to be faulty after electrical and vacuum testing. Ensure you use a quality OEM or reputable aftermarket sensor.",
+      "**Repair or Replace Damaged Vacuum Hoses/Lines:** Address any vacuum leaks found during the initial inspection. This could involve replacing cracked or hardened vacuum hoses, securing loose connections, or replacing a faulty PCV valve or its hose.",
+      "**Repair or Replace Damaged Wiring/Connector:** If diagnostic steps reveal an open, short, or high resistance in the MAP sensor's wiring harness or a corroded/damaged connector, the affected section must be repaired or replaced to restore proper circuit integrity.",
+      "**Address Intake Manifold Gasket Leaks:** If a significant vacuum leak is identified at the intake manifold gasket, it must be replaced. This is a more involved repair but crucial for proper engine operation and MAP sensor readings."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0105 code can lead to significant drivability issues. The PCM relies on the MAP sensor for critical calculations related to fuel delivery and ignition timing. A malfunctioning MAP sensor can cause symptoms such as rough idle, stalling, poor acceleration, reduced engine power, increased fuel consumption, and potentially rich or lean running conditions. While it may not immediately strand you, the unpredictable nature of these symptoms makes driving unsafe, especially in traffic or at higher speeds, due to the risk of sudden power loss or engine stalling. It's advisable to diagnose and repair this issue promptly."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150",
+      "labor": "$100 - $350"
+    }
   },
   "P0106": {
     "title": "MAP/Barometric Pressure Circuit Range/Performance",
@@ -159,7 +260,27 @@
       "cause_throttle_body"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "**1. Thorough Visual Inspection & Vacuum System Integrity Check:** Begin by meticulously inspecting all vacuum lines connected to the intake manifold, the MAP sensor itself, the PCV system, and the brake booster. Look for any signs of cracks, dry rot, disconnections, or collapsed hoses. Pay close attention to the MAP sensor's electrical connector for corrosion, bent pins, or damaged wiring. A common cause for P0106 is a simple vacuum leak or a compromised electrical connection.",
+      "**2. Scan Tool Live Data Analysis (KOEO, Idle, Snap Throttle):** Connect a professional scan tool and monitor the Manifold Absolute Pressure (MAP) sensor's live data in kPa or inHg. With the Key On, Engine Off (KOEO), the MAP reading should closely match the Barometric Pressure (BARO) sensor reading (if equipped) or the local atmospheric pressure. At idle, the MAP reading should drop significantly, typically to 18-22 inHg (60-75 kPa) for a healthy engine. Perform a 'snap throttle' test: rapidly depress and release the accelerator pedal. The MAP reading should quickly spike towards barometric pressure and then smoothly return to idle vacuum. Erratic, slow, or incorrect responses indicate a sensor or vacuum issue.",
+      "**3. MAP Sensor Electrical Circuit Testing:** With the ignition on, use a digital multimeter to back-probe the MAP sensor connector. Verify the 5-volt reference voltage supply and a solid ground connection. Then, back-probe the signal wire and monitor its voltage output. At KOEO, the signal voltage should be high (e.g., 4.5-4.9V). At idle, it should drop significantly (e.g., 1.0-2.0V, depending on engine vacuum). Compare these readings to the manufacturer's specifications. Any discrepancies in voltage supply, ground, or signal output indicate a wiring, connector, or sensor fault.",
+      "**4. Verify Engine Mechanical Condition & PCV System:** While less common, internal engine issues such as a restricted exhaust (clogged catalytic converter), incorrect valve timing, or a worn camshaft can affect manifold vacuum and trigger a P0106. Perform a vacuum gauge test directly on the intake manifold to confirm stable and correct engine vacuum. Additionally, inspect the PCV valve and its associated hoses for clogs or restrictions, as a malfunctioning PCV system can directly impact manifold pressure readings."
+    ],
+    "commonFixes": [
+      "**Repair Vacuum Leaks:** The most frequent cause. Replace any cracked, brittle, or disconnected vacuum hoses, especially those leading to the MAP sensor, PCV system, or brake booster. Ensure all intake manifold gaskets are sealing properly.",
+      "**Replace Faulty Manifold Absolute Pressure (MAP) Sensor:** If the sensor's output is consistently out of range, erratic, or does not respond correctly to vacuum changes as observed during live data analysis and electrical testing, the sensor itself is likely defective.",
+      "**Repair/Replace Damaged Wiring or Connector:** Address any corrosion, frayed wires, or loose connections at the MAP sensor's electrical connector. A poor electrical connection can cause intermittent or incorrect signal readings.",
+      "**Clean Throttle Body and/or PCV System:** A heavily carbonized throttle body can restrict proper idle airflow and affect manifold vacuum. A clogged PCV valve or hose can also cause vacuum issues that directly influence MAP sensor readings."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0106 code is generally not recommended for extended periods. The engine control module (ECM) relies on accurate manifold pressure data for precise fuel delivery and ignition timing. An incorrect MAP signal can lead to symptoms such as rough idle, stalling, poor acceleration, reduced fuel economy, and potentially a no-start condition. While it might not immediately strand you, continued driving can lead to further engine issues or leave you in an unsafe situation due to unpredictable engine performance."
+    },
+    "costBreakdown": {
+      "parts": "$40 - $200 (MAP sensor, vacuum lines, gaskets)",
+      "labor": "$100 - $450 (0.5 - 3.0 hours for diagnosis and repair, depending on complexity)"
+    }
   },
   "P0107": {
     "title": "MAP/Barometric Pressure Circuit Low Input",
@@ -177,7 +298,26 @@
       "cause_vacuum_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "Step 1: Conduct a thorough visual inspection of the Manifold Absolute Pressure (MAP) sensor and its associated components. Carefully examine the electrical connector for any signs of corrosion, bent pins, or damage. Trace the wiring harness leading to the MAP sensor, checking for chafing, cuts, or any evidence of rodent damage that could cause a short to ground or an open circuit. If the MAP sensor uses an external vacuum hose, inspect it meticulously for cracks, kinks, disconnections, or blockages. Ensure the sensor itself is securely mounted and its sealing O-ring (if applicable) is intact, preventing false air leaks.",
+      "Step 2: Utilize a professional scan tool to monitor the MAP sensor's live data. With the ignition ON and engine OFF (KOEO), the MAP sensor reading should closely match the ambient barometric pressure (e.g., 29-30 inHg or approximately 14.7 psi at sea level, depending on altitude). Start the engine and observe the MAP reading at idle; a healthy engine typically shows 7-10 inHg (3.5-5 psi). A P0107 indicates an abnormally low voltage input, which translates to an excessively high vacuum reading (e.g., 25+ inHg or a voltage consistently below 0.5V at idle) or an implausible fixed low voltage. If a scan tool is unavailable, back-probe the MAP sensor's signal wire with a multimeter. Expect around 4.5-5V KOEO and 1-1.5V at idle for most 3-wire sensors. A P0107 would manifest as a voltage significantly lower than expected.",
+      "Step 3: Verify the integrity of the MAP sensor's power and ground circuits. Disconnect the MAP sensor's electrical connector. With the ignition ON, use a multimeter to check for a stable 5-volt reference voltage between the reference wire and a known good ground. Then, check for a solid ground connection at the ground wire of the connector (it should read close to 0V when connected to battery negative, or show good continuity to chassis ground). If either the 5V reference or the ground is missing, weak, or intermittent, trace the wiring back to the Powertrain Control Module (PCM) or any splice points to identify and repair the fault. This could indicate a wiring issue, a faulty PCM driver, or a short in another sensor sharing the same 5V reference.",
+      "Step 4: Confirm actual engine vacuum against the MAP sensor's reported value. Connect a mechanical vacuum gauge directly to the intake manifold (or a reliable manifold vacuum source). A healthy engine at idle should typically produce 17-21 inHg of vacuum. Compare this mechanical reading to the MAP sensor's reading on the scan tool (converting units if necessary). If the mechanical gauge shows normal vacuum, but the MAP sensor is still reporting an excessively high vacuum (low voltage input), the MAP sensor itself is definitively faulty. If both the mechanical gauge and the MAP sensor indicate abnormally high vacuum (e.g., consistently above 22 inHg at idle), investigate potential engine mechanical issues causing excessive vacuum, such as a severely restricted exhaust system (clogged catalytic converter), incorrect camshaft timing, or excessively tight valve lash. However, a faulty sensor or circuit is far more common for P0107 than actual engine conditions causing extreme vacuum."
+    ],
+    "commonFixes": [
+      "Replace the faulty Manifold Absolute Pressure (MAP) sensor. This is the most common solution if the wiring, vacuum lines, and power/ground circuits have been verified as good, and the sensor's output is implausible.",
+      "Repair or replace damaged wiring or the electrical connector to the MAP sensor. Address any shorts to ground, open circuits, or corrosion that could be causing the low voltage input.",
+      "Address underlying engine mechanical issues causing excessive vacuum. If diagnostics confirm the engine is genuinely producing abnormally high vacuum (e.g., due to a restricted exhaust or incorrect cam timing), these root causes must be resolved."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0107 code is generally possible but requires caution. A faulty MAP sensor can lead to incorrect fuel mixture and ignition timing, resulting in symptoms like poor engine performance, reduced fuel economy, rough idle, hesitation, or even stalling. While it may not cause immediate catastrophic failure, prolonged driving with an incorrect air-fuel ratio can lead to secondary damage, such as premature wear on catalytic converters or spark plugs."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150 (for a new MAP sensor; OEM parts can be higher, wiring repair kits $10-$50)",
+      "labor": "$60 - $250 (0.5 to 2.0 hours for diagnosis and replacement, depending on vehicle access and complexity of wiring repair)"
+    }
   },
   "P0108": {
     "title": "MAP/Barometric Pressure Circuit High Input",
@@ -195,7 +335,27 @@
       "cause_vacuum_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "**Step 1: Comprehensive Visual Inspection and Vacuum System Integrity Check.** Begin by thoroughly inspecting the MAP sensor's electrical connector for any signs of corrosion, bent pins, or loose connections. Trace the vacuum line from the MAP sensor to the intake manifold, meticulously checking for cracks, kinks, disconnections, or collapsed sections. A significant vacuum leak anywhere in the intake manifold or associated vacuum lines (e.g., PCV system, brake booster) can cause the MAP sensor to report a higher pressure (lower vacuum) than actual, triggering P0108. With the engine off, disconnect the vacuum line from the MAP sensor and apply a known vacuum source (e.g., a hand vacuum pump) directly to the sensor port. Monitor the sensor's voltage output with a multimeter or scan tool; a healthy sensor should show a smooth, proportional decrease in voltage as vacuum increases.",
+      "**Step 2: MAP Sensor Electrical Signal Verification with Scan Tool and Multimeter.** Connect a professional scan tool and access live data for the MAP sensor. With the key on, engine off (KOEO), the MAP sensor reading should be close to the current barometric pressure (typically 14.7 PSI or 29.92 inHg at sea level, adjusting for altitude). Start the engine and allow it to idle. A healthy engine at idle should exhibit a MAP reading of approximately 8-10 PSI absolute pressure (or 17-22 inHg of vacuum). If the scan tool consistently reports a pressure significantly higher than expected at idle (e.g., 12-14 PSI or more), it confirms the 'high input' condition. Further, back-probe the MAP sensor's signal wire with a multimeter. At KOEO, expect approximately 4.5-5.0V. At idle, this voltage should drop to around 1.0-1.5V. If the voltage remains high (e.g., above 4.0V) at idle, the sensor or its circuit is faulty.",
+      "**Step 3: Wiring Harness and Connector Integrity Test.** With the ignition off, disconnect the MAP sensor connector. Using a multimeter, verify the 5-volt reference voltage supply to the sensor at the appropriate pin on the connector. Then, check for a solid ground connection at the ground pin. Finally, perform a continuity test on the signal wire between the MAP sensor connector and the Powertrain Control Module (PCM) connector. Look for any open circuits, shorts to voltage, or shorts to ground within the harness. Pay particular attention to areas where the wiring may be exposed to heat, vibration, or chafing. Inspect the connector terminals themselves for corrosion, damage, or improper seating.",
+      "**Step 4: PCM Input Verification (Advanced Diagnostics).** If the MAP sensor tests good, the vacuum system is confirmed to be leak-free, and the wiring harness integrity is verified, the issue may lie within the PCM's ability to correctly interpret the MAP sensor signal. This is less common but should not be overlooked. Using a breakout box connected to the PCM, directly measure the MAP sensor signal voltage at the PCM input pin while the engine is running. Compare this reading to the live data reported by the scan tool. Any significant discrepancy between the direct measurement at the PCM and the scan tool's reported value could indicate an internal PCM fault, requiring further specialized diagnostics or replacement."
+    ],
+    "commonFixes": [
+      "**Replace the Manifold Absolute Pressure (MAP) Sensor:** If diagnostic steps confirm the sensor itself is faulty, consistently sending an abnormally high voltage signal to the PCM, replacing it with a quality OEM or equivalent aftermarket sensor is the primary solution.",
+      "**Repair Vacuum Leaks:** Thoroughly inspect and repair any vacuum leaks found in the intake manifold, vacuum lines, PCV system components, or the brake booster. Even a small leak can significantly affect manifold vacuum, causing the MAP sensor to report higher pressure.",
+      "**Repair Wiring Harness or Connector:** Address any identified issues with the MAP sensor's electrical circuit, including repairing open circuits, shorts to voltage or ground, or replacing corroded/damaged connectors and terminals. Ensure all connections are clean, tight, and secure.",
+      "**Replace Powertrain Control Module (PCM):** In rare instances, after exhaustive testing confirms the MAP sensor, vacuum system, and wiring are all functioning correctly, the PCM itself may be faulty and unable to properly process the MAP sensor's input. This should be a last resort, as PCM replacement is costly and often requires reprogramming."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0108 code indicates the engine's computer is receiving an incorrect, abnormally high pressure reading from the MAP sensor. This leads the PCM to believe the engine is under a higher load (less vacuum) than it actually is. Consequently, the PCM will likely command an overly rich fuel mixture and potentially alter ignition timing. This can result in symptoms such as reduced engine power, poor fuel economy, rough idle, stalling, and increased exhaust emissions. Prolonged operation with an incorrect air/fuel mixture can lead to premature failure of the catalytic converter, oxygen sensors, and spark plugs. While the vehicle may still be drivable, it is advisable to diagnose and repair this issue promptly to prevent further, more costly damage and ensure safe, reliable operation."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150 (for MAP sensor; additional $10 - $50 for vacuum lines/gaskets if needed)",
+      "labor": "$120 - $250 (for diagnosis, 1-2 hours); $60 - $180 (for MAP sensor replacement, 0.5-1.5 hours); $120 - $500+ (for vacuum leak repair, highly variable, 1-4+ hours)"
+    }
   },
   "P0109": {
     "title": "MAP/Barometric Pressure Circuit Intermittent",
@@ -212,7 +372,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "**Step 1: Thorough Visual Inspection and Wiggle Test.** Begin by visually inspecting the MAP sensor's electrical connector and the entire wiring harness leading to it. Look for any signs of corrosion, fraying, cuts, or pinched wires. Pay close attention to the harness routing, ensuring it's not rubbing against sharp edges or hot engine components. With the engine running (if possible without severe drivability issues) and a professional scan tool monitoring MAP sensor live data (voltage and kPa/inHg), gently wiggle the sensor connector and the wiring harness. Observe the scan tool for any sudden, erratic spikes or drops in the MAP reading. This often points directly to an intermittent connection issue within the wiring or connector itself. Also, inspect any vacuum lines connected to the MAP sensor or intake manifold for cracks, kinks, or loose connections.",
+      "**Step 2: Scan Tool Live Data Analysis and Engine Vacuum Verification.** Connect a professional scan tool and monitor the MAP sensor voltage and pressure readings (kPa or inHg) under various engine conditions: at idle, during a snap throttle, and while holding different RPMs. A healthy MAP sensor should provide a stable voltage at idle (typically 0.5-1.5V, depending on altitude and engine vacuum) and respond smoothly and rapidly to throttle changes. An intermittent code means you're looking for occasional, brief, and erratic fluctuations that don't correlate with actual engine load or throttle input. Simultaneously, use a dedicated vacuum gauge to test the engine's intake manifold vacuum. A low or fluctuating vacuum reading can indirectly affect the MAP sensor's input. If the engine vacuum is unstable, investigate potential vacuum leaks (e.g., PCV system, brake booster, intake manifold gaskets) using a smoke machine.",
+      "**Step 3: Electrical Circuit Integrity Test.** With the ignition OFF, disconnect the MAP sensor connector. Using a digital multimeter (DMM), test the sensor's power supply (typically a 5-volt reference) and ground circuits. Connect the positive lead of the DMM to the 5V reference wire and the negative lead to a known good chassis ground. Then, test the ground wire at the sensor connector for continuity to chassis ground. Finally, test the signal wire for continuity back to the Powertrain Control Module (PCM) connector. Look for any high resistance, intermittent open circuits, or short circuits to ground or power in these wires. Reconnect the sensor and back-probe the signal wire while monitoring voltage with the engine running. Compare this reading to the scan tool data; discrepancies could indicate a PCM input issue, though less common.",
+      "**Step 4: MAP Sensor Performance Verification (Vacuum Pump Test).** If the wiring and connections appear sound and stable, the issue likely lies within the MAP sensor itself. Disconnect the MAP sensor and apply a controlled vacuum to the sensor's port using a hand-held vacuum pump with a built-in gauge. While applying varying levels of vacuum (e.g., 0 inHg, 5 inHg, 10 inHg, 15 inHg, 20 inHg), monitor the sensor's output voltage using a DMM connected to the signal and ground wires (the sensor must be powered, either by the vehicle's harness or an external 5V source). The voltage should change smoothly and predictably in direct relation to the applied vacuum. Erratic voltage readings, sudden drops, or flat spots at specific vacuum levels during this test definitively indicate an internal sensor fault. Compare your readings to the manufacturer's specified voltage-to-pressure curve."
+    ],
+    "commonFixes": [
+      "**Repair or Replace Damaged Wiring/Connector:** The most common fix for an intermittent circuit code is addressing compromised electrical connections. This involves repairing frayed or broken wires, replacing corroded or spread terminals within the connector, or replacing the entire MAP sensor pigtail connector if the damage is extensive and irreparable.",
+      "**Replace the Manifold Absolute Pressure (MAP) Sensor:** If the sensor fails the vacuum pump test, exhibits erratic behavior in live data despite verified good wiring, or if the internal components are failing intermittently, replacing the MAP sensor is the direct solution. This is a frequent failure point for intermittent codes.",
+      "**Locate and Repair Vacuum Leaks:** An intermittent vacuum leak (e.g., a cracked hose that flexes under engine movement, a loose fitting, or a failing intake manifold gasket that seals intermittently) can cause the MAP sensor to report erratic pressure readings, triggering this code. A smoke machine is highly effective for pinpointing these elusive leaks.",
+      "**Clean Throttle Body and Intake Manifold Passages:** Excessive carbon buildup in the throttle body or intake manifold can sometimes cause erratic airflow and vacuum fluctuations, particularly at idle or during transitions. This can lead the MAP sensor to interpret these fluctuations as an intermittent signal, even if the sensor itself is functioning correctly."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent MAP/Barometric Pressure sensor issue can lead to unpredictable engine performance, including rough idle, stalling, poor acceleration, reduced fuel economy, and potentially a rich or lean running condition. While it might not immediately cause a catastrophic failure, the erratic data can confuse the PCM, leading to incorrect fuel delivery and ignition timing, which could damage catalytic converters over time or leave you stranded. It's advisable to diagnose and repair this issue promptly to prevent further complications and ensure reliable vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$40 - $200",
+      "labor": "$100 - $300"
+    }
   },
   "P0110": {
     "title": "Intake Air Temperature (IAT) Circuit Malfunction",
@@ -229,7 +409,28 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $200"
+    "estimatedCost": "$50 - $200",
+    "diagnosticSteps": [
+      "**1. Thorough Visual Inspection and Connector Integrity Check:** Begin by locating the Intake Air Temperature (IAT) sensor. On many vehicles, the IAT sensor is a standalone unit mounted in the intake ducting, while on others, it's integrated into the Mass Air Flow (MAF) sensor. Visually inspect the sensor and its electrical connector for any obvious signs of damage, such as frayed wires, corrosion on the terminals, bent pins, or a loose connection. Ensure the connector is fully seated and locked. Trace the wiring harness from the IAT sensor back towards the Powertrain Control Module (PCM) as far as visible, looking for any chafing, cuts, or signs of rodent damage that could indicate an open or short circuit.",
+      "**2. IAT Sensor Resistance Test (Ohmmeter):** Disconnect the IAT sensor's electrical connector. Using a digital multimeter set to the ohms (\u03a9) scale, measure the resistance across the two terminals of the IAT sensor itself. Compare this reading to the specified resistance values for your vehicle's IAT sensor at ambient temperature, which can typically be found in a factory service manual or reliable repair database. As a general rule, a thermistor-type IAT sensor's resistance will decrease as the air temperature increases. If the sensor shows an open circuit (infinite resistance) or a short circuit (near zero resistance), or if the reading is significantly out of specification for the current ambient temperature, the sensor is faulty.",
+      "**3. IAT Circuit Voltage and Ground Reference Test:** With the IAT sensor disconnected and the ignition key in the 'ON' position (engine OFF), use a multimeter to test the voltage at the IAT sensor's electrical connector. Consult a wiring diagram for your specific vehicle to identify the 5-volt reference wire and the ground wire. Measure the voltage between the 5-volt reference wire and a known good chassis ground; you should observe approximately 5.0 volts. Next, measure the voltage between the ground wire at the connector and a known good chassis ground; this reading should be very close to 0 volts. Finally, check for continuity between the ground wire at the connector and chassis ground (resistance should be very low, typically less than 0.5 ohms). Absence of 5V indicates an open in the reference circuit or a PCM issue, while a missing ground indicates an open in the ground circuit.",
+      "**4. Signal Wire Continuity and Short-to-Ground/Power Test:** With both the IAT sensor connector and the PCM connector disconnected, perform continuity tests on the signal wire. Measure the resistance between the IAT signal terminal at the sensor connector and its corresponding terminal at the PCM connector. Resistance should be very low (ideally less than 0.5 ohms). Next, check for shorts to ground by measuring resistance between the signal wire terminal at either connector and a known good chassis ground; resistance should be infinite. Also, check for shorts to power by measuring resistance between the signal wire and any 12V power source (e.g., battery positive or a fused ignition wire); resistance should also be infinite. Any low resistance readings indicate a short circuit in the wiring.",
+      "**5. Live Data Monitoring with Scan Tool:** If all previous circuit and sensor tests pass, connect an OBD2 scan tool capable of displaying live data. Monitor the IAT sensor reading with the engine cold and off. The displayed temperature should closely match the ambient air temperature and the engine coolant temperature (if the engine is cold). Start the engine and observe the IAT reading as the engine warms up and air flows through the intake. The temperature should respond plausibly. If the reading is stuck at an extremely high or low value, erratic, or unresponsive despite passing static tests, it could indicate an intermittent sensor failure, an intermittent wiring issue, or a PCM internal fault."
+    ],
+    "commonFixes": [
+      "**Replace the Intake Air Temperature (IAT) Sensor:** This is the most frequent solution if the sensor itself fails the resistance test, provides implausible data, or is physically damaged. Ensure the replacement sensor is an OEM equivalent or high-quality aftermarket part specific to your vehicle.",
+      "**Repair or Replace Damaged Wiring or Connector:** If diagnostic steps reveal an open circuit, short circuit, or excessive resistance in the IAT sensor's wiring harness or a corroded/damaged connector, the affected section must be repaired or replaced. Use proper wiring repair techniques (e.g., soldering and heat-shrink tubing) to ensure a durable connection.",
+      "**Clean the Mass Air Flow (MAF) Sensor (if IAT is integrated):** If your vehicle's IAT sensor is integrated into the MAF sensor, sometimes a dirty MAF sensor can cause inaccurate IAT readings. Carefully clean the MAF sensor element, including the IAT thermistor, with a specialized MAF sensor cleaner. Do not use other solvents or brushes.",
+      "**Replace the Powertrain Control Module (PCM):** In very rare instances, if all sensor and wiring tests confirm integrity and functionality, but the P0110 code persists with incorrect IAT readings, the PCM itself may be faulty. This is a last resort and should only be considered after exhaustive testing has ruled out all other possibilities, as PCM replacement is costly and often requires programming."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0110 code is generally not immediately dangerous, but it warrants caution. The engine's computer relies on accurate IAT data to calculate optimal fuel delivery and ignition timing. An incorrect IAT reading can lead to an overly rich or lean fuel mixture, resulting in reduced fuel economy, increased emissions, rough idling, hesitation, or a lack of power. Prolonged driving with an improper air-fuel mixture can potentially lead to more severe issues, such as catalytic converter damage, spark plug fouling, or carbon buildup, which are expensive to repair. It is advisable to diagnose and repair this issue promptly to prevent further complications and maintain optimal engine performance."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $300",
+      "labor": "$60 - $250"
+    }
   },
   "P0111": {
     "title": "Intake Air Temperature (IAT) Circuit Range/Performance",
@@ -262,7 +463,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $200"
+    "estimatedCost": "$50 - $200",
+    "diagnosticSteps": [
+      "Perform a thorough visual inspection of the Intake Air Temperature (IAT) sensor and its wiring harness. Look for any signs of physical damage to the sensor itself, such as cracks or corrosion. Carefully inspect the electrical connector for bent pins, corrosion, or a loose fit. Trace the wiring harness from the IAT sensor back to the Powertrain Control Module (PCM), paying close attention to areas where the harness might be chafed, pinched, or melted, especially near hot engine components or sharp edges. Rodent damage is also a common culprit for wiring issues.",
+      "With the ignition OFF, disconnect the IAT sensor connector. Using a digital multimeter, measure the resistance across the two terminals of the IAT sensor itself. Compare this reading to the manufacturer's specifications for the ambient air temperature. A typical IAT sensor is a Negative Temperature Coefficient (NTC) thermistor, meaning its resistance should decrease as temperature increases. If the sensor shows an extremely low resistance (near zero ohms) even when cold, or if it shows an open circuit (infinite resistance), the sensor is likely faulty. You can also gently warm the sensor with a heat gun (carefully, not excessively) and observe if the resistance drops smoothly; a healthy sensor will show a clear, consistent change.",
+      "With the IAT sensor disconnected and the ignition ON (engine OFF), use a multimeter to back-probe the IAT sensor connector. One terminal should show approximately 5 volts (V) from the PCM (this is the reference voltage). The other terminal should show a good ground connection (near 0V or continuity to chassis ground). If the 5V reference is missing, check for an open circuit in the reference wire back to the PCM. If the ground is missing, check for an open circuit in the ground wire. If both are present, reconnect the sensor. If the P0112 code persists, disconnect the PCM connector and the IAT sensor connector, then check for continuity between the IAT signal wire and chassis ground. Any continuity indicates a short to ground in the wiring harness, which would pull the signal voltage low.",
+      "Connect a scan tool capable of displaying live data. Monitor the Intake Air Temperature (IAT) sensor reading. If the code P0112 is active, the scan tool will likely display an extremely high temperature reading (e.g., 250\u00b0F / 120\u00b0C or higher, depending on the vehicle's default for a low voltage input). Compare this reading to the actual ambient air temperature (if the engine is cold) or the Engine Coolant Temperature (ECT) sensor reading (if the engine is at operating temperature). Disconnect the IAT sensor while monitoring live data; a healthy circuit should typically cause the IAT reading to drop to a very low temperature (e.g., -40\u00b0F / -40\u00b0C) as the PCM interprets an open circuit as maximum resistance/minimum temperature. If disconnecting the sensor does not change the reading from the high temperature, it strongly suggests a short to ground in the wiring harness or a faulty PCM input."
+    ],
+    "commonFixes": [
+      "Replace the Intake Air Temperature (IAT) sensor: This is the most frequent solution if the sensor itself is internally shorted, providing incorrect resistance readings, or has failed internally.",
+      "Repair or replace damaged wiring or connector: If diagnostic steps reveal a short to ground, an open circuit, or corrosion/damage within the IAT sensor's wiring harness or connector, repairing the specific section or replacing the entire connector/harness segment is necessary.",
+      "Address a short to ground in the IAT signal circuit: If the wiring tests indicate the signal wire is shorted to ground, locate and repair the short. This often involves tracing the harness carefully for chafing or damage.",
+      "Replace the Powertrain Control Module (PCM): In rare instances, if all sensor and wiring tests confirm integrity, the internal IAT circuit within the PCM itself may be faulty. This should only be considered as a last resort after exhaustive testing of the sensor and wiring."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0112 code is generally safe for short distances, but prolonged operation can lead to issues. The PCM uses IAT data to calculate fuel delivery and ignition timing. An incorrect, consistently high-temperature reading (due to low voltage) will cause the PCM to lean out the fuel mixture and retard timing. This can result in reduced engine performance, increased fuel consumption, rough idle, and potentially engine knocking or pre-ignition under load. Over time, a consistently lean condition can lead to catalytic converter damage or other engine component wear due to excessive heat."
+    },
+    "costBreakdown": {
+      "parts": "$15 - $150",
+      "labor": "$100 - $450"
+    }
   },
   "P0113": {
     "title": "Intake Air Temperature (IAT) Circuit High Input",
@@ -295,7 +516,26 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $200"
+    "estimatedCost": "$50 - $200",
+    "diagnosticSteps": [
+      "Step 1: Conduct a meticulous visual inspection of the Intake Air Temperature (IAT) sensor and its associated wiring harness. Locate the IAT sensor, which may be a standalone unit in the intake tract or integrated into the Mass Air Flow (MAF) sensor. Carefully examine the electrical connector for any signs of corrosion, bent or pushed-out pins, loose terminals, or physical damage such as cracks or melted plastic. Trace the wiring harness from the sensor back towards the Powertrain Control Module (PCM), paying close attention to areas where the harness might chafe against engine components, brackets, or sharp edges. Look for signs of insulation damage, cuts, pinches, or heat damage, as these are common causes of intermittent electrical issues. Perform a gentle 'wiggle test' on the connector and harness while monitoring live data if possible.",
+      "Step 2: Utilize a professional-grade scan tool to monitor the IAT sensor's live data stream. With the ignition on and engine off, the IAT reading should closely match the ambient air temperature. Start the engine and observe the readings for any erratic fluctuations, sudden drops to extremely low values (e.g., -40\u00b0F/-40\u00b0C), spikes to excessively high values (e.g., 300\u00b0F/150\u00b0C), or readings that momentarily freeze before jumping. While monitoring, carefully perform a 'wiggle test' on the IAT sensor connector and the entire length of its wiring harness. If the IAT reading becomes erratic, drops out, or changes significantly during this test, it strongly indicates an intermittent connection issue within the connector or wiring.",
+      "Step 3: Perform a resistance test on the IAT sensor and a continuity/short test on its circuit. Disconnect the IAT sensor and use a multimeter to measure the resistance across its two terminals. Compare this reading to a temperature-resistance chart specific to your vehicle's IAT sensor (typically found in a factory service manual). The resistance should decrease as the sensor warms up (e.g., by gently warming it with a heat gun). An open circuit (infinite resistance) or a short circuit (near zero resistance) indicates a faulty sensor. Next, with the sensor still disconnected, check the wiring harness: identify the signal wire and the ground wire (or 5V reference and ground). Check for continuity between each wire at the IAT connector and its corresponding pin at the PCM connector. Look for high resistance or intermittent open circuits. Also, check for shorts to ground and shorts to voltage on both wires.",
+      "Step 4: Verify the PCM's reference voltage and ground integrity at the IAT sensor connector. With the IAT sensor disconnected and the ignition ON (engine OFF), use a multimeter to check for the 5-volt reference signal (if applicable) and a solid ground at the IAT sensor connector. The 5V reference should be stable and within specification. If it's fluctuating, absent, or incorrect, the issue could be further upstream in the PCM's internal circuitry or its wiring. Verify the ground circuit by checking for very low resistance (typically less than 0.5 ohms) between the ground terminal at the IAT connector and a known good chassis ground point. An intermittent or high-resistance ground can cause erratic sensor readings. If all sensor and wiring tests pass, and the issue persists, a rare intermittent internal PCM fault might be considered, though this is typically a last resort after ruling out all other possibilities."
+    ],
+    "commonFixes": [
+      "Repair or replace damaged wiring and/or the IAT sensor electrical connector. This is a very common fix for intermittent circuit codes. Use proper soldering techniques and heat shrink tubing for wire repairs, or replace the entire connector if terminals are corroded, spread, or physically damaged.",
+      "Replace the Intake Air Temperature (IAT) sensor. If the sensor itself exhibits erratic resistance readings during testing, fails the wiggle test, or does not conform to the manufacturer's temperature-resistance specifications, it is likely faulty.",
+      "Clean corrosion from electrical terminals. Even minor corrosion on the IAT sensor terminals or within the harness connector can introduce intermittent high resistance, leading to incorrect signal interpretation by the PCM. Use a specialized electrical contact cleaner and a small brush to thoroughly clean all affected terminals."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent P0114 code is generally safe for short distances, but prolonged driving is not recommended. An intermittent IAT signal can cause the engine control module (ECM) to receive inaccurate air temperature data, leading to incorrect fuel mixture calculations. This can result in symptoms such as rough idling, reduced engine performance, decreased fuel economy, and increased exhaust emissions. Over time, an consistently incorrect fuel mixture can potentially lead to damage to the catalytic converter or other engine components. It is advisable to diagnose and repair this issue promptly to prevent further complications."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $250",
+      "labor": "$120 - $360"
+    }
   },
   "P0115": {
     "title": "Engine Coolant Temperature (ECT) Circuit Malfunction",
@@ -315,7 +555,27 @@
       "cause_thermostat"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $250"
+    "estimatedCost": "$50 - $250",
+    "diagnosticSteps": [
+      "**Step 1: Comprehensive Visual Inspection of the ECT Circuit.** Begin by visually inspecting the Engine Coolant Temperature (ECT) sensor and its electrical connector. Look for any signs of corrosion, bent pins, loose connections, or damage to the connector housing. Trace the wiring harness from the sensor back towards the Powertrain Control Module (PCM), meticulously checking for chafing, cuts, pinches, or any other physical damage that could compromise the circuit's integrity. Ensure the coolant level is at the proper mark, as an extremely low coolant level can prevent the sensor from accurately reading temperature.",
+      "**Step 2: ECT Sensor Resistance Test and Verification.** Disconnect the ECT sensor's electrical connector. Using a high-quality digital multimeter (DMM) set to ohms, measure the resistance across the two terminals of the sensor itself. Compare this reading to the manufacturer's specified resistance values for the current ambient temperature. For a more definitive test, carefully remove the sensor and place it in a container of water with a calibrated thermometer. Heat the water gradually and observe the resistance changes; the resistance should smoothly decrease as the temperature increases. If the sensor shows an open circuit (infinite resistance) or a short circuit (near zero resistance) at room temperature, or if its readings are erratic or outside specifications, the sensor is faulty.",
+      "**Step 3: Verify Reference Voltage and Ground at the Sensor Connector.** With the ECT sensor disconnected and the ignition key in the 'ON' position (engine off), use your DMM to check for the 5-volt reference signal at one of the sensor's harness terminals (typically the signal wire from the PCM) and a good ground at the other terminal. Place the DMM's positive lead on the reference voltage wire and the negative lead on a known good chassis ground. Then, place the DMM's positive lead on the ground wire and the negative lead on a known good chassis ground (you should read near 0V, indicating a good ground). If the 5V reference is missing or significantly low, or if the ground circuit is open, this indicates a problem with the wiring back to the PCM or the PCM itself.",
+      "**Step 4: Wiring Continuity and Short Circuit Analysis.** Turn the ignition OFF. Disconnect both the ECT sensor and the PCM connector. Using your DMM, perform a continuity test on both wires between the ECT sensor harness connector and the corresponding PCM connector terminals. You should measure very low resistance (ideally less than 0.5 ohms). Next, check for shorts to ground by measuring resistance between each wire and a known good chassis ground; there should be infinite resistance. Finally, check for shorts to power by measuring resistance between each wire and a known 12V source (e.g., battery positive); again, there should be infinite resistance. Any deviation from these expected readings points to a wiring issue (open circuit, short to ground, or short to power) that must be repaired."
+    ],
+    "commonFixes": [
+      "**Replace the Engine Coolant Temperature (ECT) Sensor:** This is the most common solution. If the sensor fails the resistance tests, provides erratic readings, or is physically damaged, replacing it with a high-quality OEM or equivalent aftermarket sensor will typically resolve the P0115 code.",
+      "**Repair or Replace Damaged Wiring and/or Connectors:** If the diagnostic steps reveal an open circuit, short circuit, or a corroded/damaged electrical connector, the affected wiring harness section or connector pigtail must be professionally repaired or replaced. Ensure all repairs involve proper soldering, heat-shrink tubing, and secure connections to prevent future issues.",
+      "**Address Poor Ground Connections:** A poor or corroded ground connection for the ECT sensor circuit can cause a circuit malfunction. Ensure all ground points are clean, tight, and free of corrosion, providing a solid electrical path back to the PCM.",
+      "**PCM Replacement (Rare):** Only consider replacing the Powertrain Control Module (PCM) as a last resort, after thoroughly ruling out the ECT sensor, all associated wiring, and connectors. A faulty PCM could be unable to provide the necessary 5V reference, process the sensor's signal correctly, or provide a proper ground. This is a costly repair and often requires reprogramming."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0115 code requires caution. The Engine Coolant Temperature (ECT) sensor provides critical data to the PCM for managing fuel injection, ignition timing, and cooling fan operation. An inaccurate or missing signal can lead to the engine running excessively rich or lean, resulting in poor fuel economy, increased emissions, rough idling, stalling, and potential long-term damage to the catalytic converter. In severe cases, if the PCM receives a consistently low-temperature signal, it may prevent the cooling fans from activating, leading to engine overheating. Conversely, a consistently high-temperature signal could cause the engine to run too rich, impacting performance. It is strongly advised to diagnose and repair this issue promptly to prevent further engine complications and ensure safe operation."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $150 (ECT sensor, possibly connector/pigtail)",
+      "labor": "$60 - $450 (0.5 - 3.0 hours for diagnosis and repair, excluding potential PCM replacement)"
+    }
   },
   "P0116": {
     "title": "Engine Coolant Temperature (ECT) Circuit Range/Performance",
@@ -334,7 +594,27 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "Connect a professional scan tool to verify the P0116 code and check for any other related diagnostic trouble codes (DTCs), such as P0115, P0117, P0118, or P0125. Perform a thorough visual inspection of the Engine Coolant Temperature (ECT) sensor, its electrical connector, and the wiring harness. Look for signs of corrosion, bent pins, loose connections, or damaged insulation on the wiring, especially where it might rub against engine components or sharp edges. Ensure the coolant level is at the correct mark and the coolant itself is clean and free of contamination or air bubbles.",
+      "With the engine cold (preferably after sitting overnight), use a scan tool to monitor the live data stream for the ECT sensor reading. Compare this reading to the Intake Air Temperature (IAT) sensor reading and the ambient air temperature. All three should be very close, typically within a few degrees Fahrenheit or Celsius. Start the engine and observe the ECT reading as it warms up. The temperature should rise smoothly and steadily. If the reading is erratic, stuck at a low value, or immediately jumps to an implausibly high temperature, it indicates a sensor or circuit issue. Also, note if the temperature stabilizes at the thermostat's opening temperature (e.g., 180-200\u00b0F or 82-93\u00b0C).",
+      "Disconnect the ECT sensor electrical connector. Using a digital multimeter (DMM), measure the resistance across the two terminals of the ECT sensor itself. Compare this reading to the manufacturer's specified resistance values for the current ambient temperature (these values are typically found in a service manual). As the engine warms up, the sensor's resistance should decrease. If the resistance is open, shorted, or significantly out of specification, the sensor is faulty. Next, check the integrity of the wiring harness: with the key on, engine off, verify a 5-volt reference signal at one terminal of the connector and a good ground at the other (or continuity to ground, depending on the circuit design). You can also jumper the two terminals of the harness connector with a paperclip (key on, engine off) and observe if the scan tool shows a very high temperature (e.g., 250\u00b0F+), confirming the circuit to the PCM is intact.",
+      "If the ECT sensor and its circuit appear to be functioning correctly but the engine takes an excessively long time to reach operating temperature, or never quite gets there, the thermostat is a prime suspect. Monitor the upper radiator hose as the engine warms up from cold. It should remain cool until the ECT reading reaches the thermostat's opening temperature (typically 180-200\u00b0F), at which point the hose should suddenly become hot as the thermostat opens and allows coolant to flow to the radiator. If the upper hose warms up almost immediately from a cold start, the thermostat is likely stuck open, preventing the engine from reaching its optimal operating temperature within the expected timeframe."
+    ],
+    "commonFixes": [
+      "Replace the Engine Coolant Temperature (ECT) Sensor: This is the most common fix, as the sensor can fail internally, providing inaccurate or erratic temperature signals to the Powertrain Control Module (PCM).",
+      "Replace the Thermostat: A thermostat stuck in the open position will cause the engine to take an excessively long time to warm up, or prevent it from reaching optimal operating temperature, triggering the P0116 code.",
+      "Repair or Replace Damaged Wiring and/or Connector: Corrosion, chafing, or breaks in the ECT sensor's wiring harness or a faulty connector can disrupt the signal, leading to incorrect temperature readings or an open/short circuit.",
+      "Flush the Cooling System and Refill with Proper Coolant: Low coolant levels, air pockets in the system, or contaminated coolant can prevent the ECT sensor from accurately reading the engine temperature. Ensure the system is properly bled of air after refilling."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0116 code requires caution. An inaccurate engine temperature reading can lead to incorrect fuel mixture, improper ignition timing, and compromised transmission shift points, resulting in poor fuel economy, reduced engine performance, increased emissions, and potentially engine overheating if the cooling fans are not activated correctly. While it may not cause an immediate breakdown, prolonged driving with this issue can lead to long-term engine damage or leave you stranded due to overheating or performance issues."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $100",
+      "labor": "$50 - $400"
+    }
   },
   "P0117": {
     "title": "Engine Coolant Temperature (ECT) Circuit Low Input",
@@ -351,7 +631,26 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $250"
+    "estimatedCost": "$50 - $250",
+    "diagnosticSteps": [
+      "Step 1: Conduct a thorough visual inspection of the Engine Coolant Temperature (ECT) sensor, its electrical connector, and the wiring harness leading to it. Look for any signs of physical damage, such as frayed or exposed wires, corrosion on the connector terminals, loose connections, or evidence of rodent damage. Ensure the sensor is securely seated in its housing and that there are no coolant leaks around its base, which could affect its electrical integrity. Check the coolant level; while not a direct cause of P0117, low coolant can lead to erratic temperature readings.",
+      "Step 2: With the ignition key in the 'ON' position (KOEO) and the engine off, disconnect the ECT sensor connector. Using a digital multimeter, measure the voltage between the signal wire terminal (typically 5V reference) and the ground wire terminal within the harness connector. You should observe approximately 5 volts on the reference wire and continuity to chassis ground on the ground wire. If the 5V reference is missing or significantly low, or if the ground is poor, trace the wiring back to the PCM for opens or shorts. If these are correct, reconnect the sensor and back-probe the signal wire. With a cold engine, the voltage should be relatively high (e.g., 3-4V). If the voltage is consistently very low (e.g., <0.5V) even when cold, it indicates a short to ground in the sensor or the signal wire.",
+      "Step 3: Disconnect the ECT sensor and measure its internal resistance using a multimeter set to ohms. Compare this reading to a temperature-resistance chart specific to your vehicle's ECT sensor (found in service manuals). At ambient temperature (e.g., 70\u00b0F/21\u00b0C), the sensor should exhibit a resistance typically in the range of 2,000 to 4,000 ohms. A significantly lower resistance reading (e.g., under 100 ohms) at ambient temperature strongly suggests an internal short within the sensor, causing the 'low input' (high temperature) signal to the PCM. You can also carefully warm the sensor (e.g., with a heat gun or by placing it in hot water) and observe if the resistance smoothly decreases as temperature rises. Erratic readings or a complete lack of change indicate a faulty sensor.",
+      "Step 4: If the sensor tests good, the issue likely lies within the wiring harness. Disconnect both the ECT sensor and the Powertrain Control Module (PCM) connectors. Using a multimeter, check for continuity between the ECT signal wire terminal at the PCM connector and chassis ground. There should be no continuity; if there is, the signal wire is shorted to ground somewhere between the sensor and the PCM. Also, check for continuity between the signal wire and other wires in the harness (e.g., 5V reference, ground wire) to rule out internal shorts within the harness. Repair any identified shorts or open circuits."
+    ],
+    "commonFixes": [
+      "Replace the Engine Coolant Temperature (ECT) Sensor: This is the most frequent solution if the sensor itself is found to have an internal short or incorrect resistance readings during testing.",
+      "Repair or Replace Damaged Wiring/Connector: If diagnostic steps reveal a short to ground in the signal wire, an open circuit, or severe corrosion/damage to the ECT sensor connector or its pigtail, the affected wiring or connector must be repaired or replaced.",
+      "Locate and Repair a Short to Ground in the Harness: If the wiring harness is shorted to ground between the sensor and the PCM, the specific location of the short must be identified and properly insulated or repaired to restore correct circuit integrity."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "A P0117 code indicates the Engine Control Module (ECM) is receiving a voltage signal from the ECT sensor that is too low, which the ECM interprets as an excessively high engine temperature. This misinterpretation can lead to several issues: the ECM may command a leaner fuel mixture than appropriate for the actual engine temperature, causing hard starting, stalling, and poor performance, especially when the engine is cold. It can also cause the cooling fans to run constantly. While it doesn't directly indicate an actual overheating condition, prolonged driving with incorrect fuel trims can lead to increased emissions, reduced fuel economy, and potential long-term damage to components like the catalytic converter. It's advisable to address this issue promptly to restore optimal engine operation and prevent further complications."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $80 (for a new ECT sensor; OEM parts may be higher. Add $15 - $40 if a new connector pigtail is needed)",
+      "labor": "$60 - $180 (for diagnosis, typically 0.5 to 1.5 hours) + $40 - $100 (for sensor replacement, typically 0.3 to 0.8 hours). If wiring repair is extensive, labor could range from $120 - $360 (1.0 to 3.0 hours) depending on the complexity of tracing and repairing the short."
+    }
   },
   "P0118": {
     "title": "Engine Coolant Temperature (ECT) Circuit High Input",
@@ -368,7 +667,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $250"
+    "estimatedCost": "$50 - $250",
+    "diagnosticSteps": [
+      "Thorough Visual Inspection of the ECT Sensor and Wiring Harness: Begin by locating the Engine Coolant Temperature (ECT) sensor, typically found near the thermostat housing or directly in the cylinder head/intake manifold. Carefully inspect the sensor's electrical connector for any signs of corrosion, bent pins, loose connections, or physical damage. Trace the wiring harness leading from the sensor for at least 12-18 inches, looking for chafing, cuts, rodent damage, or signs of previous repairs that may have failed. Ensure the sensor itself is securely threaded into its port and not leaking coolant.",
+      "Verify ECT Sensor Reading with a Professional Scan Tool: Connect an OBD-II scan tool capable of displaying live data. With the key ON, engine OFF (KOEO), observe the reported Engine Coolant Temperature. If the P0118 code is active, the scan tool will almost certainly display an extremely low temperature, often -40\u00b0F or -40\u00b0C, regardless of the actual engine temperature. Start the engine and monitor the reading; if it remains at this extremely low value, it confirms the PCM is receiving a high voltage signal, indicating an an open circuit or a sensor reporting maximum resistance.",
+      "Perform Electrical Circuit Testing at the ECT Sensor Connector: Disconnect the ECT sensor. With the key ON, engine OFF (KOEO), use a digital multimeter (DMM) to measure the voltage between the 5-volt reference wire (typically one of the two wires, consult a wiring diagram for your specific vehicle) and a known good chassis ground. You should read approximately 5.0 volts. Next, measure the resistance (ohms) between the ground wire at the sensor connector and a known good chassis ground. You should see very low resistance, ideally less than 0.5 ohms, indicating a good ground connection. If both the 5V reference and ground are present and correct at the connector, the issue is likely the sensor itself or an open circuit in the signal return wire.",
+      "Test the ECT Sensor's Internal Resistance: If the wiring and connector appear sound and the 5V reference/ground are confirmed, remove the ECT sensor from the engine. Using a DMM set to ohms, measure the sensor's resistance across its two terminals. Compare this reading to the manufacturer's specifications for the ambient temperature. To further test, you can place the sensor in a cup of hot water (with a thermometer) and observe if the resistance decreases significantly as the temperature rises. An open circuit (infinite resistance) or resistance values far outside specifications at various temperatures indicate a faulty sensor.",
+      "Check for Open Circuit in Signal Wire from Sensor to PCM: If the sensor tests good and the 5V reference and ground are present at the connector, the problem lies in the signal wire between the ECT sensor connector and the Powertrain Control Module (PCM). Disconnect both the ECT sensor and the PCM connector. Using your DMM, perform a continuity test on the signal wire from the sensor connector pin to its corresponding pin at the PCM connector. An open circuit (infinite resistance) indicates a break in the wire that needs to be located and repaired. Also, check this wire for any shorts to voltage or ground."
+    ],
+    "commonFixes": [
+      "Replace the Engine Coolant Temperature (ECT) Sensor: This is by far the most frequent solution for P0118. If the sensor's internal resistance is out of specification or shows an open circuit, replacing it with a high-quality OEM or equivalent aftermarket part will resolve the issue.",
+      "Repair or Replace Damaged Wiring and/or Connector: If the visual inspection or electrical tests reveal corroded, frayed, or broken wires, or a damaged electrical connector at the ECT sensor, the affected section of the harness or the connector itself must be repaired or replaced. Use proper soldering and heat-shrink techniques for durable repairs.",
+      "Repair an Open Circuit in the Signal Wire to the PCM: If diagnostic steps confirm an open circuit in the signal wire between the ECT sensor connector and the PCM, the break must be located and properly repaired. This often involves tracing the harness carefully, as damage can be hidden."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with P0118 is generally possible but not advisable for extended periods. The PCM will operate in a 'fail-safe' mode, assuming an extremely cold engine. This leads to an excessively rich fuel mixture, causing poor fuel economy, increased emissions, rough idling, and potentially spark plug fouling. More critically, the PCM may not activate the cooling fans correctly, which could lead to actual engine overheating if the engine gets hot, as it's not receiving accurate temperature data."
+    },
+    "costBreakdown": {
+      "parts": "$25 - $120",
+      "labor": "$80 - $400"
+    }
   },
   "P0119": {
     "title": "Engine Coolant Temperature (ECT) Circuit Intermittent",
@@ -385,7 +704,26 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $250"
+    "estimatedCost": "$50 - $250",
+    "diagnosticSteps": [
+      "**Thorough Visual Inspection and Wiggle Test:** Begin by visually inspecting the Engine Coolant Temperature (ECT) sensor, its electrical connector, and the wiring harness leading to the Powertrain Control Module (PCM). Look for any signs of physical damage, such as frayed or chafed wires, corrosion on the terminals, or a loose connector. With the engine running and a scan tool monitoring live ECT data, carefully perform a 'wiggle test' on the sensor connector and the entire wiring harness. Gently flex, pull, and push on the wires and connector. Observe if the ECT reading on the scan tool fluctuates erratically, drops out, or shows sudden spikes when specific areas are disturbed. This can pinpoint an intermittent open, short, or poor connection.",
+      "**ECT Sensor Resistance Test Under Varying Conditions:** Disconnect the ECT sensor and measure its resistance using a high-quality multimeter. Record the resistance at ambient (cold) temperature. Then, start the engine and allow it to warm up to normal operating temperature. Shut off the engine and quickly re-measure the sensor's resistance while it's hot. Compare these readings to the manufacturer's specifications (often found in a service manual or online database). An intermittent P0119 code often points to an internal sensor fault where the thermistor's resistance becomes unstable or non-linear with temperature changes or vibration. If the resistance readings are erratic, jump around, or do not fall within the specified range, the sensor is likely faulty.",
+      "**Wiring Harness Integrity Test (Voltage Drop and Continuity):** With the ECT sensor disconnected, use a multimeter to verify the 5-volt reference voltage supply from the PCM at the sensor connector. Also, check the ground circuit for continuity to a known good chassis ground. Next, perform a voltage drop test on both the signal wire and the ground wire from the ECT sensor connector back to the PCM connector. This involves back-probing the PCM connector while the sensor is connected (if possible, or simulate connection) and the engine is running. Any voltage drop exceeding 0.1-0.2 volts indicates excessive resistance in the wiring, which can cause an intermittent signal. Additionally, use an ohmmeter to check for intermittent shorts to ground or power in the signal wire by wiggling the harness while monitoring resistance.",
+      "**PCM Input Verification and Environmental Factors:** If the ECT sensor and its wiring harness test good, the issue might be at the PCM's input or an external factor. Back-probe the ECT signal wire directly at the PCM connector while monitoring live data on the scan tool. Compare this reading to the signal measured directly at the sensor (if accessible simultaneously). If the signal at the PCM connector is stable and correct, but the scan tool still reports intermittent fluctuations, it could suggest an internal PCM issue, though this is less common. Also, consider environmental factors like engine vibration, heat, or moisture that might exacerbate an intermittent connection or sensor fault; try to replicate these conditions during testing."
+    ],
+    "commonFixes": [
+      "**Replace the Engine Coolant Temperature (ECT) Sensor:** The most common cause for an intermittent ECT circuit code is an internal failure of the sensor itself. Over time, the thermistor inside the sensor can degrade, leading to erratic resistance readings, especially under varying temperatures or vibrations. Replacing the sensor with a high-quality OEM or equivalent part often resolves the P0119 code.",
+      "**Repair or Replace Damaged Wiring and Connectors:** Identify and repair any frayed, chafed, or broken wires within the ECT sensor circuit. This includes replacing the sensor connector if its terminals are corroded, spread, or damaged, ensuring a tight, clean, and secure electrical connection. Use heat-shrink butt connectors for durable repairs.",
+      "**Clean Corroded Electrical Connections:** Disconnect the ECT sensor and thoroughly clean any corrosion from the sensor connector terminals and the corresponding pins on the sensor itself. Use a specialized electrical contact cleaner and a small wire brush or pick. Apply a thin layer of dielectric grease to the terminals upon reassembly to prevent future corrosion and ensure a good seal."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0119 code can lead to unpredictable engine behavior and potential damage. An intermittent ECT signal can cause the PCM to receive incorrect temperature data, leading to an improperly calculated fuel mixture (running too rich or too lean), erratic idle, stalling, or poor acceleration. More critically, the cooling fans might not activate correctly or at the appropriate time, significantly increasing the risk of engine overheating. Overheating can cause severe and costly engine damage, such as a warped cylinder head or blown head gasket. It is strongly advised to diagnose and repair this issue promptly."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $80",
+      "labor": "$100 - $300"
+    }
   },
   "P0120": {
     "title": "Throttle/Pedal Position Sensor/Switch A Circuit Malfunction",
@@ -405,7 +743,28 @@
       "cause_throttle_body"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $400"
+    "estimatedCost": "$100 - $400",
+    "diagnosticSteps": [
+      "Begin with a thorough visual inspection of the Throttle Position Sensor (TPS) and its associated wiring harness. Look for any signs of physical damage, fraying, cuts, or pinched wires, especially where the harness might rub against engine components. Pay close attention to the electrical connector at the TPS itself and at the Powertrain Control Module (PCM). Disconnect and inspect the terminals for corrosion, bent pins, or loose connections. Clean any corrosion with electrical contact cleaner and apply dielectric grease upon reassembly if terminals are clean and secure.",
+      "With the ignition ON and engine OFF (KOEO), use a digital multimeter (DMM) or a capable scan tool to monitor the TPS 'A' signal voltage. Back-probe the signal wire at the TPS connector. At closed throttle, the voltage should typically be around 0.5V to 1.0V. Slowly open the throttle plate by hand (or have an assistant depress the accelerator pedal) to Wide Open Throttle (WOT). The voltage should increase smoothly and linearly, reaching approximately 4.0V to 4.8V at WOT, without any sudden drops, spikes, or flat spots. Any erratic readings, dead spots, or incorrect voltage ranges indicate a faulty sensor or circuit issue.",
+      "Still with KOEO, use your DMM to verify the 5-volt reference (Vref) signal and the ground circuit integrity at the TPS connector. Back-probe the Vref wire; it should read approximately 5.0V. Then, check the ground wire for continuity to a known good chassis ground (should read close to 0 ohms). A missing Vref or poor ground will directly cause a P0120. If Vref is absent, check the PCM's Vref output or for a short to ground in the Vref circuit. If the ground circuit shows high resistance, trace the ground wire back to its source.",
+      "If the TPS itself tests good and Vref/ground are present at the sensor, disconnect both the TPS and PCM connectors. Using your DMM, check for continuity and resistance on each wire (signal, Vref, ground) between the TPS connector and the PCM connector. Resistance should be very low, ideally less than 0.5 ohms. Also, check each wire for a short to ground and a short to power by checking resistance between each wire and chassis ground, and between each wire and a known 12V source. Wiggle the harness while performing these tests to identify intermittent connection issues that might not be apparent when the harness is static.",
+      "While P0120 is primarily a circuit malfunction, a physically sticking or binding throttle plate can sometimes cause the TPS to report erratic values if it's integrated or if the PCM detects an unexpected throttle angle for a given pedal input. Visually inspect the throttle body for excessive carbon buildup around the throttle plate, which could impede its smooth operation. Manually operate the throttle plate to ensure it moves freely without sticking or excessive resistance throughout its full range of motion. Clean the throttle body if significant carbon deposits are present."
+    ],
+    "commonFixes": [
+      "Replace the Throttle Position Sensor (TPS): This is the most common fix if the sensor itself is found to be faulty after voltage signal verification. Ensure the replacement part is of high quality, preferably OEM or a reputable aftermarket brand, as cheap sensors can quickly fail or provide inaccurate readings.",
+      "Repair or Replace Damaged Wiring/Connectors: If the diagnostic steps reveal damaged, corroded, or shorted wiring, or compromised connector terminals, these must be repaired or replaced. Use appropriate automotive-grade wiring and connectors, ensuring proper soldering and heat-shrink insulation for durable, long-lasting repairs.",
+      "Clean Throttle Body: If the throttle plate is sticking due to carbon buildup, it can put undue stress on the TPS or cause the PCM to interpret the sensor's output as erratic, especially if the sensor is integrated into the throttle body assembly. A thorough cleaning can restore smooth operation and prevent future issues.",
+      "PCM Software Update or Replacement: In rare cases, if all other components and wiring test perfectly, the issue might lie within the Powertrain Control Module itself. A PCM software update (reflash) might resolve a known calibration issue, or in extreme cases, the PCM may need to be replaced if its internal TPS driver circuit has failed. This should only be considered after exhausting all other diagnostic avenues."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0120 code can be hazardous. The engine's computer relies on the TPS signal to accurately control fuel delivery, ignition timing, and transmission shift points. A faulty signal can lead to erratic idle, sudden loss of power, hesitation during acceleration, or the vehicle entering 'limp mode,' severely limiting speed and power. In some cases, it can cause the engine to stall unexpectedly, increasing the risk of an accident. It is advisable to diagnose and repair this issue promptly to ensure safe vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $250",
+      "labor": "$120 - $400"
+    }
   },
   "P0121": {
     "title": "Throttle/Pedal Position Sensor/Switch A Circuit Range/Performance",
@@ -424,7 +783,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $400"
+    "estimatedCost": "$100 - $400",
+    "diagnosticSteps": [
+      "Perform a thorough visual inspection of the throttle body assembly, paying close attention to the Throttle Position Sensor (TPS) and its wiring harness. Look for any signs of physical damage, corrosion, frayed wires, or loose connections at the sensor connector. Ensure the throttle plate moves freely without binding and returns completely to the closed position. Check for excessive carbon buildup around the throttle plate, which can impede its movement and affect TPS readings. If the vehicle uses a throttle cable, inspect it for fraying, sticking, or improper adjustment.",
+      "Connect a professional-grade scan tool and monitor live data for the Throttle Position Sensor (TPS) 'A' voltage and percentage, as well as the Accelerator Pedal Position (APP) sensor 'A' voltage and percentage (if applicable). With the key on, engine off (KOEO), observe the TPS 'A' voltage at closed throttle; it should typically be around 0.5V to 1.0V. Slowly and smoothly depress the accelerator pedal to wide open throttle (WOT), observing the voltage increase to approximately 4.0V to 4.8V. Look for any sudden drops, spikes, flat spots, or erratic readings in the voltage signal throughout the sweep. Compare the TPS and APP sensor readings for correlation; they should generally track each other smoothly. Any significant discrepancy or erratic behavior points to a sensor or circuit issue.",
+      "Perform electrical circuit testing for the TPS 'A' sensor. Disconnect the TPS connector and use a digital multimeter to verify the 5-volt reference voltage (Vref) and a good ground connection at the sensor harness connector. The Vref wire should show approximately 5V, and the ground wire should show very low resistance to chassis ground. If these are correct, back-probe the TPS signal wire while the sensor is connected and the key is on. Slowly actuate the throttle by hand (or have an assistant depress the pedal) and observe the signal voltage on the multimeter. The voltage should sweep smoothly from its closed-throttle value to its WOT value without any interruptions or erratic fluctuations. If the voltage sweep is erratic at the sensor, the sensor is likely faulty. If the voltage sweep is smooth at the sensor but erratic on the scan tool, investigate the wiring between the sensor and the Powertrain Control Module (PCM).",
+      "If the TPS 'A' sensor and its immediate wiring appear to be functioning correctly, but the P0121 code persists, investigate potential issues with the Accelerator Pedal Position (APP) sensor 'A' circuit, as the code description includes 'Pedal Position Sensor.' Repeat the live data monitoring and electrical testing steps for the APP sensor. Ensure the APP sensor's output signals (often there are two or three for redundancy) correlate with each other and with the TPS signal. An issue with the APP sensor's range or performance can also trigger P0121, especially in drive-by-wire systems where the PCM uses both inputs to determine throttle plate position."
+    ],
+    "commonFixes": [
+      "Replace the Throttle Position Sensor (TPS): If diagnostic testing confirms the TPS 'A' sensor itself is providing an erratic, out-of-range, or non-linear signal, replacement of the sensor is necessary. In some vehicles, the TPS is integrated into the throttle body and requires replacement of the entire throttle body assembly.",
+      "Replace the Accelerator Pedal Position (APP) Sensor: If diagnostics indicate the APP sensor 'A' is faulty, exhibiting an erratic or incorrect signal, replacement of the APP sensor assembly (which often includes the pedal) will resolve the issue.",
+      "Repair or Replace Damaged Wiring/Connectors: If the issue is traced to corroded, loose, or damaged wiring or pins within the TPS or APP sensor harness connectors, repairing the affected wiring or replacing the connector will restore proper circuit integrity.",
+      "Clean the Throttle Body: If excessive carbon buildup or debris is found to be impeding the smooth movement of the throttle plate, a thorough cleaning of the throttle body can resolve the issue by allowing the throttle plate to return to its proper closed position and move freely throughout its range, thus ensuring accurate TPS readings."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0121 code is considered dangerous. An erratic or incorrect throttle position signal can lead to unpredictable engine behavior, including sudden and unintended acceleration, unexpected deceleration, engine stalling, or the vehicle entering a 'limp home' mode with severely restricted power. These conditions can result in a loss of vehicle control, increasing the risk of an accident. It is strongly advised to diagnose and repair this issue immediately."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $600",
+      "labor": "$100 - $450"
+    }
   },
   "P0122": {
     "title": "Throttle/Pedal Position Sensor/Switch A Circuit Low Input",
@@ -546,7 +925,27 @@
       "cause_coolant_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $300"
+    "estimatedCost": "$75 - $300",
+    "diagnosticSteps": [
+      "Verify the P0128 code using a professional scan tool and check for any other related or pending diagnostic trouble codes (DTCs). Clear the codes and perform a drive cycle to confirm P0128 returns. This ensures you're not chasing a ghost code or a symptom of another underlying issue.",
+      "Connect a scan tool capable of displaying live data. Monitor the Engine Coolant Temperature (ECT) sensor reading from a cold start. Compare this reading to the ambient air temperature (IAT sensor reading) \u2013 they should be very close. Start the engine and observe the ECT reading as it rises. The temperature should steadily increase and stabilize around the thermostat's rated opening temperature (e.g., 195\u00b0F or 88\u00b0C). If the temperature rises very slowly, never reaches the target temperature, or fluctuates erratically, it strongly indicates a problem with the cooling system's ability to regulate temperature.",
+      "Perform a physical inspection of the cooling system. With the engine cold, check the coolant level in both the reservoir and the radiator. Low coolant can lead to slow warm-up or inaccurate temperature readings. Start the engine and allow it to warm up while carefully feeling the upper and lower radiator hoses. The upper hose should warm up first. The lower hose (after the thermostat) should remain cool until the thermostat opens. If both hoses warm up simultaneously from a cold start, the thermostat is almost certainly stuck open, allowing constant coolant circulation through the radiator.",
+      "If the ECT sensor is suspected, monitor its live data output. Disconnect the sensor's electrical connector while observing the scan tool. The PCM should typically default to a very cold temperature reading (e.g., -40\u00b0F/C) or a very hot reading, and the cooling fan might engage. This confirms the PCM is receiving a signal path from the sensor. If the live data reading is erratic, stuck at a low value, or doesn't change appropriately with engine temperature, the sensor itself may be faulty. You can further test its resistance with a multimeter and compare it to a temperature-resistance chart for your specific vehicle's sensor.",
+      "Inspect for any signs of constant cooling. Check if the cooling fan is running excessively or constantly, even when the engine is cold. A faulty fan relay or a short in the fan circuit could cause the fan to run continuously, preventing the engine from reaching its optimal operating temperature. Also, visually inspect the thermostat housing for any leaks, though leaks are less likely to directly cause a P0128 unless they are severe enough to cause significant coolant loss."
+    ],
+    "commonFixes": [
+      "Replace the Engine Coolant Thermostat: This is the most frequent cause of a P0128 code. The thermostat is likely stuck in the open position, allowing coolant to continuously circulate through the radiator, preventing the engine from reaching its optimal operating temperature. Ensure to use an OEM or high-quality aftermarket thermostat with the correct temperature rating for your specific vehicle.",
+      "Replace the Engine Coolant Temperature (ECT) Sensor: If the ECT sensor is providing an inaccurate, consistently low temperature reading to the Powertrain Control Module (PCM), the PCM will incorrectly believe the engine is too cold and trigger P0128, even if the engine is at proper operating temperature. This is less common than a faulty thermostat but a definite possibility.",
+      "Flush and Refill Cooling System: If the coolant level was low, or the coolant is old, contaminated, or has an incorrect mix ratio, a proper flush and refill with the correct type and concentration of coolant can resolve issues related to poor heat transfer or air pockets within the system. Ensure proper bleeding of air from the system after refilling."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0128 code means your engine is likely running below its optimal operating temperature. This primarily leads to decreased fuel efficiency, increased exhaust emissions, and reduced cabin heater performance. While not an immediate safety hazard in most cases, prolonged operation at sub-optimal temperatures can contribute to increased engine wear over time due to inefficient combustion and improper oil viscosity. It is advisable to address this issue promptly to prevent potential long-term engine damage and maintain vehicle efficiency."
+    },
+    "costBreakdown": {
+      "parts": "$25 - $150",
+      "labor": "$150 - $525"
+    }
   },
   "P0129": {
     "title": "Barometric Pressure Too Low",

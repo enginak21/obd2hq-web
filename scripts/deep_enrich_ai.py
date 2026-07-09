@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import time
+from dotenv import load_dotenv
 
 try:
     from google import genai
@@ -97,9 +98,14 @@ def enrich_codes(api_key):
     print("\nDeep Enrichment Completed Successfully!")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
+    load_dotenv()
+    api_key = os.getenv("GEMINI_API_KEY")
+    if len(sys.argv) > 1:
+        api_key = sys.argv[1]
+        
+    if not api_key:
         print("Usage: python deep_enrich_ai.py <GEMINI_API_KEY>")
+        print("Or set GEMINI_API_KEY in the .env file")
         sys.exit(1)
         
-    api_key = sys.argv[1]
     enrich_codes(api_key)

@@ -1,11 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { Search, Menu, Activity } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
 import { useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [query, setQuery] = useState('');
@@ -28,8 +29,8 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center space-x-3 group shrink-0">
-          <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-xl group-hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all hidden sm:block">
-            <Activity className="w-6 h-6 text-white" />
+          <div className="rounded-xl overflow-hidden shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all hidden sm:block">
+            <Image src="/icon.jpg" alt="OBD2HQ Premium Logo" width={40} height={40} className="w-10 h-10 object-cover" />
           </div>
           <span className="text-xl sm:text-2xl font-black text-white tracking-tight">
             OBD2<span className="text-blue-500">HQ</span>
