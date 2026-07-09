@@ -9,6 +9,17 @@ export interface OBD2Code {
   causes: string[];
   fixDifficulty: string;
   estimatedCost: string;
+  // Deep Enrichment Fields
+  diagnosticSteps?: string[];
+  commonFixes?: string[];
+  drivingSafety?: {
+    level: 'safe' | 'caution' | 'danger';
+    description: string;
+  };
+  costBreakdown?: {
+    parts: string;
+    labor: string;
+  };
 }
 
 export interface CarModel {
@@ -79,7 +90,11 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     symptoms: baseData.symptoms || ['symp_check_engine', 'symp_engine_perf', 'symp_fuel_econ'],
     causes: baseData.causes || ['cause_sensor', 'cause_vacuum', 'cause_wear'],
     fixDifficulty: baseData.fixDifficulty || 'diff_moderate',
-    estimatedCost: baseData.estimatedCost || '$100 - $450'
+    estimatedCost: baseData.estimatedCost || '$100 - $450',
+    diagnosticSteps: baseData.diagnosticSteps,
+    commonFixes: baseData.commonFixes,
+    drivingSafety: baseData.drivingSafety,
+    costBreakdown: baseData.costBreakdown
   };
 
   const typedAiData = aiData as Record<string, Record<string, Record<string, Partial<OBD2Code>>>>;
@@ -90,7 +105,11 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
       symptoms: aiEnrichment.symptoms || hybridData.symptoms,
       causes: aiEnrichment.causes || hybridData.causes,
       fixDifficulty: aiEnrichment.fixDifficulty || hybridData.fixDifficulty,
-      estimatedCost: aiEnrichment.estimatedCost || hybridData.estimatedCost
+      estimatedCost: aiEnrichment.estimatedCost || hybridData.estimatedCost,
+      diagnosticSteps: aiEnrichment.diagnosticSteps || hybridData.diagnosticSteps,
+      commonFixes: aiEnrichment.commonFixes || hybridData.commonFixes,
+      drivingSafety: aiEnrichment.drivingSafety || hybridData.drivingSafety,
+      costBreakdown: aiEnrichment.costBreakdown || hybridData.costBreakdown
     };
   }
 

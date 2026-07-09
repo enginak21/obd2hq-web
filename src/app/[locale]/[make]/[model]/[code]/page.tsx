@@ -139,6 +139,22 @@ export default async function CodePage({ params }: PageProps) {
                 <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
                 {t('aseCertified')}
               </div>
+              
+              {obdData.drivingSafety && (
+                <div className={`mt-6 p-4 rounded-xl border flex items-start space-x-3 ${
+                  obdData.drivingSafety.level === 'danger' ? 'bg-red-500/10 border-red-500/30 text-red-400' :
+                  obdData.drivingSafety.level === 'caution' ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' :
+                  'bg-green-500/10 border-green-500/30 text-green-400'
+                }`}>
+                  <svg className="w-6 h-6 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                  </svg>
+                  <div>
+                    <strong className="block text-white mb-1 font-semibold">{t('drivingSafety')}</strong>
+                    <span className="text-sm opacity-90">{obdData.drivingSafety.description}</span>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -219,6 +235,50 @@ export default async function CodePage({ params }: PageProps) {
             </div>
           </section>
 
+          {/* Diagnostic Steps (Deep AI Content) */}
+          {obdData.diagnosticSteps && obdData.diagnosticSteps.length > 0 && (
+            <section>
+              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <svg className="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                {t('howToDiagnose')}
+              </h2>
+              <div className="bg-[#131b2f] border border-white/5 rounded-2xl p-6">
+                <div className="space-y-6">
+                  {obdData.diagnosticSteps.map((step, idx) => (
+                    <div key={idx} className="flex space-x-4">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-sm">
+                          {idx + 1}
+                        </div>
+                      </div>
+                      <div className="text-slate-300 leading-relaxed pt-1">
+                        {step}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Common Fixes (Deep AI Content) */}
+          {obdData.commonFixes && obdData.commonFixes.length > 0 && (
+            <section>
+              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <svg className="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                {t('commonFixes')}
+              </h2>
+              <div className="grid grid-cols-1 gap-4">
+                {obdData.commonFixes.map((fix, idx) => (
+                  <div key={idx} className="bg-green-500/5 border border-green-500/10 rounded-xl p-5 flex items-start space-x-4 hover:border-green-500/20 transition-colors">
+                    <svg className="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                    <p className="text-slate-300 font-medium">{fix}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Disqus Comments */}
           <section className="pt-8">
             <DisqusComments 
@@ -248,10 +308,24 @@ export default async function CodePage({ params }: PageProps) {
           <div className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:border-blue-500/30 transition-colors">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('repairEstimate')}</h3>
-            <div className="flex items-baseline space-x-2 mb-2">
+            <div className="flex items-baseline space-x-2 mb-4">
               <span className="text-4xl font-black text-white">{obdData.estimatedCost}</span>
             </div>
-            <p className="text-sm text-slate-500">{t('costIncludesParts')}</p>
+            
+            {obdData.costBreakdown ? (
+              <div className="mt-4 space-y-3 bg-white/5 p-4 rounded-xl">
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-slate-400">{t('partsCost')}</span>
+                  <span className="text-white font-medium">{obdData.costBreakdown.parts}</span>
+                </div>
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-slate-400">{t('laborCost')}</span>
+                  <span className="text-white font-medium">{obdData.costBreakdown.labor}</span>
+                </div>
+              </div>
+            ) : (
+              <p className="text-sm text-slate-500">{t('costIncludesParts')}</p>
+            )}
           </div>
 
           {/* Difficulty Widget */}

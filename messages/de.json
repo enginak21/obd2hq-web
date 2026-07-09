@@ -22,7 +22,12 @@
     "home": "Startseite",
     "years": "Jahre",
     "aseCertified": "Geprüft durch ASE-zertifizierten Techniker",
-    "relatedCodes": "Andere beliebte {make} Codes"
+    "relatedCodes": "Andere beliebte {make} Codes",
+    "howToDiagnose": "Wie man diagnostiziert",
+    "commonFixes": "Häufige Lösungen",
+    "drivingSafety": "Ist es sicher zu fahren?",
+    "partsCost": "Ersatzteile",
+    "laborCost": "Arbeit"
   },
   "DB": {
     "symp_check_engine": "Motorkontrollleuchte leuchtet",

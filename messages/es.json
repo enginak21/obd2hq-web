@@ -22,7 +22,12 @@
     "home": "Inicio",
     "years": "Años",
     "aseCertified": "Revisado por Técnico Certificado ASE",
-    "relatedCodes": "Otros Códigos Populares de {make}"
+    "relatedCodes": "Otros Códigos Populares de {make}",
+    "howToDiagnose": "Cómo Diagnosticar",
+    "commonFixes": "Soluciones Comunes",
+    "drivingSafety": "¿Es seguro conducir?",
+    "partsCost": "Repuestos",
+    "laborCost": "Mano de obra"
   },
   "DB": {
     "symp_check_engine": "La luz de Check Engine está encendida",

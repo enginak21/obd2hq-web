@@ -22,7 +22,12 @@
     "home": "Accueil",
     "years": "Années",
     "aseCertified": "Vérifié par un technicien certifié ASE",
-    "relatedCodes": "Autres codes {make} populaires"
+    "relatedCodes": "Autres codes {make} populaires",
+    "howToDiagnose": "Comment Diagnostiquer",
+    "commonFixes": "Solutions Courantes",
+    "drivingSafety": "Est-il sûr de conduire ?",
+    "partsCost": "Pièces",
+    "laborCost": "Main-d'œuvre"
   },
   "DB": {
     "symp_check_engine": "Le voyant moteur est allumé",

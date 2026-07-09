@@ -22,7 +22,12 @@
     "home": "Anasayfa",
     "years": "Yıllar",
     "aseCertified": "ASE Sertifikalı Teknisyen Tarafından İncelenmiştir",
-    "relatedCodes": "Diğer Popüler {make} Kodları"
+    "relatedCodes": "Diğer Popüler {make} Kodları",
+    "howToDiagnose": "Nasıl Teşhis Edilir",
+    "commonFixes": "Sık Görülen Çözümler",
+    "drivingSafety": "Araç Sürülür Mü?",
+    "partsCost": "Parça",
+    "laborCost": "İşçilik"
   },
   "DB": {
     "symp_check_engine": "Motor Arıza Lambası yanar",

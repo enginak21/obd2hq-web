@@ -22,7 +22,12 @@
     "home": "Home",
     "years": "Years",
     "aseCertified": "Reviewed by ASE Certified Technician",
-    "relatedCodes": "Other Popular {make} Codes"
+    "relatedCodes": "Other Popular {make} Codes",
+    "howToDiagnose": "How to Diagnose",
+    "commonFixes": "Common Solutions",
+    "drivingSafety": "Is It Safe to Drive?",
+    "partsCost": "Parts",
+    "laborCost": "Labor"
   },
   "DB": {
     "symp_check_engine": "Check Engine Light is illuminated",

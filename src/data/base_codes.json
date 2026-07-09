@@ -20,7 +20,27 @@
       "cause_intake_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $400"
+    "estimatedCost": "$100 - $400",
+    "diagnosticSteps": [
+      "Step 1: Check the MAF sensor connector for corrosion or bent pins. Ensure a tight connection.",
+      "Step 2: Use a multimeter to verify a 12V power supply and a good ground at the MAF sensor harness.",
+      "Step 3: Inspect the intake tubing for any cracks, vacuum leaks, or loose clamps between the MAF sensor and the throttle body.",
+      "Step 4: Connect an OBD2 scanner and monitor the MAF sensor live data (g/s) while revving the engine. It should increase smoothly without dropping off."
+    ],
+    "commonFixes": [
+      "Clean the MAF sensor with a specialized electronics cleaner.",
+      "Repair or replace damaged wiring in the sensor harness.",
+      "Replace the Mass Air Flow (MAF) sensor assembly.",
+      "Fix vacuum leaks in the intake manifold."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "You can drive cautiously for a short distance, but prolonged driving may cause poor fuel economy, stalling, and potential damage to the catalytic converter."
+    },
+    "costBreakdown": {
+      "parts": " - ",
+      "labor": " - "
+    }
   },
   "P0101": {
     "title": "Mass Air Flow (MAF) Circuit Range/Performance",
@@ -1269,7 +1289,7 @@
   },
   "P0171": {
     "title": "System Too Lean (Bank 1)",
-    "description": "Code P0171 indicates the engine control module has detected that the fuel system on Bank 1 is running too lean — there is too much air or too little fuel in the air-fuel mixture. The long-term fuel trim has exceeded its adjustment range.",
+    "description": "Code P0171 indicates the engine control module has detected that the fuel system on Bank 1 is running too lean \u2014 there is too much air or too little fuel in the air-fuel mixture. The long-term fuel trim has exceeded its adjustment range.",
     "symptoms": [
       "symp_check_engine",
       "symp_rough_idle",
@@ -1296,7 +1316,7 @@
   },
   "P0172": {
     "title": "System Too Rich (Bank 1)",
-    "description": "Code P0172 indicates the engine control module has detected that the fuel system on Bank 1 is running too rich — there is too much fuel or too little air in the air-fuel mixture.",
+    "description": "Code P0172 indicates the engine control module has detected that the fuel system on Bank 1 is running too rich \u2014 there is too much fuel or too little air in the air-fuel mixture.",
     "symptoms": [
       "symp_check_engine",
       "symp_rough_idle",
@@ -10884,7 +10904,7 @@
   },
   "P0700": {
     "title": "Transmission Control System (MIL Request)",
-    "description": "Code P0700 indicates the Transmission Control Module (TCM) has detected a malfunction and is requesting the PCM to illuminate the Check Engine Light. This is an informational code — there will be additional, more specific transmission codes stored.",
+    "description": "Code P0700 indicates the Transmission Control Module (TCM) has detected a malfunction and is requesting the PCM to illuminate the Check Engine Light. This is an informational code \u2014 there will be additional, more specific transmission codes stored.",
     "symptoms": [
       "symp_check_engine",
       "symp_transmission_slip",
