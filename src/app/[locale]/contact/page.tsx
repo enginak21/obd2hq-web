@@ -2,10 +2,14 @@ import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Contact Us - OBD2HQ',
-  description: 'Get in touch with the OBD2HQ team.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'ContactPage' });
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+  };
+}
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -34,15 +38,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <form className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-slate-400 mb-1">{t('name')}</label>
-              <input type="text" className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder="John Doe" />
+              <input type="text" className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder={t('namePlaceholder')} />
             </div>
             <div>
               <label className="block text-sm font-medium text-slate-400 mb-1">{t('email')}</label>
-              <input type="email" className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder="john@example.com" />
+              <input type="email" className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder={t('emailPlaceholder')} />
             </div>
             <div>
               <label className="block text-sm font-medium text-slate-400 mb-1">{t('message')}</label>
-              <textarea rows={5} className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder="How can we help?"></textarea>
+              <textarea rows={5} className="w-full bg-[#0a0f1c] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500" placeholder={t('messagePlaceholder')}></textarea>
             </div>
             <button type="button" className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
               {t('send')}

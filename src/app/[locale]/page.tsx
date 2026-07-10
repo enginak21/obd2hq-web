@@ -54,8 +54,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <div className="w-full max-w-[1600px] flex justify-center items-start">
         
         {/* Left Ad */}
-        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0">
-          Left Ad
+        {/* Left Ad */}
+        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
+          {t('leftAd')}
         </aside>
 
         <div className="flex-1 max-w-6xl w-full px-6 py-16">
@@ -85,14 +86,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
 
           {/* Bottom Ad */}
+          {/* Bottom Ad */}
           <div className="w-full h-[90px] bg-[#131b2f] border border-white/5 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide mt-16 shadow-inner hidden sm:flex">
-            Advertisement (Leaderboard)
+            {t('leaderboardAd')}
           </div>
         </div>
 
         {/* Right Ad */}
-        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0">
-          Right Ad
+        {/* Right Ad */}
+        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
+          {t('rightAd')}
         </aside>
       </div>
     </main>

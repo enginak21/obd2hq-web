@@ -7,9 +7,19 @@
     "blog": "Blog & Avis"
   },
   "Footer": {
-    "description": "La base de données ultime pour les codes de diagnostic (DTC) et les voyants d'avertissement. Trouvez les symptômes, les causes et les solutions.",
-    "links": "Liens rapides",
-    "legal": "Légal"
+    "description": "La base de données la plus complète au monde pour les codes de diagnostic de véhicules et les voyants de tableau de bord.",
+    "links": "Liens Rapides",
+    "legal": "Légal",
+    "searchByMake": "Recherche par Marque",
+    "resources": "Ressources",
+    "aboutUs": "À Propos",
+    "contact": "Contact",
+    "blog": "Blog",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "disclaimer": "Avis de Non-responsabilité Médical et Technique",
+    "allRightsReserved": "Tous droits réservés.",
+    "builtFor": "Conçu pour les passionnés d'automobile et les mécaniciens du monde entier."
   },
   "CodePage": {
     "whatDoesItMean": "Qu'est-ce que cela signifie ?",
@@ -27,7 +37,13 @@
     "commonFixes": "Solutions Courantes",
     "drivingSafety": "Est-il sûr de conduire ?",
     "partsCost": "Pièces",
-    "laborCost": "Main-d'œuvre"
+    "laborCost": "Main-d'œuvre",
+    "leaderboardAd": "Espace Publicitaire (Leaderboard)",
+    "inArticleAd": "Publicité (Dans l'Article)",
+    "bottomLeaderboardAd": "Espace Publicitaire (Bottom Leaderboard)",
+    "advertisement": "Publicité",
+    "sponsorAdSense": "Sponsor/AdSense",
+    "discussionTitle": "{code} sur {make} {model} - Discussion OBD2HQ"
   },
   "DB": {
     "symp_check_engine": "Le voyant moteur est allumé",
@@ -163,7 +179,10 @@
     "instantSearch": "Recherche instantanée",
     "diyGuides": "Guides de réparation",
     "browseByMake": "Parcourir par fabricant",
-    "selectBrand": "Sélectionnez la marque pour voir les modèles"
+    "selectBrand": "Sélectionnez la marque pour voir les modèles",
+    "leftAd": "Publicité Gauche",
+    "leaderboardAd": "Publicité (Leaderboard)",
+    "rightAd": "Publicité Droite"
   },
   "BlogPage": {
     "title1": "Guides & ",
@@ -204,7 +223,9 @@
     "everyoneDesc": "Que vous soyez un passionné dans votre garage ou un professionnel, notre plateforme est pour vous.",
     "story": "L'histoire",
     "storyP1": "L'industrie a toujours gardé ces informations secrètes. Nous avons créé OBD2HQ pour briser ce monopole.",
-    "storyP2": "En compilant des données sur plus de 48 constructeurs, nous avons créé un moteur de recherche pour le cerveau de votre voiture."
+    "storyP2": "En compilant des données sur plus de 48 constructeurs, nous avons créé un moteur de recherche pour le cerveau de votre voiture.",
+    "metaTitle": "À Propos - OBD2HQ",
+    "metaDescription": "Découvrez notre mission de fournir les données de diagnostic OBD2 les plus précises."
   },
   "ContactPage": {
     "title": "Nous contacter",
@@ -213,7 +234,12 @@
     "name": "Nom",
     "email": "E-mail",
     "message": "Message",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "metaTitle": "Contactez-nous - OBD2HQ",
+    "metaDescription": "Entrez en contact avec l'équipe OBD2HQ.",
+    "namePlaceholder": "Jean Dupont",
+    "emailPlaceholder": "jean@exemple.fr",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?"
   },
   "DisclaimerPage": {
     "title": "Avertissement technique et médical",

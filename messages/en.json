@@ -7,9 +7,19 @@
     "blog": "Blog & Reviews"
   },
   "Footer": {
-    "description": "The ultimate database for vehicle diagnostic trouble codes (DTC) and dashboard warning lights. Find symptoms, causes, and fixes.",
+    "description": "The world's most comprehensive database for vehicle diagnostic trouble codes and dashboard warning lights.",
     "links": "Quick Links",
-    "legal": "Legal"
+    "legal": "Legal",
+    "searchByMake": "Search by Make",
+    "resources": "Resources",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "blog": "Blog",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "disclaimer": "Medical & Tech Disclaimer",
+    "allRightsReserved": "All rights reserved.",
+    "builtFor": "Built for car enthusiasts and mechanics worldwide."
   },
   "CodePage": {
     "whatDoesItMean": "What does this mean?",
@@ -27,7 +37,13 @@
     "commonFixes": "Common Solutions",
     "drivingSafety": "Is It Safe to Drive?",
     "partsCost": "Parts",
-    "laborCost": "Labor"
+    "laborCost": "Labor",
+    "leaderboardAd": "Advertisement Space (Leaderboard)",
+    "inArticleAd": "Advertisement (In-Article)",
+    "bottomLeaderboardAd": "Advertisement Space (Bottom Leaderboard)",
+    "advertisement": "Advertisement",
+    "sponsorAdSense": "Sponsor/AdSense",
+    "discussionTitle": "{code} on {make} {model} - OBD2HQ Discussion"
   },
   "DB": {
     "symp_check_engine": "Check Engine Light is illuminated",
@@ -163,7 +179,10 @@
     "instantSearch": "Instant Search",
     "diyGuides": "DIY Repair Guides",
     "browseByMake": "Browse by Manufacturer",
-    "selectBrand": "Select your car brand to view models"
+    "selectBrand": "Select your car brand to view models",
+    "leftAd": "Left Ad",
+    "leaderboardAd": "Advertisement (Leaderboard)",
+    "rightAd": "Right Ad"
   },
   "BlogPage": {
     "title1": "Guides & ",
@@ -204,7 +223,9 @@
     "everyoneDesc": "Whether you're a DIY enthusiast in your garage or a professional mechanic, our platform is built for you.",
     "story": "The Story",
     "storyP1": "The automotive industry has traditionally kept diagnostic information locked behind expensive proprietary software subscriptions. Mechanics charge hundreds of dollars just to \"plug in the scanner.\" We started OBD2HQ to break this monopoly.",
-    "storyP2": "By compiling data on over 48 global car manufacturers and analyzing over 10,000 specific Diagnostic Trouble Codes (DTCs), we've created a search engine specifically for your car's brain. From a simple loose gas cap (P0456) to a catastrophic hybrid battery failure (P0A80), you now have the knowledge to fix it faster."
+    "storyP2": "By compiling data on over 48 global car manufacturers and analyzing over 10,000 specific Diagnostic Trouble Codes (DTCs), we've created a search engine specifically for your car's brain. From a simple loose gas cap (P0456) to a catastrophic hybrid battery failure (P0A80), you now have the knowledge to fix it faster.",
+    "metaTitle": "About Us - OBD2HQ",
+    "metaDescription": "Learn about our mission to provide the most accurate OBD2 diagnostic data."
   },
   "ContactPage": {
     "title": "Contact Us",
@@ -213,7 +234,12 @@
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "send": "Send Message"
+    "send": "Send Message",
+    "metaTitle": "Contact Us - OBD2HQ",
+    "metaDescription": "Get in touch with the OBD2HQ team.",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "john@example.com",
+    "messagePlaceholder": "How can we help?"
   },
   "DisclaimerPage": {
     "title": "Medical & Technical Disclaimer",

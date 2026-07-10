@@ -80,16 +80,24 @@ def enrich_codes(api_key):
             
             # Save progress every 10 codes
             count += 1
-            if count % 10 == 0:
+            if count % 5 == 0:
                 with open(db_path, 'w', encoding='utf-8') as f:
                     json.dump(codes, f, indent=2)
                 print(f"--- Saved progress ({count} codes processed) ---")
                 
-            time.sleep(1) # Simple rate limiting
+            time.sleep(4) # Wait 4 seconds between successful requests to stay under 15 RPM
             
         except Exception as e:
-            print(f"Error processing {code}: {e}")
-            time.sleep(5) # Wait a bit before retrying next
+            error_msg = str(e)
+            print(f"Error processing {code}: {error_msg}")
+            if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+                print("Rate limit reached. Waiting for 60 seconds before retrying...")
+                time.sleep(60)
+                # Save progress before continuing to avoid data loss on crash
+                with open(db_path, 'w', encoding='utf-8') as f:
+                    json.dump(codes, f, indent=2)
+            else:
+                time.sleep(5) # Wait a bit before retrying next
             
     # Final save
     with open(db_path, 'w', encoding='utf-8') as f:

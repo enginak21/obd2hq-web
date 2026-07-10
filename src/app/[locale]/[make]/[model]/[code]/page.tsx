@@ -163,7 +163,7 @@ export default async function CodePage({ params }: PageProps) {
       {/* Top Banner Ad Placeholder */}
       <div className="max-w-5xl mx-auto px-6 mt-8 hidden sm:block">
         <div className="w-full h-[90px] bg-[#0d1425] border border-dashed border-white/10 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
-          Advertisement Space (Leaderboard)
+          {t('leaderboardAd')}
         </div>
       </div>
 
@@ -190,7 +190,7 @@ export default async function CodePage({ params }: PageProps) {
 
           {/* In-Article Ad Placeholder */}
           <div className="w-full h-[120px] bg-[#0d1425] border border-dashed border-white/10 rounded-2xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide my-8">
-            Advertisement (In-Article)
+            {t('inArticleAd')}
           </div>
 
           {/* Causes */}
@@ -284,13 +284,13 @@ export default async function CodePage({ params }: PageProps) {
             <DisqusComments 
               url={`https://obd2hq.com/${locale}/${make}/${model}/${code}`}
               identifier={`${make}-${model}-${code}`}
-              title={`${upperCode} on ${capMake} ${capModel} - OBD2HQ Discussion`}
+              title={t('discussionTitle', { code: upperCode, make: capMake, model: capModel })}
             />
           </section>
 
           {/* Bottom Banner Ad Placeholder */}
           <div className="w-full h-[90px] bg-[#0d1425] border border-dashed border-white/10 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide mt-12 hidden sm:flex">
-            Advertisement Space (Bottom Leaderboard)
+            {t('bottomLeaderboardAd')}
           </div>
 
         </div>
@@ -300,8 +300,8 @@ export default async function CodePage({ params }: PageProps) {
           
           {/* Square Ad Placeholder */}
           <div className="w-full h-[250px] bg-[#0d1425] border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
-            <span>Advertisement</span>
-            <span className="text-xs text-slate-700 mt-1">Sponsor/AdSense</span>
+            <span>{t('advertisement')}</span>
+            <span className="text-xs text-slate-700 mt-1">{t('sponsorAdSense')}</span>
           </div>
 
           {/* {t('repairEstimate')} Widget */}

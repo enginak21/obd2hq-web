@@ -7,9 +7,19 @@
     "blog": "Blog y Reseñas"
   },
   "Footer": {
-    "description": "La base de datos definitiva de códigos de diagnóstico (DTC) y luces de advertencia. Encuentra síntomas, causas y soluciones.",
-    "links": "Enlaces rápidos",
-    "legal": "Legal"
+    "description": "La base de datos más completa del mundo para códigos de diagnóstico de vehículos y luces de advertencia del tablero.",
+    "links": "Enlaces Rápidos",
+    "legal": "Legal",
+    "searchByMake": "Buscar por Marca",
+    "resources": "Recursos",
+    "aboutUs": "Sobre Nosotros",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "disclaimer": "Descargo de Responsabilidad Médico y Tecnológico",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "builtFor": "Construido para entusiastas de automóviles y mecánicos de todo el mundo."
   },
   "CodePage": {
     "whatDoesItMean": "¿Qué significa esto?",
@@ -27,7 +37,13 @@
     "commonFixes": "Soluciones Comunes",
     "drivingSafety": "¿Es seguro conducir?",
     "partsCost": "Repuestos",
-    "laborCost": "Mano de obra"
+    "laborCost": "Mano de obra",
+    "leaderboardAd": "Espacio Publicitario (Leaderboard)",
+    "inArticleAd": "Anuncio (En Artículo)",
+    "bottomLeaderboardAd": "Espacio Publicitario (Bottom Leaderboard)",
+    "advertisement": "Anuncio",
+    "sponsorAdSense": "Patrocinador/AdSense",
+    "discussionTitle": "{code} en {make} {model} - Discusión de OBD2HQ"
   },
   "DB": {
     "symp_check_engine": "La luz de Check Engine está encendida",
@@ -163,7 +179,10 @@
     "instantSearch": "Búsqueda instantánea",
     "diyGuides": "Guías de reparación DIY",
     "browseByMake": "Navegar por fabricante",
-    "selectBrand": "Selecciona la marca para ver los modelos"
+    "selectBrand": "Selecciona la marca para ver los modelos",
+    "leftAd": "Anuncio Izquierdo",
+    "leaderboardAd": "Anuncio (Leaderboard)",
+    "rightAd": "Anuncio Derecho"
   },
   "BlogPage": {
     "title1": "Guías y ",
@@ -204,7 +223,9 @@
     "everyoneDesc": "Ya sea un entusiasta en su garaje o un mecánico profesional.",
     "story": "La Historia",
     "storyP1": "La industria automotriz siempre mantuvo en secreto esta información. Iniciamos OBD2HQ para romper este monopolio.",
-    "storyP2": "Al recopilar datos de más de 48 fabricantes, creamos un motor de búsqueda para el cerebro de su automóvil."
+    "storyP2": "Al recopilar datos de más de 48 fabricantes, creamos un motor de búsqueda para el cerebro de su automóvil.",
+    "metaTitle": "Sobre Nosotros - OBD2HQ",
+    "metaDescription": "Conozca nuestra misión de proporcionar los datos de diagnóstico OBD2 más precisos."
   },
   "ContactPage": {
     "title": "Contáctenos",
@@ -213,7 +234,12 @@
     "name": "Nombre",
     "email": "Correo",
     "message": "Mensaje",
-    "send": "Enviar"
+    "send": "Enviar",
+    "metaTitle": "Contáctenos - OBD2HQ",
+    "metaDescription": "Póngase en contacto con el equipo de OBD2HQ.",
+    "namePlaceholder": "Juan Pérez",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "messagePlaceholder": "¿En qué podemos ayudar?"
   },
   "DisclaimerPage": {
     "title": "Aviso legal médico y técnico",

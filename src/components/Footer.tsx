@@ -30,32 +30,32 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">{t('links')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">Search by Make</Link></li>
+              <li><Link href={`/${locale}`} className="hover:text-blue-400 transition-colors">{t('searchByMake')}</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-4">Resources</h4>
+            <h4 className="text-white font-bold mb-4">{t('resources')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href={`/${locale}/about`} className="hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link href={`/${locale}/contact`} className="hover:text-blue-400 transition-colors">Contact</Link></li>
-              <li><Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">Blog</Link></li>
+              <li><Link href={`/${locale}/about`} className="hover:text-blue-400 transition-colors">{t('aboutUs')}</Link></li>
+              <li><Link href={`/${locale}/contact`} className="hover:text-blue-400 transition-colors">{t('contact')}</Link></li>
+              <li><Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">{t('blog')}</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold mb-4">{t('legal')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              <li><Link href={`/${locale}/privacy`} className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-              <li><Link href={`/${locale}/terms`} className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
-              <li><Link href={`/${locale}/disclaimer`} className="hover:text-blue-400 transition-colors">Medical & Tech Disclaimer</Link></li>
+              <li><Link href={`/${locale}/privacy`} className="hover:text-blue-400 transition-colors">{t('privacyPolicy')}</Link></li>
+              <li><Link href={`/${locale}/terms`} className="hover:text-blue-400 transition-colors">{t('termsOfService')}</Link></li>
+              <li><Link href={`/${locale}/disclaimer`} className="hover:text-blue-400 transition-colors">{t('disclaimer')}</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} OBD2HQ. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Built for car enthusiasts and mechanics worldwide.</p>
+          <p>&copy; {new Date().getFullYear()} OBD2HQ. {t('allRightsReserved')}</p>
+          <p className="mt-2 md:mt-0">{t('builtFor')}</p>
         </div>
       </div>
     </footer>

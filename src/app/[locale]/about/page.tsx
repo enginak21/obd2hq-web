@@ -2,10 +2,14 @@ import { Metadata } from 'next';
 import { ShieldCheck, Target, Users } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'About Us - OBD2HQ',
-  description: 'Learn about our mission to provide the most accurate OBD2 diagnostic data.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'AboutPage' });
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+  };
+}
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

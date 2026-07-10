@@ -7,9 +7,19 @@
     "blog": "Blog & Bewertungen"
   },
   "Footer": {
-    "description": "Die ultimative Datenbank für Kfz-Fehlercodes (DTC) und Warnleuchten im Armaturenbrett. Finden Sie Symptome, Ursachen und Lösungen.",
+    "description": "Die weltweit umfassendste Datenbank für Fahrzeug-Fehlercodes und Armaturenbrett-Warnleuchten.",
     "links": "Schnelllinks",
-    "legal": "Rechtliches"
+    "legal": "Rechtliches",
+    "searchByMake": "Suche nach Marke",
+    "resources": "Ressourcen",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "disclaimer": "Medizinischer & Technischer Haftungsausschluss",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "builtFor": "Entwickelt für Auto-Enthusiasten und Mechaniker weltweit."
   },
   "CodePage": {
     "whatDoesItMean": "Was bedeutet das?",
@@ -27,7 +37,13 @@
     "commonFixes": "Häufige Lösungen",
     "drivingSafety": "Ist es sicher zu fahren?",
     "partsCost": "Ersatzteile",
-    "laborCost": "Arbeit"
+    "laborCost": "Arbeit",
+    "leaderboardAd": "Werbefläche (Leaderboard)",
+    "inArticleAd": "Werbung (Im Artikel)",
+    "bottomLeaderboardAd": "Werbefläche (Bottom Leaderboard)",
+    "advertisement": "Werbung",
+    "sponsorAdSense": "Sponsor/AdSense",
+    "discussionTitle": "{code} bei {make} {model} - OBD2HQ Diskussion"
   },
   "DB": {
     "symp_check_engine": "Motorkontrollleuchte leuchtet",
@@ -163,7 +179,10 @@
     "instantSearch": "Sofortsuche",
     "diyGuides": "DIY-Reparaturanleitungen",
     "browseByMake": "Nach Hersteller durchsuchen",
-    "selectBrand": "Wählen Sie Ihre Automarke"
+    "selectBrand": "Wählen Sie Ihre Automarke",
+    "leftAd": "Linke Werbung",
+    "leaderboardAd": "Werbung (Leaderboard)",
+    "rightAd": "Rechte Werbung"
   },
   "BlogPage": {
     "title1": "Ratgeber & ",
@@ -204,7 +223,9 @@
     "everyoneDesc": "Egal ob DIY-Enthusiast oder professioneller Mechaniker.",
     "story": "Die Geschichte",
     "storyP1": "Mechaniker verlangen Hunderte von Dollar, nur um den Scanner anzuschließen. Wir brechen dieses Monopol.",
-    "storyP2": "Wir haben Daten von über 48 Herstellern zusammengestellt."
+    "storyP2": "Wir haben Daten von über 48 Herstellern zusammengestellt.",
+    "metaTitle": "Über uns - OBD2HQ",
+    "metaDescription": "Erfahren Sie mehr über unsere Mission, die genauesten OBD2-Diagnosedaten bereitzustellen."
   },
   "ContactPage": {
     "title": "Kontaktiere uns",
@@ -213,7 +234,12 @@
     "name": "Name",
     "email": "E-Mail",
     "message": "Nachricht",
-    "send": "Senden"
+    "send": "Senden",
+    "metaTitle": "Kontaktieren Sie uns - OBD2HQ",
+    "metaDescription": "Nehmen Sie Kontakt mit dem OBD2HQ-Team auf.",
+    "namePlaceholder": "Max Mustermann",
+    "emailPlaceholder": "max@beispiel.de",
+    "messagePlaceholder": "Wie können wir helfen?"
   },
   "DisclaimerPage": {
     "title": "Medizinischer und technischer Haftungsausschluss",

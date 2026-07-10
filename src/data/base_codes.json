@@ -447,7 +447,26 @@
       "cause_intake_leak"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$50 - $200"
+    "estimatedCost": "$50 - $200",
+    "diagnosticSteps": [
+      "Begin by performing a thorough visual inspection of the Intake Air Temperature (IAT) sensor and its associated wiring harness. Look for any signs of physical damage to the sensor itself, such as cracks, corrosion, or debris accumulation on the thermistor element. Pay close attention to the wiring for chafing, cuts, or signs of rodent damage, especially near the sensor connector and where the harness routes through the engine bay. Ensure the connector is fully seated and free of corrosion or bent pins. A common issue can be a loose or corroded connection causing intermittent signal loss or erratic readings.",
+      "Connect a professional scan tool and monitor the IAT sensor live data. With the engine cold (after an overnight soak), compare the IAT reading to the Engine Coolant Temperature (ECT) and ambient air temperature. All three should be within a few degrees of each other. Start the engine and observe the IAT reading as the engine warms up. The IAT should respond smoothly and logically to changes in air temperature entering the intake. Look for erratic spikes, drops, or a reading that appears 'stuck' at a specific value (e.g., -40\u00b0F or 250\u00b0F), which often indicates an open or short circuit, or a sensor that's not responding correctly within its range.",
+      "Disconnect the IAT sensor and use a digital multimeter to measure its resistance across the two terminals. Compare this reading to the manufacturer's specified resistance-to-temperature chart (found in a service manual specific to your vehicle). You can test the sensor's response by gently heating it with a heat gun (carefully, not excessively) or cooling it with a can of compressed air (inverted for cooling effect) while monitoring the resistance. The resistance should decrease as temperature increases and increase as temperature decreases, following the specified curve. If the sensor's resistance is out of specification or doesn't respond smoothly to temperature changes, it's faulty.",
+      "With the IAT sensor connected and the ignition ON (engine OFF), back-probe the IAT signal wire at the sensor connector or, ideally, at the Powertrain Control Module (PCM) connector. Measure the voltage between the signal wire and ground. You should typically see a 5-volt reference voltage supplied to the sensor, and the signal voltage will vary based on temperature (e.g., around 4.5V cold, dropping to 0.5-1.5V hot). An open circuit will often show 5V, while a short to ground will show 0V. If the voltage at the PCM does not correlate with the sensor's resistance test or the scan tool data, there's an issue with the wiring between the sensor and the PCM, or potentially the PCM's internal circuit."
+    ],
+    "commonFixes": [
+      "Replace the Intake Air Temperature (IAT) Sensor: The most common fix for a P0111 code is a faulty IAT sensor. If diagnostic steps confirm the sensor's resistance is out of specification, it's not responding correctly to temperature changes, or its signal is erratic, replacing the sensor will resolve the issue. Ensure you use an OEM quality replacement part for optimal performance and longevity.",
+      "Repair or Replace Damaged Wiring/Connectors: If the visual inspection or circuit voltage tests reveal damaged, corroded, or loose wiring and connectors leading to the IAT sensor, these must be repaired or replaced. This includes ensuring proper terminal tension within the connector and repairing any chafed or broken wires using appropriate automotive wiring repair techniques (e.g., soldering and heat-shrinking, not just electrical tape).",
+      "Clean the IAT Sensor (if applicable): In some applications, the IAT sensor element can become contaminated with oil vapor, carbon, or debris, especially if it's integrated into the Mass Air Flow (MAF) sensor or directly exposed to intake air flow. Carefully cleaning the sensor element with a specialized MAF sensor cleaner (never use carburetor cleaner or brake cleaner) can sometimes restore proper function. However, if the sensor is truly faulty internally, cleaning will only be a temporary or ineffective solution."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0111 code is generally not immediately dangerous, but it can lead to significant drivability issues and reduced fuel economy. An inaccurate IAT reading can cause the engine's computer to miscalculate fuel delivery and ignition timing, potentially resulting in a rich or lean condition, rough idle, hesitation, poor acceleration, and increased emissions. Prolonged operation with an incorrect air-fuel mixture can also lead to premature wear of catalytic converters or other engine components. It's advisable to diagnose and repair this issue promptly to prevent further problems and ensure optimal engine performance."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $120",
+      "labor": "$75 - $250"
+    }
   },
   "P0112": {
     "title": "Intake Air Temperature (IAT) Circuit Low Input",
@@ -1133,7 +1152,26 @@
       "cause_cat_converter"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $350"
+    "estimatedCost": "$100 - $350",
+    "diagnosticSteps": [
+      "**1. Thorough Visual Inspection & Exhaust Leak Detection:** Begin by meticulously inspecting the Bank 1, Sensor 2 oxygen sensor, its wiring harness, and electrical connector. Look for any signs of physical damage, chafing, melted insulation, corrosion on the terminals, or loose connections. Crucially, perform a comprehensive inspection of the exhaust system upstream of the sensor and directly around the sensor for any leaks. Even minute exhaust leaks can introduce ambient air, causing the sensor to react slowly or provide inaccurate readings. Use a smoke machine if available, or listen carefully for hissing sounds with the engine running and cold, feeling for exhaust gases escaping.",
+      "**2. Live Data Analysis with a Professional Scan Tool:** Connect a professional-grade scan tool and monitor the live data stream for Bank 1, Sensor 2 (often labeled O2S12 or similar). A healthy downstream O2 sensor, indicating a functioning catalytic converter, should typically show a relatively stable voltage, slowly oscillating between approximately 0.4V and 0.9V. A \"slow response\" will manifest as the voltage being sluggish to react to engine load changes, flatlining at a low voltage (e.g., 0.1-0.3V), or showing very little activity compared to a known good pattern or the Bank 2, Sensor 2 (if applicable). Pay close attention to the sensor's reaction time when the engine RPM is varied.",
+      "**3. Oxygen Sensor Heater Circuit and Resistance Test:** Many modern O2 sensors incorporate an internal heater to bring them to operating temperature quickly, which is vital for proper function. A failing heater can directly cause a slow response. Disconnect the Bank 1, Sensor 2 and use a multimeter to test the resistance of the heater circuit terminals (typically the two white wires on a 4-wire sensor). Compare the measured resistance to the manufacturer's specifications. An open circuit (infinite resistance) or a resistance value significantly outside the specified range indicates a faulty heater. While disconnected, you can also check the sensor's signal wire resistance, though the heater circuit is more commonly implicated in slow response codes.",
+      "**4. Catalytic Converter Back Pressure Test (If Other Checks Are Inconclusive):** While P0139 primarily points to the sensor, a severely restricted catalytic converter can sometimes indirectly affect the downstream O2 sensor's readings, making it appear slow due to altered exhaust gas flow. To rule this out, perform a back-pressure test. Temporarily remove the upstream O2 sensor (Bank 1, Sensor 1) and install a pressure gauge. With the engine running at 2500 RPM, the back pressure should generally not exceed 1.5-2.0 PSI. Excessive back pressure indicates a restricted catalytic converter, which would need to be addressed as a root cause, even if the P0139 is technically about the sensor's response."
+    ],
+    "commonFixes": [
+      "**Replace the Bank 1, Sensor 2 Oxygen Sensor:** This is the most frequent solution for a P0139 code. Over time, the internal sensing element of the oxygen sensor degrades, losing its ability to react quickly and accurately to changes in oxygen levels in the exhaust stream. Always use a high-quality, direct-fit replacement sensor for optimal performance and longevity.",
+      "**Repair Exhaust Leaks:** Locate and meticulously repair any exhaust leaks found upstream of or directly around the Bank 1, Sensor 2. Even small leaks can introduce ambient air into the exhaust stream, skewing the sensor's readings and causing it to report a slow response. This may involve replacing exhaust gaskets, tightening clamps, or welding small cracks in the exhaust pipe.",
+      "**Repair or Replace Damaged Wiring/Connector:** If the diagnostic steps reveal any damaged, corroded, or poorly connected wiring or connector terminals for the Bank 1, Sensor 2, these must be repaired or replaced. A compromised electrical circuit can directly impede the sensor's ability to transmit accurate and timely data to the ECM."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0139 code is generally not an immediate safety hazard that would cause a sudden breakdown. However, it indicates that the engine's emissions control system is not functioning optimally. This can lead to decreased fuel efficiency, increased harmful emissions, and, more critically, the engine control module (ECM) may not be able to accurately monitor the catalytic converter's efficiency. Over time, this could potentially lead to premature degradation or damage to the catalytic converter, which is a very expensive component to replace. It is advisable to diagnose and repair this issue promptly to prevent further complications and maintain vehicle efficiency."
+    },
+    "costBreakdown": {
+      "parts": "$80 - $250 (for a new Bank 1, Sensor 2 oxygen sensor; varies by vehicle and sensor type), plus $10 - $50 for potential exhaust gaskets/hardware if leaks are present.",
+      "labor": "$120 - $250 (for 1-2 hours of diagnostic time), $60 - $180 (for 0.5-1.5 hours to replace the oxygen sensor), and potentially $120 - $360 (for 1-3 hours to repair exhaust leaks, if necessary). Total estimated labor for diagnosis and repair typically ranges from $180 - $790."
+    }
   },
   "P0140": {
     "title": "O2 Sensor Circuit No Activity Detected (Bank 1, Sensor 2)",
@@ -1182,7 +1220,26 @@
       "cause_exhaust_leak"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $350"
+    "estimatedCost": "$100 - $350",
+    "diagnosticSteps": [
+      "Comprehensive Scan Tool Analysis and Freeze Frame Data Review: Connect an OBD2 scan tool and confirm the presence of P0142. Crucially, examine the freeze frame data associated with the code. This data captures engine parameters (RPM, engine load, coolant temp, vehicle speed, fuel trims) at the exact moment the fault occurred, providing valuable clues. Also, check for any other related diagnostic trouble codes (DTCs), such as catalytic converter efficiency codes (P0420/P0430), misfire codes, or fuel trim codes, as these could indirectly impact the O2 sensor's circuit or performance.",
+      "Thorough Visual Inspection of Sensor and Wiring Harness: Locate Bank 1, Sensor 3. This sensor is typically positioned after the secondary catalytic converter on the exhaust system. Carefully inspect the sensor itself for physical damage, cracks, or excessive carbon buildup. Trace the entire wiring harness from the sensor connector back to its termination point, looking for signs of chafing, cuts, melting, rodent damage, or corrosion. Pay close attention to the connector for bent pins, corrosion, or a loose fit. Simultaneously, inspect the exhaust system for any leaks near the sensor, as this can introduce ambient air and affect sensor readings or even damage the sensor over time.",
+      "Detailed Electrical Circuit Testing (Voltage, Resistance, and Continuity): Disconnect the sensor. With the ignition ON (engine OFF), use a multimeter to check for battery voltage (typically 12V) at one of the heater circuit pins in the vehicle harness connector. Then, check for a good ground connection at the other heater circuit pin. If voltage or ground is missing, trace the wiring back to the fuse box (check relevant fuse) or ECM. Next, measure the resistance of the heater element within the O2 sensor itself (across the two heater pins). Compare this reading to manufacturer specifications (typically 2-30 ohms). An open circuit (infinite resistance) or a short circuit (very low resistance) indicates a faulty heater. With the sensor connected and the engine warmed up and running, use a scan tool to monitor the live data for Bank 1, Sensor 3. While P0142 is a circuit malfunction, a completely flat line (0V or 1.2V constant) or erratic, out-of-range readings can indicate a sensor or wiring issue. For a downstream sensor, you should typically see a relatively steady voltage (e.g., 0.6-0.8V) indicating efficient catalytic converter operation. Also, check for continuity of the signal and ground wires from the sensor connector back to the ECM/PCM connector to rule out open circuits.",
+      "Exhaust System Backpressure and Integrity Check: Although P0142 is a circuit code, excessive exhaust backpressure due to a clogged catalytic converter can sometimes cause unusual stress on sensors or even affect their operation, though less directly related to a \"circuit malfunction.\" More importantly, ensure there are no exhaust leaks before or at the sensor location. Use a smoke machine or visual inspection with the engine running to detect any leaks that could be introducing unmetered air, potentially confusing the sensor or causing it to fail prematurely."
+    ],
+    "commonFixes": [
+      "Replace the Bank 1, Sensor 3 Oxygen Sensor: If electrical testing confirms an internal fault within the sensor itself (e.g., open heater circuit, shorted signal wire, or no signal output despite proper power/ground), replacing the sensor with a high-quality, direct-fit OEM equivalent is the most common and effective solution.",
+      "Repair or Replace Damaged Wiring and/or Connector: If the visual inspection or continuity tests reveal damaged, corroded, or shorted wiring, or a faulty sensor connector, carefully repair the wiring using appropriate automotive-grade connectors and heat-shrink tubing, or replace the entire section of the harness if damage is extensive. Ensure all connections are secure and weatherproof.",
+      "Replace Blown Fuse for O2 Sensor Heater Circuit: Many O2 sensor heater circuits are protected by a dedicated fuse. If the heater circuit voltage test (Step 3) indicates no power, locate and inspect the relevant fuse in the under-hood or interior fuse box. A blown fuse will prevent the sensor from reaching operating temperature, triggering a circuit malfunction code. Replace with a fuse of the correct amperage."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0142 code is generally not immediately dangerous as this sensor (Bank 1, Sensor 3) is a downstream monitoring sensor, primarily responsible for catalytic converter efficiency. It does not directly impact engine performance, fuel economy, or drivability. However, the check engine light will remain on, which could mask more serious issues if they arise. Furthermore, the vehicle will likely fail an emissions test, and prolonged neglect could potentially lead to premature catalytic converter degradation if the underlying issue (though less likely for a circuit code) is not addressed."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $250",
+      "labor": "$100 - $350"
+    }
   },
   "P0143": {
     "title": "O2 Sensor Circuit Low Voltage (Bank 1, Sensor 3)",
@@ -5832,7 +5889,26 @@
       "cause_timing_chain"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $400"
+    "estimatedCost": "$100 - $400",
+    "diagnosticSteps": [
+      "Thorough Visual Inspection of Sensor B and Wiring Harness: Locate Crankshaft Position Sensor B (refer to your vehicle's service manual for its exact location, as 'B' can imply a second sensor or a specific bank/location). Carefully inspect the sensor's physical condition for cracks, oil leaks, or impact damage. Trace the wiring harness from the sensor back to the PCM/ECM, looking for any signs of chafing, cuts, corrosion, or loose connections at the sensor connector and any intermediate connectors. Pay close attention to areas where the harness might rub against engine components or exhaust.",
+      "Verify Sensor B Signal Integrity with an Oscilloscope or Advanced Scan Tool: Connect an oscilloscope to the Crankshaft Position Sensor B signal wire and ground. Crank the engine (or run if possible) and observe the waveform. A healthy inductive sensor should produce a clean AC sine wave, while a Hall effect sensor will produce a square wave. Look for any irregularities such as signal dropouts, erratic amplitude, incorrect frequency, or a noisy signal. Compare the observed waveform against manufacturer specifications or known good patterns. If an oscilloscope isn't available, an advanced scan tool capable of graphing live data for the CKP sensor can show RPM fluctuations or erratic readings that indicate a performance issue.",
+      "Check Reluctor Wheel/Tone Ring Condition: If the sensor and wiring appear good, the issue might be with the component it's reading. Access the crankshaft reluctor wheel (often behind the harmonic balancer or inside the transmission bell housing, depending on sensor location). Inspect it for bent teeth, missing teeth, excessive runout, or accumulation of metallic debris or rust that could interfere with the magnetic field the sensor uses to generate its signal. Even a small amount of debris can cause a 'range/performance' issue.",
+      "Perform Resistance and Voltage Drop Tests on Sensor B Circuit: Disconnect the sensor and perform a resistance test across the sensor terminals (if applicable for the sensor type, refer to service manual specs). An out-of-spec reading indicates an internal sensor fault. Then, with the sensor connected, perform voltage drop tests on the power and ground circuits to the sensor. High resistance in either circuit can cause the sensor to output an incorrect or weak signal, leading to a range/performance code. Check for proper reference voltage and ground at the sensor connector."
+    ],
+    "commonFixes": [
+      "Replace Crankshaft Position Sensor B: If diagnostic steps confirm the sensor itself is faulty (e.g., incorrect resistance, erratic waveform, or physical damage), replacing it with a high-quality OEM or equivalent aftermarket part is the primary solution.",
+      "Repair or Replace Damaged Wiring and Connectors: If the visual inspection or voltage drop tests reveal issues with the wiring harness or connectors (e.g., corrosion, open circuits, shorts, or poor pin tension), repair or replace the affected sections to restore proper circuit integrity.",
+      "Clean or Repair the Crankshaft Reluctor Wheel/Tone Ring: If debris, damage, or excessive runout on the reluctor wheel is identified, clean off any metallic particles or rust. If the wheel is bent or has missing teeth, it will need to be repaired or replaced, which can be a more involved repair."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0386 code is highly dangerous. The crankshaft position sensor is critical for engine timing, fuel injection, and ignition. A range/performance issue means the engine's control module is receiving unreliable or incorrect information about the crankshaft's position. This can lead to severe engine misfires, sudden stalling while driving, difficulty starting, or complete engine shutdown without warning. Such unpredictable behavior significantly increases the risk of an accident, especially at higher speeds or in traffic. It is strongly advised not to drive the vehicle until this issue is properly diagnosed and repaired."
+    },
+    "costBreakdown": {
+      "parts": "$75 - $450",
+      "labor": "$100 - $750"
+    }
   },
   "P0387": {
     "title": "Crankshaft Position Sensor B Circuit Low Input",

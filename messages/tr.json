@@ -7,9 +7,19 @@
     "blog": "Blog & İncelemeler"
   },
   "Footer": {
-    "description": "Araç arıza kodları (DTC) ve gösterge paneli ikaz ışıkları için nihai veritabanı. Belirtileri, nedenleri ve çözümleri bulun.",
+    "description": "Araç teşhis kodları ve gösterge paneli uyarı ışıkları için dünyanın en kapsamlı veritabanı.",
     "links": "Hızlı Bağlantılar",
-    "legal": "Yasal"
+    "legal": "Yasal",
+    "searchByMake": "Markaya Göre Ara",
+    "resources": "Kaynaklar",
+    "aboutUs": "Hakkımızda",
+    "contact": "İletişim",
+    "blog": "Blog",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Koşulları",
+    "disclaimer": "Tıbbi & Teknik Sorumluluk Reddi",
+    "allRightsReserved": "Tüm hakları saklıdır.",
+    "builtFor": "Dünya çapındaki araba tutkunları ve tamirciler için tasarlandı."
   },
   "CodePage": {
     "whatDoesItMean": "Bu ne anlama geliyor?",
@@ -27,7 +37,13 @@
     "commonFixes": "Sık Görülen Çözümler",
     "drivingSafety": "Araç Sürülür Mü?",
     "partsCost": "Parça",
-    "laborCost": "İşçilik"
+    "laborCost": "İşçilik",
+    "leaderboardAd": "Reklam Alanı (Leaderboard)",
+    "inArticleAd": "Reklam (Makale İçi)",
+    "bottomLeaderboardAd": "Reklam Alanı (Bottom Leaderboard)",
+    "advertisement": "Reklam",
+    "sponsorAdSense": "Sponsor/AdSense",
+    "discussionTitle": "{make} {model} araçta {code} Hatası - OBD2HQ Tartışması"
   },
   "DB": {
     "symp_check_engine": "Motor Arıza Lambası yanar",
@@ -163,7 +179,10 @@
     "instantSearch": "Anında Arama",
     "diyGuides": "Kendin Yap (DIY) Tamir Rehberleri",
     "browseByMake": "Markaya Göre Göz Atın",
-    "selectBrand": "Modelleri görmek için araç markanızı seçin"
+    "selectBrand": "Modelleri görmek için araç markanızı seçin",
+    "leftAd": "Sol Reklam",
+    "leaderboardAd": "Reklam (Liderlik Tablosu)",
+    "rightAd": "Sağ Reklam"
   },
   "BlogPage": {
     "title1": "Rehberler ve ",
@@ -204,7 +223,9 @@
     "everyoneDesc": "İster garajınızda kendi işini kendi yapan (DIY) bir meraklı olun, ister profesyonel bir tamirci, platformumuz sizin için tasarlandı.",
     "story": "Hikayemiz",
     "storyP1": "Otomotiv endüstrisi, arıza teşhis bilgilerini geleneksel olarak pahalı ve tescilli yazılım aboneliklerinin arkasında kilitli tuttu. Tamirciler sırf \"tarayıcıyı bağlamak\" için yüzlerce dolar talep ediyor. Bu tekeli yıkmak için OBD2HQ'yu kurduk.",
-    "storyP2": "48'den fazla küresel otomobil üreticisinden veri derleyerek ve 10.000'den fazla özel Arıza Teşhis Kodunu (DTC) analiz ederek, aracınızın beynine özel bir arama motoru oluşturduk. Gevşek bir gaz kapağından (P0456) feci bir hibrit batarya arızasına (P0A80) kadar, artık daha hızlı tamir etmek için gerekli bilgiye sahipsiniz."
+    "storyP2": "48'den fazla küresel otomobil üreticisinden veri derleyerek ve 10.000'den fazla özel Arıza Teşhis Kodunu (DTC) analiz ederek, aracınızın beynine özel bir arama motoru oluşturduk. Gevşek bir gaz kapağından (P0456) feci bir hibrit batarya arızasına (P0A80) kadar, artık daha hızlı tamir etmek için gerekli bilgiye sahipsiniz.",
+    "metaTitle": "Hakkımızda - OBD2HQ",
+    "metaDescription": "En doğru OBD2 teşhis verilerini sağlama misyonumuz hakkında bilgi edinin."
   },
   "ContactPage": {
     "title": "İletişim",
@@ -213,7 +234,12 @@
     "name": "İsim",
     "email": "E-Posta",
     "message": "Mesajınız",
-    "send": "Mesaj Gönder"
+    "send": "Mesaj Gönder",
+    "metaTitle": "Bize Ulaşın - OBD2HQ",
+    "metaDescription": "OBD2HQ ekibi ile iletişime geçin.",
+    "namePlaceholder": "Ali Yılmaz",
+    "emailPlaceholder": "ali@ornek.com",
+    "messagePlaceholder": "Nasıl yardımcı olabiliriz?"
   },
   "DisclaimerPage": {
     "title": "Tıbbi ve Teknik Sorumluluk Reddi",
