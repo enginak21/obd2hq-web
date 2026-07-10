@@ -11513,7 +11513,27 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**1. Comprehensive Visual Inspection and Basic Linkage Check:** Begin by thoroughly inspecting the transmission range sensor (TRS) and its associated wiring harness. Look for any signs of physical damage, corrosion on the electrical connectors, frayed or pinched wires, or loose connections at both the sensor and the Powertrain Control Module (PCM) or Transmission Control Module (TCM). Pay close attention to the area where the harness might rub against other components. Additionally, visually verify the mechanical linkage or cable connecting the shifter to the transmission's manual valve lever. Ensure it is securely attached and appears to be in proper adjustment. A misadjusted linkage can cause the TRS to report an incorrect gear position even if the sensor itself is functioning correctly.",
+      "**2. Advanced Scan Tool Data Analysis and Correlation:** Connect a professional-grade scan tool capable of reading live data from the TCM/PCM. With the ignition on and engine off, cycle the shifter through all gear positions (P, R, N, D, 2, 1). Observe the 'Transmission Range Sensor' or 'Gear Position' parameter on the scan tool. The displayed gear should precisely match the actual shifter position without any hesitation, erratic jumps, or incorrect readings. If the scan tool shows a discrepancy (e.g., 'Neutral' when in 'Drive'), or if the signal drops out intermittently, it points directly to a TRS or circuit issue. Also, monitor other relevant PIDs such as vehicle speed, engine RPM, and transmission output speed to identify any illogical correlations (e.g., TRS reporting 'Drive' while vehicle speed is 0 and engine RPM is high, indicating a potential internal transmission issue or severe TRS misreporting).",
+      "**3. Electrical Circuit Integrity Testing:** Disconnect the TRS connector and perform detailed electrical tests using a digital multimeter. Consult the vehicle's specific service manual for pinout diagrams and expected resistance values for the TRS in each gear position. Test the sensor's internal resistance across its terminals while manually moving the transmission's shift lever through all detents. Look for open circuits or inconsistent resistance readings. Next, test the wiring harness for continuity between the TRS connector and the PCM/TCM connector to identify any open circuits. Check for shorts to ground or shorts to power within the harness. Verify that the PCM/TCM is supplying the correct reference voltage and ground to the TRS connector. Perform a 'wiggle test' on the wiring harness while monitoring live data or resistance values to pinpoint intermittent connection issues.",
+      "**4. Mechanical Shifter and Transmission Lever Inspection:** If electrical tests indicate the sensor and wiring are sound, focus on the mechanical aspects. With the vehicle safely supported, visually inspect the transmission's manual shift lever (the external lever on the transmission that the shifter cable/linkage connects to). Ensure it moves freely and positively engages each gear detent. Check for excessive play or looseness in the lever itself or its internal shaft. Verify that the shifter cable or linkage is not binding, stretched, or damaged, which could prevent the transmission from fully engaging the selected gear, thereby causing the TRS to report an 'out of range' condition."
+    ],
+    "commonFixes": [
+      "**Replace the Transmission Range Sensor (TRS):** This is the most frequent solution when the sensor itself is internally faulty, providing incorrect, intermittent, or no signal to the PCM/TCM. Ensure the replacement sensor is of high quality, preferably OEM or a reputable aftermarket brand.",
+      "**Adjust or Replace Transmission Shifter Cable/Linkage:** If the shifter cable or linkage is stretched, damaged, or improperly adjusted, it can prevent the transmission from fully engaging the selected gear, causing the TRS to report an 'out of range' condition. Proper adjustment ensures the TRS aligns with the actual transmission gear position.",
+      "**Repair or Replace Damaged Wiring and Connectors:** Corrosion, chafed wires, or loose/damaged pins within the TRS circuit can lead to signal integrity issues. Repairing or replacing the affected sections of the wiring harness or the connector itself will restore proper communication.",
+      "**Clean Corrosion from Sensor Terminals and Connectors:** Oxidation on the electrical terminals of the TRS or its connector can impede proper signal transmission. Thoroughly cleaning these contacts with an appropriate electrical contact cleaner can often resolve intermittent performance issues."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0706 code is considered dangerous. The transmission range sensor is critical for the PCM/TCM to accurately determine the selected gear. A fault can lead to unpredictable and hazardous conditions, including: the vehicle starting in gear (a severe safety risk), harsh or incorrect gear engagement, loss of reverse or drive, unintended vehicle movement, or the inability to shift out of Park. This can result in loss of control or unexpected acceleration/deceleration, posing a significant risk to the driver, passengers, and others on the road."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $300",
+      "labor": "$120 - $450"
+    }
   },
   "P0707": {
     "title": "Transmission Range Sensor Circuit Low Input",
@@ -11570,7 +11590,26 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**Step 1: Thorough Visual Inspection and Wiggle Test.** Begin by locating the Transmission Range Sensor (TRS), often mounted externally on the transmission case or integrated into the valve body or shifter assembly. Carefully inspect the sensor's electrical connector and the entire wiring harness leading to it. Look for any signs of corrosion, fraying, chafing, physical damage, or loose connections. With the engine running and a scan tool monitoring the TRS live data (e.g., gear position, voltage output), gently wiggle and flex the wiring harness and the connector itself. Pay close attention to any momentary drops, spikes, or incorrect gear indications on the scan tool display, which would pinpoint an intermittent connection issue.",
+      "**Step 2: Electrical Circuit Integrity Test.** Disconnect the TRS connector. Using a high-quality digital multimeter, test for proper voltage supply (typically 5V or 12V, depending on the vehicle manufacturer and sensor type) at the appropriate pin(s) of the connector with the ignition ON. Also, verify a solid ground connection. Next, perform a continuity and resistance check on the signal wire(s) from the TRS connector back to the Powertrain Control Module (PCM) or Transmission Control Module (TCM) connector. While performing these checks, flex the harness along its entire length, especially at pinch points or areas prone to vibration, to detect any intermittent open circuits or high resistance points that might not be apparent during a static test.",
+      "**Step 3: Transmission Range Sensor Output Verification.** If the wiring and power/ground supply appear sound, focus on the sensor itself. With the scan tool connected and monitoring live data for the TRS, manually cycle the shifter through all available gear positions (P, R, N, D, L, etc.) slowly and deliberately. Observe the sensor's output on the scan tool. For a switch-type sensor, ensure each gear position registers correctly and consistently without hesitation or incorrect readings. For a variable resistor or Hall-effect type sensor, look for smooth, linear changes in voltage or resistance as the shifter moves. An intermittent fault within the sensor itself will often manifest as a sudden, brief drop-out, spike, or incorrect reading during this test, especially when transitioning between gears.",
+      "**Step 4: PCM/TCM Input Verification (If Necessary).** If the TRS output appears consistent and correct at the sensor connector, but the P0709 code persists, the issue may lie in the signal path from the sensor to the control module or within the module itself. Back-probe the corresponding TRS input pins at the PCM/TCM connector while monitoring the sensor's output. Compare these readings to those taken directly at the sensor. Any discrepancy indicates a wiring issue between the sensor and the module. If the signal is correct at the module input but the code is still present, further diagnostics on the PCM/TCM may be required, though this is less common for an intermittent circuit code."
+    ],
+    "commonFixes": [
+      "**Replace the Transmission Range Sensor (TRS).** If the sensor itself is found to have internal intermittent faults, replacing the unit is the most direct solution. This is a common failure point for P0709.",
+      "**Repair or Replace Damaged Wiring and/or Connectors.** Address any identified issues with the wiring harness, such as chafed wires, corroded terminals, or loose connections. This may involve splicing in new wire sections, replacing connector pigtails, or cleaning terminals with specialized electrical contact cleaner.",
+      "**Adjust or Re-align the Transmission Range Sensor.** On some vehicles, the TRS is adjustable. If the sensor is slightly out of alignment, it may intermittently fail to register certain gear positions correctly. Consult service information for proper adjustment procedures."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent P0709 code can be unpredictable and potentially hazardous. The transmission may experience harsh or delayed shifts, unexpected gear engagements, or even enter 'limp mode,' limiting vehicle speed and power. In some cases, the vehicle may fail to start if the PCM/TCM cannot correctly identify 'Park' or 'Neutral.' It is advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $350",
+      "labor": "$150 - $750"
+    }
   },
   "P0710": {
     "title": "Transmission Fluid Temperature Sensor Circuit Malfunction",
@@ -11588,7 +11627,26 @@
       "cause_pcm_failure"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$100 - $500"
+    "estimatedCost": "$100 - $500",
+    "diagnosticSteps": [
+      "Perform a thorough visual inspection of the transmission fluid temperature (TFT) sensor's wiring harness and connector. Look for any signs of physical damage, such as chafing, cuts, corrosion, or loose connections. Pay particular attention to areas where the harness might rub against the transmission case, exhaust, or other engine components. Also, check the transmission fluid level and condition; low or degraded fluid can sometimes indirectly affect sensor performance or cause other transmission issues that might be misdiagnosed.",
+      "With the ignition off, disconnect the TFT sensor electrical connector. Using a digital multimeter, measure the resistance of the TFT sensor itself across its terminals. Compare this reading to the manufacturer's specifications, which typically provide a resistance-to-temperature chart. A faulty sensor will often show an open circuit (infinite resistance), a short circuit (near zero resistance), or a resistance value significantly out of the specified range for the ambient temperature. Most TFT sensors are thermistors, meaning their resistance decreases as temperature increases.",
+      "With the TFT sensor still disconnected and the ignition ON (engine OFF), test the sensor's wiring harness for proper voltage and ground. Using a multimeter, check for a 5-volt reference signal at one of the harness terminals and a good ground at the other. If the reference voltage is absent or incorrect, or if the ground circuit is open, trace the wiring back to the Transmission Control Module (TCM) or Powertrain Control Module (PCM) to identify an open circuit, short to voltage, or short to ground. Also, perform a continuity test on both the signal and ground wires from the sensor connector back to the TCM/PCM connector to ensure no high resistance or open circuits exist.",
+      "Connect a professional-grade scan tool and monitor the Transmission Fluid Temperature (TFT) sensor live data. Observe the temperature reading with the engine cold and then as the transmission warms up. A malfunctioning sensor might display an implausible fixed value (e.g., -40\u00b0F/C or an extremely high temperature like 300\u00b0F+), or a reading that does not change or changes erratically as the transmission fluid temperature should naturally rise. Compare the scan tool reading to an external temperature measurement of the transmission pan using an infrared thermometer (understanding that pan temperature will be slightly lower than internal fluid temperature)."
+    ],
+    "commonFixes": [
+      "Replace the Transmission Fluid Temperature (TFT) Sensor: This is the most frequent solution if the sensor itself is found to be faulty during electrical testing. The sensor may be a standalone unit, integrated into the transmission's lead frame, or part of a larger solenoid pack, requiring varying degrees of transmission disassembly.",
+      "Repair or Replace Damaged Wiring and/or Connectors: If the diagnostic steps reveal an open circuit, short circuit, high resistance, or corrosion within the TFT sensor's wiring harness or connector, repairing the damaged section or replacing the connector will resolve the P0710 code.",
+      "Address Transmission Control Module (TCM) or Powertrain Control Module (PCM) Malfunction: In rare cases, if the sensor and all associated wiring test perfectly, the issue may lie within the TCM/PCM's internal circuitry responsible for processing the TFT sensor input. This would necessitate further advanced diagnostics and potentially module replacement or reprogramming."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0710 code is generally not recommended and should be approached with caution. An inaccurate or absent transmission fluid temperature reading prevents the Transmission Control Module (TCM) from properly managing shift points, torque converter clutch engagement, and line pressure. This can lead to harsh or delayed shifts, premature transmission wear, reduced fuel economy, and, critically, the inability to detect and prevent transmission overheating. Continued driving could lead to significant internal transmission damage or even catastrophic failure."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $350",
+      "labor": "$150 - $900"
+    }
   },
   "P0711": {
     "title": "Transmission Fluid Temperature Sensor Circuit Range/Performance",
@@ -11604,7 +11662,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$100 - $500"
+    "estimatedCost": "$100 - $500",
+    "diagnosticSteps": [
+      "**Step 1: Initial Visual Inspection and Transmission Fluid Condition Check.** Begin by thoroughly inspecting the transmission fluid level and condition. Low, dirty, or burnt transmission fluid can indirectly affect sensor performance or cause other issues that trigger this code. Next, visually inspect the external wiring harness leading to the transmission, paying close attention to the Transmission Fluid Temperature (TFT) sensor connector. Look for any signs of physical damage, chafing, corrosion, or loose connections. Check for any fluid leaks around the transmission pan or sensor area, as fluid intrusion can compromise electrical integrity.",
+      "**Step 2: Electrical Circuit Integrity Test of the TFT Sensor.** Locate the TFT sensor; its position varies by vehicle, often being internal (part of the valve body or lead frame) or external. Disconnect the sensor's electrical connector. Using a high-quality digital multimeter (DMM), measure the resistance across the sensor's terminals. Compare this reading to the manufacturer's specifications, ideally at a known temperature (e.g., ambient temperature after the vehicle has sat overnight). An open circuit (infinite resistance), a short circuit (near zero resistance), or a reading significantly outside the specified range indicates a faulty sensor. Next, with the ignition ON (engine OFF), measure the voltage at the sensor's harness connector. You should typically find a 5-volt reference signal and a good ground. If these are incorrect or absent, trace the wiring back to the Transmission Control Module (TCM) or Powertrain Control Module (PCM) to identify open circuits, shorts to ground, or shorts to voltage.",
+      "**Step 3: Live Data Analysis with a Professional Scan Tool.** Connect a professional-grade scan tool capable of displaying live data. Monitor the Transmission Fluid Temperature (TFT) sensor reading. When the engine is cold and has been off for several hours, the TFT reading should closely match the ambient air temperature. Start the engine and observe the TFT reading as the transmission warms up; the temperature should rise smoothly and predictably. Erratic readings, readings stuck at an extreme value (e.g., -40\u00b0F or 300\u00b0F), or a complete lack of change in the reading strongly suggest a problem with the sensor, its circuit, or the control module's interpretation. While monitoring, gently manipulate the wiring harness and connector to the TFT sensor to check for intermittent connection issues that cause the reading to fluctuate.",
+      "**Step 4: Check for Related DTCs and TCM/PCM Functionality.** Scan for any other transmission-related diagnostic trouble codes (DTCs) that might be present (e.g., P0700, P0710, P0712, P0713, P0715). These codes can provide additional context or point to a broader transmission control system issue. If the TFT sensor and its entire circuit test perfectly, but the P0711 code persists, the issue could potentially lie within the Transmission Control Module (TCM) or Powertrain Control Module (PCM) itself, specifically its internal circuitry responsible for processing the TFT sensor input. This is a less common scenario but should be considered after all other possibilities have been exhaustively ruled out."
+    ],
+    "commonFixes": [
+      "**Replace the Transmission Fluid Temperature (TFT) Sensor:** This is the most frequent solution if the sensor itself is found to be faulty (exhibiting incorrect resistance, an open circuit, or a short). If the sensor is internal (part of the valve body or lead frame), this repair will require dropping the transmission pan and replacing the integrated component.",
+      "**Repair or Replace Damaged Wiring and Connectors:** Address any identified issues within the wiring harness leading to the TFT sensor, including corroded terminals, chafed wires, open circuits, or shorts. Ensure the sensor connector is clean, securely seated, and free of any corrosion or damage.",
+      "**Correct Transmission Fluid Level and Condition:** If the initial inspection revealed low, dirty, or burnt transmission fluid, performing a transmission fluid and filter service to bring the fluid to the correct level and quality can sometimes resolve erratic sensor readings, especially if the sensor was not fully submerged or was being affected by poor fluid properties.",
+      "**Replace the Transmission Control Module (TCM) or Powertrain Control Module (PCM):** This is a last-resort fix, only to be considered after the TFT sensor and its entire electrical circuit have been meticulously tested and confirmed to be functioning correctly. A faulty control module might be unable to accurately interpret the sensor's signal, leading to the P0711 code."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0711 code can lead to unpredictable transmission behavior. The transmission control module relies heavily on accurate fluid temperature data to optimize shift points, torque converter lock-up, and line pressure. Without this critical information, the transmission may shift harshly, erratically, or delay shifts, potentially leading to overheating, accelerated wear on internal components, and even catastrophic transmission damage over time. While the vehicle may still be drivable, it is strongly advised to diagnose and repair this issue promptly to prevent more severe and costly transmission failures."
+    },
+    "costBreakdown": {
+      "parts": "$20 - $450",
+      "labor": "$150 - $600"
+    }
   },
   "P0712": {
     "title": "Transmission Fluid Temperature Sensor Circuit Low Input",
@@ -11620,7 +11698,26 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$100 - $500"
+    "estimatedCost": "$100 - $500",
+    "diagnosticSteps": [
+      "Begin with a thorough visual inspection of the transmission wiring harness, specifically focusing on the connector and wiring leading to the Transmission Fluid Temperature (TFT) sensor. Look for any signs of chafing, cuts, corrosion, or loose connections that could cause a short to ground or an open circuit. Pay close attention to areas where the harness might rub against the transmission case, exhaust components, or other moving parts. Also, check the transmission fluid level and condition; while not a direct cause of a circuit low input, extremely low or burnt fluid can indicate underlying issues that might affect sensor operation or lead to debris causing shorts.",
+      "Perform an electrical circuit integrity test. With the key OFF, disconnect the TFT sensor connector. First, measure the resistance across the two terminals of the TFT sensor itself (if accessible without dropping the pan). Compare this reading to the manufacturer's specifications for the current ambient temperature. For most NTC (Negative Temperature Coefficient) thermistors, resistance should decrease as temperature increases. An extremely low resistance (approaching 0 ohms) or an open circuit (OL) indicates a faulty sensor. Next, on the vehicle's harness side of the connector, with the key ON (engine OFF), check for a 5-volt reference signal on one wire and a good ground on the other. If the 5V reference is missing or incorrect, trace back to the PCM/TCM. Finally, with the key OFF, use a DMM to check for continuity between the signal wire terminal on the harness side and a known good chassis ground. There should be no continuity; if continuity exists, it indicates a short to ground in the wiring harness, which is a common cause for a 'low input' voltage.",
+      "Utilize a professional-grade scan tool to monitor live data, specifically the Transmission Fluid Temperature (TFT) sensor reading. With the engine cold and transmission at ambient temperature, the TFT reading should closely match the ambient air temperature or the engine coolant temperature (ECT) sensor reading. If the TFT reading is stuck at an extremely high value (e.g., 300\u00b0F / 150\u00b0C or higher, often the maximum value the PCM can report) or an implausibly low value (e.g., -40\u00b0F / -40\u00b0C), this confirms a sensor or circuit fault. A P0712 'low input' typically means the PCM is seeing a low voltage, which for an NTC thermistor often translates to an interpretation of very high temperature.",
+      "If the issue is intermittent or the initial tests are inconclusive, perform pinpoint testing. While monitoring the live TFT data on the scan tool, carefully wiggle the wiring harness and connectors leading to the TFT sensor. Any sudden, erratic changes in the TFT reading indicate a loose connection, intermittent short, or an open circuit within that section of the wiring. Additionally, consider performing a voltage drop test across the sensor circuit to identify any excessive resistance in the wiring that might not be apparent with simple continuity checks."
+    ],
+    "commonFixes": [
+      "Replace the Transmission Fluid Temperature (TFT) Sensor: This is the most frequent solution if the sensor itself is faulty, exhibiting incorrect resistance readings or causing the 'low input' signal. The sensor may be a standalone component, or it might be integrated into the transmission's internal wiring harness (lead frame) or even the valve body assembly, requiring a more involved replacement procedure.",
+      "Repair or Replace Damaged Wiring Harness: If the diagnostic steps reveal a short to ground, an open circuit, or excessive resistance in the wiring leading to the TFT sensor, the damaged section of the harness must be meticulously repaired or replaced. Ensure all connections are clean, tight, and free of corrosion to prevent future issues.",
+      "Replace the Transmission Lead Frame or Valve Body: On many modern transmissions, the TFT sensor is an integral part of the internal wiring harness (often called a lead frame) or the entire valve body assembly. If the sensor is not separately replaceable, the entire lead frame or valve body may need to be replaced to resolve the P0712 code. This is a more complex and costly repair due to the component integration."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0712 code is generally not recommended and should be approached with caution. The Transmission Control Module (TCM) relies heavily on accurate transmission fluid temperature data to manage critical functions such as shift points, torque converter lock-up, and line pressure. An incorrect 'low input' signal (which the TCM often interprets as an extremely high temperature) can lead to erratic or harsh shifting, delayed engagement, or even cause the transmission to enter 'limp mode' to prevent perceived damage. This can create unpredictable driving conditions and potentially lead to further, more severe transmission damage due to improper operation or actual overheating if the TCM is not aware of the true temperature."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $800+",
+      "labor": "$150 - $900+"
+    }
   },
   "P0713": {
     "title": "Transmission Fluid Temperature Sensor Circuit High Input",
@@ -11636,7 +11733,26 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$100 - $500"
+    "estimatedCost": "$100 - $500",
+    "diagnosticSteps": [
+      "**Step 1: Initial Scan Tool Analysis and Visual Inspection.** Connect a professional-grade scan tool and retrieve all stored and pending Diagnostic Trouble Codes (DTCs). Specifically, monitor the Transmission Fluid Temperature (TFT) sensor live data. A P0713 \"High Input\" code typically indicates the Powertrain Control Module (PCM) is receiving a voltage signal that corresponds to an extremely low temperature (e.g., -40\u00b0F/-40\u00b0C) or an open circuit. This is often due to infinite resistance in the sensor or its circuit. Visually inspect the transmission wiring harness, paying close attention to the TFT sensor connector (if external) or the main transmission connector (if internal). Look for signs of corrosion, bent pins, chafing, cuts, or any physical damage that could lead to an open circuit or a short to voltage.",
+      "**Step 2: Electrical Circuit Testing at the Sensor Connector.** Locate the TFT sensor. On many modern transmissions, it's integrated into the valve body, lead frame, or an internal wiring harness assembly, requiring the transmission pan to be dropped for access. If accessible, disconnect the electrical connector from the TFT sensor. Using a Digital Multimeter (DMM), measure the resistance across the two terminals of the TFT sensor itself. A \"High Input\" code strongly suggests an open circuit within the sensor, so you should expect to read infinite resistance (OL) or a resistance value significantly higher than manufacturer specifications for ambient temperature. Next, with the ignition ON (engine OFF), measure the voltage at the harness connector going *to* the sensor. One wire should typically show a 5-volt reference signal from the PCM, and the other should be a ground. A constant 5V on the signal wire, or an absence of ground, could indicate an open circuit in the sensor or its ground path.",
+      "**Step 3: Wiring Integrity Check from Sensor to PCM.** With the TFT sensor connector disconnected and the PCM/TCM connector also disconnected (to prevent damage to the control module), perform continuity checks on the wiring harness. Use your DMM to check for continuity between the TFT sensor connector terminals and their corresponding terminals at the PCM/TCM connector. An open circuit on either the signal wire or the ground wire will cause a P0713. Additionally, check both wires for shorts to ground and shorts to voltage (e.g., 12V from another circuit). A short to voltage on the signal wire could also cause a \"High Input\" condition, as the PCM would interpret the higher voltage as an extremely low temperature or an out-of-range signal.",
+      "**Step 4: Advanced Sensor Verification (If Accessible and Wiring Passes).** If the TFT sensor is externally accessible and the wiring tests pass, you can further verify the sensor's function. Place the sensor in a controlled temperature environment (e.g., a cup of water with a thermometer) and measure its resistance at various temperatures. The resistance of a thermistor-type sensor (which TFT sensors typically are) should decrease as the temperature increases. Compare these readings to the manufacturer's resistance-temperature chart. If the resistance remains constant, is always extremely high, or does not change predictably with temperature, the sensor is faulty. If the sensor is internal and all wiring tests pass, the internal sensor itself is the most probable cause, necessitating transmission pan removal for replacement."
+    ],
+    "commonFixes": [
+      "**Replace the Transmission Fluid Temperature (TFT) Sensor:** This is the most frequent solution, especially if the sensor tests open circuit or out of specification. On many vehicles, this sensor is integrated into the internal transmission wiring harness, valve body, or lead frame assembly, requiring the transmission pan to be dropped for access and replacement.",
+      "**Repair or Replace Damaged Wiring or Connectors:** If diagnostic steps reveal an open circuit, a short to voltage, or corroded/damaged terminals within the wiring harness or connectors leading to the TFT sensor, these components must be meticulously repaired or replaced to restore proper circuit integrity.",
+      "**Address Powertrain/Transmission Control Module (PCM/TCM) Fault:** In rare instances, the PCM or TCM itself could be at fault, either failing to provide the correct 5-volt reference signal or misinterpreting the sensor's input. This should only be considered after thoroughly ruling out the sensor and all associated wiring as the cause."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0713 code can lead to unpredictable transmission behavior, including harsh or delayed shifts, incorrect torque converter lock-up, and potentially transmission overheating if the transmission control module (TCM) cannot accurately monitor fluid temperature. The TCM relies heavily on accurate TFT data for proper shift scheduling, line pressure control, and engagement of the torque converter clutch. Operating the transmission without this critical data can accelerate internal wear, reduce fuel economy, and potentially lead to costly transmission damage over time. It is strongly advised to have this issue diagnosed and repaired promptly to prevent further complications."
+    },
+    "costBreakdown": {
+      "parts": "$80 - $650",
+      "labor": "$180 - $900"
+    }
   },
   "P0714": {
     "title": "Transmission Fluid Temperature Sensor Circuit Intermittent",
@@ -11652,7 +11768,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$100 - $500"
+    "estimatedCost": "$100 - $500",
+    "diagnosticSteps": [
+      "Initial Visual Inspection and Harness Integrity Check: Begin by thoroughly inspecting the external transmission fluid temperature (TFT) sensor and its wiring harness for any signs of physical damage, chafing, corrosion at the connector, or loose terminals. Pay close attention to areas where the harness might rub against the transmission case or exhaust components. Perform a gentle \"wiggle test\" on the sensor connector and the main transmission harness connectors while monitoring live data for any fluctuations.",
+      "Live Data Analysis with Scan Tool: Connect a professional-grade scan tool and monitor the Transmission Fluid Temperature (TFT) sensor's live data parameter. Observe the temperature reading during various conditions: engine off (cold soak), engine idling, and during a road test under varying loads. Look for sudden, erratic drops or spikes in temperature, readings that freeze, or values that are clearly implausible (e.g., -40\u00b0F or 300\u00b0F when the transmission is only warm). Simultaneously, wiggle the harness and connectors to try and induce the intermittent fault while watching the data.",
+      "Resistance Measurement of the TFT Sensor: Disconnect the TFT sensor connector. Using a digital multimeter, measure the resistance across the two terminals of the TFT sensor itself. Compare this reading to the manufacturer's specified resistance-to-temperature chart (typically found in service information). Perform this test when the transmission is cold and, if possible, again when it's warm. An intermittent sensor might show correct resistance at one temperature but become open or shorted when heated or vibrated.",
+      "Circuit Continuity and Integrity Check to PCM/TCM: With the TFT sensor disconnected and the PCM/TCM connector also disconnected (following proper safety procedures), perform continuity checks on both wires from the TFT sensor connector back to the respective pins at the PCM/TCM connector. Ensure there is solid continuity (very low resistance, typically < 5 ohms). Simultaneously, check each wire for shorts to ground and shorts to battery voltage. An intermittent short or open in the wiring harness is a common cause for P0714.",
+      "Reference Voltage and Ground Verification: Reconnect the PCM/TCM. With the TFT sensor still disconnected, use a multimeter to check for the presence of the correct reference voltage (typically 5 volts) at one of the TFT sensor harness terminals (usually the signal reference wire) and a good ground connection at the other terminal. An intermittent loss of reference voltage or an unstable ground can cause this code."
+    ],
+    "commonFixes": [
+      "Replace the Transmission Fluid Temperature Sensor: If diagnostic steps point to an internal fault within the sensor itself, replacement is necessary. Note that on many transmissions, the TFT sensor is integrated into the internal transmission wiring harness or even the valve body assembly, requiring a pan drop and fluid drain.",
+      "Repair or Replace Damaged Wiring Harness/Connectors: If the intermittent fault is traced to damaged, corroded, or chafed wiring in the external or internal transmission harness, or if the connector terminals are spread or corroded, the affected section of the harness or the entire harness may need to be repaired or replaced.",
+      "Clean Corroded Electrical Connectors: Thoroughly clean any corrosion found on the TFT sensor connector, the main transmission harness connectors, or the PCM/TCM connectors using electrical contact cleaner and a suitable brush. Apply dielectric grease to prevent future corrosion."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent P0714 code is generally not recommended for extended periods. The transmission relies heavily on accurate fluid temperature data for proper shift scheduling, torque converter lock-up, line pressure control, and overall operational efficiency. An intermittent signal can cause erratic shifting, delayed engagements, premature wear on internal components due to incorrect fluid pressure or overheating, and potentially lead to the transmission entering \"limp mode\" to prevent further damage. While it might not strand you immediately, continued driving risks significant transmission damage."
+    },
+    "costBreakdown": {
+      "parts": "$150 - $850",
+      "labor": "$150 - $1600"
+    }
   },
   "P0715": {
     "title": "Input/Turbine Speed Sensor Circuit Malfunction",
@@ -11671,7 +11807,27 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**1. Thorough Visual Inspection and Wiring Integrity Check:** Begin by locating the input/turbine speed sensor on the transmission case. This sensor is typically mounted externally, often near the bell housing or on the side of the transmission. Carefully inspect the sensor's electrical connector for any signs of corrosion, bent or pushed-out pins, or a loose connection. Trace the wiring harness from the sensor back to the Transmission Control Module (TCM) or Powertrain Control Module (PCM). Look for any visible damage such as chafing, cuts, pinches, or signs of heat damage, especially where the harness passes through firewalls, near exhaust components, or over sharp edges. Ensure all connectors in the circuit are fully seated and locked.",
+      "**2. Electrical Circuit Testing (Resistance, Voltage, and Continuity):** Disconnect the input/turbine speed sensor and use a digital multimeter to measure its internal resistance. Compare this reading to the manufacturer's specifications found in a service manual; an open circuit (infinite resistance) or a short circuit (near zero resistance) indicates an internal sensor failure. Next, with the ignition ON and the sensor still disconnected, test the sensor's harness connector for proper reference voltage (typically 5V or 12V, depending on the system) and a good ground signal from the TCM/PCM. A missing voltage or ground indicates a wiring issue or a problem with the control module. Finally, with both the sensor and TCM/PCM connectors disconnected, perform a continuity test on the signal wire between the two connectors to check for breaks, and also check for shorts to ground or power on the signal wire.",
+      "**3. Live Data Monitoring and Oscilloscope Analysis:** Connect a professional-grade scan tool capable of displaying live transmission data. Monitor the 'Input Speed Sensor' (ISS) or 'Turbine Speed Sensor' (TSS) parameter while driving the vehicle under various conditions. The reading should increase smoothly and consistently with engine RPM (when in gear) and vehicle speed. Erratic readings, sudden drops to zero, or a constant zero reading when the transmission is engaged strongly suggest a sensor or circuit malfunction. For definitive diagnosis, use an oscilloscope to capture the sensor's waveform directly. A healthy sensor will produce a clean, consistent square wave or sine wave (depending on sensor type) that changes frequency with speed. An absent, distorted, or noisy waveform confirms a problem with the sensor or its signal path.",
+      "**4. Inspect Transmission Fluid Condition and Reluctor Wheel:** While not a direct electrical test, the condition of the transmission fluid can sometimes provide clues. Check the transmission fluid level and condition (color, smell, presence of metallic debris). Severely contaminated or burnt fluid, or excessive metal particles, could indicate internal transmission wear that might damage the sensor's reluctor wheel (the toothed wheel the sensor reads) or interfere with its operation. If accessible, remove the sensor and visually inspect the reluctor wheel for damage, missing teeth, or excessive metallic debris accumulation that could be blocking the sensor's signal."
+    ],
+    "commonFixes": [
+      "**Replace the Input/Turbine Speed Sensor:** This is the most frequent solution if electrical tests confirm the sensor itself is faulty (e.g., incorrect resistance, no signal output, or erratic waveform).",
+      "**Repair or Replace Damaged Wiring/Connector:** If the visual inspection or electrical tests identify damaged wiring, corroded terminals, or a faulty connector, repairing the specific section of the harness or replacing the connector will resolve the circuit malfunction.",
+      "**Clean Debris from Sensor Tip/Reluctor Wheel:** In some instances, metallic shavings or sludge can accumulate on the magnetic tip of the sensor or on the reluctor wheel, obstructing the sensor's ability to read rotational speed. Removing the sensor and carefully cleaning both the sensor tip and the accessible portion of the reluctor wheel can restore proper function.",
+      "**Replace the Transmission Control Module (TCM) or Powertrain Control Module (PCM):** This is a less common but possible fix if all sensor and wiring tests pass conclusively, and the control module is confirmed to be failing to provide proper reference voltage, ground, or to correctly process the sensor's input signal. This should only be pursued after thoroughly ruling out all other possibilities."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0715 code can lead to unpredictable and potentially dangerous transmission behavior, including harsh or erratic shifting, delayed engagements, or the transmission entering 'limp mode' (often stuck in a single gear like 2nd or 3rd). This significantly impairs vehicle drivability and control, especially in traffic or at higher speeds, increasing the risk of an accident. Continued driving can also lead to accelerated wear and further damage to internal transmission components. It is strongly advised to have the vehicle diagnosed and repaired promptly."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $250 (Input/Turbine Speed Sensor); $10 - $100 (Wiring/Connector repair materials, fluid/gasket if needed); $300 - $1500+ (TCM/PCM, if required and rare)",
+      "labor": "$100 - $200 (Diagnosis, 1-2 hours); $150 - $400 (Sensor Replacement, 1.5-4 hours depending on accessibility); $100 - $300 (Wiring Repair, 1-3 hours); $200 - $500 (TCM/PCM Replacement & Programming, 2-5 hours)"
+    }
   },
   "P0716": {
     "title": "Input/Turbine Speed Sensor Circuit Range/Performance",
@@ -11688,7 +11844,27 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "Comprehensive Visual Inspection and Scan Tool Data Analysis: Begin with a thorough visual inspection of the Input/Turbine Speed Sensor (ISS/TSS) and its associated wiring harness and connectors. Look for any signs of physical damage, fraying, chafing, corrosion, or loose connections. Pay close attention to areas where the harness might rub against other components. Next, connect a professional-grade scan tool capable of displaying live transmission data. Monitor the Input Shaft Speed (ISS) or Turbine Speed Sensor (TSS) PID, along with Output Shaft Speed (OSS), Engine RPM, and Vehicle Speed Sensor (VSS) data. With the vehicle in neutral, compare the ISS/TSS reading to engine RPM; they should be very close. During a test drive, observe the ISS/TSS readings for erratic fluctuations, sudden drops to zero, or values that are inconsistent with engine RPM and OSS, especially during gear changes and torque converter lock-up events. Note any specific driving conditions or gears where the anomaly is most pronounced. Also, check for any other related transmission or engine codes that might provide additional context.",
+      "Circuit Integrity and Sensor Resistance/Voltage Testing: With the ignition OFF and battery disconnected (if necessary for safety), disconnect the ISS/TSS sensor connector and locate the corresponding pins at the Transmission Control Module (TCM) or Powertrain Control Module (PCM) connector using the vehicle's specific wiring diagram. Perform continuity checks on the signal wire, reference voltage wire (if applicable), and ground wire between the sensor connector and the module connector. Any open circuits indicate a break in the wiring. Next, check for short circuits to ground or to battery voltage on all wires. Measure the resistance of the sensor itself (if it's a magnetic pickup type) across its terminals, comparing it to manufacturer specifications. For Hall effect sensors, back-probe the connector with the sensor connected and ignition ON to verify proper power and ground, then use an oscilloscope to observe the square wave signal output while rotating the input shaft or simulating rotation (if possible). An erratic or absent signal confirms a sensor or wiring issue.",
+      "Environmental Factors and Reluctor Wheel Inspection: After confirming the sensor and wiring integrity, consider environmental factors. Ensure the transmission fluid level is correct and the fluid is not severely contaminated or burnt, as this can sometimes indirectly affect sensor performance or indicate a deeper mechanical issue. If the sensor is accessible, remove it and inspect its tip for any metallic debris or foreign material that might be adhering to it, which can interfere with its magnetic field and signal generation. Also, visually inspect the reluctor wheel (tone wheel) on the input shaft, if visible, for any signs of damage, missing teeth, or excessive wear that could cause an inconsistent signal. While less common for P0716, electromagnetic interference (EMI) from poorly routed high-current wiring can sometimes induce noise into the sensor circuit, leading to performance issues.",
+      "Advanced Diagnostics and Mechanical Verification (If Previous Steps Inconclusive): If the sensor and its circuit test perfectly, and the issue persists, the problem could potentially lie within the Transmission Control Module (TCM) or Powertrain Control Module (PCM) itself, specifically a faulty input driver circuit. This is less common but should be considered. As a final diagnostic step, if all electrical components are verified good, a mechanical issue within the transmission, such as excessive play in the input shaft bearings or damage to the reluctor wheel that is not visually apparent, could be causing the erratic speed readings. This would typically be accompanied by other transmission noises or symptoms and would require more invasive transmission inspection or disassembly."
+    ],
+    "commonFixes": [
+      "Replace the Input/Turbine Speed Sensor (ISS/TSS): This is the most frequent solution. If the sensor's live data is erratic, absent, or inconsistent with other vehicle parameters, and its circuit integrity has been verified, replacing the sensor with a high-quality OEM or equivalent aftermarket part will typically resolve the P0716 code.",
+      "Repair or Replace Damaged Wiring and Connectors: Address any identified open circuits, short circuits, or excessive resistance in the wiring harness leading to the ISS/TSS. This includes repairing frayed wires, replacing corroded or damaged connector terminals, and ensuring all connections are secure and free of contamination.",
+      "Clean the Input/Turbine Speed Sensor Tip: In some cases, metallic debris from normal transmission wear can accumulate on the magnetic tip of the sensor, interfering with its ability to accurately read the reluctor wheel. Removing the sensor and thoroughly cleaning its tip can restore proper function without needing to replace the sensor itself.",
+      "Address Internal Transmission Mechanical Issues: If the sensor and its entire circuit are confirmed to be functioning correctly, and the code persists, the underlying issue may be mechanical damage within the transmission, such as a damaged reluctor wheel on the input shaft or excessive input shaft end play. This would necessitate internal transmission repair or replacement."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0716 code is highly inadvisable and can be dangerous. The transmission control module relies heavily on the input/turbine speed sensor to accurately determine gear ratios, control shift points, and manage torque converter lock-up. A faulty or erratic signal can lead to unpredictable and severe transmission behavior, including harsh or delayed shifts, loss of specific gears, unexpected downshifts, or even a complete loss of drive while operating the vehicle. This erratic behavior can cause a sudden loss of power or control, significantly increasing the risk of an accident, especially in traffic or at higher speeds. Continued driving can also cause accelerated wear and severe damage to internal transmission components."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150",
+      "labor": "$75 - $300"
+    }
   },
   "P0717": {
     "title": "Input/Turbine Speed Sensor Circuit No Signal",
@@ -11705,7 +11881,26 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**Step 1: Thorough Visual Inspection and Basic Checks.** Begin by visually inspecting the input/turbine speed sensor's electrical connector for any signs of corrosion, bent pins, or a loose connection. Trace the wiring harness from the sensor back to the Transmission Control Module (TCM) or Powertrain Control Module (PCM), meticulously looking for chafing, cuts, pinches, or any other physical damage. Pay particular attention to areas where the harness might rub against the transmission case, exhaust components, or frame. Ensure the transmission fluid level is correct and the fluid condition is good, as extremely low fluid can sometimes exacerbate transmission issues.",
+      "**Step 2: Electrical Circuit Integrity Testing.** With the ignition off, disconnect the input/turbine speed sensor. Using a high-quality digital multimeter (DMM), perform a resistance check across the sensor's terminals (if it's a two-wire inductive sensor). Compare the reading to the manufacturer's specifications found in the vehicle's service manual; an open circuit (infinite resistance) or a short circuit (near zero ohms) indicates a faulty sensor. If it's a three-wire Hall-effect sensor, turn the ignition to ON (engine off) and check for the 5-volt reference voltage and a good ground at the sensor connector. Then, perform continuity checks on each wire from the sensor connector to the corresponding pins at the TCM/PCM connector. Simultaneously, check for any shorts to ground or shorts to power on each wire within the harness.",
+      "**Step 3: Scan Tool Live Data Analysis and Comparison.** Connect a professional-grade scan tool capable of displaying live transmission data. Monitor the \"Input Shaft Speed\" or \"Turbine Speed Sensor\" parameter. With the vehicle safely supported on jack stands (drive wheels off the ground) or during a controlled road test, observe the sensor reading. A functional sensor should display a speed reading that correlates with engine RPM when the transmission is in gear. If the reading consistently shows 0 RPM, is erratic, or drops out intermittently while the transmission is engaged, it strongly indicates a problem with the sensor or its circuit. Compare this reading to the \"Output Shaft Speed Sensor\" data; if the output sensor is reading correctly but the input is not, it further isolates the issue to the input side.",
+      "**Step 4: Advanced TCM/PCM Circuit Verification.** If the sensor itself tests good and all external wiring appears intact, the issue may lie deeper. With the ignition off, disconnect the TCM/PCM connector. Re-perform continuity and resistance checks directly from the input/turbine speed sensor connector pins to the corresponding pins at the TCM/PCM connector. This verifies the entire circuit path, bypassing any intermediate connectors. While less common for a P0717, an internal fault within the TCM/PCM's input circuit for the speed sensor could be the root cause, but this diagnosis should only be pursued after thoroughly ruling out all external components and wiring."
+    ],
+    "commonFixes": [
+      "**Replace the Input/Turbine Speed Sensor:** This is the most frequent solution if the sensor itself is found to be faulty (e.g., open circuit, incorrect resistance, or no signal output during live data monitoring). Ensure the replacement sensor is an OEM equivalent or a high-quality aftermarket part.",
+      "**Repair or Replace Damaged Wiring/Connector:** If the wiring harness leading to the sensor or the sensor connector itself is found to be corroded, chafed, or broken, the damaged section must be professionally repaired or the entire sub-harness replaced. Use proper soldering techniques and heat-shrink tubing for durable, weather-resistant repairs.",
+      "**Clean Corroded Electrical Connections:** If corrosion is identified at the sensor connector or the TCM/PCM connector, carefully clean the affected pins using a specialized electrical contact cleaner and a small brush. After cleaning, apply a thin layer of dielectric grease to the connections to prevent future corrosion and ensure optimal electrical conductivity."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0717 code can range from a minor inconvenience to a significant safety concern. Without an accurate input speed signal, the Transmission Control Module (TCM) loses crucial information needed for proper gear selection and shift timing. This often leads to harsh or delayed shifts, erratic shifting patterns, or the transmission entering 'limp mode' (typically stuck in 2nd or 3rd gear). Limp mode severely restricts vehicle speed and acceleration, making it challenging and potentially dangerous to merge into traffic, maintain highway speeds, or react quickly in emergency situations. Continued driving with incorrect shifting can also cause accelerated wear and potential damage to internal transmission components."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $250",
+      "labor": "$100 - $500"
+    }
   },
   "P0718": {
     "title": "Input/Turbine Speed Sensor Circuit Intermittent",
@@ -11722,7 +11917,26 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "1. **Visual Inspection & Wiggle Test of Wiring Harness:** Begin with a thorough visual inspection of the input/turbine speed sensor's wiring harness and connector. Look for any signs of chafing, cuts, corrosion on the terminals, or loose connections. Pay particular attention to areas where the harness might rub against engine or transmission components, or where it passes through tight spaces. With the engine running and a scan tool monitoring live data for the input/turbine speed, gently wiggle the sensor connector and the associated wiring harness. Any sudden drops, spikes, or intermittent loss of signal during this test strongly indicates a faulty connector or a break in the wiring.",
+      "2. **Electrical Circuit Integrity Check (Resistance & Voltage):** Disconnect the battery and then the input/turbine speed sensor connector. Using a high-quality digital multimeter (DMM), first check the resistance of the sensor itself (if applicable; some Hall effect sensors may not have a simple resistance value, but others do). Compare this to manufacturer specifications. Next, check for continuity and resistance in the wiring harness from the sensor connector back to the Transmission Control Module (TCM) or Powertrain Control Module (PCM). Look for high resistance, open circuits, or shorts to ground or power. Also, verify that the correct reference voltage (typically 5V or 12V) and a good ground are present at the sensor connector when the ignition is on (and the battery reconnected, if safe to do so for this test).",
+      "3. **Live Data Monitoring & Oscilloscope Analysis:** Connect a professional scan tool capable of displaying live data. Monitor the input/turbine speed sensor's reading while driving the vehicle under various conditions, including acceleration, deceleration, and steady-state cruising. Look for sudden, intermittent drops to zero, erratic spikes, or readings that do not correlate with actual vehicle speed or engine RPM. For a more precise diagnosis of an intermittent signal, use an oscilloscope to directly monitor the sensor's waveform. This will reveal subtle signal dropouts, excessive electrical noise, or incorrect signal amplitude that a scan tool might not fully capture. Focus on conditions that typically trigger the P0718 code, such as specific temperatures, vibrations, or gear changes.",
+      "4. **Check for Related Codes and Transmission Fluid Condition:** Always check for any other related transmission diagnostic trouble codes (DTCs), such as P0715 (Input/Turbine Speed Sensor Circuit Malfunction) or P0717 (Input/Turbine Speed Sensor Circuit No Signal). Sometimes, an intermittent issue with another sensor or even an internal TCM/PCM fault can indirectly cause a P0718. While less common for a 'circuit intermittent' code, an extremely low or severely degraded transmission fluid level can sometimes lead to erratic internal component behavior that might affect sensor readings. Check the transmission fluid level according to manufacturer specifications (engine running, at operating temperature, in park/neutral) and note its color and smell. Burnt or dark fluid indicates potential internal wear."
+    ],
+    "commonFixes": [
+      "**Repair or Replace Damaged Wiring/Connectors:** If the diagnostic steps identify chafed wires, corroded terminals, or a faulty connector, the primary fix is to repair the damaged section of the wiring harness or replace the connector. Use proper soldering techniques with heat-shrink tubing for wire repairs, or OEM-style crimp connectors to ensure a durable and reliable connection.",
+      "**Replace the Input/Turbine Speed Sensor:** If the wiring and connector are confirmed to be in good condition, and the sensor itself consistently shows intermittent signal loss, incorrect readings, or fails electrical tests, replacing the input/turbine speed sensor is the most direct solution. Always use an OEM-quality replacement part to ensure compatibility and longevity.",
+      "**Address Transmission Fluid Issues (If Applicable):** If the transmission fluid was found to be extremely low or severely degraded during diagnosis, correcting the fluid level and/or performing a transmission fluid and filter service might be necessary. While not a direct fix for the electrical circuit, ensuring optimal transmission fluid condition supports proper transmission operation and can prevent future issues that might indirectly affect sensor performance or cause other transmission problems."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent P0718 code can be unpredictable and potentially unsafe. The transmission relies heavily on the input/turbine speed sensor for accurate shift timing, torque converter lock-up, and overall operational control. An intermittent signal can lead to harsh or delayed shifts, unexpected downshifts, loss of power, or the transmission entering 'limp mode' (limited to specific gears, often 2nd or 3rd) without warning. These conditions can create dangerous situations, especially in heavy traffic, during merging, or at highway speeds. It is strongly advisable to have the issue diagnosed and repaired promptly to prevent further transmission damage and ensure safe vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $250",
+      "labor": "$100 - $400"
+    }
   },
   "P0719": {
     "title": "Input/Turbine Speed Sensor Circuit Torque Converter/Brake Switch B Circuit High",
@@ -11739,7 +11953,27 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "Thorough Scan Tool Analysis & Freeze Frame Data Review: Connect a professional-grade scan tool. Beyond just reading P0719, examine the freeze frame data to understand the engine speed, vehicle speed, transmission fluid temperature, and brake switch status at the moment the code was set. Check for any pending or historical codes, especially those related to transmission speed sensors (P0715, P0716, P0717, P0718) or brake switch circuits (e.g., P0504, P0571, P0572, P0573). This helps determine if the issue is intermittent or constant and which component's \"high\" signal is the primary trigger.",
+      "Comprehensive Brake Switch B Circuit Inspection and Testing: Locate the brake pedal position sensor/switch (often there are multiple switches or circuits within one unit). Visually inspect its wiring and connector for damage, corrosion, or improper seating. Using a digital multimeter (DMM) or oscilloscope, back-probe the brake switch B circuit at the switch and at the Transmission Control Module (TCM) or Powertrain Control Module (PCM) connector. Verify the voltage signal when the brake pedal is released and pressed. A \"high\" condition typically means the circuit is seeing battery voltage when it should be at a lower voltage or ground, or the switch is internally shorted, sending a constant high signal. Check for proper brake light operation and cruise control disengagement as these are often tied to brake switch inputs.",
+      "Input/Turbine Speed Sensor Circuit Integrity Check: Access the input/turbine speed sensor. Disconnect its electrical connector and perform a thorough visual inspection for bent pins, corrosion, or damaged wiring. Using a DMM, check for proper reference voltage (typically 5V or 12V) and a good ground at the sensor connector from the TCM/PCM. Then, test the sensor's internal resistance (if it's a magnetic pickup type) or its signal output (if it's a Hall effect sensor) by back-probing the signal wire while rotating the transmission input shaft (if accessible) or by monitoring live data during a road test. Look for erratic signals, no signal, or a constantly high voltage signal that doesn't fluctuate with speed.",
+      "Wiring Harness Inspection for Shorts to Voltage: Given the \"Circuit High\" aspect of the code, meticulously inspect the entire wiring harness for both the input/turbine speed sensor and the brake switch B circuit. Pay close attention to areas where the harness passes through firewalls, near exhaust components, or sharp edges, as chafing can lead to a short to battery voltage. Use a wiring diagram to identify common power sources or adjacent circuits that could be shorting into the affected wires. Perform continuity and resistance checks on the individual wires from the sensor/switch to the TCM/PCM to rule out internal wire damage or shorts."
+    ],
+    "commonFixes": [
+      "Replace the Brake Pedal Position Sensor/Switch (Brake Switch B): If testing confirms the brake switch B circuit is consistently sending a \"high\" voltage signal when it shouldn't, or if the switch is internally shorted, replacing this component is the most direct solution.",
+      "Repair or Replace Damaged Wiring/Connectors: Address any identified shorts to voltage, open circuits, chafed insulation, or corroded/loose terminals within the wiring harness for either the input/turbine speed sensor or the brake switch B circuit. This often involves splicing in new wire sections or replacing connector pigtails.",
+      "Replace the Input/Turbine Speed Sensor: If the sensor itself is found to be faulty after thorough testing (e.g., incorrect resistance, no signal, or an erratic signal that doesn't correlate with actual input shaft speed), replacing it will resolve the issue.",
+      "Diagnose and Repair Short to Voltage in Shared Circuits: In some vehicles, these circuits might share a common power or ground source, or run in close proximity. If a short to voltage is identified in a shared harness section, isolating and repairing that specific short will resolve the \"high\" condition for the affected circuit."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with P0719 is highly risky. A malfunctioning input/turbine speed sensor can cause unpredictable and harsh transmission shifts, delayed engagement, or even a complete loss of drive, leading to a dangerous situation, especially at higher speeds or in traffic. Simultaneously, a faulty brake switch can disable critical safety features like ABS, traction control, and cruise control, and may cause brake lights to malfunction (stay on or not illuminate), significantly increasing the risk of a collision. The combined effect of these issues severely compromises vehicle control and safety."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $300",
+      "labor": "$180 - $600"
+    }
   },
   "P0720": {
     "title": "Output Speed Sensor Circuit Malfunction",
@@ -11757,7 +11991,26 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**1. Visual Inspection and Connector Integrity Check:** Begin by visually inspecting the output speed sensor (OSS) and its wiring harness. Locate the OSS, typically found on the transmission tailshaft or output housing. Look for any signs of physical damage to the sensor itself, such as cracks or impact marks. Pay close attention to the electrical connector: check for corrosion, bent pins, loose connections, or frayed/chafed wiring leading to and from the sensor. Disconnect the connector, inspect the terminals for green or white corrosion, and ensure they are clean and make good contact. Repair or clean any damaged or corroded components found.",
+      "**2. Scan Tool Live Data Analysis:** Connect an advanced OBD2 scan tool capable of displaying live data. Access the transmission control module (TCM) or powertrain control module (PCM) data stream and monitor the 'Output Speed Sensor' (OSS) reading. With the drive wheels safely off the ground (if applicable for testing in 'drive') or by driving the vehicle at a steady speed, observe the OSS signal. It should show a consistent, smooth increase in speed as the vehicle accelerates and decrease as it decelerates. Compare this reading to the 'Vehicle Speed Sensor' (VSS) and 'Input Speed Sensor' (ISS) if available. Erratic readings, a constant zero reading when the vehicle is moving, or readings that do not correlate with actual vehicle speed indicate a sensor or circuit issue.",
+      "**3. Electrical Circuit Testing (Voltage, Ground, Signal):** With the ignition on and the sensor connected (back-probing) or disconnected (for resistance/continuity), use a digital multimeter (DMM) to test the OSS circuit. First, check for proper reference voltage (typically 5V or 12V, consult vehicle-specific wiring diagrams) at the sensor connector. Next, verify a good ground connection. Finally, test the signal wire. For a Hall-effect sensor, you might see a square wave signal with an oscilloscope, or a fluctuating voltage with a DMM as the wheel is spun. For an inductive sensor, you'd look for an AC voltage signal that increases with speed. A lack of voltage, ground, or an incorrect signal output points to a problem with the sensor itself or the wiring leading to the PCM/TCM. Check for continuity of the signal wire from the sensor connector all the way to the PCM/TCM connector to rule out open circuits, and check for shorts to ground or power.",
+      "**4. Resistance Check of the Output Speed Sensor:** If the sensor is an inductive type (two-wire sensor), disconnect the sensor and measure its internal resistance across its terminals using a DMM. Compare this reading to the manufacturer's specifications (typically a few hundred to a couple thousand ohms). An open circuit (infinite resistance) or a short circuit (very low resistance, near zero) indicates an internal failure of the sensor. For Hall-effect sensors (typically three-wire), a resistance check is not usually applicable for diagnosing internal failure; focus on voltage, ground, and signal output."
+    ],
+    "commonFixes": [
+      "**Replace the Output Speed Sensor (OSS):** This is the most common fix for P0720. If diagnostic steps confirm the sensor itself is faulty (no signal, incorrect resistance, or erratic readings), replacing it will resolve the issue. Ensure you use an OEM quality replacement for best performance and longevity.",
+      "**Repair or Replace Damaged Wiring/Connectors:** If the visual inspection or electrical testing reveals corroded, frayed, or open wiring, or a damaged connector, repairing or replacing the affected section of the harness or the connector pins will restore proper circuit function. Use appropriate wiring repair techniques (solder and heat shrink) or a pigtail connector kit.",
+      "**Clean Corroded Electrical Terminals:** If corrosion is found on the sensor or harness connector terminals, thoroughly clean them using an electrical contact cleaner and a small brush. Apply dielectric grease to prevent future corrosion and ensure a good electrical connection."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with a P0720 code can range from a minor inconvenience to a significant safety hazard. The output speed sensor is crucial for proper transmission operation, including shift points and torque converter lock-up. You may experience erratic or harsh shifting, the transmission getting stuck in 'limp mode' (a single gear, often 2nd or 3rd), or a complete loss of speedometer function. These symptoms can lead to unpredictable vehicle behavior, making it difficult to maintain control or judge speed, increasing the risk of an accident. Prolonged driving with this issue can also cause severe internal transmission damage due to incorrect gear selection and excessive heat."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $180",
+      "labor": "$100 - $400"
+    }
   },
   "P0721": {
     "title": "Output Speed Sensor Circuit Range/Performance",
@@ -11775,7 +12028,26 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**Initial Scan Tool Analysis and Visual Inspection:** Connect a professional scan tool to monitor live data for the Output Speed Sensor (OSS), Input Speed Sensor (ISS), and Vehicle Speed Sensor (VSS). Observe the OSS reading while driving; look for erratic, intermittent, or absent signals, especially when compared to the ISS and VSS. A significant discrepancy or a flat-line OSS reading while the vehicle is moving indicates a problem. Simultaneously, perform a thorough visual inspection of the OSS wiring harness and connector for any signs of damage, corrosion, chafing, or loose connections. Check the transmission fluid level and condition; low or contaminated fluid can sometimes indirectly affect sensor operation or cause debris to interfere.",
+      "**Circuit Integrity Testing:** Disconnect the OSS sensor. Using a multimeter, test for proper voltage supply (typically 5V or 12V, depending on the system) and a good ground at the sensor connector from the PCM/TCM. Then, check for continuity of the signal wire from the sensor connector back to the PCM/TCM connector. Look for any shorts to power or ground in the signal circuit. If the sensor is a two-wire magnetic pickup type, measure its internal resistance (refer to manufacturer specifications); an open circuit or out-of-spec resistance indicates internal sensor failure. For Hall-effect sensors, this resistance test is not applicable.",
+      "**Output Speed Sensor Verification:** If the wiring and power/ground supply are confirmed good, the sensor itself is the primary suspect. If possible, use an oscilloscope to back-probe the signal wire while the sensor is connected and the wheels are rotated (if accessible and safe to do so). Look for a clean, consistent square wave signal (for Hall-effect) or sine wave (for magnetic pickup) that increases in frequency with speed. An erratic, weak, or absent signal confirms internal sensor failure. If an oscilloscope is not available, and all other circuit tests pass, replacing the OSS is the next logical diagnostic step.",
+      "**Transmission Control Module (TCM)/Powertrain Control Module (PCM) Evaluation:** If the OSS sensor is replaced and the wiring integrity is confirmed, but the code persists, the issue may lie within the TCM/PCM. This is less common but possible. Verify that the TCM/PCM is receiving the correct signal from the OSS at its respective pin. If the signal is present at the module's input but not processed correctly, or if internal diagnostics point to a module fault, further diagnosis or replacement of the TCM/PCM may be necessary. Ensure all relevant software updates or reflashes have been performed, as some performance issues can be resolved this way."
+    ],
+    "commonFixes": [
+      "Replace the Output Speed Sensor (OSS): This is the most frequent fix for P0721, especially if the sensor shows erratic or no readings during live data monitoring or fails circuit/oscilloscope tests.",
+      "Repair or Replace Damaged Wiring/Connectors: Address any open circuits, shorts, corrosion, or loose connections in the OSS wiring harness or connector.",
+      "Address Transmission Fluid Issues: Correct low transmission fluid levels or perform a transmission fluid and filter service if the fluid is contaminated or degraded, as this can sometimes indirectly affect sensor operation or cause debris to interfere."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with P0721 can lead to unpredictable transmission behavior, including harsh or delayed shifts, loss of overdrive, or the transmission entering \"limp mode\" (reduced power and limited gears). The speedometer may also become inaccurate or stop working entirely, which is a significant safety concern. Continued driving can cause accelerated wear on transmission components due to incorrect shift timing and potentially lead to more severe and costly transmission damage."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $180",
+      "labor": "$100 - $400"
+    }
   },
   "P0722": {
     "title": "Output Speed Sensor Circuit No Signal",
@@ -11793,7 +12065,28 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**1. Initial Scan, Visual Inspection, and Freeze Frame Data Analysis:** Connect a professional-grade scan tool to the vehicle's OBD-II port. Confirm the presence of P0722 and check for any other related codes, such as P0720, P0721, P0723 (other OSS circuit issues), or P0500 series codes (Vehicle Speed Sensor issues), as these can provide additional context. Record any freeze frame data, which captures engine parameters at the moment the code was set. Visually locate the Output Speed Sensor (OSS) on the transmission (typically on the tail shaft housing or output shaft area). Inspect the sensor and its wiring harness for any obvious signs of physical damage, frayed wires, corrosion, loose connections, or rodent damage. Pay close attention to the connector itself for bent pins or a compromised seal.",
+      "**2. Circuit Integrity and Power/Ground Verification:** With the ignition off, disconnect the OSS electrical connector. Using a Digital Multimeter (DMM), perform continuity checks on the sensor's circuit wiring from the sensor connector back to the Powertrain Control Module (PCM) or Transmission Control Module (TCM) connector (refer to the vehicle's specific wiring diagram for pinouts). Check for opens, shorts to ground, or shorts to voltage on all wires in the circuit. Next, with the ignition on (engine off), verify proper power and ground supply at the OSS connector. Most OSS sensors are a 3-wire design: power (typically 5V or 12V), ground, and signal. Ensure the specified voltage is present and the ground circuit has low resistance.",
+      "**3. Output Speed Sensor Functionality Test:** This is a critical step. Safely lift the drive wheels off the ground using appropriate jack stands. With the sensor connected, start the engine and place the transmission in drive (or a forward gear) to allow the wheels to spin slowly. Using a DMM set to AC voltage, back-probe the signal wire at the OSS connector. You should observe an AC voltage signal that increases in frequency and amplitude as the wheel speed increases. If no signal is present, or it is erratic/intermittent, the sensor is likely faulty. For a more definitive test, an oscilloscope can be used to observe the waveform, looking for a clean, consistent square wave signal that corresponds to the output shaft rotation.",
+      "**4. PCM/TCM Input Verification (If Sensor Signal is Good):** If the OSS is producing a good, consistent signal and the wiring integrity from the sensor to the control module has been confirmed, the next step is to verify that the PCM/TCM is actually receiving this signal. Back-probe the signal wire at the PCM/TCM connector while the wheels are spinning. If the signal is present at the sensor and along the wiring, but not at the control module's input pin, there might be an internal wiring issue within the harness or a problem with the control module's pin connection itself. If the signal is present at the module's input, but the P0722 code persists and symptoms remain, the PCM/TCM could be faulty, though this is a less common failure point than the sensor or wiring.",
+      "**5. Internal Transmission Tone Ring Inspection (Advanced):** If the sensor, wiring, and PCM/TCM input are all verified to be functioning correctly, the problem may lie within the transmission itself. The output speed sensor relies on a tone ring (or reluctor wheel) on the transmission's output shaft to generate its signal. Damage to this tone ring (e.g., broken teeth, excessive wear, or interference from debris) would prevent the sensor from generating a proper signal, even if the sensor itself is good. This typically requires transmission removal and partial disassembly for inspection and repair, which is a more extensive and costly procedure."
+    ],
+    "commonFixes": [
+      "**Replace the Output Speed Sensor (OSS):** This is the most common solution. If the sensor fails the functionality test or shows signs of physical damage, replacing it with a quality OEM or reputable aftermarket part will often resolve the P0722 code.",
+      "**Repair or Replace Damaged Wiring/Connector:** Inspect and repair any frayed, corroded, or broken wires in the OSS circuit. If the electrical connector itself is compromised (e.g., bent pins, excessive corrosion, or a poor seal), replace the connector pigtail to ensure a solid connection.",
+      "**Clean Connector Pins:** Sometimes, simply disconnecting the OSS connector, thoroughly cleaning the pins with electrical contact cleaner, and then reconnecting it can restore proper signal transmission, especially in vehicles exposed to moisture, dirt, or road salt.",
+      "**Address Internal Transmission Tone Ring Damage:** In rare cases, if the sensor and wiring are confirmed good, the issue lies with a damaged or obstructed tone ring on the transmission's output shaft. This requires transmission removal and partial disassembly to repair or replace the tone ring, which is a more involved and costly repair."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with P0722 is generally not recommended for extended periods. The transmission relies heavily on the output speed sensor signal for proper shift scheduling, torque converter lock-up, and potentially speedometer operation. Without this signal, the transmission may exhibit harsh or erratic shifting, remain stuck in a single gear (limp mode), or fail to shift at all. This can lead to unpredictable vehicle behavior, potential loss of power, and an increased risk of an accident, especially at higher speeds or in heavy traffic. Continued driving with this condition can also cause accelerated wear or damage to internal transmission components due to incorrect operation."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150 (Output Speed Sensor); $15 - $50 (Connector Pigtail, if needed)",
+      "labor": "$75 - $300 (Sensor replacement and basic diagnosis); $150 - $600 (Extensive wiring diagnosis/repair); $800 - $2000+ (If internal transmission repair for tone ring is required)"
+    }
   },
   "P0723": {
     "title": "Output Speed Sensor Circuit Intermittent",
@@ -11811,7 +12104,27 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**1. Comprehensive Visual Inspection and Wiring Harness Integrity Check:** Begin by locating the Output Speed Sensor (OSS), typically found on the transmission tailshaft housing or integrated into the valve body on front-wheel-drive transaxles. Carefully inspect the sensor's electrical connector for any signs of corrosion, bent pins, or a loose fit. Trace the entire wiring harness from the OSS back to the Powertrain Control Module (PCM) or Transmission Control Module (TCM). Look meticulously for any chafing, pinching, cuts, or signs of heat damage, especially where the harness might rub against the transmission case, exhaust components, or chassis. Pay close attention to any factory harness clips or tie-downs that may have failed, allowing the harness to move and become damaged. Disconnect the connector and inspect both the sensor and harness side terminals for proper tension and cleanliness. Apply a small amount of dielectric grease upon reassembly to prevent future corrosion.",
+      "**2. Advanced Scan Tool Live Data Analysis and Wiggle Test:** Connect a professional-grade scan tool capable of displaying live data streams. Monitor the 'Output Shaft Speed' (OSS) parameter, and if available, simultaneously monitor 'Vehicle Speed Sensor' (VSS) and 'Input Shaft Speed' (ISS) while driving the vehicle under varying conditions (acceleration, steady cruise, deceleration). Look for any erratic readings, sudden drops to zero, inexplicable spikes, or inconsistencies in the OSS signal that do not correlate with the actual vehicle speed. While monitoring the live data, perform a 'wiggle test' by gently manipulating the OSS connector and the wiring harness leading to it. Any fluctuation or interruption in the OSS signal during this test strongly indicates a loose connection or internal wiring damage.",
+      "**3. Circuit Integrity and Sensor Performance Testing with a Multimeter/Oscilloscope:** With the ignition off, disconnect the OSS sensor. Consult a vehicle-specific wiring diagram to identify the power, ground, and signal wires at the harness connector. With the ignition on, use a digital multimeter to verify proper voltage supply (typically 5V or 12V, depending on the sensor type) at the power wire terminal. Check for good ground continuity at the ground wire terminal. Then, with the ignition off, check the continuity and resistance of the signal wire from the OSS harness connector back to the PCM/TCM connector, looking for high resistance or an open circuit. For a truly intermittent issue, an oscilloscope is invaluable. Connect it to the OSS signal wire (with the sensor connected and the vehicle safely running/driving if possible) to observe the waveform. Look for dropouts, excessive electrical noise, or an unstable signal pattern that would indicate an intermittent loss of signal or interference.",
+      "**4. Review of Related Diagnostic Trouble Codes (DTCs) and Manufacturer Resources:** After addressing the primary P0723, scan for any other related transmission or engine DTCs that may have been triggered concurrently, as they could provide additional clues. Research any Technical Service Bulletins (TSBs) or manufacturer recalls specific to your vehicle's year, make, and model that relate to P0723, OSS issues, or transmission shifting concerns. In some cases, an intermittent signal interpretation by the PCM/TCM could be resolved with a software update, especially if the manufacturer has identified a known issue with the control module's logic."
+    ],
+    "commonFixes": [
+      "**Replace the Output Speed Sensor (OSS):** The most frequent cause of an intermittent signal is a faulty OSS itself. Internal degradation, magnetic field issues, or sensor tip contamination can lead to erratic readings. Replacing the sensor with a high-quality OEM or equivalent part is often the direct solution.",
+      "**Repair or Replace Damaged Wiring Harness or Connector:** Frayed, corroded, or intermittently shorting wires within the OSS circuit, or a loose/damaged electrical connector, are prime suspects for intermittent issues. Repairing the specific damaged section of the harness or replacing the entire connector will restore proper circuit integrity.",
+      "**Clean Debris from Sensor Tip and Tone Ring:** Although less common for an 'intermittent' code versus a 'no signal' code, metallic debris can sometimes accumulate on the magnetic tip of the OSS or on the transmission's tone ring, causing sporadic signal interference. Removing the sensor and thoroughly cleaning both the sensor tip and the visible portion of the tone ring can resolve this.",
+      "**PCM/TCM Software Update or Replacement:** In rare instances, particularly if TSBs exist, the Powertrain Control Module (PCM) or Transmission Control Module (TCM) may have an internal fault or outdated software that misinterprets or intermittently loses the OSS signal. A software update or, as a last resort, replacement of the control module may be necessary after ruling out all other possibilities."
+    ],
+    "drivingSafety": {
+      "level": "caution",
+      "description": "Driving with an intermittent P0723 code can be hazardous. The transmission relies heavily on the output speed sensor for accurate shift timing and torque converter lock-up. An intermittent signal can lead to unpredictable and harsh shifting, delayed gear engagement, or the transmission entering 'limp mode' (defaulting to a single gear to prevent damage). This erratic behavior can cause sudden changes in vehicle speed or control, increasing the risk of an accident. Additionally, the speedometer and odometer may become inaccurate. It is strongly advised to have this issue diagnosed and repaired promptly to ensure safe and reliable vehicle operation."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $150 (for the Output Speed Sensor; varies by vehicle make/model and sensor type)",
+      "labor": "$120 - $450 (includes 0.5-1.5 hours for diagnosis and 0.5-2.0 hours for sensor replacement or wiring repair, depending on accessibility and complexity)"
+    }
   },
   "P0724": {
     "title": "Output Speed Sensor Circuit Output Speed Sensor Intermittent",
@@ -11829,7 +12142,27 @@
       "cause_transmission_fluid"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "Thorough Visual Inspection and Harness Integrity Check: Begin by locating the Output Speed Sensor (OSS) on the transmission. Carefully inspect the sensor's electrical connector for any signs of corrosion, bent pins, or a loose connection. Trace the wiring harness leading to the OSS as far as visually possible, paying close attention to areas where it might rub against the transmission case, exhaust, or chassis components. Look for chafing, cuts, exposed wires, or signs of rodent damage. Ensure all harness clips are secure to prevent future damage.",
+      "Advanced Scan Tool Live Data Analysis: Connect a professional-grade scan tool capable of displaying live data. With the engine running and the vehicle safely supported (or driven under controlled conditions if safe), monitor the \"Output Shaft Speed\" (OSS) parameter. Compare this reading to the \"Vehicle Speed Sensor\" (VSS) and \"Input Shaft Speed\" (ISS) (if available). Look for erratic fluctuations, sudden drops to zero, or readings that do not correlate smoothly with actual vehicle speed or engine RPM. An intermittent signal might appear as momentary spikes or dips. Also, observe transmission gear ratios and torque converter slip to see if they are being affected by the erratic OSS signal.",
+      "Electrical Circuit Verification (Multi-meter & Oscilloscope): Disconnect the OSS. If it's a two-wire inductive sensor, measure its internal resistance and compare it to factory specifications (typically 200-1000 ohms). If it's a three-wire Hall effect sensor, check for proper reference voltage (usually 5V or 12V) and a good ground at the connector with the ignition ON. With the sensor disconnected and the PCM/TCM connector disconnected (if safe and accessible per service manual), perform continuity checks on each wire from the OSS connector to its respective PCM/TCM pin. Simultaneously, check for shorts to ground and shorts to power on all wires. For truly intermittent issues, an oscilloscope is crucial: connect it to the OSS signal wire and monitor the waveform while simulating driving conditions (e.g., rotating the drive wheels by hand or on a lift, if safe). Look for any dropouts, signal noise, or distorted square waves (for Hall effect) or sine waves (for inductive) that indicate an intermittent sensor or wiring fault.",
+      "Mechanical Inspection of Tone Ring/Reluctor Wheel: If the sensor and its electrical circuit test good, the problem might be mechanical. The OSS reads a tone ring (also known as a reluctor wheel) on the transmission output shaft. Depending on the transmission design, this may require removing the transmission tail shaft housing or the transmission pan to gain access. Inspect the tone ring for any bent, broken, missing, or excessively worn teeth. Also, check for any metallic debris adhering to the tone ring or the sensor's magnetic tip, which can interfere with accurate readings."
+    ],
+    "commonFixes": [
+      "Replace the Output Speed Sensor (OSS): The most frequent solution is replacing a faulty or intermittently failing OSS. This is often a straightforward repair, as the sensor is typically externally mounted on the transmission.",
+      "Repair or Replace Damaged Wiring and/or Connector: If the diagnostic steps reveal damaged, chafed, or corroded wiring, or a faulty electrical connector, these components must be repaired or replaced to restore proper circuit integrity.",
+      "Clean Debris from Sensor Tip and Tone Ring: Accumulation of metallic particles on the magnetic tip of the OSS or on the tone ring itself can cause intermittent signal issues. Cleaning these components can often resolve the P0724 code.",
+      "Repair or Replace Damaged Tone Ring/Reluctor Wheel: In cases where the tone ring on the transmission output shaft is physically damaged (e.g., bent or missing teeth), it will need to be repaired or replaced. This is a more involved repair, often requiring significant transmission disassembly."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with an intermittent P0724 code is highly dangerous. The transmission relies on the Output Speed Sensor for critical functions like accurate shift timing, torque converter lock-up, and even speedometer operation. An intermittent signal can lead to unpredictable and harsh shifts, delayed engagement, sudden loss of power, or the transmission entering \"limp mode\" without warning. This erratic behavior can cause loss of control, especially at highway speeds or in heavy traffic, and significantly increases the risk of an accident. Furthermore, incorrect shift patterns can rapidly accelerate wear and cause severe internal damage to the transmission, leading to much more costly repairs."
+    },
+    "costBreakdown": {
+      "parts": "$30 - $350",
+      "labor": "$150 - $1500+"
+    }
   },
   "P0725": {
     "title": "Engine Speed Input Circuit (P0725)",
@@ -11847,7 +12180,27 @@
       "cause_pcm_failure"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "Initial Visual Inspection and Scan Tool Data Analysis: Begin by performing a thorough visual inspection of the crankshaft position sensor (CKP) and its wiring harness, looking for any signs of physical damage, fraying, corrosion, or loose connections. Pay close attention to the connector at the sensor and where the harness routes, especially near hot exhaust components or moving parts. Simultaneously, connect a professional scan tool and monitor live data for \"Engine RPM\" or \"Crankshaft Speed.\" If the engine is cranking but showing 0 RPM, or if the RPM reading is erratic or inconsistent with actual engine speed, this strongly points to a CKP sensor or circuit issue. Check for any other related codes that might provide additional clues.",
+      "Crankshaft Position Sensor (CKP) Signal Verification: With the engine off, disconnect the CKP sensor. Using a digital multimeter (DMM), test the sensor's resistance if it's a two-wire inductive type (refer to manufacturer specifications). For a three-wire Hall-effect sensor, you'll need to check for proper power (typically 5V or 12V) and ground at the sensor connector with the ignition ON. Then, with the sensor reconnected and the engine cranking, use an oscilloscope to directly observe the CKP sensor's waveform. A good CKP sensor should produce a clear, consistent square wave (Hall-effect) or sine wave (inductive) signal as the engine turns. An absence of signal, a distorted signal, or a signal with incorrect amplitude indicates a faulty sensor or an issue with the reluctor wheel.",
+      "Wiring Harness Integrity Check: If the CKP sensor itself appears to be functioning correctly, the next step is to test the integrity of the wiring harness between the CKP sensor, the Engine Control Module (ECM), and potentially the Transmission Control Module (TCM) if the signal is directly routed. Disconnect the connectors at both ends (CKP sensor and ECM/TCM). Using a DMM, perform continuity checks on each wire in the circuit to ensure there are no open circuits. Then, check for shorts to ground or shorts to power by checking resistance between each wire and chassis ground, and between each wire and a known power source. Any resistance reading significantly above 5 ohms (or as specified by the manufacturer) indicates a problem. Also, perform a wiggle test on the harness while monitoring continuity to detect intermittent breaks.",
+      "ECM/TCM Input Signal Verification and Module Health: If the CKP sensor is producing a good signal and the wiring harness tests out perfectly, the issue may lie within the ECM or TCM's ability to receive or interpret that signal. With the CKP sensor connected and the engine cranking, back-probe the appropriate pins at the ECM and TCM connectors (refer to wiring diagrams) to verify that the CKP signal is indeed reaching these modules. If the signal is present and correct at the module input pins but the scan tool still reports 0 RPM or the P0725 code persists, it suggests an internal fault within the ECM or TCM. Before condemning a module, ensure all power and ground circuits to both the ECM and TCM are robust and within specifications."
+    ],
+    "commonFixes": [
+      "Replace the Crankshaft Position Sensor (CKP): This is by far the most common cause of P0725. A faulty CKP sensor can fail to produce a signal, produce an intermittent signal, or send an incorrect signal to the ECM/TCM, leading to this code. Ensure you use an OEM quality replacement part.",
+      "Repair or Replace Damaged Wiring/Connectors: Inspect and repair any corroded, frayed, or broken wires in the CKP sensor circuit. This includes the sensor connector itself, which can become brittle or contaminated over time. Ensure all connections are clean, tight, and properly sealed.",
+      "Address Reluctor Wheel Issues: While less common, damage or debris on the crankshaft reluctor wheel (tone ring) can prevent the CKP sensor from accurately reading engine speed. This might require inspection and potentially replacement of the reluctor wheel, which is a more involved repair.",
+      "Replace Engine Control Module (ECM) or Transmission Control Module (TCM): In rare cases, if all other components and wiring test good, the internal circuitry of the ECM or TCM responsible for processing the engine speed input may have failed. This typically requires professional diagnosis, module replacement, and often programming."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0725 code is highly inadvisable and can be dangerous. Without an accurate engine speed input, the transmission control module (TCM) cannot properly calculate gear ratios, apply correct line pressure, or determine appropriate shift points. This can lead to erratic and harsh shifting, transmission slipping, unexpected downshifts or upshifts, or even the transmission entering \"limp home\" mode (stuck in a single gear) or failing to engage gears at all. These conditions can cause a loss of power, unpredictable vehicle behavior, and significantly increase the risk of an accident, especially in traffic or at higher speeds. Continued driving can also lead to severe and costly damage to the transmission."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $1500+",
+      "labor": "$100 - $1000+"
+    }
   },
   "P0726": {
     "title": "Engine Speed Input Circuit (P0726)",
@@ -11883,7 +12236,27 @@
       "cause_pcm_failure"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "**Step 1: Initial Scan Tool Diagnosis and Visual Inspection.** Connect a professional-grade scan tool to confirm the presence of P0727 and check for any related engine or transmission codes (e.g., P0335 for Crankshaft Position Sensor Circuit Malfunction). Monitor live data for \"Engine RPM\" or \"Engine Speed\" while cranking and running the engine. A reading that is zero, erratic, or inconsistent with actual engine speed is a strong indicator of the problem. Simultaneously, perform a thorough visual inspection of the Crankshaft Position (CKP) sensor, its electrical connector, and the entire wiring harness leading from the sensor towards the Transmission Control Module (TCM). Look for any signs of physical damage, frayed wires, rodent damage, corrosion on the terminals, or loose connections.",
+      "**Step 2: Crankshaft Position (CKP) Sensor Signal Verification.** With the engine off, disconnect the CKP sensor. Using a multimeter, verify proper power and ground supply at the CKP sensor connector (if it's a 3-wire Hall effect sensor, check for 5V reference voltage and ground; 2-wire inductive sensors generate their own AC voltage). Reconnect the sensor. Using an oscilloscope, back-probe the CKP sensor signal wire (or connect at the TCM connector if accessible) and monitor the waveform while cranking and running the engine. A healthy CKP sensor should produce a clean, consistent square wave (Hall effect) or sine wave (magnetic inductive) signal that accurately reflects engine speed. An absent, distorted, or erratic waveform points to a faulty sensor or an issue within its immediate circuit.",
+      "**Step 3: Wiring Harness Integrity Test (CKP Sensor to TCM).** If the CKP sensor appears to be producing a correct signal, the next step is to meticulously test the wiring harness between the CKP sensor and the TCM. Disconnect both the CKP sensor and the TCM connectors. Using a multimeter, perform continuity checks on each wire in the CKP sensor circuit from the sensor connector to the corresponding pins at the TCM connector. Look for any open circuits. Next, check for shorts to ground and shorts to power on each wire. Finally, measure the resistance of each wire; excessive resistance can degrade the signal. Pay close attention to areas where the harness might be exposed to heat, vibration, or abrasion, as these are common points of failure.",
+      "**Step 4: TCM Input and Power/Ground Verification.** If the CKP sensor and its entire wiring harness test perfectly, the issue may lie within the TCM itself or its power/ground supply. Using the vehicle's wiring diagram, verify that the TCM is receiving proper power and ground at all specified pins. If possible, back-probe the engine speed input pin at the TCM connector and monitor the signal with an oscilloscope while cranking/running. If a clean, accurate engine speed signal is confirmed to be present at the TCM input pin, yet the P0727 code persists, it strongly indicates an internal fault within the Transmission Control Module, preventing it from correctly processing the engine speed information."
+    ],
+    "commonFixes": [
+      "**Replace the Crankshaft Position (CKP) Sensor:** This is a very common failure point. If the sensor is old, has been exposed to extreme heat, or shows an erratic/absent signal during testing, replacement is often the solution.",
+      "**Repair or Replace Damaged Wiring/Connectors:** Frayed wires, broken insulation, corroded terminals, or loose connections within the CKP sensor circuit are frequent causes of P0727. This may involve splicing in new wire sections, replacing individual terminals, or in severe cases, replacing a section of the wiring harness.",
+      "**Clean Corroded Connectors:** Oxidation or debris on the CKP sensor connector or the TCM connector pins can disrupt the delicate engine speed signal. Thoroughly clean all affected terminals using electrical contact cleaner and a small brush.",
+      "**Replace the Transmission Control Module (TCM):** If the CKP sensor, its wiring, and all power/ground inputs to the TCM test perfectly, and the correct engine speed signal is confirmed to be reaching the TCM, then the TCM itself may be faulty and unable to process the input. This is a less common but possible fix, often requiring module programming after replacement."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0727 code is highly dangerous and strongly advised against. The transmission relies critically on the engine speed input for proper shift scheduling, torque converter lock-up, and overall operational control. Without this vital signal, the transmission may exhibit unpredictable and severe symptoms such as harsh shifts, delayed shifts, no shifts, or entering a 'limp home' mode with severely limited speed and power. This erratic behavior can lead to a sudden loss of vehicle control, an inability to accelerate safely, or becoming stranded, significantly increasing the risk of an accident."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $1500+",
+      "labor": "$200 - $800+"
+    }
   },
   "P0728": {
     "title": "Engine Speed Input Circuit (P0728)",
@@ -11919,7 +12292,28 @@
       "cause_pcm_failure"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": [
+      "Verify Transmission Fluid Condition and Level: Begin by checking the transmission fluid level according to the manufacturer's specifications (engine running, at operating temperature, in park or neutral, depending on vehicle). Inspect the fluid for proper color (should be red or light brown, not dark brown or black), burnt smell, or metallic particles. Contaminated or low fluid can directly impact gear engagement and ratio accuracy.",
+      "Scan for Related Codes and Monitor Live Data: Use a professional scan tool to check for any other transmission-related diagnostic trouble codes (DTCs), especially those pertaining to transmission input speed sensor (TSS), output speed sensor (OSS), or shift solenoids. Monitor live data parameters such as transmission input speed, output speed, commanded gear, and actual gear ratio when the transmission attempts to engage 6th gear. Compare the actual ratio to the manufacturer's specified ratio for 6th gear. A significant deviation indicates a problem.",
+      "Perform Transmission Solenoid and Valve Body Testing: P0729 often points to an issue with the specific shift solenoid(s) responsible for engaging 6th gear, or a problem within the valve body itself. With the transmission pan removed, visually inspect the valve body for debris or damage. Test the resistance of the 6th gear shift solenoid and any associated pressure control solenoids. If possible, perform functional tests of these solenoids using the scan tool to ensure they are actuating correctly.",
+      "Inspect Internal Transmission Components: If fluid, solenoids, and speed sensors check out, the issue is likely mechanical. This would involve removing the transmission from the vehicle and disassembling it for a thorough inspection. Look for worn or damaged 6th gear clutch packs, broken bands, damaged planetary gear sets, or issues with the sprag clutch that are specific to the 6th gear engagement circuit.",
+      "Check Transmission Control Module (TCM) and Wiring: Although less common for a specific gear ratio code, a faulty TCM or wiring issues can cause incorrect gear engagement. Inspect the wiring harness and connectors between the TCM, transmission speed sensors, and shift solenoids for corrosion, fraying, or poor connections. Ensure the TCM has the latest software updates, as some ratio issues can be resolved with a reflash."
+    ],
+    "commonFixes": [
+      "Replace Faulty Shift Solenoid(s): If diagnostic testing identifies a specific shift solenoid or pressure control solenoid responsible for 6th gear engagement as faulty, replacing it is often the most direct solution. This typically involves dropping the transmission pan and accessing the valve body.",
+      "Repair or Replace Transmission Valve Body: If multiple solenoids are failing, or if there are internal issues within the valve body's hydraulic circuits that prevent proper 6th gear engagement, replacing or repairing the entire valve body assembly may be necessary.",
+      "Transmission Overhaul or Replacement: For internal mechanical failures such as worn clutch packs, damaged bands, or planetary gear issues specific to 6th gear, a complete transmission overhaul (rebuild) or replacement with a remanufactured or new unit is usually required.",
+      "Transmission Fluid and Filter Service: In some less severe cases, particularly if the fluid is old or contaminated, a complete transmission fluid and filter service can sometimes resolve minor shifting issues. However, for a persistent 'incorrect ratio' code, this is often a temporary fix if underlying mechanical or electrical issues are present."
+    ],
+    "drivingSafety": {
+      "level": "danger",
+      "description": "Driving with a P0729 code is not recommended and can be dangerous. An incorrect gear ratio in 6th gear means the transmission is not functioning as designed, which can lead to reduced power, poor fuel economy, and potentially cause the transmission to enter 'limp mode' or fail completely. Continued driving can exacerbate internal transmission damage, leading to significantly more expensive repairs or a complete transmission failure while driving."
+    },
+    "costBreakdown": {
+      "parts": "$50 - $5000+",
+      "labor": "$100 - $2500+"
+    }
   },
   "P0730": {
     "title": "Incorrect Gear Ratio",
