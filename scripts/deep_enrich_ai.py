@@ -12,11 +12,10 @@ except ImportError:
     sys.exit(1)
 
 def enrich_codes(api_key):
-    print("Starting Deep Enrichment for OBD2 Codes using Gemini AI...")
+    print("Starting Deep Enrichment for OBD2 Codes using Gemini AI (Multilingual)...")
     
     client = genai.Client(api_key=api_key)
     
-    # Path to the base codes JSON file
     db_path = os.path.join(os.path.dirname(__file__), '..', 'src', 'data', 'base_codes.json')
     
     if not os.path.exists(db_path):
@@ -29,35 +28,58 @@ def enrich_codes(api_key):
     total_codes = len(codes)
     print(f"Loaded {total_codes} codes from base_codes.json")
     
-    # Prompt template
     system_prompt = """
-    You are an ASE Certified Master Mechanic with 30 years of experience.
-    Your task is to provide extremely detailed, accurate, and unique diagnostic and repair information for the given OBD2 code.
-    You must return a JSON object with the following schema:
+    You are an ASE Certified Master Mechanic and an expert automotive translator.
+    Your task is to provide extremely detailed, accurate, and unique diagnostic and repair information for the given OBD2 code in 5 languages: English (en), Turkish (tr), German (de), Spanish (es), and French (fr).
+    You must return a JSON object strictly matching this schema:
     {
-      "diagnosticSteps": ["Step 1...", "Step 2..."], // 3-5 highly detailed, practical steps to diagnose the issue
-      "commonFixes": ["Replace X", "Clean Y"], // 2-4 actual solutions to fix the code
+      "title": { "en": "...", "tr": "...", "de": "...", "es": "...", "fr": "..." },
+      "description": { "en": "...", "tr": "...", "de": "...", "es": "...", "fr": "..." },
+      "diagnosticSteps": {
+        "en": ["Step 1...", "Step 2..."],
+        "tr": ["Adım 1...", "Adım 2..."],
+        "de": ["Schritt 1...", "Schritt 2..."],
+        "es": ["Paso 1...", "Paso 2..."],
+        "fr": ["Étape 1...", "Étape 2..."]
+      },
+      "commonFixes": {
+        "en": ["Replace X", "Clean Y"],
+        "tr": ["X'i değiştir", "Y'yi temizle"],
+        "de": ["X ersetzen", "Y reinigen"],
+        "es": ["Reemplazar X", "Limpiar Y"],
+        "fr": ["Remplacer X", "Nettoyer Y"]
+      },
       "drivingSafety": {
-        "level": "safe" | "caution" | "danger",
-        "description": "Short explanation of whether it's safe to drive with this code and why."
+        "level": "safe", 
+        "description": { "en": "...", "tr": "...", "de": "...", "es": "...", "fr": "..." }
       },
       "costBreakdown": {
         "parts": "$X - $Y",
         "labor": "$X - $Y"
       }
     }
-    Make sure the content is highly specific to the code provided, not generic. Use a professional, authoritative tone.
+    The diagnostic steps should be 3-5 practical steps. Common fixes should be 2-4 solutions.
+    Make the content highly specific to the code provided. The tone must be professional.
+    Ensure 'title' is a short, accurate translation of the code's official title.
     """
 
     count = 0
-    # Process only codes that don't have the new fields yet
     for code, data in codes.items():
         if "diagnosticSteps" in data:
-            continue # Skip already enriched codes
+            continue
             
-        print(f"\nProcessing {code} ({count+1}/{total_codes}): {data.get('title')}")
+        # Handle string titles safely
+        title_str = data.get('title', '')
+        if isinstance(title_str, dict):
+            title_str = title_str.get('en', '')
+            
+        desc_str = data.get('description', '')
+        if isinstance(desc_str, dict):
+            desc_str = desc_str.get('en', '')
+
+        print(f"\nProcessing {code} ({count+1}/{total_codes}): {title_str}")
         
-        user_prompt = f"Provide detailed diagnostic and repair information for OBD2 code {code}: {data.get('title')}\nDescription: {data.get('description')}"
+        user_prompt = f"Provide detailed diagnostic information for OBD2 code {code}. Title: {title_str}. Description: {desc_str}"
         
         try:
             response = client.models.generate_content(
@@ -72,38 +94,37 @@ def enrich_codes(api_key):
             
             enrichment_data = json.loads(response.text)
             
-            # Merge new data into existing code
-            data["diagnosticSteps"] = enrichment_data.get("diagnosticSteps", [])
-            data["commonFixes"] = enrichment_data.get("commonFixes", [])
+            # Merge new data
+            data["title"] = enrichment_data.get("title", data.get("title"))
+            data["description"] = enrichment_data.get("description", data.get("description"))
+            data["diagnosticSteps"] = enrichment_data.get("diagnosticSteps", {})
+            data["commonFixes"] = enrichment_data.get("commonFixes", {})
             data["drivingSafety"] = enrichment_data.get("drivingSafety", {})
             data["costBreakdown"] = enrichment_data.get("costBreakdown", {})
             
-            # Save progress every 10 codes
             count += 1
             if count % 5 == 0:
                 with open(db_path, 'w', encoding='utf-8') as f:
                     json.dump(codes, f, indent=2)
                 print(f"--- Saved progress ({count} codes processed) ---")
                 
-            time.sleep(4) # Wait 4 seconds between successful requests to stay under 15 RPM
+            time.sleep(5) # Delay to respect rate limits
             
         except Exception as e:
             error_msg = str(e)
             print(f"Error processing {code}: {error_msg}")
             if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
-                print("Rate limit reached. Waiting for 60 seconds before retrying...")
+                print("Rate limit reached. Waiting for 60 seconds...")
                 time.sleep(60)
-                # Save progress before continuing to avoid data loss on crash
                 with open(db_path, 'w', encoding='utf-8') as f:
                     json.dump(codes, f, indent=2)
             else:
-                time.sleep(5) # Wait a bit before retrying next
+                time.sleep(5)
             
-    # Final save
     with open(db_path, 'w', encoding='utf-8') as f:
         json.dump(codes, f, indent=2)
         
-    print("\nDeep Enrichment Completed Successfully!")
+    print("\nMultilingual Deep Enrichment Completed Successfully!")
 
 if __name__ == "__main__":
     load_dotenv()
@@ -113,7 +134,6 @@ if __name__ == "__main__":
         
     if not api_key:
         print("Usage: python deep_enrich_ai.py <GEMINI_API_KEY>")
-        print("Or set GEMINI_API_KEY in the .env file")
         sys.exit(1)
         
     enrich_codes(api_key)

@@ -1,20 +1,36 @@
 import baseCodes from './base_codes.json';
 import aiData from './ai_enriched_data.json';
 
+export type MultiLangString = string | {
+  en: string;
+  tr: string;
+  de: string;
+  es: string;
+  fr: string;
+};
+
+export type MultiLangArray = string[] | {
+  en: string[];
+  tr: string[];
+  de: string[];
+  es: string[];
+  fr: string[];
+};
+
 export interface OBD2Code {
   code: string;
-  title: string;
-  description: string;
+  title: MultiLangString;
+  description: MultiLangString;
   symptoms: string[];
   causes: string[];
   fixDifficulty: string;
   estimatedCost: string;
   // Deep Enrichment Fields
-  diagnosticSteps?: string[];
-  commonFixes?: string[];
+  diagnosticSteps?: MultiLangArray;
+  commonFixes?: MultiLangArray;
   drivingSafety?: {
     level: 'safe' | 'caution' | 'danger';
-    description: string;
+    description: MultiLangString;
   };
   costBreakdown?: {
     parts: string;
@@ -76,6 +92,12 @@ export const cars: CarModel[] = [
 
 export const codes = baseCodes as Record<string, any>;
 export { baseCodes };
+
+export function getLocalized(field: any, locale: string): any {
+  if (!field) return null;
+  if (typeof field === 'string' || Array.isArray(field)) return field;
+  return field[locale] || field['en'] || field;
+}
 
 export function getHybridObdData(make: string, model: string, code: string): OBD2Code | null {
   const upperCode = code.toUpperCase();

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { cars, getHybridObdData, baseCodes } from '@/data/db';
+import { cars, getHybridObdData, baseCodes, getLocalized } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
@@ -23,7 +23,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!obdData) return { title: 'Code Not Found' };
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  const title = `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${obdData.title}`;
+  const titleObj = getLocalized(obdData.title, resolvedParams.locale);
+  const titleStr = typeof titleObj === 'string' ? titleObj : (titleObj?.en || 'Unknown Code');
+  
+  const title = `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
   return { 
     title,
     description: `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`
@@ -48,6 +51,12 @@ export default async function CodePage({ params }: PageProps) {
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
+  const locTitle = getLocalized(obdData.title, locale) || obdData.code;
+  const locDescription = getLocalized(obdData.description, locale) || '';
+  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || [];
+  const locCommonFixes = getLocalized(obdData.commonFixes, locale) || [];
+  const locDrivingSafetyDesc = obdData.drivingSafety ? getLocalized(obdData.drivingSafety.description, locale) : '';
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -57,7 +66,7 @@ export default async function CodePage({ params }: PageProps) {
         "name": `What does the ${upperCode} code mean on a ${capMake} ${capModel}?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": obdData.description.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)
+          "text": locDescription.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)
         }
       },
       {
@@ -133,7 +142,7 @@ export default async function CodePage({ params }: PageProps) {
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                {obdData.title}
+                {locTitle}
               </h1>
               <div className="flex items-center text-slate-400 text-sm mt-4">
                 <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
@@ -151,7 +160,7 @@ export default async function CodePage({ params }: PageProps) {
                   </svg>
                   <div>
                     <strong className="block text-white mb-1 font-semibold">{t('drivingSafety')}</strong>
-                    <span className="text-sm opacity-90">{obdData.drivingSafety.description}</span>
+                    <span className="text-sm opacity-90">{locDrivingSafetyDesc}</span>
                   </div>
                 </div>
               )}
@@ -181,7 +190,7 @@ export default async function CodePage({ params }: PageProps) {
               {t('whatDoesItMean')}
             </h2>
             <p className="text-lg text-slate-300 leading-relaxed font-light mb-4">
-              {obdData.description.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)}
+              {locDescription.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)}
             </p>
             <p className="text-md text-slate-400 leading-relaxed font-light p-4 bg-white/5 rounded-xl border border-white/5">
               {t('disclaimer', { make: capMake, model: capModel })}
@@ -236,7 +245,7 @@ export default async function CodePage({ params }: PageProps) {
           </section>
 
           {/* Diagnostic Steps (Deep AI Content) */}
-          {obdData.diagnosticSteps && obdData.diagnosticSteps.length > 0 && (
+          {locDiagnosticSteps && locDiagnosticSteps.length > 0 && (
             <section>
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <svg className="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
@@ -244,7 +253,7 @@ export default async function CodePage({ params }: PageProps) {
               </h2>
               <div className="bg-[#131b2f] border border-white/5 rounded-2xl p-6">
                 <div className="space-y-6">
-                  {obdData.diagnosticSteps.map((step, idx) => (
+                  {locDiagnosticSteps.map((step: string, idx: number) => (
                     <div key={idx} className="flex space-x-4">
                       <div className="flex-shrink-0 mt-1">
                         <div className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-sm">
@@ -262,14 +271,14 @@ export default async function CodePage({ params }: PageProps) {
           )}
 
           {/* Common Fixes (Deep AI Content) */}
-          {obdData.commonFixes && obdData.commonFixes.length > 0 && (
+          {locCommonFixes && locCommonFixes.length > 0 && (
             <section>
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <svg className="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                 {t('commonFixes')}
               </h2>
               <div className="grid grid-cols-1 gap-4">
-                {obdData.commonFixes.map((fix, idx) => (
+                {locCommonFixes.map((fix: string, idx: number) => (
                   <div key={idx} className="bg-green-500/5 border border-green-500/10 rounded-xl p-5 flex items-start space-x-4 hover:border-green-500/20 transition-colors">
                     <svg className="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                     <p className="text-slate-300 font-medium">{fix}</p>
