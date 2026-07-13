@@ -29586,8 +29586,20 @@
     "estimatedCost": "$200 - $1500"
   },
   "P2589": {
-    "title": "ECM/TCM Communication / Power (P2589)",
-    "description": "Code P2589 relates to ECM/TCM communication or power supply circuits.",
+    "title": {
+      "en": "ECM/TCM Communication / Power (P2589)",
+      "tr": "ECM/TCM \u0130leti\u015fim / G\u00fc\u00e7 (P2589)",
+      "de": "ECM/TCM Kommunikation / Stromversorgung (P2589)",
+      "es": "Comunicaci\u00f3n / Alimentaci\u00f3n ECM/TCM (P2589)",
+      "fr": "Communication / Alimentation ECM/TCM (P2589)"
+    },
+    "description": {
+      "en": "Code P2589 indicates a general issue with the communication circuit or power supply between the Engine Control Module (ECM) and the Transmission Control Module (TCM). This critical communication pathway ensures proper engine and transmission operation, including gear selection, shift points, and torque management. A fault here can stem from damaged wiring, corroded connectors, an intermittent power supply, a faulty ground, or an internal module failure. It often suggests a problem with the Controller Area Network (CAN) bus system or the dedicated power/ground circuits for these modules.",
+      "tr": "P2589 kodu, Motor Kontrol Mod\u00fcl\u00fc (ECM) ile \u015eanz\u0131man Kontrol Mod\u00fcl\u00fc (TCM) aras\u0131ndaki ileti\u015fim devresinde veya g\u00fc\u00e7 kayna\u011f\u0131nda genel bir sorun oldu\u011funu g\u00f6sterir. Bu kritik ileti\u015fim yolu, vites se\u00e7imi, vites de\u011fi\u015ftirme noktalar\u0131 ve tork y\u00f6netimi dahil olmak \u00fczere motor ve \u015fanz\u0131man\u0131n d\u00fczg\u00fcn \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flar. Buradaki bir ar\u0131za, hasarl\u0131 kablolardan, korozyona u\u011fram\u0131\u015f konekt\u00f6rlerden, aral\u0131kl\u0131 bir g\u00fc\u00e7 kayna\u011f\u0131ndan, hatal\u0131 bir topraklamadan veya dahili bir mod\u00fcl ar\u0131zas\u0131ndan kaynaklanabilir. Genellikle Kontrol\u00f6r Alan A\u011f\u0131 (CAN) veri yolu sistemi veya bu mod\u00fcller i\u00e7in ayr\u0131lm\u0131\u015f g\u00fc\u00e7/toprak devreleri ile ilgili bir soruna i\u015faret eder.",
+      "de": "Der Code P2589 weist auf ein allgemeines Problem mit dem Kommunikationskreis oder der Stromversorgung zwischen dem Motorsteuerger\u00e4t (ECM) und dem Getriebesteuerger\u00e4t (TCM) hin. Dieser kritische Kommunikationsweg gew\u00e4hrleistet den ordnungsgem\u00e4\u00dfen Betrieb von Motor und Getriebe, einschlie\u00dflich Gangwahl, Schaltpunkten und Drehmomentmanagement. Ein Fehler hier kann von besch\u00e4digten Kabeln, korrodierten Steckverbindern, einer intermittierenden Stromversorgung, einer fehlerhaften Masse oder einem internen Modulausfall herr\u00fchren. Er deutet oft auf ein Problem mit dem Controller Area Network (CAN)-Bus-System oder den dedizierten Strom-/Massekreisen f\u00fcr diese Module hin.",
+      "es": "El c\u00f3digo P2589 indica un problema general con el circuito de comunicaci\u00f3n o el suministro de energ\u00eda entre el M\u00f3dulo de Control del Motor (ECM) y el M\u00f3dulo de Control de la Transmisi\u00f3n (TCM). Esta ruta de comunicaci\u00f3n cr\u00edtica asegura el funcionamiento adecuado del motor y la transmisi\u00f3n, incluyendo la selecci\u00f3n de marchas, los puntos de cambio y la gesti\u00f3n del par. Una falla aqu\u00ed puede deberse a cableado da\u00f1ado, conectores corro\u00eddos, un suministro de energ\u00eda intermitente, una masa defectuosa o una falla interna del m\u00f3dulo. A menudo sugiere un problema con el sistema de bus CAN (Controller Area Network) o con los circuitos dedicados de alimentaci\u00f3n/masa para estos m\u00f3dulos.",
+      "fr": "Le code P2589 indique un probl\u00e8me g\u00e9n\u00e9ral avec le circuit de communication ou l'alimentation \u00e9lectrique entre le Module de Commande du Moteur (ECM) et le Module de Commande de la Transmission (TCM). Cette voie de communication critique assure le bon fonctionnement du moteur et de la transmission, y compris la s\u00e9lection des vitesses, les points de changement de vitesse et la gestion du couple. Une d\u00e9faillance ici peut provenir de c\u00e2blage endommag\u00e9, de connecteurs corrod\u00e9s, d'une alimentation \u00e9lectrique intermittente, d'une masse d\u00e9fectueuse ou d'une d\u00e9faillance interne du module. Cela sugg\u00e8re souvent un probl\u00e8me avec le syst\u00e8me de bus CAN (Controller Area Network) ou les circuits d'alimentation/masse d\u00e9di\u00e9s \u00e0 ces modules."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_reduced_power_mode",
@@ -29601,7 +29613,90 @@
       "cause_battery"
     ],
     "fixDifficulty": "diff_professional",
-    "estimatedCost": "$200 - $1500"
+    "estimatedCost": "$200 - $1500",
+    "diagnosticSteps": {
+      "en": [
+        "Perform a thorough visual inspection of all wiring harnesses and connectors associated with the ECM and TCM, paying close attention to signs of chafing, corrosion, or damage. Check for loose pins or bent terminals.",
+        "Utilize an advanced scan tool to check for any other related Diagnostic Trouble Codes (DTCs), especially U-codes (network communication codes) or specific module power supply codes, which can help narrow down the root cause.",
+        "With the ignition off, disconnect the ECM and TCM connectors. Using a multimeter, verify proper power supply (B+ voltage) and ground continuity at the respective module terminals according to the vehicle's wiring diagram. Check for voltage drops under load if possible.",
+        "Inspect the CAN bus lines connected to the ECM and TCM. Measure the resistance across the CAN High and CAN Low lines (typically around 60 ohms with two terminating resistors) and check for proper voltage levels (CAN High ~2.5-3.5V, CAN Low ~1.5-2.5V) with the ignition on. Look for shorts to ground or power.",
+        "If power, ground, and CAN bus integrity are confirmed, and no other external issues are found, consider performing a module self-test or re-flashing the ECM/TCM software, if applicable, as a last resort before considering module replacement."
+      ],
+      "tr": [
+        "ECM ve TCM ile ili\u015fkili t\u00fcm kablo demetlerini ve konekt\u00f6rleri g\u00f6rsel olarak dikkatlice inceleyin; s\u00fcrt\u00fcnme, korozyon veya hasar belirtilerine \u00f6zellikle dikkat edin. Gev\u015fek pimleri veya b\u00fck\u00fclm\u00fc\u015f terminalleri kontrol edin.",
+        "Geli\u015fmi\u015f bir tarama arac\u0131 kullanarak, k\u00f6k nedeni daraltmaya yard\u0131mc\u0131 olabilecek di\u011fer ilgili Ar\u0131za Te\u015fhis Kodlar\u0131n\u0131 (DTC'ler), \u00f6zellikle U-kodlar\u0131n\u0131 (a\u011f ileti\u015fim kodlar\u0131) veya belirli mod\u00fcl g\u00fc\u00e7 kayna\u011f\u0131 kodlar\u0131n\u0131 kontrol edin.",
+        "Kontak kapal\u0131yken, ECM ve TCM konekt\u00f6rlerini ay\u0131r\u0131n. Bir multimetre kullanarak, arac\u0131n kablo \u015femas\u0131na g\u00f6re ilgili mod\u00fcl terminallerinde uygun g\u00fc\u00e7 kayna\u011f\u0131 (B+ voltaj\u0131) ve toprak s\u00fcreklili\u011fini do\u011frulay\u0131n. M\u00fcmk\u00fcnse y\u00fck alt\u0131nda voltaj d\u00fc\u015f\u00fc\u015flerini kontrol edin.",
+        "ECM ve TCM'ye ba\u011fl\u0131 CAN veri yolu hatlar\u0131n\u0131 inceleyin. CAN Y\u00fcksek ve CAN D\u00fc\u015f\u00fck hatlar\u0131 aras\u0131ndaki direnci \u00f6l\u00e7\u00fcn (genellikle iki sonland\u0131rma direnciyle yakla\u015f\u0131k 60 ohm) ve kontak a\u00e7\u0131kken uygun voltaj seviyelerini kontrol edin (CAN Y\u00fcksek ~2.5-3.5V, CAN D\u00fc\u015f\u00fck ~1.5-2.5V). Topra\u011fa veya g\u00fcce k\u0131sa devre olup olmad\u0131\u011f\u0131n\u0131 aray\u0131n.",
+        "G\u00fc\u00e7, toprak ve CAN veri yolu b\u00fct\u00fcnl\u00fc\u011f\u00fc onaylan\u0131rsa ve ba\u015fka harici sorun bulunamazsa, mod\u00fcl de\u011fi\u015fimi d\u00fc\u015f\u00fcn\u00fclmeden \u00f6nce son \u00e7are olarak bir mod\u00fcl kendi kendine testini veya ECM/TCM yaz\u0131l\u0131m\u0131n\u0131n yeniden fla\u015flanmas\u0131n\u0131 (uygulanabilirse) d\u00fc\u015f\u00fcn\u00fcn."
+      ],
+      "de": [
+        "F\u00fchren Sie eine gr\u00fcndliche Sichtpr\u00fcfung aller Kabelb\u00e4ume und Steckverbinder durch, die mit dem ECM und TCM verbunden sind, und achten Sie dabei besonders auf Anzeichen von Scheuern, Korrosion oder Besch\u00e4digungen. \u00dcberpr\u00fcfen Sie auf lose Stifte oder verbogene Klemmen.",
+        "Verwenden Sie ein fortschrittliches Diagnoseger\u00e4t, um nach anderen verwandten Fehlercodes (DTCs) zu suchen, insbesondere U-Codes (Netzwerkkommunikationscodes) oder spezifische Modul-Stromversorgungscodes, die helfen k\u00f6nnen, die Grundursache einzugrenzen.",
+        "Bei ausgeschalteter Z\u00fcndung die ECM- und TCM-Steckverbinder trennen. \u00dcberpr\u00fcfen Sie mit einem Multimeter die ordnungsgem\u00e4\u00dfe Stromversorgung (B+-Spannung) und Massekontinuit\u00e4t an den jeweiligen Modulklemmen gem\u00e4\u00df dem Schaltplan des Fahrzeugs. \u00dcberpr\u00fcfen Sie, wenn m\u00f6glich, auf Spannungsabf\u00e4lle unter Last.",
+        "\u00dcberpr\u00fcfen Sie die CAN-Bus-Leitungen, die mit dem ECM und TCM verbunden sind. Messen Sie den Widerstand \u00fcber die CAN-High- und CAN-Low-Leitungen (typischerweise etwa 60 Ohm mit zwei Abschlusswiderst\u00e4nden) und \u00fcberpr\u00fcfen Sie die richtigen Spannungspegel (CAN-High ~2,5-3,5V, CAN-Low ~1,5-2,5V) bei eingeschalteter Z\u00fcndung. Suchen Sie nach Kurzschl\u00fcssen gegen Masse oder Strom.",
+        "Wenn Stromversorgung, Masse und CAN-Bus-Integrit\u00e4t best\u00e4tigt sind und keine anderen externen Probleme gefunden werden, ziehen Sie als letzten Ausweg einen Modul-Selbsttest oder ein erneutes Flashen der ECM/TCM-Software in Betracht, bevor Sie einen Modulaustausch in Erw\u00e4gung ziehen."
+      ],
+      "es": [
+        "Realice una inspecci\u00f3n visual exhaustiva de todos los mazos de cables y conectores asociados con el ECM y el TCM, prestando especial atenci\u00f3n a los signos de rozaduras, corrosi\u00f3n o da\u00f1os. Verifique si hay pines sueltos o terminales doblados.",
+        "Utilice una herramienta de escaneo avanzada para buscar otros C\u00f3digos de Diagn\u00f3stico de Fallas (DTC) relacionados, especialmente c\u00f3digos U (c\u00f3digos de comunicaci\u00f3n de red) o c\u00f3digos espec\u00edficos de suministro de energ\u00eda del m\u00f3dulo, lo que puede ayudar a reducir la causa ra\u00edz.",
+        "Con el encendido apagado, desconecte los conectores del ECM y del TCM. Usando un mult\u00edmetro, verifique el suministro de energ\u00eda adecuado (voltaje B+) y la continuidad a tierra en los terminales respectivos del m\u00f3dulo de acuerdo con el diagrama de cableado del veh\u00edculo. Verifique si hay ca\u00eddas de voltaje bajo carga si es posible.",
+        "Inspeccione las l\u00edneas del bus CAN conectadas al ECM y al TCM. Mida la resistencia a trav\u00e9s de las l\u00edneas CAN High y CAN Low (t\u00edpicamente alrededor de 60 ohmios con dos resistencias de terminaci\u00f3n) y verifique los niveles de voltaje adecuados (CAN High ~2.5-3.5V, CAN Low ~1.5-2.5V) con el encendido encendido. Busque cortocircuitos a tierra o a la alimentaci\u00f3n.",
+        "Si se confirma la integridad de la alimentaci\u00f3n, la masa y el bus CAN, y no se encuentran otros problemas externos, considere realizar una autocomprobaci\u00f3n del m\u00f3dulo o volver a flashear el software del ECM/TCM, si corresponde, como \u00faltimo recurso antes de considerar el reemplazo del m\u00f3dulo."
+      ],
+      "fr": [
+        "Effectuez une inspection visuelle approfondie de tous les faisceaux de c\u00e2bles et connecteurs associ\u00e9s \u00e0 l'ECM et au TCM, en portant une attention particuli\u00e8re aux signes de frottement, de corrosion ou de dommages. V\u00e9rifiez l'absence de broches desserr\u00e9es ou de bornes tordues.",
+        "Utilisez un outil de diagnostic avanc\u00e9 pour rechercher d'autres Codes de D\u00e9faut (DTC) li\u00e9s, en particulier les codes U (codes de communication r\u00e9seau) ou les codes sp\u00e9cifiques d'alimentation \u00e9lectrique des modules, ce qui peut aider \u00e0 cerner la cause premi\u00e8re.",
+        "Avec le contact coup\u00e9, d\u00e9branchez les connecteurs de l'ECM et du TCM. \u00c0 l'aide d'un multim\u00e8tre, v\u00e9rifiez l'alimentation \u00e9lectrique correcte (tension B+) et la continuit\u00e9 de la masse aux bornes respectives du module, conform\u00e9ment au sch\u00e9ma de c\u00e2blage du v\u00e9hicule. V\u00e9rifiez les chutes de tension sous charge si possible.",
+        "Inspectez les lignes du bus CAN connect\u00e9es \u00e0 l'ECM et au TCM. Mesurez la r\u00e9sistance \u00e0 travers les lignes CAN High et CAN Low (g\u00e9n\u00e9ralement environ 60 ohms avec deux r\u00e9sistances de terminaison) et v\u00e9rifiez les niveaux de tension corrects (CAN High ~2.5-3.5V, CAN Low ~1.5-2.5V) avec le contact mis. Recherchez les courts-circuits \u00e0 la masse ou \u00e0 l'alimentation.",
+        "Si l'alimentation, la masse et l'int\u00e9grit\u00e9 du bus CAN sont confirm\u00e9es, et qu'aucun autre probl\u00e8me externe n'est trouv\u00e9, envisagez d'effectuer un auto-test du module ou de re-flasher le logiciel de l'ECM/TCM, si applicable, en dernier recours avant d'envisager le remplacement du module."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Repair or replace damaged, corroded, or shorted wiring harnesses and connectors affecting the ECM/TCM power, ground, or communication circuits.",
+        "Diagnose and repair issues with the power supply (e.g., blown fuses, faulty relays, corroded battery terminals, open circuits) or ground connections to the ECM and/or TCM.",
+        "Repair or replace faulty CAN bus wiring, including open circuits, shorts to power/ground, or excessive resistance, ensuring proper network communication.",
+        "If all external circuits are verified good, and internal diagnostics point to a failure, replace the faulty Engine Control Module (ECM) or Transmission Control Module (TCM) after proper programming."
+      ],
+      "tr": [
+        "ECM/TCM g\u00fc\u00e7, toprak veya ileti\u015fim devrelerini etkileyen hasarl\u0131, korozyona u\u011fram\u0131\u015f veya k\u0131sa devre yapm\u0131\u015f kablo demetlerini ve konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "ECM ve/veya TCM'ye giden g\u00fc\u00e7 kayna\u011f\u0131 (\u00f6rn. atm\u0131\u015f sigortalar, ar\u0131zal\u0131 r\u00f6leler, korozyona u\u011fram\u0131\u015f ak\u00fc terminalleri, a\u00e7\u0131k devreler) veya toprak ba\u011flant\u0131lar\u0131ndaki sorunlar\u0131 te\u015fhis edin ve onar\u0131n.",
+        "A\u00e7\u0131k devreler, g\u00fcce/topra\u011fa k\u0131sa devreler veya a\u015f\u0131r\u0131 diren\u00e7 dahil olmak \u00fczere ar\u0131zal\u0131 CAN veri yolu kablolar\u0131n\u0131 onar\u0131n veya de\u011fi\u015ftirin, b\u00f6ylece do\u011fru a\u011f ileti\u015fimi sa\u011flan\u0131r.",
+        "T\u00fcm harici devreler iyi durumda do\u011frulan\u0131rsa ve dahili te\u015fhisler bir ar\u0131zay\u0131 i\u015faret ediyorsa, uygun programlamadan sonra ar\u0131zal\u0131 Motor Kontrol Mod\u00fcl\u00fcn\u00fc (ECM) veya \u015eanz\u0131man Kontrol Mod\u00fcl\u00fcn\u00fc (TCM) de\u011fi\u015ftirin."
+      ],
+      "de": [
+        "Reparieren oder ersetzen Sie besch\u00e4digte, korrodierte oder kurzgeschlossene Kabelb\u00e4ume und Steckverbinder, die die Strom-, Masse- oder Kommunikationskreise des ECM/TCM betreffen.",
+        "Diagnostizieren und beheben Sie Probleme mit der Stromversorgung (z. B. durchgebrannte Sicherungen, defekte Relais, korrodierte Batterieklemmen, offene Stromkreise) oder den Masseverbindungen zum ECM und/oder TCM.",
+        "Reparieren oder ersetzen Sie fehlerhafte CAN-Bus-Verkabelungen, einschlie\u00dflich offener Stromkreise, Kurzschl\u00fcsse gegen Strom/Masse oder \u00fcberm\u00e4\u00dfigen Widerstands, um eine ordnungsgem\u00e4\u00dfe Netzwerkkommunikation sicherzustellen.",
+        "Wenn alle externen Schaltkreise als intakt verifiziert sind und interne Diagnosen auf einen Fehler hinweisen, ersetzen Sie das fehlerhafte Motorsteuerger\u00e4t (ECM) oder Getriebesteuerger\u00e4t (TCM) nach ordnungsgem\u00e4\u00dfer Programmierung."
+      ],
+      "es": [
+        "Reparar o reemplazar los mazos de cables y conectores da\u00f1ados, corro\u00eddos o en cortocircuito que afecten los circuitos de alimentaci\u00f3n, masa o comunicaci\u00f3n del ECM/TCM.",
+        "Diagnosticar y reparar problemas con el suministro de energ\u00eda (p. ej., fusibles quemados, rel\u00e9s defectuosos, terminales de bater\u00eda corro\u00eddos, circuitos abiertos) o las conexiones a tierra del ECM y/o TCM.",
+        "Reparar o reemplazar el cableado defectuoso del bus CAN, incluyendo circuitos abiertos, cortocircuitos a la alimentaci\u00f3n/masa o resistencia excesiva, asegurando una comunicaci\u00f3n de red adecuada.",
+        "Si todos los circuitos externos se verifican como buenos y los diagn\u00f3sticos internos apuntan a una falla, reemplace el M\u00f3dulo de Control del Motor (ECM) o el M\u00f3dulo de Control de la Transmisi\u00f3n (TCM) defectuoso despu\u00e9s de la programaci\u00f3n adecuada."
+      ],
+      "fr": [
+        "R\u00e9parer ou remplacer les faisceaux de c\u00e2bles et les connecteurs endommag\u00e9s, corrod\u00e9s ou court-circuit\u00e9s affectant les circuits d'alimentation, de masse ou de communication de l'ECM/TCM.",
+        "Diagnostiquer et r\u00e9parer les probl\u00e8mes d'alimentation \u00e9lectrique (par exemple, fusibles grill\u00e9s, relais d\u00e9fectueux, bornes de batterie corrod\u00e9es, circuits ouverts) ou de connexions de masse vers l'ECM et/ou le TCM.",
+        "R\u00e9parer ou remplacer le c\u00e2blage d\u00e9fectueux du bus CAN, y compris les circuits ouverts, les courts-circuits \u00e0 l'alimentation/masse ou la r\u00e9sistance excessive, assurant une communication r\u00e9seau appropri\u00e9e.",
+        "Si tous les circuits externes sont v\u00e9rifi\u00e9s comme \u00e9tant en bon \u00e9tat et que les diagnostics internes indiquent une d\u00e9faillance, remplacez le Module de Commande du Moteur (ECM) ou le Module de Commande de la Transmission (TCM) d\u00e9fectueux apr\u00e8s une programmation appropri\u00e9e."
+      ]
+    },
+    "drivingSafety": {
+      "level": "unsafe",
+      "description": {
+        "en": "Driving with a P2589 code is highly unsafe. This code indicates a critical failure in communication or power to the engine and transmission control modules, which can lead to unpredictable vehicle behavior, including erratic shifting, loss of power, sudden stalling, or a complete no-start condition. Continued operation could result in loss of vehicle control or further damage to powertrain components.",
+        "tr": "P2589 koduyla ara\u00e7 kullanmak son derece g\u00fcvensizdir. Bu kod, motor ve \u015fanz\u0131man kontrol mod\u00fcllerine giden ileti\u015fim veya g\u00fc\u00e7te kritik bir ar\u0131zay\u0131 g\u00f6sterir; bu da d\u00fczensiz vites de\u011fi\u015ftirme, g\u00fc\u00e7 kayb\u0131, ani stop etme veya tamamen \u00e7al\u0131\u015fmama durumu dahil olmak \u00fczere \u00f6ng\u00f6r\u00fclemeyen ara\u00e7 davran\u0131\u015flar\u0131na yol a\u00e7abilir. Devaml\u0131 kullan\u0131m, arac\u0131n kontrol\u00fcn\u00fcn kaybedilmesine veya aktarma organ\u0131 bile\u015fenlerinde daha fazla hasara neden olabilir.",
+        "de": "Das Fahren mit einem P2589-Code ist \u00e4u\u00dferst unsicher. Dieser Code weist auf einen kritischen Fehler in der Kommunikation oder Stromversorgung der Motor- und Getriebesteuerger\u00e4te hin, was zu unvorhersehbarem Fahrzeugverhalten f\u00fchren kann, einschlie\u00dflich unregelm\u00e4\u00dfigem Schalten, Leistungsverlust, pl\u00f6tzlichem Abw\u00fcrgen oder einem vollst\u00e4ndigen Startversagen. Ein fortgesetzter Betrieb k\u00f6nnte zum Verlust der Fahrzeugkontrolle oder zu weiteren Sch\u00e4den an den Antriebsstrangkomponenten f\u00fchren.",
+        "es": "Conducir con un c\u00f3digo P2589 es extremadamente inseguro. Este c\u00f3digo indica una falla cr\u00edtica en la comunicaci\u00f3n o la alimentaci\u00f3n de los m\u00f3dulos de control del motor y la transmisi\u00f3n, lo que puede provocar un comportamiento impredecible del veh\u00edculo, incluyendo cambios err\u00e1ticos, p\u00e9rdida de potencia, caladas repentinas o una condici\u00f3n de no arranque completa. La operaci\u00f3n continuada podr\u00eda resultar en la p\u00e9rdida de control del veh\u00edculo o da\u00f1os adicionales a los componentes del tren motriz.",
+        "fr": "Conduire avec un code P2589 est extr\u00eamement dangereux. Ce code indique une d\u00e9faillance critique dans la communication ou l'alimentation des modules de commande du moteur et de la transmission, ce qui peut entra\u00eener un comportement impr\u00e9visible du v\u00e9hicule, y compris des changements de vitesse erratiques, une perte de puissance, un calage soudain ou une impossibilit\u00e9 totale de d\u00e9marrer. Une utilisation continue pourrait entra\u00eener une perte de contr\u00f4le du v\u00e9hicule ou des dommages suppl\u00e9mentaires aux composants du groupe motopropulseur."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$50 - $2000+",
+      "labor": "$100 - $1000+"
+    }
   },
   "P2590": {
     "title": "ECM/TCM Communication / Power (P2590)",

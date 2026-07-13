@@ -3,7 +3,7 @@ import { cars, codes } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-
+import { getAlternates } from '@/utils/seo';
 interface PageProps {
   params: Promise<{
     locale: string;
@@ -29,7 +29,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return { 
     title: `1996-2026 ${capMake} ${capModel} OBD2 Codes & Warning Lights`,
-    description: `Complete diagnostic data for ${capMake} ${capModel} (1996-2026). Search all OBD2 trouble codes and dashboard warning light meanings.`
+    description: `Complete diagnostic data for ${capMake} ${capModel} (1996-2026). Search all OBD2 trouble codes and dashboard warning light meanings.`,
+    alternates: getAlternates(`${make}/${model}`, resolvedParams.locale)
   };
 }
 

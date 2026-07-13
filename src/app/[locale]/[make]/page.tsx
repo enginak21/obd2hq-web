@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
+import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -25,7 +26,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return { 
     title: `${capMake} OBD2 Codes & Dashboard Warning Lights`,
-    description: `Complete diagnostic guide for all ${capMake} models. Find out what your ${capMake} OBD2 trouble code or dashboard warning light means and how to fix it.`
+    description: `Complete diagnostic guide for all ${capMake} models. Find out what your ${capMake} OBD2 trouble code or dashboard warning light means and how to fix it.`,
+    alternates: getAlternates(make, resolvedParams.locale)
   };
 }
 

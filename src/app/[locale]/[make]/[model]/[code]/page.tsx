@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
-
+import { getAlternates } from '@/utils/seo';
 interface PageProps {
   params: Promise<{
     locale: string;
@@ -29,7 +29,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const title = `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
   return { 
     title,
-    description: `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`
+    description: `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`,
+    alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
   };
 }
 

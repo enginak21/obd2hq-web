@@ -3,7 +3,14 @@ import { cars } from '@/data/db';
 import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return {
+    alternates: getAlternates('', locale)
+  };
+}
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);

@@ -23,16 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     verification: {
       google: "4G3G4_xUQnE6Ss724YJkBp9Tmc41qJmd-etzpEFS1H4",
     },
-    alternates: {
-      canonical: `https://obd2hq.com/${locale}`,
-      languages: {
-        'en': 'https://obd2hq.com/en',
-        'de': 'https://obd2hq.com/de',
-        'es': 'https://obd2hq.com/es',
-        'tr': 'https://obd2hq.com/tr',
-        'fr': 'https://obd2hq.com/fr',
-      },
-    },
+    metadataBase: new URL("https://obd2hq.com"),
     openGraph: {
       title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
       description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs.",
