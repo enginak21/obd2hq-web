@@ -13,7 +13,19 @@ interface PageProps {
   }>;
 }
 
+export const dynamicParams = false;
 
+export async function generateStaticParams() {
+  const params: any[] = [];
+  const locales = ['en', 'de', 'es', 'tr', 'fr', 'pt', 'ru', 'it', 'nl', 'pl'];
+  
+  for (const locale of locales) {
+    for (const car of cars) {
+      params.push({ locale, make: car.make });
+    }
+  }
+  return params;
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;

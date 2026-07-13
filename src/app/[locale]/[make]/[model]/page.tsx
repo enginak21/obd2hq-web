@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getAlternates } from '@/utils/seo';
+
 interface PageProps {
   params: Promise<{
     locale: string;
@@ -15,7 +16,21 @@ interface PageProps {
   }>;
 }
 
-export const dynamic = 'force-dynamic';
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const params: any[] = [];
+  const locales = ['en', 'de', 'es', 'tr', 'fr', 'pt', 'ru', 'it', 'nl', 'pl'];
+  
+  for (const locale of locales) {
+    for (const car of cars) {
+      for (const model of car.models) {
+        params.push({ locale, make: car.make, model });
+      }
+    }
+  }
+  return params;
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
