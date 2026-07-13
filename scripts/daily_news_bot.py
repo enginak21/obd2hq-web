@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 import re
 import time
+import sys
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -131,8 +132,8 @@ def rewrite_article_with_ai(article_data):
             print(f"Error calling Gemini API: {e}")
             return None
             
-    print("Failed to generate content after max retries.")
-    return None
+    print("Failed to generate content after max retries. Assuming API limit reached.")
+    return "RATE_LIMIT"
 
 def main():
     print(f"Starting Daily News Bot at {datetime.now(timezone.utc).isoformat()}...")
@@ -146,7 +147,10 @@ def main():
             print(f"Processing new article: {item['title']}")
             
             ai_data = rewrite_article_with_ai(item)
-            if ai_data:
+            if ai_data == "RATE_LIMIT":
+                print("Daily limit exhausted. Exiting gracefully to commit current changes.")
+                sys.exit(0)
+            elif ai_data:
                 ai_data['date'] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
                 ai_data['id'] = item['slug']
                 ai_data['slug'] = item['slug']

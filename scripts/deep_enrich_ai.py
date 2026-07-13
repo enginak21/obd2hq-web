@@ -124,7 +124,11 @@ def enrich_codes(api_key):
                     time.sleep(2)
                 
                 if retries == max_retries:
-                    print(f"Failed to process {code} after {max_retries} attempts. Skipping to prevent infinite loop.")
+                    print(f"Failed to process {code} after {max_retries} attempts. Assuming API limit reached for today.")
+                    with open(db_path, 'w', encoding='utf-8') as f:
+                        json.dump(codes, f, indent=2)
+                    print("Progress saved safely. Exiting gracefully to commit changes.")
+                    sys.exit(0)
             
     with open(db_path, 'w', encoding='utf-8') as f:
         json.dump(codes, f, indent=2)
