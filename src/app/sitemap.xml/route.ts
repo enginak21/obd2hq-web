@@ -18,7 +18,7 @@ export async function GET() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${sitemapIdentifiers.map((_, index) => `
   <sitemap>
-    <loc>${BASE_URL}/sitemap/${index}.xml</loc>
+    <loc>${BASE_URL}/sitemaps/${index}.xml</loc>
   </sitemap>
   `).join('')}
 </sitemapindex>`;

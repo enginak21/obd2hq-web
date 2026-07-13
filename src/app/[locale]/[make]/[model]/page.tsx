@@ -20,7 +20,7 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const params: any[] = [];
-  const locales = ['en', 'de', 'es', 'tr', 'fr', 'pt', 'ru', 'it', 'nl', 'pl'];
+  const locales = ['en', 'de', 'es', 'tr', 'fr'];
   
   for (const locale of locales) {
     for (const car of cars) {

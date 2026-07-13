@@ -10,6 +10,13 @@ const intlMiddleware = createMiddleware({
   defaultLocale: 'en'
 });
 
+function notFoundResponse() {
+  return new NextResponse('<!doctype html><html><head><meta name="robots" content="noindex" /></head><body><h1>404 Not Found</h1></body></html>', {
+    status: 404,
+    headers: { 'Content-Type': 'text/html; charset=utf-8' }
+  });
+}
+
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
@@ -34,23 +41,27 @@ export default function middleware(request: NextRequest) {
     const isStaticPage = ['about', 'contact', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer'].includes(make);
     
     if (locales.includes(locale) && !isStaticPage) {
+      if (segments.length > 4) {
+        return notFoundResponse();
+      }
+
       // It's a car data route
       if (!validRoutes.validMakes.includes(make)) {
-        return new NextResponse('<html><body><h1>404 Not Found</h1></body></html>', { status: 404, headers: { 'Content-Type': 'text/html' } });
+        return notFoundResponse();
       }
       
       if (segments.length >= 3) {
         const model = segments[2];
         const validModelsForMake = validRoutes.validModels[make as keyof typeof validRoutes.validModels] || [];
         if (!validModelsForMake.includes(model)) {
-          return new NextResponse('<html><body><h1>404 Not Found</h1></body></html>', { status: 404, headers: { 'Content-Type': 'text/html' } });
+          return notFoundResponse();
         }
         
         if (segments.length >= 4) {
           const code = segments[3];
           if (code !== 'lights') {
             if (!validRoutes.validCodes.includes(code.toUpperCase())) {
-              return new NextResponse('<html><body><h1>404 Not Found</h1></body></html>', { status: 404, headers: { 'Content-Type': 'text/html' } });
+              return notFoundResponse();
             }
           }
         }
