@@ -7,7 +7,9 @@ const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
 const sitemapIdentifiers: string[] = ['base'];
 LOCALES.forEach((locale) => {
   cars.forEach((car) => {
-    sitemapIdentifiers.push(`${locale}-${car.make}`);
+    car.models.forEach((model) => {
+      sitemapIdentifiers.push(`${locale}-${car.make}-${model}`);
+    });
   });
 });
 
@@ -33,7 +35,7 @@ export default async function sitemap(props: any): Promise<MetadataRoute.Sitemap
       routes.push({ url: `${BASE_URL}/${locale}`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 });
       routes.push({ url: `${BASE_URL}/${locale}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 });
       routes.push({ url: `${BASE_URL}/${locale}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 });
-      routes.push({ url: `${BASE_URL}/${locale}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 });
+      routes.push({ url: `${BASE_URL}/${locale}/news`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 });
       routes.push({ url: `${BASE_URL}/${locale}/disclaimer`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 });
       routes.push({ url: `${BASE_URL}/${locale}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 });
       routes.push({ url: `${BASE_URL}/${locale}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 });
@@ -48,17 +50,19 @@ export default async function sitemap(props: any): Promise<MetadataRoute.Sitemap
     return routes;
   }
 
-  // Handle dynamic make-locale sitemaps
-  // idStr format: locale-make (e.g., tr-audi)
+  // Handle dynamic make-locale-model sitemaps
+  // idStr format: locale-make-model (e.g., tr-audi-a3)
   const parts = idStr.split('-');
-  if (parts.length >= 2) {
+  if (parts.length >= 3) {
     const locale = parts[0];
-    const make = parts.slice(1).join('-');
+    const make = parts[1];
+    const model = parts.slice(2).join('-');
     
     const car = cars.find(c => c.make === make);
     if (car && LOCALES.includes(locale)) {
       const codeKeys = Object.keys(baseCodes);
-      car.models.forEach(model => {
+      // Only iterate for this specific model
+      if (car.models.includes(model)) {
         codeKeys.forEach(code => {
           routes.push({
             url: `${BASE_URL}/${locale}/${make}/${model}/${code}`,
@@ -67,7 +71,7 @@ export default async function sitemap(props: any): Promise<MetadataRoute.Sitemap
             priority: 0.7,
           });
         });
-      });
+      }
     }
   }
 
