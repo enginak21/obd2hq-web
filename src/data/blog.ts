@@ -248,3 +248,32 @@ export function getBlogPosts(locale: string): BlogPost[] {
     default: return postsEN;
   }
 }
+
+export function getBlogAlternates(locale: string, slug: string) {
+  const currentIndex = getBlogPosts(locale).findIndex(post => post.slug === slug);
+  const safeIndex = currentIndex >= 0 ? currentIndex : getBlogPosts('en').findIndex(post => post.slug === slug);
+
+  if (safeIndex < 0) {
+    return {
+      canonical: `/${locale}/blog/${slug}`,
+      languages: {
+        en: `/en/blog/${slug}`,
+        'x-default': `/en/blog/${slug}`,
+      },
+    };
+  }
+
+  const languages = {
+    en: `/en/blog/${getBlogPosts('en')[safeIndex]?.slug || slug}`,
+    de: `/de/blog/${getBlogPosts('de')[safeIndex]?.slug || slug}`,
+    es: `/es/blog/${getBlogPosts('es')[safeIndex]?.slug || slug}`,
+    tr: `/tr/blog/${getBlogPosts('tr')[safeIndex]?.slug || slug}`,
+    fr: `/fr/blog/${getBlogPosts('fr')[safeIndex]?.slug || slug}`,
+    'x-default': `/en/blog/${getBlogPosts('en')[safeIndex]?.slug || slug}`,
+  };
+
+  return {
+    canonical: languages[locale as keyof typeof languages] || `/${locale}/blog/${slug}`,
+    languages,
+  };
+}

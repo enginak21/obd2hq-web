@@ -1,9 +1,8 @@
 import { notFound } from 'next/navigation';
-import { getBlogPosts } from '@/data/blog';
+import { getBlogAlternates, getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -22,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} - OBD2HQ Blog`,
     description: post.description,
-    alternates: getAlternates(`blog/${slug}`, locale),
+    alternates: getBlogAlternates(locale, slug),
   };
 }
 
