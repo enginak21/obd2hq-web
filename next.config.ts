@@ -4,6 +4,21 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.obd2hq.com',
+          },
+        ],
+        destination: 'https://obd2hq.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
