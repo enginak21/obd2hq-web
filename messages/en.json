@@ -4,7 +4,8 @@
     "makes": "Makes",
     "aboutUs": "About Us",
     "contact": "Contact",
-    "blog": "Blog & Reviews"
+    "blog": "Blog & Reviews",
+    "news": "News & Gazette"
   },
   "Footer": {
     "description": "The world's most comprehensive database for vehicle diagnostic trouble codes and dashboard warning lights.",
@@ -293,5 +294,20 @@
     "next": "Next",
     "page": "Page",
     "of": "of"
+  },
+  "NewsPage": {
+    "title": "Automotive Gazette",
+    "badge": "DAILY NEWS",
+    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
+    "noNewsTitle": "No News Yet",
+    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
+    "readMore": "Read Article",
+    "backToNews": "Back to News",
+    "categories": {
+      "brand_news": "Brand News",
+      "modified_cars": "Modded & Tuning",
+      "chronic_issues": "Recalls & Issues",
+      "industry_news": "Industry & Tech"
+    }
   }
 }

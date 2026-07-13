@@ -4,7 +4,8 @@
     "makes": "Marcas",
     "aboutUs": "Sobre nosotros",
     "contact": "Contacto",
-    "blog": "Blog y Reseñas"
+    "blog": "Blog y Reseñas",
+    "news": "News & Gazette"
   },
   "Footer": {
     "description": "La base de datos más completa del mundo para códigos de diagnóstico de vehículos y luces de advertencia del tablero.",
@@ -293,5 +294,20 @@
     "next": "Siguiente",
     "page": "Página",
     "of": "de"
+  },
+  "NewsPage": {
+    "title": "Automotive Gazette",
+    "badge": "DAILY NEWS",
+    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
+    "noNewsTitle": "No News Yet",
+    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
+    "readMore": "Read Article",
+    "backToNews": "Back to News",
+    "categories": {
+      "brand_news": "Brand News",
+      "modified_cars": "Modded & Tuning",
+      "chronic_issues": "Recalls & Issues",
+      "industry_news": "Industry & Tech"
+    }
   }
 }

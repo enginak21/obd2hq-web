@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-300">
           <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('makes')}</Link>
-          <Link href={`/${locale}/blog`} className="hover:text-white transition-colors text-blue-400">{t('blog')}</Link>
+          <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-400">{t('news')}</Link>
           <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
           <Link href={`/${locale}/contact`} className="hover:text-white transition-colors">{t('contact')}</Link>
           <div className="w-px h-5 bg-white/10 mx-2"></div>
@@ -82,7 +82,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div id="mobile-menu" className="md:hidden bg-[#131b2f] border-b border-white/10 px-6 py-4 flex flex-col space-y-4">
           <Link href={`/${locale}`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('makes')}</Link>
-          <Link href={`/${locale}/blog`} className="text-blue-400 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('blog')}</Link>
+          <Link href={`/${locale}/news`} className="text-blue-400 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('news')}</Link>
           <Link href={`/${locale}/about`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('aboutUs')}</Link>
           <Link href={`/${locale}/contact`} className="text-slate-300 hover:text-white font-medium" onClick={() => setIsMenuOpen(false)}>{t('contact')}</Link>
         </div>

@@ -4,7 +4,8 @@
     "makes": "Markalar",
     "aboutUs": "Hakkımızda",
     "contact": "İletişim",
-    "blog": "Blog & İncelemeler"
+    "blog": "Blog & İncelemeler",
+    "news": "News & Gazette"
   },
   "Footer": {
     "description": "Araç teşhis kodları ve gösterge paneli uyarı ışıkları için dünyanın en kapsamlı veritabanı.",
@@ -293,5 +294,20 @@
     "next": "Sonraki",
     "page": "Sayfa",
     "of": "/"
+  },
+  "NewsPage": {
+    "title": "Automotive Gazette",
+    "badge": "DAILY NEWS",
+    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
+    "noNewsTitle": "No News Yet",
+    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
+    "readMore": "Read Article",
+    "backToNews": "Back to News",
+    "categories": {
+      "brand_news": "Brand News",
+      "modified_cars": "Modded & Tuning",
+      "chronic_issues": "Recalls & Issues",
+      "industry_news": "Industry & Tech"
+    }
   }
 }

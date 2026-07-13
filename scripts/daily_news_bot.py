@@ -1,0 +1,138 @@
+import os
+import json
+import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+import re
+import time
+
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+NEWS_DIR = os.path.join(os.path.dirname(__file__), "..", "src", "data", "news")
+
+# Ensure the news directory exists
+os.makedirs(NEWS_DIR, exist_ok=True)
+
+# Free RSS Feeds for Automotive News
+RSS_FEEDS = [
+    "https://www.autoblog.com/category/news/rss.xml",
+    "https://www.motor1.com/rss/news/all/"
+]
+
+def slugify(text):
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s-]+', '-', text)
+    return text.strip('-')
+
+def fetch_rss_feed(url):
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        response = urllib.request.urlopen(req)
+        xml_data = response.read()
+        root = ET.fromstring(xml_data)
+        items = []
+        for item in root.findall('.//item'):  # Process all items
+            title = item.find('title').text if item.find('title') is not None else ''
+            link = item.find('link').text if item.find('link') is not None else ''
+            description = item.find('description').text if item.find('description') is not None else ''
+            
+            # Simple check if article already exists by slug
+            slug = slugify(title)[:50]
+            if not os.path.exists(os.path.join(NEWS_DIR, f"{slug}.json")):
+                items.append({'title': title, 'link': link, 'description': description, 'slug': slug})
+        return items
+    except Exception as e:
+        print(f"Error fetching RSS {url}: {e}")
+        return []
+
+def rewrite_article_with_ai(article_data):
+    if not GEMINI_API_KEY:
+        print("No GEMINI_API_KEY provided, skipping AI generation.")
+        return None
+
+    prompt = f"""You are a professional automotive journalist. Rewrite the following news article to be completely unique, highly engaging, and SEO-optimized to avoid duplicate content penalties.
+    Do not mention that you are an AI. Write as a passionate car enthusiast.
+    
+    Original Title: {article_data['title']}
+    Original Description/Content: {article_data['description']}
+    
+    You must output a strictly valid JSON object matching this structure exactly:
+    {{
+        "id": "a-unique-id",
+        "date": "YYYY-MM-DDTHH:MM:SSZ",
+        "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1600",
+        "category": "choose_one_from: brand_news, modified_cars, chronic_issues, industry_news",
+        "slug": "{article_data['slug']}",
+        "title": {{
+            "en": "...", "de": "...", "es": "...", "tr": "...", "fr": "..."
+        }},
+        "summary": {{
+            "en": "...", "de": "...", "es": "...", "tr": "...", "fr": "..."
+        }},
+        "content": {{
+            "en": "...", "de": "...", "es": "...", "tr": "...", "fr": "..."
+        }}
+    }}
+    
+    Make the translations natural and culturally appropriate for each language. Provide ONLY the JSON, without markdown formatting blocks.
+    For the image, if you can extract an image from the original article use that, otherwise use a generic car unsplash image like the one in the example.
+    """
+
+    api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+    
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"temperature": 0.7}
+    }
+    
+    req = urllib.request.Request(api_url, data=json.dumps(payload).encode('utf-8'), headers={'Content-Type': 'application/json'})
+    
+    try:
+        response = urllib.request.urlopen(req)
+        result = json.loads(response.read().decode('utf-8'))
+        text_response = result['candidates'][0]['content']['parts'][0]['text']
+        
+        # Clean up potential markdown formatting around JSON
+        text_response = text_response.strip()
+        if text_response.startswith('```json'):
+            text_response = text_response[7:]
+        if text_response.startswith('```'):
+            text_response = text_response[3:]
+        if text_response.endswith('```'):
+            text_response = text_response[:-3]
+            
+        return json.loads(text_response.strip())
+    except Exception as e:
+        print(f"Error calling Gemini API: {e}")
+        return None
+
+def main():
+    print(f"Starting Daily News Bot at {datetime.now(timezone.utc).isoformat()}...")
+    new_articles_count = 0
+    
+    for feed_url in RSS_FEEDS:
+        print(f"Fetching {feed_url}...")
+        items = fetch_rss_feed(feed_url)
+        
+        for item in items:
+            print(f"Processing new article: {item['title']}")
+            
+            ai_data = rewrite_article_with_ai(item)
+            if ai_data:
+                ai_data['date'] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                ai_data['id'] = item['slug']
+                ai_data['slug'] = item['slug']
+                
+                file_path = os.path.join(NEWS_DIR, f"{item['slug']}.json")
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    json.dump(ai_data, f, ensure_ascii=False, indent=2)
+                
+                print(f"Successfully saved {file_path}")
+                new_articles_count += 1
+            else:
+                print("Failed to generate AI content.")
+                
+    print(f"Bot finished. Generated {new_articles_count} new articles.")
+
+if __name__ == "__main__":
+    main()

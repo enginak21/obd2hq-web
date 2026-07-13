@@ -4,7 +4,8 @@
     "makes": "Marques",
     "aboutUs": "À propos",
     "contact": "Contact",
-    "blog": "Blog & Avis"
+    "blog": "Blog & Avis",
+    "news": "News & Gazette"
   },
   "Footer": {
     "description": "La base de données la plus complète au monde pour les codes de diagnostic de véhicules et les voyants de tableau de bord.",
@@ -293,5 +294,20 @@
     "next": "Suivant",
     "page": "Page",
     "of": "sur"
+  },
+  "NewsPage": {
+    "title": "Automotive Gazette",
+    "badge": "DAILY NEWS",
+    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
+    "noNewsTitle": "No News Yet",
+    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
+    "readMore": "Read Article",
+    "backToNews": "Back to News",
+    "categories": {
+      "brand_news": "Brand News",
+      "modified_cars": "Modded & Tuning",
+      "chronic_issues": "Recalls & Issues",
+      "industry_news": "Industry & Tech"
+    }
   }
 }
