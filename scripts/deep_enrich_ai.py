@@ -81,45 +81,50 @@ def enrich_codes(api_key):
         
         user_prompt = f"Provide detailed diagnostic information for OBD2 code {code}. Title: {title_str}. Description: {desc_str}"
         
-        try:
-            response = client.models.generate_content(
-                model='gemini-2.5-flash',
-                contents=user_prompt,
-                config=types.GenerateContentConfig(
-                    system_instruction=system_prompt,
-                    response_mime_type="application/json",
-                    temperature=0.2,
+        max_retries = 5
+        retries = 0
+        while retries < max_retries:
+            try:
+                response = client.models.generate_content(
+                    model='gemini-2.5-flash',
+                    contents=user_prompt,
+                    config=types.GenerateContentConfig(
+                        system_instruction=system_prompt,
+                        response_mime_type="application/json",
+                        temperature=0.2,
+                    )
                 )
-            )
-            
-            enrichment_data = json.loads(response.text)
-            
-            # Merge new data
-            data["title"] = enrichment_data.get("title", data.get("title"))
-            data["description"] = enrichment_data.get("description", data.get("description"))
-            data["diagnosticSteps"] = enrichment_data.get("diagnosticSteps", {})
-            data["commonFixes"] = enrichment_data.get("commonFixes", {})
-            data["drivingSafety"] = enrichment_data.get("drivingSafety", {})
-            data["costBreakdown"] = enrichment_data.get("costBreakdown", {})
-            
-            count += 1
-            if count % 5 == 0:
-                with open(db_path, 'w', encoding='utf-8') as f:
-                    json.dump(codes, f, indent=2)
-                print(f"--- Saved progress ({count} codes processed) ---")
                 
-            time.sleep(5) # Delay to respect rate limits
-            
-        except Exception as e:
-            error_msg = str(e)
-            print(f"Error processing {code}: {error_msg}")
-            if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
-                print("Rate limit reached. Waiting for 60 seconds...")
-                time.sleep(60)
-                with open(db_path, 'w', encoding='utf-8') as f:
-                    json.dump(codes, f, indent=2)
-            else:
-                time.sleep(5)
+                enrichment_data = json.loads(response.text)
+                
+                # Merge new data
+                data["title"] = enrichment_data.get("title", data.get("title"))
+                data["description"] = enrichment_data.get("description", data.get("description"))
+                data["diagnosticSteps"] = enrichment_data.get("diagnosticSteps", {})
+                data["commonFixes"] = enrichment_data.get("commonFixes", {})
+                data["drivingSafety"] = enrichment_data.get("drivingSafety", {})
+                data["costBreakdown"] = enrichment_data.get("costBreakdown", {})
+                
+                count += 1
+                if count % 5 == 0:
+                    with open(db_path, 'w', encoding='utf-8') as f:
+                        json.dump(codes, f, indent=2)
+                    print(f"--- Saved progress ({count} codes processed) ---")
+                    
+                break # Success, exit retry loop
+                
+            except Exception as e:
+                retries += 1
+                error_msg = str(e)
+                print(f"Error processing {code} (Attempt {retries}/{max_retries}): {error_msg}")
+                if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+                    print("Rate limit reached. Waiting for 10 seconds before retry...")
+                    time.sleep(10)
+                else:
+                    time.sleep(2)
+                
+                if retries == max_retries:
+                    print(f"Failed to process {code} after {max_retries} attempts. Skipping to prevent infinite loop.")
             
     with open(db_path, 'w', encoding='utf-8') as f:
         json.dump(codes, f, indent=2)
