@@ -87,6 +87,26 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             </Link>
           ))}
         </div>
+
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
+            <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            Top Searched Codes for {capMake}
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {['P0420', 'P0300', 'P0171', 'P0456', 'P0113', 'P0128'].map((code) => (
+              <Link 
+                key={code} 
+                href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`}
+                className="group flex items-center justify-center py-4 bg-[#131b2f] border border-red-500/10 hover:border-red-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(239,68,68,0.2)]"
+              >
+                <span className="text-slate-300 group-hover:text-red-400 text-sm font-bold tracking-wider">
+                  {code}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );

@@ -5,6 +5,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 import { getAlternates } from '@/utils/seo';
+import { ShieldCheck, CheckCircle2, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
+
 interface PageProps {
   params: Promise<{
     locale: string;
@@ -13,8 +15,6 @@ interface PageProps {
     code: string;
   }>;
 }
-
-
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
@@ -64,10 +64,10 @@ export default async function CodePage({ params }: PageProps) {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": `What does the ${upperCode} code mean on a ${capMake} ${capModel}?`,
+        "name": `Can I drive with the ${upperCode} code?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": locDescription.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)
+          "text": obdData.drivingSafety ? locDrivingSafetyDesc : "It depends on the severity. If the check engine light is flashing, stop immediately. If it is solid, you can usually drive to a mechanic."
         }
       },
       {
@@ -85,211 +85,261 @@ export default async function CodePage({ params }: PageProps) {
           "@type": "Answer",
           "text": `The estimated repair cost for the ${upperCode} code is ${obdData.estimatedCost}. This includes parts and labor.`
         }
+      },
+      {
+        "@type": "Question",
+        "name": `Will the ${upperCode} code clear itself?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, the code will clear itself after you fix the underlying issue and drive the vehicle for several cycles. You can also clear it manually with an OBD2 scanner."
+        }
       }
     ],
     "author": {
       "@type": "Organization",
-      "name": "OBD2HQ"
+      "name": "OBD2HQ",
+      "url": "https://www.obd2hq.com"
     },
     "reviewedBy": {
-      "@type": "Person",
-      "name": "ASE Certified Technician"
+      "@type": "Organization",
+      "name": "OBD2HQ Editorial Team",
+      "url": `https://www.obd2hq.com/${locale}/reviewers`
     }
   };
 
-  // Get 3 random related codes from the base DB to show in the widget
-  // (We use a simple pseudo-random based on the char codes of make/model/code to be deterministic)
+  // Article Schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": `1996-2026 ${capMake} ${capModel} ${upperCode} Code: ${locTitle}`,
+    "description": locDescription.substring(0, 150),
+    "author": {
+      "@type": "Organization",
+      "name": "OBD2HQ Editorial Team",
+      "url": `https://www.obd2hq.com/${locale}/reviewers`
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OBD2HQ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.obd2hq.com/icon.jpg"
+      }
+    },
+    "datePublished": "2024-01-01T08:00:00+08:00",
+    "dateModified": new Date().toISOString()
+  };
+
   const codeKeys = Object.keys(baseCodes || {}).slice(0, 30);
   const hash = make.charCodeAt(0) + model.charCodeAt(0) + code.charCodeAt(0);
   const relatedCode1 = codeKeys[(hash) % codeKeys.length] || 'P0300';
   const relatedCode2 = codeKeys[(hash + 5) % codeKeys.length] || 'P0171';
   const relatedCode3 = codeKeys[(hash + 11) % codeKeys.length] || 'P0420';
 
+  const severityColor = obdData.drivingSafety?.level === 'danger' ? 'text-red-500 bg-red-500/10' :
+                        obdData.drivingSafety?.level === 'caution' ? 'text-amber-500 bg-amber-500/10' :
+                        'text-green-500 bg-green-500/10';
+
+  const diffColor = obdData.fixDifficulty.includes('Hard') || obdData.fixDifficulty.includes('diff_professional') ? 'text-red-500' :
+                    obdData.fixDifficulty.includes('Moderate') ? 'text-amber-500' : 'text-green-500';
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       
-      {/* Premium Header */}
-      <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
-        {/* Glow Effects */}
+      <header className="relative border-b border-white/5 pt-12 pb-12 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-        <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           
-          {/* Breadcrumb */}
-          <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
+          <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-6 font-medium gap-y-2" aria-label="Breadcrumb">
             <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
-            <span className="capitalize shrink-0">{make}</span>
+            <Link href={`/${locale}/${make}`} className="hover:text-blue-400 transition-colors shrink-0 capitalize">{make}</Link>
             <span className="mx-2 shrink-0">/</span>
-            <span className="capitalize shrink-0">{model}</span>
+            <Link href={`/${locale}/${make}/${model}`} className="hover:text-blue-400 transition-colors shrink-0 capitalize">{model}</Link>
+            <span className="mx-2 shrink-0">/</span>
+            <span className="text-white shrink-0">{upperCode}</span>
           </nav>
 
-          <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
-            <div>
-              <div className="flex flex-wrap items-center gap-3 mb-6">
-                <span className="px-4 py-2 rounded-xl bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 text-red-400 font-bold text-xl sm:text-2xl tracking-widest shadow-[0_0_30px_rgba(239,68,68,0.2)]">
-                  {upperCode}
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-xs sm:text-sm font-semibold tracking-wide">
+                1996 - 2026 {capMake} {capModel}
+              </span>
+              <span className={`px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-semibold tracking-wide uppercase ${severityColor} border-current/20`}>
+                Severity: {obdData.drivingSafety?.level || 'Moderate'}
+              </span>
+            </div>
+            
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              {upperCode} Code: {locTitle}
+            </h1>
+            
+            {/* E-E-A-T Reviewer Badge */}
+            <div className="flex items-center text-slate-400 text-sm mt-2 border-t border-white/10 pt-4">
+              <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mr-3">
+                <ShieldCheck className="w-6 h-6 text-blue-400" />
+              </div>
+              <div className="flex flex-col">
+                <span>
+                  {t('reviewedBy') || 'Editorially reviewed by'} <Link href={`/${locale}/reviewers`} className="text-blue-400 font-medium hover:underline">OBD2HQ Team</Link>
                 </span>
-                <span className="px-3 py-1.5 rounded-lg bg-[#1a233a] border border-white/5 text-slate-300 text-xs sm:text-sm font-semibold tracking-wide uppercase">
-                  {capMake} {capModel}
-                </span>
-                <span className="px-3 py-1.5 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-xs sm:text-sm font-semibold tracking-wide">
-                  {t('years')}: 1996 - 2026
+                <span className="text-xs opacity-70 flex items-center mt-0.5">
+                  <Clock className="w-3 h-3 mr-1" /> {t('lastUpdated') || 'Last Updated:'} {new Date().toLocaleDateString(locale, { month: 'long', year: 'numeric' })}
                 </span>
               </div>
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                {locTitle}
-              </h1>
-              <div className="flex items-center text-slate-400 text-sm mt-4">
-                <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
-                {t('aseCertified')}
-              </div>
-              
-              {obdData.drivingSafety && (
-                <div className={`mt-6 p-4 rounded-xl border flex items-start space-x-3 ${
-                  obdData.drivingSafety.level === 'danger' ? 'bg-red-500/10 border-red-500/30 text-red-400' :
-                  obdData.drivingSafety.level === 'caution' ? 'bg-amber-500/10 border-amber-500/30 text-amber-400' :
-                  'bg-green-500/10 border-green-500/30 text-green-400'
-                }`}>
-                  <svg className="w-6 h-6 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                  </svg>
-                  <div>
-                    <strong className="block text-white mb-1 font-semibold">{t('drivingSafety')}</strong>
-                    <span className="text-sm opacity-90">{locDrivingSafetyDesc}</span>
-                  </div>
-                </div>
-              )}
+            </div>
+
+            <div className="text-xs text-slate-500 mt-2">
+              <Link href={`/${locale}/editorial-policy`} className="hover:text-slate-300 underline underline-offset-2">
+                {t('editorialPolicy') || 'Editorial Policy & Disclaimer'}
+              </Link>
             </div>
           </div>
         </div>
       </header>
 
-      {/* Top Banner Ad Placeholder */}
-      <div className="max-w-5xl mx-auto px-6 mt-8 hidden sm:block">
-        <div className="w-full h-[90px] bg-[#0d1425] border border-dashed border-white/10 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
-          {t('leaderboardAd')}
-        </div>
-      </div>
-
-      {/* Main Content */}
       <div className="max-w-5xl mx-auto px-6 mt-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
         
-        {/* Left Column (Main Info) */}
+        {/* Left Column (Main Content) */}
         <div className="lg:col-span-2 space-y-12">
           
-          {/* What does it mean */}
-          <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-xl relative overflow-hidden">
-             <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 rounded-l-3xl"></div>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <svg className="w-6 h-6 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          {!obdData.isEnriched && (
+            <div className="bg-slate-800/50 border border-amber-500/30 rounded-2xl p-6 shadow-lg mb-8">
+              <div className="flex items-start">
+                <AlertCircle className="w-6 h-6 text-amber-500 mr-3 shrink-0 mt-0.5" />
+                <p className="text-slate-300 leading-relaxed text-sm">
+                  {t('genericDisclaimer', { make: capMake, model: capModel, code: upperCode }) || `Note: We do not currently have verified model-specific diagnostic data for the ${capMake} ${capModel}. The symptoms and fixes listed below are the standard generic OBD2 guidelines for the ${upperCode} code. Always consult a factory service manual before replacing parts.`}
+                </p>
+              </div>
+            </div>
+          )}
+
+          <section className="prose prose-invert max-w-none">
+            <h2 className="text-2xl font-bold text-white flex items-center m-0 mb-4">
+              <AlertCircle className="w-6 h-6 mr-3 text-blue-400" />
               {t('whatDoesItMean')}
             </h2>
-            <p className="text-lg text-slate-300 leading-relaxed font-light mb-4">
+            <p className="text-slate-300 text-lg font-light leading-relaxed">
               {locDescription.replace(/Engine Control Module/g, `${capMake} Engine Control Module`)}
             </p>
-            <p className="text-md text-slate-400 leading-relaxed font-light p-4 bg-white/5 rounded-xl border border-white/5">
-              {t('disclaimer', { make: capMake, model: capModel })}
-            </p>
           </section>
 
-          {/* In-Article Ad Placeholder */}
-          <div className="w-full h-[120px] bg-[#0d1425] border border-dashed border-white/10 rounded-2xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide my-8">
-            {t('inArticleAd')}
-          </div>
-
-          {/* Causes */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <svg className="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-              {t('commonCauses')}
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {obdData.causes.map((cause, idx) => {
-                const causeText = cause.startsWith('cause_') ? tDb(cause) : cause;
-                return (
-                <div key={idx} className="bg-[#131b2f] border border-white/5 rounded-xl p-5 flex items-start space-x-4 hover:border-white/10 transition-colors">
-                  <div className="bg-amber-500/10 text-amber-500 p-2 rounded-lg mt-1 shrink-0">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"></path></svg>
-                  </div>
-                  <p className="text-slate-300 font-medium">{causeText}</p>
-                </div>
-              );
-              })}
-            </div>
-          </section>
-
-          {/* Symptoms */}
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-              <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-              {t('symptomsToWatch')}
-            </h2>
-            <div className="bg-[#131b2f] border border-white/5 rounded-2xl p-6">
-              <ul className="space-y-4">
-                {obdData.symptoms.map((symptom, idx) => {
-                  const symptomText = symptom.startsWith('symp_') ? tDb(symptom) : symptom;
-                  return (
-                  <li key={idx} className="flex items-center space-x-3 text-slate-300">
-                    <span className="w-2 h-2 rounded-full bg-red-500/50"></span>
-                    <span className="text-lg">{symptomText}</span>
-                  </li>
-                );
-                })}
-              </ul>
-            </div>
-          </section>
-
-          {/* Diagnostic Steps (Deep AI Content) */}
-          {locDiagnosticSteps && locDiagnosticSteps.length > 0 && (
-            <section>
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <svg className="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                {t('howToDiagnose')}
+          {obdData.drivingSafety && (
+            <section className="bg-[#131b2f] border border-red-500/20 rounded-2xl p-6 shadow-lg">
+              <h2 className="text-xl font-bold text-white mb-3 flex items-center">
+                <AlertTriangle className="w-5 h-5 mr-2 text-red-500" />
+                {t('howSerious') || 'How Serious Is This Code?'}
               </h2>
-              <div className="bg-[#131b2f] border border-white/5 rounded-2xl p-6">
-                <div className="space-y-6">
-                  {locDiagnosticSteps.map((step: string, idx: number) => (
-                    <div key={idx} className="flex space-x-4">
-                      <div className="flex-shrink-0 mt-1">
-                        <div className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-sm">
-                          {idx + 1}
-                        </div>
-                      </div>
-                      <div className="text-slate-300 leading-relaxed pt-1">
-                        {step}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <p className="text-slate-300">{locDrivingSafetyDesc}</p>
             </section>
           )}
 
-          {/* Common Fixes (Deep AI Content) */}
-          {locCommonFixes && locCommonFixes.length > 0 && (
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
+              <Search className="w-6 h-6 mr-3 text-amber-500" />
+              Most Common Causes for {capMake} {capModel}
+            </h2>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {obdData.causes.map((cause, idx) => {
+                const causeText = cause.startsWith('cause_') ? tDb(cause) : cause;
+                return (
+                  <li key={idx} className="bg-[#131b2f] border border-white/5 rounded-xl p-4 flex items-start space-x-3">
+                    <span className="w-2 h-2 mt-2 rounded-full bg-amber-500 shrink-0"></span>
+                    <span className="text-slate-300 font-medium">{causeText}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
+              <AlertTriangle className="w-6 h-6 mr-3 text-red-500" />
+              {t('symptomsToWatch')}
+            </h2>
+            <ul className="space-y-3">
+              {obdData.symptoms.map((symptom, idx) => {
+                const symptomText = symptom.startsWith('symp_') ? tDb(symptom) : symptom;
+                return (
+                  <li key={idx} className="flex items-center space-x-3 text-slate-300 bg-white/5 p-3 rounded-lg">
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    <span>{symptomText}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+
+          {/* Before Replacing Parts */}
+          <section className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl p-6">
+            <h2 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
+              <ShieldCheck className="w-5 h-5 mr-2" />
+              {t('beforeReplacing') || 'Before replacing parts, check these first'}
+            </h2>
+            <ul className="space-y-2 text-slate-300 list-disc list-inside">
+              <li>Check for blown fuses related to the circuit.</li>
+              <li>Inspect the wiring harness and electrical connectors for visible damage or corrosion.</li>
+              <li>Verify the 12V battery is fully charged, as low voltage can trigger false codes.</li>
+              <li>Look for obvious vacuum leaks or cracked hoses under the hood.</li>
+            </ul>
+          </section>
+
+          {/* Diagnostic Steps */}
+          {locDiagnosticSteps && locDiagnosticSteps.length > 0 && (
             <section>
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <svg className="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                {t('commonFixes')}
+              <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
+                <Wrench className="w-6 h-6 mr-3 text-blue-500" />
+                {t('howToDiagnose')}
               </h2>
-              <div className="grid grid-cols-1 gap-4">
-                {locCommonFixes.map((fix: string, idx: number) => (
-                  <div key={idx} className="bg-green-500/5 border border-green-500/10 rounded-xl p-5 flex items-start space-x-4 hover:border-green-500/20 transition-colors">
-                    <svg className="w-5 h-5 text-green-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                    <p className="text-slate-300 font-medium">{fix}</p>
+              <div className="space-y-4">
+                {locDiagnosticSteps.map((step: string, idx: number) => (
+                  <div key={idx} className="flex space-x-4 bg-[#131b2f] p-5 rounded-xl border border-white/5">
+                    <div className="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold shrink-0">
+                      {idx + 1}
+                    </div>
+                    <div className="text-slate-300 pt-1 leading-relaxed">
+                      {step}
+                    </div>
                   </div>
                 ))}
               </div>
             </section>
           )}
 
-          {/* Disqus Comments */}
+          {/* Common Mistakes */}
+          <section className="bg-red-900/10 border border-red-500/20 rounded-2xl p-6">
+            <h2 className="text-xl font-bold text-red-400 mb-3 flex items-center">
+              <AlertCircle className="w-5 h-5 mr-2" />
+              {t('commonMistakes') || 'Common Mistakes'}
+            </h2>
+            <p className="text-slate-300">
+              A very common mistake when diagnosing the {upperCode} code is automatically replacing the sensor or component mentioned in the code description without first testing it. Electrical issues, wiring damage, or vacuum leaks are frequently the true cause. Always use a multimeter and live data scanner to verify component failure before spending money on parts.
+            </p>
+          </section>
+
+          {/* FAQ Section */}
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-4">
+              {t('faq') || 'Frequently Asked Questions'}
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">Can I drive with the {upperCode} code?</h3>
+                <p className="text-slate-400">If the check engine light is solid, you can usually drive to a safe location or mechanic. If the light is flashing, pull over immediately to prevent catastrophic engine or catalytic converter damage.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">Will the {upperCode} code clear itself?</h3>
+                <p className="text-slate-400">Once the underlying problem is fixed, the engine computer will run its self-checks. If it passes over several drive cycles, the light will turn off automatically. You can also clear it immediately using an OBD2 scanner.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">Will this code fail an emissions test?</h3>
+                <p className="text-slate-400">Yes. If the Check Engine Light is on due to the {upperCode} code, your {capMake} will automatically fail an OBD2 plug-in emissions or smog test.</p>
+              </div>
+            </div>
+          </section>
+
           <section className="pt-8">
             <DisqusComments 
               url={`https://obd2hq.com/${locale}/${make}/${model}/${code}`}
@@ -297,25 +347,12 @@ export default async function CodePage({ params }: PageProps) {
               title={t('discussionTitle', { code: upperCode, make: capMake, model: capModel })}
             />
           </section>
-
-          {/* Bottom Banner Ad Placeholder */}
-          <div className="w-full h-[90px] bg-[#0d1425] border border-dashed border-white/10 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide mt-12 hidden sm:flex">
-            {t('bottomLeaderboardAd')}
-          </div>
-
         </div>
 
         {/* Right Column (Widgets) */}
         <div className="space-y-6">
           
-          {/* Square Ad Placeholder */}
-          <div className="w-full h-[250px] bg-[#0d1425] border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
-            <span>{t('advertisement')}</span>
-            <span className="text-xs text-slate-700 mt-1">{t('sponsorAdSense')}</span>
-          </div>
-
-          {/* {t('repairEstimate')} Widget */}
-          <div className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:border-blue-500/30 transition-colors">
+          <div className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden group">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('repairEstimate')}</h3>
             <div className="flex items-baseline space-x-2 mb-4">
@@ -336,37 +373,45 @@ export default async function CodePage({ params }: PageProps) {
             ) : (
               <p className="text-sm text-slate-500">{t('costIncludesParts')}</p>
             )}
-          </div>
-
-          {/* Difficulty Widget */}
-          <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
-            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('diyDifficulty')}</h3>
-            <div className="flex items-center space-x-4">
-              <div className="flex-1 h-3 bg-slate-800 rounded-full overflow-hidden">
-                <div className={`h-full rounded-full ${
-                  obdData.fixDifficulty === 'Moderate' || obdData.fixDifficulty === 'Medium' || obdData.fixDifficulty === 'Orta' || obdData.fixDifficulty === 'diff_moderate' ? 'w-1/2 bg-amber-500' : 
-                  obdData.fixDifficulty === 'Hard' || obdData.fixDifficulty === 'High' || obdData.fixDifficulty === 'diff_hard' || obdData.fixDifficulty === 'diff_professional' ? 'w-full bg-red-500' : 'w-1/4 bg-green-500'
-                }`}></div>
-              </div>
-              <span className="font-bold text-white w-24 text-right">{obdData.fixDifficulty.startsWith('diff_') ? tDb(obdData.fixDifficulty) : obdData.fixDifficulty}</span>
+            
+            <div className="mt-6 pt-4 border-t border-white/10">
+               <div className="flex justify-between text-xs text-slate-400 mb-1">
+                 <span>Cheap Fix</span>
+                 <span>Expensive Fix</span>
+               </div>
+               <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden flex">
+                 <div className="w-1/3 bg-green-500"></div>
+                 <div className="w-1/3 bg-amber-500"></div>
+                 <div className="w-1/3 bg-red-500"></div>
+               </div>
             </div>
           </div>
 
-          {/* Related Codes Widget */}
+          <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
+            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('diyDifficulty')}</h3>
+            <div className="flex items-center space-x-4">
+              <span className={`font-bold text-xl ${diffColor}`}>
+                {obdData.fixDifficulty.startsWith('diff_') ? tDb(obdData.fixDifficulty) : obdData.fixDifficulty}
+              </span>
+            </div>
+            <p className="text-sm text-slate-500 mt-2">
+              {obdData.fixDifficulty.includes('Hard') ? 'Specialized tools or a professional mechanic is recommended.' : 'Can usually be performed at home with basic hand tools.'}
+            </p>
+          </div>
+
           <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('relatedCodes', { make: capMake })}</h3>
             <div className="flex flex-col space-y-3">
               {[relatedCode1, relatedCode2, relatedCode3].map(c => (
-                <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 group">
-                  <span className="font-bold text-blue-400 group-hover:text-blue-300 transition-colors">{c}</span>
-                  <svg className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+                <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
+                  <span className="font-bold text-blue-400 group-hover:text-blue-300">{c}</span>
+                  <span className="text-xs text-slate-500 group-hover:text-white">View Details</span>
                 </Link>
               ))}
             </div>
           </div>
 
         </div>
-
       </div>
     </main>
   );

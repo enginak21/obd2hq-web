@@ -36,6 +36,7 @@ export interface OBD2Code {
     parts: string;
     labor: string;
   };
+  isEnriched?: boolean;
 }
 
 export interface CarModel {
@@ -119,9 +120,11 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     costBreakdown: baseData.costBreakdown
   };
 
+  let isEnriched = false;
   const typedAiData = aiData as Record<string, Record<string, Record<string, Partial<OBD2Code>>>>;
   const aiEnrichment = typedAiData[make]?.[model]?.[upperCode];
   if (aiEnrichment) {
+    isEnriched = true;
     hybridData = {
       ...hybridData,
       symptoms: aiEnrichment.symptoms || hybridData.symptoms,
@@ -135,5 +138,5 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     };
   }
 
-  return hybridData;
+  return { ...hybridData, isEnriched };
 }

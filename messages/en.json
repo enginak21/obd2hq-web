@@ -44,7 +44,16 @@
     "bottomLeaderboardAd": "Advertisement Space (Bottom Leaderboard)",
     "advertisement": "Advertisement",
     "sponsorAdSense": "Sponsor/AdSense",
-    "discussionTitle": "{code} on {make} {model} - OBD2HQ Discussion"
+    "discussionTitle": "{code} on {make} {model} - OBD2HQ Discussion",
+    "howSerious": "How serious is this code?",
+    "beforeReplacing": "Before replacing parts, check these first",
+    "commonMistakes": "Common Mistakes",
+    "faq": "Frequently Asked Questions",
+    "reviewedBy": "Editorially reviewed by",
+    "lastUpdated": "Last Updated:",
+    "editorialPolicy": "Editorial Policy",
+    "expertLink": "Expert Profile",
+    "genericDisclaimer": "Note: We do not currently have verified model-specific diagnostic data for the {make} {model}. The symptoms and fixes listed below are the standard generic OBD2 guidelines for the {code} code. Always consult a factory service manual before replacing parts."
   },
   "DB": {
     "symp_check_engine": "Check Engine Light is illuminated",

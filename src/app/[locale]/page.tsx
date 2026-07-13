@@ -4,6 +4,7 @@ import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
+import HeroSearch from '@/components/HeroSearch';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -16,8 +17,27 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'HomePage' });
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OBD2HQ",
+    "url": `https://obd2hq.com/${locale}`,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `https://obd2hq.com/${locale}/search?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 selection:bg-blue-500/30 font-sans flex flex-col items-center">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       
       {/* Premium Hero Section with Glassmorphism */}
       <div className="relative overflow-hidden border-b border-white/5 w-full">
@@ -36,9 +56,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>
           
-          <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mb-12 font-light leading-relaxed">
+          <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mb-4 font-light leading-relaxed">
             {t('subtitle')}
           </p>
+
+          <HeroSearch />
           
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-300">
@@ -76,7 +98,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {cars.map((car) => (
+            {cars.slice(0, 15).map((car) => (
               <Link 
                 key={car.make} 
                 href={`/${locale}/${car.make}`}
@@ -90,6 +112,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 </h3>
               </Link>
             ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link 
+              href={`/${locale}/search`} 
+              className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-slate-300 hover:text-white transition-all font-medium flex items-center"
+            >
+              View All Makes
+            </Link>
           </div>
 
           {/* Bottom Ad */}

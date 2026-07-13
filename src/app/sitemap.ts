@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { cars, baseCodes } from '@/data/db';
 
-const BASE_URL = 'https://obd2hq.com';
+const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
 
 const sitemapIdentifiers: string[] = ['base'];

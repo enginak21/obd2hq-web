@@ -73,8 +73,28 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     day: 'numeric'
   }).format(dateObj);
 
+  const newsSchema = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": locTitle,
+    "image": [
+      article.image
+    ],
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "author": [{
+      "@type": "Organization",
+      "name": "OBD2HQ AI Desk",
+      "url": "https://obd2hq.com"
+    }]
+  };
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(newsSchema) }}
+      />
       {/* Article Header with Parallax-like Image */}
       <div className="relative h-[50vh] min-h-[400px] w-full bg-[#0d1425] overflow-hidden">
         <img 
