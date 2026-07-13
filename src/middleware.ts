@@ -38,7 +38,7 @@ export default function middleware(request: NextRequest) {
     const make = segments[1];
     
     // Ignore static UI pages
-    const isStaticPage = ['about', 'contact', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer'].includes(make);
+    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer'].includes(make);
     
     if (locales.includes(locale) && !isStaticPage) {
       if (segments.length > 4) {

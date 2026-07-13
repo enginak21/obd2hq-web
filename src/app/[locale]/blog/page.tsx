@@ -1,4 +1,5 @@
 import { getBlogPosts } from '@/data/blog';
+import { CONTENT_ROADMAP } from '@/data/seo';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -14,6 +15,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'BlogPage' });
   const blogPosts = getBlogPosts(locale);
+  const roadmap = locale === 'tr' ? CONTENT_ROADMAP.tr : CONTENT_ROADMAP.en;
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
@@ -57,6 +59,22 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
           </Link>
         ))}
       </div>
+
+      <section className="max-w-5xl mx-auto px-6 mt-16">
+        <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
+          <h2 className="text-2xl font-bold text-white mb-3">Editorial Roadmap</h2>
+          <p className="text-slate-400 mb-6">
+            These are the next diagnostic guides planned from Search Console signals, common repair questions, and high-intent OBD2 searches.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {roadmap.slice(0, 12).map(topic => (
+              <div key={topic} className="bg-white/5 border border-white/5 rounded-xl px-4 py-3 text-slate-300 text-sm">
+                {topic}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

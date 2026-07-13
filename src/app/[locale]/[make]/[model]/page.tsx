@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getAlternates } from '@/utils/seo';
+import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
 
 interface PageProps {
   params: Promise<{
@@ -130,7 +131,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             Top Searched {capMake} {capModel} Codes
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {['P0420', 'P0300', 'P0171', 'P0456', 'P0113', 'P0128'].map((code) => (
+            {PRIORITY_CODES.slice(0, 10).map((code) => (
               <Link 
                 key={code} 
                 href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
@@ -142,6 +143,39 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
               </Link>
             ))}
           </div>
+        </div>
+
+        <div className="mb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <section className="lg:col-span-2 bg-[#131b2f] border border-white/5 rounded-3xl p-8">
+            <h2 className="text-2xl font-bold text-white mb-4">Common {capMake} {capModel} Problem Groups</h2>
+            <p className="text-slate-400 leading-relaxed mb-6">
+              Use these groups to narrow the diagnosis before opening a full code guide. Related codes often share the same wiring, sensor, vacuum, emissions, or transmission root cause.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {CODE_CATEGORIES.map(category => (
+                <div key={category.label} className="bg-white/5 rounded-2xl p-4 border border-white/5">
+                  <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">{category.label}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.codes.map(code => (
+                      <Link key={code} href={`/${locale}/${make}/${model}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-[#0a0f1c] hover:bg-blue-500/10 hover:text-blue-300 rounded-lg px-3 py-2 transition-colors">
+                        {code}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-amber-500/10 border border-amber-500/20 rounded-3xl p-8">
+            <h2 className="text-2xl font-bold text-white mb-4">Warning Lights</h2>
+            <p className="text-slate-400 leading-relaxed mb-6">
+              Match dashboard symbols with severity, likely causes, and next safe action.
+            </p>
+            <Link href={`/${locale}/${make}/${model}/lights`} className="inline-flex items-center justify-center w-full px-5 py-4 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 font-bold transition-colors">
+              Open {capModel} warning lights
+            </Link>
+          </section>
         </div>
 
         <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-white/5 pb-4">

@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
+import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
 
 interface PageProps {
   params: Promise<{
@@ -106,7 +107,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             Top Searched Codes for {capMake}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {['P0420', 'P0300', 'P0171', 'P0456', 'P0113', 'P0128'].map((code) => (
+            {PRIORITY_CODES.slice(0, 8).map((code) => (
               <Link 
                 key={code} 
                 href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`}
@@ -118,6 +119,44 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
               </Link>
             ))}
           </div>
+        </div>
+
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
+            <h2 className="text-2xl font-bold text-white mb-4">Common {capMake} Diagnostic Areas</h2>
+            <p className="text-slate-400 leading-relaxed mb-6">
+              Start with the system family that matches your warning light or scan result. This helps you avoid replacing parts before confirming whether the issue is engine, emissions, fuel trim, sensor, or transmission related.
+            </p>
+            <div className="space-y-4">
+              {CODE_CATEGORIES.map(category => (
+                <div key={category.label} className="border-t border-white/5 pt-4">
+                  <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-2">{category.label}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.codes.slice(0, 4).map(code => (
+                      <Link key={code} href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-white/10 rounded-lg px-3 py-2 transition-colors">
+                        {code}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
+            <h2 className="text-2xl font-bold text-white mb-4">{capMake} Warning Lights</h2>
+            <p className="text-slate-400 leading-relaxed mb-6">
+              Dashboard warnings often appear before a code becomes obvious. Open a model page to compare check engine, oil pressure, battery, ABS, coolant, and brake warnings for that vehicle.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {carData.models.slice(0, 6).map(model => (
+                <Link key={model} href={`/${locale}/${make}/${model}/lights`} className="flex items-center justify-between bg-white/5 hover:bg-white/10 rounded-xl px-4 py-3 transition-colors">
+                  <span className="capitalize text-slate-300 font-medium">{model.replace('-', ' ')}</span>
+                  <ChevronRight className="w-4 h-4 text-amber-400" />
+                </Link>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </main>

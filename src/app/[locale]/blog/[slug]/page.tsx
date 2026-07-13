@@ -3,6 +3,7 @@ import { getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
+import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} - OBD2HQ Blog`,
     description: post.description,
+    alternates: getAlternates(`blog/${slug}`, locale),
   };
 }
 
@@ -34,8 +36,33 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   if (!post) notFound();
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "image": post.image,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "OBD2HQ Editorial Team",
+      "url": `https://www.obd2hq.com/${locale}/reviewers`
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OBD2HQ",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.obd2hq.com/icon.jpg"
+      }
+    },
+    "mainEntityOfPage": `https://www.obd2hq.com/${locale}/blog/${slug}`
+  };
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article Header */}
       <header className="relative border-b border-white/5 pt-16 pb-20 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>

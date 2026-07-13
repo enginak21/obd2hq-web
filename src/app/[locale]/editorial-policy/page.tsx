@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-import { FileText, ShieldCheck, PenTool, CheckCircle } from 'lucide-react';
+import { FileText, ShieldCheck, PenTool, CheckCircle, BookOpen } from 'lucide-react';
 
 interface PageProps {
   params: Promise<{
@@ -35,6 +35,7 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
           <p className="text-lg sm:text-xl text-slate-400 font-light leading-relaxed max-w-3xl mx-auto">
             Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.
           </p>
+          <p className="mt-4 text-sm text-slate-500">Last updated: July 2026</p>
         </div>
       </header>
 
@@ -46,7 +47,7 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
             1. Data Aggregation & Accuracy
           </h2>
           <p className="text-slate-300 leading-relaxed">
-            All diagnostic trouble codes (DTCs), symptoms, and causes on OBD2HQ are sourced from public OEM (Original Equipment Manufacturer) service manuals, Technical Service Bulletins (TSBs), and aggregated real-world mechanic repair orders. We do not invent diagnostic steps. Instead, we compile and translate highly technical engineering documents into accessible guides for car owners.
+            OBD2HQ combines standardized OBD-II trouble code definitions, publicly available service information, technical service bulletin research, and aggregated repair-pattern analysis. When a page does not yet have verified model-specific data, we clearly label it as a general OBD-II guide instead of presenting it as vehicle-specific certainty.
           </p>
         </section>
 
@@ -62,8 +63,18 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
 
         <section>
           <h2 className="flex items-center text-2xl font-bold text-white mb-4">
+            <BookOpen className="w-6 h-6 mr-3 text-blue-500" />
+            3. Review Methodology
+          </h2>
+          <p className="text-slate-300 leading-relaxed">
+            Each priority guide is checked for five practical questions: what the code means, whether the vehicle is safe to drive, which low-cost checks should happen first, which related codes change the diagnosis, and what repair path avoids unnecessary part replacement. We update pages as Search Console data reveals new user questions and weak spots.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="flex items-center text-2xl font-bold text-white mb-4">
             <PenTool className="w-6 h-6 mr-3 text-amber-500" />
-            3. Objectivity and Affiliate Disclosure
+            4. Objectivity and Affiliate Disclosure
           </h2>
           <p className="text-slate-300 leading-relaxed">
             OBD2HQ remains strictly objective. If we recommend an OBD2 scanner or a specific brand of replacement part, it is because our team believes it offers the best value. We do participate in affiliate programs (such as the Amazon Associates program), which means we may earn a commission if you click a link and make a purchase. However, this never influences our diagnostic data or repair advice.

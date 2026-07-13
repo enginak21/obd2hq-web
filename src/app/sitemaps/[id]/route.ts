@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { cars, baseCodes } from '@/data/db';
+import { getBlogPosts } from '@/data/blog';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
@@ -34,14 +35,22 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         <url><loc>${BASE_URL}/${locale}</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
         <url><loc>${BASE_URL}/${locale}/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
         <url><loc>${BASE_URL}/${locale}/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+        <url><loc>${BASE_URL}/${locale}/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
         <url><loc>${BASE_URL}/${locale}/news</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
         <url><loc>${BASE_URL}/${locale}/editorial-policy</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
         <url><loc>${BASE_URL}/${locale}/reviewers</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+        <url><loc>${BASE_URL}/${locale}/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+        <url><loc>${BASE_URL}/${locale}/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+        <url><loc>${BASE_URL}/${locale}/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
       `;
+      getBlogPosts(locale).forEach((post) => {
+        urls += `<url><loc>${BASE_URL}/${locale}/blog/${post.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
+      });
       cars.forEach((car) => {
         urls += `<url><loc>${BASE_URL}/${locale}/${car.make}</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>`;
         car.models.forEach((model) => {
           urls += `<url><loc>${BASE_URL}/${locale}/${car.make}/${model}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
+          urls += `<url><loc>${BASE_URL}/${locale}/${car.make}/${model}/lights</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
         });
       });
     });

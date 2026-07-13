@@ -4,7 +4,9 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
+import AdSlot from '@/components/AdSlot';
 import { getAlternates } from '@/utils/seo';
+import { getFallbackDiagnosticSteps, getRelatedCodes } from '@/data/seo';
 import { ShieldCheck, CheckCircle2, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -54,7 +56,7 @@ export default async function CodePage({ params }: PageProps) {
 
   const locTitle = getLocalized(obdData.title, locale) || obdData.code;
   const locDescription = getLocalized(obdData.description, locale) || '';
-  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || [];
+  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || getFallbackDiagnosticSteps(upperCode, make, model);
   const locCommonFixes = getLocalized(obdData.commonFixes, locale) || [];
   const locDrivingSafetyDesc = obdData.drivingSafety ? getLocalized(obdData.drivingSafety.description, locale) : '';
 
@@ -130,11 +132,18 @@ export default async function CodePage({ params }: PageProps) {
     "dateModified": new Date().toISOString()
   };
 
-  const codeKeys = Object.keys(baseCodes || {}).slice(0, 30);
-  const hash = make.charCodeAt(0) + model.charCodeAt(0) + code.charCodeAt(0);
-  const relatedCode1 = codeKeys[(hash) % codeKeys.length] || 'P0300';
-  const relatedCode2 = codeKeys[(hash + 5) % codeKeys.length] || 'P0171';
-  const relatedCode3 = codeKeys[(hash + 11) % codeKeys.length] || 'P0420';
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://www.obd2hq.com/${locale}` },
+      { "@type": "ListItem", "position": 2, "name": capMake, "item": `https://www.obd2hq.com/${locale}/${make}` },
+      { "@type": "ListItem", "position": 3, "name": capModel, "item": `https://www.obd2hq.com/${locale}/${make}/${model}` },
+      { "@type": "ListItem", "position": 4, "name": upperCode, "item": `https://www.obd2hq.com/${locale}/${make}/${model}/${code}` },
+    ]
+  };
+
+  const relatedCodes = getRelatedCodes(upperCode, Object.keys(baseCodes || {}), 5);
 
   const severityColor = obdData.drivingSafety?.level === 'danger' ? 'text-red-500 bg-red-500/10' :
                         obdData.drivingSafety?.level === 'caution' ? 'text-amber-500 bg-amber-500/10' :
@@ -147,6 +156,7 @@ export default async function CodePage({ params }: PageProps) {
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
       <header className="relative border-b border-white/5 pt-12 pb-12 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -159,7 +169,7 @@ export default async function CodePage({ params }: PageProps) {
             <span className="mx-2 shrink-0">/</span>
             <Link href={`/${locale}/${make}/${model}`} className="hover:text-blue-400 transition-colors shrink-0 capitalize">{model}</Link>
             <span className="mx-2 shrink-0">/</span>
-            <span className="text-white shrink-0">{upperCode}</span>
+              <span className="text-white shrink-0">{upperCode}</span>
           </nav>
 
           <div className="flex flex-col gap-4">
@@ -286,6 +296,8 @@ export default async function CodePage({ params }: PageProps) {
             </ul>
           </section>
 
+          <AdSlot slot="0000000001" label={t('inArticleAd')} className="min-h-[120px]" />
+
           {/* Diagnostic Steps */}
           {locDiagnosticSteps && locDiagnosticSteps.length > 0 && (
             <section>
@@ -402,7 +414,7 @@ export default async function CodePage({ params }: PageProps) {
           <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('relatedCodes', { make: capMake })}</h3>
             <div className="flex flex-col space-y-3">
-              {[relatedCode1, relatedCode2, relatedCode3].map(c => (
+              {relatedCodes.map(c => (
                 <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
                   <span className="font-bold text-blue-400 group-hover:text-blue-300">{c}</span>
                   <span className="text-xs text-slate-500 group-hover:text-white">View Details</span>

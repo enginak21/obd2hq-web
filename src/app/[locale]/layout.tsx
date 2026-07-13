@@ -73,6 +73,7 @@ export default async function RootLayout({
 
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
+  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
     <html
@@ -89,6 +90,14 @@ export default async function RootLayout({
             gtag('config', 'G-XXXXXXXXXX');
           `}
         </Script>
+        {adsenseClient && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
       </head>
       <body className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]">
         <NextIntlClientProvider messages={messages}>
