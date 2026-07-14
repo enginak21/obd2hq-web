@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowRight, Car, Search, Wrench } from 'lucide-react';
 import { useMemo, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import {
   VehicleOption,
   findVehicleMatches,
@@ -24,6 +25,7 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
   const params = useParams();
   const locale = (params.locale as string) || 'en';
   const isHero = variant === 'hero';
+  const t = useTranslations('SmartSearch');
 
   const normalizedCode = normalizeCode(query);
   const vehicleMatches = useMemo(() => findVehicleMatches(query, vehicles, isHero ? 5 : 3), [query, vehicles, isHero]);
@@ -53,17 +55,17 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
             type="text"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder={isHero ? 'Enter a code, car, or both: Toyota Camry P0420' : 'Code or car'}
+            placeholder={isHero ? t('heroPlaceholder') : t('navPlaceholder')}
             className={isHero ? 'flex-1 min-w-0 bg-transparent border-none outline-none text-white text-base sm:text-xl placeholder-slate-500 py-3 font-medium' : 'w-full bg-[#131b2f] border border-white/5 rounded-2xl py-2.5 pl-11 pr-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all'}
-            aria-label="Search by diagnostic code, make, or model"
+            aria-label={t('ariaLabel')}
           />
           {isHero && (
             <button
               type="submit"
-              aria-label="Search diagnostic database"
+              aria-label={t('submitAria')}
               className="bg-blue-600 hover:bg-blue-500 text-white rounded-2xl min-h-12 min-w-12 sm:min-w-0 sm:px-6 py-3 font-bold flex items-center justify-center transition-colors ml-2 shadow-lg shadow-blue-600/30 shrink-0"
             >
-              <span className="hidden sm:inline mr-2">Find Fix</span>
+              <span className="hidden sm:inline mr-2">{t('findFix')}</span>
               <ArrowRight className="w-5 h-5" />
             </button>
           )}
@@ -80,8 +82,8 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
                     href={`/${locale}/search?q=${normalizedCode}`}
                     className="flex items-center justify-between rounded-xl bg-amber-500/10 border border-amber-500/20 px-4 py-3 text-amber-200 hover:bg-amber-500/15 transition-colors"
                   >
-                    <span className="font-bold">We found {normalizedCode}</span>
-                    <span className="text-xs text-amber-300">choose car</span>
+                    <span className="font-bold">{t('foundCode', { code: normalizedCode })}</span>
+                    <span className="text-xs text-amber-300">{t('chooseCar')}</span>
                   </Link>
                 )}
                 {vehicleMatches.map((match) => (
@@ -111,7 +113,7 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
               </button>
             ))}
             <Link href={`/${locale}/toyota/camry/lights`} className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-500/15 transition-colors">
-              I don't know my code
+              {t('unknownCode')}
             </Link>
           </div>
         </div>

@@ -128,7 +128,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
             <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            Top Searched {capMake} {capModel} Codes
+            {tModel('topCodes', { make: capMake, model: capModel })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {PRIORITY_CODES.slice(0, 10).map((code) => (
@@ -147,9 +147,9 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
         <div className="mb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <section className="lg:col-span-2 bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Common {capMake} {capModel} Problem Groups</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">{tModel('problemGroups', { make: capMake, model: capModel })}</h2>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Use these groups to narrow the diagnosis before opening a full code guide. Related codes often share the same wiring, sensor, vacuum, emissions, or transmission root cause.
+              {tModel('problemGroupsDesc')}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {CODE_CATEGORIES.map(category => (
@@ -168,12 +168,12 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           </section>
 
           <section className="bg-amber-500/10 border border-amber-500/20 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Warning Lights</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">{tModel('dashboardLights')}</h2>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Match dashboard symbols with severity, likely causes, and next safe action.
+              {tModel('warningLightsDesc')}
             </p>
             <Link href={`/${locale}/${make}/${model}/lights`} className="inline-flex items-center justify-center w-full px-5 py-4 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 font-bold transition-colors">
-              Open {capModel} warning lights
+              {tModel('openWarningLights', { model: capModel })}
             </Link>
           </section>
         </div>
@@ -198,7 +198,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
               <span className="text-slate-300 group-hover:text-blue-300 text-lg font-bold tracking-wider">
                 {code}
               </span>
-              <span className="text-xs text-slate-500 mt-1">{getCodeCategoryLabel(code)} diagnostic guide</span>
+              <span className="text-xs text-slate-500 mt-1">{getCodeCategoryLabel(code)} {tModel('diagnosticGuide')}</span>
             </Link>
           ))}
         </div>

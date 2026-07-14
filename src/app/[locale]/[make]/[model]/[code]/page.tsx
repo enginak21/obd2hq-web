@@ -49,6 +49,7 @@ export default async function CodePage({ params }: PageProps) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'CodePage' });
+  const tExtra = await getTranslations({ locale, namespace: 'CodePageExtra' });
   const tDb = await getTranslations({ locale, namespace: 'DB' });
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
@@ -188,12 +189,12 @@ export default async function CodePage({ params }: PageProps) {
                 1996 - 2026 {capMake} {capModel}
               </span>
               <span className={`px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-semibold tracking-wide uppercase ${severityColor} border-current/20`}>
-                Severity: {obdData.drivingSafety?.level || 'Moderate'}
+                {tExtra('severity')}: {obdData.drivingSafety?.level || tExtra('moderate')}
               </span>
             </div>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              {upperCode} Code: {locTitle}
+              {tExtra('codeTitle', { code: upperCode, title: locTitle })}
             </h1>
             
             {/* E-E-A-T Reviewer Badge */}
@@ -203,7 +204,7 @@ export default async function CodePage({ params }: PageProps) {
               </div>
               <div className="flex flex-col">
                 <span>
-                  {t('reviewedBy') || 'Editorially reviewed by'} <Link href={`/${locale}/reviewers`} className="text-blue-400 font-medium hover:underline">OBD2HQ Team</Link>
+                  {t('reviewedBy')} <Link href={`/${locale}/reviewers`} className="text-blue-400 font-medium hover:underline">{tExtra('team')}</Link>
                 </span>
                 <span className="text-xs opacity-70 flex items-center mt-0.5">
                   <Clock className="w-3 h-3 mr-1" /> {t('lastUpdated') || 'Last Updated:'} {new Date().toLocaleDateString(locale, { month: 'long', year: 'numeric' })}
@@ -259,17 +260,17 @@ export default async function CodePage({ params }: PageProps) {
           <section className="bg-[#131b2f] border border-white/5 rounded-2xl p-6 shadow-lg">
             <h2 className="text-xl font-bold text-white mb-3 flex items-center">
               <BadgeCheck className="w-5 h-5 mr-2 text-blue-400" />
-              Diagnostic system: {systemContent.label}
+              {tExtra('diagnosticSystem', { system: systemContent.label })}
             </h2>
             <p className="text-slate-300 leading-relaxed">
-              On a {capMake} {capModel}, the {upperCode} code should be diagnosed as part of the {systemContent.label.toLowerCase()} group. Related codes and live data from this same system can change the repair priority, so avoid replacing parts from the code name alone.
+              {tExtra('diagnosticSystemDesc', { make: capMake, model: capModel, code: upperCode, system: systemContent.label.toLowerCase() })}
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
               <Search className="w-6 h-6 mr-3 text-amber-500" />
-              Most Common Causes for {capMake} {capModel}
+              {tExtra('commonCausesFor', { make: capMake, model: capModel })}
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {obdData.causes.map((cause, idx) => {
@@ -312,7 +313,7 @@ export default async function CodePage({ params }: PageProps) {
               {systemContent.firstChecks.map((check) => (
                 <li key={check}>{check}</li>
               ))}
-              <li>Check for blown fuses, weak battery voltage, and damaged connectors before buying major parts.</li>
+              <li>{tExtra('extraFirstCheck')}</li>
             </ul>
           </section>
 
@@ -347,7 +348,7 @@ export default async function CodePage({ params }: PageProps) {
               {t('commonMistakes') || 'Common Mistakes'}
             </h2>
             <p className="text-slate-300">
-              {systemContent.mistake} Always confirm the fault with freeze-frame data, live data, visual inspection, and circuit checks before spending money on parts.
+              {systemContent.mistake} {tExtra('commonMistakeSuffix')}
             </p>
           </section>
 
@@ -358,19 +359,19 @@ export default async function CodePage({ params }: PageProps) {
             </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-bold text-slate-200 mb-2">Can I drive with the {upperCode} code?</h3>
-                <p className="text-slate-400">If the check engine light is solid, you can usually drive to a safe location or mechanic. If the light is flashing, pull over immediately to prevent catastrophic engine or catalytic converter damage.</p>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">{tExtra('canDriveQuestion', { code: upperCode })}</h3>
+                <p className="text-slate-400">{tExtra('canDriveAnswer')}</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-slate-200 mb-2">Will the {upperCode} code clear itself?</h3>
-                <p className="text-slate-400">Once the underlying problem is fixed, the engine computer will run its self-checks. If it passes over several drive cycles, the light will turn off automatically. You can also clear it immediately using an OBD2 scanner.</p>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">{tExtra('clearQuestion', { code: upperCode })}</h3>
+                <p className="text-slate-400">{tExtra('clearAnswer')}</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-slate-200 mb-2">Will this code fail an emissions test?</h3>
-                <p className="text-slate-400">Yes. If the Check Engine Light is on due to the {upperCode} code, your {capMake} will automatically fail an OBD2 plug-in emissions or smog test.</p>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">{tExtra('emissionsQuestion')}</h3>
+                <p className="text-slate-400">{tExtra('emissionsAnswer', { code: upperCode, make: capMake })}</p>
               </div>
               <div>
-                <h3 className="text-lg font-bold text-slate-200 mb-2">What should I check first for {upperCode}?</h3>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">{tExtra('firstCheckQuestion', { code: upperCode })}</h3>
                 <p className="text-slate-400">{systemContent.firstChecks.join(' ')}</p>
               </div>
             </div>
@@ -396,11 +397,11 @@ export default async function CodePage({ params }: PageProps) {
             </div>
             <div className="space-y-3 mb-4">
               <div className="bg-white/5 rounded-xl p-3">
-                <div className="text-xs text-green-400 font-bold uppercase tracking-widest mb-1">Cheap fix</div>
+                <div className="text-xs text-green-400 font-bold uppercase tracking-widest mb-1">{tExtra('cheapFix')}</div>
                 <p className="text-sm text-slate-300">{repairTiers.cheap}</p>
               </div>
               <div className="bg-white/5 rounded-xl p-3">
-                <div className="text-xs text-red-400 font-bold uppercase tracking-widest mb-1">Expensive fix</div>
+                <div className="text-xs text-red-400 font-bold uppercase tracking-widest mb-1">{tExtra('expensiveFix')}</div>
                 <p className="text-sm text-slate-300">{repairTiers.expensive}</p>
               </div>
             </div>
@@ -423,8 +424,8 @@ export default async function CodePage({ params }: PageProps) {
             <div className="mt-6 pt-4 border-t border-white/10">
                <p className="text-xs text-slate-500 mb-3">{systemContent.costNote}</p>
                <div className="flex justify-between text-xs text-slate-400 mb-1">
-                 <span>Cheap Fix</span>
-                 <span>Expensive Fix</span>
+                 <span>{tExtra('cheapFixShort')}</span>
+                 <span>{tExtra('expensiveFixShort')}</span>
                </div>
                <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden flex">
                  <div className="w-1/3 bg-green-500"></div>
@@ -442,7 +443,7 @@ export default async function CodePage({ params }: PageProps) {
               </span>
             </div>
             <p className="text-sm text-slate-500 mt-2">
-              {obdData.fixDifficulty.includes('Hard') ? 'Specialized tools or a professional mechanic is recommended.' : 'Can usually be performed at home with basic hand tools.'}
+              {obdData.fixDifficulty.includes('Hard') ? tExtra('hardDifficulty') : tExtra('easyDifficulty')}
             </p>
           </div>
 
@@ -452,7 +453,7 @@ export default async function CodePage({ params }: PageProps) {
               {relatedCodes.map(c => (
                 <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
                   <span className="font-bold text-blue-400 group-hover:text-blue-300">{c}</span>
-                  <span className="text-xs text-slate-500 group-hover:text-white">View Details</span>
+                  <span className="text-xs text-slate-500 group-hover:text-white">{tExtra('viewDetails')}</span>
                 </Link>
               ))}
             </div>

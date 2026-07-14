@@ -68,7 +68,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
 
       <section className="max-w-5xl mx-auto px-6 mt-16">
         <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-          <h2 className="text-2xl font-bold text-white mb-3">Editorial Roadmap</h2>
+          <h2 className="text-2xl font-bold text-white mb-3">{t('editorialRoadmap')}</h2>
           <p className="text-slate-400 mb-6">
             These are the next diagnostic guides planned from Search Console signals, common repair questions, and high-intent OBD2 searches.
           </p>

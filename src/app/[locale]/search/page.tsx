@@ -26,6 +26,7 @@ export default async function SearchPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'SearchPage' });
+  const tExtra = await getTranslations({ locale, namespace: 'SearchPageExtra' });
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
   const normalizedCode = normalizeCode(rawQuery);
   const compactQuery = normalizeSearchText(rawQuery);
@@ -98,13 +99,13 @@ export default async function SearchPage({
         {directTarget && (
           <section className="bg-blue-500/10 border border-blue-500/25 rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <div className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-2">Best match</div>
+              <div className="text-xs font-bold text-blue-300 uppercase tracking-widest mb-2">{tExtra('bestMatch')}</div>
               <h2 className="text-2xl font-extrabold text-white">
                 {formatVehicleName(parsed.make!)} {formatVehicleName(parsed.model!)} {parsed.code || ''}
               </h2>
             </div>
             <Link href={directTarget} className="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 font-bold transition-colors">
-              Open guide <ArrowRight className="w-4 h-4" />
+              {tExtra('openGuide')} <ArrowRight className="w-4 h-4" />
             </Link>
           </section>
         )}
@@ -140,7 +141,7 @@ export default async function SearchPage({
             </div>
 
             <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-6">
-              <h3 className="text-lg font-bold text-white mb-3">Popular {exactCodeMatch} shortcuts</h3>
+              <h3 className="text-lg font-bold text-white mb-3">{tExtra('popularShortcuts', { code: exactCodeMatch })}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
                   { make: 'toyota', model: 'camry' },
@@ -149,7 +150,7 @@ export default async function SearchPage({
                 ].map(vehicle => (
                   <Link key={`${vehicle.make}-${vehicle.model}`} href={`/${locale}/${vehicle.make}/${vehicle.model}/${exactCodeMatch.toLowerCase()}`} className="rounded-2xl bg-white/5 border border-white/5 px-4 py-3 hover:bg-white/10 hover:border-blue-500/30 transition-colors">
                     <span className="block text-white font-bold">{formatVehicleName(vehicle.make)} {formatVehicleName(vehicle.model)}</span>
-                    <span className="text-xs text-slate-500">Open {exactCodeMatch} guide</span>
+                    <span className="text-xs text-slate-500">{tExtra('openCodeGuide', { code: exactCodeMatch })}</span>
                   </Link>
                 ))}
               </div>
@@ -173,7 +174,7 @@ export default async function SearchPage({
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{formatVehicleName(m.make)}</span>
                   <span className="text-lg font-bold text-slate-200 group-hover:text-white uppercase">{formatVehicleName(m.model)}</span>
                   <span className="mt-4 inline-flex items-center text-sm font-bold text-blue-400">
-                    Select this vehicle <ArrowRight className="w-4 h-4 ml-1" />
+                    {tExtra('selectThisVehicle')} <ArrowRight className="w-4 h-4 ml-1" />
                   </span>
                 </Link>
               ))}
@@ -183,8 +184,8 @@ export default async function SearchPage({
 
         {!exactCodeMatch && isWarningIntent && (
           <section className="bg-amber-500/10 border border-amber-500/20 rounded-3xl p-6">
-            <h2 className="text-2xl font-bold text-white mb-3">Start with warning lights</h2>
-            <p className="text-slate-400 mb-5">If you do not know the code yet, choose your car first and compare dashboard symbols by severity.</p>
+            <h2 className="text-2xl font-bold text-white mb-3">{tExtra('startWithLights')}</h2>
+            <p className="text-slate-400 mb-5">{tExtra('lightsDesc')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { make: 'toyota', model: 'camry' },

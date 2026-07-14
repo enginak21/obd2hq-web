@@ -75,6 +75,9 @@ export default async function RootLayout({
   const messages = await getMessages();
   const clientMessages = {
     Navbar: messages.Navbar,
+    SmartSearch: messages.SmartSearch,
+    Wizard: messages.Wizard,
+    CommonUI: messages.CommonUI,
   };
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
@@ -110,10 +113,10 @@ export default async function RootLayout({
       <body className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]">
         <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <Navbar />
-        </NextIntlClientProvider>
           <div className="flex-1 flex flex-col">
             {children}
           </div>
+        </NextIntlClientProvider>
           <Footer />
       </body>
     </html>

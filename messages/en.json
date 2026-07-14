@@ -202,7 +202,8 @@
     "title1": "Guides & ",
     "title2": "Reviews",
     "subtitle": "Expert insights, step-by-step tutorials, and unbiased reviews of the best diagnostic tools on the market.",
-    "readArticle": "Read Article"
+    "readArticle": "Read Article",
+    "editorialRoadmap": "Editorial Roadmap"
   },
   "BlogPostPage": {
     "home": "Home",
@@ -223,7 +224,8 @@
     "whatItMeans": "What does this mean on a {make} {model}?",
     "description": "When you see the {lightName} illuminate on the dashboard of your {make} {model}, it is a direct warning from the vehicle's onboard computer. {description}",
     "commonCauses": "Common Causes for {make} {model}",
-    "whatToDo": "What To Do Next"
+    "whatToDo": "What To Do Next",
+    "advertisement": "Advertisement"
   },
   "AboutPage": {
     "title1": "Democratizing ",
@@ -294,7 +296,12 @@
   "MakePage": {
     "title": "{make} Diagnostics Hub",
     "desc": "Select your {make} model below to find specific OBD2 trouble codes, dashboard warning light meanings, and step-by-step repair guides for vehicles from 1996 to 2026.",
-    "selectModel": "Select {make} Model"
+    "selectModel": "Select {make} Model",
+    "topCodes": "Top Searched Codes for {make}",
+    "diagnosticAreas": "Common {make} Diagnostic Areas",
+    "diagnosticAreasDesc": "Start with the system family that matches your warning light or scan result. This helps you avoid replacing parts before confirming whether the issue is engine, emissions, fuel trim, sensor, or transmission related.",
+    "warningLightsTitle": "{make} Warning Lights",
+    "warningLightsDesc": "Dashboard warnings often appear before a code becomes obvious. Open a model page to compare check engine, oil pressure, battery, ABS, coolant, and brake warnings for that vehicle."
   },
   "ModelPage": {
     "years": "Years: 1996 - 2026",
@@ -306,7 +313,13 @@
     "prev": "Previous",
     "next": "Next",
     "page": "Page",
-    "of": "of"
+    "of": "of",
+    "topCodes": "Top Searched {make} {model} Codes",
+    "problemGroups": "Common {make} {model} Problem Groups",
+    "problemGroupsDesc": "Use these groups to narrow the diagnosis before opening a full code guide. Related codes often share the same wiring, sensor, vacuum, emissions, or transmission root cause.",
+    "warningLightsDesc": "Match dashboard symbols with severity, likely causes, and next safe action.",
+    "openWarningLights": "Open {model} warning lights",
+    "diagnosticGuide": "diagnostic guide"
   },
   "NewsPage": {
     "title": "Automotive Gazette",
@@ -322,5 +335,103 @@
       "chronic_issues": "Recalls & Issues",
       "industry_news": "Industry & Tech"
     }
+  },
+  "SmartSearch": {
+    "heroPlaceholder": "Enter a code, car, or both: Toyota Camry P0420",
+    "navPlaceholder": "Code or car",
+    "ariaLabel": "Search by diagnostic code, make, or model",
+    "submitAria": "Search diagnostic database",
+    "findFix": "Find Fix",
+    "foundCode": "We found {code}",
+    "chooseCar": "choose car",
+    "unknownCode": "I don't know my code"
+  },
+  "Wizard": {
+    "badge": "Find Your Fix",
+    "title": "Choose car, enter code, open the exact guide.",
+    "subtitle": "Built for first-time OBD2 users.",
+    "make": "1. Make",
+    "model": "2. Model",
+    "code": "3. Code",
+    "selectMake": "Select make",
+    "selectModel": "Select model",
+    "enterCode": "Enter OBD2 trouble code",
+    "openGuide": "Open diagnostic guide",
+    "unknownCode": "I don't know my code"
+  },
+  "CommonUI": {
+    "joinDiscussion": "Join the Discussion",
+    "loadComments": "Load comments",
+    "returnHome": "Return Home",
+    "searchCodes": "Search Codes",
+    "systemMalfunction": "System Malfunction",
+    "tryAgain": "Try Again",
+    "pageNotFoundTitle": "Engine Misfire: Page Not Found",
+    "pageNotFoundDesc": "You've navigated to a diagnostic code or page that doesn't exist in our mechanic's manual. Let's get you back to the garage.",
+    "errorDesc": "Our diagnostic scanner encountered an unexpected error while trying to process this page. Please try scanning again."
+  },
+  "SearchPageExtra": {
+    "bestMatch": "Best match",
+    "openGuide": "Open guide",
+    "popularShortcuts": "Popular {code} shortcuts",
+    "openCodeGuide": "Open {code} guide",
+    "selectThisVehicle": "Select this vehicle",
+    "startWithLights": "Start with warning lights",
+    "lightsDesc": "If you do not know the code yet, choose your car first and compare dashboard symbols by severity."
+  },
+  "CodePageExtra": {
+    "severity": "Severity",
+    "moderate": "Moderate",
+    "codeTitle": "{code} Code: {title}",
+    "diagnosticSystem": "Diagnostic system: {system}",
+    "diagnosticSystemDesc": "On a {make} {model}, the {code} code should be diagnosed as part of the {system} group. Related codes and live data from this same system can change the repair priority, so avoid replacing parts from the code name alone.",
+    "commonCausesFor": "Most Common Causes for {make} {model}",
+    "extraFirstCheck": "Check for blown fuses, weak battery voltage, and damaged connectors before buying major parts.",
+    "commonMistakeSuffix": "Always confirm the fault with freeze-frame data, live data, visual inspection, and circuit checks before spending money on parts.",
+    "canDriveQuestion": "Can I drive with the {code} code?",
+    "canDriveAnswer": "If the check engine light is solid, you can usually drive to a safe location or mechanic. If the light is flashing, pull over immediately to prevent catastrophic engine or catalytic converter damage.",
+    "clearQuestion": "Will the {code} code clear itself?",
+    "clearAnswer": "Once the underlying problem is fixed, the engine computer will run its self-checks. If it passes over several drive cycles, the light will turn off automatically. You can also clear it immediately using an OBD2 scanner.",
+    "emissionsQuestion": "Will this code fail an emissions test?",
+    "emissionsAnswer": "Yes. If the Check Engine Light is on due to the {code} code, your {make} will automatically fail an OBD2 plug-in emissions or smog test.",
+    "firstCheckQuestion": "What should I check first for {code}?",
+    "cheapFix": "Cheap fix",
+    "expensiveFix": "Expensive fix",
+    "cheapFixShort": "Cheap Fix",
+    "expensiveFixShort": "Expensive Fix",
+    "hardDifficulty": "Specialized tools or a professional mechanic is recommended.",
+    "easyDifficulty": "Can usually be performed at home with basic hand tools.",
+    "viewDetails": "View Details",
+    "team": "OBD2HQ Team"
+  },
+  "EditorialPolicyPage": {
+    "badge": "Editorial Guidelines",
+    "title": "Our Editorial Policy",
+    "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
+    "lastUpdated": "Last updated: July 2026",
+    "dataTitle": "1. Data Aggregation & Accuracy",
+    "dataText": "OBD2HQ combines standardized OBD-II trouble code definitions, publicly available service information, technical service bulletin research, and aggregated repair-pattern analysis. When a page does not yet have verified model-specific data, we clearly label it as a general OBD-II guide instead of presenting it as vehicle-specific certainty.",
+    "reviewTitle": "2. The Review Process",
+    "reviewText": "Our diagnostic data is maintained and editorially reviewed by the OBD2HQ team. While individual codes are standardized by the Society of Automotive Engineers (SAE), manufacturer-specific codes and fix priorities vary widely. Our team presents the most statistically common fixes first to prevent unnecessary parts replacement.",
+    "methodologyTitle": "3. Review Methodology",
+    "methodologyText": "Each priority guide is checked for five practical questions: what the code means, whether the vehicle is safe to drive, which low-cost checks should happen first, which related codes change the diagnosis, and what repair path avoids unnecessary part replacement.",
+    "objectivityTitle": "4. Objectivity and Affiliate Disclosure",
+    "objectivityText": "OBD2HQ remains objective. If we recommend an OBD2 scanner or replacement part, it is because we believe it offers value. We may participate in affiliate programs, but this never influences our diagnostic data or repair advice.",
+    "disclaimerTitle": "Technical Disclaimer",
+    "disclaimerText": "Automotive repair carries inherent risks. The information provided by OBD2HQ is for educational and informational purposes only. Working on complex automotive systems can result in severe injury. Always consult a certified professional mechanic if you are unsure of your abilities.",
+    "returnHome": "Return to Homepage"
+  },
+  "ReviewersPage": {
+    "badge": "Editorially Reviewed",
+    "title": "The OBD2HQ Editorial Team",
+    "subtitle": "Our mission is to democratize automotive diagnostics. Every piece of diagnostic data on OBD2HQ is cross-referenced against service information, technical service bulletins, and aggregated real-world repair data.",
+    "teamName": "OBD2HQ Editorial Team",
+    "role": "Data Aggregation & Verification",
+    "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
+    "manual": "OEM Manual Cross-Referencing",
+    "verification": "Data-Driven Verification",
+    "ctaTitle": "Are you an ASE Certified Professional?",
+    "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",
+    "contact": "Contact Us"
   }
 }

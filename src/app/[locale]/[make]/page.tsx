@@ -104,7 +104,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
             <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            Top Searched Codes for {capMake}
+            {tMake('topCodes', { make: capMake })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {PRIORITY_CODES.slice(0, 8).map((code) => (
@@ -123,9 +123,9 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">Common {capMake} Diagnostic Areas</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">{tMake('diagnosticAreas', { make: capMake })}</h2>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Start with the system family that matches your warning light or scan result. This helps you avoid replacing parts before confirming whether the issue is engine, emissions, fuel trim, sensor, or transmission related.
+              {tMake('diagnosticAreasDesc')}
             </p>
             <div className="space-y-4">
               {CODE_CATEGORIES.map(category => (
@@ -144,9 +144,9 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
           </section>
 
           <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">{capMake} Warning Lights</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">{tMake('warningLightsTitle', { make: capMake })}</h2>
             <p className="text-slate-400 leading-relaxed mb-6">
-              Dashboard warnings often appear before a code becomes obvious. Open a model page to compare check engine, oil pressure, battery, ABS, coolant, and brake warnings for that vehicle.
+              {tMake('warningLightsDesc')}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {carData.models.slice(0, 6).map(model => (

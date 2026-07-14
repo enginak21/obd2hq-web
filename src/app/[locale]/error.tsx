@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { AlertTriangle, RefreshCw } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function Error({
   error,
@@ -10,6 +11,8 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useTranslations('CommonUI');
+
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
@@ -21,9 +24,9 @@ export default function Error({
         <AlertTriangle className="w-16 h-16 text-red-500" />
       </div>
       
-      <h2 className="text-3xl font-black text-white mb-4">System Malfunction</h2>
+      <h2 className="text-3xl font-black text-white mb-4">{t('systemMalfunction')}</h2>
       <p className="text-slate-400 max-w-md mb-8 text-lg">
-        Our diagnostic scanner encountered an unexpected error while trying to process this page. Please try scanning again.
+        {t('errorDesc')}
       </p>
       
       <button
@@ -31,7 +34,7 @@ export default function Error({
         className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(37,99,235,0.3)]"
       >
         <RefreshCw className="w-5 h-5" />
-        <span>Try Again</span>
+        <span>{t('tryAgain')}</span>
       </button>
     </div>
   );

@@ -3,6 +3,7 @@
 import { useParams, useRouter } from 'next/navigation';
 import { AlertTriangle, ArrowRight, Car, Gauge } from 'lucide-react';
 import { useMemo, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { VehicleOption, formatVehicleName, normalizeCode } from '@/utils/diagnosticSearch';
 
 type FindYourFixWizardProps = {
@@ -14,6 +15,7 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
   const params = useParams();
   const router = useRouter();
   const locale = (params.locale as string) || 'en';
+  const t = useTranslations('Wizard');
   const [make, setMake] = useState('');
   const [model, setModel] = useState('');
   const [codeInput, setCodeInput] = useState('');
@@ -40,16 +42,16 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-bold text-blue-300 uppercase tracking-widest mb-2">
               <Gauge className="w-4 h-4" />
-              Find Your Fix
+              {t('badge')}
             </div>
-            <h2 className="text-2xl font-extrabold text-white tracking-tight">Choose car, enter code, open the exact guide.</h2>
+            <h2 className="text-2xl font-extrabold text-white tracking-tight">{t('title')}</h2>
           </div>
-          <div className="text-sm text-slate-400">Built for first-time OBD2 users.</div>
+          <div className="text-sm text-slate-400">{t('subtitle')}</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1.15fr] gap-3">
           <label className="block">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">1. Make</span>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">{t('make')}</span>
             <select
               value={make}
               onChange={(event) => {
@@ -58,7 +60,7 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
               }}
               className="w-full h-12 rounded-2xl bg-[#0a0f1c] border border-white/10 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             >
-              <option value="">Select make</option>
+              <option value="">{t('selectMake')}</option>
               {vehicles.map(vehicle => (
                 <option key={vehicle.make} value={vehicle.make}>{formatVehicleName(vehicle.make)}</option>
               ))}
@@ -66,14 +68,14 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
           </label>
 
           <label className="block">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">2. Model</span>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">{t('model')}</span>
             <select
               value={model}
               disabled={!selectedVehicle}
               onChange={(event) => setModel(event.target.value)}
               className="w-full h-12 rounded-2xl bg-[#0a0f1c] border border-white/10 px-4 text-white disabled:text-slate-600 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             >
-              <option value="">Select model</option>
+              <option value="">{t('selectModel')}</option>
               {selectedVehicle?.models.map(candidate => (
                 <option key={candidate} value={candidate}>{formatVehicleName(candidate)}</option>
               ))}
@@ -81,21 +83,21 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
           </label>
 
           <div>
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">3. Code</span>
+            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block">{t('code')}</span>
             <div className="flex gap-2">
               <input
                 value={codeInput}
                 onChange={(event) => setCodeInput(event.target.value)}
                 placeholder="P0420"
                 className="min-w-0 flex-1 h-12 rounded-2xl bg-[#0a0f1c] border border-white/10 px-4 text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-                aria-label="Enter OBD2 trouble code"
+                aria-label={t('enterCode')}
               />
               <button
                 type="button"
                 disabled={!canOpenCode}
                 onClick={() => openCode()}
                 className="h-12 min-w-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center px-4 font-bold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-blue-500 transition-colors"
-                aria-label="Open diagnostic guide"
+                aria-label={t('openGuide')}
               >
                 <ArrowRight className="w-5 h-5" />
               </button>
@@ -127,7 +129,7 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
             className="inline-flex items-center justify-center gap-2 rounded-2xl bg-amber-500/10 border border-amber-500/20 px-4 py-3 text-sm font-bold text-amber-300 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-amber-500/15 transition-colors"
           >
             <AlertTriangle className="w-4 h-4" />
-            I don't know my code
+            {t('unknownCode')}
           </button>
         </div>
       </div>
