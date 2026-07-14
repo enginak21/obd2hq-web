@@ -2,6 +2,10 @@
   "Navbar": {
     "searchPlaceholder": "Arıza kodu (Örn: P0420) veya marka ara...",
     "makes": "Markalar",
+    "diagnostics": "Teshis",
+    "warningLights": "Uyari Isiklari",
+    "findByCode": "Koda Gore Bul",
+    "findByCar": "Araca Gore Bul",
     "aboutUs": "Hakkımızda",
     "contact": "İletişim",
     "blog": "Blog & İncelemeler",

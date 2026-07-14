@@ -4,7 +4,9 @@ import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
-import HeroSearch from '@/components/HeroSearch';
+import SmartSearch from '@/components/SmartSearch';
+import FindYourFixWizard from '@/components/FindYourFixWizard';
+import { PRIORITY_CODES } from '@/data/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -16,6 +18,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'HomePage' });
+  const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -60,7 +63,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             {t('subtitle')}
           </p>
 
-          <HeroSearch />
+          <SmartSearch vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
           
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-300">
@@ -78,6 +81,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </div>
       </div>
+
+      <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
 
       {/* Main Content Area (Layout with Sidebar Ads) */}
       <div className="w-full max-w-[1600px] flex justify-center items-start">

@@ -2,6 +2,10 @@
   "Navbar": {
     "searchPlaceholder": "Code suchen (z. B. P0420) oder Automarke...",
     "makes": "Marken",
+    "diagnostics": "Diagnostics",
+    "warningLights": "Warning Lights",
+    "findByCode": "Find by Code",
+    "findByCar": "Find by Car",
     "aboutUs": "Über uns",
     "contact": "Kontakt",
     "blog": "Blog & Bewertungen",
