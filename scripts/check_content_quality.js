@@ -3,7 +3,28 @@ const path = require('path');
 
 const roots = ['src', 'messages'];
 const textFileExtensions = new Set(['.ts', '.tsx', '.json']);
-const mojibakePattern = /Ã|Â|â€|ï¿½|�|Ara\?lar|S\?ntomas|Veh\?culos|Actualit\?s|Sympt\?mes|V\?hicules|C\?digo|pol\?tica|\?ditoriale|donn\?es|gepr\?ft|Werbefl\?che|Sat\?n|ba\?lant\?s\?|Pr\?fung/;
+const mojibakePattern = new RegExp([
+  '\\u00c3',
+  '\\u00c2',
+  '\\u00e2\\u20ac',
+  '\\u00ef\\u00bf\\u00bd',
+  '\\ufffd',
+  'Ara\\?lar',
+  'S\\?ntomas',
+  'Veh\\?culos',
+  'Actualit\\?s',
+  'Sympt\\?mes',
+  'V\\?hicules',
+  'C\\?digo',
+  'pol\\?tica',
+  '\\?ditoriale',
+  'donn\\?es',
+  'gepr\\?ft',
+  'Werbefl\\?che',
+  'Sat\\?n',
+  'ba\\?lant\\?s\\?',
+  'Pr\\?fung',
+].join('|'));
 const emptyAffiliatePattern = /href=["']#["']/;
 const ignoredPathParts = [
   `${path.sep}data${path.sep}news${path.sep}`,
@@ -37,6 +58,18 @@ if (fs.existsSync(blogPath)) {
   const blogContent = fs.readFileSync(blogPath, 'utf8');
   for (const slug of ['how-to-fix-p0420', 'p0300-symptoms-random-misfire']) {
     if (!blogContent.includes(`slug: '${slug}'`)) failures.push(`${blogPath}: missing ${slug} pillar article`);
+  }
+}
+
+const vehicleKnowledgePath = path.join('src', 'data', 'vehicle-knowledge.ts');
+if (fs.existsSync(vehicleKnowledgePath)) {
+  const vehicleKnowledge = fs.readFileSync(vehicleKnowledgePath, 'utf8');
+  const profileBlocks = vehicleKnowledge.split(/\n  \{\n    make: /).slice(1);
+  for (const block of profileBlocks) {
+    const id = block.match(/^'([^']+)'\,\n    model: '([^']+)'/)?.slice(1).join('/') || 'unknown vehicle';
+    for (const field of ['yearRanges', 'engineVariants', 'transmissionVariants', 'serviceIntervals', 'chronicProblems', 'diagnosticNotes', 'sourceNotes']) {
+      if (!block.includes(`${field}:`)) failures.push(`${vehicleKnowledgePath}: ${id} missing ${field}`);
+    }
   }
 }
 

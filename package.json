@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:content": "node scripts/check_content_quality.js"
+    "check:content": "node scripts/check_content_quality.js",
+    "catalog:vehicles": "node scripts/build_vehicle_catalog.js"
   },
   "dependencies": {
     "@cardog-icons/react": "^1.2.0",
