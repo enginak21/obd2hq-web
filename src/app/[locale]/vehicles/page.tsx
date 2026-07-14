@@ -1,7 +1,8 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { KnowledgeHero } from '@/components/KnowledgeGrid';
-import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
+import VehicleSpecSelector, { type VehicleCatalogOption, type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
+import { cars } from '@/data/db';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
@@ -19,6 +20,12 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
   const copy = getKnowledgeUiCopy(locale);
+  const catalog: VehicleCatalogOption[] = cars.flatMap(car => car.models.map(model => ({
+    make: car.make,
+    model,
+    displayName: `${car.make.replace('-', ' ')} ${model.replace('-', ' ')}`.replace(/\b\w/g, c => c.toUpperCase()),
+    years: buildYearRange(1996, 2026),
+  })));
   const selectorItems: VehicleSpecSelectorItem[] = vehicleKnowledgeProfiles.flatMap(vehicle => (vehicle.yearTrimVariants || []).map(variant => ({
     make: vehicle.make,
     model: vehicle.model,
@@ -45,7 +52,33 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
         title={copy.vehiclesTitle}
         description={copy.vehiclesDescription}
       />
-      <VehicleSpecSelector locale={locale} items={selectorItems} />
+      <VehicleSpecSelector locale={locale} items={selectorItems} catalog={mergeCatalog(catalog, selectorItems)} />
     </main>
   );
+}
+
+function buildYearRange(start: number, end: number) {
+  return Array.from({ length: end - start + 1 }, (_, index) => start + index);
+}
+
+function mergeCatalog(catalog: VehicleCatalogOption[], exactItems: VehicleSpecSelectorItem[]) {
+  const merged = new Map<string, VehicleCatalogOption>();
+  for (const item of catalog) {
+    merged.set(`${item.make}/${item.model}`, item);
+  }
+  for (const item of exactItems) {
+    const key = `${item.make}/${item.model}`;
+    const existing = merged.get(key);
+    if (existing) {
+      existing.years = Array.from(new Set([...existing.years, item.year])).sort((a, b) => a - b);
+    } else {
+      merged.set(key, {
+        make: item.make,
+        model: item.model,
+        displayName: item.displayName,
+        years: [item.year],
+      });
+    }
+  }
+  return Array.from(merged.values());
 }

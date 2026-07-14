@@ -23,23 +23,39 @@ export type VehicleSpecSelectorItem = {
   relatedCodes: string[];
 };
 
+export type VehicleCatalogOption = {
+  make: string;
+  model: string;
+  displayName: string;
+  years: number[];
+};
+
 type VehicleSpecSelectorProps = {
   locale: string;
   items: VehicleSpecSelectorItem[];
+  catalog: VehicleCatalogOption[];
 };
 
-export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelectorProps) {
+export default function VehicleSpecSelector({ locale, items, catalog }: VehicleSpecSelectorProps) {
   const labels = getLabels(locale);
   const [make, setMake] = useState('');
   const [model, setModel] = useState('');
   const [year, setYear] = useState('');
   const [variantSlug, setVariantSlug] = useState('');
 
-  const makes = useMemo(() => unique(items.map(item => item.make)), [items]);
-  const models = useMemo(() => unique(items.filter(item => item.make === make).map(item => item.model)), [items, make]);
-  const years = useMemo(() => unique(items.filter(item => item.make === make && item.model === model).map(item => String(item.year))), [items, make, model]);
-  const variants = useMemo(() => items.filter(item => item.make === make && item.model === model && String(item.year) === year), [items, make, model, year]);
+  const makes = useMemo(() => unique(catalog.map(item => item.make)), [catalog]);
+  const models = useMemo(() => unique(catalog.filter(item => item.make === make).map(item => item.model)), [catalog, make]);
+  const selectedCatalog = catalog.find(item => item.make === make && item.model === model) || null;
+  const exactVariantsForModel = useMemo(() => items.filter(item => item.make === make && item.model === model), [items, make, model]);
+  const years = useMemo(() => {
+    const catalogYears = selectedCatalog?.years.map(String) || [];
+    const exactYears = exactVariantsForModel.map(item => String(item.year));
+    return unique([...catalogYears, ...exactYears], true);
+  }, [exactVariantsForModel, selectedCatalog]);
+  const exactVariantsForYear = exactVariantsForModel.filter(item => String(item.year) === year);
+  const variants = exactVariantsForYear.length > 0 ? exactVariantsForYear : (year && selectedCatalog ? [buildPendingVariant(selectedCatalog, Number(year), labels.pendingVariant)] : []);
   const selected = variants.find(item => item.slug === variantSlug) || null;
+  const isVerified = Boolean(selected && exactVariantsForYear.some(item => item.slug === selected.slug));
 
   function resetAfterMake(nextMake: string) {
     setMake(nextMake);
@@ -80,9 +96,9 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
           <SelectBox label={`4. ${labels.variant}`} value={variantSlug} onChange={setVariantSlug} placeholder={labels.selectVariant} disabled={!year} options={variants.map(item => ({ value: item.slug, label: `${item.trim} ${item.chassisCode}` }))} />
           <div className="flex items-end">
             <Link
-              href={selected ? `/${locale}/vehicles/${selected.make}/${selected.model}/${selected.year}/${selected.slug}` : '#'}
-              aria-disabled={!selected}
-              className={`flex h-12 w-full items-center justify-center rounded-2xl px-5 font-black transition-colors lg:w-14 ${selected ? 'bg-blue-600 text-white hover:bg-blue-500' : 'pointer-events-none bg-slate-800 text-slate-600'}`}
+              href={selected && isVerified ? `/${locale}/vehicles/${selected.make}/${selected.model}/${selected.year}/${selected.slug}` : '#'}
+              aria-disabled={!selected || !isVerified}
+              className={`flex h-12 w-full items-center justify-center rounded-2xl px-5 font-black transition-colors lg:w-14 ${selected && isVerified ? 'bg-blue-600 text-white hover:bg-blue-500' : 'pointer-events-none bg-slate-800 text-slate-600'}`}
             >
               <ArrowRight className="h-5 w-5" />
               <span className="sr-only">{labels.openFullPage}</span>
@@ -92,11 +108,14 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
 
         {selected ? (
           <div className="mt-6 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="rounded-2xl border border-blue-400/10 bg-blue-500/5 p-5">
+            <div className={`rounded-2xl border p-5 ${isVerified ? 'border-blue-400/10 bg-blue-500/5' : 'border-amber-400/10 bg-amber-500/5'}`}>
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-lg bg-white/10 px-3 py-1 text-xs font-black text-slate-200">{selected.year}</span>
                 <span className="rounded-lg bg-white/10 px-3 py-1 text-xs font-black text-slate-200">{selected.displayName}</span>
                 <span className="rounded-lg bg-white/10 px-3 py-1 text-xs font-black text-slate-200">{selected.trim}</span>
+                <span className={`rounded-lg px-3 py-1 text-xs font-black ${isVerified ? 'bg-emerald-500/10 text-emerald-200' : 'bg-amber-500/10 text-amber-200'}`}>
+                  {isVerified ? labels.verified : labels.pending}
+                </span>
               </div>
               <h3 className="mt-4 text-2xl font-black text-white">{selected.engineCodes.join(', ')} - {selected.engineSummary}</h3>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -111,14 +130,14 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
             <div className="rounded-2xl border border-white/5 bg-white/[0.03] p-5">
               <div className="flex items-center gap-2 text-sm font-black text-white">
                 <Wrench className="h-4 w-4 text-amber-300" />
-                {labels.quickChecks}
+                {isVerified ? labels.quickChecks : labels.requiredData}
               </div>
               <ul className="mt-4 space-y-2 text-sm text-slate-300">
-                {selected.firstChecks.slice(0, 5).map(check => <li key={check}>- {check}</li>)}
+                {selected.firstChecks.slice(0, 6).map(check => <li key={check}>- {check}</li>)}
               </ul>
               <p className="mt-5 text-xs font-black uppercase tracking-widest text-slate-500">{labels.commonProblems}</p>
               <div className="mt-2 flex flex-wrap gap-2">
-                {selected.commonProblems.slice(0, 5).map(problem => (
+                {selected.commonProblems.slice(0, 6).map(problem => (
                   <span key={problem} className="rounded-lg bg-white/5 px-2.5 py-1 text-xs font-bold text-slate-300">{problem}</span>
                 ))}
               </div>
@@ -174,8 +193,31 @@ function Fact({ label, value }: { label: string; value: string }) {
   );
 }
 
-function unique(values: string[]) {
-  return Array.from(new Set(values)).sort((a, b) => formatName(a).localeCompare(formatName(b)));
+function buildPendingVariant(catalog: VehicleCatalogOption, year: number, pendingVariant: string): VehicleSpecSelectorItem {
+  return {
+    make: catalog.make,
+    model: catalog.model,
+    displayName: catalog.displayName,
+    generation: pendingVariant,
+    year,
+    trim: pendingVariant,
+    slug: 'pending-profile',
+    chassisCode: pendingVariant,
+    engineCodes: [pendingVariant],
+    engineSummary: pendingVariant,
+    recommendedOil: pendingVariant,
+    oilCapacity: pendingVariant,
+    transmissionFluid: pendingVariant,
+    commonProblems: [pendingVariant],
+    firstChecks: ['Engine code', 'Oil viscosity', 'Oil capacity', 'Transmission fluid', 'Common problems', 'Source notes'],
+    relatedCodes: ['P0300', 'P0171', 'P0420'],
+  };
+}
+
+function unique(values: string[], numeric = false) {
+  const output = Array.from(new Set(values));
+  if (numeric) return output.sort((a, b) => Number(a) - Number(b));
+  return output.sort((a, b) => formatName(a).localeCompare(formatName(b)));
 }
 
 function formatName(value: string) {
@@ -187,7 +229,7 @@ function getLabels(locale: string) {
     return {
       eyebrow: 'Araç bilgini bul',
       title: 'Marka, model ve yılı seç; teknik detayları hemen gör.',
-      subtitle: 'Motor kodu, yağ tipi, yağ kapasitesi ve ilk kontrol listesi aynı ekranda açılır.',
+      subtitle: 'Tüm araç kataloğu seçilebilir. Doğrulanmış kayıtlarda motor kodu, yağ tipi ve kapasite aynı ekranda açılır.',
       make: 'Marka',
       model: 'Model',
       year: 'Yıl',
@@ -204,15 +246,19 @@ function getLabels(locale: string) {
       transmissionFluid: 'Şanzıman yağı',
       relatedCodes: 'İlgili kodlar',
       quickChecks: 'İlk kontroller',
+      requiredData: 'Doldurulacak teknik alanlar',
       commonProblems: 'Sık sorunlar',
       emptyState: 'Detayları görmek için marka, model, yıl ve kasa seçin.',
+      verified: 'Doğrulanmış',
+      pending: 'Veri kuyruğunda',
+      pendingVariant: 'Teknik profil',
     };
   }
 
   return {
     eyebrow: 'Find vehicle specs',
     title: 'Select make, model and year; see the technical data instantly.',
-    subtitle: 'Engine code, oil type, oil capacity and first checks open on the same screen.',
+    subtitle: 'The full vehicle catalog is selectable. Verified records show engine code, oil type and capacity on the same screen.',
     make: 'Make',
     model: 'Model',
     year: 'Year',
@@ -229,7 +275,11 @@ function getLabels(locale: string) {
     transmissionFluid: 'Transmission fluid',
     relatedCodes: 'Related codes',
     quickChecks: 'First checks',
+    requiredData: 'Technical fields to complete',
     commonProblems: 'Common problems',
     emptyState: 'Select make, model, year and trim to see details.',
+    verified: 'Verified',
+    pending: 'Data queue',
+    pendingVariant: 'Technical profile',
   };
 }
