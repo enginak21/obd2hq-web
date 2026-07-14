@@ -3,6 +3,7 @@ import { getBlogAlternates, getBlogPosts } from '@/data/blog';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface PageProps {
   params: Promise<{
@@ -82,8 +83,14 @@ export default async function BlogPostPage({ params }: PageProps) {
           </h1>
 
           <div className="w-full h-64 sm:h-96 rounded-3xl overflow-hidden relative">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 896px"
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </header>

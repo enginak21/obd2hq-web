@@ -2,6 +2,7 @@ import { getBlogPosts } from '@/data/blog';
 import { CONTENT_ROADMAP } from '@/data/seo';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
@@ -38,8 +39,13 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
           <Link href={`/${locale}/blog/${post.slug}`} key={post.slug} className="group flex flex-col bg-[#131b2f] border border-white/5 rounded-3xl overflow-hidden hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
             <div className="w-full h-56 relative overflow-hidden">
               <div className="absolute inset-0 bg-blue-500/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity"></div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={post.image} alt={post.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 448px"
+                className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <div className="p-8 flex flex-col flex-1">
               <div className="text-blue-400 text-xs font-bold tracking-widest uppercase mb-3">
