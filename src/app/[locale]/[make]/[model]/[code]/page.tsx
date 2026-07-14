@@ -6,7 +6,7 @@ import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 import AdSlot from '@/components/AdSlot';
 import { getAlternates } from '@/utils/seo';
-import { getFallbackDiagnosticSteps, getRelatedCodes } from '@/data/seo';
+import { getFallbackDiagnosticSteps, getRelatedCodes, getRepairTiers, getSystemContent } from '@/data/seo';
 import { ShieldCheck, CheckCircle2, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -59,6 +59,8 @@ export default async function CodePage({ params }: PageProps) {
   const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || getFallbackDiagnosticSteps(upperCode, make, model);
   const locCommonFixes = getLocalized(obdData.commonFixes, locale) || [];
   const locDrivingSafetyDesc = obdData.drivingSafety ? getLocalized(obdData.drivingSafety.description, locale) : '';
+  const systemContent = getSystemContent(upperCode);
+  const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -94,6 +96,14 @@ export default async function CodePage({ params }: PageProps) {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "In most cases, the code will clear itself after you fix the underlying issue and drive the vehicle for several cycles. You can also clear it manually with an OBD2 scanner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What should I check first for ${upperCode}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": systemContent.firstChecks.join(' ')
         }
       }
     ],
@@ -246,6 +256,16 @@ export default async function CodePage({ params }: PageProps) {
             </section>
           )}
 
+          <section className="bg-[#131b2f] border border-white/5 rounded-2xl p-6 shadow-lg">
+            <h2 className="text-xl font-bold text-white mb-3 flex items-center">
+              <BadgeCheck className="w-5 h-5 mr-2 text-blue-400" />
+              Diagnostic system: {systemContent.label}
+            </h2>
+            <p className="text-slate-300 leading-relaxed">
+              On a {capMake} {capModel}, the {upperCode} code should be diagnosed as part of the {systemContent.label.toLowerCase()} group. Related codes and live data from this same system can change the repair priority, so avoid replacing parts from the code name alone.
+            </p>
+          </section>
+
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
               <Search className="w-6 h-6 mr-3 text-amber-500" />
@@ -289,10 +309,10 @@ export default async function CodePage({ params }: PageProps) {
               {t('beforeReplacing') || 'Before replacing parts, check these first'}
             </h2>
             <ul className="space-y-2 text-slate-300 list-disc list-inside">
-              <li>Check for blown fuses related to the circuit.</li>
-              <li>Inspect the wiring harness and electrical connectors for visible damage or corrosion.</li>
-              <li>Verify the 12V battery is fully charged, as low voltage can trigger false codes.</li>
-              <li>Look for obvious vacuum leaks or cracked hoses under the hood.</li>
+              {systemContent.firstChecks.map((check) => (
+                <li key={check}>{check}</li>
+              ))}
+              <li>Check for blown fuses, weak battery voltage, and damaged connectors before buying major parts.</li>
             </ul>
           </section>
 
@@ -327,7 +347,7 @@ export default async function CodePage({ params }: PageProps) {
               {t('commonMistakes') || 'Common Mistakes'}
             </h2>
             <p className="text-slate-300">
-              A very common mistake when diagnosing the {upperCode} code is automatically replacing the sensor or component mentioned in the code description without first testing it. Electrical issues, wiring damage, or vacuum leaks are frequently the true cause. Always use a multimeter and live data scanner to verify component failure before spending money on parts.
+              {systemContent.mistake} Always confirm the fault with freeze-frame data, live data, visual inspection, and circuit checks before spending money on parts.
             </p>
           </section>
 
@@ -348,6 +368,10 @@ export default async function CodePage({ params }: PageProps) {
               <div>
                 <h3 className="text-lg font-bold text-slate-200 mb-2">Will this code fail an emissions test?</h3>
                 <p className="text-slate-400">Yes. If the Check Engine Light is on due to the {upperCode} code, your {capMake} will automatically fail an OBD2 plug-in emissions or smog test.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-slate-200 mb-2">What should I check first for {upperCode}?</h3>
+                <p className="text-slate-400">{systemContent.firstChecks.join(' ')}</p>
               </div>
             </div>
           </section>
@@ -370,6 +394,16 @@ export default async function CodePage({ params }: PageProps) {
             <div className="flex items-baseline space-x-2 mb-4">
               <span className="text-4xl font-black text-white">{obdData.estimatedCost}</span>
             </div>
+            <div className="space-y-3 mb-4">
+              <div className="bg-white/5 rounded-xl p-3">
+                <div className="text-xs text-green-400 font-bold uppercase tracking-widest mb-1">Cheap fix</div>
+                <p className="text-sm text-slate-300">{repairTiers.cheap}</p>
+              </div>
+              <div className="bg-white/5 rounded-xl p-3">
+                <div className="text-xs text-red-400 font-bold uppercase tracking-widest mb-1">Expensive fix</div>
+                <p className="text-sm text-slate-300">{repairTiers.expensive}</p>
+              </div>
+            </div>
             
             {obdData.costBreakdown ? (
               <div className="mt-4 space-y-3 bg-white/5 p-4 rounded-xl">
@@ -387,6 +421,7 @@ export default async function CodePage({ params }: PageProps) {
             )}
             
             <div className="mt-6 pt-4 border-t border-white/10">
+               <p className="text-xs text-slate-500 mb-3">{systemContent.costNote}</p>
                <div className="flex justify-between text-xs text-slate-400 mb-1">
                  <span>Cheap Fix</span>
                  <span>Expensive Fix</span>

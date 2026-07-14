@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getAlternates } from '@/utils/seo';
-import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
+import { CODE_CATEGORIES, getCodeCategoryLabel, PRIORITY_CODES } from '@/data/seo';
 
 interface PageProps {
   params: Promise<{
@@ -188,16 +188,17 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           </span>
         </div>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {displayCodes.map((code) => (
             <Link 
               key={code} 
               href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
-              className="group flex items-center justify-center py-4 bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)]"
+              className="group flex flex-col justify-center min-h-24 p-4 bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)]"
             >
-              <span className="text-slate-300 group-hover:text-blue-300 text-sm font-bold tracking-wider">
+              <span className="text-slate-300 group-hover:text-blue-300 text-lg font-bold tracking-wider">
                 {code}
               </span>
+              <span className="text-xs text-slate-500 mt-1">{getCodeCategoryLabel(code)} diagnostic guide</span>
             </Link>
           ))}
         </div>
