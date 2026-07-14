@@ -6,7 +6,7 @@ import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 import AdSlot from '@/components/AdSlot';
 import { getAlternates } from '@/utils/seo';
-import { getFallbackDiagnosticSteps, getLocalizedSystemContent, getRelatedCodes, getRepairTiers } from '@/data/seo';
+import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnosticSteps, getLocalizedSystemContent, getModelSpecificInsight, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
@@ -28,11 +28,11 @@ function asStringArray(value: string | string[] | null) {
 }
 
 function getCodeMetaDescription(locale: string, code: string, make: string, model: string) {
-  if (locale === 'tr') return `1996-2026 ${make} ${model} için ${code} arıza kodu teşhis rehberi. Belirtiler, nedenler, kontrol adımları ve tahmini onarım maliyeti.`;
-  if (locale === 'de') return `Diagnoseleitfaden für den Fehlercode ${code} beim ${make} ${model} von 1996 bis 2026. Symptome, Ursachen, Prüfschritte und geschätzte Reparaturkosten.`;
-  if (locale === 'es') return `Guía de diagnóstico del código ${code} para ${make} ${model} de 1996 a 2026. Síntomas, causas, pasos de revisión y costo estimado de reparación.`;
-  if (locale === 'fr') return `Guide de diagnostic du code ${code} pour ${make} ${model} de 1996 à 2026. Symptômes, causes, étapes de contrôle et coût estimé de réparation.`;
-  return `Detailed diagnostic guide for ${code} on all 1996-2026 ${make} ${model} vehicles. Symptoms, causes, and repair costs.`;
+  if (locale === 'tr') return `${make} ${model} ${code} arıza kodu için belirtiler, canlı veri kontrolleri, parça değiştirmeden önce test sırası ve onarım sonrası doğrulama.`;
+  if (locale === 'de') return `${make} ${model} ${code}: Symptome, Live-Daten-Prüfung, Testreihenfolge vor dem Teiletausch und Reparaturbestätigung.`;
+  if (locale === 'es') return `${make} ${model} ${code}: síntomas, datos en vivo, pruebas antes de reemplazar piezas y verificación de reparación.`;
+  if (locale === 'fr') return `${make} ${model} ${code}: symptômes, données en direct, tests avant remplacement et vérification après réparation.`;
+  return `${make} ${model} ${code} diagnosis: symptoms, live-data checks, tests before replacing parts, repair cost, and post-repair verification.`;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -84,6 +84,9 @@ export default async function CodePage({ params }: PageProps) {
   const locDrivingSafetyDesc = obdData.drivingSafety ? asString(getLocalized(obdData.drivingSafety.description, locale)) : '';
   const systemContent = getLocalizedSystemContent(upperCode, locale);
   const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost, locale);
+  const pageCopy = getCodePageCopy(locale);
+  const modelInsight = getModelSpecificInsight(make, model, upperCode, locale);
+  const clusterLinks = getClusterLinks(locale, make, model, upperCode);
   const localizedCauses = obdData.causes.map(cause => cause.startsWith('cause_') ? tDb(cause) : cause);
   const localizedSymptoms = obdData.symptoms.map(symptom => symptom.startsWith('symp_') ? tDb(symptom) : symptom);
   const isTurkish = locale === 'tr';
@@ -232,7 +235,7 @@ export default async function CodePage({ params }: PageProps) {
                   {t('reviewedBy')} <Link href={`/${locale}/reviewers`} className="text-blue-400 font-medium hover:underline">{tExtra('team')}</Link>
                 </span>
                 <span className="text-xs opacity-70 flex items-center mt-0.5">
-                  <Clock className="w-3 h-3 mr-1" /> {t('lastUpdated') || 'Last Updated:'} {new Date().toLocaleDateString(locale, { month: 'long', year: 'numeric' })}
+                  <Clock className="w-3 h-3 mr-1" /> {t('lastUpdated') || 'Last Updated:'} {new Date(SEO_LAST_REVIEWED).toLocaleDateString(locale, { month: 'long', year: 'numeric' })}
                 </span>
               </div>
             </div>
@@ -340,6 +343,16 @@ export default async function CodePage({ params }: PageProps) {
             </ul>
           </section>
 
+          <section className="bg-[#131b2f] border border-white/5 rounded-2xl p-6 shadow-lg">
+            <h2 className="text-xl font-bold text-white mb-4 flex items-center">
+              <Search className="w-5 h-5 mr-2 text-green-400" />
+              {pageCopy.liveData}
+            </h2>
+            <ul className="space-y-2 text-slate-300 list-disc list-inside">
+              {modelInsight.liveData.map(item => <li key={item}>{item}</li>)}
+            </ul>
+          </section>
+
           <AdSlot slot="0000000001" label={t('inArticleAd')} className="min-h-[120px]" />
 
           {/* Diagnostic Steps */}
@@ -375,6 +388,14 @@ export default async function CodePage({ params }: PageProps) {
             </p>
           </section>
 
+          <section className="bg-green-900/10 border border-green-500/20 rounded-2xl p-6">
+            <h2 className="text-xl font-bold text-green-300 mb-3 flex items-center">
+              <BadgeCheck className="w-5 h-5 mr-2" />
+              {pageCopy.repairVerification}
+            </h2>
+            <p className="text-slate-300">{pageCopy.verificationCopy(upperCode)}</p>
+          </section>
+
           {/* FAQ Section */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-4">
@@ -402,7 +423,7 @@ export default async function CodePage({ params }: PageProps) {
 
           <section className="pt-8">
             <DisqusComments 
-              url={`https://obd2hq.com/${locale}/${make}/${model}/${code}`}
+              url={`https://www.obd2hq.com/${locale}/${make}/${model}/${code}`}
               identifier={`${make}-${model}-${code}`}
               title={t('discussionTitle', { code: upperCode, make: capMake, model: capModel })}
             />
@@ -477,6 +498,18 @@ export default async function CodePage({ params }: PageProps) {
                 <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
                   <span className="font-bold text-blue-400 group-hover:text-blue-300">{c}</span>
                   <span className="text-xs text-slate-500 group-hover:text-white">{tExtra('viewDetails')}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
+            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{pageCopy.clusterTitle}</h3>
+            <div className="flex flex-col space-y-3">
+              {clusterLinks.map(link => (
+                <Link key={link.href} href={link.href} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
+                  <span className="text-sm font-bold text-slate-300 group-hover:text-white capitalize">{link.label}</span>
+                  <span className="text-xs text-blue-400">{tExtra('viewDetails')}</span>
                 </Link>
               ))}
             </div>

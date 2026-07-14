@@ -1,20 +1,37 @@
 import { NextResponse } from 'next/server';
-import { cars, baseCodes } from '@/data/db';
+import { cars } from '@/data/db';
 import { getBlogPosts } from '@/data/blog';
+import { getAllNews } from '@/data/news';
+import { PRIORITY_CODES } from '@/data/seo';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
+const LASTMOD = '2026-07-14';
+
+const OPPORTUNITY_CODES = ['P0203', 'P0235', 'P0204', 'P0213', 'P0102'] as const;
+
+const PRIORITY_CODE_URLS = [
+  { make: 'ford', model: 'focus', code: 'P0213' },
+  { make: 'suzuki', model: 'jimny', code: 'P0235' },
+  { make: 'suzuki', model: 'jimny', code: 'P0203' },
+  { make: 'suzuki', model: 'jimny', code: 'P0204' },
+  { make: 'acura', model: 'tlx', code: 'P0102' },
+  { make: 'toyota', model: 'camry', code: 'P0420' },
+  { make: 'toyota', model: 'camry', code: 'P0300' },
+  { make: 'nissan', model: 'altima', code: 'P0420' },
+  { make: 'nissan', model: 'altima', code: 'P0300' },
+  { make: 'ford', model: 'f-150', code: 'P0420' },
+  { make: 'ford', model: 'f-150', code: 'P0300' },
+  { make: 'honda', model: 'civic', code: 'P0420' },
+  { make: 'honda', model: 'civic', code: 'P0300' },
+] as const;
 
 function getSitemapIdentifiers(): string[] {
-  const identifiers: string[] = ['base'];
-  LOCALES.forEach((locale) => {
-    cars.forEach((car) => {
-      car.models.forEach((model) => {
-        identifiers.push(`${locale}-${car.make}-${model}`);
-      });
-    });
-  });
-  return identifiers;
+  return ['base', 'high-intent-codes', 'opportunity-codes'];
+}
+
+function urlEntry(loc: string, changefreq: string, priority: string, lastmod = LASTMOD) {
+  return `<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
 }
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
@@ -31,44 +48,62 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
 
   if (idStr === 'base') {
     LOCALES.forEach((locale) => {
-      urls += `
-        <url><loc>${BASE_URL}/${locale}</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-        <url><loc>${BASE_URL}/${locale}/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-        <url><loc>${BASE_URL}/${locale}/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-        <url><loc>${BASE_URL}/${locale}/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-        <url><loc>${BASE_URL}/${locale}/news</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-        <url><loc>${BASE_URL}/${locale}/editorial-policy</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
-        <url><loc>${BASE_URL}/${locale}/reviewers</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
-        <url><loc>${BASE_URL}/${locale}/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-        <url><loc>${BASE_URL}/${locale}/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-        <url><loc>${BASE_URL}/${locale}/disclaimer</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-      `;
+      urls += urlEntry(`${BASE_URL}/${locale}`, 'daily', '1.0');
+      urls += urlEntry(`${BASE_URL}/${locale}/about`, 'monthly', '0.5');
+      urls += urlEntry(`${BASE_URL}/${locale}/contact`, 'monthly', '0.5');
+      urls += urlEntry(`${BASE_URL}/${locale}/blog`, 'weekly', '0.8');
+      urls += urlEntry(`${BASE_URL}/${locale}/news`, 'daily', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/editorial-policy`, 'yearly', '0.4');
+      urls += urlEntry(`${BASE_URL}/${locale}/reviewers`, 'yearly', '0.4');
+      urls += urlEntry(`${BASE_URL}/${locale}/privacy`, 'yearly', '0.3');
+      urls += urlEntry(`${BASE_URL}/${locale}/terms`, 'yearly', '0.3');
+      urls += urlEntry(`${BASE_URL}/${locale}/disclaimer`, 'yearly', '0.3');
       getBlogPosts(locale).forEach((post) => {
-        urls += `<url><loc>${BASE_URL}/${locale}/blog/${post.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
+        urls += urlEntry(`${BASE_URL}/${locale}/blog/${post.slug}`, 'monthly', '0.8', post.date);
+      });
+      getAllNews().forEach((article) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/news/${article.slug}`, 'weekly', '0.6', article.date);
       });
       cars.forEach((car) => {
-        urls += `<url><loc>${BASE_URL}/${locale}/${car.make}</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>`;
+        urls += urlEntry(`${BASE_URL}/${locale}/${car.make}`, 'weekly', '0.9');
         car.models.forEach((model) => {
-          urls += `<url><loc>${BASE_URL}/${locale}/${car.make}/${model}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`;
-          urls += `<url><loc>${BASE_URL}/${locale}/${car.make}/${model}/lights</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
+          urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}`, 'weekly', '0.8');
+          urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}/lights`, 'monthly', '0.7');
         });
       });
     });
-  } else {
-    // format: locale-make-model
-    const parts = idStr.split('-');
-    if (parts.length >= 3) {
-      const locale = parts[0];
-      const make = parts[1];
-      const model = parts.slice(2).join('-');
-      
-      const car = cars.find(c => c.make === make);
-      if (car && LOCALES.includes(locale) && car.models.includes(model)) {
-        Object.keys(baseCodes).forEach(code => {
-          urls += `<url><loc>${BASE_URL}/${locale}/${make}/${model}/${code}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`;
+  } else if (idStr === 'high-intent-codes') {
+    LOCALES.forEach((locale) => {
+      cars.forEach((car) => {
+        car.models.forEach((model) => {
+          PRIORITY_CODES.forEach((code) => {
+            urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`, 'monthly', '0.8');
+          });
         });
-      }
-    }
+      });
+    });
+  } else if (idStr === 'opportunity-codes') {
+    const emitted = new Set<string>();
+    LOCALES.forEach((locale) => {
+      cars.forEach((car) => {
+        car.models.forEach((model) => {
+          OPPORTUNITY_CODES.forEach((code) => {
+            const loc = `${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`;
+            if (!emitted.has(loc)) {
+              emitted.add(loc);
+              urls += urlEntry(loc, 'monthly', '0.75');
+            }
+          });
+        });
+      });
+      PRIORITY_CODE_URLS.forEach(({ make, model, code }) => {
+        const loc = `${BASE_URL}/${locale}/${make}/${model}/${code.toLowerCase()}`;
+        if (!emitted.has(loc)) {
+          emitted.add(loc);
+          urls += urlEntry(loc, 'weekly', '0.9');
+        }
+      });
+    });
   }
 
   const sitemapXML = `<?xml version="1.0" encoding="UTF-8"?>

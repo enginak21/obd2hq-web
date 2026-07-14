@@ -1,24 +1,16 @@
 import { NextResponse } from 'next/server';
-import { cars } from '@/data/db';
 
 const BASE_URL = 'https://www.obd2hq.com';
-const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
+const SITEMAPS = ['base', 'high-intent-codes', 'opportunity-codes'];
+const LASTMOD = '2026-07-14';
 
 export async function GET() {
-  const sitemapIdentifiers: string[] = ['base'];
-  LOCALES.forEach((locale) => {
-    cars.forEach((car) => {
-      car.models.forEach((model) => {
-        sitemapIdentifiers.push(`${locale}-${car.make}-${model}`);
-      });
-    });
-  });
-
   const sitemapIndexXML = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${sitemapIdentifiers.map((_, index) => `
+  ${SITEMAPS.map((_, index) => `
   <sitemap>
     <loc>${BASE_URL}/sitemaps/${index}.xml</loc>
+    <lastmod>${LASTMOD}</lastmod>
   </sitemap>
   `).join('')}
 </sitemapindex>`;

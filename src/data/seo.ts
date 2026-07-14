@@ -1,6 +1,7 @@
 export const SUPPORTED_LOCALES = ['en', 'de', 'es', 'tr', 'fr'] as const;
 
 export const PRIORITY_CODES = ['P0420', 'P0300', 'P0171', 'P0455', 'P0442', 'P0128', 'P0135', 'P0174', 'P0430', 'P0011', 'P0101', 'P0113'];
+export const SEO_LAST_REVIEWED = '2026-07-14T12:00:00.000Z';
 
 export const CODE_CATEGORIES = [
   { label: 'Engine', codes: ['P0300', 'P0301', 'P0302', 'P0011', 'P0014', 'P0507'] },
@@ -240,6 +241,225 @@ export function getRepairTiers(code: string, estimatedCost: string, locale = 'en
     typical: estimatedCost,
     expensive,
   };
+}
+
+const CODE_PAGE_COPY = {
+  en: {
+    modelSpecific: 'Model-specific diagnostic notes',
+    genericInsight: (make: string, model: string, code: string, system: string) =>
+      `${make} ${model} ${code} is being handled as a ${system.toLowerCase()} fault. Start with scan data, related codes, wiring, connectors, and live data before replacing parts.`,
+    likelySymptoms: 'Symptoms that matter most',
+    firstTests: 'Tests to run before buying parts',
+    avoidReplacing: 'Do not replace first',
+    liveData: 'Live data to compare',
+    repairVerification: 'Repair verification',
+    verificationCopy: (code: string) =>
+      `After the repair, clear ${code}, complete a drive cycle, and confirm the monitor runs without the code returning. Save the before/after scan report if the vehicle needs emissions inspection.`,
+    clusterTitle: 'Build the full diagnosis',
+    sameSystem: 'Same system',
+    sameVehicle: 'Same vehicle',
+    pillarGuide: 'Pillar guide',
+  },
+  tr: {
+    modelSpecific: 'Modele özel teşhis notları',
+    genericInsight: (make: string, model: string, code: string, system: string) =>
+      `${make} ${model} ${code} arızası ${system.toLowerCase()} sistemi içinde değerlendirilmelidir. Parça almadan önce tarama verisi, ilişkili kodlar, kablo/soket ve canlı veri kontrol edilmelidir.`,
+    likelySymptoms: 'En önemli belirtiler',
+    firstTests: 'Parça almadan önce yapılacak testler',
+    avoidReplacing: 'İlk değiştirilecek parça değil',
+    liveData: 'Karşılaştırılacak canlı veri',
+    repairVerification: 'Onarım sonrası doğrulama',
+    verificationCopy: (code: string) =>
+      `Onarımdan sonra ${code} kodunu silin, sürüş döngüsünü tamamlayın ve monitör çalıştığında kodun geri dönmediğini doğrulayın. Muayene/emisyon için önce-sonra tarama kaydını saklayın.`,
+    clusterTitle: 'Teşhisi tamamlayan rehberler',
+    sameSystem: 'Aynı sistem',
+    sameVehicle: 'Aynı araç',
+    pillarGuide: 'Ana rehber',
+  },
+  de: {
+    modelSpecific: 'Modellspezifische Diagnosenotizen',
+    genericInsight: (make: string, model: string, code: string, system: string) =>
+      `${make} ${model} ${code} sollte als Fehler im Bereich ${system.toLowerCase()} geprüft werden. Beginnen Sie mit Scandaten, verwandten Codes, Kabeln, Steckern und Live-Daten, bevor Teile ersetzt werden.`,
+    likelySymptoms: 'Wichtigste Symptome',
+    firstTests: 'Tests vor dem Teilekauf',
+    avoidReplacing: 'Nicht zuerst ersetzen',
+    liveData: 'Zu vergleichende Live-Daten',
+    repairVerification: 'Reparatur bestätigen',
+    verificationCopy: (code: string) =>
+      `Nach der Reparatur ${code} löschen, einen Fahrzyklus durchführen und bestätigen, dass der Monitor ohne Rückkehr des Codes läuft.`,
+    clusterTitle: 'Diagnose vertiefen',
+    sameSystem: 'Gleiches System',
+    sameVehicle: 'Gleiches Fahrzeug',
+    pillarGuide: 'Hauptleitfaden',
+  },
+  es: {
+    modelSpecific: 'Notas de diagnóstico específicas del modelo',
+    genericInsight: (make: string, model: string, code: string, system: string) =>
+      `${make} ${model} ${code} debe tratarse como una falla del sistema ${system.toLowerCase()}. Empiece con datos del escáner, códigos relacionados, cableado, conectores y datos en vivo antes de cambiar piezas.`,
+    likelySymptoms: 'Síntomas más importantes',
+    firstTests: 'Pruebas antes de comprar piezas',
+    avoidReplacing: 'No reemplazar primero',
+    liveData: 'Datos en vivo para comparar',
+    repairVerification: 'Verificación de la reparación',
+    verificationCopy: (code: string) =>
+      `Después de reparar, borre ${code}, complete un ciclo de manejo y confirme que el monitor se ejecuta sin que vuelva el código.`,
+    clusterTitle: 'Completar el diagnóstico',
+    sameSystem: 'Mismo sistema',
+    sameVehicle: 'Mismo vehículo',
+    pillarGuide: 'Guía principal',
+  },
+  fr: {
+    modelSpecific: 'Notes de diagnostic propres au modèle',
+    genericInsight: (make: string, model: string, code: string, system: string) =>
+      `${make} ${model} ${code} doit être traité comme une panne du système ${system.toLowerCase()}. Commencez par les données de diagnostic, les codes associés, le câblage, les connecteurs et les données en direct avant de remplacer des pièces.`,
+    likelySymptoms: 'Symptômes les plus importants',
+    firstTests: 'Tests avant achat de pièces',
+    avoidReplacing: 'Ne pas remplacer en premier',
+    liveData: 'Données en direct à comparer',
+    repairVerification: 'Vérification après réparation',
+    verificationCopy: (code: string) =>
+      `Après la réparation, effacez ${code}, effectuez un cycle de conduite et confirmez que le moniteur s’exécute sans retour du code.`,
+    clusterTitle: 'Compléter le diagnostic',
+    sameSystem: 'Même système',
+    sameVehicle: 'Même véhicule',
+    pillarGuide: 'Guide principal',
+  },
+} as const;
+
+const SYSTEM_LIVE_DATA: Record<string, string[]> = {
+  catalyst: ['Upstream vs downstream O2 sensor switching', 'Short-term and long-term fuel trim', 'Misfire counters and catalyst monitor readiness'],
+  evap: ['Purge command vs fuel tank pressure response', 'Vent valve command', 'Smoke test result and cap seal condition'],
+  misfire: ['Mode $06 misfire counters', 'Fuel trim at idle and cruise', 'Coil/injector swap result and compression reading'],
+  'fuel-trim': ['STFT/LTFT at idle and 2500 RPM', 'MAF grams per second', 'Fuel pressure under load'],
+  sensor: ['5V reference, ground, and signal voltage', 'Sensor value compared with realistic engine conditions', 'Connector wiggle-test result'],
+  transmission: ['Transmission module codes', 'Input/output speed sensor data', 'Solenoid command vs gear ratio'],
+  'idle-speed': ['Throttle position and commanded idle', 'MAF/MAP at idle', 'Battery voltage and relearn status'],
+  'control-module': ['Battery voltage while cranking', 'Module power and ground voltage drop', 'Network communication codes'],
+  powertrain: ['Freeze-frame conditions', 'Related codes', 'Circuit voltage and continuity'],
+};
+
+const PRIORITY_MODEL_INSIGHTS: Record<string, {
+  insight: Record<string, string>;
+  likelySymptoms: string[];
+  firstTests: string[];
+  avoidReplacing: string;
+}> = {
+  'ford/focus/P0213': {
+    insight: {
+      en: 'For a Ford Focus, P0213 should be verified as an injector control or cold-start enrichment circuit issue before assuming an injector is faulty. Heat-damaged wiring, connector tension, fuse power, and PCM command are the high-value checks.',
+      tr: 'Ford Focus için P0213, enjektör veya soğuk çalıştırma zenginleştirme devresi olarak doğrulanmadan enjektör arızası kabul edilmemelidir. Isı hasarlı kablo, soket sıkılığı, sigorta beslemesi ve PCM komutu en değerli kontrollerdir.',
+      de: 'Beim Ford Focus muss P0213 als Einspritz- oder Kaltstart-Ansteuerungsproblem bestätigt werden, bevor ein Injektor verdächtigt wird. Kabelschäden, Steckersitz, Sicherungsspannung und PCM-Ansteuerung sind die wichtigsten Prüfungen.',
+      es: 'En un Ford Focus, P0213 debe confirmarse como un problema de control del inyector o enriquecimiento en frío antes de culpar al inyector. Cableado por calor, tensión del conector, fusible y comando del PCM son las pruebas clave.',
+      fr: 'Sur Ford Focus, P0213 doit être confirmé comme un problème de commande d’injecteur ou d’enrichissement à froid avant d’accuser l’injecteur. Câblage chauffé, connecteur, alimentation fusible et commande PCM sont prioritaires.',
+    },
+    likelySymptoms: ['Hard cold start', 'Rough idle after startup', 'Fuel smell or extended crank'],
+    firstTests: ['Check injector/cold-start circuit fuse power', 'Back-probe connector power and ground command', 'Inspect harness where it passes hot engine areas'],
+    avoidReplacing: 'Fuel injector or PCM before confirming power, ground, command, and wiring continuity.',
+  },
+  'suzuki/jimny/P0235': {
+    insight: {
+      en: 'On a Suzuki Jimny, P0235 should be approached as a boost/MAP signal plausibility problem. Compare key-on engine-off pressure, idle pressure, and boost under load before replacing the sensor.',
+      tr: 'Suzuki Jimny için P0235, boost/MAP sinyali tutarlılık problemi olarak ele alınmalıdır. Sensör değiştirmeden önce kontak açık motor kapalı basınç, rölanti basıncı ve yük altındaki boost değeri karşılaştırılmalıdır.',
+      de: 'Beim Suzuki Jimny sollte P0235 als Plausibilitätsproblem des Ladedruck/MAP-Signals geprüft werden. Vergleichen Sie Druck bei Zündung ein, Leerlauf und Last, bevor der Sensor ersetzt wird.',
+      es: 'En Suzuki Jimny, P0235 debe tratarse como un problema de plausibilidad de señal boost/MAP. Compare presión con contacto, ralentí y carga antes de cambiar el sensor.',
+      fr: 'Sur Suzuki Jimny, P0235 doit être vu comme un problème de plausibilité du signal boost/MAP. Comparez pression contact mis, ralenti et charge avant de remplacer le capteur.',
+    },
+    likelySymptoms: ['Low boost or limp mode', 'Poor acceleration', 'Check engine light under load'],
+    firstTests: ['Compare MAP/boost value key-on engine-off to barometric pressure', 'Inspect boost hoses and intercooler pipes', 'Check 5V reference, ground, and signal wire'],
+    avoidReplacing: 'Turbocharger before sensor signal, boost leaks, vacuum control, and wiring are verified.',
+  },
+  'suzuki/jimny/P0203': {
+    insight: {
+      en: 'For Suzuki Jimny P0203, prove the cylinder 3 injector circuit electrically before replacing the injector. A connector, harness rub-through, or driver command issue can mimic a failed injector.',
+      tr: 'Suzuki Jimny P0203 için enjektörü değiştirmeden önce 3. silindir enjektör devresi elektriksel olarak kanıtlanmalıdır. Soket, kablo sürtmesi veya sürücü komutu sorunu enjektör arızası gibi görünebilir.',
+      de: 'Bei Suzuki Jimny P0203 muss der Injektor-3-Stromkreis elektrisch geprüft werden, bevor der Injektor ersetzt wird. Stecker, Kabelscheuerung oder Ansteuerung können einen defekten Injektor vortäuschen.',
+      es: 'Para Suzuki Jimny P0203, confirme eléctricamente el circuito del inyector 3 antes de reemplazarlo. Conector, cable rozado o comando del driver pueden imitar un inyector malo.',
+      fr: 'Pour Suzuki Jimny P0203, confirmez électriquement le circuit injecteur cylindre 3 avant de remplacer l’injecteur. Connecteur, faisceau ou commande peuvent imiter une panne d’injecteur.',
+    },
+    likelySymptoms: ['Misfire on cylinder 3', 'Fuel smell or rough idle', 'Reduced power'],
+    firstTests: ['Check injector resistance against other cylinders', 'Use a noid light or scope for injector pulse', 'Inspect harness movement near cylinder 3'],
+    avoidReplacing: 'Injector before confirming resistance, pulse, power feed, and harness integrity.',
+  },
+  'suzuki/jimny/P0204': {
+    insight: {
+      en: 'Suzuki Jimny P0204 is a cylinder 4 injector circuit fault until proven otherwise. Compare cylinder 4 resistance, power feed, and pulse with the other injectors.',
+      tr: 'Suzuki Jimny P0204 aksi kanıtlanana kadar 4. silindir enjektör devresi arızasıdır. 4. silindir direnç, besleme ve pulse değerini diğer enjektörlerle karşılaştırın.',
+      de: 'Suzuki Jimny P0204 ist bis zum Gegenbeweis ein Fehler im Injektor-4-Stromkreis. Vergleichen Sie Widerstand, Versorgung und Impuls mit den anderen Injektoren.',
+      es: 'Suzuki Jimny P0204 es una falla del circuito del inyector 4 hasta demostrar lo contrario. Compare resistencia, alimentación y pulso con los demás inyectores.',
+      fr: 'Suzuki Jimny P0204 est une panne du circuit injecteur 4 jusqu’à preuve contraire. Comparez résistance, alimentation et impulsion avec les autres injecteurs.',
+    },
+    likelySymptoms: ['Cylinder 4 misfire', 'Rough running', 'Poor fuel economy'],
+    firstTests: ['Compare injector resistance across cylinders', 'Check injector pulse on cylinder 4', 'Inspect injector harness for rub-through'],
+    avoidReplacing: 'ECM or injector rail before confirming the cylinder 4 circuit.',
+  },
+  'acura/tlx/P0102': {
+    insight: {
+      en: 'On an Acura TLX, P0102 often needs intake and MAF signal validation before replacing the MAF sensor. Check for intake leaks, dirty sensor element, low signal voltage, and aftermarket intake turbulence.',
+      tr: 'Acura TLX için P0102, MAF sensörü değişmeden önce emme hattı ve MAF sinyali doğrulaması gerektirir. Emme kaçağı, kirli sensör elemanı, düşük sinyal voltajı ve yan sanayi emme sistemi türbülansı kontrol edilmelidir.',
+      de: 'Beim Acura TLX erfordert P0102 eine Prüfung von Ansaugung und MAF-Signal, bevor der MAF ersetzt wird. Prüfen Sie Lecks, Verschmutzung, niedrige Signalspannung und Zubehör-Ansaugung.',
+      es: 'En Acura TLX, P0102 requiere validar admisión y señal MAF antes de reemplazar el sensor. Revise fugas, suciedad, bajo voltaje y turbulencia por admisión aftermarket.',
+      fr: 'Sur Acura TLX, P0102 demande de valider l’admission et le signal MAF avant remplacement. Vérifiez fuite, élément sale, tension basse et admission non d’origine.',
+    },
+    likelySymptoms: ['Hesitation on acceleration', 'Lean fuel trims', 'Stalling or rough idle'],
+    firstTests: ['Inspect intake duct after the MAF', 'Compare MAF g/s at idle and 2500 RPM', 'Check MAF power, ground, and signal voltage'],
+    avoidReplacing: 'MAF sensor before checking intake leaks, dirty element, wiring, and fuel trim data.',
+  },
+};
+
+export function getCodePageCopy(locale: string) {
+  return CODE_PAGE_COPY[(locale as keyof typeof CODE_PAGE_COPY)] || CODE_PAGE_COPY.en;
+}
+
+export function getModelSpecificInsight(make: string, model: string, code: string, locale = 'en') {
+  const system = getSystemContent(code);
+  const key = `${make}/${model}/${code.toUpperCase()}`;
+  const priority = PRIORITY_MODEL_INSIGHTS[key];
+  if (priority) {
+    return {
+      insight: priority.insight[locale] || priority.insight.en,
+      likelySymptoms: priority.likelySymptoms,
+      firstTests: priority.firstTests,
+      avoidReplacing: priority.avoidReplacing,
+      liveData: SYSTEM_LIVE_DATA[getCodeSystem(code)] || SYSTEM_LIVE_DATA.powertrain,
+    };
+  }
+
+  const copy = getCodePageCopy(locale);
+  const capMake = make.charAt(0).toUpperCase() + make.slice(1);
+  const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  return {
+    insight: copy.genericInsight(capMake, capModel, code.toUpperCase(), system.label),
+    likelySymptoms: system.firstChecks.slice(0, 2),
+    firstTests: system.firstChecks,
+    avoidReplacing: system.mistake,
+    liveData: SYSTEM_LIVE_DATA[getCodeSystem(code)] || SYSTEM_LIVE_DATA.powertrain,
+  };
+}
+
+export function getClusterLinks(locale: string, make: string, model: string, code: string) {
+  const upperCode = code.toUpperCase();
+  const system = getCodeSystem(upperCode);
+  const p0300Slugs: Record<string, string> = {
+    en: 'p0300-symptoms-random-misfire',
+    tr: 'p0300-belirtileri-rastgele-tekleme',
+    de: 'p0300-symptome-zufallsfehlzuendung',
+    es: 'p0300-symptoms-random-misfire',
+    fr: 'p0300-symptoms-random-misfire',
+  };
+  const pillar = system === 'catalyst'
+    ? { label: upperCode === 'P0420' ? 'How to fix P0420' : 'P0420 catalyst guide', href: `/${locale}/blog/${locale === 'tr' ? 'p0420-ariza-kodu-nasil-cozulur' : 'how-to-fix-p0420'}` }
+    : system === 'misfire'
+      ? { label: 'P0300 symptoms guide', href: `/${locale}/blog/${p0300Slugs[locale] || p0300Slugs.en}` }
+      : { label: 'OBD2 code lookup', href: `/${locale}/search?q=${upperCode}` };
+
+  return [
+    pillar,
+    { label: `${make.replace('-', ' ')} ${model.replace('-', ' ')} warning lights`, href: `/${locale}/${make}/${model}/lights` },
+    ...getRelatedCodes(upperCode, PRIORITY_CODES, 3).map(related => ({
+      label: `${related} related code`,
+      href: `/${locale}/${make}/${model}/${related.toLowerCase()}`,
+    })),
+  ];
 }
 
 export const CONTENT_ROADMAP = {

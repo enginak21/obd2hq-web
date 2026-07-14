@@ -19,13 +19,13 @@ const postsEN: BlogPost[] = [
       <p>If your Check Engine Light (CEL) comes on, taking your car to a mechanic just to read the code can cost anywhere from $50 to $150. An OBD2 scanner pays for itself the first time you use it.</p>
       
       <h3>1. BlueDriver Bluetooth Pro</h3>
-      <p><strong>Best Overall</strong><br/>The BlueDriver is a favorite among DIY mechanics. It connects directly to your smartphone via Bluetooth and offers a massive database of verified fixes. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Check Price on Amazon</a></p>
+      <p><strong>Best Overall</strong><br/>The BlueDriver is a favorite among DIY mechanics. It connects directly to your smartphone via Bluetooth and offers a massive database of verified fixes. <br/><span class="text-slate-400 font-semibold">Affiliate link pending editorial review</span></p>
 
       <h3>2. FOXWELL NT301</h3>
-      <p><strong>Best Budget Option</strong><br/>If you don't want to use your phone, this standalone scanner is rugged, reliable, and incredibly easy to use. It features a color screen and one-click I/M readiness keys. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Check Price on Amazon</a></p>
+      <p><strong>Best Budget Option</strong><br/>If you don't want to use your phone, this standalone scanner is rugged, reliable, and incredibly easy to use. It features a color screen and one-click I/M readiness keys. <br/><span class="text-slate-400 font-semibold">Affiliate link pending editorial review</span></p>
 
       <h3>3. Innova 6100P</h3>
-      <p><strong>Best for ABS & SRS</strong><br/>While cheap scanners only read engine codes, the Innova 6100P can also read Anti-lock Brake System (ABS) and Airbag (SRS) codes on most vehicles. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Check Price on Amazon</a></p>
+      <p><strong>Best for ABS & SRS</strong><br/>While cheap scanners only read engine codes, the Innova 6100P can also read Anti-lock Brake System (ABS) and Airbag (SRS) codes on most vehicles. <br/><span class="text-slate-400 font-semibold">Affiliate link pending editorial review</span></p>
 
       <h2>Conclusion</h2>
       <p>Buying an OBD2 scanner is the single best investment you can make for your car. It empowers you to know exactly what's wrong before a mechanic tries to upsell you.</p>
@@ -102,7 +102,43 @@ const postsEN: BlogPost[] = [
       <h2>Bottom Line</h2>
       <p>P0420 is not a command to buy a catalytic converter. It is a signal to verify converter efficiency after checking the systems that can distort the test. Start with scan data, exhaust leaks, O2 sensor behavior, fuel trim, and misfire history. Replace the converter only when the supporting evidence points there.</p>
     `
-  }
+  },
+  {
+    slug: 'p0300-symptoms-random-misfire',
+    title: 'P0300 Symptoms: Random Misfire Causes, Diagnosis, and Safe Fixes',
+    description: 'Learn what P0300 means, the symptoms that matter, how to diagnose random misfires, when it is safe to drive, and what to test before replacing coils.',
+    date: '2026-07-14',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200&h=600',
+    content: `
+      <p>P0300 means the engine computer detected random or multiple-cylinder misfires. Unlike a single-cylinder code such as P0301 or P0302, P0300 usually means the problem can affect the whole engine: air leaks, fuel delivery, ignition quality, sensor data, compression, or timing.</p>
+      <h2>Most Important Symptoms</h2>
+      <ul>
+        <li>Flashing or solid check engine light</li>
+        <li>Rough idle, shaking, or stumbling under load</li>
+        <li>Fuel smell, poor fuel economy, or hard starting</li>
+        <li>Loss of power during acceleration</li>
+        <li>Catalytic converter overheating if the misfire is severe</li>
+      </ul>
+      <h2>Can You Drive With P0300?</h2>
+      <p>If the check engine light is flashing, stop driving as soon as it is safe. A flashing light means active misfire that can damage the catalytic converter. If the light is solid and the engine runs normally, drive gently to a repair location and avoid heavy load.</p>
+      <h2>Diagnose P0300 Without Guessing</h2>
+      <ol>
+        <li>Save freeze-frame data before clearing the code.</li>
+        <li>Check for related lean, fuel trim, crank sensor, cam sensor, or catalyst codes.</li>
+        <li>Review misfire counters to see which cylinders are affected.</li>
+        <li>Inspect spark plugs, ignition coils, coil boots, and injector connectors.</li>
+        <li>Check for vacuum leaks, intake boot cracks, and PCV leaks.</li>
+        <li>Compare fuel trims at idle and cruise. Lean trims at idle often point to air leaks.</li>
+        <li>Verify fuel pressure and compression if ignition and air checks pass.</li>
+      </ol>
+      <h2>Common Mistakes</h2>
+      <p>The expensive mistake is replacing every ignition coil without checking plugs, vacuum leaks, fuel trims, injector pulse, and compression. Move coils only when the misfire is cylinder-specific. For random P0300, prove the system-level cause first.</p>
+      <h2>Vehicle-Specific Guides</h2>
+      <p>Continue with model-specific diagnosis: <a href="/en/toyota/camry/p0300" class="text-blue-400 font-bold hover:underline">Toyota Camry P0300</a>, <a href="/en/honda/civic/p0300" class="text-blue-400 font-bold hover:underline">Honda Civic P0300</a>, <a href="/en/ford/focus/p0300" class="text-blue-400 font-bold hover:underline">Ford Focus P0300</a>, and <a href="/en/suzuki/jimny/p0300" class="text-blue-400 font-bold hover:underline">Suzuki Jimny P0300</a>.</p>
+      <h2>Bottom Line</h2>
+      <p>P0300 is a diagnosis path, not a parts list. Use freeze-frame data, misfire counters, fuel trims, vacuum testing, ignition checks, and compression data to prove the cause before buying parts.</p>
+    `
+  },
 ];
 
 const postsTR: BlogPost[] = [
@@ -117,13 +153,13 @@ const postsTR: BlogPost[] = [
       <p>Motor Arıza Lambanız yandığında, sadece arıza kodunu okumak için tamirciye gitmek bile size ciddi bir masraf çıkarabilir. Bir OBD2 cihazı, ilk kullanımında kendini amorti eder.</p>
       
       <h3>1. BlueDriver Bluetooth Pro</h3>
-      <p><strong>Genel Klasmanda En İyisi</strong><br/>BlueDriver, araba tutkunları arasında favoridir. Bluetooth ile telefonunuza bağlanır ve devasa bir çözüm veritabanı sunar. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Amazon'da Fiyatını Gör</a></p>
+      <p><strong>Genel Klasmanda En İyisi</strong><br/>BlueDriver, araba tutkunları arasında favoridir. Bluetooth ile telefonunuza bağlanır ve devasa bir çözüm veritabanı sunar. <br/><span class="text-slate-400 font-semibold">Satın alma bağlantısı editoryal incelemeden sonra eklenecek</span></p>
 
       <h3>2. FOXWELL NT301</h3>
-      <p><strong>En İyi Bütçe Dostu Seçenek</strong><br/>Telefonunuzu kullanmak istemiyorsanız, bu bağımsız tarayıcı son derece dayanıklı, güvenilir ve kullanımı kolaydır. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Amazon'da Fiyatını Gör</a></p>
+      <p><strong>En İyi Bütçe Dostu Seçenek</strong><br/>Telefonunuzu kullanmak istemiyorsanız, bu bağımsız tarayıcı son derece dayanıklı, güvenilir ve kullanımı kolaydır. <br/><span class="text-slate-400 font-semibold">Satın alma bağlantısı editoryal incelemeden sonra eklenecek</span></p>
 
       <h3>3. Innova 6100P</h3>
-      <p><strong>ABS & SRS İçin En İyisi</strong><br/>Ucuz tarayıcılar sadece motor kodlarını okurken, Innova 6100P çoğu araçta ABS ve Hava Yastığı (SRS) kodlarını da okuyabilir. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Amazon'da Fiyatını Gör</a></p>
+      <p><strong>ABS & SRS İçin En İyisi</strong><br/>Ucuz tarayıcılar sadece motor kodlarını okurken, Innova 6100P çoğu araçta ABS ve Hava Yastığı (SRS) kodlarını da okuyabilir. <br/><span class="text-slate-400 font-semibold">Satın alma bağlantısı editoryal incelemeden sonra eklenecek</span></p>
 
       <h2>Sonuç</h2>
       <p>Bir OBD2 cihazı satın almak, arabanız için yapabileceğiniz en iyi yatırımdır. Bir tamirci size gereksiz parça satmaya çalışmadan önce sorunun tam olarak ne olduğunu bilmenizi sağlar.</p>
@@ -186,6 +222,14 @@ const postsTR: BlogPost[] = [
       <h2>Sonuç</h2>
       <p>P0420 kodu pahalı bir katalizör değişimi emri değildir. Önce egzoz kaçağı, oksijen sensörü verisi, yakıt trimleri ve tekleme geçmişi kontrol edilmelidir. Katalizör ancak diğer olasılıklar test edilip elendikten sonra değiştirilmelidir.</p>
     `
+  },
+  {
+    slug: 'p0300-belirtileri-rastgele-tekleme',
+    title: 'P0300 Belirtileri: Rastgele Tekleme Nedenleri ve Güvenli Teşhis',
+    description: 'P0300 kodunun belirtileri, rastgele tekleme nedenleri, aracı kullanma güvenliği ve bobin değiştirmeden önce yapılacak testler.',
+    date: '2026-07-14',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200&h=600',
+    content: `<p>P0300, motor kontrol ünitesinin rastgele veya birden fazla silindirde tekleme algıladığını gösterir. Bu kod yalnızca bobin arızası anlamına gelmez; vakum kaçağı, yakıt basıncı, buji, enjektör, kompresyon veya sensör verisi de nedeni olabilir.</p><h2>Güvenlik</h2><p>Motor arıza lambası yanıp sönüyorsa aracı zorlamayın. Aktif tekleme katalizöre zarar verebilir. Işık sabitse ve motor normal çalışıyorsa düşük yükle servise kadar gidilebilir.</p><h2>Teşhis Sırası</h2><ol><li>Freeze-frame verisini silmeden kaydedin.</li><li>Tekleme sayaçlarını ve hangi silindirlerin etkilendiğini kontrol edin.</li><li>Vakum kaçağı, buji, bobin, enjektör, yakıt basıncı ve kompresyonu sırayla doğrulayın.</li><li>Yakıt trimlerini rölanti ve sabit hızda karşılaştırın.</li><li>Onarımdan sonra kodu silip sürüş döngüsünü tamamlayın.</li></ol><p><a href="/tr/ford/focus/p0300" class="text-blue-400 font-bold hover:underline">Ford Focus P0300</a> ve <a href="/tr/toyota/camry/p0300" class="text-blue-400 font-bold hover:underline">Toyota Camry P0300</a> rehberleriyle devam edin.</p>`
   }
 ];
 
@@ -201,13 +245,13 @@ const postsDE: BlogPost[] = [
       <p>Wenn Ihre Motorkontrollleuchte aufleuchtet, kann es Sie viel Geld kosten, nur um den Code auslesen zu lassen. Ein OBD2-Scanner macht sich schnell bezahlt.</p>
       
       <h3>1. BlueDriver Bluetooth Pro</h3>
-      <p><strong>Bester insgesamt</strong><br/>Der BlueDriver verbindet sich per Bluetooth mit Ihrem Smartphone. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Preis auf Amazon prüfen</a></p>
+      <p><strong>Bester insgesamt</strong><br/>Der BlueDriver verbindet sich per Bluetooth mit Ihrem Smartphone. <br/><span class="text-slate-400 font-semibold">Kauflink folgt nach redaktioneller Prüfung</span></p>
 
       <h3>2. FOXWELL NT301</h3>
-      <p><strong>Beste Budget-Option</strong><br/>Dieses eigenständige Gerät ist robust, zuverlässig und sehr einfach zu bedienen. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Preis auf Amazon prüfen</a></p>
+      <p><strong>Beste Budget-Option</strong><br/>Dieses eigenständige Gerät ist robust, zuverlässig und sehr einfach zu bedienen. <br/><span class="text-slate-400 font-semibold">Kauflink folgt nach redaktioneller Prüfung</span></p>
 
       <h3>3. Innova 6100P</h3>
-      <p><strong>Bester für ABS & SRS</strong><br/>Dieser Scanner kann auch Antiblockiersystem- (ABS) und Airbag- (SRS) Codes lesen. <br/><a href="#" class="text-blue-400 font-bold hover:underline">Preis auf Amazon prüfen</a></p>
+      <p><strong>Bester für ABS & SRS</strong><br/>Dieser Scanner kann auch Antiblockiersystem- (ABS) und Airbag- (SRS) Codes lesen. <br/><span class="text-slate-400 font-semibold">Kauflink folgt nach redaktioneller Prüfung</span></p>
     `
   },
   {
@@ -230,6 +274,14 @@ const postsDE: BlogPost[] = [
       <h3>Tauschen Sie nicht sofort den Katalysator aus!</h3>
       <p>Oftmals ist das Problem nur ein defekter Sauerstoffsensor, der viel billiger ist.</p>
     `
+  },
+  {
+    slug: 'p0300-symptome-zufallsfehlzuendung',
+    title: 'P0300 Symptome: zufällige Fehlzündungen sicher diagnostizieren',
+    description: 'P0300 erklärt: Symptome, sichere Weiterfahrt, Live-Daten und Tests vor dem Austausch von Zündspulen.',
+    date: '2026-07-14',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200&h=600',
+    content: `<p>P0300 bedeutet zufällige oder mehrere Zylinderfehlzündungen. Der Code ist kein direkter Auftrag zum Austausch aller Zündspulen; Luftleck, Kraftstoffdruck, Zündkerzen, Einspritzung, Kompression und Sensordaten müssen zuerst geprüft werden.</p><h2>Sicherheit</h2><p>Blinkt die Motorkontrollleuchte, sollte das Fahrzeug nicht weiter belastet werden. Ein aktiver Misfire kann den Katalysator beschädigen.</p><h2>Diagnose</h2><ol><li>Freeze-Frame speichern, bevor der Code gelöscht wird.</li><li>Fehlzündungszähler und betroffene Zylinder prüfen.</li><li>Zündung, Luftleck, Kraftstoffdruck und Kompression bestätigen.</li><li>Kraftstofftrims im Leerlauf und bei konstanter Fahrt vergleichen.</li><li>Nach der Reparatur den Fahrzyklus abschließen und prüfen, ob der Code zurückkehrt.</li></ol><p>Weiter mit <a href="/de/ford/focus/p0300" class="text-blue-400 font-bold hover:underline">Ford Focus P0300</a> und <a href="/de/toyota/camry/p0300" class="text-blue-400 font-bold hover:underline">Toyota Camry P0300</a>.</p>`
   }
 ];
 
