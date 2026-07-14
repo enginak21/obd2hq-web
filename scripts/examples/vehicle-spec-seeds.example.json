@@ -1,0 +1,32 @@
+[
+  {
+    "make": "bmw",
+    "model": "5-series",
+    "displayName": "BMW 5 Series",
+    "generation": "E34",
+    "year": 1991,
+    "trim": "520i",
+    "slug": "520i",
+    "market": "Europe / selected global markets"
+  },
+  {
+    "make": "bmw",
+    "model": "5-series",
+    "displayName": "BMW 5 Series",
+    "generation": "E34",
+    "year": 1991,
+    "trim": "525i",
+    "slug": "525i",
+    "market": "Europe / selected global markets"
+  },
+  {
+    "make": "bmw",
+    "model": "5-series",
+    "displayName": "BMW 5 Series",
+    "generation": "E39",
+    "year": 1998,
+    "trim": "520i",
+    "slug": "520i",
+    "market": "Europe / selected global markets"
+  }
+]
