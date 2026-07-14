@@ -100,6 +100,20 @@ export function getLocalized(field: any, locale: string): any {
   return field[locale] || field['en'] || field;
 }
 
+function isTokenizedArray(value: unknown, prefix: string): value is string[] {
+  return Array.isArray(value) && value.every(item => typeof item === 'string' && item.startsWith(prefix));
+}
+
+function normalizeDifficulty(value: unknown, fallback: string) {
+  if (typeof value !== 'string') return fallback;
+  const normalized = value.toLowerCase();
+  if (normalized === 'easy') return 'diff_easy';
+  if (normalized === 'moderate') return 'diff_moderate';
+  if (normalized === 'hard') return 'diff_hard';
+  if (normalized === 'professional') return 'diff_professional';
+  return value.startsWith('diff_') ? value : fallback;
+}
+
 export function getHybridObdData(make: string, model: string, code: string): OBD2Code | null {
   const upperCode = code.toUpperCase();
   const baseData = codes[upperCode];
@@ -127,9 +141,9 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     isEnriched = true;
     hybridData = {
       ...hybridData,
-      symptoms: aiEnrichment.symptoms || hybridData.symptoms,
-      causes: aiEnrichment.causes || hybridData.causes,
-      fixDifficulty: aiEnrichment.fixDifficulty || hybridData.fixDifficulty,
+      symptoms: isTokenizedArray(aiEnrichment.symptoms, 'symp_') ? aiEnrichment.symptoms : hybridData.symptoms,
+      causes: isTokenizedArray(aiEnrichment.causes, 'cause_') ? aiEnrichment.causes : hybridData.causes,
+      fixDifficulty: normalizeDifficulty(aiEnrichment.fixDifficulty, hybridData.fixDifficulty),
       estimatedCost: aiEnrichment.estimatedCost || hybridData.estimatedCost,
       diagnosticSteps: aiEnrichment.diagnosticSteps || hybridData.diagnosticSteps,
       commonFixes: aiEnrichment.commonFixes || hybridData.commonFixes,

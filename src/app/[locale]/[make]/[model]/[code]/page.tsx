@@ -6,7 +6,8 @@ import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 import AdSlot from '@/components/AdSlot';
 import { getAlternates } from '@/utils/seo';
-import { getFallbackDiagnosticSteps, getRelatedCodes, getRepairTiers, getSystemContent } from '@/data/seo';
+import { getFallbackDiagnosticSteps, getLocalizedSystemContent, getRelatedCodes, getRepairTiers } from '@/data/seo';
+import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { ShieldCheck, CheckCircle2, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -26,12 +27,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   const titleObj = getLocalized(obdData.title, resolvedParams.locale);
-  const titleStr = typeof titleObj === 'string' ? titleObj : (titleObj?.en || 'Unknown Code');
+  const rawTitleStr = typeof titleObj === 'string' ? titleObj : (titleObj?.en || 'Unknown Code');
+  const titleStr = getLocalizedCodeTitle(obdData.code, resolvedParams.locale, rawTitleStr);
   
-  const title = `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
+  const isTurkish = resolvedParams.locale === 'tr';
+  const title = isTurkish
+    ? `1996-2026 ${capMake} ${capModel} ${obdData.code} Kodu: ${titleStr}`
+    : `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
   return { 
     title,
-    description: `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`,
+    description: isTurkish
+      ? `1996-2026 ${capMake} ${capModel} için ${obdData.code} arıza kodu teşhis rehberi. Belirtiler, nedenler, kontrol adımları ve tahmini onarım maliyeti.`
+      : `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`,
     alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
   };
 }
@@ -55,13 +62,18 @@ export default async function CodePage({ params }: PageProps) {
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
-  const locTitle = getLocalized(obdData.title, locale) || obdData.code;
-  const locDescription = getLocalized(obdData.description, locale) || '';
-  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || getFallbackDiagnosticSteps(upperCode, make, model);
+  const rawTitle = getLocalized(obdData.title, locale) || obdData.code;
+  const rawDescription = getLocalized(obdData.description, locale) || '';
+  const locTitle = getLocalizedCodeTitle(upperCode, locale, rawTitle);
+  const locDescription = getLocalizedCodeDescription(upperCode, locale, rawDescription);
+  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || getFallbackDiagnosticSteps(upperCode, make, model, locale);
   const locCommonFixes = getLocalized(obdData.commonFixes, locale) || [];
   const locDrivingSafetyDesc = obdData.drivingSafety ? getLocalized(obdData.drivingSafety.description, locale) : '';
-  const systemContent = getSystemContent(upperCode);
-  const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost);
+  const systemContent = getLocalizedSystemContent(upperCode, locale);
+  const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost, locale);
+  const localizedCauses = obdData.causes.map(cause => cause.startsWith('cause_') ? tDb(cause) : cause);
+  const localizedSymptoms = obdData.symptoms.map(symptom => symptom.startsWith('symp_') ? tDb(symptom) : symptom);
+  const isTurkish = locale === 'tr';
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -69,39 +81,39 @@ export default async function CodePage({ params }: PageProps) {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": `Can I drive with the ${upperCode} code?`,
+        "name": tExtra('canDriveQuestion', { code: upperCode }),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": obdData.drivingSafety ? locDrivingSafetyDesc : "It depends on the severity. If the check engine light is flashing, stop immediately. If it is solid, you can usually drive to a mechanic."
+          "text": obdData.drivingSafety ? locDrivingSafetyDesc : tExtra('canDriveAnswer')
         }
       },
       {
         "@type": "Question",
-        "name": `What are the common causes of the ${upperCode} code on a ${capMake}?`,
+        "name": isTurkish ? `${capMake} için ${upperCode} kodunun yaygın nedenleri nelerdir?` : `What are the common causes of the ${upperCode} code on a ${capMake}?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": obdData.causes.join(', ')
+          "text": localizedCauses.join(', ')
         }
       },
       {
         "@type": "Question",
-        "name": `How much does it cost to fix the ${upperCode} code?`,
+        "name": isTurkish ? `${upperCode} kodunu onarmak ne kadar tutar?` : `How much does it cost to fix the ${upperCode} code?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `The estimated repair cost for the ${upperCode} code is ${obdData.estimatedCost}. This includes parts and labor.`
+          "text": isTurkish ? `${upperCode} kodu için tahmini onarım maliyeti ${obdData.estimatedCost}. Bu tutar parça ve işçilik maliyetine göre değişebilir.` : `The estimated repair cost for the ${upperCode} code is ${obdData.estimatedCost}. This includes parts and labor.`
         }
       },
       {
         "@type": "Question",
-        "name": `Will the ${upperCode} code clear itself?`,
+        "name": tExtra('clearQuestion', { code: upperCode }),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In most cases, the code will clear itself after you fix the underlying issue and drive the vehicle for several cycles. You can also clear it manually with an OBD2 scanner."
+          "text": tExtra('clearAnswer')
         }
       },
       {
         "@type": "Question",
-        "name": `What should I check first for ${upperCode}?`,
+        "name": tExtra('firstCheckQuestion', { code: upperCode }),
         "acceptedAnswer": {
           "@type": "Answer",
           "text": systemContent.firstChecks.join(' ')
@@ -124,7 +136,7 @@ export default async function CodePage({ params }: PageProps) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": `1996-2026 ${capMake} ${capModel} ${upperCode} Code: ${locTitle}`,
+    "headline": isTurkish ? `1996-2026 ${capMake} ${capModel} ${upperCode} Kodu: ${locTitle}` : `1996-2026 ${capMake} ${capModel} ${upperCode} Code: ${locTitle}`,
     "description": locDescription.substring(0, 150),
     "author": {
       "@type": "Organization",
@@ -273,8 +285,7 @@ export default async function CodePage({ params }: PageProps) {
               {tExtra('commonCausesFor', { make: capMake, model: capModel })}
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {obdData.causes.map((cause, idx) => {
-                const causeText = cause.startsWith('cause_') ? tDb(cause) : cause;
+              {localizedCauses.map((causeText, idx) => {
                 return (
                   <li key={idx} className="bg-[#131b2f] border border-white/5 rounded-xl p-4 flex items-start space-x-3">
                     <span className="w-2 h-2 mt-2 rounded-full bg-amber-500 shrink-0"></span>
@@ -291,8 +302,7 @@ export default async function CodePage({ params }: PageProps) {
               {t('symptomsToWatch')}
             </h2>
             <ul className="space-y-3">
-              {obdData.symptoms.map((symptom, idx) => {
-                const symptomText = symptom.startsWith('symp_') ? tDb(symptom) : symptom;
+              {localizedSymptoms.map((symptomText, idx) => {
                 return (
                   <li key={idx} className="flex items-center space-x-3 text-slate-300 bg-white/5 p-3 rounded-lg">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500"></span>
