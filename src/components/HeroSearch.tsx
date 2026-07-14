@@ -3,14 +3,12 @@
 import { useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { Search, ArrowRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 
 export default function HeroSearch() {
   const [query, setQuery] = useState('');
   const router = useRouter();
   const params = useParams();
   const locale = (params.locale as string) || 'en';
-  const t = useTranslations('Navbar'); // Reuse Navbar translations for search
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,7 +34,8 @@ export default function HeroSearch() {
           />
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-500 text-white rounded-full px-6 py-3 font-bold flex items-center transition-colors ml-2 shadow-lg shadow-blue-600/30 shrink-0"
+            aria-label="Search diagnostic database"
+            className="bg-blue-600 hover:bg-blue-500 text-white rounded-full min-h-12 min-w-12 sm:min-w-0 sm:px-6 py-3 font-bold flex items-center justify-center transition-colors ml-2 shadow-lg shadow-blue-600/30 shrink-0"
           >
             <span className="hidden sm:inline mr-2">Diagnose Now</span>
             <ArrowRight className="w-5 h-5" />

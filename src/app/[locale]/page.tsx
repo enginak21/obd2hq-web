@@ -45,7 +45,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
         
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-32 flex flex-col items-center text-center">
+        <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-24 sm:pt-24 sm:pb-32 min-h-[760px] sm:min-h-[720px] flex flex-col items-center text-center">
           <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md shadow-xl">
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
             <span className="text-sm font-medium text-slate-300 tracking-wide">{t('databaseUpdated')}</span>

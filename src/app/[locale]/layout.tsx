@@ -73,6 +73,9 @@ export default async function RootLayout({
 
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
+  const clientMessages = {
+    Navbar: messages.Navbar,
+  };
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -105,13 +108,13 @@ export default async function RootLayout({
         )}
       </head>
       <body className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <Navbar />
+        </NextIntlClientProvider>
           <div className="flex-1 flex flex-col">
             {children}
           </div>
           <Footer />
-        </NextIntlClientProvider>
       </body>
     </html>
   );
