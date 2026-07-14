@@ -6,6 +6,7 @@ import { PRIORITY_CODES } from '@/data/seo';
 import { symptomGuides } from '@/data/symptoms';
 import { automotiveTools } from '@/data/automotive-tools';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
+import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
 
@@ -85,9 +86,9 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       });
       vehicleKnowledgeProfiles.forEach((vehicle) => {
         urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${vehicle.make}/${vehicle.model}`, 'weekly', '0.85');
-        vehicle.yearTrimVariants?.forEach((variant) => {
-          urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${vehicle.make}/${vehicle.model}/${variant.year}/${variant.slug}`, 'monthly', '0.8');
-        });
+      });
+      allVehicleSpecRecords.forEach((variant) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${variant.make}/${variant.model}/${variant.year}/${variant.slug}`, 'monthly', '0.8');
       });
       engineProfiles.forEach((engine) => {
         urls += urlEntry(`${BASE_URL}/${locale}/engines/${engine.slug}`, 'weekly', '0.8');

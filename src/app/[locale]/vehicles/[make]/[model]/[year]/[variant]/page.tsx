@@ -5,22 +5,20 @@ import { getAlternates } from '@/utils/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import {
   getVehicleKnowledge,
-  getVehicleYearTrimStaticParams,
-  getVehicleYearTrimVariant,
 } from '@/data/vehicle-knowledge';
+import { getVehicleSpecRecord, getVehicleSpecStaticParams } from '@/data/vehicle-spec-records';
 
 const locales = ['en', 'tr', 'de', 'es', 'fr'];
 
 export function generateStaticParams() {
-  return getVehicleYearTrimStaticParams().flatMap(params => locales.map(locale => ({ locale, ...params })));
+  return getVehicleSpecStaticParams().flatMap(params => locales.map(locale => ({ locale, ...params })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; make: string; model: string; year: string; variant: string }> }) {
   const { locale, make, model, year, variant } = await params;
-  const vehicle = getVehicleKnowledge(make, model);
-  const trim = getVehicleYearTrimVariant(make, model, year, variant);
-  if (!vehicle || !trim) return {};
-  const name = `${trim.year} ${vehicle.displayName || vehicle.model} ${trim.trim}`;
+  const trim = getVehicleSpecRecord(make, model, year, variant);
+  if (!trim) return {};
+  const name = `${trim.year} ${trim.displayName} ${trim.trim}`;
   const labels = getVariantLabels(locale);
 
   return {
@@ -34,19 +32,19 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
   const { locale, make, model, year, variant } = await params;
   setRequestLocale(locale);
   const vehicle = getVehicleKnowledge(make, model);
-  const trim = getVehicleYearTrimVariant(make, model, year, variant);
-  if (!vehicle || !trim) notFound();
+  const trim = getVehicleSpecRecord(make, model, year, variant);
+  if (!trim) notFound();
 
   const copy = getKnowledgeUiCopy(locale);
   const labels = getVariantLabels(locale);
-  const vehicleName = vehicle.displayName || `${vehicle.make} ${vehicle.model}`.replace(/\b\w/g, c => c.toUpperCase());
+  const vehicleName = trim.displayName;
   const pageName = `${trim.year} ${vehicleName} ${trim.trim}`;
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Vehicle',
     name: pageName,
-    brand: vehicle.make,
+    brand: trim.make,
     model: `${vehicleName} ${trim.trim}`,
     vehicleModelDate: String(trim.year),
     vehicleEngine: trim.engineCodes.join(', '),
@@ -85,7 +83,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
               <Spec label={labels.torque} value={trim.torque} />
               <Spec label={labels.fuelSystem} value={trim.fuelSystem} />
               <Spec label={labels.timingDrive} value={trim.timingDrive} />
-              <Spec label={copy.obdPortLabel} value={vehicle.obdPortLocation} />
+              <Spec label={copy.obdPortLabel} value={vehicle?.obdPortLocation || labels.verifyByVin} />
             </div>
           </section>
 
@@ -109,7 +107,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
               <Spec label={labels.sparkPlugs} value={trim.sparkPlugs} />
               <Spec label={labels.serviceInterval} value={trim.serviceInterval} />
               <Spec label={copy.tireSizesLabel} value={trim.tireSizes.join(', ')} />
-              <Spec label={copy.wheelTorqueLabel} value={vehicle.wheelTorque} />
+              <Spec label={copy.wheelTorqueLabel} value={vehicle?.wheelTorque || labels.verifyByVin} />
             </div>
           </section>
 
@@ -130,7 +128,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
             </div>
           </section>
           <Panel title={labels.sourceNotes} items={trim.sourceNotes} />
-          <Panel title={copy.compatibleTools} items={vehicle.compatibleTools} />
+          <Panel title={copy.compatibleTools} items={vehicle?.compatibleTools || [labels.verifyByVin]} />
         </aside>
       </section>
     </main>
@@ -162,6 +160,7 @@ function getVariantLabels(locale: string) {
       firstChecks: 'İlk kontrol edilmesi gerekenler',
       notes: 'Önemli notlar',
       sourceNotes: 'Kaynak ve doğrulama notları',
+      verifyByVin: 'VIN ve pazara göre doğrulanmalı',
     };
   }
 
@@ -188,6 +187,7 @@ function getVariantLabels(locale: string) {
     firstChecks: 'First checks',
     notes: 'Important notes',
     sourceNotes: 'Source and verification notes',
+    verifyByVin: 'Verify by VIN and market',
   };
 }
 

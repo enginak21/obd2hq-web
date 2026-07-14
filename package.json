@@ -9,7 +9,9 @@
     "lint": "eslint",
     "check:content": "node scripts/check_content_quality.js",
     "catalog:vehicles": "node scripts/build_vehicle_catalog.js",
-    "specs:enrich": "node scripts/vehicle_spec_enrichment_pipeline.js"
+    "specs:seed": "node scripts/generate_vehicle_spec_seeds.js",
+    "specs:enrich": "node scripts/vehicle_spec_enrichment_pipeline.js",
+    "specs:publish": "node scripts/publish_vehicle_specs.js"
   },
   "dependencies": {
     "@cardog-icons/react": "^1.2.0",

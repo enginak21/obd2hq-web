@@ -3,7 +3,7 @@ import { getAlternates } from '@/utils/seo';
 import { KnowledgeHero } from '@/components/KnowledgeGrid';
 import VehicleSpecSelector, { type VehicleCatalogOption, type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
 import { cars } from '@/data/db';
-import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
+import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -26,11 +26,11 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
     displayName: `${car.make.replace('-', ' ')} ${model.replace('-', ' ')}`.replace(/\b\w/g, c => c.toUpperCase()),
     years: buildYearRange(1996, 2026),
   })));
-  const selectorItems: VehicleSpecSelectorItem[] = vehicleKnowledgeProfiles.flatMap(vehicle => (vehicle.yearTrimVariants || []).map(variant => ({
-    make: vehicle.make,
-    model: vehicle.model,
-    displayName: vehicle.displayName || `${vehicle.make.replace('-', ' ')} ${vehicle.model.replace('-', ' ')}`.replace(/\b\w/g, c => c.toUpperCase()),
-    generation: vehicle.generation,
+  const selectorItems: VehicleSpecSelectorItem[] = allVehicleSpecRecords.map(variant => ({
+    make: variant.make,
+    model: variant.model,
+    displayName: variant.displayName,
+    generation: variant.generation,
     year: variant.year,
     trim: variant.trim,
     slug: variant.slug,
@@ -43,7 +43,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
     commonProblems: variant.commonProblems,
     firstChecks: variant.firstChecks,
     relatedCodes: variant.relatedCodes,
-  })));
+  }));
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
