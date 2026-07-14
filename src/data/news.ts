@@ -12,6 +12,25 @@ export interface NewsArticle {
   content: Record<string, string>;
 }
 
+const CATEGORY_KEY_MAP: Record<string, string> = {
+  'brand news': 'brand_news',
+  'brand_news': 'brand_news',
+  'modded & tuning': 'modified_cars',
+  'modified cars': 'modified_cars',
+  'modified_cars': 'modified_cars',
+  'recalls & issues': 'chronic_issues',
+  'chronic issues': 'chronic_issues',
+  'chronic_issues': 'chronic_issues',
+  'industry & tech': 'industry_news',
+  'industry news': 'industry_news',
+  'industry_news': 'industry_news',
+};
+
+export function getNewsCategoryKey(category: string): string {
+  const normalized = category.trim().toLowerCase();
+  return CATEGORY_KEY_MAP[normalized] || 'industry_news';
+}
+
 export function getAllNews(): NewsArticle[] {
   const newsDir = path.join(process.cwd(), 'src', 'data', 'news');
   

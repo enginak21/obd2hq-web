@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-import { getAllNews } from '@/data/news';
+import Image from 'next/image';
+import { getAllNews, getNewsCategoryKey } from '@/data/news';
 import { getLocalized } from '@/data/db';
 import { Calendar, ChevronRight, Newspaper } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
@@ -75,6 +76,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
             {articles.map((article) => {
               const locTitle = getLocalized(article.title, locale) || article.slug;
               const locSummary = getLocalized(article.summary, locale) || '';
+              const categoryKey = getNewsCategoryKey(article.category);
               
               const dateObj = new Date(article.date);
               const formattedDate = new Intl.DateTimeFormat(locale, {
@@ -90,15 +92,16 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                   className="group flex flex-col bg-[#131b2f] border border-white/5 rounded-3xl overflow-hidden hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(37,99,235,0.2)]"
                 >
                   <div className="w-full h-56 relative overflow-hidden bg-[#0d1425]">
-                    <img 
+                    <Image
                       src={article.image} 
                       alt={locTitle}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-black/70 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider rounded-lg border border-white/10">
-                        {t(`categories.${article.category}`)}
+                        {t(`categories.${categoryKey}`)}
                       </span>
                     </div>
                   </div>

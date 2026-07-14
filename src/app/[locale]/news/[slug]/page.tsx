@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getAllNews, getNewsBySlug } from '@/data/news';
+import Image from 'next/image';
+import { getAllNews, getNewsBySlug, getNewsCategoryKey } from '@/data/news';
 import { getLocalized } from '@/data/db';
 import { Calendar, ChevronLeft, Share2 } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
@@ -65,6 +66,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
 
   const locTitle = getLocalized(article.title, locale) || article.slug;
   const locContent = getLocalized(article.content, locale) || '';
+  const categoryKey = getNewsCategoryKey(article.category);
   
   const dateObj = new Date(article.date);
   const formattedDate = new Intl.DateTimeFormat(locale, {
@@ -97,10 +99,13 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
       />
       {/* Article Header with Parallax-like Image */}
       <div className="relative h-[50vh] min-h-[400px] w-full bg-[#0d1425] overflow-hidden">
-        <img 
+        <Image
           src={article.image} 
           alt={locTitle}
-          className="w-full h-full object-cover opacity-60"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1c] via-[#0a0f1c]/50 to-transparent"></div>
         
@@ -116,7 +121,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
             
             <div className="flex items-center space-x-4 mb-4">
               <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-lg">
-                {t(`categories.${article.category}`)}
+                {t(`categories.${categoryKey}`)}
               </span>
               <span className="flex items-center text-slate-300 text-sm font-medium">
                 <Calendar className="w-4 h-4 mr-1.5 opacity-70" />
