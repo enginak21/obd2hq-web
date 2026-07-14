@@ -5,8 +5,12 @@ const path = require('path');
 
 const INPUT = process.env.INPUT || path.join('work', 'vehicle-spec-seeds.json');
 const OUTPUT = process.env.OUTPUT || path.join('work', 'vehicle-spec-enriched.json');
-const MODEL = process.env.OPENAI_MODEL || 'gpt-4.1';
+const MODEL = process.env.OPENAI_MODEL || 'gpt-4.1-mini';
 const API_KEY = process.env.OPENAI_API_KEY || '';
+const LIMIT = Number.parseInt(process.env.LIMIT || '0', 10);
+const START_INDEX = Number.parseInt(process.env.START_INDEX || '0', 10);
+const CHECKPOINT_EVERY = Math.max(1, Number.parseInt(process.env.CHECKPOINT_EVERY || '1', 10));
+const RETRIES = Math.max(0, Number.parseInt(process.env.RETRIES || '3', 10));
 
 const requiredFields = [
   'make',
@@ -55,6 +59,15 @@ function readJson(file) {
     throw new Error(`Input file not found: ${file}`);
   }
   return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+function recordKey(record) {
+  return `${record.make}/${record.model}/${record.year}/${record.slug || slugify(record.trim || 'technical-profile')}`;
+}
+
+function writeJson(file, records) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, `${JSON.stringify(records, null, 2)}\n`, 'utf8');
 }
 
 function validateRecord(record, index) {
@@ -135,43 +148,80 @@ async function enrichWithOpenAI(seed) {
     };
   }
 
-  const response = await fetch('https://api.openai.com/v1/responses', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      input: buildPrompt(seed),
-      temperature: 0.1,
-    }),
-  });
+  let lastError = null;
+  for (let attempt = 0; attempt <= RETRIES; attempt += 1) {
+    if (attempt > 0) {
+      const delay = 1000 * attempt * attempt;
+      console.log(`Retrying after ${delay}ms...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
 
-  if (!response.ok) {
-    throw new Error(`OpenAI API ${response.status}: ${await response.text()}`);
+    const response = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        input: buildPrompt(seed),
+      }),
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      const text = data.output_text || data.output?.flatMap(item => item.content || []).map(item => item.text || '').join('') || '';
+      return JSON.parse(text.replace(/^```json\s*/i, '').replace(/```$/i, '').trim());
+    }
+
+    const body = await response.text();
+    lastError = new Error(`OpenAI API ${response.status}: ${body}`);
+    if (![408, 429, 500, 502, 503, 504].includes(response.status)) break;
   }
 
-  const data = await response.json();
-  const text = data.output_text || data.output?.flatMap(item => item.content || []).map(item => item.text || '').join('') || '';
-  return JSON.parse(text.replace(/^```json\s*/i, '').replace(/```$/i, '').trim());
+  throw lastError;
 }
 
 async function main() {
   const seeds = readJson(INPUT);
   if (!Array.isArray(seeds)) throw new Error('Input must be an array of vehicle seeds.');
 
-  const enriched = [];
-  for (let index = 0; index < seeds.length; index += 1) {
-    const seed = seeds[index];
-    console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
-    const record = await enrichWithOpenAI(seed);
-    enriched.push(validateRecord(record, index + 1));
+  const existing = fs.existsSync(OUTPUT) ? readJson(OUTPUT) : [];
+  if (!Array.isArray(existing)) throw new Error('Existing output must be an array.');
+
+  const enrichedByKey = new Map();
+  for (let index = 0; index < existing.length; index += 1) {
+    const record = validateRecord(existing[index], index + 1);
+    enrichedByKey.set(recordKey(record), record);
   }
 
-  fs.mkdirSync(path.dirname(OUTPUT), { recursive: true });
-  fs.writeFileSync(OUTPUT, `${JSON.stringify(enriched, null, 2)}\n`, 'utf8');
-  console.log(`Saved ${OUTPUT}`);
+  const endIndex = LIMIT > 0 ? Math.min(seeds.length, START_INDEX + LIMIT) : seeds.length;
+  let processed = 0;
+  let created = 0;
+
+  for (let index = START_INDEX; index < endIndex; index += 1) {
+    const seed = seeds[index];
+    const key = recordKey(seed);
+    if (enrichedByKey.has(key)) {
+      console.log(`Skipping existing ${index + 1}/${seeds.length}: ${key}`);
+      continue;
+    }
+
+    console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
+    const record = await enrichWithOpenAI(seed);
+    const validRecord = validateRecord(record, index + 1);
+    enrichedByKey.set(recordKey(validRecord), validRecord);
+    processed += 1;
+    created += 1;
+
+    if (processed % CHECKPOINT_EVERY === 0) {
+      writeJson(OUTPUT, Array.from(enrichedByKey.values()));
+      console.log(`Checkpoint saved ${enrichedByKey.size} records to ${OUTPUT}`);
+    }
+  }
+
+  writeJson(OUTPUT, Array.from(enrichedByKey.values()));
+  console.log(`Saved ${OUTPUT}. Created ${created}; total ${enrichedByKey.size}.`);
 }
 
 main().catch(error => {
