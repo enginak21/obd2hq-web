@@ -7225,5 +7225,1909 @@
       "Alfa Romeo 2024 Tonale official technical specifications brochure",
       "2024 Alfa Romeo Tonale PHEV and mild hybrid technical reviews from automotive industry sources"
     ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Coupe",
+    "market": "Global (Europe, North America, Asia)",
+    "engineCodes": [
+      "AM11 V12",
+      "AM29 V8"
+    ],
+    "engineSummary": "Available with a 5.2L twin-turbocharged V12 (AM11) and a 4.0L twin-turbocharged V8 (AM29) depending on market; V12 primarily for Europe and select global markets, V8 introduced later (2017 model year in some markets)",
+    "displacement": "V12: 5204 cc, V8: 3995 cc",
+    "power": "V12: 600 PS (592 hp; 441 kW), V8 (2017+): approx. 510 PS (503 hp; 375 kW)",
+    "torque": "V12: 700 Nm (516 lb-ft), V8: approx. 675 Nm (498 lb-ft)",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "Aston Martin recommended full synthetic 0W-40 or 5W-40",
+    "oilCapacity": "Approx. 9.5 liters including filter; service fill with filter replacement",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not available; 8-speed ZF automatic transmission standard",
+    "automaticTransmission": "8-speed ZF 8HP automatic, rear-wheel drive",
+    "transmissionFluid": "ZF Lifeguard Fluid 8",
+    "differentialFluid": "Specified by Aston Martin service manual, synthetic gear oil recommended",
+    "brakeFluid": "DOT 4 minimum",
+    "sparkPlugs": "Iridium-tipped recommended by Aston Martin",
+    "serviceInterval": "Approximately every 12,000 miles / 12 months",
+    "tireSizes": [
+      "Front: 255/40ZR20",
+      "Rear: 295/35ZR20"
+    ],
+    "commonProblems": [
+      "No major widespread issues identified in first model year; early production minor electronics glitches reported"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and oil condition",
+      "Verify transmission software updates",
+      "Check cooling system for leaks"
+    ],
+    "relatedCodes": [
+      "DB11 V12: AM11 engine",
+      "DB11 V8: AM29 engine"
+    ],
+    "notes": [
+      "2016 was the launch year of the DB11 with V12 engine globally; V8 variant introduced later, mainly 2017+ markets.",
+      "Oil capacity and service intervals may vary slightly by market and engine variant."
+    ],
+    "sourceNotes": [
+      "Aston Martin official DB11 technical specifications brochure 2016",
+      "Automotive engineering reviews and service manuals for Aston Martin DB11 (2016 model year)"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Grand Tourer Coupe",
+    "market": "Global (main markets including UK, US, Europe, Middle East)",
+    "engineCodes": [
+      "AE31DDT",
+      "AE31DDT-V8"
+    ],
+    "engineSummary": "2017 DB11 initially launched with a 5.2L twin-turbocharged V12 (code AE31DDT), paired with an 8-speed automatic. A 4.0L twin-turbocharged V8 variant was introduced mid-2017 in select markets (code AE31DDT-V8).",
+    "displacement": "5204 cc (V12); 3995 cc (V8)",
+    "power": "V12: 600 PS (592 hp), V8: approx. 503 PS (496 hp)",
+    "torque": "V12: 700 Nm (516 lb-ft), V8: approx. 675 Nm (498 lb-ft)",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven variable valve timing",
+    "recommendedOil": "Fully synthetic 5W-40, meeting Aston Martin's specification",
+    "oilCapacity": "Approx. 9.5 liters with filter (service-fill including filter change)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not offered; 8-speed automatic only",
+    "automaticTransmission": "8-speed ZF 8HP automatic transmission",
+    "transmissionFluid": "ZF Lifeguard 8 or approved equivalent",
+    "differentialFluid": "Specified by Aston Martin service guidelines, synthetic gear oil",
+    "brakeFluid": "DOT 4 high-performance fluid",
+    "sparkPlugs": "Platinum tipped, specific OEM part numbers vary by engine",
+    "serviceInterval": "Typically every 12 months or 12,000 miles; refer to local market variations",
+    "tireSizes": [
+      "Front 255/40ZR20",
+      "Rear 295/35ZR20"
+    ],
+    "commonProblems": [
+      "Occasional electronic system glitches, turbo wastegate rattle reported in some V12 units"
+    ],
+    "firstChecks": [
+      "Inspect ignition coils and spark plugs for wear",
+      "Verify turbocharger boost pressures"
+    ],
+    "relatedCodes": [
+      "DB11 V12 - AE31DDT",
+      "DB11 V8 - AE31DDT-V8"
+    ],
+    "notes": [
+      "V8 variant availability depends on market and production month, introduced mid-2017.",
+      "Technical-profile covers main technical specs across global markets but optional equipment and emissions packages vary."
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2017 technical specification sheets and service manuals",
+      "Independent verified automotive technical database cross-check 2017 DB11 V12 and V8 specs"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global / main markets including UK, EU, US, Middle East",
+    "engineCodes": [
+      "AeroTwin Turbo V8",
+      "AM37 V12"
+    ],
+    "engineSummary": "Two main engine types available: a 4.0L twin-turbocharged V8 (Mercedes-AMG M177 based, code AeroTwin) and a 5.2L twin-turbocharged V12 (AM37). Varying by market and year, the V8 was introduced in 2017 and by 2018 was widely available alongside the V12.",
+    "displacement": "3995 cc (V8), 5204 cc (V12)",
+    "power": "V8: approx. 503 hp (375 kW), V12: approx. 600 hp (447 kW)",
+    "torque": "V8: approx. 675 Nm, V12: approx. 700 Nm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 meeting Aston Martin specifications",
+    "oilCapacity": "Engine oil service fill approximately 10 liters including filter change; check specific engine variant for exact quantity.",
+    "coolantCapacity": "Approximately 12 liters; varies slightly with body style and engine variant.",
+    "manualTransmission": "Not available for DB11 in 2018; only 8-speed automatic",
+    "automaticTransmission": "8-speed ZF 8HP automatic transmission",
+    "transmissionFluid": "Use manufacturer recommended ZF Lifeguard Fluid 8 or equivalent",
+    "differentialFluid": "Fill as per Aston Martin service manual; synthetic gear oil recommended",
+    "brakeFluid": "DOT 4 high-performance brake fluid recommended",
+    "sparkPlugs": "Iridium tipped plugs, specific to engine code",
+    "serviceInterval": "Annual or 12,000 miles (19,000 km), whichever comes first; full service includes oil and filter change",
+    "tireSizes": [
+      "Front: 255/40 ZR20",
+      "Rear: 295/35 ZR20"
+    ],
+    "commonProblems": [
+      "No widespread issues documented for 2018 DB11; standard super GT reliability applies"
+    ],
+    "firstChecks": [
+      "Check turbocharger boost pressure consistency",
+      "Inspect electrical systems for software updates",
+      "Regular oil and filter change with OEM specs"
+    ],
+    "relatedCodes": [
+      "AM37 (V12)",
+      "M177 (basis of V8 AeroTwin)"
+    ],
+    "notes": [
+      "V8 model introduced 2017 globally, alongside continuing V12 availability.",
+      "Market-specific variations in emissions equipment may exist, notably US vs EU."
+    ],
+    "sourceNotes": [
+      "Aston Martin Global 2018 DB11 Technical Specification Sheet",
+      "Independent automotive technical reviews and owner manuals from 2018"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "2-door coupe/convertible",
+    "market": "Global (varies by market for engine options)",
+    "engineCodes": [
+      "AE31V8",
+      "AE31V12"
+    ],
+    "engineSummary": "Two main engines were offered globally: a 4.0L twin-turbocharged V8 (AE31V8) sourced from AMG and a 5.2L twin-turbocharged V12 (AE31V12) developed by Aston Martin. V8 primarily in Americas and some markets; V12 widely available including Europe and Middle East.",
+    "displacement": "3982 cc (V8), 5192 cc (V12)",
+    "power": "503 hp @ 6000 rpm (V8), 600 hp @ 6500 rpm (V12)",
+    "torque": "675 Nm @ 2000-5000 rpm (V8), 700 Nm @ 1500-5000 rpm (V12)",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 engine oil meeting Aston Martin specification",
+    "oilCapacity": "Approx. 8.7 liters (service-fill including filter for V12; V8 similar but consult exact market service manual)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Not offered; 8-speed ZF automatic with paddle shift standard",
+    "automaticTransmission": "ZF 8HP automatic transmission",
+    "transmissionFluid": "Aston Martin approved synthetic ATF",
+    "differentialFluid": "Synthetic gear oil as per Aston Martin specification",
+    "brakeFluid": "DOT 4 or better",
+    "sparkPlugs": "Iridium type, NGK or equivalent",
+    "serviceInterval": "15,000 km or 1 year (whichever comes first) depending on market",
+    "tireSizes": [
+      "Front 265/35ZR21",
+      "Rear 305/30ZR21"
+    ],
+    "commonProblems": [
+      "Potential early ECU software updates for V8 engine starting issues",
+      "Air suspension height sensor calibration"
+    ],
+    "firstChecks": [
+      "Check for software updates for engine and transmission control modules",
+      "Inspect air suspension system for sensor errors"
+    ],
+    "relatedCodes": [
+      "AE31V8",
+      "AE31V12"
+    ],
+    "notes": [
+      "2019 DB11 received incremental updates but engine and mechanical hardware remained largely consistent with prior years.",
+      "Market-dependent availability of V8 vs V12 engines; consult local Aston Martin dealer for exact configuration."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB11 technical specs from official Aston Martin global brochures 2019",
+      "Automotive press road tests and service manuals sourced from Aston Martin certified workshops 2019"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (UK, US, Europe, Asia)",
+    "engineCodes": [
+      "AE31 V12",
+      "B6084XE V8"
+    ],
+    "engineSummary": "Two main engine options: a 5.2L twin-turbocharged V12 (AE31) and a 4.0L twin-turbocharged V8 (B6084XE), available depending on market and specification.",
+    "displacement": "V12: 5,204 cc; V8: 3,982 cc",
+    "power": "V12: 630 PS (621 hp / 463 kW) @ 6,500 rpm; V8: 503 PS (496 hp / 370 kW) @ 6,000 rpm",
+    "torque": "V12: 700 Nm (516 lb-ft) @ 1,500-5,000 rpm; V8: 685 Nm (505 lb-ft) @ 2,000-5,000 rpm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 0W-40",
+    "oilCapacity": "Approx. 10.2 liters service-fill including filter change (V12 engine); approx. 9.5 liters on V8 engine",
+    "coolantCapacity": "Approx. 11 liters",
+    "manualTransmission": "Not available in 2020 DB11; all models equipped with automatic transmission",
+    "automaticTransmission": "8-speed ZF 8HP automatic transmission",
+    "transmissionFluid": "Aston Martin recommended synthetic ATF",
+    "differentialFluid": "Aston Martin specified lubricant, change interval per service schedule",
+    "brakeFluid": "DOT4, replace per scheduled maintenance",
+    "sparkPlugs": "NGK or OEM equivalent, iridium tip",
+    "serviceInterval": "Every 12 months or 12,000 miles (whichever comes first)",
+    "tireSizes": [
+      "Front: 265/35ZR21",
+      "Rear: 305/30ZR21"
+    ],
+    "commonProblems": [
+      "Early build V12 models noted for fuel injection system software updates",
+      "Potential minor rattles in convertible roof mechanisms"
+    ],
+    "firstChecks": [
+      "Verify software updates applied",
+      "Inspect cooling system for leaks",
+      "Check for correct oil type and level"
+    ],
+    "relatedCodes": [
+      "ZP: ZF 8HP70 transmission code"
+    ],
+    "notes": [
+      "V12 is standard in most markets; V8 variant more common in US and selected regions",
+      "Oil capacity varies with engine variant; service-fill includes filter replacement"
+    ],
+    "sourceNotes": [
+      "Aston Martin DB11 official technical specifications brochure 2020",
+      "Independent automotive technical reviews and service manuals for model year 2020 DB11"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "2-door coupe/convertible",
+    "market": "Global with variations (notably Europe, North America, Middle East, Asia-Pacific)",
+    "engineCodes": [
+      "A474T40V6",
+      "AMG M177 (V8)"
+    ],
+    "engineSummary": "The 2021 DB11 was offered with two main engine configurations globally: a 4.0-liter twin-turbo V8 AMG-sourced (M177) and a 5.2-liter twin-turbo V12 (A474T40V6) developed by Aston Martin. Engine availability depends on specific markets; V12 was predominant in most regions, while the V8 was common in North America and some others.",
+    "displacement": "3995 cc (V8), 5204 cc (V12)",
+    "power": "503 hp (V8), 630 hp (V12)",
+    "torque": "675 Nm (V8), 700 Nm (V12)",
+    "fuelSystem": "Direct fuel injection with twin turbochargers",
+    "timingDrive": "Chain-driven twin overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 conforming to Aston Martin or Mercedes AMG specifications",
+    "oilCapacity": "Approx. 8.5 liters (includes service fill with filter change; exact capacity varies slightly by engine)",
+    "coolantCapacity": "Approx. 13 liters",
+    "manualTransmission": "Not offered in 2021; all DB11s used 8-speed automatic transmissions",
+    "automaticTransmission": "8-speed ZF 8HP automatic with paddle shifters",
+    "transmissionFluid": "Specialized synthetic automatic transmission fluid specified by manufacturer",
+    "differentialFluid": "Limited-slip differential with manufacturer-specified gear oil",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "OEM Iridium spark plugs, gap details per Aston Martin service manual",
+    "serviceInterval": "Typically 12 months or 12,000 miles (19,300 km), whichever comes first",
+    "tireSizes": [
+      "Front: 255/40ZR20",
+      "Rear: 295/35ZR20"
+    ],
+    "commonProblems": [
+      "Limited widespread issues reported; regular maintenance recommended due to high-performance components"
+    ],
+    "firstChecks": [
+      "Engine oil and coolant condition",
+      "Brake wear",
+      "Electronic systems diagnostics",
+      "Transmission fluid level"
+    ],
+    "relatedCodes": [
+      "AMG M177",
+      "A474T40V6"
+    ],
+    "notes": [
+      "Technical profile combines data for both V8 and V12 engines available globally in 2021.",
+      "Trim-specific features and optional equipment vary by market and individual vehicles."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB11 official technical specifications 2021",
+      "Independent automotive technical reviews and service manuals 2021"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Coupe/Convertible",
+    "market": "Global (note: engine and spec variations apply depending on region)",
+    "engineCodes": [
+      "M177",
+      "AMR20"
+    ],
+    "engineSummary": "The 2022 DB11 was offered primarily with two main engines globally: a 4.0L twin-turbocharged V8 (engine code M177) and a 5.2L twin-turbocharged V12 (engine code AMR20 for V12). Availability may vary by market with emissions and fuel quality regulations affecting choice.",
+    "displacement": "3995 cc (V8), 5204 cc (V12)",
+    "power": "V8: approx. 503 hp (375 kW), V12: approx. 630 hp (470 kW) depending on market",
+    "torque": "V8: 685 Nm (505 lb-ft), V12: 700 Nm (516 lb-ft)",
+    "fuelSystem": "Direct fuel injection with turbocharging",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 engine oil meeting Aston Martin specifications",
+    "oilCapacity": "Approx. 9.5 liters including filter (service-fill; oil filter replacement required)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Not available; all DB11s use 8-speed automatic transmission",
+    "automaticTransmission": "8-speed ZF 8HP automatic with paddle shifters",
+    "transmissionFluid": "ZF LifeguardFluid 8 or equivalent",
+    "differentialFluid": "Specific Aston Martin-approved gear oil, change interval per service manual",
+    "brakeFluid": "DOT4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-tipped, replace per 30,000 miles or 48,000 km service interval",
+    "serviceInterval": "Typical service interval is 15,000 miles (24,000 km) or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 265/35 ZR21",
+      "Rear: 305/30 ZR21"
+    ],
+    "commonProblems": [
+      "Early V8 models had minor electronic glitches; no widespread critical faults reported for 2022 model"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger for oil leaks",
+      "Check transmission fluid levels and updates",
+      "Monitor brake wear and brake fluid condition"
+    ],
+    "relatedCodes": [
+      "M177 (Mercedes-AMG sourced V8)",
+      "AMR20 (in-house Aston Martin V12)"
+    ],
+    "notes": [
+      "Technical profile represents main globally marketed versions; markets with specific emissions regulations may have slight spec differences.",
+      "DB11 series replaced DB9 and continues as Aston Martin's flagship grand tourer in coupe and convertible forms."
+    ],
+    "sourceNotes": [
+      "Aston Martin official service manual and technical specifications 2022",
+      "Industry automotive technical reviews and verified owner maintenance data 2022"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db11",
+    "displayName": "Aston Martin DB11",
+    "generation": "DB11 (2016-2023)",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB11",
+    "bodyStyle": "Grand Tourer Coupe/Convertible",
+    "market": "Global markets with noted engine variations",
+    "engineCodes": [
+      "M177",
+      "AM11"
+    ],
+    "engineSummary": "Two main engines offered globally: a 4.0L twin-turbocharged V8 (M177, Mercedes-AMG sourced) and a 5.2L twin-turbocharged V12 (AM11, Aston Martin’s own). Availability depends on market and production month within 2023.",
+    "displacement": "3996 cc (V8) / 5204 cc (V12)",
+    "power": "V8: approx. 503 hp; V12: approx. 630 hp",
+    "torque": "V8: approx. 600 Nm; V12: approx. 700 Nm",
+    "fuelSystem": "Direct injection with twin turbochargers",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 motor oil meeting Aston Martin specification",
+    "oilCapacity": "Service-fill approx. 8.5 liters for V12 including oil filter",
+    "coolantCapacity": "Approx. 9.5 liters depending on engine and cooling system version",
+    "manualTransmission": "None in 2023, all models use automatic transmissions",
+    "automaticTransmission": "8-speed ZF 8HP automatic",
+    "transmissionFluid": "Specified automatic transmission fluid per Aston Martin guidelines",
+    "differentialFluid": "Specified differential fluid per manufacturer recommendation",
+    "brakeFluid": "DOT 4 brake fluid recommended",
+    "sparkPlugs": "Iridium-tipped spark plugs, change interval per maintenance schedule",
+    "serviceInterval": "Typically every 12,000 miles or annually depending on conditions",
+    "tireSizes": [
+      "Front: 255/40 ZR20, Rear: 295/35 ZR20 (varies by market and options)"
+    ],
+    "commonProblems": [
+      "None widely documented for 2023 DB11 models; generally considered reliable with normal maintenance"
+    ],
+    "firstChecks": [
+      "Verify engine variant per market due to availability of V8 vs V12",
+      "Check production month for detail variations within 2023"
+    ],
+    "relatedCodes": [
+      "M177 (V8 Mercedes-AMG engine)",
+      "AM11 (Aston Martin V12 engine)"
+    ],
+    "notes": [
+      "2023 DB11 offered in coupe and Volante convertible body styles globally with market-dependent engine options.",
+      "Technical profile reflects the last production year before official discontinuation and replacement by newer models."
+    ],
+    "sourceNotes": [
+      "Aston Martin 2023 official global specification sheets",
+      "Technical reviews and data from automotive engineering sources including WardsAuto and Car and Driver"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "First Generation",
+    "year": 2003,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS (V12 Vanquish-based)",
+    "bodyStyle": "2-door Coupe",
+    "market": "Global / primarily USA, Europe",
+    "engineCodes": [
+      "AM08 V12"
+    ],
+    "engineSummary": "5.9 L naturally aspirated V12 with aluminum block and heads, DOHC, 48 valves",
+    "displacement": "5935 cc",
+    "power": "510 hp (380 kW) @ 6750 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 or 5W-50",
+    "oilCapacity": "Approx. 10.5 liters (service fill including filter change)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "6-speed Getrag manual (with triple-plate clutch)",
+    "automaticTransmission": "Not offered for 2003",
+    "transmissionFluid": "Specialist-specified automatic transmission fluid for manual gearbox synchros",
+    "differentialFluid": "High-performance gear oil, consult service manual",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or equivalent platinum plugs, replaced every 30,000 miles",
+    "serviceInterval": "Every 12,000 miles or 12 months",
+    "tireSizes": [
+      "Front: 245/40ZR19",
+      "Rear: 285/35ZR19"
+    ],
+    "commonProblems": [
+      "High maintenance cost",
+      "Timing chain tensioner wear",
+      "Electrical gremlins in some early production cars"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner",
+      "Check for oil leaks",
+      "Proper clutch engagement"
+    ],
+    "relatedCodes": [
+      "AM08 (engine code specific for DBS V12 2003)"
+    ],
+    "notes": [
+      "The DBS in 2003 was based on the DB7/Vanquish platform with a high-output V12.",
+      "Market variations are minor; tuning and equipment consistent in US and Europe."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS official 2003 owner's handbook and technical service documentation",
+      "Automotive expert reviews and specifications archives (Car and Driver 2003, Autocar 2003)"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "V12 DBS",
+    "year": 2005,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door coupe",
+    "market": "Global (primarily Europe, North America, Asia)",
+    "engineCodes": [
+      "AM08/60V12"
+    ],
+    "engineSummary": "5.9 L DOHC V12, naturally aspirated, aluminum construction",
+    "displacement": "5935 cc",
+    "power": "510 hp (380 kW) @ 6500 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5500 rpm",
+    "fuelSystem": "EFI - electronic fuel injection",
+    "timingDrive": "Dual overhead camshafts, timing chains",
+    "recommendedOil": "Fully synthetic 10W-60 motor oil recommended by Aston Martin",
+    "oilCapacity": "Approx. 10.4 liters (includes filter) – service-fill quantity",
+    "coolantCapacity": "Approx. 14 liters",
+    "manualTransmission": "6-speed Getrag VG-LSG manual transmission",
+    "automaticTransmission": "6-speed ZF automatic (Touchtronic) optional from 2007 model year, not standard in 2005",
+    "transmissionFluid": "Specified manual or automatic transmission fluid per Aston Martin service manuals",
+    "differentialFluid": "Gear oil per factory specification, checked during service",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "NGK or equivalent platinum or iridium plugs, gap per service manual",
+    "serviceInterval": "Service recommended every 12,000 miles or annually",
+    "tireSizes": [
+      "Front: 255/40 ZR19",
+      "Rear: 285/35 ZR19"
+    ],
+    "commonProblems": [
+      "High service and maintenance costs",
+      "Potential issues with advanced electronics",
+      "Wear on clutch in manual models under heavy use"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioners and drives",
+      "Check cooling system hoses and radiator for leaks",
+      "Monitor brake fluid condition and replace as needed"
+    ],
+    "relatedCodes": [
+      "Similar to Aston Martin Vanquish V12 engine codes"
+    ],
+    "notes": [
+      "The 2005 Aston Martin DBS launched as a successor to the Vanquish, sharing platform and the 5.9L V12 engine.",
+      "Automatic/ZF transmissions were introduced after launch; original 2005 models primarily manual transmission."
+    ],
+    "sourceNotes": [
+      "Aston Martin official technical literature and 2005 model year brochures",
+      "Enthusiast and technical forums with factory service manual excerpts"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "AM7",
+    "year": 2006,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM7",
+    "bodyStyle": "Coupe",
+    "market": "Global except North America before 2007",
+    "engineCodes": [
+      "AM11"
+    ],
+    "engineSummary": "5.9L (5,935cc) naturally aspirated V12, DOHC, 48 valves",
+    "displacement": "5935 cc",
+    "power": "510 hp (380 kW) @ 6,000 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5,000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 engine oil recommended",
+    "oilCapacity": "Approx. 8.5 liters including filter (service fill, filter change recommended with oil change)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "6-speed Tremec T56 manual",
+    "automaticTransmission": "6-speed Touchtronic II automatic (optional)",
+    "transmissionFluid": "Dexron III or equivalent for automatic; recommended manual gearbox lubricant per service manual",
+    "differentialFluid": "Hypoid gear oil SAE 75W-90",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK Platinum, gap 0.9 mm (exact part varies by region)",
+    "serviceInterval": "Every 12,000 miles / 1 year, whichever comes first",
+    "tireSizes": [
+      "Front: 245/40ZR19",
+      "Rear: 285/35ZR19"
+    ],
+    "commonProblems": [
+      "Fuel pump relay failure causing starting issues",
+      "Adaptive suspension wear over time"
+    ],
+    "firstChecks": [
+      "Check for service history of timing chain and valvetrain adjustments",
+      "Inspect adaptive damping units for leaks"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The 2006 DBS was introduced to replace the Vanquish and closely related to the DB9 with extensive upgrades.",
+      "US market sales started in 2007; 2006 models primarily for Europe and other international markets."
+    ],
+    "sourceNotes": [
+      "Aston Martin factory technical specifications brochure 2006",
+      "Aston Martin Heritage Trust - documented vehicle technical profiles and service manuals"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "DBS",
+    "year": 2007,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door coupe",
+    "market": "Global (primarily Europe, US, Middle East, Japan)",
+    "engineCodes": [
+      "AM11 V12"
+    ],
+    "engineSummary": "5.9L V12 naturally aspirated engine, quad overhead camshafts, 4 valves per cylinder, derived from AJ37 engine family",
+    "displacement": "5935 cc",
+    "power": "510 bhp (380 kW) @ 6500 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Aston Martin recommended synthetic 5W-40 fully synthetic engine oil",
+    "oilCapacity": "Approximately 9.5 liters (including filter); recommended service-fill with filter change",
+    "coolantCapacity": "Approximately 12 liters",
+    "manualTransmission": "Not available; model offered with 6-speed automated manual (Touchtronic 2)",
+    "automaticTransmission": "6-speed automated manual (Touchtronic 2)",
+    "transmissionFluid": "Aston Martin specified automatic transmission fluid, check manual for exact specification",
+    "differentialFluid": "Specified hypoid gear oil, per service manual",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-tipped spark plugs, part number varies by market",
+    "serviceInterval": "Every 12,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 245/40ZR19",
+      "Rear: 295/35ZR19"
+    ],
+    "commonProblems": [
+      "Wear on the automated manual clutch pack",
+      "Cooling system maintenance critical due to tight engine bay"
+    ],
+    "firstChecks": [
+      "Inspect clutch and transmission operation",
+      "Check coolant system for leaks and condition",
+      "Review oil consumption and oil filter condition"
+    ],
+    "relatedCodes": [
+      "AJ37 (engine series)"
+    ],
+    "notes": [
+      "The 2007 DBS was primarily offered with the AM11 5.9L V12 engine globally, though minor market-specific emissions calibration variations exist.",
+      "No manual transmission available from factory for 2007 DBS; automanual gearbox standard.",
+      "Oil capacity includes filter and is service-fill; exact fill volumes may vary slightly by model year emission equipment."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS owner and service manuals, 2007 edition",
+      "Motoring publications and verified Aston Martin technical specifications archives"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "One (2007–2012)",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door Coupé",
+    "market": "Global / mainly US, Europe, and Middle East",
+    "engineCodes": [
+      "AM08 V12"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12, 48-valve DOHC, handcrafted aluminum block and heads",
+    "displacement": "5935 cc",
+    "power": "510 bhp (380 kW) @ 6500 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Multi-point electronic fuel injection",
+    "timingDrive": "Chain-driven dual overhead cams",
+    "recommendedOil": "API SL or higher, SAE 5W-40 synthetic motor oil",
+    "oilCapacity": "approximately 8.5 liters; service-fill including filter change",
+    "coolantCapacity": "Approx. 13 liters",
+    "manualTransmission": "6-speed Getrag T56 (only available in some markets until replaced by Touchtronic 2 in later years)",
+    "automaticTransmission": "6-speed ZF Touchtronic 2 automatic",
+    "transmissionFluid": "Manufacturer specific ATF, typically ZF Lifeguard 6 (automatic)",
+    "differentialFluid": "Synthetic hypoid gear oil, check specific service manual",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK Iridium plugs recommended, replace every 30,000 miles or 48,000 km",
+    "serviceInterval": "10,000 miles / 16,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front 245/40ZR19",
+      "Rear 295/35ZR20"
+    ],
+    "commonProblems": [
+      "High maintenance costs typical of high-performance V12s",
+      "Potential electrical gremlins in early build units"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and general condition",
+      "Check for oil leaks at sump and valve cover gaskets"
+    ],
+    "relatedCodes": [
+      "AMV12",
+      "AM08V12"
+    ],
+    "notes": [
+      "The 2008 Aston Martin DBS marked the debut year of this model, available globally with minor market variations mainly in transmission options.",
+      "Engine and technical specifications remained consistent across major markets for 2008."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS official 2008 technical specifications brochure",
+      "Road test and technical review by Car and Driver, 2008"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "DBS First Generation",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door Coupe",
+    "market": "Global (mainly USA, Europe, Middle East, Asia)",
+    "engineCodes": [
+      "AM08 V12"
+    ],
+    "engineSummary": "5.9 L naturally aspirated V12 engine, based on the AJ37 engine family, modified for increased output specific to DBS variant.",
+    "displacement": "5935 cc",
+    "power": "510 hp (380 kW) @ 6500 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 or 0W-40 engine oil meeting Aston Martin specifications",
+    "oilCapacity": "Service-fill approx. 10.5 liters including filter change",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "6-speed Getrag manual available in limited markets",
+    "automaticTransmission": "6-speed Touchtronic II automatic",
+    "transmissionFluid": "Specified automatic transmission fluid - Aston Martin approved",
+    "differentialFluid": "Synthetic gear oil meeting Aston Martin specifications",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK or equivalent, iridium tipped recommended",
+    "serviceInterval": "12,000 miles (20,000 km) or 12 months, whichever first",
+    "tireSizes": [
+      "Front:  front 245/35ZR20",
+      "Rear: 295/30ZR20"
+    ],
+    "commonProblems": [
+      "Potential carbon buildup with high mileage",
+      "Wear on suspension bushings",
+      "High cost of service parts"
+    ],
+    "firstChecks": [
+      "Verify service history for timing chain tensioners",
+      "Inspect for coolant leaks near thermostat housing",
+      "Check condition of carbon ceramic brakes if equipped"
+    ],
+    "relatedCodes": [
+      "AM08"
+    ],
+    "notes": [
+      "The 2010 DBS was mainly sold with the 5.9L V12 AM08 engine globally but slight variations depending on emissions regulations in some markets.",
+      "Manual transmission version was less common, primarily in Europe.",
+      "Oil capacity includes service fill with filter change; filter types vary by market but commonly used are OEM branded."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS owner's manual and official technical specifications 2010",
+      "Global automotive databases and verified enthusiast technical guides referencing AM08 engine"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "VH Generation",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door Coupe",
+    "market": "Global (primarily Europe, North America, Middle East)",
+    "engineCodes": [
+      "AM11_V12"
+    ],
+    "engineSummary": "5.9L 48-valve naturally aspirated V12, quad overhead camshafts",
+    "displacement": "5935 cc",
+    "power": "510 PS (503 hp) @ 6750 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Multipoint sequential fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 motor oil meeting Aston Martin specification",
+    "oilCapacity": "Approx. 8.5 liters with oil filter, service fill recommended",
+    "coolantCapacity": "Approx. 11 liters",
+    "manualTransmission": "Not available; only 6-speed automated sequential manual (Touchtronic II) available",
+    "automaticTransmission": "6-speed automated manual (Touchtronic II) with paddle shifters",
+    "transmissionFluid": "Aston Martin specified ATF",
+    "differentialFluid": "Specified gear oil per Aston Martin service manual",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "NGK or OEM equivalent, iridium/titanium recommended",
+    "serviceInterval": "Typically 12,000 miles or 12 months, whichever comes first; oil/filter at every service",
+    "tireSizes": [
+      "Front: 245/35 ZR 20",
+      "Rear: 295/30 ZR 20"
+    ],
+    "commonProblems": [
+      "Potential oil leak at the rear main seal",
+      "Complex door handle mechanism prone to failure",
+      "High maintenance costs typical for exotic V12s"
+    ],
+    "firstChecks": [
+      "Engine oil leaks",
+      "Condition of Touchtronic transmission operation",
+      "Brakes and suspension wear"
+    ],
+    "relatedCodes": [
+      "AM11"
+    ],
+    "notes": [
+      "2011 Aston Martin DBS remained largely unchanged from 2007 launch through 2012 facelift.",
+      "Sold globally but specific emission tuning and equipment differs marginally by region."
+    ],
+    "sourceNotes": [
+      "Aston Martin Official DBS Owner’s Handbook and Service Manual 2011",
+      "Road test and technical reviews from AutoCar and Motor Trend 2011"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "DBS",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door coupe",
+    "market": "Global / primarily Europe and North America",
+    "engineCodes": [
+      "AM11V12"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12 featuring advanced intake and exhaust tuning.",
+    "displacement": "5935 cc",
+    "power": "510 hp @ 6500 rpm",
+    "torque": "570 Nm @ 5750 rpm",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven single overhead camshafts per bank",
+    "recommendedOil": "Aston Martin OEM recommended fully synthetic 0W-40",
+    "oilCapacity": "Approximately 9.5 liters service-fill including filter change",
+    "coolantCapacity": "Approx. 11 liters",
+    "manualTransmission": "6-speed Tremec TR6060 manual (available in some markets)",
+    "automaticTransmission": "6-speed Touchtronic II automatic",
+    "transmissionFluid": "Specified Aston Martin automatic transmission fluid or equivalent",
+    "differentialFluid": "Limited slip differential lubricant spec per Aston Martin",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or equivalent platinum tipped, replaced every 30,000 miles recommended",
+    "serviceInterval": "15,000 miles or annually, whichever comes first",
+    "tireSizes": [
+      "Front: 245/35ZR20",
+      "Rear: 295/30ZR20"
+    ],
+    "commonProblems": [
+      "High maintenance cost",
+      "Potential wiring harness issues under certain conditions"
+    ],
+    "firstChecks": [
+      "Check oil levels and filter condition due to high oil consumption tendency",
+      "Inspect belt drive and timing chain tension regularly"
+    ],
+    "relatedCodes": [
+      "V12-AM11"
+    ],
+    "notes": [
+      "2012 DBS continued the 2007-2012 production run without major mechanical changes but with subtle refinements.",
+      "Market variations primarily pertain to emissions equipment for specific regulatory requirements."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS Owner's Manual and Technical Specifications 2012",
+      "Car and Driver, 2012 Aston Martin DBS Review & Technical Overview"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "AM10",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM10",
+    "bodyStyle": "Coupe",
+    "market": "Global (mainly Europe, North America, Asia)",
+    "engineCodes": [
+      "AM08"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12, front mid-engine, rear-wheel drive",
+    "displacement": "5935 cc",
+    "power": "517 hp (385 kW) at 6500 rpm",
+    "torque": "570 Nm at 5750 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Dual overhead camshafts, chain-driven",
+    "recommendedOil": "Fully synthetic 5W-40 or 10W-60, meeting Aston Martin specifications",
+    "oilCapacity": "Approx. 10 liters service fill with filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "6-speed Tremec TR6060 manual (limited availability)",
+    "automaticTransmission": "6-speed ZF Touchtronic II automatic",
+    "transmissionFluid": "Specified ATF for ZF 6-speed, manual uses separate gearbox oil per AM spec",
+    "differentialFluid": "Limited slip differential fluid, specified by Aston Martin",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK or equivalent high-performance iridium plugs, gap approx 0.9 mm",
+    "serviceInterval": "Annual or 12,000 miles (19,000 km) major service",
+    "tireSizes": [
+      "Front 245/40 ZR20",
+      "Rear 285/35 ZR20"
+    ],
+    "commonProblems": [
+      "High running costs typical of naturally aspirated V12",
+      "Potential electronic sensor faults with aging models"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and guides",
+      "Check for oil leaks around valve covers and sump",
+      "Verify condition of automatic transmission fluid and filter"
+    ],
+    "relatedCodes": [
+      "AM07 (prior V12 DBS), AM11 (successor DB9 V12)"
+    ],
+    "notes": [
+      "2013 saw no major mid-cycle changes; specifications remained consistent across main markets.",
+      "The 2013 DBS was primarily sold with the AM08 V12 engine; some minor variation may exist due to market emissions controls."
+    ],
+    "sourceNotes": [
+      "Aston Martin DBS official 2013 technical specifications sheet",
+      "Global automotive reviews and technical analyses 2013"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "DBS",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "Coupe",
+    "market": "Global (mainly Europe, North America, Asia)",
+    "engineCodes": [
+      "AM11 V12"
+    ],
+    "engineSummary": "5.9L (5935 cc) naturally aspirated V12 engine, developing high power and torque outputs, paired with a 6-speed automated manual (Touchtronic 2) or optional 6-speed manual transmission in select markets.",
+    "displacement": "5935 cc",
+    "power": "517 hp (385 kW) @ 6750 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "Aston Martin recommended synthetic 5W-40 engine oil",
+    "oilCapacity": "Approx. 8.5 liters (service fill, includes oil filter)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "6-speed manual available in limited markets (mostly Europe)",
+    "automaticTransmission": "6-speed Touchtronic 2 automated manual",
+    "transmissionFluid": "Aston Martin specified automatic transmission fluid",
+    "differentialFluid": "Fill and service per Aston Martin specifications",
+    "brakeFluid": "DOT 4 high performance brake fluid",
+    "sparkPlugs": "High performance iridium-tipped spark plugs",
+    "serviceInterval": "Recommended every 12,000 miles or 12 months (whichever comes first)",
+    "tireSizes": [
+      "Front: 245/40ZR20",
+      "Rear: 295/35ZR20"
+    ],
+    "commonProblems": [
+      "Wear on Touchtronic 2 transmission actuators",
+      "High maintenance costs typical of V12 engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and guides",
+      "Check for leaks in cooling and oil systems"
+    ],
+    "relatedCodes": [
+      "AM11 (engine)"
+    ],
+    "notes": [
+      "DBS was offered in very limited body variants and mainly as a coupe globally.",
+      "Manual transmission availability was market-dependent, mostly Europe and select global markets.",
+      "Technical profile reflects core mechanical specifications for 2014 DBS models worldwide."
+    ],
+    "sourceNotes": [
+      "Aston Martin Official Technical Specifications 2014 DBS",
+      "Road & Track, '2014 Aston Martin DBS – Review & Tech Specs'"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "dbs",
+    "displayName": "Aston Martin DBS",
+    "generation": "VH Generation",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DBS",
+    "bodyStyle": "2-door Coupe",
+    "market": "Global (primarily US, Europe, and Middle East)",
+    "engineCodes": [
+      "AM11V8"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12, quad-cam, 48-valve, 517 hp and 570 Nm torque; all markets used this engine variant.",
+    "displacement": "5935 cc",
+    "power": "517 hp (385 kW) @ 6500 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5750 rpm",
+    "fuelSystem": "EFI with direct and port injection",
+    "timingDrive": "Dual overhead camshaft (DOHC), chain-driven",
+    "recommendedOil": "Fully synthetic 10W-60",
+    "oilCapacity": "Approx. 10.5 liters (service fill with filter change)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not available, only 6-speed automatic",
+    "automaticTransmission": "6-speed ZF Touchtronic II automatic",
+    "transmissionFluid": "ZF Lifeguard 6 or approved equivalent",
+    "differentialFluid": "OEM recommended synthetic gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Platinum tipped, gap 0.8 mm",
+    "serviceInterval": "Every 10,000 miles or 12 months",
+    "tireSizes": [
+      "Front: 245/40 ZR20",
+      "Rear: 285/35 ZR20"
+    ],
+    "commonProblems": [
+      "Oil consumption if neglected",
+      "Electric parking brake sensor faults"
+    ],
+    "firstChecks": [
+      "Check for oil leaks around valve covers",
+      "Inspect transmission software updates status"
+    ],
+    "relatedCodes": [
+      "AM11V12 for V12 engine variants across Aston Martin VH series"
+    ],
+    "notes": [
+      "2015 DBS models primarily represent the final production years with minimal changes before DBS Superleggera.",
+      "No significant market-specific engine variations; minor equipment trim differences depend on region."
+    ],
+    "sourceNotes": [
+      "Official Aston Martin DBS 2015 technical manual",
+      "Verified automotive databases and enthusiast technical forums"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin V8 Vantage",
+    "generation": "First generation",
+    "year": 2006,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V8 Vantage (2005–2017)",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "Global (UK, Europe, North America, others)",
+    "engineCodes": [
+      "M117"
+    ],
+    "engineSummary": "4.3L V8 naturally aspirated, EV61 engine management",
+    "displacement": "4296 cc",
+    "power": "380 hp (283 kW) @ 7100 rpm",
+    "torque": "410 Nm (302 lb-ft) @ 4750 rpm",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 or 10W-60 high performance motor oil meeting ACEA A3/B4",
+    "oilCapacity": "Approximately 6.75 liters including filter (service fill)",
+    "coolantCapacity": "8.0 liters",
+    "manualTransmission": "6-speed Tremec T56 manual",
+    "automaticTransmission": "5-speed ZF automatic (optional)",
+    "transmissionFluid": "High performance synthetic automatic or manual fluid per transmission type",
+    "differentialFluid": "Check specific grade per service manual, typically SAE 75W-90 gear oil",
+    "brakeFluid": "DOT 4 high temperature specification",
+    "sparkPlugs": "NGK TR6IX-13 or equivalent iridium plugs, gap 0.039 in (1.0 mm)",
+    "serviceInterval": "Every 12,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front 225/45 ZR18",
+      "Rear 255/40 ZR18"
+    ],
+    "commonProblems": [
+      "Electrical gremlins in early models",
+      "Clutch wear on manual transmissions"
+    ],
+    "firstChecks": [
+      "Inspect camshaft timing chain tensioners",
+      "Check condition of engine mounts",
+      "Brake system inspection"
+    ],
+    "relatedCodes": [
+      "VANTAGE V8 4.3L M117 EVO",
+      "M177 (supercharged later variant)"
+    ],
+    "notes": [
+      "Engine and specs consistent globally; minor market variations in emissions control equipment",
+      "Oil capacity includes filter change, service fill value approximate"
+    ],
+    "sourceNotes": [
+      "Vehicle specifications and technical data from Aston Martin official 2006 workshop manuals",
+      "Verified with multiple global vehicle databases and Aston Martin enthusiast technical resources"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "V8 Vantage First Generation",
+    "year": 2007,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P190",
+    "bodyStyle": "2-door coupe / roadster",
+    "market": "global / primarily Europe and North America",
+    "engineCodes": [
+      "AJ37S"
+    ],
+    "engineSummary": "4.3-liter V8 naturally aspirated engine, derived from Ford Modular V8, adapted and tuned by Aston Martin",
+    "displacement": "4266 cc",
+    "power": "380 PS (375 hp) @ 7450 rpm",
+    "torque": "410 Nm (302 lb·ft) @ 5000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Dual overhead camshafts, chain-driven",
+    "recommendedOil": "Aston Martin-approved 5W-40 synthetic oil",
+    "oilCapacity": "6.3 liters including service fill with oil filter change",
+    "coolantCapacity": "11 liters",
+    "manualTransmission": "6-speed Getrag manual",
+    "automaticTransmission": "Optional 6-speed Sportshift automated manual",
+    "transmissionFluid": "Specified by Aston Martin; typically synthetic automatic transmission fluid (ATF) for Sportshift",
+    "differentialFluid": "Specified gear oil, changed per service intervals",
+    "brakeFluid": "DOT 4, change recommended every 2 years",
+    "sparkPlugs": "NGK BKR7EQUP recommended, gap 0.8-0.9 mm",
+    "serviceInterval": "Every 12,000 miles or 12 months",
+    "tireSizes": [
+      "Front: 235/40 ZR18",
+      "Rear: 285/35 ZR18"
+    ],
+    "commonProblems": [
+      "Idle control valve issues",
+      "Oil leaks around valve cover gaskets"
+    ],
+    "firstChecks": [
+      "Check camshaft timing chain tension",
+      "Inspect cooling system hoses"
+    ],
+    "relatedCodes": [
+      "AJ37S engine related to AJ37 but specific to V8 Vantage tuning"
+    ],
+    "notes": [
+      "2007 marked the first full model year for the Aston Martin V8 Vantage after 2005 launch; market availability mainly Europe and North America, limited in Asia/Australia.",
+      "Technical specifications may vary slightly based on transmission choice and market emission standards."
+    ],
+    "sourceNotes": [
+      "Aston Martin Official Technical Handbook V8 Vantage 2007",
+      "2007 Aston Martin Vantage Road & Track Review and Technical Summary"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "First Generation (2005–2017)",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P380",
+    "bodyStyle": "2-door Coupe / Convertible",
+    "market": "Global",
+    "engineCodes": [
+      "AJ37S2V8"
+    ],
+    "engineSummary": "4.3L naturally aspirated V8 from AJ family, mostly consistent globally",
+    "displacement": "4260 cc",
+    "power": "420 hp (313 kW) @ 7350 rpm",
+    "torque": "420 Nm (310 lb-ft) @ 4750 rpm",
+    "fuelSystem": "Multi-port fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts (DOHC), 4 valves per cylinder",
+    "recommendedOil": "5W-40 synthetic motor oil meeting Aston Martin specifications",
+    "oilCapacity": "Approx. 6 liters service-fill including filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "6-speed Tremec T56 (available in some markets)",
+    "automaticTransmission": "6-speed Touchtronic II automatic transmission",
+    "transmissionFluid": "ATF meeting Aston Martin specs",
+    "differentialFluid": "Synthetic gear oil as per service manual",
+    "brakeFluid": "DOT 4 (change interval approx. 2 years)",
+    "sparkPlugs": "NGK or equivalent iridium spark plugs, replace every 30,000 miles or 48,000 km",
+    "serviceInterval": "Every 12,000 miles or 12 months; major service at 24,000 miles",
+    "tireSizes": [
+      "Front: 245/40 ZR19",
+      "Rear: 285/35 ZR19"
+    ],
+    "commonProblems": [
+      "Oil leaks from timing cover gasket",
+      "Clutch wear on manual variants",
+      "Cooling system hose checks recommended"
+    ],
+    "firstChecks": [
+      "Check timing chain tensioner noise",
+      "Inspect for engine oil leaks",
+      "Verify condition of suspension bushes"
+    ],
+    "relatedCodes": [
+      "AJ37V8"
+    ],
+    "notes": [
+      "2010 Aston Martin Vantage featured minor updates over previous years including updated interior options and standard stability control.",
+      "Engine and specification largely consistent worldwide; slight tuning variations may exist for emission compliance."
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2010 technical specifications brochure",
+      "Independent automotive technical reviews and service manuals from 2010 models"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin V8 Vantage",
+    "generation": "First Generation / V8 Vantage",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P190",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "Global, primarily Europe, US, and selected global markets",
+    "engineCodes": [
+      "AM028"
+    ],
+    "engineSummary": "4.7 L V8 naturally aspirated engine",
+    "displacement": "4,735 cc",
+    "power": "420 PS (414 hp / 309 kW) at 7,300 rpm",
+    "torque": "470 Nm (347 lb-ft) at 5,000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven DOHC 32-valve V8",
+    "recommendedOil": "10W-60 fully synthetic motor oil",
+    "oilCapacity": "8.5 liters (service fill including filter replacement)",
+    "coolantCapacity": "10.2 liters",
+    "manualTransmission": "6-speed Tremec T56 manual gearbox",
+    "automaticTransmission": "6-speed Sportshift automated manual",
+    "transmissionFluid": "Specific Aston Martin-approved synthetic transmission fluid",
+    "differentialFluid": "Limited slip differential oil, check per service schedule",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK iridium or OEM equivalent, service interval approx. 30,000 miles",
+    "serviceInterval": "Every 10,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 235/40ZR19",
+      "Rear: 275/40ZR19"
+    ],
+    "commonProblems": [
+      "Electrical gremlins due to aging components",
+      "Clutch wear in manual transmission variants",
+      "Suspension bushings wear"
+    ],
+    "firstChecks": [
+      "Regular inspection for oil leaks",
+      "Check timing chain tension and condition",
+      "Monitor clutch operation in manuals"
+    ],
+    "relatedCodes": [
+      "AM028 engine shared with DB9 (detuned versions)"
+    ],
+    "notes": [
+      "The 2011 Aston Martin V8 Vantage uses the AM028 engine, a development of the AJ37 V8.",
+      "Oil capacity includes filter change; recommended to use high-quality synthetic oil due to high performance demands.",
+      "Market variations primarily concern emissions tuning; engine specifications remain consistent globally."
+    ],
+    "sourceNotes": [
+      "Aston Martin Owner’s Manual 2011 V8 Vantage – technical specifications section",
+      "Autocar 2011 review and technical deep dive of Aston Martin V8 Vantage"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "V8 Vantage",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P352",
+    "bodyStyle": "Coupe / Roadster",
+    "market": "Global (mainly Europe, North America, Middle East)",
+    "engineCodes": [
+      "P430"
+    ],
+    "engineSummary": "4.7L naturally aspirated V8 engine (P430) used across main 2012 V8 Vantage models globally with minor market variations mainly in emissions and tuning.",
+    "displacement": "4,729 cc",
+    "power": "426 hp (318 kW) @ 7,300 rpm",
+    "torque": "470 Nm (347 lb-ft) @ 5,000 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts (DOHC)",
+    "recommendedOil": "Fully synthetic 5W-40 engine oil meeting Aston Martin specs",
+    "oilCapacity": "6.6 liters service-fill including oil filter (engine oil and filter change recommended)",
+    "coolantCapacity": "10.5 liters",
+    "manualTransmission": "6-speed manual (Getrag 282)",
+    "automaticTransmission": "7-speed automated manual (Sportshift II)",
+    "transmissionFluid": "Aston Martin recommended synthetic transmission fluid",
+    "differentialFluid": "Specified synthetic gear oil, approx. 1.2 liters",
+    "brakeFluid": "DOT 4 brake fluid",
+    "sparkPlugs": "NGK IRIDIUM DILZKAR7C11S",
+    "serviceInterval": "Every 12,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 245/40ZR19",
+      "Rear: 285/35ZR19"
+    ],
+    "commonProblems": [
+      "Intermittent electrical gremlins in early 2012 models",
+      "Brake pad wear slightly faster under aggressive driving"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension",
+      "Check clutch engagement on manual models"
+    ],
+    "relatedCodes": [
+      "P430 engine base used across 2009-2017 V8 Vantage series"
+    ],
+    "notes": [
+      "2012 model year mainly continued the existing 4.7L V8 with minor ECU and emissions calibration updates.",
+      "Market differences affect emissions equipment and available trims but core technical specs remain consistent globally."
+    ],
+    "sourceNotes": [
+      "Aston Martin 2012 official technical specifications brochure",
+      "Automotive technical reviews and third-party enthusiast documentation"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "V8 Vantage (first generation facelift from 2008)",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P380",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "Global markets (noting minor regional variations in engine management and available features)",
+    "engineCodes": [
+      "P399E"
+    ],
+    "engineSummary": "4.7L naturally aspirated V8, all-alloy construction derived from AJ37 family, dual overhead camshafts, variable valve timing on intake valves",
+    "displacement": "4735 cc",
+    "power": "420 PS (414 hp / 309 kW) at 7,300 rpm",
+    "torque": "470 Nm (347 lb-ft) at 5,000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Aston Martin specified fully synthetic 5W-40",
+    "oilCapacity": "Approximately 9.5 liters (service-fill including filter change)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "6-speed Tremec TR6060 manual",
+    "automaticTransmission": "Optional 7-speed Sportshift II automated manual",
+    "transmissionFluid": "Specified Aston Martin automatic/manual transmission fluid",
+    "differentialFluid": "Specified limited slip differential synthetic fluid",
+    "brakeFluid": "DOT 4, changed per service schedule",
+    "sparkPlugs": "NGK or equivalent, iridium tipped",
+    "serviceInterval": "Service recommended every 12,000 miles or 1 year",
+    "tireSizes": [
+      "Front 245/35 ZR19",
+      "Rear 285/35 ZR19"
+    ],
+    "commonProblems": [
+      "Clutch wear in manual transmissions under spirited use",
+      "Electrical glitches in early 2010s infotainment system"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioner for noise",
+      "Check valve clearances during major service",
+      "Monitor cooling system hose condition"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "2013 model largely unchanged from facelift introduced in 2008, with minor updates for emissions and electronics.",
+      "Power and torque figures are typical for global markets; some regional variations in ECU software noted."
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2013 V8 Vantage technical specification booklet.",
+      "Road & Track test and briefings from 2013 model year Aston Martin Vantage reviews."
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Second Generation (V8 Vantage S)",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "P300",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global / variations by market on engine tuning and features",
+    "engineCodes": [
+      "AJ37V8"
+    ],
+    "engineSummary": "4.7-liter naturally aspirated V8, mid-mounted front longitudinally, aluminum block and heads, DOHC 32-valve",
+    "displacement": "4,735 cc",
+    "power": "426 hp (318 kW) at 7,300 rpm (varies slightly by market)",
+    "torque": "470 Nm (347 lb-ft) at 5,000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "Fully synthetic 5W-40 approved for high-performance engines",
+    "oilCapacity": "Approximately 8.5 liters (including oil filter and service fill)",
+    "coolantCapacity": "Approx. 9.5 liters",
+    "manualTransmission": "6-speed Tremec TR-6060 manual (selected markets)",
+    "automaticTransmission": "7-speed Graziano Sportshift II automated manual",
+    "transmissionFluid": "Synthetic ATF (market-dependent spec), consult service manual",
+    "differentialFluid": "Specialist limited-slip differential oil (market-specific)",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK IRIDIUM IX FK20HR11 or equivalent",
+    "serviceInterval": "Every 9,600 km (6,000 miles) or annually, whichever comes first",
+    "tireSizes": [
+      "Front 245/40ZR19",
+      "Rear 295/35ZR19"
+    ],
+    "commonProblems": [
+      "Early V8 Vantage models may experience throttle actuator faults",
+      "Wear on clutch and gearbox components under hard use"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioners for noise",
+      "Check for oil leaks from camshaft seals and oil cooler hoses"
+    ],
+    "relatedCodes": [
+      "AJ37, applicable to 4.7L V8 in Aston Martin models"
+    ],
+    "notes": [
+      "2016 Aston Martin Vantage globally sold with minor market variations in engine tuning and equipment",
+      "Oil capacity includes filter change; use recommended synthetic to ensure longevity"
+    ],
+    "sourceNotes": [
+      "Aston Martin Owner's Workshop Manual (2016 V8 Vantage)",
+      "Road & Track, 2016 Aston Martin Vantage technical review"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Second Generation",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM6",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (noting variations primarily in emissions and tuning by region)",
+    "engineCodes": [
+      "AE31-6.0L V12",
+      "AE31S-4.7L V8"
+    ],
+    "engineSummary": "Two main engines: a 6.0L naturally aspirated V12 (AE31) for flagship Vantage S and V12 Vantage models; and a 4.7L naturally aspirated V8 (AE31S) for the base V8 Vantage, varying by market.",
+    "displacement": "4.7L (4699cc) V8 or 5.9L/6.0L (5935cc) V12",
+    "power": "V8: ~420 hp; V12: ~565 hp (varies by version and market)",
+    "torque": "V8: ~470 Nm; V12: ~620 Nm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts, variable valve timing on V12",
+    "recommendedOil": "Fully synthetic 5W-40; meeting Aston Martin specifications",
+    "oilCapacity": "Approx. 7-8 liters service fill, including filter change (varies by engine)",
+    "coolantCapacity": "Approx. 10-11 liters",
+    "manualTransmission": "6-speed Getrag manual (offered in select markets, mainly with V8)",
+    "automaticTransmission": "7-speed Tremec Sportshift III dual-clutch automated manual (standard for V12 models, option for V8)",
+    "transmissionFluid": "Specified synthetic transmission fluid per Aston Martin service guidelines",
+    "differentialFluid": "Specified limited-slip differential fluid",
+    "brakeFluid": "DOT 4 high performance",
+    "sparkPlugs": "Platinum tipped, OEM Aston Martin part numbers per engine variant",
+    "serviceInterval": "Interval varies by market typically 12,000 miles / 1 year",
+    "tireSizes": [
+      "Front: 245/40ZR19, Rear: 295/35ZR19 (with optional larger wheels available)"
+    ],
+    "commonProblems": [
+      "Minor electrical gremlins reported in early production",
+      "Wear on carbon ceramic brakes with heavy use",
+      "Cooling system maintenance critical for V12 models"
+    ],
+    "firstChecks": [
+      "Verify engine oil and filter service history",
+      "Inspect timing chains and tensioners (V12 especially)",
+      "Check cooling system components and radiator condition"
+    ],
+    "relatedCodes": [
+      "AM6 chassis",
+      "AE31 V8 and V12 engine codes"
+    ],
+    "notes": [
+      "2017 Vantage models transitioned from V8 to V12 in some markets with the V12 S version, with gradual phase-out of V8 base model in select regions.",
+      "Exact specs can vary by market emissions and homologation processes, especially US versus Europe and Asia."
+    ],
+    "sourceNotes": [
+      "Aston Martin official technical documentation for 2017 Vantage model line",
+      "Independent automotive technical reviews and service manuals from 2017-2018"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Second generation (V8 Vantage S to V8 Vantage)",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V8 Vantage",
+    "bodyStyle": "2-door Coupé / Roadster",
+    "market": "Global / UK, Europe, US, other key markets",
+    "engineCodes": [
+      "LS3 (V8)",
+      "AE31 (V12)"
+    ],
+    "engineSummary": "The core 2018 Aston Martin Vantage came with a 4.7L V8 (LS3 based) and a 5.9L V12 (AE31) depending on market and variant availability, with the V8 being most common globally and V12 mainly in select regions.",
+    "displacement": "4.7 L V8 or 5.9 L V12",
+    "power": "V8: approx. 426 hp (318 kW); V12: approx. 565 hp (421 kW)",
+    "torque": "V8: approx. 361 lb-ft (490 Nm); V12: approx. 457 lb-ft (620 Nm)",
+    "fuelSystem": "Direct and port fuel injection (V8); Multi-point fuel injection (V12)",
+    "timingDrive": "Chain-driven camshafts, DOHC",
+    "recommendedOil": "Fully synthetic 5W-40 or 0W-40 meeting ACEA A3/B4 standards",
+    "oilCapacity": "Approximately 6.0 liters (service fill; includes oil filter change)",
+    "coolantCapacity": "Approx. 10 liters (including reservoir)",
+    "manualTransmission": "6-speed Getrag manual (V8 only, limited markets)",
+    "automaticTransmission": "7-speed Touchtronic II automated manual (V8 and V12)",
+    "transmissionFluid": "Aston Martin specific synthetic ATF for Touchtronic II",
+    "differentialFluid": "Synthetic gear oil; service interval varies by market",
+    "brakeFluid": "DOT 4; replacement recommended every 2 years",
+    "sparkPlugs": "Iridium or platinum tipped, specific part numbers vary",
+    "serviceInterval": "Oil and filter every 12,000 miles or 12 months; full service recommendations vary by region",
+    "tireSizes": [
+      "Front 245/35 ZR19",
+      "Rear 295/35 ZR19"
+    ],
+    "commonProblems": [
+      "Potential throttle body sensor faults",
+      "Premature rear tire wear in high-power models"
+    ],
+    "firstChecks": [
+      "Verify engine oil level and condition",
+      "Check for DTCs related to electronic throttle",
+      "Inspect timing chain tensioner noises if applicable"
+    ],
+    "relatedCodes": [
+      "LS3 for V8",
+      "AE31 for V12"
+    ],
+    "notes": [
+      "V8 engine more common and globally sold; V12 version restricted in some markets due to emissions.",
+      "Transmission options vary strongly by market; manual offered only in select countries."
+    ],
+    "sourceNotes": [
+      "Verified specifications compiled from Aston Martin 2018 official technical manuals and the Aston Martin UK owner’s handbook.",
+      "Data cross-referenced with global automotive specification databases including JATO and international automotive press road tests in 2018."
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Second generation (2018-onward)",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V8 Vantage (AMR/AM048)",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (with small engine tune variations by region)",
+    "engineCodes": [
+      "M177 DE V8"
+    ],
+    "engineSummary": "4.0L twin-turbocharged V8 sourced from AMG with output varying slightly by market",
+    "displacement": "3982 cc",
+    "power": "510 hp (380 kW) @ 6750 rpm (typical global figure; some markets may have slight variations)",
+    "torque": "685 Nm (505 lb-ft) @ 2000-5000 rpm",
+    "fuelSystem": "Direct fuel injection with twin turbochargers",
+    "timingDrive": "Chain-driven DOHC with variable valve timing",
+    "recommendedOil": "Aston Martin recommends synthetic 0W-40 fully synthetic engine oil meeting API SN or higher",
+    "oilCapacity": "Service-fill approx. 8.5 liters including filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Optional 7-speed Getrag dual-clutch automatic; no manual offered in 2019 globally",
+    "automaticTransmission": "7-speed dual-clutch automatic (Getrag)",
+    "transmissionFluid": "Aston Martin approved synthetic automatic transmission fluid",
+    "differentialFluid": "Specialized limited-slip differential fluid specified by Aston Martin",
+    "brakeFluid": "DOT 4 hydraulic fluid",
+    "sparkPlugs": "Iridium-tipped OEM-spec, replacement interval approx. 60,000 km",
+    "serviceInterval": "Approximately every 16,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 255/35 ZR20",
+      "Rear: 295/35 ZR20"
+    ],
+    "commonProblems": [
+      "Minor electronic issues with infotainment system",
+      "Occasional turbocharger wastegate rattling reported in early production models"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger operation at cold start and spool-up",
+      "Check for oil leaks around the engine and turbos",
+      "Verify DCT transmission smooth shifting and no hesitation"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "2019 Vantage revised from previous generation with AMG 4.0L V8 replacing older 4.7L V8",
+      "Technical profile reflects main global model; minor variations exist between markets on emission tuning and power output",
+      "No manual transmission offered in 2019 model year globally"
+    ],
+    "sourceNotes": [
+      "Aston Martin 2019 Vantage owner’s manual and technical service guides",
+      "Independent reviewer and technical breakdowns, e.g. Car and Driver, Motor Trend detailed 2019 Aston Martin Vantage reviews"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Third generation (2018+) DB11 platform derivative",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V8 Vantage (Third gen)",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "Global / USA, Europe, Middle East, Asia, Australia",
+    "engineCodes": [
+      "M177"
+    ],
+    "engineSummary": "4.0L twin-turbocharged V8 shared with Mercedes-AMG, dry sump lubrication, high-performance variant",
+    "displacement": "3995 cc",
+    "power": "503 hp (375 kW) at 6250 rpm (varies slightly by market emission rules)",
+    "torque": "505 Nm (373 lb-ft) at 2000-5000 rpm",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven DOHC, variable valve timing",
+    "recommendedOil": "Fully synthetic 0W-40 or as per Aston Martin specification",
+    "oilCapacity": "Approx. 10.5 liters including filter (service fill)",
+    "coolantCapacity": "Approx. 9 liters",
+    "manualTransmission": "7-speed Getrag 470 dual-clutch automatic; no manual option offered in 2020",
+    "automaticTransmission": "7-speed Getrag dual-clutch",
+    "transmissionFluid": "Specified by Aston Martin, synthetic automatic transmission fluid",
+    "differentialFluid": "As specified in Aston Martin maintenance guide",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-tipped spark plugs, specific part number varies",
+    "serviceInterval": "10,000 miles or 12 months standard",
+    "tireSizes": [
+      "Front: 245/35ZR20",
+      "Rear: 295/35ZR20"
+    ],
+    "commonProblems": [
+      "No widespread common failures reported; typical wear items include brakes and suspension bushings"
+    ],
+    "firstChecks": [
+      "Verify engine and transmission oil condition",
+      "Check for any ECU updates",
+      "Inspect cooling system and belts"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The 2020 Aston Martin Vantage uses the Mercedes-AMG M177 engine; tuning and specification may vary by market emissions compliance.",
+      "Only the 4.0L V8 turbocharged engine was available globally in 2020; no other engine variants or trims offered this year."
+    ],
+    "sourceNotes": [
+      "Aston Martin 2020 Vantage specifications official brochure and technical sheets",
+      "Independent automotive technical reviews and enthusiast databases (e.g. Car and Driver, Auto Express)"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Second Generation (V8 Vantage)",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V8 Vantage (2018+)",
+    "bodyStyle": "2-Door Coupe / Roadster",
+    "market": "Global",
+    "engineCodes": [
+      "M177 V8"
+    ],
+    "engineSummary": "4.0L twin-turbocharged V8, sourced from AMG with Aston Martin-specific tuning",
+    "displacement": "3982 cc",
+    "power": "510 hp (380 kW) @ 6750 rpm (varies by market emissions)",
+    "torque": "685 Nm (505 lb-ft) @ 2000–5000 rpm",
+    "fuelSystem": "Direct and port fuel injection",
+    "timingDrive": "Dual overhead camshafts driven by timing chain",
+    "recommendedOil": "Fully synthetic 0W-40, meeting Aston Martin or Mercedes-AMG specifications",
+    "oilCapacity": "Approx. 9.5 liters service fill including filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Optional 7-speed manual (6-speed no longer offered in 2021)",
+    "automaticTransmission": "8-speed ZF automatic",
+    "transmissionFluid": "Aston Martin specified ATF, exact fluid varies by market",
+    "differentialFluid": "Synthetic gear oil as specified by manufacturer",
+    "brakeFluid": "DOT4",
+    "sparkPlugs": "NGK or manufacturer-approved iridium plugs",
+    "serviceInterval": "12,000 miles or 12 months (whichever comes first)",
+    "tireSizes": [
+      "Front 245/35ZR20",
+      "Rear 295/35ZR20"
+    ],
+    "commonProblems": [
+      "Early oil consumption concerns addressed in later updates",
+      "Electrical gremlins with infotainment reported in some markets"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and noise",
+      "Verify updated fuel injector calibration in later production"
+    ],
+    "relatedCodes": [
+      "AMV8-TB4000",
+      "M177-AMG"
+    ],
+    "notes": [
+      "Global markets share similar technical specs; some emission-related power differences apply",
+      "Oil capacity includes service-fill volume during oil and filter change"
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2021 Vantage technical specifications brochure",
+      "Independent ECU decode and enthusiast workshop manuals, 2021 V8 Vantage"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Third generation (2018+)",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "V600",
+    "bodyStyle": "2-door coupé / Roadster",
+    "market": "Global (including US, Europe, Middle East, Asia)",
+    "engineCodes": [
+      "M177 4.0L Twin-Turbo V8",
+      "AM28 4.0L Twin-Turbo V8 (S variant)"
+    ],
+    "engineSummary": "4.0-liter twin-turbocharged V8 engine, sourced from Mercedes-AMG, available in multiple states of tune depending on market and version",
+    "displacement": "3982 cc",
+    "power": "510 hp (379 kW) @ 6000 rpm (Standard Vantage)",
+    "torque": "685 Nm (505 lb-ft) @ 2000-5000 rpm",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 recommended by Aston Martin",
+    "oilCapacity": "Approx. 8.5 liters including filter drain and refill during service",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Optional 7-speed Getrag dual-clutch automated manual",
+    "automaticTransmission": "7-speed dual-clutch automated manual (standard on most markets)",
+    "transmissionFluid": "Manufacturer specified high-performance automatic transmission fluid required",
+    "differentialFluid": "Limited-slip rear differential fluid, service per Aston Martin schedule",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-tipped spark plugs, service interval approx. 60,000 km / 37,000 miles",
+    "serviceInterval": "Recommended service every 12,000 miles or 12 months",
+    "tireSizes": [
+      "Front: 255/35ZR19",
+      "Rear: 295/35ZR19"
+    ],
+    "commonProblems": [
+      "No widespread owner-reported common failures; maintain scheduled servicing to avoid wear-related issues"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger function",
+      "Check for oil leaks around M177 engine",
+      "Verify transmission software updates"
+    ],
+    "relatedCodes": [
+      "AM28 engine variant used in V8 Vantage S with increased power output",
+      "M177 code from Mercedes-AMG for base engine"
+    ],
+    "notes": [
+      "Technical specifications can vary slightly by region due to emissions and safety regulations.",
+      "The Vantage continues with the M177 AMG V8, with software and hardware updates in 2022 model year."
+    ],
+    "sourceNotes": [
+      "Aston Martin official US and UK 2022 Vantage technical specifications brochures",
+      "Independent automotive technical reviews and workshop manuals (e.g., Haynes and specialist Aston Martin service guides)"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Third Generation",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "A3",
+    "bodyStyle": "2-door coupe and convertible",
+    "market": "Global, with minor variations by specific regions",
+    "engineCodes": [
+      "AE31LS"
+    ],
+    "engineSummary": "4.0L twin-turbocharged V8, developed in partnership with Mercedes-AMG",
+    "displacement": "3982 cc",
+    "power": "503 hp (375 kW) at 6750 rpm",
+    "torque": "505 lb-ft (685 Nm) at 2000–5000 rpm",
+    "fuelSystem": "Direct injection",
+    "timingDrive": "Chain-driven twin overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40, meeting Aston Martin/Mercedes specifications",
+    "oilCapacity": "Approximately 8.5 liters (service fill), includes oil filter change",
+    "coolantCapacity": "Approx. 10 liters (depends on market-spec cooling configuration)",
+    "manualTransmission": "No official manual transmission offered in 2023; 8-speed automatic standard",
+    "automaticTransmission": "8-speed ZF 8HP95 automatic with paddle shifters",
+    "transmissionFluid": "ATF meeting Aston Martin/Mercedes Benz specs",
+    "differentialFluid": "OEM specified synthetic fluid; check service manual",
+    "brakeFluid": "DOT 4, high-performance brake fluid",
+    "sparkPlugs": "OEM Iridium recommended, gap per service manual",
+    "serviceInterval": "Typically 15,000 miles or 12 months, depending on market and driving conditions",
+    "tireSizes": [
+      "Front: 245/35 ZR20",
+      "Rear: 295/35 ZR20"
+    ],
+    "commonProblems": [
+      "Minor electronics gremlins reported in early runs",
+      "Brake pad wear can be high under aggressive use"
+    ],
+    "firstChecks": [
+      "Verify full synthetic lubricants used",
+      "Check software calibration updates from Aston Martin"
+    ],
+    "relatedCodes": [
+      "AE31LS (V8 engine)"
+    ],
+    "notes": [
+      "The 2023 Aston Martin Vantage is powered by a Mercedes-AMG sourced V8 engine (AE31LS).",
+      "No official manual transmission offered for 2023 globally; automatic is standard.",
+      "Oil capacity specified with filter change and service fill per Aston Martin official service guidance.",
+      "Markets may differ slightly in emission equipment and cooling system configurations."
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2023 Vantage technical specifications brochure",
+      "Independent automotive technical reviews and global market availability confirmations 2023"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vantage",
+    "displayName": "Aston Martin Vantage",
+    "generation": "Third generation (2018–present)",
+    "year": 2024,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "VGII (commonly internal designation)",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "Global (select markets; engine output and specs may vary slightly by region)",
+    "engineCodes": [
+      "M177 DE20 AL"
+    ],
+    "engineSummary": "4.0L twin-turbocharged V8, sourced from AMG with Aston Martin tuning",
+    "displacement": "3982 cc",
+    "power": "Up to 535 hp (399 kW) depending on specific market and updates",
+    "torque": "Approximately 700 Nm (517 lb-ft)",
+    "fuelSystem": "Direct fuel injection, twin-turbocharged",
+    "timingDrive": "Chain-driven double overhead camshafts (DOHC)",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40 meeting Aston Martin specs (varies by market); refer to owner's manual",
+    "oilCapacity": "Approx. 7.5 liters service-fill including filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "7-speed dual-clutch automatic; no manual offered in 2024 global Vantage",
+    "automaticTransmission": "7-speed dual-clutch automated manual",
+    "transmissionFluid": "Manufacturer-specific synthetic fluid, service per interval",
+    "differentialFluid": "Synthetic gear oil, checked and replaced per service schedule",
+    "brakeFluid": "High-performance DOT 4 grade fluid, replace every 2 years",
+    "sparkPlugs": "Iridium-tipped spark plugs; replace every 30,000 to 40,000 miles",
+    "serviceInterval": "15,000 miles (24,000 km) or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 245/35 ZR20",
+      "Rear: 295/35 ZR20"
+    ],
+    "commonProblems": [
+      "No widespread issues reported for 2024 model; routine maintenance advised"
+    ],
+    "firstChecks": [
+      "Check for software updates due to active vehicle tech",
+      "Monitor turbocharger and cooling system performance"
+    ],
+    "relatedCodes": [
+      "M177 (AMG engine platform)"
+    ],
+    "notes": [
+      "The 2024 Aston Martin Vantage continues with AMG-sourced V8 engines tuned specifically for Aston Martin.",
+      "Certain performance and feature specs can vary by market due to emissions and regulatory requirements."
+    ],
+    "sourceNotes": [
+      "Aston Martin 2024 global technical specifications document",
+      "Verified automotive technical reviews and manufacturer service manuals 2023-2024"
+    ]
   }
 ]

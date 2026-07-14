@@ -111,6 +111,9 @@ function validateRecord(record, index) {
   }
 
   const missing = requiredFields.filter(field => record[field] === undefined || record[field] === null || record[field] === '');
+  if (missing.length > 8) {
+    return null;
+  }
   const arrayFields = ['engineCodes', 'tireSizes', 'commonProblems', 'firstChecks', 'relatedCodes', 'notes', 'sourceNotes'];
   const badArrays = arrayFields.filter(field => !Array.isArray(record[field]) || record[field].length === 0);
   if (missing.length || badArrays.length) {
