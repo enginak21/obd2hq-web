@@ -3,12 +3,14 @@ import { ArrowRight, Calculator, ScanSearch, Wrench } from 'lucide-react';
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { automotiveTools, localizeTool } from '@/data/automotive-tools';
+import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const copy = getKnowledgeUiCopy(locale);
   return {
-    title: 'Automotive Diagnostic Tools - OBD2HQ',
-    description: 'Free OBD2 diagnostic tools: repair cost calculator, fuel trim analyzer, freeze-frame interpreter, scanner finder and diagnostic assistant.',
+    title: copy.toolsMetaTitle,
+    description: copy.toolsMetaDescription,
     alternates: getAlternates('tools', locale),
   };
 }
@@ -16,6 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ToolsHubPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const copy = getKnowledgeUiCopy(locale);
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
@@ -23,13 +26,13 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="inline-flex items-center gap-2 rounded-full border border-green-400/20 bg-green-400/10 px-4 py-2 text-sm font-bold text-green-200 mb-6">
             <Wrench className="w-4 h-4" />
-            Automotive tools
+            {copy.toolsEyebrow}
           </div>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white max-w-4xl">
-            Tools that turn scan data into next steps.
+            {copy.toolsTitle}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-slate-400 leading-relaxed">
-            These tools are designed to capture high-intent search traffic and help users make better diagnostic decisions before replacing parts.
+            {copy.toolsDescription}
           </p>
         </div>
       </section>
@@ -45,7 +48,7 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
               <h2 className="text-2xl font-black text-white">{localized.title}</h2>
               <p className="mt-3 text-slate-400 leading-relaxed">{localized.description}</p>
               <div className="mt-6 flex items-center justify-between text-sm font-bold text-green-300">
-                Open tool
+                {copy.openTool}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>

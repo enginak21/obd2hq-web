@@ -3,12 +3,14 @@ import { AlertTriangle, ArrowRight, Search, ShieldCheck } from 'lucide-react';
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { localizeSymptom, symptomGuides } from '@/data/symptoms';
+import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const copy = getKnowledgeUiCopy(locale);
   return {
-    title: 'Car Symptom Finder - OBD2HQ',
-    description: 'Find likely OBD2 causes by symptom: engine shaking, flashing check engine light, fuel smell, loss of power, hard start and smoke.',
+    title: copy.symptomsMetaTitle,
+    description: copy.symptomsMetaDescription,
     alternates: getAlternates('symptoms', locale),
   };
 }
@@ -16,13 +18,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function SymptomsHubPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const copy = getKnowledgeUiCopy(locale);
 
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Car Symptom Finder',
+    name: copy.symptomsMetaTitle.replace(' - OBD2HQ', ''),
     url: `https://www.obd2hq.com/${locale}/symptoms`,
-    about: 'Automotive symptom-based diagnostics',
+    about: copy.symptomsEyebrow,
   };
 
   return (
@@ -32,13 +35,13 @@ export default async function SymptomsHubPage({ params }: { params: Promise<{ lo
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/10 px-4 py-2 text-sm font-bold text-amber-200 mb-6">
             <ShieldCheck className="w-4 h-4" />
-            Symptom-first diagnostics
+            {copy.symptomsEyebrow}
           </div>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white max-w-4xl">
-            Find the likely cause before you know the code.
+            {copy.symptomsTitle}
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-slate-400 leading-relaxed">
-            Many drivers search by what the car is doing, not by a fault code. These guides connect symptoms to likely systems, OBD2 codes, safety risk and the first checks worth doing.
+            {copy.symptomsDescription}
           </p>
         </div>
       </section>
@@ -78,12 +81,12 @@ export default async function SymptomsHubPage({ params }: { params: Promise<{ lo
           <div>
             <h2 className="text-xl font-black text-white flex items-center gap-2">
               <Search className="w-5 h-5 text-green-400" />
-              Know the code already?
+              {copy.knowCodeAlready}
             </h2>
-            <p className="text-slate-400 mt-2">Search the exact code or vehicle to jump into a model-specific diagnostic guide.</p>
+            <p className="text-slate-400 mt-2">{copy.knowCodeDescription}</p>
           </div>
           <Link href={`/${locale}/search`} className="inline-flex items-center justify-center rounded-2xl bg-blue-600 hover:bg-blue-500 px-5 py-3 font-bold text-white">
-            Open code search
+            {copy.openCodeSearch}
           </Link>
         </div>
       </section>

@@ -7,6 +7,7 @@ import { getAlternates } from '@/utils/seo';
 import SmartSearch from '@/components/SmartSearch';
 import FindYourFixWizard from '@/components/FindYourFixWizard';
 import { PRIORITY_CODES } from '@/data/seo';
+import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -18,6 +19,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'HomePage' });
+  const copy = getKnowledgeUiCopy(locale);
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
 
   const websiteSchema = {
@@ -90,25 +92,25 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="mb-5 rounded-2xl bg-amber-400/10 p-3 w-fit text-amber-300">
               <Activity className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-black text-white">Diagnose by symptom</h2>
-            <p className="mt-3 text-slate-400 leading-relaxed">For drivers who do not know the code yet: shaking, flashing check engine light, fuel smell, loss of power, smoke and hard start.</p>
-            <span className="mt-5 inline-flex text-sm font-bold text-amber-200 group-hover:text-amber-100">Open symptom finder</span>
+            <h2 className="text-2xl font-black text-white">{copy.diagnoseBySymptom}</h2>
+            <p className="mt-3 text-slate-400 leading-relaxed">{copy.symptomFinderDescription}</p>
+            <span className="mt-5 inline-flex text-sm font-bold text-amber-200 group-hover:text-amber-100">{copy.openSymptomFinder}</span>
           </Link>
           <Link href={`/${locale}/tools`} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-green-400/40 hover:bg-[#17213a] transition-all">
             <div className="mb-5 rounded-2xl bg-green-400/10 p-3 w-fit text-green-300">
               <Calculator className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-black text-white">Use diagnostic tools</h2>
-            <p className="mt-3 text-slate-400 leading-relaxed">Fuel trim analyzer, freeze-frame interpreter, repair cost calculator and scanner finder built for practical OBD2 decisions.</p>
-            <span className="mt-5 inline-flex text-sm font-bold text-green-200 group-hover:text-green-100">Open tool center</span>
+            <h2 className="text-2xl font-black text-white">{copy.useDiagnosticTools}</h2>
+            <p className="mt-3 text-slate-400 leading-relaxed">{copy.toolCenterDescription}</p>
+            <span className="mt-5 inline-flex text-sm font-bold text-green-200 group-hover:text-green-100">{copy.openToolCenter}</span>
           </Link>
         </div>
         <div className="max-w-6xl mx-auto px-6 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            [`/${locale}/vehicles`, 'Vehicle database', 'Specs, fluids, OBD port, known problems'],
-            [`/${locale}/engines`, 'Engine database', 'Oil, failures, reliability, related codes'],
-            [`/${locale}/transmissions`, 'Transmission database', 'Fluids, service notes, common faults'],
-            [`/${locale}/maintenance`, 'Maintenance platform', 'Service items linked to fault prevention'],
+            [`/${locale}/vehicles`, copy.vehicleDatabaseShort, copy.vehicleDatabaseDesc],
+            [`/${locale}/engines`, copy.engineDatabaseShort, copy.engineDatabaseDesc],
+            [`/${locale}/transmissions`, copy.transmissionDatabaseShort, copy.transmissionDatabaseDesc],
+            [`/${locale}/maintenance`, copy.maintenancePlatformShort, copy.maintenancePlatformDesc],
           ].map(([href, title, desc]) => (
             <Link key={href} href={href} className="rounded-2xl border border-white/5 bg-[#131b2f] p-5 hover:border-blue-400/40 transition-all">
               <h3 className="text-lg font-black text-white">{title}</h3>
@@ -158,7 +160,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               href={`/${locale}/search`} 
               className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-slate-300 hover:text-white transition-all font-medium flex items-center"
             >
-              View All Makes
+              {copy.viewAllMakes}
             </Link>
           </div>
 
