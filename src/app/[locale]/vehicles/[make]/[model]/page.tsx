@@ -64,6 +64,40 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
             body: row.facelift ? `${row.facelift}. ${row.notes}` : row.notes,
           }))} />}
 
+          {vehicle.yearTrimVariants && (
+            <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <h2 className="text-2xl font-black text-white">{labels.yearTrimSelector}</h2>
+                  <p className="mt-2 text-sm text-slate-400">{labels.yearTrimSelectorDesc}</p>
+                </div>
+                <span className="rounded-lg bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-200">{vehicle.yearTrimVariants.length} {labels.verifiedVariants}</span>
+              </div>
+              <div className="mt-5 space-y-3">
+                {vehicle.yearTrimVariants.map(variant => (
+                  <Link
+                    key={`${variant.year}-${variant.slug}`}
+                    href={`/${locale}/vehicles/${vehicle.make}/${vehicle.model}/${variant.year}/${variant.slug}`}
+                    className="block rounded-2xl bg-white/[0.03] p-4 hover:bg-white/[0.06]"
+                  >
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <h3 className="text-lg font-black text-white">{variant.year} {name} {variant.trim}</h3>
+                        <p className="mt-1 text-sm text-slate-400">{variant.chassisCode} / {variant.engineCodes.join(', ')} / {variant.engineSummary}</p>
+                      </div>
+                      <span className="rounded-lg bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-200">{labels.openVariant}</span>
+                    </div>
+                    <div className="mt-3 grid sm:grid-cols-3 gap-2 text-xs font-bold text-slate-300">
+                      <span>{copy.oilTypeLabel}: {variant.recommendedOil}</span>
+                      <span>{copy.oilCapacityLabel}: {variant.oilCapacity}</span>
+                      <span>{labels.related}: {variant.relatedCodes.slice(0, 4).join(', ')}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           {vehicle.engineVariants && (
             <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
               <h2 className="text-2xl font-black text-white">{labels.engineVariants}</h2>
@@ -210,6 +244,10 @@ function getVehicleLabels(locale: string) {
       firstChecks: 'İlk kontroller',
       related: 'İlgili',
       dataQuality: 'Veri kalitesi ve doğrulama notu',
+      yearTrimSelector: 'Yıl ve kasa seçimi',
+      yearTrimSelectorDesc: 'Net motor, yağ ve servis bilgisi için yılı ve kasayı seçin.',
+      verifiedVariants: 'doğrulanmış varyant',
+      openVariant: 'Detayı aç',
     };
   }
   return {
@@ -226,6 +264,10 @@ function getVehicleLabels(locale: string) {
     firstChecks: 'First checks',
     related: 'Related',
     dataQuality: 'Data quality and verification note',
+    yearTrimSelector: 'Year and trim selector',
+    yearTrimSelectorDesc: 'Choose the exact year and trim to see engine, oil and service details.',
+    verifiedVariants: 'verified variants',
+    openVariant: 'Open details',
   };
 }
 

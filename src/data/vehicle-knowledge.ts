@@ -30,6 +30,7 @@ export interface VehicleKnowledgeProfile {
   chronicProblems?: ChronicProblem[];
   diagnosticNotes?: DiagnosticNote[];
   sourceNotes?: string[];
+  yearTrimVariants?: VehicleYearTrimVariant[];
 }
 
 export interface VehicleYearRange {
@@ -89,7 +90,184 @@ export interface DiagnosticNote {
   relatedCodes: string[];
 }
 
+export interface VehicleYearTrimVariant {
+  year: number;
+  trim: string;
+  slug: string;
+  chassisCode: string;
+  bodyStyle: string;
+  market: string;
+  engineCodes: string[];
+  engineSummary: string;
+  displacement: string;
+  power: string;
+  torque: string;
+  fuelSystem: string;
+  timingDrive: string;
+  recommendedOil: string;
+  oilCapacity: string;
+  coolantCapacity: string;
+  manualTransmission?: string;
+  automaticTransmission?: string;
+  transmissionFluid: string;
+  differentialFluid: string;
+  brakeFluid: string;
+  sparkPlugs: string;
+  serviceInterval: string;
+  tireSizes: string[];
+  commonProblems: string[];
+  firstChecks: string[];
+  relatedCodes: string[];
+  notes: string[];
+  sourceNotes: string[];
+}
+
 export const vehicleKnowledgeProfiles: VehicleKnowledgeProfile[] = [
+  {
+    make: 'bmw',
+    model: '5-series',
+    displayName: 'BMW 5 Series',
+    generation: 'E34',
+    years: '1988-1996',
+    bodyStyle: 'Executive sedan/touring',
+    markets: ['Europe', 'United Kingdom', 'Middle East', 'selected global markets'],
+    engines: ['M20B20 2.0L I6', 'M50B20 2.0L 24V I6', 'M50B20TU 2.0L VANOS I6', 'M50B25 2.5L I6', 'M30/M60/S38 variants by model'],
+    transmissions: ['5-speed manual', '4-speed automatic', '5-speed automatic on selected later models'],
+    engineOil: 'Depends on engine and climate. 1991 520i M50B20 commonly uses 5W-40, 5W-30 or 10W-40 oil meeting suitable BMW approval for older petrol engines.',
+    transmissionFluid: 'Manual or automatic fluid depends on gearbox code; verify ZF/Getrag transmission tag before service.',
+    coolant: 'BMW-compatible phosphate/nitrite-free coolant mixed with demineralized water.',
+    brakeFluid: 'DOT 4 brake fluid.',
+    tireSizes: ['195/65R15', '205/65R15', '225/60R15', '225/55R16'],
+    boltPattern: '5x120',
+    wheelTorque: '120 Nm typical for BMW 5 Series E34 wheel bolts; verify wheel type.',
+    battery: 'Large European DIN battery; capacity varies by engine and equipment.',
+    obdPortLocation: 'Early E34 models commonly use the 20-pin BMW diagnostic connector in the engine bay; later OBD market equipment varies.',
+    fuseBox: 'Main fuse/relay box in engine bay plus model-specific auxiliary fuse locations.',
+    maintenance: ['Oil and filter service', 'Cooling system inspection', 'Ignition tune-up', 'Vacuum/intake leak inspection', 'Front suspension bushing inspection'],
+    knownProblems: ['Cooling system age-related leaks', 'Vacuum leaks causing rough idle', 'Ignition coil or plug issues on M50 engines', 'Oil leaks from valve cover and filter housing', 'Front thrust arm bushing wear'],
+    commonCodes: ['P0300', 'P0171', 'P0115', 'P0130', 'P0505'],
+    compatibleTools: ['BMW 20-pin adapter', 'OBD2 scanner for later markets', 'Multimeter', 'Smoke tester', 'Cooling system pressure tester'],
+    coverageLevel: 'expanded',
+    yearRanges: [
+      { years: '1988-1990', generation: 'E34 early', notes: 'Early 520i used the M20B20 single-cam inline-six in many markets.' },
+      { years: '1990-1992', generation: 'E34 M50 transition', notes: '520i moved to the M50B20 24-valve inline-six in many European-market cars.' },
+      { years: '1992-1996', generation: 'E34 VANOS update', notes: '520i received the M50B20TU with VANOS depending on production date and market.' },
+    ],
+    engineVariants: [
+      {
+        code: 'M20B20',
+        name: '2.0L SOHC inline-6',
+        years: '1988-1990',
+        displacement: '1991 cc',
+        fuel: 'Gasoline',
+        induction: 'Naturally aspirated',
+        oilViscosity: '15W-40, 10W-40 or climate-appropriate classic BMW petrol oil; verify owner manual.',
+        oilCapacity: 'Approximately 4.25-4.5 L with filter depending on specification.',
+        timingDrive: 'Timing belt',
+        commonIssues: ['Timing belt service neglect', 'Vacuum leaks', 'Distributor/ignition wear', 'Cooling system age'],
+        relatedCodes: ['P0300', 'P0171', 'P0115'],
+        notes: 'On M20 engines, timing belt history is more important than mileage claims.',
+      },
+      {
+        code: 'M50B20',
+        name: '2.0L DOHC 24-valve inline-6',
+        years: '1990-1992',
+        displacement: '1991 cc',
+        fuel: 'Gasoline',
+        induction: 'Naturally aspirated',
+        oilViscosity: '5W-40, 5W-30 or 10W-40 depending on climate and oil approval.',
+        oilCapacity: '5.75 L service fill with filter commonly listed for E34 520i M50B20.',
+        timingDrive: 'Timing chain',
+        sparkPlugInterval: 'Inspect around 30k-40k km; replace earlier for misfire or rough idle.',
+        commonIssues: ['Vacuum leaks', 'Valve cover oil leaks', 'Ignition coil/boot faults', 'Cooling system plastic aging'],
+        relatedCodes: ['P0300', 'P0301', 'P0171', 'P0115', 'P0130'],
+        notes: '1991 520i is commonly M50B20 in European-market cars, but production month and market should be checked.',
+      },
+      {
+        code: 'M50B20TU',
+        name: '2.0L DOHC VANOS inline-6',
+        years: '1992-1996',
+        displacement: '1991 cc',
+        fuel: 'Gasoline',
+        induction: 'Naturally aspirated',
+        oilViscosity: '5W-40, 5W-30 or 10W-40 depending on climate and oil approval.',
+        oilCapacity: '5.75 L service fill with filter commonly listed for E34 520i M50-family engines.',
+        timingDrive: 'Timing chain',
+        commonIssues: ['VANOS seal wear symptoms', 'Vacuum leaks', 'Rough idle', 'Cooling system age'],
+        relatedCodes: ['P0300', 'P0171', 'P0505'],
+        notes: 'TU engines add VANOS; idle and low-rpm torque complaints should include VANOS and vacuum checks.',
+      },
+    ],
+    transmissionVariants: [
+      {
+        code: 'Getrag/ZF 5-speed manual family',
+        name: '5-speed manual',
+        years: '1988-1996',
+        type: 'Manual',
+        fluid: 'Use gearbox-code-specific manual transmission fluid; verify label/tag before service.',
+        serviceNote: 'On older BMWs, service by actual gearbox tag rather than model name alone.',
+        commonIssues: ['Shifter bushing wear', 'Clutch hydraulic leaks', 'Gear oil age'],
+        relatedCodes: [],
+      },
+      {
+        code: 'ZF 4HP22 / 5HP18 family by engine and year',
+        name: 'Automatic transmission',
+        years: '1988-1996',
+        type: 'Torque-converter automatic',
+        fluid: 'ATF specification depends on transmission tag and market.',
+        serviceNote: 'Confirm exact automatic gearbox before selecting fluid.',
+        commonIssues: ['Delayed engagement when neglected', 'Valve body wear', 'Fluid leak from old seals'],
+        relatedCodes: ['P0700', 'P0715'],
+      },
+    ],
+    serviceIntervals: [
+      { item: 'Engine oil and filter', interval: 'Every 10k-12k km or annually for conservative use', notes: 'Older M50 engines benefit from conservative oil intervals and correct filter quality.', relatedCodes: ['P0011', 'P0300'] },
+      { item: 'Cooling system', interval: 'Inspect every service; refresh aging plastic/rubber parts proactively', notes: 'Overheating can damage inline-six engines quickly.', relatedCodes: ['P0115', 'P0128'] },
+      { item: 'Ignition and vacuum inspection', interval: 'Inspect when idle, misfire or fuel-trim symptoms appear', notes: 'Vacuum leaks and old ignition parts are common causes of poor running.', relatedCodes: ['P0300', 'P0171'] },
+    ],
+    chronicProblems: [
+      { title: 'Cooling system aging', affectedYears: '1988-1996 E34', symptoms: ['Coolant smell', 'Temperature rise', 'Heater output changes'], firstChecks: ['Radiator necks', 'Water pump', 'Thermostat', 'Expansion tank cap', 'Hoses'], relatedCodes: ['P0115', 'P0128'], severity: 'high' },
+      { title: 'M50 rough idle and lean running', affectedYears: '1990-1996 M50-family 520i/525i', symptoms: ['Rough idle', 'Hesitation', 'Lean mixture symptoms'], firstChecks: ['Intake boots', 'Vacuum hoses', 'ICV', 'MAF data', 'Ignition coils'], relatedCodes: ['P0171', 'P0300', 'P0505'], severity: 'moderate' },
+    ],
+    diagnosticNotes: [
+      { system: 'Engine identification', priority: 'Confirm engine code before using fluid or part data.', notes: ['1991 cars can sit near engine-transition periods depending on market and production month.', 'Use VIN, engine stamping and parts catalog data before ordering parts.'], relatedCodes: [] },
+      { system: 'Cooling', priority: 'Do not ignore mild temperature symptoms on older BMW inline-six engines.', notes: ['Pressure-test the system and inspect plastic parts.', 'Bleed the cooling system correctly after service.'], relatedCodes: ['P0115', 'P0128'] },
+    ],
+    yearTrimVariants: [
+      {
+        year: 1991,
+        trim: '520i',
+        slug: '520i',
+        chassisCode: 'E34',
+        bodyStyle: 'Sedan',
+        market: 'Europe / selected global markets',
+        engineCodes: ['M50B20'],
+        engineSummary: '2.0L DOHC 24-valve naturally aspirated inline-six',
+        displacement: '1991 cc',
+        power: '150 PS / 148 hp class at 6,000 rpm',
+        torque: '190 Nm class at 4,700 rpm',
+        fuelSystem: 'Bosch electronic fuel injection',
+        timingDrive: 'Timing chain',
+        recommendedOil: '5W-40, 5W-30 or 10W-40 depending on climate; use oil with suitable BMW approval for older petrol engines.',
+        oilCapacity: '5.75 L service fill with filter commonly listed for 1990-1991 E34 520i M50B20.',
+        coolantCapacity: 'Use BMW-compatible coolant; final fill quantity should be verified by production date and market service data.',
+        manualTransmission: '5-speed manual, gearbox code depends on production date/market.',
+        automaticTransmission: '4-speed automatic on selected cars; verify transmission tag before fluid service.',
+        transmissionFluid: 'Gearbox-code-specific manual fluid or automatic ATF; do not choose fluid by model name alone.',
+        differentialFluid: 'BMW-compatible hypoid gear oil; limited-slip differential requires LSD-compatible fluid if equipped.',
+        brakeFluid: 'DOT 4',
+        sparkPlugs: 'Use M50B20-compatible plugs; inspect/replace earlier if misfire, rough idle or oil contamination is present.',
+        serviceInterval: 'Conservative oil service every 10k-12k km or annually; inspect cooling and vacuum system at every service.',
+        tireSizes: ['195/65R15', '205/65R15', '225/60R15 depending on wheel/market'],
+        commonProblems: ['Cooling system plastic and hose aging', 'Valve cover gasket oil leaks', 'Intake boot and vacuum leaks', 'Ignition coil/boot misfire', 'Idle control valve contamination'],
+        firstChecks: ['Confirm VIN/production date', 'Confirm M50B20 engine code', 'Check oil leaks around valve cover and filter housing', 'Smoke-test intake for vacuum leaks', 'Pressure-test cooling system'],
+        relatedCodes: ['P0300', 'P0301', 'P0171', 'P0115', 'P0130', 'P0505'],
+        notes: ['1991 520i is a transition-era E34; market and production month matter.', 'Some catalogues separate 520i and 520i 24V; verify by engine code before buying parts.', 'Older BMW diagnostic access may require the round 20-pin adapter rather than a normal OBD2 port.'],
+        sourceNotes: ['BMW E34 production and engine family data cross-checked against public E34 model references.', 'Oil capacity and viscosity guidance cross-checked against aftermarket lubricant catalogues for BMW EU 5 Series E34 520i 1990-1991.'],
+      },
+    ],
+    sourceNotes: ['Structured from public BMW E34 model references, lubricant catalogue data and OBD2HQ editorial normalization. Use VIN/production-month data for final service decisions.'],
+  },
   {
     make: 'toyota',
     model: 'camry',
@@ -413,4 +591,19 @@ export const vehicleKnowledgeProfiles: VehicleKnowledgeProfile[] = [
 
 export function getVehicleKnowledge(make: string, model: string) {
   return vehicleKnowledgeProfiles.find(vehicle => vehicle.make === make && vehicle.model === model) || null;
+}
+
+export function getVehicleYearTrimVariant(make: string, model: string, year: string | number, variant: string) {
+  const vehicle = getVehicleKnowledge(make, model);
+  if (!vehicle) return null;
+  return vehicle.yearTrimVariants?.find(item => item.year === Number(year) && item.slug === variant) || null;
+}
+
+export function getVehicleYearTrimStaticParams() {
+  return vehicleKnowledgeProfiles.flatMap(vehicle => (vehicle.yearTrimVariants || []).map(item => ({
+    make: vehicle.make,
+    model: vehicle.model,
+    year: String(item.year),
+    variant: item.slug,
+  })));
 }
