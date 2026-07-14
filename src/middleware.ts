@@ -19,6 +19,14 @@ function notFoundResponse() {
 
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  const host = request.headers.get('host');
+
+  if (host === 'obd2hq.com') {
+    const url = request.nextUrl.clone();
+    url.hostname = 'www.obd2hq.com';
+    url.protocol = 'https:';
+    return NextResponse.redirect(url, 308);
+  }
   
   // Static resources bypass
   if (
