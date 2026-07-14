@@ -57,6 +57,8 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-300">
           <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('diagnostics')}</Link>
+          <Link href={`/${locale}/symptoms`} className="hover:text-white transition-colors">{t('symptoms')}</Link>
+          <Link href={`/${locale}/tools`} className="hover:text-white transition-colors">{t('tools')}</Link>
           <Link href={`/${locale}/toyota/camry/lights`} className="hover:text-white transition-colors">{t('warningLights')}</Link>
           <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-400">{t('news')}</Link>
           <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
@@ -89,6 +91,14 @@ export default function Navbar() {
           <Link href={`/${locale}#find-your-fix`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
             <Car className="w-5 h-5 text-green-400" />
             {t('findByCar')}
+          </Link>
+          <Link href={`/${locale}/symptoms`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
+            <AlertTriangle className="w-5 h-5 text-amber-400" />
+            {t('symptoms')}
+          </Link>
+          <Link href={`/${locale}/tools`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
+            <Wrench className="w-5 h-5 text-blue-400" />
+            {t('tools')}
           </Link>
           <Link href={`/${locale}/toyota/camry/lights`} className="flex items-center gap-3 rounded-2xl bg-amber-500/10 px-4 py-3 text-amber-300 hover:text-amber-200 font-bold" onClick={() => setIsMenuOpen(false)}>
             <AlertTriangle className="w-5 h-5" />

@@ -9,7 +9,9 @@
     "aboutUs": "Über uns",
     "contact": "Kontakt",
     "blog": "Blog & Bewertungen",
-    "news": "Nachrichten"
+    "news": "Nachrichten",
+    "symptoms": "Symptome",
+    "tools": "Tools"
   },
   "Footer": {
     "description": "Die weltweit umfassendste Datenbank für Fahrzeug-Fehlercodes und Armaturenbrett-Warnleuchten.",

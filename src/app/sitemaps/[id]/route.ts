@@ -3,6 +3,8 @@ import { cars } from '@/data/db';
 import { getBlogPosts } from '@/data/blog';
 import { getAllNews } from '@/data/news';
 import { PRIORITY_CODES } from '@/data/seo';
+import { symptomGuides } from '@/data/symptoms';
+import { automotiveTools } from '@/data/automotive-tools';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
@@ -53,6 +55,8 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/contact`, 'monthly', '0.5');
       urls += urlEntry(`${BASE_URL}/${locale}/blog`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/news`, 'daily', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/symptoms`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/tools`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/editorial-policy`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/reviewers`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/privacy`, 'yearly', '0.3');
@@ -63,6 +67,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       });
       getAllNews().forEach((article) => {
         urls += urlEntry(`${BASE_URL}/${locale}/news/${article.slug}`, 'weekly', '0.6', article.date);
+      });
+      symptomGuides.forEach((symptom) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/symptoms/${symptom.slug}`, 'weekly', '0.85');
+      });
+      automotiveTools.forEach((tool) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/tools/${tool.slug}`, 'weekly', '0.85');
       });
       cars.forEach((car) => {
         urls += urlEntry(`${BASE_URL}/${locale}/${car.make}`, 'weekly', '0.9');

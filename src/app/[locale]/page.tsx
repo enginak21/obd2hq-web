@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { cars } from '@/data/db';
-import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
+import { Activity, Calculator, Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
@@ -24,12 +24,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "OBD2HQ",
-    "url": `https://obd2hq.com/${locale}`,
+    "url": `https://www.obd2hq.com/${locale}`,
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": `https://obd2hq.com/${locale}/search?q={search_term_string}`
+        "urlTemplate": `https://www.obd2hq.com/${locale}/search?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
@@ -83,6 +83,27 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </div>
 
       <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
+
+      <section className="w-full border-b border-white/5 bg-[#0d1425]">
+        <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-5">
+          <Link href={`/${locale}/symptoms`} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-amber-400/40 hover:bg-[#17213a] transition-all">
+            <div className="mb-5 rounded-2xl bg-amber-400/10 p-3 w-fit text-amber-300">
+              <Activity className="w-6 h-6" />
+            </div>
+            <h2 className="text-2xl font-black text-white">Diagnose by symptom</h2>
+            <p className="mt-3 text-slate-400 leading-relaxed">For drivers who do not know the code yet: shaking, flashing check engine light, fuel smell, loss of power, smoke and hard start.</p>
+            <span className="mt-5 inline-flex text-sm font-bold text-amber-200 group-hover:text-amber-100">Open symptom finder</span>
+          </Link>
+          <Link href={`/${locale}/tools`} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-green-400/40 hover:bg-[#17213a] transition-all">
+            <div className="mb-5 rounded-2xl bg-green-400/10 p-3 w-fit text-green-300">
+              <Calculator className="w-6 h-6" />
+            </div>
+            <h2 className="text-2xl font-black text-white">Use diagnostic tools</h2>
+            <p className="mt-3 text-slate-400 leading-relaxed">Fuel trim analyzer, freeze-frame interpreter, repair cost calculator and scanner finder built for practical OBD2 decisions.</p>
+            <span className="mt-5 inline-flex text-sm font-bold text-green-200 group-hover:text-green-100">Open tool center</span>
+          </Link>
+        </div>
+      </section>
 
       {/* Main Content Area (Layout with Sidebar Ads) */}
       <div className="w-full max-w-[1600px] flex justify-center items-start">

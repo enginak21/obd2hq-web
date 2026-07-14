@@ -9,7 +9,9 @@
     "aboutUs": "Hakkımızda",
     "contact": "İletişim",
     "blog": "Blog & İncelemeler",
-    "news": "Haberler"
+    "news": "Haberler",
+    "symptoms": "Belirtiler",
+    "tools": "Ara?lar"
   },
   "Footer": {
     "description": "Araç teşhis kodları ve gösterge paneli uyarı ışıkları için dünyanın en kapsamlı veritabanı.",

@@ -9,7 +9,9 @@
     "aboutUs": "À propos",
     "contact": "Contact",
     "blog": "Blog & Avis",
-    "news": "Actualit?s"
+    "news": "Actualit?s",
+    "symptoms": "Sympt?mes",
+    "tools": "Outils"
   },
   "Footer": {
     "description": "La base de données la plus complète au monde pour les codes de diagnostic de véhicules et les voyants de tableau de bord.",
