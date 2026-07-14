@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
-import { AlertTriangle, ArrowRight, Car, Gauge } from 'lucide-react';
+import { AlertTriangle, ArrowRight, Gauge } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { VehicleOption, formatVehicleName, normalizeCode } from '@/utils/diagnosticSearch';

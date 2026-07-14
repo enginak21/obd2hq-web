@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 import {
   VehicleOption,
   findVehicleMatches,
-  formatVehicleName,
   getDiagnosticSearchTarget,
   normalizeCode,
 } from '@/utils/diagnosticSearch';

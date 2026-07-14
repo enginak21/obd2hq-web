@@ -8,7 +8,7 @@ import AdSlot from '@/components/AdSlot';
 import { getAlternates } from '@/utils/seo';
 import { getFallbackDiagnosticSteps, getLocalizedSystemContent, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
-import { ShieldCheck, CheckCircle2, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
+import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
   params: Promise<{
@@ -19,6 +19,22 @@ interface PageProps {
   }>;
 }
 
+function asString(value: string | string[] | null, fallback = '') {
+  return typeof value === 'string' ? value : fallback;
+}
+
+function asStringArray(value: string | string[] | null) {
+  return Array.isArray(value) ? value : null;
+}
+
+function getCodeMetaDescription(locale: string, code: string, make: string, model: string) {
+  if (locale === 'tr') return `1996-2026 ${make} ${model} için ${code} arıza kodu teşhis rehberi. Belirtiler, nedenler, kontrol adımları ve tahmini onarım maliyeti.`;
+  if (locale === 'de') return `Diagnoseleitfaden für den Fehlercode ${code} beim ${make} ${model} von 1996 bis 2026. Symptome, Ursachen, Prüfschritte und geschätzte Reparaturkosten.`;
+  if (locale === 'es') return `Guía de diagnóstico del código ${code} para ${make} ${model} de 1996 a 2026. Síntomas, causas, pasos de revisión y costo estimado de reparación.`;
+  if (locale === 'fr') return `Guide de diagnostic du code ${code} pour ${make} ${model} de 1996 à 2026. Symptômes, causes, étapes de contrôle et coût estimé de réparation.`;
+  return `Detailed diagnostic guide for ${code} on all 1996-2026 ${make} ${model} vehicles. Symptoms, causes, and repair costs.`;
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const { make, model, code } = resolvedParams;
@@ -27,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   const titleObj = getLocalized(obdData.title, resolvedParams.locale);
-  const rawTitleStr = typeof titleObj === 'string' ? titleObj : (titleObj?.en || 'Unknown Code');
+  const rawTitleStr = asString(titleObj, 'Unknown Code');
   const titleStr = getLocalizedCodeTitle(obdData.code, resolvedParams.locale, rawTitleStr);
   
   const isTurkish = resolvedParams.locale === 'tr';
@@ -36,9 +52,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     : `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
   return { 
     title,
-    description: isTurkish
-      ? `1996-2026 ${capMake} ${capModel} için ${obdData.code} arıza kodu teşhis rehberi. Belirtiler, nedenler, kontrol adımları ve tahmini onarım maliyeti.`
-      : `Detailed diagnostic guide for ${obdData.code} on all 1996-2026 ${capMake} ${capModel} vehicles. Symptoms, causes, and repair costs.`,
+    description: getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel),
     alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
   };
 }
@@ -62,13 +76,12 @@ export default async function CodePage({ params }: PageProps) {
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
-  const rawTitle = getLocalized(obdData.title, locale) || obdData.code;
-  const rawDescription = getLocalized(obdData.description, locale) || '';
+  const rawTitle = asString(getLocalized(obdData.title, locale), obdData.code);
+  const rawDescription = asString(getLocalized(obdData.description, locale));
   const locTitle = getLocalizedCodeTitle(upperCode, locale, rawTitle);
   const locDescription = getLocalizedCodeDescription(upperCode, locale, rawDescription);
-  const locDiagnosticSteps = getLocalized(obdData.diagnosticSteps, locale) || getFallbackDiagnosticSteps(upperCode, make, model, locale);
-  const locCommonFixes = getLocalized(obdData.commonFixes, locale) || [];
-  const locDrivingSafetyDesc = obdData.drivingSafety ? getLocalized(obdData.drivingSafety.description, locale) : '';
+  const locDiagnosticSteps = asStringArray(getLocalized(obdData.diagnosticSteps, locale)) || getFallbackDiagnosticSteps(upperCode, make, model, locale);
+  const locDrivingSafetyDesc = obdData.drivingSafety ? asString(getLocalized(obdData.drivingSafety.description, locale)) : '';
   const systemContent = getLocalizedSystemContent(upperCode, locale);
   const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost, locale);
   const localizedCauses = obdData.causes.map(cause => cause.startsWith('cause_') ? tDb(cause) : cause);

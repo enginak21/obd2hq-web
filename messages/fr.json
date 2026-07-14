@@ -9,7 +9,7 @@
     "aboutUs": "À propos",
     "contact": "Contact",
     "blog": "Blog & Avis",
-    "news": "News & Gazette"
+    "news": "Actualit?s"
   },
   "Footer": {
     "description": "La base de données la plus complète au monde pour les codes de diagnostic de véhicules et les voyants de tableau de bord.",
@@ -36,16 +36,16 @@
     "costIncludesParts": "Comprend les pièces et la main-d'œuvre. Peut varier selon l'emplacement.",
     "home": "Accueil",
     "years": "Années",
-    "aseCertified": "Vérifié par un technicien certifié ASE",
+    "aseCertified": "Relu éditorialement par l’équipe OBD2HQ",
     "relatedCodes": "Autres codes {make} populaires",
     "howToDiagnose": "Comment Diagnostiquer",
     "commonFixes": "Solutions Courantes",
     "drivingSafety": "Est-il sûr de conduire ?",
     "partsCost": "Pièces",
     "laborCost": "Main-d'œuvre",
-    "leaderboardAd": "Espace Publicitaire (Leaderboard)",
+    "leaderboardAd": "Espace publicitaire",
     "inArticleAd": "Publicité (Dans l'Article)",
-    "bottomLeaderboardAd": "Espace Publicitaire (Bottom Leaderboard)",
+    "bottomLeaderboardAd": "Espace publicitaire inf?rieur",
     "advertisement": "Publicité",
     "sponsorAdSense": "Sponsor/AdSense",
     "discussionTitle": "{code} sur {make} {model} - Discussion OBD2HQ",
@@ -57,7 +57,8 @@
     "lastUpdated": "Dernière mise à jour :",
     "editorialPolicy": "Politique éditoriale",
     "expertLink": "Profil expert",
-    "genericDisclaimer": "Remarque : nous ne disposons pas encore de données de diagnostic vérifiées propres au modèle {make} {model}. Les symptômes et solutions ci-dessous correspondent aux recommandations OBD2 générales pour le code {code}. Consultez toujours un manuel d'atelier constructeur avant de remplacer des pièces."
+    "genericDisclaimer": "Remarque : nous ne disposons pas encore de données de diagnostic vérifiées propres au modèle {make} {model}. Les symptômes et solutions ci-dessous correspondent aux recommandations OBD2 générales pour le code {code}. Consultez toujours un manuel d'atelier constructeur avant de remplacer des pièces.",
+    "codeTitle": "Code {code} : {title}"
   },
   "DB": {
     "symp_check_engine": "Le voyant moteur est allumé",
@@ -225,7 +226,7 @@
     "description": "Lorsque vous voyez {lightName} s'allumer sur le tableau de bord de votre {make} {model}, c'est un avertissement direct de l'ordinateur de bord. {description}",
     "commonCauses": "Causes courantes pour {make} {model}",
     "whatToDo": "Que faire ensuite",
-    "advertisement": "Advertisement"
+    "advertisement": "Publicit?"
   },
   "AboutPage": {
     "title1": "Démocratiser la ",
@@ -382,7 +383,7 @@
   "CodePageExtra": {
     "severity": "Gravité",
     "moderate": "Modérée",
-    "codeTitle": "{code} Code: {title}",
+    "codeTitle": "Code {code} : {title}",
     "diagnosticSystem": "Système de diagnostic : {system}",
     "diagnosticSystemDesc": "Sur une {make} {model}, le code {code} doit être diagnostiqué dans le groupe {system}. Les codes associés et les données en direct du même système peuvent modifier la priorité de réparation ; évitez donc de remplacer des pièces uniquement à partir du nom du code.",
     "commonCausesFor": "Causes les plus courantes pour {make} {model}",
@@ -406,7 +407,7 @@
   },
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
-    "title": "Our Editorial Policy",
+    "title": "Notre politique ?ditoriale",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
@@ -428,7 +429,7 @@
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
     "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
-    "manual": "OEM Manual Cross-Referencing",
+    "manual": "Comparaison des sources et des donn?es",
     "verification": "Data-Driven Verification",
     "ctaTitle": "Êtes-vous un professionnel certifié ASE ?",
     "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",

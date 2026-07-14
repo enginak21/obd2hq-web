@@ -101,3 +101,94 @@ export const warningLights: Record<string, WarningLight> = {
     iconSvg: '<img src="/icons/traction.jpg" alt="Traction Control Warning Light" class="w-full h-full object-cover mix-blend-screen rounded-full" />'
   }
 };
+
+type LightCopy = Pick<WarningLight, 'name' | 'description' | 'commonCauses' | 'whatToDo'>;
+
+const localizedWarningLights: Record<string, Record<string, LightCopy>> = {
+  de: {
+    'check-engine': {
+      name: 'Motorkontrollleuchte',
+      description: 'Die Motorkontrollleuchte gehört zum OBD-Diagnosesystem des Fahrzeugs. Sie weist auf ein Problem mit Motor, Abgasreinigung oder Antriebsstrang hin.',
+      commonCauses: ['Lockerer Tankdeckel', 'Defekte Lambdasonde', 'Katalysatorproblem', 'Verschlissene Zündkerzen oder Kabel', 'Defekter Luftmassenmesser'],
+      whatToDo: 'Wenn die Leuchte dauerhaft leuchtet, lassen Sie die Fehlercodes bald auslesen. Wenn sie blinkt, halten Sie sicher an und stellen Sie den Motor ab, da schwere Fehlzündungen den Katalysator beschädigen können.',
+    },
+  },
+  es: {
+    'check-engine': {
+      name: 'Luz de Check Engine',
+      description: 'La luz de Check Engine forma parte del sistema de diagnóstico OBD del vehículo. Indica un problema en el motor, emisiones o tren motriz.',
+      commonCauses: ['Tapón de combustible flojo', 'Sensor de oxígeno defectuoso', 'Problema del catalizador', 'Bujías o cables desgastados', 'Fallo del sensor MAF'],
+      whatToDo: 'Si la luz permanece fija, lea los códigos pronto. Si parpadea, deténgase en un lugar seguro y apague el motor, ya que un fallo de encendido severo puede dañar el catalizador.',
+    },
+  },
+  fr: {
+    'check-engine': {
+      name: 'Voyant moteur',
+      description: 'Le voyant moteur fait partie du système de diagnostic OBD du véhicule. Il signale un problème lié au moteur, aux émissions ou au groupe motopropulseur.',
+      commonCauses: ['Bouchon de carburant mal serré', 'Sonde oxygène défectueuse', 'Problème de catalyseur', 'Bougies ou câbles usés', 'Défaillance du capteur MAF'],
+      whatToDo: 'Si le voyant reste fixe, faites lire les codes rapidement. S’il clignote, arrêtez-vous en sécurité et coupez le moteur, car des ratés sévères peuvent endommager le catalyseur.',
+    },
+  },
+  tr: {
+    'check-engine': {
+      name: 'Motor Arıza Lambası',
+      description: 'Motor arıza lambası, aracın OBD teşhis sisteminin bir parçasıdır. Motor, emisyon veya güç aktarma sistemiyle ilgili bir sorun algılandığında yanar.',
+      commonCauses: ['Gevşek yakıt kapağı', 'Arızalı oksijen sensörü', 'Katalitik konvertör verim sorunu', 'Aşınmış buji veya buji kablosu', 'MAF sensörü arızası'],
+      whatToDo: 'Lamba sabit yanıyorsa kısa süre içinde arıza kodunu okutun. Lamba yanıp sönüyorsa güvenli bir yerde durup motoru kapatın; bu durum katalizöre zarar verebilecek ciddi teklemeyi gösterebilir.',
+    },
+    abs: {
+      name: 'ABS Fren Uyarısı',
+      description: 'ABS sisteminde sorun olduğunu gösterir. Normal frenleme çalışabilir, ancak kilitlenmeyi önleme desteği devre dışı kalmış olabilir.',
+      commonCauses: ['Arızalı tekerlek hız sensörü', 'Düşük fren hidroliği', 'Yanmış sigorta', 'ABS modülü arızası'],
+      whatToDo: 'Ani frenlerde ABS desteği olmayabileceği için dikkatli sürün. Fren hidroliği ve ABS kodları kontrol edilmelidir.',
+    },
+    'oil-pressure': {
+      name: 'Düşük Motor Yağı Basıncı',
+      description: 'Motor yağ basıncının düştüğünü veya yağ seviyesinin kritik seviyede olduğunu gösterir. En ciddi uyarılardan biridir.',
+      commonCauses: ['Düşük yağ seviyesi', 'Arızalı yağ pompası', 'Arızalı yağ basınç sensörü', 'Aşınmış motor yatakları'],
+      whatToDo: 'Güvenli şekilde hemen durun ve motoru kapatın. Yağ seviyesini kontrol edin; sorun çözülmeden aracı kullanmayın.',
+    },
+    battery: {
+      name: 'Akü / Şarj Sistemi',
+      description: 'Akünün alternatör tarafından doğru şarj edilmediğini veya şarj sisteminde sorun olduğunu gösterir.',
+      commonCauses: ['Arızalı alternatör', 'Kopmuş alternatör kayışı', 'Korozyonlu akü kutupları', 'Zayıf veya bitmiş akü'],
+      whatToDo: 'Gereksiz elektrikli donanımları kapatın ve güvenli bir yere ya da servise gidin. Akü tamamen boşalırsa araç stop edebilir.',
+    },
+    tpms: {
+      name: 'Lastik Basıncı Uyarısı (TPMS)',
+      description: 'Bir veya daha fazla lastiğin önerilen basıncın belirgin şekilde altında olduğunu gösterir.',
+      commonCauses: ['Patlak lastik', 'Zamanla basınç kaybı', 'Ani sıcaklık düşüşü', 'TPMS sensörü arızası'],
+      whatToDo: 'Lastik basınçlarını en kısa sürede kontrol edip kapı içindeki etikette yazan değere göre ayarlayın.',
+    },
+    'coolant-temp': {
+      name: 'Motor Sıcaklığı Uyarısı',
+      description: 'Motorun aşırı ısındığını gösterir. Sürmeye devam etmek kalıcı motor hasarına neden olabilir.',
+      commonCauses: ['Düşük soğutma suyu', 'Soğutma suyu kaçağı', 'Arızalı su pompası', 'Bozuk radyatör fanı', 'Takılı termostat'],
+      whatToDo: 'Güvenli şekilde durup motoru kapatın. Motor sıcakken radyatör kapağını açmayın.',
+    },
+    brake: {
+      name: 'Fren Sistemi Uyarısı',
+      description: 'Fren sisteminde ciddi bir sorun olabileceğini veya el freninin çekili kaldığını gösterir.',
+      commonCauses: ['El freni çekili', 'Düşük fren hidroliği', 'Aşınmış fren balataları', 'Hidrolik devre arızası'],
+      whatToDo: 'El freninin tamamen indiğini kontrol edin. Lamba sönmüyorsa güvenli şekilde durun ve fren sistemini kontrol ettirin.',
+    },
+    airbag: {
+      name: 'Hava Yastığı (SRS) Uyarısı',
+      description: 'Hava yastığı sisteminde arıza olduğunu gösterir. Kaza anında hava yastıkları çalışmayabilir.',
+      commonCauses: ['Arızalı direksiyon zembereği', 'Koltuk altı soket gevşekliği', 'Darbe sensörü arızası', 'Emniyet kemeri kilidi arızası'],
+      whatToDo: 'Araç yürüyebilir; ancak kaza güvenliği azalır. Sistemi profesyonel bir serviste taratın.',
+    },
+    traction: {
+      name: 'Çekiş Kontrol Sistemi',
+      description: 'Yanıp sönüyorsa sistem patinajı önlemek için çalışıyordur. Sürekli yanıyorsa sistem kapalı veya arızalı olabilir.',
+      commonCauses: ['Kaygan yol koşulları', 'Arızalı tekerlek hız sensörü', 'TCS düğmesinin kapatılması', 'Direksiyon açı sensörü sorunu'],
+      whatToDo: 'Yanıp sönüyorsa dikkatli sürün. Sürekli yanıyorsa TCS düğmesini ve ilgili arıza kodlarını kontrol edin.',
+    },
+  },
+};
+
+export function getLocalizedWarningLight(light: WarningLight, locale: string): WarningLight {
+  const localized = localizedWarningLights[locale]?.[light.id];
+  if (!localized) return light;
+  return { ...light, ...localized };
+}

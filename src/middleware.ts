@@ -41,7 +41,8 @@ export default function middleware(request: NextRequest) {
     const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer'].includes(make);
     
     if (locales.includes(locale) && !isStaticPage) {
-      if (segments.length > 4) {
+      const isWarningLightDetail = segments.length === 5 && segments[3] === 'lights';
+      if (segments.length > 4 && !isWarningLightDetail) {
         return notFoundResponse();
       }
 

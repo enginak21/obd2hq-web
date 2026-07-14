@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
-import { warningLights } from '@/data/lights';
+import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -11,6 +11,16 @@ interface PageProps {
     make: string;
     model: string;
   }>;
+}
+
+function getUrgencyLabel(urgency: string, locale: string) {
+  const labels: Record<string, Record<string, string>> = {
+    tr: { Critical: 'Kritik', Moderate: 'Orta', Information: 'Bilgi' },
+    de: { Critical: 'Kritisch', Moderate: 'Mittel', Information: 'Hinweis' },
+    es: { Critical: 'Crítico', Moderate: 'Moderado', Information: 'Información' },
+    fr: { Critical: 'Critique', Moderate: 'Modéré', Information: 'Information' },
+  };
+  return labels[locale]?.[urgency] || urgency;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -39,7 +49,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
-  const lightsList = Object.values(warningLights);
+  const lightsList = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
@@ -107,7 +117,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
                 />
                 <h3 className="text-lg font-bold text-white mb-2">{light.name}</h3>
                 <span className={`text-xs font-bold uppercase tracking-wider ${light.urgency === 'Critical' ? 'text-red-400' : light.urgency === 'Moderate' ? 'text-amber-400' : 'text-blue-400'}`}>
-                  {light.urgency}
+                  {getUrgencyLabel(light.urgency, locale)}
                 </span>
               </Link>
             );

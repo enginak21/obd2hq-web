@@ -9,7 +9,7 @@
     "aboutUs": "Sobre nosotros",
     "contact": "Contacto",
     "blog": "Blog y Reseñas",
-    "news": "News & Gazette"
+    "news": "Noticias"
   },
   "Footer": {
     "description": "La base de datos más completa del mundo para códigos de diagnóstico de vehículos y luces de advertencia del tablero.",
@@ -36,16 +36,16 @@
     "costIncludesParts": "Incluye repuestos y mano de obra. Puede variar por ubicación.",
     "home": "Inicio",
     "years": "Años",
-    "aseCertified": "Revisado por Técnico Certificado ASE",
+    "aseCertified": "Revisado editorialmente por el equipo de OBD2HQ",
     "relatedCodes": "Otros Códigos Populares de {make}",
     "howToDiagnose": "Cómo Diagnosticar",
     "commonFixes": "Soluciones Comunes",
     "drivingSafety": "¿Es seguro conducir?",
     "partsCost": "Repuestos",
     "laborCost": "Mano de obra",
-    "leaderboardAd": "Espacio Publicitario (Leaderboard)",
+    "leaderboardAd": "Espacio publicitario",
     "inArticleAd": "Anuncio (En Artículo)",
-    "bottomLeaderboardAd": "Espacio Publicitario (Bottom Leaderboard)",
+    "bottomLeaderboardAd": "Espacio publicitario inferior",
     "advertisement": "Anuncio",
     "sponsorAdSense": "Patrocinador/AdSense",
     "discussionTitle": "{code} en {make} {model} - Discusión de OBD2HQ",
@@ -57,7 +57,8 @@
     "lastUpdated": "Última actualización:",
     "editorialPolicy": "Política editorial",
     "expertLink": "Perfil experto",
-    "genericDisclaimer": "Nota: Actualmente no tenemos datos de diagnóstico verificados y específicos del modelo {make} {model}. Los síntomas y soluciones que aparecen abajo son las pautas OBD2 generales estándar para el código {code}. Consulte siempre un manual de servicio de fábrica antes de reemplazar piezas."
+    "genericDisclaimer": "Nota: Actualmente no tenemos datos de diagnóstico verificados y específicos del modelo {make} {model}. Los síntomas y soluciones que aparecen abajo son las pautas OBD2 generales estándar para el código {code}. Consulte siempre un manual de servicio de fábrica antes de reemplazar piezas.",
+    "codeTitle": "C?digo {code}: {title}"
   },
   "DB": {
     "symp_check_engine": "La luz de Check Engine está encendida",
@@ -225,7 +226,7 @@
     "description": "Cuando {lightName} se ilumina en su {make} {model}, es una advertencia directa de la computadora. {description}",
     "commonCauses": "Causas comunes para {make} {model}",
     "whatToDo": "Qué hacer a continuación",
-    "advertisement": "Advertisement"
+    "advertisement": "Anuncio"
   },
   "AboutPage": {
     "title1": "Democratizando la ",
@@ -382,7 +383,7 @@
   "CodePageExtra": {
     "severity": "Gravedad",
     "moderate": "Moderada",
-    "codeTitle": "{code} Code: {title}",
+    "codeTitle": "C?digo {code}: {title}",
     "diagnosticSystem": "Sistema de diagnóstico: {system}",
     "diagnosticSystemDesc": "En un {make} {model}, el código {code} debe diagnosticarse como parte del grupo {system}. Los códigos relacionados y los datos en vivo del mismo sistema pueden cambiar la prioridad de reparación, así que evite reemplazar piezas solo por el nombre del código.",
     "commonCausesFor": "Causas más comunes en {make} {model}",
@@ -406,7 +407,7 @@
   },
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
-    "title": "Our Editorial Policy",
+    "title": "Nuestra pol?tica editorial",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
@@ -428,7 +429,7 @@
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
     "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
-    "manual": "OEM Manual Cross-Referencing",
+    "manual": "Comparaci?n de fuentes y datos",
     "verification": "Data-Driven Verification",
     "ctaTitle": "¿Es usted un profesional certificado ASE?",
     "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",

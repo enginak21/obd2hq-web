@@ -47,7 +47,7 @@ export default function Navbar() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Code or car"
+              placeholder={t('searchPlaceholder')}
               className="w-full bg-[#131b2f] border border-white/5 rounded-2xl py-2.5 pl-11 pr-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all"
               aria-label={t('searchPlaceholder')}
             />

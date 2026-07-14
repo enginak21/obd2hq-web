@@ -91,13 +91,15 @@ export const cars: CarModel[] = [
   { "make": "volvo", "models": ["xc90", "xc60", "s60", "xc40", "v60", "s90"] }
 ];
 
-export const codes = baseCodes as Record<string, any>;
+export const codes = baseCodes as Record<string, Partial<OBD2Code>>;
 export { baseCodes };
 
-export function getLocalized(field: any, locale: string): any {
+type LocalizedValue = string | string[] | Record<string, string | string[]>;
+
+export function getLocalized(field: LocalizedValue | null | undefined, locale: string): string | string[] | null {
   if (!field) return null;
   if (typeof field === 'string' || Array.isArray(field)) return field;
-  return field[locale] || field['en'] || field;
+  return field[locale] || field.en || null;
 }
 
 function isTokenizedArray(value: unknown, prefix: string): value is string[] {
@@ -122,10 +124,10 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
 
   let hybridData: OBD2Code = {
     code: upperCode,
-    title: baseData.title,
-    description: baseData.description,
-    symptoms: baseData.symptoms || ['symp_check_engine', 'symp_engine_perf', 'symp_fuel_econ'],
-    causes: baseData.causes || ['cause_sensor', 'cause_vacuum', 'cause_wear'],
+    title: baseData.title || upperCode,
+    description: baseData.description || `Code ${upperCode} is a standard OBD2 diagnostic trouble code. Use scan data and related symptoms to confirm the root cause before replacing parts.`,
+    symptoms: baseData.symptoms || ['symp_check_engine', 'symp_power_loss', 'symp_fuel_economy'],
+    causes: baseData.causes || ['cause_wiring_damage', 'cause_vacuum_leak', 'cause_connector_corrosion'],
     fixDifficulty: baseData.fixDifficulty || 'diff_moderate',
     estimatedCost: baseData.estimatedCost || '$100 - $450',
     diagnosticSteps: baseData.diagnosticSteps,

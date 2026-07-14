@@ -1,16 +1,21 @@
-import { cars, codes } from '@/data/db';
+import { cars, codes, getLocalized } from '@/data/db';
 import Link from 'next/link';
 import { Search as SearchIcon, AlertTriangle, Car, Wrench, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { PRIORITY_CODES } from '@/data/seo';
+import { getLocalizedCodeTitle } from '@/data/code-localization';
 import { findVehicleMatches, formatVehicleName, normalizeCode, normalizeSearchText } from '@/utils/diagnosticSearch';
 
 export const metadata: Metadata = {
   title: 'Search Results - OBD2HQ',
   description: 'Search results for OBD2 diagnostic codes and car models.',
 };
+
+function asString(value: string | string[] | null, fallback = '') {
+  return typeof value === 'string' ? value : fallback;
+}
 
 export default async function SearchPage({
   params,
@@ -60,6 +65,9 @@ export default async function SearchPage({
 
   // 1. Search for a specific code
   const exactCodeMatch = normalizedCode ? Object.keys(codes).find(c => c === normalizedCode) : null;
+  const exactCodeTitle = exactCodeMatch
+    ? getLocalizedCodeTitle(exactCodeMatch, locale, asString(getLocalized(codes[exactCodeMatch].title, locale), exactCodeMatch))
+    : '';
   const isWarningIntent = /check engine|warning|light|dashboard|ikaz|lamba|motor ariza/i.test(rawQuery);
   
   // 2. Search for models
@@ -119,7 +127,7 @@ export default async function SearchPage({
                 <p className="text-slate-300 leading-relaxed">
                   {t.rich('codeDesc', {
                     code: exactCodeMatch,
-                    title: codes[exactCodeMatch].title,
+                    title: exactCodeTitle,
                     strong: (chunks) => <strong>{chunks}</strong>
                   })}
                 </p>

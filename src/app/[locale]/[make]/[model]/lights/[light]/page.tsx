@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
-import { warningLights } from '@/data/lights';
+import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -18,10 +18,11 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const { make, model, light } = resolvedParams;
+  const { locale, make, model, light } = resolvedParams;
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
-  const lightData = warningLights[light];
+  const rawLightData = warningLights[light];
+  const lightData = rawLightData ? getLocalizedWarningLight(rawLightData, locale) : null;
   
   if (!isValidCar || !lightData) return { title: 'Not Found' };
   
@@ -40,7 +41,8 @@ export default async function LightDetailPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'LightDetailPage' });
   
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
-  const lightData = warningLights[light];
+  const rawLightData = warningLights[light];
+  const lightData = rawLightData ? getLocalizedWarningLight(rawLightData, locale) : null;
   
   if (!isValidCar || !lightData) notFound();
 

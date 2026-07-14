@@ -9,7 +9,7 @@
     "aboutUs": "Über uns",
     "contact": "Kontakt",
     "blog": "Blog & Bewertungen",
-    "news": "News & Gazette"
+    "news": "Nachrichten"
   },
   "Footer": {
     "description": "Die weltweit umfassendste Datenbank für Fahrzeug-Fehlercodes und Armaturenbrett-Warnleuchten.",
@@ -36,16 +36,16 @@
     "costIncludesParts": "Beinhaltet Teile und Arbeit. Kann je nach Standort variieren.",
     "home": "Startseite",
     "years": "Jahre",
-    "aseCertified": "Geprüft durch ASE-zertifizierten Techniker",
+    "aseCertified": "Redaktionell gepr?ft vom OBD2HQ-Team",
     "relatedCodes": "Andere beliebte {make} Codes",
     "howToDiagnose": "Wie man diagnostiziert",
     "commonFixes": "Häufige Lösungen",
     "drivingSafety": "Ist es sicher zu fahren?",
     "partsCost": "Ersatzteile",
     "laborCost": "Arbeit",
-    "leaderboardAd": "Werbefläche (Leaderboard)",
+    "leaderboardAd": "Werbefl?che",
     "inArticleAd": "Werbung (Im Artikel)",
-    "bottomLeaderboardAd": "Werbefläche (Bottom Leaderboard)",
+    "bottomLeaderboardAd": "Untere Werbefl?che",
     "advertisement": "Werbung",
     "sponsorAdSense": "Sponsor/AdSense",
     "discussionTitle": "{code} bei {make} {model} - OBD2HQ Diskussion",
@@ -225,7 +225,7 @@
     "description": "Wenn {lightName} auf dem Armaturenbrett Ihres {make} {model} aufleuchtet, ist das eine Warnung. {description}",
     "commonCauses": "Häufige Ursachen für {make} {model}",
     "whatToDo": "Was als nächstes zu tun ist",
-    "advertisement": "Advertisement"
+    "advertisement": "Werbung"
   },
   "AboutPage": {
     "title1": "Demokratisierung der ",
@@ -382,7 +382,7 @@
   "CodePageExtra": {
     "severity": "Schweregrad",
     "moderate": "Mittel",
-    "codeTitle": "{code} Code: {title}",
+    "codeTitle": "{code} Fehlercode: {title}",
     "diagnosticSystem": "Diagnosesystem: {system}",
     "diagnosticSystemDesc": "Beim {make} {model} sollte der Code {code} als Teil der Systemgruppe {system} diagnostiziert werden. Verwandte Codes und Live-Daten aus demselben System können die Reparaturpriorität ändern; ersetzen Sie daher keine Teile allein aufgrund des Codenamens.",
     "commonCausesFor": "Häufigste Ursachen für {make} {model}",
@@ -406,7 +406,7 @@
   },
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
-    "title": "Our Editorial Policy",
+    "title": "Unsere Redaktionsrichtlinie",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
@@ -428,7 +428,7 @@
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
     "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
-    "manual": "OEM Manual Cross-Referencing",
+    "manual": "Quellen- und Datenabgleich",
     "verification": "Data-Driven Verification",
     "ctaTitle": "Sind Sie ein ASE-zertifizierter Profi?",
     "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",

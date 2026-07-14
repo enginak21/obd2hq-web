@@ -6,6 +6,10 @@ import { getLocalized } from '@/data/db';
 import { Calendar, ChevronRight, Newspaper } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
 
+function asString(value: string | string[] | null, fallback = '') {
+  return typeof value === 'string' ? value : fallback;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   
@@ -15,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     tr: 'Otomobil Gazetesi & Haberler - OBD2HQ',
     de: 'Automobilnachrichten & Zeitung - OBD2HQ',
     es: 'Noticias Automotrices y Gaceta - OBD2HQ',
-    fr: 'Actualités Automobiles et Gazette - OBD2HQ'
+    fr: 'Actualit?s automobiles - OBD2HQ'
   };
 
   return {
@@ -74,8 +78,8 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => {
-              const locTitle = getLocalized(article.title, locale) || article.slug;
-              const locSummary = getLocalized(article.summary, locale) || '';
+              const locTitle = asString(getLocalized(article.title, locale), article.slug);
+              const locSummary = asString(getLocalized(article.summary, locale));
               const categoryKey = getNewsCategoryKey(article.category);
               
               const dateObj = new Date(article.date);

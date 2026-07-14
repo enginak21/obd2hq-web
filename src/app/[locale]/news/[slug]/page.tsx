@@ -7,11 +7,15 @@ import { getLocalized } from '@/data/db';
 import { Calendar, ChevronLeft, Share2 } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
 
+function asString(value: string | string[] | null, fallback = '') {
+  return typeof value === 'string' ? value : fallback;
+}
+
 export async function generateStaticParams() {
   const news = getAllNews();
   const locales = ['en', 'de', 'es', 'tr', 'fr'];
   
-  const params: any[] = [];
+  const params: Array<{ locale: string; slug: string }> = [];
   
   for (const article of news) {
     for (const locale of locales) {
@@ -31,8 +35,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   if (!article) return {};
 
-  const title = getLocalized(article.title, locale) || article.slug;
-  const description = getLocalized(article.summary, locale) || '';
+  const title = asString(getLocalized(article.title, locale), article.slug);
+  const description = asString(getLocalized(article.summary, locale));
 
   return {
     title: `${title} - OBD2HQ News`,
@@ -64,8 +68,8 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     notFound();
   }
 
-  const locTitle = getLocalized(article.title, locale) || article.slug;
-  const locContent = getLocalized(article.content, locale) || '';
+  const locTitle = asString(getLocalized(article.title, locale), article.slug);
+  const locContent = asString(getLocalized(article.content, locale));
   const categoryKey = getNewsCategoryKey(article.category);
   
   const dateObj = new Date(article.date);

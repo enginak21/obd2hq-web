@@ -17,7 +17,7 @@ interface PageProps {
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const params: any[] = [];
+  const params: Array<{ locale: string; make: string }> = [];
   const locales = ['en', 'de', 'es', 'tr', 'fr'];
   
   for (const locale of locales) {
