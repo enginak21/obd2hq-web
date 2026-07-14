@@ -46,6 +46,30 @@ const requiredFields = [
   'sourceNotes',
 ];
 
+const skippedRecords = [];
+
+function hasDisqualifyingUncertainty(record) {
+  const text = [
+    record.market,
+    record.engineSummary,
+    ...(Array.isArray(record.notes) ? record.notes : []),
+    ...(Array.isArray(record.sourceNotes) ? record.sourceNotes : []),
+  ].join(' ').toLowerCase();
+
+  return [
+    'not sold new',
+    'not sold in',
+    'was not sold',
+    'pre-production',
+    'pre production',
+    'concept',
+    'validation',
+    'development year',
+    'not confirmed',
+    'late dealer',
+  ].some(term => text.includes(term));
+}
+
 function slugify(value) {
   return String(value)
     .toLowerCase()
@@ -71,6 +95,21 @@ function writeJson(file, records) {
 }
 
 function validateRecord(record, index) {
+  if (record.available === false) {
+    if (!record.reason) throw new Error(`Record ${index} is unavailable but has no reason.`);
+    return null;
+  }
+
+  if (!Array.isArray(record.relatedCodes) || record.relatedCodes.length === 0) {
+    record.relatedCodes = ['P0300', 'P0420', 'P0171', 'P0455'];
+  }
+  if (!record.chassisCode) {
+    record.chassisCode = 'Varies by market / verify by VIN';
+  }
+  if (hasDisqualifyingUncertainty(record)) {
+    return null;
+  }
+
   const missing = requiredFields.filter(field => record[field] === undefined || record[field] === null || record[field] === '');
   const arrayFields = ['engineCodes', 'tireSizes', 'commonProblems', 'firstChecks', 'relatedCodes', 'notes', 'sourceNotes'];
   const badArrays = arrayFields.filter(field => !Array.isArray(record[field]) || record[field].length === 0);
@@ -94,7 +133,11 @@ Return exactly one JSON object for this vehicle selection:
 - market: ${seed.market || 'global / specify if market-specific'}
 
 Rules:
+- First verify that this make/model/year was actually sold. If it was not sold in that year, return exactly:
+  {"available": false, "make": "${seed.make}", "model": "${seed.model}", "year": ${seed.year}, "trim": "${seed.trim}", "slug": "${seed.slug || slugify(seed.trim)}", "reason": "short reason"}
+- Do not create records for concept cars, pre-production years, validation fleets, late registrations, dealer leftovers, or import-only edge cases. Mark them unavailable.
 - Do not invent uncertain exact values. If a value depends on market/production month, state that clearly.
+- If the trim/version is "technical-profile", build a year-level technical profile for the main globally documented version(s), and mention market/engine variation clearly.
 - Engine oil capacity must include service-fill wording and filter note when known.
 - Engine code must be specific, not a generic displacement label.
 - Include at least 2 sourceNotes as short source descriptions, not raw marketing language.
@@ -169,9 +212,15 @@ async function enrichWithOpenAI(seed) {
     });
 
     if (response.ok) {
-      const data = await response.json();
-      const text = data.output_text || data.output?.flatMap(item => item.content || []).map(item => item.text || '').join('') || '';
-      return JSON.parse(text.replace(/^```json\s*/i, '').replace(/```$/i, '').trim());
+      try {
+        const data = await response.json();
+        const text = data.output_text || data.output?.flatMap(item => item.content || []).map(item => item.text || '').join('') || '';
+        return JSON.parse(text.replace(/^```json\s*/i, '').replace(/```$/i, '').trim());
+      } catch (error) {
+        lastError = error;
+        if (attempt < RETRIES) continue;
+        break;
+      }
     }
 
     const body = await response.text();
@@ -192,7 +241,7 @@ async function main() {
   const enrichedByKey = new Map();
   for (let index = 0; index < existing.length; index += 1) {
     const record = validateRecord(existing[index], index + 1);
-    enrichedByKey.set(recordKey(record), record);
+    if (record) enrichedByKey.set(recordKey(record), record);
   }
 
   const endIndex = LIMIT > 0 ? Math.min(seeds.length, START_INDEX + LIMIT) : seeds.length;
@@ -210,17 +259,24 @@ async function main() {
     console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
     const record = await enrichWithOpenAI(seed);
     const validRecord = validateRecord(record, index + 1);
-    enrichedByKey.set(recordKey(validRecord), validRecord);
+    if (validRecord) {
+      enrichedByKey.set(recordKey(validRecord), validRecord);
+    } else {
+      skippedRecords.push(record);
+      console.log(`Skipped unavailable ${index + 1}/${seeds.length}: ${key}`);
+    }
     processed += 1;
-    created += 1;
+    if (validRecord) created += 1;
 
     if (processed % CHECKPOINT_EVERY === 0) {
       writeJson(OUTPUT, Array.from(enrichedByKey.values()));
+      if (skippedRecords.length) writeJson(OUTPUT.replace(/\.json$/i, '.skipped.json'), skippedRecords);
       console.log(`Checkpoint saved ${enrichedByKey.size} records to ${OUTPUT}`);
     }
   }
 
   writeJson(OUTPUT, Array.from(enrichedByKey.values()));
+  if (skippedRecords.length) writeJson(OUTPUT.replace(/\.json$/i, '.skipped.json'), skippedRecords);
   console.log(`Saved ${OUTPUT}. Created ${created}; total ${enrichedByKey.size}.`);
 }
 

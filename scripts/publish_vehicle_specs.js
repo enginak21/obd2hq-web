@@ -28,6 +28,61 @@ const requiredFields = [
   'sourceNotes',
 ];
 
+const stringFields = [
+  'make',
+  'model',
+  'displayName',
+  'generation',
+  'trim',
+  'slug',
+  'chassisCode',
+  'bodyStyle',
+  'market',
+  'engineSummary',
+  'displacement',
+  'power',
+  'torque',
+  'fuelSystem',
+  'timingDrive',
+  'recommendedOil',
+  'oilCapacity',
+  'coolantCapacity',
+  'manualTransmission',
+  'automaticTransmission',
+  'transmissionFluid',
+  'differentialFluid',
+  'brakeFluid',
+  'sparkPlugs',
+  'serviceInterval',
+];
+
+function formatValue(value) {
+  if (value === undefined || value === null) return '';
+  if (typeof value === 'string') return value;
+  if (typeof value === 'number') return String(value);
+  if (Array.isArray(value)) return value.map(formatValue).filter(Boolean).join(', ');
+  if (typeof value === 'object') {
+    return Object.entries(value)
+      .map(([key, entryValue]) => `${key}: ${formatValue(entryValue)}`)
+      .join('; ');
+  }
+  return String(value);
+}
+
+function normalize(record) {
+  for (const field of stringFields) {
+    if (record[field] !== undefined && record[field] !== null) {
+      record[field] = formatValue(record[field]);
+    }
+  }
+  for (const field of ['engineCodes', 'tireSizes', 'commonProblems', 'firstChecks', 'relatedCodes', 'notes', 'sourceNotes']) {
+    if (Array.isArray(record[field])) {
+      record[field] = record[field].map(formatValue).filter(Boolean);
+    }
+  }
+  return record;
+}
+
 function validate(record, index) {
   const missing = requiredFields.filter(field => record[field] === undefined || record[field] === null || record[field] === '');
   const badArrays = ['engineCodes', 'commonProblems', 'firstChecks', 'relatedCodes', 'sourceNotes'].filter(field => !Array.isArray(record[field]) || record[field].length === 0);
@@ -40,6 +95,7 @@ if (!fs.existsSync(INPUT)) throw new Error(`Input not found: ${INPUT}`);
 const records = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
 if (!Array.isArray(records)) throw new Error('Input must be an array.');
 
+records.forEach(normalize);
 records.forEach(validate);
 const unique = new Map();
 for (const record of records) {
