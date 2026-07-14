@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { KnowledgeCard, KnowledgeHero } from '@/components/KnowledgeGrid';
+import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
@@ -23,6 +24,24 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
   const transmissionCount = vehicleKnowledgeProfiles.reduce((sum, vehicle) => sum + (vehicle.transmissionVariants?.length || vehicle.transmissions.length), 0);
   const codeCount = new Set(vehicleKnowledgeProfiles.flatMap(vehicle => vehicle.commonCodes)).size;
   const labels = getVehicleHubLabels(locale);
+  const selectorItems: VehicleSpecSelectorItem[] = vehicleKnowledgeProfiles.flatMap(vehicle => (vehicle.yearTrimVariants || []).map(variant => ({
+    make: vehicle.make,
+    model: vehicle.model,
+    displayName: vehicle.displayName || `${vehicle.make.replace('-', ' ')} ${vehicle.model.replace('-', ' ')}`.replace(/\b\w/g, c => c.toUpperCase()),
+    generation: vehicle.generation,
+    year: variant.year,
+    trim: variant.trim,
+    slug: variant.slug,
+    chassisCode: variant.chassisCode,
+    engineCodes: variant.engineCodes,
+    engineSummary: variant.engineSummary,
+    recommendedOil: variant.recommendedOil,
+    oilCapacity: variant.oilCapacity,
+    transmissionFluid: variant.transmissionFluid,
+    commonProblems: variant.commonProblems,
+    firstChecks: variant.firstChecks,
+    relatedCodes: variant.relatedCodes,
+  })));
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
@@ -31,6 +50,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
         title={copy.vehiclesTitle}
         description={copy.vehiclesDescription}
       />
+      <VehicleSpecSelector locale={locale} items={selectorItems} />
       <section className="max-w-6xl mx-auto px-6 pt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
         <Stat label={labels.verifiedProfiles} value={profileCount.toString()} />
         <Stat label={labels.engineVariants} value={`${engineCount}+`} />
