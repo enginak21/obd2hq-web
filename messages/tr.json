@@ -11,8 +11,8 @@
     "blog": "Blog & İncelemeler",
     "news": "Haberler",
     "symptoms": "Belirtiler",
-    "tools": "Ara?lar",
-    "vehicles": "Ara?lar"
+    "tools": "Araçlar",
+    "vehicles": "Araçlar"
   },
   "Footer": {
     "description": "Araç teşhis kodları ve gösterge paneli uyarı ışıkları için dünyanın en kapsamlı veritabanı.",
@@ -39,7 +39,7 @@
     "costIncludesParts": "Parça ve işçilik dahildir. Konuma göre değişebilir.",
     "home": "Anasayfa",
     "years": "Yıllar",
-    "aseCertified": "OBD2HQ Editoryal Ekibi Taraf?ndan ?ncelendi",
+    "aseCertified": "OBD2HQ Editoryal Ekibi Tarafından İncelendi",
     "relatedCodes": "Diğer Popüler {make} Kodları",
     "howToDiagnose": "Nasıl Teşhis Edilir",
     "commonFixes": "Sık Görülen Çözümler",
@@ -224,7 +224,7 @@
     "home": "Anasayfa",
     "lights": "İkaz Işıkları",
     "urgency": "{urgency} ACİLİYET",
-    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?",
+    "whatItMeans": "{make} {model} arac?nda bu ne anlama geliyor?",
     "description": "{make} {model} aracınızın gösterge panelinde {lightName} ışığının yandığını gördüğünüzde, bu aracın bilgisayarından gelen doğrudan bir uyarıdır. {description}",
     "commonCauses": "{make} {model} İçin Yaygın Nedenler",
     "whatToDo": "Ne Yapmalı",
@@ -248,7 +248,7 @@
   },
   "ContactPage": {
     "title": "İletişim",
-    "subtitle": "Belirli bir arıza koduyla ilgili sorunuz mu var veya veritabanımızda bir yanlışlık mı buldunuz? Bize bildirin.",
+    "subtitle": "Belirli bir ar?za koduyla ilgili sorunuz mu var veya veritaban?m?zda bir yanl??l?k m? buldunuz? Bize bildirin.",
     "emailUs": "Bize E-Posta Gönderin",
     "name": "İsim",
     "email": "E-Posta",
@@ -258,7 +258,7 @@
     "metaDescription": "OBD2HQ ekibi ile iletişime geçin.",
     "namePlaceholder": "Ali Yılmaz",
     "emailPlaceholder": "ali@ornek.com",
-    "messagePlaceholder": "Nasıl yardımcı olabiliriz?"
+    "messagePlaceholder": "Nas?l yard?mc? olabiliriz?"
   },
   "DisclaimerPage": {
     "title": "Tıbbi ve Teknik Sorumluluk Reddi",
@@ -325,18 +325,18 @@
     "diagnosticGuide": "teşhis rehberi"
   },
   "NewsPage": {
-    "title": "Automotive Gazette",
-    "badge": "DAILY NEWS",
-    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
-    "noNewsTitle": "No News Yet",
-    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
-    "readMore": "Read Article",
-    "backToNews": "Back to News",
+    "title": "Otomotiv Haberleri",
+    "badge": "GÜNLÜK HABERLER",
+    "description": "Modifiye kültürü, yeni otomobiller, kronik sorunlar, geri çağırmalar ve otomotiv sektörü gelişmelerini takip edin.",
+    "noNewsTitle": "Henüz Haber Yok",
+    "noNewsDesc": "Günlük haber sistemi henüz makale üretmedi. Daha sonra tekrar kontrol edin.",
+    "readMore": "Haberi Oku",
+    "backToNews": "Haberlere Dön",
     "categories": {
-      "brand_news": "Brand News",
-      "modified_cars": "Modded & Tuning",
-      "chronic_issues": "Recalls & Issues",
-      "industry_news": "Industry & Tech"
+      "brand_news": "Marka Haberleri",
+      "modified_cars": "Modifiye ve Tuning",
+      "chronic_issues": "Geri Çağırmalar ve Sorunlar",
+      "industry_news": "Sektör ve Teknoloji"
     }
   },
   "SmartSearch": {
@@ -391,13 +391,13 @@
     "commonCausesFor": "{make} {model} için En Yaygın Nedenler",
     "extraFirstCheck": "Büyük parça almadan önce sigortaları, zayıf akü voltajını ve hasarlı soketleri kontrol edin.",
     "commonMistakeSuffix": "Parça almadan önce freeze-frame verisi, canlı veri, görsel kontrol ve devre testleriyle arızayı doğrulayın.",
-    "canDriveQuestion": "{code} koduyla araç kullanabilir miyim?",
+    "canDriveQuestion": "{code} koduyla ara? kullanabilir miyim?",
     "canDriveAnswer": "Motor arıza lambası sabit yanıyorsa genelde güvenli bir yere veya servise kadar kullanabilirsiniz. Lamba yanıp sönüyorsa motora veya katalizöre ciddi zarar vermemek için hemen durun.",
-    "clearQuestion": "{code} kodu kendiliğinden silinir mi?",
+    "clearQuestion": "{code} kodu kendili?inden silinir mi?",
     "clearAnswer": "Asıl sorun giderildikten sonra motor beyni kendi kontrollerini yapar. Birkaç sürüş döngüsünde testler başarılı olursa lamba kendiliğinden söner. OBD2 cihazı ile hemen de silebilirsiniz.",
-    "emissionsQuestion": "Bu kod emisyon testinden kalır mı?",
+    "emissionsQuestion": "Bu kod emisyon testinden kal?r m??",
     "emissionsAnswer": "Evet. {code} nedeniyle motor arıza lambası yanıyorsa {make} araç OBD2 emisyon testinden otomatik olarak kalır.",
-    "firstCheckQuestion": "{code} için önce neyi kontrol etmeliyim?",
+    "firstCheckQuestion": "{code} i?in ?nce neyi kontrol etmeliyim?",
     "cheapFix": "Ucuz çözüm",
     "expensiveFix": "Pahalı çözüm",
     "cheapFixShort": "Ucuz Çözüm",
@@ -433,7 +433,7 @@
     "body": "Tek bir kişiye dayanmak yerine OBD2HQ veri odaklı bir editoryal yaklaşım kullanır. Teşhis kodlarını, belirtileri ve çözümleri belgelenmiş onarımlardan toplar ve aracınıza en olası nedeni sunmak için karşılaştırırız.",
     "manual": "Kaynak ve Veri Karşılaştırması",
     "verification": "Veri Odaklı Doğrulama",
-    "ctaTitle": "ASE sertifikalı bir profesyonel misiniz?",
+    "ctaTitle": "ASE sertifikal? bir profesyonel misiniz?",
     "ctaText": "Doğrulanabilir uzmanları inceleme kurulumuza katmak istiyoruz. Teşhis verilerini daha erişilebilir hale getirmek isterseniz sizden haber almak isteriz.",
     "contact": "Bize Ulaşın"
   }

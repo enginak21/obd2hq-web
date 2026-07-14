@@ -95,9 +95,9 @@ export default async function SymptomPage({ params }: { params: Promise<{ locale
 
       <section className="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[1fr_340px] gap-8">
         <div className="space-y-6">
-          <InfoBlock icon={<Activity className="w-5 h-5" />} title={copy.mostLikelyCauses} items={symptom.likelyCauses} />
-          <InfoBlock icon={<Wrench className="w-5 h-5" />} title={copy.firstChecks} items={symptom.firstChecks} />
-          <InfoBlock icon={<Gauge className="w-5 h-5" />} title={copy.relatedSystems} items={symptom.relatedSystems} />
+          <InfoBlock icon={<Activity className="w-5 h-5" />} title={copy.mostLikelyCauses} items={localized.likelyCauses} />
+          <InfoBlock icon={<Wrench className="w-5 h-5" />} title={copy.firstChecks} items={localized.firstChecks} />
+          <InfoBlock icon={<Gauge className="w-5 h-5" />} title={copy.relatedSystems} items={localized.relatedSystems} />
         </div>
 
         <aside className="space-y-6">
@@ -115,7 +115,7 @@ export default async function SymptomPage({ params }: { params: Promise<{ locale
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.searchIntentsCovered}</h2>
             <ul className="space-y-2 text-sm text-slate-300">
-              {symptom.searchIntents.map(intent => <li key={intent}>- {intent}</li>)}
+              {localized.searchIntents.map(intent => <li key={intent}>- {intent}</li>)}
             </ul>
           </div>
 

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     tr: 'Otomobil Gazetesi & Haberler - OBD2HQ',
     de: 'Automobilnachrichten & Zeitung - OBD2HQ',
     es: 'Noticias Automotrices y Gaceta - OBD2HQ',
-    fr: 'Actualit?s automobiles - OBD2HQ'
+    fr: 'Actualités automobiles - OBD2HQ'
   };
 
   return {

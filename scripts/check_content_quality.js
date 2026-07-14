@@ -3,7 +3,7 @@ const path = require('path');
 
 const roots = ['src', 'messages'];
 const textFileExtensions = new Set(['.ts', '.tsx', '.json']);
-const mojibakePattern = /Ã|Â|â€|ï¿½|�|Sat\?n|ba\?lant\?s\?|Pr\?fung/;
+const mojibakePattern = /Ã|Â|â€|ï¿½|�|Ara\?lar|S\?ntomas|Veh\?culos|Actualit\?s|Sympt\?mes|V\?hicules|C\?digo|pol\?tica|\?ditoriale|donn\?es|gepr\?ft|Werbefl\?che|Sat\?n|ba\?lant\?s\?|Pr\?fung/;
 const emptyAffiliatePattern = /href=["']#["']/;
 const ignoredPathParts = [
   `${path.sep}data${path.sep}news${path.sep}`,

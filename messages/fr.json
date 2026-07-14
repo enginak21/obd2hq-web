@@ -9,10 +9,10 @@
     "aboutUs": "À propos",
     "contact": "Contact",
     "blog": "Blog & Avis",
-    "news": "Actualit?s",
-    "symptoms": "Sympt?mes",
+    "news": "Actualités",
+    "symptoms": "Symptômes",
     "tools": "Outils",
-    "vehicles": "V?hicules"
+    "vehicles": "Véhicules"
   },
   "Footer": {
     "description": "La base de données la plus complète au monde pour les codes de diagnostic de véhicules et les voyants de tableau de bord.",
@@ -30,7 +30,7 @@
     "builtFor": "Conçu pour les passionnés d'automobile et les mécaniciens du monde entier."
   },
   "CodePage": {
-    "whatDoesItMean": "Qu'est-ce que cela signifie ?",
+    "whatDoesItMean": "Qu'est-ce que cela signifie ",
     "commonCauses": "Causes courantes",
     "symptomsToWatch": "Symptômes à surveiller",
     "repairEstimate": "Estimation de réparation",
@@ -43,7 +43,7 @@
     "relatedCodes": "Autres codes {make} populaires",
     "howToDiagnose": "Comment Diagnostiquer",
     "commonFixes": "Solutions Courantes",
-    "drivingSafety": "Est-il sûr de conduire ?",
+    "drivingSafety": "Est-il sûr de conduire ",
     "partsCost": "Pièces",
     "laborCost": "Main-d'œuvre",
     "leaderboardAd": "Espace publicitaire",
@@ -52,7 +52,7 @@
     "advertisement": "Publicité",
     "sponsorAdSense": "Sponsor/AdSense",
     "discussionTitle": "{code} sur {make} {model} - Discussion OBD2HQ",
-    "howSerious": "Quelle est la gravité de ce code ?",
+    "howSerious": "Quelle est la gravité de ce code ",
     "beforeReplacing": "Avant de remplacer des pièces, vérifiez ceci d'abord",
     "commonMistakes": "Erreurs courantes",
     "faq": "Questions fréquentes",
@@ -225,7 +225,7 @@
     "home": "Accueil",
     "lights": "Voyants",
     "urgency": "URGENCE {urgency}",
-    "whatItMeans": "Qu'est-ce que cela signifie sur une {make} {model} ?",
+    "whatItMeans": "Qu'est-ce que cela signifie sur une {make} {model} ",
     "description": "Lorsque vous voyez {lightName} s'allumer sur le tableau de bord de votre {make} {model}, c'est un avertissement direct de l'ordinateur de bord. {description}",
     "commonCauses": "Causes courantes pour {make} {model}",
     "whatToDo": "Que faire ensuite",
@@ -249,7 +249,7 @@
   },
   "ContactPage": {
     "title": "Nous contacter",
-    "subtitle": "Une question sur un code ou une erreur dans la base ? Dites-le nous.",
+    "subtitle": "Une question sur un code ou une erreur dans la base  Dites-le nous.",
     "emailUs": "Envoyez-nous un e-mail",
     "name": "Nom",
     "email": "E-mail",
@@ -259,7 +259,7 @@
     "metaDescription": "Entrez en contact avec l'équipe OBD2HQ.",
     "namePlaceholder": "Jean Dupont",
     "emailPlaceholder": "jean@exemple.fr",
-    "messagePlaceholder": "Comment pouvons-nous vous aider ?"
+    "messagePlaceholder": "Comment pouvons-nous vous aider "
   },
   "DisclaimerPage": {
     "title": "Avertissement technique et médical",
@@ -392,13 +392,13 @@
     "commonCausesFor": "Causes les plus courantes pour {make} {model}",
     "extraFirstCheck": "Vérifiez les fusibles, une tension de batterie faible et les connecteurs endommagés avant d’acheter des pièces coûteuses.",
     "commonMistakeSuffix": "Confirmez la panne avec les données freeze-frame, les données en direct, une inspection visuelle et des tests de circuit avant d’acheter des pièces.",
-    "canDriveQuestion": "Puis-je conduire avec le code {code} ?",
+    "canDriveQuestion": "Puis-je conduire avec le code {code} ",
     "canDriveAnswer": "Si le voyant moteur reste fixe, vous pouvez généralement rouler prudemment jusqu’à un lieu sûr ou un atelier. Si le voyant clignote, arrêtez-vous immédiatement pour éviter de graves dommages au moteur ou au catalyseur.",
-    "clearQuestion": "Le code {code} peut-il disparaître tout seul ?",
+    "clearQuestion": "Le code {code} peut-il disparaître tout seul ",
     "clearAnswer": "Une fois la cause principale corrigée, le calculateur moteur effectue ses propres contrôles. Après quelques cycles de conduite réussis, le voyant peut s’éteindre de lui-même. Vous pouvez aussi effacer le code avec un scanner OBD2.",
-    "emissionsQuestion": "Ce code fait-il échouer le contrôle antipollution ?",
+    "emissionsQuestion": "Ce code fait-il échouer le contrôle antipollution ",
     "emissionsAnswer": "Oui. Si le voyant moteur est allumé à cause du code {code}, votre {make} échouera généralement au contrôle OBD2 antipollution.",
-    "firstCheckQuestion": "Que dois-je vérifier en premier pour {code} ?",
+    "firstCheckQuestion": "Que dois-je vérifier en premier pour {code} ",
     "cheapFix": "Réparation peu coûteuse",
     "expensiveFix": "Réparation coûteuse",
     "cheapFixShort": "Peu coûteux",
@@ -410,7 +410,7 @@
   },
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
-    "title": "Notre politique ?ditoriale",
+    "title": "Notre politique éditoriale",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
@@ -432,9 +432,9 @@
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
     "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
-    "manual": "Comparaison des sources et des donn?es",
+    "manual": "Comparaison des sources et des données",
     "verification": "Data-Driven Verification",
-    "ctaTitle": "Êtes-vous un professionnel certifié ASE ?",
+    "ctaTitle": "Êtes-vous un professionnel certifié ASE ",
     "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",
     "contact": "Contact Us"
   }

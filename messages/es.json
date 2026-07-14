@@ -10,9 +10,9 @@
     "contact": "Contacto",
     "blog": "Blog y Reseñas",
     "news": "Noticias",
-    "symptoms": "S?ntomas",
+    "symptoms": "Síntomas",
     "tools": "Herramientas",
-    "vehicles": "Veh?culos"
+    "vehicles": "Vehículos"
   },
   "Footer": {
     "description": "La base de datos más completa del mundo para códigos de diagnóstico de vehículos y luces de advertencia del tablero.",
@@ -30,7 +30,7 @@
     "builtFor": "Construido para entusiastas de automóviles y mecánicos de todo el mundo."
   },
   "CodePage": {
-    "whatDoesItMean": "¿Qué significa esto?",
+    "whatDoesItMean": "¿Qué significa esto",
     "commonCauses": "Causas comunes",
     "symptomsToWatch": "Síntomas a tener en cuenta",
     "repairEstimate": "Estimación de reparación",
@@ -43,7 +43,7 @@
     "relatedCodes": "Otros Códigos Populares de {make}",
     "howToDiagnose": "Cómo Diagnosticar",
     "commonFixes": "Soluciones Comunes",
-    "drivingSafety": "¿Es seguro conducir?",
+    "drivingSafety": "¿Es seguro conducir",
     "partsCost": "Repuestos",
     "laborCost": "Mano de obra",
     "leaderboardAd": "Espacio publicitario",
@@ -52,7 +52,7 @@
     "advertisement": "Anuncio",
     "sponsorAdSense": "Patrocinador/AdSense",
     "discussionTitle": "{code} en {make} {model} - Discusión de OBD2HQ",
-    "howSerious": "¿Qué tan grave es este código?",
+    "howSerious": "¿Qué tan grave es este código",
     "beforeReplacing": "Antes de reemplazar piezas, revise esto primero",
     "commonMistakes": "Errores comunes",
     "faq": "Preguntas frecuentes",
@@ -61,7 +61,7 @@
     "editorialPolicy": "Política editorial",
     "expertLink": "Perfil experto",
     "genericDisclaimer": "Nota: Actualmente no tenemos datos de diagnóstico verificados y específicos del modelo {make} {model}. Los síntomas y soluciones que aparecen abajo son las pautas OBD2 generales estándar para el código {code}. Consulte siempre un manual de servicio de fábrica antes de reemplazar piezas.",
-    "codeTitle": "C?digo {code}: {title}"
+    "codeTitle": "Código {code}: {title}"
   },
   "DB": {
     "symp_check_engine": "La luz de Check Engine está encendida",
@@ -225,7 +225,7 @@
     "home": "Inicio",
     "lights": "Luces",
     "urgency": "URGENCIA {urgency}",
-    "whatItMeans": "¿Qué significa esto en un {make} {model}?",
+    "whatItMeans": "¿Qué significa esto en un {make} {model}",
     "description": "Cuando {lightName} se ilumina en su {make} {model}, es una advertencia directa de la computadora. {description}",
     "commonCauses": "Causas comunes para {make} {model}",
     "whatToDo": "Qué hacer a continuación",
@@ -249,7 +249,7 @@
   },
   "ContactPage": {
     "title": "Contáctenos",
-    "subtitle": "¿Tiene una pregunta o encontró un error? Háganoslo saber.",
+    "subtitle": "¿Tiene una pregunta o encontró un error Háganoslo saber.",
     "emailUs": "Envíenos un correo",
     "name": "Nombre",
     "email": "Correo",
@@ -259,7 +259,7 @@
     "metaDescription": "Póngase en contacto con el equipo de OBD2HQ.",
     "namePlaceholder": "Juan Pérez",
     "emailPlaceholder": "juan@ejemplo.com",
-    "messagePlaceholder": "¿En qué podemos ayudar?"
+    "messagePlaceholder": "¿En qué podemos ayudar"
   },
   "DisclaimerPage": {
     "title": "Aviso legal médico y técnico",
@@ -386,19 +386,19 @@
   "CodePageExtra": {
     "severity": "Gravedad",
     "moderate": "Moderada",
-    "codeTitle": "C?digo {code}: {title}",
+    "codeTitle": "Código {code}: {title}",
     "diagnosticSystem": "Sistema de diagnóstico: {system}",
     "diagnosticSystemDesc": "En un {make} {model}, el código {code} debe diagnosticarse como parte del grupo {system}. Los códigos relacionados y los datos en vivo del mismo sistema pueden cambiar la prioridad de reparación, así que evite reemplazar piezas solo por el nombre del código.",
     "commonCausesFor": "Causas más comunes en {make} {model}",
     "extraFirstCheck": "Revise fusibles, voltaje bajo de batería y conectores dañados antes de comprar piezas costosas.",
     "commonMistakeSuffix": "Confirme la falla con datos freeze-frame, datos en vivo, inspección visual y pruebas de circuito antes de comprar piezas.",
-    "canDriveQuestion": "¿Puedo conducir con el código {code}?",
+    "canDriveQuestion": "¿Puedo conducir con el código {code}",
     "canDriveAnswer": "Si la luz Check Engine permanece fija, normalmente puede conducir con cuidado hasta un lugar seguro o un taller. Si la luz parpadea, deténgase de inmediato para evitar daños graves al motor o al catalizador.",
-    "clearQuestion": "¿El código {code} se borrará solo?",
+    "clearQuestion": "¿El código {code} se borrará solo",
     "clearAnswer": "Una vez corregida la causa principal, la computadora del motor realiza sus propias pruebas. Si varios ciclos de conducción se completan correctamente, la luz puede apagarse sola. También puede borrar el código con un escáner OBD2.",
-    "emissionsQuestion": "¿Este código hará fallar la prueba de emisiones?",
+    "emissionsQuestion": "¿Este código hará fallar la prueba de emisiones",
     "emissionsAnswer": "Sí. Si la luz Check Engine está encendida por el código {code}, su {make} normalmente no pasará una prueba de emisiones OBD2.",
-    "firstCheckQuestion": "¿Qué debo revisar primero para {code}?",
+    "firstCheckQuestion": "¿Qué debo revisar primero para {code}",
     "cheapFix": "Arreglo barato",
     "expensiveFix": "Arreglo caro",
     "cheapFixShort": "Barato",
@@ -410,7 +410,7 @@
   },
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
-    "title": "Nuestra pol?tica editorial",
+    "title": "Nuestra política editorial",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
@@ -432,9 +432,9 @@
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
     "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
-    "manual": "Comparaci?n de fuentes y datos",
+    "manual": "Comparacin de fuentes y datos",
     "verification": "Data-Driven Verification",
-    "ctaTitle": "¿Es usted un profesional certificado ASE?",
+    "ctaTitle": "¿Es usted un profesional certificado ASE",
     "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",
     "contact": "Contact Us"
   }

@@ -76,12 +76,12 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
         <aside className="space-y-6">
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.bestFor}</h2>
-            <p className="text-slate-300 leading-relaxed">{tool.primaryUse}</p>
+            <p className="text-slate-300 leading-relaxed">{localized.primaryUse}</p>
           </div>
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.searchDemand}</h2>
             <ul className="space-y-2 text-sm text-slate-300">
-              {tool.relatedQueries.map(query => <li key={query}>- {query}</li>)}
+              {localized.relatedQueries.map(query => <li key={query}>- {query}</li>)}
             </ul>
           </div>
           <Link href={`/${locale}/symptoms`} className="flex items-center justify-between rounded-3xl border border-blue-400/20 bg-blue-500/10 p-6 text-blue-100 hover:bg-blue-500/15">

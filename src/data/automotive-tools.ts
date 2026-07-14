@@ -121,5 +121,59 @@ export function localizeTool(tool: AutomotiveTool, locale: string) {
   return {
     title: tool.title[key],
     description: tool.description[key],
+    primaryUse: translateToolItem(tool.primaryUse, key),
+    relatedQueries: tool.relatedQueries.map(item => translateToolItem(item, key)),
   };
+}
+
+const toolItemTranslations: Record<string, Partial<LocalizedText>> = {
+  'Find the most likely system and safest next checks.': {
+    tr: 'En olası sistemi ve en güvenli sonraki kontrolleri bulun.',
+    de: 'Finden Sie das wahrscheinlichste System und die sichersten nächsten Prüfungen.',
+    es: 'Encuentra el sistema más probable y las revisiones más seguras.',
+    fr: 'Trouvez le système le plus probable et les prochaines vérifications sûres.',
+  },
+  'Understand cost risk before authorizing a repair.': {
+    tr: 'Onarıma onay vermeden önce maliyet riskini anlayın.',
+    de: 'Verstehen Sie das Kostenrisiko vor der Reparaturfreigabe.',
+    es: 'Entiende el riesgo de costo antes de autorizar una reparación.',
+    fr: 'Comprenez le risque de coût avant d’autoriser une réparation.',
+  },
+  'Turn live data into a likely test direction.': {
+    tr: 'Canlı veriyi olası test yönüne çevirin.',
+    de: 'Live-Daten in eine wahrscheinliche Prüfrichtung übersetzen.',
+    es: 'Convierte datos en vivo en una dirección de prueba probable.',
+    fr: 'Transformez les données en direct en direction de test probable.',
+  },
+  'Avoid guessing by reading the conditions behind the code.': {
+    tr: 'Kodun oluştuğu koşulları okuyarak tahminle ilerlemeyin.',
+    de: 'Vermeiden Sie Raten, indem Sie die Bedingungen hinter dem Code lesen.',
+    es: 'Evita adivinar leyendo las condiciones detrás del código.',
+    fr: 'Évitez de deviner en lisant les conditions du code.',
+  },
+  'Match tool capability to the job before buying.': {
+    tr: 'Satın almadan önce cihaz kabiliyetini işe göre eşleştirin.',
+    de: 'Passen Sie die Gerätefähigkeit vor dem Kauf an die Aufgabe an.',
+    es: 'Relaciona la capacidad del equipo con el trabajo antes de comprar.',
+    fr: 'Adaptez les capacités de l’outil au travail avant l’achat.',
+  },
+  'car diagnostic assistant': { tr: 'araç teşhis asistanı', de: 'fahrzeug diagnoseassistent', es: 'asistente de diagnóstico del auto', fr: 'assistant diagnostic auto' },
+  'check engine diagnosis': { tr: 'motor arıza lambası teşhisi', de: 'motorkontrollleuchte diagnose', es: 'diagnóstico check engine', fr: 'diagnostic voyant moteur' },
+  'obd2 diagnostic tool': { tr: 'obd2 teşhis aracı', de: 'obd2 diagnosewerkzeug', es: 'herramienta de diagnóstico obd2', fr: 'outil diagnostic obd2' },
+  'p0420 repair cost': { tr: 'p0420 onarım maliyeti', de: 'p0420 reparaturkosten', es: 'costo reparación p0420', fr: 'coût réparation p0420' },
+  'check engine repair cost': { tr: 'motor arıza lambası onarım maliyeti', de: 'motorkontrollleuchte reparaturkosten', es: 'costo reparación check engine', fr: 'coût réparation voyant moteur' },
+  'obd2 repair estimate': { tr: 'obd2 onarım tahmini', de: 'obd2 reparaturschätzung', es: 'estimación reparación obd2', fr: 'estimation réparation obd2' },
+  'fuel trim analyzer': { tr: 'yakıt trim analiz aracı', de: 'fuel-trim-analyse', es: 'analizador fuel trim', fr: 'analyseur fuel trim' },
+  'STFT LTFT meaning': { tr: 'STFT LTFT anlamı', de: 'STFT LTFT bedeutung', es: 'significado STFT LTFT', fr: 'signification STFT LTFT' },
+  'positive fuel trim causes': { tr: 'pozitif yakıt trim nedenleri', de: 'positive fuel trim ursachen', es: 'causas fuel trim positivo', fr: 'causes fuel trim positif' },
+  'freeze frame data meaning': { tr: 'freeze frame verisi anlamı', de: 'freeze-frame daten bedeutung', es: 'significado datos freeze frame', fr: 'signification données freeze frame' },
+  'how to read freeze frame': { tr: 'freeze frame nasıl okunur', de: 'freeze-frame lesen', es: 'cómo leer freeze frame', fr: 'comment lire freeze frame' },
+  'obd2 freeze frame': { tr: 'obd2 freeze frame', de: 'obd2 freeze-frame', es: 'obd2 freeze frame', fr: 'obd2 freeze frame' },
+  'best obd2 scanner': { tr: 'en iyi obd2 cihazı', de: 'bester obd2 scanner', es: 'mejor escáner obd2', fr: 'meilleur scanner obd2' },
+  'bluetooth obd2 scanner': { tr: 'bluetooth obd2 cihazı', de: 'bluetooth obd2 scanner', es: 'escáner obd2 bluetooth', fr: 'scanner obd2 bluetooth' },
+  'scanner for abs srs': { tr: 'abs srs için arıza tespit cihazı', de: 'scanner für abs srs', es: 'escáner para abs srs', fr: 'scanner pour abs srs' },
+};
+
+function translateToolItem(item: string, locale: keyof LocalizedText) {
+  return toolItemTranslations[item]?.[locale] || item;
 }
