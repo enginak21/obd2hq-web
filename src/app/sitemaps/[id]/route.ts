@@ -5,6 +5,9 @@ import { getAllNews } from '@/data/news';
 import { PRIORITY_CODES } from '@/data/seo';
 import { symptomGuides } from '@/data/symptoms';
 import { automotiveTools } from '@/data/automotive-tools';
+import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
+import { engineProfiles } from '@/data/engine-database';
+import { transmissionProfiles } from '@/data/transmission-database';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
@@ -57,6 +60,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/news`, 'daily', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/symptoms`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/tools`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/vehicles`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/engines`, 'weekly', '0.85');
+      urls += urlEntry(`${BASE_URL}/${locale}/transmissions`, 'weekly', '0.85');
+      urls += urlEntry(`${BASE_URL}/${locale}/maintenance`, 'weekly', '0.8');
+      urls += urlEntry(`${BASE_URL}/${locale}/recalls`, 'weekly', '0.8');
+      urls += urlEntry(`${BASE_URL}/${locale}/calculators`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/editorial-policy`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/reviewers`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/privacy`, 'yearly', '0.3');
@@ -73,6 +82,15 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       });
       automotiveTools.forEach((tool) => {
         urls += urlEntry(`${BASE_URL}/${locale}/tools/${tool.slug}`, 'weekly', '0.85');
+      });
+      vehicleKnowledgeProfiles.forEach((vehicle) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${vehicle.make}/${vehicle.model}`, 'weekly', '0.85');
+      });
+      engineProfiles.forEach((engine) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/engines/${engine.slug}`, 'weekly', '0.8');
+      });
+      transmissionProfiles.forEach((transmission) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/transmissions/${transmission.slug}`, 'weekly', '0.8');
       });
       cars.forEach((car) => {
         urls += urlEntry(`${BASE_URL}/${locale}/${car.make}`, 'weekly', '0.9');

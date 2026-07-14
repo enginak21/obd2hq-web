@@ -103,6 +103,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <span className="mt-5 inline-flex text-sm font-bold text-green-200 group-hover:text-green-100">Open tool center</span>
           </Link>
         </div>
+        <div className="max-w-6xl mx-auto px-6 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            [`/${locale}/vehicles`, 'Vehicle database', 'Specs, fluids, OBD port, known problems'],
+            [`/${locale}/engines`, 'Engine database', 'Oil, failures, reliability, related codes'],
+            [`/${locale}/transmissions`, 'Transmission database', 'Fluids, service notes, common faults'],
+            [`/${locale}/maintenance`, 'Maintenance platform', 'Service items linked to fault prevention'],
+          ].map(([href, title, desc]) => (
+            <Link key={href} href={href} className="rounded-2xl border border-white/5 bg-[#131b2f] p-5 hover:border-blue-400/40 transition-all">
+              <h3 className="text-lg font-black text-white">{title}</h3>
+              <p className="mt-2 text-sm text-slate-400">{desc}</p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* Main Content Area (Layout with Sidebar Ads) */}

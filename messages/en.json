@@ -11,7 +11,8 @@
     "blog": "Blog & Reviews",
     "news": "News & Gazette",
     "symptoms": "Symptoms",
-    "tools": "Tools"
+    "tools": "Tools",
+    "vehicles": "Vehicles"
   },
   "Footer": {
     "description": "The world's most comprehensive database for vehicle diagnostic trouble codes and dashboard warning lights.",

@@ -57,6 +57,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-300">
           <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('diagnostics')}</Link>
+          <Link href={`/${locale}/vehicles`} className="hover:text-white transition-colors">{t('vehicles')}</Link>
           <Link href={`/${locale}/symptoms`} className="hover:text-white transition-colors">{t('symptoms')}</Link>
           <Link href={`/${locale}/tools`} className="hover:text-white transition-colors">{t('tools')}</Link>
           <Link href={`/${locale}/toyota/camry/lights`} className="hover:text-white transition-colors">{t('warningLights')}</Link>
@@ -95,6 +96,10 @@ export default function Navbar() {
           <Link href={`/${locale}/symptoms`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
             <AlertTriangle className="w-5 h-5 text-amber-400" />
             {t('symptoms')}
+          </Link>
+          <Link href={`/${locale}/vehicles`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
+            <Car className="w-5 h-5 text-green-400" />
+            {t('vehicles')}
           </Link>
           <Link href={`/${locale}/tools`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
             <Wrench className="w-5 h-5 text-blue-400" />
