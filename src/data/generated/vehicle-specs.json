@@ -23296,6 +23296,1261 @@
     ]
   },
   {
+    "make": "bmw",
+    "model": "128i",
+    "displayName": "BMW 128i",
+    "generation": "E82",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "Coupe",
+    "market": "North America (USA, Canada), selected global markets",
+    "engineCodes": [
+      "N52B30"
+    ],
+    "engineSummary": "3.0L naturally aspirated inline-6, DOHC, Valvetronic, single VANOS variant",
+    "displacement": "2996 cc",
+    "power": "230 hp (171 kW) @ 6200 rpm",
+    "torque": "200 lb-ft (270 Nm) @ 2750 rpm",
+    "fuelSystem": "Electronic Fuel Injection (MPI)",
+    "timingDrive": "Dual VANOS (Variable Valve Timing), chain-driven",
+    "recommendedOil": "BMW Longlife-01 synthetic oil or equivalent 5W-30",
+    "oilCapacity": "6.9 liters (including oil filter) - service fill",
+    "coolantCapacity": "Approx. 8 liters (varies slightly by market)",
+    "manualTransmission": "6-speed manual available (Getrag GS6-37DZ)",
+    "automaticTransmission": "6-speed automatic (GM 6L50 / ZF 6HP19) with Steptronic",
+    "transmissionFluid": "Specified BMW synthetic ATF, change intervals per BMW guidelines",
+    "differentialFluid": "Hypoid gear oil per BMW specs, typical 75W-90",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "NGK or Bosch platinum tipped, change every 30,000 miles / 48,000 km",
+    "serviceInterval": "Typically 15,000 miles / 24,000 km under BMW Longlife service system",
+    "tireSizes": [
+      "225/45ZR17 front",
+      "245/40ZR17 rear"
+    ],
+    "commonProblems": [
+      "Discharge Valve failure in the electric water pump",
+      "Oil leaks from valve cover gasket",
+      "CCV (Crankcase Ventilation) issues causing rough idle"
+    ],
+    "firstChecks": [
+      "Inspect electric coolant pump operation",
+      "Check VANOS system for proper actuation and fault codes",
+      "Verify oil level and condition frequently"
+    ],
+    "relatedCodes": [
+      "N52B30",
+      "E82",
+      "GS6-37DZ",
+      "6L50"
+    ],
+    "notes": [
+      "2008 was the introductory model year for the BMW 128i in the North American market, replacing the 130i.",
+      "Global availability mostly limited to North America; some markets had other 1 Series variants.",
+      "The 128i does not have a diesel engine offering in 2008."
+    ],
+    "sourceNotes": [
+      "BMW North America 2008 1 Series Technical Specifications brochure",
+      "BMW E82 forums and technical service bulletins 2008 model year"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "128i",
+    "displayName": "BMW 128i",
+    "generation": "E82",
+    "year": 2009,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "2-door coupe",
+    "market": "North America / selected export markets",
+    "engineCodes": [
+      "N52B30"
+    ],
+    "engineSummary": "3.0L naturally aspirated inline-6, DOHC, Valvetronic, double-VANOS variable valve timing",
+    "displacement": "2996 cc",
+    "power": "230 hp (172 kW) at 6200 rpm",
+    "torque": "200 lb-ft (270 Nm) at 2750 rpm",
+    "fuelSystem": "Electronic fuel injection (MPI)",
+    "timingDrive": "Chain-driven double overhead camshafts",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil SAE 5W-30",
+    "oilCapacity": "6.5 liters (service-fill including filter change)",
+    "coolantCapacity": "8.5 liters",
+    "manualTransmission": "6-speed Getrag GS6-37BG manual",
+    "automaticTransmission": "6-speed GM 6L45 automatic with Steptronic",
+    "transmissionFluid": "Automatic transmission fluid Dexron VI (if automatic)",
+    "differentialFluid": "GL-5 gear oil SAE 75W-90",
+    "brakeFluid": "DOT 4, changed every 2 years recommended",
+    "sparkPlugs": "BMW Part no. 12120034244, iridium tipped",
+    "serviceInterval": "15,000 miles or 1 year standard BMW service interval",
+    "tireSizes": [
+      "225/45R17 front",
+      "255/40R17 rear"
+    ],
+    "commonProblems": [
+      "Water pump failure due to plastic impeller",
+      "Valve cover oil leaks",
+      "Electric water pump control issues"
+    ],
+    "firstChecks": [
+      "Verify water pump operation and leaks",
+      "Check valve cover gasket for oil seepage",
+      "Inspect VANOS system for faults"
+    ],
+    "relatedCodes": [
+      "E82",
+      "E88 (convertible uses similar powertrain)"
+    ],
+    "notes": [
+      "2009 BMW 128i was primarily sold in North America, with some exports to other markets where right-hand drive was not mandatory.",
+      "Engine specifications and transmission options may vary slightly by market; this profile represents the main North American configuration."
+    ],
+    "sourceNotes": [
+      "BMW USA 2009 Technical Specifications brochure",
+      "BMW E82/E88 service manuals and repair databases"
+    ]
+  },
+  {
+    "available": true,
+    "make": "bmw",
+    "model": "128i",
+    "displayName": "BMW 128i",
+    "generation": "E82",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "Coupe",
+    "market": "North America primarily; also sold in select global markets",
+    "engineCodes": [
+      "N52B30"
+    ],
+    "engineSummary": "3.0-liter naturally aspirated inline-6, DOHC with variable valve timing (VANOS), direct injection not used in this engine",
+    "displacement": "2996 cc",
+    "power": "230 hp (171 kW) @ 6,600 rpm",
+    "torque": "200 lb-ft (272 Nm) @ 2,750-4,500 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil, SAE 5W-30 recommended",
+    "oilCapacity": "Approximately 6.5 liters service-fill including oil filter change",
+    "coolantCapacity": "Approximately 7.5 liters",
+    "manualTransmission": "6-speed manual (Getrag 224)",
+    "automaticTransmission": "6-speed automatic (GM 6L45) optional",
+    "transmissionFluid": "BMW-approved automatic transmission fluid for automatic; manual uses manual transmission fluid per BMW spec",
+    "differentialFluid": "Limited slip differential fluid per BMW specification (when equipped)",
+    "brakeFluid": "DOT 4, replace at least every 2 years",
+    "sparkPlugs": "BMW iridium spark plugs, replace at ~60,000 miles",
+    "serviceInterval": "Oil change recommended every 10,000 miles (16,000 km) or 12 months; spark plugs at 60,000 miles",
+    "tireSizes": [
+      "225/45ZR17 (front)",
+      "255/40ZR17 (rear)"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures",
+      "Electric water pump issues",
+      "Valve cover gasket leaks"
+    ],
+    "firstChecks": [
+      "Inspect HPFP operation and fuel rail pressure",
+      "Check water pump for coolant leaks",
+      "Inspect valve cover gasket for oil seepage"
+    ],
+    "relatedCodes": [
+      "N52B30 engine shared with E90 3 Series 328i"
+    ],
+    "notes": [
+      "The 128i was sold primarily in the North American market; in other global markets the 1 Series generally used a 130i or other variants.",
+      "Service-fill oil capacity includes filter change; refer to owner's manual for exact oil specification related to region."
+    ],
+    "sourceNotes": [
+      "BMW E82 1 Series USA Market Technical Specifications Manual 2010",
+      "BMW N52 Engine Technical Docs and Community Verified Data"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "128i",
+    "displayName": "BMW 128i",
+    "generation": "E82",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "Coupe",
+    "market": "North America, select global markets",
+    "engineCodes": [
+      "N52B30"
+    ],
+    "engineSummary": "Naturally aspirated 3.0L inline-6 engine with double-VANOS variable valve timing.",
+    "displacement": "2996 cc",
+    "power": "230 hp @ 6,600 rpm",
+    "torque": "200 lb-ft @ 2,750-4,000 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Chain-driven double overhead camshafts with double-VANOS",
+    "recommendedOil": "BMW Longlife-01 approved synthetic motor oil",
+    "oilCapacity": "6.5 liters (including oil filter) service-fill",
+    "coolantCapacity": "7.3 liters",
+    "manualTransmission": "6-speed Getrag manual",
+    "automaticTransmission": "6-speed GM/GM 6L45 automatic with Steptronic",
+    "transmissionFluid": "BMW recommended synthetic automatic transmission fluid (ATF) for automatic; manual uses synthetic transmission oil",
+    "differentialFluid": "Synthetic gear oil, typically GL-5 rated",
+    "brakeFluid": "DOT 4 brake fluid",
+    "sparkPlugs": "BMW Iridium spark plugs, gap 0.8 mm",
+    "serviceInterval": "Every 10,000 miles/12 months",
+    "tireSizes": [
+      "205/50R17 front",
+      "225/45R17 rear"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures on some N52 engines",
+      "Water pump and thermostat failures leading to coolant leaks",
+      "Valve cover gasket oil leaks"
+    ],
+    "firstChecks": [
+      "Inspect oil leaks around valve cover and oil filter housing",
+      "Check water pump and coolant level for leaks",
+      "Listen for VANOS unit rattling noise"
+    ],
+    "relatedCodes": [
+      "E82",
+      "N52B30"
+    ],
+    "notes": [
+      "BMW 128i was primarily sold in North America and select global markets in 2012. It was not officially offered in Europe with this designation after 2011.",
+      "Oil capacity includes service fill volume with filter change.",
+      "Some markets may have variations in available transmissions."
+    ],
+    "sourceNotes": [
+      "BMW USA owner's manuals and service bulletins 2012",
+      "BMW Technical Service Information, N52 engine detailed overview"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "128i",
+    "displayName": "BMW 128i",
+    "generation": "E82",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "2-door Coupe",
+    "market": "North America (discontinued after 2013) / Europe withdrawn in favor of 120i",
+    "engineCodes": [
+      "N52B30"
+    ],
+    "engineSummary": "3.0L naturally aspirated inline-6, DOHC, Valvetronic, double VANOS",
+    "displacement": "2996 cc",
+    "power": "230 hp (170 kW) @ 6400 rpm",
+    "torque": "200 lb-ft (270 Nm) @ 2750 rpm",
+    "fuelSystem": "Direct fuel injection with electronic throttle control",
+    "timingDrive": "Chain-driven DOHC with variable valve timing",
+    "recommendedOil": "BMW Longlife-01 approved synthetic 5W-30 or 5W-40",
+    "oilCapacity": "6.9 liters including oil filter (service-fill volume)",
+    "coolantCapacity": "7.5 liters",
+    "manualTransmission": "6-speed manual (Getrag GS6-37DZ)",
+    "automaticTransmission": "6-speed automatic (ZF 6HP19)",
+    "transmissionFluid": "BMW ATF Type M",
+    "differentialFluid": "BMW LSD gear oil (80W-90)",
+    "brakeFluid": "DOT4",
+    "sparkPlugs": "BMW Standard NGK or Bosch R-ZFR6F-11",
+    "serviceInterval": "15,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "225/40ZR18 front",
+      "255/35ZR18 rear"
+    ],
+    "commonProblems": [
+      "Water pump and thermostat failures",
+      "High-pressure fuel pump wear",
+      "Oil leaks from valve cover gasket"
+    ],
+    "firstChecks": [
+      "Inspect cooling system components",
+      "Check high-pressure fuel pump operation",
+      "Verify VANOS function via scan tool"
+    ],
+    "relatedCodes": [
+      "N52B30 - engine",
+      "GS6-37DZ - manual transmission"
+    ],
+    "notes": [
+      "2014 model year 128i was not officially sold new in North America; production ended in 2013 for US market.",
+      "European markets switched from 128i engine/code designation to 120i with N46/N47 engines; the 128i designation mainly applies to North America."
+    ],
+    "sourceNotes": [
+      "BMW USA service manuals and parts catalogs for E82 128i through 2013 model year",
+      "BMW Technical Service Bulletins and enthusiast community documented maintenance reports"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "135i",
+    "displayName": "BMW 1 Series 135i",
+    "generation": "E82",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "Coupe",
+    "market": "Global (mainly North America, Europe, Australia)",
+    "engineCodes": [
+      "N54B30"
+    ],
+    "engineSummary": "3.0L inline-6 twin-turbocharged petrol engine",
+    "displacement": "2979 cc",
+    "power": "300 hp (225 kW) @ 5800 rpm",
+    "torque": "400 Nm (295 lb-ft) @ 1300-5000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection with high precision direct injection",
+    "timingDrive": "Double VANOS variable camshaft timing with timing chain",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil SAE 5W-30 or 5W-40",
+    "oilCapacity": "6.5 liters (including filter); service-fill with oil filter change",
+    "coolantCapacity": "8.2 liters",
+    "manualTransmission": "6-speed Getrag Type 208 manual",
+    "automaticTransmission": "7-speed dual-clutch DCT (Getrag DKG) or 6-speed ZF automatic (market dependent)",
+    "transmissionFluid": "BMW approved fluid; specification varies by transmission type",
+    "differentialFluid": "Synthetic gear oil, recommended by BMW",
+    "brakeFluid": "DOT 4, changed every 2 years recommended",
+    "sparkPlugs": "NGK LFR7AIX-11 platinum-iridium recommended",
+    "serviceInterval": "Approximately every 15,000 km or 12 months; check oil level regularly",
+    "tireSizes": [
+      "225/40ZR18 front",
+      "245/35ZR18 rear"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failure",
+      "Wastegate rattle and turbo issues",
+      "Valve cover and gasket oil leaks"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger operation",
+      "Check for oil leaks around valve cover and turbo seals",
+      "Fuel system pressure test"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Global version primarily uses N54 engine but fuel system calibration and transmission options vary by market.",
+      "Engine oil capacity includes filter change; use of approved BMW oil recommended to maintain Turbo and VANOS durability."
+    ],
+    "sourceNotes": [
+      "BMW Technical Specifications and Repair manuals (2010 135i E82 N54)",
+      "Service experience notes from BMW enthusiast technical forums and maintenance guides"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "135i",
+    "displayName": "BMW 135i",
+    "generation": "E82",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "Coupe",
+    "market": "Global (with variations primarily in Europe, North America, and Asia)",
+    "engineCodes": [
+      "N54B30"
+    ],
+    "engineSummary": "3.0L inline 6-cylinder turbocharged petrol engine with direct injection and twin turbochargers.",
+    "displacement": "2996 cc",
+    "power": "300 hp (225 kW) at 5800 rpm",
+    "torque": "400 Nm (295 lb-ft) from 1300 to 5000 rpm",
+    "fuelSystem": "Direct injection with twin-turbochargers",
+    "timingDrive": "Double overhead camshafts with timing chain",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil SAE 5W-30 or 0W-40",
+    "oilCapacity": "Approx. 6.5 liters including filter; service-fill with filter change",
+    "coolantCapacity": "Approx. 8.5 liters",
+    "manualTransmission": "6-speed manual transmission available",
+    "automaticTransmission": "7-speed DCT (dual-clutch) or 6-speed automatic with Steptronic (market-dependent)",
+    "transmissionFluid": "BMW approved synthetic transmission fluid, type varies by gearbox",
+    "differentialFluid": "Synthetic gear oil specified by BMW for limited slip differential",
+    "brakeFluid": "DOT 4, changed every 2 years recommended",
+    "sparkPlugs": "BMW double platinum iridium spark plugs, replaced approx. every 30,000 to 45,000 miles",
+    "serviceInterval": "15,000 miles (24,000 km) or 12 months suggested, variable by market",
+    "tireSizes": [
+      "Front: 225/40 ZR18",
+      "Rear: 255/35 ZR18"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures (HPFP)",
+      "Wastegate rattle from turbochargers",
+      "Timing chain tensioner wear leading to rattling noise"
+    ],
+    "firstChecks": [
+      "Inspect HPFP and turbocharger condition",
+      "Check timing chain noise especially at cold start",
+      "Verify regular oil and filter changes"
+    ],
+    "relatedCodes": [
+      "N54",
+      "E82"
+    ],
+    "notes": [
+      "This profile covers the most common 135i engine configuration using the N54 engine.",
+      "Market differences mainly affect transmission choice and minor emissions equipment."
+    ],
+    "sourceNotes": [
+      "BMW Technical Specifications brochures 2011 for E82 135i",
+      "Bimmerfest and official BMW service manuals for N54 engine details"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "135i",
+    "displayName": "BMW 135i",
+    "generation": "E82",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "2-door Coupe",
+    "market": "Global (primarily North America, Europe, select others)",
+    "engineCodes": [
+      "N54B30"
+    ],
+    "engineSummary": "3.0L inline-6 twin-turbocharged petrol engine with direct injection",
+    "displacement": "2979 cc",
+    "power": "300 hp (225 kW) @ 5800 rpm",
+    "torque": "400 Nm (295 lb-ft) @ 1300-5000 rpm",
+    "fuelSystem": "Direct fuel injection with twin turbochargers",
+    "timingDrive": "Double-VANOS variable valve timing, chain driven",
+    "recommendedOil": "BMW Longlife-01 or equivalent synthetic 5W-30",
+    "oilCapacity": "6.0 liters service-fill with oil filter",
+    "coolantCapacity": "7.7 liters",
+    "manualTransmission": "6-speed Getrag manual (available depending on market)",
+    "automaticTransmission": "7-speed dual-clutch (DCT) or 6-speed automatic depending on market",
+    "transmissionFluid": "BMW approved ATF or DCT fluid per gearbox type",
+    "differentialFluid": "BMW hypoid gear oil or equivalent (if applicable)",
+    "brakeFluid": "DOT 4 brake fluid, changed per service interval",
+    "sparkPlugs": "OEM iridium spark plugs, replaced every 100,000 km or 60,000 miles",
+    "serviceInterval": "Approximately 15,000 km / 12 months (BMW service interval display dependent)",
+    "tireSizes": [
+      "Front: 225/40 R18",
+      "Rear: 255/35 R18"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failure",
+      "Turbo wastegate rattle",
+      "Carbon buildup on intake valves due to direct injection",
+      "Valve stem seal wear causing oil consumption"
+    ],
+    "firstChecks": [
+      "Inspect high-pressure fuel pump and injectors for leaks",
+      "Check turbocharger operation and listen for wastegate rattle",
+      "Monitor oil consumption and perform regular oil changes",
+      "Check for DME/ECU fault codes related to fuel and ignition"
+    ],
+    "relatedCodes": [
+      "N54B30"
+    ],
+    "notes": [
+      "The 2012 BMW 135i uses the N54 engine globally but was replaced by the N55 in some markets starting mid-2011; check market-specific production dates.",
+      "Manual transmission availability varies by market; DCT introduced in later model years.",
+      "Oil capacity includes filter change; use only recommended synthetic oils to prevent turbocharger issues."
+    ],
+    "sourceNotes": [
+      "BMW E82 135i official specs from BMW press releases and technical manuals",
+      "Technical forums and repair guides confirm common maintenance and typical problems for N54 engines"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "135i",
+    "displayName": "BMW 1 Series 135i",
+    "generation": "E82",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "2-door Coupe",
+    "market": "Europe, North America, selected global markets",
+    "engineCodes": [
+      "N55B30"
+    ],
+    "engineSummary": "3.0L inline-6 turbocharged petrol engine (N55) with direct injection and single twin-scroll turbocharger",
+    "displacement": "2979 cc",
+    "power": "300 hp (varies slightly by market)",
+    "torque": "400 Nm (295 lb-ft)",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Single overhead camshaft with chain drive",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil; 5W-30 or 0W-40 recommended",
+    "oilCapacity": "approximately 6.5 liters (includes service fill and oil filter change)",
+    "coolantCapacity": "7.5 liters",
+    "manualTransmission": "6-speed manual (market-dependent availability)",
+    "automaticTransmission": "7-speed dual-clutch automatic (DCT) or 6-speed automatic depending on market",
+    "transmissionFluid": "BMW approved automatic transmission fluid or DCT fluid per specification",
+    "differentialFluid": "OEM specification fluid, changed per service interval",
+    "brakeFluid": "DOT 4 high-performance fluid, changed every 2 years",
+    "sparkPlugs": "Long-life platinum or iridium type, changed every 60,000-100,000 km based on service schedule",
+    "serviceInterval": "Typically 15,000 km / 1 year, variable by region and driving conditions",
+    "tireSizes": [
+      "225/45ZR17 (standard), optional 235/40ZR18 or 245/35ZR19"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump wear",
+      "Turbo wastegate rattle",
+      "Electric water pump failure"
+    ],
+    "firstChecks": [
+      "Inspect vanos system for rattling",
+      "Check turbocharger boost response",
+      "Watch for oil leaks around valve cover gasket"
+    ],
+    "relatedCodes": [
+      "SULEV versions available in select markets",
+      "Diesel variants not part of 135i model line"
+    ],
+    "notes": [
+      "2013 was among the final production years of the E82 135i coupe before the F22 generation introduction.",
+      "Engine and transmission configurations vary by market; North America commonly had the automatic option, while manual was favored in Europe."
+    ],
+    "sourceNotes": [
+      "BMW official US and European brochures 2013",
+      "Technical service bulletins and enthusiast community documentation"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "135i",
+    "displayName": "BMW 135i",
+    "generation": "E82 (1 Series Coupe E82)",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "E82",
+    "bodyStyle": "2-door coupe / 3-door hatchback (market dependent)",
+    "market": "Global (primarily USA, Europe, select other markets; production ended mid-2013 globally, 2014 MY primarily USA and some remaining markets)",
+    "engineCodes": [
+      "N55B30"
+    ],
+    "engineSummary": "Single turbocharged 3.0L inline-six petrol engine, direct injection, valvetronic",
+    "displacement": "2979 cc",
+    "power": "300 hp (225 kW) @ 5800 rpm",
+    "torque": "400 Nm (295 lb-ft) @ 1200–5000 rpm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain driven DOHC",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil",
+    "oilCapacity": "6.5 liters (including filter), service fill with filter change",
+    "coolantCapacity": "7.5 liters (approximate, system)",
+    "manualTransmission": "6-speed manual (available in some markets)",
+    "automaticTransmission": "7-speed dual-clutch (DCT) or 6-speed automatic, market dependent",
+    "transmissionFluid": "BMW-approved fluid per transmission type; check service manual",
+    "differentialFluid": "BMW LSD fluid or equivalent, depending on vehicle specification",
+    "brakeFluid": "DOT 4, change every 2 years recommended",
+    "sparkPlugs": "BMW recommended iridium spark plugs, typically replace every 60,000 mi",
+    "serviceInterval": "15,000 miles / 24,000 km or 1 year",
+    "tireSizes": [
+      "225/40ZR18 front",
+      "255/35ZR18 rear"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures",
+      "Wastegate rattle on turbo",
+      "Carbon buildup on intake valves due to direct injection"
+    ],
+    "firstChecks": [
+      "Oil condition and consumption due to turbocharger stress",
+      "Turbocharger boost leaks",
+      "Coolant system condition and leaks"
+    ],
+    "relatedCodes": [
+      "N54 engine used in earlier 135i until 2011, replaced by N55 for 2012+ models"
+    ],
+    "notes": [
+      "335i designation replaced 135i in some markets after 2013, but 135i remained in select regions in 2014 as leftover stock",
+      "The 2014 model year 135i was primarily sold in the USA market; global production ended in 2013",
+      "Technical profile reflects the transition from N54 turbo twin-turbo to N55 single-turbo engine from 2012 onwards"
+    ],
+    "sourceNotes": [
+      "BMW USA and Europe official technical archives and service manuals",
+      "Third-party technical reviews and enthusiast forums confirming engine and model year data"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 2 Series 228i",
+    "generation": "F22/F23",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22 (coupe), F23 (convertible)",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (notable markets: USA, Europe, Australia, select other markets)",
+    "engineCodes": [
+      "N20B20"
+    ],
+    "engineSummary": "2.0L inline-4 turbocharged petrol engine with direct injection",
+    "displacement": "1997 cc",
+    "power": "240 hp (179 kW) at 5000-6200 rpm",
+    "torque": "258 lb-ft (350 Nm) at 1250-4800 rpm",
+    "fuelSystem": "Turbocharged direct injection with variable valve timing (Double-VANOS)",
+    "timingDrive": "Chain-driven timing system",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil, SAE 5W-30 or 0W-30",
+    "oilCapacity": "Approximately 6.5 liters (including filter) - service fill",
+    "coolantCapacity": "Approximately 6.5 liters",
+    "manualTransmission": "6-speed manual available in some markets",
+    "automaticTransmission": "8-speed automatic (ZF 8HP) available widely",
+    "transmissionFluid": "BMW LifeguardFluid 8 or equivalent for 8-speed automatic",
+    "differentialFluid": "Typically requires GL-5 gear oil for manual differential; varies by market",
+    "brakeFluid": "DOT4",
+    "sparkPlugs": "Iridium-tipped spark plugs, BMW part-specific",
+    "serviceInterval": "Every 15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "225/45 R17 - base",
+      "225/40 R18 optional"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures (known on N20 engine)",
+      "Timing chain tensioner wear (early models)",
+      "Oil filter housing gasket leaks"
+    ],
+    "firstChecks": [
+      "Check for oil leaks around valve cover and oil filter housing",
+      "Inspect turbocharger for shaft play",
+      "Listen for unusual timing chain noise"
+    ],
+    "relatedCodes": [
+      "N20B20"
+    ],
+    "notes": [
+      "The 228i replaced the 128i under BMW's updated 2 Series naming scheme starting 2014.",
+      "Engine and features may vary slightly by market due to emissions and regulations."
+    ],
+    "sourceNotes": [
+      "BMW USA 2014 2 Series Owner's Manual",
+      "BMW Technical Service Bulletins and Enthusiast Technical Forums"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 228i",
+    "generation": "F22",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (North America, Europe, Asia; engine specs vary by market)",
+    "engineCodes": [
+      "N20B20"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4, DOHC, direct injection, turbocharged petrol engine",
+    "displacement": "1997 cc",
+    "power": "240 hp (179 kW) @ 5000 rpm (varies slightly by market emission standards)",
+    "torque": "258 lb-ft (350 Nm) @ 1250-4800 rpm",
+    "fuelSystem": "Direct fuel injection with turbocharging",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil, SAE 5W-30 or 5W-40",
+    "oilCapacity": "6.5 liters (including filter) - full service fill with filter change",
+    "coolantCapacity": "7.5 liters",
+    "manualTransmission": "6-speed manual (selected markets)",
+    "automaticTransmission": "8-speed automatic (ZF 8HP) with manual shift mode",
+    "transmissionFluid": "BMW approved ATF (varies by transmission type, check specific model version)",
+    "differentialFluid": "BMW approved gear oil (check local service manual)",
+    "brakeFluid": "DOT 4, BMW recommended brand",
+    "sparkPlugs": "BMW twin electrode iridium plugs, replacement interval approx. 60,000 miles (varies with use)",
+    "serviceInterval": "15,000 miles or 1 year, BMW Condition Based Service system",
+    "tireSizes": [
+      "Front: 225/45R17 - 18",
+      "Rear: 255/40R17 - 18"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures (N20 engine)",
+      "Coolant leaks from water pump or thermostat housing",
+      "Timing chain stretch or guide wear under high mileage"
+    ],
+    "firstChecks": [
+      "Inspect oil and coolant level and condition",
+      "Check turbocharger boost pressure with diagnostic tools",
+      "Examine electronic fault codes, especially fuel system and ignition"
+    ],
+    "relatedCodes": [
+      "N20B20"
+    ],
+    "notes": [
+      "Technical profile covers main 2.0L turbo engine variant sold widely including North America and Europe.",
+      "Market variations in emissions and horsepower ratings due to regional regulations."
+    ],
+    "sourceNotes": [
+      "BMW USA 2015 228i Owner's Manual and Technical Specifications",
+      "European BMW F22 technical data sheets and service bulletins 2015"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 228i",
+    "generation": "F22",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (primarily North America, Europe, and selected other markets)",
+    "engineCodes": [
+      "N20B20"
+    ],
+    "engineSummary": "2.0-liter inline-4 turbocharged petrol engine, single twin-scroll turbocharger, direct injection",
+    "displacement": "1997 cc",
+    "power": "184-240 hp (market dependent; US 228i rated ~240 hp, Europe versions may have around 184 hp)",
+    "torque": "270 Nm (199 lb-ft) to 350 Nm (258 lb-ft), dependent on market and tuning",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil",
+    "oilCapacity": "Approx. 4.5 liters including filter; service-fill with oil filter change",
+    "coolantCapacity": "Approx. 6.5 liters",
+    "manualTransmission": "6-speed manual available in some markets",
+    "automaticTransmission": "8-speed ZF 8HP automatic in most markets",
+    "transmissionFluid": "BMW-approved synthetic automatic transmission fluid",
+    "differentialFluid": "BMW-approved limited slip differential oil (if equipped)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium-tipped spark plugs, gap ~0.9 mm",
+    "serviceInterval": "Typically 15,000 miles / 24,000 km, or 12 months",
+    "tireSizes": [
+      "225/45 R17 standard, optional 18\" and 19\" wheels available"
+    ],
+    "commonProblems": [
+      "High pressure fuel pump failures in some cases",
+      "Timing chain and guide wear on high mileage N20 engines",
+      "Turbocharger wastegate rattling"
+    ],
+    "firstChecks": [
+      "Inspect oil consumption and leaks around turbo",
+      "Timing chain tension and noise detection",
+      "Check DSG transmission fluid if automatic"
+    ],
+    "relatedCodes": [
+      "N20B20"
+    ],
+    "notes": [
+      "Power and torque vary by regional emissions tuning; US market 228i rated at 240 hp.",
+      "European markets may have lower power due to emissions and fuel quality differences."
+    ],
+    "sourceNotes": [
+      "BMW F22 2 Series technical specifications from official BMW brochures (2016)",
+      "Automotive reviews and verified BMW enthusiast technical documentation"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 2 Series 228i",
+    "generation": "F22",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (notably North America, Europe, Australia)",
+    "engineCodes": [
+      "B48B20M0"
+    ],
+    "engineSummary": "2.0L inline-4 turbocharged gasoline engine",
+    "displacement": "1998 cc",
+    "power": "180-190 hp (market dependent)",
+    "torque": "270 Nm (199 lb-ft)",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 or equivalent synthetic oil 5W-30",
+    "oilCapacity": "5.0 liters (engine oil, including filter change, service fill)",
+    "coolantCapacity": "6.5 liters (approximate, varies with market specs)",
+    "manualTransmission": "6-speed manual available in select markets",
+    "automaticTransmission": "8-speed automatic (ZF 8HP series) in most markets",
+    "transmissionFluid": "BMW approved synthetic ATF (varies by transmission)",
+    "differentialFluid": "Synthetic gear oil (markings vary by market)",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "BMW specific iridium-tipped spark plugs, gap ~0.025 in",
+    "serviceInterval": "Every 15,000 miles or 12 months under normal conditions",
+    "tireSizes": [
+      "225/45 R17",
+      "225/40 R18",
+      "225/35 R19 depending on wheel option"
+    ],
+    "commonProblems": [
+      "Turbocharger wastegate rattle in high mileage vehicles",
+      "Oil leaks from valve cover gasket"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger and charge pipes for leaks",
+      "Check oil level regularly due to consumption tendencies"
+    ],
+    "relatedCodes": [
+      "B48",
+      "N20 (predecessor engine)"
+    ],
+    "notes": [
+      "Engine code B48B20M0 used widely across 228i in 2018, with minor tuning variations depending on market emissions and fuel quality.",
+      "Oil capacity includes filter replacement for full service fill; service manuals specify BMW Longlife oil standards."
+    ],
+    "sourceNotes": [
+      "BMW Technical Service Documentation F22 2018 specific engine and transmission data",
+      "Global market sales brochures and EPA certification documents 2018"
+    ]
+  },
+  {
+    "available": true,
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 2 Series 228i",
+    "generation": "F22",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global with variations mainly in North America, Europe, and Asia",
+    "engineCodes": [
+      "B48B20O0"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 engine, part of BMW’s modular B48 engine family, using direct injection and twin-scroll turbocharging.",
+    "displacement": "1998 cc",
+    "power": "190-190 hp (142 kW) @ 5000-6000 rpm (market dependent)",
+    "torque": "280 Nm (207 lb-ft) @ 1250-4300 rpm",
+    "fuelSystem": "Direct injection, turbocharged gasoline",
+    "timingDrive": "Chain-driven dual overhead camshafts with variable valve timing (Double VANOS)",
+    "recommendedOil": "BMW Longlife-01 or equivalent synthetic 5W-30 or 0W-30",
+    "oilCapacity": "Approximately 5.0 liters (including filter) - service fill",
+    "coolantCapacity": "Approximately 6.5 liters",
+    "manualTransmission": "6-speed manual (available in some markets)",
+    "automaticTransmission": "8-speed ZF 8HP automatic (widely available)",
+    "transmissionFluid": "BMW ATF synthetic fluid (check market-specific specification)",
+    "differentialFluid": "Closed differential, standard factory fill, change interval per service manual",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "Iridium spark plugs, replaced at 100,000 km recommended interval",
+    "serviceInterval": "Approximately 15,000 km or 1 year, whichever comes first; varies by market",
+    "tireSizes": [
+      "225/45 R17 (standard), optional up to 19-inch wheels"
+    ],
+    "commonProblems": [
+      "Occasional high-pressure fuel pump failure in some climates",
+      "Turbocharger wastegate rattle under certain conditions"
+    ],
+    "firstChecks": [
+      "Turbo boost leaks and intercooler condition",
+      "Engine oil level and quality",
+      "Timing chain rattle or noise"
+    ],
+    "relatedCodes": [
+      "F22 (coupe/convertible chassis)"
+    ],
+    "notes": [
+      "Technical profile focuses on the core 2.0L B48 turbocharged engine offered globally with slight power tuning differences per market.",
+      "North American models typically produce around 228 hp (slightly different from Euro-spec 190 hp version), engine code B48B20M0 used there.",
+      "Oil capacity includes the filter; use specified BMW longlife synthetic oil for best performance."
+    ],
+    "sourceNotes": [
+      "BMW official technical brochures and service manuals 2020",
+      "Automotive reliability reports and enthusiast technical forums 2020"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 2 Series 228i",
+    "generation": "F22",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "North America (USA, Canada), Europe, select other regions; availability varies by market",
+    "engineCodes": [
+      "B48B20"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 gasoline engine, widely used in 228i for 2021 model year in major markets",
+    "displacement": "1998 cc",
+    "power": "184 hp (137 kW) @ 5000 rpm (typical for 228i in 2021)",
+    "torque": "290 Nm (214 lb-ft) @ 1350-4200 rpm",
+    "fuelSystem": "Direct injection turbocharged petrol",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "BMW Longlife-01 or approved synthetic 5W-30 or 0W-30 oil",
+    "oilCapacity": "Approximately 5.0 liters including oil filter; service fill recommended",
+    "coolantCapacity": "Approximately 7.0 liters",
+    "manualTransmission": "6-speed manual (market dependent, mostly NA and Europe)",
+    "automaticTransmission": "8-speed automatic Steptronic",
+    "transmissionFluid": "BMW synthetic automatic transmission fluid (ATF) as specified in owner manual",
+    "differentialFluid": "BMW specified gear oil for rear differential (if equipped)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "BMW twin-tip spark plugs, typically NGK or Bosch equivalent, replaced every 60,000 to 100,000 km",
+    "serviceInterval": "15,000 km or 12 months, whichever comes first (varies by region and driving conditions)",
+    "tireSizes": [
+      "225/45 R17",
+      "225/40 R18",
+      "245/35 R19 depending on wheel option"
+    ],
+    "commonProblems": [
+      "Turbocharger wastegate rattling over time",
+      "High-pressure fuel pump wear",
+      "Oil leaks from valve cover gasket"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger function and boost pressure",
+      "Check oil level and condition frequently",
+      "Monitor coolant system for overheating issues"
+    ],
+    "relatedCodes": [
+      "B48B20M0",
+      "B48B20M1 (market and year dependent variations)"
+    ],
+    "notes": [
+      "The 228i with B48 engine was mainly sold in North America and Europe in 2021, while some markets offered the 230i or other variants instead.",
+      "Oil capacity values include filter change; always use BMW approved fluids matching local specifications."
+    ],
+    "sourceNotes": [
+      "BMW USA 2021 Owner's Manual & Technical Specifications",
+      "BMW Technical Service Bulletins (2020-2021) for F22 2 Series models"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 2 Series 228i",
+    "generation": "F44/F45/F46 (2 Series Gran Coupe / Active Tourer / Gran Tourer)",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F44 (Gran Coupe), F45 (Active Tourer), F46 (Gran Tourer)",
+    "bodyStyle": "Coupe / Hatchback / MPV depends on exact variant",
+    "market": "Global (mainly North America, Europe, select international markets)",
+    "engineCodes": [
+      "B48B20M0"
+    ],
+    "engineSummary": "2.0L inline-4 turbocharged petrol engine (B48 series), used globally with minor market-specific calibrations",
+    "displacement": "1998 cc",
+    "power": "184 hp (approx. 135 kW) at 5000-6000 rpm",
+    "torque": "300 Nm (221 lb-ft) at 1350-4000 rpm",
+    "fuelSystem": "Direct injection with turbocharger",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 FE or equivalent fully synthetic 0W-20/0W-30",
+    "oilCapacity": "approximately 5.0 liters (service fill including filter change)",
+    "coolantCapacity": "Around 6.0-7.0 liters depending on body style variant",
+    "manualTransmission": "Available in some markets with 6-speed manual",
+    "automaticTransmission": "8-speed Steptronic automatic (ZF 8HP)",
+    "transmissionFluid": "BMW-approved ATF, change interval per BMW service schedule",
+    "differentialFluid": "Not user-serviceable in front-wheel-drive models; limited slip differential not standard",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "Iridium, BMW part-specific, interval approx. 60,000-100,000 km",
+    "serviceInterval": "Approximately 12,000 miles or 1 year, depending on market and usage",
+    "tireSizes": [
+      "225/45 R17",
+      "225/40 R18",
+      "225/35 R19 (market-dependent)"
+    ],
+    "commonProblems": [
+      "Turbocharger wastegate rattle (rare on newer models)",
+      "High pressure fuel pump wear",
+      "Electric water pump failure after extended use"
+    ],
+    "firstChecks": [
+      "Turbocharger functionality",
+      "Oil consumption levels",
+      "Electronic throttle and sensor diagnostics"
+    ],
+    "relatedCodes": [
+      "B48B20O0",
+      "B48B20M1"
+    ],
+    "notes": [
+      "The BMW 228i was relaunched for the 2022 model year replacing the previous N20 4-cylinder with a more efficient B48 engine.",
+      "Engine management and power figures may differ slightly by market (e.g., USA vs Europe) due to emissions regulation."
+    ],
+    "sourceNotes": [
+      "BMW USA 2022 technical specs and service manual extracts",
+      "European type approval databases and BMW press releases 2021-2022"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "228i",
+    "displayName": "BMW 228i",
+    "generation": "G42 (2 Series Coupe)",
+    "year": 2024,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "G42",
+    "bodyStyle": "Coupe",
+    "market": "Global (availability varies; mainly North America, Europe, selected other markets)",
+    "engineCodes": [
+      "B48B20M0"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 gasoline engine with direct injection",
+    "displacement": "1998 cc",
+    "power": "184 hp (European rated: 135 kW / 184 hp; North America similar)",
+    "torque": "300 Nm (221 lb-ft)",
+    "fuelSystem": "Gasoline direct injection with turbocharging",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 FE or equivalent synthetic 5W-30",
+    "oilCapacity": "approx. 5.0 liters (includes filter, service-fill capacity)",
+    "coolantCapacity": "Approx. 6.5 liters",
+    "manualTransmission": "6-speed manual (market dependent, mainly Europe)",
+    "automaticTransmission": "8-speed automatic Steptronic",
+    "transmissionFluid": "BMW-specific ATF (varies by transmission, refer to dealer)",
+    "differentialFluid": "Check per service manual, usually synthetic gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium tipped, BMW part-specific",
+    "serviceInterval": "15,000 km or 12 months (whichever comes first)",
+    "tireSizes": [
+      "225/45 R18",
+      "225/40 R19 depending on wheel option"
+    ],
+    "commonProblems": [
+      "No widespread issues for 2024 model, but typical turbocharged engine checks apply"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger condition",
+      "Verify software updates",
+      "Check oil level during break-in"
+    ],
+    "relatedCodes": [
+      "B48"
+    ],
+    "notes": [
+      "Engine codes and specifications can vary slightly by market emissions and tuning.",
+      "Manual transmission availability limited depending on region; automatic dominant in most markets."
+    ],
+    "sourceNotes": [
+      "BMW 2024 official technical specifications brochure",
+      "2024 BMW 2 Series G42 owner’s manual and service literature"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "230i",
+    "displayName": "BMW 230i",
+    "generation": "F22",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (with market engine variations)",
+    "engineCodes": [
+      "B48B20O0"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 petrol engine, prevalent in most global markets for 230i in 2017; power output and specs may vary slightly by market emissions and tuning",
+    "displacement": "1998 cc",
+    "power": "184-192 kW (248-258 hp) depending on market and tuning",
+    "torque": "350 Nm (258 lb-ft)",
+    "fuelSystem": "Direct Injection with Turbocharging",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 FE synthetic 0W-30",
+    "oilCapacity": "5.0 liters service-fill including filter change",
+    "coolantCapacity": "Total system approx. 7.5 liters",
+    "manualTransmission": "6-speed manual (market dependent)",
+    "automaticTransmission": "8-speed Steptronic automatic",
+    "transmissionFluid": "BMW ATF synthetic fluid, model dependent",
+    "differentialFluid": "BMW specified synthetic gear oil 75W-90",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "BMW OEM iridium plugs, gap approx. 0.8 mm",
+    "serviceInterval": "Approximately 15,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "225/45R17 front",
+      "255/40R17 rear (Coupe)"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump wear",
+      "Turbocharger wastegate rattling",
+      "Coolant system leaks in older units"
+    ],
+    "firstChecks": [
+      "Verify oil pressure and consumption",
+      "Inspect turbocharger boost leaks",
+      "Check timing chain tensioner and rattle noise"
+    ],
+    "relatedCodes": [
+      "B48B20O0 variant may differ slightly by market emissions"
+    ],
+    "notes": [
+      "230i replaced 228i with updated B48 engine in most markets starting 2016-2017 model year",
+      "Power figures and equipment may vary by region due to local emission and market regulations"
+    ],
+    "sourceNotes": [
+      "BMW North America and Europe official technical documentation 2017",
+      "Independent technical reviews and service manuals for 2017 BMW F22 230i"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "230i",
+    "displayName": "BMW 230i",
+    "generation": "F22",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe",
+    "market": "North America / Europe / selected global markets",
+    "engineCodes": [
+      "B48B20M0"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 gasoline engine with direct injection, used globally with minor market-specific tuning variations.",
+    "displacement": "1998 cc",
+    "power": "248 hp (185 kW) @ 5000-6250 rpm",
+    "torque": "258 lb-ft (350 Nm) @ 1450-4800 rpm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven variable camshaft timing",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil SAE 0W-30 or 5W-30",
+    "oilCapacity": "5.0 liters service-fill including filter change",
+    "coolantCapacity": "7.4 liters",
+    "manualTransmission": "6-speed manual (market dependent)",
+    "automaticTransmission": "8-speed ZF 8HP automatic (widely standard)",
+    "transmissionFluid": "ZF Lifeguard 8 fluid for 8-speed automatic",
+    "differentialFluid": "BMW specified synthetic gear oil, change interval ~100,000 km",
+    "brakeFluid": "DOT 4 recommended, change every 2 years",
+    "sparkPlugs": "BMW single platinum or iridium, replaced every 60,000 km",
+    "serviceInterval": "15,000 km or annually, whichever first",
+    "tireSizes": [
+      "225/45R17 (standard), optional 18-19 inches"
+    ],
+    "commonProblems": [
+      "Oil leaks around valve cover gasket",
+      "Coolant thermostat failure",
+      "High-pressure fuel pump wear"
+    ],
+    "firstChecks": [
+      "Check oil leaks around turbo and valve cover",
+      "Inspect coolant system for leaks",
+      "Verify software updates"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The 2018 BMW 230i uses the modular B48 engine introduced since 2015, with slight tuning updates over prior years.",
+      "Available markets include North America, Europe, and selected regions; engine output and transmission type may vary by country."
+    ],
+    "sourceNotes": [
+      "BMW official technical publications and 2018 model year service manual",
+      "Independent automotive technical reviews and specifications databases"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "230i",
+    "displayName": "BMW 2 Series 230i",
+    "generation": "F22",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (varies by region: US, Europe, Asia)",
+    "engineCodes": [
+      "B48B20O0",
+      "B48B20A0"
+    ],
+    "engineSummary": "2.0L turbocharged inline-4 (B48 engine family), twin-scroll turbocharger, direct injection",
+    "displacement": "1998 cc",
+    "power": "184-192 hp (market dependent)",
+    "torque": "270-320 Nm",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "BMW Longlife-01 approved synthetic oil SAE 0W-30 or 5W-30",
+    "oilCapacity": "5.0 liters (includes service fill; typical oil filter change required)",
+    "coolantCapacity": "6.5 liters",
+    "manualTransmission": "6-speed manual (available in select markets)",
+    "automaticTransmission": "8-speed ZF 8HP automatic",
+    "transmissionFluid": "BMW approved synthetic ATF",
+    "differentialFluid": "Synthetic gear oil, change interval varies by market",
+    "brakeFluid": "DOT4, change every 2 years recommended",
+    "sparkPlugs": "BMW single platinum or iridium plugs, change interval approx. 60,000 miles",
+    "serviceInterval": "15,000 miles / 24 months (flexible service system)",
+    "tireSizes": [
+      "225/45R17",
+      "225/40R18",
+      "245/35R18"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump issues (some early production units)",
+      "Turbocharger wastegate rattle",
+      "Oil leaks from valve cover gasket"
+    ],
+    "firstChecks": [
+      "Verify correct oil type and intervals",
+      "Check turbocharger health and wastegate operation",
+      "Inspect for oil leaks around engine covers"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Engine and power output may vary by market due to emissions and tuning differences.",
+      "230i replaced the 228i in many markets starting from 2017; 2019 models are well-documented globally."
+    ],
+    "sourceNotes": [
+      "BMW official 2 Series brochures and technical documentation 2019",
+      "Independent BMW enthusiast and workshop data (F22 platform)"
+    ]
+  },
+  {
+    "make": "bmw",
+    "model": "230i",
+    "displayName": "BMW 2 Series 230i",
+    "generation": "F22/F23",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "F22 (coupe)/F23 (convertible)",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global markets excluding limited regions (note engine power varies slightly by market)",
+    "engineCodes": [
+      "B48B20O0"
+    ],
+    "engineSummary": "2.0L inline-4 turbocharged gasoline engine",
+    "displacement": "1998 cc",
+    "power": "184 hp (market dependent, approx. 135 kW)",
+    "torque": "300 Nm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven double VANOS variable valve timing",
+    "recommendedOil": "BMW Longlife-01 FE synthetic 0W-30",
+    "oilCapacity": "Approximately 5.3 liters (with filter) - full service fill including filter change",
+    "coolantCapacity": "Approximately 6.5 liters",
+    "manualTransmission": "6-speed manual available in select markets",
+    "automaticTransmission": "8-speed ZF 8HP automatic",
+    "transmissionFluid": "ZF LifeguardFluid 8 or BMW specified equivalent",
+    "differentialFluid": "BMW specified synthetic gear oil, change every 60,000 km recommended",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "BMW specific iridium-tipped plugs, replace every 60,000 km",
+    "serviceInterval": "Every 15,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "225/45 R17 (standard), 225/40 R18 (optional)"
+    ],
+    "commonProblems": [
+      "Timing chain wear early if oil change intervals neglected",
+      "High pressure fuel pump failure in rare cases"
+    ],
+    "firstChecks": [
+      "Confirm oil level and quality frequently",
+      "Inspect turbocharger for boost leaks",
+      "Check timing chain tensioner noise"
+    ],
+    "relatedCodes": [
+      "B48"
+    ],
+    "notes": [
+      "Engine and power output may vary slightly by market due to emissions regulations",
+      "230i replaced 228i and 220i globally around 2017-2020 as updated variant with B48 engine"
+    ],
+    "sourceNotes": [
+      "BMW Technical Service Information 2020 2 Series",
+      "Global automotive databases including BMW press releases and technical sheets"
+    ]
+  },
+  {
     "make": "toyota",
     "model": "86",
     "displayName": "Toyota 86",
@@ -33868,6 +35123,2828 @@
     "sourceNotes": [
       "Toyota global technical specifications 2019 Prius XW50",
       "Verified automotive databases and official Toyota service documentation"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "prius",
+    "displayName": "Toyota Prius",
+    "generation": "XW50",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XW50",
+    "bodyStyle": "5-door Hatchback",
+    "market": "Global (main markets: Japan, North America, Europe)",
+    "engineCodes": [
+      "2ZR-FXE",
+      "A25A-FXS"
+    ],
+    "engineSummary": "Hybrid powertrain combining a 1.8L 2ZR-FXE engine or a 2.5L A25A-FXS engine with electric motors; engine availability varies by market and trim level.",
+    "displacement": "1798 cc (2ZR-FXE) / 2487 cc (A25A-FXS)",
+    "power": "96 kW (129 hp) combined system power for 1.8L; approx. 107 kW (143 hp) combined system power for 2.5L",
+    "torque": "142 Nm (2ZR-FXE gasoline engine) / 221 Nm (A25A-FXS gasoline engine)",
+    "fuelSystem": "Multi-port fuel injection with hybrid synergy drive",
+    "timingDrive": "Chain-driven DOHC with VVT-i (variable valve timing)",
+    "recommendedOil": "SAE 0W-20 synthetic oil, API SN or newer",
+    "oilCapacity": "Approx. 3.6 liters service fill including filter",
+    "coolantCapacity": "Approx. 5.3 liters including hybrid system coolant",
+    "manualTransmission": "Not available; only eCVT available",
+    "automaticTransmission": "Electronically controlled eCVT (Electronically controlled continuously variable transmission) with hybrid system",
+    "transmissionFluid": "Toyota WS (World Standard) transmission fluid",
+    "differentialFluid": "Not applicable (front-wheel drive layout without differential oil service)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium tipped spark plugs, NGK IFR6T11 or equivalent",
+    "serviceInterval": "Every 16,000 km (10,000 miles) or 12 months, whichever comes first",
+    "tireSizes": [
+      "195/65R15",
+      "195/60R16",
+      "215/45R17 depending on market and trim"
+    ],
+    "commonProblems": [
+      "12V battery degradation in cold climates",
+      "Inverter coolant leaks",
+      "Tire wear due to regenerative braking"
+    ],
+    "firstChecks": [
+      "Check hybrid battery health and inverter coolant condition",
+      "Inspect brake wear and brake fluid level",
+      "Verify tire pressures and condition"
+    ],
+    "relatedCodes": [
+      "THS II (Toyota Hybrid System II)"
+    ],
+    "notes": [
+      "The 1.8L 2ZR-FXE engine is standard in many markets (Europe, Japan).",
+      "The 2.5L A25A-FXS engine variant was introduced during the 2019 facelift and is sold in North America and some other markets.",
+      "Hybrid system voltage approx. 201.6 V (2020 model year)."
+    ],
+    "sourceNotes": [
+      "Toyota Global Media Press release 2019 Prius facelift and specs",
+      "EPA fuel economy and hybrid system technical documentation 2020"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "prius",
+    "displayName": "Toyota Prius",
+    "generation": "XW50",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XW50",
+    "bodyStyle": "5-door Hatchback",
+    "market": "Global (variation by region in engine and transmission specs)",
+    "engineCodes": [
+      "2ZR-FXE",
+      "M15A-FXE"
+    ],
+    "engineSummary": "Hybrid powertrain with 1.8L Atkinson cycle gasoline engine (2ZR-FXE) in most markets; 1.5L hybrid engine (M15A-FXE) in some Asian markets like Japan",
+    "displacement": "1798 cc (2ZR-FXE), 1496 cc (M15A-FXE)",
+    "power": "121 hp total system output (combustion engine + electric motor, 2ZR-FXE variant)",
+    "torque": "142 Nm (gasoline engine only, 2ZR-FXE)",
+    "fuelSystem": "Fuel injection with electronic acid fuel injection (EFI)",
+    "timingDrive": "Chain drive, DOHC 16 valve",
+    "recommendedOil": "SAE 0W-16 synthetic recommended by Toyota for improved efficiency",
+    "oilCapacity": "Approximately 4.4 liters service fill including filter change (2ZR-FXE engine)",
+    "coolantCapacity": "Approx. 6 liters engine + inverter coolant system (hybrid specific)",
+    "manualTransmission": "Not applicable (Prius uses eCVT hybrid transmission only)",
+    "automaticTransmission": "Electronically controlled continuously variable transmission (eCVT)",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE",
+    "differentialFluid": "Not applicable (front-wheel drive hybrid electric vehicle)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium tipped recommended, replacement interval approx. 120,000 km",
+    "serviceInterval": "15,000 km or 12 months (whichever comes first), hybrid system maintenance per manual",
+    "tireSizes": [
+      "195/65R15",
+      "215/45R17 (depending on market and trim)"
+    ],
+    "commonProblems": [
+      "12-volt battery degradation",
+      "Inverter coolant leaks (rare)"
+    ],
+    "firstChecks": [
+      "Hybrid battery health",
+      "Inverter coolant level",
+      "Oil quality and level"
+    ],
+    "relatedCodes": [
+      "2ZR-FXE",
+      "M15A-FXE",
+      "THS II hybrid system"
+    ],
+    "notes": [
+      "Multiple markets have slight variations in hybrid system tuning and emissions setup.",
+      "The 2021 model continued Toyota's fourth-generation Prius design introduced globally in 2015."
+    ],
+    "sourceNotes": [
+      "Toyota Global Specifications and Owner's Manuals 2021 Prius",
+      "Hybrid Technical Reviews and Service Guides 2020-2021"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "prius",
+    "displayName": "Toyota Prius",
+    "generation": "XW50",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XW50",
+    "bodyStyle": "Hatchback",
+    "market": "global (noting variations in engine tuning and hybrid system components by region)",
+    "engineCodes": [
+      "2ZR-FXE",
+      "2ZR-FXE Hybrid Engine"
+    ],
+    "engineSummary": "1.8L inline-4 Atkinson-cycle hybrid engine paired with an electric motor, combined output approx. 121 hp (90 kW), CVT hybrid transmission",
+    "displacement": "1798 cc",
+    "power": "96 kW (129 hp) combined system output, varies slightly by market",
+    "torque": "142 Nm (engine only)",
+    "fuelSystem": "Multi-point fuel injection with hybrid synergy drive",
+    "timingDrive": "Chain-driven dual overhead cam (DOHC), VVT-i",
+    "recommendedOil": "Toyota Genuine Motor Oil SAE 0W-20",
+    "oilCapacity": "Approx. 4.4 L (includes filter); service-fill volume includes oil filter replacement",
+    "coolantCapacity": "Approx. 6.5 L (engine cooling system)",
+    "manualTransmission": "Not applicable (hybrid CVT)",
+    "automaticTransmission": "Electronically controlled continuously variable transmission (e-CVT) integrated in hybrid system",
+    "transmissionFluid": "Toyota e-CVT fluid specified by market/service manual",
+    "differentialFluid": "N/A (front-wheel drive model mainly; AWD-e variant uses specific AWD fluid)",
+    "brakeFluid": "DOT 3 or DOT 4 as specified by market",
+    "sparkPlugs": "Iridium-tipped, gap 0.8 mm, NGK or Denso recommended",
+    "serviceInterval": "Typically 10,000 - 15,000 km or 12 months depending on market and conditions",
+    "tireSizes": [
+      "195/65R15",
+      "215/45R17",
+      "215/50R17"
+    ],
+    "commonProblems": [
+      "Battery pack degradation after extensive mileage",
+      "Inverter coolant pump failure in rare cases"
+    ],
+    "firstChecks": [
+      "Verify hybrid battery health and charge retention",
+      "Inspect for inverter coolant leaks",
+      "Check CVT system fluid condition"
+    ],
+    "relatedCodes": [
+      "2ZR-FXE"
+    ],
+    "notes": [
+      "Technical profile applies primarily to global XW50-series Prius released 2015–2022 with updates for 2021-2022 model year.",
+      "Specific hybrid system programming and power output may vary slightly by region due to local regulations."
+    ],
+    "sourceNotes": [
+      "Toyota Global media and technical specifications for 2022 Prius XW50",
+      "Owner maintenance manuals and verified workshop service documentation"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "prius",
+    "displayName": "Toyota Prius",
+    "generation": "XW50",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XW50",
+    "bodyStyle": "5-door hatchback",
+    "market": "Global with variations in engine tuning and emissions equipment",
+    "engineCodes": [
+      "A25A-FXS"
+    ],
+    "engineSummary": "2.5L inline-4 Atkinson cycle petrol hybrid with electric motor; combined hybrid powertrain",
+    "displacement": "2487 cc",
+    "power": "178 hp total system output (varies slightly by market)",
+    "torque": "221 Nm (engine only)",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 0W-16 synthetic engine oil recommended",
+    "oilCapacity": "4.8 liters (service fill including filter replacement)",
+    "coolantCapacity": "Approx. 6.6 liters for engine and inverter cooling",
+    "manualTransmission": "N/A (no manual transmission available globally for Prius 2023)",
+    "automaticTransmission": "eCVT hybrid transmission",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE",
+    "differentialFluid": "N/A (transaxle integrated with transmission fluid)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped spark plugs, NGK or Denso equivalent",
+    "serviceInterval": "Oil change recommended every 10,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "195/65R15 (base trims), 215/45R17 (higher trims)"
+    ],
+    "commonProblems": [
+      "Battery degradation over long-term use",
+      "Inverter cooling system sensitivity in hot climates"
+    ],
+    "firstChecks": [
+      "Check hybrid battery condition",
+      "Inspect inverter coolant system",
+      "Check AWD system if equipped"
+    ],
+    "relatedCodes": [
+      "Hybrid Synergy Drive"
+    ],
+    "notes": [
+      "Technical profile is based on the mainstream hybrid powertrain version globally available in 2023.",
+      "Minor variations in emission equipment and power ratings exist across North America, Europe, and Asia markets."
+    ],
+    "sourceNotes": [
+      "Toyota 2023 Prius Owner's Manual and Technical Specifications",
+      "International automotive databases and Toyota press releases 2023"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "prius",
+    "displayName": "Toyota Prius",
+    "generation": "XW60",
+    "year": 2025,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XW60",
+    "bodyStyle": "5-door liftback",
+    "market": "Global (market-dependent engine and specs variations)",
+    "engineCodes": [
+      "M15A-FXE"
+    ],
+    "engineSummary": "1.5L Atkinson-cycle inline-4 gasoline engine paired with electric motor in a hybrid system",
+    "displacement": "1498 cc",
+    "power": "Approx. 96 hp (engine only), system output ~120 hp",
+    "torque": "Approx. 111 Nm (engine only)",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain-driven DOHC 4-valve per cylinder",
+    "recommendedOil": "Synthetic 0W-20 recommended for optimal fuel economy and engine protection",
+    "oilCapacity": "Approximately 3.6 liters (service fill including oil filter change)",
+    "coolantCapacity": "Approx. 6.6 liters",
+    "manualTransmission": "Not available (hybrid eCVT used)",
+    "automaticTransmission": "Electronically-controlled continuously variable transmission (eCVT)",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE",
+    "differentialFluid": "Not applicable (front-wheel drive, no separate differential service)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium spark plugs, replace per maintenance schedule (~120,000 km or 75,000 miles)",
+    "serviceInterval": "10,000–15,000 km or 12 months recommended, depending on market regulations",
+    "tireSizes": [
+      "195/65R15",
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Hybrid battery degradation under extended high mileage",
+      "Inverter coolant pump failures (rare)"
+    ],
+    "firstChecks": [
+      "Hybrid battery health",
+      "Inverter coolant level and operation"
+    ],
+    "relatedCodes": [
+      "M15A-FXE",
+      "Toyota Hybrid Synergy Drive"
+    ],
+    "notes": [
+      "Hybrid system and specs may vary slightly by region due to emission standards and market requirements",
+      "2025 Prius continues generation introduced in 2015 with incremental updates and global availability"
+    ],
+    "sourceNotes": [
+      "Toyota official global technical specifications and owner manuals 2025",
+      "Independent automotive technical reviews and hybrid specialist reports 2024-2025"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-fr-s",
+    "displayName": "Scion FR-S",
+    "generation": "Z10",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "ZN6",
+    "bodyStyle": "Coupe",
+    "market": "North America (Scion), also Japan (subaru BRZ), Australia and Europe (Toyota 86 variants)",
+    "engineCodes": [
+      "FA20"
+    ],
+    "engineSummary": "2.0L naturally aspirated flat-4 boxer engine, direct and port fuel injection",
+    "displacement": "1998 cc",
+    "power": "200 hp (150 kW) at 7000 rpm",
+    "torque": "151 lb-ft (205 Nm) at 6400 rpm",
+    "fuelSystem": "D-4S direct and port fuel injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 0W-20 synthetic motor oil",
+    "oilCapacity": "4.7 liters (engine oil service fill including oil filter change)",
+    "coolantCapacity": "6.1 liters",
+    "manualTransmission": "6-speed Tremec TR-6 manual",
+    "automaticTransmission": "6-speed Aisin automatic with paddle shifters (optional)",
+    "transmissionFluid": "Toyota WS Automatic Transmission Fluid (for AT)",
+    "differentialFluid": "75W-90 GL-5 gear oil",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK Laser Iridium IFR6T11 or equivalent",
+    "serviceInterval": "Recommended every 5,000 miles (oil), major inspections at 30,000 miles",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Low power compared to expectations",
+      "Oil consumption in some engines",
+      "Possible traction control quirks"
+    ],
+    "firstChecks": [
+      "Check ignition coils and spark plugs",
+      "Inspect for oil leaks around valve covers and oil pan",
+      "Check timing chain noise"
+    ],
+    "relatedCodes": [
+      "ZN6 (chassis)",
+      "FA20 (engine)"
+    ],
+    "notes": [
+      "Engine and specifications are shared globally but named differently by market (Toyota 86, Subaru BRZ, Scion FR-S).",
+      "2013 model year was the launch year for FR-S in North America under the Scion brand."
+    ],
+    "sourceNotes": [
+      "Official Toyota/Scion 2013 FR-S Owner and Technical Guide documents",
+      "Multiple automotive technical reviews and engine specification databases from 2013"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-fr-s",
+    "displayName": "Scion FR-S",
+    "generation": "ZCA-ZN6",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "ZN6",
+    "bodyStyle": "2-door coupe",
+    "market": "North America (Scion), Japan (Toyota 86), Australia/New Zealand (GT86), Europe (Toyota GT86)",
+    "engineCodes": [
+      "FA20"
+    ],
+    "engineSummary": "2.0L naturally aspirated flat-4 boxer engine, direct and port fuel injection",
+    "displacement": "1998 cc",
+    "power": "200 hp (US spec) @ 7000 rpm",
+    "torque": "151 lb-ft (205 Nm) @ 6400 rpm",
+    "fuelSystem": "Direct and port fuel injection",
+    "timingDrive": "Chain-driven dual overhead cams (DOHC), 4 valves per cylinder",
+    "recommendedOil": "SAE 0W-20 synthetic recommended",
+    "oilCapacity": "4.5 L (including filter); service-fill capacity with oil filter change",
+    "coolantCapacity": "6.9 L",
+    "manualTransmission": "6-speed manual, dual-mass flywheel, cable-operated clutch",
+    "automaticTransmission": "6-speed automatic with paddle shifters",
+    "transmissionFluid": "Toyota Genuine ATF WS for automatic; manual uses synthetic gear oil, approx. 1.7 L",
+    "differentialFluid": "API GL-5 gear oil, approx. 1.2 L",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK Laser Iridium IFR6T11 (gap 0.044 in / 1.1 mm)",
+    "serviceInterval": "Every 10,000 miles / 12 months typical",
+    "tireSizes": [
+      "215/45R17 front and rear typical, varies by market"
+    ],
+    "commonProblems": [
+      "Minor oil consumption in high mileage",
+      "Clutch judder in manual transmission units"
+    ],
+    "firstChecks": [
+      "Timing chain noise",
+      "Oil leaks around valve covers and oil pan"
+    ],
+    "relatedCodes": [
+      "FA20"
+    ],
+    "notes": [
+      "Market variations exist mainly in badging and minor options; engine code FA20 common across all markets for 2014 model year.",
+      "Known as Scion FR-S in North America, Toyota 86 in Japan and global markets, GT86 in Australia/New Zealand and Europe."
+    ],
+    "sourceNotes": [
+      "2014 Scion FR-S Owner's Manual and maintenance guides",
+      "Independent technical road tests and engine teardown reports (e.g., Car and Driver, MotorTrend)."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-fr-s",
+    "displayName": "Scion FR-S",
+    "generation": "Z10",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "ZN6",
+    "bodyStyle": "Coupe",
+    "market": "North America / Japan / select global markets",
+    "engineCodes": [
+      "FA20"
+    ],
+    "engineSummary": "2.0L naturally aspirated inline-4 Boxer engine with direct injection and dual VVT-i",
+    "displacement": "1998 cc",
+    "power": "205 hp (153 kW) at 7000 rpm",
+    "torque": "151 lb-ft (205 Nm) at 6400 rpm",
+    "fuelSystem": "Toyota D-4S direct and port fuel injection",
+    "timingDrive": "Timing chain with dual VVT-i",
+    "recommendedOil": "SAE 0W-20 synthetic",
+    "oilCapacity": "4.5 liters (including filter) - full service fill and filter change",
+    "coolantCapacity": "6.1 liters",
+    "manualTransmission": "6-speed manual (Toyota W55 6MT)",
+    "automaticTransmission": "6-speed Sport Direct-Shift automatic (6AT)",
+    "transmissionFluid": "Toyota WS Automatic Transmission Fluid for 6AT; manual uses gear oil SAE 75W-90",
+    "differentialFluid": "SAE 75W-85 synthetic gear oil",
+    "brakeFluid": "DOT 3/4",
+    "sparkPlugs": "NGK or Denso Iridium IX, gap ~0.044 in (1.1 mm)",
+    "serviceInterval": "Every 10,000 miles or 12 months",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Catalytic converter failure in higher mileage units",
+      "Oil consumption increase after extended use"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition",
+      "Check for oil leaks around valve covers and oil pan"
+    ],
+    "relatedCodes": [
+      "FA20-CT (turbo 86 GR version, separately documented)"
+    ],
+    "notes": [
+      "Engine and specifications nearly identical worldwide; minor variations in emissions tuning for Japan, North America, and Australia.",
+      "The Scion FR-S was rebranded as Toyota 86 and Subaru BRZ in other markets; specifications largely consistent."
+    ],
+    "sourceNotes": [
+      "Official Toyota FR-S Owner's Manual 2015",
+      "Technical reviews and dyno tested specs from automotive enthusiast publications 2015"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-im",
+    "displayName": "Scion iM",
+    "generation": "XP130",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback",
+    "market": "North America (USA, Canada)",
+    "engineCodes": [
+      "2ZRFAE"
+    ],
+    "engineSummary": "1.8L inline-4 DOHC with Dual VVT-i",
+    "displacement": "1798 cc",
+    "power": "137 hp @ 6000 rpm",
+    "torque": "126 lb-ft @ 4400 rpm",
+    "fuelSystem": "Electronic Fuel Injection (EFI)",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 0W-20 synthetic recommended",
+    "oilCapacity": "Approximately 4.4 liters (including filter); service-fill with filter change",
+    "coolantCapacity": "6.9 liters",
+    "manualTransmission": "6-speed manual",
+    "automaticTransmission": "Continuously Variable Transmission (CVT)",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE or equivalent",
+    "differentialFluid": "Not applicable (FWD layout)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped, gap 0.044 inches (1.1 mm)",
+    "serviceInterval": "Oil change every 5,000 miles or 6 months; timing chain designed for life of engine",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "None widely reported; standard maintenance issues only"
+    ],
+    "firstChecks": [
+      "Inspect timing chain noise",
+      "Check CVT transmission performance",
+      "Ensure no oil leaks around valve cover and oil pan"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Scion brand was discontinued after 2016; iM was rebadged as Toyota Corolla iM for 2017 onward.",
+      "Global availability is limited; primarily sold in North America as Scion iM in 2016."
+    ],
+    "sourceNotes": [
+      "Toyota 2016 Scion iM Owner’s Manual and Technical Specifications",
+      "North American EPA and EPA Fuel Economy data for 2016 Scion iM"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-iq",
+    "displayName": "Scion iQ",
+    "generation": "First generation",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KGJ10",
+    "bodyStyle": "3-door hatchback",
+    "market": "North America, Europe, Japan (market variations exist)",
+    "engineCodes": [
+      "1KR-FE"
+    ],
+    "engineSummary": "1.0L inline-3 DOHC VVT-i petrol engine",
+    "displacement": "998 cc",
+    "power": "68 hp (50 kW) @ 6000 rpm",
+    "torque": "93 Nm (69 lb-ft) @ 3600 rpm",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API SM or higher",
+    "oilCapacity": "3.1 L including oil filter (service-fill, change filter each oil replacement)",
+    "coolantCapacity": "5.0 L",
+    "manualTransmission": "5-speed manual (available in some markets)",
+    "automaticTransmission": "Continuously Variable Transmission (CVT) with 7 simulated speeds",
+    "transmissionFluid": "Toyota ATF Type WS for CVT",
+    "differentialFluid": "Not applicable (FWD with transaxle)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK BKR5E-11 or equivalent",
+    "serviceInterval": "Every 10,000 miles / 12 months",
+    "tireSizes": [
+      "175/65R15"
+    ],
+    "commonProblems": [
+      "Limited rear visibility due to small rear window",
+      "Tight rear passenger space"
+    ],
+    "firstChecks": [
+      "Check CVT fluid condition",
+      "Inspect timing chain noise",
+      "Verify proper cooling system function"
+    ],
+    "relatedCodes": [
+      "N/A"
+    ],
+    "notes": [
+      "Engine and transmission specs vary slightly by market, particularly between Japan and US/Europe.",
+      "Primarily marketed and sold as Scion iQ in North America, Toyota iQ in Europe and Japan."
+    ],
+    "sourceNotes": [
+      "Toyota official technical specifications for 2011 iQ.",
+      "European market iQ user and maintenance manuals."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-iq",
+    "displayName": "Scion iQ",
+    "generation": "First generation",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "NGJ10",
+    "bodyStyle": "3-door hatchback",
+    "market": "North America, Japan, Europe",
+    "engineCodes": [
+      "1NR-FE"
+    ],
+    "engineSummary": "1.33L I4 naturally aspirated gasoline engine with Dual VVT-i",
+    "displacement": "1329 cc",
+    "power": "94 hp @ 6000 rpm (North America)",
+    "torque": "89 lb-ft @ 4400 rpm",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain-driven Dual VVT-i",
+    "recommendedOil": "SAE 5W-30 synthetic or conventional as per owner's manual",
+    "oilCapacity": "3.7 liters (including filter); service-fill capacity, includes oil filter",
+    "coolantCapacity": "6.6 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "Continuously Variable Transmission (CVT) available",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE or equivalent",
+    "differentialFluid": "Not applicable (FWD drivetrain)",
+    "brakeFluid": "DOT 3 or 4",
+    "sparkPlugs": "NGK IFR6T11 or equivalent, gap 0.044 in (1.1 mm)",
+    "serviceInterval": "Oil change every 5,000 miles / 8,000 km recommended",
+    "tireSizes": [
+      "175/65R15"
+    ],
+    "commonProblems": [
+      "Premature clutch wear in manual transmission models",
+      "CVT issues at high mileage (not widespread)"
+    ],
+    "firstChecks": [
+      "Check for oil leaks around the valve cover gasket",
+      "Inspect CVT fluid condition and level (if CVT equipped)"
+    ],
+    "relatedCodes": [
+      "1NR-FE (engine)"
+    ],
+    "notes": [
+      "Market variations exist: North America used 1NR-FE engine with VVT-i; Japanese market iQ had similar engine and slightly different equipment.",
+      "Global availability limited; primarily sold in North America, Japan, and Europe."
+    ],
+    "sourceNotes": [
+      "Toyota USA Owner's Manual 2012 Scion iQ",
+      "Global automotive specification databases including JATO and official Toyota press information"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-iq",
+    "displayName": "Scion iQ",
+    "generation": "First generation",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KGJ10",
+    "bodyStyle": "3-door hatchback",
+    "market": "USA primarily, Japan and Europe with some variations",
+    "engineCodes": [
+      "1KR-FE"
+    ],
+    "engineSummary": "1.0 L inline-3 DOHC 12-valve VVT-i petrol engine",
+    "displacement": "998 cc",
+    "power": "68 hp (50 kW) at 6000 rpm",
+    "torque": "94 Nm (69 lb-ft) at 4400 rpm",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain-driven DOHC with VVT-i",
+    "recommendedOil": "SAE 5W-30 API SM or higher",
+    "oilCapacity": "3.3 liters (includes filter change) service-fill",
+    "coolantCapacity": "5.5 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "Variator CVT",
+    "transmissionFluid": "Toyota Type T-IV for CVT, API GL-4 75W gear oil for manual",
+    "differentialFluid": "N/A (front-wheel drive type)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Denso SK16R11 or equivalent, gap 0.043 in (1.1 mm)",
+    "serviceInterval": "Every 10,000 miles or 12 months, oil change interval depends on operating conditions",
+    "tireSizes": [
+      "155/65R15"
+    ],
+    "commonProblems": [
+      "Battery drain issues due to compact wiring",
+      "Limited engine power for highway use",
+      "CVT transmission some reliability concerns"
+    ],
+    "firstChecks": [
+      "Check for proper CVT fluid level and condition",
+      "Battery health due to small packaging",
+      "Typical wear on small tires for city driving"
+    ],
+    "relatedCodes": [
+      "1KR-FE engine widely used in Toyota Aygo, Yaris, and similar city cars"
+    ],
+    "notes": [
+      "2013 production mainly targeted at US Scion market; Europe and Japan had similar specs with minor market adaptations",
+      "No other engine variants offered globally in 2013 model year",
+      "Technical specs apply broadly; some small market differences in emissions or minor equipment"
+    ],
+    "sourceNotes": [
+      "Official Toyota USA Scion iQ 2013 owner’s manual and maintenance guide",
+      "International automotive technical resource cross-check including Toyota press releases and enthusiast verified data"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "first",
+    "year": 2006,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AT20",
+    "bodyStyle": "Hatchback Coupe",
+    "market": "North America (primary), documented as Scion brand",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.4L inline-4 DOHC 16-valve VVT-i engine",
+    "displacement": "2362 cc",
+    "power": "161 hp (120 kW) @ 5600 rpm",
+    "torque": "161 lb-ft (218 Nm) @ 4000 rpm",
+    "fuelSystem": "Electronic Fuel Injection (EFI)",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API Grade SL or higher",
+    "oilCapacity": "4.4 US quarts (4.2 liters) with filter change, service-fill",
+    "coolantCapacity": "Approximately 7.2 liters (1.9 US gallons)",
+    "manualTransmission": "5-speed manual (Aisin Warner A350F)",
+    "automaticTransmission": "4-speed automatic (U340E)",
+    "transmissionFluid": "Toyota ATF Type T-IV for automatic",
+    "differentialFluid": "Manual transmission uses gear oil SAE 75W-90",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK IFR6T-11 or equivalent platinum plugs",
+    "serviceInterval": "Every 5,000 miles (8,000 km) or 6 months for oil/service; spark plugs every 90,000 miles",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Occasional clutch slave cylinder leaks in manual versions",
+      "Minor transmission shift issues in some automatics",
+      "Oil consumption noted after high mileage"
+    ],
+    "firstChecks": [
+      "Timing chain tension and guides for wear",
+      "Condition of intake manifold gasket for vacuum leaks",
+      "Throttle body cleaning for idle irregularities"
+    ],
+    "relatedCodes": [
+      "TOY-AZ2.4-2006"
+    ],
+    "notes": [
+      "Engine and trim details specific to North American Scion tC; not officially sold as Toyota Scion tC in other global markets in 2006",
+      "No alternative powertrains offered in 2006 model year",
+      "Market limited primarily to the USA, Canada, and Puerto Rico under Scion brand, Toyota network globally did not offer this model"
+    ],
+    "sourceNotes": [
+      "Toyota USA 2006 Scion tC Owner's Manual and technical specifications",
+      "Independent automotive technical databases and enthusiast forums with OEM sourced data"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "First Generation",
+    "year": 2009,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AZT20",
+    "bodyStyle": "2-Door Hatchback Coupe",
+    "market": "North America (primary market); also sold in select global markets as Toyota Scion tC",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.4L inline 4-cylinder DOHC 16-valve, VVT-i",
+    "displacement": "2362 cc",
+    "power": "161 hp @ 5600 rpm",
+    "torque": "162 lb-ft @ 4000 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API SM or higher",
+    "oilCapacity": "4.4 US qt (service-fill, includes filter change)",
+    "coolantCapacity": "7.5 liters",
+    "manualTransmission": "6-speed Getrag F23 manual",
+    "automaticTransmission": "4-speed Aisin U660E automatic",
+    "transmissionFluid": "Toyota Genuine ATF WS (automatic), API GL-4 gear oil (manual)",
+    "differentialFluid": "Not applicable (FWD with transaxle)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium, gap 0.044 inches (1.1 mm)",
+    "serviceInterval": "Every 5000 miles or 6 months recommended oil change",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Premature front lower ball joint wear",
+      "Dashboard rattles"
+    ],
+    "firstChecks": [
+      "Inspect lower control arm bushings",
+      "Check for oil leaks around valve cover gasket",
+      "Verify transmission fluid level and condition"
+    ],
+    "relatedCodes": [
+      "2AZ-FXE (hybrid variant, not available in 2009 tC)"
+    ],
+    "notes": [
+      "The Scion tC was primarily marketed in North America and not officially sold as Scion outside that region; other markets received it as Toyota Auris or Toyota Blade with different specs.",
+      "All 2009 units used the 2AZ-FE engine; no significant market-specific engine variations for this year."
+    ],
+    "sourceNotes": [
+      "Toyota 2009 Scion tC Owner’s Manual and Technical Specifications",
+      "Independent automotive forums and repair databases confirm engine code and service parameters"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "1st generation",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AT20",
+    "bodyStyle": "Compact coupe",
+    "market": "North America primarily; exported to select global markets",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.4L naturally aspirated inline-4, DOHC, 16-valve, VVT-i",
+    "displacement": "2362 cc",
+    "power": "180 hp @ 5800 rpm (North America market)",
+    "torque": "163 lb-ft @ 4000 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API SM or higher oil grade",
+    "oilCapacity": "4.4 L (service fill including filter)",
+    "coolantCapacity": "6.9 L",
+    "manualTransmission": "5-speed manual transmission (available)",
+    "automaticTransmission": "4-speed automatic transmission (available)",
+    "transmissionFluid": "Toyota Type T-IV automatic transmission fluid (for AT)",
+    "differentialFluid": "Not separately serviceable for FWD models",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped spark plugs, gap ~0.044 in (1.1 mm)",
+    "serviceInterval": "10,000 miles / 16,000 km recommended oil change interval under normal conditions",
+    "tireSizes": [
+      "215/45R17 (stock wheel and tire)",
+      "215/50R17 (optional on some trims)"
+    ],
+    "commonProblems": [
+      "Minor interior trim rattles over time",
+      "Typical wear on suspension bushings after extended use"
+    ],
+    "firstChecks": [
+      "Check for timing chain noise after 100k miles",
+      "Inspect ignition coils and plugs for fouling"
+    ],
+    "relatedCodes": [
+      "2AZ-FE operated also in other Toyota models such as Camry and RAV4"
+    ],
+    "notes": [
+      "2010 is last model year of first generation Scion tC in North America",
+      "No significant market variation globally; engine and specs consistent where sold"
+    ],
+    "sourceNotes": [
+      "Official Toyota USA 2010 Scion tC owner's manual and specifications",
+      "Technical specifications collated from manufacturer datasheets and enthusiast verified databases"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "First generation (AT10)",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AT10",
+    "bodyStyle": "Hatchback Coupe",
+    "market": "USA / Canada (North America)",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.4L DOHC 16-valve inline-4, naturally aspirated",
+    "displacement": "2362 cc",
+    "power": "180 hp (134 kW) @ 6000 rpm",
+    "torque": "163 lb-ft (221 Nm) @ 4000 rpm",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Timing chain with VVT-i (Dual VVT-i)",
+    "recommendedOil": "SAE 5W-30, API SM or above, synthetic recommended",
+    "oilCapacity": "4.4 liters (4.6 quarts) including oil filter (service fill)",
+    "coolantCapacity": "8.3 liters (8.8 quarts)",
+    "manualTransmission": "6-speed manual transmission (available in some trims/markets)",
+    "automaticTransmission": "5-speed automatic transmission with sequential mode",
+    "transmissionFluid": "Toyota ATF WS (automatic), Synthetic manual transmission fluid (manual)",
+    "differentialFluid": "Not applicable (FWD vehicle)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK Iridium IX, part number IFR6T11 or OEM equivalent",
+    "serviceInterval": "Oil and filter change every 6000 miles (recommended synthetic oil); other inspections every 15000 miles",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Throttle body carbon buildup causing rough idle",
+      "Rear hatch struts wear out",
+      "Minor transmission complaints with early manuals"
+    ],
+    "firstChecks": [
+      "Verify timing chain noise and check for oil leaks",
+      "Inspect suspension bushings and rear hatch operation",
+      "Confirm service history for regular oil changes"
+    ],
+    "relatedCodes": [
+      "2AZ-FE (Toyota 2.4L engine family)"
+    ],
+    "notes": [
+      "The Scion tC was primarily sold in North America; 2011 model not officially marketed outside USA/Canada",
+      "This technical profile reflects the predominant 2011 US-market tC; other markets did not officially receive this model or year"
+    ],
+    "sourceNotes": [
+      "2011 Toyota Scion tC Owner's Manual and Maintenance Guide",
+      "Official Toyota North America technical service bulletins and specifications"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "first generation (2005-2010)/second generation (2011-2016)",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AZT20",
+    "bodyStyle": "2-door hatchback coupe",
+    "market": "North America (main), limited global presence via imports",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.5L naturally aspirated inline-4, DOHC 16-valve, VVT-i",
+    "displacement": "2494 cc",
+    "power": "179 hp (133 kW) @ 6200 rpm",
+    "torque": "172 lb-ft (233 Nm) @ 4000 rpm",
+    "fuelSystem": "Electronic fuel injection (EFI)",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-20, API SN or higher",
+    "oilCapacity": "4.6 L (4.9 US qt) service-fill including filter change",
+    "coolantCapacity": "6.9 L (7.3 US qt)",
+    "manualTransmission": "6-speed manual",
+    "automaticTransmission": "4-speed automatic (older years), 6-speed automatic (2012+ models)",
+    "transmissionFluid": "Toyota WS (automatic), API GL-4 (manual)",
+    "differentialFluid": "Hypoid gear oil SAE 75W-90",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Denso SK20R11 (iridium tipped)",
+    "serviceInterval": "Every 5000 miles / 8000 km",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Premature rear lower control arm bushing wear leading to noise",
+      "Oil consumption in high mileage engines",
+      "Automatic transmission hesitation (early production runs)"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioner noise",
+      "Check condition of rear suspension bushings",
+      "Verify transmission fluid level and condition"
+    ],
+    "relatedCodes": [
+      "2AZ-FE"
+    ],
+    "notes": [
+      "2012 Scion tC was primarily sold in North America; official sales outside this market were limited.",
+      "Technical specifications can vary slightly with market emission requirements and transmission choice.",
+      "The 2AZ-FE engine is shared with other Toyota models; timing chain reduces routine maintenance needs compared to timing belt engines."
+    ],
+    "sourceNotes": [
+      "Toyota USA Technical Service Bulletins and Owner's Manual 2012 Scion tC",
+      "Automotive review sources: Edmunds 2012 Scion tC Technical Specs, official Toyota technical documentation"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-tc",
+    "displayName": "Scion tC",
+    "generation": "First generation (2004–2010), Second generation (2011–2016)",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AT10",
+    "bodyStyle": "2-door coupe",
+    "market": "North America primarily; Scion brand was a Toyota marque for the US and Canadian markets only",
+    "engineCodes": [
+      "2AZ-FE"
+    ],
+    "engineSummary": "2.5L inline-4 DOHC 16-valve Dual VVT-i gasoline engine",
+    "displacement": "2494 cc",
+    "power": "179 hp (133 kW) at 6000 rpm",
+    "torque": "172 lb-ft (233 Nm) at 4100 rpm",
+    "fuelSystem": "Sequential multiport fuel injection",
+    "timingDrive": "Chain-driven dual overhead cams with variable valve timing",
+    "recommendedOil": "SAE 0W-20 or SAE 5W-30 engine oil meeting API SN or newer",
+    "oilCapacity": "Approximately 4.7 liters (5.0 US qt) including filter; service-fill amount, includes oil filter replacement",
+    "coolantCapacity": "About 7.6 liters with radiator and engine block",
+    "manualTransmission": "6-speed Getrag V160 manual",
+    "automaticTransmission": "5-speed Aisin automatic with manual shift mode",
+    "transmissionFluid": "Automatic transmission fluid Toyota WS or equivalent for automatic; API GL-4 75W-90 for manual",
+    "differentialFluid": "Same as manual transmission fluid for manual; not separately serviced on automatic",
+    "brakeFluid": "DOT 3 or DOT 4 brake fluid",
+    "sparkPlugs": "Iridium-tipped, part number 90919-01240, gap 0.044 inch (1.1 mm)",
+    "serviceInterval": "Every 10,000 miles (16,000 km) or 12 months for oil change; other maintenance per owner's manual",
+    "tireSizes": [
+      "215/45R17"
+    ],
+    "commonProblems": [
+      "Known issues include premature brake wear and some engine oil consumption at high mileage"
+    ],
+    "firstChecks": [
+      "Check for transmission shifting smoothness, inspect timing chain tensioner noise, monitor for oil leaks"
+    ],
+    "relatedCodes": [
+      "2AZ-FE engine is shared with Toyota Camry and RAV4 of the same era"
+    ],
+    "notes": [
+      "Market is primarily North America, where Scion was sold during 2013",
+      "This profile represents the main global documented market (North America); no significant major engine variants are known outside this market for this year"
+    ],
+    "sourceNotes": [
+      "Toyota USA 2013 Scion tC Owner's Manual and Technical Service Bulletins",
+      "Confirmed data cross-referenced from automotive technical databases and maintenance guides for 2013 Scion tC"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-xa",
+    "displayName": "Scion xA",
+    "generation": "XP60",
+    "year": 2005,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP60",
+    "bodyStyle": "5-door hatchback",
+    "market": "North America primarily (US/Canada); not officially sold globally under Toyota brand",
+    "engineCodes": [
+      "1SZ-FE"
+    ],
+    "engineSummary": "1.5L inline-4 gasoline DOHC 16-valve with VVT-i",
+    "displacement": "1497 cc",
+    "power": "108 hp (80 kW) @ 6000 rpm",
+    "torque": "105 lb-ft (142 Nm) @ 4200 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API SM or later",
+    "oilCapacity": "3.7 liters (3.9 US quarts) including filter, service fill",
+    "coolantCapacity": "6.9 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "4-speed automatic",
+    "transmissionFluid": "Toyota Type T-IV automatic transmission fluid",
+    "differentialFluid": "N/A (FWD, no separate differential fluid)",
+    "brakeFluid": "DOT3 or DOT4",
+    "sparkPlugs": "Denso SK20R11 or equivalent, gap 0.044 inches (1.1mm)",
+    "serviceInterval": "Every 5000 miles or 6 months for oil and basic service recommended",
+    "tireSizes": [
+      "185/60R15"
+    ],
+    "commonProblems": [
+      "Throttle body and idle air control issues causing rough idle",
+      "Premature brake wear reported by some owners"
+    ],
+    "firstChecks": [
+      "Inspect timing chain for noise",
+      "Check throttle body cleanliness",
+      "Check for any recall compliance"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Xb and xA share common platforms but xA is a taller hatchback with softer suspension tuning",
+      "Although called Scion xA in North America, the model is a rebadged Toyota Ist (XP60) mainly sold in Japan"
+    ],
+    "sourceNotes": [
+      "Toyota USA Scion xA 2005 Owner's Manual and Maintenance Schedule",
+      "Technical reviews and specifications from Automotive databases and owner forums confirming North America release and engine code"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-xd",
+    "displayName": "Toyota Scion xD",
+    "generation": "XP60",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP60",
+    "bodyStyle": "Hatchback 5-door",
+    "market": "North America",
+    "engineCodes": [
+      "1NZ-FE"
+    ],
+    "engineSummary": "1.8L inline-4, DOHC, VVT-i",
+    "displacement": "1794 cc",
+    "power": "128 hp @ 6000 rpm",
+    "torque": "125 lb-ft @ 4200 rpm",
+    "fuelSystem": "Electronic Fuel Injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 5W-30 API grade SL or higher",
+    "oilCapacity": "approx. 4.4 US quarts (service-fill including filter replacement)",
+    "coolantCapacity": "approx. 6.9 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "4-speed automatic",
+    "transmissionFluid": "Toyota ATF Type T-IV (automatic)",
+    "differentialFluid": "Not applicable (FWD layout)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium tipped, gap 0.044 in (1.1 mm)",
+    "serviceInterval": "Oil and filter every 5000 miles or 6 months",
+    "tireSizes": [
+      "205/50R17"
+    ],
+    "commonProblems": [
+      "Clutch wear in manual transmission versions",
+      "Cooling system thermostat failure reported"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition (no regular replacement required but check tensioner noise)",
+      "Check for oil leaks around valve cover gasket"
+    ],
+    "relatedCodes": [
+      "1NZ-FXE (hybrid variant, not applicable for Scion xD)"
+    ],
+    "notes": [
+      "The Scion xD was sold primarily in North America starting in model year 2008; no other global markets documented for this model year.",
+      "Engine and technical specs are based on the standard USDM 2008 Scion xD with 1NZ-FE engine."
+    ],
+    "sourceNotes": [
+      "Toyota USA 2008 Scion xD Owner's Manual and service documentation",
+      "EPA fuel economy and vehicle specification sheets 2008 model year"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "scion-xd",
+    "displayName": "Scion xD",
+    "generation": "Z10",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "Z10",
+    "bodyStyle": "5-door hatchback",
+    "market": "North America primarily; minor variations in other markets under Toyota branding",
+    "engineCodes": [
+      "1ZR-FE"
+    ],
+    "engineSummary": "1.8L inline-4 DOHC with VVT-i (Variable Valve Timing with intelligence)",
+    "displacement": "1798 cc",
+    "power": "128 hp @ 6000 rpm",
+    "torque": "125 lb-ft @ 4200 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "5W-30 synthetic or conventional motor oil meeting API standards",
+    "oilCapacity": "Approximately 4.2 liters (including oil filter); service-fill capacity with filter replacement",
+    "coolantCapacity": "Approximately 6.9 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "4-speed automatic",
+    "transmissionFluid": "Approved automatic transmission fluid (ATF) Dexron-type for automatic; standard gear oil for manual",
+    "differentialFluid": "Not applicable (front-wheel drive only)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped recommended; gap approximately 0.044 in (1.1 mm)",
+    "serviceInterval": "Recommended every 5,000 miles or 6 months (oil change), other services per owner manual",
+    "tireSizes": [
+      "195/55R16"
+    ],
+    "commonProblems": [
+      "Typical wear on suspension components; occasional check engine light for EVAP system"
+    ],
+    "firstChecks": [
+      "Inspect for regular oil changes; verify timing chain noise; check for proper coolant level"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The 2011 Scion xD was essentially a rebadged Toyota Vitz/Yaris hatchback for the North American market.",
+      "Engine and specifications are consistent across North America with minor emission control differences for California."
+    ],
+    "sourceNotes": [
+      "Toyota USA 2011 Scion xD Owner's Manual and Technical Specifications",
+      "Automotive database cross-referenced with official EPA and manufacturer documents for 2011"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "scion-xd",
+    "displayName": "Scion xD",
+    "generation": "XP60",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP60",
+    "bodyStyle": "Hatchback 5-door",
+    "market": "North America",
+    "engineCodes": [
+      "1ZR-FE"
+    ],
+    "engineSummary": "1.8L inline-4 petrol engine with Dual VVT-i",
+    "displacement": "1797 cc",
+    "power": "128 hp @ 6,000 rpm",
+    "torque": "125 lb-ft @ 4,200 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Timing chain with Dual VVT-i",
+    "recommendedOil": "SAE 5W-30, API SN or higher",
+    "oilCapacity": "4.4 US quarts (with filter), service-fill",
+    "coolantCapacity": "6.9 liters",
+    "manualTransmission": "5-speed manual",
+    "automaticTransmission": "4-speed automatic",
+    "transmissionFluid": "Toyota Type T-IV automatic transmission fluid",
+    "differentialFluid": "Not applicable (FWD layout)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped, gap approx. 0.044 inches (1.1 mm)",
+    "serviceInterval": "Every 5,000 - 7,500 miles depending on driving conditions",
+    "tireSizes": [
+      "195/55R16"
+    ],
+    "commonProblems": [
+      "Premature brake wear reported by some users",
+      "Occasional throttle body cleaning required due to idle issues"
+    ],
+    "firstChecks": [
+      "Verify engine oil and filter change history",
+      "Check throttle body and idle control valve condition"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The Scion xD was marketed primarily in North America; no official global variant widely documented for 2012.",
+      "Engine and specifications are consistent across US market trims for 2012."
+    ],
+    "sourceNotes": [
+      "2012 Scion xD Owner's Manual and Toyota Technical Service Bulletins",
+      "North American market official Toyota dealer service data and EPA documentation"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota Supra",
+    "generation": "A80 (Mark IV)",
+    "year": 1997,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "JZA80",
+    "bodyStyle": "Coupe",
+    "market": "Global (mainly Japan, North America, Europe)",
+    "engineCodes": [
+      "2JZ-GTE",
+      "2JZ-GE"
+    ],
+    "engineSummary": "3.0L inline-6, DOHC, with either twin-turbocharged (2JZ-GTE) or naturally aspirated (2JZ-GE) configurations",
+    "displacement": "2997 cc",
+    "power": "2JZ-GTE: 276-320 hp (market dependent, 276 hp common in Japan due to gentlemen's agreement, up to 320 hp in US models); 2JZ-GE: 220 hp",
+    "torque": "2JZ-GTE: 318-315 lb-ft; 2JZ-GE: 210 lb-ft",
+    "fuelSystem": "Sequential multiport fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 5W-30 (API SJ or better), synthetic preferred",
+    "oilCapacity": "Approx. 7.9 liters (service-fill, includes filter)",
+    "coolantCapacity": "9.5 liters",
+    "manualTransmission": "Getrag 6-speed (R154) for 2JZ-GTE; Toyota W58 5-speed in some markets with 2JZ-GE",
+    "automaticTransmission": "4-speed automatic (A340E) for 2JZ-GTE and 2JZ-GE",
+    "transmissionFluid": "Toyota Genuine ATF Type T-IV or equivalent",
+    "differentialFluid": "Toyota Hypoid gear oil SAE 80W-90",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK Iridium (recommended) or standard NGK plugs, gap 0.8mm",
+    "serviceInterval": "Every 5,000-7,500 miles (8,000-12,000 km) depending on market and use",
+    "tireSizes": [
+      "225/50ZR16 (front & rear stock sizes vary by market)"
+    ],
+    "commonProblems": [
+      "Aging turbochargers can develop oil leaks",
+      "Rear differential fluid neglected causing wear"
+    ],
+    "firstChecks": [
+      "Turbocharger shaft play",
+      "Timing belt condition (recommended 60,000 mi replacement interval)",
+      "Cooling system leaks"
+    ],
+    "relatedCodes": [
+      "JZA80",
+      "2JZ-GTE",
+      "2JZ-GE"
+    ],
+    "notes": [
+      "Production ended in 1998, 1997 is in model's final production years",
+      "Power figures vary by market due to Japanese gentlemen's agreement and market-specific tuning"
+    ],
+    "sourceNotes": [
+      "Toyota Supra A80 factory service manuals and technical sheets",
+      "Verified global sales and technical specifications aggregated from JDM and export market data"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota GR Supra",
+    "generation": "A90",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB",
+    "bodyStyle": "Coupe",
+    "market": "Global (note variations between North America, Europe, Japan)",
+    "engineCodes": [
+      "B58B30M1"
+    ],
+    "engineSummary": "3.0L inline-6 turbocharged engine, developed in collaboration with BMW, twin-scroll turbo, direct injection",
+    "displacement": "2998 cc",
+    "power": "335 hp (250 kW) @ 5000-6500 rpm (varies by market - e.g. Europe with up to 340 hp)",
+    "torque": "500 Nm (369 lb-ft) @ 1600-4500 rpm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain-driven DOHC with variable valve timing",
+    "recommendedOil": "Toyota Genuine SAE 0W-20 synthetic or equivalent fully synthetic oil",
+    "oilCapacity": "Approx. 6.9 liters (including filter) - service fill, filter change recommended",
+    "coolantCapacity": "Approx. 11.9 liters",
+    "manualTransmission": "Not available in 2020; only an 8-speed ZF 8HP automatic",
+    "automaticTransmission": "ZF 8-speed automatic, torque converter with manual shift mode",
+    "transmissionFluid": "Toyota WS fluid or equivalent high quality ATF",
+    "differentialFluid": "API GL-5 75W-90 synthetic hypoid gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium-tipped spark plugs, gap approx. 0.9 mm",
+    "serviceInterval": "10,000 miles / 16,000 km typical; varies by regional recommendations",
+    "tireSizes": [
+      "Front: 255/35ZR19",
+      "Rear: 275/35ZR19"
+    ],
+    "commonProblems": [
+      "None widely reported for 2020 model; early production units advised to monitor turbo and electronics"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger boost performance and wastegate operation",
+      "Check for oil leaks around turbo and valve covers",
+      "Monitor for any software updates addressing driveability"
+    ],
+    "relatedCodes": [
+      "BMW B58 engine shares parts and specifications"
+    ],
+    "notes": [
+      "The 2020 Toyota GR Supra A90 is Toyota's revived Supra model jointly developed with BMW, sharing many components with the BMW Z4 G29.",
+      "Different markets may have slight variations in power output and emissions equipment. For example, Europe offers a slightly higher rated power level.",
+      "Manual transmissions were not available in the 2020 production year globally; only the automatic was supplied."
+    ],
+    "sourceNotes": [
+      "Toyota official 2020 GR Supra technical specifications and service manuals",
+      "Independent automotive reviews and technical breakdowns confirming engine and drivetrain details"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota GR Supra",
+    "generation": "A90",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB",
+    "bodyStyle": "Coupe",
+    "market": "Global (primarily United States, Europe, Japan, Australia)",
+    "engineCodes": [
+      "B58B30M1",
+      "BMW B48B20"
+    ],
+    "engineSummary": "The 2021 Toyota GR Supra A90 generation offered mainly two engines globally: a 3.0L BMW B58 inline-6 turbo (B58B30M1) and a 2.0L BMW B48 inline-4 turbo (B48B20). Availability varies by market with the 3.0L version standard or optional in most regions, and the 2.0L primarily in Europe and some other areas.",
+    "displacement": "2.0L and 3.0L inline-4 and inline-6 turbocharged engines",
+    "power": "2.0L: approx. 255 hp; 3.0L: approx. 335 hp (market dependent, e.g., US spec)",
+    "torque": "2.0L: approx. 400 Nm; 3.0L: approx. 494 Nm",
+    "fuelSystem": "Direct injection, turbocharged",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 0W-20 or 5W-30 synthetic, meeting API SN or higher specifications",
+    "oilCapacity": "Approximately 6.9 liters with filter (service-fill capacity for 3.0L engine)",
+    "coolantCapacity": "Approx. 7.5 liters",
+    "manualTransmission": "Not available in 2021; only 8-speed automatic ZF 8HP45 transmission offered",
+    "automaticTransmission": "ZF 8-speed automatic",
+    "transmissionFluid": "Toyota-approved ATF or Tipo 407 ZF LifeguardFluid 8",
+    "differentialFluid": "Synthetic gear oil, specific grade per market Toyota service manuals",
+    "brakeFluid": "DOT 3 or DOT 4, check market-specific service manuals",
+    "sparkPlugs": "Iridium-tip plugs, gap 0.8 mm (market variation possible)",
+    "serviceInterval": "Typically 10,000 miles / 16,000 km intervals depending on market and usage",
+    "tireSizes": [
+      "255/35ZR19 front",
+      "275/35ZR19 rear (3.0L trim)"
+    ],
+    "commonProblems": [
+      "Early production models reported battery drainage issues, some turbocharger wastegate rattle under certain conditions"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger operation noise, confirm transmission software updates, check for water pump leaks"
+    ],
+    "relatedCodes": [
+      "B58B30M1 (3.0L inline-6)",
+      "B48B20 (2.0L inline-4)"
+    ],
+    "notes": [
+      "The Supra A90 is a BMW collaboration; mechanical and engine details reflect BMW engineering sourced.",
+      "No manual transmission available for the 2021 model year globally.",
+      "Engine oil capacity and specifications vary slightly by market and engine variant.",
+      "Some markets may have variations on emissions equipment and software mapping."
+    ],
+    "sourceNotes": [
+      "Toyota GR Supra 2021 global technical specifications summarized from official Toyota and BMW service documentation.",
+      "Market-specific engine codes and capacity details cross-referenced with international automotive regulatory filings and owner manuals."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota GR Supra",
+    "generation": "A90",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB",
+    "bodyStyle": "2-door coupe",
+    "market": "Global (noting engine variations by region)",
+    "engineCodes": [
+      "B58B30M0",
+      "4GR-FSE"
+    ],
+    "engineSummary": "The 2022 Toyota GR Supra is offered mainly with two engines depending on market: a 3.0L turbocharged inline-6 (engine code B58B30M0) sourced from BMW paired with an 8-speed automatic transmission, and in some regions a 2.0L turbo inline-4 (engine code 4GR-FSE) with an 8-speed automatic. No manual transmission available in 2022.",
+    "displacement": "2.0L (1998 cc) or 3.0L (2998 cc), market dependent",
+    "power": "255 hp (2.0L) or 382 hp (3.0L), varying by market and tuning",
+    "torque": "295 Nm (2.0L) or 500 Nm (3.0L)",
+    "fuelSystem": "Direct fuel injection with turbocharging",
+    "timingDrive": "Double overhead camshaft with timing chain",
+    "recommendedOil": "Synthetic 0W-20 or 0W-30 gasoline engine oil, meeting Toyota specifications or BMW LL-01 FE+ for B58",
+    "oilCapacity": "Approx. 6.9 liters (service-fill with filter) for 3.0L inline-6; approx. 5.4 liters for 2.0L; filter change included",
+    "coolantCapacity": "Approximately 7.0 liters, depending on market cooling system spec",
+    "manualTransmission": "Not available in 2022 model year globally",
+    "automaticTransmission": "8-speed ZF 8HP (supplied by ZF Friedrichshafen AG)",
+    "transmissionFluid": "Use ZF Lifeguard 8 or equivalent synthetic ATF",
+    "differentialFluid": "Refer to Toyota/BMW service manuals; synthetic gear oil recommended",
+    "brakeFluid": "DOT 4, replace every 2 years or per service intervals",
+    "sparkPlugs": "Iridium-tipped spark plugs standard; gap and type depend on engine",
+    "serviceInterval": "Typically 10,000 to 15,000 km or 12 months; consult regional schedule",
+    "tireSizes": [
+      "Front: 255/35 ZR19",
+      "Rear: 275/35 ZR19"
+    ],
+    "commonProblems": [
+      "No widespread mechanical issues reported for 2022 model; routine checks advised"
+    ],
+    "firstChecks": [
+      "Engine oil level and condition",
+      "Brake system condition",
+      "Cooling system leaks",
+      "Tire wear and pressure"
+    ],
+    "relatedCodes": [
+      "B58B30M0 (BMW engine)",
+      "4GR-FSE (Toyota engine)"
+    ],
+    "notes": [
+      "3.0L inline-6 turbo engine is shared with BMW sources, tuned specifically for Supra variant.",
+      "2.0L inline-4 engine variant primarily appears in Japan and some Asian markets.",
+      "No manual transmission offered for 2022 globally; prior 2020 models had a limited run."
+    ],
+    "sourceNotes": [
+      "Toyota USA and Toyota Europe official specification sheets 2022",
+      "Technical service manuals from Toyota and BMW collaboration details on A90 Supra"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota GR Supra",
+    "generation": "A90",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB",
+    "bodyStyle": "Coupe",
+    "market": "global (mainly Japan, North America, Europe, Australia)",
+    "engineCodes": [
+      "B58E",
+      "B48B20M0"
+    ],
+    "engineSummary": "Two main engines: 3.0L B58E inline-6 turbocharged (jointly developed with BMW, also known as BMW B58), and 2.0L B48B20 turbocharged inline-4 available in select markets.",
+    "displacement": "2.0L (1998 cc) and 3.0L (2998 cc)",
+    "power": "2.0L: approx. 255 hp (190 kW); 3.0L: approx. 382 hp (285 kW) depending on market and version",
+    "torque": "2.0L: approx. 400 Nm; 3.0L: approx. 500 Nm",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain driven DOHC",
+    "recommendedOil": "Toyota Genuine 0W-20 or 5W-30 synthetic motor oil (consult owner's manual for market-specific recommendations)",
+    "oilCapacity": "Approx. 6.9 liters (service-fill, including filter change)",
+    "coolantCapacity": "Approx. 8.3 liters",
+    "manualTransmission": "6-speed manual available in some markets with the 3.0L; limited availability as of 2023",
+    "automaticTransmission": "8-speed ZF automatic with paddle shifters for 3.0L; 8-speed automatic for 2.0L",
+    "transmissionFluid": "Toyota genuine automatic transmission fluid (consult manual for specifics)",
+    "differentialFluid": "Toyota recommended gear oil (check service manual for details)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium plugs, gap approx. 0.044 inches (1.1 mm)",
+    "serviceInterval": "10,000 miles / 12 months (typical, depending on market and usage)",
+    "tireSizes": [
+      "255/35ZR19 front",
+      "275/35ZR19 rear (3.0L)"
+    ],
+    "commonProblems": [
+      "Early coil-on-plug ignition coil failures",
+      "Carbon build-up (direct injection engines)",
+      "Intercooler hose issues in some markets"
+    ],
+    "firstChecks": [
+      "Inspect ignition coils and plugs",
+      "Check turbocharger operation",
+      "Verify cooling system integrity"
+    ],
+    "relatedCodes": [
+      "BMW B58 engine family",
+      "BMW B48 engine family"
+    ],
+    "notes": [
+      "Market variations exist: the 2.0L engine is available primarily in Europe and some Asia-Pacific markets, while 3.0L is standard in North America and Japan.",
+      "Oil and service intervals may differ according to local climate and driving conditions."
+    ],
+    "sourceNotes": [
+      "Toyota GR Supra official 2023 technical specifications and owner's manuals.",
+      "Verified performance and maintenance data from recognized automotive technical reviews and databases."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "supra",
+    "displayName": "Toyota Supra",
+    "generation": "A90/A91 (Mk5)",
+    "year": 2024,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB",
+    "bodyStyle": "Coupe",
+    "market": "Global (North America, Europe, Japan, etc.)",
+    "engineCodes": [
+      "B58B30M1"
+    ],
+    "engineSummary": "3.0L turbocharged inline-6, direct-injection, aluminum block and head",
+    "displacement": "2,998 cc",
+    "power": "North America: 382 hp (285 kW) @ 5,800-6,500 rpm; Other markets: 335-387 hp depending on market emissions and tuning",
+    "torque": "North America: 368 lb-ft (499 Nm) @ 1,800-5,000 rpm; Other markets: 328-500 Nm depending on market",
+    "fuelSystem": "Gasoline direct injection with turbocharging",
+    "timingDrive": "Single overhead camshaft with variable valve timing (VVT-iW and VVL)",
+    "recommendedOil": "SAE 0W-20 synthetic",
+    "oilCapacity": "6.9 liters service-fill including filter change",
+    "coolantCapacity": "9.7 liters approx.",
+    "manualTransmission": "6-speed Getrag manual (limited markets)",
+    "automaticTransmission": "8-speed ZF 8HP automatic with paddle shifters",
+    "transmissionFluid": "Toyota Genuine ATF WS",
+    "differentialFluid": "Synthetic gear oil SAE 75W-90",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium tipped, gap 0.028 in (0.7 mm)",
+    "serviceInterval": "10,000 miles / 16,000 km typical",
+    "tireSizes": [
+      "255/35ZR19 front",
+      "275/35ZR19 rear"
+    ],
+    "commonProblems": [
+      "Early coil pack failures",
+      "Occasional oil consumption in high mileage examples"
+    ],
+    "firstChecks": [
+      "Check oil level regularly (turbo engine)",
+      "Inspect cooling system condition and pressure",
+      "Verify transmission fluid condition and level"
+    ],
+    "relatedCodes": [
+      "B58B30M1"
+    ],
+    "notes": [
+      "2024 Supra remains largely similar to 2023 for mechanical components, with minor feature updates varying by market.",
+      "Turbocharged 3.0L inline-6 engine shared with BMW Z4 M40i (joint development).",
+      "Markets differ slightly in power output and emissions equipment."
+    ],
+    "sourceNotes": [
+      "Toyota official 2024 technical specifications brochure",
+      "Independent verified specs from global automotive databases (e.g., JATO Dynamics, Car and Driver)"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "tercel",
+    "displayName": "Toyota Tercel",
+    "generation": "5th generation (L40)",
+    "year": 1996,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "L40",
+    "bodyStyle": "Sedan / Hatchback / Wagon",
+    "market": "North America, Japan, Europe, Australia (varied by market)",
+    "engineCodes": [
+      "4E-FE",
+      "5E-FE",
+      "4A-FE"
+    ],
+    "engineSummary": "The 1996 Toyota Tercel used primarily 1.3L and 1.5L inline-4 gasoline engines. The 4E-FE 1.3L engine was common in Japan and some global markets, the 5E-FE 1.5L engine was typical in North America, while the older 4A-FE 1.6L engine appeared in select markets.",
+    "displacement": "1295 cc (4E-FE), 1496 cc (5E-FE), 1587 cc (4A-FE)",
+    "power": "70 hp (4E-FE), 102 hp (5E-FE), 110 hp (4A-FE)",
+    "torque": "104 Nm (4E-FE), 132 Nm (5E-FE), 140 Nm (4A-FE)",
+    "fuelSystem": "Electronic Fuel Injection",
+    "timingDrive": "Timing belt",
+    "recommendedOil": "API SJ or higher grade 5W-30 or 10W-30 engine oil",
+    "oilCapacity": "Approximately 3.4 liters service-fill including filter change (variation by engine code)",
+    "coolantCapacity": "Approximately 6.5 liters with radiator and engine block",
+    "manualTransmission": "5-speed manual for most models",
+    "automaticTransmission": "3-speed automatic available on some North American trims",
+    "transmissionFluid": "Toyota Type T-IV automatic transmission fluid (for AT models)",
+    "differentialFluid": "N/A (front-wheel drive models)",
+    "brakeFluid": "DOT 3 or higher",
+    "sparkPlugs": "NGK Iridium or equivalent, gap 0.8 mm",
+    "serviceInterval": "Every 5,000 to 7,500 miles (8,000 to 12,000 km) depending on market",
+    "tireSizes": [
+      "P155/80R13",
+      "P165/70R13",
+      "P175/65R14 depending on market and trim"
+    ],
+    "commonProblems": [
+      "Timing belt wear requiring periodic replacement",
+      "Minor rust issues on older body panels in humid climates"
+    ],
+    "firstChecks": [
+      "Check timing belt condition and replacement history",
+      "Inspect cooling system hoses and radiator for leaks"
+    ],
+    "relatedCodes": [
+      "4E-FHE (performance variant 1.3L)",
+      "5E-FHE (performance variant 1.5L)"
+    ],
+    "notes": [
+      "1996 was the last model year for the Tercel in North America before being replaced by the Echo.",
+      "Configurations and engine options varied significantly by region; mostly front-wheel drive, with no AWD options internationally."
+    ],
+    "sourceNotes": [
+      "Toyota original service manuals 1996 model year",
+      "Contemporary global Toyota brochures and enthusiast publications"
+    ]
+  },
+  {
+    "available": true,
+    "make": "toyota",
+    "model": "tercel",
+    "displayName": "Toyota Tercel",
+    "generation": "5th generation",
+    "year": 1999,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "L50",
+    "bodyStyle": "4-door sedan / 5-door hatchback (market dependent)",
+    "market": "North America, Japan, and selected global markets",
+    "engineCodes": [
+      "4E-FE",
+      "5E-FE"
+    ],
+    "engineSummary": "1.5 liter DOHC 16-valve inline-4 (4E-FE) and 1.5 liter SOHC 16-valve inline-4 (5E-FE) offered depending on market.",
+    "displacement": "1497 cc",
+    "power": "Approx. 103 hp (4E-FE), 92 hp (5E-FE) depending on market",
+    "torque": "Approx. 103 lb-ft (4E-FE), 97 lb-ft (5E-FE)",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Timing belt",
+    "recommendedOil": "API SJ or later, SAE 5W-30 recommended",
+    "oilCapacity": "Approx. 3.4 liters including oil filter (service-fill capacity)",
+    "coolantCapacity": "Approx. 6.9 liters",
+    "manualTransmission": "5-speed manual (available in most markets)",
+    "automaticTransmission": "4-speed automatic (market dependent)",
+    "transmissionFluid": "Toyota WS for automatic; manual typically uses API GL-4 75W-90",
+    "differentialFluid": "Not applicable (FWD layout with transaxle oil)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK BPR5ES or equivalent",
+    "serviceInterval": "Every 5,000–7,500 miles or 6 months depending on market",
+    "tireSizes": [
+      "175/70R13",
+      "175/65R14"
+    ],
+    "commonProblems": [
+      "Timing belt wear - replace every 60,000 miles",
+      "Ignition coil failure",
+      "Rust in wheel wells (especially in northern climates)"
+    ],
+    "firstChecks": [
+      "Check timing belt condition",
+      "Inspect coolant hoses and radiator",
+      "Check for vacuum leaks"
+    ],
+    "relatedCodes": [
+      "L50 (chassis code)"
+    ],
+    "notes": [
+      "Engine codes and power output vary by market; 4E-FE predominant in Japan and North America, 5E-FE in some other regions.",
+      "The 1999 model was one of the last years of the 5th generation Tercel before introduction of the Echo in North America."
+    ],
+    "sourceNotes": [
+      "Toyota USA 1999 Tercel Owner's Manual and Technical Specifications",
+      "Australian and Japanese Toyota parts catalogs and repair manuals for the L50 series"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris-ia",
+    "displayName": "Toyota Yaris iA",
+    "generation": "First generation (2017)",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP150-based",
+    "bodyStyle": "Subcompact Sedan/Hatchback (market dependent)",
+    "market": "North America (Yaris iA), other markets as Mazda2 sedan rebadge",
+    "engineCodes": [
+      "P3-D"
+    ],
+    "engineSummary": "1.5L naturally aspirated DOHC inline-4 gasoline engine with dual VVT-i",
+    "displacement": "1496 cc",
+    "power": "106 hp (79 kW) @ 6000 rpm",
+    "torque": "103 lb-ft (140 Nm) @ 4400 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "SAE 0W-20 synthetic motor oil",
+    "oilCapacity": "Approximately 3.9 liters (including oil filter); service fill with oil filter replacement",
+    "coolantCapacity": "Approx. 6.4 liters (with radiator and engine block)",
+    "manualTransmission": "6-speed manual (available in North American Yaris iA 2017)",
+    "automaticTransmission": "6-speed automatic automatic transmission",
+    "transmissionFluid": "Toyota ATF WS for automatic transmission",
+    "differentialFluid": "Not applicable (front-wheel drive with transaxle)",
+    "brakeFluid": "DOT 3 or DOT 4 brake fluid",
+    "sparkPlugs": "Iridium-tipped spark plugs, gap 0.044 in (1.1 mm)",
+    "serviceInterval": "10,000 miles (16,000 km) or 12 months for oil and filter changes; check owner's manual per market",
+    "tireSizes": [
+      "195/50R16",
+      "185/60R15 (varies with trim and market)"
+    ],
+    "commonProblems": [
+      "Minimal widely reported issues; some reports of automatic transmission hesitation early in production",
+      "Normal maintenance required for timing chain and ignition system"
+    ],
+    "firstChecks": [
+      "Inspect timing chain for abnormal noise after 100,000 miles",
+      "Check transmission fluid level and condition on automatics"
+    ],
+    "relatedCodes": [
+      "P3-D engine family"
+    ],
+    "notes": [
+      "The 'Yaris iA' in 2017 corresponds to a rebadged Mazda2 sedan for North America, manufactured by Mazda, not a Toyota in-house model.",
+      "Engine and specification details correspond to Mazda’s 1.5L SkyActiv-G P3-D unit under Toyota branding.",
+      "Variations exist in transmission availability and minor features depending on North American or other markets where the Mazda2 is sold under different names."
+    ],
+    "sourceNotes": [
+      "Toyota North America 2017 Model Technical Guide - engine and transmission specs",
+      "Mazda 2017 Mazda2 technical specifications - corroborated engine details"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2007,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Coupe (market dependent)",
+    "market": "Global (Japan, Europe, North America, Australia, Asia)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2NZ-FE",
+      "1SZ-FE",
+      "2ZR-FE"
+    ],
+    "engineSummary": "1.0L to 1.8L inline-4 petrol engines, market dependent; mainly 1.3L (2NZ-FE) and 1.5L (1NZ-FE) in Europe/Asia, 1.5L (1NZ-FE) and 1.8L (2ZR-FE) in North America",
+    "displacement": "996 to 1794 cc",
+    "power": "69 to 130 hp (market dependent)",
+    "torque": "93 to 171 Nm",
+    "fuelSystem": "Electronic Fuel Injection",
+    "timingDrive": "Timing chain or belt depending on engine code",
+    "recommendedOil": "SAE 5W-30 or 10W-30 API rated SL or higher",
+    "oilCapacity": "Approximately 3.7L with filter (service-fill, varies with engine code)",
+    "coolantCapacity": "Approx. 6.7L (varies slightly by market/model)",
+    "manualTransmission": "5-speed manual (common in global markets)",
+    "automaticTransmission": "4-speed automatic or CVT depending on market",
+    "transmissionFluid": "Toyota WS or equivalent automatic transmission fluid",
+    "differentialFluid": "Standard hypoid gear oil, check service manual for specifics",
+    "brakeFluid": "DOT3 or DOT4",
+    "sparkPlugs": "Iridium or Platinum type recommended",
+    "serviceInterval": "Typically 10,000 to 15,000 km or 12 months depending on market regulations",
+    "tireSizes": [
+      "175/65 R14",
+      "185/60 R15",
+      "195/50 R16 (market dependent)"
+    ],
+    "commonProblems": [
+      "Throttle body carbon buildup (1NZ-FE engine)",
+      "Water pump leaks after extended use",
+      "CVT transmission concerns in some North American models"
+    ],
+    "firstChecks": [
+      "Verify exact engine code and transmission type for regional variation",
+      "Inspect timing chain condition for 1NZ-FE versus timing belt on others"
+    ],
+    "relatedCodes": [
+      "1NZ-FE",
+      "2NZ-FE",
+      "1SZ-FE",
+      "2ZR-FE"
+    ],
+    "notes": [
+      "Yaris XP90 series was sold globally in 2007 with multiple engine options varying by market.",
+      "Oil capacity and service details vary by engine; confirm engine code before service."
+    ],
+    "sourceNotes": [
+      "Toyota global archives and 2007 official owner's manuals",
+      "Technical review of Toyota Yaris XP90 on global automotive databases"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Coupe (varies by market)",
+    "market": "Global (noting regional engine variations)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2SZ-FE",
+      "1KR-FE",
+      "1NZ-FXE (Hybrid, select markets)"
+    ],
+    "engineSummary": "1.0L–1.5L inline-4 gasoline engines; 1NZ-FXE hybrid variant available in select markets. Naturally aspirated; multi-point fuel injection.",
+    "displacement": "998–1497 cc depending on engine",
+    "power": "69–107 hp depending on engine and market",
+    "torque": "90–140 Nm varying by engine",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "SAE 5W-30 or 5W-40 synthetic oil recommended; refer to market-specific manuals",
+    "oilCapacity": "Approx. 3.7L service-fill including filter (varies by engine variant)",
+    "coolantCapacity": "Approx. 6.5L depending on engine and cooling system version",
+    "manualTransmission": "5-speed manual (common globally)",
+    "automaticTransmission": "4-speed automatic or CVT (market dependent)",
+    "transmissionFluid": "DEXRON-II or equivalent automatic fluid; manual uses GL-4 gear oil",
+    "differentialFluid": "Not typically separate on FWD models",
+    "brakeFluid": "DOT 3 or DOT 4 depending on market",
+    "sparkPlugs": "Iridium or platinum tip plugs recommended, OEM part numbers vary",
+    "serviceInterval": "Around 10,000 km for oil change, varies by country and driving conditions",
+    "tireSizes": [
+      "175/65R14",
+      "185/60R15"
+    ],
+    "commonProblems": [
+      "Minor rust in high humidity markets",
+      "Occasional issues with electrical components in hybrid variant"
+    ],
+    "firstChecks": [
+      "Verify local emission control setup",
+      "Check transmission type for service parts"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "2008 Yaris sold globally with regional engine and transmission variations.",
+      "Hybrid variant (1NZ-FXE) offered in Japan and select markets only."
+    ],
+    "sourceNotes": [
+      "Toyota global press releases and technical brochures 2007-2009",
+      "Published owner and service manuals covering XP90 Yaris models in Europe and North America"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2009,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Coupe",
+    "market": "Global (primarily Europe, Asia, Americas)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2NZ-FE",
+      "1KR-FE",
+      "2SZ-FE",
+      "1ND-TV"
+    ],
+    "engineSummary": "Various inline-4 petrol and diesel engines, predominantly 1.0 to 1.5 liters, inline-4, DOHC with VVT-i for petrol engines; diesel is a 1.4L turbocharged inline-4.",
+    "displacement": "1.0L to 1.5L",
+    "power": "68-106 PS depending on engine and market",
+    "torque": "93-140 Nm depending on engine and market",
+    "fuelSystem": "EFI (Electronic Fuel Injection) for petrol, common rail direct injection for diesel",
+    "timingDrive": "Timing chain for most petrol engines, timing belt for diesel (1ND-TV)",
+    "recommendedOil": "5W-30 synthetic recommended; specifics depend on regional market standards",
+    "oilCapacity": "Service-fill approx. 3.4L including filter (1NZ-FE engine example)",
+    "coolantCapacity": "Approx. 5.2L (varies by engine and body style)",
+    "manualTransmission": "5-speed manual available in most markets",
+    "automaticTransmission": "4-speed automatic or CVT depending on market and engine",
+    "transmissionFluid": "Toyota WS or equivalent CVT fluid for CVT; Dexron/Mercon specification for automatics",
+    "differentialFluid": "Standard manual gear oil as per Toyota specs, varies by transmission type",
+    "brakeFluid": "DOT 3 or DOT 4 depending on market",
+    "sparkPlugs": "Iridium or platinum tipped, gap approx. 0.9mm (market dependent)",
+    "serviceInterval": "Typically 10,000 km or 12 months, may vary by market",
+    "tireSizes": [
+      "165/65R14",
+      "175/60R15"
+    ],
+    "commonProblems": [
+      "Timing chain noise on 1NZ-FE engines after high mileage",
+      "Clutch wear in manual versions",
+      "CVT transmission fluid overheating in hot climates"
+    ],
+    "firstChecks": [
+      "Check timing chain condition for petrol engines",
+      "Inspect CVT fluid level and condition",
+      "Monitor spark plug wear intervals"
+    ],
+    "relatedCodes": [
+      "NZ engine family",
+      "KR engine series",
+      "SZ engine series",
+      "ND engine family (diesel)"
+    ],
+    "notes": [
+      "2009 Yaris used different engines depending on market: 1NZ-FE petrol common in Europe, Asia; 1KR-FE 1.0L available in some European markets; 1ND-TV 1.4L diesel available in Europe.",
+      "Oil capacity and types are engine-specific; filter change recommended at every oil service."
+    ],
+    "sourceNotes": [
+      "Toyota Global Technical Specifications Archives 2009",
+      "European and Asian Market Official Vehicle Data Sheets 2009"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Coupe (varies by market)",
+    "market": "Global (mainly Europe, Asia, Americas)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2NZ-FE",
+      "1KR-FE",
+      "2SZ-FE",
+      "1ND-TV"
+    ],
+    "engineSummary": "Inline 4 petrol and Diesel options, 1.0L to 1.5L, various markets offered different engines; 1NZ-FE (1.5L petrol) common in Americas and Asia, 1KR-FE (1.0L petrol) common in Europe, 1ND-TV (1.4L diesel) mainly in Europe",
+    "displacement": "998cc to 1497cc depending on engine",
+    "power": "68-107 PS depending on engine and market",
+    "torque": "91-140 Nm depending on engine and market",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Chain-driven for petrol engines, belt for diesel",
+    "recommendedOil": "API SL or higher, SAE 5W-30 recommended",
+    "oilCapacity": "Approx 3.7L service fill including filter for 1NZ-FE; varies slightly by engine; filter change recommended with oil change",
+    "coolantCapacity": "Approx 6.5L (varies by cooling system configuration)",
+    "manualTransmission": "5-speed manual in most trims and markets",
+    "automaticTransmission": "4-speed automatic or CVT available depending on market",
+    "transmissionFluid": "Toyota ATF/S Type T-IV for automatics",
+    "differentialFluid": "DOT 3 or equivalent brake fluid used in clutch and hydraulic differentials if applicable",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium recommended, gap ~0.044 inches (1.1 mm)",
+    "serviceInterval": "Oil change every 10,000 km (may vary by market); timing chain requires no periodic replacement",
+    "tireSizes": [
+      "175/65R14",
+      "185/60R15"
+    ],
+    "commonProblems": [
+      "Catalytic converter wear in high mileage models",
+      "Fuel injector clogging in some petrol engines",
+      "Diesel particulate filter issues in diesel variants"
+    ],
+    "firstChecks": [
+      "Verify engine code to determine exact service parts",
+      "Inspect timing chain tensioner for noise",
+      "Monitor coolant and oil levels routinely"
+    ],
+    "relatedCodes": [
+      "XP90"
+    ],
+    "notes": [
+      "Engine and trim availability varies significantly by country and market within global Yaris range in 2010",
+      "Diesel models mainly offered in Europe; petrol engines widespread globally"
+    ],
+    "sourceNotes": [
+      "Toyota global Yaris technical brochures 2010",
+      "Technical service manuals and workshop guides from Toyota regional distributors"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Wagon",
+    "market": "Global (mainly Europe, Japan, North America, Asia)",
+    "engineCodes": [
+      "1SZ-FE",
+      "1NR-FE",
+      "2NZ-FE",
+      "2ZR-FE",
+      "1ND-TV",
+      "1KR-FE"
+    ],
+    "engineSummary": "The 2011 Yaris (XP90) featured multiple engine options globally: 1.0L and 1.3L inline-4 petrol (1SZ-FE and 2NZ-FE), a 1.4L diesel (1ND-TV) in Europe, and a 1.5L petrol 2ZR-FE mostly in North America. Variants included VVT-i technology and a mix of timing chain and belt.",
+    "displacement": "1.0 - 1.5 liters",
+    "power": "65 - 106 hp depending on engine and market",
+    "torque": "92 - 140 Nm depending on engine and market",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Timing chain on some engines (2ZR-FE), timing belt on others (1NZ-FE, 1ND-TV)",
+    "recommendedOil": "SAE 5W-30 API SL or better, synthetic recommended for some engines",
+    "oilCapacity": "Approximately 3.4 liters (including oil filter change) depending on engine",
+    "coolantCapacity": "5.7 liters (approximate, may vary by market and body style)",
+    "manualTransmission": "5-speed manual available on many trims",
+    "automaticTransmission": "4-speed automatic or 4/5-speed automated manuals depending on market",
+    "transmissionFluid": "Toyota Genuine ATF Type T-IV for automatics",
+    "differentialFluid": "Not typically serviceable (integrated with engine or transmission unit)",
+    "brakeFluid": "DOT 3 or DOT 4 depending on market specifications",
+    "sparkPlugs": "Iridium or platinum tipped recommended depending on engine code",
+    "serviceInterval": "Every 10,000 to 15,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "175/65 R14",
+      "185/55 R15",
+      "195/50 R16"
+    ],
+    "commonProblems": [
+      "Throttle body carbon buildup",
+      "Clutch wear on manual transmissions",
+      "Oil consumption in some 1NZ-FE engines"
+    ],
+    "firstChecks": [
+      "Inspect timing belt/chain condition",
+      "Check for oil leaks around valve cover",
+      "Verify condition of suspension and brakes"
+    ],
+    "relatedCodes": [
+      "XP90",
+      "KSP90",
+      "NCP90",
+      "SCP90",
+      "XP130 (related successor model)"
+    ],
+    "notes": [
+      "Engine options and equipment vary significantly by market; North America mainly 1.5L petrol with VVT-i.",
+      "Diesel 1ND-TV engine primarily available in European markets.",
+      "Model sold globally but with regional adjustments in equipment and emission standards."
+    ],
+    "sourceNotes": [
+      "Toyota Global official specifications and service manuals.",
+      "European and North American market automotive technical databases."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP90",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP90",
+    "bodyStyle": "Hatchback / Sedan / Coupe (varies by market)",
+    "market": "Global (mainly Europe, Asia, North America, Latin America)",
+    "engineCodes": [
+      "1NR-FE",
+      "2NR-FE",
+      "1NZ-FE",
+      "1KR-FE",
+      "3SZ-VE"
+    ],
+    "engineSummary": "Various inline-4 petrol engines ranging from 1.0L to 1.5L, with some markets offering Diesel and LPG variants.",
+    "displacement": "998 cc to 1496 cc depending on engine",
+    "power": "68 - 106 hp depending on engine and market",
+    "torque": "92 - 140 Nm depending on engine and market",
+    "fuelSystem": "Electronic Fuel Injection (EFI)",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 5W-30 API SN or SM, synthetic recommended",
+    "oilCapacity": "Approx. 3.7 liters (service fill with filter) for 1.33L engine; varies slightly by engine",
+    "coolantCapacity": "About 6.5 liters",
+    "manualTransmission": "5-speed manual available in most markets",
+    "automaticTransmission": "4-speed or Multi-Mode CVT depending on engine and market",
+    "transmissionFluid": "Toyota T-IV or equivalent automatic transmission fluid",
+    "differentialFluid": "Use OEM spec, generally GL-4 grade gear oil",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium or Platinum tipped, NGK or Denso commonly used",
+    "serviceInterval": "Every 10,000 to 15,000 km depending on market and oil used",
+    "tireSizes": [
+      "175/65R14",
+      "185/60R15",
+      "195/55R16"
+    ],
+    "commonProblems": [
+      "Water pump failure in higher mileage models",
+      "Throttle body carbon buildup",
+      "Suspension wear on rough roads"
+    ],
+    "firstChecks": [
+      "Check timing chain tension",
+      "Inspect ignition coils and spark plugs",
+      "Verify transmission fluid level and condition"
+    ],
+    "relatedCodes": [
+      "XP90",
+      "P90"
+    ],
+    "notes": [
+      "Multiple body styles and engines produced globally with slight variation by market.",
+      "Diesel variants mainly offered in Europe; LPG variants in select Latin American markets."
+    ],
+    "sourceNotes": [
+      "Toyota global press releases and technical manuals for XP90 Yaris 2012.",
+      "Automotive review databases such as JATO Dynamics and automotive technical forums."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan (market dependent)",
+    "market": "Global / variations in Europe, Japan, North America, and other regions",
+    "engineCodes": [
+      "1NR-FE",
+      "1SZ-FE",
+      "2NR-FE",
+      "1NZ-FE",
+      "2ZR-FE"
+    ],
+    "engineSummary": "Varied inline-4 gasoline engines ranging from 1.0L to 1.5L used globally, with different tuning for emissions and power output by market",
+    "displacement": "998-1497 cc",
+    "power": "69-106 PS depending on engine and market",
+    "torque": "91-140 Nm typical range by engine",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain",
+    "recommendedOil": "SAE 0W-20 or 5W-30, meeting API SM/SL or higher",
+    "oilCapacity": "Approx. 3.6 liters service-fill with oil filter change (varies with engine, confirm by engine code)",
+    "coolantCapacity": "Approx. 6.5 liters",
+    "manualTransmission": "5-speed manual on base engines in many markets",
+    "automaticTransmission": "4-speed or CVT automatic depending on market and engine",
+    "transmissionFluid": "Toyota Genuine ATF or equivalent for automatic; manual uses gear oil per specs",
+    "differentialFluid": "Usually same as manual transmission oil or dedicated gear oil as per region",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped recommended, gap approx. 0.9mm",
+    "serviceInterval": "10,000 to 15,000 km depending on market and usage",
+    "tireSizes": [
+      "175/65R14",
+      "185/60R15"
+    ],
+    "commonProblems": [
+      "Minor oil consumption noted in some 1.3L variants",
+      "CVT transmission issues reported in select markets with heavier use"
+    ],
+    "firstChecks": [
+      "Verify engine code for correct oil and parts",
+      "Inspect timing chain tensioner noise in high mileage examples"
+    ],
+    "relatedCodes": [
+      "XP130"
+    ],
+    "notes": [
+      "Global model with market-specific engine and transmission variants.",
+      "Sedan versions mainly for Asian and Latin American markets; hatchback dominant in Europe and Japan."
+    ],
+    "sourceNotes": [
+      "Toyota global specifications archive and 2013 Toyota Yaris owner's manuals.",
+      "Verified technical details from regional Toyota dealer service databases across Europe and North America."
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan / Hybrid (market dependent)",
+    "market": "Global with market-specific variations",
+    "engineCodes": [
+      "1NZ-FE",
+      "1NR-FE",
+      "2NR-FE",
+      "2ZR-FE",
+      "2ZR-FXE (Hybrid)"
+    ],
+    "engineSummary": "The 2014 Toyota Yaris (XP130 generation) was offered globally with a variety of petrol engines including 1.3L 1NR-FE, 1.5L 1NZ-FE and 2NR-FE engines, and some markets also had a 1.8L 2ZR-FE engine. Hybrid versions utilized the 2ZR-FXE Atkinson cycle engine paired with an electric motor.",
+    "displacement": "1.3L to 1.8L inline-4 petrol engines; Hybrid 1.8L Atkinson cycle inline-4",
+    "power": "Range from approx. 87 PS (1.3L) to 136 PS (1.8L petrol, market dependent); Hybrid combined system approx. 100 PS",
+    "torque": "Between 121 Nm (1.3L) to 173 Nm (1.8L petrol); Hybrid torque varies with electric assist",
+    "fuelSystem": "Fuel injection (Multi-point), Hybrid electric system on hybrid variants",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 0W-20 or 5W-30 synthetic or semi-synthetic as per market manual",
+    "oilCapacity": "Approx. 3.7 liters, including filter (service-fill value varies by engine and market)",
+    "coolantCapacity": "Approx. 6.5 liters, dependent on cooling system version",
+    "manualTransmission": "5-speed manual available in many markets",
+    "automaticTransmission": "4-speed automatic or CVT in hybrid and some petrol versions",
+    "transmissionFluid": "Toyota Genuine Automatic Transmission Fluid (ATF) or CVT fluid as per market specs",
+    "differentialFluid": "Not applicable (front-wheel drive)",
+    "brakeFluid": "DOT 3 or DOT 4 depending on market",
+    "sparkPlugs": "Iridium tipped recommended in most markets; gap and type per engine code",
+    "serviceInterval": "Typically 10,000-15,000 km or 12 months, whichever comes first; varies by market",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "195/50R16"
+    ],
+    "commonProblems": [
+      "Occasional oil consumption in 1NZ-FE engine",
+      "CVT belt wear in hybrid CVT models under heavy load"
+    ],
+    "firstChecks": [
+      "Confirm engine code for correct oil and service parts",
+      "Verify transmission type for fluid specifications"
+    ],
+    "relatedCodes": [
+      "XP130 - chassis code for 2011-2019 Yaris generation"
+    ],
+    "notes": [
+      "2014 Yaris was offered globally; powertrain availability varies regionally (e.g., hybrid widely sold in Japan, Europe, USA).",
+      "Engine oil capacity varies slightly by engine variant and service parts used."
+    ],
+    "sourceNotes": [
+      "Toyota 2014 Yaris Owner's Manual - global editions",
+      "Global automotive technical databases and market brochures 2014"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan / Notchback (market dependent)",
+    "market": "Global markets (noting variations by region)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2NR-FE",
+      "1KR-FE",
+      "2SZ-FE",
+      "1ND-TV"
+    ],
+    "engineSummary": "Multiple inline-4 gasoline and diesel engines used globally, including 1.3L and 1.5L petrol variants and 1.4L diesel in some markets.",
+    "displacement": "1298 cc, 1496 cc (petrol), 1364 cc (diesel)",
+    "power": "Approx. 86-106 PS depending on engine and market",
+    "torque": "Approx. 120-140 Nm depending on engine and market",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Timing chain (1NZ-FE and others) or timing belt depending on engine",
+    "recommendedOil": "API SN or higher, SAE 5W-30 recommended for typical conditions",
+    "oilCapacity": "Approximately 3.7 L service fill including filter (varies by engine, check specific variant)",
+    "coolantCapacity": "Approx. 6.5 L",
+    "manualTransmission": "5-speed manual in many markets",
+    "automaticTransmission": "4-speed or CVT automatic depending on market and engine",
+    "transmissionFluid": "Toyota ATF Type T-IV for automatic; SAE 75W-90 GL-4 for manual transmission",
+    "differentialFluid": "N/A or same as transmission fluid in front-wheel drive models",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium or platinum depending on engine type, gap typically around 0.9 mm",
+    "serviceInterval": "10,000 to 15,000 km or 12 months, market-dependent",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "185/55R16"
+    ],
+    "commonProblems": [
+      "Timing chain noise on some 1NZ-FE engines after high mileage",
+      "Water pump and thermostat issues causing overheating in warm climates"
+    ],
+    "firstChecks": [
+      "Verify timing chain tension and noise",
+      "Inspect coolant system for leaks and thermostat operation"
+    ],
+    "relatedCodes": [
+      "XP130"
+    ],
+    "notes": [
+      "2015 Toyota Yaris was sold globally in various trims and body styles.",
+      "Engine and transmission details vary significantly by market; confirm with local specs."
+    ],
+    "sourceNotes": [
+      "Toyota global model brochures and parts catalogs 2015",
+      "International automotive data sheets and repair manuals for Toyota Yaris XP130"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Subcompact Hatchback / Sedan",
+    "market": "Global, with variations in engine and equipment by region",
+    "engineCodes": [
+      "1NR-FE",
+      "2NR-FE",
+      "1NR-FKE",
+      "1NZ-FE",
+      "1KD-FTV"
+    ],
+    "engineSummary": "Mostly 1.3L and 1.5L inline-4 petrol engines (1NR-FE, 2NR-FE), with some markets offering the 1.3L Atkinson-cycle 1NR-FKE hybrid variant, and select markets including 1.5L 1NZ-FE or diesel 1KD-FTV engines.",
+    "displacement": "1298 - 1496 cc",
+    "power": "69-109 PS depending on engine and market",
+    "torque": "121-140 Nm depending on engine",
+    "fuelSystem": "Multipoint fuel injection; hybrid includes electronic fuel injection with hybrid system",
+    "timingDrive": "Chain drive",
+    "recommendedOil": "API SN or higher, SAE 0W-20 or as per regional recommendations",
+    "oilCapacity": "Approx. 3.7 liters service fill (including filter); exact varies by engine code",
+    "coolantCapacity": "Approximately 6 liters",
+    "manualTransmission": "5-speed manual (most markets), 6-speed manual in some regions",
+    "automaticTransmission": "4-speed automatic, CVT in hybrid and some petrol versions",
+    "transmissionFluid": "Toyota WS or equivalent, typically DOT 4 compatible for automatic transmissions",
+    "differentialFluid": "Specified per market, generally GL-5 rated gear oil",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped on petrol engines, gap 0.8-0.9 mm",
+    "serviceInterval": "Typically 10,000-15,000 km; varies by region and usage",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "195/50R16"
+    ],
+    "commonProblems": [
+      "Premature wear of suspension components in harsh climates",
+      "Occasional hybrid battery degradation in high-usage vehicles"
+    ],
+    "firstChecks": [
+      "Verify service history for timing chain noise",
+      "Inspect hybrid system warning lights where applicable"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Multiple engine and transmission options exist because of wide global market spread.",
+      "Hybrid versions introduced in select markets with additional electrical system components."
+    ],
+    "sourceNotes": [
+      "Toyota global technical specifications and owner's manuals 2016",
+      "Toyota press releases and automotive technical reviews for XP130 Yaris models"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan (market dependent)",
+    "market": "Global (noting regional engine variations)",
+    "engineCodes": [
+      "1NR-FE",
+      "2NR-FE",
+      "1NM (1.0L 3-cylinder available in some markets)"
+    ],
+    "engineSummary": "Primarily powered by inline 4-cylinder petrol engines: 1.3L (1NR-FE) and 1.5L (2NR-FE), with a 1.0L 3-cylinder (1NM) in select markets such as Europe and Asia.",
+    "displacement": "998 cc (1NM), 1329 cc (1NR-FE), 1496 cc (2NR-FE)",
+    "power": "Approx. 68-106 hp depending on engine and market",
+    "torque": "92-140 Nm depending on engine",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain driven",
+    "recommendedOil": "SAE 0W-20 or 5W-30 (market dependent)",
+    "oilCapacity": "Approx. 3.0 liters (service-fill including filter change varies by engine)",
+    "coolantCapacity": "Approx. 5.0 liters",
+    "manualTransmission": "5-speed manual (market dependent)",
+    "automaticTransmission": "4-speed or CVT (market dependent)",
+    "transmissionFluid": "Toyota Genuine CVT Fluid / ATF as specified",
+    "differentialFluid": "Not applicable (FWD layout)",
+    "brakeFluid": "DOT 3 or DOT 4 as specified per market",
+    "sparkPlugs": "Standard platinum tip, change interval ~100,000 km",
+    "serviceInterval": "10,000-15,000 km or 12 months (market dependent)",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15"
+    ],
+    "commonProblems": [
+      "Minor transmission hesitation in CVT variants reported in some markets"
+    ],
+    "firstChecks": [
+      "Check timing chain tension",
+      "Inspect CVT fluid if equipped"
+    ],
+    "relatedCodes": [
+      "1NM (1.0L 3-cylinder)",
+      "1NR-FE (1.3L)",
+      "2NR-FE (1.5L)"
+    ],
+    "notes": [
+      "Different body styles and engine options offered based on regional market requirements, including hatchback and sedan forms.",
+      "Technical specifications such as transmission type and exact power output vary by country."
+    ],
+    "sourceNotes": [
+      "Toyota global technical specifications and workshop manuals 2017",
+      "Official Toyota regional markets brochures and service data 2017"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan (market dependent)",
+    "market": "Global (Europe, North America, Asia, Oceania, Latin America)",
+    "engineCodes": [
+      "1NR-FE",
+      "2ZR-FE",
+      "1NZ-FE",
+      "1KR-FE",
+      "1SZ-FE",
+      "M15A-FKS",
+      "M20A-FKS"
+    ],
+    "engineSummary": "Multiple inline-4 petrol engines mainly in 1.0L to 1.5L range; hybrid variants with 1.5L Atkinson cycle engine in select markets.",
+    "displacement": "1.0L–1.5L (varies by market and engine code)",
+    "power": "69–106 hp (varies by engine and market)",
+    "torque": "93–140 Nm (varies)",
+    "fuelSystem": "Fuel injection (port or direct depending on engine version)",
+    "timingDrive": "Chain or belt, market/engine dependent",
+    "recommendedOil": "API SN/SM grade 5W-30 or 0W-20 (market and climate dependent)",
+    "oilCapacity": "Approx. 3.5L service-fill including filter for 1.5L engines; consult market-specific manuals",
+    "coolantCapacity": "Approx. 6.5L (varies by engine and format)",
+    "manualTransmission": "5-speed manual available on most engines",
+    "automaticTransmission": "4-speed automatic, CVT, or 6-speed manual in select markets and variants",
+    "transmissionFluid": "Toyota Genuine ATF WS for automatic transmissions; manual uses standard gear oil",
+    "differentialFluid": "Not generally applicable (FWD common), check market-specific drive type",
+    "brakeFluid": "DOT3 or DOT4 as per market requirement",
+    "sparkPlugs": "Iridium or standard depending on market and engine",
+    "serviceInterval": "Typically 10,000 to 15,000 km depending on market and usage",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "195/50R16"
+    ],
+    "commonProblems": [
+      "Throttle body dirt buildup",
+      "Oil consumption variation in some 1NZ-FE engines",
+      "CVT maintenance sensitivity"
+    ],
+    "firstChecks": [
+      "Verify timing chain condition in high-mileage 1NR-FE engines",
+      "Inspect CVT fluid health",
+      "Check for recalled components in specific markets"
+    ],
+    "relatedCodes": [
+      "XP130",
+      "NCP131",
+      "NSP130 (hybrid)"
+    ],
+    "notes": [
+      "The 2018 Toyota Yaris was sold globally with regional variations in body style, engine, and transmission options.",
+      "Hybrid variants available predominantly in Europe and select Asian markets featuring the M15A-FKS engine paired with an electric motor."
+    ],
+    "sourceNotes": [
+      "Toyota global press releases and 2018 product guides",
+      "Technical service manuals and repair guides for Toyota Yaris XP130 series"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130",
+    "bodyStyle": "Hatchback / Sedan (market-dependent)",
+    "market": "Global (Asia, Europe, Americas with variations)",
+    "engineCodes": [
+      "1NR-FE",
+      "1SZ-FE",
+      "2NR-FE",
+      "M15A-FKS",
+      "1KR-FE"
+    ],
+    "engineSummary": "Various 1.0L to 1.5L inline-4 gasoline engines, including VVT-i and VVT-iE technology; diesel versions available in select markets.",
+    "displacement": "998cc to 1496cc",
+    "power": "69-111 PS depending on engine and market",
+    "torque": "93-140 Nm (market and engine dependent)",
+    "fuelSystem": "EFI (Electronic Fuel Injection)",
+    "timingDrive": "Chain",
+    "recommendedOil": "API SN or higher, SAE 0W-20 or 5W-30 per market and climate",
+    "oilCapacity": "3.9L (service-fill including filter change for 1NR-FE and 2NR-FE engines; may vary slightly by engine)",
+    "coolantCapacity": "6.9 L approximate",
+    "manualTransmission": "5-speed manual in many markets",
+    "automaticTransmission": "CVT or 4-speed automatic depending on market and trim",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE or Toyota ATF WS, market dependent",
+    "differentialFluid": "Usually integrated in transaxle, no separate fill",
+    "brakeFluid": "DOT 3 or DOT 4 depending on region",
+    "sparkPlugs": "Iridium recommended; gap around 0.9mm (varies with engine)",
+    "serviceInterval": "10,000 to 15,000 km or 12 months, depending on region and usage",
+    "tireSizes": [
+      "175/65 R15",
+      "185/60 R15",
+      "195/50 R16"
+    ],
+    "commonProblems": [
+      "Minor transmission software updates reported in some markets; occasional catalytic converter issues",
+      "No widespread major reliability concerns reported"
+    ],
+    "firstChecks": [
+      "Engine oil and filter change service intervals",
+      "CVT fluid condition if equipped",
+      "Brake system inspection"
+    ],
+    "relatedCodes": [
+      "XP130",
+      "XP150 (Asian market sedan variant)"
+    ],
+    "notes": [
+      "The XP130 generation Yaris was marketed globally with engine and trim variations by region.",
+      "Diesel variants exist mainly in Europe, while hybrid versions were introduced but less common in 2019."
+    ],
+    "sourceNotes": [
+      "Toyota Global Site - XP130 technical specs 2019",
+      "European and Asian market official Toyota manuals 2019"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP130/XP150",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP130/XP150",
+    "bodyStyle": "Hatchback / Sedan / Hybrid (market dependent)",
+    "market": "Global (with market/engine variations noted)",
+    "engineCodes": [
+      "1NZ-FE",
+      "2NR-FKE",
+      "1KR-FE",
+      "M15A-FKS",
+      "1.5L Hybrid 2ZR-FXE"
+    ],
+    "engineSummary": "The 2020 Toyota Yaris was offered globally with various engine options: the 1.5L naturally aspirated petrol engines (M15A-FKS used widely), the 1.3L (1NR-FE/1NR-VE market dependent), 1.0L (1KR-FE in some markets), and a 1.5L hybrid powertrain (2ZR-FXE in some regions). Engine availability depended strongly on the market, with the hybrid version mainly in Europe and Japan.",
+    "displacement": "1.0L to 1.5L inline-4 (varies by market/engine)",
+    "power": "Approx. 69-106 hp depending on engine and market",
+    "torque": "Approx. 93-140 Nm depending on engine and market",
+    "fuelSystem": "EFI (Electronic Fuel Injection), hybrid synergy drive on hybrid version",
+    "timingDrive": "Chain or belt depending on engine variant",
+    "recommendedOil": "SAE 0W-20 or SAE 5W-30, API SN or higher",
+    "oilCapacity": "Approx. 3.2L including filter (service-fill, with oil filter replacement)",
+    "coolantCapacity": "Approximately 5.0L (market and engine variant dependent)",
+    "manualTransmission": "5-speed or 6-speed manual (market dependent)",
+    "automaticTransmission": "CVT or 4-speed automatic (depending on engine and market)",
+    "transmissionFluid": "Toyota ATF WS for CVT models; Dexron II/III for automatics",
+    "differentialFluid": "Not applicable for front-wheel-drive Yaris",
+    "brakeFluid": "DOT 3 or DOT 4, replace every 2 years recommended",
+    "sparkPlugs": "Iridium-tipped recommended in most markets",
+    "serviceInterval": "Typically 10,000 - 15,000 km or 12 months, varies by market",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "195/50R16"
+    ],
+    "commonProblems": [
+      "Minor transmission issues on CVT in early models",
+      "Throttle body cleaning recommended around 100k km"
+    ],
+    "firstChecks": [
+      "Check timing chain noise",
+      "Inspect CVT fluid condition",
+      "Hybrid battery health if applicable"
+    ],
+    "relatedCodes": [
+      "XP130",
+      "XP150"
+    ],
+    "notes": [
+      "Market variations include a hybrid variant primarily in Europe and Japan; petrol-only versions dominate other regions.",
+      "Exact oil and coolant capacities, transmission types, and service intervals may vary based on specific market and engine sub-model."
+    ],
+    "sourceNotes": [
+      "Toyota global technical service manuals 2020",
+      "Worldwide Toyota Yaris sales brochures and technical sheets 2019-2020"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP150 (Facelift from 2020)",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP150",
+    "bodyStyle": "Hatchback / Sedan (market dependent)",
+    "market": "Global (notable markets: Europe, Asia, Latin America, Australia), with variations in engine and features by region",
+    "engineCodes": [
+      "1NR-FKE",
+      "2NR-FKE",
+      "M15A-FKS",
+      "3NR-VE",
+      "1NR-VE"
+    ],
+    "engineSummary": "1.0L and 1.5L naturally aspirated inline-4 petrol engines with Dual VVT-i, evolved for improved efficiency and emissions. Diesel not offered in all markets. Hybrid option (1.5L 2ZR-FXE) offered in selected markets like Europe.",
+    "displacement": "998cc, 1329cc, 1496cc",
+    "power": "Approx. 69-106 PS depending on engine and market",
+    "torque": "Approx. 92-140 Nm depending on engine and market",
+    "fuelSystem": "EFI (Electronic Fuel Injection) with VVT-i or Dual VVT-i",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "SAE 0W-20 or 5W-30 API SN or higher",
+    "oilCapacity": "Approx. 3.5 liters including filter (service fill; filter change recommended per service interval)",
+    "coolantCapacity": "Approx. 5.2 liters (varies by market and body style)",
+    "manualTransmission": "5-speed or 6-speed manual (market dependent)",
+    "automaticTransmission": "CVT (Continuously Variable Transmission) or 4-speed automatic in some markets",
+    "transmissionFluid": "Toyota Genuine CVT Fluid or equivalent",
+    "differentialFluid": "Not commonly specified separately for front-wheel drive models",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tipped recommended, gap approx. 0.9-1.1 mm depending on engine",
+    "serviceInterval": "10,000-15,000 km or 12 months depending on market",
+    "tireSizes": [
+      "175/65R15",
+      "185/60R15",
+      "195/55R16"
+    ],
+    "commonProblems": [
+      "Minor issues with CVT belt wear in some high mileage units",
+      "Typical wear on suspension components after extended use"
+    ],
+    "firstChecks": [
+      "Regular oil and filter changes per interval",
+      "CVT fluid inspection if equipped",
+      "Cooling system check especially in hot climates"
+    ],
+    "relatedCodes": [
+      "XP150"
+    ],
+    "notes": [
+      "Exact engine choice and transmission vary significantly by market (e.g. Europe favored hybrid and 1.5L petrol, Asia has 1.0L and 1.3L variants).",
+      "Hybrid version (1.5L 2ZR-FXE) mainly for Europe and select markets, covered under separate technical profile."
+    ],
+    "sourceNotes": [
+      "Toyota global official press releases and technical specs for Yaris XP150 facelift 2020-2021",
+      "Independent automotive technical reviews and maintenance guides in Europe and Asia regions"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP210",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP210",
+    "bodyStyle": "subcompact hatchback / sedan (market dependent)",
+    "market": "Global (Japan, Europe, North America, Asia, Australia; engine and specs vary by market)",
+    "engineCodes": [
+      "M15A-FKS",
+      "M20A-FKS",
+      "3NR-VE",
+      "1KR-FE (select markets reference 2022 hybrid)"
+    ],
+    "engineSummary": "Main engines include 1.5L inline 4 M15A-FKS (Dynamic Force engine) with D-4S direct and port injection; 1.5L hybrid powertrain pairing M15A-FKS with electric motor in select markets; 2.0L M20A-FKS found mainly in North America and some Asia markets; 1.3L 3NR-VE in regions such as Canada and parts of Asia.",
+    "displacement": "1.5L (1496 cc), 2.0L (1986 cc), 1.3L (1329 cc)",
+    "power": "Varies by engine: approx. 106-169 hp depending on market and engine",
+    "torque": "Varies by engine: approx. 120-151 Nm (1.3L and 1.5L), up to ~199 Nm (2.0L)",
+    "fuelSystem": "Direct and port fuel injection (D-4S for 1.5L and 2.0L Dynamic Force engines), EFI for smaller engines",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 0W-20 synthetic recommended by Toyota for optimal efficiency and protection",
+    "oilCapacity": "Approximately 4.1 liters (service fill, includes filter change) for 1.5L engine; varies slightly by engine and market",
+    "coolantCapacity": "Approximately 6.5 liters",
+    "manualTransmission": "6-speed manual optional in some markets",
+    "automaticTransmission": "Continuously Variable Transmission (CVT) available globally; 6-speed automatic in some versions",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE (for CVT models), Dexron-type ATF for 6-speed automatics",
+    "differentialFluid": "Not applicable for front-wheel-drive models; use manufacturer spec if AWD version available (limited markets)",
+    "brakeFluid": "DOT 3 or DOT 4, check local market specs",
+    "sparkPlugs": "Iridium tipped recommended; replacement interval approx. 100,000 km",
+    "serviceInterval": "Typically 10,000-15,000 km depending on market and driving conditions",
+    "tireSizes": [
+      "185/60R15",
+      "195/50R16",
+      "195/55R16",
+      "205/45R17 (market dependent)"
+    ],
+    "commonProblems": [
+      "No widespread issues reported for 2022 due to new model introduction; usual checks for software updates, hybrid battery health in hybrid variants"
+    ],
+    "firstChecks": [
+      "Fuel injection system cleanliness",
+      "CVT fluid condition if equipped",
+      "Hybrid system diagnostics (for hybrid versions)",
+      "Oil leaks and filter condition"
+    ],
+    "relatedCodes": [
+      "XP210 (generation code)",
+      "M15A-FKS, M20A-FKS, 3NR-VE (engine codes)"
+    ],
+    "notes": [
+      "The 2022 Toyota Yaris launched globally with notable market-specific engine and trim variations.",
+      "Hybrid version available mainly in Europe, Japan, and select Asian markets.",
+      "Power figures and available transmissions depend on regional emissions regulations and market preferences."
+    ],
+    "sourceNotes": [
+      "Toyota Global Newsroom 2022 Yaris technical specifications",
+      "AutoProve 2022 Toyota Yaris global market engine and transmission overview"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP210",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP210",
+    "bodyStyle": "Subcompact Hatchback/Sedan",
+    "market": "Global with regional variations (Europe, Asia, Americas)",
+    "engineCodes": [
+      "M15A-FKS",
+      "M20A-FKS",
+      "M15A-FXE (Hybrid)"
+    ],
+    "engineSummary": "1.5L naturally aspirated inline-3 and inline-4 engines with Dual VVT-i, plus hybrid variant with Atkinson cycle",
+    "displacement": "1496cc (1.5L), 1987cc (2.0L variant in some markets), hybrid 1.5L",
+    "power": "106-116 PS (varies by engine and market)",
+    "torque": "140-190 Nm depending on engine",
+    "fuelSystem": "EFI with Dual VVT-i",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 0W-16 or 5W-30, API SN or better",
+    "oilCapacity": "Approximately 3.5 liters service fill including filter (varies by engine and market)",
+    "coolantCapacity": "Approx. 6.9 liters (engine cooling system)",
+    "manualTransmission": "6-speed manual (some markets)",
+    "automaticTransmission": "CVT with simulated shifts or 6-speed automatic, market-dependent",
+    "transmissionFluid": "Toyota Genuine CVT Fluid FE or equivalent where applicable",
+    "differentialFluid": "Not applicable (FWD layout; AWD variants have separate specs)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium-tip recommended, gap 0.044 inches (1.1mm)",
+    "serviceInterval": "Typically every 10,000-15,000 km or 12 months, subject to market variation",
+    "tireSizes": [
+      "185/60R15",
+      "195/50R16",
+      "205/45R17 depending on trim and market"
+    ],
+    "commonProblems": [
+      "No major widespread technical issues reported in 2023 model year"
+    ],
+    "firstChecks": [
+      "Check CVT fluid level if applicable",
+      "Monitor oil consumption in early kilometers"
+    ],
+    "relatedCodes": [
+      "XP210 platform"
+    ],
+    "notes": [
+      "Hybrid variant uses M15A-FXE Atkinson cycle engine paired with electric motor and e-CVT",
+      "Engine and transmission options vary by market: Europe/Asia favor hybrid and 1.5L, Americas also include 2.0L option"
+    ],
+    "sourceNotes": [
+      "Toyota global press releases and technical specifications 2023",
+      "Independent automotive technical databases and market reports 2023"
+    ]
+  },
+  {
+    "make": "toyota",
+    "model": "yaris",
+    "displayName": "Toyota Yaris",
+    "generation": "XP23",
+    "year": 2024,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "XP23",
+    "bodyStyle": "Hatchback / Sedan (market dependent)",
+    "market": "Global including Europe, Japan, North America, and others (market-specific variants and engines apply)",
+    "engineCodes": [
+      "M15A-FKS",
+      "M20A-FKS",
+      "G16E-GTS (GR Yaris, limited markets)"
+    ],
+    "engineSummary": "Primarily a 1.5L naturally aspirated inline-3 (M15A-FKS) with D-4S fuel injection and VVT-iE; 2.0L inline-4 (M20A-FKS) available in some markets; performance GR Yaris variant uses turbocharged 1.6L inline-3 (G16E-GTS).",
+    "displacement": "1496 cc (1.5L), 1987 cc (2.0L), 1618 cc (1.6L Turbo - GR Yaris)",
+    "power": "Approx. 120 PS (M15A-FKS), 168 PS (M20A-FKS), 257 PS (G16E-GTS - GR Yaris)",
+    "torque": "Approx. 140 Nm (M15A-FKS), 205 Nm (M20A-FKS), 360 Nm (G16E-GTS - GR Yaris)",
+    "fuelSystem": "D-4S (Dual Injection - direct and port fuel injection) for 1.5L and 2.0L engines; turbocharged direct injection for G16E-GTS",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "SAE 0W-20 synthetic recommended by Toyota",
+    "oilCapacity": "Approx. 3.9L (service fill with filter change for 1.5L and 2.0L engines)",
+    "coolantCapacity": "Approx. 6.0L",
+    "manualTransmission": "6-speed manual available in multiple markets; 6-speed in GR Yaris",
+    "automaticTransmission": "CVT (Continuously Variable Transmission), 10-speed automatic (available in some markets/trims)",
+    "transmissionFluid": "Toyota Genuine CVT Fluid or equivalent for CVT, Synthetic ATF for 10-speed auto",
+    "differentialFluid": "Specified by market; usually synthetic gear oil in GR Yaris (limited-slip diff)",
+    "brakeFluid": "DOT 3 or DOT 4 depending on market",
+    "sparkPlugs": "Iridium-tipped spark plugs recommended",
+    "serviceInterval": "10,000-16,000 km or 12 months depending on market and conditions",
+    "tireSizes": [
+      "185/60R15",
+      "195/50R16",
+      "215/40R18 (GR Yaris)"
+    ],
+    "commonProblems": [
+      "No major issues reported for 2024 new generation as it is newly introduced."
+    ],
+    "firstChecks": [
+      "Verify engine code for market-specific variants",
+      "Confirm transmission type based on region"
+    ],
+    "relatedCodes": [
+      "M15A-FKS",
+      "M20A-FKS",
+      "G16E-GTS"
+    ],
+    "notes": [
+      "2024 Yaris introduced as XP23 generation in hatchback and sedan body styles depending on market.",
+      "GR Yaris variant remains limited to specific markets, uses unique 1.6L turbo engine and AWD."
+    ],
+    "sourceNotes": [
+      "Toyota global press release on 2024 Yaris XP23 generation launch.",
+      "Technical specifications verified with Toyota regional websites and automotive review sources."
     ]
   }
 ]
