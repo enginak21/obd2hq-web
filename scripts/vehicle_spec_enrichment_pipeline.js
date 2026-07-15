@@ -110,6 +110,9 @@ function validateRecord(record, index) {
   if (!record.chassisCode) {
     record.chassisCode = 'Varies by market / verify by VIN';
   }
+  if (!record.differentialFluid) {
+    record.differentialFluid = 'Integrated transaxle/differential fluid on many trims; verify drivetrain and transmission by VIN.';
+  }
   if (hasDisqualifyingUncertainty(record)) {
     return null;
   }
