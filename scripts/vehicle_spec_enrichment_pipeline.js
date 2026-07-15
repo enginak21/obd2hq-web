@@ -131,6 +131,19 @@ function validateRecord(record, index) {
   return record;
 }
 
+function lockRecordIdentity(record, seed) {
+  if (!record || record.available === false) return record;
+  return {
+    ...record,
+    make: seed.make,
+    model: seed.model,
+    displayName: seed.displayName || record.displayName,
+    year: seed.year,
+    trim: seed.trim || record.trim,
+    slug: seed.slug || record.slug || slugify(seed.trim || record.trim || 'technical-profile'),
+  };
+}
+
 function buildPrompt(seed) {
   return `
 You are building a verified automotive vehicle specification database.
@@ -285,7 +298,7 @@ async function main() {
     }
 
     console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
-    const record = await enrichWithOpenAI(seed);
+    const record = lockRecordIdentity(await enrichWithOpenAI(seed), seed);
     const validRecord = validateRecord(record, index + 1);
     if (validRecord) {
       enrichedByKey.set(recordKey(validRecord), validRecord);
