@@ -94,6 +94,10 @@ function writeJson(file, records) {
   fs.writeFileSync(file, `${JSON.stringify(records, null, 2)}\n`, 'utf8');
 }
 
+function skippedOutputFile() {
+  return OUTPUT.replace(/\.json$/i, '.skipped.json');
+}
+
 function validateRecord(record, index) {
   if (record.available === false) {
     if (!record.reason) throw new Error(`Record ${index} is unavailable but has no reason.`);
@@ -248,11 +252,17 @@ async function main() {
 
   const existing = fs.existsSync(OUTPUT) ? readJson(OUTPUT) : [];
   if (!Array.isArray(existing)) throw new Error('Existing output must be an array.');
+  const existingSkipped = fs.existsSync(skippedOutputFile()) ? readJson(skippedOutputFile()) : [];
+  if (!Array.isArray(existingSkipped)) throw new Error('Existing skipped output must be an array.');
 
   const enrichedByKey = new Map();
   for (let index = 0; index < existing.length; index += 1) {
     const record = validateRecord(existing[index], index + 1);
     if (record) enrichedByKey.set(recordKey(record), record);
+  }
+  const skippedByKey = new Map();
+  for (const record of existingSkipped) {
+    skippedByKey.set(recordKey(record), record);
   }
 
   const endIndex = LIMIT > 0 ? Math.min(seeds.length, START_INDEX + LIMIT) : seeds.length;
@@ -266,6 +276,10 @@ async function main() {
       console.log(`Skipping existing ${index + 1}/${seeds.length}: ${key}`);
       continue;
     }
+    if (skippedByKey.has(key)) {
+      console.log(`Skipping known unavailable ${index + 1}/${seeds.length}: ${key}`);
+      continue;
+    }
 
     console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
     const record = await enrichWithOpenAI(seed);
@@ -274,6 +288,7 @@ async function main() {
       enrichedByKey.set(recordKey(validRecord), validRecord);
     } else {
       skippedRecords.push(record);
+      skippedByKey.set(recordKey(record), record);
       console.log(`Skipped unavailable ${index + 1}/${seeds.length}: ${key}`);
     }
     processed += 1;
@@ -281,13 +296,13 @@ async function main() {
 
     if (processed % CHECKPOINT_EVERY === 0) {
       writeJson(OUTPUT, Array.from(enrichedByKey.values()));
-      if (skippedRecords.length) writeJson(OUTPUT.replace(/\.json$/i, '.skipped.json'), skippedRecords);
+      if (skippedByKey.size) writeJson(skippedOutputFile(), Array.from(skippedByKey.values()));
       console.log(`Checkpoint saved ${enrichedByKey.size} records to ${OUTPUT}`);
     }
   }
 
   writeJson(OUTPUT, Array.from(enrichedByKey.values()));
-  if (skippedRecords.length) writeJson(OUTPUT.replace(/\.json$/i, '.skipped.json'), skippedRecords);
+  if (skippedByKey.size) writeJson(skippedOutputFile(), Array.from(skippedByKey.values()));
   console.log(`Saved ${OUTPUT}. Created ${created}; total ${enrichedByKey.size}.`);
 }
 

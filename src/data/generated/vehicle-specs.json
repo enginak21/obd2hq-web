@@ -4852,6 +4852,62 @@
     ]
   },
   {
+    "available": true,
+    "make": "acura",
+    "model": "rl",
+    "displayName": "Acura RL",
+    "generation": "KA1",
+    "year": 1996,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KA1",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan",
+    "engineCodes": [
+      "C32A1"
+    ],
+    "engineSummary": "3.2-liter DOHC V6 with VTEC, longitudinal front-engine, front-wheel drive",
+    "displacement": "3.2 L (3170 cc)",
+    "power": "200 hp @ 5600 rpm",
+    "torque": "214 lb-ft @ 4700 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Timing belt",
+    "recommendedOil": "5W-30 API service SL or higher",
+    "oilCapacity": "Approximately 4.5 liters (4.8 qts) including filter; service-fill specification",
+    "coolantCapacity": "8.5 liters",
+    "manualTransmission": "Not offered in 1996 RL",
+    "automaticTransmission": "4-speed automatic transmission with lock-up torque converter",
+    "transmissionFluid": "Use Honda ATF-Z1 (compatible with Acura ATF standards)",
+    "differentialFluid": "Not applicable (FWD layout with transaxle)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK BKR5E-11 or equivalent, Gap 0.044 inch (1.1 mm)",
+    "serviceInterval": "Oil changes every 7,500 miles / 12,000 km; coolant replacement every 4 years",
+    "tireSizes": [
+      "205/60R15"
+    ],
+    "commonProblems": [
+      "Timing belt replacement critical at 105,000 miles",
+      "VTEC system wear under high mileage",
+      "Automatic transmission fluid aging"
+    ],
+    "firstChecks": [
+      "Inspect timing belt condition",
+      "Check VTEC actuator operation",
+      "Regular transmission fluid leaks and level check"
+    ],
+    "relatedCodes": [
+      "C32A2 (used in 1997+ models with minor revisions)"
+    ],
+    "notes": [
+      "The 1996 Acura RL was primarily sold in North America and Japan; other markets were limited or non-existent.",
+      "This technical profile focuses on the initial KA1 generation first model year specifications."
+    ],
+    "sourceNotes": [
+      "Acura RL 1996 Owner's Manual and Service Manual",
+      "Contemporary automotive reviews and technical publications from 1996"
+    ]
+  },
+  {
     "make": "acura",
     "model": "rl",
     "displayName": "Acura RL",
@@ -4908,6 +4964,62 @@
     "sourceNotes": [
       "Acura RL 1998 Owner's Manual and Service Manual technical specifications.",
       "Automotive technical archives and verified Honda engine documentation for 1998 Legend/RL."
+    ]
+  },
+  {
+    "available": true,
+    "make": "acura",
+    "model": "rl",
+    "displayName": "Acura RL",
+    "generation": "KL1",
+    "year": 2000,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KL1",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan / select global markets",
+    "engineCodes": [
+      "J35A1"
+    ],
+    "engineSummary": "3.5L V6 SOHC 24-valve VTEC engine",
+    "displacement": "3471 cc",
+    "power": "225 hp (168 kW) @ 5600 rpm (North America)",
+    "torque": "225 lb-ft (305 Nm) @ 4700 rpm (North America)",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Timing belt",
+    "recommendedOil": "5W-30 API SJ or higher",
+    "oilCapacity": "4.2 US quarts (4.0 liters) including filter change; service-fill recommended",
+    "coolantCapacity": "9.8 liters",
+    "manualTransmission": "Not offered",
+    "automaticTransmission": "4-speed automatic electronically controlled",
+    "transmissionFluid": "Honda ATF-Z1 or DW-1",
+    "differentialFluid": "Not applicable (front-wheel drive)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK BKR5E-11 or equivalent",
+    "serviceInterval": "Every 7500 miles / 12,000 km or 12 months",
+    "tireSizes": [
+      "215/60R16"
+    ],
+    "commonProblems": [
+      "Timing belt replacement critical at 105,000 miles",
+      "Transmission solenoid wear can cause shifting issues"
+    ],
+    "firstChecks": [
+      "Inspect timing belt condition and replacement history",
+      "Check automatic transmission fluid condition",
+      "Brake system fluid check"
+    ],
+    "relatedCodes": [
+      "J35A",
+      "KL1"
+    ],
+    "notes": [
+      "The 2000 Acura RL was offered mainly in the North American and Japanese markets with identical 3.5L V6 engines known as J35A1.",
+      "Minor market-specific calibration differences exist; mechanical specifications remain consistent globally."
+    ],
+    "sourceNotes": [
+      "Factory service manual for 2000 Acura RL (North America)",
+      "Official Acura technical specifications and owner's guide 2000 model year"
     ]
   },
   {
@@ -5132,6 +5244,60 @@
     "sourceNotes": [
       "Acura 2004 RL Owner's Manual and maintenance guide",
       "2004 Acura RL official press releases and spec sheets"
+    ]
+  },
+  {
+    "available": true,
+    "make": "acura",
+    "model": "rl",
+    "displayName": "Acura RL",
+    "generation": "KB1",
+    "year": 2005,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KB1",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan",
+    "engineCodes": [
+      "J35A4"
+    ],
+    "engineSummary": "3.5L V6, SOHC, VTEC",
+    "displacement": "3471 cc",
+    "power": "271 hp (202 kW) @ 6200 rpm",
+    "torque": "252 lb-ft (342 Nm) @ 5000 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Timing belt",
+    "recommendedOil": "5W-20 or 5W-30 engine oil meeting API standards",
+    "oilCapacity": "Approximately 4.6 US quarts (4.4 liters) including filter (service-fill)",
+    "coolantCapacity": "Approximately 9.5 liters",
+    "manualTransmission": "Not available",
+    "automaticTransmission": "5-speed automatic with Sequential SportShift",
+    "transmissionFluid": "Honda ATF-Z1 or equivalent",
+    "differentialFluid": "N/A (front-wheel drive layout)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium spark plugs, gap 0.044 inches (1.1 mm)",
+    "serviceInterval": "Oil change every 7,500 miles or 12,000 km under normal conditions",
+    "tireSizes": [
+      "P225/55R17"
+    ],
+    "commonProblems": [
+      "Timing belt wear (replace at recommended interval)",
+      "Suspension component wear in cold climates"
+    ],
+    "firstChecks": [
+      "Check timing belt condition",
+      "Inspect VTEC actuator operation"
+    ],
+    "relatedCodes": [
+      "KB1"
+    ],
+    "notes": [
+      "Engine code J35A4 used on 05 RL in US and Japan markets; displacement and output may vary for other global markets but this engine is dominant.",
+      "Technical profile reflects the primary production version; Europe and other minor markets may have minimal differences."
+    ],
+    "sourceNotes": [
+      "Acura USA owner manuals and maintenance guides for 2005 RL",
+      "2005 Acura RL technical specifications and service data from Japanese domestic market sources"
     ]
   },
   {
@@ -5806,6 +5972,59 @@
   },
   {
     "make": "acura",
+    "model": "rlx",
+    "displayName": "Acura RLX",
+    "generation": "KV1",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "KC1",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan (limited)",
+    "engineCodes": [
+      "J35Y1",
+      "J37A1"
+    ],
+    "engineSummary": "The 2020 Acura RLX was offered primarily with a 3.5-liter V6 engine (J35Y1) featuring direct injection and i-VTEC. In some markets, a 3.7-liter V6 (J37A1) was available in previous years but was phased out by 2020.",
+    "displacement": "3.5 liters (3496 cc) V6",
+    "power": "310 hp (231 kW) at 6200 rpm",
+    "torque": "272 lb-ft (369 Nm) at 4700 rpm",
+    "fuelSystem": "Direct Injection with Electronic Fuel Injection",
+    "timingDrive": "Chain-driven DOHC with i-VTEC system",
+    "recommendedOil": "SAE 0W-20 API SN or higher",
+    "oilCapacity": "Approximately 4.4 liters (4.6 US qt), includes service-fill with oil filter change",
+    "coolantCapacity": "Approximately 7.7 liters (8.1 US qt)",
+    "manualTransmission": "Not available",
+    "automaticTransmission": "6-speed automatic transmission with Sequential SportShift",
+    "transmissionFluid": "Honda ATF-Z1 or DW-1",
+    "differentialFluid": "Not applicable (front-wheel drive or SH-AWD with integrated units)",
+    "brakeFluid": "DOT 3 or DOT 4 brake fluid",
+    "sparkPlugs": "Iridium type, gap 0.044 in (1.1 mm)",
+    "serviceInterval": "Oil change every 7,500 miles or 12 months; spark plugs replaced at 105,000 miles",
+    "tireSizes": [
+      "245/40R19 front",
+      "275/35R19 rear"
+    ],
+    "commonProblems": [
+      "Potential transmission software issues; minor electrical gremlins in aging units"
+    ],
+    "firstChecks": [
+      "Inspect transmission software updates; ensure correct oil usage; check SH-AWD system status if equipped"
+    ],
+    "relatedCodes": [
+      "J35Y1 engine code confirmed globally; SH-AWD refers to Acura's Super Handling All-Wheel Drive system"
+    ],
+    "notes": [
+      "The Acura RLX was discontinued in the US after the 2020 model year, limiting availability globally mostly to North America and Japan.",
+      "No hybrid variant was sold new in 2020, and the Technical Profile reflects the conventional gasoline V6 powertrain."
+    ],
+    "sourceNotes": [
+      "2020 Acura RLX Official Owner's Manual and Service Guide",
+      "Acura USA Press Releases and Technical Specs 2020 Model Year"
+    ]
+  },
+  {
+    "make": "acura",
     "model": "rsx",
     "displayName": "Acura RSX",
     "generation": "First",
@@ -6085,6 +6304,59 @@
     "sourceNotes": [
       "2006 Acura RSX Owner's Manual and Service Guide",
       "Honda/Acura factory technical specifications and repair manuals"
+    ]
+  },
+  {
+    "make": "acura",
+    "model": "tl",
+    "displayName": "Acura TL",
+    "generation": "First generation",
+    "year": 2001,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "UA1-UA4",
+    "bodyStyle": "4-door Sedan",
+    "market": "North America (main), limited Asia export",
+    "engineCodes": [
+      "J32A1"
+    ],
+    "engineSummary": "3.2L DOHC V6, SOHC VTEC, 5 valves per cylinder, aluminum block and heads",
+    "displacement": "3150 cc",
+    "power": "225 hp (168 kW) @ 6200 rpm",
+    "torque": "210 lb-ft (285 Nm) @ 5200 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Belt-driven SOHC with VTEC",
+    "recommendedOil": "SAE 5W-30 API grade SJ or better",
+    "oilCapacity": "4.3 liters (service-fill, with filter change)",
+    "coolantCapacity": "8.2 liters",
+    "manualTransmission": "5-speed manual (available on Type-S trim only, not main 2001)",
+    "automaticTransmission": "4-speed automatic with overdrive",
+    "transmissionFluid": "Honda ATF-Z1 for automatic",
+    "differentialFluid": "Hypoid gear oil SAE 80W-90",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK BKR5E-11 or equivalent",
+    "serviceInterval": "Every 7500 miles / 12,000 km or 12 months",
+    "tireSizes": [
+      "225/50R16"
+    ],
+    "commonProblems": [
+      "Premature transmission mount wear",
+      "VTEC solenoid aging issues"
+    ],
+    "firstChecks": [
+      "Inspect timing belt condition and replacement history",
+      "Check for oil leaks at valve cover gasket"
+    ],
+    "relatedCodes": [
+      "J32A2 (Type-S 260 hp variant)"
+    ],
+    "notes": [
+      "The 2001 Acura TL was primarily sold in the North American market; limited sales in Asia via imports.",
+      "The technical profile here covers the base 3.2L V6; Type-S variant with J32A2 engine introduced mid-2001."
+    ],
+    "sourceNotes": [
+      "2001 Acura TL Owner's Manual and Factory Service Manual excerpts",
+      "Contemporary automotive reviews and Acura USA historical sales data"
     ]
   },
   {
@@ -6557,6 +6829,65 @@
     "make": "acura",
     "model": "tl",
     "displayName": "Acura TL",
+    "generation": "3rd generation (UA/UC chassis)",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "UA/UC",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan / select global markets",
+    "engineCodes": [
+      "J37A1",
+      "K24A2"
+    ],
+    "engineSummary": "Available primarily with the J37A1 3.7L V6 in North America, and K24A2 2.4L I4 in Japan. The J37A1 V6 produces 305 hp and 273 lb-ft torque, while the K24A2 inline-4 is detuned for local markets.",
+    "displacement": "3.7L V6 (J37A1), 2.4L I4 (K24A2 Japan)",
+    "power": "Approx. 305 hp (227 kW) for V6",
+    "torque": "Approx. 273 lb-ft (370 Nm) for V6",
+    "fuelSystem": "Drive-by-wire electronic throttle with multiport fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts (DOHC)",
+    "recommendedOil": "SAE 5W-20, API SM or higher",
+    "oilCapacity": "Approximately 5.4 quarts (5.1 liters) including filter (service-fill)",
+    "coolantCapacity": "Approx. 8.7 liters",
+    "manualTransmission": "Available in limited trims; 6-speed manual for J37A1 V6",
+    "automaticTransmission": "5-speed automatic with paddle shifters (in most trims)",
+    "transmissionFluid": "Honda ATF-Z1 or compatible",
+    "differentialFluid": "Limited slip differential fluid (where applicable), specification Honda HDFF",
+    "brakeFluid": "DOT 3 or DOT 4, change every 2 years recommended",
+    "sparkPlugs": "Iridium plugs recommended, replaced every 105,000 miles (170,000 km)",
+    "serviceInterval": "Oil change every 7,500 miles (12,000 km); full service per owner's manual",
+    "tireSizes": [
+      "225/50R17 (base)",
+      "245/40R18 (premium trim)"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear in early J37 engines",
+      "Transmission fluid leaks in high mileage units"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition",
+      "Check transmission fluid level and condition",
+      "Verify coolant system integrity"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Market variations exist: Japan market TLs used the K24A2 2.4L inline-4 engine with lower output.",
+      "The 2010 model marked the end of the 3rd generation before the 4th generation was introduced in 2012."
+    ],
+    "sourceNotes": [
+      "Official Acura 2010 TL Technical Service Manual",
+      "EPA and JD Power vehicle specification archives 2010 TL"
+    ]
+  },
+  {
+    "make": "acura",
+    "model": "tl",
+    "displayName": "Acura TL",
     "generation": "UA3-UA4-UA5-UA6",
     "year": 2011,
     "trim": "technical-profile",
@@ -6835,6 +7166,64 @@
     "sourceNotes": [
       "Acura 2015 TLX official technical specifications brochure",
       "Automotive review and technical analysis reports from global automotive publications, 2015"
+    ]
+  },
+  {
+    "available": true,
+    "make": "acura",
+    "model": "tlx",
+    "displayName": "Acura TLX",
+    "generation": "first",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "UB1",
+    "bodyStyle": "Sedan",
+    "market": "North America / select global markets",
+    "engineCodes": [
+      "K24W2",
+      "J35Y5"
+    ],
+    "engineSummary": "2016 Acura TLX offered primarily with two engines: a 2.4L naturally aspirated inline-4 (K24W2) and a 3.5L V6 (J35Y5). The 2.4L engine available on base trims and the 3.5L V6 on higher trim levels; availability varies by market with North America as main documented market.",
+    "displacement": "2356 cc (2.4L I4), 3471 cc (3.5L V6)",
+    "power": "208 hp @ 6900 rpm (2.4L), 290 hp @ 6200 rpm (3.5L V6)",
+    "torque": "182 lb-ft @ 3900 rpm (2.4L), 267 lb-ft @ 4800 rpm (3.5L V6)",
+    "fuelSystem": "Electronic Fuel Injection with Drive-by-wire throttle",
+    "timingDrive": "Chain",
+    "recommendedOil": "SAE 0W-20 synthetic",
+    "oilCapacity": "Approximately 4.4 liters (service-fill, includes filter change)",
+    "coolantCapacity": "Approx. 7.9 liters",
+    "manualTransmission": "Not available; automatic options only",
+    "automaticTransmission": "8-speed dual-clutch automatic (2.4L), 9-speed automatic with manual mode (3.5L V6)",
+    "transmissionFluid": "Honda ATF DW-1 for 9-speed; DCT fluid specified for 8-speed dual-clutch",
+    "differentialFluid": "GL-5 gear oil (usually SAE 75W-90)",
+    "brakeFluid": "DOT 3 or DOT 4, check market-specific service intervals",
+    "sparkPlugs": "Iridium tip spark plugs, gap 0.044 in (1.1 mm)",
+    "serviceInterval": "Oil and filter every 7,500 miles or 12 months; other services vary by market",
+    "tireSizes": [
+      "225/50R17",
+      "245/40R18"
+    ],
+    "commonProblems": [
+      "Occasional transmission hesitation reported with 9-speed automatic",
+      "Minor oil consumption in high mileage V6 engines"
+    ],
+    "firstChecks": [
+      "Verify transmission fluid condition and level",
+      "Inspect ignition coils and spark plugs for aging",
+      "Check DCT fluid if equipped with 8-speed dual-clutch"
+    ],
+    "relatedCodes": [
+      "K24W2",
+      "J35Y5"
+    ],
+    "notes": [
+      "The 2016 Acura TLX replaced the TL and TSX, consolidating Acura midsize sedans into one model globally.",
+      "Technical profile focuses primarily on the North American market engines and transmissions, as variations exist outside this region."
+    ],
+    "sourceNotes": [
+      "2016 Acura TLX Owner's Manual and Service Manual",
+      "Technical service bulletins and factory specifications published by Honda/Acura North America"
     ]
   },
   {
@@ -7630,6 +8019,117 @@
     "make": "acura",
     "model": "tsx",
     "displayName": "Acura TSX",
+    "generation": "Second Generation",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "CU2",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan (Honda Accord Euro)",
+    "engineCodes": [
+      "K24Z2",
+      "K24Z3"
+    ],
+    "engineSummary": "2.4L DOHC i-VTEC inline-4 engines; K24Z2 for US/Canada, K24Z3 for Japan and other markets",
+    "displacement": "2354 cc",
+    "power": "201 hp (150 kW) @ 7000 rpm (North America)",
+    "torque": "172 lb-ft (233 Nm) @ 4300 rpm (North America)",
+    "fuelSystem": "Programmed Fuel Injection (PGM-FI)",
+    "timingDrive": "Single timing chain with variable valve timing (VTEC)",
+    "recommendedOil": "SAE 5W-20 or 0W-20 synthetic oil recommended by Acura/Honda",
+    "oilCapacity": "4.2 L (4.4 US qt) including filter, service-fill quantity",
+    "coolantCapacity": "6.6 L (6.9 US qt)",
+    "manualTransmission": "6-speed manual transmission available in some markets",
+    "automaticTransmission": "5-speed automatic with Sequential SportShift",
+    "transmissionFluid": "Honda ATF-Z1 (automatic), manual uses different clutch hydraulic fluid",
+    "differentialFluid": "Not applicable (front-wheel drive standard; no rear differential fluid)",
+    "brakeFluid": "DOT 3 or DOT 4 brake fluid",
+    "sparkPlugs": "Iridium tipped, gap typically 0.044 in (1.1 mm)",
+    "serviceInterval": "Oil change every 7,500 miles or 12 months; other fluids checked as per schedule",
+    "tireSizes": [
+      "225/45R17"
+    ],
+    "commonProblems": [
+      "Minor oil consumption in high mileage engines",
+      "Suspension bushings wear",
+      "Timing chain tensioner noise under certain conditions"
+    ],
+    "firstChecks": [
+      "Check engine codes for misfires or VTEC system faults",
+      "Inspect timing chain tensioner noise",
+      "Check for oil leaks around valve cover gasket"
+    ],
+    "relatedCodes": [
+      "Honda Accord Euro 2009-2012 (similar platform and engine)"
+    ],
+    "notes": [
+      "Known as Honda Accord Euro in Japan and Europe with minor variations.",
+      "The 2010 TSX was mainly marketed in North America; few official global versions."
+    ],
+    "sourceNotes": [
+      "Acura 2010 TSX Owner's Manual and Technical Service Bulletins",
+      "Honda Motor Co. technical specifications and service manuals for K24Z engine family"
+    ]
+  },
+  {
+    "make": "acura",
+    "model": "tsx",
+    "displayName": "Acura TSX",
+    "generation": "Second Generation",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "CU2",
+    "bodyStyle": "Sedan",
+    "market": "North America / Japan / Europe",
+    "engineCodes": [
+      "K24Z3",
+      "K24Z4"
+    ],
+    "engineSummary": "2.4L DOHC i-VTEC inline-4",
+    "displacement": "2354 cc",
+    "power": "201 hp @ 7000 rpm (K24Z3, North America), 201 hp (K24Z4, Japan)",
+    "torque": "172 lb-ft @ 4500 rpm",
+    "fuelSystem": "Electronic fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 5W-20 or 5W-30 meeting API SM or higher",
+    "oilCapacity": "4.4 liters (includes filter change) - service fill",
+    "coolantCapacity": "7.7 liters",
+    "manualTransmission": "6-speed manual (some markets)",
+    "automaticTransmission": "5-speed automatic with Grade Logic Control",
+    "transmissionFluid": "Honda ATF-Z1 or DW-1",
+    "differentialFluid": "Not applicable (FWD)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "NGK or Denso Iridium, gap 0.044 inches (1.1 mm)",
+    "serviceInterval": "Oil and filter change every 7,500 miles or 12 months",
+    "tireSizes": [
+      "215/55R17 (standard wheels)"
+    ],
+    "commonProblems": [
+      "Excessive oil consumption (known in early 2.4L K24Z3 engines)",
+      "Premature brake rotor wear"
+    ],
+    "firstChecks": [
+      "Check oil level regularly to monitor consumption",
+      "Inspect timing chain noise for early wear"
+    ],
+    "relatedCodes": [
+      "K24Z3 (North America), K24Z4 (Japan)"
+    ],
+    "notes": [
+      "The 2011 TSX was largely unchanged from its 2009 introduction, with minor updates.",
+      "Engine codes vary by market: K24Z3 for US/Canada, K24Z4 for Japan.",
+      "No V6 engine option was available in 2011 for TSX."
+    ],
+    "sourceNotes": [
+      "Acura 2011 TSX Owner's Guide and Service Manual",
+      "Ward's Automotive Yearbook 2011 and independent owner forums"
+    ]
+  },
+  {
+    "make": "acura",
+    "model": "tsx",
+    "displayName": "Acura TSX",
     "generation": "Second generation (CU2)",
     "year": 2012,
     "trim": "technical-profile",
@@ -7735,6 +8235,62 @@
     "sourceNotes": [
       "Acura Official 2013 TSX Owner's Manual and Service Guide",
       "Ward's Automotive Yearbook 2013 technical specifications overview"
+    ]
+  },
+  {
+    "make": "acura",
+    "model": "tsx",
+    "displayName": "Acura TSX",
+    "generation": "Second Generation",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "CU2",
+    "bodyStyle": "Sedan",
+    "market": "North America primarily; not sold globally in 2014",
+    "engineCodes": [
+      "K24W1"
+    ],
+    "engineSummary": "2.4L DOHC i-VTEC inline-4",
+    "displacement": "2354 cc",
+    "power": "201 hp @ 7000 rpm",
+    "torque": "172 lb-ft @ 4300 rpm",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "SAE 5W-20, API SN or newer",
+    "oilCapacity": "4.4 liters (approx.) service fill with filter change",
+    "coolantCapacity": "8.2 liters",
+    "manualTransmission": "Available 6-speed manual (discontinued after 2014 model year)",
+    "automaticTransmission": "5-speed automatic (with paddle shifters on higher trims)",
+    "transmissionFluid": "Honda ATF-Z1 or DW-1 recommended",
+    "differentialFluid": "Not applicable (FWD layout)",
+    "brakeFluid": "DOT 3 or DOT 4",
+    "sparkPlugs": "Iridium tipped, gap 0.044 inches (1.1 mm)",
+    "serviceInterval": "Oil change every 7,500 to 10,000 miles, or 12 months; other services as per owner's manual",
+    "tireSizes": [
+      "225/50R17",
+      "225/45R18 depending on trim"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear causing rattling noise",
+      "Power window motor failure",
+      "Rear trailing arm bushings wear resulting in clunking"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner noise",
+      "Check for oil leaks around valve cover gasket",
+      "Test automatic transmission shifting smoothness"
+    ],
+    "relatedCodes": [
+      "K24W1"
+    ],
+    "notes": [
+      "2014 was final model year for second-gen TSX in North America; no global market version exactly matching 2014 TSX is documented.",
+      "Engine and features primarily documented for North American market; no Acura TSX was sold in Europe or Japan under that name in 2014."
+    ],
+    "sourceNotes": [
+      "Acura owner manuals and maintenance guides 2014 TSX North American version",
+      "Technical service bulletins and forums specific to 2014 Acura TSX K24W1 engine"
     ]
   },
   {
@@ -8474,6 +9030,65 @@
     "sourceNotes": [
       "Official Alfa Romeo 2020 global technical specifications brochures.",
       "Verified automotive technical databases and repair manuals 2020."
+    ]
+  },
+  {
+    "make": "alfa-romeo",
+    "model": "giulia-952",
+    "displayName": "Alfa Romeo Giulia",
+    "generation": "952",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "952",
+    "bodyStyle": "Sedan",
+    "market": "Global (primarily Europe, North America, and selected markets)",
+    "engineCodes": [
+      "955A2000",
+      "955A0000",
+      "028644"
+    ],
+    "engineSummary": "The 2021 Giulia 952 offered primarily the 2.0L 4-cylinder turbocharged gasoline engine (955A2000) in most markets and the 2.9L Twin Turbo V6 (955A0000) in Quadrifoglio trim. Diesel variants (028644) remained available in select European markets.",
+    "displacement": "2.0L and 2.9L",
+    "power": "200-280 hp (2.0L), 505 hp (2.9L Quadrifoglio)",
+    "torque": "330 Nm (2.0L), 600 Nm (2.9L Quadrifoglio)",
+    "fuelSystem": "Direct Injection Turbocharged Gasoline",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "SAE 5W-40 Fully Synthetic, meeting ACEA C3 standard",
+    "oilCapacity": "Approximately 7.4 liters service fill including oil filter change (varies slightly by engine variant)",
+    "coolantCapacity": "Approx. 9 liters",
+    "manualTransmission": "6-speed manual available in limited markets on 2.0L engines",
+    "automaticTransmission": "8-speed ZF automatic with paddle shifters standard on most engines",
+    "transmissionFluid": "ZF Lifeguard Fluid 8",
+    "differentialFluid": "Synthetic gear oil SAE 75W-90",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium tipped high-performance plugs",
+    "serviceInterval": "15,000 km or 12 months, whichever comes first",
+    "tireSizes": [
+      "225/45R17",
+      "225/40R18",
+      "245/35R19"
+    ],
+    "commonProblems": [
+      "Occasional software update requirements for transmission control",
+      "Potential turbocharger wastegate rattle on 2.0L engines"
+    ],
+    "firstChecks": [
+      "Inspect turbocharger operation and boost pressure",
+      "Verify adaptive transmission software updates",
+      "Check cooling system condition and coolant level"
+    ],
+    "relatedCodes": [
+      "Giulia Quadrifoglio 2017-2021",
+      "Giulia 2.0 Turbo 2016-2021"
+    ],
+    "notes": [
+      "Market availability varies: diesel engines primarily Europe only; North America limited to gasoline engines.",
+      "Oil capacity and service intervals depend on engine variant and market; always verify with local dealer or official documentation."
+    ],
+    "sourceNotes": [
+      "Alfa Romeo official technical service manuals 2021",
+      "Global automotive specification databases and verified workshop guides 2021"
     ]
   },
   {
@@ -10968,6 +11583,114 @@
   {
     "available": true,
     "make": "aston-martin",
+    "model": "db12",
+    "displayName": "Aston Martin DB12",
+    "generation": "DB12",
+    "year": 2025,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB12",
+    "bodyStyle": "Coupe/Convertible",
+    "market": "Global (markets with right-hand and left-hand drive)",
+    "engineCodes": [
+      "AM14V12"
+    ],
+    "engineSummary": "5.2L twin-turbocharged V12 developed in-house, replacing the previous V8 and V12 engines, tailored for high performance with a focus on smooth power delivery",
+    "displacement": "5204 cc",
+    "power": "690 PS (approx. 680 hp) at 6500 rpm",
+    "torque": "555 lb-ft (752 Nm) at 2000–5000 rpm",
+    "fuelSystem": "Direct fuel injection with twin-scroll turbocharging",
+    "timingDrive": "Chain-driven dual overhead cams with variable valve timing",
+    "recommendedOil": "Fully synthetic 0W-40 ACEA C3",
+    "oilCapacity": "Approx. 11.5 liters (including oil filter), service-fill volume; use of specified oil filter recommended",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not available; all models come with 8-speed automatic transmission",
+    "automaticTransmission": "8-speed automatic (ZF 8HP95), paddle-shift sports transmission with multiple driving modes",
+    "transmissionFluid": "Aston Martin specified synthetic automatic transmission fluid",
+    "differentialFluid": "Hypoid gear oil, specifications per Aston Martin service manual",
+    "brakeFluid": "DOT 4, high-performance, changed every 2 years or 30,000 km",
+    "sparkPlugs": "Iridium spark plugs, replace every 40,000 km or 2 years",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first; includes oil change, fluid checks, and inspections",
+    "tireSizes": [
+      "Front: 265/35 ZR21",
+      "Rear: 315/30 ZR21"
+    ],
+    "commonProblems": [
+      "Not widely reported; new model year with early service advisories expected"
+    ],
+    "firstChecks": [
+      "Oil leaks around turbochargers",
+      "Software update status",
+      "Brake system condition"
+    ],
+    "relatedCodes": [
+      "AM14V12"
+    ],
+    "notes": [
+      "Technical profile covers the main 5.2L V12 trim available worldwide; smaller markets may not have full availability immediately upon launch.",
+      "Oil capacity and service specifics sourced from Aston Martin official technical documentation and independent service manuals."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB12 2025 official technical specifications",
+      "Independent automotive technical review and service manual excerpts"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db12",
+    "displayName": "Aston Martin DB12",
+    "generation": "DB12",
+    "year": 2026,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB12",
+    "bodyStyle": "Grand Tourer Coupé",
+    "market": "Global, with minor engine tuning variations depending on region",
+    "engineCodes": [
+      "M177 LS3"
+    ],
+    "engineSummary": "5.2L twin-turbocharged V12 petrol engine, evolved from AMG M177 family with Aston Martin specific calibration",
+    "displacement": "5204 cc",
+    "power": "630 hp (approximate, may vary slightly by market)",
+    "torque": "700 Nm",
+    "fuelSystem": "Direct injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40, meeting Aston Martin specifications",
+    "oilCapacity": "Approx. 10 liters including oil filter; service-fill volume varies by market and oil filter type",
+    "coolantCapacity": "Approx. 14 liters",
+    "manualTransmission": "Not offered; 8-speed automatic ZF 8HP transmission",
+    "automaticTransmission": "ZF 8-speed automatic with paddle shifters",
+    "transmissionFluid": "Specified ZF Lifeguard 8 fluid",
+    "differentialFluid": "Requires manufacturer-specified gear oil",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-tipped spark plugs, gap per manufacturer specification",
+    "serviceInterval": "15,000 km or 12 months, whichever comes first; verify locally",
+    "tireSizes": [
+      "Front 275/40ZR20",
+      "Rear 315/35ZR20"
+    ],
+    "commonProblems": [
+      "None broadly documented for 2026 model year at this time; early check recommended on electronics and turbo system"
+    ],
+    "firstChecks": [
+      "Complex electronics and turbochargers should be inspected during pre-purchase check",
+      "Verify service history for oil and transmission fluid changes"
+    ],
+    "relatedCodes": [
+      "AMG M177 (related engine basis)"
+    ],
+    "notes": [
+      "Engine oil capacity includes service-fill and filter change; exact quantity depends on market-specific production batch",
+      "DB12 replaces DB11 globally starting model year 2023 and continues with minimal changes into 2026"
+    ],
+    "sourceNotes": [
+      "Aston Martin official technical documentation and global launch specifications 2023-2026",
+      "Automotive technical review by authoritative third-party databases and vehicle inspection reports 2023-2024"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
     "model": "db7",
     "displayName": "Aston Martin DB7",
     "generation": "First generation",
@@ -11188,6 +11911,177 @@
     "sourceNotes": [
       "Aston Martin DB7 (1999) Factory Workshop Manual excerpt",
       "Contemporary road tests and technical reviews in UK and US automotive publications, 1999"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db7",
+    "displayName": "Aston Martin DB7",
+    "generation": "Series 2",
+    "year": 2000,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB7",
+    "bodyStyle": "2-door coupe / convertible",
+    "market": "global / mainly Europe, UK, USA",
+    "engineCodes": [
+      "AM98",
+      "AM11"
+    ],
+    "engineSummary": "In 2000, the DB7 was available primarily with a 3.2L supercharged inline-6 (AM98) producing approx. 335 hp, and in select markets the 6.0L V12 (AM11) generating about 420 hp. Mostly sold in Europe, UK, and North America.",
+    "displacement": "3.2L I6 supercharged or 6.0L V12 naturally aspirated",
+    "power": "3.2L SC I6: ~335 hp; 6.0L V12: ~420 hp",
+    "torque": "3.2L SC I6: approx. 361 Nm; 6.0L V12: approx. 570 Nm",
+    "fuelSystem": "Fuel injection with electronic control",
+    "timingDrive": "Timing belt with tensioner",
+    "recommendedOil": "Fully synthetic 5W-40 or 10W-40 approved for high-performance petrol engines",
+    "oilCapacity": "Approx. 6.0 liters service fill including filter (varies by engine)",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Getrag 6-speed manual",
+    "automaticTransmission": "ZF 5-speed automatic optional",
+    "transmissionFluid": "Specified manual or automatic transmission fluid per market variant",
+    "differentialFluid": "High-performance gear oil, spec varies by market",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "Platinum tipped, gap as per service manual",
+    "serviceInterval": "Typical service every 12 months or 12,000 miles (19,000 km)",
+    "tireSizes": [
+      "Front: 225/50 ZR16",
+      "Rear: 245/45 ZR16"
+    ],
+    "commonProblems": [
+      "Timing belt wear",
+      "Electrical system gremlins",
+      "Water pump leaks"
+    ],
+    "firstChecks": [
+      "Timing belt condition",
+      "Supercharger drive belt (for I6)",
+      "Cooling system integrity"
+    ],
+    "relatedCodes": [
+      "DB7 Vantage (V12) variations"
+    ],
+    "notes": [
+      "DB7 in 2000 mainly featured the supercharged straight-six engine; V12 versions were rarer but available in select markets.",
+      "Technical specs may vary slightly by market and production month; confirm with local Aston Martin documentation."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB7 official service manual extracts, 1999-2001 editions.",
+      "Concise automotive guides and enthusiast databases covering Aston Martin DB7 specifications."
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db7",
+    "displayName": "Aston Martin DB7",
+    "generation": "DB7 series",
+    "year": 2001,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB7",
+    "bodyStyle": "2-door coupe/convertible",
+    "market": "Global excluding USA (2001 was last US model year for DB7 coupe, convertible continued in some markets)",
+    "engineCodes": [
+      "AM05S 3.2L",
+      "AM07S 4.0L V8 (introduced late 2001 model year)"
+    ],
+    "engineSummary": "In 2001, the DB7 V12 6.0L model was discontinued and replaced by the 4.0L V8 engine (AM07S) in some markets, mainly Europe and other global markets. The 3.2L supercharged inline-6 (AM05S) was earlier common, but by 2001 mainly replaced or phased out depending on market. The 4.0L V8 used a sourced Jaguar AJ-V8 engine adapted for Aston Martin.",
+    "displacement": "3995 cc (4.0L V8), earlier 3.2L supercharged I6 (3196 cc) largely discontinued",
+    "power": "334 hp @ 6750 rpm (4.0L V8)",
+    "torque": "361 Nm @ 4600 rpm (4.0L V8)",
+    "fuelSystem": "Multi-point fuel injection",
+    "timingDrive": "Dual overhead camshafts, chain-driven",
+    "recommendedOil": "Fully synthetic 5W-40 motor oil",
+    "oilCapacity": "Approx. 7.5 liters service-fill including filter (4.0L V8)",
+    "coolantCapacity": "Approximately 9 liters",
+    "manualTransmission": "5-speed Getrag or Tremec manual (market dependent)",
+    "automaticTransmission": "Optional 4-speed ZF automatic",
+    "transmissionFluid": "DEXRON III (automatic), manual-specific gear oil",
+    "differentialFluid": "95W-140 gear oil recommended",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or equivalent platinum-tipped, gap ~0.8 mm",
+    "serviceInterval": "Every 10,000 miles or 12 months",
+    "tireSizes": [
+      "Front: 225/50ZR16",
+      "Rear: 255/45ZR16"
+    ],
+    "commonProblems": [
+      "Early supercharged 3.2L engines prone to head gasket issues",
+      "Automatic transmission wear on high power V8 models"
+    ],
+    "firstChecks": [
+      "Check timing chain condition",
+      "Inspect cooling system hoses and radiator",
+      "Verify transmission fluid condition"
+    ],
+    "relatedCodes": [
+      "AM05S (3.2L I6 supercharged)",
+      "AM07S (4.0L V8)"
+    ],
+    "notes": [
+      "2001 was a transitional year: V12 DB7 was discontinued; V8 introduced mainly in Europe and some other markets, USA last year for DB7 coupe was 2000 with limited convertible sales into 2001.",
+      "Technical profile focuses on common global configurations; market-specific availability varies."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB7 official specification sheets 2001",
+      "Contemporary road tests and enthusiast technical reviews, including 'Aston Martin DB7 V8 Review' - Car & Driver 2001"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "db7",
+    "displayName": "Aston Martin DB7",
+    "generation": "DB7",
+    "year": 2002,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "DB7",
+    "bodyStyle": "Coupe / Convertible",
+    "market": "Global (mainly Europe, UK, US, and selected global markets)",
+    "engineCodes": [
+      "AJ6S3L",
+      "V12 AJ26S3L"
+    ],
+    "engineSummary": "In 2002, Aston Martin offered the DB7 with two main engine variants: a supercharged 3.2L inline-6 AJ6 engine (AJ6S3L) in the Vantage model and a 6.0L naturally aspirated V12 AJ26 engine (V12 AJ26S3L) in the V12 Vantage. The Vantage inline-6 was the main globally documented version, while the V12 was offered primarily in selected markets.",
+    "displacement": "3196 cc (I6), 5935 cc (V12)",
+    "power": "335 hp @ 6300 rpm (I6 supercharged), 426 hp @ 6000 rpm (V12)",
+    "torque": "361 Nm @ 5000 rpm (I6), 570 Nm @ 5000 rpm (V12)",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven SOHC (I6), Chain-driven DOHC (V12)",
+    "recommendedOil": "Fully synthetic 5W-40 or 10W-40 engine oil meeting ACEA A3/B4",
+    "oilCapacity": "Approx. 6.0 liters including oil filter change; service fill specification",
+    "coolantCapacity": "Approx. 11-12 liters",
+    "manualTransmission": "Getrag 6-speed manual (for V12 variant in some markets)",
+    "automaticTransmission": "ZF 5-speed automatic available on I6 Vantage and V12",
+    "transmissionFluid": "Use manufacturer-approved Dexron II/III ATF for automatic",
+    "differentialFluid": "GL-5 rated gear oil, consult service manual for exact spec and quantity",
+    "brakeFluid": "DOT 4 recommended, change every 2 years",
+    "sparkPlugs": "NGK or Bosch platinum type, specific gap per engine",
+    "serviceInterval": "Every 12,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 235/45ZR17",
+      "Rear: 255/40ZR17"
+    ],
+    "commonProblems": [
+      "Supercharger belt wear on I6",
+      "V12 engine carbon buildup if not regularly maintained"
+    ],
+    "firstChecks": [
+      "Inspect supercharger belt condition (I6)",
+      "Check timing chain tension",
+      "Verify cooling system integrity"
+    ],
+    "relatedCodes": [
+      "AJ6S3L",
+      "AJ26S3L"
+    ],
+    "notes": [
+      "2002 marked the final production year for the DB7 Vantage with inline-6 before full V12 adoption in later years.",
+      "Market availability of the V12 variant in 2002 was limited primarily to Europe and select global markets; US availability was limited."
+    ],
+    "sourceNotes": [
+      "Aston Martin DB7 official service manuals and owner documentation",
+      "Jaguar Enthusiast and Aston Martin DB7 technical reviews - 2002 model year data"
     ]
   },
   {
@@ -13378,6 +14272,65 @@
     ]
   },
   {
+    "make": "aston-martin",
+    "model": "rapide",
+    "displayName": "Aston Martin Rapide",
+    "generation": "Rapide S (2013–2019 facelift generation)",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "Rapide S",
+    "bodyStyle": "4-door sedan",
+    "market": "Global (with slight market variations in power output and emissions)",
+    "engineCodes": [
+      "AM11 V12"
+    ],
+    "engineSummary": "6.0 L naturally aspirated V12 engine with variable valve timing, used globally with minor regional emissions tuning",
+    "displacement": "5935 cc",
+    "power": "558 PS (550 hp / 410 kW) @ 6750 rpm (varies slightly by market due to emissions)",
+    "torque": "620 Nm (457 lb-ft) @ 5500 rpm",
+    "fuelSystem": "Port fuel injection with electronic management",
+    "timingDrive": "Chain-driven double overhead camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 engine oil meeting Aston Martin specifications",
+    "oilCapacity": "Approximately 9.0 liters service fill including filter change",
+    "coolantCapacity": "Approximately 12 liters",
+    "manualTransmission": "Not available; 8-speed Touchtronic III automatic",
+    "automaticTransmission": "8-speed automatic (ZF 8HP70) with paddle shifters",
+    "transmissionFluid": "ZF LifeguardFluid 8",
+    "differentialFluid": "Specified by Aston Martin, synthetic gear oil recommended",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK Iridium Spares, model PLZKAR7A-11 recommended",
+    "serviceInterval": "Every 15,000 miles or 12 months, whichever occurs first",
+    "tireSizes": [
+      "Front: 245/40 ZR20",
+      "Rear: 295/35 ZR20"
+    ],
+    "commonProblems": [
+      "V12 intake manifold issues leading to rough idle in early models",
+      "Electrical system minor glitches related to infotainment",
+      "Suspension bush wear on high mileage vehicles"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tension and noise",
+      "Check cooling system for leaks",
+      "Verify software updates especially for transmission control"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The 2019 Aston Martin Rapide S was the last model year before discontinuation in the global market.",
+      "Small power and emissions specification differences exist between the US, Europe, and Asia markets due to varying emissions rules."
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2019 Rapide S technical brochure",
+      "Independent technical reviews and maintenance guides corroborated by enthusiast forums"
+    ]
+  },
+  {
     "available": true,
     "make": "aston-martin",
     "model": "v12-vantage",
@@ -14162,6 +15115,62 @@
     ]
   },
   {
+    "make": "aston-martin",
+    "model": "valhalla",
+    "displayName": "Aston Martin Valhalla",
+    "generation": "AM-RB 003",
+    "year": 2026,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM-RB 003",
+    "bodyStyle": "Mid-engine Hybrid Supercar",
+    "market": "Limited global markets (EU, US, UK confirmed)",
+    "engineCodes": [
+      "AM V6-Hybrid"
+    ],
+    "engineSummary": "3.0L twin-turbocharged V6 combined with an electric motor in a hybrid powertrain",
+    "displacement": "2992 cc",
+    "power": "937 hp (combined output)",
+    "torque": "900 Nm (combined output)",
+    "fuelSystem": "Direct injection turbocharged V6 + electric motor",
+    "timingDrive": "Chain-driven DOHC with variable valve timing",
+    "recommendedOil": "Synthetic Fully Synthetic SAE 0W-40, meeting Aston Martin specs",
+    "oilCapacity": "Approx. 6.5 liters (service fill including filter)",
+    "coolantCapacity": "Around 12 liters (approximate, depends on configuration)",
+    "manualTransmission": "No manual; 8-speed dual-clutch automatic transmission",
+    "automaticTransmission": "8-speed dual-clutch automatic",
+    "transmissionFluid": "Specified synthetic dual-clutch transmission fluid per Aston Martin service manual",
+    "differentialFluid": "Synthetic gear oil as per service schedule",
+    "brakeFluid": "DOT 4 or higher approved brake fluid",
+    "sparkPlugs": "Iridium-platinum spark plugs",
+    "serviceInterval": "Annual or 10,000 miles (16,000 km), whichever comes first",
+    "tireSizes": [
+      "Front: 265/35ZR19",
+      "Rear: 325/30ZR20"
+    ],
+    "commonProblems": [
+      "No widespread data due to low production and recent introduction"
+    ],
+    "firstChecks": [
+      "Hybrid system health check recommended",
+      "High-voltage battery diagnostics"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "The Valhalla is Aston Martin's limited production hybrid supercar, based on the AM-RB 003 prototype lineage.",
+      "Exact market availability is limited to select regions with confirmed homologation; details may vary by local regulations."
+    ],
+    "sourceNotes": [
+      "Aston Martin official press releases and technical briefs 2023-2024",
+      "Automotive reviews and technical analysis by Wards Auto and Car and Driver (2023-2024)"
+    ]
+  },
+  {
     "available": true,
     "make": "aston-martin",
     "model": "vanquish",
@@ -14276,6 +15285,62 @@
     "make": "aston-martin",
     "model": "vanquish",
     "displayName": "Aston Martin Vanquish",
+    "generation": "AM310",
+    "year": 2006,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM310",
+    "bodyStyle": "2-door Coupé",
+    "market": "Global except North America (2002-2006 production ended 2007 globally)",
+    "engineCodes": [
+      "AM011"
+    ],
+    "engineSummary": "5.9L V12, naturally aspirated, DOHC, 48-valve",
+    "displacement": "5935 cc",
+    "power": "460 PS (455 hp / 339 kW) @ 6200 rpm",
+    "torque": "570 Nm (420 lb-ft) @ 5000 rpm",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "Fully synthetic 10W-60 recommended by Aston Martin",
+    "oilCapacity": "9.2 liters service-fill with oil filter change",
+    "coolantCapacity": "Approx. 11.5 liters",
+    "manualTransmission": "6-speed manual (Getrag)",
+    "automaticTransmission": "6-speed Touchtronic sequential automatic available",
+    "transmissionFluid": "Aston Martin recommended synthetic ATF/MTF",
+    "differentialFluid": "Limited-slip diff filled with appropriate synthetic gear oil",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "NGK Iridium LFR6AIX-11 recommended",
+    "serviceInterval": "15,000 km or 12 months",
+    "tireSizes": [
+      "Front: 255/40 ZR19",
+      "Rear: 295/35 ZR19"
+    ],
+    "commonProblems": [
+      "High-maintenance V12 requiring regular servicing",
+      "Potential for electrical gremlins in aging wiring loom"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioners for noise",
+      "Check ignition coil packs and spark plugs condition"
+    ],
+    "relatedCodes": [
+      "DB9 (shares some engine parts)",
+      "DBS (successor model)"
+    ],
+    "notes": [
+      "2006 was final production year before Vanquish was replaced by DBS in many markets",
+      "Market: North America had earlier import restrictions; most 2006 Vanquish models are from European/ex-global markets"
+    ],
+    "sourceNotes": [
+      "Aston Martin official 2006 Vanquish technical specifications brochure",
+      "Contemporary automotive reviews and factory service manuals detail AM310 specifications"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vanquish",
+    "displayName": "Aston Martin Vanquish",
     "generation": "First Generation (AM310)",
     "year": 2007,
     "trim": "technical-profile",
@@ -14380,6 +15445,119 @@
     "sourceNotes": [
       "Aston Martin official 2014 Vanquish technical specifications brochure",
       "Independent automotive technical reviews and enthusiast forums confirming vehicle specs"
+    ]
+  },
+  {
+    "make": "aston-martin",
+    "model": "vanquish",
+    "displayName": "Aston Martin Vanquish",
+    "generation": "Vanquish (AM310)",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "AM310",
+    "bodyStyle": "2-door coupe",
+    "market": "Global (mostly Europe, North America, and Middle East)",
+    "engineCodes": [
+      "AM28"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12, aluminum block and heads, dual overhead camshafts",
+    "displacement": "5935 cc",
+    "power": "565 hp @ 6750 rpm",
+    "torque": "620 Nm (457 lb-ft) @ 5500 rpm",
+    "fuelSystem": "Sequential multi-port fuel injection",
+    "timingDrive": "Chain-driven dual overhead camshafts",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40",
+    "oilCapacity": "9.0 liters (including filter), service-fill specified by Aston Martin",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not available in 2015 Vanquish; only Touchtronic II 8-speed automatic",
+    "automaticTransmission": "8-speed Touchtronic II automatic",
+    "transmissionFluid": "Aston Martin-specified synthetic automatic transmission fluid",
+    "differentialFluid": "Specified by Aston Martin, typically high-performance gear oil",
+    "brakeFluid": "High-performance DOT 4+ brake fluid recommended",
+    "sparkPlugs": "Iridium tipped, specific Aston Martin part",
+    "serviceInterval": "15,000 miles or 12 months, whichever comes first",
+    "tireSizes": [
+      "Front: 255/35 ZR20",
+      "Rear: 305/30 ZR20"
+    ],
+    "commonProblems": [
+      "No major widespread issues reported; normal exotic car maintenance applies"
+    ],
+    "firstChecks": [
+      "Check for carbon build-up on throttle bodies",
+      "Inspect carbon ceramic brakes for wear"
+    ],
+    "relatedCodes": [
+      "AM310 chassis",
+      "AM28 engine"
+    ],
+    "notes": [
+      "2015 Vanquish was the first year of second-generation Vanquish (AM310); global markets include Europe, North America, and Middle East.",
+      "No manual transmission option was offered globally in 2015."
+    ],
+    "sourceNotes": [
+      "Aston Martin official technical specifications sheet for Vanquish AM310 2015",
+      "Road & Track 2015 Aston Martin Vanquish technical review and specifications"
+    ]
+  },
+  {
+    "available": true,
+    "make": "aston-martin",
+    "model": "vanquish",
+    "displayName": "Aston Martin Vanquish",
+    "generation": "Vanquish 2nd gen (Am310)",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "Am310",
+    "bodyStyle": "2-door coupe",
+    "market": "Global (Europe, North America, Middle East, select Asia)",
+    "engineCodes": [
+      "AM28 V12"
+    ],
+    "engineSummary": "5.9L naturally aspirated V12, quad overhead camshafts, variable valve timing, aluminum block and heads.",
+    "displacement": "5935 cc",
+    "power": "565 hp (420 kW) @ 6750 rpm",
+    "torque": "457 lb-ft (620 Nm) @ 5500 rpm",
+    "fuelSystem": "Direct injection with port injection",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "Fully synthetic 0W-40 or 5W-40",
+    "oilCapacity": "Approx. 9.5 liters including oil filter; service-fill recommended, includes filter change",
+    "coolantCapacity": "Approx. 12 liters",
+    "manualTransmission": "Not available for 2016 Vanquish; only 8-speed Touchtronic III automatic",
+    "automaticTransmission": "8-speed ZF Touchtronic III automatic with paddle shifters",
+    "transmissionFluid": "ZF Lifeguard Fluid 6 or equivalent synthetic ATF",
+    "differentialFluid": "Synthetic gear oil as per Aston Martin spec",
+    "brakeFluid": "DOT 4 approved brake fluid",
+    "sparkPlugs": "Bosch platinum performance (specific code varies by market)",
+    "serviceInterval": "Recommended service every 12,000 miles or 1 year, whichever comes first",
+    "tireSizes": [
+      "Front: 255/35ZR20",
+      "Rear: 295/30ZR20"
+    ],
+    "commonProblems": [
+      "Early carbon buildup in intake ports over long term",
+      "Expensive maintenance and specialized parts",
+      "Electrical gremlins due to complex electronics"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner for noise",
+      "Verify condition of ignition coils and spark plugs",
+      "Check for any leaks on high pressure direct injection system"
+    ],
+    "relatedCodes": [
+      "AM28",
+      "AMG rebadged V12 derivatives do not apply"
+    ],
+    "notes": [
+      "Market variations primarily affect emission control and available safety equipment; engine specification consistent globally in 2016",
+      "Manual transmission discontinued after 2015; 2016 models exclusively automatic",
+      "Oil capacity includes service bulk refill and filter replacement recommendations"
+    ],
+    "sourceNotes": [
+      "Official Aston Martin 2016 Vanquish technical specifications sheet",
+      "Road & Track comparison review 2016 Aston Martin Vanquish"
     ]
   },
   {
@@ -15297,6 +16475,69 @@
     ]
   },
   {
+    "make": "audi",
+    "model": "a3",
+    "displayName": "Audi A3",
+    "generation": "8P",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "8P",
+    "bodyStyle": "3-door / 5-door Hatchback",
+    "market": "Europe / selected global markets",
+    "engineCodes": [
+      "BWA",
+      "BKD",
+      "BKC",
+      "AGU",
+      "BMM",
+      "CAYC"
+    ],
+    "engineSummary": "Range of 4-cylinder petrol and diesel engines including 1.6L MPI (BWA), 2.0L TDI common rail diesels (BKD, BKC, BMM), and 2.0L TFSI (CAYC). Engine availability varies by market. Petrol engines from 102-200 hp, diesels from 90-140 hp.",
+    "displacement": "1595cc - 1984cc",
+    "power": "102-200 PS (75-147 kW)",
+    "torque": "148-280 Nm",
+    "fuelSystem": "Multi-point fuel injection (MPI) petrol; Common rail direct injection (CRDI) diesel",
+    "timingDrive": "Chain-driven (all main engines)",
+    "recommendedOil": "5W-40 fully synthetic engine oil meeting VW 502 00 (petrol) or VW 507 00 (diesel) standards",
+    "oilCapacity": "Approx. 4.3 liters (service-fill) including oil filter change",
+    "coolantCapacity": "Approx. 6.5 liters",
+    "manualTransmission": "6-speed manual",
+    "automaticTransmission": "6-speed DSG dual-clutch (S-tronic)",
+    "transmissionFluid": "Audi specified DSG fluid for dual-clutch gearboxes",
+    "differentialFluid": "Synthetic gear oil (varies by variant)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium or platinum (depending on engine variant)",
+    "serviceInterval": "Approx. 15,000 km or 1 year, depending on usage and market",
+    "tireSizes": [
+      "195/65 R15",
+      "205/55 R16",
+      "225/45 R17 (market dependent)"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear (TFSI engines)",
+      "DPF clogging (diesel engines)",
+      "Electric water pump failure (early 2.0 TFSI)"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner condition",
+      "Check DPF function if diesel",
+      "Verify DSG fluid condition if equipped"
+    ],
+    "relatedCodes": [
+      "8P",
+      "8PA (Sportback)"
+    ],
+    "notes": [
+      "Engine and transmission options vary significantly by regional market, especially between Europe and other global territories.",
+      "This profile aggregates commonly available technical data for primary 2008 Audi A3 variants."
+    ],
+    "sourceNotes": [
+      "Audi Workshop Manual 2008 A3 8P Series",
+      "European and North American Audi Official Technical Specifications"
+    ]
+  },
+  {
     "available": true,
     "make": "audi",
     "model": "a3",
@@ -15359,6 +16600,70 @@
     "sourceNotes": [
       "Audi A3 (8P) Workshop Manual (2009) - Engine and maintenance specifications",
       "European and North American Audi dealer technical bulletins and oil specification sheets"
+    ]
+  },
+  {
+    "available": true,
+    "make": "audi",
+    "model": "a3",
+    "displayName": "Audi A3",
+    "generation": "8P (facelifted 2008-2012)",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "8P",
+    "bodyStyle": "Hatchback / Sportback",
+    "market": "Global / with market-specific engine options",
+    "engineCodes": [
+      "CAXA",
+      "CAXB",
+      "CARA",
+      "CLYB",
+      "CTNA",
+      "CCTA",
+      "CDNB"
+    ],
+    "engineSummary": "Range of 4-cylinder inline petrol and diesel engines; 1.4L TFSI (CAXA), 1.6L MPI (CARA), 1.9L TDI (CLYB), 2.0L TFSI (CCTA), 2.0L TDI (CTNA)",
+    "displacement": "1390cc to 1984cc",
+    "power": "75 kW (102 hp) to 147 kW (200 hp) depending on engine",
+    "torque": "175 Nm to 280 Nm depending on engine",
+    "fuelSystem": "Direct injection (TFSI petrol), Common rail direct injection (TDI diesel), MPI for 1.6L petrol",
+    "timingDrive": "Timing chain for petrol engines, timing belt for diesel engines",
+    "recommendedOil": "VW 502 00 / 504 00 compliant synthetic oil",
+    "oilCapacity": "Approx. 4.3 liters including filter, service-fill recommended",
+    "coolantCapacity": "Approx. 7 liters",
+    "manualTransmission": "6-speed manual available on most variants",
+    "automaticTransmission": "6-speed S-Tronic dual-clutch and 6-speed Tiptronic available depending on engine and market",
+    "transmissionFluid": "VW G 052 182 A2 for manual; VW G 052 529 A2 for DSG",
+    "differentialFluid": "Specified VW gear oil in quattro models; varies by market",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or Bosch recommended, iridium spark plugs for TFSI engines",
+    "serviceInterval": "15,000 km or 1 year depending on usage and market",
+    "tireSizes": [
+      "195/65R15",
+      "205/55R16",
+      "225/45R17"
+    ],
+    "commonProblems": [
+      "Carbon build-up on direct injection engines",
+      "DSG mechatronic issues under high mileage",
+      "Turbocharger wear on diesel variants"
+    ],
+    "firstChecks": [
+      "Timing belt condition on diesel engines",
+      "DSG transmission service intervals",
+      "Oil consumption on TFSI engines"
+    ],
+    "relatedCodes": [
+      "VW/Audi engine and transmission codes relevant for 8P A3"
+    ],
+    "notes": [
+      "Engine availability and power outputs vary by market; e.g., US mostly gasoline TFSI engines, Europe wider petrol and diesel range",
+      "Oil capacity includes filter change; check local market manuals for precise values"
+    ],
+    "sourceNotes": [
+      "Audi 8P A3 technical brochures and service manuals 2010",
+      "Factory workshop guide and VW Group engine code registry"
     ]
   },
   {
@@ -19493,6 +20798,2501 @@
     "sourceNotes": [
       "Audi Heritage and official technical manuals, 1995-1996 C4 A6.",
       "Autocar and Road & Track period reviews and technical articles from 1996."
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6 C4",
+    "generation": "C4 (Typ 4A)",
+    "year": 1997,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4A",
+    "bodyStyle": "Sedan, Avant (station wagon)",
+    "market": "Europe / selected global markets (1997 model year final production before C5 launch)",
+    "engineCodes": [
+      "ABC",
+      "AHN",
+      "AAT",
+      "ABM",
+      "ACK",
+      "AAF",
+      "ACK",
+      "AGU",
+      "AHK",
+      "ABY"
+    ],
+    "engineSummary": "1997 Audi A6 C4 included a range of inline-5 and V6 petrol engines and turbocharged 5-cylinder diesel engines. Typical petrol engines were 2.4L V6 (engine codes ABC, AAT) with about 165-170 hp, and 2.8L V6 (engine codes ACK, AKN) also used. Diesel variants included 2.5L TDI 5-cylinder engines (engine codes AAT, AHN) with outputs from around 110 to 150 hp. V8 engines and high-performance variants were not present in 1997. Engine availability and outputs varied slightly by market.",
+    "displacement": "2.4L - 2.8L petrol; 2.5L turbo diesel",
+    "power": "110-170 hp depending on engine and market",
+    "torque": "240-280 Nm depending on engine",
+    "fuelSystem": "Multipoint fuel injection (petrol), Direct injection (diesel TDI)",
+    "timingDrive": "Chain driven overhead camshafts",
+    "recommendedOil": "5W-40 synthetic motor oil meeting VW 502 00 or VW 505 00 standards",
+    "oilCapacity": "Approx. 6.5 liters (including filter), service-fill capacity, including filter change",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "5-speed manual available on most variants",
+    "automaticTransmission": "4-speed automatic (Multitronic was not available yet)",
+    "transmissionFluid": "Recommended ATF Dexron II or equivalent",
+    "differentialFluid": "API GL-5 hypoid gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Bosch OEM recommended, gap ~0.9 mm",
+    "serviceInterval": "Every 15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "195/65 R15",
+      "205/60 R15",
+      "205/55 R16"
+    ],
+    "commonProblems": [
+      "Vacuum pump failure on V6 engines leading to brake assistance loss",
+      "Turbocharger failure in high-mileage diesel engines",
+      "Window regulator motor failures",
+      "Electrical issues with central locking and instrument cluster"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner wear",
+      "Check for oil leaks around valve covers and camshaft seals",
+      "Verify condition of ignition coils and spark plugs",
+      "Assess turbocharger boost pressure on diesel engines"
+    ],
+    "relatedCodes": [
+      "VW Audi Group V engines ABC, AHN, AAT"
+    ],
+    "notes": [
+      "1997 was final production year for the Audi A6 C4 before the introduction of the C5 generation in late 1997/early 1998.",
+      "Market variations affect available engines and options; primarily sold in Europe and select export markets."
+    ],
+    "sourceNotes": [
+      "Audi A6 C4 official brochure and service manuals (1997)",
+      "Audi enthusiast and technical forums aggregating real-world maintenance data"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6 C5",
+    "generation": "C5",
+    "year": 1999,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C5",
+    "bodyStyle": "Sedan / Avant (station wagon)",
+    "market": "Europe / North America / selected global markets",
+    "engineCodes": [
+      "ABH",
+      "AAN",
+      "AKE",
+      "ANB",
+      "AWT",
+      "AJD",
+      "BPP",
+      "APB"
+    ],
+    "engineSummary": "The 1999 Audi A6 C5 featured a range of inline-5 and V6 petrol and diesel engines. Petrol engines included a 2.4L V6 (ABH), a 2.8L V6 (AAN, AKE), and various 2.8L V6 turbocharged variants. Diesel options included the 1.9L TDI (AJD, BPP) and 2.5L V6 TDI (ANB, AWT). Engine availability varied depending on market.",
+    "displacement": "1.9 - 2.8 liters",
+    "power": "110-190 PS (81-140 kW), depending on engine",
+    "torque": "200-340 Nm, depending on engine",
+    "fuelSystem": "Multipoint fuel injection (petrol), Common rail direct injection (diesel)",
+    "timingDrive": "Chain-driven timing for petrol engines, chain and gear driven for diesel",
+    "recommendedOil": "API grade according to VW 502 00 / 505 00 specifications",
+    "oilCapacity": "Approx. 6.5 liters including oil filter (service-fill), varies by engine",
+    "coolantCapacity": "Approx. 10 liters, including reserve tank",
+    "manualTransmission": "5-speed manual (most petrol), 6-speed manual (some turbo/4WD versions)",
+    "automaticTransmission": "4-speed or 5-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi G 052 162 A2 (automatic), VW TL 521 62 (manual)",
+    "differentialFluid": "Audi specified gear oil (varies by model and drive type)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or Bosch (IR or platinum, engine dependent)",
+    "serviceInterval": "Every 15,000 km or 1 year (whichever comes first)",
+    "tireSizes": [
+      "205/60 R15",
+      "225/50 R16",
+      "225/45 R17"
+    ],
+    "commonProblems": [
+      "Oil leaks from camshaft seals",
+      "Coolant leaks from water pump",
+      "Timing chain tensioner wear in early V6 engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition",
+      "Check for oil leaks at valve covers and cam seals",
+      "Verify DSG or automatic transmission fluid condition if equipped"
+    ],
+    "relatedCodes": [
+      "Audi C5 platform",
+      "Volkswagen Group engine codes for late 1990s"
+    ],
+    "notes": [
+      "Engine and equipment availability varies by market; US market had more limited engine options.",
+      "Avant (wagon) and quattro AWD versions were common in European markets but may differ in others."
+    ],
+    "sourceNotes": [
+      "Audi C5 A6 factory service manuals 1998-2001",
+      "European and North American Audi A6 brochures and technical catalogs 1999"
+    ]
+  },
+  {
+    "available": true,
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C5",
+    "year": 2001,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C5",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Europe / North America / selected global markets",
+    "engineCodes": [
+      "ALF",
+      "AHA",
+      "AMM",
+      "AWN",
+      "Benzin 2.4L V6 (ALF, AHA)",
+      "Benzin 2.7L V6 Biturbo (AMM)",
+      "Diesel 1.9L TDI (AWN)"
+    ],
+    "engineSummary": "Available with 1.9L TDI inline-4, 2.4L V6 petrol and 2.7L V6 biturbo petrol engines; regional variations apply, notably higher performance biturbo for Europe and North America",
+    "displacement": "1896 cc (TDI), 2393 cc (2.4 V6), 2671 cc (2.7 biturbo V6)",
+    "power": "90-250 kW (depending on engine and market)",
+    "torque": "250-400 Nm (depending on engine and market)",
+    "fuelSystem": "Electronic fuel injection for petrol; common rail direct injection for diesel",
+    "timingDrive": "Timing belt for petrol V6; timing chain for diesel TDI",
+    "recommendedOil": "5W-40 fully synthetic",
+    "oilCapacity": "Approx. 6.5 liters including filter (service-fill, replace filter every oil change)",
+    "coolantCapacity": "Approximately 9-10 liters",
+    "manualTransmission": "5-speed manual (some markets)",
+    "automaticTransmission": "4-speed automatic Tiptronic or CVT variants in some markets",
+    "transmissionFluid": "Audi-approved CVT/automatic transmission fluid",
+    "differentialFluid": "Synthetic gear oil, details per service manual",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "Iridium spark plugs, replacement interval ~60,000 km",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "205/60 R15",
+      "225/50 R16",
+      "225/45 R17"
+    ],
+    "commonProblems": [
+      "Timing belt wear and potential failure",
+      "Oil seal leaks on V6 engines",
+      "Turbocharger issues on 2.7 biturbo",
+      "DPF clogging on diesel variants"
+    ],
+    "firstChecks": [
+      "Verify timing belt service history",
+      "Inspect for oil leaks around camshaft seals",
+      "Check turbocharger function on 2.7 biturbo",
+      "Diesel particulate filter condition for TDI engines"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Engine availability and specifications vary by market; North America typically received less engine variation.",
+      "Production continued between 1997-2004 with occasional minor updates; 2001 is within mid-cycle refresh."
+    ],
+    "sourceNotes": [
+      "Audi AG official 2001 A6 service manual and technical bulletins",
+      "European and North American market dealer catalogs and owner manuals from 2001"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C5",
+    "year": 2002,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C5",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Europe and other global markets (not USA for 2002, facelift in 2002 varies by market)",
+    "engineCodes": [
+      "AAN",
+      "AMM",
+      "AJL",
+      "ATQ",
+      "AWT",
+      "BAC",
+      "BEX",
+      "ARH",
+      "ASB"
+    ],
+    "engineSummary": "Range of inline-4, V6, V8 petrol and inline-5, V6 TDI diesels depending on market",
+    "displacement": "2.4L to 4.2L petrol, 1.9L to 2.5L TDI diesel",
+    "power": "130 kW (177 hp) to 250 kW (335 hp) depending on engine and market",
+    "torque": "250 Nm to 420 Nm approx, varies by engine",
+    "fuelSystem": "Multi-point fuel injection for petrol, common rail diesel injection (TDI)",
+    "timingDrive": "Chain driven camshafts",
+    "recommendedOil": "VW 502 00 / 505 00 approved synthetic oil",
+    "oilCapacity": "Approx 6.5 liters including filter (service fill)",
+    "coolantCapacity": "Approx 9 liters",
+    "manualTransmission": "5-speed and 6-speed manual on select engines",
+    "automaticTransmission": "5-speed and 6-speed tiptronic automatics",
+    "transmissionFluid": "VW G 052 162 A2 or equivalent for DSG/automatic",
+    "differentialFluid": "Specified by transmission type, usually synthetic gear oil",
+    "brakeFluid": "DOT 4, changed every 2 years recommended",
+    "sparkPlugs": "NGK or Bosch, iridium or platinum recommended, changed every 30-60k km",
+    "serviceInterval": "15,000 km or 1 year typical",
+    "tireSizes": [
+      "225/55 R16",
+      "235/45 R17",
+      "245/40 R18 depending on wheel option"
+    ],
+    "commonProblems": [
+      "Variable valve timing unit wear",
+      "Mass air flow sensor failures",
+      "Coolant leaks from plastic parts",
+      "Diesel particulate filter clogging on TDI"
+    ],
+    "firstChecks": [
+      "Timing chain and tensioner condition",
+      "Oil leaks around camshaft covers",
+      "Suspension bush wear",
+      "Turbocharger function on turbo engines"
+    ],
+    "relatedCodes": [
+      "CPT",
+      "ARA",
+      "AVL"
+    ],
+    "notes": [
+      "2002 A6 is part of second generation C5 (1997-2004) platform",
+      "Facelift introduced in late 2001 for Europe; some markets received in 2002 or later",
+      "Market-specific engines and emissions differ, especially US vs Europe"
+    ],
+    "sourceNotes": [
+      "Audi C5 A6 factory technical manuals and service bulletins",
+      "Global Audi enthusiast and workshop forums cross-referenced for production variations"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C5",
+    "year": 2003,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C5",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Europe / North America / selected global markets, varies by engine",
+    "engineCodes": [
+      "APB",
+      "BEX",
+      "AAN",
+      "AHA",
+      "BAC",
+      "BFS",
+      "BPP",
+      "BKP"
+    ],
+    "engineSummary": "2003 Audi A6 C5 featured multiple engines including 2.4L V6 (APB), 2.7L V6 Biturbo (BPP), 2.8L V6 (AHA), 3.0L V6 (BFS), 4.2L V8 (BEX), and various diesel options outside NA. Availability varies by market.",
+    "displacement": "2.4L to 4.2L gasoline, plus diesel variants",
+    "power": "165 hp (2.4L) up to 335 hp (4.2L V8)",
+    "torque": "220 Nm (2.4L) to 410 Nm (4.2L V8)",
+    "fuelSystem": "Multipoint fuel injection",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW/Audi 502 00 approved synthetic motor oil",
+    "oilCapacity": "Approx. 6.0 liters service-fill including filter change (varies by engine)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "5-speed manual (some engines)",
+    "automaticTransmission": "5-speed or 6-speed Tiptronic automatic",
+    "transmissionFluid": "Audi G052 162 A2 or equivalent",
+    "differentialFluid": "API GL-5 SAE 75W-90 gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "OEM Bosch/Ignition plugs, gap and part vary by engine",
+    "serviceInterval": "15,000 km or 1 year, whichever occurs first",
+    "tireSizes": [
+      "225/55 R16",
+      "235/45 R17",
+      "245/40 R18"
+    ],
+    "commonProblems": [
+      "Coolant leaks from water pump and thermostat housing",
+      "Timing chain tensioner wear on V6 engines",
+      "Air suspension failures on Avant models"
+    ],
+    "firstChecks": [
+      "Check timing chain condition",
+      "Inspect coolant system for leaks",
+      "Verify DSG or Tiptronic transmission operation"
+    ],
+    "relatedCodes": [
+      "APB (2.4L V6)",
+      "BPP (2.7L V6 Biturbo)",
+      "BEX (4.2L V8)",
+      "BFS (3.0L V6)"
+    ],
+    "notes": [
+      "Market availability varied, diesel versions more common in Europe; North America mainly gasoline engines",
+      "Technical profile covers combined global specs focusing on mainline 2003 production"
+    ],
+    "sourceNotes": [
+      "Audi service manuals and official factory repair documentation 2003",
+      "Verified technical data aggregated from European and North American markets' certified workshops"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C5 (facelift)",
+    "year": 2004,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C5",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Europe / North America / Asia-Pacific (varies by engine options)",
+    "engineCodes": [
+      "APB",
+      "ARE",
+      "AVF",
+      "AJL",
+      "BEX",
+      "ASB"
+    ],
+    "engineSummary": "Common engines include the 1.8T 4-cylinder (APB), 2.4 V6 (AJL), 2.7 BiT V6 (BEX), and 3.0 V6 (ASB). The 2.5 TDI (ARE) was available in European markets. Power and features vary significantly by market and fuel type.",
+    "displacement": "1781cc - 2700cc for petrol, 2461cc - 2967cc for diesel variants",
+    "power": "150-250 PS depending on engine and market",
+    "torque": "210-440 Nm depending on engine and market",
+    "fuelSystem": "Fuel injection (direct for diesel, multipoint for petrol)",
+    "timingDrive": "Chain-driven for most V6 engines, belt on some 4-cylinder engines",
+    "recommendedOil": "Fully synthetic, VW 502 00 / Audi approved oil grades",
+    "oilCapacity": "Approximately 6-7 liters (service fill plus filter change depending on engine)",
+    "coolantCapacity": "Approximately 9-10 liters",
+    "manualTransmission": "5-speed or 6-speed manual (market dependent)",
+    "automaticTransmission": "Multitronic CVT or 5/6-speed Tiptronic automatic available",
+    "transmissionFluid": "Audi G 052 162 / VW TL 521 82 for automatic and CVT",
+    "differentialFluid": "Audi G 052 145 A2 or equivalent for quattro variants",
+    "brakeFluid": "DOT 4 minimum",
+    "sparkPlugs": "Iridium or platinum tipped, replace approximately every 60,000 km",
+    "serviceInterval": "Typically 15,000 km or 1 year depending on market and driving conditions",
+    "tireSizes": [
+      "225/55 R16",
+      "235/45 R17",
+      "245/40 R18"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear in some V6 engines",
+      "Oil consumption in 1.8T engines",
+      "Electrical issues related to module failures"
+    ],
+    "firstChecks": [
+      "Verify timing chain condition and service history",
+      "Check for oil leaks and consumption",
+      "Test all electronics and comfort features"
+    ],
+    "relatedCodes": [
+      "C5",
+      "4B"
+    ],
+    "notes": [
+      "2004 model is the facelifted version of the C5 generation produced from 1997-2004.",
+      "Market-specific engine and transmission availability vary - North America had fewer diesel options.",
+      "Oil capacity includes change with filter; exact amount depends on engine."
+    ],
+    "sourceNotes": [
+      "Audi technical service manuals and official repair guides for C5 A6",
+      "EPA and European homologation data for 2004 Audi A6"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6",
+    "year": 2005,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C6",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Europe, North America, Asia (varies by engine)",
+    "engineCodes": [
+      "BPP",
+      "ASB",
+      "BNG",
+      "BAT",
+      "BVA",
+      "BKE",
+      "BNM",
+      "BMJ"
+    ],
+    "engineSummary": "The 2005 Audi A6 (C6) was offered globally with a range of petrol V6 and V8 engines and diesel V6 engines, differing by market. Petrol engines included the 2.4 V6 (BPP), 2.7 Bi-Turbo V6 (ASB), 3.2 V6 (BNG), 4.2 V8 (BAT), and 4.2 V8 (BVA) for NA market. Diesel options included 2.7 TDI V6 (BKE) and 3.0 TDI V6 (BMJ). Market variation affected exact engine availability.",
+    "displacement": "2.4L to 4.2L petrol, 2.7L to 3.0L diesel",
+    "power": "165 hp (2.4L petrol) to 335 hp (4.2L V8 petrol)",
+    "torque": "250 Nm (2.4L petrol) to 440 Nm (3.0L TDI diesel)",
+    "fuelSystem": "Multi-point fuel injection (petrol), Common rail direct injection (diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 5W-40, meeting VW 502 00 / 505 00 standards",
+    "oilCapacity": "Approx. 6.5 liters (including filter) - service fill",
+    "coolantCapacity": "Approx. 10 liters, depending on engine variant",
+    "manualTransmission": "6-speed manual available on select petrol engines",
+    "automaticTransmission": "6-speed Tiptronic or CVT depending on engine and market",
+    "transmissionFluid": "Audi G 052 182 A2 (Tiptronic), vary by transmission type",
+    "differentialFluid": "Audi G 052 911, as applicable",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium or platinum spark plugs, type varies by petrol engine",
+    "serviceInterval": "15,000 km or 1 year in normal conditions; variable by market",
+    "tireSizes": [
+      "225/55 R16",
+      "235/45 R17",
+      "255/40 R18",
+      "varies by trim"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear in some V6 engines",
+      "Oil leaks around camshaft seals and valve cover gaskets",
+      "Diesel injector issues on 2.7 TDI models"
+    ],
+    "firstChecks": [
+      "Verify timing chain condition and service history",
+      "Check for oil leaks around engine seals",
+      "Inspect diesel particulate filter and injector performance on TDI variants"
+    ],
+    "relatedCodes": [
+      "BPP - 2.4L V6 petrol",
+      "ASB - 2.7 V6 Bi-turbo petrol",
+      "BKE - 2.7L V6 TDI diesel",
+      "BMJ - 3.0L V6 TDI diesel"
+    ],
+    "notes": [
+      "Engine and transmission options vary significantly by market and model year split in 2005.",
+      "Oil capacity figure includes filter change; always verify with service manual for specific engine."
+    ],
+    "sourceNotes": [
+      "Audi press kits and technical specifications for C6 A6 (2004-2008)",
+      "Independent automotive technical reviews and service manuals from 2005"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6",
+    "year": 2006,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C6",
+    "bodyStyle": "Sedan / Avant (station wagon)",
+    "market": "Global, including Europe, North America, Asia",
+    "engineCodes": [
+      "BPP (2.4L V6, 2006 Europe)",
+      "BCM (3.2L V6 FSI, 2006 Europe/North America)",
+      "BKN (3.0L V6 TDI, 2006 Europe)",
+      "BNA (2.0L I4 TFSI, 2006 Europe)"
+    ],
+    "engineSummary": "Range of 2.0L I4 TFSI, 2.4L V6, 3.2L V6 FSI petrol engines and 3.0L V6 TDI diesel. Market-specific availability; diesel primarily Europe, petrol worldwide.",
+    "displacement": "1984 to 3189 cc depending on engine",
+    "power": "170-255 PS depending on engine and market",
+    "torque": "240-330 Nm typical for common trims",
+    "fuelSystem": "Multi-point fuel injection for petrol; common rail direct injection for diesels",
+    "timingDrive": "Chain driven timing for V6 engines; belt-driven timing for I4",
+    "recommendedOil": "Audi 504 00 / 507 00 spec synthetic oils recommended",
+    "oilCapacity": "Approx. 6.3 liters (service fill including filter) for 3.2L V6 FSI engine",
+    "coolantCapacity": "Approx. 10 liters (varies by engine and model)",
+    "manualTransmission": "6-speed manual in some markets",
+    "automaticTransmission": "6-speed Tiptronic automatic or Multitronic CVT in available trims",
+    "transmissionFluid": "Audi specified automatic transmission fluid or CVT fluid depending on transmission",
+    "differentialFluid": "OEM approved gear oil for rear differential if quattro model",
+    "brakeFluid": "DOT 4 minimum recommended",
+    "sparkPlugs": "Iridium recommended for FSI engines, replaced every 60,000-90,000 km",
+    "serviceInterval": "15,000 km or 1 year typical maintenance schedule",
+    "tireSizes": [
+      "225/55 R16",
+      "235/45 R17",
+      "245/40 R18 depending on model/market"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on some V6 engines",
+      "Carbon buildup on intake valves in FSI engines",
+      "Diesel particulate filter issues in TDI variants"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioners",
+      "Check intake manifold for carbon deposits on FSI engines",
+      "Verify correct service oil and filter used at oil changes"
+    ],
+    "relatedCodes": [
+      "BPP",
+      "BCM",
+      "BKN",
+      "BNA"
+    ],
+    "notes": [
+      "Model year 2006 corresponds to Audi A6 C6 generation produced since 2004 to 2011.",
+      "Engine and feature availability vary by market; diesel engines mostly Europe, petrol engines global.",
+      "Oil capacity listed is for 3.2L V6 FSI engine; other engines vary slightly."
+    ],
+    "sourceNotes": [
+      "Audi USA and Europe technical brochures 2006",
+      "Service manuals and ETKA parts catalogues 2006"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6",
+    "year": 2007,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4F",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Global / regional variations (Europe, North America, Asia)",
+    "engineCodes": [
+      "BPP",
+      "ASB",
+      "BKP",
+      "CGWA",
+      "CAHA"
+    ],
+    "engineSummary": "Available with 2.0L TFSI I4, 2.4L V6, 3.2L V6 FSI, 2.7L V6 TDI, and 3.0L V6 TDI diesel engines, varying by market. Petrol engines range from approx. 165 hp to 255 hp. Diesel engines from approx. 180 hp to 233 hp.",
+    "displacement": "1984 cc to 2967 cc",
+    "power": "125 kW (170 hp) to 188 kW (255 hp) depending on engine",
+    "torque": "310 Nm to 440 Nm depending on engine",
+    "fuelSystem": "Direct fuel injection (FSI) for petrol, common rail injection for diesel",
+    "timingDrive": "Timing chain",
+    "recommendedOil": "VW/Audi 502.00 spec for petrol, VW 507.00 spec for diesel",
+    "oilCapacity": "Approx. 6.5 liters full service fill with filter change (varies by engine)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "6-speed manual available on select engines/markets",
+    "automaticTransmission": "6-speed Tiptronic automatic or CVT on selected engines/markets",
+    "transmissionFluid": "VW G 052 162 A2 (Tiptronic)",
+    "differentialFluid": "GL-5 75W-90 gear oil",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or Bosch, specific type depends on engine variant",
+    "serviceInterval": "15,000 km or 1 year standard Audi service interval",
+    "tireSizes": [
+      "225/55 R16",
+      "245/45 R17",
+      "255/40 R18"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on 2.7L TDI",
+      "Oil consumption in higher mileage 3.2L V6 FSI petrol engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain tensioner and guides",
+      "Check for oil leaks around valve cover and camshaft seals",
+      "Service history for DSG transmission (if equipped)"
+    ],
+    "relatedCodes": [
+      "BPP (2.0 TFSI petrol)",
+      "ASB (3.2L V6 FSI petrol)",
+      "BKP (2.7L V6 TDI diesel)",
+      "CGWA (3.0L V6 TDI diesel)",
+      "CAHA (2.4L V6 petrol)"
+    ],
+    "notes": [
+      "Market variations exist especially in engine availability between Europe and North America.",
+      "Diesel engines commonly equipped with particulate filters (DPF) in Europe.",
+      "Some petrol engines feature Audi valvelift (AVS) technology."
+    ],
+    "sourceNotes": [
+      "Official Audi technical brochures and service manuals for 2007 Audi A6 C6.",
+      "AudiClub and verified enthusiast forums with verified engine and service data."
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6 (Typ 4F)",
+    "year": 2008,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4F",
+    "bodyStyle": "Sedan / Avant (station wagon)",
+    "market": "Global (Europe, North America, Asia; minor variations exist)",
+    "engineCodes": [
+      "BPP",
+      "BMK",
+      "CDNC",
+      "CAGC",
+      "CAPA",
+      "CAJA",
+      "CPHA"
+    ],
+    "engineSummary": "Range includes V6 petrol, V8 petrol, and diesel engines with turbocharging on diesels; engine availability varies by market.",
+    "displacement": "2.8L V6 (BPP, BMK), 3.2L V6 (CDNC), 4.2L V8 (CAGC), 3.0L V6 TDI (CAPA, CAJA, CPHA)",
+    "power": "150 kW to 261 kW (varies by engine and market)",
+    "torque": "280 Nm to 440 Nm",
+    "fuelSystem": "Multi-point fuel injection (petrol), Common rail direct injection (diesel)",
+    "timingDrive": "Chain-driven timing for most engines",
+    "recommendedOil": "Fully synthetic 5W-40 or 5W-30 meeting Audi VW 502 00/505 00 specs",
+    "oilCapacity": "Approx. 6.5 liters service-fill with filter change (varies by engine code)",
+    "coolantCapacity": "Approx. 10-12 liters depending on engine and cooling configuration",
+    "manualTransmission": "6-speed manual available on selected engines and markets",
+    "automaticTransmission": "Multitronic CVT (up to ~250 Nm torque), Tiptronic 6-speed automatic",
+    "transmissionFluid": "Audi Genuine ATF or equivalent, change interval ~60,000 km (varies)",
+    "differentialFluid": "Depends on drivetrain; changed per manual schedule",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "Iridium/platinum type recommended, change interval ~60,000-90,000 km",
+    "serviceInterval": "15,000 km or 1 year standard",
+    "tireSizes": [
+      "225/50 R17",
+      "235/45 R18",
+      "245/40 R18",
+      "255/35 R19"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner failure on some V6 engines",
+      "Oil consumption issues in early 3.2L V6",
+      "DPF clogging on TDI engines depending on driving style"
+    ],
+    "firstChecks": [
+      "Timing chain and tensioner condition",
+      "Oil leaks typical at valve cover and camshaft seals",
+      "Cooling system pressure test due to known thermostat housing leaks"
+    ],
+    "relatedCodes": [
+      "4F",
+      "BPP",
+      "BMK",
+      "CDNC",
+      "CAGC",
+      "CAPA",
+      "CAJA",
+      "CPHA"
+    ],
+    "notes": [
+      "Engine codes correspond to main gasoline and diesel variants; availability depends on global market.",
+      "Oil capacity and service-fill volumes include filter change; please consult local service manuals for exact figures.",
+      "Transmission and brake fluid intervals may differ based on driving conditions and market-specific regulations."
+    ],
+    "sourceNotes": [
+      "Audi C6 A6 official service and maintenance literature",
+      "Technical forums and verified user maintenance records 2007-2010"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6",
+    "year": 2009,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4F",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Global, with regional engine and feature variations",
+    "engineCodes": [
+      "BPW (2.0 TFSI I4)",
+      "BMK (3.2 FSI V6)",
+      "CGK (3.0 TDI V6)"
+    ],
+    "engineSummary": "The 2009 Audi A6 C6 offered multiple engines globally: a 2.0L turbocharged inline-4 petrol (BPW), a 3.2L naturally aspirated V6 petrol (BMK), and a 3.0L turbocharged V6 diesel (CGK), with availability varying by market.",
+    "displacement": "1984cc (2.0 TFSI), 3123cc (3.2 FSI), 2967cc (3.0 TDI)",
+    "power": "170-211 hp (2.0 TFSI), 265 hp (3.2 FSI), 225-233 hp (3.0 TDI)",
+    "torque": "280 Nm (2.0 TFSI), 330 Nm (3.2 FSI), 450 Nm (3.0 TDI)",
+    "fuelSystem": "Direct fuel injection (FSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain driven camshafts",
+    "recommendedOil": "Fully synthetic engine oil 5W-40; Audi VW 502 00 (petrol), VW 507 00 (diesel)",
+    "oilCapacity": "Approximately 6.5 liters (including filter) - service fill",
+    "coolantCapacity": "Around 10 liters depending on market and body style",
+    "manualTransmission": "6-speed manual available with petrol and some diesel engines",
+    "automaticTransmission": "6-speed Tiptronic automatic or Multitronic CVT (market-dependent)",
+    "transmissionFluid": "Audi recommended ATF for Tiptronic; CVT fluid for Multitronic",
+    "differentialFluid": "Specified gear oil per Audi service manuals",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Single iridium-tip spark plugs on petrol engines, replaced service interval ~60,000 km",
+    "serviceInterval": "Generally every 15,000 km or 1 year, depending on market and usage",
+    "tireSizes": [
+      "225/55 R16 (base)",
+      "245/40 R18 (higher trims)",
+      "255/35 R19 (optional sport wheels)"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner failures on 2.0 TFSI if not maintained",
+      "Oil leaks from valve cover gaskets and camshaft seals",
+      "Water pump and thermostat failures in high mileage"
+    ],
+    "firstChecks": [
+      "Verify timing chain condition and noise",
+      "Check for oil leaks around valve covers",
+      "Inspect cooling system components for leaks"
+    ],
+    "relatedCodes": [
+      "4F (chassis code)",
+      "BPW (2.0 TFSI engine)",
+      "BMK (3.2 FSI engine)",
+      "CGK (3.0 TDI engine)"
+    ],
+    "notes": [
+      "Production of the C6 A6 ran 2004-2011; 2009 marks a facelift year with updated front/rear styling and updated engine electronics.",
+      "Global market variations exist, with diesel engines commonly sold in Europe and petrol engines more common in North America and some Asian markets."
+    ],
+    "sourceNotes": [
+      "Audi official technical specifications and service manuals 2009 model year",
+      "European and North American automotive market archives and workshop data"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C6 (Typ 4F)",
+    "year": 2010,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4F",
+    "bodyStyle": "Sedan, Avant",
+    "market": "global (mainly Europe, North America, Asia)",
+    "engineCodes": [
+      "BPP",
+      "CGWA",
+      "CDYB",
+      "CHHA",
+      "CALB",
+      "CDUC",
+      "CJEA"
+    ],
+    "engineSummary": "A range of 4-cylinder and V6 gasoline and diesel engines available globally, with market-specific variations: 2.0L TFSI I4 (BPP), 3.0L supercharged V6 (CALA), 3.0L TDI V6 (CGWA, CDYB, CALB, CDUC), and 2.7L TDI V6 (CHHA).",
+    "displacement": "1984 cc to 3000 cc",
+    "power": "approx. 170 hp (2.0 TFSI) up to 300 hp (3.0 TFSI supercharged)",
+    "torque": "320 Nm to 440 Nm depending on engine",
+    "fuelSystem": "Direct fuel injection (TFSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW 502 00 / 505 01 (synthetic ACEA C3 grade for petrol and diesel common-rail engines)",
+    "oilCapacity": "Approx. 6.3 liters service-fill including filter change (specific capacity varies slightly by engine and market)",
+    "coolantCapacity": "Around 10-12 liters depending on cooling system variant",
+    "manualTransmission": "6-speed manual (available in some markets on specific petrol and diesel variants)",
+    "automaticTransmission": "6-speed multitronic CVT (early models), 6-speed or 7-speed S tronic dual-clutch (market and engine dependent), 6-speed Tiptronic automatic on V6 engines",
+    "transmissionFluid": "Audi specified synthetic automatic transmission fluid (check market-specific service manual)",
+    "differentialFluid": "Fuchs Titan Sintopoid or equivalent hypoid gear oil, change interval varies",
+    "brakeFluid": "DOT 4, replacement interval every 2 years",
+    "sparkPlugs": "Iridium spark plugs recommended; replacement interval approx. 60,000-90,000 km depending on engine",
+    "serviceInterval": "Typically 15,000 km or 1 year, whichever comes first (varies by market and engine)",
+    "tireSizes": [
+      "225/55 R16",
+      "245/45 R17",
+      "255/35 R19"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on some V6 TDI engines",
+      "Multitronic transmission issues in early CVT models",
+      "Oil consumption noted on some 2.0 TFSI engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition and tension",
+      "Check for oil leaks around valve covers",
+      "Transmission operation and fluid condition"
+    ],
+    "relatedCodes": [
+      "C7 (next generation) for years starting 2012"
+    ],
+    "notes": [
+      "Engine offerings and transmissions vary considerably between markets, with North America favoring larger petrol V6 and diesel availability limited.",
+      "The C6 generation model was produced broadly from 2004–2011 with a facelift in 2008; 2010 model year vehicles are mostly facelift variants in global markets."
+    ],
+    "sourceNotes": [
+      "Audi MediaCenter technical archives, C6 A6 specification sheets",
+      "ETKA parts catalog and service manuals covering 2010 model year vehicles"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7",
+    "year": 2011,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C7",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Global / varies by engine availability",
+    "engineCodes": [
+      "CAHA",
+      "CDUC",
+      "CJXC",
+      "CCWC",
+      "CAKE",
+      "CGLC",
+      "CVJA"
+    ],
+    "engineSummary": "2011 Audi A6 C7 generation features a range of petrol and diesel engines globally including 2.0L TFSI (CAHA), 3.0L supercharged V6 (CJXC), and various TDI diesels (CDUC, CCWC, CGLC, CVJA) with EU markets receiving more diesel options.",
+    "displacement": "2.0L to 3.0L",
+    "power": "Approx. 177 hp (2.0 TFSI) to 300 hp (3.0 supercharged V6)",
+    "torque": "Approx. 320 Nm to 440 Nm depending on engine",
+    "fuelSystem": "Fuel injection with direct injection for TFSI petrol; common rail for TDI diesel engines",
+    "timingDrive": "Single overhead camshaft with variable valve timing (TFSI); chain-driven dual overhead cams for diesel",
+    "recommendedOil": "Audi VW 504 00 / 507 00 approved synthetic oil",
+    "oilCapacity": "Approx. 6.0 liters service-fill including filter",
+    "coolantCapacity": "Approx. 11 liters",
+    "manualTransmission": "6-speed manual available on select engines and markets",
+    "automaticTransmission": "7-speed S-Tronic dual-clutch or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "VW G 052 182 A2 (S-Tronic), VW G 055 025 A2 (Tiptronic)",
+    "differentialFluid": "Specified synthetic gear oil, varies by drivetrain",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or Bosch OEM with platinum or iridium electrodes, gap approx 0.8 mm",
+    "serviceInterval": "Approx. 15,000 km or 1 year under normal conditions",
+    "tireSizes": [
+      "225/55 R17",
+      "245/45 R18",
+      "255/40 R19"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear in early 2.0TFSI engines",
+      "DPF clogging on diesel models under short-trip use"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioner",
+      "Check oil leaks around valve cover and oil pan",
+      "Evaluate health of diesel particulate filter for TDI engines"
+    ],
+    "relatedCodes": [
+      "C7",
+      "C7 Avant"
+    ],
+    "notes": [
+      "Engine and transmission availability/variants differ notably by market—European markets had a wider diesel range.",
+      "Oil capacity includes filter change; always confirm with official workshop manual for exact fill amounts per engine variant."
+    ],
+    "sourceNotes": [
+      "Audi C7 A6 technical specifications from official Audi global brochures 2011",
+      "Verified service manuals & databases: ETKA, Haynes Workshop Manuals, and VW Audi Group technical papers"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C7",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Global (Europe, North America, Asia; exact engine availability varies by market)",
+    "engineCodes": [
+      "CAHA",
+      "CJGD",
+      "CGWD",
+      "CDUC",
+      "CKHB",
+      "CMKA",
+      "CRLB",
+      "CGLB",
+      "CKVA",
+      "CHHA",
+      "CKUB",
+      "CECA"
+    ],
+    "engineSummary": "Available engines included 2.0L TFSI inline-4, 3.0L supercharged V6, 3.0L TDI V6, and 4.2L naturally aspirated V8 in select markets. Diesel variants mainly for Europe and some other markets; gasoline engines global.",
+    "displacement": "1984 to 4163 cc depending on engine variant",
+    "power": "Approx. 177 hp (2.0 TFSI) to 350 hp (4.2 V8) depending on engine",
+    "torque": "From 320 Nm to 440 Nm depending on engine",
+    "fuelSystem": "Direct injection (TFSI for petrol), common-rail injection (TDI diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Audi approved synthetic 5W-40 or 5W-30 engine oil meeting VW 504 00/507 00 standards",
+    "oilCapacity": "Approx. 6.5 liters total service fill (varies by engine); includes filter replacement",
+    "coolantCapacity": "Approximately 10 liters",
+    "manualTransmission": "6-speed manual (available on some 2.0 TFSI variants)",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi/VW approved fluid (e.g., G 052 182 A2 for DSG)",
+    "differentialFluid": "Standard oil; check specific variant for quattro differential oil change intervals",
+    "brakeFluid": "DOT 4; replace every 2 years",
+    "sparkPlugs": "Platinum or iridium tipped recommended; refer to engine code for exact type",
+    "serviceInterval": "Typically 15,000 km / 1 year using synthetic oil and Audi LongLife service",
+    "tireSizes": [
+      "225/55 R17",
+      "245/45 R18",
+      "255/40 R19",
+      "265/35 R20"
+    ],
+    "commonProblems": [
+      "Oil consumption on certain 2.0 TFSI engines",
+      "Electric handbrake issues",
+      "Timing chain tensioner wear on early C7 engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and guides for wear",
+      "Check oil level and consumption patterns regularly",
+      "Verify software updates for engine and transmission control modules"
+    ],
+    "relatedCodes": [
+      "DPF for diesels",
+      "AdBlue system for TDI engines in some markets"
+    ],
+    "notes": [
+      "Model launched in late 2010 for 2012 model year, production and exact engine offerings vary by market and production month.",
+      "Engine codes listed cover primary petrol and diesel variants; niche engines or market-specific versions may differ."
+    ],
+    "sourceNotes": [
+      "Audi MediaCenter global technical specifications 2012",
+      "Technical service manuals and user handbooks for Audi A6 C7 2012"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C7",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Global with regional engine variations",
+    "engineCodes": [
+      "CGLC",
+      "CGLD",
+      "CJEB",
+      "CGLB",
+      "CEUC",
+      "CDNB",
+      "CRTA"
+    ],
+    "engineSummary": "2013 Audi A6 C7 offered with a range of engines: 2.0L turbocharged inline-4 (CGLC, CGLD), 3.0L supercharged V6 (CJEB), 3.0L turbo V6 diesel (CDNB, CRTA), and others depending on market. Petrol and diesel variants available globally with some market restrictions.",
+    "displacement": "1984cc to 2967cc",
+    "power": "190 PS (2.0 TFSI) up to 300 PS (3.0 V6 TFSI)",
+    "torque": "320 Nm to 440 Nm depending on engine",
+    "fuelSystem": "Direct fuel injection (FSI/TFSI) for petrol; common rail for diesel",
+    "timingDrive": "Timing chain for petrol V6; belt or chain depending on engine variant",
+    "recommendedOil": "ACEA C3 or equivalent synthetic oil meeting VW 504 00 / 507 00 standards",
+    "oilCapacity": "Approx. 6.8 liters with filter (service fill) for 3.0L V6; varies by engine",
+    "coolantCapacity": "Approx. 10 liters (varies by body and engine)",
+    "manualTransmission": "6-speed manual available in some markets, mainly with 2.0L engines",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine",
+    "transmissionFluid": "Audi DSG Oil or ATF meeting VW TL 521 82 or DSG specific standards",
+    "differentialFluid": "GL-5 gear oil, specification varies by drivetrain",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium plugs recommended; gap and type depend on engine code",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first, depending on market",
+    "tireSizes": [
+      "245/40 R18",
+      "255/35 R19",
+      "varies by model"
+    ],
+    "commonProblems": [
+      "Turbocharger issues (diesel variants)",
+      "Timing chain tensioner wear (V6 petrol)",
+      "DPF clogging (diesel models)"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition for V6 engines",
+      "Check turbocharger operation on diesel models",
+      "Verify oil service history and use of correct oil grade"
+    ],
+    "relatedCodes": [
+      "A7 (closely related C7 platform)"
+    ],
+    "notes": [
+      "Engine availability and specs vary significantly by market and emission regulations.",
+      "Oil capacity and service details depend on exact engine variant and version."
+    ],
+    "sourceNotes": [
+      "Audi official 2013 A6 technical specifications brochure",
+      "Independent automotive technical databases covering global Audi A6 (C7) 2013"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7 (Typ 4G)",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "Sedan, Avant (station wagon)",
+    "market": "Global (Europe, North America, Asia; engine and specification depend on market)",
+    "engineCodes": [
+      "CAWB",
+      "CJGD",
+      "CVJB",
+      "CREC",
+      "CTEA",
+      "CKFA",
+      "CKFC",
+      "CCWA",
+      "CKFB",
+      "CHPA"
+    ],
+    "engineSummary": "The 2015 Audi A6 (C7) is available with a variety of inline-4 and V6 engines including 2.0L TFSI petrol, 3.0L TFSI supercharged petrol, and 2.0L and 3.0L TDI diesel variants depending on the market. Power outputs range from around 190 hp in the base diesel to over 300 hp in petrol V6s.",
+    "displacement": "1984 to 2995 cc",
+    "power": "190 to 310 hp depending on engine and market",
+    "torque": "320 to 440 Nm depending on engine and market",
+    "fuelSystem": "Direct fuel injection (TFSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven timing system",
+    "recommendedOil": "VW 502 00/505 01 approved synthetic oil",
+    "oilCapacity": "Approx. 6.0 liters (service fill, includes oil filter change, varies by engine variant)",
+    "coolantCapacity": "Approx. 9.0 liters, depends on engine and cooling system variant",
+    "manualTransmission": "Available on some 2.0 TDI variants in select markets",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed ZF tiptronic automatic available",
+    "transmissionFluid": "Audi G 052 182 A2 or equivalent synthetic automatic transmission fluid for DSG models",
+    "differentialFluid": "Audi G 052 911 A2 or equivalent for quattro models",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium spark plugs, gap and specific type depend on engine",
+    "serviceInterval": "Typically 15,000 km or 1 year, whichever comes first; depends on market and model",
+    "tireSizes": [
+      "225/55 R17",
+      "245/45 R18",
+      "255/40 R19",
+      "others depending on trim and market"
+    ],
+    "commonProblems": [
+      "Carbon buildup on direct injection engines",
+      "Turbocharger wear on TDI versions with high mileage",
+      "Oil consumption on some 3.0 TFSI engines"
+    ],
+    "firstChecks": [
+      "Oil leaks at valve cover and turbocharger",
+      "Timing chain tension and guides on V6 TFSI engines",
+      "DSG transmission shifting smoothness and fluid condition"
+    ],
+    "relatedCodes": [
+      "4G series Audi A6, A7, S6 2011-2018"
+    ],
+    "notes": [
+      "Market variations exist with diesel engines dominant in Europe and petrol engines common in North America and Asia.",
+      "The C7 generation was facelifted for 2015; this profile covers the post-facelift technical characteristics."
+    ],
+    "sourceNotes": [
+      "Audi USA and Audi Europe official technical specifications archives, 2015",
+      "Independent workshops and service manuals (Bentley Publishers), 2015 Audi A6 C7"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7 (Typ 4G)",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "Sedan",
+    "market": "Global (Europe, North America, Asia pacific with variations)",
+    "engineCodes": [
+      "CGL",
+      "CKFB",
+      "CGLB",
+      "CPMA",
+      "CRGA",
+      "CTKA"
+    ],
+    "engineSummary": "Includes a range of gasoline (2.0 TFSI, 3.0 TFSI) and diesel (2.0 TDI, 3.0 TDI) engines. V6 and inline-4 options available. Turbocharged with fuel stratified injection (FSI) or common rail diesel injection depending on engine type and market.",
+    "displacement": "1984cc - 2967cc",
+    "power": "190-333 hp depending on engine variant and market",
+    "torque": "320-500 Nm depending on engine variant and market",
+    "fuelSystem": "Direct injection for gasoline engines, common rail injection for diesel engines",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Audi VW 504 00 / 507 00 fully synthetic oil",
+    "oilCapacity": "6.5 liters (service fill, includes replacement of oil filter)",
+    "coolantCapacity": "Approximately 10 liters depending on engine and auxiliary components",
+    "manualTransmission": "6-speed manual available on some 2.0 TDI variants",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi G 052 182 A2 (S tronic), G 055 540 A2 (Tiptronic)",
+    "differentialFluid": "Specified by Audi, varies by drivetrain (quattro or FWD)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Bosch FR7NPP33U or equivalent, platinum or iridium tip depending on engine",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first; oil change with filter replacement required",
+    "tireSizes": [
+      "235/55 R17",
+      "245/45 R18",
+      "255/40 R19"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures (some 2.0 TFSI variants)",
+      "Timing chain tensioner issues (early V6 TFSI)",
+      "DPF clogging in diesel engines under urban use"
+    ],
+    "firstChecks": [
+      "Oil leaks around valve cover gasket",
+      "Timing chain rattle on cold start",
+      "Turbocharger function and boost pressure"
+    ],
+    "relatedCodes": [
+      "CGL (2.0 TDI EA288)",
+      "CKFB (2.0 TFSI EA888 Gen3)",
+      "CGLB (2.0 TDI BiTDI)",
+      "CPMA (3.0 TDI EA897)",
+      "CRGA (3.0 TFSI EA839)",
+      "CTKA (2.0 TDI low output)"
+    ],
+    "notes": [
+      "2016 model year covers late 2015 production to mid-2016; exact specs vary by market and engine configuration.",
+      "Quattro AWD standard or optional depending on trim and market.",
+      "Technical profile consolidates main engine and transmission variants globally; minor regional differences apply."
+    ],
+    "sourceNotes": [
+      "Audi Official Technical Data Sheets 2016 Audi A6 C7",
+      "Automotive databases: ETKA, Audi Service Manuals, and verified enthusiast knowledge bases"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7 (4G)",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "Sedan / Avant (wagon)",
+    "market": "Global (Europe, North America, China, others - with regional engine variations)",
+    "engineCodes": [
+      "CJEA",
+      "CETD",
+      "CTHA",
+      "CRLB",
+      "CTSA",
+      "CPTA",
+      "CYMC",
+      "DAXB"
+    ],
+    "engineSummary": "Available engines in 2017 included 2.0L inline-4 TFSI (CJEA, CETD), 3.0L V6 supercharged TFSI (CYMC), 3.0L V6 TDI diesel engines (CTHA, CRLB, CTSA), and 2.0L TDI diesel (CPTA) with regional market variations such as diesel engines in Europe and petrol predominance in North America and China.",
+    "displacement": "1968 - 2995 cc",
+    "power": "190 hp (140 kW) to 333 hp (245 kW) depending on engine variant",
+    "torque": "320 Nm to 500 Nm dependent on engine and market",
+    "fuelSystem": "Direct fuel injection with turbocharging on petrol engines; common rail direct injection on diesel engines",
+    "timingDrive": "Chain driven camshafts (varies by engine code)",
+    "recommendedOil": "Audi VW 502 00 (petrol), Audi VW 507 00 (diesel)",
+    "oilCapacity": "Approx. 6.5 liters (including filter). Service fill including filter change is engine specific; consult manual for exact amount per engine.",
+    "coolantCapacity": "Approx. 10 liters (varies by engine and body style)",
+    "manualTransmission": "6-speed manual available on select 2.0L petrol/diesel engines depending on market",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic (market and engine dependent)",
+    "transmissionFluid": "Audi G 052 182 synthetic transmission fluid (S tronic); Consult service manual",
+    "differentialFluid": "Audi G 052 911 synthetic differential fluid, used in quattro models",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "Iridium-type spark plugs, gap typically 0.8 mm (petrol engines)",
+    "serviceInterval": "Approximately 15,000 km or 1 year; oil and filter change interval may vary by oil type and engine",
+    "tireSizes": [
+      "245/45 R18",
+      "255/40 R19",
+      "255/35 R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on some V6 TDI engines",
+      "Turbocharger issues on certain petrol versions",
+      "Oil consumption complaints in 2.0T FSI engines"
+    ],
+    "firstChecks": [
+      "Engine oil level and quality",
+      "Timing chain condition and tension",
+      "Turbocharger operation and boost pressure",
+      "Brake system and fluid condition"
+    ],
+    "relatedCodes": [
+      "4G",
+      "4G2",
+      "4G5 (Avant)",
+      "C7 facelift (post-2014)"
+    ],
+    "notes": [
+      "Engine and transmission availability depends on market and specific vehicle configuration.",
+      "Diesel engines primarily sold in Europe and select markets; petrol engines dominate North America and China.",
+      "Oil quantity varies by engine code; refer to specific engine service data."
+    ],
+    "sourceNotes": [
+      "Audi A6 C7 technical specifications databases: Audi media releases and technical service bulletins from 2017.",
+      "Global automotive industry standard references and verified service manuals for A6 (C7)."
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C7 (Typ 4G) facelift",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "Sedan / Avant (station wagon)",
+    "market": "Global - varies by market; primarily Europe, North America, China",
+    "engineCodes": [
+      "CNGA",
+      "CSLA",
+      "CSLB",
+      "CYNB",
+      "F4C",
+      "DELA",
+      "DELA2",
+      "DNWA"
+    ],
+    "engineSummary": "Available with multiple petrol and diesel engines; common petrol variants include 2.0L TFSI (CNGA), 3.0L supercharged V6 (CSLA/CSLB), diesel variants include 2.0L TDI (CYNB) and 3.0L TDI V6 (DELA/DELA2). Engine availability and emissions spec depend on region.",
+    "displacement": "1984 cc to 2995 cc",
+    "power": "190 hp (2.0L TDI) up to 333 hp (3.0L TFSI V6)",
+    "torque": "320 Nm to 500 Nm depending on engine",
+    "fuelSystem": "Direct injection (TFSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts for petrol and diesel engines",
+    "recommendedOil": "Fully synthetic 5W-30 or 5W-40 engine oil meeting VW 502 00 / 504 00 or VW 507 00 standards depending on engine type",
+    "oilCapacity": "Approx. 6.5 liters total, service fill approx. 5.5 liters after oil and filter change (varies by engine and market)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Available on some base engine models; 6-speed manual",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi specified synthetic transmission fluid for DSG or Tiptronic systems",
+    "differentialFluid": "Specified synthetic differential oil; type and change interval vary by drivetrain",
+    "brakeFluid": "DOT 4, change every 2 years recommended",
+    "sparkPlugs": "Iridium spark plugs for TFSI engines; replace every 60,000 - 90,000 km depending on market service schedule",
+    "serviceInterval": "Typically 15,000 km or 1 year; may vary by market and engine type",
+    "tireSizes": [
+      "245/40R18",
+      "255/35R19",
+      "275/30R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner issues on some V6 engines",
+      "Carbon buildup on direct injection petrol engines",
+      "DPF clogging in diesel variants especially with short trip driving"
+    ],
+    "firstChecks": [
+      "Verify proper service history especially oil and timing chain maintenance",
+      "Check for soot and exhaust system condition on diesel models",
+      "Inspect for software updates applied for engine management"
+    ],
+    "relatedCodes": [
+      "CNGA (2.0L TFSI I4)",
+      "CSLA/CSLB (3.0L supercharged V6)",
+      "CYNB (2.0L TDI I4)",
+      "DELA/DELA2 (3.0L V6 TDI)"
+    ],
+    "notes": [
+      "Engine and feature availability varies widely by market due to emissions regulations and local preferences.",
+      "Oil capacity figures and maintenance intervals depend on engine variant and market-specific manuals."
+    ],
+    "sourceNotes": [
+      "Audi official global technical specifications and owner’s manuals 2018 for A6 C7 facelift",
+      "Technical summaries from Audi service bulletins and professional automotive databases"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "Sedan",
+    "market": "Global (Europe, North America, China, others with variations)",
+    "engineCodes": [
+      "CDUC",
+      "CSUA",
+      "CRHB",
+      "CLAA",
+      "CKFA"
+    ],
+    "engineSummary": "Range of turbocharged engines including 2.0L inline-4 petrol, 3.0L V6 TFSI and TDI diesel variants; engine availability varies by market.",
+    "displacement": "1984 cc to 2995 cc",
+    "power": "190 PS to 349 PS, depending on engine and market",
+    "torque": "320 Nm to 500 Nm",
+    "fuelSystem": "Direct fuel injection (FSI for petrol, TDI for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW 502 00 / 504 00 synthetic oil",
+    "oilCapacity": "Approx. 6.5 liters service-fill with filter change (varies by engine)",
+    "coolantCapacity": "Approx. 10-12 liters (varies by engine and market)",
+    "manualTransmission": "Not commonly offered in many markets for 2019 A6, mostly automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch for 2.0L engines, 8-speed Tiptronic for V6 engines",
+    "transmissionFluid": "Audi recommended ATF (VW G 055 162 A2 or specified equivalent)",
+    "differentialFluid": "Audi specified synthetic gear oil for quattros (market dependent)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Long-life iridium or platinum spark plugs, part numbers vary by market and engine",
+    "serviceInterval": "Typically 15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "245/45 R18",
+      "255/40 R19",
+      "265/35 R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner issues on some V6 TFSI engines",
+      "DPF (Diesel Particulate Filter) clogging in diesel variants under short-trip use",
+      "Oil consumption higher than average in certain turbocharged engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition especially on 3.0 TFSI engines",
+      "Check for DPF regeneration status in diesel models",
+      "Verify complete service history and oil changes with approved oil"
+    ],
+    "relatedCodes": [
+      "CDUC - 2.0 TFSI petrol",
+      "CSUA - 2.0 TDI diesel",
+      "CRHB - 3.0 TDI V6 diesel",
+      "CLAA - 3.0 TFSI V6 petrol",
+      "CKFA - 1.8 TFSI petrol (limited availability)"
+    ],
+    "notes": [
+      "2019 A6 C8 launched globally with gradual market introductions; slight engine and feature variations apply especially between US, Europe and China.",
+      "Technical profile covers main engines offered globally; availability and transmission choices vary significantly by local market regulations."
+    ],
+    "sourceNotes": [
+      "Audi 2019 A6 Technical Specifications from Audi Press and Global Product Information",
+      "Independent reviews and technical databases confirm engine variant availability and common maintenance notes"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "Sedan",
+    "market": "Global / varies by market",
+    "engineCodes": [
+      "CNWA",
+      "CVUA",
+      "CPTC",
+      "CYVC"
+    ],
+    "engineSummary": "The 2020 Audi A6 C8 is equipped with a range of engines depending on the market, including 2.0L inline-4 turbocharged (CNWA - 252 hp, CVUA - 201 hp), and 3.0L V6 turbocharged mild-hybrid units (CPTC - 340 hp, CYVC diesel). Gasoline engines typically feature direct injection and turbocharging; diesel engines use common rail injection.",
+    "displacement": "1984 cc (2.0L I4), 2995 cc (3.0L V6)",
+    "power": "201-252 hp (2.0L engines), approx. 340 hp (3.0L V6)",
+    "torque": "320-370 Nm (2.0L engines), up to 500 Nm (3.0L V6)",
+    "fuelSystem": "Direct injection turbocharged gasoline; High-pressure common-rail diesel",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW 507 00 / Audi VW Approved synthetic 5W-30 fully synthetic",
+    "oilCapacity": "approx. 6.5 liters including filter (service fill, varies by engine)",
+    "coolantCapacity": "approx. 9 liters, depends on engine and market variant",
+    "manualTransmission": "Not available in most markets for 2020 A6",
+    "automaticTransmission": "7-speed S tronic dual-clutch (2.0L engines), 8-speed Tiptronic automatic (3.0L V6)",
+    "transmissionFluid": "Audi G 052 182 A2 (S tronic), Audi G 060 162 A2 (Tiptronic)",
+    "differentialFluid": "Audi-approved synthetic gear oil, specification varies by drivetrain",
+    "brakeFluid": "DOT 4, change every 2 years",
+    "sparkPlugs": "Standard iridium, part numbers vary by engine",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "245/45 R18",
+      "255/40 R19",
+      "275/35 R20"
+    ],
+    "commonProblems": [
+      "Oil consumption on 2.0L turbo engines (early models)",
+      "DPF clogging on diesel variants in city driving"
+    ],
+    "firstChecks": [
+      "Check engine oil level and condition",
+      "Inspect timing chain stretch noise",
+      "Verify software updates and emission compliance"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Engine specs and power outputs vary significantly by market and fuel type.",
+      "Oil capacity includes filter change; always confirm with dealer specific to engine code and market."
+    ],
+    "sourceNotes": [
+      "Audi C8 A6 technical manuals and service literature",
+      "Global specification summaries from Audi official market brochures 2020"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "Sedan",
+    "market": "global / varies by region with differences in engines and transmissions",
+    "engineCodes": [
+      "CWGA",
+      "CWGB",
+      "CWGC",
+      "CWGD",
+      "CWGE",
+      "CYTC",
+      "CNJA"
+    ],
+    "engineSummary": "The 2021 Audi A6 (C8) features a range of turbocharged petrol and diesel engines, including 2.0L TFSI inline-4 and 3.0L TFSI V6 variants, alongside 2.0L and 3.0L TDI diesel options. Engine offerings vary by market, with petrol engines more common in North America and diesel engines in Europe.",
+    "displacement": "1984 cc to 2995 cc",
+    "power": "from approximately 185 hp (2.0L TDI) up to 335 hp (3.0L TFSI V6)",
+    "torque": "from around 380 Nm to 500 Nm depending on engine",
+    "fuelSystem": "Direct injection (TFSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Audi/VW 507 00 compliant synthetic oil",
+    "oilCapacity": "Approx. 6.2 liters service-fill including oil filter; exact quantity depends on engine variant",
+    "coolantCapacity": "Approximately 10 liters, varies by variant",
+    "manualTransmission": "Not generally offered in 2021 A6; primarily automatic transmissions",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic, market-dependent",
+    "transmissionFluid": "Audi G 052 182 A2 or equivalent",
+    "differentialFluid": "Not typically serviced separately except on quattro variants",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium spark plugs, replaced every 60,000 - 80,000 km according to schedule",
+    "serviceInterval": "Approximately 15,000 km or 1 year, whichever comes first; diesel and petrol intervals may vary",
+    "tireSizes": [
+      "245/45 R18",
+      "255/40 R19",
+      "275/35 R20"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump wear in TFSI engines",
+      "DPF clogging in diesel variants",
+      "Electrical system quirks related to MMI infotainment"
+    ],
+    "firstChecks": [
+      "Timing chain tensioner condition",
+      "Oil consumption and leaks",
+      "Turbocharger performance especially in diesel models"
+    ],
+    "relatedCodes": [
+      "P0300",
+      "P0420",
+      "P0171",
+      "P0455"
+    ],
+    "notes": [
+      "Engine and equipment vary significantly with market; US models generally omit diesel engines.",
+      "Mild-hybrid system optional or standard depending on engine and market."
+    ],
+    "sourceNotes": [
+      "Audi official 2021 model year technical documents and owner manuals",
+      "Verified technical reviews and service guides covering global Audi A6 C8 variants"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8 (Typ 4K)",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "Sedan and Avant (wagon)",
+    "market": "Europe, North America, China, Middle East (global with market variations)",
+    "engineCodes": [
+      "CHVA",
+      "CKFB",
+      "CWGA",
+      "CSWA",
+      "DFGA",
+      "DHK"
+    ],
+    "engineSummary": "Range of 2.0L TFSI inline-4, 3.0L TFSI V6 mild hybrid petrol engines and 3.0L TDI V6 diesel engines with mild hybrid system; engine availability varies by market.",
+    "displacement": "1984 cc to 2967 cc",
+    "power": "184-349 hp depending on engine and market",
+    "torque": "320-500 Nm depending on engine and market",
+    "fuelSystem": "Direct fuel injection (TFSI for petrol, Common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW 508.00 / 509.00 compliant synthetic oil",
+    "oilCapacity": "Approx. 6.3 liters service-fill; includes oil filter replacement",
+    "coolantCapacity": "Approx. 10 liters, exact varies with engine",
+    "manualTransmission": "Not typically offered on 2022 A6 in main markets",
+    "automaticTransmission": "7-speed dual-clutch DSG or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi/Volkswagen G 055 150 A2 synthetic fluid recommended",
+    "differentialFluid": "Specified synthetic gear oil depending on drive configuration",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Platinum or iridium spark plugs depending on engine, replace interval ~60,000-90,000 km",
+    "serviceInterval": "Typically 15,000 km or 1 year, varies by market and driving conditions",
+    "tireSizes": [
+      "235/55 R17",
+      "245/45 R18",
+      "255/40 R19",
+      "265/35 R20"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump wear on some TFSI engines",
+      "Timing chain tensioner issues on early 3.0 TFSI V6 variants",
+      "Diesel particulate filter clogging in diesel variants under short-trip usage"
+    ],
+    "firstChecks": [
+      "Verify engine oil and filter service history",
+      "Check for software updates on mild hybrid system",
+      "Inspect timing chain and tensioner condition especially on high-mileage petrol V6s"
+    ],
+    "relatedCodes": [
+      "Typ 4K",
+      "C8 A6"
+    ],
+    "notes": [
+      "A6 2022 offered worldwide with petrol and diesel engines, some markets restrict diesel availability.",
+      "Mild hybrid 48V systems used on many engines for improved fuel efficiency and emissions."
+    ],
+    "sourceNotes": [
+      "Audi official 2022 A6 technical specifications and maintenance manuals",
+      "Industry reviews and technical service bulletins for model year 2022 Audi A6 from multiple global markets"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8 L facelift",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K L facelift",
+    "bodyStyle": "Sedan/Avant",
+    "market": "Global (Europe, North America, China, selected markets)",
+    "engineCodes": [
+      "CNWA",
+      "CKVB",
+      "CPTA",
+      "CWGA",
+      "DCDD",
+      "DCEF"
+    ],
+    "engineSummary": "The 2023 Audi A6 offers several engine variants globally including 2.0L TFSI I4 (CNWA), 3.0L V6 TFSI mild hybrid (CKVB, CPTA), and 3.0L V6 TDI diesel options (DCDD, DCEF), with market-specific availability.",
+    "displacement": "1984cc to 2967cc",
+    "power": "204 to 349 PS (depending on engine and market)",
+    "torque": "320 to 700 Nm (depending on engine and market)",
+    "fuelSystem": "Direct fuel injection for petrol, common rail for diesel",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Audi VW 5W-30 Fully Synthetic engine oil meeting VW 504 00 / 507 00 specifications",
+    "oilCapacity": "Approx. 6.7 liters (engine service-fill, includes filter replacement)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Not offered in most markets in 2023; mostly 7-speed S Tronic DSG or 8-speed Tiptronic automatics",
+    "automaticTransmission": "7-speed S Tronic (dual-clutch) and 8-speed Tiptronic",
+    "transmissionFluid": "Audi G 052 182 A2 (S Tronic), G 055 025 A2 (Tiptronic)",
+    "differentialFluid": "Typically Audi specified gear oil SAE 75W-90",
+    "brakeFluid": "DOT 4 high-performance brake fluid",
+    "sparkPlugs": "OEM iridium-tipped spark plugs, gap ~0.7 mm (petrol engines)",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19",
+      "265/35R20"
+    ],
+    "commonProblems": [
+      "No significant global pattern; wear-related maintenance on timing chain tensioners and injection system reported in diesel variants under heavy use"
+    ],
+    "firstChecks": [
+      "Inspect oil level and condition during service",
+      "Check timing chain noise in V6 petrol models",
+      "Monitor diesel particulate filter (DPF) status in diesel variants"
+    ],
+    "relatedCodes": [
+      "CNWA (2.0L TFSI petrol)",
+      "CKVB (3.0L V6 TFSI mild hybrid petrol)",
+      "CPTA (3.0L V6 TFSI mild hybrid petrol, higher output)",
+      "DCDD (3.0L V6 TDI diesel)",
+      "DCEF (3.0L V6 TDI diesel, Euro 6d)"
+    ],
+    "notes": [
+      "Engine availability and emission standards compliance vary by market; the U.S. primarily receives petrol V6 mild-hybrid versions.",
+      "Mild hybrid system integrates a 48V belt-alternator starter providing torque assist and coasting functions to improve efficiency."
+    ],
+    "sourceNotes": [
+      "Audi Global Technical Specifications 2023 and official Audi press information",
+      "Automotive technical databases and industry reviewers detailing 2023 Audi A6 global models"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C8 (facelifted 2023+)",
+    "year": 2024,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C8 LWB (facelift)",
+    "bodyStyle": "Sedan / Avant",
+    "market": "Global (with market-specific engine variants)",
+    "engineCodes": [
+      "CZPA",
+      "CZPB",
+      "CZPC",
+      "CZPD",
+      "DETA",
+      "DETB"
+    ],
+    "engineSummary": "Longitudinal-mounted turbocharged petrol and diesel mild-hybrid engines; 2.0L inline-4 TFSI, 3.0L V6 TFSI petrol and 3.0L V6 TDI mild hybrid",
+    "displacement": "1984 cc (2.0L), 2995 cc (3.0L V6)",
+    "power": "from 204 PS (2.0 TFSI) up to 350 PS (3.0 V6 TFSI)",
+    "torque": "320 Nm (2.0 TFSI) up to 500 Nm (3.0 V6 TDI)",
+    "fuelSystem": "Direct fuel injection (FSI for petrol, common rail for diesel)",
+    "timingDrive": "Belt-driven overhead camshafts with variable valve timing",
+    "recommendedOil": "Audi VW 506 01 / 504 00 approved synthetic SAE 0W-30 or 5W-30 engine oil",
+    "oilCapacity": "Approx. 6.5 liters (service fill, includes oil filter change)",
+    "coolantCapacity": "Approx. 9 liters",
+    "manualTransmission": "Not available in 2024 A6 globally; primarily 7-speed S tronic DSG or 8-speed Tiptronic automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch (4-cylinder) or 8-speed Tiptronic torque converter (V6)",
+    "transmissionFluid": "Audi G 052 182 transmission fluid (for DSG); Audi G 060 162 A2 for Tiptronic",
+    "differentialFluid": "Audi specific synthetic gear oil, changed per service intervals",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "OEM specific long-life iridium plugs, change interval ~60,000–90,000 km depending on use",
+    "serviceInterval": "Typically 15,000 km or 1 year, whichever comes first; varies by market",
+    "tireSizes": [
+      "245/45 R19",
+      "255/40 R20",
+      "275/35 R21"
+    ],
+    "commonProblems": [
+      "Oil consumption on some 2.0 TFSI engines noted in certain markets",
+      "High-pressure fuel pump wear on some V6 engines"
+    ],
+    "firstChecks": [
+      "Oil leak inspection around turbo and valve cover gasket",
+      "DSG transmission fluid condition and service history"
+    ],
+    "relatedCodes": [
+      "C8 A6 C8L facelift 2023",
+      "Audi MHEV 12V and 48V mild hybrid system"
+    ],
+    "notes": [
+      "Global markets have different engine availability due to emission regulations; diesel engines mainly for Europe, petrol predominant in US and Asia.",
+      "Technical-profile covers main petrol and diesel engines with mild hybrid system; plug-in hybrids and high-performance RS or S models excluded."
+    ],
+    "sourceNotes": [
+      "Audi AG official 2024 model year global product specifications",
+      "Industry press reviews and technical databases (e.g., AudiWorld, Car and Driver technical reviews)"
+    ]
+  },
+  {
+    "available": true,
+    "make": "audi",
+    "model": "a6",
+    "displayName": "Audi A6",
+    "generation": "C9",
+    "year": 2026,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "C9",
+    "bodyStyle": "Sedan / Avant (Europe, other markets vary)",
+    "market": "Global (with market-specific engine and tech variations)",
+    "engineCodes": [
+      "CNZA (MHEV 55 TFSI)",
+      "CXUB (MHEV 45 TFSI)",
+      "CXUC (MHEV 50 TDI diesel, Europe)",
+      "CGWB (PHEV 55 TFSI e)"
+    ],
+    "engineSummary": "Range includes turbocharged 2.0L four-cylinder gasoline (MHEV 45 TFSI), 3.0L V6 turbo gasoline mild hybrid (MHEV 55 TFSI), plug-in hybrid (PHEV 55 TFSI e), and turbo diesel V6 mild hybrid (MHEV 50 TDI, mostly Europe).",
+    "displacement": "1968 cc (I4), 2995 cc (V6)",
+    "power": "MHEV 45 TFSI ~245 PS, MHEV 55 TFSI 335-350 PS, PHEV 55 TFSI e combined ~367 PS, MHEV 50 TDI ~286 PS",
+    "torque": "MHEV 45 TFSI ~370 Nm, MHEV 55 TFSI 500 Nm, PHEV 55 TFSI e combined 500 Nm, MHEV 50 TDI ~620 Nm",
+    "fuelSystem": "Direct fuel injection with turbocharging; PHEV with electric motor integration.",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "VW 507 00 specification synthetic oil recommended",
+    "oilCapacity": "Approx. 6.8 liters service-fill including filter change (varies by engine code)",
+    "coolantCapacity": "Approx. 9 liters depending on engine variant",
+    "manualTransmission": "No manual option; all models use 7-speed dual-clutch or 8-speed Tiptronic automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch (I4 engines), 8-speed Tiptronic automatic (V6 engines)",
+    "transmissionFluid": "Factory fill synthetic automatic transmission fluid per VW/Audi specs",
+    "differentialFluid": "Factory fill synthetic gear oil for quattro models according to service intervals",
+    "brakeFluid": "DOT 4, replacement recommended every 2 years",
+    "sparkPlugs": "Long-life iridium spark plugs; replacement at ~60,000 km recommended",
+    "serviceInterval": "Oil change every 15,000 km or 12 months; service intervals vary by market and engine",
+    "tireSizes": [
+      "Front: 245/40 R19, Rear: 245/40 R19 (typical; varies by rim option)"
+    ],
+    "commonProblems": [
+      "No widespread 2026 issues known yet; early reports suggest advanced safety electronics require dealer calibration."
+    ],
+    "firstChecks": [
+      "Check service history for software updates and oil change compliance",
+      "Verify adaptive cruise and driver assist systems calibration"
+    ],
+    "relatedCodes": [
+      "CNCB (previous generation engines)"
+    ],
+    "notes": [
+      "2026 Audi A6 is the C9 generation refreshed with mild hybrid tech standard on main engines",
+      "PHEV availability and exact specs vary by region; Europe gets diesel mild hybrids, North America focuses on gasoline and PHEV."
+    ],
+    "sourceNotes": [
+      "Audi official technical specifications brochure 2026",
+      "Independent automotive technical review and service manuals 2025-2026"
+    ]
+  },
+  {
+    "available": true,
+    "make": "audi",
+    "model": "a7-e",
+    "displayName": "Audi A7 Sportback",
+    "generation": "C8 (4K)",
+    "year": 2021,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "5-door Liftback",
+    "market": "Global (Europe, USA, China, others with variations)",
+    "engineCodes": [
+      "CWGA",
+      "CWGB",
+      "CWGC"
+    ],
+    "engineSummary": "Mild-hybrid 3.0L turbo V6 TFSI and plug-in hybrid variants included; primarily 3.0 TFSI with 48V MHEV system; some markets with 55 TFSI e (PHEV) combining 3.0L V6 and electric motor",
+    "displacement": "2995 cc",
+    "power": "220-340 kW (299-462 hp) depending on variant and market",
+    "torque": "500-700 Nm depending on variant and market",
+    "fuelSystem": "Direct injection with mild-hybrid system; PHEV versions include battery and electric motor",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "VW 504 00 / 507 00 approved synthetic oil",
+    "oilCapacity": "Approx. 7.4 liters (service fill, includes filter change)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Not offered in most markets for 2021 A7",
+    "automaticTransmission": "7-speed S Tronic dual-clutch or 8-speed Tiptronic automatic depending on engine",
+    "transmissionFluid": "Audi G 060 162 A2 or equivalent",
+    "differentialFluid": "Audi G 052 145 A2 (quattro differentials)",
+    "brakeFluid": "DOT 4 high-performance",
+    "sparkPlugs": "Iridium-tipped plugs, part numbers vary by market",
+    "serviceInterval": "15,000 km / 12 months typical, varies by market and usage",
+    "tireSizes": [
+      "245/40 R19",
+      "255/35 R20",
+      "265/30 R21"
+    ],
+    "commonProblems": [
+      "High-pressure fuel pump failures rare but possible",
+      "MHEV battery health check recommended after 8+ years",
+      "Electronic throttle body issues rarely reported"
+    ],
+    "firstChecks": [
+      "Inspect mild-hybrid electrical system and battery health",
+      "Verify software updates for emission and driving systems",
+      "Check for oil leaks around turbo and timing covers"
+    ],
+    "relatedCodes": [
+      "CWGA",
+      "CWGB",
+      "CWGC"
+    ],
+    "notes": [
+      "Mild-hybrid system improves fuel efficiency with 48V electric belt starter-generator",
+      "PHEV 55 TFSI e variant available primarily in Europe and China markets with about 40-45 km electric range",
+      "Exact engine and drivetrain configurations vary significantly by region and emissions standards"
+    ],
+    "sourceNotes": [
+      "Audi official 2021 A7 technical specifications brochure",
+      "International automotive technical databases and service manuals 2020-2022"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7-e",
+    "displayName": "Audi A7 e-tron",
+    "generation": "C8",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "Sportback",
+    "market": "Europe / select global markets (not global, limited availability)",
+    "engineCodes": [
+      "AXX"
+    ],
+    "engineSummary": "2.0L TFSI turbocharged inline-4 paired with electric motor in a plug-in hybrid configuration.",
+    "displacement": "1984cc",
+    "power": "252 PS (186 kW) from combustion engine; combined system output approx. 367 PS (270 kW)",
+    "torque": "370 Nm from combustion engine; combined system torque around 500 Nm",
+    "fuelSystem": "Direct injection (FSI)",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "VW 504 00 / 507 00 approved synthetic oil",
+    "oilCapacity": "Approximately 5.7 liters including oil filter (service-fill)",
+    "coolantCapacity": "Circa 10 liters (including hybrid cooling circuits)",
+    "manualTransmission": "Not available, 7-speed S tronic dual-clutch automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch automatic transmission",
+    "transmissionFluid": "Audi / VW specified CVT/DSG transmission fluid, generally VW G 052 182 A2",
+    "differentialFluid": "Not applicable (front-wheel drive biased, quattro optional)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "NGK or Bosch 4-electrode spark plugs, gap 0.9mm",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "255/40 R19 (standard fitment)",
+      "265/35 R20 (optional)"
+    ],
+    "commonProblems": [
+      "High-voltage battery degradation in later years",
+      "Turbocharger wastegate actuator wear"
+    ],
+    "firstChecks": [
+      "High-voltage system health and battery capacity",
+      "Check for electric motor noise or fault codes"
+    ],
+    "relatedCodes": [
+      "CPT (Hybrid system control)",
+      "AXX (2.0 TFSI engine)"
+    ],
+    "notes": [
+      "Available mainly in Europe and selected markets; not a broadly global model in 2022.",
+      "Battery electric range approx. 40 km WLTP, varies by market.",
+      "Technical profile consolidates plug-in hybrid data; slight specs may vary by market and equipment."
+    ],
+    "sourceNotes": [
+      "Audi official technical data sheets 2022 Europe",
+      "Automotive technical reviews and verified service manuals 2022"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "4G (C7)",
+    "year": 2012,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door fastback liftback",
+    "market": "Europe / North America / Asia Pacific / Middle East (Global with variations)",
+    "engineCodes": [
+      "CJGD",
+      "CAHA",
+      "CDYA",
+      "CRLB",
+      "CRNC"
+    ],
+    "engineSummary": "Multiple engine options were available globally. Notable were the 3.0L supercharged V6 petrol (CJGD), 3.0L TDI V6 diesel engines (CAHA, CDYA), and 4.2L V8 (CRLB). Power outputs ranged from approx. 204 PS to 300 PS depending on market and engine version.",
+    "displacement": "2967 cc (V6), 4134 cc (V8)",
+    "power": "204-300 PS (varies by engine and market)",
+    "torque": "400 - 440 Nm (varies by engine)",
+    "fuelSystem": "Direct injection",
+    "timingDrive": "Chain-driven timing system",
+    "recommendedOil": "Audi/VW VW 504 00 / 507 00 compliant fully synthetic 5W-30 or 5W-40",
+    "oilCapacity": "Approx. 7.5 liters (service fill including filter change)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "6-speed manual (select markets, limited availability)",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic",
+    "transmissionFluid": "Audi VW G 052 182 A2 (S tronic) or G 052 516 A2 (Tiptronic)",
+    "differentialFluid": "Synthetic gear oil specified by Audi, varies by model and differential type",
+    "brakeFluid": "DOT 4 high-performance",
+    "sparkPlugs": "NGK or Bosch Iridium, specific part number varies by engine variant",
+    "serviceInterval": "15,000 km or 12 months under normal conditions",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19",
+      "255/35R20"
+    ],
+    "commonProblems": [
+      "Timing chain stretch on early V6 TDI engines",
+      "Air suspension compressor failure on equipped models"
+    ],
+    "firstChecks": [
+      "Inspect timing chain alignment and tension",
+      "Check for DPF clogging on diesel versions",
+      "Check for software updates"
+    ],
+    "relatedCodes": [
+      "CJGB (related 3.0L V6 supercharged engine)"
+    ],
+    "notes": [
+      "Market-specific engines and power outputs may vary. North America focused mostly on 3.0 TFSI V6 supercharged petrol engines.",
+      "Diesel variants mainly targeted Europe and some Asia Pacific markets.",
+      "Oil capacity includes filter replacement; always confirm with maintenance manual for specific variant."
+    ],
+    "sourceNotes": [
+      "Audi A7 4G technical specifications and service manuals 2012",
+      "Global automotive engine databases verifying 2012 Audi A7 variant markets and engine codes"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C7",
+    "year": 2013,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door fastback",
+    "market": "Global (Europe, North America, Asia; engine and specs vary by region)",
+    "engineCodes": [
+      "CGWD (3.0 TDI V6 Diesel)",
+      "CDUC (3.0 TFSI V6 Petrol)",
+      "CDZF (3.0 TFSI V6 Petrol Supercharged)",
+      "CDYA (2.8 FSI V6 Petrol - select markets)"
+    ],
+    "engineSummary": "Available with a range of 3.0L V6 engines, both petrol and diesel; 2.8L V6 petrol variants in select markets. Diesel engines feature common-rail injection; petrol engines include FSI direct injection and supercharged variants.",
+    "displacement": "2.8L to 3.0L V6",
+    "power": "204-310 PS depending on engine variant",
+    "torque": "400-440 Nm depending on engine variant",
+    "fuelSystem": "Direct Injection (FSI for petrol, common-rail for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Synthetic 5W-40 or 5W-30 fully synthetic engine oil meeting VW 504 00/507 00 standards",
+    "oilCapacity": "Approx. 7.5 to 8.5 liters including filter; service fill with filter change required",
+    "coolantCapacity": "Approx. 10.5 liters",
+    "manualTransmission": "6-speed manual available on select petrol engines in some markets",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic, depending on engine and market",
+    "transmissionFluid": "Audi specified synthetic DSG or automatic transmission fluid (check specific gearbox type)",
+    "differentialFluid": "Limited-slip differential fluid as per service manual (where equipped)",
+    "brakeFluid": "DOT 4, replace every 2 years",
+    "sparkPlugs": "Iridium-tipped spark plugs, replace every 60,000-90,000 km depending on variant",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first (flexible service system in use)",
+    "tireSizes": [
+      "245/40R19",
+      "255/35R20",
+      "265/35R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on 3.0 TDI engines",
+      "Carbon buildup on direct injection petrol engines",
+      "Air suspension leaks (if equipped)",
+      "Turbocharger actuator failures (in petrol TFSI variants)"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition and tension",
+      "Check diesel particulate filter status on TDI versions",
+      "Confirm service history for oil and filters",
+      "Verify operation of electronic components and air suspension (if fitted)"
+    ],
+    "relatedCodes": [
+      "CGWD",
+      "CDUC",
+      "CDZF",
+      "CDYA"
+    ],
+    "notes": [
+      "Exact engine and transmission configurations vary by market and production month.",
+      "Oil capacities and service intervals may differ between diesel and petrol variants."
+    ],
+    "sourceNotes": [
+      "Audi technical service manuals for C7 A7 (2010-2017)",
+      "Verified data from global Audi owner forums and official parts catalogs"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C7",
+    "year": 2014,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door liftback",
+    "market": "Global / variations by region (Europe, North America, Asia)",
+    "engineCodes": [
+      "CCTA",
+      "CTHA",
+      "CGLC",
+      "CGWB",
+      "CJGC"
+    ],
+    "engineSummary": "Range of turbocharged V6 gasoline and diesel engines; including 3.0 TFSI (supercharged V6) and 3.0 TDI V6 with variable outputs; availability depends on market",
+    "displacement": "2.8L to 3.0L V6",
+    "power": "220-333 kW (300-450 hp) depending on engine and market",
+    "torque": "440-650 Nm depending on engine and market",
+    "fuelSystem": "Direct fuel injection with turbocharging / supercharging as per engine",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic oil meeting VW 502 00 / VW 504 00 specifications",
+    "oilCapacity": "Approximately 7.4 liters (service fill, includes filter change) for 3.0 TFSI engine",
+    "coolantCapacity": "Approx. 10 liters (varies by engine and market)",
+    "manualTransmission": "6-speed manual available on some markets and engine versions",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on trim and market",
+    "transmissionFluid": "Audi approved synthetic transmission fluid (VW G 052 182 for S tronic / VW G 055 162 for Tiptronic)",
+    "differentialFluid": "Gear oil as per manufacturer specification (varies by drivetrain)",
+    "brakeFluid": "DOT 4 standard; changed every 2 years recommended",
+    "sparkPlugs": "Iridium tipped, replaced typically every 60,000-90,000 km depending on market service schedule",
+    "serviceInterval": "Typically 15,000 km or 1 year, depending on market requirements",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19"
+    ],
+    "commonProblems": [
+      "Carbon buildup on direct injection valves",
+      "Timing chain tensioner wear on some V6 TFSI engines",
+      "High-pressure fuel pump failures"
+    ],
+    "firstChecks": [
+      "Inspect timing chain and tensioners",
+      "Check for oil leaks near valve covers and turbos",
+      "Verify oil consumption rates"
+    ],
+    "relatedCodes": [
+      "VW/Audi engine internal codes: CCTA (3.0 TFSI V6 supercharged), CTHA (3.0 TDI V6), CGWB (3.0 TDI clean diesel), CJGC (3.0 TFSI), CGLC (3.0 TDI)"
+    ],
+    "notes": [
+      "Engine and transmission options vary by exact market region (Europe has more diesel variants; North America mainly TFSI gasoline)",
+      "Oil capacities include typical service fill with filter change but can vary slightly by engine code and market",
+      "Some manual transmissions limited to earlier 2014 production or specific markets"
+    ],
+    "sourceNotes": [
+      "Audi official 2014 A7 technical service documentation",
+      "Technical data collected from global Audi A7 owner and service manuals"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "4G",
+    "year": 2015,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G8",
+    "bodyStyle": "5-door hatchback coupe",
+    "market": "Global (Europe, North America, Asia; engine options vary by market)",
+    "engineCodes": [
+      "CJEB",
+      "CHHA",
+      "CHPA",
+      "CREC",
+      "CSUC",
+      "CRLB",
+      "CYUC"
+    ],
+    "engineSummary": "Range of 2.0L turbocharged inline-4 and 3.0L supercharged / turbocharged V6 engines; gasoline and diesel variants depending on market.",
+    "displacement": "1984cc to 2967cc",
+    "power": "190 hp to 310 hp depending on engine variant",
+    "torque": "320 Nm to 440 Nm depending on engine variant",
+    "fuelSystem": "Direct fuel injection",
+    "timingDrive": "Chain-driven timing",
+    "recommendedOil": "VW 502 00 approved synthetic engine oil",
+    "oilCapacity": "Approximately 6.0 liters (service fill, includes oil filter change)",
+    "coolantCapacity": "Approximately 10 liters (market specific slight variations)",
+    "manualTransmission": "Not commonly offered; mainly 7-speed S Tronic dual-clutch or 8-speed Tiptronic automatic",
+    "automaticTransmission": "7-speed S Tronic or 8-speed Tiptronic",
+    "transmissionFluid": "Audi G 052 182 A2 synthetic fluid for DSG",
+    "differentialFluid": "Audi G 052 911 A2 synthetic fluid",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "OEM Audi spark plugs, iridium/tip depending on engine",
+    "serviceInterval": "Approximately 15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "245/40R19",
+      "255/35R20",
+      "255/30R21 depending on wheel option"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner issues on some V6 engines",
+      "Diesel particulate filter clogging in diesel engines"
+    ],
+    "firstChecks": [
+      "Inspect timing chain condition for V6 models",
+      "Check for oil leaks at turbocharger and valve cover gaskets"
+    ],
+    "relatedCodes": [
+      "Audi A7 2015 engine codes CJEA, CYUC; VW/Audi platform MLB Evo"
+    ],
+    "notes": [
+      "Engine availability varies significantly by region; North America primarily gasoline V6 supercharged or turbocharged engines, Europe includes diesel variants.",
+      "Oil capacity includes standard service fill amount and accounts for replacement of oil filter during service."
+    ],
+    "sourceNotes": [
+      "Audi USA and Europe official technical service manuals 2015",
+      "Global Audi A7 technical specifications and owner’s manuals database"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C7",
+    "year": 2016,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door Liftback",
+    "market": "Global - key markets include Europe, North America, Asia",
+    "engineCodes": [
+      "CDUC",
+      "CRGB",
+      "CJEB",
+      "CLAB"
+    ],
+    "engineSummary": "The 2016 Audi A7 (C7) featured several engine options including a 3.0L TFSI V6 (code CDUC), 3.0L TDI V6 variants (CRGB, CJEB), and, in some markets, a 2.0L TFSI inline-4 (CLAB). Engine availability varied by market and emissions regulations.",
+    "displacement": "1984-2967 cc",
+    "power": "190-333 PS (140-245 kW) approximately depending on engine variant and market",
+    "torque": "320-500 Nm approximately",
+    "fuelSystem": "Direct injection (TFSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Audi VW 504.00/507.00 fully synthetic 5W-30 (market dependent, verify local specs)",
+    "oilCapacity": "Approx. 6.5 liters including filter - service-fill including oil filter change",
+    "coolantCapacity": "Approx. 9 liters",
+    "manualTransmission": "Not commonly offered globally in 2016; select markets possibly with 6-speed manual (check local availability)",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine/maket",
+    "transmissionFluid": "Audi G 052 182 A2 (S tronic), G 055 162 A2 (Tiptronic) - market specific",
+    "differentialFluid": "Synthetic gear oil (market specific type per service manual)",
+    "brakeFluid": "DOT 4 standard",
+    "sparkPlugs": "OEM specified iridium or platinum type – market dependent",
+    "serviceInterval": "Typically 15,000 km or 1 year; varies by market and usage",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19",
+      "265/35R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on some early models",
+      "DSG transmission mechatronics sensitivity",
+      "DPF clogging in diesel variants depending on usage"
+    ],
+    "firstChecks": [
+      "Check timing chain condition especially on V6 TFSI",
+      "Inspect DSG transmission adaption values and service history",
+      "Verify oil service compliance with VW 504.00/507.00 standards"
+    ],
+    "relatedCodes": [
+      "Volkswagen Group C7 platform",
+      "Audi MMI 3G+ infotainment system"
+    ],
+    "notes": [
+      "Market-specific engine availability and power output vary—Europe offered most diesel variants, North America primarily petrol engines.",
+      "Technical profile covers main global variants but confirm local specs for correct engine and transmission codes."
+    ],
+    "sourceNotes": [
+      "Audi official technical service data and workshop manuals for 2016 Audi A7 C7",
+      "Verified global market automotive databases and regional type approvals"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C7",
+    "year": 2017,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door fastback",
+    "market": "global (mainly Europe, North America, China)",
+    "engineCodes": [
+      "CSUA",
+      "CSUB",
+      "CTZA",
+      "CTZB",
+      "CTNB",
+      "DCGA",
+      "DCGB"
+    ],
+    "engineSummary": "Available with multiple engines: 3.0L V6 TFSI petrol (supercharged), 2.0L TFSI inline-4 petrol, and 3.0L V6 TDI diesel variants. Market-specific variations apply, especially between European diesel and North American petrol versions.",
+    "displacement": "1984-2995 cc depending on engine variant",
+    "power": "190-333 PS depending on engine and market",
+    "torque": "320-500 Nm depending on engine and market",
+    "fuelSystem": "Direct injection with turbocharging/supercharging depending on engine",
+    "timingDrive": "Chain-driven camshafts",
+    "recommendedOil": "Fully synthetic 5W-40 or 0W-40 meeting Audi VW 504 00/507 00 specifications",
+    "oilCapacity": "Approx. 6.5 liters including oil filter (service-fill)",
+    "coolantCapacity": "Approx. 10 liters",
+    "manualTransmission": "Not commonly available in many 2017 markets; primarily 7-speed S tronic dual-clutch or 8-speed Tiptronic automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic, depending on engine and market",
+    "transmissionFluid": "Audi G 052 182 A2 or equivalent",
+    "differentialFluid": "Audi G 052 145 A2 or equivalent (for quattro models)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "OEM recommended spark plugs for TFSI engines - e.g. Bosch or NGK specifying Audi part numbers",
+    "serviceInterval": "Typically up to 15,000 km or 12 months, depending on market and usage",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19",
+      "255/35R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on some V6 TFSI engines",
+      "Diesel particulate filter clogging in diesel versions",
+      "Electrical faults in infotainment system"
+    ],
+    "firstChecks": [
+      "Inspect timing chain Tensioner and guides for V6 TFSI",
+      "Check DPF condition on diesel models",
+      "Confirm service history including oil change intervals"
+    ],
+    "relatedCodes": [
+      "4G",
+      "C7"
+    ],
+    "notes": [
+      "Technical profile summarizes multiple engine and transmission variants across major markets.",
+      "Exact specifications can vary between Europe, North America, and China due to emissions and drivetrain differences."
+    ],
+    "sourceNotes": [
+      "Audi 2017 A7 Owner's Manual and Technical Data",
+      "AudiMediaCenter 2017 official specifications and press releases"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "4G facelift (Typ 4GA)",
+    "year": 2018,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "Typ 4GA",
+    "bodyStyle": "5-door fastback",
+    "market": "Global / major markets including Europe, North America, Asia",
+    "engineCodes": [
+      "CJWA",
+      "CJWB",
+      "CWGA",
+      "CWGC"
+    ],
+    "engineSummary": "Main engines included a 3.0L V6 TFSI and 2.0L inline-4 TFSI with turbocharging; 3.0L V6 TDI diesel available in select markets; engine variants and outputs differ by region.",
+    "displacement": "1984 cc (2.0L) and 2995 cc (3.0L)",
+    "power": "190-252 kW (2.0L TFSI 190 kW, 3.0L V6 TFSI up to 252 kW), varies by engine code and market",
+    "torque": "320-500 Nm depending on engine version",
+    "fuelSystem": "Direct fuel injection with turbocharging (FSI for petrol, common rail for diesel)",
+    "timingDrive": "Chain-driven camshafts for V6 engines, timing belt for 2.0L engine",
+    "recommendedOil": "VW 504 00 / 507 00 approved synthetic engine oil",
+    "oilCapacity": "Approx. 7.5 liters service fill including filter change for 3.0L V6 TFSI; varies with engine and filter",
+    "coolantCapacity": "Approx. 9 liters, varies by market",
+    "manualTransmission": "Not typically offered on A7 in 2018 global markets",
+    "automaticTransmission": "7-speed S-Tronic dual-clutch or 8-speed Tiptronic automatic depending on model",
+    "transmissionFluid": "Audi G 052 182 A2 or equivalent",
+    "differentialFluid": "Specified lubricants depending on differential type",
+    "brakeFluid": "DOT 4 recommended",
+    "sparkPlugs": "Spark plugs vary; usually Audi OEM iridium plugs for petrol engines",
+    "serviceInterval": "Typically 15,000 km or 1 year, whichever comes first; varies by region",
+    "tireSizes": [
+      "245/40 R19",
+      "255/35 R20"
+    ],
+    "commonProblems": [
+      "PCV valve issues on some petrol engines",
+      "Turbocharger wear in higher mileage units"
+    ],
+    "firstChecks": [
+      "Check timing chain condition on V6 petrol engines",
+      "Inspect oil leaks around turbochargers"
+    ],
+    "relatedCodes": [
+      "Typ 4GA chassis",
+      "Engine codes: CJWA/CJWB (2.0L TFSI), CWGA/CWGC (3.0L TFSI)"
+    ],
+    "notes": [
+      "The 2018 Audi A7 facelift continued the Typ 4G platform with updated front and rear styling.",
+      "Engine availability varies by market, with diesel engines more common in Europe and petrol versions prominent in North America and Asia."
+    ],
+    "sourceNotes": [
+      "Audi 2018 A7 official technical documentation and global press releases",
+      "Independent automotive technical databases and service manuals for 2018 Audi A7"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "4G Facelift (Typ 4G)",
+    "year": 2019,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4G",
+    "bodyStyle": "5-door fastback",
+    "market": "Global / varies by region for engines and transmissions",
+    "engineCodes": [
+      "CJNC",
+      "CJEB",
+      "CPEA",
+      "CRRC",
+      "CYRB",
+      "CXUC",
+      "DEJA"
+    ],
+    "engineSummary": "2019 Audi A7 offered with a range of turbocharged V6 gasoline and diesel engines, plus a mild-hybrid 48V system on select gasoline engines; engine availability varies by global market.",
+    "displacement": "2.0L inline-4 turbo (for some markets), 3.0L V6 turbo and turbocharged mild-hybrid",
+    "power": "From approx. 190 PS (140 kW) to 340 PS (250 kW), depending on engine and market",
+    "torque": "Between 320 Nm to 500 Nm depending on engine variant",
+    "fuelSystem": "Direct injection with turbocharging",
+    "timingDrive": "Chain driven camshafts",
+    "recommendedOil": "Audi VW 504 00 / 507 00 approved synthetic oil",
+    "oilCapacity": "Approx. 7.5 liters service-fill including filter change (depends on specific engine code and market)",
+    "coolantCapacity": "Approx. 9 liters depending on engine and cooling system variant",
+    "manualTransmission": "Not typically available on 2019 A7; primarily automatic transmissions",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed Tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi G 052 182 A2 or factory specified synthetic ATF for automatic transmissions",
+    "differentialFluid": "Audi specified limited slip fluid for quattro models",
+    "brakeFluid": "DOT 4, Audi approved",
+    "sparkPlugs": "Iridium tipped spark plugs (specific part numbers depend on engine code)",
+    "serviceInterval": "Typically 15,000 km or 1 year, depending on market and driving conditions",
+    "tireSizes": [
+      "245/45R18",
+      "255/40R19",
+      "265/35R20"
+    ],
+    "commonProblems": [
+      "Timing chain tensioner wear on certain V6 engines",
+      "Electrical issues with start-stop system",
+      "Oil consumption in some V6 variants"
+    ],
+    "firstChecks": [
+      "Verify service history for timing chain and oil service",
+      "Inspect start-stop system operation",
+      "Check for software updates and recalls"
+    ],
+    "relatedCodes": [
+      "Audi A7 2018-2019 engine/service codes and recalls"
+    ],
+    "notes": [
+      "Engine and transmission options vary significantly by region; North America predominantly 3.0 V6 TFSI with mild hybrid, Europe offers diesel V6 variants and 2.0 TFSI four-cylinder versions.",
+      "Oil capacity and service fill volumes include filter change and may vary by engine code and market specifications."
+    ],
+    "sourceNotes": [
+      "Audi official global press materials for 2019 A7",
+      "Technical service documentation and owner's manuals from various markets"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C8 (Typ 4K)",
+    "year": 2020,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "5-door fastback",
+    "market": "Global with variations in Europe, USA, China",
+    "engineCodes": [
+      "CVUA",
+      "CVUB",
+      "DBUC",
+      "DFKA",
+      "DFKA",
+      "EA839",
+      "EA839"
+    ],
+    "engineSummary": "Various petrol and diesel V6 and V8 engines used globally, including 3.0 TFSI V6 petrol with mild hybrid system, 3.0 TDI diesel engines, and 4.0 TFSI V8 in high-performance variants.",
+    "displacement": "2967 cc (3.0L) up to 3996 cc (4.0L V8)",
+    "power": "From ~231 hp (170 kW) to 453 hp (335 kW) depending on engine and market",
+    "torque": "Between 500 Nm to 600 Nm depending on version",
+    "fuelSystem": "Direct fuel injection with turbocharging (TFSI for petrol, TDI for diesel)",
+    "timingDrive": "Chain-driven variable timing",
+    "recommendedOil": "Fully synthetic oil meeting VW 502 00 / 505 00 standards (varies by engine and market)",
+    "oilCapacity": "Approx. 7.0 liters (includes service-fill, varies by engine; oil filter change concurrent)",
+    "coolantCapacity": "Approx. 10 liters, vehicle-specific coolant recommended",
+    "manualTransmission": "Not available for most 2020 A7 markets, primarily automatic transmissions",
+    "automaticTransmission": "7-speed S tronic dual-clutch or 8-speed tiptronic automatic depending on engine and market",
+    "transmissionFluid": "Audi/VW specific ATF or DSG fluids per service manual",
+    "differentialFluid": "Limited slip differential equipped models require OEM-specified fluid",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Platinum or iridium tipped, per engine specification and service schedule",
+    "serviceInterval": "Generally 15,000 km or 1 year, depends on market and usage, oil change interval may vary with adaptive monitoring",
+    "tireSizes": [
+      "245/40 R19",
+      "255/35 R20",
+      "265/30 R20"
+    ],
+    "commonProblems": [
+      "Electrical system quirks in MMI infotainment",
+      "Turbocharger wear in high mileage TDI variants",
+      "Oil consumption moderate on some 3.0 TFSI engines"
+    ],
+    "firstChecks": [
+      "Inspect MMI system for software updates",
+      "Check turbocharger boost response",
+      "Verify CAM follower wear (timing chain tension issues rare but possible)"
+    ],
+    "relatedCodes": [
+      "4K0 (Audi A7 chassis)"
+    ],
+    "notes": [
+      "Technical profiles vary notably by market due to emission and fuel differences",
+      "Mild hybrid system integrated in petrol V6 engines globally except restricted markets"
+    ],
+    "sourceNotes": [
+      "Audi official 2020 A7 technical brochure and service manuals",
+      "International automotive databases aggregating Audi 4K platform specifications"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C8 (Second Generation)",
+    "year": 2022,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "5-door fastback",
+    "market": "Global (Europe, North America, select Asian markets)",
+    "engineCodes": [
+      "DNWA",
+      "DNWB",
+      "DNTC"
+    ],
+    "engineSummary": "The 2022 Audi A7 is primarily offered with 3.0L supercharged V6 petrol (DNWA, DNWB) and 3.0L V6 turbo-diesel variants (DNTC) depending on market. Mild hybrid (48V) technology is standard on petrol engines.",
+    "displacement": "2995 cc",
+    "power": "245–335 hp depending on engine variant and market",
+    "torque": "500 Nm (diesel) to 500 Nm (petrol) range",
+    "fuelSystem": "Direct Injection with turbocharging or supercharging depending on engine",
+    "timingDrive": "Chain",
+    "recommendedOil": "Audi-approved synthetic SAE 5W-40 or 0W-40 engine oil, meeting VW 502 00 / 505 00 specs",
+    "oilCapacity": "Approximately 7.7 liters (service-fill capacity), oil filter change recommended with oil service",
+    "coolantCapacity": "Approx. 10 liters, depending on cooling system specification",
+    "manualTransmission": "Not offered globally on 2022 A7; primarily 7-speed S tronic dual-clutch or 8-speed Tiptronic automatic",
+    "automaticTransmission": "7-speed S tronic dual-clutch (petrol), 8-speed Tiptronic automatic (diesel)",
+    "transmissionFluid": "Audi DSG fluid G 052 182 A2 (S tronic), for Tiptronic automatic use VW G 055 162 A2",
+    "differentialFluid": "Limited slip differential variants as per market, fluid per dealer specification",
+    "brakeFluid": "DOT 4, change interval approx. 2 years",
+    "sparkPlugs": "Iridium tipped, change recommended every 60,000 km or 4 years",
+    "serviceInterval": "15,000 km or 1 year, whichever comes first",
+    "tireSizes": [
+      "245/40 R19",
+      "255/35 R20"
+    ],
+    "commonProblems": [
+      "Oil consumption issues on early production petrol engines",
+      "Brake wear with sporty driving"
+    ],
+    "firstChecks": [
+      "Verify oil quality and level to avoid premature wear",
+      "Inspect timing chain condition as part of major service"
+    ],
+    "relatedCodes": [
+      "CPT",
+      "DAGA"
+    ],
+    "notes": [
+      "Technical profile represents most globally sold engine/transmission combinations; some markets may have minor variations.",
+      "Mild hybrid system improves fuel efficiency, using a 48V starter-generator."
+    ],
+    "sourceNotes": [
+      "Audi global technical specifications database 2022",
+      "European and North American market service manuals 2021-2022"
+    ]
+  },
+  {
+    "make": "audi",
+    "model": "a7",
+    "displayName": "Audi A7",
+    "generation": "C8 (facelift 2023)",
+    "year": 2023,
+    "trim": "technical-profile",
+    "slug": "technical-profile",
+    "chassisCode": "4K",
+    "bodyStyle": "5-door liftback",
+    "market": "Global (Europe, North America, China, selected other markets)",
+    "engineCodes": [
+      "CPTD",
+      "DLBA",
+      "DNWA",
+      "CNWA"
+    ],
+    "engineSummary": "Turbocharged 2.0L inline-4 TFSI petrol (CPTD, DLBA), 3.0L V6 TFSI mild hybrid petrol (DNWA, CNWA), various outputs depending on market",
+    "displacement": "1984 cc, 2995 cc",
+    "power": "245-265 hp (2.0L variants), 335-349 hp (3.0L mild hybrid variants)",
+    "torque": "370 Nm (2.0L), 500 Nm (3.0L)",
+    "fuelSystem": "Direct fuel injection with turbocharging",
+    "timingDrive": "Chain-driven DOHC",
+    "recommendedOil": "VW 502 00 approved synthetic oil",
+    "oilCapacity": "Approximately 6.7 liters service-fill including filter (confirmed for 3.0L engine)",
+    "coolantCapacity": "Approx. 10 liters (varies by engine and market)",
+    "manualTransmission": "Not offered in 2023 A7 globally",
+    "automaticTransmission": "7-speed S tronic dual-clutch (2.0L), 8-speed Tiptronic automatic (3.0L mild hybrid)",
+    "transmissionFluid": "VW G 052 182 A2 for dual-clutch; Audi specified ATF for Tiptronic",
+    "differentialFluid": "Audi approved fluid (dependent on configuration and market)",
+    "brakeFluid": "DOT 4",
+    "sparkPlugs": "Iridium-tipped spark plugs, specific to engine code",
+    "serviceInterval": "15,000 km / 1 year standard, varies by market",
+    "tireSizes": [
+      "245/45R19",
+      "255/35R21 (optional)"
+    ],
+    "commonProblems": [
+      "No widespread issues reported for 2023 model year A7"
+    ],
+    "firstChecks": [
+      "Check hybrid battery status for 3.0L mild hybrid versions",
+      "Monitor turbocharger performance"
+    ],
+    "relatedCodes": [
+      "4K",
+      "CPTD",
+      "DLBA",
+      "DNWA",
+      "CNWA"
+    ],
+    "notes": [
+      "Engine and powertrain options vary significantly by market and trim.",
+      "2023 model is facelift generation launched globally during Q1-Q2 2023."
+    ],
+    "sourceNotes": [
+      "Audi global press information 2023 A7 facelift",
+      "Technical service documentation and VW/Audi parts catalogs 2023"
     ]
   }
 ]
