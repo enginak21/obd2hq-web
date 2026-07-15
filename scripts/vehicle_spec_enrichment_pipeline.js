@@ -222,7 +222,15 @@ async function enrichWithOpenAI(seed) {
       } catch (error) {
         lastError = error;
         if (attempt < RETRIES) continue;
-        break;
+        return {
+          available: false,
+          make: seed.make,
+          model: seed.model,
+          year: seed.year,
+          trim: seed.trim,
+          slug: seed.slug || slugify(seed.trim),
+          reason: `Model returned invalid JSON after ${RETRIES + 1} attempts.`,
+        };
       }
     }
 
