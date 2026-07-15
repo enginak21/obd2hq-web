@@ -4286,8 +4286,20 @@
     }
   },
   "P0139": {
-    "title": "O2 Sensor Circuit Slow Response (Bank 1, Sensor 2)",
-    "description": "Code P0139 means the downstream O2 sensor on Bank 1 is switching too slowly.",
+    "title": {
+      "en": "O2 Sensor Circuit Slow Response (Bank 1, Sensor 2)",
+      "tr": "O2 Sens\u00f6r Devresi Yava\u015f Tepki (Bank 1, Sens\u00f6r 2)",
+      "de": "O2-Sensor-Schaltkreis Langsame Reaktion (Bank 1, Sensor 2)",
+      "es": "Circuito del Sensor de O2, Respuesta Lenta (Banco 1, Sensor 2)",
+      "fr": "Circuit du Capteur O2, R\u00e9ponse Lente (Banque 1, Capteur 2)"
+    },
+    "description": {
+      "en": "Code P0139 indicates that the Powertrain Control Module (PCM) has detected that the downstream oxygen sensor (Sensor 2) on Bank 1 is responding too slowly to changes in the exhaust gas oxygen content. This sensor is located after the catalytic converter and is primarily responsible for monitoring the converter's efficiency. A slow response means the sensor's voltage signal is not switching between rich and lean conditions as quickly as expected, suggesting it may be degraded, contaminated, or there's an issue with the exhaust system or wiring.",
+      "tr": "P0139 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) Bank 1'deki katalitik konvert\u00f6r sonras\u0131 oksijen sens\u00f6r\u00fcn\u00fcn (Sens\u00f6r 2) egzoz gaz\u0131 oksijen i\u00e7eri\u011findeki de\u011fi\u015fikliklere \u00e7ok yava\u015f tepki verdi\u011fini tespit etti\u011fini g\u00f6sterir. Bu sens\u00f6r, katalitik konvert\u00f6rden sonra bulunur ve \u00f6ncelikli olarak konvert\u00f6r\u00fcn verimlili\u011fini izlemekten sorumludur. Yava\u015f tepki, sens\u00f6r\u00fcn voltaj sinyalinin zengin ve fakir ko\u015fullar aras\u0131nda beklendi\u011fi kadar h\u0131zl\u0131 ge\u00e7i\u015f yapmad\u0131\u011f\u0131 anlam\u0131na gelir; bu da sens\u00f6r\u00fcn bozulmu\u015f, kirlenmi\u015f olabilece\u011fini veya egzoz sistemi veya kablolamada bir sorun oldu\u011funu d\u00fc\u015f\u00fcnd\u00fcr\u00fcr.",
+      "de": "Der Fehlercode P0139 weist darauf hin, dass das Motorsteuerger\u00e4t (PCM) festgestellt hat, dass der nachgeschaltete Sauerstoffsensor (Sensor 2) an Bank 1 zu langsam auf \u00c4nderungen des Sauerstoffgehalts im Abgas reagiert. Dieser Sensor befindet sich nach dem Katalysator und ist haupts\u00e4chlich f\u00fcr die \u00dcberwachung der Effizienz des Katalysators zust\u00e4ndig. Eine langsame Reaktion bedeutet, dass das Spannungssignal des Sensors nicht so schnell zwischen fetten und mageren Bedingungen wechselt wie erwartet, was darauf hindeutet, dass der Sensor m\u00f6glicherweise verschlechtert, kontaminiert ist oder ein Problem mit dem Abgassystem oder der Verkabelung vorliegt.",
+      "es": "El c\u00f3digo P0139 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado que el sensor de ox\u00edgeno posterior (Sensor 2) en el Banco 1 est\u00e1 respondiendo demasiado lentamente a los cambios en el contenido de ox\u00edgeno de los gases de escape. Este sensor se encuentra despu\u00e9s del convertidor catal\u00edtico y es el principal responsable de monitorear la eficiencia del convertidor. Una respuesta lenta significa que la se\u00f1al de voltaje del sensor no cambia entre condiciones ricas y pobres tan r\u00e1pidamente como se espera, lo que sugiere que puede estar degradado, contaminado o que hay un problema con el sistema de escape o el cableado.",
+      "fr": "Le code P0139 indique que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 que le capteur d'oxyg\u00e8ne aval (Capteur 2) de la Banque 1 r\u00e9agit trop lentement aux changements de la teneur en oxyg\u00e8ne des gaz d'\u00e9chappement. Ce capteur est situ\u00e9 apr\u00e8s le convertisseur catalytique et est principalement responsable de la surveillance de l'efficacit\u00e9 de ce dernier. Une r\u00e9ponse lente signifie que le signal de tension du capteur ne bascule pas entre les conditions riches et pauvres aussi rapidement que pr\u00e9vu, ce qui sugg\u00e8re qu'il pourrait \u00eatre d\u00e9grad\u00e9, contamin\u00e9, ou qu'il y a un probl\u00e8me avec le syst\u00e8me d'\u00e9chappement ou le c\u00e2blage."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_fuel_economy",
@@ -4299,7 +4311,85 @@
       "cause_cat_converter"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$100 - $350"
+    "estimatedCost": "$100 - $350",
+    "diagnosticSteps": {
+      "en": [
+        "Visually inspect the exhaust system for any leaks, especially near the Bank 1, Sensor 2 location. Exhaust leaks can introduce ambient air, skewing sensor readings.",
+        "Carefully examine the O2 sensor (Bank 1, Sensor 2) itself and its wiring harness for any signs of physical damage, corrosion, frayed wires, or loose connections.",
+        "Using a professional scan tool, monitor the live data stream for Bank 1, Sensor 2. Observe its voltage fluctuations, heater circuit operation, and compare its response time to specifications or known good sensors.",
+        "If the sensor and wiring appear good, consider performing a catalytic converter efficiency test or checking for excessive exhaust backpressure, as a failing converter or restricted exhaust can indirectly affect sensor response."
+      ],
+      "tr": [
+        "Egzoz sistemini, \u00f6zellikle Bank 1, Sens\u00f6r 2 konumunun yak\u0131n\u0131ndaki herhangi bir s\u0131z\u0131nt\u0131 i\u00e7in g\u00f6rsel olarak inceleyin. Egzoz s\u0131z\u0131nt\u0131lar\u0131 ortam havas\u0131n\u0131 i\u00e7eri \u00e7ekerek sens\u00f6r okumalar\u0131n\u0131 bozabilir.",
+        "O2 sens\u00f6r\u00fcn\u00fc (Bank 1, Sens\u00f6r 2) ve kablo demetini fiziksel hasar, korozyon, y\u0131pranm\u0131\u015f teller veya gev\u015fek ba\u011flant\u0131 belirtileri a\u00e7\u0131s\u0131ndan dikkatlice inceleyin.",
+        "Profesyonel bir tarama arac\u0131 kullanarak Bank 1, Sens\u00f6r 2 i\u00e7in canl\u0131 veri ak\u0131\u015f\u0131n\u0131 izleyin. Voltaj dalgalanmalar\u0131n\u0131, \u0131s\u0131t\u0131c\u0131 devresi \u00e7al\u0131\u015fmas\u0131n\u0131 g\u00f6zlemleyin ve tepki s\u00fcresini spesifikasyonlarla veya bilinen iyi sens\u00f6rlerle kar\u015f\u0131la\u015ft\u0131r\u0131n.",
+        "Sens\u00f6r ve kablolama iyi g\u00f6r\u00fcn\u00fcyorsa, katalitik konvert\u00f6r verimlilik testi yapmay\u0131 veya a\u015f\u0131r\u0131 egzoz geri bas\u0131nc\u0131n\u0131 kontrol etmeyi d\u00fc\u015f\u00fcn\u00fcn, \u00e7\u00fcnk\u00fc ar\u0131zal\u0131 bir konvert\u00f6r veya k\u0131s\u0131tl\u0131 bir egzoz sens\u00f6r tepkisini dolayl\u0131 olarak etkileyebilir."
+      ],
+      "de": [
+        "\u00dcberpr\u00fcfen Sie das Abgassystem visuell auf Undichtigkeiten, insbesondere in der N\u00e4he des Standorts von Bank 1, Sensor 2. Abgaslecks k\u00f6nnen Umgebungsluft ansaugen und die Sensorwerte verf\u00e4lschen.",
+        "Untersuchen Sie den O2-Sensor (Bank 1, Sensor 2) selbst und seinen Kabelbaum sorgf\u00e4ltig auf Anzeichen von physischen Sch\u00e4den, Korrosion, ausgefransten Kabeln oder lockeren Verbindungen.",
+        "Verwenden Sie ein professionelles Diagnoseger\u00e4t, um den Live-Datenstrom f\u00fcr Bank 1, Sensor 2 zu \u00fcberwachen. Beobachten Sie die Spannungsschwankungen, den Betrieb des Heizkreises und vergleichen Sie die Reaktionszeit mit den Spezifikationen oder bekannten guten Sensoren.",
+        "Wenn der Sensor und die Verkabelung in Ordnung erscheinen, ziehen Sie einen Katalysator-Effizienztest oder eine \u00dcberpr\u00fcfung auf \u00fcberm\u00e4\u00dfigen Abgasgegendruck in Betracht, da ein defekter Katalysator oder ein verstopfter Auspuff die Sensorreaktion indirekt beeinflussen kann."
+      ],
+      "es": [
+        "Inspeccione visualmente el sistema de escape en busca de fugas, especialmente cerca de la ubicaci\u00f3n del Banco 1, Sensor 2. Las fugas de escape pueden introducir aire ambiente, distorsionando las lecturas del sensor.",
+        "Examine cuidadosamente el propio sensor de O2 (Banco 1, Sensor 2) y su arn\u00e9s de cableado en busca de signos de da\u00f1o f\u00edsico, corrosi\u00f3n, cables deshilachados o conexiones sueltas.",
+        "Utilizando una herramienta de escaneo profesional, monitoree el flujo de datos en vivo para el Banco 1, Sensor 2. Observe sus fluctuaciones de voltaje, el funcionamiento del circuito del calentador y compare su tiempo de respuesta con las especificaciones o sensores en buen estado conocidos.",
+        "Si el sensor y el cableado parecen estar en buen estado, considere realizar una prueba de eficiencia del convertidor catal\u00edtico o verificar si hay una contrapresi\u00f3n excesiva en el escape, ya que un convertidor defectuoso o un escape restringido pueden afectar indirectamente la respuesta del sensor."
+      ],
+      "fr": [
+        "Inspectez visuellement le syst\u00e8me d'\u00e9chappement pour toute fuite, en particulier pr\u00e8s de l'emplacement du Capteur 2 de la Banque 1. Les fuites d'\u00e9chappement peuvent introduire de l'air ambiant, faussant les lectures du capteur.",
+        "Examinez attentivement le capteur O2 (Banque 1, Capteur 2) lui-m\u00eame et son faisceau de c\u00e2bles pour tout signe de dommage physique, de corrosion, de fils effiloch\u00e9s ou de connexions desserr\u00e9es.",
+        "\u00c0 l'aide d'un outil de diagnostic professionnel, surveillez le flux de donn\u00e9es en direct pour le Capteur 2 de la Banque 1. Observez ses fluctuations de tension, le fonctionnement du circuit de chauffage et comparez son temps de r\u00e9ponse aux sp\u00e9cifications ou \u00e0 des capteurs connus en bon \u00e9tat.",
+        "Si le capteur et le c\u00e2blage semblent bons, envisagez d'effectuer un test d'efficacit\u00e9 du convertisseur catalytique ou de v\u00e9rifier une contre-pression excessive \u00e0 l'\u00e9chappement, car un convertisseur d\u00e9faillant ou un \u00e9chappement restreint peut indirectement affecter la r\u00e9ponse du capteur."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty Bank 1, Sensor 2 oxygen sensor. This is the most common resolution if the sensor is indeed slow or contaminated.",
+        "Repair any detected exhaust leaks upstream or downstream of the sensor.",
+        "Repair or replace damaged, corroded, or shorted wiring and connectors leading to the O2 sensor.",
+        "Address catalytic converter issues if diagnostic steps indicate a failing converter is causing the slow response."
+      ],
+      "tr": [
+        "Ar\u0131zal\u0131 Bank 1, Sens\u00f6r 2 oksijen sens\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin. Sens\u00f6r ger\u00e7ekten yava\u015f veya kirlenmi\u015fse bu en yayg\u0131n \u00e7\u00f6z\u00fcmd\u00fcr.",
+        "Sens\u00f6r\u00fcn \u00f6n\u00fcnde veya arkas\u0131nda tespit edilen egzoz s\u0131z\u0131nt\u0131lar\u0131n\u0131 onar\u0131n.",
+        "O2 sens\u00f6r\u00fcne giden hasarl\u0131, korozyona u\u011fram\u0131\u015f veya k\u0131sa devre yapm\u0131\u015f kablolar\u0131 ve konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "Te\u015fhis ad\u0131mlar\u0131 ar\u0131zal\u0131 bir konvert\u00f6r\u00fcn yava\u015f tepkiye neden oldu\u011funu g\u00f6steriyorsa, katalitik konvert\u00f6r sorunlar\u0131n\u0131 giderin."
+      ],
+      "de": [
+        "Ersetzen Sie den defekten Sauerstoffsensor Bank 1, Sensor 2. Dies ist die h\u00e4ufigste L\u00f6sung, wenn der Sensor tats\u00e4chlich langsam oder kontaminiert ist.",
+        "Reparieren Sie alle festgestellten Abgaslecks vor oder nach dem Sensor.",
+        "Reparieren oder ersetzen Sie besch\u00e4digte, korrodierte oder kurzgeschlossene Kabel und Steckverbinder, die zum O2-Sensor f\u00fchren.",
+        "Beheben Sie Probleme mit dem Katalysator, wenn die Diagnoseschritte auf einen defekten Katalysator als Ursache f\u00fcr die langsame Reaktion hinweisen."
+      ],
+      "es": [
+        "Reemplace el sensor de ox\u00edgeno defectuoso del Banco 1, Sensor 2. Esta es la soluci\u00f3n m\u00e1s com\u00fan si el sensor est\u00e1 realmente lento o contaminado.",
+        "Repare cualquier fuga de escape detectada antes o despu\u00e9s del sensor.",
+        "Repare o reemplace el cableado y los conectores da\u00f1ados, corro\u00eddos o en cortocircuito que van al sensor de O2.",
+        "Aborde los problemas del convertidor catal\u00edtico si los pasos de diagn\u00f3stico indican que un convertidor defectuoso est\u00e1 causando la respuesta lenta."
+      ],
+      "fr": [
+        "Remplacez le capteur d'oxyg\u00e8ne d\u00e9fectueux de la Banque 1, Capteur 2. C'est la r\u00e9solution la plus courante si le capteur est effectivement lent ou contamin\u00e9.",
+        "R\u00e9parez toute fuite d'\u00e9chappement d\u00e9tect\u00e9e en amont ou en aval du capteur.",
+        "R\u00e9parez ou remplacez les c\u00e2bles et connecteurs endommag\u00e9s, corrod\u00e9s ou court-circuit\u00e9s menant au capteur O2.",
+        "Traitez les probl\u00e8mes de convertisseur catalytique si les \u00e9tapes de diagnostic indiquent qu'un convertisseur d\u00e9faillant est \u00e0 l'origine de la r\u00e9ponse lente."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0139 code is generally not an immediate safety hazard, but it can lead to increased fuel consumption, higher emissions, and potentially long-term damage to the catalytic converter if the underlying issue is not resolved. The vehicle's emissions system will not be operating optimally.",
+        "tr": "P0139 koduyla ara\u00e7 kullanmak genellikle acil bir g\u00fcvenlik tehlikesi olu\u015fturmaz, ancak yak\u0131t t\u00fcketiminin artmas\u0131na, emisyonlar\u0131n y\u00fckselmesine ve altta yatan sorun \u00e7\u00f6z\u00fclmezse katalitik konvert\u00f6re uzun vadeli hasar verebilir. Arac\u0131n emisyon sistemi optimum d\u00fczeyde \u00e7al\u0131\u015fmayacakt\u0131r.",
+        "de": "Das Fahren mit einem P0139-Code stellt im Allgemeinen keine unmittelbare Sicherheitsgefahr dar, kann jedoch zu erh\u00f6htem Kraftstoffverbrauch, h\u00f6heren Emissionen und potenziell langfristigen Sch\u00e4den am Katalysator f\u00fchren, wenn das zugrunde liegende Problem nicht behoben wird. Das Emissionssystem des Fahrzeugs wird nicht optimal funktionieren.",
+        "es": "Conducir con un c\u00f3digo P0139 generalmente no es un peligro de seguridad inmediato, pero puede llevar a un mayor consumo de combustible, mayores emisiones y, potencialmente, da\u00f1os a largo plazo al convertidor catal\u00edtico si no se resuelve el problema subyacente. El sistema de emisiones del veh\u00edculo no funcionar\u00e1 de manera \u00f3ptima.",
+        "fr": "Conduire avec un code P0139 ne repr\u00e9sente g\u00e9n\u00e9ralement pas un danger imm\u00e9diat pour la s\u00e9curit\u00e9, mais cela peut entra\u00eener une augmentation de la consommation de carburant, des \u00e9missions plus \u00e9lev\u00e9es et potentiellement des dommages \u00e0 long terme au convertisseur catalytique si le probl\u00e8me sous-jacent n'est pas r\u00e9solu. Le syst\u00e8me d'\u00e9missions du v\u00e9hicule ne fonctionnera pas de mani\u00e8re optimale."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$100 - $300",
+      "labor": "$80 - $200"
+    }
   },
   "P0140": {
     "title": "O2 Sensor Circuit No Activity Detected (Bank 1, Sensor 2)",
