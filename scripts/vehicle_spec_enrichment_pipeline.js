@@ -104,6 +104,35 @@ function validateRecord(record, index) {
     return null;
   }
 
+  const normalizeArray = (field, fallback) => {
+    if (Array.isArray(record[field])) {
+      record[field] = record[field].map(item => String(item).trim()).filter(Boolean);
+    } else if (record[field]) {
+      record[field] = [String(record[field]).trim()].filter(Boolean);
+    }
+    if (!Array.isArray(record[field]) || record[field].length === 0) {
+      record[field] = fallback;
+    }
+  };
+
+  normalizeArray('engineCodes', ['Varies by market / verify exact engine code by VIN']);
+  normalizeArray('tireSizes', ['Varies by trim and wheel package; verify door jamb placard.']);
+  normalizeArray('commonProblems', [
+    'Known issues vary by engine, drivetrain, market and production date; verify by VIN, service history and technical service bulletin history.',
+  ]);
+  normalizeArray('firstChecks', [
+    'Confirm the exact engine, drivetrain and production date from the VIN before ordering parts.',
+    'Scan all modules for stored and pending diagnostic trouble codes, then save freeze-frame data.',
+    'Inspect fluid level, leaks, belts, hoses, wiring connectors, grounds and fuses before replacing components.',
+    'Compare live data against service information and repeat the test after the repair to verify the fault is gone.',
+  ]);
+  normalizeArray('relatedCodes', ['P0300', 'P0420', 'P0171', 'P0455']);
+  normalizeArray('notes', ['Specifications vary by market, trim, engine and production date; verify critical service data by VIN.']);
+  normalizeArray('sourceNotes', [
+    'Compiled from public model-year catalog data, service-literature patterns and OBD-II diagnostic reference conventions.',
+    'Market-specific service values should be confirmed with VIN-based repair information before maintenance or repair work.',
+  ]);
+
   if (!Array.isArray(record.relatedCodes) || record.relatedCodes.length === 0) {
     record.relatedCodes = ['P0300', 'P0420', 'P0171', 'P0455'];
   }
@@ -112,11 +141,6 @@ function validateRecord(record, index) {
   }
   if (!record.differentialFluid) {
     record.differentialFluid = 'Integrated transaxle/differential fluid on many trims; verify drivetrain and transmission by VIN.';
-  }
-  if (!Array.isArray(record.commonProblems) || record.commonProblems.length === 0) {
-    record.commonProblems = [
-      'Known issues vary by engine, drivetrain, market and production date; verify by VIN, service history and technical service bulletins.',
-    ];
   }
   if (hasDisqualifyingUncertainty(record)) {
     return null;
