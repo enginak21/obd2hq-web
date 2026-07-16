@@ -1,8 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { KnowledgeHero } from '@/components/KnowledgeGrid';
-import VehicleSpecSelector, { type VehicleCatalogOption, type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
-import { getVehicleCatalogOptions } from '@/data/vehicle-catalog';
+import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
 import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
@@ -20,7 +19,6 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
   const copy = getKnowledgeUiCopy(locale);
-  const catalog = getVehicleCatalogOptions();
   const selectorItems: VehicleSpecSelectorItem[] = allVehicleSpecRecords.map(variant => ({
     make: variant.make,
     model: variant.model,
@@ -47,29 +45,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
         title={copy.vehiclesTitle}
         description={copy.vehiclesDescription}
       />
-      <VehicleSpecSelector locale={locale} items={selectorItems} catalog={mergeCatalog(catalog, selectorItems)} />
+      <VehicleSpecSelector locale={locale} items={selectorItems} />
     </main>
   );
-}
-
-function mergeCatalog(catalog: VehicleCatalogOption[], exactItems: VehicleSpecSelectorItem[]) {
-  const merged = new Map<string, VehicleCatalogOption>();
-  for (const item of catalog) {
-    merged.set(`${item.make}/${item.model}`, item);
-  }
-  for (const item of exactItems) {
-    const key = `${item.make}/${item.model}`;
-    const existing = merged.get(key);
-    if (existing) {
-      existing.years = Array.from(new Set([...existing.years, item.year])).sort((a, b) => a - b);
-    } else {
-      merged.set(key, {
-        make: item.make,
-        model: item.model,
-        displayName: item.displayName,
-        years: [item.year],
-      });
-    }
-  }
-  return Array.from(merged.values());
 }

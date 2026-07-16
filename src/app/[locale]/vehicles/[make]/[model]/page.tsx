@@ -2,16 +2,28 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
-import { getVehicleKnowledge, vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
+import { getVehicleKnowledge, type VehicleKnowledgeProfile, vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { getVehicleSpecModelStaticParams, getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
 
 export function generateStaticParams() {
-  return vehicleKnowledgeProfiles.flatMap(vehicle => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, make: vehicle.make, model: vehicle.model })));
+  const seen = new Set<string>();
+  const vehicles = [
+    ...vehicleKnowledgeProfiles.map(vehicle => ({ make: vehicle.make, model: vehicle.model })),
+    ...getVehicleSpecModelStaticParams(),
+  ].filter(vehicle => {
+    const key = `${vehicle.make}/${vehicle.model}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  return vehicles.flatMap(vehicle => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, make: vehicle.make, model: vehicle.model })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; make: string; model: string }> }) {
   const { locale, make, model } = await params;
-  const vehicle = getVehicleKnowledge(make, model);
+  const vehicle = getVehicleKnowledge(make, model) || buildVehicleProfileFromSpecs(make, model);
   if (!vehicle) return {};
   const name = `${vehicle.make} ${vehicle.model}`.replace(/\b\w/g, c => c.toUpperCase());
   const copy = getKnowledgeUiCopy(locale);
@@ -25,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VehicleProfilePage({ params }: { params: Promise<{ locale: string; make: string; model: string }> }) {
   const { locale, make, model } = await params;
   setRequestLocale(locale);
-  const vehicle = getVehicleKnowledge(make, model);
+  const vehicle = getVehicleKnowledge(make, model) || buildVehicleProfileFromSpecs(make, model);
   if (!vehicle) notFound();
   const name = vehicle.displayName || `${vehicle.make} ${vehicle.model}`.replace(/\b\w/g, c => c.toUpperCase());
   const copy = getKnowledgeUiCopy(locale);
@@ -268,6 +280,51 @@ function getVehicleLabels(locale: string) {
     yearTrimSelectorDesc: 'Choose the exact year and trim to see engine, oil and service details.',
     verifiedVariants: 'verified variants',
     openVariant: 'Open details',
+  };
+}
+function buildVehicleProfileFromSpecs(make: string, model: string): VehicleKnowledgeProfile | null {
+  const variants = getVehicleSpecRecordsForModel(make, model);
+  if (variants.length === 0) return null;
+
+  const first = variants[0];
+  const years = variants.map(variant => variant.year);
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
+  const uniqueStrings = (values: string[]) => Array.from(new Set(values.filter(Boolean)));
+  const uniqueArrayItems = (records: VehicleSpecRecord[], key: keyof VehicleSpecRecord) => (
+    uniqueStrings(records.flatMap(record => {
+      const value = record[key];
+      return Array.isArray(value) ? value.map(String) : [String(value || '')];
+    }))
+  );
+
+  return {
+    make,
+    model,
+    displayName: first.displayName,
+    generation: uniqueStrings(variants.map(variant => variant.generation || variant.chassisCode)).slice(0, 4).join(' / ') || first.generation,
+    years: minYear === maxYear ? String(minYear) : `${minYear}-${maxYear}`,
+    bodyStyle: uniqueStrings(variants.map(variant => variant.bodyStyle)).slice(0, 4).join(' / ') || first.bodyStyle,
+    markets: uniqueStrings(variants.map(variant => variant.market)).slice(0, 6),
+    coverageLevel: 'expanded',
+    yearTrimVariants: variants,
+    engines: uniqueArrayItems(variants, 'engineCodes').slice(0, 12),
+    transmissions: uniqueStrings(variants.flatMap(variant => [variant.manualTransmission || '', variant.automaticTransmission || '', variant.transmissionFluid || ''])).slice(0, 8),
+    tireSizes: uniqueArrayItems(variants, 'tireSizes').slice(0, 10),
+    boltPattern: 'Verify by exact trim and wheel package',
+    wheelTorque: 'Verify by VIN and wheel package',
+    battery: 'Verify by engine, market and equipment package',
+    engineOil: uniqueStrings(variants.map(variant => variant.recommendedOil)).slice(0, 4).join(' / ') || first.recommendedOil,
+    transmissionFluid: uniqueStrings(variants.map(variant => variant.transmissionFluid)).slice(0, 4).join(' / ') || first.transmissionFluid,
+    coolant: uniqueStrings(variants.map(variant => variant.coolantCapacity)).slice(0, 4).join(' / ') || first.coolantCapacity,
+    brakeFluid: uniqueStrings(variants.map(variant => variant.brakeFluid)).slice(0, 4).join(' / ') || first.brakeFluid,
+    maintenance: uniqueStrings(variants.map(variant => variant.serviceInterval)).slice(0, 10),
+    knownProblems: uniqueArrayItems(variants, 'commonProblems').slice(0, 12),
+    commonCodes: uniqueArrayItems(variants, 'relatedCodes').slice(0, 10),
+    compatibleTools: ['OBD2 scanner with live data', 'VIN-based service information', 'Digital multimeter', 'Basic inspection tools'],
+    obdPortLocation: 'Driver side lower dashboard area on most OBD-II vehicles; verify by market and generation.',
+    fuseBox: 'Verify by VIN, market and production date.',
+    sourceNotes: uniqueArrayItems(variants, 'sourceNotes').slice(0, 8),
   };
 }
 

@@ -190,7 +190,6 @@ function getVariantLabels(locale: string) {
     verifyByVin: 'Verify by VIN and market',
   };
 }
-
 function Spec({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-xl bg-[#0a0f1c] px-3 py-2">

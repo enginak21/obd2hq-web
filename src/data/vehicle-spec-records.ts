@@ -29,6 +29,26 @@ export function getVehicleSpecRecord(make: string, model: string, year: string |
   return allVehicleSpecRecords.find(item => item.make === make && item.model === model && item.year === Number(year) && item.slug === variant) || null;
 }
 
+export function getVehicleSpecRecordsForModel(make: string, model: string) {
+  return allVehicleSpecRecords
+    .filter(item => item.make === make && item.model === model)
+    .sort((a, b) => a.year - b.year || a.trim.localeCompare(b.trim));
+}
+
+export function getVehicleSpecModelStaticParams() {
+  const seen = new Set<string>();
+  const params: { make: string; model: string }[] = [];
+
+  for (const item of allVehicleSpecRecords) {
+    const key = `${item.make}/${item.model}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    params.push({ make: item.make, model: item.model });
+  }
+
+  return params;
+}
+
 export function getVehicleSpecStaticParams() {
   return allVehicleSpecRecords.map(item => ({
     make: item.make,
