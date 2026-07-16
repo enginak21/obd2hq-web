@@ -1,0 +1,57 @@
+name: Daily symptom content
+
+on:
+  schedule:
+    - cron: '15 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-symptom-content:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
+      LIMIT: ${{ vars.SYMPTOM_CONTENT_DAILY_LIMIT || '30' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Stop if OpenAI key is missing
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY secret is missing. Add it in GitHub repository secrets."
+            exit 1
+          fi
+
+      - name: Generate multilingual symptom content
+        run: npm run symptoms:generate
+
+      - name: Quality checks
+        run: |
+          npm run check:symptom-content
+          npm run lint
+          npm run build
+
+      - name: Commit generated content
+        run: |
+          if git diff --quiet -- src/data/generated/symptom-content/content.json src/data/generated/symptom-content/routes.json; then
+            echo "No generated content changes."
+            exit 0
+          fi
+          git config user.name "obd2hq-content-bot"
+          git config user.email "actions@github.com"
+          git add src/data/generated/symptom-content/content.json src/data/generated/symptom-content/routes.json
+          git commit -m "chore: publish daily symptom content"
+          git push

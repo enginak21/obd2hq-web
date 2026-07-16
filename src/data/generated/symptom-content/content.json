@@ -1,0 +1,138 @@
+[
+  {
+    "contentGroupId": "renault-loss-of-power",
+    "intentKey": "renault_loss_of_power",
+    "make": "Renault",
+    "model": null,
+    "symptomKey": "loss_of_power",
+    "qualityScore": 94,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "renault-loss-of-power",
+        "title": "Renault Losing Power: Causes, OBD2 Codes and First Checks",
+        "metaDescription": "Renault losing power or not accelerating? Learn the likely causes, OBD2 codes, first checks, drive advice and repair direction before replacing parts.",
+        "intro": "When a Renault loses power, will not accelerate normally, or feels like it has gone into limp mode, the cause is usually air metering, boost control, fuel delivery, exhaust restriction, sensor data, or an engine protection strategy. This guide gives a practical order of checks before replacing expensive parts.",
+        "severity": "High",
+        "driveAdvice": "Avoid hard acceleration and highway passing until the cause is known. If the vehicle enters limp mode, smokes heavily, overheats, or the check engine light flashes, stop driving and arrange inspection.",
+        "likelyCauses": ["MAF or MAP sensor reading incorrectly", "Turbo boost leak or boost control fault", "Clogged fuel filter or low fuel pressure", "EGR valve sticking open", "DPF or catalytic converter restriction", "Vacuum leak or split intake hose", "Transmission limp mode or clutch slip"],
+        "diagnosticSteps": ["Scan all modules and save freeze-frame data before clearing codes.", "Check for P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 and fuel pressure codes.", "Compare MAF/MAP live data at idle and under load.", "Inspect intake hoses, intercooler pipes, vacuum lines and clamps for leaks.", "Check fuel pressure, filter condition and injector correction values where available.", "Review exhaust backpressure, DPF soot load or catalyst restriction signs.", "Road-test gently after each verified repair and confirm the fault does not return."],
+        "firstChecks": ["OBD2 scan with freeze-frame data", "Air filter and intake hose inspection", "MAF/MAP connector and live data", "Boost hose and intercooler leak check", "Fuel pressure or filter condition", "Exhaust restriction/DPF indicators"],
+        "commonMistakes": ["Replacing the turbo before checking split boost hoses", "Cleaning or replacing MAF without comparing live data", "Ignoring EGR/DPF faults on diesel models", "Clearing limp-mode codes before saving freeze-frame data", "Assuming all power loss is an injector problem"],
+        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "internalLinks": [
+          { "label": "P0235 boost sensor guide", "href": "/en/suzuki/jimny/p0235" },
+          { "label": "P0102 MAF low input", "href": "/en/acura/tlx/p0102" },
+          { "label": "Diagnostic assistant", "href": "/en/tools/diagnostic-assistant" }
+        ],
+        "faq": [
+          { "q": "Can I drive a Renault that is losing power?", "a": "Drive gently only if the engine runs smoothly and no warning light is flashing. Limp mode, heavy smoke, overheating or flashing check engine light means the vehicle should be inspected immediately." },
+          { "q": "What OBD2 codes are common with Renault power loss?", "a": "Common related codes include P0101, P0102, P0235, P0299, P0401, P0402 and catalyst or DPF efficiency codes depending on the engine." },
+          { "q": "Should I replace the turbo first?", "a": "No. Boost leaks, vacuum control, MAP/MAF data, actuator control and exhaust restriction should be checked before replacing a turbocharger." }
+        ],
+        "schemaTitle": "Renault losing power diagnostic guide",
+        "schemaDescription": "Step-by-step Renault loss of power checks, likely causes, related OBD2 codes and safety guidance."
+      },
+      "tr": {
+        "slug": "renault-gaz-yemiyor",
+        "title": "Renault Gaz Yemiyor: Nedenleri, Arıza Kodları ve İlk Kontroller",
+        "metaDescription": "Renault aracınız gaz yemiyor veya çekişten düştüyse olası nedenleri, OBD2 kodlarını, ilk kontrolleri ve güvenli kullanım önerilerini öğrenin.",
+        "intro": "Renault aracınız gaz yemiyor, hızlanmıyor veya kendini korumaya almış gibi davranıyorsa sorun çoğunlukla hava ölçümü, turbo basıncı, yakıt beslemesi, EGR, egzoz kısıtlaması veya sensör verileriyle ilgilidir. Bu rehber pahalı parça değiştirmeden önce izlenecek doğru kontrol sırasını gösterir.",
+        "severity": "Yüksek",
+        "driveAdvice": "Sebep bulunana kadar ani hızlanma ve yüksek hızdan kaçının. Araç limp mode'a giriyorsa, yoğun duman atıyorsa, hararet yapıyorsa veya motor arıza lambası yanıp sönüyorsa kullanmayı bırakıp kontrol ettirin.",
+        "likelyCauses": ["MAF veya MAP sensörünün hatalı okuması", "Turbo basınç kaçağı veya boost kontrol arızası", "Tıkalı yakıt filtresi veya düşük yakıt basıncı", "EGR valfinin açık kalması", "DPF veya katalizör tıkanıklığı", "Vakum kaçağı veya yırtık emme hortumu", "Şanzıman koruma modu veya debriyaj kaçırması"],
+        "diagnosticSteps": ["Kodları silmeden önce tüm modülleri tarayın ve freeze-frame verisini kaydedin.", "P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 ve yakıt basıncı kodlarını kontrol edin.", "Rölantide ve yük altında MAF/MAP canlı verilerini karşılaştırın.", "Emme hortumları, intercooler boruları, vakum hatları ve kelepçelerde kaçak arayın.", "Yakıt basıncını, filtre durumunu ve varsa enjektör düzeltme değerlerini kontrol edin.", "Egzoz geri basıncı, DPF doluluk veya katalizör tıkanıklığı belirtilerini inceleyin.", "Her doğrulanmış onarımdan sonra hafif yol testi yapıp arızanın dönmediğini doğrulayın."],
+        "firstChecks": ["Freeze-frame verisiyle OBD2 taraması", "Hava filtresi ve emme hortumu kontrolü", "MAF/MAP soketi ve canlı veri", "Turbo hortumu ve intercooler kaçak kontrolü", "Yakıt basıncı veya filtre durumu", "Egzoz kısıtlaması/DPF işaretleri"],
+        "commonMistakes": ["Yırtık turbo hortumunu kontrol etmeden turbo değiştirmek", "Canlı veri karşılaştırmadan MAF temizlemek veya değiştirmek", "Dizel modellerde EGR/DPF hatalarını görmezden gelmek", "Freeze-frame kaydetmeden limp mode kodlarını silmek", "Her çekiş düşüklüğünü enjektör arızası sanmak"],
+        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "internalLinks": [
+          { "label": "P0235 boost sensörü rehberi", "href": "/tr/suzuki/jimny/p0235" },
+          { "label": "P0102 MAF düşük giriş", "href": "/tr/acura/tlx/p0102" },
+          { "label": "Teşhis asistanı", "href": "/tr/tools/diagnostic-assistant" }
+        ],
+        "faq": [
+          { "q": "Gaz yemeyen Renault kullanılır mı?", "a": "Motor düzgün çalışıyor ve arıza lambası yanıp sönmüyorsa düşük yükle kısa mesafe gidilebilir. Limp mode, yoğun duman, hararet veya yanıp sönen motor lambası varsa araç zorlanmamalıdır." },
+          { "q": "Renault gaz yememe arızasında hangi kodlar çıkar?", "a": "P0101, P0102, P0235, P0299, P0401, P0402 ve motora göre DPF/katalizör verim kodları sık görülebilir." },
+          { "q": "Önce turbo mu değişmeli?", "a": "Hayır. Turbo değişmeden önce boost kaçağı, vakum kontrolü, MAP/MAF verisi, aktüatör komutu ve egzoz kısıtlaması kontrol edilmelidir." }
+        ],
+        "schemaTitle": "Renault gaz yemiyor arıza rehberi",
+        "schemaDescription": "Renault çekiş düşüklüğü için olası nedenler, OBD2 kodları, ilk kontroller ve güvenli kullanım rehberi."
+      },
+      "de": {
+        "slug": "renault-keine-leistung",
+        "title": "Renault hat keine Leistung: Ursachen, OBD2-Codes und erste Prüfungen",
+        "metaDescription": "Renault hat keine Leistung oder beschleunigt schlecht? Ursachen, OBD2-Codes, erste Prüfungen und sichere Diagnose vor dem Teiletausch.",
+        "intro": "Wenn ein Renault keine Leistung hat, schlecht beschleunigt oder in den Notlauf geht, liegen die Ursachen häufig bei Luftmessung, Ladedruck, Kraftstoffversorgung, EGR, Abgasgegendruck oder Sensordaten. Der richtige Weg ist nicht sofort der Teiletausch, sondern ein klarer Prüfablauf mit OBD2-Codes, Livedaten, Sichtprüfung und Belastungstest.",
+        "severity": "Hoch",
+        "driveAdvice": "Bis zur Diagnose starke Beschleunigung und Autobahnfahrten vermeiden. Bei Notlauf, starkem Rauch, Überhitzung oder blinkender Motorkontrollleuchte nicht weiterfahren.",
+        "likelyCauses": ["MAF- oder MAP-Sensor liefert falsche Werte", "Ladedruckleck oder Boost-Regelung defekt", "Kraftstofffilter verstopft oder Kraftstoffdruck niedrig", "EGR-Ventil hängt offen", "DPF oder Katalysator eingeschränkt", "Unterdruckleck oder gerissener Ansaugschlauch", "Getriebe-Notlauf oder Kupplung rutscht"],
+        "diagnosticSteps": ["Alle Module scannen und Freeze-Frame speichern.", "Codes wie P0101, P0102, P0235, P0299, P0401, P0402, P0420 und P2002 prüfen.", "MAF/MAP-Livedaten bei Leerlauf und Last vergleichen.", "Ansaugschläuche, Ladeluftstrecke, Unterdruckleitungen und Schellen prüfen.", "Kraftstoffdruck, Filterzustand und Injektorkorrekturen prüfen.", "Abgasgegendruck, DPF-Beladung oder Katalysator-Einschränkung prüfen.", "Nach jeder bestätigten Reparatur vorsichtig testen."],
+        "firstChecks": ["OBD2-Scan mit Freeze-Frame", "Luftfilter und Ansaugschläuche", "MAF/MAP-Stecker und Livedaten", "Ladedruck- und Intercooler-Lecks", "Kraftstoffdruck oder Filter", "Abgas-/DPF-Hinweise"],
+        "commonMistakes": ["Turbo ersetzen, bevor Ladedruckschläuche geprüft werden", "MAF ohne Livedaten ersetzen", "EGR/DPF-Fehler ignorieren", "Notlaufcodes ohne Freeze-Frame löschen", "Jeden Leistungsverlust als Injektorfehler deuten"],
+        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "internalLinks": [
+          { "label": "P0235 Ladedrucksensor", "href": "/de/suzuki/jimny/p0235" },
+          { "label": "P0102 MAF niedriges Signal", "href": "/de/acura/tlx/p0102" },
+          { "label": "Diagnoseassistent", "href": "/de/tools/diagnostic-assistant" }
+        ],
+        "faq": [
+          { "q": "Kann ich einen Renault ohne Leistung weiterfahren?", "a": "Nur vorsichtig, wenn der Motor ruhig läuft und keine Leuchte blinkt. Notlauf, Rauch, Überhitzung oder blinkende Leuchte erfordern sofortige Prüfung." },
+          { "q": "Welche OBD2-Codes passen dazu?", "a": "Häufig sind P0101, P0102, P0235, P0299, P0401, P0402 sowie DPF- oder Katalysatorcodes." },
+          { "q": "Sollte zuerst der Turbo ersetzt werden?", "a": "Nein. Ladedruckleck, Unterdrucksteuerung, MAP/MAF-Daten und Abgasgegendruck müssen zuerst geprüft werden." }
+        ],
+        "schemaTitle": "Renault keine Leistung Diagnose",
+        "schemaDescription": "Renault Leistungsverlust: Ursachen, OBD2-Codes, Prüfablauf und sichere Weiterfahrt."
+      },
+      "es": {
+        "slug": "renault-no-acelera",
+        "title": "Renault no acelera: causas, códigos OBD2 y primeras revisiones",
+        "metaDescription": "Si tu Renault no acelera o perdió potencia, revisa causas probables, códigos OBD2, primeras pruebas y consejos antes de cambiar piezas.",
+        "intro": "Cuando un Renault no acelera, pierde potencia o entra en modo emergencia, las causas suelen estar en medición de aire, presión de turbo, combustible, EGR, escape restringido o datos de sensores. La forma segura de diagnosticarlo es guardar los códigos, revisar datos en vivo y comprobar fugas o restricciones antes de cambiar piezas caras.",
+        "severity": "Alta",
+        "driveAdvice": "Evita aceleraciones fuertes hasta saber la causa. Si hay modo emergencia, humo intenso, sobrecalentamiento o luz check engine parpadeando, no sigas conduciendo.",
+        "likelyCauses": ["Sensor MAF o MAP con lectura incorrecta", "Fuga de presión de turbo o fallo de control", "Filtro de combustible obstruido o baja presión", "Válvula EGR trabada abierta", "DPF o catalizador restringido", "Fuga de vacío o manguera de admisión rota", "Modo emergencia de transmisión o embrague patinando"],
+        "diagnosticSteps": ["Escanear todos los módulos y guardar freeze-frame.", "Revisar P0101, P0102, P0235, P0299, P0401, P0402, P0420 y P2002.", "Comparar datos MAF/MAP en ralentí y con carga.", "Inspeccionar mangueras de admisión, intercooler, vacío y abrazaderas.", "Comprobar presión de combustible, filtro y correcciones de inyectores.", "Revisar contrapresión de escape, carga DPF o restricción del catalizador.", "Probar suavemente después de cada reparación confirmada."],
+        "firstChecks": ["Escaneo OBD2 con freeze-frame", "Filtro de aire y mangueras", "Conector y datos MAF/MAP", "Fugas de turbo/intercooler", "Presión o filtro de combustible", "Indicadores de escape/DPF"],
+        "commonMistakes": ["Cambiar turbo sin revisar mangueras", "Cambiar MAF sin datos en vivo", "Ignorar EGR/DPF en diésel", "Borrar códigos sin freeze-frame", "Asumir que todo es inyector"],
+        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "internalLinks": [
+          { "label": "Guía P0235 sensor boost", "href": "/es/suzuki/jimny/p0235" },
+          { "label": "P0102 señal MAF baja", "href": "/es/acura/tlx/p0102" },
+          { "label": "Asistente de diagnóstico", "href": "/es/tools/diagnostic-assistant" }
+        ],
+        "faq": [
+          { "q": "¿Puedo conducir un Renault que no acelera?", "a": "Solo con suavidad si el motor funciona estable y la luz no parpadea. Modo emergencia, humo, temperatura alta o luz parpadeando requieren revisión inmediata." },
+          { "q": "¿Qué códigos OBD2 aparecen?", "a": "Son comunes P0101, P0102, P0235, P0299, P0401, P0402 y códigos de DPF o catalizador." },
+          { "q": "¿Debo cambiar el turbo primero?", "a": "No. Antes hay que revisar fugas, control de vacío, datos MAP/MAF y restricción de escape." }
+        ],
+        "schemaTitle": "Renault no acelera diagnóstico",
+        "schemaDescription": "Causas, códigos OBD2 y primeras revisiones para Renault con pérdida de potencia."
+      },
+      "fr": {
+        "slug": "renault-manque-de-puissance",
+        "title": "Renault manque de puissance : causes, codes OBD2 et premiers contrôles",
+        "metaDescription": "Renault manque de puissance ou n'accélère plus ? Causes probables, codes OBD2, premiers contrôles et conseils avant remplacement de pièces.",
+        "intro": "Quand une Renault manque de puissance, accélère mal ou passe en mode dégradé, la cause se situe souvent au niveau de la mesure d'air, du turbo, du carburant, de l'EGR, de l'échappement ou des données capteurs.",
+        "severity": "Élevée",
+        "driveAdvice": "Évitez les fortes accélérations tant que la cause n'est pas connue. Mode dégradé, forte fumée, surchauffe ou voyant moteur clignotant nécessitent un arrêt et un contrôle.",
+        "likelyCauses": ["Capteur MAF ou MAP incorrect", "Fuite de suralimentation ou défaut de commande turbo", "Filtre carburant colmaté ou pression faible", "Vanne EGR bloquée ouverte", "DPF ou catalyseur restreint", "Fuite de dépression ou durite d'admission fendue", "Mode dégradé boîte ou embrayage qui patine"],
+        "diagnosticSteps": ["Scanner tous les modules et sauvegarder le freeze-frame.", "Contrôler P0101, P0102, P0235, P0299, P0401, P0402, P0420 et P2002.", "Comparer les données MAF/MAP au ralenti et en charge.", "Inspecter admission, intercooler, durites de dépression et colliers.", "Contrôler pression carburant, filtre et corrections injecteurs.", "Vérifier contre-pression échappement, charge DPF ou restriction catalyseur.", "Faire un essai doux après chaque réparation confirmée."],
+        "firstChecks": ["Scan OBD2 avec freeze-frame", "Filtre à air et durites", "Connecteur et données MAF/MAP", "Fuites turbo/intercooler", "Pression ou filtre carburant", "Indices échappement/DPF"],
+        "commonMistakes": ["Remplacer le turbo sans vérifier les durites", "Changer le MAF sans données live", "Ignorer EGR/DPF sur diesel", "Effacer les codes sans freeze-frame", "Accuser directement les injecteurs"],
+        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "internalLinks": [
+          { "label": "Guide P0235 capteur boost", "href": "/fr/suzuki/jimny/p0235" },
+          { "label": "P0102 signal MAF bas", "href": "/fr/acura/tlx/p0102" },
+          { "label": "Assistant diagnostic", "href": "/fr/tools/diagnostic-assistant" }
+        ],
+        "faq": [
+          { "q": "Puis-je rouler avec une Renault qui manque de puissance ?", "a": "Seulement doucement si le moteur tourne rond et que le voyant ne clignote pas. Mode dégradé, fumée, surchauffe ou voyant clignotant exigent un contrôle rapide." },
+          { "q": "Quels codes OBD2 sont fréquents ?", "a": "P0101, P0102, P0235, P0299, P0401, P0402 et des codes DPF ou catalyseur peuvent apparaître." },
+          { "q": "Faut-il remplacer le turbo d'abord ?", "a": "Non. Fuites, commande de dépression, données MAP/MAF et restriction échappement doivent être vérifiées avant." }
+        ],
+        "schemaTitle": "Renault manque de puissance diagnostic",
+        "schemaDescription": "Causes, codes OBD2 et contrôles pour Renault avec perte de puissance."
+      }
+    }
+  }
+]

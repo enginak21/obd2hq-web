@@ -1,0 +1,12 @@
+[
+  {
+    "contentGroupId": "renault-loss-of-power",
+    "slugs": {
+      "en": "renault-loss-of-power",
+      "tr": "renault-gaz-yemiyor",
+      "de": "renault-keine-leistung",
+      "es": "renault-no-acelera",
+      "fr": "renault-manque-de-puissance"
+    }
+  }
+]

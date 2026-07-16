@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import { resolveLocalizedSymptomPath } from '@/data/symptom-content-routing';
 
 const languages = [
   { code: 'en', name: 'English' },
@@ -31,6 +32,13 @@ export default function LanguageSwitcher() {
   }, []);
 
   const switchLanguage = (newLocale: string) => {
+    const localizedSymptomPath = resolveLocalizedSymptomPath(pathname, newLocale);
+    if (localizedSymptomPath) {
+      router.push(localizedSymptomPath);
+      setIsOpen(false);
+      return;
+    }
+
     // pathname starts with /en, /es, etc.
     const segments = pathname.split('/');
     segments[1] = newLocale;

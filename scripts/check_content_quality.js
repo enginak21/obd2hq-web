@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 
 const roots = ['src', 'messages'];
 const textFileExtensions = new Set(['.ts', '.tsx', '.json']);
@@ -78,5 +79,8 @@ if (failures.length > 0) {
   for (const failure of failures) console.error(`- ${failure}`);
   process.exit(1);
 }
+
+const symptomCheck = spawnSync(process.execPath, [path.join('scripts', 'check_symptom_content_quality.js')], { stdio: 'inherit' });
+if (symptomCheck.status !== 0) process.exit(symptomCheck.status || 1);
 
 console.log('Content quality checks passed.');

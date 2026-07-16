@@ -9,6 +9,7 @@ import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { indexedVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
+import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
@@ -60,6 +61,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/blog`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/news`, 'daily', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/symptoms`, 'weekly', '0.9');
+      if (isSymptomContentLocale(locale)) {
+        urls += urlEntry(`${BASE_URL}${getSymptomContentHubPath(locale)}`, 'daily', '0.95');
+        publishedSymptomContentGroups.forEach((group) => {
+          urls += urlEntry(`${BASE_URL}${getSymptomContentDetailPath(group, locale)}`, 'daily', '0.9');
+        });
+      }
       urls += urlEntry(`${BASE_URL}/${locale}/tools`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/vehicles`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/engine-codes`, 'weekly', '0.9');

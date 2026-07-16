@@ -8,6 +8,7 @@ import SmartSearch from '@/components/SmartSearch';
 import FindYourFixWizard from '@/components/FindYourFixWizard';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { getSymptomContentHubPath } from '@/data/symptom-content';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -21,6 +22,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale, namespace: 'HomePage' });
   const copy = getKnowledgeUiCopy(locale);
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
+  const symptomHubPath = getSymptomContentHubPath(locale);
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -88,7 +90,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <section className="w-full border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-5">
-          <Link href={`/${locale}/symptoms`} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-amber-400/40 hover:bg-[#17213a] transition-all">
+          <Link href={symptomHubPath} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-amber-400/40 hover:bg-[#17213a] transition-all">
             <div className="mb-5 rounded-2xl bg-amber-400/10 p-3 w-fit text-amber-300">
               <Activity className="w-6 h-6" />
             </div>

@@ -4,6 +4,14 @@ import type { NextRequest } from 'next/server';
 import validRoutes from './data/valid_routes.json';
 
 const locales = ['en', 'de', 'es', 'tr', 'fr'];
+const symptomContentBasePaths: Record<string, string> = {
+  en: 'car-symptoms',
+  tr: 'ariza-belirtileri',
+  de: 'auto-symptome',
+  es: 'sintomas-coche',
+  fr: 'symptomes-voiture',
+};
+const symptomContentBaseSet = new Set(Object.values(symptomContentBasePaths));
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -44,9 +52,12 @@ export default function middleware(request: NextRequest) {
   if (segments.length >= 2) {
     const locale = segments[0];
     const make = segments[1];
+    if (locales.includes(locale) && symptomContentBaseSet.has(make) && symptomContentBasePaths[locale] !== make) {
+      return notFoundResponse();
+    }
     
     // Ignore static UI pages
-    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
+    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
     
     if (locales.includes(locale) && !isStaticPage) {
       const isWarningLightDetail = segments.length === 5 && segments[3] === 'lights';
