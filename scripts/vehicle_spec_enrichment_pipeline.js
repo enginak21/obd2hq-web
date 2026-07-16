@@ -11,6 +11,7 @@ const LIMIT = Number.parseInt(process.env.LIMIT || '0', 10);
 const START_INDEX = Number.parseInt(process.env.START_INDEX || '0', 10);
 const CHECKPOINT_EVERY = Math.max(1, Number.parseInt(process.env.CHECKPOINT_EVERY || '1', 10));
 const RETRIES = Math.max(0, Number.parseInt(process.env.RETRIES || '3', 10));
+const CONCURRENCY = Math.max(1, Number.parseInt(process.env.CONCURRENCY || '1', 10));
 
 const requiredFields = [
   'make',
@@ -314,6 +315,7 @@ async function main() {
   let processed = 0;
   let created = 0;
 
+  const jobs = [];
   for (let index = START_INDEX; index < endIndex; index += 1) {
     const seed = seeds[index];
     const key = recordKey(seed);
@@ -326,25 +328,43 @@ async function main() {
       continue;
     }
 
-    console.log(`Enriching ${index + 1}/${seeds.length}: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
-    const record = lockRecordIdentity(await enrichWithOpenAI(seed), seed);
-    const validRecord = validateRecord(record, index + 1);
-    if (validRecord) {
-      enrichedByKey.set(recordKey(validRecord), validRecord);
-    } else {
-      skippedRecords.push(record);
-      skippedByKey.set(recordKey(record), record);
-      console.log(`Skipped unavailable ${index + 1}/${seeds.length}: ${key}`);
-    }
-    processed += 1;
-    if (validRecord) created += 1;
+    jobs.push({ index, seed, key });
+  }
 
+  const checkpoint = () => {
     if (processed % CHECKPOINT_EVERY === 0) {
       writeJson(OUTPUT, Array.from(enrichedByKey.values()));
       if (skippedByKey.size) writeJson(skippedOutputFile(), Array.from(skippedByKey.values()));
       console.log(`Checkpoint saved ${enrichedByKey.size} records to ${OUTPUT}`);
     }
+  };
+
+  let nextJobIndex = 0;
+  async function worker(workerId) {
+    while (nextJobIndex < jobs.length) {
+      const job = jobs[nextJobIndex];
+      nextJobIndex += 1;
+      const { index, seed, key } = job;
+
+      console.log(`Enriching ${index + 1}/${seeds.length} [worker ${workerId}]: ${seed.make} ${seed.model} ${seed.year} ${seed.trim}`);
+      const record = lockRecordIdentity(await enrichWithOpenAI(seed), seed);
+      const validRecord = validateRecord(record, index + 1);
+      if (validRecord) {
+        enrichedByKey.set(recordKey(validRecord), validRecord);
+        created += 1;
+      } else {
+        skippedRecords.push(record);
+        skippedByKey.set(recordKey(record), record);
+        console.log(`Skipped unavailable ${index + 1}/${seeds.length}: ${key}`);
+      }
+      processed += 1;
+      checkpoint();
+    }
   }
+
+  const workerCount = Math.min(CONCURRENCY, jobs.length || 1);
+  console.log(`Processing ${jobs.length} pending records with concurrency ${workerCount}.`);
+  await Promise.all(Array.from({ length: workerCount }, (_, index) => worker(index + 1)));
 
   writeJson(OUTPUT, Array.from(enrichedByKey.values()));
   if (skippedByKey.size) writeJson(skippedOutputFile(), Array.from(skippedByKey.values()));
