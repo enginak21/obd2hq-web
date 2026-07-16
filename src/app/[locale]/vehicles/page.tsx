@@ -5,6 +5,9 @@ import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/
 import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const copy = getKnowledgeUiCopy(locale);

@@ -19,6 +19,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/:locale/vehicles',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, max-age=0',
+          },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           {
