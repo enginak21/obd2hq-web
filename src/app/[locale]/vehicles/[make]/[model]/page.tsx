@@ -2,24 +2,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
-import { getVehicleKnowledge, type VehicleKnowledgeProfile, vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
+import { getVehicleKnowledge, type VehicleKnowledgeProfile } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
-import { getVehicleSpecModelStaticParams, getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
+import { getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
 
-export function generateStaticParams() {
-  const seen = new Set<string>();
-  const vehicles = [
-    ...vehicleKnowledgeProfiles.map(vehicle => ({ make: vehicle.make, model: vehicle.model })),
-    ...getVehicleSpecModelStaticParams(),
-  ].filter(vehicle => {
-    const key = `${vehicle.make}/${vehicle.model}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-
-  return vehicles.flatMap(vehicle => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, make: vehicle.make, model: vehicle.model })));
-}
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; make: string; model: string }> }) {
   const { locale, make, model } = await params;

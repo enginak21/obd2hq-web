@@ -6,13 +6,10 @@ import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import {
   getVehicleKnowledge,
 } from '@/data/vehicle-knowledge';
-import { getVehicleSpecRecord, getVehicleSpecStaticParams } from '@/data/vehicle-spec-records';
+import { getVehicleSpecRecord } from '@/data/vehicle-spec-records';
 
-const locales = ['en', 'tr', 'de', 'es', 'fr'];
-
-export function generateStaticParams() {
-  return getVehicleSpecStaticParams().flatMap(params => locales.map(locale => ({ locale, ...params })));
-}
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; make: string; model: string; year: string; variant: string }> }) {
   const { locale, make, model, year, variant } = await params;
