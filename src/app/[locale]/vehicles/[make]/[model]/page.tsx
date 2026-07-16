@@ -5,6 +5,48 @@ import { getAlternates } from '@/utils/seo';
 import { getVehicleKnowledge, type VehicleKnowledgeProfile } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import { getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
+import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
+
+type VehicleVariantRow = NonNullable<VehicleKnowledgeProfile['yearTrimVariants']>[number];
+type VehicleLabels = {
+  metaTitle: (name: string) => string;
+  coverage: string;
+  generations: string;
+  engineVariants: string;
+  transmissionVariants: string;
+  sparkPlugs: string;
+  diagnosticCodes: string;
+  commonFailurePatterns: string;
+  serviceNote: string;
+  affectedYears: string;
+  symptoms: string;
+  firstChecks: string;
+  related: string;
+  dataQuality: string;
+  yearTrimSelector: string;
+  yearTrimSelectorDesc: string;
+  verifiedVariants: string;
+  openVariant: string;
+  engineCodesByYear: string;
+  oilCapacityByEngine: string;
+  year: string;
+  trim: string;
+  engineCodes: string;
+  displacement: string;
+  fuelSystem: string;
+  identifyEngineCode: string;
+  identifyVin: string;
+  identifySticker: string;
+  identifyScanTool: string;
+  faqTitle: string;
+  verifyExactVariant: string;
+  engineCodeQuestion: (name: string) => string;
+  engineCodeAnswer: (name: string, codes: string) => string;
+  oilQuestion: (name: string) => string;
+  oilAnswer: (name: string, oils: string) => string;
+  problemQuestion: (name: string) => string;
+  problemAnswer: (name: string, problems: string) => string;
+};
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -15,8 +57,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!vehicle) return {};
   const name = `${vehicle.make} ${vehicle.model}`.replace(/\b\w/g, c => c.toUpperCase());
   const copy = getKnowledgeUiCopy(locale);
+  const labels = getVehicleLabels(locale);
   return {
-    title: `${name} ${copy.vehicleTitleSuffix}`,
+    title: labels.metaTitle(name),
     description: copy.vehicleMetaDescription(name, vehicle.generation),
     alternates: getAlternates(`vehicles/${make}/${model}`, locale),
   };
@@ -30,16 +73,72 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
   const name = vehicle.displayName || `${vehicle.make} ${vehicle.model}`.replace(/\b\w/g, c => c.toUpperCase());
   const copy = getKnowledgeUiCopy(locale);
   const labels = getVehicleLabels(locale);
+  const variants = vehicle.yearTrimVariants || [];
+  const engineRows = buildEngineRows(variants);
+  const oilRows = buildOilRows(variants);
+  const problemRows = buildProblemRows(variants);
+  const faqItems = [
+    {
+      question: labels.engineCodeQuestion(name),
+      answer: engineRows.length > 0 ? labels.engineCodeAnswer(name, engineRows.slice(0, 4).map(row => row.engineCodes).join(', ')) : labels.verifyExactVariant,
+    },
+    {
+      question: labels.oilQuestion(name),
+      answer: oilRows.length > 0 ? labels.oilAnswer(name, oilRows.slice(0, 4).map(row => `${row.engineCodes}: ${row.oil}`).join('; ')) : labels.verifyExactVariant,
+    },
+    {
+      question: labels.problemQuestion(name),
+      answer: problemRows.length > 0 ? labels.problemAnswer(name, problemRows.slice(0, 5).map(row => row.problem).join(', ')) : labels.verifyExactVariant,
+    },
+  ];
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Vehicle',
-    name,
-    brand: vehicle.make,
-    model: vehicle.model,
-    vehicleModelDate: vehicle.years,
-    bodyType: vehicle.bodyStyle,
-    url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}`,
+    '@graph': [
+      {
+        '@type': 'Vehicle',
+        name,
+        brand: vehicle.make,
+        model: vehicle.model,
+        vehicleModelDate: vehicle.years,
+        bodyType: vehicle.bodyStyle,
+        url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://www.obd2hq.com/${locale}/vehicles` },
+          { '@type': 'ListItem', position: 3, name, item: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}` },
+        ],
+      },
+      {
+        '@type': 'ItemList',
+        name: `${name} ${labels.yearTrimSelector}`,
+        itemListElement: variants.slice(0, 50).map((variant, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: `${variant.year} ${name} ${variant.trim}`,
+          url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${variant.year}/${variant.slug}`,
+        })),
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(item => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        })),
+      },
+      {
+        '@type': 'TechArticle',
+        headline: `${name} engine codes, oil capacity and common problems`,
+        description: copy.vehicleMetaDescription(name, vehicle.generation),
+        about: name,
+        inLanguage: locale,
+        dateModified: '2026-07-16',
+      },
+    ],
   };
 
   return (
@@ -85,7 +184,10 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
                         <h3 className="text-lg font-black text-white">{variant.year} {name} {variant.trim}</h3>
                         <p className="mt-1 text-sm text-slate-400">{variant.chassisCode} / {variant.engineCodes.join(', ')} / {variant.engineSummary}</p>
                       </div>
-                      <span className="rounded-lg bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-200">{labels.openVariant}</span>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="rounded-lg bg-amber-500/10 px-3 py-1 text-xs font-bold text-amber-200">{getVariantQualityLabel(variant)}</span>
+                        <span className="rounded-lg bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-200">{labels.openVariant}</span>
+                      </div>
                     </div>
                     <div className="mt-3 grid sm:grid-cols-3 gap-2 text-xs font-bold text-slate-300">
                       <span>{copy.oilTypeLabel}: {variant.recommendedOil}</span>
@@ -96,6 +198,22 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
                 ))}
               </div>
             </section>
+          )}
+
+          {engineRows.length > 0 && (
+            <DataTable
+              title={labels.engineCodesByYear}
+              columns={[labels.year, labels.trim, labels.engineCodes, labels.displacement, labels.fuelSystem]}
+              rows={engineRows.slice(0, 80).map(row => [row.year, row.trim, row.engineCodes, row.displacement, row.fuelSystem])}
+            />
+          )}
+
+          {oilRows.length > 0 && (
+            <DataTable
+              title={labels.oilCapacityByEngine}
+              columns={[labels.year, labels.engineCodes, copy.oilTypeLabel, copy.oilCapacityLabel, copy.fluidLabel]}
+              rows={oilRows.slice(0, 80).map(row => [row.year, row.engineCodes, row.oil, row.capacity, row.transmission])}
+            />
           )}
 
           {vehicle.engineVariants && (
@@ -222,15 +340,22 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
             </section>
           ))}
           {vehicle.sourceNotes && <Panel title={labels.dataQuality} items={vehicle.sourceNotes} />}
+          <Panel title={labels.identifyEngineCode} items={[
+            labels.identifyVin,
+            labels.identifySticker,
+            labels.identifyScanTool,
+          ]} />
+          <Panel title={labels.faqTitle} items={faqItems.map(item => `${item.question} ${item.answer}`)} />
         </aside>
       </section>
     </main>
   );
 }
 
-function getVehicleLabels(locale: string) {
+function getVehicleLabels(locale: string): VehicleLabels {
   if (locale === 'tr') {
     return {
+      metaTitle: (name: string) => `${name} motor kodları, yağ kapasitesi ve kronik sorunlar`,
       coverage: 'Kapsam',
       generations: 'Yıl ve jenerasyon haritası',
       engineVariants: 'Motor kodları ve varyantlar',
@@ -248,9 +373,77 @@ function getVehicleLabels(locale: string) {
       yearTrimSelectorDesc: 'Net motor, yağ ve servis bilgisi için yılı ve kasayı seçin.',
       verifiedVariants: 'doğrulanmış varyant',
       openVariant: 'Detayı aç',
+      engineCodesByYear: 'Yıla göre motor kodları',
+      oilCapacityByEngine: 'Motora göre yağ kapasitesi',
+      year: 'Yıl',
+      trim: 'Kasa/versiyon',
+      engineCodes: 'Motor kodları',
+      displacement: 'Motor hacmi',
+      fuelSystem: 'Yakıt sistemi',
+      identifyEngineCode: 'Motor kodunu nasıl doğrularsınız?',
+      identifyVin: 'Ruhsat, VIN etiketi veya üretici servis kaydı motor seçeneğini doğrulamak için en güvenli başlangıçtır.',
+      identifySticker: 'Motor bölmesindeki etiketler, emisyon etiketi ve servis geçmişi motor ailesini doğrulamaya yardımcı olur.',
+      identifyScanTool: 'Canlı veri okuyabilen bir OBD2 cihazı motor kontrol ünitesi ve ilgili kodları kontrol etmek için kullanılabilir.',
+      faqTitle: 'Sık sorulan sorular',
+      verifyExactVariant: 'Kesin bilgi için yıl, motor, pazar ve kasa seçeneği birlikte doğrulanmalıdır.',
+      engineCodeQuestion: (name: string) => `${name} motor kodları nelerdir?`,
+      engineCodeAnswer: (name: string, codes: string) => `${name} için rehberde görünen başlıca motor kodları: ${codes}. Kesin motor kodunu yıl ve kasa seçimiyle doğrulayın.`,
+      oilQuestion: (name: string) => `${name} hangi motor yağını kullanır?`,
+      oilAnswer: (name: string, oils: string) => `${name} yağ bilgisi motor seçeneğine göre değişir. Rehberdeki özet: ${oils}.`,
+      problemQuestion: (name: string) => `${name} için sık görülen sorunlar nelerdir?`,
+      problemAnswer: (name: string, problems: string) => `${name} sayfasında öne çıkan kontroller: ${problems}. Arıza kodu varsa ilgili OBD2 rehberine geçin.`,
+    };
+  }
+  if (locale === 'de') {
+    return {
+      ...getVehicleLabels('en'),
+      metaTitle: (name: string) => `${name} Motorcodes, Ölmenge und häufige Probleme`,
+      coverage: 'Abdeckung',
+      engineCodesByYear: 'Motorcodes nach Jahr',
+      oilCapacityByEngine: 'Ölmenge nach Motor',
+      year: 'Jahr',
+      trim: 'Variante',
+      engineCodes: 'Motorcodes',
+      displacement: 'Hubraum',
+      fuelSystem: 'Kraftstoffsystem',
+      identifyEngineCode: 'Wie Sie den Motorcode prüfen',
+      faqTitle: 'Häufige Fragen',
+    };
+  }
+  if (locale === 'es') {
+    return {
+      ...getVehicleLabels('en'),
+      metaTitle: (name: string) => `${name} códigos de motor, aceite y problemas comunes`,
+      coverage: 'Cobertura',
+      engineCodesByYear: 'Códigos de motor por año',
+      oilCapacityByEngine: 'Capacidad de aceite por motor',
+      year: 'Año',
+      trim: 'Versión',
+      engineCodes: 'Códigos de motor',
+      displacement: 'Cilindrada',
+      fuelSystem: 'Sistema de combustible',
+      identifyEngineCode: 'Cómo confirmar el código de motor',
+      faqTitle: 'Preguntas frecuentes',
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      ...getVehicleLabels('en'),
+      metaTitle: (name: string) => `${name} codes moteur, huile et problèmes fréquents`,
+      coverage: 'Couverture',
+      engineCodesByYear: 'Codes moteur par année',
+      oilCapacityByEngine: 'Capacité d’huile par moteur',
+      year: 'Année',
+      trim: 'Version',
+      engineCodes: 'Codes moteur',
+      displacement: 'Cylindrée',
+      fuelSystem: 'Système carburant',
+      identifyEngineCode: 'Comment confirmer le code moteur',
+      faqTitle: 'Questions fréquentes',
     };
   }
   return {
+    metaTitle: (name: string) => `${name} Engine Codes, Oil Capacity and Common Problems`,
     coverage: 'Coverage',
     generations: 'Year and generation map',
     engineVariants: 'Engine codes and variants',
@@ -268,7 +461,65 @@ function getVehicleLabels(locale: string) {
     yearTrimSelectorDesc: 'Choose the exact year and trim to see engine, oil and service details.',
     verifiedVariants: 'verified variants',
     openVariant: 'Open details',
+    engineCodesByYear: 'Engine codes by year',
+    oilCapacityByEngine: 'Oil capacity by engine',
+    year: 'Year',
+    trim: 'Trim',
+    engineCodes: 'Engine codes',
+    displacement: 'Displacement',
+    fuelSystem: 'Fuel system',
+    identifyEngineCode: 'How to identify your engine code',
+    identifyVin: 'Start with the VIN, registration data or manufacturer service information when exact engine identity matters.',
+    identifySticker: 'Under-hood labels, emissions labels and service history can confirm the engine family and market equipment.',
+    identifyScanTool: 'A scanner with live data can confirm ECU information and connect the vehicle profile to related OBD2 codes.',
+    faqTitle: 'FAQ',
+    verifyExactVariant: 'Exact data should be verified by year, market, engine and trim.',
+    engineCodeQuestion: (name: string) => `What engine codes does the ${name} use?`,
+    engineCodeAnswer: (name: string, codes: string) => `The ${name} profiles currently show these main engine codes: ${codes}. Choose the exact year and trim to confirm the engine.`,
+    oilQuestion: (name: string) => `What oil does the ${name} use?`,
+    oilAnswer: (name: string, oils: string) => `${name} oil specification varies by engine and market. This guide lists: ${oils}.`,
+    problemQuestion: (name: string) => `What are common ${name} problems?`,
+    problemAnswer: (name: string, problems: string) => `Common checks highlighted for ${name}: ${problems}. If an OBD2 code is present, open the related code guide.`,
   };
+}
+
+function getVariantQualityLabel(variant: VehicleVariantRow) {
+  return 'make' in variant && 'model' in variant && 'displayName' in variant && 'generation' in variant
+    ? getVehicleSpecQualityLabel(variant as VehicleSpecRecord)
+    : 'Verified';
+}
+
+function buildEngineRows(variants: VehicleVariantRow[]) {
+  return variants.map(variant => ({
+    year: String(variant.year),
+    trim: variant.trim,
+    engineCodes: variant.engineCodes.join(', '),
+    displacement: variant.displacement,
+    fuelSystem: variant.fuelSystem,
+  }));
+}
+
+function buildOilRows(variants: VehicleVariantRow[]) {
+  return variants.map(variant => ({
+    year: String(variant.year),
+    engineCodes: variant.engineCodes.join(', '),
+    oil: variant.recommendedOil,
+    capacity: variant.oilCapacity,
+    transmission: variant.transmissionFluid,
+  }));
+}
+
+function buildProblemRows(variants: VehicleVariantRow[]) {
+  const seen = new Set<string>();
+  return variants.flatMap(variant => variant.commonProblems.map(problem => ({
+    year: String(variant.year),
+    problem,
+  }))).filter(row => {
+    const key = `${row.year}-${row.problem}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 function buildVehicleProfileFromSpecs(make: string, model: string): VehicleKnowledgeProfile | null {
   const variants = getVehicleSpecRecordsForModel(make, model);
@@ -327,6 +578,30 @@ function Timeline({ title, rows }: { title: string; rows: { title: string; body:
             <p className="mt-1 text-sm text-slate-300">{row.body}</p>
           </article>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function DataTable({ title, columns, rows }: { title: string; columns: string[]; rows: string[][] }) {
+  return (
+    <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
+      <h2 className="text-2xl font-black text-white">{title}</h2>
+      <div className="mt-5 overflow-x-auto">
+        <table className="w-full min-w-[680px] text-left text-sm">
+          <thead className="text-xs font-black uppercase tracking-widest text-slate-500">
+            <tr>
+              {columns.map(column => <th key={column} className="border-b border-white/10 px-3 py-3">{column}</th>)}
+            </tr>
+          </thead>
+          <tbody className="text-slate-300">
+            {rows.map((row, index) => (
+              <tr key={`${row.join('-')}-${index}`} className="border-b border-white/5 last:border-0">
+                {row.map((cell, cellIndex) => <td key={`${cell}-${cellIndex}`} className="px-3 py-3 font-medium">{cell}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );

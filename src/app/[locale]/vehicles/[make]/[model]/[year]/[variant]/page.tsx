@@ -7,6 +7,44 @@ import {
   getVehicleKnowledge,
 } from '@/data/vehicle-knowledge';
 import { getVehicleSpecRecord } from '@/data/vehicle-spec-records';
+import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
+
+type VariantLabels = {
+  metaSuffix: string;
+  metaDescription: (name: string, engine: string, oil: string) => string;
+  exactVariant: string;
+  engineIdentity: string;
+  engineCodes: string;
+  engineSummary: string;
+  displacement: string;
+  power: string;
+  torque: string;
+  fuelSystem: string;
+  timingDrive: string;
+  fluids: string;
+  differentialFluid: string;
+  serviceAndParts: string;
+  manualTransmission: string;
+  automaticTransmission: string;
+  sparkPlugs: string;
+  serviceInterval: string;
+  commonProblems: string;
+  firstChecks: string;
+  notes: string;
+  sourceNotes: string;
+  verifyByVin: string;
+  repairPrep: string;
+  repairPrepScan: string;
+  repairPrepFluid: string;
+  repairPrepVerify: string;
+  faqTitle: string;
+  engineQuestion: (name: string) => string;
+  engineAnswer: (name: string, engine: string, summary: string) => string;
+  oilQuestion: (name: string) => string;
+  oilAnswer: (name: string, oil: string, capacity: string) => string;
+  problemQuestion: (name: string) => string;
+  problemAnswer: (name: string, problems: string) => string;
+};
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -36,17 +74,61 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
   const labels = getVariantLabels(locale);
   const vehicleName = trim.displayName;
   const pageName = `${trim.year} ${vehicleName} ${trim.trim}`;
+  const qualityLabel = getVehicleSpecQualityLabel(trim);
+  const faqItems = [
+    {
+      question: labels.engineQuestion(pageName),
+      answer: labels.engineAnswer(pageName, trim.engineCodes.join(', '), trim.engineSummary),
+    },
+    {
+      question: labels.oilQuestion(pageName),
+      answer: labels.oilAnswer(pageName, trim.recommendedOil, trim.oilCapacity),
+    },
+    {
+      question: labels.problemQuestion(pageName),
+      answer: labels.problemAnswer(pageName, trim.commonProblems.slice(0, 4).join(', ')),
+    },
+  ];
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Vehicle',
-    name: pageName,
-    brand: trim.make,
-    model: `${vehicleName} ${trim.trim}`,
-    vehicleModelDate: String(trim.year),
-    vehicleEngine: trim.engineCodes.join(', '),
-    bodyType: trim.bodyStyle,
-    url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}`,
+    '@graph': [
+      {
+        '@type': 'Vehicle',
+        name: pageName,
+        brand: trim.make,
+        model: `${vehicleName} ${trim.trim}`,
+        vehicleModelDate: String(trim.year),
+        vehicleEngine: trim.engineCodes.join(', '),
+        bodyType: trim.bodyStyle,
+        url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://www.obd2hq.com/${locale}/vehicles` },
+          { '@type': 'ListItem', position: 3, name: vehicleName, item: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}` },
+          { '@type': 'ListItem', position: 4, name: pageName, item: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}` },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(item => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: { '@type': 'Answer', text: item.answer },
+        })),
+      },
+      {
+        '@type': 'TechArticle',
+        headline: `${pageName} engine code, oil capacity and service data`,
+        description: labels.metaDescription(pageName, trim.engineCodes.join(', '), trim.oilCapacity),
+        about: pageName,
+        inLanguage: locale,
+        dateModified: '2026-07-16',
+      },
+    ],
   };
 
   return (
@@ -64,6 +146,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
           <div className="mt-6 flex flex-wrap gap-2">
             {trim.engineCodes.map(code => <span key={code} className="rounded-lg bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-200">{code}</span>)}
             <span className="rounded-lg bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-200">{labels.exactVariant}</span>
+            <span className="rounded-lg bg-amber-500/10 px-3 py-1 text-xs font-bold text-amber-200">{qualityLabel}</span>
           </div>
         </div>
       </section>
@@ -110,6 +193,11 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
 
           <Panel title={labels.commonProblems} items={trim.commonProblems} />
           <Panel title={labels.firstChecks} items={trim.firstChecks} />
+          <Panel title={labels.repairPrep} items={[
+            labels.repairPrepScan,
+            labels.repairPrepFluid,
+            labels.repairPrepVerify,
+          ]} />
           <Panel title={labels.notes} items={trim.notes} />
         </div>
 
@@ -126,13 +214,14 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
           </section>
           <Panel title={labels.sourceNotes} items={trim.sourceNotes} />
           <Panel title={copy.compatibleTools} items={vehicle?.compatibleTools || [labels.verifyByVin]} />
+          <Panel title={labels.faqTitle} items={faqItems.map(item => `${item.question} ${item.answer}`)} />
         </aside>
       </section>
     </main>
   );
 }
 
-function getVariantLabels(locale: string) {
+function getVariantLabels(locale: string): VariantLabels {
   if (locale === 'tr') {
     return {
       metaSuffix: 'motor kodu, yağ kapasitesi ve teknik servis bilgileri',
@@ -158,6 +247,47 @@ function getVariantLabels(locale: string) {
       notes: 'Önemli notlar',
       sourceNotes: 'Kaynak ve doğrulama notları',
       verifyByVin: 'VIN ve pazara göre doğrulanmalı',
+      repairPrep: 'Parça değiştirmeden önce',
+      repairPrepScan: 'Arıza kodlarını ve freeze-frame verisini kaydedin; kodları silmeden önce mevcut durumu not alın.',
+      repairPrepFluid: 'Yağ, soğutma sıvısı ve şanzıman sıvısı seviyesini doğru sıcaklık/prosedürle kontrol edin.',
+      repairPrepVerify: 'Pahalı parça değişiminden önce güç, şase, soket, hortum, kaçak ve canlı veri kontrollerini doğrulayın.',
+      faqTitle: 'Sık sorulan sorular',
+      engineQuestion: (name: string) => `${name} motor kodu nedir?`,
+      engineAnswer: (name: string, engine: string, summary: string) => `${name} için bu kayıtta görünen motor kodu ${engine}; motor özeti: ${summary}.`,
+      oilQuestion: (name: string) => `${name} motor yağı ve kapasitesi nedir?`,
+      oilAnswer: (name: string, oil: string, capacity: string) => `${name} için listelenen motor yağı ${oil}, kapasite ${capacity}. Pazar ve motor seçeneğini doğrulayın.`,
+      problemQuestion: (name: string) => `${name} için sık sorunlar nelerdir?`,
+      problemAnswer: (name: string, problems: string) => `${name} için öne çıkan kontroller: ${problems}.`,
+    };
+  }
+  if (locale === 'de') {
+    return {
+      ...getVariantLabels('en'),
+      metaSuffix: 'Motorcode, Ölmenge und Servicedaten',
+      metaDescription: (name: string, engine: string, oil: string) => `${name}: Motorcode ${engine}, Ölmenge ${oil}, Getriebe, Wartung und bekannte Probleme.`,
+      exactVariant: 'Exakter Jahres-/Varianten-Datensatz',
+      repairPrep: 'Vor dem Teiletausch',
+      faqTitle: 'Häufige Fragen',
+    };
+  }
+  if (locale === 'es') {
+    return {
+      ...getVariantLabels('en'),
+      metaSuffix: 'código de motor, aceite y datos de servicio',
+      metaDescription: (name: string, engine: string, oil: string) => `${name}: código de motor ${engine}, capacidad de aceite ${oil}, transmisión, mantenimiento y problemas conocidos.`,
+      exactVariant: 'Registro exacto de año/versión',
+      repairPrep: 'Antes de cambiar piezas',
+      faqTitle: 'Preguntas frecuentes',
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      ...getVariantLabels('en'),
+      metaSuffix: 'code moteur, huile et données de service',
+      metaDescription: (name: string, engine: string, oil: string) => `${name}: code moteur ${engine}, capacité d’huile ${oil}, transmission, entretien et problèmes connus.`,
+      exactVariant: 'Fiche exacte année/version',
+      repairPrep: 'Avant de remplacer des pièces',
+      faqTitle: 'Questions fréquentes',
     };
   }
 
@@ -185,6 +315,17 @@ function getVariantLabels(locale: string) {
     notes: 'Important notes',
     sourceNotes: 'Source and verification notes',
     verifyByVin: 'Verify by VIN and market',
+    repairPrep: 'Before replacing parts',
+    repairPrepScan: 'Save fault codes and freeze-frame data before clearing anything.',
+    repairPrepFluid: 'Check engine oil, coolant and transmission fluid using the correct temperature and service procedure.',
+    repairPrepVerify: 'Verify power, ground, connectors, hoses, leaks and live data before replacing expensive parts.',
+    faqTitle: 'FAQ',
+    engineQuestion: (name: string) => `What engine code does the ${name} use?`,
+    engineAnswer: (name: string, engine: string, summary: string) => `${name} is listed here with engine code ${engine}; engine summary: ${summary}.`,
+    oilQuestion: (name: string) => `What oil and capacity does the ${name} use?`,
+    oilAnswer: (name: string, oil: string, capacity: string) => `${name} is listed with ${oil} and oil capacity ${capacity}. Confirm market and engine option before service.`,
+    problemQuestion: (name: string) => `What are common ${name} problems?`,
+    problemAnswer: (name: string, problems: string) => `Highlighted checks for ${name}: ${problems}.`,
   };
 }
 function Spec({ label, value }: { label: string; value: string }) {

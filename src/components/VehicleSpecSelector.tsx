@@ -21,6 +21,7 @@ export type VehicleSpecSelectorItem = {
   commonProblems: string[];
   firstChecks: string[];
   relatedCodes: string[];
+  qualityLabel: string;
 };
 
 type VehicleSpecSelectorProps = {
@@ -99,6 +100,7 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
                 <span className="rounded-lg bg-white/10 px-3 py-1 text-xs font-black text-slate-200">{selected.displayName}</span>
                 <span className="rounded-lg bg-white/10 px-3 py-1 text-xs font-black text-slate-200">{selected.trim}</span>
                 <span className="rounded-lg bg-emerald-500/10 px-3 py-1 text-xs font-black text-emerald-200">{labels.verified}</span>
+                <span className="rounded-lg bg-amber-500/10 px-3 py-1 text-xs font-black text-amber-200">{selected.qualityLabel}</span>
               </div>
               <h3 className="mt-4 text-2xl font-black text-white">{selected.engineCodes.join(', ')} - {selected.engineSummary}</h3>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -191,7 +193,7 @@ function getLabels(locale: string) {
     return {
       eyebrow: 'Araç bilgini bul',
       title: 'Marka, model ve yılı seç; teknik detayları hemen gör.',
-      subtitle: 'Yalnızca doğrulanmış ve içeriği dolu araç profilleri listelenir. Motor kodu, yağ tipi ve kapasite aynı ekranda açılır.',
+      subtitle: 'Yalnızca içeriği dolu araç profilleri listelenir. Motor kodu, yağ tipi, kapasite ve ilk kontroller aynı ekranda açılır.',
       make: 'Marka',
       model: 'Model',
       year: 'Yıl',
@@ -210,7 +212,85 @@ function getLabels(locale: string) {
       quickChecks: 'İlk kontroller',
       commonProblems: 'Sık sorunlar',
       emptyState: 'Detayları görmek için marka, model, yıl ve kasa seçin.',
-      verified: 'Doğrulanmış',
+      verified: 'Yayına uygun',
+    };
+  }
+  if (locale === 'de') {
+    return {
+      eyebrow: 'Fahrzeugdaten finden',
+      title: 'Marke, Modell und Jahr wählen; technische Daten sofort sehen.',
+      subtitle: 'Nur veröffentlichungsreife Profile werden gelistet. Motorcode, Öltyp, Ölmenge und erste Prüfungen erscheinen direkt.',
+      make: 'Marke',
+      model: 'Modell',
+      year: 'Jahr',
+      variant: 'Variante',
+      selectMake: 'Marke wählen',
+      selectModel: 'Modell wählen',
+      selectYear: 'Jahr wählen',
+      selectVariant: 'Variante wählen',
+      openFullPage: 'Detailseite öffnen',
+      engineCode: 'Motorcode',
+      chassis: 'Baureihe / Generation',
+      oilType: 'Motoröl',
+      oilCapacity: 'Ölmenge',
+      transmissionFluid: 'Getriebeöl',
+      relatedCodes: 'Verwandte Codes',
+      quickChecks: 'Erste Prüfungen',
+      commonProblems: 'Häufige Probleme',
+      emptyState: 'Wählen Sie Marke, Modell, Jahr und Variante.',
+      verified: 'Publizierbar',
+    };
+  }
+  if (locale === 'es') {
+    return {
+      eyebrow: 'Encuentra datos del vehículo',
+      title: 'Elige marca, modelo y año; ve los datos técnicos al instante.',
+      subtitle: 'Solo se muestran perfiles con contenido útil. Código de motor, aceite, capacidad y primeras revisiones aparecen juntos.',
+      make: 'Marca',
+      model: 'Modelo',
+      year: 'Año',
+      variant: 'Versión',
+      selectMake: 'Elegir marca',
+      selectModel: 'Elegir modelo',
+      selectYear: 'Elegir año',
+      selectVariant: 'Elegir versión',
+      openFullPage: 'Abrir página completa',
+      engineCode: 'Código de motor',
+      chassis: 'Chasis / generación',
+      oilType: 'Aceite de motor',
+      oilCapacity: 'Capacidad de aceite',
+      transmissionFluid: 'Fluido de transmisión',
+      relatedCodes: 'Códigos relacionados',
+      quickChecks: 'Primeras revisiones',
+      commonProblems: 'Problemas comunes',
+      emptyState: 'Elige marca, modelo, año y versión para ver detalles.',
+      verified: 'Publicable',
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      eyebrow: 'Trouver les données véhicule',
+      title: 'Choisissez marque, modèle et année; voyez les données techniques.',
+      subtitle: 'Seuls les profils prêts à publier sont listés. Code moteur, huile, capacité et premières vérifications sont affichés ensemble.',
+      make: 'Marque',
+      model: 'Modèle',
+      year: 'Année',
+      variant: 'Version',
+      selectMake: 'Choisir la marque',
+      selectModel: 'Choisir le modèle',
+      selectYear: 'Choisir l’année',
+      selectVariant: 'Choisir la version',
+      openFullPage: 'Ouvrir la page complète',
+      engineCode: 'Code moteur',
+      chassis: 'Châssis / génération',
+      oilType: 'Huile moteur',
+      oilCapacity: 'Capacité d’huile',
+      transmissionFluid: 'Fluide de transmission',
+      relatedCodes: 'Codes liés',
+      quickChecks: 'Premières vérifications',
+      commonProblems: 'Problèmes fréquents',
+      emptyState: 'Choisissez marque, modèle, année et version.',
+      verified: 'Publié',
     };
   }
 

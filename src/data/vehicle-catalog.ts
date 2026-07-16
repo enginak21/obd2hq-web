@@ -1,4 +1,4 @@
-import { allVehicleSpecRecords } from './vehicle-spec-records';
+import { indexedVehicleSpecRecords } from './vehicle-spec-records';
 
 export type VehicleCatalogOption = {
   make: string;
@@ -10,7 +10,7 @@ export type VehicleCatalogOption = {
 export function getVehicleCatalogOptions() {
   const byVehicle = new Map<string, VehicleCatalogOption>();
 
-  for (const record of allVehicleSpecRecords) {
+  for (const record of indexedVehicleSpecRecords) {
     const key = `${record.make}/${record.model}`;
     const existing = byVehicle.get(key);
 

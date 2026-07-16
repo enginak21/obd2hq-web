@@ -2,7 +2,8 @@ import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { KnowledgeHero } from '@/components/KnowledgeGrid';
 import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/VehicleSpecSelector';
-import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
+import { indexedVehicleSpecRecords } from '@/data/vehicle-spec-records';
+import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
 export const dynamic = 'force-dynamic';
@@ -22,7 +23,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
   const copy = getKnowledgeUiCopy(locale);
-  const selectorItems: VehicleSpecSelectorItem[] = allVehicleSpecRecords.map(variant => ({
+  const selectorItems: VehicleSpecSelectorItem[] = indexedVehicleSpecRecords.map(variant => ({
     make: variant.make,
     model: variant.model,
     displayName: variant.displayName,
@@ -39,6 +40,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
     commonProblems: variant.commonProblems,
     firstChecks: variant.firstChecks,
     relatedCodes: variant.relatedCodes,
+    qualityLabel: getVehicleSpecQualityLabel(variant),
   }));
 
   return (

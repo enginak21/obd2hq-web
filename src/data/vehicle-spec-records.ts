@@ -1,5 +1,6 @@
 import generatedSpecs from './generated/vehicle-specs.json';
 import { type VehicleYearTrimVariant, vehicleKnowledgeProfiles } from './vehicle-knowledge';
+import { getVehicleSpecQuality, isPublishableVehicleSpecRecord } from './vehicle-quality';
 
 export type VehicleSpecRecord = VehicleYearTrimVariant & {
   make: string;
@@ -26,6 +27,8 @@ const rawVehicleSpecRecords: VehicleSpecRecord[] = [
 ];
 
 export const allVehicleSpecRecords: VehicleSpecRecord[] = rawVehicleSpecRecords.filter(isCompleteVehicleSpecRecord);
+export const indexedVehicleSpecRecords: VehicleSpecRecord[] = allVehicleSpecRecords.filter(isPublishableVehicleSpecRecord);
+export const goldVehicleSpecRecords: VehicleSpecRecord[] = indexedVehicleSpecRecords.filter(item => getVehicleSpecQuality(item) === 'gold');
 
 export function isCompleteVehicleSpecRecord(item: VehicleSpecRecord) {
   const textFields = [
@@ -70,11 +73,11 @@ export function isCompleteVehicleSpecRecord(item: VehicleSpecRecord) {
 }
 
 export function getVehicleSpecRecord(make: string, model: string, year: string | number, variant: string) {
-  return allVehicleSpecRecords.find(item => item.make === make && item.model === model && item.year === Number(year) && item.slug === variant) || null;
+  return indexedVehicleSpecRecords.find(item => item.make === make && item.model === model && item.year === Number(year) && item.slug === variant) || null;
 }
 
 export function getVehicleSpecRecordsForModel(make: string, model: string) {
-  return allVehicleSpecRecords
+  return indexedVehicleSpecRecords
     .filter(item => item.make === make && item.model === model)
     .sort((a, b) => a.year - b.year || a.trim.localeCompare(b.trim));
 }
@@ -83,7 +86,7 @@ export function getVehicleSpecModelStaticParams() {
   const seen = new Set<string>();
   const params: { make: string; model: string }[] = [];
 
-  for (const item of allVehicleSpecRecords) {
+  for (const item of indexedVehicleSpecRecords) {
     const key = `${item.make}/${item.model}`;
     if (seen.has(key)) continue;
     seen.add(key);
@@ -94,7 +97,7 @@ export function getVehicleSpecModelStaticParams() {
 }
 
 export function getVehicleSpecStaticParams() {
-  return allVehicleSpecRecords.map(item => ({
+  return indexedVehicleSpecRecords.map(item => ({
     make: item.make,
     model: item.model,
     year: String(item.year),

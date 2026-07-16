@@ -6,7 +6,7 @@ import { PRIORITY_CODES } from '@/data/seo';
 import { symptomGuides } from '@/data/symptoms';
 import { automotiveTools } from '@/data/automotive-tools';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
-import { allVehicleSpecRecords } from '@/data/vehicle-spec-records';
+import { indexedVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
 
@@ -62,6 +62,9 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/symptoms`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/tools`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/vehicles`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/engine-codes`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/oil-capacity`, 'weekly', '0.9');
+      urls += urlEntry(`${BASE_URL}/${locale}/common-problems`, 'weekly', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/engines`, 'weekly', '0.85');
       urls += urlEntry(`${BASE_URL}/${locale}/transmissions`, 'weekly', '0.85');
       urls += urlEntry(`${BASE_URL}/${locale}/maintenance`, 'weekly', '0.8');
@@ -87,7 +90,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       vehicleKnowledgeProfiles.forEach((vehicle) => {
         urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${vehicle.make}/${vehicle.model}`, 'weekly', '0.85');
       });
-      allVehicleSpecRecords.forEach((variant) => {
+      indexedVehicleSpecRecords.forEach((variant) => {
         urls += urlEntry(`${BASE_URL}/${locale}/vehicles/${variant.make}/${variant.model}/${variant.year}/${variant.slug}`, 'monthly', '0.8');
       });
       engineProfiles.forEach((engine) => {

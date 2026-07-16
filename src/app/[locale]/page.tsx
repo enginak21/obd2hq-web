@@ -108,6 +108,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="max-w-6xl mx-auto px-6 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             [`/${locale}/vehicles`, copy.vehicleDatabaseShort, copy.vehicleDatabaseDesc],
+            [`/${locale}/engine-codes`, locale === 'tr' ? 'Motor kodu sorgulama' : 'Engine code lookup', locale === 'tr' ? 'Marka, model ve yıla göre motor kodları' : 'Engine codes by make, model and year'],
+            [`/${locale}/oil-capacity`, locale === 'tr' ? 'Yağ kapasitesi' : 'Oil capacity lookup', locale === 'tr' ? 'Motor yağı tipi ve kapasite rehberi' : 'Oil type and capacity by vehicle'],
+            [`/${locale}/common-problems`, locale === 'tr' ? 'Kronik sorunlar' : 'Common problems', locale === 'tr' ? 'Modele göre sık arıza ve ilk kontroller' : 'Known problems and first checks by model'],
             [`/${locale}/engines`, copy.engineDatabaseShort, copy.engineDatabaseDesc],
             [`/${locale}/transmissions`, copy.transmissionDatabaseShort, copy.transmissionDatabaseDesc],
             [`/${locale}/maintenance`, copy.maintenancePlatformShort, copy.maintenancePlatformDesc],
