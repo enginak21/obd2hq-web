@@ -113,6 +113,11 @@ function validateRecord(record, index) {
   if (!record.differentialFluid) {
     record.differentialFluid = 'Integrated transaxle/differential fluid on many trims; verify drivetrain and transmission by VIN.';
   }
+  if (!Array.isArray(record.commonProblems) || record.commonProblems.length === 0) {
+    record.commonProblems = [
+      'Known issues vary by engine, drivetrain, market and production date; verify by VIN, service history and technical service bulletins.',
+    ];
+  }
   if (hasDisqualifyingUncertainty(record)) {
     return null;
   }
