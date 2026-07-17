@@ -96,6 +96,7 @@ function trimToMetaLength(text) {
 
 function completeLocaleQuality(item, locale) {
   if (!item) return item;
+  item.slug = slugify(item.slug || item.title || '');
   if (wordCount(item.intro) < 35) {
     item.intro = `${String(item.intro || '').trim()} ${INTRO_EXPANSIONS[locale]}`.trim();
   }
@@ -205,7 +206,7 @@ async function generateWithRetry(seed) {
 
 function normalizeRecord(record, seed) {
   record.intentKey = seed.intentKey;
-  record.contentGroupId = record.contentGroupId || slugify(seed.intentKey);
+  record.contentGroupId = slugify(record.contentGroupId || seed.intentKey);
   record.symptomKey = seed.symptom;
   for (const locale of LOCALES) completeLocaleQuality(record.locales?.[locale], locale);
   record.status = LOCALES.every(locale => record.locales?.[locale]?.slug) ? 'published' : 'needs_review';
