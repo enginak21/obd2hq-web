@@ -8,5 +8,35 @@
       "es": "renault-no-acelera",
       "fr": "renault-manque-de-puissance"
     }
+  },
+  {
+    "contentGroupId": "renault-engine-noise",
+    "slugs": {
+      "en": "renault-engine-noise",
+      "tr": "renault-motordan-ses-geliyor",
+      "de": "renault-motorgeraeusche",
+      "es": "ruidos-motor-renault",
+      "fr": "bruit-moteur-renault"
+    }
+  },
+  {
+    "contentGroupId": "renault-rough-idle-issue",
+    "slugs": {
+      "en": "renault-rough-idle",
+      "tr": "renault-rolanti-dalgalanma",
+      "de": "renault-unstetiger-leerlauf",
+      "es": "renault-ralenti-irregular",
+      "fr": "renault-regime-moteur-irregulier"
+    }
+  },
+  {
+    "contentGroupId": "renault-engine-shaking-guide",
+    "slugs": {
+      "en": "renault-engine-shaking-causes-diagnosis",
+      "tr": "renault-titriyor-nedenleri-ve-cozumu",
+      "de": "renault-motor-vibrieren-ursachen-anleitung",
+      "es": "renault-motor-vibracion-causas-y-diagnostico",
+      "fr": "renault-vibrations-moteur-causes-diagnostic"
+    }
   }
 ]

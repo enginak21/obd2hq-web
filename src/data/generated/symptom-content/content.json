@@ -15,20 +15,74 @@
         "intro": "When a Renault loses power, will not accelerate normally, or feels like it has gone into limp mode, the cause is usually air metering, boost control, fuel delivery, exhaust restriction, sensor data, or an engine protection strategy. This guide gives a practical order of checks before replacing expensive parts.",
         "severity": "High",
         "driveAdvice": "Avoid hard acceleration and highway passing until the cause is known. If the vehicle enters limp mode, smokes heavily, overheats, or the check engine light flashes, stop driving and arrange inspection.",
-        "likelyCauses": ["MAF or MAP sensor reading incorrectly", "Turbo boost leak or boost control fault", "Clogged fuel filter or low fuel pressure", "EGR valve sticking open", "DPF or catalytic converter restriction", "Vacuum leak or split intake hose", "Transmission limp mode or clutch slip"],
-        "diagnosticSteps": ["Scan all modules and save freeze-frame data before clearing codes.", "Check for P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 and fuel pressure codes.", "Compare MAF/MAP live data at idle and under load.", "Inspect intake hoses, intercooler pipes, vacuum lines and clamps for leaks.", "Check fuel pressure, filter condition and injector correction values where available.", "Review exhaust backpressure, DPF soot load or catalyst restriction signs.", "Road-test gently after each verified repair and confirm the fault does not return."],
-        "firstChecks": ["OBD2 scan with freeze-frame data", "Air filter and intake hose inspection", "MAF/MAP connector and live data", "Boost hose and intercooler leak check", "Fuel pressure or filter condition", "Exhaust restriction/DPF indicators"],
-        "commonMistakes": ["Replacing the turbo before checking split boost hoses", "Cleaning or replacing MAF without comparing live data", "Ignoring EGR/DPF faults on diesel models", "Clearing limp-mode codes before saving freeze-frame data", "Assuming all power loss is an injector problem"],
-        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "likelyCauses": [
+          "MAF or MAP sensor reading incorrectly",
+          "Turbo boost leak or boost control fault",
+          "Clogged fuel filter or low fuel pressure",
+          "EGR valve sticking open",
+          "DPF or catalytic converter restriction",
+          "Vacuum leak or split intake hose",
+          "Transmission limp mode or clutch slip"
+        ],
+        "diagnosticSteps": [
+          "Scan all modules and save freeze-frame data before clearing codes.",
+          "Check for P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 and fuel pressure codes.",
+          "Compare MAF/MAP live data at idle and under load.",
+          "Inspect intake hoses, intercooler pipes, vacuum lines and clamps for leaks.",
+          "Check fuel pressure, filter condition and injector correction values where available.",
+          "Review exhaust backpressure, DPF soot load or catalyst restriction signs.",
+          "Road-test gently after each verified repair and confirm the fault does not return."
+        ],
+        "firstChecks": [
+          "OBD2 scan with freeze-frame data",
+          "Air filter and intake hose inspection",
+          "MAF/MAP connector and live data",
+          "Boost hose and intercooler leak check",
+          "Fuel pressure or filter condition",
+          "Exhaust restriction/DPF indicators"
+        ],
+        "commonMistakes": [
+          "Replacing the turbo before checking split boost hoses",
+          "Cleaning or replacing MAF without comparing live data",
+          "Ignoring EGR/DPF faults on diesel models",
+          "Clearing limp-mode codes before saving freeze-frame data",
+          "Assuming all power loss is an injector problem"
+        ],
+        "relatedCodes": [
+          "P0101",
+          "P0102",
+          "P0235",
+          "P0299",
+          "P0401",
+          "P0420"
+        ],
         "internalLinks": [
-          { "label": "P0235 boost sensor guide", "href": "/en/suzuki/jimny/p0235" },
-          { "label": "P0102 MAF low input", "href": "/en/acura/tlx/p0102" },
-          { "label": "Diagnostic assistant", "href": "/en/tools/diagnostic-assistant" }
+          {
+            "label": "P0235 boost sensor guide",
+            "href": "/en/suzuki/jimny/p0235"
+          },
+          {
+            "label": "P0102 MAF low input",
+            "href": "/en/acura/tlx/p0102"
+          },
+          {
+            "label": "Diagnostic assistant",
+            "href": "/en/tools/diagnostic-assistant"
+          }
         ],
         "faq": [
-          { "q": "Can I drive a Renault that is losing power?", "a": "Drive gently only if the engine runs smoothly and no warning light is flashing. Limp mode, heavy smoke, overheating or flashing check engine light means the vehicle should be inspected immediately." },
-          { "q": "What OBD2 codes are common with Renault power loss?", "a": "Common related codes include P0101, P0102, P0235, P0299, P0401, P0402 and catalyst or DPF efficiency codes depending on the engine." },
-          { "q": "Should I replace the turbo first?", "a": "No. Boost leaks, vacuum control, MAP/MAF data, actuator control and exhaust restriction should be checked before replacing a turbocharger." }
+          {
+            "q": "Can I drive a Renault that is losing power?",
+            "a": "Drive gently only if the engine runs smoothly and no warning light is flashing. Limp mode, heavy smoke, overheating or flashing check engine light means the vehicle should be inspected immediately."
+          },
+          {
+            "q": "What OBD2 codes are common with Renault power loss?",
+            "a": "Common related codes include P0101, P0102, P0235, P0299, P0401, P0402 and catalyst or DPF efficiency codes depending on the engine."
+          },
+          {
+            "q": "Should I replace the turbo first?",
+            "a": "No. Boost leaks, vacuum control, MAP/MAF data, actuator control and exhaust restriction should be checked before replacing a turbocharger."
+          }
         ],
         "schemaTitle": "Renault losing power diagnostic guide",
         "schemaDescription": "Step-by-step Renault loss of power checks, likely causes, related OBD2 codes and safety guidance."
@@ -40,20 +94,74 @@
         "intro": "Renault aracınız gaz yemiyor, hızlanmıyor veya kendini korumaya almış gibi davranıyorsa sorun çoğunlukla hava ölçümü, turbo basıncı, yakıt beslemesi, EGR, egzoz kısıtlaması veya sensör verileriyle ilgilidir. Bu rehber pahalı parça değiştirmeden önce izlenecek doğru kontrol sırasını gösterir.",
         "severity": "Yüksek",
         "driveAdvice": "Sebep bulunana kadar ani hızlanma ve yüksek hızdan kaçının. Araç limp mode'a giriyorsa, yoğun duman atıyorsa, hararet yapıyorsa veya motor arıza lambası yanıp sönüyorsa kullanmayı bırakıp kontrol ettirin.",
-        "likelyCauses": ["MAF veya MAP sensörünün hatalı okuması", "Turbo basınç kaçağı veya boost kontrol arızası", "Tıkalı yakıt filtresi veya düşük yakıt basıncı", "EGR valfinin açık kalması", "DPF veya katalizör tıkanıklığı", "Vakum kaçağı veya yırtık emme hortumu", "Şanzıman koruma modu veya debriyaj kaçırması"],
-        "diagnosticSteps": ["Kodları silmeden önce tüm modülleri tarayın ve freeze-frame verisini kaydedin.", "P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 ve yakıt basıncı kodlarını kontrol edin.", "Rölantide ve yük altında MAF/MAP canlı verilerini karşılaştırın.", "Emme hortumları, intercooler boruları, vakum hatları ve kelepçelerde kaçak arayın.", "Yakıt basıncını, filtre durumunu ve varsa enjektör düzeltme değerlerini kontrol edin.", "Egzoz geri basıncı, DPF doluluk veya katalizör tıkanıklığı belirtilerini inceleyin.", "Her doğrulanmış onarımdan sonra hafif yol testi yapıp arızanın dönmediğini doğrulayın."],
-        "firstChecks": ["Freeze-frame verisiyle OBD2 taraması", "Hava filtresi ve emme hortumu kontrolü", "MAF/MAP soketi ve canlı veri", "Turbo hortumu ve intercooler kaçak kontrolü", "Yakıt basıncı veya filtre durumu", "Egzoz kısıtlaması/DPF işaretleri"],
-        "commonMistakes": ["Yırtık turbo hortumunu kontrol etmeden turbo değiştirmek", "Canlı veri karşılaştırmadan MAF temizlemek veya değiştirmek", "Dizel modellerde EGR/DPF hatalarını görmezden gelmek", "Freeze-frame kaydetmeden limp mode kodlarını silmek", "Her çekiş düşüklüğünü enjektör arızası sanmak"],
-        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "likelyCauses": [
+          "MAF veya MAP sensörünün hatalı okuması",
+          "Turbo basınç kaçağı veya boost kontrol arızası",
+          "Tıkalı yakıt filtresi veya düşük yakıt basıncı",
+          "EGR valfinin açık kalması",
+          "DPF veya katalizör tıkanıklığı",
+          "Vakum kaçağı veya yırtık emme hortumu",
+          "Şanzıman koruma modu veya debriyaj kaçırması"
+        ],
+        "diagnosticSteps": [
+          "Kodları silmeden önce tüm modülleri tarayın ve freeze-frame verisini kaydedin.",
+          "P0101, P0102, P0235, P0299, P0401, P0402, P0420, P2002 ve yakıt basıncı kodlarını kontrol edin.",
+          "Rölantide ve yük altında MAF/MAP canlı verilerini karşılaştırın.",
+          "Emme hortumları, intercooler boruları, vakum hatları ve kelepçelerde kaçak arayın.",
+          "Yakıt basıncını, filtre durumunu ve varsa enjektör düzeltme değerlerini kontrol edin.",
+          "Egzoz geri basıncı, DPF doluluk veya katalizör tıkanıklığı belirtilerini inceleyin.",
+          "Her doğrulanmış onarımdan sonra hafif yol testi yapıp arızanın dönmediğini doğrulayın."
+        ],
+        "firstChecks": [
+          "Freeze-frame verisiyle OBD2 taraması",
+          "Hava filtresi ve emme hortumu kontrolü",
+          "MAF/MAP soketi ve canlı veri",
+          "Turbo hortumu ve intercooler kaçak kontrolü",
+          "Yakıt basıncı veya filtre durumu",
+          "Egzoz kısıtlaması/DPF işaretleri"
+        ],
+        "commonMistakes": [
+          "Yırtık turbo hortumunu kontrol etmeden turbo değiştirmek",
+          "Canlı veri karşılaştırmadan MAF temizlemek veya değiştirmek",
+          "Dizel modellerde EGR/DPF hatalarını görmezden gelmek",
+          "Freeze-frame kaydetmeden limp mode kodlarını silmek",
+          "Her çekiş düşüklüğünü enjektör arızası sanmak"
+        ],
+        "relatedCodes": [
+          "P0101",
+          "P0102",
+          "P0235",
+          "P0299",
+          "P0401",
+          "P0420"
+        ],
         "internalLinks": [
-          { "label": "P0235 boost sensörü rehberi", "href": "/tr/suzuki/jimny/p0235" },
-          { "label": "P0102 MAF düşük giriş", "href": "/tr/acura/tlx/p0102" },
-          { "label": "Teşhis asistanı", "href": "/tr/tools/diagnostic-assistant" }
+          {
+            "label": "P0235 boost sensörü rehberi",
+            "href": "/tr/suzuki/jimny/p0235"
+          },
+          {
+            "label": "P0102 MAF düşük giriş",
+            "href": "/tr/acura/tlx/p0102"
+          },
+          {
+            "label": "Teşhis asistanı",
+            "href": "/tr/tools/diagnostic-assistant"
+          }
         ],
         "faq": [
-          { "q": "Gaz yemeyen Renault kullanılır mı?", "a": "Motor düzgün çalışıyor ve arıza lambası yanıp sönmüyorsa düşük yükle kısa mesafe gidilebilir. Limp mode, yoğun duman, hararet veya yanıp sönen motor lambası varsa araç zorlanmamalıdır." },
-          { "q": "Renault gaz yememe arızasında hangi kodlar çıkar?", "a": "P0101, P0102, P0235, P0299, P0401, P0402 ve motora göre DPF/katalizör verim kodları sık görülebilir." },
-          { "q": "Önce turbo mu değişmeli?", "a": "Hayır. Turbo değişmeden önce boost kaçağı, vakum kontrolü, MAP/MAF verisi, aktüatör komutu ve egzoz kısıtlaması kontrol edilmelidir." }
+          {
+            "q": "Gaz yemeyen Renault kullanılır mı?",
+            "a": "Motor düzgün çalışıyor ve arıza lambası yanıp sönmüyorsa düşük yükle kısa mesafe gidilebilir. Limp mode, yoğun duman, hararet veya yanıp sönen motor lambası varsa araç zorlanmamalıdır."
+          },
+          {
+            "q": "Renault gaz yememe arızasında hangi kodlar çıkar?",
+            "a": "P0101, P0102, P0235, P0299, P0401, P0402 ve motora göre DPF/katalizör verim kodları sık görülebilir."
+          },
+          {
+            "q": "Önce turbo mu değişmeli?",
+            "a": "Hayır. Turbo değişmeden önce boost kaçağı, vakum kontrolü, MAP/MAF verisi, aktüatör komutu ve egzoz kısıtlaması kontrol edilmelidir."
+          }
         ],
         "schemaTitle": "Renault gaz yemiyor arıza rehberi",
         "schemaDescription": "Renault çekiş düşüklüğü için olası nedenler, OBD2 kodları, ilk kontroller ve güvenli kullanım rehberi."
@@ -65,20 +173,74 @@
         "intro": "Wenn ein Renault keine Leistung hat, schlecht beschleunigt oder in den Notlauf geht, liegen die Ursachen häufig bei Luftmessung, Ladedruck, Kraftstoffversorgung, EGR, Abgasgegendruck oder Sensordaten. Der richtige Weg ist nicht sofort der Teiletausch, sondern ein klarer Prüfablauf mit OBD2-Codes, Livedaten, Sichtprüfung und Belastungstest.",
         "severity": "Hoch",
         "driveAdvice": "Bis zur Diagnose starke Beschleunigung und Autobahnfahrten vermeiden. Bei Notlauf, starkem Rauch, Überhitzung oder blinkender Motorkontrollleuchte nicht weiterfahren.",
-        "likelyCauses": ["MAF- oder MAP-Sensor liefert falsche Werte", "Ladedruckleck oder Boost-Regelung defekt", "Kraftstofffilter verstopft oder Kraftstoffdruck niedrig", "EGR-Ventil hängt offen", "DPF oder Katalysator eingeschränkt", "Unterdruckleck oder gerissener Ansaugschlauch", "Getriebe-Notlauf oder Kupplung rutscht"],
-        "diagnosticSteps": ["Alle Module scannen und Freeze-Frame speichern.", "Codes wie P0101, P0102, P0235, P0299, P0401, P0402, P0420 und P2002 prüfen.", "MAF/MAP-Livedaten bei Leerlauf und Last vergleichen.", "Ansaugschläuche, Ladeluftstrecke, Unterdruckleitungen und Schellen prüfen.", "Kraftstoffdruck, Filterzustand und Injektorkorrekturen prüfen.", "Abgasgegendruck, DPF-Beladung oder Katalysator-Einschränkung prüfen.", "Nach jeder bestätigten Reparatur vorsichtig testen."],
-        "firstChecks": ["OBD2-Scan mit Freeze-Frame", "Luftfilter und Ansaugschläuche", "MAF/MAP-Stecker und Livedaten", "Ladedruck- und Intercooler-Lecks", "Kraftstoffdruck oder Filter", "Abgas-/DPF-Hinweise"],
-        "commonMistakes": ["Turbo ersetzen, bevor Ladedruckschläuche geprüft werden", "MAF ohne Livedaten ersetzen", "EGR/DPF-Fehler ignorieren", "Notlaufcodes ohne Freeze-Frame löschen", "Jeden Leistungsverlust als Injektorfehler deuten"],
-        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "likelyCauses": [
+          "MAF- oder MAP-Sensor liefert falsche Werte",
+          "Ladedruckleck oder Boost-Regelung defekt",
+          "Kraftstofffilter verstopft oder Kraftstoffdruck niedrig",
+          "EGR-Ventil hängt offen",
+          "DPF oder Katalysator eingeschränkt",
+          "Unterdruckleck oder gerissener Ansaugschlauch",
+          "Getriebe-Notlauf oder Kupplung rutscht"
+        ],
+        "diagnosticSteps": [
+          "Alle Module scannen und Freeze-Frame speichern.",
+          "Codes wie P0101, P0102, P0235, P0299, P0401, P0402, P0420 und P2002 prüfen.",
+          "MAF/MAP-Livedaten bei Leerlauf und Last vergleichen.",
+          "Ansaugschläuche, Ladeluftstrecke, Unterdruckleitungen und Schellen prüfen.",
+          "Kraftstoffdruck, Filterzustand und Injektorkorrekturen prüfen.",
+          "Abgasgegendruck, DPF-Beladung oder Katalysator-Einschränkung prüfen.",
+          "Nach jeder bestätigten Reparatur vorsichtig testen."
+        ],
+        "firstChecks": [
+          "OBD2-Scan mit Freeze-Frame",
+          "Luftfilter und Ansaugschläuche",
+          "MAF/MAP-Stecker und Livedaten",
+          "Ladedruck- und Intercooler-Lecks",
+          "Kraftstoffdruck oder Filter",
+          "Abgas-/DPF-Hinweise"
+        ],
+        "commonMistakes": [
+          "Turbo ersetzen, bevor Ladedruckschläuche geprüft werden",
+          "MAF ohne Livedaten ersetzen",
+          "EGR/DPF-Fehler ignorieren",
+          "Notlaufcodes ohne Freeze-Frame löschen",
+          "Jeden Leistungsverlust als Injektorfehler deuten"
+        ],
+        "relatedCodes": [
+          "P0101",
+          "P0102",
+          "P0235",
+          "P0299",
+          "P0401",
+          "P0420"
+        ],
         "internalLinks": [
-          { "label": "P0235 Ladedrucksensor", "href": "/de/suzuki/jimny/p0235" },
-          { "label": "P0102 MAF niedriges Signal", "href": "/de/acura/tlx/p0102" },
-          { "label": "Diagnoseassistent", "href": "/de/tools/diagnostic-assistant" }
+          {
+            "label": "P0235 Ladedrucksensor",
+            "href": "/de/suzuki/jimny/p0235"
+          },
+          {
+            "label": "P0102 MAF niedriges Signal",
+            "href": "/de/acura/tlx/p0102"
+          },
+          {
+            "label": "Diagnoseassistent",
+            "href": "/de/tools/diagnostic-assistant"
+          }
         ],
         "faq": [
-          { "q": "Kann ich einen Renault ohne Leistung weiterfahren?", "a": "Nur vorsichtig, wenn der Motor ruhig läuft und keine Leuchte blinkt. Notlauf, Rauch, Überhitzung oder blinkende Leuchte erfordern sofortige Prüfung." },
-          { "q": "Welche OBD2-Codes passen dazu?", "a": "Häufig sind P0101, P0102, P0235, P0299, P0401, P0402 sowie DPF- oder Katalysatorcodes." },
-          { "q": "Sollte zuerst der Turbo ersetzt werden?", "a": "Nein. Ladedruckleck, Unterdrucksteuerung, MAP/MAF-Daten und Abgasgegendruck müssen zuerst geprüft werden." }
+          {
+            "q": "Kann ich einen Renault ohne Leistung weiterfahren?",
+            "a": "Nur vorsichtig, wenn der Motor ruhig läuft und keine Leuchte blinkt. Notlauf, Rauch, Überhitzung oder blinkende Leuchte erfordern sofortige Prüfung."
+          },
+          {
+            "q": "Welche OBD2-Codes passen dazu?",
+            "a": "Häufig sind P0101, P0102, P0235, P0299, P0401, P0402 sowie DPF- oder Katalysatorcodes."
+          },
+          {
+            "q": "Sollte zuerst der Turbo ersetzt werden?",
+            "a": "Nein. Ladedruckleck, Unterdrucksteuerung, MAP/MAF-Daten und Abgasgegendruck müssen zuerst geprüft werden."
+          }
         ],
         "schemaTitle": "Renault keine Leistung Diagnose",
         "schemaDescription": "Renault Leistungsverlust: Ursachen, OBD2-Codes, Prüfablauf und sichere Weiterfahrt."
@@ -90,20 +252,74 @@
         "intro": "Cuando un Renault no acelera, pierde potencia o entra en modo emergencia, las causas suelen estar en medición de aire, presión de turbo, combustible, EGR, escape restringido o datos de sensores. La forma segura de diagnosticarlo es guardar los códigos, revisar datos en vivo y comprobar fugas o restricciones antes de cambiar piezas caras.",
         "severity": "Alta",
         "driveAdvice": "Evita aceleraciones fuertes hasta saber la causa. Si hay modo emergencia, humo intenso, sobrecalentamiento o luz check engine parpadeando, no sigas conduciendo.",
-        "likelyCauses": ["Sensor MAF o MAP con lectura incorrecta", "Fuga de presión de turbo o fallo de control", "Filtro de combustible obstruido o baja presión", "Válvula EGR trabada abierta", "DPF o catalizador restringido", "Fuga de vacío o manguera de admisión rota", "Modo emergencia de transmisión o embrague patinando"],
-        "diagnosticSteps": ["Escanear todos los módulos y guardar freeze-frame.", "Revisar P0101, P0102, P0235, P0299, P0401, P0402, P0420 y P2002.", "Comparar datos MAF/MAP en ralentí y con carga.", "Inspeccionar mangueras de admisión, intercooler, vacío y abrazaderas.", "Comprobar presión de combustible, filtro y correcciones de inyectores.", "Revisar contrapresión de escape, carga DPF o restricción del catalizador.", "Probar suavemente después de cada reparación confirmada."],
-        "firstChecks": ["Escaneo OBD2 con freeze-frame", "Filtro de aire y mangueras", "Conector y datos MAF/MAP", "Fugas de turbo/intercooler", "Presión o filtro de combustible", "Indicadores de escape/DPF"],
-        "commonMistakes": ["Cambiar turbo sin revisar mangueras", "Cambiar MAF sin datos en vivo", "Ignorar EGR/DPF en diésel", "Borrar códigos sin freeze-frame", "Asumir que todo es inyector"],
-        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "likelyCauses": [
+          "Sensor MAF o MAP con lectura incorrecta",
+          "Fuga de presión de turbo o fallo de control",
+          "Filtro de combustible obstruido o baja presión",
+          "Válvula EGR trabada abierta",
+          "DPF o catalizador restringido",
+          "Fuga de vacío o manguera de admisión rota",
+          "Modo emergencia de transmisión o embrague patinando"
+        ],
+        "diagnosticSteps": [
+          "Escanear todos los módulos y guardar freeze-frame.",
+          "Revisar P0101, P0102, P0235, P0299, P0401, P0402, P0420 y P2002.",
+          "Comparar datos MAF/MAP en ralentí y con carga.",
+          "Inspeccionar mangueras de admisión, intercooler, vacío y abrazaderas.",
+          "Comprobar presión de combustible, filtro y correcciones de inyectores.",
+          "Revisar contrapresión de escape, carga DPF o restricción del catalizador.",
+          "Probar suavemente después de cada reparación confirmada."
+        ],
+        "firstChecks": [
+          "Escaneo OBD2 con freeze-frame",
+          "Filtro de aire y mangueras",
+          "Conector y datos MAF/MAP",
+          "Fugas de turbo/intercooler",
+          "Presión o filtro de combustible",
+          "Indicadores de escape/DPF"
+        ],
+        "commonMistakes": [
+          "Cambiar turbo sin revisar mangueras",
+          "Cambiar MAF sin datos en vivo",
+          "Ignorar EGR/DPF en diésel",
+          "Borrar códigos sin freeze-frame",
+          "Asumir que todo es inyector"
+        ],
+        "relatedCodes": [
+          "P0101",
+          "P0102",
+          "P0235",
+          "P0299",
+          "P0401",
+          "P0420"
+        ],
         "internalLinks": [
-          { "label": "Guía P0235 sensor boost", "href": "/es/suzuki/jimny/p0235" },
-          { "label": "P0102 señal MAF baja", "href": "/es/acura/tlx/p0102" },
-          { "label": "Asistente de diagnóstico", "href": "/es/tools/diagnostic-assistant" }
+          {
+            "label": "Guía P0235 sensor boost",
+            "href": "/es/suzuki/jimny/p0235"
+          },
+          {
+            "label": "P0102 señal MAF baja",
+            "href": "/es/acura/tlx/p0102"
+          },
+          {
+            "label": "Asistente de diagnóstico",
+            "href": "/es/tools/diagnostic-assistant"
+          }
         ],
         "faq": [
-          { "q": "¿Puedo conducir un Renault que no acelera?", "a": "Solo con suavidad si el motor funciona estable y la luz no parpadea. Modo emergencia, humo, temperatura alta o luz parpadeando requieren revisión inmediata." },
-          { "q": "¿Qué códigos OBD2 aparecen?", "a": "Son comunes P0101, P0102, P0235, P0299, P0401, P0402 y códigos de DPF o catalizador." },
-          { "q": "¿Debo cambiar el turbo primero?", "a": "No. Antes hay que revisar fugas, control de vacío, datos MAP/MAF y restricción de escape." }
+          {
+            "q": "¿Puedo conducir un Renault que no acelera?",
+            "a": "Solo con suavidad si el motor funciona estable y la luz no parpadea. Modo emergencia, humo, temperatura alta o luz parpadeando requieren revisión inmediata."
+          },
+          {
+            "q": "¿Qué códigos OBD2 aparecen?",
+            "a": "Son comunes P0101, P0102, P0235, P0299, P0401, P0402 y códigos de DPF o catalizador."
+          },
+          {
+            "q": "¿Debo cambiar el turbo primero?",
+            "a": "No. Antes hay que revisar fugas, control de vacío, datos MAP/MAF y restricción de escape."
+          }
         ],
         "schemaTitle": "Renault no acelera diagnóstico",
         "schemaDescription": "Causas, códigos OBD2 y primeras revisiones para Renault con pérdida de potencia."
@@ -115,23 +331,1130 @@
         "intro": "Quand une Renault manque de puissance, accélère mal ou passe en mode dégradé, la cause se situe souvent au niveau de la mesure d'air, du turbo, du carburant, de l'EGR, de l'échappement ou des données capteurs.",
         "severity": "Élevée",
         "driveAdvice": "Évitez les fortes accélérations tant que la cause n'est pas connue. Mode dégradé, forte fumée, surchauffe ou voyant moteur clignotant nécessitent un arrêt et un contrôle.",
-        "likelyCauses": ["Capteur MAF ou MAP incorrect", "Fuite de suralimentation ou défaut de commande turbo", "Filtre carburant colmaté ou pression faible", "Vanne EGR bloquée ouverte", "DPF ou catalyseur restreint", "Fuite de dépression ou durite d'admission fendue", "Mode dégradé boîte ou embrayage qui patine"],
-        "diagnosticSteps": ["Scanner tous les modules et sauvegarder le freeze-frame.", "Contrôler P0101, P0102, P0235, P0299, P0401, P0402, P0420 et P2002.", "Comparer les données MAF/MAP au ralenti et en charge.", "Inspecter admission, intercooler, durites de dépression et colliers.", "Contrôler pression carburant, filtre et corrections injecteurs.", "Vérifier contre-pression échappement, charge DPF ou restriction catalyseur.", "Faire un essai doux après chaque réparation confirmée."],
-        "firstChecks": ["Scan OBD2 avec freeze-frame", "Filtre à air et durites", "Connecteur et données MAF/MAP", "Fuites turbo/intercooler", "Pression ou filtre carburant", "Indices échappement/DPF"],
-        "commonMistakes": ["Remplacer le turbo sans vérifier les durites", "Changer le MAF sans données live", "Ignorer EGR/DPF sur diesel", "Effacer les codes sans freeze-frame", "Accuser directement les injecteurs"],
-        "relatedCodes": ["P0101", "P0102", "P0235", "P0299", "P0401", "P0420"],
+        "likelyCauses": [
+          "Capteur MAF ou MAP incorrect",
+          "Fuite de suralimentation ou défaut de commande turbo",
+          "Filtre carburant colmaté ou pression faible",
+          "Vanne EGR bloquée ouverte",
+          "DPF ou catalyseur restreint",
+          "Fuite de dépression ou durite d'admission fendue",
+          "Mode dégradé boîte ou embrayage qui patine"
+        ],
+        "diagnosticSteps": [
+          "Scanner tous les modules et sauvegarder le freeze-frame.",
+          "Contrôler P0101, P0102, P0235, P0299, P0401, P0402, P0420 et P2002.",
+          "Comparer les données MAF/MAP au ralenti et en charge.",
+          "Inspecter admission, intercooler, durites de dépression et colliers.",
+          "Contrôler pression carburant, filtre et corrections injecteurs.",
+          "Vérifier contre-pression échappement, charge DPF ou restriction catalyseur.",
+          "Faire un essai doux après chaque réparation confirmée."
+        ],
+        "firstChecks": [
+          "Scan OBD2 avec freeze-frame",
+          "Filtre à air et durites",
+          "Connecteur et données MAF/MAP",
+          "Fuites turbo/intercooler",
+          "Pression ou filtre carburant",
+          "Indices échappement/DPF"
+        ],
+        "commonMistakes": [
+          "Remplacer le turbo sans vérifier les durites",
+          "Changer le MAF sans données live",
+          "Ignorer EGR/DPF sur diesel",
+          "Effacer les codes sans freeze-frame",
+          "Accuser directement les injecteurs"
+        ],
+        "relatedCodes": [
+          "P0101",
+          "P0102",
+          "P0235",
+          "P0299",
+          "P0401",
+          "P0420"
+        ],
         "internalLinks": [
-          { "label": "Guide P0235 capteur boost", "href": "/fr/suzuki/jimny/p0235" },
-          { "label": "P0102 signal MAF bas", "href": "/fr/acura/tlx/p0102" },
-          { "label": "Assistant diagnostic", "href": "/fr/tools/diagnostic-assistant" }
+          {
+            "label": "Guide P0235 capteur boost",
+            "href": "/fr/suzuki/jimny/p0235"
+          },
+          {
+            "label": "P0102 signal MAF bas",
+            "href": "/fr/acura/tlx/p0102"
+          },
+          {
+            "label": "Assistant diagnostic",
+            "href": "/fr/tools/diagnostic-assistant"
+          }
         ],
         "faq": [
-          { "q": "Puis-je rouler avec une Renault qui manque de puissance ?", "a": "Seulement doucement si le moteur tourne rond et que le voyant ne clignote pas. Mode dégradé, fumée, surchauffe ou voyant clignotant exigent un contrôle rapide." },
-          { "q": "Quels codes OBD2 sont fréquents ?", "a": "P0101, P0102, P0235, P0299, P0401, P0402 et des codes DPF ou catalyseur peuvent apparaître." },
-          { "q": "Faut-il remplacer le turbo d'abord ?", "a": "Non. Fuites, commande de dépression, données MAP/MAF et restriction échappement doivent être vérifiées avant." }
+          {
+            "q": "Puis-je rouler avec une Renault qui manque de puissance ?",
+            "a": "Seulement doucement si le moteur tourne rond et que le voyant ne clignote pas. Mode dégradé, fumée, surchauffe ou voyant clignotant exigent un contrôle rapide."
+          },
+          {
+            "q": "Quels codes OBD2 sont fréquents ?",
+            "a": "P0101, P0102, P0235, P0299, P0401, P0402 et des codes DPF ou catalyseur peuvent apparaître."
+          },
+          {
+            "q": "Faut-il remplacer le turbo d'abord ?",
+            "a": "Non. Fuites, commande de dépression, données MAP/MAF et restriction échappement doivent être vérifiées avant."
+          }
         ],
         "schemaTitle": "Renault manque de puissance diagnostic",
         "schemaDescription": "Causes, codes OBD2 et contrôles pour Renault avec perte de puissance."
+      }
+    }
+  },
+  {
+    "contentGroupId": "renault-engine-noise",
+    "intentKey": "renault_engine_noise",
+    "make": "Renault",
+    "model": null,
+    "symptomKey": "engine_noise",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "renault-motordan-ses-geliyor",
+        "title": "Renault Motordan Ses Geliyor - Nedenleri ve Çözümleri",
+        "metaDescription": "Renault motorundan gelen seslerin olası nedenleri, pratik teşhis yöntemleri ve dikkat edilmesi gereken hususlar hakkında kapsamlı rehber.",
+        "intro": "Renault araçlarda motordan gelen garip sesler, birçok farklı problemin habercisi olabilir. Bu tür sesler aracınızın performansını etkileyebileceği gibi daha ciddi hasarların da göstergesi olabilir. Sesin kaynağını anlamak için bazı basit kontroller yapılmalı ve dikkate alınması gereken farklı nedenler göz önünde bulundurulmalıdır.",
+        "severity": "Orta düzeyde. Sesin şiddetine bağlı olarak motor ve bağlantılı parçaların ciddi zarar görme ihtimali olabilir.",
+        "driveAdvice": "Motor sesleri duyuluyorsa agresif sürüşten kaçının ve yakın zamanda bir uzmana danışın.",
+        "likelyCauses": [
+          "Eksik ya da düşük motor yağı",
+          "Aşınmış veya gevşek kayışlar",
+          "Egzoz sistemi kaçakları",
+          "Arızalı buji veya ateşleme sistemleri",
+          "Motor yataklarında aşınma"
+        ],
+        "diagnosticSteps": [
+          "Motor yağ seviyesini kontrol edin.",
+          "Motor kayışlarını gözle muayene edin.",
+          "Egzoz sisteminde kaçak olup olmadığını test edin.",
+          "Buji ve ateşleme sistemlerini kontrol edin.",
+          "Motorun çalışma sıcaklığını ve performansını değerlendirin.",
+          "OBD2 cihazıyla arıza kodlarını okuyun."
+        ],
+        "firstChecks": [
+          "Motor yağ seviyesi ve kalitesi",
+          "Kayışların gerginliği ve durumu",
+          "Egzozdan çıkan aşırı duman"
+        ],
+        "commonMistakes": [
+          "Motor sesi geldiğinde doğrudan parça değiştirmek",
+          "Yağ ve filtreyi uzun süre değiştirmemek",
+          "Sesin nedenini başka sistemlere bağlamak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele/Çoklu Silindir Ateşleme Arızası",
+          "P0011 - Eksantrik Mili Zamanlama İlerlemesi",
+          "P0171 - Yakıt Sistemi Zenginliği/Çok Fakir"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları Rehberi",
+            "href": "/tr/obd2-ariza-kodlari"
+          },
+          {
+            "label": "Motor Yağı Seçimi ve Bakımı",
+            "href": "/tr/motor-yagi-bakim"
+          },
+          {
+            "label": "Renault OBD2 Araç Teşhis Rehberi",
+            "href": "/tr/renault-obd2-arac-teshis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor sesini azaltmak için ne yapabilirim?",
+            "a": "Öncelikle yağ seviyesini ve kalitesini kontrol edin, kayışların gerginliğine bakın ve motorun periyot bakımını aksatmayın."
+          },
+          {
+            "q": "Renault motor sesi arıza kodu verir mi?",
+            "a": "Evet, OBD2 sistemi aracılığıyla motor performansını etkileyen birçok sesle ilgili arıza kodu okunabilir."
+          },
+          {
+            "q": "Motordan gelen ses ciddi bir arıza belirtisi midir?",
+            "a": "Her zaman ciddi olmak zorunda değildir ancak mutlaka detaylı kontrol edilmelidir."
+          }
+        ],
+        "schemaTitle": "Renault Motordan Ses Geliyor: Nedenleri ve Teşhis Yöntemleri",
+        "schemaDescription": "Renault aracınızın motorundan gelen seslerin olası nedenleri, teşhis adımları ve sık yapılan hatalar hakkında kapsamlı bilgi."
+      },
+      "en": {
+        "slug": "renault-engine-noise",
+        "title": "Renault Engine Noise – Common Causes and Diagnostic Tips",
+        "metaDescription": "Explore practical diagnostic advice for engine noise in Renault vehicles, including common causes and checks before replacing parts.",
+        "intro": "Noise coming from the engine of your Renault can signal various underlying issues. While some sounds may be harmless, others could indicate potential damage if ignored. It's important to perform thorough inspections and follow practical diagnostic steps to identify the source before replacing any components.",
+        "severity": "Moderate. Noise severity can indicate anything from minor wear to possible engine damage if left unchecked.",
+        "driveAdvice": "Avoid aggressive driving when engine noise is present and have the vehicle checked by a professional soon.",
+        "likelyCauses": [
+          "Low or degraded engine oil",
+          "Worn or loose belts",
+          "Exhaust system leaks",
+          "Faulty spark plugs or ignition components",
+          "Worn engine bearings"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and condition.",
+          "Inspect belts for wear and tension.",
+          "Test for exhaust leaks.",
+          "Examine spark plugs and ignition system.",
+          "Evaluate engine temperature and performance.",
+          "Read trouble codes using an OBD2 scanner."
+        ],
+        "firstChecks": [
+          "Engine oil level and quality",
+          "Condition and tension of belts",
+          "Excessive exhaust smoke"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Delaying oil and filter changes",
+          "Misattributing noise to unrelated systems"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0011 - Camshaft Position Timing Over-Advanced",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Trouble Code Guide",
+            "href": "/en/obd2-trouble-codes"
+          },
+          {
+            "label": "Engine Oil Maintenance Tips",
+            "href": "/en/engine-oil-maintenance"
+          },
+          {
+            "label": "Renault OBD2 Diagnostic Guide",
+            "href": "/en/renault-obd2-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What can I do to reduce engine noise in my Renault?",
+            "a": "Start by checking and maintaining proper oil levels, inspecting belt tension, and ensuring regular servicing."
+          },
+          {
+            "q": "Does my Renault generate error codes when engine noise occurs?",
+            "a": "Many engine noise-related issues can trigger OBD2 codes which help identify the problem."
+          },
+          {
+            "q": "Is engine noise always a sign of serious damage?",
+            "a": "Not necessarily, but it should always be investigated promptly to avoid further damage."
+          }
+        ],
+        "schemaTitle": "Renault Engine Noise Diagnostics & Causes Explained",
+        "schemaDescription": "Understand the possible reasons behind engine noise in your Renault and learn practical steps for diagnosis and troubleshooting."
+      },
+      "de": {
+        "slug": "renault-motorgeraeusche",
+        "title": "Renault Motorgeräusche – Ursachen und Diagnosehinweise",
+        "metaDescription": "Praktische Tipps zur Diagnose von Motorgeräuschen bei Renault-Fahrzeugen mit häufigen Ursachen und Checks vor dem Teileaustausch.",
+        "intro": "Motorgeräusche bei Ihrem Renault können verschiedene Ursachen haben. Manche Geräusche sind harmlos, andere können auf schwerwiegende Probleme hinweisen. Es ist wichtig, gründliche Inspektionen durchzuführen und systematisch die Ursachen zu ermitteln, bevor Teile ausgetauscht werden. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Mittel. Die Lautstärke der Geräusche kann von geringer Abnutzung bis hin zu möglichen Motorschäden reichen.",
+        "driveAdvice": "Vermeiden Sie aggressives Fahren bei Motorgeräuschen und lassen Sie Ihr Fahrzeug zeitnah von einem Fachmann prüfen.",
+        "likelyCauses": [
+          "Niedriger oder minderwertiger Motorölstand",
+          "Abgenutzte oder lose Riemen",
+          "Abgasanlagen-Lecks",
+          "Defekte Zündkerzen oder Zündsysteme",
+          "Abgenutzte Motorlager"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und Zustand prüfen.",
+          "Riemen auf Verschleiß und Spannung prüfen.",
+          "Auf Abgaslecks testen.",
+          "Zündkerzen und Zündsystem kontrollieren.",
+          "Motortemperatur und Leistung bewerten.",
+          "Fehlercodes mit OBD2 auslesen."
+        ],
+        "firstChecks": [
+          "Motorölstand und Qualität",
+          "Zustand und Spannung der Riemen",
+          "Übermäßiger Auspuffrauch"
+        ],
+        "commonMistakes": [
+          "Teile ohne gründliche Diagnose austauschen",
+          "Öl- und Filterwechsel hinauszögern",
+          "Geräusche fälschlicherweise anderen Systemen zuschreiben"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/Mehrere Zylinderfehlzündungen",
+          "P0011 - Nockenwellenverstellung zu früh",
+          "P0171 - System zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercode-Leitfaden",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Motoröl Wartungstipps",
+            "href": "/de/motor-oel-wartung"
+          },
+          {
+            "label": "Renault OBD2 Diagnoseleitfaden",
+            "href": "/de/renault-obd2-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie kann ich Motorgeräusche bei meinem Renault reduzieren?",
+            "a": "Prüfen Sie zuerst den Ölstand und die Ölqualität, kontrollieren Sie die Riemenspannung und halten Sie regelmäßige Wartungen ein."
+          },
+          {
+            "q": "Gibt mein Renault Fehlermeldungen bei Motorgeräuschen aus?",
+            "a": "Viele motorbezogene Geräusche können Fehlercodes auslösen, die bei der Diagnose helfen."
+          },
+          {
+            "q": "Sind Motorgeräusche immer ein Anzeichen für ernsthafte Schäden?",
+            "a": "Nicht zwingend, aber sie sollten umgehend untersucht werden, um Folgeschäden zu vermeiden."
+          }
+        ],
+        "schemaTitle": "Renault Motorgeräusche: Ursachen und Diagnose",
+        "schemaDescription": "Erfahren Sie die Ursachen von Motorgeräuschen bei Renault und erhalten Sie praktische Diagnose- und Reparaturtipps."
+      },
+      "es": {
+        "slug": "ruidos-motor-renault",
+        "title": "Ruidos en el Motor Renault – Causas Comunes y Diagnóstico",
+        "metaDescription": "Guía para diagnosticar ruidos en el motor de Renault con causas posibles, comprobaciones prácticas y consejos antes de cambiar piezas.",
+        "intro": "Los ruidos provenientes del motor de un Renault pueden estar causados por diversos factores. Algunos sonidos pueden ser inofensivos, pero otros podrían indicar problemas graves. Es fundamental realizar revisiones básicas y aplicar métodos diagnósticos prácticos antes de reemplazar cualquier componente.",
+        "severity": "Moderada. La gravedad del ruido puede variar desde un desgaste menor hasta posibles daños severos en el motor.",
+        "driveAdvice": "Evite conducir de manera agresiva si nota ruidos y lleve el vehículo a revisión con un profesional lo antes posible.",
+        "likelyCauses": [
+          "Nivel bajo o mal aceite de motor",
+          "Correas desgastadas o flojas",
+          "Fugas en el sistema de escape",
+          "Bujías o sistema de encendido defectuosos",
+          "Rodamientos del motor desgastados"
+        ],
+        "diagnosticSteps": [
+          "Revise el nivel y estado del aceite del motor.",
+          "Inspeccione las correas por desgaste y tensión.",
+          "Verifique posibles fugas en el sistema de escape.",
+          "Examine las bujías y el sistema de encendido.",
+          "Evalúe la temperatura y rendimiento del motor.",
+          "Lea los códigos de falla con un escáner OBD2."
+        ],
+        "firstChecks": [
+          "Nivel y calidad del aceite",
+          "Estado y tensión de las correas",
+          "Humo excesivo por el escape"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Retrasar cambios de aceite y filtros",
+          "Atribuir el ruido a sistemas no relacionados"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio/múltiple",
+          "P0011 - Avance excesivo en el tiempo del árbol de levas",
+          "P0171 - Sistema demasiado pobre (banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de Códigos de Error OBD2",
+            "href": "/es/codigos-falla-obd2"
+          },
+          {
+            "label": "Mantenimiento de Aceite de Motor",
+            "href": "/es/mantenimiento-aceite-motor"
+          },
+          {
+            "label": "Guía de Diagnóstico OBD2 para Renault",
+            "href": "/es/diagnostico-obd2-renault"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cómo puedo reducir los ruidos del motor en mi Renault?",
+            "a": "Revise y mantenga el nivel correcto de aceite, controle la tensión de las correas y realice servicios regulares."
+          },
+          {
+            "q": "¿Mi Renault genera códigos de error cuando hay ruidos en el motor?",
+            "a": "Muchos problemas vinculados al ruido del motor pueden activar códigos OBD2 útiles para identificar la falla."
+          },
+          {
+            "q": "¿Los ruidos del motor siempre indican un daño grave?",
+            "a": "No siempre, pero deben ser revisados con prontitud para evitar daños mayores."
+          }
+        ],
+        "schemaTitle": "Ruidos en el Motor Renault – Diagnóstico y Causas",
+        "schemaDescription": "Conozca las posibles causas de ruidos en el motor Renault y siga pasos prácticos para su diagnóstico y solución."
+      },
+      "fr": {
+        "slug": "bruit-moteur-renault",
+        "title": "Bruit Moteur Renault – Causes Courantes et Conseils de Diagnostic",
+        "metaDescription": "Conseils pratiques pour diagnostiquer un bruit moteur sur Renault, avec causes probables et vérifications avant remplacement de pièces.",
+        "intro": "Un bruit moteur sur un véhicule Renault peut être dû à plusieurs causes. Certains bruits sont sans gravité, tandis que d'autres peuvent signaler des problèmes sérieux. Il est essentiel de réaliser quelques contrôles simples et de suivre des étapes de diagnostic précises avant de décider de remplacer des pièces.",
+        "severity": "Modérée. L’intensité du bruit peut aller d’une usure légère à des dommages moteurs plus importants.",
+        "driveAdvice": "Évitez la conduite agressive en cas de bruit moteur et faites vérifier rapidement le véhicule par un professionnel.",
+        "likelyCauses": [
+          "Niveau d’huile moteur bas ou huile dégradée",
+          "Courroies usées ou détendues",
+          "Fuites dans le système d’échappement",
+          "Bougies ou système d’allumage défectueux",
+          "Paliers moteur usés"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et l’état de l’huile moteur.",
+          "Inspecter les courroies pour usure et tension.",
+          "Tester la présence de fuites d’échappement.",
+          "Contrôler les bougies et le système d’allumage.",
+          "Évaluer la température et la performance moteur.",
+          "Lire les codes défaut avec un scanner OBD2."
+        ],
+        "firstChecks": [
+          "Niveau et qualité d’huile moteur",
+          "État et tension des courroies",
+          "Fumée excessive à l’échappement"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic complet",
+          "Reporter les changements d’huile et de filtres",
+          "Attribuer le bruit à un autre système sans preuve"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0011 - Avance de position arbre à cames excessive",
+          "P0171 - Mélange trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des Codes Erreur OBD2",
+            "href": "/fr/codes-defauts-obd2"
+          },
+          {
+            "label": "Entretien de l’Huile Moteur",
+            "href": "/fr/entretien-huile-moteur"
+          },
+          {
+            "label": "Guide Diagnostic OBD2 Renault",
+            "href": "/fr/diagnostic-obd2-renault"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Comment réduire le bruit moteur sur ma Renault ?",
+            "a": "Contrôlez et maintenez le bon niveau d’huile, vérifiez la tension des courroies et effectuez un entretien régulier."
+          },
+          {
+            "q": "Ma Renault génère-t-elle des codes défaut à l’apparition d’un bruit moteur ?",
+            "a": "Oui, de nombreux problèmes liés au bruit moteur peuvent déclencher des codes OBD2 pour faciliter le diagnostic."
+          },
+          {
+            "q": "Un bruit moteur est-il toujours symptomatique d’un problème grave ?",
+            "a": "Pas toujours, mais il faut le faire vérifier rapidement pour éviter d’éventuels dégâts."
+          }
+        ],
+        "schemaTitle": "Bruit Moteur Renault : Causes et Diagnostic",
+        "schemaDescription": "Comprenez les causes possibles des bruits moteur sur Renault et suivez des étapes pratiques pour leur diagnostic et résolution."
+      }
+    }
+  },
+  {
+    "contentGroupId": "renault-rough-idle-issue",
+    "intentKey": "renault_rough_idle",
+    "make": "Renault",
+    "model": null,
+    "symptomKey": "rough_idle",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "renault-rolanti-dalgalanma",
+        "title": "Renault Rölanti Dalgalanıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Renault araçlarda rölanti dalgalanması sık karşılaşılan bir sorundur. Bu yazıda olası nedenler, teşhis adımları ve pratik kontrolleri bulabilirsiniz.",
+        "intro": "Renault araçlarda rölanti dalgalanması, motorun sabit hızda çalıştırılırken titreşim veya düzensiz çalışması şeklinde kendini gösterir. Bu durum çeşitli sebeplerden kaynaklanabilir ve bazı kontroller yaparak sorunun kaynağını tespit etmek mümkündür. Rölanti dalgalanması sürüş konforunu etkiler ve motor performansında dalgalanmalara yol açabilir. Bu rehberde, olası nedenler, yapılması gereken kontroller ve sık yapılan hatalar hakkında detaylı bilgiler sunulmaktadır.",
+        "severity": "Rölanti dalgalanması motorun düzgün çalışmaması anlamına geldiğinden, erken müdahale önemlidir. Uzun süre ihmal edilirse yakıt tüketimi artabilir ve motor parçalarında hasar oluşabilir.",
+        "driveAdvice": "Aracınızı aşırı zorlamadan ve yüksek devirde kullanmaktan kaçının. Rölanti sorunu devam ediyorsa mümkünse serviste kontrol ettirin.",
+        "likelyCauses": [
+          "Kirlenmiş veya arızalı rölanti hava kontrol valfi",
+          "Yakıt enjektörlerinde tıkanıklık veya arıza",
+          "Ateşleme sistemi sorunları (buji veya bobinlerde arıza)",
+          "Motor vakum kaçakları",
+          "Hava filtresi tıkanıklığı"
+        ],
+        "diagnosticSteps": [
+          "Arıza kodu okuyucu ile OBD2 taraması yapın.",
+          "Rölanti hava kontrol valfini söküp temizleyin veya test edin.",
+          "Yakıt enjektörlerini kontrol edin ve gerekiyorsa temizletin.",
+          "Vakum hortumlarını muayene edin, delik veya kopuk var mı bakın.",
+          "Ateşleme bujilerini çıkarıp aşınma veya karbon kontrolü yapın.",
+          "Hava filtresini çıkarıp temiz veya değişmiş mi kontrol edin."
+        ],
+        "firstChecks": [
+          "Motor yağ seviyesini kontrol edin.",
+          "Akü bağlantılarını ve voltaj seviyesini test edin.",
+          "Hava filtresinin temiz ve sağlam olduğundan emin olun."
+        ],
+        "commonMistakes": [
+          "Rölanti dalgalanmasının tek bir parçaya bağlanması",
+          "Parça değiştirmeden önce yeterince test yapılmaması",
+          "Sadece görsel kontrole dayanarak teşhis koymak"
+        ],
+        "relatedCodes": [
+          "P0505 - Rölanti Hava Kontrol Valfi Arızası",
+          "P0300 - Rasgele Silindir Ateşleme Problemi",
+          "P0171 - Yakıt Sisteminde Zengin Olmayan Karışım"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları Rehberi",
+            "href": "/tr/obd2-ariza-kodlari"
+          },
+          {
+            "label": "Yakıt Sisteminde Sorun Belirleme",
+            "href": "/tr/yakit-sistemi-ariza-tespit"
+          },
+          {
+            "label": "Ateşleme Sistemi Kontrolü",
+            "href": "/tr/atesleme-sistemi-kontrol"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Rölanti dalgalanması araba motoruna zarar verir mi?",
+            "a": "Evet, uzun süreli rölanti dalgalanması motorun verimini düşürebilir ve bazı parçaların erken aşınmasına neden olabilir."
+          },
+          {
+            "q": "Rölanti sorunu kendiliğinden geçer mi?",
+            "a": "Genellikle kendiliğinden geçmez, altta yatan nedenlerin tespiti ve çözümü gerekir."
+          },
+          {
+            "q": "OBD2 cihazı ile rölanti sorununu nasıl teşhis ederim?",
+            "a": "Araçtan OBD2 arıza kodlarını okuyarak ilgili hata kodlarını belirleyebilir ve sorunlu sistemi hedefleyebilirsiniz."
+          }
+        ],
+        "schemaTitle": "Renault Rölanti Dalgalanması Sorunu ve Çözüm Yolları",
+        "schemaDescription": "Renault araçlarda rölanti dalgalanmasının olası nedenleri, teşhis adımları, yapılacak kontroller ve sık yapılan hatalar hakkında kapsamlı bilgi."
+      },
+      "en": {
+        "slug": "renault-rough-idle",
+        "title": "Renault Rough Idle: Causes, Diagnosis, and Solutions",
+        "metaDescription": "Experiencing rough idle in your Renault? Learn common causes, diagnostic steps, and practical checks before replacing any parts.",
+        "intro": "A rough idle in a Renault vehicle means the engine runs unevenly or with vibrations when idling, signaling potential underlying issues. This condition can stem from multiple causes, and performing systematic checks helps identify the root of the problem. Below, we explore typical causes, step-by-step diagnostics, initial inspections, and common mistakes to avoid, ensuring you approach fixes safely and effectively.",
+        "severity": "Rough idle affects engine performance and can lead to increased fuel consumption or damage if neglected, making timely diagnosis and repair important.",
+        "driveAdvice": "Avoid aggressive acceleration or prolonged idling until the issue is diagnosed. Have your Renault inspected by a professional if symptoms persist.",
+        "likelyCauses": [
+          "Dirty or malfunctioning idle air control valve",
+          "Clogged or faulty fuel injectors",
+          "Ignition system problems (worn spark plugs or coils)",
+          "Vacuum leaks in intake hoses",
+          "Blocked or dirty air filter"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to check for trouble codes.",
+          "Inspect and clean or replace the idle air control valve.",
+          "Test fuel injectors for blockages or malfunction.",
+          "Examine vacuum lines for leaks or cracks.",
+          "Inspect spark plugs and ignition coils for wear.",
+          "Check air filter condition and replace if dirty."
+        ],
+        "firstChecks": [
+          "Verify engine oil level is within range.",
+          "Check battery connections and voltage.",
+          "Make sure the air filter is clean and correctly installed."
+        ],
+        "commonMistakes": [
+          "Assuming a single cause without thorough testing",
+          "Replacing parts prematurely without diagnostics",
+          "Relying only on visual inspection for diagnosis"
+        ],
+        "relatedCodes": [
+          "P0505 - Idle Air Control System Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Trouble Codes Guide",
+            "href": "/en/obd2-trouble-codes"
+          },
+          {
+            "label": "Fuel System Diagnosis Tips",
+            "href": "/en/fuel-system-diagnostics"
+          },
+          {
+            "label": "Ignition System Troubleshooting",
+            "href": "/en/ignition-system-check"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a rough idle damage my Renault's engine?",
+            "a": "If left unaddressed, a rough idle can cause reduced efficiency and potential damage to engine components over time."
+          },
+          {
+            "q": "Will the rough idle fix itself?",
+            "a": "It typically does not resolve without identifying and fixing the underlying issue."
+          },
+          {
+            "q": "How do I diagnose rough idle with an OBD2 scanner?",
+            "a": "Scanning for diagnostic trouble codes helps pinpoint the affected systems to focus your repair efforts."
+          }
+        ],
+        "schemaTitle": "Renault Rough Idle Causes and Diagnostic Guide",
+        "schemaDescription": "Explore the causes, diagnostics, practical checks, and common pitfalls related to rough idle issues in Renault vehicles."
+      },
+      "de": {
+        "slug": "renault-unstetiger-leerlauf",
+        "title": "Renault Ruckelnder Leerlauf: Ursachen und Diagnose",
+        "metaDescription": "Ruckelnder Leerlauf bei Renault? Erfahren Sie häufige Ursachen, Diagnoseschritte und praktische Prüfungen, bevor Teile getauscht werden.",
+        "intro": "Ein ruckelnder Leerlauf bei Renault-Fahrzeugen bedeutet, dass der Motor im Stand unruhig läuft oder vibriert. Dies kann verschiedene Ursachen haben, die durch systematische Checks ermittelt werden sollten. In diesem Leitfaden finden Sie typische Ursachen, Diagnoseanleitungen, erste Prüfungen und häufige Fehler, um die richtige Lösung für Ihr Fahrzeug zu finden.",
+        "severity": "Ein unruhiger Leerlauf kann die Motorleistung beeinträchtigen und bei Vernachlässigung zu erhöhtem Kraftstoffverbrauch oder Schäden führen. Daher ist eine zeitnahe Diagnose wichtig.",
+        "driveAdvice": "Vermeiden Sie starke Beschleunigung und langes Leerlaufen, bis das Problem diagnostiziert ist. Lassen Sie Ihr Fahrzeug bei anhaltenden Symptomen fachgerecht überprüfen.",
+        "likelyCauses": [
+          "Verschmutztes oder defektes Leerlaufregelventil",
+          "Verstopfte oder defekte Einspritzventile",
+          "Probleme im Zündsystem (abgenutzte Zündkerzen oder Zündspulen)",
+          "Unterdrucklecks im Ansaugsystem",
+          "Verschmutzter oder blockierter Luftfilter"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Scanner verwenden, um Fehlercodes auszulesen.",
+          "Leerlaufregelventil prüfen und gegebenenfalls reinigen oder austauschen.",
+          "Einspritzventile auf Verstopfungen oder Schäden testen.",
+          "Unterdruckschläuche auf Risse oder Lecks kontrollieren.",
+          "Zündkerzen und Zündspulen auf Verschleiß prüfen.",
+          "Luftfilter prüfen und bei Verschmutzung wechseln."
+        ],
+        "firstChecks": [
+          "Motorölstand kontrollieren.",
+          "Batterieanschlüsse und Spannung prüfen.",
+          "Luftfilter auf Sauberkeit und korrekten Sitz überprüfen."
+        ],
+        "commonMistakes": [
+          "Ohne umfassende Tests auf eine einzelne Ursache schließen.",
+          "Teile vorschnell austauschen ohne Diagnose.",
+          "Nur eine Sichtprüfung für die Diagnose verwenden."
+        ],
+        "relatedCodes": [
+          "P0505 - Leerlaufregelventilfehlfunktion",
+          "P0300 - Zufällige Zündaussetzer",
+          "P0171 - Gemisch zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes Übersicht",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Diagnose des Kraftstoffsystems",
+            "href": "/de/kraftstoffsystem-diagnose"
+          },
+          {
+            "label": "Zündsystem prüfen",
+            "href": "/de/zuendsystem-pruefen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ein ruckelnder Leerlauf dem Motor schaden?",
+            "a": "Wenn das Problem nicht behoben wird, kann dies zu Leistungsverlust und Schäden an Motorkomponenten führen."
+          },
+          {
+            "q": "Verbessert sich der Leerlauf von selbst?",
+            "a": "In der Regel nicht, es muss die Ursache gefunden und behoben werden."
+          },
+          {
+            "q": "Wie verwende ich einen OBD2-Scanner zur Diagnose?",
+            "a": "Mit dem Scanner können Fehlercodes ausgelesen werden, um betroffene Systeme zu identifizieren."
+          }
+        ],
+        "schemaTitle": "Renault Ruckelnder Leerlauf – Ursachen und Diagnose",
+        "schemaDescription": "Ursachen, Diagnoseschritte und häufige Fehler beim ruckelnden Leerlauf von Renault-Fahrzeugen verständlich erklärt."
+      },
+      "es": {
+        "slug": "renault-ralenti-irregular",
+        "title": "Ralenti Irregular en Renault: Causas, Diagnóstico y Soluciones",
+        "metaDescription": "¿Ralenti irregular en tu Renault? Descubre causas comunes, pasos para diagnosticar y chequeos prácticos antes de cambiar piezas.",
+        "intro": "Un ralentí irregular en un vehículo Renault se manifiesta cuando el motor no funciona de manera uniforme al estar en ralentí, provocando vibraciones o inestabilidad. Esta condición puede originarse por varias razones, por lo que realizar revisiones sistemáticas es fundamental para encontrar la causa. En este artículo podrás conocer las causas más frecuentes, pasos de diagnóstico, las primeras pruebas recomendadas y errores comunes a evitar.",
+        "severity": "El ralentí irregular puede afectar el rendimiento del motor y aumentar el consumo de combustible, por lo que es importante diagnosticar y resolver el problema a tiempo.",
+        "driveAdvice": "Evita acelerar bruscamente o mantener el motor en ralentí prolongadamente. Si el problema persiste, acude a un taller especializado.",
+        "likelyCauses": [
+          "Válvula de control de aire de ralentí sucia o defectuosa",
+          "Inyectores de combustible tapados o fallando",
+          "Problemas en el sistema de encendido (bujías o bobinas desgastadas)",
+          "Fugas de vacío en las mangueras de admisión",
+          "Filtro de aire sucio u obstruido"
+        ],
+        "diagnosticSteps": [
+          "Usar un escáner OBD2 para leer códigos de falla.",
+          "Inspeccionar y limpiar o reemplazar la válvula de control de aire de ralentí.",
+          "Revisar los inyectores de combustible para detectar obstrucciones o fallas.",
+          "Verificar las mangueras de vacío en busca de grietas o fugas.",
+          "Comprobar bujías y bobinas por desgaste.",
+          "Revisar el estado del filtro de aire y cambiarlo si está sucio."
+        ],
+        "firstChecks": [
+          "Comprobar el nivel de aceite del motor.",
+          "Revisar las conexiones y voltaje de la batería.",
+          "Asegurarse de que el filtro de aire esté limpio y bien instalado."
+        ],
+        "commonMistakes": [
+          "Asumir una única causa sin pruebas completas",
+          "Reemplazar piezas sin realizar un diagnóstico adecuado",
+          "Confiar únicamente en inspección visual para el diagnóstico"
+        ],
+        "relatedCodes": [
+          "P0505 - Mal funcionamiento del sistema de control de aire en ralentí",
+          "P0300 - Fallos de encendido aleatorios en cilindros múltiples",
+          "P0171 - Mezcla pobre del sistema (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos OBD2",
+            "href": "/es/codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          },
+          {
+            "label": "Revisión del sistema de encendido",
+            "href": "/es/revision-sistema-encendido"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede un ralentí irregular dañar mi motor Renault?",
+            "a": "Si no se corrige a tiempo, puede reducir la eficiencia y causar daños en componentes del motor."
+          },
+          {
+            "q": "¿El problema de ralentí se puede solucionar solo?",
+            "a": "Normalmente, este problema no se resuelve sin identificar y reparar la causa subyacente."
+          },
+          {
+            "q": "¿Cómo diagnosticar un ralentí irregular con un escáner OBD2?",
+            "a": "Leyendo los códigos de error con el escáner para determinar los sistemas afectados y enfocar la reparación."
+          }
+        ],
+        "schemaTitle": "Ralenti Irregular en Renault: Guía de Causas y Diagnóstico",
+        "schemaDescription": "Conozca las causas comunes, pasos para diagnóstico y errores frecuentes relacionados con el ralentí irregular en vehículos Renault."
+      },
+      "fr": {
+        "slug": "renault-regime-moteur-irregulier",
+        "title": "Régime Moteur Irrégulier Renault : Causes, Diagnostic et Solutions",
+        "metaDescription": "Régime moteur irrégulier sur votre Renault ? Découvrez les causes fréquentes, étapes de diagnostic et vérifications avant tout remplacement.",
+        "intro": "Un régime moteur irrégulier sur un véhicule Renault se traduit par un fonctionnement déséquilibré ou des vibrations au ralenti, indicateurs de causes possibles multiples. Il est important d’effectuer des contrôles méthodiques pour identifier l’origine du problème. Cet article présente les causes probables, les étapes de diagnostic, premiers contrôles à réaliser ainsi que les erreurs courantes à éviter pour une réparation efficace.",
+        "severity": "Le régime irrégulier peut affecter la performance du moteur et, s’il est négligé, entraîner une hausse de la consommation ou des dommages. Un diagnostic rapide est donc conseillé.",
+        "driveAdvice": "Évitez les accélérations brusques et les périodes prolongées au ralenti. En cas de persistance des symptômes, faites vérifier votre Renault par un professionnel.",
+        "likelyCauses": [
+          "Valve de contrôle d’air au ralenti encrassée ou défectueuse",
+          "Injecteurs de carburant bouchés ou défaillants",
+          "Problèmes d’allumage (bougies ou bobines usées)",
+          "Fuites de vide dans les durites d’admission",
+          "Filtre à air sale ou obstrué"
+        ],
+        "diagnosticSteps": [
+          "Utiliser un scanner OBD2 pour lire les codes défaut.",
+          "Contrôler, nettoyer ou remplacer la valve de contrôle d’air au ralenti.",
+          "Tester les injecteurs pour détecter blocages ou dysfonctionnements.",
+          "Vérifier les durites de vide pour détecter fuites ou fissures.",
+          "Inspecter les bougies et bobines pour usure.",
+          "Contrôler l’état du filtre à air et le changer si nécessaire."
+        ],
+        "firstChecks": [
+          "Vérifier le niveau d’huile moteur.",
+          "Examiner les connexions et la tension de la batterie.",
+          "S’assurer que le filtre à air est propre et correctement posé."
+        ],
+        "commonMistakes": [
+          "Supposer une cause unique sans tests approfondis",
+          "Remplacer des pièces sans diagnostic préalable",
+          "Se fier uniquement à une inspection visuelle pour diagnostiquer"
+        ],
+        "relatedCodes": [
+          "P0505 - Dysfonctionnement du système de régulation de ralenti",
+          "P0300 - Ratés d’allumage aléatoires",
+          "P0171 - Mélange trop pauvre (banque 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes défaut OBD2",
+            "href": "/fr/codes-defaut-obd2"
+          },
+          {
+            "label": "Diagnostic du système d’alimentation",
+            "href": "/fr/diagnostic-systeme-alimentation"
+          },
+          {
+            "label": "Contrôle du système d’allumage",
+            "href": "/fr/controle-systeme-allumage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Un régime irrégulier peut-il endommager mon moteur Renault ?",
+            "a": "Oui, s’il n’est pas traité, un régime irrégulier peut réduire l’efficacité et causer des dommages aux composants moteur."
+          },
+          {
+            "q": "Le régime moteur irrégulier peut-il se résoudre spontanément ?",
+            "a": "Non, il nécessite généralement une identification et une réparation de la cause sous-jacente."
+          },
+          {
+            "q": "Comment diagnostiquer un régime irrégulier avec un scanner OBD2 ?",
+            "a": "En lisant les codes défaut pour cibler les systèmes en défaut et guider la réparation."
+          }
+        ],
+        "schemaTitle": "Régime Moteur Irrégulier Renault : Causes et Diagnostic",
+        "schemaDescription": "Découvrez les causes, diagnostics, contrôles pratiques et erreurs fréquentes liées au régime moteur irrégulier sur Renault."
+      }
+    }
+  },
+  {
+    "contentGroupId": "renault-engine-shaking-guide",
+    "intentKey": "renault_engine_shaking",
+    "make": "Renault",
+    "model": null,
+    "symptomKey": "engine_shaking",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "renault-titriyor-nedenleri-ve-cozumu",
+        "title": "Renault Titriyor: Olası Nedenler ve Çözüm Yolları",
+        "metaDescription": "Renault motor titremesi neden olur? İlk kontroller, arıza kodları ve doğru teşhis için adım adım rehber.",
+        "intro": "Renault araçlarda motor titremesi, sürüş güvenliğini etkileyebilen ve aracın performansını düşürebilen sık rastlanan bir sorundur. Sorunun kesin nedenini belirlemeden parça değiştirmekten kaçınmak önemlidir. Bu yazıda, Renault motor titremesinin olası nedenleri, ilk yapılması gereken kontroller ve nasıl teşhis edileceği hakkında kapsamlı bilgiler bulacaksınız.",
+        "severity": "Motor titremesi, aracın performansını olumsuz etkiler ve sürüş rahatlığını azaltabilir, acil müdahale gerektirebilir.",
+        "driveAdvice": "Aracınız titriyorsa, gaz tepkileri yavaşlamış olabilir. Mümkünse yavaşlayın ve detaylı kontrol için erken servise başvurun.",
+        "likelyCauses": [
+          "Buji ya da enjeksiyon sorunları",
+          "Yakıt filtresi tıkanması",
+          "Hava filtresi kirlenmesi",
+          "Motorun hava-yakıt karışımının bozuk olması",
+          "Motor takozlarında hasar veya gevşeme"
+        ],
+        "diagnosticSteps": [
+          "OBD-II cihazı ile arıza kodlarını okuyun",
+          "Motorun hava filtresini kontrol edin ve gerekirse değiştirin",
+          "Buji ve ateşleme sistemini inceleyin",
+          "Yakıt filtresinin temizliğini kontrol edin",
+          "Motor takozlarını görsel ve işitsel olarak kontrol edin",
+          "Enjektör performansını değerlendirin"
+        ],
+        "firstChecks": [
+          "Yakıt seviyesi ve kalitesini kontrol edin",
+          "Motor yağı durumunu inceleyin",
+          "Motor soğutma sıvısı seviyesini gözden geçirin"
+        ],
+        "commonMistakes": [
+          "Tek parça değiştirerek sorunu hızla çözmeye çalışmak",
+          "Gösterge ışıklarını dikkate almadan sürüşe devam etmek",
+          "Öncelikle servis yazılım güncellemesi yapılmadan işlem yapılması"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Çok Fakir",
+          "P0420 - Katalitik Konvertör Verim Düşüklüğü"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Renault OBD2 Arıza Kodları",
+            "href": "/tr/renault-ariza-kodlari"
+          },
+          {
+            "label": "OBD2HQ Motor Soğutma Sorunları",
+            "href": "/tr/motor-sogutma-sorunlari"
+          },
+          {
+            "label": "OBD2HQ Yakıt Sistemi Problemleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Renault motor titremesi ne kadar ciddi bir sorundur?",
+            "a": "Motor titremesi, aracın performansını etkileyebilir ve bazı durumlarda motorun zarar görmesine neden olabilir. Erken teşhis önemlidir."
+          },
+          {
+            "q": "Motor titremesi durumunda hangi testi yapmalıyım?",
+            "a": "Öncelikle OBD-II arıza kodlarını tarayıcı ile kontrol edip, yakıt ve ateşleme sistemlerinin durumunu incelemelisiniz."
+          },
+          {
+            "q": "Motor takozları bozuksa ne yapmalıyım?",
+            "a": "Motor takozlarında hasar varsa, aracınızda aşırı titreme ve gürültü olabilir, profesyonel değişim önerilir."
+          }
+        ],
+        "schemaTitle": "Renault Motor Titremesi: Nedenleri ve Çözüm Rehberi",
+        "schemaDescription": "Renault araçlarda motor titremesi neden olur? Pratik kontroller, olası sorunlar ve OBD2 kodları rehberi."
+      },
+      "en": {
+        "slug": "renault-engine-shaking-causes-diagnosis",
+        "title": "Renault Engine Shaking: Causes and Diagnostic Guide",
+        "metaDescription": "Explore common reasons behind Renault engine shaking, how to check before replacing parts, and key diagnostic steps to identify issues.",
+        "intro": "Engine shaking in Renault vehicles can be frustrating and impact driving comfort and performance. Pinpointing the exact cause requires careful inspection rather than quick part replacements. This guide covers practical checks, common causes, diagnostic procedures, and how to use OBD2 tools effectively to troubleshoot engine vibrations.",
+        "severity": "Engine shaking could indicate issues that might worsen if not diagnosed early and affect vehicle drivability.",
+        "driveAdvice": "If your Renault engine shakes, drive cautiously and avoid high speeds until you complete checks or consult a mechanic.",
+        "likelyCauses": [
+          "Faulty spark plugs or ignition coils",
+          "Clogged fuel filter",
+          "Dirty air filter restricting airflow",
+          "Incorrect air-fuel mixture",
+          "Worn or damaged engine mounts"
+        ],
+        "diagnosticSteps": [
+          "Scan for engine trouble codes with an OBD-II scanner",
+          "Inspect and clean or replace air filter",
+          "Check spark plugs and ignition system condition",
+          "Verify fuel filter condition and replace if needed",
+          "Examine engine mounts for wear or damage",
+          "Test fuel injector performance and spray pattern"
+        ],
+        "firstChecks": [
+          "Check fuel quality and tank level",
+          "Inspect engine oil level and condition",
+          "Verify coolant level and system integrity"
+        ],
+        "commonMistakes": [
+          "Replacing parts without diagnosing the root cause",
+          "Ignoring dashboard warning lights while driving",
+          "Skipping OBD-II scanning before repairs"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Renault Diagnostic Codes",
+            "href": "/en/renault-diagnostic-codes"
+          },
+          {
+            "label": "OBD2HQ Engine Cooling Issues",
+            "href": "/en/engine-cooling-issues"
+          },
+          {
+            "label": "OBD2HQ Fuel System Troubleshooting",
+            "href": "/en/fuel-system-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How serious is engine shaking in a Renault?",
+            "a": "Engine shaking can reduce performance and possibly cause engine damage if left unchecked, so timely inspection is advised."
+          },
+          {
+            "q": "What tests should I run if my Renault engine shakes?",
+            "a": "Start by scanning for OBD-II codes, then check spark plugs, fuel and air filters, and engine mounts."
+          },
+          {
+            "q": "Are engine mounts a common cause of shaking?",
+            "a": "Yes, worn or damaged engine mounts often cause vibrations felt inside the cabin and should be checked."
+          }
+        ],
+        "schemaTitle": "Renault Engine Shaking: Causes and Diagnosis",
+        "schemaDescription": "Learn the main causes of Renault engine shaking with diagnostic tips and practical checks before repairs."
+      },
+      "de": {
+        "slug": "renault-motor-vibrieren-ursachen-anleitung",
+        "title": "Renault Motor Vibrieren: Mögliche Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für Motorvibrationen bei Renault, praktische Prüfungen und wichtige Diagnoseschritte.",
+        "intro": "Motorvibrationen bei Renault-Fahrzeugen sind oft ein Anzeichen für verschiedene technische Probleme, die die Fahrleistung beeinträchtigen können. Bevor Teile unnötig ausgetauscht werden, sollte eine gründliche Überprüfung erfolgen. Unser Leitfaden erläutert mögliche Ursachen, erste Kontrollmaßnahmen sowie diagnostische Vorgehensweisen inklusive OBD-II-Fehlercodes.",
+        "severity": "Motorvibrationen können auf ernsthafte Probleme hinweisen, die frühzeitig erkannt und behoben werden sollten.",
+        "driveAdvice": "Fahren Sie vorsichtig und vermeiden Sie hohe Geschwindigkeiten, bis die Ursache der Vibration geklärt ist oder eine Werkstatt konsultiert wurde.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfter Kraftstofffilter",
+          "Verschmutzter Luftfilter",
+          "Fehlgemisch aus Luft und Kraftstoff",
+          "Beschädigte oder verschlissene Motorlager"
+        ],
+        "diagnosticSteps": [
+          "OBD-II-Scanner verwenden und Fehlercodes auslesen",
+          "Luftfilter kontrollieren und bei Bedarf reinigen oder wechseln",
+          "Zündkerzen und Zündanlage prüfen",
+          "Kraftstofffilter auf Verstopfungen prüfen",
+          "Motorlager auf Beschädigungen inspizieren",
+          "Einspritzdüsen auf Funktionalität überprüfen"
+        ],
+        "firstChecks": [
+          "Kraftstoffqualität und Tankfüllstand prüfen",
+          "Motorölstand und -zustand kontrollieren",
+          "Kühlmittelstand überprüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Warnleuchten ignorieren und weiterfahren",
+          "OBD-II-Fehlercode-Auslese vor Reparaturen überspringen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufälliger/mehrfacher Zündaussetzer erkannt",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem Wirkungsgrad unter Schwellenwert"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Renault Fehlercodes",
+            "href": "/de/renault-fehlercodes"
+          },
+          {
+            "label": "OBD2HQ Motorkühlung Probleme",
+            "href": "/de/motorkuehlung-probleme"
+          },
+          {
+            "label": "OBD2HQ Kraftstoffsystem Diagnose",
+            "href": "/de/kraftstoffsystem-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie ernst sind Motorvibrationen bei einem Renault?",
+            "a": "Motorvibrationen können die Leistung beeinträchtigen und bei Vernachlässigung Schäden verursachen. Eine schnelle Diagnose ist wichtig."
+          },
+          {
+            "q": "Welche Tests sollte ich bei Motorvibrationen durchführen?",
+            "a": "Starten Sie mit dem Auslesen von Fehlercodes, überprüfen Sie Zündkerzen, Filter und Motorlager."
+          },
+          {
+            "q": "Sind Motorlager oft Ursache für Vibrationen?",
+            "a": "Ja, verschlissene Motorlager können deutliche Vibrationen verursachen, die unbedingt geprüft werden sollten."
+          }
+        ],
+        "schemaTitle": "Renault Motor Vibrieren: Ursachen und Diagnose",
+        "schemaDescription": "Entdecken Sie die Hauptursachen für Motorvibrationen bei Renault mit Tipps zur Diagnose und Praxischecks vor Reparaturen."
+      },
+      "es": {
+        "slug": "renault-motor-vibracion-causas-y-diagnostico",
+        "title": "Renault Motor Vibrando: Causas y Guía de Diagnóstico",
+        "metaDescription": "Descubre las razones comunes de la vibración del motor en Renault y cómo realizar diagnósticos antes de reemplazar piezas.",
+        "intro": "La vibración del motor en vehículos Renault puede afectar la comodidad y seguridad al conducir. Es fundamental identificar la causa correcta para evitar sustituciones innecesarias. Esta guía incluye causas probables, revisiones iniciales y pasos de diagnóstico, junto con el uso de códigos OBD2 para facilitar la detección del problema.",
+        "severity": "La vibración del motor puede indicar fallas que, si no se corrigen, pueden afectar la conducción y provocar daños mayores.",
+        "driveAdvice": "Si tu Renault vibra, maneja con precaución y evita velocidades altas hasta diagnosticar correctamente la causa o consultar a un mecánico.",
+        "likelyCauses": [
+          "Bujías o bobinas de encendido defectuosas",
+          "Filtro de combustible obstruido",
+          "Filtro de aire sucio",
+          "Mezcla aire-combustible incorrecta",
+          "Soportes del motor dañados o desgastados"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con un escáner OBD-II",
+          "Inspeccionar y limpiar o cambiar el filtro de aire",
+          "Revisar bujías y sistema de encendido",
+          "Verificar y cambiar el filtro de combustible si es necesario",
+          "Examinar soportes del motor por daños",
+          "Evaluar el rendimiento de los inyectores de combustible"
+        ],
+        "firstChecks": [
+          "Comprobar nivel y calidad del combustible",
+          "Verificar nivel y estado del aceite del motor",
+          "Comprobar nivel del líquido refrigerante"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Ignorar luces de advertencia en el tablero",
+          "No realizar escaneo OBD-II antes de reparar"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple o aleatorio",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Códigos Renault",
+            "href": "/es/codigos-renault"
+          },
+          {
+            "label": "OBD2HQ Problemas de enfriamiento motor",
+            "href": "/es/problemas-enfriamiento-motor"
+          },
+          {
+            "label": "OBD2HQ Diagnóstico sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tan grave es la vibración en el motor de un Renault?",
+            "a": "Puede afectar el rendimiento y causar daños si no se inspecciona a tiempo, por lo que es importante diagnosticarla pronto."
+          },
+          {
+            "q": "¿Qué pruebas debo hacer si mi motor vibra?",
+            "a": "Comienza leyendo códigos OBD-II, revisa bujías, filtros y soportes del motor."
+          },
+          {
+            "q": "¿Los soportes del motor causan frecuentemente vibraciones?",
+            "a": "Sí, los soportes dañados o desgastados son causas comunes de vibraciones que deben revisarse."
+          }
+        ],
+        "schemaTitle": "Renault Motor Vibrando: Causas y Diagnóstico",
+        "schemaDescription": "Conoce las causas principales de la vibración en motores Renault y consejos para diagnóstico antes de reparaciones."
+      },
+      "fr": {
+        "slug": "renault-vibrations-moteur-causes-diagnostic",
+        "title": "Renault Vibrations Moteur : Causes et Guide de Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes des vibrations moteur sur Renault et les étapes à suivre pour un diagnostic précis avant remplacement.",
+        "intro": "Les vibrations moteur sur un véhicule Renault peuvent nuire à la conduite et à la performance globale. Identifier la source précise est crucial avant de remplacer des pièces. Ce guide offre une vue d'ensemble des causes possibles, des vérifications initiales et des étapes de diagnostic, y compris l'utilisation des codes OBD2 pour faciliter le processus.",
+        "severity": "Les vibrations moteur peuvent signaler des problèmes nécessitant une intervention rapide pour éviter des dégâts plus importants.",
+        "driveAdvice": "En cas de vibrations, conduisez prudemment et réduisez la vitesse jusqu'à ce que le diagnostic soit effectué ou qu’un professionnel soit consulté.",
+        "likelyCauses": [
+          "Bougies ou bobines d’allumage défectueuses",
+          "Filtre à carburant encrassé",
+          "Filtre à air sale",
+          "Mauvais mélange air-carburant",
+          "Supports moteur usés ou endommagés"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut via un scanner OBD-II",
+          "Contrôler et nettoyer ou remplacer le filtre à air",
+          "Examiner les bougies et le système d’allumage",
+          "Vérifier le filtre à carburant et le changer si nécessaire",
+          "Inspecter les supports moteur",
+          "Tester la performance des injecteurs carburant"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et la qualité du carburant",
+          "Contrôler le niveau et l’état de l’huile moteur",
+          "Vérifier le niveau du liquide de refroidissement"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic préalable",
+          "Ignorer les voyants d’alerte au tableau de bord",
+          "Ne pas effectuer de lecture OBD-II avant réparation"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples aléatoires détectés",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0420 - Rendement catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Codes Renault",
+            "href": "/fr/codes-renault"
+          },
+          {
+            "label": "OBD2HQ Problèmes refroidissement moteur",
+            "href": "/fr/problemes-refroidissement-moteur"
+          },
+          {
+            "label": "OBD2HQ Diagnostic système carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la gravité des vibrations moteur sur une Renault ?",
+            "a": "Les vibrations peuvent nuire aux performances et causer des dommages si elles ne sont pas détectées tôt, un diagnostic rapide est donc conseillé."
+          },
+          {
+            "q": "Quelles sont les premières vérifications à faire en cas de vibration moteur ?",
+            "a": "Commencez par lire les codes défauts, puis contrôlez les bougies, filtres et supports moteur."
+          },
+          {
+            "q": "Les supports moteur sont-ils une cause fréquente de vibrations ?",
+            "a": "Oui, des supports moteur usés ou endommagés provoquent souvent des vibrations ressenties dans l’habitacle."
+          }
+        ],
+        "schemaTitle": "Renault Vibrations Moteur : Causes et Diagnostic",
+        "schemaDescription": "Découvrez les principales causes de vibrations moteur sur Renault avec des conseils pour réaliser un diagnostic avant réparation."
       }
     }
   }
