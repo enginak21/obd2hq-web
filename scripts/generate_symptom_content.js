@@ -8,6 +8,8 @@ const ROUTES_OUTPUT = process.env.ROUTES_OUTPUT || path.join('src', 'data', 'gen
 const MODEL = process.env.OPENAI_MODEL || 'gpt-4.1-mini';
 const API_KEY = process.env.OPENAI_API_KEY || '';
 const LIMIT = Math.max(1, Number.parseInt(process.env.LIMIT || '30', 10));
+const OPENAI_TIMEOUT_MS = Math.max(30000, Number.parseInt(process.env.OPENAI_TIMEOUT_MS || '120000', 10));
+const OPENAI_RETRIES = Math.max(1, Number.parseInt(process.env.OPENAI_RETRIES || '2', 10));
 const DRY_RUN = process.env.DRY_RUN === '1';
 
 const LOCALES = ['en', 'tr', 'de', 'es', 'fr'];
@@ -165,8 +167,11 @@ Return exactly this JSON shape:
 
 async function callOpenAI(seed) {
   if (!API_KEY) throw new Error('OPENAI_API_KEY is required. Add it as a GitHub/Vercel secret or .env variable.');
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), OPENAI_TIMEOUT_MS);
   const response = await fetch('https://api.openai.com/v1/responses', {
     method: 'POST',
+    signal: controller.signal,
     headers: {
       Authorization: `Bearer ${API_KEY}`,
       'Content-Type': 'application/json',
@@ -176,12 +181,26 @@ async function callOpenAI(seed) {
       input: buildPrompt(seed),
       text: { format: { type: 'json_object' } },
     }),
-  });
+  }).finally(() => clearTimeout(timeout));
 
   if (!response.ok) throw new Error(`OpenAI error ${response.status}: ${await response.text()}`);
   const data = await response.json();
   const text = data.output_text || data.output?.flatMap(item => item.content || []).map(item => item.text || '').join('') || '';
   return normalizeRecord(JSON.parse(text), seed);
+}
+
+async function generateWithRetry(seed) {
+  let lastError;
+  for (let attempt = 1; attempt <= OPENAI_RETRIES; attempt += 1) {
+    try {
+      return await callOpenAI(seed);
+    } catch (error) {
+      lastError = error;
+      console.error(`Attempt ${attempt}/${OPENAI_RETRIES} failed for ${seed.intentKey}: ${error.message}`);
+    }
+  }
+  console.error(`Skipping ${seed.intentKey} after ${OPENAI_RETRIES} failed attempt(s): ${lastError?.message || 'unknown error'}`);
+  return null;
 }
 
 function normalizeRecord(record, seed) {
@@ -209,7 +228,8 @@ async function main() {
   const byId = new Map(existing.map(item => [item.contentGroupId, item]));
   for (const seed of queue) {
     console.log(`Generating ${seed.keyword}`);
-    const record = await callOpenAI(seed);
+    const record = await generateWithRetry(seed);
+    if (!record) continue;
     byId.set(record.contentGroupId, record);
     const records = Array.from(byId.values());
     writeJson(OUTPUT, records);
