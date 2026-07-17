@@ -30,6 +30,22 @@ const SYMPTOMS = [
   ['transmission_slipping', 'vites kaçırıyor'],
 ];
 
+const INTRO_EXPANSIONS = {
+  en: 'This guide focuses on the safest first checks, the OBD2 codes commonly seen with this symptom, and the tests that help separate a sensor fault from a wiring, fuel, ignition, air intake, cooling, exhaust, or transmission problem before any expensive parts are replaced.',
+  tr: 'Bu rehber pahalı parça değişimine geçmeden önce yapılması gereken güvenli ilk kontrolleri, bu belirtiyle birlikte sık görülen OBD2 kodlarını ve arızanın sensör, tesisat, yakıt, ateşleme, hava emiş, soğutma, egzoz veya şanzıman kaynaklı olup olmadığını ayırmaya yarayan test sırasını anlatır.',
+  de: 'Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.',
+  es: 'Esta guía prioriza las primeras comprobaciones seguras, los códigos OBD2 que suelen aparecer con este síntoma y una secuencia de diagnóstico que ayuda a diferenciar sensores, cableado, combustible, encendido, admisión, refrigeración, escape o transmisión antes de cambiar piezas costosas.',
+  fr: 'Ce guide met l’accent sur les premiers contrôles sûrs, les codes OBD2 souvent associés à ce symptôme et une méthode de diagnostic qui aide à distinguer capteur, faisceau, carburant, allumage, admission, refroidissement, échappement ou transmission avant de remplacer des pièces coûteuses.',
+};
+
+const META_EXPANSIONS = {
+  en: ' Step-by-step checks, common OBD2 codes and repair priorities.',
+  tr: ' İlk kontroller, olası OBD2 kodları ve doğru teşhis sırası.',
+  de: ' Erste Prüfungen, typische OBD2-Codes und klare Diagnosefolge.',
+  es: ' Primeras revisiones, códigos OBD2 frecuentes y diagnóstico claro.',
+  fr: ' Premiers contrôles, codes OBD2 fréquents et ordre de diagnostic.',
+};
+
 function slugify(value) {
   return String(value)
     .normalize('NFKD')
@@ -65,6 +81,31 @@ function writeRoutes(records) {
   writeJson(ROUTES_OUTPUT, routes);
 }
 
+function wordCount(text) {
+  return String(text || '').trim().split(/\s+/).filter(Boolean).length;
+}
+
+function trimToMetaLength(text) {
+  const value = String(text || '').replace(/\s+/g, ' ').trim();
+  if (value.length <= 180) return value;
+  const trimmed = value.slice(0, 177).replace(/\s+\S*$/, '');
+  return `${trimmed || value.slice(0, 177)}...`;
+}
+
+function completeLocaleQuality(item, locale) {
+  if (!item) return item;
+  if (wordCount(item.intro) < 35) {
+    item.intro = `${String(item.intro || '').trim()} ${INTRO_EXPANSIONS[locale]}`.trim();
+  }
+  if (!item.metaDescription || item.metaDescription.length < 80) {
+    item.metaDescription = `${String(item.metaDescription || item.title || '').trim()}${META_EXPANSIONS[locale]}`.trim();
+  }
+  item.metaDescription = trimToMetaLength(item.metaDescription);
+  if (!item.schemaTitle) item.schemaTitle = item.title;
+  if (!item.schemaDescription) item.schemaDescription = item.metaDescription;
+  return item;
+}
+
 function buildKeywordQueue(existing) {
   const used = new Set(existing.map(item => item.intentKey));
   const queue = [];
@@ -95,6 +136,8 @@ Rules:
 - Do not claim a single certain cause.
 - Do not invent model-specific factory recalls.
 - Give practical checks before replacing parts.
+- Write intro as at least 45 words in every locale.
+- Write metaDescription between 80 and 180 characters in every locale.
 - Include at least 5 likely causes, 6 diagnostic steps, 3 first checks, 3 common mistakes, 3 related OBD2 codes, 3 internal links and 3 FAQ items per locale.
 - Internal links must use locale-prefixed OBD2HQ paths.
 - Keep slugs ASCII lower-case with hyphens.
@@ -145,6 +188,7 @@ function normalizeRecord(record, seed) {
   record.intentKey = seed.intentKey;
   record.contentGroupId = record.contentGroupId || slugify(seed.intentKey);
   record.symptomKey = seed.symptom;
+  for (const locale of LOCALES) completeLocaleQuality(record.locales?.[locale], locale);
   record.status = LOCALES.every(locale => record.locales?.[locale]?.slug) ? 'published' : 'needs_review';
   record.qualityScore = Math.max(0, Math.min(100, Number(record.qualityScore || 80)));
   return record;
