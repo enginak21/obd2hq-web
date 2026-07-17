@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '15 2 * * *'
   workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Manual test content group limit'
+        required: false
+        default: '3'
 
 permissions:
   contents: write
@@ -14,7 +19,7 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-      LIMIT: ${{ vars.SYMPTOM_CONTENT_DAILY_LIMIT || '30' }}
+      LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || vars.SYMPTOM_CONTENT_DAILY_LIMIT || '30' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,7 +27,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
 
       - name: Install dependencies
