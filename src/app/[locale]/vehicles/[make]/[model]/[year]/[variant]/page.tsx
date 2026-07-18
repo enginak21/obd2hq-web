@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, make, model, year, variant } = await params;
   const trim = getVehicleSpecRecord(make, model, year, variant);
   if (!trim) return {};
-  const name = `${trim.year} ${trim.displayName} ${trim.trim}`;
+  const name = formatVariantName(trim);
   const labels = getVariantLabels(locale);
 
   return {
@@ -73,7 +73,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
   const copy = getKnowledgeUiCopy(locale);
   const labels = getVariantLabels(locale);
   const vehicleName = trim.displayName;
-  const pageName = `${trim.year} ${vehicleName} ${trim.trim}`;
+  const pageName = formatVariantName(trim);
   const qualityLabel = getVehicleSpecQualityLabel(trim);
   const faqItems = [
     {
@@ -117,7 +117,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
         about: {
           '@type': 'Thing',
           name: pageName,
-          description: `${trim.make} ${trim.model} ${trim.year} technical profile`,
+          description: `${pageName} engine, oil, transmission and service profile`,
         },
         inLanguage: locale,
         dateModified: '2026-07-16',
@@ -321,6 +321,15 @@ function getVariantLabels(locale: string): VariantLabels {
     problemQuestion: (name: string) => `What are common ${name} problems?`,
     problemAnswer: (name: string, problems: string) => `Highlighted checks for ${name}: ${problems}.`,
   };
+}
+
+function formatVariantName(trim: NonNullable<ReturnType<typeof getVehicleSpecRecord>>) {
+  const engineCodes = trim.engineCodes.slice(0, 2).join('/');
+  const chassis = trim.chassisCode || trim.generation;
+  const trimLabel = trim.trim && trim.trim !== 'technical-profile' ? ` ${trim.trim}` : '';
+  const engineLabel = engineCodes ? ` ${engineCodes}` : '';
+  const chassisLabel = chassis ? ` (${chassis})` : '';
+  return `${trim.year} ${trim.displayName}${trimLabel}${engineLabel}${chassisLabel}`;
 }
 function Spec({ label, value }: { label: string; value: string }) {
   return (

@@ -109,7 +109,7 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
         itemListElement: variants.slice(0, 50).map((variant, index) => ({
           '@type': 'ListItem',
           position: index + 1,
-          name: `${variant.year} ${name} ${variant.trim}`,
+          name: formatVariantName(variant, name),
           url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${variant.year}/${variant.slug}`,
         })),
       },
@@ -176,7 +176,7 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
                   >
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                       <div>
-                        <h3 className="text-lg font-black text-white">{variant.year} {name} {variant.trim}</h3>
+                        <h3 className="text-lg font-black text-white">{formatVariantName(variant, name)}</h3>
                         <p className="mt-1 text-sm text-slate-400">{variant.chassisCode} / {variant.engineCodes.join(', ')} / {variant.engineSummary}</p>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -345,6 +345,15 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
       </section>
     </main>
   );
+}
+
+function formatVariantName(variant: VehicleVariantRow, vehicleName: string) {
+  const engineCodes = variant.engineCodes.slice(0, 2).join('/');
+  const chassis = variant.chassisCode;
+  const trimLabel = variant.trim && variant.trim !== 'technical-profile' ? ` ${variant.trim}` : '';
+  const engineLabel = engineCodes ? ` ${engineCodes}` : '';
+  const chassisLabel = chassis ? ` (${chassis})` : '';
+  return `${variant.year} ${vehicleName}${trimLabel}${engineLabel}${chassisLabel}`;
 }
 
 function getVehicleLabels(locale: string): VehicleLabels {

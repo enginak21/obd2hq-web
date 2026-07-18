@@ -34,7 +34,7 @@ function notFoundResponse() {
   });
 }
 
-export default function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const host = request.headers.get('host');
 

@@ -200,7 +200,9 @@
     "selectBrand": "Selecciona la marca para ver los modelos",
     "leftAd": "Anuncio Izquierdo",
     "leaderboardAd": "Anuncio (Leaderboard)",
-    "rightAd": "Anuncio Derecho"
+    "rightAd": "Anuncio Derecho",
+    "metaTitle": "OBD2HQ - Buscador de códigos OBD2, fallas y luces de advertencia",
+    "metaDescription": "Busque códigos OBD2, síntomas del coche, luces de advertencia, capacidad de aceite y guías de diagnóstico en un solo centro."
   },
   "BlogPage": {
     "title1": "Guías y ",

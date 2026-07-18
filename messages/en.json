@@ -199,7 +199,9 @@
     "selectBrand": "Select your car brand to view models",
     "leftAd": "Left Ad",
     "leaderboardAd": "Advertisement (Leaderboard)",
-    "rightAd": "Right Ad"
+    "rightAd": "Right Ad",
+    "metaTitle": "OBD2HQ - OBD2 Code Lookup, Car Problem Finder and Warning Light Database",
+    "metaDescription": "Search OBD2 trouble codes, car symptoms, warning lights, oil capacity and vehicle repair guidance in one fast diagnostic hub."
   },
   "BlogPage": {
     "title1": "Guides & ",

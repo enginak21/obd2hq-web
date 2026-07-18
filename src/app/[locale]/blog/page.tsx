@@ -24,9 +24,38 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
   const t = await getTranslations({ locale, namespace: 'BlogPage' });
   const blogPosts = getBlogPosts(locale);
   const roadmap = locale === 'tr' ? CONTENT_ROADMAP.tr : CONTENT_ROADMAP.en;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: t('title1') + t('title2'), item: `https://www.obd2hq.com/${locale}/blog` },
+        ],
+      },
+      {
+        '@type': 'Blog',
+        name: t('metaTitle'),
+        description: t('metaDescription'),
+        url: `https://www.obd2hq.com/${locale}/blog`,
+      },
+      {
+        '@type': 'ItemList',
+        name: t('metaTitle'),
+        itemListElement: blogPosts.map((post, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: post.title,
+          url: `https://www.obd2hq.com/${locale}/blog/${post.slug}`,
+        })),
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {/* Header */}
       <header className="relative border-b border-white/5 pt-20 pb-20 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>

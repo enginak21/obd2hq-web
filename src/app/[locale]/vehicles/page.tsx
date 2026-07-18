@@ -42,9 +42,32 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
     relatedCodes: variant.relatedCodes,
     qualityLabel: getVehicleSpecQualityLabel(variant),
   }));
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://www.obd2hq.com/${locale}/vehicles` },
+        ],
+      },
+      {
+        '@type': 'ItemList',
+        name: copy.vehiclesMetaTitle,
+        itemListElement: indexedVehicleSpecRecords.slice(0, 100).map((variant, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: `${variant.year} ${variant.displayName} ${variant.engineCodes.slice(0, 2).join('/')}`,
+          url: `https://www.obd2hq.com/${locale}/vehicles/${variant.make}/${variant.model}/${variant.year}/${variant.slug}`,
+        })),
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <KnowledgeHero
         eyebrow={copy.vehiclesEyebrow}
         title={copy.vehiclesTitle}

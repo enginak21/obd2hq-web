@@ -200,7 +200,9 @@
     "selectBrand": "Sélectionnez la marque pour voir les modèles",
     "leftAd": "Publicité Gauche",
     "leaderboardAd": "Publicité (Leaderboard)",
-    "rightAd": "Publicité Droite"
+    "rightAd": "Publicité Droite",
+    "metaTitle": "OBD2HQ - Recherche de codes OBD2, pannes et voyants voiture",
+    "metaDescription": "Trouvez codes OBD2, symptômes, voyants, capacité d’huile et guides de diagnostic automobile dans un même centre rapide."
   },
   "BlogPage": {
     "title1": "Guides & ",
