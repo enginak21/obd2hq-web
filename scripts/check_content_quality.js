@@ -100,6 +100,14 @@ if (fs.existsSync(vehicleKnowledgePath)) {
   }
 }
 
+const toolDetailPath = path.join('src', 'app', '[locale]', 'tools', '[slug]', 'page.tsx');
+if (fs.existsSync(toolDetailPath)) {
+  const toolDetail = fs.readFileSync(toolDetailPath, 'utf8');
+  for (const required of ['@type', 'SoftwareApplication', 'offers:', 'priceCurrency', 'availability', 'itemCondition']) {
+    if (!toolDetail.includes(required)) failures.push(`${toolDetailPath}: SoftwareApplication schema missing ${required}`);
+  }
+}
+
 if (failures.length > 0) {
   console.error('Content quality checks failed:');
   for (const failure of failures) console.error(`- ${failure}`);

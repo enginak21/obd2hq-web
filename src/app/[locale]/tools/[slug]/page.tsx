@@ -31,6 +31,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   if (!tool) notFound();
   const localized = localizeTool(tool, locale);
   const copy = getKnowledgeUiCopy(locale);
+  const pageUrl = `https://www.obd2hq.com/${locale}/tools/${slug}`;
 
   const schema = {
     '@context': 'https://schema.org',
@@ -38,9 +39,18 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
     name: localized.title,
     applicationCategory: 'Automotive diagnostic tool',
     operatingSystem: 'Web',
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    isAccessibleForFree: true,
+    offers: {
+      '@type': 'Offer',
+      name: `${localized.title} access`,
+      price: '0',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+      url: pageUrl,
+    },
     description: localized.description,
-    url: `https://www.obd2hq.com/${locale}/tools/${slug}`,
+    url: pageUrl,
   };
 
   return (
