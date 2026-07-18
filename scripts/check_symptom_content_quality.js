@@ -22,6 +22,9 @@ const dangerousClaims = [
   '100% fix',
   'certainly the part',
 ];
+const localeSlugBlocklist = {
+  es: ['tiemblar', 'apagon', 'sacudidas-causas-revision'],
+};
 
 function fail(message) {
   failures.push(message);
@@ -71,6 +74,9 @@ if (!fs.existsSync(CONTENT_FILE)) {
         localizedSlugs.add(routeKey);
 
         if (!slugOk(item.slug)) fail(`${group.contentGroupId}/${locale}: invalid slug ${item.slug}`);
+        for (const blocked of localeSlugBlocklist[locale] || []) {
+          if (item.slug.includes(blocked)) fail(`${group.contentGroupId}/${locale}: unnatural localized slug "${item.slug}"`);
+        }
         if (!item.title || words(item.title) < 4) fail(`${group.contentGroupId}/${locale}: weak title`);
         if (!item.metaDescription || item.metaDescription.length < 80 || item.metaDescription.length > 180) fail(`${group.contentGroupId}/${locale}: meta description length should be 80-180`);
         if (!item.intro || words(item.intro) < 35) fail(`${group.contentGroupId}/${locale}: intro too short`);

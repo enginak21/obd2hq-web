@@ -1,8 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllNews, getNewsBySlug, getNewsCategoryKey } from '@/data/news';
+import { getAllNews, getNewsBySlug, getNewsCategoryKey, getNewsRedirectSlug } from '@/data/news';
 import { getLocalized } from '@/data/db';
 import { Calendar, ChevronLeft, Share2 } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
@@ -33,7 +33,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale, slug } = await params;
   const article = getNewsBySlug(slug);
   
-  if (!article) return {};
+  if (!article) {
+    const redirectSlug = getNewsRedirectSlug(slug);
+    if (redirectSlug) permanentRedirect(`/${locale}/news/${redirectSlug}`);
+    return {};
+  }
 
   const title = asString(getLocalized(article.title, locale), article.slug);
   const description = asString(getLocalized(article.summary, locale));
@@ -65,6 +69,10 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
   const article = getNewsBySlug(slug);
 
   if (!article) {
+    const redirectSlug = getNewsRedirectSlug(slug);
+    if (redirectSlug) {
+      permanentRedirect(`/${locale}/news/${redirectSlug}`);
+    }
     notFound();
   }
 

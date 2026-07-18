@@ -4,6 +4,7 @@ import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -25,15 +26,17 @@ function getUrgencyLabel(urgency: string, locale: string) {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const { make, model } = resolvedParams;
+  const { locale, make, model } = resolvedParams;
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) return { title: 'Not Found' };
+  const t = await getTranslations({ locale, namespace: 'LightsPage' });
   
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   return { 
-    title: `${capMake} ${capModel} Dashboard Warning Lights - Meaning & Fixes`,
-    description: `Complete guide to all dashboard warning lights and symbols for the ${capMake} ${capModel}. Find out what each light means, its causes, and how to fix it.`
+    title: t('metaTitle', { make: capMake, model: capModel }),
+    description: t('metaDescription', { make: capMake, model: capModel }),
+    alternates: getAlternates(`${make}/${model}/lights`, locale),
   };
 }
 
@@ -50,9 +53,50 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
   const lightsList = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: capModel, item: `https://www.obd2hq.com/${locale}/${make}/${model}` },
+      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights` },
+    ],
+  };
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: t('metaTitle', { make: capMake, model: capModel }),
+    itemListElement: lightsList.map((light, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: light.name,
+      url: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light.id}`,
+    })),
+  };
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: t('faqMeaningQ', { make: capMake, model: capModel }),
+        acceptedAnswer: { '@type': 'Answer', text: t('faqMeaningA') },
+      },
+      {
+        '@type': 'Question',
+        name: t('faqDriveQ'),
+        acceptedAnswer: { '@type': 'Answer', text: t('faqDriveA') },
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, itemListSchema, faqSchema]) }}
+      />
       {/* Premium Header */}
       <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>

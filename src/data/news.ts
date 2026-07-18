@@ -7,6 +7,7 @@ export interface NewsArticle {
   image: string;
   category: string;
   slug: string;
+  legacySlugs?: string[];
   title: Record<string, string>;
   summary: Record<string, string>;
   content: Record<string, string>;
@@ -56,4 +57,13 @@ export function getAllNews(): NewsArticle[] {
 export function getNewsBySlug(slug: string): NewsArticle | null {
   const all = getAllNews();
   return all.find(n => n.slug === slug) || null;
+}
+
+export function getNewsRedirectSlug(slug: string): string | null {
+  const all = getAllNews();
+  const direct = all.find(n => n.slug === slug);
+  if (direct) return null;
+
+  const legacy = all.find(n => n.legacySlugs?.includes(slug));
+  return legacy?.slug || null;
 }

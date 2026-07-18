@@ -7,11 +7,18 @@ import { redirect } from 'next/navigation';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getLocalizedCodeTitle } from '@/data/code-localization';
 import { findVehicleMatches, formatVehicleName, normalizeCode, normalizeSearchText } from '@/utils/diagnosticSearch';
+import { getAlternates } from '@/utils/seo';
 
-export const metadata: Metadata = {
-  title: 'Search Results - OBD2HQ',
-  description: 'Search results for OBD2 diagnostic codes and car models.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'SearchPage' });
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: getAlternates('search', locale),
+  };
+}
 
 function asString(value: string | string[] | null, fallback = '') {
   return typeof value === 'string' ? value : fallback;

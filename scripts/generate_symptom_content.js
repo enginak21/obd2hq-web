@@ -144,6 +144,7 @@ Rules:
 - Include at least 5 likely causes, 6 diagnostic steps, 3 first checks, 3 common mistakes, 3 related OBD2 codes, 3 internal links and 3 FAQ items per locale.
 - Internal links must use locale-prefixed OBD2HQ paths.
 - Keep slugs ASCII lower-case with hyphens.
+- Spanish slugs must use natural Spanish search wording; avoid infinitive fragments such as "motor-tiemblar" and prefer phrases like "motor-tiembla".
 - Status must be "published" only if all five locales are complete.
 - qualityScore must be 80-100.
 

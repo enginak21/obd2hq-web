@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const SITEMAPS = ['base', 'high-intent-codes', 'opportunity-codes'];
-const LASTMOD = '2026-07-14';
+const LASTMOD = new Date().toISOString().slice(0, 10);
 
 export async function GET() {
   const sitemapIndexXML = `<?xml version="1.0" encoding="UTF-8"?>

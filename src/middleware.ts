@@ -2,6 +2,7 @@ import createMiddleware from 'next-intl/middleware';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import validRoutes from './data/valid_routes.json';
+import newsRedirects from './data/news_redirects.json';
 
 const locales = ['en', 'de', 'es', 'tr', 'fr'];
 const symptomContentBasePaths: Record<string, string> = {
@@ -60,6 +61,14 @@ export default function middleware(request: NextRequest) {
   if (segments.length >= 2) {
     const locale = segments[0];
     const make = segments[1];
+    if (locales.includes(locale) && make === 'news' && segments.length === 3) {
+      const redirectSlug = (newsRedirects as Record<string, string>)[segments[2]];
+      if (redirectSlug) {
+        const url = request.nextUrl.clone();
+        url.pathname = `/${locale}/news/${redirectSlug}`;
+        return NextResponse.redirect(url, 308);
+      }
+    }
     if (locales.includes(locale) && symptomContentBaseSet.has(make) && symptomContentBasePaths[locale] !== make) {
       return notFoundResponse();
     }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { FileText, ShieldCheck, PenTool, CheckCircle, BookOpen } from 'lucide-react';
+import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -9,10 +10,16 @@ interface PageProps {
   }>;
 }
 
-export const metadata: Metadata = {
-  title: 'Editorial Policy & Guidelines | OBD2HQ',
-  description: 'Learn about the OBD2HQ editorial process, our data sources, and how we ensure the accuracy of our automotive diagnostic information.',
-};
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'EditorialPolicyPage' });
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: getAlternates('editorial-policy', locale),
+  };
+}
 
 export default async function EditorialPolicyPage({ params }: PageProps) {
   const resolvedParams = await params;

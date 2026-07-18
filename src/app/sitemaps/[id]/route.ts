@@ -14,7 +14,7 @@ import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContent
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
-const LASTMOD = '2026-07-14';
+const LASTMOD = new Date().toISOString().slice(0, 10);
 
 const OPPORTUNITY_CODES = ['P0203', 'P0235', 'P0204', 'P0213', 'P0102'] as const;
 
@@ -40,6 +40,13 @@ function getSitemapIdentifiers(): string[] {
 
 function urlEntry(loc: string, changefreq: string, priority: string, lastmod = LASTMOD) {
   return `<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+}
+
+function toSitemapDate(value?: string) {
+  if (!value) return LASTMOD;
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return LASTMOD;
+  return parsed.toISOString().slice(0, 10);
 }
 
 export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
@@ -93,7 +100,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         urls += urlEntry(`${BASE_URL}/${locale}/blog/${post.slug}`, 'monthly', '0.8', post.date);
       });
       getAllNews().forEach((article) => {
-        urls += urlEntry(`${BASE_URL}/${locale}/news/${article.slug}`, 'weekly', '0.6', article.date);
+        urls += urlEntry(`${BASE_URL}/${locale}/news/${article.slug}`, 'weekly', '0.6', toSitemapDate(article.date));
       });
       symptomGuides.forEach((symptom) => {
         urls += urlEntry(`${BASE_URL}/${locale}/symptoms/${symptom.slug}`, 'weekly', '0.85');

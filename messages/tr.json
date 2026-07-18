@@ -206,7 +206,10 @@
     "title2": "İncelemeler",
     "subtitle": "Piyasadaki en iyi arıza teşhis cihazları hakkında uzman görüşleri, adım adım öğreticiler ve tarafsız incelemeler.",
     "readArticle": "Makaleyi Oku",
-    "editorialRoadmap": "Editoryal Yol Haritası"
+    "editorialRoadmap": "Editoryal Yol Haritası",
+    "metaTitle": "OBD2HQ Blog - OBD2 Arıza Rehberleri ve Araç Teşhis İpuçları",
+    "metaDescription": "OBD2 arıza kodları, araç belirtileri, arıza bulma yöntemleri ve pratik tamir kontrolleri için anlaşılır rehberler.",
+    "roadmapDesc": "Bu rehberler Search Console sinyalleri, sık sorulan tamir soruları ve yüksek niyetli OBD2 aramalarına göre planlanır."
   },
   "BlogPostPage": {
     "home": "Anasayfa",
@@ -218,7 +221,13 @@
     "home": "Anasayfa",
     "lights": "İkaz Işıkları",
     "title": "Gösterge Paneli İkaz Işıkları",
-    "subtitle": "{make} {model} aracınızda aşağıdaki ikaz ışıklarından birini seçerek ne anlama geldiğini, yaygın nedenlerini ve anında nasıl tamir edebileceğinizi görün."
+    "subtitle": "{make} {model} aracınızda aşağıdaki ikaz ışıklarından birini seçerek ne anlama geldiğini, yaygın nedenlerini ve anında nasıl tamir edebileceğinizi görün.",
+    "metaTitle": "{make} {model} uyarı ışıkları: Anlamları, nedenleri ve çözüm adımları",
+    "metaDescription": "{make} {model} gösterge paneli uyarı ışıkları, ciddiyet seviyeleri, olası nedenler ve güvenli ilk kontroller.",
+    "faqMeaningQ": "{make} {model} uyarı ışıkları ne anlama gelir?",
+    "faqMeaningA": "Uyarı ışıkları araç sistemlerinden gelen ikazlardır. Renk, sembol ve yanma şekli acil güvenlik uyarısı ile servis hatırlatmasını ayırmaya yardımcı olur.",
+    "faqDriveQ": "Uyarı ışığı yanarken aracı sürmeye devam edebilir miyim?",
+    "faqDriveA": "Kırmızı uyarılar, yanıp sönen motor arıza ışığı, yağ basıncı, fren veya hararet uyarısı acil kabul edilmelidir. Güvenli yerde durup kontrol ettirin."
   },
   "LightDetailPage": {
     "home": "Anasayfa",
@@ -228,7 +237,11 @@
     "description": "{make} {model} aracınızın gösterge panelinde {lightName} ışığının yandığını gördüğünüzde, bu aracın bilgisayarından gelen doğrudan bir uyarıdır. {description}",
     "commonCauses": "{make} {model} İçin Yaygın Nedenler",
     "whatToDo": "Ne Yapmalı",
-    "advertisement": "Reklam"
+    "advertisement": "Reklam",
+    "metaTitle": "{make} {model} {light}: Anlamı, nedenleri ve güvenli çözüm",
+    "metaDescription": "{make} {model} aracınızda {light} neden yanar, ne kadar acildir ve parça değiştirmeden önce hangi kontroller yapılmalıdır?",
+    "faqCauseQ": "{make} {model} aracında {light} genelde neden yanar?",
+    "faqDriveQ": "{light} yanarken aracı sürmek güvenli mi?"
   },
   "AboutPage": {
     "title1": "Oto Tamiri ",
@@ -267,7 +280,9 @@
     "noAdvice": "Profesyonel Tavsiye Değildir",
     "noAdviceText": "OBD2HQ'da yer alan bilgiler yalnızca bilgilendirme ve eğitim amaçlı sunulmaktadır. Profesyonel mekanik veya mühendislik tavsiyesi olarak yorumlanmamalıdır. Bilgileri güncel ve doğru tutmaya çalışsak da, sağlanan arıza teşhis bilgilerinin eksiksizliği, doğruluğu, güvenilirliği veya uygunluğu hakkında hiçbir türden beyan veya garanti vermiyoruz.",
     "risk": "Riskin Üstlenilmesi",
-    "riskText": "Bu tür bilgilere güvenmeniz bu nedenle kesinlikle kendi riskinizdedir. Araçlar üzerinde, özellikle yüksek voltajlı elektrik sistemlerinde (Hibrit/EV) veya yakıt sistemlerinde çalışmak muazzam yaralanma, ölüm veya felaket niteliğinde maddi hasar riski taşır. OBD2HQ ve yaratıcıları, veritabanımızı kullanmaktan kaynaklanan herhangi bir hasar, yaralanma veya finansal kayıptan sorumlu değildir."
+    "riskText": "Bu tür bilgilere güvenmeniz bu nedenle kesinlikle kendi riskinizdedir. Araçlar üzerinde, özellikle yüksek voltajlı elektrik sistemlerinde (Hibrit/EV) veya yakıt sistemlerinde çalışmak muazzam yaralanma, ölüm veya felaket niteliğinde maddi hasar riski taşır. OBD2HQ ve yaratıcıları, veritabanımızı kullanmaktan kaynaklanan herhangi bir hasar, yaralanma veya finansal kayıptan sorumlu değildir.",
+    "metaTitle": "Sorumluluk Reddi - OBD2HQ",
+    "metaDescription": "OBD2HQ araç teşhis bilgilerinin kapsamı, güvenlik uyarıları ve teknik sorumluluk reddi."
   },
   "PrivacyPage": {
     "title": "Gizlilik Politikası",
@@ -277,7 +292,9 @@
     "h2": "2. Çerezler ve Reklamlar",
     "p2": "Web sitemizi ziyaret ettiğinizde reklam sunmak için üçüncü taraf reklam ortaklarını (Google AdSense gibi) kullanıyoruz. Bu şirketler, web sitemize veya diğer web sitelerine yaptığınız önceki ziyaretlere dayalı olarak reklam sunmak için çerezler kullanabilir.",
     "h3": "3. Veri Güvenliği",
-    "p3": "Hassas kişisel bilgileri saklamasak da, arıza teşhis veritabanımızın bütünlüğünü korumak ve güvenli bir gezinme deneyimi sağlamak için endüstri standardı güvenlik önlemleri uyguluyoruz."
+    "p3": "Hassas kişisel bilgileri saklamasak da, arıza teşhis veritabanımızın bütünlüğünü korumak ve güvenli bir gezinme deneyimi sağlamak için endüstri standardı güvenlik önlemleri uyguluyoruz.",
+    "metaTitle": "Gizlilik Politikası - OBD2HQ",
+    "metaDescription": "OBD2HQ üzerinde verilerin nasıl işlendiğini, çerezleri ve gizlilik yaklaşımımızı öğrenin."
   },
   "TermsPage": {
     "title": "Kullanım Şartları",
@@ -285,7 +302,9 @@
     "h1": "1. Şartların Kabulü",
     "p1": "OBD2HQ'ya erişerek ve kullanarak, bu anlaşmanın şartlarını ve hükümlerini kabul etmiş sayılırsınız.",
     "h2": "2. Bilginin Kullanımı",
-    "p2": "OBD2HQ'da sağlanan bilgiler yalnızca eğitim ve bilgilendirme amaçlıdır. Arıza teşhis verilerinin mutlak doğruluğunu garanti etmiyoruz. Otomotiv tamiri doğal riskler içerir."
+    "p2": "OBD2HQ'da sağlanan bilgiler yalnızca eğitim ve bilgilendirme amaçlıdır. Arıza teşhis verilerinin mutlak doğruluğunu garanti etmiyoruz. Otomotiv tamiri doğal riskler içerir.",
+    "metaTitle": "Kullanım Şartları - OBD2HQ",
+    "metaDescription": "OBD2HQ araç teşhis veritabanını ve rehberlerini kullanırken geçerli olan şartlar."
   },
   "SearchPage": {
     "title": "\"{query}\" İçin Arama Sonuçları",
@@ -295,7 +314,9 @@
     "matchingVehicles": "Eşleşen Araçlar",
     "noResults": "Sonuç bulunamadı",
     "noResultsDesc": "\"{query}\" ile eşleşen hiçbir OBD2 kodu veya araç modeli bulamadık. \"P0420\" gibi standart bir P-kodu veya \"Ford\" gibi bir araç markası aramayı deneyin.",
-    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?"
+    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?",
+    "metaTitle": "Arama Sonuçları - OBD2HQ",
+    "metaDescription": "OBD2 arıza kodları, araç modelleri, belirtiler ve uyarı ışıkları için hızlı arama sonuçları."
   },
   "MakePage": {
     "title": "{make} Arıza Teşhis Merkezi",
@@ -425,7 +446,9 @@
     "objectivityText": "OBD2HQ tarafsız kalır. Bir OBD2 tarayıcı veya parça öneriyorsak bunun nedeni değer sunduğuna inanmamızdır. Affiliate programlarına katılabiliriz; ancak bu teşhis verilerimizi veya onarım tavsiyelerimizi etkilemez.",
     "disclaimerTitle": "Teknik Sorumluluk Reddi",
     "disclaimerText": "Otomotiv onarımı doğal riskler taşır. OBD2HQdaki bilgiler yalnızca eğitim ve bilgilendirme amaçlıdır. Karmaşık otomotiv sistemlerinde çalışmak ciddi yaralanmaya neden olabilir. Emin değilseniz sertifikalı bir ustaya danışın.",
-    "returnHome": "Anasayfaya dön"
+    "returnHome": "Anasayfaya dön",
+    "metaTitle": "Editoryal Politika - OBD2HQ",
+    "metaDescription": "OBD2HQ arıza teşhis verilerini, kaynaklarını, inceleme yöntemini ve güvenlik uyarılarını nasıl kontrol eder."
   },
   "ReviewersPage": {
     "badge": "Editoryal İnceleme",
@@ -438,6 +461,8 @@
     "verification": "Veri Odaklı Doğrulama",
     "ctaTitle": "ASE sertifikalı bir profesyonel misiniz?",
     "ctaText": "Doğrulanabilir uzmanları inceleme kurulumuza katmak istiyoruz. Teşhis verilerini daha erişilebilir hale getirmek isterseniz sizden haber almak isteriz.",
-    "contact": "Bize Ulaşın"
+    "contact": "Bize Ulaşın",
+    "metaTitle": "OBD2HQ Editoryal Ekibi",
+    "metaDescription": "OBD2HQ editoryal ekibinin arıza teşhis içeriklerini nasıl yapılandırdığını, kontrol ettiğini ve anlaşılır hale getirdiğini öğrenin."
   }
 }

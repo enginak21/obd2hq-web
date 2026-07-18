@@ -108,6 +108,19 @@ if (fs.existsSync(toolDetailPath)) {
   }
 }
 
+const newsDir = path.join('src', 'data', 'news');
+if (fs.existsSync(newsDir)) {
+  const seenNewsSlugs = new Set();
+  for (const file of fs.readdirSync(newsDir).filter(name => name.endsWith('.json'))) {
+    const article = JSON.parse(fs.readFileSync(path.join(newsDir, file), 'utf8'));
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.slug || '')) {
+      failures.push(`${path.join(newsDir, file)}: invalid news slug "${article.slug}"`);
+    }
+    if (seenNewsSlugs.has(article.slug)) failures.push(`${path.join(newsDir, file)}: duplicate news slug "${article.slug}"`);
+    seenNewsSlugs.add(article.slug);
+  }
+}
+
 for (const vehicleSchemaPath of [
   path.join('src', 'app', '[locale]', 'vehicles', '[make]', '[model]', 'page.tsx'),
   path.join('src', 'app', '[locale]', 'vehicles', '[make]', '[model]', '[year]', '[variant]', 'page.tsx'),

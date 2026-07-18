@@ -1,10 +1,17 @@
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
-export const metadata: Metadata = {
-  title: 'Disclaimer - OBD2HQ',
-  description: 'Medical and Technical Disclaimer for OBD2HQ.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'DisclaimerPage' });
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: getAlternates('disclaimer', locale),
+  };
+}
 
 export default async function DisclaimerPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

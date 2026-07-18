@@ -95,7 +95,7 @@
       "en": "renault-stalling-causes-diagnosis",
       "tr": "renault-stop-ediyor",
       "de": "renault-stottert-ursachen-diagnose",
-      "es": "renault-apagon-causas-diagnostico",
+      "es": "renault-se-apaga-causas-diagnostico",
       "fr": "renault-calage-vehicule"
     }
   },
@@ -105,7 +105,7 @@
       "en": "renault-jerking-causes-checks",
       "tr": "renault-silkeleme-nedenleri",
       "de": "renault-ruckeln-ursachen-pruefung",
-      "es": "renault-sacudidas-causas-revision",
+      "es": "renault-da-tirones-causas-revision",
       "fr": "renault-hoquetements-cause-controle"
     }
   },
@@ -335,7 +335,7 @@
       "en": "volkswagen-engine-shaking-causes-diagnosis",
       "tr": "volkswagen-titriyor-nedenleri-ve-cozumleri",
       "de": "volkswagen-motor-vibrieren-ursachen-diagnose",
-      "es": "volkswagen-motor-tiemblar-causas-diagnostico",
+      "es": "volkswagen-motor-tiembla-causas-diagnostico",
       "fr": "volkswagen-moteur-vibre-causes-diagnostic"
     }
   }

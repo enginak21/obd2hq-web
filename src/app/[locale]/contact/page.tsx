@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -8,6 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: getAlternates('contact', locale),
   };
 }
 

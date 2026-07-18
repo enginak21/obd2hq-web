@@ -5,11 +5,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
-export const metadata: Metadata = {
-  title: 'OBD2HQ Blog - Car Diagnostic Tips & Guides',
-  description: 'Expert guides, tool reviews, and step-by-step tutorials on diagnosing and fixing your car.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'BlogPage' });
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    alternates: getAlternates('blog', locale),
+  };
+}
 
 export default async function BlogIndex({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -70,7 +77,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
         <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
           <h2 className="text-2xl font-bold text-white mb-3">{t('editorialRoadmap')}</h2>
           <p className="text-slate-400 mb-6">
-            These are the next diagnostic guides planned from Search Console signals, common repair questions, and high-intent OBD2 searches.
+            {t('roadmapDesc')}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {roadmap.slice(0, 12).map(topic => (

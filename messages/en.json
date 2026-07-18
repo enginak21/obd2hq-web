@@ -218,7 +218,13 @@
     "home": "Home",
     "lights": "Lights",
     "title": "Dashboard Warning Lights",
-    "subtitle": "Select a warning light below to see what it means on your {make} {model}, common causes, and how to fix it immediately."
+    "subtitle": "Select a warning light below to see what it means on your {make} {model}, common causes, and how to fix it immediately.",
+    "metaTitle": "{make} {model} Dashboard Warning Lights: Meanings, Causes and Fixes",
+    "metaDescription": "Complete guide to {make} {model} dashboard warning lights, severity levels, common causes and safe next steps.",
+    "faqMeaningQ": "What do {make} {model} dashboard warning lights mean?",
+    "faqMeaningA": "They are alerts from the vehicle systems. Color, symbol and behavior help separate urgent safety warnings from service reminders.",
+    "faqDriveQ": "Can I keep driving with a warning light on?",
+    "faqDriveA": "A red warning, flashing check engine light, oil pressure, brake or coolant temperature light should be treated as urgent. Stop safely and inspect before driving further."
   },
   "LightDetailPage": {
     "home": "Home",
@@ -228,7 +234,11 @@
     "description": "When you see the {lightName} illuminate on the dashboard of your {make} {model}, it is a direct warning from the vehicle's onboard computer. {description}",
     "commonCauses": "Common Causes for {make} {model}",
     "whatToDo": "What To Do Next",
-    "advertisement": "Advertisement"
+    "advertisement": "Advertisement",
+    "metaTitle": "{light} on {make} {model}: Meaning, Causes and Safe Fixes",
+    "metaDescription": "Learn why the {light} is on in your {make} {model}, what usually causes it, how urgent it is and what to check first.",
+    "faqCauseQ": "What usually causes the {light} on a {make} {model}?",
+    "faqDriveQ": "Is it safe to drive with the {light} on?"
   },
   "AboutPage": {
     "title1": "Democratizing ",

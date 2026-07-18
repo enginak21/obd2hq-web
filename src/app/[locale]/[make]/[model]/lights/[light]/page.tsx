@@ -4,6 +4,7 @@ import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -25,12 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const lightData = rawLightData ? getLocalizedWarningLight(rawLightData, locale) : null;
   
   if (!isValidCar || !lightData) return { title: 'Not Found' };
+  const t = await getTranslations({ locale, namespace: 'LightDetailPage' });
   
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   return { 
-    title: `${lightData.name} on ${capMake} ${capModel} - Causes & Fixes`,
-    description: `Why is the ${lightData.name.toLowerCase()} on in your ${capMake} ${capModel}? Learn the common causes, urgency level, and how to fix it safely.`
+    title: t('metaTitle', { light: lightData.name, make: capMake, model: capModel }),
+    description: t('metaDescription', { light: lightData.name, make: capMake, model: capModel }),
+    alternates: getAlternates(`${make}/${model}/lights/${light}`, locale),
   };
 }
 
@@ -48,6 +51,47 @@ export default async function LightDetailPage({ params }: PageProps) {
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: capModel, item: `https://www.obd2hq.com/${locale}/${make}/${model}` },
+      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights` },
+      { '@type': 'ListItem', position: 5, name: lightData.name, item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light}` },
+    ],
+  };
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: t('metaTitle', { light: lightData.name, make: capMake, model: capModel }),
+    description: t('metaDescription', { light: lightData.name, make: capMake, model: capModel }),
+    dateModified: '2026-07-18',
+    author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
+    publisher: { '@type': 'Organization', name: 'OBD2HQ' },
+    about: [
+      { '@type': 'Thing', name: `${capMake} ${capModel}` },
+      { '@type': 'Thing', name: lightData.name },
+      { '@type': 'Thing', name: 'Dashboard warning light diagnosis' },
+    ],
+  };
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: t('faqCauseQ', { light: lightData.name, make: capMake, model: capModel }),
+        acceptedAnswer: { '@type': 'Answer', text: lightData.commonCauses.join(', ') },
+      },
+      {
+        '@type': 'Question',
+        name: t('faqDriveQ', { light: lightData.name }),
+        acceptedAnswer: { '@type': 'Answer', text: lightData.whatToDo },
+      },
+    ],
+  };
 
   let colorClasses = "";
   if (lightData.color === 'red') {
@@ -60,6 +104,10 @@ export default async function LightDetailPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, articleSchema, faqSchema]) }}
+      />
       {/* Premium Header */}
       <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className={`absolute top-0 left-1/4 w-[600px] h-[400px] rounded-full blur-[100px] pointer-events-none ${lightData.color === 'red' ? 'bg-red-600/10' : lightData.color === 'yellow' ? 'bg-amber-600/10' : 'bg-green-600/10'}`}></div>

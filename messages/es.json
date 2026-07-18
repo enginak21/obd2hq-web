@@ -207,7 +207,10 @@
     "title2": "Reseñas",
     "subtitle": "Información de expertos, tutoriales y reseñas imparciales sobre las mejores herramientas de diagnóstico.",
     "readArticle": "Leer Artículo",
-    "editorialRoadmap": "Editorial Roadmap"
+    "editorialRoadmap": "Plan editorial",
+    "metaTitle": "Blog de OBD2HQ - Códigos OBD2, diagnóstico y guías de reparación",
+    "metaDescription": "Guías claras sobre códigos OBD2, síntomas del coche, diagnóstico paso a paso y primeras revisiones antes de cambiar piezas.",
+    "roadmapDesc": "Estas guías se planifican con señales de Search Console, preguntas frecuentes de reparación y búsquedas OBD2 de alta intención."
   },
   "BlogPostPage": {
     "home": "Inicio",
@@ -219,7 +222,13 @@
     "home": "Inicio",
     "lights": "Luces",
     "title": "Luces de advertencia del tablero",
-    "subtitle": "Seleccione una luz para ver qué significa en su {make} {model}, causas comunes y cómo solucionarlo."
+    "subtitle": "Seleccione una luz para ver qué significa en su {make} {model}, causas comunes y cómo solucionarlo.",
+    "metaTitle": "Luces de advertencia del {make} {model}: significado, causas y soluciones",
+    "metaDescription": "Guía de luces del tablero del {make} {model}, gravedad, causas comunes y primeras revisiones seguras.",
+    "faqMeaningQ": "¿Qué significan las luces del tablero del {make} {model}?",
+    "faqMeaningA": "Son avisos de los sistemas del vehículo. El color, el símbolo y la forma de encenderse ayudan a distinguir una alerta urgente de un recordatorio de servicio.",
+    "faqDriveQ": "¿Puedo seguir conduciendo con una luz de advertencia?",
+    "faqDriveA": "Una luz roja, check engine parpadeante, presión de aceite, frenos o temperatura de refrigerante debe tratarse como urgente. Deténgase con seguridad y revise el vehículo."
   },
   "LightDetailPage": {
     "home": "Inicio",
@@ -229,7 +238,11 @@
     "description": "Cuando {lightName} se ilumina en su {make} {model}, es una advertencia directa de la computadora. {description}",
     "commonCauses": "Causas comunes para {make} {model}",
     "whatToDo": "Qué hacer a continuación",
-    "advertisement": "Anuncio"
+    "advertisement": "Anuncio",
+    "metaTitle": "{light} en {make} {model}: significado, causas y revisión segura",
+    "metaDescription": "Aprenda por qué se enciende {light} en su {make} {model}, qué lo causa, qué tan urgente es y qué revisar primero.",
+    "faqCauseQ": "¿Qué suele causar {light} en un {make} {model}?",
+    "faqDriveQ": "¿Es seguro conducir con {light} encendida?"
   },
   "AboutPage": {
     "title1": "Democratizando la ",
@@ -268,7 +281,9 @@
     "noAdvice": "Sin asesoramiento profesional",
     "noAdviceText": "La información en OBD2HQ es solo para fines educativos e informativos.",
     "risk": "Asunción de riesgos",
-    "riskText": "Cualquier confianza que deposite en esta información es estrictamente bajo su propio riesgo."
+    "riskText": "Cualquier confianza que deposite en esta información es estrictamente bajo su propio riesgo.",
+    "metaTitle": "Descargo de responsabilidad - OBD2HQ",
+    "metaDescription": "Alcance, advertencias de seguridad y descargo técnico de la información de diagnóstico de OBD2HQ."
   },
   "PrivacyPage": {
     "title": "Política de privacidad",
@@ -278,7 +293,9 @@
     "h2": "2. Cookies y publicidad",
     "p2": "Usamos socios externos que pueden usar cookies para mostrar anuncios.",
     "h3": "3. Seguridad de los datos",
-    "p3": "Empleamos medidas estándar para proteger nuestra base de datos."
+    "p3": "Empleamos medidas estándar para proteger nuestra base de datos.",
+    "metaTitle": "Política de privacidad - OBD2HQ",
+    "metaDescription": "Conozca cómo OBD2HQ maneja datos, cookies y privacidad."
   },
   "TermsPage": {
     "title": "Términos de servicio",
@@ -286,7 +303,9 @@
     "h1": "1. Aceptación de los términos",
     "p1": "Al usar OBD2HQ, usted acepta estos términos.",
     "h2": "2. Uso de la información",
-    "p2": "La información es solo educativa. No garantizamos la exactitud absoluta de los datos."
+    "p2": "La información es solo educativa. No garantizamos la exactitud absoluta de los datos.",
+    "metaTitle": "Términos de servicio - OBD2HQ",
+    "metaDescription": "Condiciones para usar la base de datos y las guías de diagnóstico de OBD2HQ."
   },
   "SearchPage": {
     "title": "Resultados de \"{query}\"",
@@ -295,7 +314,9 @@
     "selectCar": "Seleccione su fabricante para ver los detalles de {code}:",
     "matchingVehicles": "Vehículos coincidentes",
     "noResults": "No hay resultados",
-    "noResultsDesc": "No pudimos encontrar códigos ni modelos que coincidan con \"{query}\"."
+    "noResultsDesc": "No pudimos encontrar códigos ni modelos que coincidan con \"{query}\".",
+    "metaTitle": "Resultados de búsqueda - OBD2HQ",
+    "metaDescription": "Resultados rápidos para códigos OBD2, modelos de coche, síntomas y luces de advertencia."
   },
   "MakePage": {
     "title": "Centro de Diagnóstico {make}",
@@ -303,9 +324,9 @@
     "selectModel": "Seleccione el modelo {make}",
     "topCodes": "Top Searched Codes for {make}",
     "diagnosticAreas": "Common {make} Diagnostic Areas",
-    "diagnosticAreasDesc": "Start with the system family that matches your warning light or scan result. This helps you avoid replacing parts before confirming whether the issue is engine, emissions, fuel trim, sensor, or transmission related.",
+    "diagnosticAreasDesc": "Empiece por el sistema que coincide con la luz de advertencia o el resultado del escáner. Esto ayuda a evitar cambiar piezas antes de confirmar si el problema está en motor, emisiones, ajuste de combustible, sensores o transmisión.",
     "warningLightsTitle": "{make} Warning Lights",
-    "warningLightsDesc": "Dashboard warnings often appear before a code becomes obvious. Open a model page to compare check engine, oil pressure, battery, ABS, coolant, and brake warnings for that vehicle."
+    "warningLightsDesc": "Las luces del tablero suelen aparecer antes de que el código sea evidente. Abra una página de modelo para comparar luces de motor, presión de aceite, batería, ABS, refrigerante y frenos de ese vehículo."
   },
   "ModelPage": {
     "years": "Años: 1996 - 2026",
@@ -321,16 +342,16 @@
     "topCodes": "Top Searched {make} {model} Codes",
     "problemGroups": "Common {make} {model} Problem Groups",
     "problemGroupsDesc": "Use these groups to narrow the diagnosis before opening a full code guide. Related codes often share the same wiring, sensor, vacuum, emissions, or transmission root cause.",
-    "warningLightsDesc": "Match dashboard symbols with severity, likely causes, and next safe action.",
+    "warningLightsDesc": "Compare los símbolos del tablero con su gravedad, causas probables y la siguiente acción segura.",
     "openWarningLights": "Open {model} warning lights",
     "diagnosticGuide": "diagnostic guide"
   },
   "NewsPage": {
     "title": "Automotive Gazette",
     "badge": "DAILY NEWS",
-    "description": "Stay updated with modding culture, new car releases, chronic issues, and industry developments.",
+    "description": "Siga novedades de cultura automotriz, nuevos modelos, fallas comunes, llamados a revisión y tendencias del sector.",
     "noNewsTitle": "No News Yet",
-    "noNewsDesc": "The daily news bot has not generated any articles yet. Check back later.",
+    "noNewsDesc": "El sistema diario de noticias aún no ha generado artículos. Vuelva a revisar más tarde.",
     "readMore": "Read Article",
     "backToNews": "Back to News",
     "categories": {
@@ -411,31 +432,35 @@
   "EditorialPolicyPage": {
     "badge": "Editorial Guidelines",
     "title": "Nuestra política editorial",
-    "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
+    "subtitle": "La confianza es la base de OBD2HQ. Cuando se enciende una luz del tablero, necesita información clara, imparcial y práctica. Así revisamos nuestros contenidos de diagnóstico.",
     "lastUpdated": "Last updated: July 2026",
     "dataTitle": "1. Data Aggregation & Accuracy",
-    "dataText": "OBD2HQ combines standardized OBD-II trouble code definitions, publicly available service information, technical service bulletin research, and aggregated repair-pattern analysis. When a page does not yet have verified model-specific data, we clearly label it as a general OBD-II guide instead of presenting it as vehicle-specific certainty.",
+    "dataText": "OBD2HQ combina definiciones estandarizadas de códigos OBD-II, información pública de servicio, investigación de boletines técnicos y patrones de reparación agregados. Indicamos con transparencia cuándo una recomendación es general y evitamos afirmaciones que no podamos respaldar.",
     "reviewTitle": "2. The Review Process",
-    "reviewText": "Our diagnostic data is maintained and editorially reviewed by the OBD2HQ team. While individual codes are standardized by the Society of Automotive Engineers (SAE), manufacturer-specific codes and fix priorities vary widely. Our team presents the most statistically common fixes first to prevent unnecessary parts replacement.",
+    "reviewText": "Los datos de diagnóstico son mantenidos y revisados por el equipo editorial de OBD2HQ. Los códigos estandarizados siguen definiciones SAE, mientras que las variaciones por fabricante se explican con patrones de reparación documentados y una secuencia de diagnóstico lógica.",
     "methodologyTitle": "3. Review Methodology",
-    "methodologyText": "Each priority guide is checked for five practical questions: what the code means, whether the vehicle is safe to drive, which low-cost checks should happen first, which related codes change the diagnosis, and what repair path avoids unnecessary part replacement.",
+    "methodologyText": "Cada guía prioritaria se revisa con cinco preguntas: qué significa el código, si es seguro conducir, qué revisiones económicas deben hacerse primero, qué códigos relacionados importan y qué errores provocan cambios innecesarios de piezas.",
     "objectivityTitle": "4. Objectivity and Affiliate Disclosure",
-    "objectivityText": "OBD2HQ remains objective. If we recommend an OBD2 scanner or replacement part, it is because we believe it offers value. We may participate in affiliate programs, but this never influences our diagnostic data or repair advice.",
+    "objectivityText": "OBD2HQ mantiene independencia editorial. Si mencionamos escáneres, herramientas o repuestos, es por su utilidad diagnóstica. Las posibles relaciones de afiliado no cambian el orden de las pruebas recomendadas.",
     "disclaimerTitle": "Technical Disclaimer",
-    "disclaimerText": "Automotive repair carries inherent risks. The information provided by OBD2HQ is for educational and informational purposes only. Working on complex automotive systems can result in severe injury. Always consult a certified professional mechanic if you are unsure of your abilities.",
-    "returnHome": "Return to Homepage"
+    "disclaimerText": "La reparación automotriz implica riesgos. OBD2HQ ofrece información educativa y no sustituye una inspección profesional del vehículo. Ante frenos, dirección, olor a combustible, sobrecalentamiento o luz de motor parpadeante, detenga el vehículo de forma segura y solicite revisión.",
+    "returnHome": "Return to Homepage",
+    "metaTitle": "Política editorial - OBD2HQ",
+    "metaDescription": "Cómo OBD2HQ revisa datos OBD2, fuentes, metodología y advertencias de seguridad."
   },
   "ReviewersPage": {
     "badge": "Editorially Reviewed",
     "title": "The OBD2HQ Editorial Team",
-    "subtitle": "Our mission is to democratize automotive diagnostics. Every piece of diagnostic data on OBD2HQ is cross-referenced against service information, technical service bulletins, and aggregated real-world repair data.",
+    "subtitle": "Nuestra misión es hacer que el diagnóstico automotriz sea más fácil de entender. Cada guía prioritaria se contrasta con definiciones de códigos, información de servicio, patrones de reparación y criterios de seguridad.",
     "teamName": "OBD2HQ Editorial Team",
     "role": "Data Aggregation & Verification",
-    "body": "Rather than relying on a single individual, OBD2HQ uses a data-driven editorial approach. We aggregate diagnostic codes, symptoms, and fixes from documented repairs, cross-referencing them to surface the most statistically probable cause for your specific vehicle make and model.",
+    "body": "OBD2HQ utiliza un enfoque editorial basado en datos, no perfiles de expertos inventados. Agrupamos códigos estandarizados, síntomas, primeras revisiones y patrones de reparación documentados para ayudar a conductores y mecánicos a seguir una ruta de diagnóstico segura.",
     "manual": "Comparacin de fuentes y datos",
     "verification": "Data-Driven Verification",
     "ctaTitle": "¿Es usted un profesional certificado ASE",
-    "ctaText": "We are always looking for verified experts to join our review board. If you want to help democratize diagnostic data and have verifiable credentials, we'd love to hear from you.",
-    "contact": "Contact Us"
+    "ctaText": "Buscamos profesionales verificables que quieran apoyar nuestro sistema de revisión. Si tiene experiencia demostrable en diagnóstico o reparación, nos encantará saber de usted.",
+    "contact": "Contact Us",
+    "metaTitle": "Equipo editorial de OBD2HQ",
+    "metaDescription": "Conozca cómo el equipo editorial de OBD2HQ organiza, revisa y explica la información de diagnóstico."
   }
 }
