@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
-import Image from 'next/image';
 import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content-routing';
 
@@ -33,8 +32,8 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center space-x-3 group shrink-0">
-          <div className="rounded-xl overflow-hidden shadow-lg shadow-blue-500/20 group-hover:shadow-blue-500/40 transition-all hidden sm:block">
-            <Image src="/icon.jpg" alt="OBD2HQ Premium Logo" width={40} height={40} className="w-10 h-10 object-cover" />
+          <div className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-500/10 shadow-lg shadow-blue-500/20 transition-all group-hover:shadow-blue-500/40 sm:flex">
+            <span className="text-[11px] font-black tracking-tight text-blue-100">OBD</span>
           </div>
           <span className="text-xl sm:text-2xl font-black text-white tracking-tight">
             OBD2<span className="text-blue-500">HQ</span>

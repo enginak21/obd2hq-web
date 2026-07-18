@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -38,8 +27,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights.",
     },
     icons: {
-      icon: '/icon.jpg',
-      apple: '/apple-icon.jpg',
+      icon: '/favicon.svg',
+      apple: '/favicon.svg',
     },
     appleWebApp: {
       title: 'OBD2HQ',
@@ -85,7 +74,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <head>
         {gaId && (
