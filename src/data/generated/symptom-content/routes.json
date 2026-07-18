@@ -38,5 +38,305 @@
       "es": "renault-motor-vibracion-causas-y-diagnostico",
       "fr": "renault-vibrations-moteur-causes-diagnostic"
     }
+  },
+  {
+    "contentGroupId": "renault-check-engine-light",
+    "slugs": {
+      "en": "renault-check-engine-light-troubleshooting",
+      "tr": "renault-motor-ariza-lambasi-yaniyor",
+      "de": "renault-motor-stoerlicht-analyse",
+      "es": "renault-testigo-de-motor-encendido",
+      "fr": "renault-temoin-moteur-allume"
+    }
+  },
+  {
+    "contentGroupId": "renault-hard-start-guide",
+    "slugs": {
+      "en": "renault-hard-start-issues",
+      "tr": "renault-gec-calismama-sorunu",
+      "de": "renault-schwieriges-starten",
+      "es": "renault-dificultad-arranque",
+      "fr": "renault-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "renault-black-smoke-diagnostics",
+    "slugs": {
+      "en": "renault-black-smoke-causes-and-diagnostics",
+      "tr": "renault-siyah-duman-atma",
+      "de": "renault-schwarzer-rauch-ursachen-und-anleitung",
+      "es": "renault-humo-negro-causas-y-diagnostico",
+      "fr": "renault-fumee-noire-causes-et-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "renault-white-smoke-diagnosis",
+    "slugs": {
+      "en": "renault-white-smoke-causes-diagnosis",
+      "tr": "renault-beyaz-duman-atiyor-nedenleri",
+      "de": "renault-weisser-rauch-ursachen-und-diagnose",
+      "es": "renault-humo-blanco-causas-diagnostico",
+      "fr": "renault-fumee-blanche-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "renault-poor-fuel-economy-guide",
+    "slugs": {
+      "en": "renault-poor-fuel-economy",
+      "tr": "renault-cok-yakiyor",
+      "de": "renault-hoher-kraftstoffverbrauch",
+      "es": "renault-alto-consumo-combustible",
+      "fr": "renault-consommation-carburant-elevee"
+    }
+  },
+  {
+    "contentGroupId": "renault-stalling-diagnostic-guide",
+    "slugs": {
+      "en": "renault-stalling-causes-diagnosis",
+      "tr": "renault-stop-ediyor",
+      "de": "renault-stottert-ursachen-diagnose",
+      "es": "renault-apagon-causas-diagnostico",
+      "fr": "renault-calage-vehicule"
+    }
+  },
+  {
+    "contentGroupId": "renault-jerking-diagnostics",
+    "slugs": {
+      "en": "renault-jerking-causes-checks",
+      "tr": "renault-silkeleme-nedenleri",
+      "de": "renault-ruckeln-ursachen-pruefung",
+      "es": "renault-sacudidas-causas-revision",
+      "fr": "renault-hoquetements-cause-controle"
+    }
+  },
+  {
+    "contentGroupId": "renault-overheating-guide",
+    "slugs": {
+      "en": "renault-overheating",
+      "tr": "renault-hararet-yapiyor",
+      "de": "renault-ueberhitzung",
+      "es": "renault-sobrecalentamiento",
+      "fr": "renault-surchauffe"
+    }
+  },
+  {
+    "contentGroupId": "renault-fuel-smell-issue",
+    "slugs": {
+      "en": "renault-fuel-smell-causes-diagnosis",
+      "tr": "renault-benzin-kokusu-geliyor",
+      "de": "renault-benzingeruch-ursachen-diagnose",
+      "es": "renault-olor-a-combustible-causas",
+      "fr": "renault-odeur-d-essence-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "renault-oil-smell-symptom",
+    "slugs": {
+      "en": "renault-burning-oil-smell-causes",
+      "tr": "renault-yanik-yag-kokusu-nedenleri",
+      "de": "renault-verbrennungsol-geruch-ursachen",
+      "es": "renault-olor-aceite-quemado-causas",
+      "fr": "renault-odeur-huile-brulee-causes"
+    }
+  },
+  {
+    "contentGroupId": "renault-transmission-slipping",
+    "slugs": {
+      "en": "renault-transmission-slipping",
+      "tr": "renault-vites-kaciriyor",
+      "de": "renault-uebertragung-rutscht",
+      "es": "renault-deslizamiento-transmision",
+      "fr": "renault-glissement-transmission"
+    }
+  },
+  {
+    "contentGroupId": "bmw-loss-of-power-001",
+    "slugs": {
+      "en": "bmw-loss-of-power",
+      "tr": "bmw-gaz-yemiyor",
+      "de": "bmw-leistungsverlust",
+      "es": "bmw-perdida-de-potencia",
+      "fr": "bmw-perte-de-puissance"
+    }
+  },
+  {
+    "contentGroupId": "bmw-engine-noise-issue",
+    "slugs": {
+      "en": "bmw-engine-making-noise",
+      "tr": "bmw-motordan-ses-geliyor",
+      "de": "bmw-motor-macht-gerausch",
+      "es": "ruido-motor-bmw",
+      "fr": "bruit-moteur-bmw"
+    }
+  },
+  {
+    "contentGroupId": "bmw-rough-idle-diagnostics",
+    "slugs": {
+      "en": "bmw-rough-idle-diagnosis",
+      "tr": "bmw-rolanti-dalgalanma-tespiti",
+      "de": "bmw-ruecklauf-diagnose",
+      "es": "bmw-ralenti-irregular-diagnostico",
+      "fr": "bmw-regime-au-relentir-irregulier"
+    }
+  },
+  {
+    "contentGroupId": "bmw-engine-shaking-analysis",
+    "slugs": {
+      "en": "bmw-engine-shaking-causes-and-diagnosis",
+      "tr": "bmw-titriyor-nedenleri-ve-cozumleri",
+      "de": "bmw-motor-vibriert-gruende-und-diagnose",
+      "es": "bmw-motor-temblores-causas-y-diagnostico",
+      "fr": "bmw-vibrations-moteur-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "bmw-check-engine-light-2024",
+    "slugs": {
+      "en": "bmw-check-engine-light-on",
+      "tr": "bmw-motor-ariza-lambasi-yaniyor",
+      "de": "bmw-motor-warnleuchte-an",
+      "es": "bmw-luz-de-falla-motor-encendida",
+      "fr": "bmw-temoin-moteur-allume"
+    }
+  },
+  {
+    "contentGroupId": "bmw-hard-start",
+    "slugs": {
+      "en": "bmw-hard-start",
+      "tr": "bmw-gec-calismasi",
+      "de": "bmw-schwerer-start",
+      "es": "bmw-arranque-dificil",
+      "fr": "bmw-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "bmw-black-smoke-diagnostics",
+    "slugs": {
+      "en": "bmw-black-smoke-causes",
+      "tr": "bmw-siyah-duman-atma-nedenleri",
+      "de": "bmw-schwarzer-rauch-ursachen",
+      "es": "bmw-humo-negro-causas",
+      "fr": "bmw-fumee-noire-causes"
+    }
+  },
+  {
+    "contentGroupId": "bmw-white-smoke-issue",
+    "slugs": {
+      "en": "bmw-emitting-white-smoke",
+      "tr": "bmw-beyaz-duman-atiyor",
+      "de": "bmw-weisser-rauch",
+      "es": "bmw-humo-blanco",
+      "fr": "bmw-fumee-blanche"
+    }
+  },
+  {
+    "contentGroupId": "bmw-poor-fuel-economy",
+    "slugs": {
+      "en": "bmw-poor-fuel-economy",
+      "tr": "bmw-cok-yakiyor",
+      "de": "bmw-schlechter-kraftstoffverbrauch",
+      "es": "bmw-alto-consumo-combustible",
+      "fr": "bmw-consommation-excessive-carburant"
+    }
+  },
+  {
+    "contentGroupId": "bmw-stalling-diagnostics",
+    "slugs": {
+      "en": "bmw-stalling-causes-solutions",
+      "tr": "bmw-stop-ediyor",
+      "de": "bmw-stottern-ursachen-loesungen",
+      "es": "bmw-se-apaga-causas-soluciones",
+      "fr": "bmw-calage-causes-diagnostics"
+    }
+  },
+  {
+    "contentGroupId": "bmw-jerking-diagnostic-guide",
+    "slugs": {
+      "en": "bmw-jerking-issues",
+      "tr": "bmw-silkeleme-yapiyor",
+      "de": "bmw-ruckeln-probleme",
+      "es": "bmw-sacudidas-fallas",
+      "fr": "bmw-a-coups-problemes"
+    }
+  },
+  {
+    "contentGroupId": "bmw-overheating-guide",
+    "slugs": {
+      "en": "bmw-overheating-causes-solutions",
+      "tr": "bmw-hararet-yapiyor",
+      "de": "bmw-ueberhitzt-ursachen-und-loesungen",
+      "es": "bmw-sobrecalentamiento-causas-soluciones",
+      "fr": "bmw-surchauffe-causes-solutions"
+    }
+  },
+  {
+    "contentGroupId": "bmw-fuel-smell-diagnosis",
+    "slugs": {
+      "en": "bmw-fuel-smell-causes-checks",
+      "tr": "bmw-benizin-kokusu-geliyor",
+      "de": "bmw-kraftstoffgeruch-ursachen-und-pruefung",
+      "es": "bmw-olor-a-combustible-causas-y-revision",
+      "fr": "bmw-odeur-carburant-causes-controles"
+    }
+  },
+  {
+    "contentGroupId": "bmw-oil-smell-diagnosis",
+    "slugs": {
+      "en": "bmw-burning-oil-odor-diagnosis",
+      "tr": "bmw-yanik-yag-kokusu-tespiti",
+      "de": "bmw-verbrennungs-ol-geruch-diagnose",
+      "es": "bmw-olor-a-aceite-quemado-diagnostico",
+      "fr": "bmw-odeur-huile-brulee-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "bmw-transmission-slipping",
+    "slugs": {
+      "en": "bmw-transmission-slipping",
+      "tr": "bmw-vites-kaciriyor",
+      "de": "bmw-getriebe-rutscht",
+      "es": "bmw-deslizamiento-transmision",
+      "fr": "bmw-glissement-boite-vitesse"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-loss-power-2024",
+    "slugs": {
+      "en": "volkswagen-loss-of-power",
+      "tr": "volkswagen-gaz-yemiyor",
+      "de": "volkswagen-leistungsverlust",
+      "es": "volkswagen-perdida-de-potencia",
+      "fr": "volkswagen-perte-de-puissance"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-engine-noise",
+    "slugs": {
+      "en": "volkswagen-engine-noise-causes",
+      "tr": "volkswagen-motordan-ses-geliyor",
+      "de": "volkswagen-motorgeraeusche-ursachen",
+      "es": "ruido-motor-volkswagen-causas",
+      "fr": "bruit-moteur-volkswagen-causes"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-rough-idle-issues",
+    "slugs": {
+      "en": "volkswagen-rough-idle-causes-diagnosis",
+      "tr": "volkswagen-rolanti-dalgalanma-tespiti",
+      "de": "volkswagen-unruhiger-leerlauf-ursachen-diagnose",
+      "es": "volkswagen-ralenti-irregular-causas-diagnostico",
+      "fr": "volkswagen-ralenti-instable-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-engine-shaking-guide",
+    "slugs": {
+      "en": "volkswagen-engine-shaking-causes-diagnosis",
+      "tr": "volkswagen-titriyor-nedenleri-ve-cozumleri",
+      "de": "volkswagen-motor-vibrieren-ursachen-diagnose",
+      "es": "volkswagen-motor-tiemblar-causas-diagnostico",
+      "fr": "volkswagen-moteur-vibre-causes-diagnostic"
+    }
   }
 ]
