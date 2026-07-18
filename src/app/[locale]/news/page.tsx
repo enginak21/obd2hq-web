@@ -137,6 +137,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                       src={article.image} 
                       alt={locTitle}
                       fill
+                      unoptimized={article.image.startsWith('http')}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />

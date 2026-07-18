@@ -87,6 +87,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               src={post.image}
               alt={post.title}
               fill
+              unoptimized={post.image.startsWith('http')}
               sizes="(max-width: 768px) 100vw, 896px"
               className="object-cover"
               priority

@@ -79,6 +79,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
                 src={post.image}
                 alt={post.title}
                 fill
+                unoptimized={post.image.startsWith('http')}
                 sizes="(max-width: 768px) 100vw, 448px"
                 className="object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
