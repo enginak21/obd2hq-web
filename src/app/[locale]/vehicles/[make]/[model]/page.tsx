@@ -96,15 +96,6 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'Vehicle',
-        name,
-        brand: vehicle.make,
-        model: vehicle.model,
-        vehicleModelDate: vehicle.years,
-        bodyType: vehicle.bodyStyle,
-        url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}`,
-      },
-      {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
@@ -134,7 +125,11 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
         '@type': 'TechArticle',
         headline: `${name} engine codes, oil capacity and common problems`,
         description: copy.vehicleMetaDescription(name, vehicle.generation),
-        about: name,
+        about: {
+          '@type': 'Thing',
+          name,
+          description: `${name} vehicle technical guide`,
+        },
         inLanguage: locale,
         dateModified: '2026-07-16',
       },

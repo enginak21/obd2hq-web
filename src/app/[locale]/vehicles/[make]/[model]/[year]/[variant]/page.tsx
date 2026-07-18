@@ -94,16 +94,6 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'Vehicle',
-        name: pageName,
-        brand: trim.make,
-        model: `${vehicleName} ${trim.trim}`,
-        vehicleModelDate: String(trim.year),
-        vehicleEngine: trim.engineCodes.join(', '),
-        bodyType: trim.bodyStyle,
-        url: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}`,
-      },
-      {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
@@ -124,7 +114,11 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
         '@type': 'TechArticle',
         headline: `${pageName} engine code, oil capacity and service data`,
         description: labels.metaDescription(pageName, trim.engineCodes.join(', '), trim.oilCapacity),
-        about: pageName,
+        about: {
+          '@type': 'Thing',
+          name: pageName,
+          description: `${trim.make} ${trim.model} ${trim.year} technical profile`,
+        },
         inLanguage: locale,
         dateModified: '2026-07-16',
       },

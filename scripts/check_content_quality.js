@@ -108,6 +108,17 @@ if (fs.existsSync(toolDetailPath)) {
   }
 }
 
+for (const vehicleSchemaPath of [
+  path.join('src', 'app', '[locale]', 'vehicles', '[make]', '[model]', 'page.tsx'),
+  path.join('src', 'app', '[locale]', 'vehicles', '[make]', '[model]', '[year]', '[variant]', 'page.tsx'),
+]) {
+  if (!fs.existsSync(vehicleSchemaPath)) continue;
+  const vehicleSchema = fs.readFileSync(vehicleSchemaPath, 'utf8');
+  if (vehicleSchema.includes("'@type': 'Vehicle'") || vehicleSchema.includes('"@type": "Vehicle"')) {
+    failures.push(`${vehicleSchemaPath}: avoid Vehicle schema on informational pages; it can trigger Product snippet offer errors`);
+  }
+}
+
 if (failures.length > 0) {
   console.error('Content quality checks failed:');
   for (const failure of failures) console.error(`- ${failure}`);
