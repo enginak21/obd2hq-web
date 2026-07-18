@@ -1,12 +1,12 @@
 {
   "Navbar": {
-    "searchPlaceholder": "D?crivez une panne ou cherchez P0420...",
+    "searchPlaceholder": "Décrivez une panne ou cherchez P0420...",
     "makes": "Marques",
     "diagnostics": "Diagnostic",
     "warningLights": "Voyants",
     "findByCode": "Chercher par code",
     "findByCar": "Chercher par voiture",
-    "aboutUs": "? propos",
+    "aboutUs": "À propos",
     "contact": "Contact",
     "blog": "Blog & Avis",
     "news": "Actualités",
@@ -48,7 +48,7 @@
     "laborCost": "Main-d'œuvre",
     "leaderboardAd": "Espace publicitaire",
     "inArticleAd": "Publicité (Dans l'Article)",
-    "bottomLeaderboardAd": "Espace publicitaire inf?rieur",
+    "bottomLeaderboardAd": "Espace publicitaire inférieur",
     "advertisement": "Publicité",
     "sponsorAdSense": "Sponsor/AdSense",
     "discussionTitle": "{code} sur {make} {model} - Discussion OBD2HQ",
@@ -207,7 +207,8 @@
     "title2": "Avis",
     "subtitle": "Conseils d'experts, tutoriels étape par étape et avis impartiaux sur les meilleurs outils de diagnostic.",
     "readArticle": "Lire l'article",
-    "editorialRoadmap": "Editorial Roadmap"
+    "editorialRoadmap": "Editorial Roadmap",
+    "advertisement": "Publicité"
   },
   "BlogPostPage": {
     "home": "Accueil",
@@ -229,7 +230,7 @@
     "description": "Lorsque vous voyez {lightName} s'allumer sur le tableau de bord de votre {make} {model}, c'est un avertissement direct de l'ordinateur de bord. {description}",
     "commonCauses": "Causes courantes pour {make} {model}",
     "whatToDo": "Que faire ensuite",
-    "advertisement": "Publicit?"
+    "advertisement": "Publicité"
   },
   "AboutPage": {
     "title1": "Démocratiser la ",
@@ -295,7 +296,8 @@
     "selectCar": "Sélectionnez votre marque pour voir les détails de {code} :",
     "matchingVehicles": "Véhicules correspondants",
     "noResults": "Aucun résultat",
-    "noResultsDesc": "Nous n'avons trouvé aucun code ou modèle correspondant à \"{query}\"."
+    "noResultsDesc": "Nous n'avons trouvé aucun code ou modèle correspondant à \"{query}\".",
+    "advertisement": "Publicité"
   },
   "MakePage": {
     "title": "Centre de diagnostic {make}",

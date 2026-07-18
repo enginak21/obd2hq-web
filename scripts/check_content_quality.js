@@ -42,12 +42,38 @@ function walk(dir) {
   return files;
 }
 
+function isLetterCodePoint(code) {
+  return (code >= 65 && code <= 90) ||
+    (code >= 97 && code <= 122) ||
+    (code >= 0x00c0 && code <= 0x024f) ||
+    (code >= 0x011e && code <= 0x0131) ||
+    (code >= 0x015e && code <= 0x015f);
+}
+
+function hasSuspiciousReplacementQuestion(line) {
+  const codes = [...line].map((char) => char.codePointAt(0));
+  for (let index = 0; index < codes.length; index++) {
+    if (codes[index] !== 63) continue;
+    const prev = codes[index - 1];
+    const next = codes[index + 1];
+    const nextAfterSpace = codes[index + 1] === 32 ? codes[index + 2] : undefined;
+    if (prev && isLetterCodePoint(prev) && next && isLetterCodePoint(next)) return true;
+    if (prev && isLetterCodePoint(prev) && next === 63) return true;
+    if (line.includes('": "?') && nextAfterSpace && isLetterCodePoint(nextAfterSpace)) return true;
+  }
+  return false;
+}
+
 const failures = [];
 for (const root of roots) {
   for (const file of walk(root)) {
     if (ignoredPathParts.some(part => file.includes(part))) continue;
     const content = fs.readFileSync(file, 'utf8');
     if (mojibakePattern.test(content)) failures.push(`${file}: contains mojibake markers`);
+    if (file.startsWith('messages')) {
+      const badLineIndex = content.split(/\r?\n/).findIndex(hasSuspiciousReplacementQuestion);
+      if (badLineIndex >= 0) failures.push(`${file}:${badLineIndex + 1}: contains a suspicious replacement question mark`);
+    }
     if (file.endsWith(path.join('data', 'blog.ts')) && emptyAffiliatePattern.test(content)) {
       failures.push(`${file}: contains empty affiliate href="#" links`);
     }

@@ -1,17 +1,17 @@
 {
   "Navbar": {
-    "searchPlaceholder": "Ar?za yaz veya P0420 ara...",
+    "searchPlaceholder": "Arıza yaz veya P0420 ara...",
     "makes": "Markalar",
-    "diagnostics": "Te?his",
-    "warningLights": "Uyar? I??klar?",
-    "findByCode": "Koda G?re Bul",
-    "findByCar": "Araca G?re Bul",
-    "aboutUs": "Hakk?m?zda",
-    "contact": "?leti?im",
-    "blog": "Blog & ?ncelemeler",
+    "diagnostics": "Teşhis",
+    "warningLights": "Uyarı Işıkları",
+    "findByCode": "Koda Göre Bul",
+    "findByCar": "Araca Göre Bul",
+    "aboutUs": "Hakkımızda",
+    "contact": "İletişim",
+    "blog": "Blog & İncelemeler",
     "news": "Haberler",
     "symptoms": "Belirtiler",
-    "tools": "Ar?za Bulucu",
+    "tools": "Arıza Bulucu",
     "vehicles": "Araç Rehberi"
   },
   "Footer": {
@@ -46,9 +46,9 @@
     "drivingSafety": "Araç Sürülür mü?",
     "partsCost": "Parça",
     "laborCost": "İşçilik",
-    "leaderboardAd": "Reklam Alan?",
+    "leaderboardAd": "Reklam Alanı",
     "inArticleAd": "Reklam (Makale İçi)",
-    "bottomLeaderboardAd": "Alt Reklam Alan?",
+    "bottomLeaderboardAd": "Alt Reklam Alanı",
     "advertisement": "Reklam",
     "sponsorAdSense": "Sponsor/AdSense",
     "discussionTitle": "{make} {model} araçta {code} Hatası - OBD2HQ Tartışması",
@@ -224,7 +224,7 @@
     "home": "Anasayfa",
     "lights": "İkaz Işıkları",
     "urgency": "{urgency} ACİLİYET",
-    "whatItMeans": "{make} {model} arac?nda bu ne anlama geliyor?",
+    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?",
     "description": "{make} {model} aracınızın gösterge panelinde {lightName} ışığının yandığını gördüğünüzde, bu aracın bilgisayarından gelen doğrudan bir uyarıdır. {description}",
     "commonCauses": "{make} {model} İçin Yaygın Nedenler",
     "whatToDo": "Ne Yapmalı",
@@ -248,7 +248,7 @@
   },
   "ContactPage": {
     "title": "İletişim",
-    "subtitle": "Belirli bir ar?za koduyla ilgili sorunuz mu var veya veritaban?m?zda bir yanl??l?k m? buldunuz? Bize bildirin.",
+    "subtitle": "Belirli bir arıza koduyla ilgili sorunuz mu var veya veritabanımızda bir yanlışlık mı buldunuz? Bize bildirin.",
     "emailUs": "Bize E-Posta Gönderin",
     "name": "İsim",
     "email": "E-Posta",
@@ -258,7 +258,7 @@
     "metaDescription": "OBD2HQ ekibi ile iletişime geçin.",
     "namePlaceholder": "Ali Yılmaz",
     "emailPlaceholder": "ali@ornek.com",
-    "messagePlaceholder": "Nas?l yard?mc? olabiliriz?"
+    "messagePlaceholder": "Nasıl yardımcı olabiliriz?"
   },
   "DisclaimerPage": {
     "title": "Tıbbi ve Teknik Sorumluluk Reddi",
@@ -294,7 +294,8 @@
     "selectCar": "{code} ayrıntılarını görmek için araç üreticinizi seçin:",
     "matchingVehicles": "Eşleşen Araçlar",
     "noResults": "Sonuç bulunamadı",
-    "noResultsDesc": "\"{query}\" ile eşleşen hiçbir OBD2 kodu veya araç modeli bulamadık. \"P0420\" gibi standart bir P-kodu veya \"Ford\" gibi bir araç markası aramayı deneyin."
+    "noResultsDesc": "\"{query}\" ile eşleşen hiçbir OBD2 kodu veya araç modeli bulamadık. \"P0420\" gibi standart bir P-kodu veya \"Ford\" gibi bir araç markası aramayı deneyin.",
+    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?"
   },
   "MakePage": {
     "title": "{make} Arıza Teşhis Merkezi",
@@ -322,7 +323,8 @@
     "problemGroupsDesc": "Tam kod rehberini açmadan önce teşhisi daraltmak için bu grupları kullanın. İlgili kodlar genelde aynı kablo, sensör, vakum, emisyon veya şanzıman kök nedenini paylaşır.",
     "warningLightsDesc": "Gösterge sembollerini ciddiyet, olası nedenler ve güvenli ilk adımla eşleştirin.",
     "openWarningLights": "{model} uyarı ışıklarını aç",
-    "diagnosticGuide": "teşhis rehberi"
+    "diagnosticGuide": "teşhis rehberi",
+    "whatItMeans": "{make} {model} aracında bu ne anlama geliyor?"
   },
   "NewsPage": {
     "title": "Otomotiv Haberleri",
@@ -393,11 +395,11 @@
     "commonMistakeSuffix": "Parça almadan önce freeze-frame verisi, canlı veri, görsel kontrol ve devre testleriyle arızayı doğrulayın.",
     "canDriveQuestion": "{code} koduyla araç kullanabilir miyim?",
     "canDriveAnswer": "Motor arıza lambası sabit yanıyorsa genelde güvenli bir yere veya servise kadar kullanabilirsiniz. Lamba yanıp sönüyorsa motora veya katalizöre ciddi zarar vermemek için hemen durun.",
-    "clearQuestion": "{code} kodu kendili?inden silinir mi?",
+    "clearQuestion": "{code} kodu kendiliğinden silinir mi?",
     "clearAnswer": "Asıl sorun giderildikten sonra motor beyni kendi kontrollerini yapar. Birkaç sürüş döngüsünde testler başarılı olursa lamba kendiliğinden söner. OBD2 cihazı ile hemen de silebilirsiniz.",
-    "emissionsQuestion": "Bu kod emisyon testinden kal?r m??",
+    "emissionsQuestion": "Bu kod emisyon testinden kalır mı?",
     "emissionsAnswer": "Evet. {code} nedeniyle motor arıza lambası yanıyorsa {make} araç OBD2 emisyon testinden otomatik olarak kalır.",
-    "firstCheckQuestion": "{code} i?in ?nce neyi kontrol etmeliyim?",
+    "firstCheckQuestion": "{code} için önce neyi kontrol etmeliyim?",
     "cheapFix": "Ucuz çözüm",
     "expensiveFix": "Pahalı çözüm",
     "cheapFixShort": "Ucuz Çözüm",
@@ -405,7 +407,8 @@
     "hardDifficulty": "Özel ekipman veya profesyonel usta önerilir.",
     "easyDifficulty": "Genellikle temel el aletleriyle evde yapılabilir.",
     "viewDetails": "Detayları Gör",
-    "team": "OBD2HQ Ekibi"
+    "team": "OBD2HQ Ekibi",
+    "ctaTitle": "ASE sertifikalı bir profesyonel misiniz?"
   },
   "EditorialPolicyPage": {
     "badge": "Editoryal İlkeler",
@@ -433,7 +436,7 @@
     "body": "Tek bir kişiye dayanmak yerine OBD2HQ veri odaklı bir editoryal yaklaşım kullanır. Teşhis kodlarını, belirtileri ve çözümleri belgelenmiş onarımlardan toplar ve aracınıza en olası nedeni sunmak için karşılaştırırız.",
     "manual": "Kaynak ve Veri Karşılaştırması",
     "verification": "Veri Odaklı Doğrulama",
-    "ctaTitle": "ASE sertifikal? bir profesyonel misiniz?",
+    "ctaTitle": "ASE sertifikalı bir profesyonel misiniz?",
     "ctaText": "Doğrulanabilir uzmanları inceleme kurulumuza katmak istiyoruz. Teşhis verilerini daha erişilebilir hale getirmek isterseniz sizden haber almak isteriz.",
     "contact": "Bize Ulaşın"
   }
