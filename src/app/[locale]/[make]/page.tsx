@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
+import validRoutes from '@/data/valid_routes.json';
 
 interface PageProps {
   params: Promise<{
@@ -15,6 +16,8 @@ interface PageProps {
 }
 
 export const dynamicParams = false;
+const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
+const DISPLAY_PRIORITY_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
 
 export async function generateStaticParams() {
   const params: Array<{ locale: string; make: string }> = [];
@@ -55,9 +58,39 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   if (!carData) notFound();
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
+  const pageUrl = `https://www.obd2hq.com/${locale}/${make}`;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: capMake, item: pageUrl },
+        ],
+      },
+      {
+        '@type': 'CollectionPage',
+        name: `${capMake} OBD2 Codes & Dashboard Warning Lights`,
+        description: `Diagnostic hub for ${capMake} models, warning lights and common OBD2 codes.`,
+        url: pageUrl,
+      },
+      {
+        '@type': 'ItemList',
+        name: `${capMake} models`,
+        itemListElement: carData.models.map((model, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: `${capMake} ${model.replace(/-/g, ' ')}`,
+          url: `${pageUrl}/${model}`,
+        })),
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -107,7 +140,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             {tMake('topCodes', { make: capMake })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {PRIORITY_CODES.slice(0, 8).map((code) => (
+            {DISPLAY_PRIORITY_CODES.slice(0, 8).map((code) => (
               <Link 
                 key={code} 
                 href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`}
@@ -132,7 +165,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
                 <div key={category.label} className="border-t border-white/5 pt-4">
                   <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-2">{category.label}</h3>
                   <div className="flex flex-wrap gap-2">
-                    {category.codes.slice(0, 4).map(code => (
+                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).slice(0, 4).map(code => (
                       <Link key={code} href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-white/10 rounded-lg px-3 py-2 transition-colors">
                         {code}
                       </Link>

@@ -8,6 +8,7 @@ import {
 } from '@/data/vehicle-knowledge';
 import { getVehicleSpecRecord } from '@/data/vehicle-spec-records';
 import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
+import validRoutes from '@/data/valid_routes.json';
 
 type VariantLabels = {
   metaSuffix: string;
@@ -48,6 +49,7 @@ type VariantLabels = {
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
+const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; make: string; model: string; year: string; variant: string }> }) {
   const { locale, make, model, year, variant } = await params;
@@ -199,7 +201,7 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
           <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.commonCodes}</h2>
             <div className="grid grid-cols-2 gap-3">
-              {trim.relatedCodes.map(code => (
+              {trim.relatedCodes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).map(code => (
                 <Link key={code} href={`/${locale}/${make}/${model}/${code.toLowerCase()}`} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">
                   {code}
                 </Link>

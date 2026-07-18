@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, getCodeCategoryLabel, PRIORITY_CODES } from '@/data/seo';
+import validRoutes from '@/data/valid_routes.json';
 
 interface PageProps {
   params: Promise<{
@@ -18,6 +19,8 @@ interface PageProps {
 }
 
 export const dynamicParams = false;
+const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
+const DISPLAY_PRIORITY_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
 
 export async function generateStaticParams() {
   const params: Array<{ locale: string; make: string; model: string }> = [];
@@ -63,6 +66,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const pageUrl = `https://www.obd2hq.com/${locale}/${make}/${model}`;
 
   // Pagination Logic
   const PAGE_SIZE = 200;
@@ -70,7 +74,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   let currentPage = parseInt(pageParam || '1', 10);
   if (isNaN(currentPage) || currentPage < 1) currentPage = 1;
 
-  const allCodes = Object.keys(codes);
+  const allCodes = Object.keys(codes).filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
   const totalCodes = allCodes.length;
   const totalPages = Math.ceil(totalCodes / PAGE_SIZE);
 
@@ -79,9 +83,39 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   const startIndex = (currentPage - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
   const displayCodes = allCodes.slice(startIndex, endIndex);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
+          { '@type': 'ListItem', position: 3, name: `${capMake} ${capModel}`, item: pageUrl },
+        ],
+      },
+      {
+        '@type': 'CollectionPage',
+        name: `1996-2026 ${capMake} ${capModel} OBD2 Codes & Warning Lights`,
+        description: `Diagnostic hub for ${capMake} ${capModel} OBD2 codes, dashboard warning lights and common diagnostic paths.`,
+        url: pageUrl,
+      },
+      {
+        '@type': 'ItemList',
+        name: `${capMake} ${capModel} diagnostic code guides`,
+        itemListElement: displayCodes.slice(0, 50).map((code, index) => ({
+          '@type': 'ListItem',
+          position: startIndex + index + 1,
+          name: `${capMake} ${capModel} ${code}`,
+          url: `${pageUrl}/${code.toLowerCase()}`,
+        })),
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -131,7 +165,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             {tModel('topCodes', { make: capMake, model: capModel })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {PRIORITY_CODES.slice(0, 10).map((code) => (
+            {DISPLAY_PRIORITY_CODES.slice(0, 10).map((code) => (
               <Link 
                 key={code} 
                 href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
@@ -156,7 +190,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 <div key={category.label} className="bg-white/5 rounded-2xl p-4 border border-white/5">
                   <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">{category.label}</h3>
                   <div className="flex flex-wrap gap-2">
-                    {category.codes.map(code => (
+                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).map(code => (
                       <Link key={code} href={`/${locale}/${make}/${model}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-[#0a0f1c] hover:bg-blue-500/10 hover:text-blue-300 rounded-lg px-3 py-2 transition-colors">
                         {code}
                       </Link>

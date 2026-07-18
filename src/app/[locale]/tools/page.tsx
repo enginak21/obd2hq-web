@@ -19,9 +19,42 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
   const copy = getKnowledgeUiCopy(locale);
+  const pageUrl = `https://www.obd2hq.com/${locale}/tools`;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.toolsTitle, item: pageUrl },
+        ],
+      },
+      {
+        '@type': 'CollectionPage',
+        name: copy.toolsMetaTitle,
+        description: copy.toolsMetaDescription,
+        url: pageUrl,
+      },
+      {
+        '@type': 'ItemList',
+        name: copy.toolsTitle,
+        itemListElement: automotiveTools.map((tool, index) => {
+          const localized = localizeTool(tool, locale);
+          return {
+            '@type': 'ListItem',
+            position: index + 1,
+            name: localized.title,
+            url: `${pageUrl}/${tool.slug}`,
+          };
+        }),
+      },
+    ],
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <section className="border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="inline-flex items-center gap-2 rounded-full border border-green-400/20 bg-green-400/10 px-4 py-2 text-sm font-bold text-green-200 mb-6">

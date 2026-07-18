@@ -6,8 +6,10 @@ import { getVehicleKnowledge, type VehicleKnowledgeProfile } from '@/data/vehicl
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import { getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
 import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
+import validRoutes from '@/data/valid_routes.json';
 
 type VehicleVariantRow = NonNullable<VehicleKnowledgeProfile['yearTrimVariants']>[number];
+const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
 type VehicleLabels = {
   metaTitle: (name: string) => string;
   coverage: string;
@@ -563,7 +565,7 @@ function buildVehicleProfileFromSpecs(make: string, model: string): VehicleKnowl
     brakeFluid: uniqueStrings(variants.map(variant => variant.brakeFluid)).slice(0, 4).join(' / ') || first.brakeFluid,
     maintenance: uniqueStrings(variants.map(variant => variant.serviceInterval)).slice(0, 10),
     knownProblems: uniqueArrayItems(variants, 'commonProblems').slice(0, 12),
-    commonCodes: uniqueArrayItems(variants, 'relatedCodes').slice(0, 10),
+    commonCodes: uniqueArrayItems(variants, 'relatedCodes').filter((code) => VALID_CODE_SET.has(code.toUpperCase())).slice(0, 10),
     compatibleTools: ['OBD2 scanner with live data', 'VIN-based service information', 'Digital multimeter', 'Basic inspection tools'],
     obdPortLocation: 'Driver side lower dashboard area on most OBD-II vehicles; verify by market and generation.',
     fuseBox: 'Verify by VIN, market and production date.',

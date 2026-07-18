@@ -1,10 +1,10 @@
 export const SUPPORTED_LOCALES = ['en', 'de', 'es', 'tr', 'fr'] as const;
 
-export const PRIORITY_CODES = ['P0420', 'P0300', 'P0171', 'P0455', 'P0442', 'P0128', 'P0135', 'P0174', 'P0430', 'P0011', 'P0101', 'P0113'];
+export const PRIORITY_CODES = ['P0420', 'P0300', 'P0171', 'P0455', 'P0442', 'P0128', 'P0135', 'P0174', 'P0430', 'P0101', 'P0113', 'P0102'];
 export const SEO_LAST_REVIEWED = '2026-07-14T12:00:00.000Z';
 
 export const CODE_CATEGORIES = [
-  { label: 'Engine', codes: ['P0300', 'P0301', 'P0302', 'P0011', 'P0014', 'P0507'] },
+  { label: 'Engine', codes: ['P0300', 'P0301', 'P0302', 'P0303', 'P0304', 'P0507'] },
   { label: 'Emissions', codes: ['P0420', 'P0430', 'P0455', 'P0442', 'P0456', 'P0401'] },
   { label: 'Fuel Trim', codes: ['P0171', 'P0174', 'P0172', 'P0175', 'P0191', 'P0087'] },
   { label: 'Sensors', codes: ['P0101', 'P0102', 'P0113', 'P0128', 'P0135', 'P0335'] },

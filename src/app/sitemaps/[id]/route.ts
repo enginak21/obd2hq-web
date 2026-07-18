@@ -11,12 +11,18 @@ import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
 import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLocale, publishedProblemFinderIntents } from '@/data/problem-finder';
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
+import validRoutes from '@/data/valid_routes.json';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
 const LASTMOD = new Date().toISOString().slice(0, 10);
 
 const OPPORTUNITY_CODES = ['P0203', 'P0235', 'P0204', 'P0213', 'P0102'] as const;
+const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
+const SITEMAP_HIGH_INTENT_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
+const SITEMAP_OPPORTUNITY_CODES = OPPORTUNITY_CODES.filter((code) => (
+  VALID_CODE_SET.has(code.toUpperCase()) && !SITEMAP_HIGH_INTENT_CODES.includes(code)
+));
 
 const PRIORITY_CODE_URLS = [
   { make: 'ford', model: 'focus', code: 'P0213' },
@@ -132,7 +138,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     LOCALES.forEach((locale) => {
       cars.forEach((car) => {
         car.models.forEach((model) => {
-          PRIORITY_CODES.forEach((code) => {
+          SITEMAP_HIGH_INTENT_CODES.forEach((code) => {
             urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`, 'monthly', '0.8');
           });
         });
@@ -143,7 +149,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     LOCALES.forEach((locale) => {
       cars.forEach((car) => {
         car.models.forEach((model) => {
-          OPPORTUNITY_CODES.forEach((code) => {
+          SITEMAP_OPPORTUNITY_CODES.forEach((code) => {
             const loc = `${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`;
             if (!emitted.has(loc)) {
               emitted.add(loc);
@@ -153,6 +159,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         });
       });
       PRIORITY_CODE_URLS.forEach(({ make, model, code }) => {
+        if (!VALID_CODE_SET.has(code.toUpperCase()) || SITEMAP_HIGH_INTENT_CODES.includes(code)) return;
         const loc = `${BASE_URL}/${locale}/${make}/${model}/${code.toLowerCase()}`;
         if (!emitted.has(loc)) {
           emitted.add(loc);
