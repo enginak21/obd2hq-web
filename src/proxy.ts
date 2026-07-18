@@ -24,7 +24,8 @@ const problemFinderBaseSet = new Set(Object.values(problemFinderBasePaths));
 
 const intlMiddleware = createMiddleware({
   locales,
-  defaultLocale: 'en'
+  defaultLocale: 'en',
+  alternateLinks: false
 });
 
 function notFoundResponse() {

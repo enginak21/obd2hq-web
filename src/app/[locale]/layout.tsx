@@ -43,6 +43,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 
+const supportedLocales = ['en', 'de', 'es', 'tr', 'fr'];
 
 export default async function RootLayout({
   children,
@@ -54,7 +55,7 @@ export default async function RootLayout({
   const { locale } = await params;
 
   // Validate locale
-  if (!['en', 'de', 'es', 'tr', 'fr'].includes(locale)) {
+  if (!supportedLocales.includes(locale)) {
     notFound();
   }
   

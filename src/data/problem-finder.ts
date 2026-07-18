@@ -479,14 +479,13 @@ export function getProblemFinderIntentBySlug(locale: string, slug: string) {
 }
 
 export function getProblemFinderAlternates(intent?: ProblemFinderIntent) {
+  const languages = Object.fromEntries(PROBLEM_FINDER_LOCALES.map((locale) => [
+    locale,
+    intent ? getProblemFinderDetailPath(locale, intent) : getProblemFinderHubPath(locale),
+  ]));
+
   return {
-    languages: {
-      ...Object.fromEntries(PROBLEM_FINDER_LOCALES.map((locale) => [
-        locale,
-        intent ? getProblemFinderDetailPath(locale, intent) : getProblemFinderHubPath(locale),
-      ])),
-      'x-default': intent ? getProblemFinderDetailPath('en', intent) : getProblemFinderHubPath('en'),
-    },
+    languages,
   };
 }
 

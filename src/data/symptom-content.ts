@@ -84,10 +84,7 @@ export function getSymptomContentAlternates(group: SymptomContentGroup, currentL
 
   return {
     canonical: getSymptomContentDetailPath(group, currentLocale),
-    languages: {
-      ...languages,
-      'x-default': getSymptomContentDetailPath(group, 'en'),
-    },
+    languages,
   };
 }
 
@@ -98,10 +95,7 @@ export function getSymptomHubAlternates(currentLocale: SymptomContentLocale) {
 
   return {
     canonical: getSymptomContentHubPath(currentLocale),
-    languages: {
-      ...languages,
-      'x-default': getSymptomContentHubPath('en'),
-    },
+    languages,
   };
 }
 

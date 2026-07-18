@@ -11,6 +11,10 @@ import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content';
 
+export function generateStaticParams() {
+  return ['en', 'de', 'es', 'tr', 'fr'].map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'HomePage' });

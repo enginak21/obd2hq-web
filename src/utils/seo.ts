@@ -9,9 +9,6 @@ export function getAlternates(pathWithoutLocale: string, currentLocale: string) 
   
   return {
     canonical: `/${currentLocale}${cleanPath}`,
-    languages: {
-      ...languages,
-      'x-default': `/en${cleanPath}`,
-    }
+    languages
   };
 }
