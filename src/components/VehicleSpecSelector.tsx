@@ -14,12 +14,9 @@ export type VehicleSpecSelectorItem = {
   slug: string;
   chassisCode: string;
   engineCodes: string[];
-  engineSummary: string;
   recommendedOil: string;
   oilCapacity: string;
   transmissionFluid: string;
-  commonProblems: string[];
-  firstChecks: string[];
   relatedCodes: string[];
   qualityLabel: string;
 };
@@ -102,7 +99,7 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
                 <span className="rounded-lg bg-emerald-500/10 px-3 py-1 text-xs font-black text-emerald-200">{labels.verified}</span>
                 <span className="rounded-lg bg-amber-500/10 px-3 py-1 text-xs font-black text-amber-200">{selected.qualityLabel}</span>
               </div>
-              <h3 className="mt-4 text-2xl font-black text-white">{selected.engineCodes.join(', ')} - {selected.engineSummary}</h3>
+              <h3 className="mt-4 text-2xl font-black text-white">{selected.displayName} {selected.year} - {selected.engineCodes.join(', ')}</h3>
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 <Fact label={labels.engineCode} value={selected.engineCodes.join(', ')} />
                 <Fact label={labels.chassis} value={`${selected.chassisCode} / ${selected.generation}`} />
@@ -117,15 +114,14 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
                 <Wrench className="h-4 w-4 text-amber-300" />
                 {labels.quickChecks}
               </div>
-              <ul className="mt-4 space-y-2 text-sm text-slate-300">
-                {selected.firstChecks.slice(0, 6).map(check => <li key={check}>- {check}</li>)}
-              </ul>
-              <p className="mt-5 text-xs font-black uppercase tracking-widest text-slate-500">{labels.commonProblems}</p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {selected.commonProblems.slice(0, 6).map(problem => (
-                  <span key={problem} className="rounded-lg bg-white/5 px-2.5 py-1 text-xs font-bold text-slate-300">{problem}</span>
-                ))}
-              </div>
+              <p className="mt-4 text-sm leading-6 text-slate-300">{labels.openPrompt}</p>
+              <Link
+                href={`/${locale}/vehicles/${selected.make}/${selected.model}/${selected.year}/${selected.slug}`}
+                className="mt-5 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-5 py-3 text-sm font-black text-white hover:bg-blue-500"
+              >
+                {labels.openFullPage}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         ) : (
@@ -211,6 +207,7 @@ function getLabels(locale: string) {
       relatedCodes: 'İlgili kodlar',
       quickChecks: 'İlk kontroller',
       commonProblems: 'Sık sorunlar',
+      openPrompt: 'Kronik sorunlar, ilk kontroller, kaynak notları ve tam servis bilgileri için detay sayfasını açın.',
       emptyState: 'Detayları görmek için marka, model, yıl ve kasa seçin.',
       verified: 'Yayına uygun',
     };
@@ -237,6 +234,7 @@ function getLabels(locale: string) {
       relatedCodes: 'Verwandte Codes',
       quickChecks: 'Erste Prüfungen',
       commonProblems: 'Häufige Probleme',
+      openPrompt: 'Öffnen Sie die Detailseite für häufige Probleme, erste Prüfungen, Quellenhinweise und vollständige Servicedaten.',
       emptyState: 'Wählen Sie Marke, Modell, Jahr und Variante.',
       verified: 'Publizierbar',
     };
@@ -263,6 +261,7 @@ function getLabels(locale: string) {
       relatedCodes: 'Códigos relacionados',
       quickChecks: 'Primeras revisiones',
       commonProblems: 'Problemas comunes',
+      openPrompt: 'Abre la página completa para problemas comunes, primeras revisiones, notas de fuente y datos de servicio.',
       emptyState: 'Elige marca, modelo, año y versión para ver detalles.',
       verified: 'Publicable',
     };
@@ -289,6 +288,7 @@ function getLabels(locale: string) {
       relatedCodes: 'Codes liés',
       quickChecks: 'Premières vérifications',
       commonProblems: 'Problèmes fréquents',
+      openPrompt: 'Ouvrez la page complète pour les problèmes fréquents, premiers contrôles, sources et données de service.',
       emptyState: 'Choisissez marque, modèle, année et version.',
       verified: 'Publié',
     };
@@ -315,6 +315,7 @@ function getLabels(locale: string) {
     relatedCodes: 'Related codes',
     quickChecks: 'First checks',
     commonProblems: 'Common problems',
+    openPrompt: 'Open the detail page for common problems, first checks, source notes and complete service data.',
     emptyState: 'Select make, model, year and trim to see details.',
     verified: 'Verified',
   };

@@ -32,14 +32,11 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
     trim: variant.trim,
     slug: variant.slug,
     chassisCode: variant.chassisCode,
-    engineCodes: variant.engineCodes,
-    engineSummary: variant.engineSummary,
+    engineCodes: variant.engineCodes.slice(0, 3),
     recommendedOil: variant.recommendedOil,
     oilCapacity: variant.oilCapacity,
     transmissionFluid: variant.transmissionFluid,
-    commonProblems: variant.commonProblems,
-    firstChecks: variant.firstChecks,
-    relatedCodes: variant.relatedCodes,
+    relatedCodes: variant.relatedCodes.slice(0, 4),
     qualityLabel: getVehicleSpecQualityLabel(variant),
   }));
   const schema = {

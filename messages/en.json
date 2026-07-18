@@ -269,13 +269,15 @@
     "message": "Message",
     "send": "Send Message",
     "metaTitle": "Contact Us - OBD2HQ",
-    "metaDescription": "Get in touch with the OBD2HQ team.",
+    "metaDescription": "Contact the OBD2HQ editorial team about diagnostic code feedback, vehicle data corrections, technical issues or partnership questions.",
     "namePlaceholder": "John Doe",
     "emailPlaceholder": "john@example.com",
     "messagePlaceholder": "How can we help?"
   },
   "DisclaimerPage": {
     "title": "Medical & Technical Disclaimer",
+    "metaTitle": "Automotive Diagnostic Disclaimer - OBD2HQ",
+    "metaDescription": "Read the OBD2HQ disclaimer for educational diagnostic information, repair safety, professional mechanic advice and user responsibility.",
     "warning": "WARNING:",
     "warningText": "Automotive repair can be dangerous and potentially fatal if performed incorrectly. Always consult a certified mechanic if you are unsure of your abilities.",
     "noAdvice": "No Professional Advice",
@@ -285,6 +287,8 @@
   },
   "PrivacyPage": {
     "title": "Privacy Policy",
+    "metaTitle": "Privacy Policy - OBD2HQ",
+    "metaDescription": "Learn how OBD2HQ handles analytics, cookies, advertising partners and diagnostic search data while keeping the site accessible.",
     "lastUpdated": "Last updated:",
     "h1": "1. Information Collection",
     "p1": "OBD2HQ is a public diagnostic database. We do not require users to create an account or provide personal information to search for OBD2 codes. We may collect anonymous analytics data (such as pages visited or search queries) to improve our database accuracy.",
@@ -295,6 +299,8 @@
   },
   "TermsPage": {
     "title": "Terms of Service",
+    "metaTitle": "Terms of Service - OBD2HQ",
+    "metaDescription": "Review the terms for using OBD2HQ diagnostic guides, OBD2 code lookup, vehicle data, warning light pages and educational content.",
     "lastUpdated": "Last updated:",
     "h1": "1. Acceptance of Terms",
     "p1": "By accessing and using OBD2HQ, you accept and agree to be bound by the terms and provision of this agreement.",
@@ -302,6 +308,8 @@
     "p2": "The information provided on OBD2HQ is for educational and informational purposes only. We do not guarantee the absolute accuracy of the diagnostic data. Automotive repair involves inherent risks."
   },
   "SearchPage": {
+    "metaTitle": "Search OBD2 Codes, Car Problems and Vehicle Guides - OBD2HQ",
+    "metaDescription": "Search OBD2 codes, warning lights, car symptoms, makes, models and repair guides across the OBD2HQ diagnostic database.",
     "title": "Search Results for \"{query}\"",
     "codeFound": "Diagnostic Code Found: {code}",
     "codeDesc": "We found the standard definition for {code}: {title}. However, to give you accurate repair instructions, you must select your car manufacturer first.",
