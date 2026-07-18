@@ -100,10 +100,16 @@ export default async function RootLayout({
           />
         )}
       </head>
-      <body className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]">
+      <body
+        className="min-h-[100dvh] flex flex-col bg-[#0a0f1c]"
+        style={{ minHeight: '100dvh', display: 'flex', flexDirection: 'column' }}
+      >
         <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <Navbar />
-          <div className="flex-1 flex flex-col">
+          <div
+            className="flex-1 flex flex-col"
+            style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}
+          >
             {children}
           </div>
         </NextIntlClientProvider>

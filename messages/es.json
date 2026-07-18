@@ -404,7 +404,17 @@
     "openCodeGuide": "Abrir guía de {code}",
     "selectThisVehicle": "Seleccionar este vehículo",
     "startWithLights": "Empezar con luces de advertencia",
-    "lightsDesc": "Si no sabes el código, elige primero tu coche y compara los símbolos del tablero por gravedad."
+    "lightsDesc": "Si no sabes el código, elige primero tu coche y compara los símbolos del tablero por gravedad.",
+    "searchHubBadge": "Búsqueda de diagnóstico",
+    "searchHubTitle": "Buscar códigos OBD2, síntomas y guías del vehículo",
+    "searchHubDesc": "Empieza con un código, un modelo, una luz de advertencia o un problema escrito en lenguaje normal. OBD2HQ te lleva a la guía de diagnóstico más útil.",
+    "popularVehicles": "Vehículos populares",
+    "findByProblem": "Buscar por problema",
+    "findByProblemDesc": "Describe pérdida de potencia, vibraciones, humo, arranque difícil o luces de advertencia.",
+    "findByVehicle": "Buscar por vehículo",
+    "findByVehicleDesc": "Elige marca y modelo primero; luego abre códigos comunes, luces de advertencia y guías específicas.",
+    "findByLight": "Buscar por luz",
+    "findByLightDesc": "Compara símbolos del tablero y aprende qué luces requieren atención inmediata."
   },
   "CodePageExtra": {
     "severity": "Gravedad",

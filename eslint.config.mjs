@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
     "find_translations.js",
     "update_*.js",
     "scripts/**",
+    "work/**",
   ]),
 ]);
 

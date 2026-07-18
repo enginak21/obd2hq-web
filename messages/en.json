@@ -402,7 +402,17 @@
     "openCodeGuide": "Open {code} guide",
     "selectThisVehicle": "Select this vehicle",
     "startWithLights": "Start with warning lights",
-    "lightsDesc": "If you do not know the code yet, choose your car first and compare dashboard symbols by severity."
+    "lightsDesc": "If you do not know the code yet, choose your car first and compare dashboard symbols by severity.",
+    "searchHubBadge": "Diagnostic search",
+    "searchHubTitle": "Search OBD2 codes, car symptoms and vehicle guides",
+    "searchHubDesc": "Start with a trouble code, a car model, a warning light, or a plain-language problem. OBD2HQ routes you to the most useful diagnostic guide instead of leaving you at an empty results page.",
+    "popularVehicles": "Popular vehicles",
+    "findByProblem": "Find by problem",
+    "findByProblemDesc": "Describe symptoms such as loss of power, shaking, smoke, hard starting, or warning lights.",
+    "findByVehicle": "Find by vehicle",
+    "findByVehicleDesc": "Choose make and model first, then open common codes, warning lights, and vehicle-specific guides.",
+    "findByLight": "Find by warning light",
+    "findByLightDesc": "Compare dashboard symbols and learn which lights need immediate attention."
   },
   "CodePageExtra": {
     "severity": "Severity",

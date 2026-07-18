@@ -98,6 +98,7 @@ export default async function SearchPage({
   const popularMakes = ['toyota', 'ford', 'honda', 'chevrolet', 'bmw', 'audi', 'mercedes-benz', 'volkswagen']
     .map(make => cars.find(car => car.make === make))
     .filter((car): car is (typeof cars)[number] => Boolean(car));
+  const hasSearchQuery = rawQuery.trim().length > 0;
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
@@ -111,6 +112,51 @@ export default async function SearchPage({
       </header>
 
       <div className="max-w-5xl mx-auto px-6 mt-12 space-y-12">
+        {!hasSearchQuery && (
+          <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-8">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-blue-200">
+                <SearchIcon className="h-4 w-4" />
+                {tExtra('searchHubBadge')}
+              </div>
+              <h2 className="text-3xl font-black text-white">{tExtra('searchHubTitle')}</h2>
+              <p className="mt-4 max-w-2xl text-slate-400 leading-relaxed">{tExtra('searchHubDesc')}</p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-3">
+                {PRIORITY_CODES.slice(0, 6).map(code => (
+                  <Link key={code} href={`/${locale}/search?q=${code}`} className="rounded-2xl border border-blue-500/10 bg-blue-500/10 px-4 py-3 text-center font-black text-blue-100 hover:border-blue-400/40">
+                    {code}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-8">
+              <h2 className="text-2xl font-black text-white">{tExtra('popularVehicles')}</h2>
+              <div className="mt-5 space-y-3">
+                {popularMakes.slice(0, 6).map((car) => (
+                  <Link key={car.make} href={`/${locale}/${car.make}`} className="flex items-center justify-between rounded-2xl bg-white/[0.04] px-4 py-3 font-bold text-slate-200 hover:bg-white/[0.07]">
+                    {formatVehicleName(car.make)}
+                    <ArrowRight className="h-4 w-4 text-blue-300" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="lg:col-span-2 grid gap-4 md:grid-cols-3">
+              {[
+                { href: `/${locale}/car-problem-finder`, title: tExtra('findByProblem'), desc: tExtra('findByProblemDesc') },
+                { href: `/${locale}/vehicles`, title: tExtra('findByVehicle'), desc: tExtra('findByVehicleDesc') },
+                { href: `/${locale}/toyota/camry/lights`, title: tExtra('findByLight'), desc: tExtra('findByLightDesc') },
+              ].map(item => (
+                <Link key={item.href} href={item.href} className="rounded-3xl border border-white/5 bg-[#101827] p-6 hover:border-blue-400/40">
+                  <h2 className="text-xl font-black text-white">{item.title}</h2>
+                  <p className="mt-3 text-sm leading-6 text-slate-400">{item.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         {directTarget && (
           <section className="bg-blue-500/10 border border-blue-500/25 rounded-3xl p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
@@ -215,7 +261,7 @@ export default async function SearchPage({
           </section>
         )}
 
-        {!exactCodeMatch && matchedModels.length === 0 && (
+        {hasSearchQuery && !exactCodeMatch && matchedModels.length === 0 && (
           <div className="text-center py-16">
             <SearchIcon className="w-16 h-16 text-slate-600 mx-auto mb-6" />
             <h2 className="text-2xl font-bold text-white mb-2">{t('noResults')}</h2>

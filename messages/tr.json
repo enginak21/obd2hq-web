@@ -405,7 +405,17 @@
     "openCodeGuide": "{code} rehberini aç",
     "selectThisVehicle": "Bu aracı seç",
     "startWithLights": "Uyarı ışıklarıyla başla",
-    "lightsDesc": "Kodu bilmiyorsanız önce aracınızı seçin ve gösterge sembollerini aciliyetine göre karşılaştırın."
+    "lightsDesc": "Kodu bilmiyorsanız önce aracınızı seçin ve gösterge sembollerini aciliyetine göre karşılaştırın.",
+    "searchHubBadge": "Teşhis araması",
+    "searchHubTitle": "OBD2 kodu, araç belirtisi ve rehber ara",
+    "searchHubDesc": "Arıza kodu, araç modeli, uyarı ışığı veya günlük dille yazılmış bir sorunla başlayın. OBD2HQ sizi boş sonuç sayfası yerine en faydalı teşhis rehberine yönlendirir.",
+    "popularVehicles": "Popüler araçlar",
+    "findByProblem": "Soruna göre bul",
+    "findByProblemDesc": "Gaz yemiyor, titriyor, duman atıyor, geç çalışıyor veya uyarı ışığı yanıyor gibi belirtileri yazın.",
+    "findByVehicle": "Araca göre bul",
+    "findByVehicleDesc": "Önce marka ve model seçin; sonra yaygın kodları, uyarı ışıklarını ve araca özel rehberleri açın.",
+    "findByLight": "Uyarı ışığına göre bul",
+    "findByLightDesc": "Gösterge sembollerini karşılaştırın ve hangi ışıkların acil müdahale istediğini öğrenin."
   },
   "CodePageExtra": {
     "severity": "Ciddiyet",

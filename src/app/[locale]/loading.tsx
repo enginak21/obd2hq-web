@@ -2,7 +2,7 @@ import { Activity } from 'lucide-react';
 
 export default function Loading() {
   return (
-    <div className="flex-1 min-h-[60vh] flex flex-col items-center justify-center bg-[#0a0f1c]">
+    <div className="flex-1 min-h-[100dvh] flex flex-col items-center justify-center bg-[#0a0f1c]">
       <div className="relative flex items-center justify-center">
         {/* Pulsing rings */}
         <div className="absolute w-24 h-24 border-4 border-blue-500/20 rounded-full animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]"></div>

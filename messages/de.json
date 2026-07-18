@@ -403,7 +403,17 @@
     "openCodeGuide": "{code}-Anleitung öffnen",
     "selectThisVehicle": "Dieses Fahrzeug wählen",
     "startWithLights": "Mit Warnleuchten beginnen",
-    "lightsDesc": "Wenn Sie den Code nicht kennen, wählen Sie zuerst Ihr Fahrzeug und vergleichen Sie die Symbole nach Dringlichkeit."
+    "lightsDesc": "Wenn Sie den Code nicht kennen, wählen Sie zuerst Ihr Fahrzeug und vergleichen Sie die Symbole nach Dringlichkeit.",
+    "searchHubBadge": "Diagnosesuche",
+    "searchHubTitle": "OBD2-Codes, Symptome und Fahrzeugführer suchen",
+    "searchHubDesc": "Beginnen Sie mit einem Fehlercode, einem Fahrzeugmodell, einer Warnleuchte oder einem einfachen Problembeschrieb. OBD2HQ führt Sie zum passenden Diagnoseleitfaden.",
+    "popularVehicles": "Beliebte Fahrzeuge",
+    "findByProblem": "Nach Problem suchen",
+    "findByProblemDesc": "Beschreiben Sie Leistungsverlust, Ruckeln, Rauch, Startprobleme oder Warnleuchten.",
+    "findByVehicle": "Nach Fahrzeug suchen",
+    "findByVehicleDesc": "Wählen Sie zuerst Marke und Modell und öffnen Sie dann häufige Codes, Warnleuchten und fahrzeugspezifische Leitfäden.",
+    "findByLight": "Nach Warnleuchte suchen",
+    "findByLightDesc": "Vergleichen Sie Armaturenbrettsymbole und erkennen Sie, welche Warnungen sofortige Aufmerksamkeit brauchen."
   },
   "CodePageExtra": {
     "severity": "Schweregrad",
