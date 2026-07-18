@@ -7,6 +7,7 @@ import { useRouter, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
 import Image from 'next/image';
+import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content-routing';
 
 export default function Navbar() {
@@ -17,6 +18,7 @@ export default function Navbar() {
   const locale = (params.locale as string) || 'en';
   const t = useTranslations('Navbar');
   const symptomHubPath = getSymptomContentHubPath(locale);
+  const problemFinderPath = getProblemFinderHubPath(locale);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,7 +63,7 @@ export default function Navbar() {
           <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('diagnostics')}</Link>
           <Link href={`/${locale}/vehicles`} className="hover:text-white transition-colors">{t('vehicles')}</Link>
           <Link href={symptomHubPath} className="hover:text-white transition-colors">{t('symptoms')}</Link>
-          <Link href={`/${locale}/tools`} className="hover:text-white transition-colors">{t('tools')}</Link>
+          <Link href={problemFinderPath} className="hover:text-white transition-colors">{t('tools')}</Link>
           <Link href={`/${locale}/toyota/camry/lights`} className="hover:text-white transition-colors">{t('warningLights')}</Link>
           <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-400">{t('news')}</Link>
           <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
@@ -103,8 +105,8 @@ export default function Navbar() {
             <Car className="w-5 h-5 text-green-400" />
             {t('vehicles')}
           </Link>
-          <Link href={`/${locale}/tools`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
-            <Wrench className="w-5 h-5 text-blue-400" />
+          <Link href={problemFinderPath} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>
+            <AlertTriangle className="w-5 h-5 text-blue-400" />
             {t('tools')}
           </Link>
           <Link href={`/${locale}/toyota/camry/lights`} className="flex items-center gap-3 rounded-2xl bg-amber-500/10 px-4 py-3 text-amber-300 hover:text-amber-200 font-bold" onClick={() => setIsMenuOpen(false)}>

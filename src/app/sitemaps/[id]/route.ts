@@ -9,6 +9,7 @@ import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { indexedVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
+import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLocale, publishedProblemFinderIntents } from '@/data/problem-finder';
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
 
 const BASE_URL = 'https://www.obd2hq.com';
@@ -65,6 +66,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
         urls += urlEntry(`${BASE_URL}${getSymptomContentHubPath(locale)}`, 'daily', '0.95');
         publishedSymptomContentGroups.forEach((group) => {
           urls += urlEntry(`${BASE_URL}${getSymptomContentDetailPath(group, locale)}`, 'daily', '0.9');
+        });
+      }
+      if (isProblemFinderLocale(locale)) {
+        urls += urlEntry(`${BASE_URL}${getProblemFinderHubPath(locale)}`, 'daily', '0.96');
+        publishedProblemFinderIntents.forEach((intent) => {
+          urls += urlEntry(`${BASE_URL}${getProblemFinderDetailPath(locale, intent)}`, 'weekly', '0.88');
         });
       }
       urls += urlEntry(`${BASE_URL}/${locale}/tools`, 'weekly', '0.9');

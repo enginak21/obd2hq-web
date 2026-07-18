@@ -8,6 +8,7 @@ import SmartSearch from '@/components/SmartSearch';
 import FindYourFixWizard from '@/components/FindYourFixWizard';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -23,6 +24,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const copy = getKnowledgeUiCopy(locale);
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
   const symptomHubPath = getSymptomContentHubPath(locale);
+  const problemFinderPath = getProblemFinderHubPath(locale);
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -98,7 +100,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <p className="mt-3 text-slate-400 leading-relaxed">{copy.symptomFinderDescription}</p>
             <span className="mt-5 inline-flex text-sm font-bold text-amber-200 group-hover:text-amber-100">{copy.openSymptomFinder}</span>
           </Link>
-          <Link href={`/${locale}/tools`} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-green-400/40 hover:bg-[#17213a] transition-all">
+          <Link href={problemFinderPath} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-green-400/40 hover:bg-[#17213a] transition-all">
             <div className="mb-5 rounded-2xl bg-green-400/10 p-3 w-fit text-green-300">
               <Calculator className="w-6 h-6" />
             </div>

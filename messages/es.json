@@ -1,17 +1,17 @@
 {
   "Navbar": {
-    "searchPlaceholder": "Buscar código (ej: P0420) o marca...",
+    "searchPlaceholder": "Describe una falla o busca P0420...",
     "makes": "Marcas",
-    "diagnostics": "Diagnostics",
-    "warningLights": "Warning Lights",
-    "findByCode": "Find by Code",
-    "findByCar": "Find by Car",
+    "diagnostics": "Diagn?stico",
+    "warningLights": "Luces de advertencia",
+    "findByCode": "Buscar por c?digo",
+    "findByCar": "Buscar por coche",
     "aboutUs": "Sobre nosotros",
     "contact": "Contacto",
     "blog": "Blog y Reseñas",
     "news": "Noticias",
     "symptoms": "Síntomas",
-    "tools": "Herramientas",
+    "tools": "Buscador de fallas",
     "vehicles": "Vehículos"
   },
   "Footer": {

@@ -12,6 +12,14 @@ const symptomContentBasePaths: Record<string, string> = {
   fr: 'symptomes-voiture',
 };
 const symptomContentBaseSet = new Set(Object.values(symptomContentBasePaths));
+const problemFinderBasePaths: Record<string, string> = {
+  en: 'car-problem-finder',
+  tr: 'ariza-bulucu',
+  de: 'auto-problemfinder',
+  es: 'buscador-fallas',
+  fr: 'trouver-panne',
+};
+const problemFinderBaseSet = new Set(Object.values(problemFinderBasePaths));
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -55,9 +63,12 @@ export default function middleware(request: NextRequest) {
     if (locales.includes(locale) && symptomContentBaseSet.has(make) && symptomContentBasePaths[locale] !== make) {
       return notFoundResponse();
     }
+    if (locales.includes(locale) && problemFinderBaseSet.has(make) && problemFinderBasePaths[locale] !== make) {
+      return notFoundResponse();
+    }
     
     // Ignore static UI pages
-    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
+    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'car-problem-finder', 'ariza-bulucu', 'auto-problemfinder', 'buscador-fallas', 'trouver-panne', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
     
     if (locales.includes(locale) && !isStaticPage) {
       const isWarningLightDetail = segments.length === 5 && segments[3] === 'lights';

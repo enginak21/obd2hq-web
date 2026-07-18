@@ -4,6 +4,7 @@ import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import { resolveLocalizedProblemFinderPath } from '@/data/problem-finder';
 import { resolveLocalizedSymptomPath } from '@/data/symptom-content-routing';
 
 const languages = [
@@ -32,6 +33,13 @@ export default function LanguageSwitcher() {
   }, []);
 
   const switchLanguage = (newLocale: string) => {
+    const localizedProblemFinderPath = resolveLocalizedProblemFinderPath(pathname, newLocale);
+    if (localizedProblemFinderPath) {
+      router.push(localizedProblemFinderPath);
+      setIsOpen(false);
+      return;
+    }
+
     const localizedSymptomPath = resolveLocalizedSymptomPath(pathname, newLocale);
     if (localizedSymptomPath) {
       router.push(localizedSymptomPath);
@@ -39,19 +47,17 @@ export default function LanguageSwitcher() {
       return;
     }
 
-    // pathname starts with /en, /es, etc.
     const segments = pathname.split('/');
     segments[1] = newLocale;
-    const newPath = segments.join('/');
-    router.push(newPath);
+    router.push(segments.join('/'));
     setIsOpen(false);
   };
 
-  const currentLang = languages.find(l => l.code === locale) || languages[0];
+  const currentLang = languages.find((language) => language.code === locale) || languages[0];
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={`Change language, current language is ${currentLang.name}`}
         aria-expanded={isOpen}
@@ -63,17 +69,17 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-40 bg-[#1a2333] border border-white/10 rounded-xl shadow-xl overflow-hidden z-50">
-          {languages.map((lang) => (
+          {languages.map((language) => (
             <button
-              key={lang.code}
-              onClick={() => switchLanguage(lang.code)}
+              key={language.code}
+              onClick={() => switchLanguage(language.code)}
               className={`w-full text-left px-4 py-2 text-sm transition-colors ${
-                locale === lang.code 
-                  ? 'bg-blue-600/20 text-blue-400 font-semibold' 
+                locale === language.code
+                  ? 'bg-blue-600/20 text-blue-400 font-semibold'
                   : 'text-slate-300 hover:bg-white/5 hover:text-white'
               }`}
             >
-              {lang.name}
+              {language.name}
             </button>
           ))}
         </div>

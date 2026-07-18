@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "searchPlaceholder": "Search code (e.g., P0420) or car make...",
+    "searchPlaceholder": "Describe a problem or search P0420...",
     "makes": "Makes",
     "diagnostics": "Diagnostics",
     "warningLights": "Warning Lights",
@@ -11,7 +11,7 @@
     "blog": "Blog & Reviews",
     "news": "News & Gazette",
     "symptoms": "Symptoms",
-    "tools": "Tools",
+    "tools": "Car Problem Finder",
     "vehicles": "Vehicles"
   },
   "Footer": {
