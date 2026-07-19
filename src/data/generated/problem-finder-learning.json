@@ -1,7 +1,6 @@
 {
-  "lastProcessed": null,
+  "lastProcessed": "2026-07-19T09:30:41.167Z",
   "totalRead": 0,
-  "candidateSynonyms": [],
-  "unknownQueries": [],
-  "topQueries": []
+  "stored": false,
+  "reason": "KV env missing"
 }
