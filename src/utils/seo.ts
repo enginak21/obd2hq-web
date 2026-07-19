@@ -27,5 +27,5 @@ function fitSeoText(value: string, maxLength: number) {
   if (clean.length <= maxLength) return clean;
   const sliced = clean.slice(0, maxLength - 1);
   const lastSpace = sliced.lastIndexOf(' ');
-  return `${(lastSpace > 42 ? sliced.slice(0, lastSpace) : sliced).trim()}…`;
+  return `${(lastSpace > 42 ? sliced.slice(0, lastSpace) : sliced).trim()}...`;
 }
