@@ -26,9 +26,81 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main > header[class*="border-b"],
+main > section[class*="border-b"],
+main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"] {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+main > header[class*="border-b"]::before,
+main > section[class*="border-b"]::before,
+main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(10, 15, 28, 0.98) 0%, rgba(10, 15, 28, 0.88) 45%, rgba(10, 15, 28, 0.72) 100%),
+    radial-gradient(circle at 72% 30%, rgba(37, 99, 235, 0.24), transparent 36%),
+    url("/images/site/diagnostic-hero.webp");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.74;
+}
+
+main > header[class*="border-b"]::after,
+main > section[class*="border-b"]::after,
+main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(10, 15, 28, 0.08), rgba(10, 15, 28, 0.82)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 96px);
+}
+
+main > header[class*="border-b"] > *,
+main > section[class*="border-b"] > *,
+main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+  animation: heroDiagnosticDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes heroDiagnosticDrift {
+  from {
+    transform: scale(1);
+    filter: saturate(1);
+  }
+  to {
+    transform: scale(1.035);
+    filter: saturate(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+    animation: none;
+  }
+}
+
 @media (max-width: 768px) {
   [class*="blur-[100px]"],
   [class*="blur-[120px]"] {
     display: none;
+  }
+
+  main > header[class*="border-b"]::before,
+  main > section[class*="border-b"]::before,
+  main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+    background-position: 62% center;
+    opacity: 0.56;
   }
 }

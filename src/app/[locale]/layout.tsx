@@ -20,11 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "OBD2HQ",
       locale: locale,
       type: "website",
+      images: [
+        {
+          url: "/images/site/diagnostic-hero.webp",
+          width: 1600,
+          height: 900,
+          alt: "OBD2HQ vehicle diagnostic dashboard and OBD2 scanner",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
       description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights.",
+      images: ["/images/site/diagnostic-hero.webp"],
     },
     icons: {
       icon: '/favicon.svg',
