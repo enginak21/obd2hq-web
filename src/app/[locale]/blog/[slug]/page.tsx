@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Article Header */}
-      <header className="relative border-b border-white/5 pt-16 pb-20 overflow-hidden">
+      <header className="hero-visual hero-visual-news relative border-b border-white/5 pt-16 pb-20 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-6 relative z-10">
           <nav className="flex items-center text-sm text-slate-400 mb-8 font-medium">

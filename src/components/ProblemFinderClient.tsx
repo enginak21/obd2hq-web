@@ -168,7 +168,7 @@ export default function ProblemFinderClient({ locale }: { locale: ProblemFinderL
 
   return (
     <section className="w-full">
-      <div className="rounded-[28px] border border-white/10 bg-[#101827] p-5 sm:p-8 shadow-2xl shadow-black/20">
+      <div className="hero-visual hero-visual-symptom rounded-[28px] border border-white/10 bg-[#101827] p-5 sm:p-8 shadow-2xl shadow-black/20">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end">
           <div className="flex-1">
             <p className="text-xs font-black uppercase tracking-[0.28em] text-blue-300">{copy.eyebrow}</p>

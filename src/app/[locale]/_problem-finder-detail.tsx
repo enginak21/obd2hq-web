@@ -132,7 +132,7 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
           <Link href={getProblemFinderHubPath(locale)} className="hover:text-white">{getProblemFinderHubLabel(locale)}</Link>
         </nav>
 
-        <header className="rounded-[28px] border border-white/10 bg-[#101827] p-6 sm:p-9">
+        <header className="hero-visual hero-visual-symptom rounded-[28px] border border-white/10 bg-[#101827] p-6 sm:p-9">
           <p className="text-xs font-black uppercase tracking-[0.28em] text-blue-300">{getProblemFinderHubLabel(locale)}</p>
           <h1 className="mt-4 text-4xl font-black tracking-tight text-white sm:text-6xl">{intent.titles[locale]}</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{intent.plainExplanation[locale]}</p>

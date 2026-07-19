@@ -116,7 +116,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
+      <header className="hero-visual hero-visual-vehicle relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">

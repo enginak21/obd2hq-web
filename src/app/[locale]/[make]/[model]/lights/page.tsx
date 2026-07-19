@@ -123,7 +123,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, itemListSchema, faqSchema]) }}
       />
       {/* Premium Header */}
-      <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
+      <header className="hero-visual hero-visual-lights relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 

@@ -141,7 +141,7 @@ export default async function VehicleProfilePage({ params }: { params: Promise<{
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <section className="border-b border-white/5 bg-[#0d1425]">
+      <section className="hero-visual hero-visual-vehicle border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <Link href={`/${locale}/vehicles`} className="text-sm text-slate-500 hover:text-white">{copy.vehicleDatabaseShort}</Link>
           <h1 className="mt-5 text-4xl sm:text-6xl font-black tracking-tight text-white">{name}</h1>

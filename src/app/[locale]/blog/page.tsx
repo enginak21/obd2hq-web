@@ -57,7 +57,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {/* Header */}
-      <header className="relative border-b border-white/5 pt-20 pb-20 overflow-hidden">
+      <header className="hero-visual hero-visual-news relative border-b border-white/5 pt-20 pb-20 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-5xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">

@@ -197,7 +197,7 @@ export default async function CodePage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       
-      <header className="relative border-b border-white/5 pt-12 pb-12 overflow-hidden">
+      <header className="hero-visual hero-visual-code relative border-b border-white/5 pt-12 pb-12 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           

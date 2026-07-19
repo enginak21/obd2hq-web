@@ -29,7 +29,7 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
-      <header className="relative border-b border-white/5 pt-16 pb-20 overflow-hidden">
+      <header className="hero-visual hero-visual-neutral relative border-b border-white/5 pt-16 pb-20 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">

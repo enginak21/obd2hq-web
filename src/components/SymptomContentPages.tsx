@@ -78,7 +78,7 @@ export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
-      <section className="border-b border-white/5 bg-[#0d1425]">
+      <section className="hero-visual hero-visual-symptom border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/10 px-4 py-2 text-sm font-bold text-amber-200 mb-6">
             <Search className="w-4 h-4" />
@@ -128,7 +128,7 @@ export function SymptomContentDetail({ locale, group }: { locale: SymptomContent
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <section className="border-b border-white/5 bg-[#0d1425]">
+      <section className="hero-visual hero-visual-symptom border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <nav className="text-sm text-slate-500 mb-6">
             <Link href={`/${locale}`} className="hover:text-white">OBD2HQ</Link>

@@ -20,7 +20,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
-      <header className="border-b border-white/5 pt-16 pb-16 bg-[#0d1425]">
+      <header className="hero-visual hero-visual-neutral border-b border-white/5 pt-16 pb-16 bg-[#0d1425]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight mb-6">
             {t('title1')} <span className="text-blue-500">{t('title2')}</span>

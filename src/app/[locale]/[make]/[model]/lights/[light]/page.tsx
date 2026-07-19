@@ -124,7 +124,7 @@ export default async function LightDetailPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, articleSchema, faqSchema]) }}
       />
       {/* Premium Header */}
-      <header className="relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
+      <header className="hero-visual hero-visual-lights relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className={`absolute top-0 left-1/4 w-[600px] h-[400px] rounded-full blur-[100px] pointer-events-none ${lightData.color === 'red' ? 'bg-red-600/10' : lightData.color === 'yellow' ? 'bg-amber-600/10' : 'bg-green-600/10'}`}></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">

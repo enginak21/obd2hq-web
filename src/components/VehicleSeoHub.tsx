@@ -15,7 +15,7 @@ export default function VehicleSeoHub({ locale, eyebrow, title, description, met
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
-      <section className="border-b border-white/5 bg-[#0d1425]">
+      <section className="hero-visual hero-visual-vehicle border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <p className="text-xs font-black uppercase tracking-widest text-blue-300">{eyebrow}</p>
           <h1 className="mt-4 max-w-4xl text-4xl sm:text-6xl font-black tracking-tight text-white">{title}</h1>

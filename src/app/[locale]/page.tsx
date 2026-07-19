@@ -56,18 +56,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       />
       
       {/* Premium Hero Section with Glassmorphism */}
-      <div className="relative overflow-hidden border-b border-white/5 w-full">
+      <div className="hero-visual hero-visual-home relative overflow-hidden border-b border-white/5 w-full">
         {/* Background Gradients */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
         
-        <div className="relative max-w-7xl mx-auto px-6 pt-20 pb-24 sm:pt-24 sm:pb-32 min-h-[760px] sm:min-h-[720px] flex flex-col items-center text-center">
-          <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-md shadow-xl">
+        <div className="relative max-w-7xl mx-auto px-6 pt-10 pb-16 sm:pt-14 sm:pb-20 min-h-[600px] sm:min-h-[620px] flex flex-col items-center text-center">
+          <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-5 backdrop-blur-md shadow-xl">
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
             <span className="text-sm font-medium text-slate-300 tracking-wide">{t('databaseUpdated')}</span>
           </div>
           
-          <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-slate-400">
+          <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-slate-400">
             {t('title1')} <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>

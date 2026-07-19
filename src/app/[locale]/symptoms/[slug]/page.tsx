@@ -66,7 +66,7 @@ export default async function SymptomPage({ params }: { params: Promise<{ locale
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <section className="border-b border-white/5 bg-[#0d1425]">
+      <section className="hero-visual hero-visual-symptom border-b border-white/5 bg-[#0d1425]">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <nav className="text-sm text-slate-500 mb-6">
             <Link href={`/${locale}`} className="hover:text-white">OBD2HQ</Link>

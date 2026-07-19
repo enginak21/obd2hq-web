@@ -26,17 +26,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main > header[class*="border-b"],
-main > section[class*="border-b"],
-main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"] {
+.hero-visual {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  --hero-image: url("/images/site/diagnostic-hero.webp");
+  --hero-opacity: 0.5;
+  --hero-position: center;
 }
 
-main > header[class*="border-b"]::before,
-main > section[class*="border-b"]::before,
-main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+.hero-visual::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -44,15 +43,14 @@ main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::befo
   background:
     linear-gradient(90deg, rgba(10, 15, 28, 0.98) 0%, rgba(10, 15, 28, 0.88) 45%, rgba(10, 15, 28, 0.72) 100%),
     radial-gradient(circle at 72% 30%, rgba(37, 99, 235, 0.24), transparent 36%),
-    url("/images/site/diagnostic-hero.webp");
-  background-position: center;
+    var(--hero-image);
+  background-position: var(--hero-position);
   background-size: cover;
-  opacity: 0.74;
+  opacity: var(--hero-opacity);
+  pointer-events: none;
 }
 
-main > header[class*="border-b"]::after,
-main > section[class*="border-b"]::after,
-main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::after {
+.hero-visual::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -63,14 +61,54 @@ main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::afte
     repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0 1px, transparent 1px 96px);
 }
 
-main > header[class*="border-b"] > *,
-main > section[class*="border-b"] > *,
-main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"] > * {
+.hero-visual > :not([class*="absolute"]) {
   position: relative;
   z-index: 1;
 }
 
-main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+.hero-visual-home {
+  --hero-image: url("/images/site/diagnostic-hero.webp");
+  --hero-opacity: 0.72;
+  --hero-position: center;
+}
+
+.hero-visual-code {
+  --hero-image: url("/images/site/code-diagnostics.webp");
+  --hero-opacity: 0.58;
+  --hero-position: center;
+}
+
+.hero-visual-vehicle {
+  --hero-image: url("/images/site/vehicle-guide.webp");
+  --hero-opacity: 0.55;
+  --hero-position: center;
+}
+
+.hero-visual-symptom {
+  --hero-image: url("/images/site/symptom-diagnostics.webp");
+  --hero-opacity: 0.58;
+  --hero-position: center;
+}
+
+.hero-visual-lights {
+  --hero-image: url("/images/site/dashboard-lights.webp");
+  --hero-opacity: 0.48;
+  --hero-position: center;
+}
+
+.hero-visual-news {
+  --hero-image: url("/images/site/news-hero.webp");
+  --hero-opacity: 0.5;
+  --hero-position: center;
+}
+
+.hero-visual-neutral {
+  --hero-image: url("/images/site/diagnostic-hero.webp");
+  --hero-opacity: 0.38;
+  --hero-position: center;
+}
+
+.hero-visual-home::before {
   animation: heroDiagnosticDrift 18s ease-in-out infinite alternate;
 }
 
@@ -86,7 +124,7 @@ main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::befo
 }
 
 @media (prefers-reduced-motion: reduce) {
-  main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+  .hero-visual-home::before {
     animation: none;
   }
 }
@@ -97,10 +135,12 @@ main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::befo
     display: none;
   }
 
-  main > header[class*="border-b"]::before,
-  main > section[class*="border-b"]::before,
-  main > div[class*="relative"][class*="overflow-hidden"][class*="border-b"]::before {
+  .hero-visual::before {
     background-position: 62% center;
+    opacity: 0.42;
+  }
+
+  .hero-visual-home::before {
     opacity: 0.56;
   }
 }

@@ -116,7 +116,7 @@ export default async function SearchPage({
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
-      <header className="border-b border-white/5 pt-12 pb-12 bg-[#0d1425]">
+      <header className="hero-visual hero-visual-code border-b border-white/5 pt-12 pb-12 bg-[#0d1425]">
         <div className="max-w-5xl mx-auto px-6">
           <h1 className="text-3xl font-bold text-white flex items-center">
             <SearchIcon className="w-8 h-8 mr-4 text-blue-500" />
