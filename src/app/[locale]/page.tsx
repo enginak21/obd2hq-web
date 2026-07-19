@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { cars } from '@/data/db';
-import { Activity, Calculator, Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
+import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
@@ -8,8 +8,6 @@ import SmartSearch from '@/components/SmartSearch';
 import FindYourFixWizard from '@/components/FindYourFixWizard';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
-import { getProblemFinderHubPath } from '@/data/problem-finder';
-import { getSymptomContentHubPath } from '@/data/symptom-content';
 
 export function generateStaticParams() {
   return ['en', 'de', 'es', 'tr', 'fr'].map((locale) => ({ locale }));
@@ -30,8 +28,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale, namespace: 'HomePage' });
   const copy = getKnowledgeUiCopy(locale);
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
-  const symptomHubPath = getSymptomContentHubPath(locale);
-  const problemFinderPath = getProblemFinderHubPath(locale);
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -96,43 +92,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </div>
 
       <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
-
-      <section className="w-full border-b border-white/5 bg-[#0d1425]">
-        <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-5">
-          <Link href={symptomHubPath} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-amber-400/40 hover:bg-[#17213a] transition-all">
-            <div className="mb-5 rounded-2xl bg-amber-400/10 p-3 w-fit text-amber-300">
-              <Activity className="w-6 h-6" />
-            </div>
-            <h2 className="text-2xl font-black text-white">{copy.diagnoseBySymptom}</h2>
-            <p className="mt-3 text-slate-400 leading-relaxed">{copy.symptomFinderDescription}</p>
-            <span className="mt-5 inline-flex text-sm font-bold text-amber-200 group-hover:text-amber-100">{copy.openSymptomFinder}</span>
-          </Link>
-          <Link href={problemFinderPath} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-7 hover:border-green-400/40 hover:bg-[#17213a] transition-all">
-            <div className="mb-5 rounded-2xl bg-green-400/10 p-3 w-fit text-green-300">
-              <Calculator className="w-6 h-6" />
-            </div>
-            <h2 className="text-2xl font-black text-white">{copy.useDiagnosticTools}</h2>
-            <p className="mt-3 text-slate-400 leading-relaxed">{copy.toolCenterDescription}</p>
-            <span className="mt-5 inline-flex text-sm font-bold text-green-200 group-hover:text-green-100">{copy.openToolCenter}</span>
-          </Link>
-        </div>
-        <div className="max-w-6xl mx-auto px-6 pb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            [`/${locale}/vehicles`, copy.vehicleDatabaseShort, copy.vehicleDatabaseDesc],
-            [`/${locale}/engine-codes`, locale === 'tr' ? 'Motor kodu sorgulama' : 'Engine code lookup', locale === 'tr' ? 'Marka, model ve yıla göre motor kodları' : 'Engine codes by make, model and year'],
-            [`/${locale}/oil-capacity`, locale === 'tr' ? 'Yağ kapasitesi' : 'Oil capacity lookup', locale === 'tr' ? 'Motor yağı tipi ve kapasite rehberi' : 'Oil type and capacity by vehicle'],
-            [`/${locale}/common-problems`, locale === 'tr' ? 'Kronik sorunlar' : 'Common problems', locale === 'tr' ? 'Modele göre sık arıza ve ilk kontroller' : 'Known problems and first checks by model'],
-            [`/${locale}/engines`, copy.engineDatabaseShort, copy.engineDatabaseDesc],
-            [`/${locale}/transmissions`, copy.transmissionDatabaseShort, copy.transmissionDatabaseDesc],
-            [`/${locale}/maintenance`, copy.maintenancePlatformShort, copy.maintenancePlatformDesc],
-          ].map(([href, title, desc]) => (
-            <Link key={href} href={href} className="rounded-2xl border border-white/5 bg-[#131b2f] p-5 hover:border-blue-400/40 transition-all">
-              <h3 className="text-lg font-black text-white">{title}</h3>
-              <p className="mt-2 text-sm text-slate-400">{desc}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
 
       {/* Main Content Area (Layout with Sidebar Ads) */}
       <div className="w-full max-w-[1600px] flex justify-center items-start">
