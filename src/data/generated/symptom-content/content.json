@@ -522,15 +522,15 @@
         "internalLinks": [
           {
             "label": "OBD2 Trouble Code Guide",
-            "href": "/en/obd2-trouble-codes"
+            "href": "/en/search"
           },
           {
             "label": "Engine Oil Maintenance Tips",
-            "href": "/en/engine-oil-maintenance"
+            "href": "/en/maintenance"
           },
           {
             "label": "Renault OBD2 Diagnostic Guide",
-            "href": "/en/renault-obd2-diagnostics"
+            "href": "/en/renault"
           }
         ],
         "faq": [
@@ -873,15 +873,15 @@
         "internalLinks": [
           {
             "label": "OBD2 Trouble Codes Guide",
-            "href": "/en/obd2-trouble-codes"
+            "href": "/en/search"
           },
           {
             "label": "Fuel System Diagnosis Tips",
-            "href": "/en/fuel-system-diagnostics"
+            "href": "/en/search"
           },
           {
             "label": "Ignition System Troubleshooting",
-            "href": "/en/ignition-system-check"
+            "href": "/en/tools/diagnostic-assistant"
           }
         ],
         "faq": [
@@ -1224,7 +1224,7 @@
         "internalLinks": [
           {
             "label": "OBD2HQ Renault Diagnostic Codes",
-            "href": "/en/renault-diagnostic-codes"
+            "href": "/en/renault"
           },
           {
             "label": "OBD2HQ Engine Cooling Issues",
@@ -1575,7 +1575,7 @@
         "internalLinks": [
           {
             "label": "Renault OBD2 Trouble Codes Guide",
-            "href": "/en/renault-obd2-trouble-codes"
+            "href": "/en/renault"
           },
           {
             "label": "Understanding the Check Engine Light",
@@ -2979,7 +2979,7 @@
         "internalLinks": [
           {
             "label": "Renault OBD2 Trouble Codes",
-            "href": "/en/renault-obd2-trouble-codes"
+            "href": "/en/renault"
           },
           {
             "label": "Fuel System Cleaning Procedures",
@@ -3330,11 +3330,11 @@
         "internalLinks": [
           {
             "label": "OBD2 Trouble Codes List",
-            "href": "/en/obd2-trouble-codes-list"
+            "href": "/en/search-list"
           },
           {
             "label": "Fuel System Diagnostics",
-            "href": "/en/fuel-system-diagnostics"
+            "href": "/en/search"
           },
           {
             "label": "Engine Performance Issues",
@@ -3685,7 +3685,7 @@
           },
           {
             "label": "Checking Renault Ignition System",
-            "href": "/en/renault-ignition-system-check"
+            "href": "/en/renault"
           },
           {
             "label": "Fuel System Issues and Fixes",
@@ -5089,7 +5089,7 @@
           },
           {
             "label": "Understanding OBD2 Trouble Codes",
-            "href": "/en/codes/obd2-trouble-codes"
+            "href": "/en/search"
           },
           {
             "label": "How to Check Transmission Fluid",
@@ -5787,7 +5787,7 @@
         "internalLinks": [
           {
             "label": "BMW OBD2 Trouble Codes",
-            "href": "/en/bmw-obd2-trouble-codes"
+            "href": "/en/bmw"
           },
           {
             "label": "Engine Noise Causes Explained",
@@ -8599,7 +8599,7 @@
           },
           {
             "label": "Fuel System Diagnostics with OBD2",
-            "href": "/en/obd2-fuel-system-diagnostics"
+            "href": "/en/search"
           },
           {
             "label": "BMW Engine Sensors Explained",
@@ -8946,11 +8946,11 @@
         "internalLinks": [
           {
             "label": "OBD2 Trouble Codes Guide",
-            "href": "/en/obd2-trouble-codes"
+            "href": "/en/search"
           },
           {
             "label": "Fuel System Diagnostics",
-            "href": "/en/fuel-system-diagnostics"
+            "href": "/en/search"
           },
           {
             "label": "BMW Ignition System Checks",
@@ -9999,7 +9999,7 @@
         "internalLinks": [
           {
             "label": "BMW OBD2 Trouble Codes Guide",
-            "href": "/en/bmw-obd2-trouble-codes"
+            "href": "/en/bmw"
           },
           {
             "label": "Engine Oil Problems and Solutions",
@@ -10701,7 +10701,7 @@
         "internalLinks": [
           {
             "label": "OBD2 Trouble Codes Guide",
-            "href": "/en/obd2-trouble-codes"
+            "href": "/en/search"
           },
           {
             "label": "Fuel System Issues",

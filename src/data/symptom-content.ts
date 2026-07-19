@@ -81,6 +81,7 @@ export function getSymptomContentAlternates(group: SymptomContentGroup, currentL
   const languages = Object.fromEntries(
     SYMPTOM_CONTENT_LOCALES.map(locale => [locale, getSymptomContentDetailPath(group, locale)])
   );
+  languages['x-default'] = getSymptomContentDetailPath(group, 'en');
 
   return {
     canonical: getSymptomContentDetailPath(group, currentLocale),
@@ -92,6 +93,7 @@ export function getSymptomHubAlternates(currentLocale: SymptomContentLocale) {
   const languages = Object.fromEntries(
     SYMPTOM_CONTENT_LOCALES.map(locale => [locale, getSymptomContentHubPath(locale)])
   );
+  languages['x-default'] = getSymptomContentHubPath('en');
 
   return {
     canonical: getSymptomContentHubPath(currentLocale),

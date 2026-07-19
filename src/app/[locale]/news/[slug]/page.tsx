@@ -1,11 +1,11 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+﻿import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound, permanentRedirect } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllNews, getNewsBySlug, getNewsCategoryKey, getNewsRedirectSlug } from '@/data/news';
 import { getLocalized } from '@/data/db';
 import { Calendar, ChevronLeft, Share2 } from 'lucide-react';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 
 function asString(value: string | string[] | null, fallback = '') {
   return typeof value === 'string' ? value : fallback;
@@ -41,14 +41,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const title = asString(getLocalized(article.title, locale), article.slug);
   const description = asString(getLocalized(article.summary, locale));
+  const metaTitle = fitSeoTitle(`${title} - OBD2HQ News`);
+  const metaDescription = fitSeoDescription(description);
 
   return {
-    title: `${title} - OBD2HQ News`,
-    description: description,
+    title: metaTitle,
+    description: metaDescription,
     alternates: getAlternates(`news/${slug}`, locale),
     openGraph: {
-      title: title,
-      description: description,
+      title,
+      description: metaDescription,
       images: [
         {
           url: article.image,
@@ -86,6 +88,18 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     month: 'long',
     day: 'numeric'
   }).format(dateObj);
+  const contentParagraphs = locContent.split('\n\n').map((paragraph) => paragraph.trim()).filter(Boolean);
+  const overviewHeading = locale === 'tr' ? 'Haberin özeti' : locale === 'de' ? 'Kurzüberblick' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'Résumé de l’article' : 'Article summary';
+  const contextHeading = locale === 'tr' ? 'OBD2HQ notu' : locale === 'de' ? 'OBD2HQ-Einordnung' : locale === 'es' ? 'Nota de OBD2HQ' : locale === 'fr' ? 'Note OBD2HQ' : 'OBD2HQ context';
+  const contextText = locale === 'tr'
+    ? 'Bu haber, araç sahiplerinin bakım maliyeti, güvenlik teknolojileri, servis erişimi ve ikinci el değerini etkileyebilecek gelişmeleri izlemek için hazırlanır. Teknik bir arıza rehberi değildir; arıza ışığı veya belirti yaşıyorsanız ilgili OBD2 kodu, araç profili veya Arıza Bulucu sayfasından teşhis akışına geçin.'
+    : locale === 'de'
+      ? 'Diese Meldung hilft Fahrzeughaltern, Entwicklungen zu Wartungskosten, Sicherheitstechnik, Servicezugang und Wiederverkaufswert einzuordnen. Sie ersetzt keine Fehlerdiagnose; bei Warnleuchten oder Symptomen öffnen Sie den passenden OBD2-Code, das Fahrzeugprofil oder den Problemfinder.'
+      : locale === 'es'
+        ? 'Esta noticia ayuda a propietarios a seguir cambios que pueden afectar coste de mantenimiento, seguridad, acceso a servicio y valor usado. No sustituye un diagnóstico; si hay una luz o síntoma, abre el código OBD2, perfil del vehículo o buscador de fallas.'
+        : locale === 'fr'
+          ? 'Cette actualité aide les propriétaires à suivre les évolutions pouvant influencer coût d’entretien, sécurité, accès au service et valeur d’occasion. Elle ne remplace pas un diagnostic; en cas de voyant ou symptôme, ouvrez le code OBD2, le profil véhicule ou l’outil de panne.'
+          : 'This article helps vehicle owners track changes that may affect maintenance cost, safety technology, service access and resale value. It is not a diagnostic procedure; if you have a warning light or symptom, open the matching OBD2 code, vehicle profile or car problem finder.';
 
   const newsSchema = {
     "@context": "https://schema.org",
@@ -160,10 +174,12 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
           </div>
 
           <div className="prose prose-invert prose-lg max-w-none prose-p:text-slate-300 prose-p:font-light prose-p:leading-relaxed prose-headings:text-white prose-a:text-blue-400">
-            {/* Split content by paragraphs simply for the sample. In a real app, markdown rendering is preferred. */}
-            {locContent.split('\n\n').map((paragraph: string, idx: number) => (
+            <h2>{overviewHeading}</h2>
+            {contentParagraphs.map((paragraph: string, idx: number) => (
               <p key={idx}>{paragraph}</p>
             ))}
+            <h2>{contextHeading}</h2>
+            <p>{contextText}</p>
           </div>
         </div>
       </div>

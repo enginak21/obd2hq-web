@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { Car, ChevronRight } from 'lucide-react';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
 import validRoutes from '@/data/valid_routes.json';
 
@@ -41,8 +41,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   
   return { 
-    title: `${capMake} OBD2 Codes & Dashboard Warning Lights`,
-    description: `Complete diagnostic guide for all ${capMake} models. Find out what your ${capMake} OBD2 trouble code or dashboard warning light means and how to fix it.`,
+    title: fitSeoTitle(`${capMake} OBD2 Codes & Dashboard Warning Lights`),
+    description: fitSeoDescription(`Complete diagnostic guide for ${capMake} OBD2 codes, warning lights, symptoms and safe first repair checks.`),
     alternates: getAlternates(make, resolvedParams.locale)
   };
 }
@@ -58,6 +58,16 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   if (!carData) notFound();
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
+  const guideTitle = locale === 'tr' ? `${capMake} sayfasını nasıl kullanmalısınız?` : locale === 'de' ? `So nutzen Sie die ${capMake}-Seite` : locale === 'es' ? `Cómo usar la página de ${capMake}` : locale === 'fr' ? `Comment utiliser la page ${capMake}` : `How to use the ${capMake} hub`;
+  const guideText = locale === 'tr'
+    ? `${capMake} için önce modelinizi seçin, ardından arıza kodu, gösterge ışığı veya belirti rehberine ilerleyin. Kod sayfaları parça değiştirmeden önce yapılacak kontrolleri, güvenli sürüş uyarılarını, ilgili OBD2 kodlarını ve tahmini masraf seviyesini birlikte verir. Modelinizden emin değilseniz ruhsat, servis kaydı veya VIN destekli parça kataloğuyla doğrulama yapın.`
+    : locale === 'de'
+      ? `Wählen Sie zuerst Ihr ${capMake}-Modell und öffnen Sie danach den passenden Fehlercode, die Warnleuchte oder den Symptomleitfaden. Die Code-Seiten zeigen Prüfungen vor dem Teiletausch, Sicherheitshinweise, verwandte OBD2-Codes und eine grobe Kostenstufe. Wenn das Modell unsicher ist, prüfen Sie es über Fahrzeugpapiere, Serviceunterlagen oder VIN-basierten Teilekatalog.`
+      : locale === 'es'
+        ? `Elige primero tu modelo ${capMake} y después abre el código, la luz del tablero o la guía de síntomas. Las páginas de códigos reúnen pruebas antes de cambiar piezas, avisos de seguridad, códigos OBD2 relacionados y nivel aproximado de coste. Si no estás seguro del modelo, confírmalo con documentación, historial de servicio o catálogo por VIN.`
+        : locale === 'fr'
+          ? `Choisissez d’abord votre modèle ${capMake}, puis ouvrez le code défaut, le voyant ou le guide de symptômes. Les pages de code regroupent les contrôles avant remplacement, les alertes de sécurité, les codes OBD2 liés et un niveau de coût estimé. En cas de doute, confirmez le modèle avec les papiers, l’entretien ou un catalogue par VIN.`
+          : `Choose your ${capMake} model first, then open the matching trouble code, dashboard light or symptom guide. Code pages combine checks before replacing parts, safe-driving guidance, related OBD2 codes and a practical repair-cost level. If you are not sure about the exact model, confirm it from registration, service records or a VIN-based parts catalog.`;
   const pageUrl = `https://www.obd2hq.com/${locale}/${make}`;
   const schema = {
     '@context': 'https://schema.org',
@@ -153,6 +163,11 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             ))}
           </div>
         </div>
+
+        <section className="mt-16 rounded-3xl border border-white/5 bg-[#131b2f] p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">{guideTitle}</h2>
+          <p className="text-slate-400 leading-7">{guideText}</p>
+        </section>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">

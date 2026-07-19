@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   return { 
-    title: t('metaTitle', { make: capMake, model: capModel }),
-    description: t('metaDescription', { make: capMake, model: capModel }),
+    title: fitSeoTitle(t('metaTitle', { make: capMake, model: capModel })),
+    description: fitSeoDescription(t('metaDescription', { make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights`, locale),
   };
 }
@@ -51,6 +51,26 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const introTitle = locale === 'tr' ? 'Uyarı ışıklarını aciliyetine göre okuyun' : locale === 'de' ? 'Warnleuchten nach Dringlichkeit lesen' : locale === 'es' ? 'Lee las luces por nivel de urgencia' : locale === 'fr' ? 'Lire les voyants par niveau d’urgence' : 'Read warning lights by urgency';
+  const introText = locale === 'tr'
+    ? `${capMake} ${capModel} gösterge ışıkları renk, yanıp sönme durumu ve sürüş belirtisine göre değerlendirilmelidir. Kırmızı ışık, yağ basıncı, fren, hararet veya yanıp sönen motor arıza lambası varsa aracı güvenli şekilde durdurup önce temel kontrolleri yapın. Sabit sarı uyarılarda kodu okuyun, belirtileri not alın ve arızayı silmeden önce freeze-frame verisini saklayın.`
+    : locale === 'de'
+      ? `${capMake} ${capModel} Warnleuchten sollten nach Farbe, Blinkverhalten und Fahrsymptomen bewertet werden. Rote Symbole, Öldruck, Bremse, Überhitzung oder eine blinkende Motorkontrollleuchte brauchen sofortige Aufmerksamkeit. Bei dauerhaft gelben Warnungen den Code auslesen, Symptome notieren und Freeze-Frame-Daten sichern, bevor Fehler gelöscht werden.`
+      : locale === 'es'
+        ? `Las luces del tablero del ${capMake} ${capModel} deben evaluarse por color, parpadeo y síntomas. Una luz roja, aceite, freno, temperatura o check engine intermitente requiere detenerse con seguridad y revisar primero. Con una luz amarilla fija, lee el código, anota los síntomas y guarda los datos freeze-frame antes de borrar fallas.`
+        : locale === 'fr'
+          ? `Les voyants du ${capMake} ${capModel} doivent être lus selon la couleur, le clignotement et les symptômes. Un voyant rouge, huile, frein, température ou moteur clignotant demande un arrêt sûr et des contrôles immédiats. Avec un voyant jaune fixe, lisez le code, notez les symptômes et sauvegardez les données freeze-frame avant d’effacer les défauts.`
+          : `${capMake} ${capModel} dashboard lights should be read by color, flashing behavior and driving symptoms. Red lights, oil pressure, brake, coolant temperature or a flashing check engine light need immediate safe checks. For a steady amber warning, read the code, record the symptoms and save freeze-frame data before clearing faults.`;
+  const priorityTitle = locale === 'tr' ? 'Önce hangi ışığa bakmalısınız?' : locale === 'de' ? 'Welche Warnung zuerst prüfen?' : locale === 'es' ? '¿Qué luz revisar primero?' : locale === 'fr' ? 'Quel voyant vérifier en premier ?' : 'Which warning should you check first?';
+  const priorityItems = locale === 'tr'
+    ? ['Kırmızı yağ, fren veya hararet ışığı varsa sürüşe devam etmeyin.', 'Yanıp sönen motor arıza lambası aktif tekleme ve katalizör riski anlamına gelebilir.', 'Sarı sabit ışıkta kodu okuyun, belirtileri not alın ve aynı gün kontrol planlayın.', 'Işık söndü diye hafızadaki arıza kaydını silmeyin; önce freeze-frame verisini kaydedin.']
+    : locale === 'de'
+      ? ['Bei roter Öl-, Brems- oder Temperaturwarnung nicht weiterfahren.', 'Eine blinkende Motorkontrollleuchte kann aktive Fehlzündungen und Katalysatorschäden bedeuten.', 'Bei dauerhaft gelber Warnung Code auslesen, Symptome notieren und zeitnah prüfen.', 'Löschen Sie gespeicherte Fehler nicht sofort; sichern Sie zuerst Freeze-Frame-Daten.']
+      : locale === 'es'
+        ? ['Con luz roja de aceite, freno o temperatura, no sigas conduciendo.', 'Un check engine intermitente puede indicar fallo de encendido activo y riesgo para el catalizador.', 'Con luz amarilla fija, lee el código, anota síntomas y programa una revisión.', 'No borres la memoria de fallas antes de guardar los datos freeze-frame.']
+        : locale === 'fr'
+          ? ['Avec un voyant rouge d’huile, frein ou température, évitez de continuer à rouler.', 'Un voyant moteur clignotant peut indiquer des ratés actifs et un risque pour le catalyseur.', 'Avec un voyant jaune fixe, lisez le code, notez les symptômes et prévoyez un contrôle.', 'Ne supprimez pas les défauts avant d’avoir sauvegardé les données freeze-frame.']
+          : ['Do not keep driving with a red oil, brake or temperature warning.', 'A flashing check engine light can mean active misfire and catalyst damage risk.', 'For a steady amber warning, read the code, note symptoms and plan diagnosis soon.', 'Do not clear stored faults before saving freeze-frame data.'];
 
   const lightsList = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
   const breadcrumbSchema = {
@@ -134,6 +154,16 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-6 mt-12">
+        <section className="mb-8 rounded-3xl border border-white/5 bg-[#131b2f] p-6">
+          <h2 className="text-2xl font-bold text-white">{introTitle}</h2>
+          <p className="mt-3 leading-7 text-slate-400">{introText}</p>
+          <h2 className="mt-6 text-xl font-bold text-white">{priorityTitle}</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+            {priorityItems.map(item => (
+              <li key={item} className="rounded-2xl bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-300">{item}</li>
+            ))}
+          </ul>
+        </section>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {lightsList.map((light) => {
             let colorClasses = "";

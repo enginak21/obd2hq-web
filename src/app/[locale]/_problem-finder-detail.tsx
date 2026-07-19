@@ -13,6 +13,7 @@ import {
   isProblemFinderLocale,
   publishedProblemFinderIntents,
 } from '@/data/problem-finder';
+import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 
 const sectionLabels: Record<ProblemFinderLocale, {
   causes: string;
@@ -44,8 +45,8 @@ export async function generateProblemFinderDetailMetadata(locale: string, slug: 
   const intent = getProblemFinderIntentBySlug(locale, slug);
   if (!intent) return {};
   return {
-    title: intent.titles[locale],
-    description: getDescription(intent, locale),
+    title: fitSeoTitle(intent.titles[locale]),
+    description: fitSeoDescription(getDescription(intent, locale)),
     alternates: {
       canonical: getProblemFinderDetailPath(locale, intent),
       ...getProblemFinderAlternates(intent),
@@ -93,7 +94,7 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
       '@context': 'https://schema.org',
       '@type': 'TechArticle',
       headline: intent.titles[locale],
-      description: getDescription(intent, locale),
+      description: fitSeoDescription(getDescription(intent, locale)),
       about: intent.titles[locale],
       author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
       publisher: { '@type': 'Organization', name: 'OBD2HQ' },

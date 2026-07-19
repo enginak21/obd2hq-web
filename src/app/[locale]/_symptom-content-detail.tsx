@@ -9,6 +9,7 @@ import {
   SYMPTOM_CONTENT_LOCALES,
   symptomContentBasePaths,
 } from '@/data/symptom-content';
+import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 
 export function generateStaticParams() {
   return publishedSymptomContentGroups.flatMap(group =>
@@ -29,8 +30,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!group) return {};
   const localized = group.locales[locale];
   return {
-    title: localized.title,
-    description: localized.metaDescription,
+    title: fitSeoTitle(localized.title),
+    description: fitSeoDescription(localized.metaDescription),
     alternates: getSymptomContentAlternates(group, locale),
   };
 }

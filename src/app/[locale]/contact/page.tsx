@@ -32,7 +32,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <Mail className="w-6 h-6 text-blue-500" />
             </div>
             <div>
-              <h3 className="text-white font-bold text-lg">{t('emailUs')}</h3>
+              <h2 className="text-white font-bold text-lg">{t('emailUs')}</h2>
               <p className="text-slate-400">support@obd2hq.com</p>
             </div>
           </div>

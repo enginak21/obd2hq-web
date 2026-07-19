@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { getVehicleKnowledge, type VehicleKnowledgeProfile } from '@/data/vehicle-knowledge';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import { getVehicleSpecRecordsForModel, type VehicleSpecRecord } from '@/data/vehicle-spec-records';
@@ -61,8 +61,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const copy = getKnowledgeUiCopy(locale);
   const labels = getVehicleLabels(locale);
   return {
-    title: labels.metaTitle(name),
-    description: copy.vehicleMetaDescription(name, vehicle.generation),
+    title: fitSeoTitle(labels.metaTitle(name)),
+    description: fitSeoDescription(copy.vehicleMetaDescription(name, vehicle.generation)),
     alternates: getAlternates(`vehicles/${make}/${model}`, locale),
   };
 }

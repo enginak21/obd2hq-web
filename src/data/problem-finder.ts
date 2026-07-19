@@ -483,6 +483,7 @@ export function getProblemFinderAlternates(intent?: ProblemFinderIntent) {
     locale,
     intent ? getProblemFinderDetailPath(locale, intent) : getProblemFinderHubPath(locale),
   ]));
+  languages['x-default'] = intent ? getProblemFinderDetailPath('en', intent) : getProblemFinderHubPath('en');
 
   return {
     languages,

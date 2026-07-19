@@ -99,6 +99,16 @@ export default async function SearchPage({
     .map(make => cars.find(car => car.make === make))
     .filter((car): car is (typeof cars)[number] => Boolean(car));
   const hasSearchQuery = rawQuery.trim().length > 0;
+  const searchGuideTitle = locale === 'tr' ? 'Nasıl arama yapmalısınız?' : locale === 'de' ? 'So suchen Sie richtig' : locale === 'es' ? 'Cómo buscar mejor' : locale === 'fr' ? 'Comment mieux chercher' : 'How to search effectively';
+  const searchGuideText = locale === 'tr'
+    ? 'OBD kodunu biliyorsanız P0420, P0300 veya P0171 gibi doğrudan yazın. Kodu bilmiyorsanız “Toyota Camry motor ışığı”, “Renault gaz yemiyor” veya “BMW motorundan ses geliyor” gibi araç ve belirtiyi birlikte girin. Arama, kodu, marka/model eşleşmesini ve ilgili arıza bulucu rehberlerini aynı akışta yönlendirmek için tasarlanmıştır.'
+    : locale === 'de'
+      ? 'Wenn Sie den OBD-Code kennen, geben Sie P0420, P0300 oder P0171 direkt ein. Ohne Code suchen Sie mit Fahrzeug und Symptom, zum Beispiel Toyota Camry Motorkontrollleuchte, Renault keine Leistung oder BMW Motorgeräusch. Die Suche verbindet Code, Fahrzeugtreffer und passende Problemfinder-Leitfäden.'
+      : locale === 'es'
+        ? 'Si conoces el código OBD, escribe P0420, P0300 o P0171 directamente. Si no sabes el código, busca con vehículo y síntoma, por ejemplo Toyota Camry check engine, Renault no acelera o ruido de motor BMW. La búsqueda conecta códigos, vehículo y guías de fallas relacionadas.'
+        : locale === 'fr'
+          ? 'Si vous connaissez le code OBD, tapez directement P0420, P0300 ou P0171. Sans code, cherchez avec véhicule et symptôme, par exemple Toyota Camry voyant moteur, Renault manque de puissance ou bruit moteur BMW. La recherche relie codes, véhicule et guides de panne.'
+          : 'If you know the OBD code, type P0420, P0300 or P0171 directly. If you do not know the code, search with the vehicle and symptom, such as Toyota Camry check engine, Renault losing power or BMW engine noise. Search is designed to connect code matches, vehicle pages and related problem-finder guides.';
 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
@@ -112,6 +122,11 @@ export default async function SearchPage({
       </header>
 
       <div className="max-w-5xl mx-auto px-6 mt-12 space-y-12">
+        <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
+          <h2 className="text-2xl font-black text-white">{searchGuideTitle}</h2>
+          <p className="mt-4 leading-7 text-slate-300">{searchGuideText}</p>
+        </section>
+
         {!hasSearchQuery && (
           <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-8">

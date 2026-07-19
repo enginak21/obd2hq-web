@@ -1,11 +1,11 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import { cars, getHybridObdData, baseCodes, getLocalized } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import DisqusComments from '@/components/DisqusComments';
 import AdSlot from '@/components/AdSlot';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnosticSteps, getLocalizedSystemContent, getModelSpecificInsight, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
@@ -28,11 +28,19 @@ function asStringArray(value: string | string[] | null) {
 }
 
 function getCodeMetaDescription(locale: string, code: string, make: string, model: string) {
-  if (locale === 'tr') return `${make} ${model} ${code} arıza kodu için belirtiler, canlı veri kontrolleri, parça değiştirmeden önce test sırası ve onarım sonrası doğrulama.`;
+  if (locale === 'tr') return `${make} ${model} ${code} arıza kodu: belirtiler, canlı veri kontrolleri, parça değiştirmeden önce test sırası ve onarım doğrulaması.`;
   if (locale === 'de') return `${make} ${model} ${code}: Symptome, Live-Daten-Prüfung, Testreihenfolge vor dem Teiletausch und Reparaturbestätigung.`;
   if (locale === 'es') return `${make} ${model} ${code}: síntomas, datos en vivo, pruebas antes de reemplazar piezas y verificación de reparación.`;
   if (locale === 'fr') return `${make} ${model} ${code}: symptômes, données en direct, tests avant remplacement et vérification après réparation.`;
   return `${make} ${model} ${code} diagnosis: symptoms, live-data checks, tests before replacing parts, repair cost, and post-repair verification.`;
+}
+
+function getCodeMetaTitle(locale: string, code: string, make: string, model: string) {
+  if (locale === 'tr') return `${make} ${model} ${code} Arıza Kodu - OBD2HQ`;
+  if (locale === 'de') return `${make} ${model} ${code} Fehlercode - OBD2HQ`;
+  if (locale === 'es') return `${make} ${model} ${code} Código OBD2 - OBD2HQ`;
+  if (locale === 'fr') return `${make} ${model} ${code} Code défaut - OBD2HQ`;
+  return `${make} ${model} ${code} Code Guide - OBD2HQ`;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -42,17 +50,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!obdData) return { title: 'Code Not Found' };
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  const titleObj = getLocalized(obdData.title, resolvedParams.locale);
-  const rawTitleStr = asString(titleObj, 'Unknown Code');
-  const titleStr = getLocalizedCodeTitle(obdData.code, resolvedParams.locale, rawTitleStr);
-  
-  const isTurkish = resolvedParams.locale === 'tr';
-  const title = isTurkish
-    ? `1996-2026 ${capMake} ${capModel} ${obdData.code} Kodu: ${titleStr}`
-    : `1996-2026 ${capMake} ${capModel} ${obdData.code} Code: ${titleStr}`;
   return { 
-    title,
-    description: getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel),
+    title: fitSeoTitle(getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
+    description: fitSeoDescription(getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
     alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
   };
 }

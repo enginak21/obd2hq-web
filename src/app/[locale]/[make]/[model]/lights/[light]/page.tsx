@@ -4,7 +4,7 @@ import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   return { 
-    title: t('metaTitle', { light: lightData.name, make: capMake, model: capModel }),
-    description: t('metaDescription', { light: lightData.name, make: capMake, model: capModel }),
+    title: fitSeoTitle(t('metaTitle', { light: lightData.name, make: capMake, model: capModel })),
+    description: fitSeoDescription(t('metaDescription', { light: lightData.name, make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights/${light}`, locale),
   };
 }
@@ -51,6 +51,16 @@ export default async function LightDetailPage({ params }: PageProps) {
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const firstChecksTitle = locale === 'tr' ? 'İlk kontrol sırası' : locale === 'de' ? 'Erste Prüfungen' : locale === 'es' ? 'Primeras revisiones' : locale === 'fr' ? 'Premiers contrôles' : 'First checks';
+  const firstChecks = locale === 'tr'
+    ? ['Uyarı ışığının rengi ve yanıp sönme durumunu not alın.', 'Güvenliyse aracı durdurup yağ, fren hidroliği, hararet ve akü bağlantılarını görsel kontrol edin.', 'OBD2 tarayıcıyla kodları okuyun ve silmeden önce freeze-frame verisini kaydedin.', 'Aynı ışık tekrar yanarsa parça değiştirmeden önce sensör, kablo, sigorta ve canlı veriyi kontrol ettirin.']
+    : locale === 'de'
+      ? ['Farbe und Blinkverhalten der Warnleuchte notieren.', 'Wenn sicher möglich, Öl, Bremsflüssigkeit, Temperaturanzeige und Batterieanschlüsse prüfen.', 'OBD2-Codes auslesen und Freeze-Frame-Daten sichern, bevor Fehler gelöscht werden.', 'Bei erneutem Auftreten Sensoren, Kabel, Sicherungen und Live-Daten prüfen, bevor Teile ersetzt werden.']
+      : locale === 'es'
+        ? ['Anota el color y si la luz parpadea.', 'Si es seguro, revisa aceite, líquido de frenos, temperatura y bornes de batería.', 'Lee los códigos OBD2 y guarda freeze-frame antes de borrar fallas.', 'Si vuelve a encenderse, revisa sensor, cableado, fusibles y datos en vivo antes de cambiar piezas.']
+        : locale === 'fr'
+          ? ['Notez la couleur du voyant et s’il clignote.', 'Si c’est sûr, vérifiez huile, liquide de frein, température et bornes de batterie.', 'Lisez les codes OBD2 et sauvegardez les données freeze-frame avant effacement.', 'Si le voyant revient, contrôlez capteur, câblage, fusibles et données en direct avant remplacement.']
+          : ['Note the warning color and whether it is flashing.', 'If safe, stop and visually check oil level, brake fluid, coolant temperature and battery terminals.', 'Read OBD2 codes and save freeze-frame data before clearing faults.', 'If the light returns, test sensors, wiring, fuses and live data before replacing parts.'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -194,6 +204,18 @@ export default async function LightDetailPage({ params }: PageProps) {
             <p className="text-lg text-slate-300 leading-relaxed">
               {lightData.whatToDo}
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-6">{firstChecksTitle}</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {firstChecks.map((item, index) => (
+                <div key={item} className="rounded-2xl border border-white/5 bg-[#131b2f] p-5">
+                  <span className="text-sm font-black uppercase tracking-widest text-blue-400">{index + 1}</span>
+                  <p className="mt-2 leading-6 text-slate-300">{item}</p>
+                </div>
+              ))}
+            </div>
           </section>
           
         </div>

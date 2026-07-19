@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
+import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 
 interface PageProps {
   params: Promise<{
@@ -20,8 +21,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!post) return { title: 'Post Not Found' };
   
   return {
-    title: `${post.title} - OBD2HQ Blog`,
-    description: post.description,
+    title: fitSeoTitle(`${post.title} - OBD2HQ Blog`),
+    description: fitSeoDescription(post.description),
     alternates: getBlogAlternates(locale, slug),
   };
 }

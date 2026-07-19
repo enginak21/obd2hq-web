@@ -310,6 +310,7 @@ export function getBlogAlternates(locale: string, slug: string) {
       canonical: `/${locale}/blog/${slug}`,
       languages: {
         en: `/en/blog/${slug}`,
+        'x-default': `/en/blog/${slug}`,
       },
     };
   }
@@ -320,6 +321,7 @@ export function getBlogAlternates(locale: string, slug: string) {
     es: `/es/blog/${getBlogPosts('es')[safeIndex]?.slug || slug}`,
     tr: `/tr/blog/${getBlogPosts('tr')[safeIndex]?.slug || slug}`,
     fr: `/fr/blog/${getBlogPosts('fr')[safeIndex]?.slug || slug}`,
+    'x-default': `/en/blog/${getBlogPosts('en')[safeIndex]?.slug || slug}`,
   };
 
   return {
