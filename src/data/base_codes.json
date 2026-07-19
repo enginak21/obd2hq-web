@@ -12593,8 +12593,20 @@
     }
   },
   "P0214": {
-    "title": "Cold Start Injector 2 Malfunction",
-    "description": "Code P0214 indicates a malfunction in cold start injector 2, which provides extra fuel during cold engine starts.",
+    "title": {
+      "en": "Cold Start Injector 2 Malfunction",
+      "tr": "So\u011fuk \u00c7al\u0131\u015ft\u0131rma Enjekt\u00f6r\u00fc 2 Ar\u0131zas\u0131",
+      "de": "Kaltstartventil 2 Fehlfunktion",
+      "es": "Mal funcionamiento del inyector de arranque en fr\u00edo 2",
+      "fr": "Dysfonctionnement de l'injecteur de d\u00e9marrage \u00e0 froid 2"
+    },
+    "description": {
+      "en": "Code P0214 indicates a malfunction within the circuit or operation of cold start injector 2. This specialized injector is designed to provide an additional spray of fuel directly into the intake manifold during cold engine cranking and initial operation. Its primary role is to enrich the air-fuel mixture, compensating for poor fuel atomization and condensation on cold manifold walls, thereby facilitating easier starting, smoother idle, and reduced emissions in cold conditions. A malfunction can lead to hard starting, extended cranking, rough idle, or even a no-start condition when the engine is cold.",
+      "tr": "P0214 kodu, so\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fc 2'nin devresinde veya \u00e7al\u0131\u015fmas\u0131nda bir ar\u0131za oldu\u011funu g\u00f6sterir. Bu \u00f6zel enjekt\u00f6r, motor so\u011fukken mar\u015f basma ve ilk \u00e7al\u0131\u015fma s\u0131ras\u0131nda emme manifolduna do\u011frudan ek yak\u0131t p\u00fcsk\u00fcrtmek \u00fczere tasarlanm\u0131\u015ft\u0131r. Temel g\u00f6revi, so\u011fuk manifold duvarlar\u0131ndaki zay\u0131f yak\u0131t atomizasyonu ve yo\u011fu\u015fmay\u0131 telafi etmek i\u00e7in hava-yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 zenginle\u015ftirmek, b\u00f6ylece so\u011fuk ko\u015fullarda daha kolay \u00e7al\u0131\u015ft\u0131rma, daha d\u00fczg\u00fcn r\u00f6lanti ve azalt\u0131lm\u0131\u015f emisyon sa\u011flamakt\u0131r. Bir ar\u0131za, motor so\u011fukken zor \u00e7al\u0131\u015ft\u0131rmaya, uzun mar\u015f s\u00fcresine, d\u00fczensiz r\u00f6lantiye veya hatta \u00e7al\u0131\u015fmama durumuna yol a\u00e7abilir.",
+      "de": "Der Fehlercode P0214 weist auf eine Fehlfunktion im Stromkreis oder Betrieb des Kaltstartventils 2 hin. Dieses spezielle Ventil ist daf\u00fcr ausgelegt, w\u00e4hrend des Kaltstarts und des anf\u00e4nglichen Motorbetriebs zus\u00e4tzlichen Kraftstoff direkt in das Ansaugrohr zu spr\u00fchen. Seine Hauptaufgabe ist es, das Luft-Kraftstoff-Gemisch anzureichern, um die schlechte Kraftstoffzerst\u00e4ubung und Kondensation an kalten Saugrohrw\u00e4nden auszugleichen. Dies erleichtert das Starten, sorgt f\u00fcr einen ruhigeren Leerlauf und reduziert Emissionen bei kalten Bedingungen. Eine Fehlfunktion kann zu Startschwierigkeiten, verl\u00e4ngertem Anlassen, unruhigem Leerlauf oder sogar einem Nichtstarten des Motors f\u00fchren, wenn dieser kalt ist.",
+      "es": "El c\u00f3digo P0214 indica un mal funcionamiento en el circuito o la operaci\u00f3n del inyector de arranque en fr\u00edo 2. Este inyector especializado est\u00e1 dise\u00f1ado para proporcionar un chorro adicional de combustible directamente en el colector de admisi\u00f3n durante el arranque del motor en fr\u00edo y la operaci\u00f3n inicial. Su funci\u00f3n principal es enriquecer la mezcla aire-combustible, compensando la mala atomizaci\u00f3n del combustible y la condensaci\u00f3n en las paredes fr\u00edas del colector, facilitando as\u00ed un arranque m\u00e1s f\u00e1cil, un ralent\u00ed m\u00e1s suave y la reducci\u00f3n de emisiones en condiciones de fr\u00edo. Un mal funcionamiento puede provocar arranques dif\u00edciles, arranque prolongado, ralent\u00ed irregular o incluso una condici\u00f3n de no arranque cuando el motor est\u00e1 fr\u00edo.",
+      "fr": "Le code P0214 indique un dysfonctionnement dans le circuit ou le fonctionnement de l'injecteur de d\u00e9marrage \u00e0 froid 2. Cet injecteur sp\u00e9cialis\u00e9 est con\u00e7u pour fournir un jet de carburant suppl\u00e9mentaire directement dans le collecteur d'admission lors du d\u00e9marrage \u00e0 froid du moteur et de son fonctionnement initial. Son r\u00f4le principal est d'enrichir le m\u00e9lange air-carburant, compensant la mauvaise atomisation du carburant et la condensation sur les parois froides du collecteur, facilitant ainsi un d\u00e9marrage plus facile, un ralenti plus doux et des \u00e9missions r\u00e9duites par temps froid. Un dysfonctionnement peut entra\u00eener des d\u00e9marrages difficiles, un d\u00e9marrage prolong\u00e9, un ralenti irr\u00e9gulier ou m\u00eame une impossibilit\u00e9 de d\u00e9marrer lorsque le moteur est froid."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_hard_start",
@@ -12607,11 +12619,101 @@
       "cause_connector_corrosion"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $500"
+    "estimatedCost": "$150 - $500",
+    "diagnosticSteps": {
+      "en": [
+        "Inspect Wiring and Connectors: Visually inspect the wiring harness and electrical connectors leading to cold start injector 2 for any signs of damage, corrosion, fraying, or loose connections. Pay close attention to areas where the harness might rub against engine components. Repair or replace any compromised wiring or connectors.",
+        "Check Injector Resistance: With the ignition off, disconnect the electrical connector from cold start injector 2. Using a digital multimeter, measure the resistance across the injector's terminals. Compare this reading to the manufacturer's specifications (typically 10-20 ohms). An open circuit (infinite resistance) or a short circuit (very low resistance) indicates an internal injector fault.",
+        "Verify Power and Ground: Reconnect the injector. With the ignition on (engine off), use a multimeter to check for proper voltage supply at the injector's power wire. Then, during cranking, use a test light or oscilloscope to verify the ECU is providing a pulsed ground signal to activate the injector. Lack of power or ground signal points to wiring issues, a faulty ECU driver, or a blown fuse.",
+        "Fuel Pressure and Delivery Check: Ensure the fuel system is delivering adequate pressure to the cold start injector. A clogged fuel filter or a weak fuel pump could prevent proper fuel delivery. If possible, perform a functional test of the injector using a scan tool or by carefully applying power and ground (following manufacturer guidelines) to observe its spray pattern and ensure it's not clogged or leaking."
+      ],
+      "tr": [
+        "Kablolama ve Konnekt\u00f6rleri \u0130nceleyin: So\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fc 2'ye giden kablo demetini ve elektrik konnekt\u00f6rlerini herhangi bir hasar, korozyon, y\u0131pranma veya gev\u015fek ba\u011flant\u0131 belirtisi a\u00e7\u0131s\u0131ndan g\u00f6rsel olarak inceleyin. Kablo demetinin motor bile\u015fenlerine s\u00fcrt\u00fcnebilece\u011fi alanlara \u00f6zellikle dikkat edin. Hasarl\u0131 kablolar\u0131 veya konnekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "Enjekt\u00f6r Direncini Kontrol Edin: Kontak kapal\u0131yken, so\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fc 2'nin elektrik konnekt\u00f6r\u00fcn\u00fc ay\u0131r\u0131n. Dijital bir multimetre kullanarak enjekt\u00f6r terminalleri aras\u0131ndaki direnci \u00f6l\u00e7\u00fcn. Bu de\u011feri \u00fcreticinin spesifikasyonlar\u0131yla (genellikle 10-20 ohm) kar\u015f\u0131la\u015ft\u0131r\u0131n. A\u00e7\u0131k devre (sonsuz diren\u00e7) veya k\u0131sa devre (\u00e7ok d\u00fc\u015f\u00fck diren\u00e7) enjekt\u00f6rde dahili bir ar\u0131za oldu\u011funu g\u00f6sterir.",
+        "G\u00fc\u00e7 ve Topraklamay\u0131 Do\u011frulay\u0131n: Enjekt\u00f6r\u00fc tekrar ba\u011flay\u0131n. Kontak a\u00e7\u0131kken (motor kapal\u0131), bir multimetre kullanarak enjekt\u00f6r\u00fcn g\u00fc\u00e7 kablosundaki uygun voltaj beslemesini kontrol edin. Ard\u0131ndan, mar\u015f s\u0131ras\u0131nda, ECU'nun enjekt\u00f6r\u00fc etkinle\u015ftirmek i\u00e7in darbeli bir topraklama sinyali sa\u011flay\u0131p sa\u011flamad\u0131\u011f\u0131n\u0131 bir test lambas\u0131 veya osiloskop kullanarak do\u011frulay\u0131n. G\u00fc\u00e7 veya topraklama sinyalinin olmamas\u0131, kablolama sorunlar\u0131na, ar\u0131zal\u0131 bir ECU s\u00fcr\u00fcc\u00fcs\u00fcne veya atm\u0131\u015f bir sigortaya i\u015faret eder.",
+        "Yak\u0131t Bas\u0131nc\u0131 ve Teslimat Kontrol\u00fc: Yak\u0131t sisteminin so\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fcne yeterli bas\u0131n\u00e7 sa\u011flad\u0131\u011f\u0131ndan emin olun. T\u0131kal\u0131 bir yak\u0131t filtresi veya zay\u0131f bir yak\u0131t pompas\u0131, uygun yak\u0131t teslimat\u0131n\u0131 engelleyebilir. M\u00fcmk\u00fcnse, bir tarama arac\u0131 kullanarak veya dikkatlice g\u00fc\u00e7 ve topraklama uygulayarak (\u00fcretici y\u00f6nergelerine uyarak) enjekt\u00f6r\u00fcn p\u00fcsk\u00fcrtme d\u00fczenini g\u00f6zlemleyerek ve t\u0131kal\u0131 veya s\u0131zd\u0131r\u0131p s\u0131zd\u0131rmad\u0131\u011f\u0131n\u0131 kontrol ederek enjekt\u00f6r\u00fcn i\u015flevsel bir testini yap\u0131n."
+      ],
+      "de": [
+        "Kabelbaum und Steckverbinder pr\u00fcfen: \u00dcberpr\u00fcfen Sie den Kabelbaum und die elektrischen Steckverbinder, die zum Kaltstartventil 2 f\u00fchren, visuell auf Anzeichen von Besch\u00e4digungen, Korrosion, Ausfransungen oder lockeren Verbindungen. Achten Sie besonders auf Bereiche, in denen der Kabelbaum an Motorkomponenten reiben k\u00f6nnte. Reparieren oder ersetzen Sie besch\u00e4digte Kabel oder Steckverbinder.",
+        "Injektorwiderstand pr\u00fcfen: Bei ausgeschalteter Z\u00fcndung den elektrischen Steckverbinder vom Kaltstartventil 2 trennen. Messen Sie mit einem digitalen Multimeter den Widerstand an den Anschl\u00fcssen des Injektors. Vergleichen Sie diesen Wert mit den Herstellerangaben (typischerweise 10-20 Ohm). Ein offener Stromkreis (unendlicher Widerstand) oder ein Kurzschluss (sehr geringer Widerstand) deutet auf einen internen Injektorfehler hin.",
+        "Stromversorgung und Masse \u00fcberpr\u00fcfen: Schlie\u00dfen Sie den Injektor wieder an. Bei eingeschalteter Z\u00fcndung (Motor aus) pr\u00fcfen Sie mit einem Multimeter die korrekte Spannungsversorgung am Stromkabel des Injektors. \u00dcberpr\u00fcfen Sie anschlie\u00dfend w\u00e4hrend des Anlassens mit einer Pr\u00fcflampe oder einem Oszilloskop, ob das Steuerger\u00e4t ein gepulstes Massesignal zur Aktivierung des Injektors liefert. Das Fehlen eines Strom- oder Massesignals deutet auf Verkabelungsprobleme, einen defekten ECU-Treiber oder eine durchgebrannte Sicherung hin.",
+        "Kraftstoffdruck- und F\u00f6rderpr\u00fcfung: Stellen Sie sicher, dass das Kraftstoffsystem dem Kaltstartventil ausreichend Druck zuf\u00fchrt. Ein verstopfter Kraftstofffilter oder eine schwache Kraftstoffpumpe k\u00f6nnten die ordnungsgem\u00e4\u00dfe Kraftstoffzufuhr verhindern. F\u00fchren Sie, wenn m\u00f6glich, einen Funktionstest des Injektors mit einem Diagnoseger\u00e4t durch oder indem Sie vorsichtig Strom und Masse anlegen (gem\u00e4\u00df Herstellerrichtlinien), um dessen Spr\u00fchbild zu beobachten und sicherzustellen, dass er nicht verstopft oder undicht ist."
+      ],
+      "es": [
+        "Inspeccionar el cableado y los conectores: Inspeccione visualmente el mazo de cables y los conectores el\u00e9ctricos que van al inyector de arranque en fr\u00edo 2 en busca de cualquier signo de da\u00f1o, corrosi\u00f3n, deshilachado o conexiones sueltas. Preste especial atenci\u00f3n a las \u00e1reas donde el mazo de cables podr\u00eda rozar con los componentes del motor. Repare o reemplace cualquier cableado o conector comprometido.",
+        "Verificar la resistencia del inyector: Con el encendido apagado, desconecte el conector el\u00e9ctrico del inyector de arranque en fr\u00edo 2. Usando un mult\u00edmetro digital, mida la resistencia a trav\u00e9s de los terminales del inyector. Compare esta lectura con las especificaciones del fabricante (t\u00edpicamente 10-20 ohmios). Un circuito abierto (resistencia infinita) o un cortocircuito (resistencia muy baja) indica una falla interna del inyector.",
+        "Verificar alimentaci\u00f3n y tierra: Vuelva a conectar el inyector. Con el encendido encendido (motor apagado), use un mult\u00edmetro para verificar el suministro de voltaje adecuado en el cable de alimentaci\u00f3n del inyector. Luego, durante el arranque, use una luz de prueba u osciloscopio para verificar que la ECU est\u00e9 proporcionando una se\u00f1al de tierra pulsada para activar el inyector. La falta de alimentaci\u00f3n o se\u00f1al de tierra apunta a problemas de cableado, un controlador de ECU defectuoso o un fusible quemado.",
+        "Comprobaci\u00f3n de presi\u00f3n y suministro de combustible: Aseg\u00farese de que el sistema de combustible est\u00e9 suministrando la presi\u00f3n adecuada al inyector de arranque en fr\u00edo. Un filtro de combustible obstruido o una bomba de combustible d\u00e9bil podr\u00edan impedir el suministro adecuado de combustible. Si es posible, realice una prueba funcional del inyector utilizando una herramienta de escaneo o aplicando cuidadosamente energ\u00eda y tierra (siguiendo las pautas del fabricante) para observar su patr\u00f3n de pulverizaci\u00f3n y asegurarse de que no est\u00e9 obstruido o goteando."
+      ],
+      "fr": [
+        "Inspecter le c\u00e2blage et les connecteurs: Inspectez visuellement le faisceau de c\u00e2bles et les connecteurs \u00e9lectriques menant \u00e0 l'injecteur de d\u00e9marrage \u00e0 froid 2 pour d\u00e9tecter tout signe de dommage, de corrosion, d'effilochage ou de connexions desserr\u00e9es. Portez une attention particuli\u00e8re aux zones o\u00f9 le faisceau pourrait frotter contre les composants du moteur. R\u00e9parez ou remplacez tout c\u00e2blage ou connecteur compromis.",
+        "V\u00e9rifier la r\u00e9sistance de l'injecteur: Contact coup\u00e9, d\u00e9branchez le connecteur \u00e9lectrique de l'injecteur de d\u00e9marrage \u00e0 froid 2. \u00c0 l'aide d'un multim\u00e8tre num\u00e9rique, mesurez la r\u00e9sistance aux bornes de l'injecteur. Comparez cette lecture aux sp\u00e9cifications du fabricant (g\u00e9n\u00e9ralement 10-20 ohms). Un circuit ouvert (r\u00e9sistance infinie) ou un court-circuit (tr\u00e8s faible r\u00e9sistance) indique un d\u00e9faut interne de l'injecteur.",
+        "V\u00e9rifier l'alimentation et la masse: Reconnectez l'injecteur. Contact mis (moteur \u00e9teint), utilisez un multim\u00e8tre pour v\u00e9rifier l'alimentation en tension correcte sur le fil d'alimentation de l'injecteur. Ensuite, pendant le d\u00e9marrage, utilisez une lampe t\u00e9moin ou un oscilloscope pour v\u00e9rifier que l'ECU fournit un signal de masse puls\u00e9 pour activer l'injecteur. L'absence d'alimentation ou de signal de masse indique des probl\u00e8mes de c\u00e2blage, un pilote d'ECU d\u00e9fectueux ou un fusible grill\u00e9.",
+        "V\u00e9rification de la pression et de l'alimentation en carburant: Assurez-vous que le syst\u00e8me de carburant fournit une pression ad\u00e9quate \u00e0 l'injecteur de d\u00e9marrage \u00e0 froid. Un filtre \u00e0 carburant encrass\u00e9 ou une pompe \u00e0 carburant faible pourrait emp\u00eacher une alimentation correcte en carburant. Si possible, effectuez un test fonctionnel de l'injecteur \u00e0 l'aide d'un outil de diagnostic ou en appliquant soigneusement l'alimentation et la masse (selon les directives du fabricant) pour observer son sch\u00e9ma de pulv\u00e9risation et vous assurer qu'il n'est pas obstru\u00e9 ou qu'il ne fuit pas."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty cold start injector 2.",
+        "Repair or replace damaged wiring and/or corroded electrical connectors to the injector.",
+        "Address fuel system issues such as a clogged fuel filter or a weak fuel pump affecting fuel delivery to the cold start injector.",
+        "In rare cases, repair or replace a faulty Engine Control Unit (ECU) if its driver circuit for the injector is defective."
+      ],
+      "tr": [
+        "Ar\u0131zal\u0131 so\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fc 2'yi de\u011fi\u015ftirin.",
+        "Enjekt\u00f6re giden hasarl\u0131 kablolar\u0131 ve/veya korozyona u\u011fram\u0131\u015f elektrik konnekt\u00f6rlerini onar\u0131n veya de\u011fi\u015ftirin.",
+        "So\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fcne yak\u0131t ak\u0131\u015f\u0131n\u0131 etkileyen t\u0131kal\u0131 yak\u0131t filtresi veya zay\u0131f yak\u0131t pompas\u0131 gibi yak\u0131t sistemi sorunlar\u0131n\u0131 giderin.",
+        "Nadir durumlarda, enjekt\u00f6r i\u00e7in s\u00fcr\u00fcc\u00fc devresi ar\u0131zal\u0131ysa, ar\u0131zal\u0131 Motor Kontrol \u00dcnitesini (ECU) onar\u0131n veya de\u011fi\u015ftirin."
+      ],
+      "de": [
+        "Ersetzen Sie das defekte Kaltstartventil 2.",
+        "Reparieren oder ersetzen Sie besch\u00e4digte Kabel und/oder korrodierte elektrische Steckverbinder zum Injektor.",
+        "Beheben Sie Probleme im Kraftstoffsystem, wie z. B. einen verstopften Kraftstofffilter oder eine schwache Kraftstoffpumpe, die die Kraftstoffzufuhr zum Kaltstartventil beeintr\u00e4chtigen.",
+        "In seltenen F\u00e4llen reparieren oder ersetzen Sie ein defektes Motorsteuerger\u00e4t (ECU), wenn dessen Treiberschaltung f\u00fcr den Injektor defekt ist."
+      ],
+      "es": [
+        "Reemplazar el inyector de arranque en fr\u00edo 2 defectuoso.",
+        "Reparar o reemplazar el cableado da\u00f1ado y/o los conectores el\u00e9ctricos corro\u00eddos del inyector.",
+        "Abordar problemas del sistema de combustible, como un filtro de combustible obstruido o una bomba de combustible d\u00e9bil que afecte el suministro de combustible al inyector de arranque en fr\u00edo.",
+        "En casos raros, reparar o reemplazar una Unidad de Control del Motor (ECU) defectuosa si su circuito controlador para el inyector est\u00e1 defectuoso."
+      ],
+      "fr": [
+        "Remplacer l'injecteur de d\u00e9marrage \u00e0 froid 2 d\u00e9fectueux.",
+        "R\u00e9parer ou remplacer le c\u00e2blage endommag\u00e9 et/ou les connecteurs \u00e9lectriques corrod\u00e9s de l'injecteur.",
+        "R\u00e9soudre les probl\u00e8mes du syst\u00e8me de carburant, tels qu'un filtre \u00e0 carburant encrass\u00e9 ou une pompe \u00e0 carburant faible affectant l'alimentation en carburant de l'injecteur de d\u00e9marrage \u00e0 froid.",
+        "Dans de rares cas, r\u00e9parer ou remplacer une unit\u00e9 de commande moteur (ECU) d\u00e9fectueuse si son circuit de commande pour l'injecteur est d\u00e9fectueux."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "While a P0214 code primarily affects cold starting and initial engine operation, it can lead to significant drivability issues if left unaddressed. Hard starting, prolonged cranking, or a no-start condition in cold weather can leave you stranded. Furthermore, an improperly functioning cold start injector can cause an excessively rich or lean condition during cold operation, potentially leading to increased emissions, catalytic converter damage over time, or even engine misfires and stalling. It is advisable to diagnose and repair this issue promptly to ensure reliable vehicle operation and prevent further damage.",
+        "tr": "P0214 kodu \u00f6ncelikli olarak so\u011fuk \u00e7al\u0131\u015ft\u0131rmay\u0131 ve motorun ilk \u00e7al\u0131\u015fmas\u0131n\u0131 etkilese de, giderilmedi\u011fi takdirde \u00f6nemli s\u00fcr\u00fc\u015f sorunlar\u0131na yol a\u00e7abilir. So\u011fuk havalarda zor \u00e7al\u0131\u015ft\u0131rma, uzun mar\u015f s\u00fcresi veya \u00e7al\u0131\u015fmama durumu sizi yolda b\u0131rakabilir. Ayr\u0131ca, d\u00fczg\u00fcn \u00e7al\u0131\u015fmayan bir so\u011fuk \u00e7al\u0131\u015ft\u0131rma enjekt\u00f6r\u00fc, so\u011fuk \u00e7al\u0131\u015fma s\u0131ras\u0131nda a\u015f\u0131r\u0131 zengin veya fakir bir duruma neden olabilir, bu da zamanla artan emisyonlara, katalitik konvert\u00f6r hasar\u0131na veya hatta motor teklemelerine ve stop etmeye yol a\u00e7abilir. G\u00fcvenilir ara\u00e7 \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flamak ve daha fazla hasar\u0131 \u00f6nlemek i\u00e7in bu sorunu derhal te\u015fhis edip onarmak tavsiye edilir.",
+        "de": "Obwohl der Code P0214 haupts\u00e4chlich den Kaltstart und den anf\u00e4nglichen Motorbetrieb betrifft, kann er, wenn er unbehandelt bleibt, zu erheblichen Fahrbarkeitsproblemen f\u00fchren. Startschwierigkeiten, verl\u00e4ngertes Anlassen oder ein Nichtstarten bei kaltem Wetter k\u00f6nnen dazu f\u00fchren, dass Sie liegen bleiben. Dar\u00fcber hinaus kann ein nicht ordnungsgem\u00e4\u00df funktionierendes Kaltstartventil w\u00e4hrend des Kaltbetriebs zu einem \u00fcberm\u00e4\u00dfig fetten oder mageren Gemisch f\u00fchren, was potenziell erh\u00f6hte Emissionen, langfristige Sch\u00e4den am Katalysator oder sogar Motorfehlz\u00fcndungen und Abw\u00fcrgen verursachen kann. Es ist ratsam, dieses Problem umgehend zu diagnostizieren und zu beheben, um einen zuverl\u00e4ssigen Fahrzeugbetrieb zu gew\u00e4hrleisten und weitere Sch\u00e4den zu vermeiden.",
+        "es": "Aunque el c\u00f3digo P0214 afecta principalmente el arranque en fr\u00edo y el funcionamiento inicial del motor, puede provocar problemas significativos de manejabilidad si no se aborda. Un arranque dif\u00edcil, un arranque prolongado o una condici\u00f3n de no arranque en clima fr\u00edo pueden dejarlo varado. Adem\u00e1s, un inyector de arranque en fr\u00edo que funciona incorrectamente puede causar una condici\u00f3n excesivamente rica o pobre durante el funcionamiento en fr\u00edo, lo que podr\u00eda conducir a un aumento de las emisiones, da\u00f1os al convertidor catal\u00edtico con el tiempo, o incluso fallos de encendido y calado del motor. Es aconsejable diagnosticar y reparar este problema r\u00e1pidamente para garantizar un funcionamiento fiable del veh\u00edculo y evitar da\u00f1os mayores.",
+        "fr": "Bien que le code P0214 affecte principalement le d\u00e9marrage \u00e0 froid et le fonctionnement initial du moteur, il peut entra\u00eener des probl\u00e8mes de conduite importants s'il n'est pas r\u00e9solu. Un d\u00e9marrage difficile, un d\u00e9marrage prolong\u00e9 ou une impossibilit\u00e9 de d\u00e9marrer par temps froid peut vous laisser en panne. De plus, un injecteur de d\u00e9marrage \u00e0 froid qui fonctionne mal peut provoquer une condition excessivement riche ou pauvre pendant le fonctionnement \u00e0 froid, entra\u00eenant potentiellement une augmentation des \u00e9missions, des dommages au convertisseur catalytique au fil du temps, ou m\u00eame des rat\u00e9s d'allumage et un calage du moteur. Il est conseill\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour assurer un fonctionnement fiable du v\u00e9hicule et pr\u00e9venir d'autres dommages."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$50 - $350",
+      "labor": "$75 - $300"
+    }
   },
   "P0215": {
-    "title": "Engine Shutoff Solenoid Malfunction",
-    "description": "Code P0215 indicates a malfunction in the engine shutoff solenoid circuit. This solenoid is used primarily in diesel engines to cut fuel supply when the engine is shut down.",
+    "title": {
+      "en": "Engine Shutoff Solenoid Malfunction",
+      "tr": "Motor Kapatma Solenoidi Ar\u0131zas\u0131",
+      "de": "Motorabschaltmagnetventil-Fehlfunktion",
+      "es": "Mal funcionamiento del solenoide de apagado del motor",
+      "fr": "Dysfonctionnement du sol\u00e9no\u00efde d'arr\u00eat moteur"
+    },
+    "description": {
+      "en": "Code P0215 indicates a detected malfunction within the circuit of the engine shutoff solenoid. This solenoid, predominantly found in diesel fuel injection systems, is crucial for controlling the fuel supply to the engine, specifically to cut off fuel and stop the engine when the ignition is turned off. A fault in this circuit can lead to various issues, including the engine failing to shut off, unexpected stalling, or a no-start condition due to improper fuel delivery. The Powertrain Control Module (PCM) monitors this circuit for correct voltage and resistance, setting P0215 if an out-of-specification condition is detected.",
+      "tr": "P0215 kodu, motor kapatma solenoidi devresinde bir ar\u0131za tespit edildi\u011fini g\u00f6sterir. \u00d6zellikle dizel yak\u0131t enjeksiyon sistemlerinde bulunan bu solenoid, motorun yak\u0131t beslemesini kontrol etmek, \u00f6zellikle kontak kapat\u0131ld\u0131\u011f\u0131nda yak\u0131t\u0131 keserek motoru durdurmak i\u00e7in kritik \u00f6neme sahiptir. Bu devredeki bir ar\u0131za, motorun kapanmamas\u0131, beklenmedik \u015fekilde stop etmesi veya yak\u0131t\u0131n yanl\u0131\u015f iletilmesi nedeniyle \u00e7al\u0131\u015fmama gibi \u00e7e\u015fitli sorunlara yol a\u00e7abilir. G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc (PCM), bu devreyi do\u011fru voltaj ve diren\u00e7 a\u00e7\u0131s\u0131ndan izler ve belirtilen de\u011ferlerin d\u0131\u015f\u0131nda bir durum tespit etti\u011finde P0215 kodunu ayarlar.",
+      "de": "Der Code P0215 weist auf eine erkannte Fehlfunktion im Stromkreis des Motorabschaltmagnetventils hin. Dieses Ventil, das \u00fcberwiegend in Diesel-Einspritzsystemen zu finden ist, ist entscheidend f\u00fcr die Steuerung der Kraftstoffzufuhr zum Motor, insbesondere um die Kraftstoffzufuhr zu unterbrechen und den Motor beim Ausschalten der Z\u00fcndung zu stoppen. Ein Fehler in diesem Stromkreis kann zu verschiedenen Problemen f\u00fchren, darunter das Nichtabschalten des Motors, unerwartetes Abw\u00fcrgen oder ein Startversagen aufgrund unsachgem\u00e4\u00dfer Kraftstoffzufuhr. Das Antriebsstrang-Steuerger\u00e4t (PCM) \u00fcberwacht diesen Stromkreis auf korrekte Spannung und Widerstand und setzt P0215, wenn ein au\u00dferhalb der Spezifikation liegender Zustand erkannt wird.",
+      "es": "El c\u00f3digo P0215 indica una falla detectada en el circuito del solenoide de apagado del motor. Este solenoide, que se encuentra predominantemente en los sistemas de inyecci\u00f3n de combustible di\u00e9sel, es crucial para controlar el suministro de combustible al motor, espec\u00edficamente para cortar el suministro de combustible y detener el motor cuando se apaga el encendido. Una falla en este circuito puede provocar varios problemas, incluido que el motor no se apague, un calado inesperado o una condici\u00f3n de no arranque debido a una entrega de combustible incorrecta. El M\u00f3dulo de Control del Tren de Potencia (PCM) monitorea este circuito para detectar el voltaje y la resistencia correctos, estableciendo P0215 si se detecta una condici\u00f3n fuera de especificaci\u00f3n.",
+      "fr": "Le code P0215 indique un dysfonctionnement d\u00e9tect\u00e9 dans le circuit du sol\u00e9no\u00efde d'arr\u00eat moteur. Ce sol\u00e9no\u00efde, principalement pr\u00e9sent dans les syst\u00e8mes d'injection de carburant diesel, est crucial pour contr\u00f4ler l'alimentation en carburant du moteur, sp\u00e9cifiquement pour couper l'alimentation et arr\u00eater le moteur lorsque le contact est coup\u00e9. Une d\u00e9faillance dans ce circuit peut entra\u00eener divers probl\u00e8mes, notamment l'incapacit\u00e9 du moteur \u00e0 s'arr\u00eater, un calage inattendu ou une condition de non-d\u00e9marrage due \u00e0 une alimentation en carburant incorrecte. Le module de commande du groupe motopropulseur (PCM) surveille ce circuit pour la tension et la r\u00e9sistance correctes, et d\u00e9finit le code P0215 si une condition hors sp\u00e9cification est d\u00e9tect\u00e9e."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_no_start",
@@ -12623,7 +12725,90 @@
       "cause_pcm_failure"
     ],
     "fixDifficulty": "diff_hard",
-    "estimatedCost": "$150 - $600"
+    "estimatedCost": "$150 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Begin by visually inspecting the engine shutoff solenoid and its associated wiring harness and connectors for any signs of damage, corrosion, fraying, or loose connections. Pay close attention to areas where wiring might rub against engine components.",
+        "With the ignition on (engine off), use a multimeter to check for proper voltage supply at the engine shutoff solenoid connector. Compare this reading to the vehicle's service manual specifications. Also, check for a good ground connection.",
+        "Disconnect the solenoid and measure its internal resistance using a multimeter. Compare the measured resistance to the manufacturer's specifications. An open circuit (infinite resistance) or a short circuit (very low resistance) indicates an internal solenoid failure.",
+        "If the solenoid and its wiring appear good, use a scan tool to command the engine shutoff solenoid on and off (if supported by the vehicle). Monitor the voltage output from the PCM to the solenoid to ensure the PCM is sending the correct activation signal.",
+        "If the solenoid tests good but symptoms persist, verify that there are no fuel blockages or other fuel system issues preventing proper fuel flow or cutoff, as a faulty solenoid might be a symptom rather than the root cause in some rare instances."
+      ],
+      "tr": [
+        "Motor kapatma solenoidini ve ilgili kablo demetini ve konekt\u00f6rlerini herhangi bir hasar, korozyon, a\u015f\u0131nma veya gev\u015fek ba\u011flant\u0131 belirtisi a\u00e7\u0131s\u0131ndan g\u00f6rsel olarak inceleyerek ba\u015flay\u0131n. Kablolar\u0131n motor bile\u015fenlerine s\u00fcrt\u00fcnebilece\u011fi alanlara \u00f6zellikle dikkat edin.",
+        "Kontak a\u00e7\u0131k (motor kapal\u0131) konumdayken, bir multimetre kullanarak motor kapatma solenoidi konekt\u00f6r\u00fcndeki do\u011fru voltaj beslemesini kontrol edin. Bu okumay\u0131 arac\u0131n servis k\u0131lavuzu spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n. Ayr\u0131ca iyi bir topraklama ba\u011flant\u0131s\u0131 olup olmad\u0131\u011f\u0131n\u0131 kontrol edin.",
+        "Solenoidi ay\u0131r\u0131n ve bir multimetre kullanarak i\u00e7 direncini \u00f6l\u00e7\u00fcn. \u00d6l\u00e7\u00fclen direnci \u00fcreticinin spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n. A\u00e7\u0131k devre (sonsuz diren\u00e7) veya k\u0131sa devre (\u00e7ok d\u00fc\u015f\u00fck diren\u00e7) dahili bir solenoid ar\u0131zas\u0131n\u0131 g\u00f6sterir.",
+        "Solenoid ve kablolar\u0131 iyi g\u00f6r\u00fcn\u00fcyorsa, bir tarama arac\u0131 kullanarak motor kapatma solenoidini a\u00e7\u0131p kapatmay\u0131 komutlay\u0131n (ara\u00e7 taraf\u0131ndan destekleniyorsa). PCM'nin solenoid'e do\u011fru aktivasyon sinyalini g\u00f6nderdi\u011finden emin olmak i\u00e7in PCM'den solenoid'e giden voltaj \u00e7\u0131k\u0131\u015f\u0131n\u0131 izleyin.",
+        "Solenoid testleri iyi \u00e7\u0131kmas\u0131na ra\u011fmen belirtiler devam ediyorsa, yak\u0131t ak\u0131\u015f\u0131n\u0131 veya kesilmesini engelleyen yak\u0131t t\u0131kan\u0131kl\u0131klar\u0131 veya di\u011fer yak\u0131t sistemi sorunlar\u0131 olup olmad\u0131\u011f\u0131n\u0131 do\u011frulay\u0131n, \u00e7\u00fcnk\u00fc baz\u0131 nadir durumlarda ar\u0131zal\u0131 bir solenoid k\u00f6k neden yerine bir belirti olabilir."
+      ],
+      "de": [
+        "Beginnen Sie mit einer Sichtpr\u00fcfung des Motorabschaltmagnetventils und des zugeh\u00f6rigen Kabelbaums sowie der Steckverbinder auf Anzeichen von Besch\u00e4digungen, Korrosion, Ausfransungen oder losen Verbindungen. Achten Sie besonders auf Bereiche, in denen Kabel an Motorkomponenten reiben k\u00f6nnten.",
+        "Bei eingeschalteter Z\u00fcndung (Motor aus) pr\u00fcfen Sie mit einem Multimeter die korrekte Spannungsversorgung am Stecker des Motorabschaltmagnetventils. Vergleichen Sie diesen Wert mit den Angaben im Wartungshandbuch des Fahrzeugs. Pr\u00fcfen Sie auch auf eine gute Masseverbindung.",
+        "Trennen Sie das Magnetventil und messen Sie seinen internen Widerstand mit einem Multimeter. Vergleichen Sie den gemessenen Widerstand mit den Herstellerangaben. Ein offener Stromkreis (unendlicher Widerstand) oder ein Kurzschluss (sehr geringer Widerstand) deutet auf einen internen Defekt des Magnetventils hin.",
+        "Wenn das Magnetventil und seine Verkabelung in Ordnung erscheinen, verwenden Sie ein Diagnoseger\u00e4t, um das Motorabschaltmagnetventil ein- und auszuschalten (falls vom Fahrzeug unterst\u00fctzt). \u00dcberwachen Sie die Spannungsausgabe vom PCM zum Magnetventil, um sicherzustellen, dass das PCM das korrekte Aktivierungssignal sendet.",
+        "Wenn das Magnetventil in Ordnung ist, aber die Symptome bestehen bleiben, \u00fcberpr\u00fcfen Sie, ob keine Kraftstoffblockaden oder andere Probleme im Kraftstoffsystem die ordnungsgem\u00e4\u00dfe Kraftstoffzufuhr oder -abschaltung verhindern, da ein fehlerhaftes Magnetventil in seltenen F\u00e4llen eher ein Symptom als die eigentliche Ursache sein k\u00f6nnte."
+      ],
+      "es": [
+        "Comience inspeccionando visualmente el solenoide de apagado del motor y su arn\u00e9s de cableado y conectores asociados en busca de signos de da\u00f1o, corrosi\u00f3n, deshilachado o conexiones sueltas. Preste especial atenci\u00f3n a las \u00e1reas donde el cableado podr\u00eda rozar con los componentes del motor.",
+        "Con el encendido activado (motor apagado), use un mult\u00edmetro para verificar el suministro de voltaje adecuado en el conector del solenoide de apagado del motor. Compare esta lectura con las especificaciones del manual de servicio del veh\u00edculo. Adem\u00e1s, verifique una buena conexi\u00f3n a tierra.",
+        "Desconecte el solenoide y mida su resistencia interna usando un mult\u00edmetro. Compare la resistencia medida con las especificaciones del fabricante. Un circuito abierto (resistencia infinita) o un cortocircuito (resistencia muy baja) indica una falla interna del solenoide.",
+        "Si el solenoide y su cableado parecen estar bien, use una herramienta de escaneo para activar y desactivar el solenoide de apagado del motor (si es compatible con el veh\u00edculo). Monitoree la salida de voltaje del PCM al solenoide para asegurarse de que el PCM est\u00e9 enviando la se\u00f1al de activaci\u00f3n correcta.",
+        "Si el solenoide funciona correctamente pero los s\u00edntomas persisten, verifique que no haya obstrucciones de combustible u otros problemas del sistema de combustible que impidan el flujo o corte adecuado del combustible, ya que un solenoide defectuoso podr\u00eda ser un s\u00edntoma en lugar de la causa ra\u00edz en algunos casos raros."
+      ],
+      "fr": [
+        "Commencez par inspecter visuellement le sol\u00e9no\u00efde d'arr\u00eat moteur et son faisceau de c\u00e2bles et connecteurs associ\u00e9s pour d\u00e9tecter tout signe de dommage, de corrosion, d'effilochage ou de connexions desserr\u00e9es. Portez une attention particuli\u00e8re aux zones o\u00f9 le c\u00e2blage pourrait frotter contre les composants du moteur.",
+        "Avec le contact mis (moteur \u00e9teint), utilisez un multim\u00e8tre pour v\u00e9rifier l'alimentation en tension correcte au connecteur du sol\u00e9no\u00efde d'arr\u00eat moteur. Comparez cette lecture aux sp\u00e9cifications du manuel d'entretien du v\u00e9hicule. V\u00e9rifiez \u00e9galement une bonne connexion \u00e0 la masse.",
+        "D\u00e9connectez le sol\u00e9no\u00efde et mesurez sa r\u00e9sistance interne \u00e0 l'aide d'un multim\u00e8tre. Comparez la r\u00e9sistance mesur\u00e9e aux sp\u00e9cifications du fabricant. Un circuit ouvert (r\u00e9sistance infinie) ou un court-circuit (tr\u00e8s faible r\u00e9sistance) indique une d\u00e9faillance interne du sol\u00e9no\u00efde.",
+        "Si le sol\u00e9no\u00efde et son c\u00e2blage semblent bons, utilisez un outil de diagnostic pour commander l'activation et la d\u00e9sactivation du sol\u00e9no\u00efde d'arr\u00eat moteur (si pris en charge par le v\u00e9hicule). Surveillez la tension de sortie du PCM vers le sol\u00e9no\u00efde pour vous assurer que le PCM envoie le signal d'activation correct.",
+        "Si le sol\u00e9no\u00efde est test\u00e9 comme \u00e9tant bon mais que les sympt\u00f4mes persistent, v\u00e9rifiez qu'il n'y a pas de blocages de carburant ou d'autres probl\u00e8mes de syst\u00e8me de carburant emp\u00eachant un flux ou une coupure de carburant appropri\u00e9s, car un sol\u00e9no\u00efde d\u00e9fectueux pourrait \u00eatre un sympt\u00f4me plut\u00f4t que la cause premi\u00e8re dans certains cas rares."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty engine shutoff solenoid.",
+        "Repair or replace damaged, corroded, or shorted wiring and connectors in the solenoid circuit.",
+        "Address a faulty Powertrain Control Module (PCM) if diagnostic steps confirm it's not sending the correct signal (less common).",
+        "Clean or repair fuel lines/filters if a blockage is contributing to the symptom, although this is less directly related to the P0215 circuit fault."
+      ],
+      "tr": [
+        "Ar\u0131zal\u0131 motor kapatma solenoidini de\u011fi\u015ftirin.",
+        "Solenoid devresindeki hasarl\u0131, korozyona u\u011fram\u0131\u015f veya k\u0131sa devre yapm\u0131\u015f kablolar\u0131 ve konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "Tan\u0131 ad\u0131mlar\u0131 do\u011fru sinyali g\u00f6ndermedi\u011fini do\u011frularsa ar\u0131zal\u0131 G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc (PCM) sorununu giderin (daha az yayg\u0131n).",
+        "Bir t\u0131kan\u0131kl\u0131k belirtiye katk\u0131da bulunuyorsa yak\u0131t hatlar\u0131n\u0131/filtrelerini temizleyin veya onar\u0131n, ancak bu P0215 devre ar\u0131zas\u0131yla daha az do\u011frudan ili\u015fkilidir."
+      ],
+      "de": [
+        "Ersetzen Sie das defekte Motorabschaltmagnetventil.",
+        "Reparieren oder ersetzen Sie besch\u00e4digte, korrodierte oder kurzgeschlossene Kabel und Steckverbinder im Magnetventilkreis.",
+        "Beheben Sie ein fehlerhaftes Antriebsstrang-Steuerger\u00e4t (PCM), wenn die Diagnoseschritte best\u00e4tigen, dass es das korrekte Signal nicht sendet (weniger h\u00e4ufig).",
+        "Reinigen oder reparieren Sie Kraftstoffleitungen/-filter, wenn eine Verstopfung zu den Symptomen beitr\u00e4gt, obwohl dies weniger direkt mit dem P0215-Schaltkreisfehler zusammenh\u00e4ngt."
+      ],
+      "es": [
+        "Reemplazar el solenoide de apagado del motor defectuoso.",
+        "Reparar o reemplazar el cableado y los conectores da\u00f1ados, corro\u00eddos o en cortocircuito en el circuito del solenoide.",
+        "Abordar un M\u00f3dulo de Control del Tren de Potencia (PCM) defectuoso si los pasos de diagn\u00f3stico confirman que no est\u00e1 enviando la se\u00f1al correcta (menos com\u00fan).",
+        "Limpiar o reparar las l\u00edneas/filtros de combustible si una obstrucci\u00f3n est\u00e1 contribuyendo al s\u00edntoma, aunque esto est\u00e1 menos directamente relacionado con la falla del circuito P0215."
+      ],
+      "fr": [
+        "Remplacer le sol\u00e9no\u00efde d'arr\u00eat moteur d\u00e9fectueux.",
+        "R\u00e9parer ou remplacer le c\u00e2blage et les connecteurs endommag\u00e9s, corrod\u00e9s ou court-circuit\u00e9s dans le circuit du sol\u00e9no\u00efde.",
+        "R\u00e9soudre un probl\u00e8me de module de commande du groupe motopropulseur (PCM) d\u00e9fectueux si les \u00e9tapes de diagnostic confirment qu'il n'envoie pas le signal correct (moins courant).",
+        "Nettoyer ou r\u00e9parer les conduites/filtres de carburant si un blocage contribue au sympt\u00f4me, bien que cela soit moins directement li\u00e9 au d\u00e9faut de circuit P0215."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with code P0215 can be hazardous. The primary concern is the engine failing to shut off when commanded, which can be a safety risk and lead to battery drain. More critically, the engine could unexpectedly stall while driving, leading to a loss of power steering and power brakes, significantly increasing the risk of an accident. It is recommended to diagnose and repair this issue promptly.",
+        "tr": "P0215 koduyla ara\u00e7 kullanmak tehlikeli olabilir. Birincil endi\u015fe, komut verildi\u011finde motorun kapanmamas\u0131d\u0131r, bu bir g\u00fcvenlik riski olu\u015fturabilir ve ak\u00fc bo\u015falmas\u0131na yol a\u00e7abilir. Daha kritik olarak, motor s\u00fcr\u00fc\u015f s\u0131ras\u0131nda beklenmedik bir \u015fekilde stop edebilir, bu da hidrolik direksiyon ve hidrolik frenlerin kayb\u0131na yol a\u00e7arak kaza riskini \u00f6nemli \u00f6l\u00e7\u00fcde art\u0131r\u0131r. Bu sorunun derhal te\u015fhis edilmesi ve onar\u0131lmas\u0131 \u00f6nerilir.",
+        "de": "Das Fahren mit dem Code P0215 kann gef\u00e4hrlich sein. Die Hauptsorge ist, dass der Motor auf Befehl nicht abschaltet, was ein Sicherheitsrisiko darstellen und zu einer Batterieentladung f\u00fchren kann. Kritischer ist, dass der Motor w\u00e4hrend der Fahrt unerwartet abw\u00fcrgen k\u00f6nnte, was zum Verlust der Servolenkung und der Bremskraft f\u00fchrt und das Unfallrisiko erheblich erh\u00f6ht. Es wird empfohlen, dieses Problem umgehend zu diagnostizieren und zu beheben.",
+        "es": "Conducir con el c\u00f3digo P0215 puede ser peligroso. La principal preocupaci\u00f3n es que el motor no se apague cuando se le ordena, lo que puede ser un riesgo de seguridad y provocar el agotamiento de la bater\u00eda. M\u00e1s cr\u00edticamente, el motor podr\u00eda calarse inesperadamente mientras se conduce, lo que provocar\u00eda la p\u00e9rdida de la direcci\u00f3n asistida y los frenos asistidos, aumentando significativamente el riesgo de un accidente. Se recomienda diagnosticar y reparar este problema de inmediato.",
+        "fr": "Conduire avec le code P0215 peut \u00eatre dangereux. La principale pr\u00e9occupation est que le moteur ne s'arr\u00eate pas lorsqu'il est command\u00e9, ce qui peut \u00eatre un risque pour la s\u00e9curit\u00e9 et entra\u00eener une d\u00e9charge de la batterie. Plus grave encore, le moteur pourrait caler de mani\u00e8re inattendue pendant la conduite, entra\u00eenant une perte de direction assist\u00e9e et de freins assist\u00e9s, augmentant consid\u00e9rablement le risque d'accident. Il est recommand\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$80 - $350",
+      "labor": "$100 - $300"
+    }
   },
   "P0216": {
     "title": "Injection Timing Control Circuit Malfunction",
