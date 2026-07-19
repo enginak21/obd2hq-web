@@ -2,6 +2,7 @@
 import { cars } from '@/data/db';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
@@ -37,6 +38,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: fitSeoTitle(t('metaTitle', { make: capMake, model: capModel })),
     description: fitSeoDescription(t('metaDescription', { make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights`, locale),
+    openGraph: {
+      images: ['/images/lights/check_engine_light_1783448321560.jpg'],
+    },
   };
 }
 
@@ -92,6 +96,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
       position: index + 1,
       name: light.name,
       url: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light.id}`,
+      image: `https://www.obd2hq.com${light.imageSrc}`,
     })),
   };
   const faqSchema = {
@@ -183,16 +188,29 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
               <Link 
                 key={light.id} 
                 href={`/${locale}/${make}/${model}/lights/${light.id}`}
-                className={`group bg-[#131b2f] border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${glowClasses} flex flex-col items-center text-center`}
+                className={`group overflow-hidden bg-[#131b2f] border border-white/5 rounded-2xl transition-all duration-300 hover:-translate-y-1 ${glowClasses} flex flex-col`}
               >
-                <div 
-                  className={`w-20 h-20 rounded-full flex items-center justify-center mb-6 border ${colorClasses} transition-transform duration-300 group-hover:scale-110`}
-                  dangerouslySetInnerHTML={{ __html: light.iconSvg }}
-                />
-                <h3 className="text-lg font-bold text-white mb-2">{light.name}</h3>
-                <span className={`text-xs font-bold uppercase tracking-wider ${light.urgency === 'Critical' ? 'text-red-400' : light.urgency === 'Moderate' ? 'text-amber-400' : 'text-blue-400'}`}>
-                  {getUrgencyLabel(light.urgency, locale)}
-                </span>
+                <div className="relative aspect-[16/10] w-full bg-[#0b1222]">
+                  <Image
+                    src={light.imageSrc}
+                    alt={`${capMake} ${capModel} ${light.name} dashboard warning light`}
+                    fill
+                    sizes="(min-width: 1024px) 320px, (min-width: 768px) 45vw, 100vw"
+                    className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#131b2f] via-transparent to-transparent" />
+                  <div
+                    className={`absolute bottom-4 left-4 w-14 h-14 rounded-2xl flex items-center justify-center border ${colorClasses} backdrop-blur-md transition-transform duration-300 group-hover:scale-110`}
+                    dangerouslySetInnerHTML={{ __html: light.iconSvg }}
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="text-lg font-bold text-white mb-2">{light.name}</h3>
+                  <p className="line-clamp-3 text-sm leading-6 text-slate-400">{light.description}</p>
+                  <span className={`mt-5 text-xs font-bold uppercase tracking-wider ${light.urgency === 'Critical' ? 'text-red-400' : light.urgency === 'Moderate' ? 'text-amber-400' : 'text-blue-400'}`}>
+                    {getUrgencyLabel(light.urgency, locale)}
+                  </span>
+                </div>
               </Link>
             );
           })}

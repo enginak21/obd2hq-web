@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
@@ -34,6 +35,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: fitSeoTitle(t('metaTitle', { light: lightData.name, make: capMake, model: capModel })),
     description: fitSeoDescription(t('metaDescription', { light: lightData.name, make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights/${light}`, locale),
+    openGraph: {
+      images: [lightData.imageSrc],
+    },
   };
 }
 
@@ -59,7 +63,7 @@ export default async function LightDetailPage({ params }: PageProps) {
       : locale === 'es'
         ? ['Anota el color y si la luz parpadea.', 'Si es seguro, revisa aceite, líquido de frenos, temperatura y bornes de batería.', 'Lee los códigos OBD2 y guarda freeze-frame antes de borrar fallas.', 'Si vuelve a encenderse, revisa sensor, cableado, fusibles y datos en vivo antes de cambiar piezas.']
         : locale === 'fr'
-          ? ['Notez la couleur du voyant et s’il clignote.', 'Si c’est sûr, vérifiez huile, liquide de frein, température et bornes de batterie.', 'Lisez les codes OBD2 et sauvegardez les données freeze-frame avant effacement.', 'Si le voyant revient, contrôlez capteur, câblage, fusibles et données en direct avant remplacement.']
+          ? ["Notez la couleur du voyant et s'il clignote.", "Si c'est sûr, vérifiez huile, liquide de frein, température et bornes de batterie.", 'Lisez les codes OBD2 et sauvegardez les données freeze-frame avant effacement.', 'Si le voyant revient, contrôlez capteur, câblage, fusibles et données en direct avant remplacement.']
           : ['Note the warning color and whether it is flashing.', 'If safe, stop and visually check oil level, brake fluid, coolant temperature and battery terminals.', 'Read OBD2 codes and save freeze-frame data before clearing faults.', 'If the light returns, test sensors, wiring, fuses and live data before replacing parts.'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -80,6 +84,7 @@ export default async function LightDetailPage({ params }: PageProps) {
     dateModified: '2026-07-18',
     author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
     publisher: { '@type': 'Organization', name: 'OBD2HQ' },
+    image: `https://www.obd2hq.com${lightData.imageSrc}`,
     about: [
       { '@type': 'Thing', name: `${capMake} ${capModel}` },
       { '@type': 'Thing', name: lightData.name },
@@ -136,12 +141,7 @@ export default async function LightDetailPage({ params }: PageProps) {
             <span className="text-white truncate max-w-[200px] block shrink-0">{lightData.name}</span>
           </nav>
 
-          <div className="flex flex-col md:flex-row md:items-start gap-8">
-            <div 
-              className={`w-32 h-32 shrink-0 rounded-3xl flex items-center justify-center border ${colorClasses}`}
-              dangerouslySetInnerHTML={{ __html: lightData.iconSvg }}
-            />
-            
+          <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:items-start">
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span className="px-3 py-1.5 rounded-lg bg-[#1a233a] border border-white/5 text-slate-300 text-xs sm:text-sm font-semibold tracking-wide uppercase">
@@ -154,6 +154,27 @@ export default async function LightDetailPage({ params }: PageProps) {
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
                 {lightData.name}
               </h1>
+              <p className="max-w-2xl text-lg leading-7 text-slate-400">
+                {t('description', { lightName: lightData.name.toLowerCase(), make: capMake, model: capModel, description: lightData.description })}
+              </p>
+            </div>
+
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#10182a] shadow-2xl shadow-black/30">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={lightData.imageSrc}
+                  alt={`${capMake} ${capModel} ${lightData.name} dashboard warning light`}
+                  fill
+                  priority
+                  sizes="(min-width: 768px) 360px, 100vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1c] via-transparent to-transparent" />
+                <div
+                  className={`absolute bottom-4 left-4 h-16 w-16 rounded-2xl flex items-center justify-center border ${colorClasses} backdrop-blur-md`}
+                  dangerouslySetInnerHTML={{ __html: lightData.iconSvg }}
+                />
+              </div>
             </div>
           </div>
         </div>
