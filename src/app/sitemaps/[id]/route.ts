@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { cars } from '@/data/db';
 import { getBlogPosts } from '@/data/blog';
 import { getAllNews } from '@/data/news';
-import { PRIORITY_CODES } from '@/data/seo';
+import { PRIORITY_CODES, SEO_LAST_REVIEWED } from '@/data/seo';
 import { symptomGuides } from '@/data/symptoms';
 import { automotiveTools } from '@/data/automotive-tools';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
@@ -15,7 +15,7 @@ import validRoutes from '@/data/valid_routes.json';
 
 const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
-const LASTMOD = new Date().toISOString().slice(0, 10);
+const LASTMOD = SEO_LAST_REVIEWED.slice(0, 10);
 
 const OPPORTUNITY_CODES = ['P0203', 'P0235', 'P0204', 'P0213', 'P0102'] as const;
 const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));

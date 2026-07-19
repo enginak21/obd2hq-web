@@ -168,7 +168,7 @@ export default async function CodePage({ params }: PageProps) {
       }
     },
     "datePublished": "2024-01-01T08:00:00+08:00",
-    "dateModified": new Date().toISOString()
+    "dateModified": SEO_LAST_REVIEWED
   };
 
   const breadcrumbSchema = {
