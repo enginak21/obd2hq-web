@@ -11,6 +11,8 @@ import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
 import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLocale, publishedProblemFinderIntents } from '@/data/problem-finder';
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
+import { getBrandWarningLightsPath, getCodeHubPath, getOpportunityCodes, type GscOpportunity } from '@/data/gsc-seo';
+import gscOpportunities from '@/data/generated/gsc-opportunities.json';
 import validRoutes from '@/data/valid_routes.json';
 
 const BASE_URL = 'https://www.obd2hq.com';
@@ -41,7 +43,7 @@ const PRIORITY_CODE_URLS = [
 ] as const;
 
 function getSitemapIdentifiers(): string[] {
-  return ['base', 'high-intent-codes', 'opportunity-codes'];
+  return ['base', 'high-intent-codes', 'opportunity-codes', 'gsc-opportunities'];
 }
 
 function urlEntry(loc: string, changefreq: string, priority: string, lastmod = LASTMOD) {
@@ -165,6 +167,24 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
           emitted.add(loc);
           urls += urlEntry(loc, 'weekly', '0.9');
         }
+      });
+    });
+  } else if (idStr === 'gsc-opportunities') {
+    const typedOpportunities = gscOpportunities as GscOpportunity[];
+    const gscCodes = getOpportunityCodes(typedOpportunities);
+    const gscMakeWarnings = Array.from(new Set(
+      typedOpportunities
+        .filter(opportunity => opportunity.intentType === 'warning_light_make')
+        .map(opportunity => opportunity.targetUrl.split('/')[2])
+        .filter(Boolean)
+    ));
+
+    LOCALES.forEach((locale) => {
+      gscCodes.forEach((code) => {
+        urls += urlEntry(`${BASE_URL}${getCodeHubPath(locale, code)}`, 'weekly', '0.9');
+      });
+      gscMakeWarnings.forEach((make) => {
+        urls += urlEntry(`${BASE_URL}${getBrandWarningLightsPath(locale, make)}`, 'weekly', '0.86');
       });
     });
   }

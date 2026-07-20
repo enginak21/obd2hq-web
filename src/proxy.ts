@@ -21,6 +21,22 @@ const problemFinderBasePaths: Record<string, string> = {
   fr: 'trouver-panne',
 };
 const problemFinderBaseSet = new Set(Object.values(problemFinderBasePaths));
+const codeHubBasePaths: Record<string, string> = {
+  en: 'codes',
+  tr: 'kodlar',
+  de: 'codes',
+  es: 'codigos',
+  fr: 'codes',
+};
+const codeHubBaseSet = new Set(Object.values(codeHubBasePaths));
+const brandWarningBasePaths: Record<string, string> = {
+  en: 'warning-lights',
+  tr: 'uyari-isiklari',
+  de: 'warnleuchten',
+  es: 'luces-tablero',
+  fr: 'voyants-tableau-bord',
+};
+const brandWarningBaseSet = new Set(Object.values(brandWarningBasePaths));
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -76,6 +92,12 @@ export function proxy(request: NextRequest) {
     if (locales.includes(locale) && problemFinderBaseSet.has(make) && problemFinderBasePaths[locale] !== make) {
       return notFoundResponse();
     }
+    if (locales.includes(locale) && codeHubBaseSet.has(make)) {
+      if (codeHubBasePaths[locale] !== make || segments.length !== 3 || !validRoutes.validCodes.includes(segments[2].toUpperCase())) {
+        return notFoundResponse();
+      }
+      return intlMiddleware(request);
+    }
 
 
     const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'car-problem-finder', 'ariza-bulucu', 'auto-problemfinder', 'buscador-fallas', 'trouver-panne', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
@@ -89,6 +111,13 @@ export function proxy(request: NextRequest) {
 
       if (!validRoutes.validMakes.includes(make)) {
         return notFoundResponse();
+      }
+
+      if (segments.length === 3 && brandWarningBaseSet.has(segments[2])) {
+        if (brandWarningBasePaths[locale] !== segments[2]) {
+          return notFoundResponse();
+        }
+        return intlMiddleware(request);
       }
 
       if (segments.length >= 3) {

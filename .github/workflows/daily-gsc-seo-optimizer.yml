@@ -1,0 +1,53 @@
+name: Daily GSC SEO Optimizer
+
+on:
+  schedule:
+    - cron: '10 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    env:
+      GSC_CLIENT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
+      GSC_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
+      GSC_SITE_URL: ${{ secrets.GSC_SITE_URL || 'https://www.obd2hq.com/' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch Search Console opportunities
+        run: node scripts/fetch_gsc_opportunities.js
+
+      - name: Quality checks
+        run: |
+          npm run check:gsc-seo
+          npm run check:content
+          npm run check:problem-finder
+          npm run check:symptom-content
+          npm run lint
+          npm run build
+
+      - name: Commit GSC opportunity updates
+        run: |
+          if git diff --quiet -- src/data/generated/gsc-opportunities.json reports/seo; then
+            echo "No GSC SEO changes."
+            exit 0
+          fi
+          git config user.name "obd2hq-seo-bot"
+          git config user.email "actions@github.com"
+          git add src/data/generated/gsc-opportunities.json reports/seo
+          git commit -m "chore: update daily gsc seo opportunities"
+          git push
