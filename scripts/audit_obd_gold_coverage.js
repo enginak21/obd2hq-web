@@ -14,6 +14,9 @@ function getText(value, locale = 'en') {
 }
 
 function getSystem(code) {
+  if (code.startsWith('C')) return 'chassis';
+  if (code.startsWith('B')) return 'body';
+  if (code.startsWith('U')) return 'network';
   if (/^P01(0|1|2|3)/.test(code)) return 'sensor';
   if (/^P02(0|1|2|6|7|8|9)/.test(code)) return 'injector';
   if (/^P02(3|4|5)/.test(code)) return 'fuel';

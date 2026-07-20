@@ -9,6 +9,9 @@ export const CODE_CATEGORIES = [
   { label: 'Fuel Trim', codes: ['P0171', 'P0174', 'P0172', 'P0175', 'P0191', 'P0087'] },
   { label: 'Sensors', codes: ['P0101', 'P0102', 'P0113', 'P0128', 'P0135', 'P0335'] },
   { label: 'Transmission', codes: ['P0700', 'P0715', 'P0720', 'P0730', 'P0740', 'P0750'] },
+  { label: 'Chassis / ABS', codes: ['C0035', 'C0040', 'C0045', 'C0050', 'C0110'] },
+  { label: 'Body / SRS', codes: ['B0020', 'B0051', 'B0081', 'B1000', 'B101D'] },
+  { label: 'Network / CAN', codes: ['U0001', 'U0100', 'U0101', 'U0121', 'U0140'] },
 ];
 
 export function getCodeCategoryLabel(code: string) {
@@ -21,6 +24,9 @@ export function getCodeCategoryLabel(code: string) {
   if (system === 'fuel-trim') return 'Fuel Trim';
   if (system === 'sensor') return 'Sensors';
   if (system === 'transmission') return 'Transmission';
+  if (system === 'chassis') return 'Chassis / ABS';
+  if (system === 'body') return 'Body / SRS';
+  if (system === 'network') return 'Network / CAN';
   return 'Powertrain';
 }
 
@@ -71,6 +77,9 @@ export function getFallbackDiagnosticSteps(code: string, make: string, model: st
 
 export function getCodeSystem(code: string) {
   const upperCode = code.toUpperCase();
+  if (upperCode.startsWith('C')) return 'chassis';
+  if (upperCode.startsWith('B')) return 'body';
+  if (upperCode.startsWith('U')) return 'network';
   if (/^P03/.test(upperCode)) return 'misfire';
   if (/^P04(4|5)/.test(upperCode)) return 'evap';
   if (/^P04(2|3)/.test(upperCode)) return 'catalyst';
@@ -130,6 +139,24 @@ const SYSTEM_CONTENT = {
     firstChecks: ['Check battery health, charging voltage, fuses, grounds, and module connectors.', 'Look for network communication codes and multiple-module failures.', 'Confirm power and ground before suspecting a failed PCM/ECM/TCM.'],
     mistake: 'Replacing a control module before checking voltage supply, grounds, fuses, water intrusion, and connector condition.',
     costNote: 'Power and ground repairs are often cheaper than module replacement, which may also require programming.',
+  },
+  chassis: {
+    label: 'Chassis, ABS, steering, and brake control',
+    firstChecks: ['Scan ABS/chassis modules, not only generic engine codes.', 'Inspect wheel speed sensor wiring, brake switch input, steering angle data, fuses, and grounds.', 'Verify sensor signals while the vehicle is safely lifted or driven under controlled conditions.'],
+    mistake: 'Replacing an ABS module before checking wheel speed sensors, damaged harnesses, brake switch data, power, and grounds.',
+    costNote: 'Wheel speed sensor and wiring repairs are often moderate; ABS hydraulic module or steering module replacement should be verified first.',
+  },
+  body: {
+    label: 'Body, SRS, restraint, lighting, and comfort systems',
+    firstChecks: ['Scan body/SRS modules with a tool that can access non-powertrain systems.', 'Check battery voltage, fuses, grounds, seat connectors, restraint wiring, and water intrusion.', 'Do not probe airbag circuits with unsafe test equipment; follow service information.'],
+    mistake: 'Clearing SRS/body codes without fixing connector, power, ground, or module communication faults first.',
+    costNote: 'Connector, fuse, and wiring fixes may be affordable; airbag, seat occupancy, or BCM work can require professional tooling and calibration.',
+  },
+  network: {
+    label: 'CAN bus and module communication',
+    firstChecks: ['Check battery condition, charging voltage, fuses, grounds, and module power feeds first.', 'Scan all modules to see which controllers are online and which are missing.', 'Inspect CAN wiring, splice packs, water intrusion, aftermarket electronics, and connector corrosion.'],
+    mistake: 'Replacing a module because communication is lost before confirming power, ground, network resistance, wiring integrity, and related U-codes.',
+    costNote: 'Power, ground, or wiring repairs can be moderate; module replacement may require programming and should be the last verified step.',
   },
   powertrain: {
     label: 'General powertrain circuit',
@@ -204,7 +231,7 @@ const LOCALIZED_SYSTEM_CONTENT = {
 
 export function getLocalizedSystemContent(code: string, locale: string) {
   const system = getCodeSystem(code);
-  if (locale === 'tr') return LOCALIZED_SYSTEM_CONTENT.tr[system];
+  if (locale === 'tr') return LOCALIZED_SYSTEM_CONTENT.tr[system as keyof typeof LOCALIZED_SYSTEM_CONTENT.tr] || getSystemContent(code);
   return getSystemContent(code);
 }
 

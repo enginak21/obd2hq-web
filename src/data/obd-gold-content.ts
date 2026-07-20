@@ -11,6 +11,9 @@ type GoldSystem =
   | 'cooling'
   | 'turbo'
   | 'control'
+  | 'chassis'
+  | 'body'
+  | 'network'
   | 'powertrain';
 
 const systemSymptoms: Record<GoldSystem, string[]> = {
@@ -24,6 +27,9 @@ const systemSymptoms: Record<GoldSystem, string[]> = {
   cooling: ['symp_check_engine', 'symp_engine_overheat', 'symp_coolant_temp_warning', 'symp_fan_not_working', 'symp_power_loss'],
   turbo: ['symp_check_engine', 'symp_turbo_lag', 'symp_power_loss', 'symp_black_smoke', 'symp_poor_acceleration'],
   control: ['symp_check_engine', 'symp_reduced_power_mode', 'symp_stalling', 'symp_no_start', 'symp_battery_drain'],
+  chassis: ['symp_check_engine', 'symp_speedometer_erratic', 'symp_cruise_not_working', 'symp_vibration', 'symp_reduced_power_mode'],
+  body: ['symp_check_engine', 'symp_ac_not_working', 'symp_battery_drain', 'symp_no_start', 'symp_cruise_not_working'],
+  network: ['symp_check_engine', 'symp_no_start', 'symp_reduced_power_mode', 'symp_battery_drain', 'symp_stalling'],
   powertrain: ['symp_check_engine', 'symp_power_loss', 'symp_poor_acceleration', 'symp_fuel_economy', 'symp_hesitation'],
 };
 
@@ -38,6 +44,9 @@ const systemCauses: Record<GoldSystem, string[]> = {
   cooling: ['cause_thermostat', 'cause_ect_sensor', 'cause_coolant_leak', 'cause_fan_relay', 'cause_fan_motor'],
   turbo: ['cause_turbo_wastegate', 'cause_turbo_actuator', 'cause_intake_leak', 'cause_exhaust_leak', 'cause_wiring_damage'],
   control: ['cause_wiring_damage', 'cause_connector_corrosion', 'cause_battery', 'cause_alternator', 'cause_pcm_failure'],
+  chassis: ['cause_wiring_damage', 'cause_connector_corrosion', 'cause_vss', 'cause_brake_switch', 'cause_power_steering_sensor'],
+  body: ['cause_wiring_damage', 'cause_connector_corrosion', 'cause_battery', 'cause_ac_refrigerant', 'cause_ac_compressor'],
+  network: ['cause_wiring_damage', 'cause_connector_corrosion', 'cause_battery', 'cause_alternator', 'cause_pcm_failure'],
   powertrain: ['cause_wiring_damage', 'cause_connector_corrosion', 'cause_vacuum_leak', 'cause_pcm_software', 'cause_pcm_failure'],
 };
 
@@ -52,11 +61,17 @@ const systemCosts: Record<GoldSystem, string> = {
   cooling: '$80 - $900',
   turbo: '$200 - $2200',
   control: '$100 - $1800',
+  chassis: '$80 - $1200',
+  body: '$80 - $1500',
+  network: '$120 - $2000',
   powertrain: '$100 - $900',
 };
 
 export function getGoldCodeSystem(code: string): GoldSystem {
   const upperCode = code.toUpperCase();
+  if (upperCode.startsWith('C')) return 'chassis';
+  if (upperCode.startsWith('B')) return 'body';
+  if (upperCode.startsWith('U')) return 'network';
   if (/^P01(0|1|2|3)/.test(upperCode)) return 'sensor';
   if (/^P02(0|1|2|6|7|8|9)/.test(upperCode)) return 'injector';
   if (/^P02(3|4|5)/.test(upperCode)) return 'fuel';
@@ -184,7 +199,7 @@ function goldCommonFixes(code: string): MultiLangArray {
 }
 
 function goldSafety(code: string, system: GoldSystem): OBD2Code['drivingSafety'] {
-  const level = system === 'misfire' || system === 'cooling' || system === 'transmission' ? 'caution' : 'safe';
+  const level = system === 'misfire' || system === 'cooling' || system === 'transmission' || system === 'chassis' || system === 'network' ? 'caution' : 'safe';
   return {
     level,
     description: {

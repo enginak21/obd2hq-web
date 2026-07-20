@@ -179,7 +179,10 @@
     "diff_easy": "Easy",
     "diff_moderate": "Moderate",
     "diff_hard": "Hard",
-    "diff_professional": "Professional"
+    "diff_professional": "Professional",
+    "symp_abs_warning": "ABS / traction control warning light is on",
+    "symp_airbag_warning": "Airbag or SRS warning light is on",
+    "symp_module_warning": "Multiple warning lights or module communication warnings"
   },
   "MakeModel": {
     "selectMake": "Select a Make",

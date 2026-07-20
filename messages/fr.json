@@ -180,7 +180,10 @@
     "diff_easy": "Facile",
     "diff_moderate": "Modéré",
     "diff_hard": "Difficile",
-    "diff_professional": "Professionnel"
+    "diff_professional": "Professionnel",
+    "symp_abs_warning": "Voyant ABS ou antipatinage allumé",
+    "symp_airbag_warning": "Voyant airbag ou SRS allumé",
+    "symp_module_warning": "Plusieurs voyants ou alertes de communication entre modules"
   },
   "MakeModel": {
     "selectMake": "Sélectionnez une marque",

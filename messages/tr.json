@@ -179,7 +179,10 @@
     "diff_easy": "Kolay",
     "diff_moderate": "Orta",
     "diff_hard": "Zor",
-    "diff_professional": "Profesyonel"
+    "diff_professional": "Profesyonel",
+    "symp_abs_warning": "ABS / çekiş kontrol uyarı lambası yanıyor",
+    "symp_airbag_warning": "Airbag veya SRS uyarı lambası yanıyor",
+    "symp_module_warning": "Birden fazla uyarı lambası veya modül iletişim uyarısı var"
   },
   "MakeModel": {
     "selectMake": "Bir Marka Seçin",

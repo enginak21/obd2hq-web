@@ -180,7 +180,10 @@
     "diff_easy": "Fácil",
     "diff_moderate": "Moderado",
     "diff_hard": "Difícil",
-    "diff_professional": "Profesional"
+    "diff_professional": "Profesional",
+    "symp_abs_warning": "Luz de ABS o control de tracción encendida",
+    "symp_airbag_warning": "Luz de airbag o SRS encendida",
+    "symp_module_warning": "Varias luces de advertencia o avisos de comunicación de módulos"
   },
   "MakeModel": {
     "selectMake": "Seleccione una marca",

@@ -179,7 +179,10 @@
     "diff_easy": "Einfach",
     "diff_moderate": "Moderat",
     "diff_hard": "Schwierig",
-    "diff_professional": "Professionell"
+    "diff_professional": "Professionell",
+    "symp_abs_warning": "ABS- oder Traktionskontrollleuchte ist an",
+    "symp_airbag_warning": "Airbag- oder SRS-Warnleuchte ist an",
+    "symp_module_warning": "Mehrere Warnleuchten oder Modul-Kommunikationswarnungen"
   },
   "MakeModel": {
     "selectMake": "Wählen Sie eine Marke",
