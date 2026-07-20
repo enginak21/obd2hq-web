@@ -38,6 +38,8 @@ jobs:
           npm run check:problem-finder
           npm run check:symptom-content
           npm run check:seo-uniqueness-obd
+          npm run check:seo-contracts
+          npm run audit:obd-gold
           npm run lint
           npm run build
 
