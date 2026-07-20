@@ -4,6 +4,7 @@ const path = require('path');
 const ROOT = process.cwd();
 const baseCodes = require(path.join(ROOT, 'src/data/base_codes.json'));
 const generatedVehicleSpecs = require(path.join(ROOT, 'src/data/generated/vehicle-specs.json'));
+const validRoutes = require(path.join(ROOT, 'src/data/valid_routes.json'));
 const messages = require(path.join(ROOT, 'messages/en.json'));
 
 const badChars = /Ã|Ä|Å|�/;
@@ -157,8 +158,81 @@ function checkVehicleSpecTitles() {
   }
 }
 
+function codeMetaTitle(locale, code, make, model) {
+  if (locale === 'tr') return `${make} ${model} ${code} Arıza Kodu Teşhisi`;
+  if (locale === 'de') return `${make} ${model} ${code} Fehlercode Diagnose`;
+  if (locale === 'es') return `${make} ${model} ${code} diagnóstico OBD2`;
+  if (locale === 'fr') return `${make} ${model} ${code} diagnostic OBD2`;
+  return `${make} ${model} ${code} Diagnostic Guide`;
+}
+
+function codeH1(locale, code, make, model, title) {
+  if (locale === 'tr') return `${make} ${model} ${code}: ${title} arıza teşhisi`;
+  if (locale === 'de') return `${make} ${model} ${code}: ${title} Diagnose`;
+  if (locale === 'es') return `${make} ${model} ${code}: diagnóstico de ${title}`;
+  if (locale === 'fr') return `${make} ${model} ${code} : diagnostic ${title}`;
+  return `${make} ${model} ${code}: ${title} diagnosis`;
+}
+
+function titleCase(value) {
+  return String(value).split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
+}
+
+function fitSeoText(value, maxLength) {
+  const clean = value.replace(/\s+/g, ' ').trim();
+  if (clean.length <= maxLength) return clean;
+  const sliced = clean.slice(0, maxLength - 1);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return `${(lastSpace > 42 ? sliced.slice(0, lastSpace) : sliced).trim()}...`;
+}
+
+function checkVehicleCodeSeoUniqueness() {
+  const locales = ['en', 'tr', 'de', 'es', 'fr'];
+  const titleMap = new Map();
+  const h1Map = new Map();
+  const sampledCodes = Array.from(new Set([
+    'P0230',
+    'P0213',
+    'P0420',
+    'P0300',
+    'P0171',
+    'P0102',
+    ...validRoutes.validCodes.slice(0, 80),
+  ].filter(code => baseCodes[code])));
+
+  for (const locale of locales) {
+    for (const make of validRoutes.validMakes) {
+      const models = validRoutes.validModels[make] || [];
+      for (const model of models) {
+        const capMake = titleCase(make);
+        const capModel = titleCase(model);
+        for (const code of sampledCodes) {
+          const title = getText(baseCodes[code].title, locale) || code;
+          const meta = fitSeoText(codeMetaTitle(locale, code, capMake, capModel), 52);
+          const h1 = codeH1(locale, code, capMake, capModel, title);
+          const url = `/${locale}/${make}/${model}/${code.toLowerCase()}`;
+          const metaKey = normalized(meta);
+          const h1Key = normalized(h1);
+          if (!titleMap.has(metaKey)) titleMap.set(metaKey, []);
+          if (!h1Map.has(h1Key)) h1Map.set(h1Key, []);
+          titleMap.get(metaKey).push(url);
+          h1Map.get(h1Key).push(url);
+        }
+      }
+    }
+  }
+
+  for (const [title, urls] of titleMap.entries()) {
+    if (urls.length > 1) fail(`Duplicate vehicle-code meta title "${title}" on URLs: ${urls.slice(0, 8).join(', ')}`);
+  }
+  for (const [h1, urls] of h1Map.entries()) {
+    if (urls.length > 1) fail(`Duplicate vehicle-code H1 "${h1}" on URLs: ${urls.slice(0, 8).join(', ')}`);
+  }
+}
+
 checkObdCodes();
 checkVehicleSpecTitles();
+checkVehicleCodeSeoUniqueness();
 
 if (failures.length) {
   console.error('SEO uniqueness / OBD data check failed:');

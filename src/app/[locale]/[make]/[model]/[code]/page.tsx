@@ -8,6 +8,7 @@ import AdSlot from '@/components/AdSlot';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnosticSteps, getLocalizedSystemContent, getModelSpecificInsight, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
+import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -36,11 +37,31 @@ function getCodeMetaDescription(locale: string, code: string, make: string, mode
 }
 
 function getCodeMetaTitle(locale: string, code: string, make: string, model: string) {
-  if (locale === 'tr') return `${make} ${model} ${code} Arıza Kodu - OBD2HQ`;
-  if (locale === 'de') return `${make} ${model} ${code} Fehlercode - OBD2HQ`;
-  if (locale === 'es') return `${make} ${model} ${code} Código OBD2 - OBD2HQ`;
-  if (locale === 'fr') return `${make} ${model} ${code} Code défaut - OBD2HQ`;
-  return `${make} ${model} ${code} Code Guide - OBD2HQ`;
+  if (locale === 'tr') return `${make} ${model} ${code} Arıza Kodu Teşhisi`;
+  if (locale === 'de') return `${make} ${model} ${code} Fehlercode Diagnose`;
+  if (locale === 'es') return `${make} ${model} ${code} diagnóstico OBD2`;
+  if (locale === 'fr') return `${make} ${model} ${code} diagnostic OBD2`;
+  return `${make} ${model} ${code} Diagnostic Guide`;
+}
+
+function normalizeCodeTitle(code: string, title: string) {
+  const cleaned = title
+    .replace(new RegExp(`^${code}\\s*[:-]?\\s*`, 'i'), '')
+    .replace(/\bOBD2?\b\s*/gi, '')
+    .replace(/\b(ariza|arıza|kodu|fehlercode|error code|codigo|código|code)\b/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return cleaned;
+}
+
+function getVehicleCodeH1(locale: string, make: string, model: string, code: string, title: string) {
+  const normalizedTitle = normalizeCodeTitle(code, title);
+  const cleanTitle = normalizedTitle || (locale === 'tr' ? 'detaylı' : locale === 'de' ? 'detaillierte' : locale === 'es' ? 'guía detallada' : locale === 'fr' ? 'guide détaillé' : 'detailed guide');
+  if (locale === 'tr') return `${make} ${model} ${code}: ${cleanTitle} arıza teşhisi`;
+  if (locale === 'de') return `${make} ${model} ${code}: ${cleanTitle} Diagnose`;
+  if (locale === 'es') return `${make} ${model} ${code}: diagnóstico de ${cleanTitle}`;
+  if (locale === 'fr') return `${make} ${model} ${code} : diagnostic ${cleanTitle}`;
+  return `${make} ${model} ${code}: ${cleanTitle} diagnosis`;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -86,6 +107,8 @@ export default async function CodePage({ params }: PageProps) {
   const repairTiers = getRepairTiers(upperCode, obdData.estimatedCost, locale);
   const pageCopy = getCodePageCopy(locale);
   const modelInsight = getModelSpecificInsight(make, model, upperCode, locale);
+  const registryEntry = getObdGoldRegistryEntry(upperCode);
+  const registryCopy = getLocalizedRegistryCopy(locale, registryEntry, capMake, capModel);
   const clusterLinks = getClusterLinks(locale, make, model, upperCode);
   const localizedCauses = obdData.causes.map(cause => cause.startsWith('cause_') ? tDb(cause) : cause);
   const localizedSymptoms = obdData.symptoms.map(symptom => symptom.startsWith('symp_') ? tDb(symptom) : symptom);
@@ -222,7 +245,7 @@ export default async function CodePage({ params }: PageProps) {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              {tExtra('codeTitle', { code: upperCode, title: locTitle })}
+              {getVehicleCodeH1(locale, capMake, capModel, upperCode, locTitle)}
             </h1>
 
 
@@ -254,16 +277,20 @@ export default async function CodePage({ params }: PageProps) {
 
         <div className="lg:col-span-2 space-y-12">
 
-          {!obdData.isEnriched && (
-            <div className="bg-slate-800/50 border border-amber-500/30 rounded-2xl p-6 shadow-lg mb-8">
-              <div className="flex items-start">
-                <AlertCircle className="w-6 h-6 text-amber-500 mr-3 shrink-0 mt-0.5" />
-                <p className="text-slate-300 leading-relaxed text-sm">
-                  {t('genericDisclaimer', { make: capMake, model: capModel, code: upperCode }) || `Note: We do not currently have verified model-specific diagnostic data for the ${capMake} ${capModel}. The symptoms and fixes listed below are the standard generic OBD2 guidelines for the ${upperCode} code. Always consult a factory service manual before replacing parts.`}
-                </p>
+          <section className="bg-slate-800/50 border border-blue-500/30 rounded-2xl p-6 shadow-lg mb-8">
+            <div className="flex items-start">
+              <BadgeCheck className="w-6 h-6 text-blue-400 mr-3 shrink-0 mt-0.5" />
+              <div>
+                <h2 className="text-lg font-bold text-white mb-2">{registryCopy.title}</h2>
+                <p className="text-slate-300 leading-relaxed text-sm">{registryCopy.source}</p>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-xl bg-white/5 px-4 py-3 text-sm text-slate-300">{registryCopy.family}</div>
+                  <div className="rounded-xl bg-white/5 px-4 py-3 text-sm text-slate-300">{registryCopy.standard}</div>
+                </div>
+                <p className="mt-3 text-sm text-slate-400">{registryCopy.gold}</p>
               </div>
             </div>
-          )}
+          </section>
 
           <section className="prose prose-invert max-w-none">
             <h2 className="text-2xl font-bold text-white flex items-center m-0 mb-4">
