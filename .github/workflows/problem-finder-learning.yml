@@ -25,6 +25,7 @@ jobs:
           KV_REST_API_URL: ${{ secrets.KV_REST_API_URL }}
           KV_REST_API_TOKEN: ${{ secrets.KV_REST_API_TOKEN }}
       - run: npm run check:problem-finder
+      - run: npm run check:seo-uniqueness-obd
       - run: npm run lint
       - run: npm run build
       - name: Commit learning updates

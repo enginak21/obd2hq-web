@@ -27,7 +27,7 @@ const rawVehicleSpecRecords: VehicleSpecRecord[] = [
 ];
 
 export const allVehicleSpecRecords: VehicleSpecRecord[] = rawVehicleSpecRecords.filter(isCompleteVehicleSpecRecord);
-export const indexedVehicleSpecRecords: VehicleSpecRecord[] = allVehicleSpecRecords.filter(isPublishableVehicleSpecRecord);
+export const indexedVehicleSpecRecords: VehicleSpecRecord[] = dedupeVehicleSpecRecords(allVehicleSpecRecords.filter(isPublishableVehicleSpecRecord));
 export const goldVehicleSpecRecords: VehicleSpecRecord[] = indexedVehicleSpecRecords.filter(item => getVehicleSpecQuality(item) === 'gold');
 
 export function isCompleteVehicleSpecRecord(item: VehicleSpecRecord) {
@@ -103,4 +103,42 @@ export function getVehicleSpecStaticParams() {
     year: String(item.year),
     variant: item.slug,
   }));
+}
+
+function dedupeVehicleSpecRecords(items: VehicleSpecRecord[]) {
+  const bestByTitle = new Map<string, VehicleSpecRecord>();
+
+  for (const item of items) {
+    const key = getVehicleSpecTitleKey(item);
+    const existing = bestByTitle.get(key);
+    if (!existing || getVehicleSpecDedupeScore(item) > getVehicleSpecDedupeScore(existing)) {
+      bestByTitle.set(key, item);
+    }
+  }
+
+  return Array.from(bestByTitle.values());
+}
+
+function getVehicleSpecTitleKey(item: VehicleSpecRecord) {
+  const engineCodes = item.engineCodes.slice(0, 2).join('/').toLowerCase();
+  const chassis = (item.chassisCode || item.generation).toLowerCase();
+  const trimLabel = item.trim && item.trim !== 'technical-profile' ? item.trim.toLowerCase() : '';
+  return [
+    item.year,
+    item.displayName.toLowerCase(),
+    trimLabel,
+    engineCodes,
+    chassis,
+  ].filter(Boolean).join('|');
+}
+
+function getVehicleSpecDedupeScore(item: VehicleSpecRecord) {
+  let score = 0;
+  if (!item.slug.includes('technical-profile')) score += 50;
+  if (item.trim && item.trim !== 'technical-profile') score += 30;
+  if (item.model === item.slug || item.slug.startsWith(item.model)) score += 20;
+  if (getVehicleSpecQuality(item) === 'gold') score += 10;
+  score += Math.min(10, item.commonProblems.length);
+  score += Math.min(10, item.firstChecks.length);
+  return score;
 }
