@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { getTranslations } from 'next-intl/server';
 import { AlertTriangle, BadgeCheck, Gauge, Link2, SearchCheck } from 'lucide-react';
 import { baseCodes, cars, getLocalized, type OBD2Code } from '@/data/db';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
@@ -38,6 +39,76 @@ function getVehicleTargets(code: string) {
   }));
 }
 
+function asLocalizedArray(value: unknown, locale: string) {
+  if (Array.isArray(value)) return value;
+  if (value && typeof value === 'object') {
+    const record = value as Record<string, string[]>;
+    return record[locale] || record.en || [];
+  }
+  return [];
+}
+
+function codeHubLabels(locale: string) {
+  if (locale === 'tr') {
+    return {
+      firstChecks: 'İlk kontroller',
+      relatedCodes: 'İlgili kodlar',
+      symptoms: 'Yaygın belirtiler:',
+      causes: 'Olası nedenler:',
+      symptomFallback: 'Motor arıza lambası, sürüşte değişiklik',
+      causeFallback: 'Kablo, soket, sensör veya sistem arızası',
+      diagnosticPath: 'teşhis sırası',
+      verifyRepair: 'Onarımdan önce doğrula',
+    };
+  }
+  if (locale === 'de') {
+    return {
+      firstChecks: 'Erste Prüfungen',
+      relatedCodes: 'Verwandte Codes',
+      symptoms: 'Häufige Symptome:',
+      causes: 'Mögliche Ursachen:',
+      symptomFallback: 'Motorkontrollleuchte, verändertes Fahrverhalten',
+      causeFallback: 'Kabel, Stecker, Sensor oder Systemfehler',
+      diagnosticPath: 'Diagnoseablauf',
+      verifyRepair: 'Vor der Reparatur prüfen',
+    };
+  }
+  if (locale === 'es') {
+    return {
+      firstChecks: 'Primeras revisiones',
+      relatedCodes: 'Códigos relacionados',
+      symptoms: 'Síntomas comunes:',
+      causes: 'Causas probables:',
+      symptomFallback: 'Luz de motor, cambio en el comportamiento del vehículo',
+      causeFallback: 'Cableado, conector, sensor o falla del sistema',
+      diagnosticPath: 'ruta de diagnóstico',
+      verifyRepair: 'Verificar antes de reparar',
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      firstChecks: 'Premiers contrôles',
+      relatedCodes: 'Codes associés',
+      symptoms: 'Symptômes fréquents :',
+      causes: 'Causes probables :',
+      symptomFallback: 'Voyant moteur, changement de comportement',
+      causeFallback: 'Câblage, connecteur, capteur ou défaut système',
+      diagnosticPath: 'parcours de diagnostic',
+      verifyRepair: 'Vérifier avant réparation',
+    };
+  }
+  return {
+    firstChecks: 'First checks',
+    relatedCodes: 'Related codes',
+    symptoms: 'Common symptoms:',
+    causes: 'Likely causes:',
+    symptomFallback: 'Check engine light, drivability change',
+    causeFallback: 'Wiring, connector, sensor or system fault',
+    diagnosticPath: 'diagnostic path',
+    verifyRepair: 'Verify before repair',
+  };
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, code } = await params;
   const upperCode = code.toUpperCase();
@@ -58,13 +129,17 @@ export default async function CodeHubPage({ params }: PageProps) {
   const rawCode = applyGoldObdFallback({ ...baseCode, code: upperCode });
 
   const copy = getCodeHubCopy(locale, upperCode);
+  const labels = codeHubLabels(locale);
+  const tDb = await getTranslations({ locale, namespace: 'DB' });
   const registryCopy = getLocalizedRegistryCopy(locale, getObdGoldRegistryEntry(upperCode), 'OBD2', upperCode);
   const rawTitle = getLocalized(rawCode.title, locale) || upperCode;
   const rawDescription = getLocalized(rawCode.description, locale) || copy.intro;
   const localizedTitle = getLocalizedCodeTitle(upperCode, locale, String(rawTitle));
   const localizedDescription = getLocalizedCodeDescription(upperCode, locale, String(rawDescription));
-  const causes = Array.isArray(rawCode.causes) ? rawCode.causes.slice(0, 5) : [];
-  const symptoms = Array.isArray(rawCode.symptoms) ? rawCode.symptoms.slice(0, 5) : [];
+  const causes = Array.isArray(rawCode.causes) ? rawCode.causes.slice(0, 6).map(cause => cause.startsWith('cause_') ? tDb(cause) : cause) : [];
+  const symptoms = Array.isArray(rawCode.symptoms) ? rawCode.symptoms.slice(0, 6).map(symptom => symptom.startsWith('symp_') ? tDb(symptom) : symptom) : [];
+  const diagnosticSteps = asLocalizedArray(rawCode.diagnosticSteps, locale).slice(0, 6);
+  const commonFixes = asLocalizedArray(rawCode.commonFixes, locale).slice(0, 4);
   const relatedCodes = getRelatedCodes(upperCode, Object.keys(baseCodes as Record<string, unknown>), 6);
   const vehicleTargets = getVehicleTargets(upperCode);
 
@@ -133,13 +208,13 @@ export default async function CodeHubPage({ params }: PageProps) {
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl bg-black/20 p-4">
-              <h2 className="text-lg font-bold text-white">First checks</h2>
+              <h2 className="text-lg font-bold text-white">{labels.firstChecks}</h2>
               <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
                 {copy.firstChecks.map(item => <li key={item}>- {item}</li>)}
               </ul>
             </div>
             <div className="rounded-xl bg-black/20 p-4">
-              <h2 className="text-lg font-bold text-white">Related codes</h2>
+              <h2 className="text-lg font-bold text-white">{labels.relatedCodes}</h2>
               <div className="mt-3 flex flex-wrap gap-2">
                 {relatedCodes.map(related => (
                   <Link key={related} href={getCodeHubPath(locale, related)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-blue-100 hover:bg-blue-500/20">
@@ -162,12 +237,36 @@ export default async function CodeHubPage({ params }: PageProps) {
             <h2 className="flex items-center gap-2 text-xl font-bold text-white"><Gauge size={20} /> Signals to compare</h2>
             <div className="mt-4 grid gap-3 text-sm text-slate-300">
               <div><span className="font-semibold text-slate-100">System:</span> {copy.system}</div>
-              <div><span className="font-semibold text-slate-100">Common symptoms:</span> {symptoms.join(', ') || 'Check engine light, drivability change'}</div>
-              <div><span className="font-semibold text-slate-100">Likely causes:</span> {causes.join(', ') || 'Wiring, connector, sensor or system fault'}</div>
+              <div><span className="font-semibold text-slate-100">{labels.symptoms}</span> {symptoms.join(', ') || labels.symptomFallback}</div>
+              <div><span className="font-semibold text-slate-100">{labels.causes}</span> {causes.join(', ') || labels.causeFallback}</div>
             </div>
           </section>
         </aside>
       </div>
+
+      <section className="mx-auto max-w-6xl px-6 pt-8">
+        <div className="grid gap-6 lg:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
+            <h2 className="text-2xl font-bold text-white">{upperCode} {labels.diagnosticPath}</h2>
+            <ol className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+              {diagnosticSteps.map((step, index) => (
+                <li key={step} className="flex gap-3">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-xs font-bold text-blue-100">{index + 1}</span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
+            <h2 className="text-2xl font-bold text-white">{labels.verifyRepair}</h2>
+            <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+              {commonFixes.map((fix) => (
+                <li key={fix}>- {fix}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-6 pt-8">
         <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
