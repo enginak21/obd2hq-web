@@ -1,5 +1,6 @@
 import baseCodes from './base_codes.json';
 import aiData from './ai_enriched_data.json';
+import { applyGoldObdFallback } from './obd-gold-content';
 
 export type MultiLangString = string | {
   en: string;
@@ -154,5 +155,5 @@ export function getHybridObdData(make: string, model: string, code: string): OBD
     };
   }
 
-  return { ...hybridData, isEnriched };
+  return { ...applyGoldObdFallback(hybridData), isEnriched };
 }

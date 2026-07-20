@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation';
 import { AlertTriangle, BadgeCheck, Gauge, Link2, SearchCheck } from 'lucide-react';
 import { baseCodes, cars, getLocalized, type OBD2Code } from '@/data/db';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
+import { applyGoldObdFallback } from '@/data/obd-gold-content';
+import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
 import { getRelatedCodes } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, isKnownCode } from '@/data/gsc-seo';
@@ -51,10 +53,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CodeHubPage({ params }: PageProps) {
   const { locale, code } = await params;
   const upperCode = code.toUpperCase();
-  const rawCode = (baseCodes as Record<string, Partial<OBD2Code>>)[upperCode];
-  if (!rawCode) notFound();
+  const baseCode = (baseCodes as Record<string, Partial<OBD2Code>>)[upperCode];
+  if (!baseCode) notFound();
+  const rawCode = applyGoldObdFallback({ ...baseCode, code: upperCode });
 
   const copy = getCodeHubCopy(locale, upperCode);
+  const registryCopy = getLocalizedRegistryCopy(locale, getObdGoldRegistryEntry(upperCode), 'OBD2', upperCode);
   const rawTitle = getLocalized(rawCode.title, locale) || upperCode;
   const rawDescription = getLocalized(rawCode.description, locale) || copy.intro;
   const localizedTitle = getLocalizedCodeTitle(upperCode, locale, String(rawTitle));
@@ -117,6 +121,14 @@ export default async function CodeHubPage({ params }: PageProps) {
             <div>
               <h2 className="text-2xl font-bold text-white">{localizedTitle}</h2>
               <p className="mt-3 leading-7 text-slate-300">{localizedDescription}</p>
+              <div className="mt-5 rounded-xl border border-blue-400/20 bg-blue-500/10 p-4">
+                <h2 className="text-base font-bold text-blue-100">{registryCopy.title}</h2>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{registryCopy.source}</p>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                  <span className="rounded-lg bg-black/20 px-3 py-2 text-sm text-slate-300">{registryCopy.family}</span>
+                  <span className="rounded-lg bg-black/20 px-3 py-2 text-sm text-slate-300">{registryCopy.standard}</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">

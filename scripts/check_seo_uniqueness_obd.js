@@ -7,7 +7,7 @@ const generatedVehicleSpecs = require(path.join(ROOT, 'src/data/generated/vehicl
 const validRoutes = require(path.join(ROOT, 'src/data/valid_routes.json'));
 const messages = require(path.join(ROOT, 'messages/en.json'));
 
-const badChars = /Ã|Ä|Å|�/;
+const badChars = /\u00c3|\u00c4|\u00c5|\ufffd/;
 const dbKeys = new Set(Object.keys(messages.DB || {}));
 const failures = [];
 
@@ -166,12 +166,28 @@ function codeMetaTitle(locale, code, make, model) {
   return `${make} ${model} ${code} Diagnostic Guide`;
 }
 
+function normalizeCodeTitle(code, title, locale) {
+  const cleaned = String(title || '')
+    .replace(new RegExp(`^${code}\\s*[:-]?\\s*`, 'i'), '')
+    .replace(/\bOBD2?\b\s*/gi, '')
+    .replace(/\b(ariza|arıza|kodu|fehlercode|error code|codigo|código|code)\b/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  if (cleaned) return cleaned;
+  if (locale === 'tr') return 'detaylı';
+  if (locale === 'de') return 'detaillierte';
+  if (locale === 'es') return 'guía detallada';
+  if (locale === 'fr') return 'guide détaillé';
+  return 'detailed guide';
+}
+
 function codeH1(locale, code, make, model, title) {
-  if (locale === 'tr') return `${make} ${model} ${code}: ${title} arıza teşhisi`;
-  if (locale === 'de') return `${make} ${model} ${code}: ${title} Diagnose`;
-  if (locale === 'es') return `${make} ${model} ${code}: diagnóstico de ${title}`;
-  if (locale === 'fr') return `${make} ${model} ${code} : diagnostic ${title}`;
-  return `${make} ${model} ${code}: ${title} diagnosis`;
+  const cleanTitle = normalizeCodeTitle(code, title, locale);
+  if (locale === 'tr') return `${make} ${model} ${code}: ${cleanTitle} arıza teşhisi`;
+  if (locale === 'de') return `${make} ${model} ${code}: ${cleanTitle} Diagnose`;
+  if (locale === 'es') return `${make} ${model} ${code}: diagnóstico de ${cleanTitle}`;
+  if (locale === 'fr') return `${make} ${model} ${code} : diagnostic ${cleanTitle}`;
+  return `${make} ${model} ${code}: ${cleanTitle} diagnosis`;
 }
 
 function titleCase(value) {
@@ -197,7 +213,7 @@ function checkVehicleCodeSeoUniqueness() {
     'P0300',
     'P0171',
     'P0102',
-    ...validRoutes.validCodes.slice(0, 80),
+    ...validRoutes.validCodes,
   ].filter(code => baseCodes[code])));
 
   for (const locale of locales) {

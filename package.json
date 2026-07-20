@@ -12,6 +12,7 @@
     "check:symptom-content": "node scripts/check_symptom_content_quality.js",
     "check:gsc-seo": "node scripts/check_gsc_seo.js",
     "check:seo-uniqueness-obd": "node scripts/check_seo_uniqueness_obd.js",
+    "audit:obd-gold": "node scripts/audit_obd_gold_coverage.js",
     "problem-finder:learn": "node scripts/process_problem_finder_queries.js",
     "symptoms:generate": "node scripts/generate_symptom_content.js",
     "catalog:vehicles": "node scripts/build_vehicle_catalog.js",
