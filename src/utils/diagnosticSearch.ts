@@ -22,7 +22,7 @@ export function normalizeSearchText(value: string) {
 
 export function normalizeCode(value: string) {
   const compact = value.toUpperCase().replace(/[^A-Z0-9]/g, '');
-  const match = compact.match(/[PCBU][0-9]{4}/);
+  const match = compact.match(/[PCBU][0-9A-F]{4}/);
   return match ? match[0] : null;
 }
 

@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-20T22:47:41.411Z",
-  "totalCodes": 1938,
-  "sitemapKnownCodes": 1938,
+  "generatedAt": "2026-07-20T23:11:22.341Z",
+  "totalCodes": 2223,
+  "sitemapKnownCodes": 2223,
   "families": {
     "P": 1900,
-    "C": 8,
-    "B": 10,
-    "U": 20,
+    "C": 129,
+    "B": 17,
+    "U": 177,
     "other": 0
   },
   "missingFamilies": [],
   "systems": {
-    "body": 10,
-    "chassis": 8,
+    "body": 17,
+    "chassis": 129,
     "sensor": 40,
     "powertrain": 1200,
     "injector": 70,
@@ -22,10 +22,10 @@
     "evap": 20,
     "control": 200,
     "transmission": 200,
-    "network": 20
+    "network": 177
   },
   "invalidCodes": [],
-  "rawGoldReady": 71,
+  "rawGoldReady": 356,
   "runtimeGoldFallbackNeeded": 1867,
   "runtimeGoldFallbackSample": [
     "P0103",
@@ -78,7 +78,7 @@
       "U": "seed_published_expand_next"
     },
     "goldAcceptanceCriteria": [
-      "Code key must match /^[PCBU][0-9]{4}$/.",
+      "Code key must match /^[PCBU][0-9A-F]{4}$/.",
       "Meaning must come from a verified diagnostic reference or a reviewed manufacturer-specific source note.",
       "Each locale must have a natural title, meta description, plain-language explanation and FAQ copy.",
       "Each code must include symptoms, likely causes, first checks, diagnostic steps, safe-to-drive guidance, related codes and repair verification.",

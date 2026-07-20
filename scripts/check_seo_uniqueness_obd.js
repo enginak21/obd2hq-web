@@ -31,7 +31,7 @@ function checkObdCodes() {
   const descriptionMap = new Map();
 
   for (const [code, data] of Object.entries(baseCodes)) {
-    if (!/^[PCBU][0-9]{4}$/.test(code)) fail(`Invalid OBD code key: ${code}`);
+    if (!/^[PCBU][0-9A-F]{4}$/.test(code)) fail(`Invalid OBD code key: ${code}`);
 
     const title = getText(data.title);
     const description = getText(data.description);

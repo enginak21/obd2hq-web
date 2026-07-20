@@ -124,7 +124,7 @@ export function getOpportunityCodes(opportunities: GscOpportunity[]) {
 }
 
 export function extractCodes(value: string) {
-  return Array.from(value.toUpperCase().matchAll(/\b[PCBU]\s?([0-9]{4})\b/g))
+  return Array.from(value.toUpperCase().matchAll(/\b[PCBU]\s?([0-9A-F]{4})\b/g))
     .map(match => `${match[0][0]}${match[1]}`.toUpperCase());
 }
 

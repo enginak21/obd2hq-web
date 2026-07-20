@@ -57,7 +57,7 @@ function getDate(daysAgo) {
 }
 
 function extractCodes(query) {
-  return Array.from(query.toUpperCase().matchAll(/\b[PCBU]\s?([0-9]{4})\b/g)).map(match => `${match[0][0]}${match[1]}`);
+  return Array.from(query.toUpperCase().matchAll(/\b[PCBU]\s?([0-9A-F]{4})\b/g)).map(match => `${match[0][0]}${match[1]}`);
 }
 
 function extractMake(query) {

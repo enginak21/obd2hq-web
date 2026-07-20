@@ -49,7 +49,7 @@ const runtimeGoldFallbackNeeded = [];
 const invalidCodes = [];
 
 for (const code of codes) {
-  if (!/^[PCBU][0-9]{4}$/.test(code)) invalidCodes.push(code);
+  if (!/^[PCBU][0-9A-F]{4}$/.test(code)) invalidCodes.push(code);
   families[code[0]] = (families[code[0]] || 0) + 1;
   const system = getSystem(code);
   systems[system] = (systems[system] || 0) + 1;
