@@ -74,16 +74,16 @@ export default async function SearchPage({
     ? `/${locale}/${parsed.make}/${parsed.model}${parsed.code ? `/${parsed.code.toLowerCase()}` : ''}`
     : null;
 
-  // 1. Search for a specific code
+
   const exactCodeMatch = normalizedCode ? Object.keys(codes).find(c => c === normalizedCode) : null;
   const exactCodeTitle = exactCodeMatch
     ? getLocalizedCodeTitle(exactCodeMatch, locale, asString(getLocalized(codes[exactCodeMatch].title, locale), exactCodeMatch))
     : '';
   const isWarningIntent = /check engine|warning|light|dashboard|ikaz|lamba|motor ariza/i.test(rawQuery);
-  
-  // 2. Search for models
+
+
   const matchedModels: { make: string, model: string }[] = [];
-  
+
   if (query.length > 2) {
     cars.forEach(car => {
       if (car.make.toLowerCase().includes(query)) {
@@ -209,8 +209,8 @@ export default async function SearchPage({
             <h3 className="text-xl font-bold text-white mb-4">{t('selectCar', { code: exactCodeMatch })}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
               {popularMakes.map((car) => (
-                <Link 
-                  key={car.make} 
+                <Link
+                  key={car.make}
                   href={`/${locale}/${car.make}`}
                   className="bg-[#131b2f] border border-white/5 hover:border-blue-500/50 rounded-2xl p-4 flex items-center justify-between text-sm font-bold text-slate-300 hover:text-white transition-all"
                 >
@@ -246,8 +246,8 @@ export default async function SearchPage({
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {matchedModels.map((m, idx) => (
-                <Link 
-                  key={idx} 
+                <Link
+                  key={idx}
                   href={`/${locale}/${m.make}/${m.model}`}
                   className="bg-[#131b2f] border border-white/5 hover:border-blue-500/50 rounded-2xl p-5 flex flex-col transition-all group"
                 >

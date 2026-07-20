@@ -50,30 +50,30 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
-      
-      {/* Premium Hero Section with Glassmorphism */}
+
+
       <div className="hero-visual hero-visual-home relative overflow-hidden border-b border-white/5 w-full">
-        {/* Background Gradients */}
+
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
-        
+
         <div className="relative max-w-7xl mx-auto px-6 pt-10 pb-16 sm:pt-14 sm:pb-20 min-h-[600px] sm:min-h-[620px] flex flex-col items-center text-center">
           <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-5 backdrop-blur-md shadow-xl">
             <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-pulse"></span>
             <span className="text-sm font-medium text-slate-300 tracking-wide">{t('databaseUpdated')}</span>
           </div>
-          
+
           <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-slate-400">
             {t('title1')} <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>
-          
+
           <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mb-4 font-light leading-relaxed">
             {t('subtitle')}
           </p>
 
           <SmartSearch vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
-          
+
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-300">
               <ShieldCheck className="w-5 h-5 text-green-400" />
@@ -93,11 +93,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
 
-      {/* Main Content Area (Layout with Sidebar Ads) */}
+
       <div className="w-full max-w-[1600px] flex justify-center items-start">
-        
-        {/* Left Ad */}
-        {/* Left Ad */}
+
+
         <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
           {t('leftAd')}
         </aside>
@@ -113,8 +112,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {cars.slice(0, 15).map((car) => (
-              <Link 
-                key={car.make} 
+              <Link
+                key={car.make}
                 href={`/${locale}/${car.make}`}
                 className="group flex flex-col items-center justify-center bg-[#131b2f] border border-white/5 hover:border-blue-500/40 hover:bg-[#1a233a] rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)]"
               >
@@ -129,23 +128,21 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
 
           <div className="mt-8 flex justify-center">
-            <Link 
-              href={`/${locale}/search`} 
+            <Link
+              href={`/${locale}/search`}
               className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-slate-300 hover:text-white transition-all font-medium flex items-center"
             >
               {copy.viewAllMakes}
             </Link>
           </div>
 
-          {/* Bottom Ad */}
-          {/* Bottom Ad */}
+
           <div className="w-full h-[90px] bg-[#131b2f] border border-white/5 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide mt-16 shadow-inner hidden sm:flex">
             {t('leaderboardAd')}
           </div>
         </div>
 
-        {/* Right Ad */}
-        {/* Right Ad */}
+
         <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
           {t('rightAd')}
         </aside>

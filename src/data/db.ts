@@ -25,7 +25,7 @@ export interface OBD2Code {
   causes: string[];
   fixDifficulty: string;
   estimatedCost: string;
-  // Deep Enrichment Fields
+
   diagnosticSteps?: MultiLangArray;
   commonFixes?: MultiLangArray;
   drivingSafety?: {
@@ -119,7 +119,7 @@ function normalizeDifficulty(value: unknown, fallback: string) {
 export function getHybridObdData(make: string, model: string, code: string): OBD2Code | null {
   const upperCode = code.toUpperCase();
   const baseData = codes[upperCode];
-  
+
   if (!baseData) return null;
 
   let hybridData: OBD2Code = {

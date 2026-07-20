@@ -22,7 +22,7 @@ const DISPLAY_PRIORITY_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.ha
 export async function generateStaticParams() {
   const params: Array<{ locale: string; make: string }> = [];
   const locales = ['en', 'de', 'es', 'tr', 'fr'];
-  
+
   for (const locale of locales) {
     for (const car of cars) {
       params.push({ locale, make: car.make });
@@ -35,12 +35,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const resolvedParams = await params;
   const { make } = resolvedParams;
   const carData = cars.find(c => c.make === make);
-  
+
   if (!carData) return { title: 'Not Found' };
-  
+
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
-  
-  return { 
+
+  return {
     title: fitSeoTitle(`${capMake} OBD2 Codes & Dashboard Warning Lights`),
     description: fitSeoDescription(`Complete diagnostic guide for ${capMake} OBD2 codes, warning lights, symptoms and safe first repair checks.`),
     alternates: getAlternates(make, resolvedParams.locale)
@@ -53,7 +53,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   setRequestLocale(locale);
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
   const tMake = await getTranslations({ locale, namespace: 'MakePage' });
-  
+
   const carData = cars.find(c => c.make === make);
   if (!carData) notFound();
 
@@ -129,8 +129,8 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {carData.models.map((model) => (
-            <Link 
-              key={model} 
+            <Link
+              key={model}
               href={`/${locale}/${make}/${model}`}
               className="bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl p-5 flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)] group"
             >
@@ -151,8 +151,8 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {DISPLAY_PRIORITY_CODES.slice(0, 8).map((code) => (
-              <Link 
-                key={code} 
+              <Link
+                key={code}
                 href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`}
                 className="group flex items-center justify-center py-4 bg-[#131b2f] border border-red-500/10 hover:border-red-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(239,68,68,0.2)]"
               >

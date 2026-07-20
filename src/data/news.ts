@@ -34,11 +34,11 @@ export function getNewsCategoryKey(category: string): string {
 
 export function getAllNews(): NewsArticle[] {
   const newsDir = path.join(process.cwd(), 'src', 'data', 'news');
-  
+
   if (!fs.existsSync(newsDir)) return [];
-  
+
   const files = fs.readdirSync(newsDir).filter(file => file.endsWith('.json'));
-  
+
   const articles: NewsArticle[] = files.map(file => {
     const filePath = path.join(newsDir, file);
     const content = fs.readFileSync(filePath, 'utf-8');
@@ -49,8 +49,8 @@ export function getAllNews(): NewsArticle[] {
       return null;
     }
   }).filter((a): a is NewsArticle => a !== null);
-  
-  // Sort by date descending
+
+
   return articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 

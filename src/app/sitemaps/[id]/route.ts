@@ -59,7 +59,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
   const resolvedParams = await context.params;
   const numericId = parseInt(resolvedParams.id, 10);
   const identifiers = getSitemapIdentifiers();
-  
+
   if (isNaN(numericId) || numericId < 0 || numericId >= identifiers.length) {
     return new NextResponse('Not found', { status: 404 });
   }

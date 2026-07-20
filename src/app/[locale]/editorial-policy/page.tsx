@@ -48,7 +48,7 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
       </header>
 
       <div className="max-w-3xl mx-auto px-6 mt-16 space-y-12 prose prose-invert prose-lg max-w-none">
-        
+
         <section>
           <h2 className="flex items-center text-2xl font-bold text-white mb-4">
             <ShieldCheck className="w-6 h-6 mr-3 text-blue-500" />

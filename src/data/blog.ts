@@ -17,7 +17,7 @@ const postsEN: BlogPost[] = [
     content: `
       <h2>Why You Need an OBD2 Scanner</h2>
       <p>If your Check Engine Light (CEL) comes on, taking your car to a mechanic just to read the code can cost anywhere from $50 to $150. An OBD2 scanner pays for itself the first time you use it.</p>
-      
+
       <h3>1. BlueDriver Bluetooth Pro</h3>
       <p><strong>Best Overall</strong><br/>The BlueDriver is a favorite among DIY mechanics. It connects directly to your smartphone via Bluetooth and offers a massive database of verified fixes. <br/><span class="text-slate-400 font-semibold">Affiliate link pending editorial review</span></p>
 
@@ -151,7 +151,7 @@ const postsTR: BlogPost[] = [
     content: `
       <h2>Neden Bir OBD2 Cihazına İhtiyacınız Var?</h2>
       <p>Motor Arıza Lambanız yandığında, sadece arıza kodunu okumak için tamirciye gitmek bile size ciddi bir masraf çıkarabilir. Bir OBD2 cihazı, ilk kullanımında kendini amorti eder.</p>
-      
+
       <h3>1. BlueDriver Bluetooth Pro</h3>
       <p><strong>Genel Klasmanda En İyisi</strong><br/>BlueDriver, araba tutkunları arasında favoridir. Bluetooth ile telefonunuza bağlanır ve devasa bir çözüm veritabanı sunar. <br/><span class="text-slate-400 font-semibold">Satın alma bağlantısı editoryal incelemeden sonra eklenecek</span></p>
 
@@ -243,7 +243,7 @@ const postsDE: BlogPost[] = [
     content: `
       <h2>Warum Sie einen OBD2-Scanner brauchen</h2>
       <p>Wenn Ihre Motorkontrollleuchte aufleuchtet, kann es Sie viel Geld kosten, nur um den Code auslesen zu lassen. Ein OBD2-Scanner macht sich schnell bezahlt.</p>
-      
+
       <h3>1. BlueDriver Bluetooth Pro</h3>
       <p><strong>Bester insgesamt</strong><br/>Der BlueDriver verbindet sich per Bluetooth mit Ihrem Smartphone. <br/><span class="text-slate-400 font-semibold">Kauflink folgt nach redaktioneller Prüfung</span></p>
 
@@ -263,7 +263,7 @@ const postsDE: BlogPost[] = [
     content: `
       <h2>Verständnis des P0420-Codes</h2>
       <p>Der Code P0420 bedeutet "Katalysatorsystem Wirkungsgrad unter Schwellenwert (Bank 1)".</p>
-      
+
       <h3>Häufige Ursachen</h3>
       <ul>
         <li>Defekter Sauerstoffsensor (O2)</li>
@@ -285,11 +285,11 @@ const postsDE: BlogPost[] = [
   }
 ];
 
-// Fallback translations for ES and FR
+
 const postsES = postsEN;
 const postsFR = postsEN;
 
-export const blogPosts: BlogPost[] = postsEN; // Keep for backward compatibility
+export const blogPosts: BlogPost[] = postsEN;
 
 export function getBlogPosts(locale: string): BlogPost[] {
   switch (locale) {

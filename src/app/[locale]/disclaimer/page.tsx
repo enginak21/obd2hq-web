@@ -22,7 +22,7 @@ export default async function DisclaimerPage({ params }: { params: Promise<{ loc
     <main className="min-h-[80vh] bg-[#0a0f1c] text-slate-200 font-sans p-6 md:p-24">
       <div className="max-w-3xl mx-auto prose prose-invert prose-blue">
         <h1 className="text-4xl font-bold text-white mb-8">{t('title')}</h1>
-        
+
         <div className="bg-amber-500/10 border border-amber-500/30 p-6 rounded-2xl mb-8 text-amber-200">
           <strong>{t('warning')}</strong> {t('warningText')}
         </div>

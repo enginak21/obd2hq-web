@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  
+
   return {
     title: "OBD2HQ - Ultimate Vehicle Diagnostic Code & Warning Light Database",
     description: "Search over 10,000 OBD2 diagnostic trouble codes and dashboard warning lights. Find symptoms, direct causes, and estimated repair costs for all car makes and models.",
@@ -63,14 +63,14 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
 
-  // Validate locale
+
   if (!supportedLocales.includes(locale)) {
     notFound();
   }
-  
+
   setRequestLocale(locale);
 
-  // Providing all messages to the client side is the easiest way to get started
+
   const messages = await getMessages();
   const clientMessages = {
     Navbar: messages.Navbar,

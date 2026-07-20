@@ -18,7 +18,7 @@ export default function AdSlot({ slot, label, className = '' }: AdSlotProps) {
       w.adsbygoogle = w.adsbygoogle || [];
       w.adsbygoogle.push({});
     } catch {
-      // Ad blockers or unavailable AdSense scripts should not break content rendering.
+
     }
   }, [client]);
 

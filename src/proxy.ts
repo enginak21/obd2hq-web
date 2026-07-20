@@ -45,19 +45,19 @@ export function proxy(request: NextRequest) {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 308);
   }
-  
-  // Static resources bypass
+
+
   if (
-    pathname.startsWith('/api/') || 
-    pathname.startsWith('/_next/') || 
-    pathname.includes('.') || 
+    pathname.startsWith('/api/') ||
+    pathname.startsWith('/_next/') ||
+    pathname.includes('.') ||
     pathname === '/sitemap.xml' ||
     pathname.startsWith('/sitemaps/')
   ) {
     return;
   }
 
-  // Force 404 on invalid data
+
   const segments = pathname.split('/').filter(Boolean);
   if (segments.length >= 2) {
     const locale = segments[0];
@@ -76,28 +76,28 @@ export function proxy(request: NextRequest) {
     if (locales.includes(locale) && problemFinderBaseSet.has(make) && problemFinderBasePaths[locale] !== make) {
       return notFoundResponse();
     }
-    
-    // Ignore static UI pages
+
+
     const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'car-problem-finder', 'ariza-bulucu', 'auto-problemfinder', 'buscador-fallas', 'trouver-panne', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
-    
+
     if (locales.includes(locale) && !isStaticPage) {
       const isWarningLightDetail = segments.length === 5 && segments[3] === 'lights';
       if (segments.length > 4 && !isWarningLightDetail) {
         return notFoundResponse();
       }
 
-      // It's a car data route
+
       if (!validRoutes.validMakes.includes(make)) {
         return notFoundResponse();
       }
-      
+
       if (segments.length >= 3) {
         const model = segments[2];
         const validModelsForMake = validRoutes.validModels[make as keyof typeof validRoutes.validModels] || [];
         if (!validModelsForMake.includes(model)) {
           return notFoundResponse();
         }
-        
+
         if (segments.length >= 4) {
           const code = segments[3];
           if (code !== 'lights') {

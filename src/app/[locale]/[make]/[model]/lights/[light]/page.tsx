@@ -17,21 +17,20 @@ interface PageProps {
 }
 
 
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const { locale, make, model, light } = resolvedParams;
-  
+
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   const rawLightData = warningLights[light];
   const lightData = rawLightData ? getLocalizedWarningLight(rawLightData, locale) : null;
-  
+
   if (!isValidCar || !lightData) return { title: 'Not Found' };
   const t = await getTranslations({ locale, namespace: 'LightDetailPage' });
-  
+
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  return { 
+  return {
     title: fitSeoTitle(t('metaTitle', { light: lightData.name, make: capMake, model: capModel })),
     description: fitSeoDescription(t('metaDescription', { light: lightData.name, make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights/${light}`, locale),
@@ -46,11 +45,11 @@ export default async function LightDetailPage({ params }: PageProps) {
   const { locale, make, model, light } = resolvedParams;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'LightDetailPage' });
-  
+
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   const rawLightData = warningLights[light];
   const lightData = rawLightData ? getLocalizedWarningLight(rawLightData, locale) : null;
-  
+
   if (!isValidCar || !lightData) notFound();
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
@@ -123,12 +122,12 @@ export default async function LightDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, articleSchema, faqSchema]) }}
       />
-      {/* Premium Header */}
+
       <header className="hero-visual hero-visual-lights relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className={`absolute top-0 left-1/4 w-[600px] h-[400px] rounded-full blur-[100px] pointer-events-none ${lightData.color === 'red' ? 'bg-red-600/10' : lightData.color === 'yellow' ? 'bg-amber-600/10' : 'bg-green-600/10'}`}></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
-          {/* Breadcrumb */}
+
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
             <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
@@ -180,13 +179,13 @@ export default async function LightDetailPage({ params }: PageProps) {
         </div>
       </header>
 
-      {/* Main Content */}
+
       <div className="max-w-5xl mx-auto px-6 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        
-        {/* Left Column (Main Info) */}
+
+
         <div className="lg:col-span-2 space-y-12">
-          
-          {/* Meaning Section */}
+
+
           <section className="bg-[#131b2f] border border-white/10 rounded-2xl p-8 relative overflow-hidden shadow-lg">
              <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-blue-400 to-blue-600"></div>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
@@ -198,7 +197,7 @@ export default async function LightDetailPage({ params }: PageProps) {
             </p>
           </section>
 
-          {/* Causes */}
+
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
@@ -216,7 +215,7 @@ export default async function LightDetailPage({ params }: PageProps) {
             </div>
           </section>
 
-          {/* Solutions */}
+
           <section className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
               <svg className="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -238,10 +237,10 @@ export default async function LightDetailPage({ params }: PageProps) {
               ))}
             </div>
           </section>
-          
+
         </div>
 
-        {/* Right Column (Widgets) */}
+
         <div className="space-y-6">
           <div className="w-full h-[250px] bg-[#0d1425] border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
             <span>{t('advertisement')}</span>

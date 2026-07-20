@@ -29,8 +29,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-[#0a0f1c]/80 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        
-        {/* Logo */}
+
+
         <Link href={`/${locale}`} className="flex items-center space-x-3 group shrink-0">
           <div className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-500/10 shadow-lg shadow-blue-500/20 transition-all group-hover:shadow-blue-500/40 sm:flex">
             <span className="text-[11px] font-black tracking-tight text-blue-100">OBD</span>
@@ -40,13 +40,13 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Search Bar (Visible on all sizes) */}
+
         <div className="flex flex-1 max-w-xl ml-4 sm:ml-8 mr-2 sm:mr-8">
           <form onSubmit={handleSearch} className="relative w-full group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <Search className="w-5 h-5 text-slate-500 group-focus-within:text-blue-400 transition-colors" />
             </div>
-            <input 
+            <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
@@ -57,7 +57,7 @@ export default function Navbar() {
           </form>
         </div>
 
-        {/* Desktop Links */}
+
         <div className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-300">
           <Link href={`/${locale}`} className="hover:text-white transition-colors">{t('diagnostics')}</Link>
           <Link href={`/${locale}/vehicles`} className="hover:text-white transition-colors">{t('vehicles')}</Link>
@@ -70,10 +70,10 @@ export default function Navbar() {
           <LanguageSwitcher />
         </div>
 
-        {/* Mobile Actions */}
+
         <div className="md:hidden flex items-center space-x-2">
           <LanguageSwitcher />
-          <button 
+          <button
             className="text-slate-300 hover:text-white shrink-0 p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
@@ -85,7 +85,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+
       {isMenuOpen && (
         <div id="mobile-menu" className="md:hidden bg-[#131b2f] border-b border-white/10 px-6 py-4 grid grid-cols-1 gap-3">
           <Link href={`/${locale}`} className="flex items-center gap-3 rounded-2xl bg-white/5 px-4 py-3 text-slate-200 hover:text-white font-bold" onClick={() => setIsMenuOpen(false)}>

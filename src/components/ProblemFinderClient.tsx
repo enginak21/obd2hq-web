@@ -139,7 +139,7 @@ async function postEvent(path: string, body: unknown) {
       keepalive: true,
     });
   } catch {
-    // Query collection is optional; never block the diagnostic UI.
+
   }
 }
 

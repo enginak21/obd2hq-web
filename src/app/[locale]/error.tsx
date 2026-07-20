@@ -1,4 +1,4 @@
-'use client'; // Error components must be Client Components
+'use client';
 
 import { useEffect } from 'react';
 import { AlertTriangle, RefreshCw } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function Error({
   const t = useTranslations('CommonUI');
 
   useEffect(() => {
-    // Log the error to an error reporting service
+
     console.error(error);
   }, [error]);
 
@@ -23,12 +23,12 @@ export default function Error({
       <div className="bg-red-500/10 p-6 rounded-full border border-red-500/20 mb-8">
         <AlertTriangle className="w-16 h-16 text-red-500" />
       </div>
-      
+
       <h2 className="text-3xl font-black text-white mb-4">{t('systemMalfunction')}</h2>
       <p className="text-slate-400 max-w-md mb-8 text-lg">
         {t('errorDesc')}
       </p>
-      
+
       <button
         onClick={() => reset()}
         className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(37,99,235,0.3)]"

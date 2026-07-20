@@ -25,7 +25,7 @@ const DISPLAY_PRIORITY_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.ha
 export async function generateStaticParams() {
   const params: Array<{ locale: string; make: string; model: string }> = [];
   const locales = ['en', 'de', 'es', 'tr', 'fr'];
-  
+
   for (const locale of locales) {
     for (const car of cars) {
       for (const model of car.models) {
@@ -40,13 +40,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const resolvedParams = await params;
   const { make, model } = resolvedParams;
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
-  
+
   if (!isValidCar) return { title: 'Not Found' };
-  
+
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  
-  return { 
+
+  return {
     title: `1996-2026 ${capMake} ${capModel} OBD2 Codes & Warning Lights`,
     description: `Complete diagnostic data for ${capMake} ${capModel} (1996-2026). Search all OBD2 trouble codes and dashboard warning light meanings.`,
     alternates: getAlternates(`${make}/${model}`, resolvedParams.locale)
@@ -60,7 +60,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
   const tModel = await getTranslations({ locale, namespace: 'ModelPage' });
   const resolvedSearchParams = await searchParams;
-  
+
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) notFound();
 
@@ -68,7 +68,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
   const pageUrl = `https://www.obd2hq.com/${locale}/${make}/${model}`;
 
-  // Pagination Logic
+
   const PAGE_SIZE = 200;
   const pageParam = resolvedSearchParams.page;
   let currentPage = parseInt(pageParam || '1', 10);
@@ -142,8 +142,8 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 {tModel('desc', { make: capMake, model: capModel })}
               </p>
             </div>
-            
-            <Link 
+
+            <Link
               href={`/${locale}/${make}/${model}/lights`}
               className="group flex flex-col items-center justify-center p-6 bg-amber-500/10 border border-amber-500/30 rounded-2xl hover:bg-amber-500/20 transition-all duration-300 w-full md:w-64 shrink-0"
             >
@@ -157,8 +157,8 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
       </header>
 
       <div className="max-w-5xl mx-auto px-6 mt-12">
-        
-        {/* Hub Additions: Top Codes for Model */}
+
+
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
             <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -166,8 +166,8 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {DISPLAY_PRIORITY_CODES.slice(0, 10).map((code) => (
-              <Link 
-                key={code} 
+              <Link
+                key={code}
                 href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
                 className="group flex items-center justify-center py-4 bg-[#131b2f] border border-red-500/10 hover:border-red-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(239,68,68,0.2)]"
               >
@@ -221,11 +221,11 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             {tModel('showing', { start: startIndex + 1, end: Math.min(endIndex, totalCodes), total: totalCodes.toLocaleString() })}
           </span>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {displayCodes.map((code) => (
-            <Link 
-              key={code} 
+            <Link
+              key={code}
               href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
               className="group flex flex-col justify-center min-h-24 p-4 bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)]"
             >
@@ -237,7 +237,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           ))}
         </div>
 
-        {/* Pagination Controls */}
+
         {totalPages > 1 && (
           <div className="mt-12 flex items-center justify-center space-x-4">
             {currentPage > 1 ? (
@@ -252,7 +252,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 {tModel('prev')}
               </span>
             )}
-            
+
             <span className="text-slate-400 font-medium bg-[#0d1425] px-4 py-2 rounded-lg border border-white/5">
               {tModel('page')} <span className="text-white font-bold">{currentPage}</span> {tModel('of')} {totalPages}
             </span>

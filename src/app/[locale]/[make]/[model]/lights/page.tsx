@@ -31,10 +31,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) return { title: 'Not Found' };
   const t = await getTranslations({ locale, namespace: 'LightsPage' });
-  
+
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  return { 
+  return {
     title: fitSeoTitle(t('metaTitle', { make: capMake, model: capModel })),
     description: fitSeoDescription(t('metaDescription', { make: capMake, model: capModel })),
     alternates: getAlternates(`${make}/${model}/lights`, locale),
@@ -49,7 +49,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
   const { locale, make, model } = resolvedParams;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'LightsPage' });
-  
+
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!isValidCar) notFound();
 
@@ -122,13 +122,13 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbSchema, itemListSchema, faqSchema]) }}
       />
-      {/* Premium Header */}
+
       <header className="hero-visual hero-visual-lights relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
-          {/* Breadcrumb */}
+
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-8 font-medium gap-y-2">
             <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
@@ -157,7 +157,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         </div>
       </header>
 
-      {/* Main Content */}
+
       <div className="max-w-5xl mx-auto px-6 mt-12">
         <section className="mb-8 rounded-3xl border border-white/5 bg-[#131b2f] p-6">
           <h2 className="text-2xl font-bold text-white">{introTitle}</h2>
@@ -185,8 +185,8 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
             }
 
             return (
-              <Link 
-                key={light.id} 
+              <Link
+                key={light.id}
                 href={`/${locale}/${make}/${model}/lights/${light.id}`}
                 className={`group overflow-hidden bg-[#131b2f] border border-white/5 rounded-2xl transition-all duration-300 hover:-translate-y-1 ${glowClasses} flex flex-col`}
               >

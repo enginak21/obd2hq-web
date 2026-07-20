@@ -56,7 +56,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {/* Header */}
+
       <header className="hero-visual hero-visual-news relative border-b border-white/5 pt-20 pb-20 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
@@ -69,7 +69,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
         </div>
       </header>
 
-      {/* Blog Grid */}
+
       <div className="max-w-5xl mx-auto px-6 mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post) => (
           <Link href={`/${locale}/blog/${post.slug}`} key={post.slug} className="group flex flex-col bg-[#131b2f] border border-white/5 rounded-3xl overflow-hidden hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">

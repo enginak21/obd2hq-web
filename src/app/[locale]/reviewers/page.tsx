@@ -47,11 +47,11 @@ export default async function ReviewersPage({ params }: PageProps) {
       </header>
 
       <div className="max-w-4xl mx-auto px-6 mt-16 space-y-16">
-        
-        {/* Editorial Team Profile */}
+
+
         <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row gap-10 shadow-2xl relative overflow-hidden">
           <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-          
+
           <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 border-4 border-[#0a0f1c] shadow-xl shrink-0 overflow-hidden flex items-center justify-center">
             <Users className="w-20 h-20 text-slate-500" />
           </div>

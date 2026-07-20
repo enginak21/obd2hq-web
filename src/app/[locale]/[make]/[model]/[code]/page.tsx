@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!obdData) return { title: 'Code Not Found' };
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  return { 
+  return {
     title: fitSeoTitle(getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
     description: fitSeoDescription(getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
     alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
@@ -60,13 +60,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CodePage({ params }: PageProps) {
   const resolvedParams = await params;
   const { locale, make, model, code } = resolvedParams;
-  
+
   const obdData = getHybridObdData(make, model, code);
   const isValidCar = cars.some(c => c.make === make && c.models.includes(model));
   if (!obdData || !isValidCar) notFound();
 
   const upperCode = obdData.code;
-  
+
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'CodePage' });
@@ -148,7 +148,7 @@ export default async function CodePage({ params }: PageProps) {
     }
   };
 
-  // Article Schema
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
@@ -196,11 +196,11 @@ export default async function CodePage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      
+
       <header className="hero-visual hero-visual-code relative border-b border-white/5 pt-12 pb-12 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
-          
+
           <nav className="flex flex-wrap items-center text-sm text-slate-400 mb-6 font-medium gap-y-2" aria-label="Breadcrumb">
             <Link href={`/${locale}`} className="hover:text-blue-400 transition-colors shrink-0">{t('home')}</Link>
             <span className="mx-2 shrink-0">/</span>
@@ -220,12 +220,12 @@ export default async function CodePage({ params }: PageProps) {
                 {tExtra('severity')}: {obdData.drivingSafety?.level || tExtra('moderate')}
               </span>
             </div>
-            
+
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
               {tExtra('codeTitle', { code: upperCode, title: locTitle })}
             </h1>
-            
-            {/* E-E-A-T Reviewer Badge */}
+
+
             <div className="flex items-center text-slate-400 text-sm mt-2 border-t border-white/10 pt-4">
               <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mr-3">
                 <ShieldCheck className="w-6 h-6 text-blue-400" />
@@ -250,10 +250,10 @@ export default async function CodePage({ params }: PageProps) {
       </header>
 
       <div className="max-w-5xl mx-auto px-6 mt-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        
-        {/* Left Column (Main Content) */}
+
+
         <div className="lg:col-span-2 space-y-12">
-          
+
           {!obdData.isEnriched && (
             <div className="bg-slate-800/50 border border-amber-500/30 rounded-2xl p-6 shadow-lg mb-8">
               <div className="flex items-start">
@@ -329,7 +329,7 @@ export default async function CodePage({ params }: PageProps) {
             </ul>
           </section>
 
-          {/* Before Replacing Parts */}
+
           <section className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border border-blue-500/20 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-blue-400 mb-4 flex items-center">
               <ShieldCheck className="w-5 h-5 mr-2" />
@@ -355,7 +355,7 @@ export default async function CodePage({ params }: PageProps) {
 
           <AdSlot slot="0000000001" label={t('inArticleAd')} className="min-h-[120px]" />
 
-          {/* Diagnostic Steps */}
+
           {locDiagnosticSteps && locDiagnosticSteps.length > 0 && (
             <section>
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
@@ -377,7 +377,7 @@ export default async function CodePage({ params }: PageProps) {
             </section>
           )}
 
-          {/* Common Mistakes */}
+
           <section className="bg-red-900/10 border border-red-500/20 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-red-400 mb-3 flex items-center">
               <AlertCircle className="w-5 h-5 mr-2" />
@@ -396,7 +396,7 @@ export default async function CodePage({ params }: PageProps) {
             <p className="text-slate-300">{pageCopy.verificationCopy(upperCode)}</p>
           </section>
 
-          {/* FAQ Section */}
+
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 border-b border-white/5 pb-4">
               {t('faq') || 'Frequently Asked Questions'}
@@ -422,7 +422,7 @@ export default async function CodePage({ params }: PageProps) {
           </section>
 
           <section className="pt-8">
-            <DisqusComments 
+            <DisqusComments
               url={`https://www.obd2hq.com/${locale}/${make}/${model}/${code}`}
               identifier={`${make}-${model}-${code}`}
               title={t('discussionTitle', { code: upperCode, make: capMake, model: capModel })}
@@ -430,9 +430,9 @@ export default async function CodePage({ params }: PageProps) {
           </section>
         </div>
 
-        {/* Right Column (Widgets) */}
+
         <div className="space-y-6">
-          
+
           <div className="bg-gradient-to-br from-[#131b2f] to-[#0d1425] border border-white/10 rounded-3xl p-8 shadow-2xl relative overflow-hidden group">
             <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('repairEstimate')}</h3>
@@ -449,7 +449,7 @@ export default async function CodePage({ params }: PageProps) {
                 <p className="text-sm text-slate-300">{repairTiers.expensive}</p>
               </div>
             </div>
-            
+
             {obdData.costBreakdown ? (
               <div className="mt-4 space-y-3 bg-white/5 p-4 rounded-xl">
                 <div className="flex justify-between items-center text-sm">
@@ -464,7 +464,7 @@ export default async function CodePage({ params }: PageProps) {
             ) : (
               <p className="text-sm text-slate-500">{t('costIncludesParts')}</p>
             )}
-            
+
             <div className="mt-6 pt-4 border-t border-white/10">
                <p className="text-xs text-slate-500 mb-3">{systemContent.costNote}</p>
                <div className="flex justify-between text-xs text-slate-400 mb-1">

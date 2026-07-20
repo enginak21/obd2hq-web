@@ -12,8 +12,8 @@ function asString(value: string | string[] | null, fallback = '') {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  
-  // Minimal manual translation mapping for metadata so it's clean without loading namespaces
+
+
   const titles: Record<string, string> = {
     en: 'Automotive News & Gazette - OBD2HQ',
     tr: 'Otomobil Gazetesi & Haberler - OBD2HQ',
@@ -41,7 +41,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'NewsPage' });
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
-  
+
   const articles = getAllNews();
   const pageUrl = `https://www.obd2hq.com/${locale}/news`;
   const schema = {
@@ -76,7 +76,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 font-sans pb-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {/* Premium Header */}
+
       <header className="hero-visual hero-visual-news relative border-b border-white/5 pt-12 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -104,7 +104,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
         </div>
       </header>
 
-      {/* Main Content Area */}
+
       <div className="max-w-7xl mx-auto px-6 mt-12">
         {articles.length === 0 ? (
           <div className="text-center py-24 bg-[#131b2f] rounded-3xl border border-white/5">
@@ -118,7 +118,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
               const locTitle = asString(getLocalized(article.title, locale), article.slug);
               const locSummary = asString(getLocalized(article.summary, locale));
               const categoryKey = getNewsCategoryKey(article.category);
-              
+
               const dateObj = new Date(article.date);
               const formattedDate = new Intl.DateTimeFormat(locale, {
                 year: 'numeric',
@@ -127,14 +127,14 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
               }).format(dateObj);
 
               return (
-                <Link 
-                  key={article.id} 
+                <Link
+                  key={article.id}
                   href={`/${locale}/news/${article.slug}`}
                   className="group flex flex-col bg-[#131b2f] border border-white/5 rounded-3xl overflow-hidden hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(37,99,235,0.2)]"
                 >
                   <div className="w-full h-56 relative overflow-hidden bg-[#0d1425]">
                     <Image
-                      src={article.image} 
+                      src={article.image}
                       alt={locTitle}
                       fill
                       unoptimized={article.image.startsWith('http')}
@@ -147,21 +147,21 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center text-slate-500 text-xs font-medium mb-3">
                       <Calendar className="w-3.5 h-3.5 mr-1.5" />
                       {formattedDate}
                     </div>
-                    
+
                     <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
                       {locTitle}
                     </h2>
-                    
+
                     <p className="text-sm text-slate-400 line-clamp-3 mb-6 flex-1 font-light leading-relaxed">
                       {locSummary}
                     </p>
-                    
+
                     <div className="flex items-center text-blue-500 text-sm font-bold mt-auto group-hover:text-blue-400 transition-colors">
                       {t('readMore')}
                       <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />

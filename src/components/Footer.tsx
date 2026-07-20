@@ -10,8 +10,8 @@ export default function Footer() {
     <footer className="bg-[#0a0f1c] border-t border-white/5 pt-16 pb-8 mt-auto">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          
-          {/* Brand */}
+
+
           <div className="col-span-1 md:col-span-1">
             <Link href={`/${locale}`} className="flex items-center space-x-3 mb-6">
               <div className="bg-gradient-to-br from-blue-600 to-indigo-600 p-2 rounded-xl">
@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
+
           <div>
             <h4 className="text-white font-bold mb-4">{t('links')}</h4>
             <ul className="space-y-3 text-sm text-slate-400">

@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-// read base_codes.json directly
+
 const baseCodesRaw = fs.readFileSync(path.join(__dirname, 'base_codes.json'), 'utf8');
 const baseCodes = JSON.parse(baseCodesRaw);
 
-// we just copy the cars array
+
 const cars = [
   { "make": "acura", "models": ["mdx", "rdx", "tlx", "ilx", "integra", "nsx"] },
   { "make": "alfa-romeo", "models": ["giulia", "stelvio", "tonale", "4c", "giulietta"] },
