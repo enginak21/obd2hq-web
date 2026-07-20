@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T22:08:00.018Z",
+  "generatedAt": "2026-07-20T22:14:14.600Z",
   "totalCodes": 1900,
   "sitemapKnownCodes": 1900,
   "families": {
@@ -70,6 +70,52 @@
     "P0141",
     "P0142"
   ],
+  "expansionRoadmap": {
+    "goal": "Expand OBD2HQ from a P-code focused library into a verified P/C/B/U diagnostic encyclopedia without publishing unverified code meanings.",
+    "currentPublishedFamilies": {
+      "P": "published",
+      "C": "needs_verified_dataset",
+      "B": "needs_verified_dataset",
+      "U": "needs_verified_dataset"
+    },
+    "goldAcceptanceCriteria": [
+      "Code key must match /^[PCBU][0-9]{4}$/.",
+      "Meaning must come from a verified diagnostic reference or a reviewed manufacturer-specific source note.",
+      "Each locale must have a natural title, meta description, plain-language explanation and FAQ copy.",
+      "Each code must include symptoms, likely causes, first checks, diagnostic steps, safe-to-drive guidance, related codes and repair verification.",
+      "Manufacturer-specific or ambiguous codes must clearly state that exact meaning can vary by make and must link to vehicle-specific pages.",
+      "No code is added to sitemap until it passes duplicate title, mojibake, thin-content and schema checks."
+    ],
+    "nextVerifiedDataBatches": [
+      {
+        "family": "C",
+        "focus": "chassis, ABS, steering, suspension, brake system codes",
+        "seoTargets": [
+          "abs light code",
+          "chassis code lookup",
+          "brake system dtc"
+        ]
+      },
+      {
+        "family": "B",
+        "focus": "body, airbag, climate, lighting, restraint and comfort system codes",
+        "seoTargets": [
+          "airbag code lookup",
+          "body control module code",
+          "srs fault code"
+        ]
+      },
+      {
+        "family": "U",
+        "focus": "network, CAN bus, lost communication and module communication codes",
+        "seoTargets": [
+          "u code obd2",
+          "lost communication code",
+          "can bus fault code"
+        ]
+      }
+    ]
+  },
   "recommendation": [
     "Runtime Gold fallback now prevents thin code pages for existing records.",
     "Next data-expansion phase should add verified C, B and U code families, then enrich raw records so fallback use trends toward zero.",

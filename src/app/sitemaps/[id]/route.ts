@@ -43,7 +43,7 @@ const PRIORITY_CODE_URLS = [
 ] as const;
 
 function getSitemapIdentifiers(): string[] {
-  return ['base', 'high-intent-codes', 'opportunity-codes', 'gsc-opportunities'];
+  return ['base', 'code-hubs', 'high-intent-codes', 'opportunity-codes', 'gsc-opportunities'];
 }
 
 function urlEntry(loc: string, changefreq: string, priority: string, lastmod = LASTMOD) {
@@ -134,6 +134,12 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
           urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}`, 'weekly', '0.8');
           urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}/lights`, 'monthly', '0.7');
         });
+      });
+    });
+  } else if (idStr === 'code-hubs') {
+    LOCALES.forEach((locale) => {
+      Array.from(VALID_CODE_SET).sort().forEach((code) => {
+        urls += urlEntry(`${BASE_URL}${getCodeHubPath(locale, code)}`, 'monthly', '0.82');
       });
     });
   } else if (idStr === 'high-intent-codes') {

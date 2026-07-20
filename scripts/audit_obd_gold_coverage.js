@@ -4,6 +4,7 @@ const path = require('path');
 const ROOT = process.cwd();
 const baseCodes = require(path.join(ROOT, 'src/data/base_codes.json'));
 const validRoutes = require(path.join(ROOT, 'src/data/valid_routes.json'));
+const roadmap = require(path.join(ROOT, 'src/data/obd-expansion-roadmap.json'));
 
 function getText(value, locale = 'en') {
   if (!value) return '';
@@ -63,6 +64,7 @@ const report = {
   rawGoldReady: codes.length - runtimeGoldFallbackNeeded.length,
   runtimeGoldFallbackNeeded: runtimeGoldFallbackNeeded.length,
   runtimeGoldFallbackSample: runtimeGoldFallbackNeeded.slice(0, 40),
+  expansionRoadmap: roadmap,
   recommendation: [
     'Runtime Gold fallback now prevents thin code pages for existing records.',
     'Next data-expansion phase should add verified C, B and U code families, then enrich raw records so fallback use trends toward zero.',

@@ -3,7 +3,7 @@ const path = require('path');
 
 const ROOT = process.cwd();
 const OPPORTUNITIES_FILE = path.join(ROOT, 'src/data/generated/gsc-opportunities.json');
-const badChars = /Ã|Ä|Å|�/;
+const badChars = /\u00c3|\u00c4|\u00c5|\ufffd/;
 const validIntents = new Set(['code_only', 'make_code', 'warning_light_model_year', 'warning_light_make', 'mixed_error', 'unknown']);
 const validPriorities = new Set(['critical', 'high', 'medium', 'low']);
 const validStatuses = new Set(['tracked', 'planned', 'published', 'needs_review']);
@@ -46,6 +46,11 @@ assertRouteExists('src/app/[locale]/[make]/uyari-isiklari/page.tsx');
 assertRouteExists('src/app/[locale]/[make]/warnleuchten/page.tsx');
 assertRouteExists('src/app/[locale]/[make]/luces-tablero/page.tsx');
 assertRouteExists('src/app/[locale]/[make]/voyants-tableau-bord/page.tsx');
+
+const sitemapIndex = fs.readFileSync(path.join(ROOT, 'src/app/sitemap.xml/route.ts'), 'utf8');
+const sitemapRoute = fs.readFileSync(path.join(ROOT, 'src/app/sitemaps/[id]/route.ts'), 'utf8');
+if (!sitemapIndex.includes("'code-hubs'")) fail('sitemap index must include the code-hubs sitemap.');
+if (!sitemapRoute.includes("idStr === 'code-hubs'")) fail('sitemap route must generate the code-hubs sitemap.');
 
 if (!process.exitCode) {
   console.log('GSC SEO checks passed.');
