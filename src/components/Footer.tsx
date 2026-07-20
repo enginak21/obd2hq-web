@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} OBD2HQ. {t('allRightsReserved')}</p>
+          <p>&copy; {new Date().getFullYear()} Max Ajans ile tüm hakları saklıdır.</p>
           <p className="mt-2 md:mt-0">{t('builtFor')}</p>
         </div>
       </div>
