@@ -8,6 +8,7 @@ import {
   type SymptomContentGroup,
   type SymptomContentLocale,
 } from '@/data/symptom-content';
+import { getCodeHubPath } from '@/data/gsc-seo';
 
 const hubCopy = {
   en: {
@@ -199,7 +200,7 @@ function CodeLinks({ title, locale, codes }: { title: string; locale: string; co
     <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
       <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</h2>
       <div className="grid grid-cols-2 gap-3">
-        {codes.map(code => <Link key={code} href={`/${locale}/search?q=${code}`} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">{code}</Link>)}
+        {codes.map(code => <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">{code}</Link>)}
       </div>
     </section>
   );

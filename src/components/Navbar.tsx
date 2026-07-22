@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
 import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content-routing';
+import { getWarningLightsHubPath } from '@/data/navigation';
 
 export default function Navbar() {
   const [query, setQuery] = useState('');
@@ -18,6 +19,7 @@ export default function Navbar() {
   const t = useTranslations('Navbar');
   const symptomHubPath = getSymptomContentHubPath(locale);
   const problemFinderPath = getProblemFinderHubPath(locale);
+  const warningLightsPath = getWarningLightsHubPath(locale);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -63,7 +65,7 @@ export default function Navbar() {
           <Link href={`/${locale}/vehicles`} className="hover:text-white transition-colors">{t('vehicles')}</Link>
           <Link href={symptomHubPath} className="hover:text-white transition-colors">{t('symptoms')}</Link>
           <Link href={problemFinderPath} className="hover:text-white transition-colors">{t('tools')}</Link>
-          <Link href={`/${locale}/toyota/camry/lights`} className="hover:text-white transition-colors">{t('warningLights')}</Link>
+          <Link href={warningLightsPath} className="hover:text-white transition-colors">{t('warningLights')}</Link>
           <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-400">{t('news')}</Link>
           <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
           <div className="w-px h-5 bg-white/10 mx-2"></div>
@@ -108,7 +110,7 @@ export default function Navbar() {
             <AlertTriangle className="w-5 h-5 text-blue-400" />
             {t('tools')}
           </Link>
-          <Link href={`/${locale}/toyota/camry/lights`} className="flex items-center gap-3 rounded-2xl bg-amber-500/10 px-4 py-3 text-amber-300 hover:text-amber-200 font-bold" onClick={() => setIsMenuOpen(false)}>
+          <Link href={warningLightsPath} className="flex items-center gap-3 rounded-2xl bg-amber-500/10 px-4 py-3 text-amber-300 hover:text-amber-200 font-bold" onClick={() => setIsMenuOpen(false)}>
             <AlertTriangle className="w-5 h-5" />
             {t('warningLights')}
           </Link>

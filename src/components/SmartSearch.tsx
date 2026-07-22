@@ -11,6 +11,7 @@ import {
   getDiagnosticSearchTarget,
   normalizeCode,
 } from '@/utils/diagnosticSearch';
+import { getWarningLightsHubPath } from '@/data/navigation';
 
 type SmartSearchProps = {
   vehicles: VehicleOption[];
@@ -111,7 +112,7 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
                 {code}
               </button>
             ))}
-            <Link href={`/${locale}/toyota/camry/lights`} className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-500/15 transition-colors">
+            <Link href={getWarningLightsHubPath(locale)} className="rounded-full bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-500/15 transition-colors">
               {t('unknownCode')}
             </Link>
           </div>

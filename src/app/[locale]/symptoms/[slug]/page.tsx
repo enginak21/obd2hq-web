@@ -5,6 +5,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { getSymptomBySlug, localizeSymptom, symptomGuides } from '@/data/symptoms';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { getCodeHubPath } from '@/data/gsc-seo';
 
 export function generateStaticParams() {
   return symptomGuides.flatMap(symptom => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, slug: symptom.slug })));
@@ -105,7 +106,7 @@ export default async function SymptomPage({ params }: { params: Promise<{ locale
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.relatedObdCodes}</h2>
             <div className="grid grid-cols-2 gap-3">
               {symptom.relatedCodes.map(code => (
-                <Link key={code} href={`/${locale}/search?q=${code}`} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">
+                <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">
                   {code}
                 </Link>
               ))}

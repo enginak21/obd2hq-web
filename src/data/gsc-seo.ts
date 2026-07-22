@@ -235,7 +235,7 @@ export function getGscOpportunityBlockCopy(locale: string) {
     return {
       badge: 'Live Search Console Chance',
       title: 'Diese Suchanfragen zeigen bereits Impressionen',
-      text: 'Diese Seite wird anhand echter Search-Console-Daten verstärkt. Ähnliche Suchintentionen werden in einem starken Leitfaden gebündelt, statt dünne Duplikate zu erzeugen.',
+      text: 'Diese Seite wird anhand echter Search-Console-Daten verstaerkt. Aehnliche Suchintentionen werden in einem starken Leitfaden gebuendelt, statt duenne Duplikate zu erzeugen.',
       impressions: 'Impressionen',
       position: 'Ø Position',
     };

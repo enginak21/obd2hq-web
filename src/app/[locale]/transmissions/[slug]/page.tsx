@@ -4,6 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { getTransmissionProfile, transmissionProfiles } from '@/data/transmission-database';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { getCodeHubPath } from '@/data/gsc-seo';
 
 export function generateStaticParams() {
   return transmissionProfiles.flatMap(transmission => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, slug: transmission.slug })));
@@ -69,7 +70,7 @@ export default async function TransmissionPage({ params }: { params: Promise<{ l
         <aside className="rounded-3xl border border-white/5 bg-[#131b2f] p-6 h-fit">
           <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.relatedCodes}</h2>
           <div className="grid grid-cols-2 gap-3">
-            {transmission.relatedCodes.map(code => <Link key={code} href={`/${locale}/search?q=${code}`} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200">{code}</Link>)}
+            {transmission.relatedCodes.map(code => <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200">{code}</Link>)}
           </div>
         </aside>
       </section>

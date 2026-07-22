@@ -8,6 +8,8 @@ import { PRIORITY_CODES } from '@/data/seo';
 import { getLocalizedCodeTitle } from '@/data/code-localization';
 import { findVehicleMatches, formatVehicleName, normalizeCode, normalizeSearchText } from '@/utils/diagnosticSearch';
 import { getAlternates } from '@/utils/seo';
+import { getCodeHubPath } from '@/data/gsc-seo';
+import { getWarningLightsHubPath } from '@/data/navigation';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -142,7 +144,7 @@ export default async function SearchPage({
               <p className="mt-4 max-w-2xl text-slate-400 leading-relaxed">{tExtra('searchHubDesc')}</p>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 {PRIORITY_CODES.slice(0, 6).map(code => (
-                  <Link key={code} href={`/${locale}/search?q=${code}`} className="rounded-2xl border border-blue-500/10 bg-blue-500/10 px-4 py-3 text-center font-black text-blue-100 hover:border-blue-400/40">
+                  <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl border border-blue-500/10 bg-blue-500/10 px-4 py-3 text-center font-black text-blue-100 hover:border-blue-400/40">
                     {code}
                   </Link>
                 ))}
@@ -165,7 +167,7 @@ export default async function SearchPage({
               {[
                 { href: `/${locale}/car-problem-finder`, title: tExtra('findByProblem'), desc: tExtra('findByProblemDesc') },
                 { href: `/${locale}/vehicles`, title: tExtra('findByVehicle'), desc: tExtra('findByVehicleDesc') },
-                { href: `/${locale}/toyota/camry/lights`, title: tExtra('findByLight'), desc: tExtra('findByLightDesc') },
+                { href: getWarningLightsHubPath(locale), title: tExtra('findByLight'), desc: tExtra('findByLightDesc') },
               ].map(item => (
                 <Link key={item.href} href={item.href} className="rounded-3xl border border-white/5 bg-[#101827] p-6 hover:border-blue-400/40">
                   <h2 className="text-xl font-black text-white">{item.title}</h2>
@@ -289,7 +291,7 @@ export default async function SearchPage({
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {PRIORITY_CODES.slice(0, 6).map(code => (
-                <Link key={code} href={`/${locale}/search?q=${code}`} className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2 text-sm font-bold text-slate-300 hover:text-white hover:border-blue-500/40 transition-colors">
+                <Link key={code} href={getCodeHubPath(locale, code)} className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2 text-sm font-bold text-slate-300 hover:text-white hover:border-blue-500/40 transition-colors">
                   <Wrench className="w-4 h-4 text-blue-400" />
                   {code}
                 </Link>
