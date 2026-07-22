@@ -1,4 +1,5 @@
 import { baseCodes, cars } from './db';
+import gscOpportunities from './generated/gsc-opportunities.json';
 import { SEO_LAST_REVIEWED, SUPPORTED_LOCALES, getCodeCategoryLabel, getCodeSystem } from './seo';
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
@@ -195,6 +196,75 @@ export function scoreOpportunity(input: { clicks: number; impressions: number; c
   if (score >= 90) return 'high';
   if (score >= 40) return 'medium';
   return 'low';
+}
+
+const priorityRank: Record<GscOpportunity['priority'], number> = {
+  critical: 0,
+  high: 1,
+  medium: 2,
+  low: 3,
+};
+
+function normalizeTarget(value: string) {
+  return value.replace(/\/$/, '');
+}
+
+export function getGscOpportunitiesForTargets(targetUrls: string[], limit = 6) {
+  const targets = new Set(targetUrls.map(normalizeTarget));
+  return (gscOpportunities as GscOpportunity[])
+    .filter(row => targets.has(normalizeTarget(row.targetUrl)))
+    .sort((a, b) => (
+      priorityRank[a.priority] - priorityRank[b.priority] ||
+      b.impressions - a.impressions ||
+      (a.position ?? 999) - (b.position ?? 999)
+    ))
+    .slice(0, limit);
+}
+
+export function getGscOpportunityBlockCopy(locale: string) {
+  if (locale === 'tr') {
+    return {
+      badge: 'Canlı Search Console fırsatı',
+      title: 'Google’da bu aramalarla görünmeye başladı',
+      text: 'Bu sayfa, gerçek Search Console gösterimlerine göre güçlendiriliyor. Amaç aynı niyeti karşılayan sorguları tek kaliteli rehberde toplamak ve ince kopya sayfa üretmemek.',
+      impressions: 'gösterim',
+      position: 'ortalama sıra',
+    };
+  }
+  if (locale === 'de') {
+    return {
+      badge: 'Live Search Console Chance',
+      title: 'Diese Suchanfragen zeigen bereits Impressionen',
+      text: 'Diese Seite wird anhand echter Search-Console-Daten verstärkt. Ähnliche Suchintentionen werden in einem starken Leitfaden gebündelt, statt dünne Duplikate zu erzeugen.',
+      impressions: 'Impressionen',
+      position: 'Ø Position',
+    };
+  }
+  if (locale === 'es') {
+    return {
+      badge: 'Oportunidad real de Search Console',
+      title: 'Estas búsquedas ya generan impresiones',
+      text: 'Esta página se refuerza con datos reales de Search Console. Las consultas con la misma intención se responden en una guía sólida, sin crear páginas duplicadas débiles.',
+      impressions: 'impresiones',
+      position: 'posición media',
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      badge: 'Opportunité Search Console réelle',
+      title: 'Ces recherches génèrent déjà des impressions',
+      text: 'Cette page est renforcée avec les données réelles de Search Console. Les requêtes proches sont regroupées dans un guide solide au lieu de créer des pages faibles.',
+      impressions: 'impressions',
+      position: 'position moyenne',
+    };
+  }
+  return {
+    badge: 'Live Search Console opportunity',
+    title: 'Searches already showing this page',
+    text: 'This page is being strengthened from real Search Console impressions. Similar search intents are answered in one strong guide instead of thin duplicate pages.',
+    impressions: 'impressions',
+    position: 'avg. position',
+  };
 }
 
 export function getCodeHubCopy(locale: string, code: string) {
