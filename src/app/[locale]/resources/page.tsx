@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Download, FileJson, FileText, Gauge, Image as ImageIcon, Wrench } from 'lucide-react';
+import { Download, FileJson, FileText, Gauge, Image as ImageIcon, Link2, Wrench } from 'lucide-react';
 import { baseCodes } from '@/data/db';
 import { SEO_LAST_REVIEWED } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
@@ -20,6 +20,7 @@ const copy = {
     lights: 'Dashboard warning light image library',
     checklist: 'Diagnostic checklist',
     report: 'Most watched OBD2 code report',
+    linkKit: 'Linkable diagnostic source kit',
     attribution: 'Attribution: link to OBD2HQ when you use the dataset, widget, warning-light library or checklist publicly. Clean editorial links from forums, guides and tool pages help keep the resource free.',
     open: 'Open resource',
   },
@@ -33,6 +34,7 @@ const copy = {
     lights: 'Gösterge paneli uyarı ışığı görsel kütüphanesi',
     checklist: 'Teşhis kontrol listesi',
     report: 'En çok izlenen OBD2 kodları raporu',
+    linkKit: 'Kaynak gösterilebilir teşhis kiti',
     attribution: 'Atıf: Veri seti, widget, uyarı ışığı kütüphanesi veya checklisti herkese açık kullanırken OBD2HQ bağlantısı verin. Forum, rehber ve araç sayfalarından gelen temiz editoryal linkler bu kaynağın ücretsiz kalmasına yardımcı olur.',
     open: 'Kaynağı aç',
   },
@@ -46,6 +48,7 @@ const copy = {
     lights: 'Warnleuchten-Bildbibliothek',
     checklist: 'Diagnose-Checkliste',
     report: 'Report der meistbeobachteten OBD2-Codes',
+    linkKit: 'Zitierfähiges Diagnose-Quellenkit',
     attribution: 'Attribution: Bitte auf OBD2HQ verlinken, wenn Sie Datensatz, Widget oder Checkliste öffentlich nutzen.',
     open: 'Ressource öffnen',
   },
@@ -59,6 +62,7 @@ const copy = {
     lights: 'Biblioteca visual de luces del tablero',
     checklist: 'Lista de revisión diagnóstica',
     report: 'Reporte de códigos OBD2 más vistos',
+    linkKit: 'Kit de recursos enlazables',
     attribution: 'Atribución: enlaza a OBD2HQ si usas públicamente el dataset, widget o checklist.',
     open: 'Abrir recurso',
   },
@@ -72,6 +76,7 @@ const copy = {
     lights: 'Bibliothèque visuelle de voyants',
     checklist: 'Checklist diagnostic',
     report: 'Rapport des codes OBD2 les plus suivis',
+    linkKit: 'Kit de sources diagnostic à citer',
     attribution: 'Attribution : ajoutez un lien vers OBD2HQ si vous utilisez publiquement le jeu de données, le widget ou la checklist.',
     open: 'Ouvrir la ressource',
   },
@@ -99,6 +104,7 @@ export default async function ResourcesPage({ params }: PageProps) {
     { title: c.widget, href: '/widget/obd2hq-lookup.js', icon: Wrench, note: '<div data-obd2hq-widget></div>' },
     { title: c.lights, href: '/open-data/warning-lights.json', icon: ImageIcon, note: 'ABS, battery, oil, coolant, SRS, TPMS' },
     { title: c.checklist, href: '/open-data/diagnostic-checklist.json', icon: FileText, note: 'Freeze-frame, live data, first checks' },
+    { title: c.linkKit, href: '/open-data/link-assets.json', icon: Link2, note: 'Dataset, widget, attribution, editorial link guidance' },
     { title: c.report, href: `/${locale}/codes/p0213`, icon: Gauge, note: `Last reviewed ${SEO_LAST_REVIEWED.slice(0, 10)}` },
   ];
 

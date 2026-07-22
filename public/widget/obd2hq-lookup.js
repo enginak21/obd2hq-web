@@ -6,9 +6,9 @@
   const baseUrl = 'https://obd2hq.com';
   const labels = {
     en: { placeholder: 'Enter an OBD2 code, e.g. P0420', button: 'Open guide' },
-    tr: { placeholder: 'OBD2 kodu girin, örn. P0420', button: 'Rehberi aç' },
+    tr: { placeholder: 'OBD2 kodu girin, ?rn. P0420', button: 'Rehberi a?' },
     de: { placeholder: 'OBD2-Code eingeben, z. B. P0420', button: 'Ratgeber öffnen' },
-    es: { placeholder: 'Introduce un código OBD2, ej. P0420', button: 'Abrir guía' },
+    es: { placeholder: 'Introduce un c?digo OBD2, ej. P0420', button: 'Abrir gu?a' },
     fr: { placeholder: 'Saisir un code OBD2, ex. P0420', button: 'Ouvrir le guide' },
   };
   const copy = labels[locale] || labels.en;
