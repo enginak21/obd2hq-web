@@ -14,7 +14,7 @@ jobs:
     env:
       GSC_CLIENT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
       GSC_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
-      GSC_SITE_URL: ${{ secrets.GSC_SITE_URL || 'https://obd2hq.com/' }}
+      GSC_SITE_URL: ${{ secrets.GSC_SITE_URL || 'sc-domain:obd2hq.com' }}
       REQUIRE_GSC_CREDENTIALS: '1'
     steps:
       - name: Checkout

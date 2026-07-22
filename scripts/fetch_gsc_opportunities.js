@@ -5,7 +5,7 @@ const path = require('path');
 const ROOT = process.cwd();
 const OUTPUT_FILE = path.join(ROOT, 'src/data/generated/gsc-opportunities.json');
 const REPORT_DIR = path.join(ROOT, 'reports/seo');
-const SITE_URL = process.env.GSC_SITE_URL || 'https://obd2hq.com/';
+const SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:obd2hq.com';
 const DRY_RUN = process.argv.includes('--dry-run');
 const REQUIRE_GSC_CREDENTIALS = process.env.REQUIRE_GSC_CREDENTIALS === '1';
 
@@ -43,8 +43,8 @@ const seedQueries = [
 ];
 
 const knownMakes = [
-  'acura', 'audi', 'bmw', 'cadillac', 'chevrolet', 'ford', 'honda', 'hyundai', 'kia',
-  'lexus', 'mazda', 'mercedes-benz', 'nissan', 'renault', 'suzuki', 'toyota', 'volkswagen',
+  'acura', 'audi', 'bmw', 'buick', 'cadillac', 'chevrolet', 'ford', 'honda', 'hyundai', 'kia',
+  'lexus', 'mazda', 'mercedes-benz', 'mitsubishi', 'nissan', 'renault', 'suzuki', 'toyota', 'volkswagen',
 ];
 
 function base64Url(input) {
@@ -69,7 +69,7 @@ function extractMake(query) {
 function classifyQuery(query) {
   const codes = extractCodes(query);
   const make = extractMake(query);
-  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces/i.test(query);
+  const warningIntent = /warning\s+lights?|dashboard\s+lights?|dashboard\s+symbols?|dash\s+symbols?|instrument\s+symbols?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces|simbolos/i.test(query);
   const hasYear = /\b(19|20)\d{2}\b/.test(query);
   if (warningIntent && hasYear) return 'warning_light_model_year';
   if (warningIntent && make) return 'warning_light_make';
@@ -116,14 +116,46 @@ function priorityFor(row) {
 }
 
 function normalizeRows(rows28, rows7) {
-  const trendMap = new Map(rows7.map(row => [row.query, row.impressions]));
-  return rows28
+  const aggregateByQuery = rows => {
+    const map = new Map();
+    for (const row of rows) {
+      const existing = map.get(row.query);
+      if (!existing) {
+        map.set(row.query, { ...row, weightedPosition: (row.position || 0) * row.impressions });
+        continue;
+      }
+      const clicks = existing.clicks + row.clicks;
+      const impressions = existing.impressions + row.impressions;
+      const weightedPosition = existing.weightedPosition + ((row.position || 0) * row.impressions);
+      const existingBestPageImpressions = existing.bestPageImpressions || existing.impressions;
+      const page = row.impressions > existingBestPageImpressions ? row.page : existing.page;
+      map.set(row.query, {
+        ...existing,
+        page,
+        bestPageImpressions: Math.max(existingBestPageImpressions, row.impressions),
+        clicks,
+        impressions,
+        ctr: impressions ? clicks / impressions : 0,
+        position: impressions ? weightedPosition / impressions : null,
+        weightedPosition,
+      });
+    }
+    return Array.from(map.values()).map(({ weightedPosition, bestPageImpressions, ...row }) => row);
+  };
+  const rows28ByQuery = aggregateByQuery(rows28);
+  const rows7ByQuery = aggregateByQuery(rows7);
+  const trendMap = new Map(rows7ByQuery.map(row => [row.query, row.impressions]));
+  return rows28ByQuery
     .filter(row => row.impressions >= 10)
     .map(row => {
       const intentType = classifyQuery(row.query);
+      const canonicalTarget = targetUrlFor(row.query);
+      const targetUrl = intentType === 'warning_light_make' || intentType === 'warning_light_model_year'
+        ? canonicalTarget
+        : row.page || canonicalTarget;
       const opportunity = {
         query: row.query,
-        targetUrl: row.page || targetUrlFor(row.query),
+        targetUrl,
         clicks: row.clicks,
         impressions: row.impressions,
         ctr: row.ctr,

@@ -136,7 +136,7 @@ export function extractMake(value: string) {
 export function classifyGscQuery(query: string): GscIntentType {
   const codeCount = extractCodes(query).length;
   const hasMake = Boolean(extractMake(query));
-  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces/i.test(query);
+  const warningIntent = /warning\s+lights?|dashboard\s+lights?|dashboard\s+symbols?|dash\s+symbols?|instrument\s+symbols?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces|simbolos/i.test(query);
   const hasYear = /\b(19|20)\d{2}\b/.test(query);
 
   if (warningIntent && hasYear) return 'warning_light_model_year';

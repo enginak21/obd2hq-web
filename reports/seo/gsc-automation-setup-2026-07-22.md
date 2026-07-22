@@ -10,7 +10,7 @@ Add these in GitHub repository settings:
 
 - `GSC_CLIENT_EMAIL`
 - `GSC_PRIVATE_KEY`
-- `GSC_SITE_URL=https://obd2hq.com/`
+- `GSC_SITE_URL=sc-domain:obd2hq.com`
 
 ## Required Search Console access
 
@@ -27,4 +27,3 @@ Recommended path:
 ## Current limitation
 
 Secret values cannot be read back from GitHub, and the local machine does not have the GitHub CLI installed. The workflow itself is now the source of truth: if secrets are missing or the service account is not allowed in Search Console, the next run will fail with a clear error.
-
