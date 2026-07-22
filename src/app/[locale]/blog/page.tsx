@@ -30,15 +30,15 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: t('title1') + t('title2'), item: `https://www.obd2hq.com/${locale}/blog` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: t('title1') + t('title2'), item: `https://obd2hq.com/${locale}/blog` },
         ],
       },
       {
         '@type': 'Blog',
         name: t('metaTitle'),
         description: t('metaDescription'),
-        url: `https://www.obd2hq.com/${locale}/blog`,
+        url: `https://obd2hq.com/${locale}/blog`,
       },
       {
         '@type': 'ItemList',
@@ -47,7 +47,7 @@ export default async function BlogIndex({ params }: { params: Promise<{ locale: 
           '@type': 'ListItem',
           position: index + 1,
           name: post.title,
-          url: `https://www.obd2hq.com/${locale}/blog/${post.slug}`,
+          url: `https://obd2hq.com/${locale}/blog/${post.slug}`,
         })),
       },
     ],

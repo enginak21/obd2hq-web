@@ -51,50 +51,50 @@ function asLocalizedArray(value: unknown, locale: string) {
 function codeHubLabels(locale: string) {
   if (locale === 'tr') {
     return {
-      firstChecks: 'İlk kontroller',
-      relatedCodes: 'İlgili kodlar',
-      symptoms: 'Yaygın belirtiler:',
-      causes: 'Olası nedenler:',
-      symptomFallback: 'Motor arıza lambası, sürüşte değişiklik',
-      causeFallback: 'Kablo, soket, sensör veya sistem arızası',
-      diagnosticPath: 'teşhis sırası',
-      verifyRepair: 'Onarımdan önce doğrula',
+      firstChecks: 'Ä°lk kontroller',
+      relatedCodes: 'Ä°lgili kodlar',
+      symptoms: 'YaygÄ±n belirtiler:',
+      causes: 'OlasÄ± nedenler:',
+      symptomFallback: 'Motor arÄ±za lambasÄ±, sÃ¼rÃ¼ÅŸte deÄŸiÅŸiklik',
+      causeFallback: 'Kablo, soket, sensÃ¶r veya sistem arÄ±zasÄ±',
+      diagnosticPath: 'teÅŸhis sÄ±rasÄ±',
+      verifyRepair: 'OnarÄ±mdan Ã¶nce doÄŸrula',
     };
   }
   if (locale === 'de') {
     return {
-      firstChecks: 'Erste Prüfungen',
+      firstChecks: 'Erste PrÃ¼fungen',
       relatedCodes: 'Verwandte Codes',
-      symptoms: 'Häufige Symptome:',
-      causes: 'Mögliche Ursachen:',
-      symptomFallback: 'Motorkontrollleuchte, verändertes Fahrverhalten',
+      symptoms: 'HÃ¤ufige Symptome:',
+      causes: 'MÃ¶gliche Ursachen:',
+      symptomFallback: 'Motorkontrollleuchte, verÃ¤ndertes Fahrverhalten',
       causeFallback: 'Kabel, Stecker, Sensor oder Systemfehler',
       diagnosticPath: 'Diagnoseablauf',
-      verifyRepair: 'Vor der Reparatur prüfen',
+      verifyRepair: 'Vor der Reparatur prÃ¼fen',
     };
   }
   if (locale === 'es') {
     return {
       firstChecks: 'Primeras revisiones',
-      relatedCodes: 'Códigos relacionados',
-      symptoms: 'Síntomas comunes:',
+      relatedCodes: 'CÃ³digos relacionados',
+      symptoms: 'SÃ­ntomas comunes:',
       causes: 'Causas probables:',
-      symptomFallback: 'Luz de motor, cambio en el comportamiento del vehículo',
+      symptomFallback: 'Luz de motor, cambio en el comportamiento del vehÃ­culo',
       causeFallback: 'Cableado, conector, sensor o falla del sistema',
-      diagnosticPath: 'ruta de diagnóstico',
+      diagnosticPath: 'ruta de diagnÃ³stico',
       verifyRepair: 'Verificar antes de reparar',
     };
   }
   if (locale === 'fr') {
     return {
-      firstChecks: 'Premiers contrôles',
-      relatedCodes: 'Codes associés',
-      symptoms: 'Symptômes fréquents :',
+      firstChecks: 'Premiers contrÃ´les',
+      relatedCodes: 'Codes associÃ©s',
+      symptoms: 'SymptÃ´mes frÃ©quents :',
       causes: 'Causes probables :',
       symptomFallback: 'Voyant moteur, changement de comportement',
-      causeFallback: 'Câblage, connecteur, capteur ou défaut système',
+      causeFallback: 'CÃ¢blage, connecteur, capteur ou dÃ©faut systÃ¨me',
       diagnosticPath: 'parcours de diagnostic',
-      verifyRepair: 'Vérifier avant réparation',
+      verifyRepair: 'VÃ©rifier avant rÃ©paration',
     };
   }
   return {
@@ -147,8 +147,8 @@ export default async function CodeHubPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: copy.h1, item: `https://www.obd2hq.com${getCodeHubPath(locale, upperCode)}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: copy.h1, item: `https://obd2hq.com${getCodeHubPath(locale, upperCode)}` },
     ],
   };
   const faqSchema = {

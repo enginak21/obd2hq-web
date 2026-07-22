@@ -31,7 +31,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
   if (!tool) notFound();
   const localized = localizeTool(tool, locale);
   const copy = getKnowledgeUiCopy(locale);
-  const pageUrl = `https://www.obd2hq.com/${locale}/tools/${slug}`;
+  const pageUrl = `https://obd2hq.com/${locale}/tools/${slug}`;
 
   const schema = {
     '@context': 'https://schema.org',

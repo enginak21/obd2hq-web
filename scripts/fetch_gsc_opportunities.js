@@ -5,7 +5,7 @@ const path = require('path');
 const ROOT = process.cwd();
 const OUTPUT_FILE = path.join(ROOT, 'src/data/generated/gsc-opportunities.json');
 const REPORT_DIR = path.join(ROOT, 'reports/seo');
-const SITE_URL = process.env.GSC_SITE_URL || 'https://www.obd2hq.com/';
+const SITE_URL = process.env.GSC_SITE_URL || 'https://obd2hq.com/';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const seedQueries = [
@@ -68,7 +68,7 @@ function extractMake(query) {
 function classifyQuery(query) {
   const codes = extractCodes(query);
   const make = extractMake(query);
-  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[sş]ık|voyants?|warnleuchten|luces/i.test(query);
+  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[Ä±i]\s+[Ä±i]?[sÅŸ]Ä±k|voyants?|warnleuchten|luces/i.test(query);
   const hasYear = /\b(19|20)\d{2}\b/.test(query);
   if (warningIntent && hasYear) return 'warning_light_model_year';
   if (warningIntent && make) return 'warning_light_make';

@@ -24,7 +24,7 @@ export default async function SymptomsHubPage({ params }: { params: Promise<{ lo
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: copy.symptomsMetaTitle.replace(' - OBD2HQ', ''),
-    url: `https://www.obd2hq.com/${locale}/symptoms`,
+    url: `https://obd2hq.com/${locale}/symptoms`,
     about: copy.symptomsEyebrow,
   };
 

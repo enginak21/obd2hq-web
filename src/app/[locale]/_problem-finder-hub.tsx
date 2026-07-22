@@ -19,20 +19,20 @@ const metaCopy: Record<ProblemFinderLocale, { title: string; description: string
     description: 'Describe what your car is doing and get likely causes, first checks, safety advice and related OBD2 codes.',
   },
   tr: {
-    title: 'Arıza Bulucu: OBD Kodu Bilmeden Araç Sorununu Anla',
-    description: 'Aracındaki sorunu günlük dille yaz; olası nedenleri, ilk kontrolleri, güvenlik uyarısını ve ilgili OBD2 kodlarını gör.',
+    title: 'ArÄ±za Bulucu: OBD Kodu Bilmeden AraÃ§ Sorununu Anla',
+    description: 'AracÄ±ndaki sorunu gÃ¼nlÃ¼k dille yaz; olasÄ± nedenleri, ilk kontrolleri, gÃ¼venlik uyarÄ±sÄ±nÄ± ve ilgili OBD2 kodlarÄ±nÄ± gÃ¶r.',
   },
   de: {
     title: 'Auto Problemfinder: Symptome ohne OBD-Code verstehen',
-    description: 'Beschreiben Sie das Problem und erhalten Sie Ursachen, erste Prüfungen, Sicherheitshinweise und passende OBD2-Codes.',
+    description: 'Beschreiben Sie das Problem und erhalten Sie Ursachen, erste PrÃ¼fungen, Sicherheitshinweise und passende OBD2-Codes.',
   },
   es: {
-    title: 'Buscador de fallas: diagnostica síntomas sin código OBD',
-    description: 'Describe qué hace tu coche y recibe causas probables, primeras revisiones, seguridad y códigos OBD2 relacionados.',
+    title: 'Buscador de fallas: diagnostica sÃ­ntomas sin cÃ³digo OBD',
+    description: 'Describe quÃ© hace tu coche y recibe causas probables, primeras revisiones, seguridad y cÃ³digos OBD2 relacionados.',
   },
   fr: {
-    title: 'Trouver une panne: comprendre un symptôme sans code OBD',
-    description: 'Décrivez le problème et obtenez causes probables, contrôles, sécurité et codes OBD2 liés.',
+    title: 'Trouver une panne: comprendre un symptÃ´me sans code OBD',
+    description: 'DÃ©crivez le problÃ¨me et obtenez causes probables, contrÃ´les, sÃ©curitÃ© et codes OBD2 liÃ©s.',
   },
 };
 
@@ -56,8 +56,8 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://www.obd2hq.com${getProblemFinderHubPath(locale)}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://obd2hq.com${getProblemFinderHubPath(locale)}` },
     ],
   };
 
@@ -67,7 +67,7 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
     name: getProblemFinderHubLabel(locale),
     applicationCategory: 'AutomotiveDiagnosticApplication',
     operatingSystem: 'Web',
-    url: `https://www.obd2hq.com${getProblemFinderHubPath(locale)}`,
+    url: `https://obd2hq.com${getProblemFinderHubPath(locale)}`,
     description: metaCopy[locale].description,
   };
 
@@ -82,7 +82,7 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
             <div>
               <p className="text-xs font-black uppercase tracking-[0.28em] text-slate-500">{getProblemFinderHubLabel(locale)}</p>
               <h2 className="mt-2 text-3xl font-black text-white">
-                {locale === 'tr' ? 'Tüm arıza yolları' : 'All problem paths'}
+                {locale === 'tr' ? 'TÃ¼m arÄ±za yollarÄ±' : 'All problem paths'}
               </h2>
             </div>
           </div>

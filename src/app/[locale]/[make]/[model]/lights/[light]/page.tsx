@@ -54,25 +54,25 @@ export default async function LightDetailPage({ params }: PageProps) {
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  const firstChecksTitle = locale === 'tr' ? 'İlk kontrol sırası' : locale === 'de' ? 'Erste Prüfungen' : locale === 'es' ? 'Primeras revisiones' : locale === 'fr' ? 'Premiers contrôles' : 'First checks';
+  const firstChecksTitle = locale === 'tr' ? 'Ä°lk kontrol sÄ±rasÄ±' : locale === 'de' ? 'Erste PrÃ¼fungen' : locale === 'es' ? 'Primeras revisiones' : locale === 'fr' ? 'Premiers contrÃ´les' : 'First checks';
   const firstChecks = locale === 'tr'
-    ? ['Uyarı ışığının rengi ve yanıp sönme durumunu not alın.', 'Güvenliyse aracı durdurup yağ, fren hidroliği, hararet ve akü bağlantılarını görsel kontrol edin.', 'OBD2 tarayıcıyla kodları okuyun ve silmeden önce freeze-frame verisini kaydedin.', 'Aynı ışık tekrar yanarsa parça değiştirmeden önce sensör, kablo, sigorta ve canlı veriyi kontrol ettirin.']
+    ? ['UyarÄ± Ä±ÅŸÄ±ÄŸÄ±nÄ±n rengi ve yanÄ±p sÃ¶nme durumunu not alÄ±n.', 'GÃ¼venliyse aracÄ± durdurup yaÄŸ, fren hidroliÄŸi, hararet ve akÃ¼ baÄŸlantÄ±larÄ±nÄ± gÃ¶rsel kontrol edin.', 'OBD2 tarayÄ±cÄ±yla kodlarÄ± okuyun ve silmeden Ã¶nce freeze-frame verisini kaydedin.', 'AynÄ± Ä±ÅŸÄ±k tekrar yanarsa parÃ§a deÄŸiÅŸtirmeden Ã¶nce sensÃ¶r, kablo, sigorta ve canlÄ± veriyi kontrol ettirin.']
     : locale === 'de'
-      ? ['Farbe und Blinkverhalten der Warnleuchte notieren.', 'Wenn sicher möglich, Öl, Bremsflüssigkeit, Temperaturanzeige und Batterieanschlüsse prüfen.', 'OBD2-Codes auslesen und Freeze-Frame-Daten sichern, bevor Fehler gelöscht werden.', 'Bei erneutem Auftreten Sensoren, Kabel, Sicherungen und Live-Daten prüfen, bevor Teile ersetzt werden.']
+      ? ['Farbe und Blinkverhalten der Warnleuchte notieren.', 'Wenn sicher mÃ¶glich, Ã–l, BremsflÃ¼ssigkeit, Temperaturanzeige und BatterieanschlÃ¼sse prÃ¼fen.', 'OBD2-Codes auslesen und Freeze-Frame-Daten sichern, bevor Fehler gelÃ¶scht werden.', 'Bei erneutem Auftreten Sensoren, Kabel, Sicherungen und Live-Daten prÃ¼fen, bevor Teile ersetzt werden.']
       : locale === 'es'
-        ? ['Anota el color y si la luz parpadea.', 'Si es seguro, revisa aceite, líquido de frenos, temperatura y bornes de batería.', 'Lee los códigos OBD2 y guarda freeze-frame antes de borrar fallas.', 'Si vuelve a encenderse, revisa sensor, cableado, fusibles y datos en vivo antes de cambiar piezas.']
+        ? ['Anota el color y si la luz parpadea.', 'Si es seguro, revisa aceite, lÃ­quido de frenos, temperatura y bornes de baterÃ­a.', 'Lee los cÃ³digos OBD2 y guarda freeze-frame antes de borrar fallas.', 'Si vuelve a encenderse, revisa sensor, cableado, fusibles y datos en vivo antes de cambiar piezas.']
         : locale === 'fr'
-          ? ["Notez la couleur du voyant et s'il clignote.", "Si c'est sûr, vérifiez huile, liquide de frein, température et bornes de batterie.", 'Lisez les codes OBD2 et sauvegardez les données freeze-frame avant effacement.', 'Si le voyant revient, contrôlez capteur, câblage, fusibles et données en direct avant remplacement.']
+          ? ["Notez la couleur du voyant et s'il clignote.", "Si c'est sÃ»r, vÃ©rifiez huile, liquide de frein, tempÃ©rature et bornes de batterie.", 'Lisez les codes OBD2 et sauvegardez les donnÃ©es freeze-frame avant effacement.', 'Si le voyant revient, contrÃ´lez capteur, cÃ¢blage, fusibles et donnÃ©es en direct avant remplacement.']
           : ['Note the warning color and whether it is flashing.', 'If safe, stop and visually check oil level, brake fluid, coolant temperature and battery terminals.', 'Read OBD2 codes and save freeze-frame data before clearing faults.', 'If the light returns, test sensors, wiring, fuses and live data before replacing parts.'];
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
-      { '@type': 'ListItem', position: 3, name: capModel, item: `https://www.obd2hq.com/${locale}/${make}/${model}` },
-      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights` },
-      { '@type': 'ListItem', position: 5, name: lightData.name, item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: capMake, item: `https://obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: capModel, item: `https://obd2hq.com/${locale}/${make}/${model}` },
+      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://obd2hq.com/${locale}/${make}/${model}/lights` },
+      { '@type': 'ListItem', position: 5, name: lightData.name, item: `https://obd2hq.com/${locale}/${make}/${model}/lights/${light}` },
     ],
   };
   const articleSchema = {
@@ -83,7 +83,7 @@ export default async function LightDetailPage({ params }: PageProps) {
     dateModified: '2026-07-18',
     author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
     publisher: { '@type': 'Organization', name: 'OBD2HQ' },
-    image: `https://www.obd2hq.com${lightData.imageSrc}`,
+    image: `https://obd2hq.com${lightData.imageSrc}`,
     about: [
       { '@type': 'Thing', name: `${capMake} ${capModel}` },
       { '@type': 'Thing', name: lightData.name },

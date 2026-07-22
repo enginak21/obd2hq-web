@@ -18,30 +18,30 @@ const hubCopy = {
     open: 'Open guide',
   },
   tr: {
-    eyebrow: 'Belirti odaklı arıza rehberleri',
-    title: 'Kodu bilmeden arızanın yönünü bulun.',
-    description: 'Google’a gerçek kullanıcı diliyle yazılan aramalar için rehberler: gaz yemiyor, titriyor, geç çalışıyor, duman atıyor, motordan ses geliyor ve uyarı lambaları.',
-    search: 'Popüler belirti aramaları',
-    open: 'Rehberi aç',
+    eyebrow: 'Belirti odaklÄ± arÄ±za rehberleri',
+    title: 'Kodu bilmeden arÄ±zanÄ±n yÃ¶nÃ¼nÃ¼ bulun.',
+    description: 'Googleâ€™a gerÃ§ek kullanÄ±cÄ± diliyle yazÄ±lan aramalar iÃ§in rehberler: gaz yemiyor, titriyor, geÃ§ Ã§alÄ±ÅŸÄ±yor, duman atÄ±yor, motordan ses geliyor ve uyarÄ± lambalarÄ±.',
+    search: 'PopÃ¼ler belirti aramalarÄ±',
+    open: 'Rehberi aÃ§',
   },
   de: {
-    eyebrow: 'Symptomorientierte Reparaturführer',
+    eyebrow: 'Symptomorientierte ReparaturfÃ¼hrer',
     title: 'Fehler finden, bevor der Code bekannt ist.',
-    description: 'Ratgeber für echte Suchanfragen: keine Leistung, Ruckeln, Kraftstoffgeruch, Startprobleme, Rauch, Geräusche und Warnleuchten.',
+    description: 'Ratgeber fÃ¼r echte Suchanfragen: keine Leistung, Ruckeln, Kraftstoffgeruch, Startprobleme, Rauch, GerÃ¤usche und Warnleuchten.',
     search: 'Beliebte Symptom-Suchen',
-    open: 'Ratgeber öffnen',
+    open: 'Ratgeber Ã¶ffnen',
   },
   es: {
-    eyebrow: 'Guías por síntoma',
-    title: 'Encuentra la falla antes de conocer el código.',
-    description: 'Guías para búsquedas reales: no acelera, vibra, olor a gasolina, arranque difícil, humo, ruidos y luces de advertencia.',
-    search: 'Búsquedas populares',
-    open: 'Abrir guía',
+    eyebrow: 'GuÃ­as por sÃ­ntoma',
+    title: 'Encuentra la falla antes de conocer el cÃ³digo.',
+    description: 'GuÃ­as para bÃºsquedas reales: no acelera, vibra, olor a gasolina, arranque difÃ­cil, humo, ruidos y luces de advertencia.',
+    search: 'BÃºsquedas populares',
+    open: 'Abrir guÃ­a',
   },
   fr: {
-    eyebrow: 'Guides par symptôme',
-    title: 'Trouvez la panne avant de connaître le code.',
-    description: 'Guides pour recherches réelles : manque de puissance, vibrations, odeur carburant, démarrage difficile, fumée, bruits et voyants.',
+    eyebrow: 'Guides par symptÃ´me',
+    title: 'Trouvez la panne avant de connaÃ®tre le code.',
+    description: 'Guides pour recherches rÃ©elles : manque de puissance, vibrations, odeur carburant, dÃ©marrage difficile, fumÃ©e, bruits et voyants.',
     search: 'Recherches populaires',
     open: 'Ouvrir le guide',
   },
@@ -49,10 +49,10 @@ const hubCopy = {
 
 const detailCopy = {
   en: { drive: 'Drive advice', causes: 'Most likely causes', checks: 'First checks', steps: 'Diagnostic flow', mistakes: 'Common mistakes', codes: 'Related OBD2 codes', links: 'Related guides', faq: 'FAQ' },
-  tr: { drive: 'Sürüş önerisi', causes: 'En olası nedenler', checks: 'İlk kontroller', steps: 'Teşhis akışı', mistakes: 'Sık yapılan hatalar', codes: 'İlgili OBD2 kodları', links: 'İlgili rehberler', faq: 'Sık sorulan sorular' },
-  de: { drive: 'Fahrempfehlung', causes: 'Wahrscheinliche Ursachen', checks: 'Erste Prüfungen', steps: 'Diagnoseablauf', mistakes: 'Häufige Fehler', codes: 'Verwandte OBD2-Codes', links: 'Verwandte Ratgeber', faq: 'FAQ' },
-  es: { drive: 'Consejo de manejo', causes: 'Causas probables', checks: 'Primeras revisiones', steps: 'Flujo de diagnóstico', mistakes: 'Errores comunes', codes: 'Códigos OBD2 relacionados', links: 'Guías relacionadas', faq: 'Preguntas frecuentes' },
-  fr: { drive: 'Conseil de conduite', causes: 'Causes probables', checks: 'Premiers contrôles', steps: 'Parcours diagnostic', mistakes: 'Erreurs fréquentes', codes: 'Codes OBD2 liés', links: 'Guides liés', faq: 'FAQ' },
+  tr: { drive: 'SÃ¼rÃ¼ÅŸ Ã¶nerisi', causes: 'En olasÄ± nedenler', checks: 'Ä°lk kontroller', steps: 'TeÅŸhis akÄ±ÅŸÄ±', mistakes: 'SÄ±k yapÄ±lan hatalar', codes: 'Ä°lgili OBD2 kodlarÄ±', links: 'Ä°lgili rehberler', faq: 'SÄ±k sorulan sorular' },
+  de: { drive: 'Fahrempfehlung', causes: 'Wahrscheinliche Ursachen', checks: 'Erste PrÃ¼fungen', steps: 'Diagnoseablauf', mistakes: 'HÃ¤ufige Fehler', codes: 'Verwandte OBD2-Codes', links: 'Verwandte Ratgeber', faq: 'FAQ' },
+  es: { drive: 'Consejo de manejo', causes: 'Causas probables', checks: 'Primeras revisiones', steps: 'Flujo de diagnÃ³stico', mistakes: 'Errores comunes', codes: 'CÃ³digos OBD2 relacionados', links: 'GuÃ­as relacionadas', faq: 'Preguntas frecuentes' },
+  fr: { drive: 'Conseil de conduite', causes: 'Causes probables', checks: 'Premiers contrÃ´les', steps: 'Parcours diagnostic', mistakes: 'Erreurs frÃ©quentes', codes: 'Codes OBD2 liÃ©s', links: 'Guides liÃ©s', faq: 'FAQ' },
 };
 
 export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) {
@@ -63,14 +63,14 @@ export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) 
     '@type': 'CollectionPage',
     name: copy.title,
     description: copy.description,
-    url: `https://www.obd2hq.com${getSymptomContentHubPath(locale)}`,
+    url: `https://obd2hq.com${getSymptomContentHubPath(locale)}`,
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: publishedSymptomContentGroups.map((group, index) => ({
         '@type': 'ListItem',
         position: index + 1,
         name: group.locales[locale].title,
-        url: `https://www.obd2hq.com${getSymptomContentDetailPath(group, locale)}`,
+        url: `https://obd2hq.com${getSymptomContentDetailPath(group, locale)}`,
       })),
     },
   };
@@ -244,14 +244,14 @@ function buildSchema(locale: SymptomContentLocale, group: SymptomContentGroup, i
         dateModified: '2026-07-17',
         inLanguage: locale,
         about: [group.make, group.symptomKey, ...item.relatedCodes],
-        mainEntityOfPage: `https://www.obd2hq.com${path}`,
+        mainEntityOfPage: `https://obd2hq.com${path}`,
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: hubCopy[locale].eyebrow, item: `https://www.obd2hq.com${getSymptomContentHubPath(locale)}` },
-          { '@type': 'ListItem', position: 3, name: item.title, item: `https://www.obd2hq.com${path}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: hubCopy[locale].eyebrow, item: `https://obd2hq.com${getSymptomContentHubPath(locale)}` },
+          { '@type': 'ListItem', position: 3, name: item.title, item: `https://obd2hq.com${path}` },
         ],
       },
       {

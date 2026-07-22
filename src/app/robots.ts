@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.obd2hq.com/sitemap.xml',
+    sitemap: 'https://obd2hq.com/sitemap.xml',
   }
 }

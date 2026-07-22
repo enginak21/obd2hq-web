@@ -19,14 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     tr: 'Otomobil Gazetesi & Haberler - OBD2HQ',
     de: 'Automobilnachrichten & Zeitung - OBD2HQ',
     es: 'Noticias Automotrices y Gaceta - OBD2HQ',
-    fr: 'Actualités automobiles - OBD2HQ'
+    fr: 'ActualitÃ©s automobiles - OBD2HQ'
   };
   const descriptions: Record<string, string> = {
     en: 'Latest automotive news, recalls, diagnostic technology, new model releases and issues that matter to car owners.',
-    tr: 'Güncel otomobil haberleri, geri çağırmalar, teşhis teknolojileri, yeni model gelişmeleri ve araç sahiplerini ilgilendiren sorunlar.',
-    de: 'Aktuelle Autonachrichten, Rückrufe, Diagnosetechnik, neue Modelle und wichtige Themen für Fahrzeughalter.',
-    es: 'Noticias automotrices, retiradas, tecnología de diagnóstico, nuevos modelos y temas importantes para propietarios.',
-    fr: 'Actualités automobiles, rappels, technologie de diagnostic, nouveaux modèles et sujets importants pour les propriétaires.'
+    tr: 'GÃ¼ncel otomobil haberleri, geri Ã§aÄŸÄ±rmalar, teÅŸhis teknolojileri, yeni model geliÅŸmeleri ve araÃ§ sahiplerini ilgilendiren sorunlar.',
+    de: 'Aktuelle Autonachrichten, RÃ¼ckrufe, Diagnosetechnik, neue Modelle und wichtige Themen fÃ¼r Fahrzeughalter.',
+    es: 'Noticias automotrices, retiradas, tecnologÃ­a de diagnÃ³stico, nuevos modelos y temas importantes para propietarios.',
+    fr: 'ActualitÃ©s automobiles, rappels, technologie de diagnostic, nouveaux modÃ¨les et sujets importants pour les propriÃ©taires.'
   };
 
   return {
@@ -43,14 +43,14 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
 
   const articles = getAllNews();
-  const pageUrl = `https://www.obd2hq.com/${locale}/news`;
+  const pageUrl = `https://obd2hq.com/${locale}/news`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
           { '@type': 'ListItem', position: 2, name: t('title'), item: pageUrl },
         ],
       },

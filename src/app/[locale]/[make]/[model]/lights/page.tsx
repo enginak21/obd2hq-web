@@ -1,4 +1,4 @@
-﻿import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { Metadata } from 'next';
@@ -81,10 +81,10 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
-      { '@type': 'ListItem', position: 3, name: capModel, item: `https://www.obd2hq.com/${locale}/${make}/${model}` },
-      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: capMake, item: `https://obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: capModel, item: `https://obd2hq.com/${locale}/${make}/${model}` },
+      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://obd2hq.com/${locale}/${make}/${model}/lights` },
     ],
   };
   const itemListSchema = {
@@ -95,8 +95,8 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: light.name,
-      url: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light.id}`,
-      image: `https://www.obd2hq.com${light.imageSrc}`,
+      url: `https://obd2hq.com/${locale}/${make}/${model}/lights/${light.id}`,
+      image: `https://obd2hq.com${light.imageSrc}`,
     })),
   };
   const faqSchema = {

@@ -19,24 +19,24 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
   const { locale } = await params;
   setRequestLocale(locale);
   const copy = getKnowledgeUiCopy(locale);
-  const guideTitle = locale === 'tr' ? 'Hangi teşhis aracını ne zaman kullanmalısınız?' : locale === 'de' ? 'Welches Diagnosewerkzeug wann nutzen?' : locale === 'es' ? 'Qué herramienta usar y cuándo' : locale === 'fr' ? 'Quel outil utiliser et quand' : 'Which diagnostic tool should you use?';
+  const guideTitle = locale === 'tr' ? 'Hangi teÅŸhis aracÄ±nÄ± ne zaman kullanmalÄ±sÄ±nÄ±z?' : locale === 'de' ? 'Welches Diagnosewerkzeug wann nutzen?' : locale === 'es' ? 'QuÃ© herramienta usar y cuÃ¡ndo' : locale === 'fr' ? 'Quel outil utiliser et quand' : 'Which diagnostic tool should you use?';
   const guideText = locale === 'tr'
-    ? 'Kod biliyorsanız arama ve kod rehberleri en hızlı yoldur. Kod bilmiyorsanız Arıza Bulucu ile belirtiyi yazın; bakım, araç profili ve uyarı ışığı sayfalarıyla ilk kontrol sırasını çıkarın. Hesaplayıcılar ve gelişmiş araçlar parça değiştirmeden önce masraf, risk ve doğrulama adımlarını netleştirmek için tasarlanmıştır.'
+    ? 'Kod biliyorsanÄ±z arama ve kod rehberleri en hÄ±zlÄ± yoldur. Kod bilmiyorsanÄ±z ArÄ±za Bulucu ile belirtiyi yazÄ±n; bakÄ±m, araÃ§ profili ve uyarÄ± Ä±ÅŸÄ±ÄŸÄ± sayfalarÄ±yla ilk kontrol sÄ±rasÄ±nÄ± Ã§Ä±karÄ±n. HesaplayÄ±cÄ±lar ve geliÅŸmiÅŸ araÃ§lar parÃ§a deÄŸiÅŸtirmeden Ã¶nce masraf, risk ve doÄŸrulama adÄ±mlarÄ±nÄ± netleÅŸtirmek iÃ§in tasarlanmÄ±ÅŸtÄ±r.'
     : locale === 'de'
-      ? 'Wenn Sie den Code kennen, sind Suche und Code-Leitfäden der schnellste Weg. Ohne Code beschreiben Sie das Symptom im Problemfinder und nutzen Wartung, Fahrzeugprofil und Warnleuchten für die ersten Prüfungen. Rechner und Werkzeuge helfen, Kosten, Risiko und Prüfschritte vor dem Teiletausch zu klären.'
+      ? 'Wenn Sie den Code kennen, sind Suche und Code-LeitfÃ¤den der schnellste Weg. Ohne Code beschreiben Sie das Symptom im Problemfinder und nutzen Wartung, Fahrzeugprofil und Warnleuchten fÃ¼r die ersten PrÃ¼fungen. Rechner und Werkzeuge helfen, Kosten, Risiko und PrÃ¼fschritte vor dem Teiletausch zu klÃ¤ren.'
       : locale === 'es'
-        ? 'Si conoces el código, búsqueda y guías de código son el camino más rápido. Sin código, escribe el síntoma en el buscador de fallas y combina mantenimiento, perfil del vehículo y luces del tablero. Las herramientas ayudan a aclarar coste, riesgo y verificación antes de cambiar piezas.'
+        ? 'Si conoces el cÃ³digo, bÃºsqueda y guÃ­as de cÃ³digo son el camino mÃ¡s rÃ¡pido. Sin cÃ³digo, escribe el sÃ­ntoma en el buscador de fallas y combina mantenimiento, perfil del vehÃ­culo y luces del tablero. Las herramientas ayudan a aclarar coste, riesgo y verificaciÃ³n antes de cambiar piezas.'
         : locale === 'fr'
-          ? 'Si vous connaissez le code, la recherche et les guides de code sont le chemin le plus rapide. Sans code, décrivez le symptôme dans l’outil de panne puis utilisez entretien, profil véhicule et voyants. Les outils clarifient coût, risque et contrôles avant remplacement.'
+          ? 'Si vous connaissez le code, la recherche et les guides de code sont le chemin le plus rapide. Sans code, dÃ©crivez le symptÃ´me dans lâ€™outil de panne puis utilisez entretien, profil vÃ©hicule et voyants. Les outils clarifient coÃ»t, risque et contrÃ´les avant remplacement.'
           : 'If you know the code, search and code guides are the fastest path. If you do not know the code, describe the symptom in the car problem finder, then use maintenance, vehicle profiles and warning-light pages to build the first-check sequence. Tools clarify cost, risk and verification before replacing parts.';
-  const pageUrl = `https://www.obd2hq.com/${locale}/tools`;
+  const pageUrl = `https://obd2hq.com/${locale}/tools`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
           { '@type': 'ListItem', position: 2, name: copy.toolsTitle, item: pageUrl },
         ],
       },

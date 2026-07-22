@@ -51,9 +51,9 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: displayMake, item: `https://www.obd2hq.com/${locale}/${make}` },
-      { '@type': 'ListItem', position: 3, name: copy.h1, item: `https://www.obd2hq.com${getBrandWarningLightsPath(locale, make)}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: displayMake, item: `https://obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: copy.h1, item: `https://obd2hq.com${getBrandWarningLightsPath(locale, make)}` },
     ],
   };
   const faqSchema = {

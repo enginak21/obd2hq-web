@@ -66,7 +66,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
-  const pageUrl = `https://www.obd2hq.com/${locale}/${make}/${model}`;
+  const pageUrl = `https://obd2hq.com/${locale}/${make}/${model}`;
 
 
   const PAGE_SIZE = 200;
@@ -89,8 +89,8 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: capMake, item: `https://obd2hq.com/${locale}/${make}` },
           { '@type': 'ListItem', position: 3, name: `${capMake} ${capModel}`, item: pageUrl },
         ],
       },

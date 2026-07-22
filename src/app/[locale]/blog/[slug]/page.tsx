@@ -48,17 +48,17 @@ export default async function BlogPostPage({ params }: PageProps) {
     "author": {
       "@type": "Organization",
       "name": "OBD2HQ Editorial Team",
-      "url": `https://www.obd2hq.com/${locale}/reviewers`
+      "url": `https://obd2hq.com/${locale}/reviewers`
     },
     "publisher": {
       "@type": "Organization",
       "name": "OBD2HQ",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.obd2hq.com/icon.jpg"
+        "url": "https://obd2hq.com/icon.jpg"
       }
     },
-    "mainEntityOfPage": `https://www.obd2hq.com/${locale}/blog/${slug}`
+    "mainEntityOfPage": `https://obd2hq.com/${locale}/blog/${slug}`
   };
 
   return (

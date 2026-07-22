@@ -15,7 +15,7 @@ import { getBrandWarningLightsPath, getCodeHubPath, getOpportunityCodes, type Gs
 import gscOpportunities from '@/data/generated/gsc-opportunities.json';
 import validRoutes from '@/data/valid_routes.json';
 
-const BASE_URL = 'https://www.obd2hq.com';
+const BASE_URL = 'https://obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
 const LASTMOD = SEO_LAST_REVIEWED.slice(0, 10);
 

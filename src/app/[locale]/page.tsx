@@ -33,12 +33,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "OBD2HQ",
-    "url": `https://www.obd2hq.com/${locale}`,
+    "url": `https://obd2hq.com/${locale}`,
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": `https://www.obd2hq.com/${locale}/search?q={search_term_string}`
+        "urlTemplate": `https://obd2hq.com/${locale}/search?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
