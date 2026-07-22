@@ -1,0 +1,28 @@
+{
+  "name": "OBD2HQ Open Diagnostic Dataset",
+  "description": "Public OBD2 code, warning light and first-check diagnostic resources published by OBD2HQ.",
+  "homepage": "https://obd2hq.com/en/resources",
+  "resources": [
+    {
+      "name": "OBD2 code dataset",
+      "url": "https://obd2hq.com/open-data/obd2-codes.json",
+      "format": "json"
+    },
+    {
+      "name": "Dashboard warning light dataset",
+      "url": "https://obd2hq.com/open-data/warning-lights.json",
+      "format": "json"
+    },
+    {
+      "name": "Diagnostic first-check checklist",
+      "url": "https://obd2hq.com/open-data/diagnostic-checklist.json",
+      "format": "json"
+    },
+    {
+      "name": "Linkable diagnostic assets",
+      "url": "https://obd2hq.com/open-data/link-assets.json",
+      "format": "json"
+    }
+  ],
+  "attribution": "Source: OBD2HQ diagnostic resources - https://obd2hq.com/en/resources"
+}
