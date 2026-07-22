@@ -23,7 +23,15 @@ function titleCase(value: string) {
 }
 
 function getVehicleTargets(code: string) {
+  const codeSpecific: Record<string, Array<{ make: string; model: string }>> = {
+    P0213: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'f-150' }],
+    P0235: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
+    P0243: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
+    P0251: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'f-150' }],
+    P0122: [{ make: 'toyota', model: 'camry' }, { make: 'lexus', model: 'rx' }],
+  };
   const preferred = [
+    ...(codeSpecific[code] || []),
     { make: 'ford', model: 'focus' },
     { make: 'suzuki', model: 'jimny' },
     { make: 'toyota', model: 'camry' },
@@ -31,12 +39,45 @@ function getVehicleTargets(code: string) {
     { make: 'nissan', model: 'altima' },
     { make: 'ford', model: 'f-150' },
   ];
-  const valid = preferred.filter(target => cars.some(car => car.make === target.make && car.models.includes(target.model)));
+  const uniquePreferred = preferred.filter((target, index, list) => (
+    list.findIndex(item => item.make === target.make && item.model === target.model) === index
+  ));
+  const valid = uniquePreferred.filter(target => cars.some(car => car.make === target.make && car.models.includes(target.model)));
   return valid.slice(0, 5).map(target => ({
     ...target,
     href: `/en/${target.make}/${target.model}/${code.toLowerCase()}`,
     label: `${titleCase(target.make)} ${titleCase(target.model)} ${code}`,
   }));
+}
+
+function getCoveredSearches(code: string, locale: string) {
+  const searches: Record<string, string[]> = {
+    P0213: ['p0213', 'p0213 ford', 'ford focus p0213'],
+    P0235: ['p0235 suzuki', 'suzuki jimny p0235', 'turbo boost sensor p0235'],
+    P0243: ['p0243 suzuki', 'suzuki jimny p0243', 'wastegate solenoid p0243'],
+    P0251: ['p0251 ford', 'ford focus p0251', 'injection pump metering control p0251'],
+    P0122: ['toyota/lexus error p0122', 'toyota camry p0122', 'lexus rx p0122'],
+  };
+  const fallback = [`${code.toLowerCase()} code`, `${code.toLowerCase()} symptoms`, `${code.toLowerCase()} causes`];
+  const title = locale === 'tr'
+    ? 'Bu sayfanın karşıladığı aramalar'
+    : locale === 'de'
+      ? 'Abgedeckte Suchanfragen'
+      : locale === 'es'
+        ? 'Búsquedas cubiertas'
+        : locale === 'fr'
+          ? 'Recherches couvertes'
+          : 'Searches this page covers';
+  const note = locale === 'tr'
+    ? 'Bu ifadeler ayrı ayrı ince sayfa açmadan aynı rehber içinde doğal şekilde cevaplanır.'
+    : locale === 'de'
+      ? 'Diese Suchanfragen werden ohne dünne Einzelseiten in diesem Ratgeber beantwortet.'
+      : locale === 'es'
+        ? 'Estas consultas se responden en esta guía sin crear páginas débiles separadas.'
+        : locale === 'fr'
+          ? 'Ces requêtes sont traitées dans ce guide sans créer de pages faibles séparées.'
+          : 'These queries are answered in this guide without creating thin duplicate pages.';
+  return { title, note, items: searches[code] || fallback };
 }
 
 function asLocalizedArray(value: unknown, locale: string) {
@@ -156,6 +197,7 @@ export default async function CodeHubPage({ params }: PageProps) {
   const commonFixes = asLocalizedArray(rawCode.commonFixes, locale).slice(0, 4);
   const relatedCodes = getRelatedCodes(upperCode, Object.keys(baseCodes as Record<string, unknown>), 6);
   const vehicleTargets = getVehicleTargets(upperCode);
+  const coveredSearches = getCoveredSearches(upperCode, locale);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -290,6 +332,20 @@ export default async function CodeHubPage({ params }: PageProps) {
               <Link key={target.href} href={target.href.replace('/en/', `/${locale}/`)} className="rounded-xl border border-white/10 bg-black/20 p-4 text-sm font-semibold text-slate-100 hover:border-blue-400/40">
                 {target.label}
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pt-8">
+        <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
+          <h2 className="text-2xl font-bold text-white">{coveredSearches.title}</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300">{coveredSearches.note}</p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {coveredSearches.items.map(item => (
+              <span key={item} className="rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1 text-sm font-semibold text-blue-100">
+                {item}
+              </span>
             ))}
           </div>
         </div>

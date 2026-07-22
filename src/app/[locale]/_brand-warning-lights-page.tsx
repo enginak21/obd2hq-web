@@ -19,6 +19,42 @@ function titleCase(value: string) {
   return value.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
 }
 
+function getBrandSearchIntentBlock(locale: string, displayMake: string) {
+  if (locale === 'tr') {
+    return {
+      title: `${displayMake} uyarı ışığı aramalarını nasıl okumalı?`,
+      text: `${displayMake} warning lights, ${displayMake} vehicle warning lights veya gösterge uyarı ışığı gibi aramalar aynı ihtiyaca gelir: sembolün anlamı, aciliyet seviyesi, ilk kontrol ve ilgili OBD2 kodu.`,
+      chips: [`${displayMake} warning lights`, `${displayMake} vehicle warning lights`, `${displayMake} gösterge uyarı ışıkları`],
+    };
+  }
+  if (locale === 'de') {
+    return {
+      title: `${displayMake} Warnleuchten richtig einordnen`,
+      text: `Suchanfragen wie ${displayMake} warning lights oder ${displayMake} vehicle warning lights meinen meist dasselbe: Symbol, Dringlichkeit, erste Prüfung und passende OBD2-Codes.`,
+      chips: [`${displayMake} warning lights`, `${displayMake} vehicle warning lights`, `${displayMake} Warnleuchten`],
+    };
+  }
+  if (locale === 'es') {
+    return {
+      title: `Cómo leer las luces ${displayMake}`,
+      text: `Búsquedas como ${displayMake} warning lights o ${displayMake} vehicle warning lights buscan la misma respuesta: símbolo, urgencia, primera revisión y códigos OBD2 relacionados.`,
+      chips: [`${displayMake} warning lights`, `${displayMake} vehicle warning lights`, `luces tablero ${displayMake}`],
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      title: `Comment lire les voyants ${displayMake}`,
+      text: `Les recherches ${displayMake} warning lights ou ${displayMake} vehicle warning lights visent la même réponse : symbole, urgence, premier contrôle et codes OBD2 liés.`,
+      chips: [`${displayMake} warning lights`, `${displayMake} vehicle warning lights`, `voyants ${displayMake}`],
+    };
+  }
+  return {
+    title: `How to read ${displayMake} vehicle warning lights`,
+    text: `${displayMake} warning lights and ${displayMake} vehicle warning lights usually mean the same search intent: identify the symbol, urgency, first checks and related OBD2 codes before replacing parts.`,
+    chips: [`${displayMake} warning lights`, `${displayMake} vehicle warning lights`, `${displayMake} dashboard lights`],
+  };
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, make } = await params;
   if (!cars.some(car => car.make === make)) return { title: 'Not Found' };
@@ -40,6 +76,7 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
 
   const copy = getBrandWarningCopy(locale, make);
   const displayMake = titleCase(make);
+  const searchIntentBlock = getBrandSearchIntentBlock(locale, displayMake);
   const lights = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
   const modelLinks = car.models.slice(0, 9).map(model => ({
     model,
@@ -104,6 +141,18 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
               {item}
             </div>
           ))}
+        </section>
+
+        <section className="mt-8 rounded-2xl border border-blue-400/15 bg-blue-500/10 p-6">
+          <h2 className="text-2xl font-bold text-white">{searchIntentBlock.title}</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300">{searchIntentBlock.text}</p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {searchIntentBlock.chips.map(chip => (
+              <span key={chip} className="rounded-full border border-blue-400/20 bg-black/20 px-3 py-1 text-sm font-semibold text-blue-100">
+                {chip}
+              </span>
+            ))}
+          </div>
         </section>
 
         <section className="mt-8 rounded-2xl border border-white/10 bg-[#111827] p-6">

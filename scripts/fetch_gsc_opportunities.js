@@ -7,6 +7,7 @@ const OUTPUT_FILE = path.join(ROOT, 'src/data/generated/gsc-opportunities.json')
 const REPORT_DIR = path.join(ROOT, 'reports/seo');
 const SITE_URL = process.env.GSC_SITE_URL || 'https://obd2hq.com/';
 const DRY_RUN = process.argv.includes('--dry-run');
+const REQUIRE_GSC_CREDENTIALS = process.env.REQUIRE_GSC_CREDENTIALS === '1';
 
 const seedQueries = [
   ['p0213', 125],
@@ -242,6 +243,9 @@ async function main() {
   let rows28;
   let rows7;
   if (!token) {
+    if (REQUIRE_GSC_CREDENTIALS) {
+      throw new Error('GSC credentials are required in this environment. Add GSC_CLIENT_EMAIL and GSC_PRIVATE_KEY repository secrets, and give that service account access to the Search Console property.');
+    }
     console.log('GSC credentials are missing. Using seed queries from current Search Console screenshots.');
     rows28 = seedRows();
     rows7 = seedRows();

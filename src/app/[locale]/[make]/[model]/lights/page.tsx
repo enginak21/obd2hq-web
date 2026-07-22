@@ -25,6 +25,63 @@ function getUrgencyLabel(urgency: string, locale: string) {
   return labels[locale]?.[urgency] || urgency;
 }
 
+function getYearIntentBlock(locale: string, make: string, model: string) {
+  if (make !== 'ford' || model !== 'f-150') return null;
+  if (locale === 'tr') {
+    return {
+      title: '2021 ve 2026 Ford F-150 uyarı ışığı aramaları',
+      intro: 'F-150 sürücüleri genelde model yılıyla arama yapar; fakat ilk teşhis mantığı yıl değişse bile aynıdır: ışığın rengi, yanıp sönmesi, sürüş belirtisi ve kayıtlı OBD2 kodu birlikte okunmalıdır.',
+      items: [
+        '2021 F-150 warning lights: kırmızı yağ, fren ve hararet ışıkları bekletilmemelidir.',
+        '2026 F-150 warning lights: yeni araçta bile akü/şarj, lastik basıncı, ABS ve motor ışığı gerçek kontrol ister.',
+        'Yanıp sönen check engine ışığında aracı zorlamayın; P0300, P0301-P0308 veya katalizör riski olabilir.',
+      ],
+    };
+  }
+  if (locale === 'de') {
+    return {
+      title: '2021 und 2026 Ford F-150 Warnleuchten',
+      intro: 'Viele F-150-Suchen enthalten ein Modelljahr. Die erste Diagnose bleibt gleich: Farbe, Blinkverhalten, Fahrsymptom und gespeicherte OBD2-Codes zusammen auswerten.',
+      items: [
+        '2021 F-150 warning lights: rote Öl-, Brems- und Temperaturwarnungen sofort prüfen.',
+        '2026 F-150 warning lights: Batterie/Ladesystem, Reifendruck, ABS und Motorwarnung nicht ignorieren.',
+        'Bei blinkender Motorkontrollleuchte nicht weiter belasten; P0300 oder Katalysatorrisiko möglich.',
+      ],
+    };
+  }
+  if (locale === 'es') {
+    return {
+      title: 'Luces de advertencia Ford F-150 2021 y 2026',
+      intro: 'Muchos usuarios buscan por año, pero el primer diagnóstico es el mismo: color, parpadeo, síntoma de manejo y códigos OBD2 almacenados.',
+      items: [
+        '2021 F-150 warning lights: aceite, freno y temperatura en rojo requieren revisión inmediata.',
+        '2026 F-150 warning lights: batería/carga, presión de neumáticos, ABS y motor deben comprobarse.',
+        'Con check engine intermitente no fuerces el motor; puede haber P0300 o riesgo para el catalizador.',
+      ],
+    };
+  }
+  if (locale === 'fr') {
+    return {
+      title: 'Voyants Ford F-150 2021 et 2026',
+      intro: 'Beaucoup de recherches F-150 incluent l’année. Le premier diagnostic reste le même : couleur, clignotement, symptôme de conduite et codes OBD2 enregistrés.',
+      items: [
+        '2021 F-150 warning lights : huile, frein et température en rouge demandent un contrôle immédiat.',
+        '2026 F-150 warning lights : batterie/charge, pression pneus, ABS et moteur doivent être vérifiés.',
+        'Avec un voyant moteur clignotant, évitez de forcer; P0300 ou risque catalyseur possible.',
+      ],
+    };
+  }
+  return {
+    title: '2021 and 2026 Ford F-150 Warning Lights',
+    intro: 'F-150 owners often search by model year. The first diagnostic path is still the same: read the color, flashing behavior, driving symptom and stored OBD2 codes together.',
+    items: [
+      '2021 F-150 warning lights: red oil, brake and coolant temperature warnings should not be delayed.',
+      '2026 F-150 warning lights: battery/charging, tire pressure, ABS and engine warnings still need real checks.',
+      'With a flashing check engine light, avoid hard driving; P0300 or catalyst damage risk may be involved.',
+    ],
+  };
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const { locale, make, model } = resolvedParams;
@@ -77,6 +134,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
           : ['Do not keep driving with a red oil, brake or temperature warning.', 'A flashing check engine light can mean active misfire and catalyst damage risk.', 'For a steady amber warning, read the code, note symptoms and plan diagnosis soon.', 'Do not clear stored faults before saving freeze-frame data.'];
 
   const lightsList = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
+  const yearIntentBlock = getYearIntentBlock(locale, make, model);
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -169,6 +227,17 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
             ))}
           </ul>
         </section>
+        {yearIntentBlock ? (
+          <section className="mb-8 rounded-3xl border border-blue-400/15 bg-blue-500/10 p-6">
+            <h2 className="text-2xl font-bold text-white">{yearIntentBlock.title}</h2>
+            <p className="mt-3 leading-7 text-slate-300">{yearIntentBlock.intro}</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+              {yearIntentBlock.items.map(item => (
+                <li key={item} className="rounded-2xl bg-black/20 px-4 py-3 text-sm leading-6 text-slate-300">{item}</li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {lightsList.map((light) => {
             let colorClasses = "";
