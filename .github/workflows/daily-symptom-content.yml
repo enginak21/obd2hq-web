@@ -3,6 +3,8 @@ name: Daily symptom content
 on:
   schedule:
     - cron: '15 2 * * *'
+    - cron: '15 10 * * *'
+    - cron: '15 18 * * *'
   workflow_dispatch:
     inputs:
       limit:
@@ -19,7 +21,9 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4.1-mini' }}
-      LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || vars.SYMPTOM_CONTENT_DAILY_LIMIT || '30' }}
+      LIMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.limit || vars.SYMPTOM_CONTENT_BATCH_LIMIT || '10' }}
+      OPENAI_TIMEOUT_MS: ${{ vars.OPENAI_TIMEOUT_MS || '240000' }}
+      OPENAI_RETRIES: ${{ vars.OPENAI_RETRIES || '3' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,6 +43,11 @@ jobs:
             echo "OPENAI_API_KEY secret is missing. Add it in GitHub repository secrets."
             exit 1
           fi
+
+      - name: Preflight quality gate
+        run: |
+          npm run check:symptom-content
+          npm run check:seo-contracts
 
       - name: Generate multilingual symptom content
         run: npm run symptoms:generate
