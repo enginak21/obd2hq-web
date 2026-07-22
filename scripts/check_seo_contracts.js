@@ -25,6 +25,7 @@ function assertClean(file) {
 const criticalFiles = [
   'src/app/[locale]/[make]/[model]/[code]/page.tsx',
   'src/app/[locale]/_code-hub-page.tsx',
+  'src/app/[locale]/resources/page.tsx',
   'src/data/gsc-seo.ts',
   'src/data/obd-gold-content.ts',
   'src/data/obd-registry.ts',
@@ -50,6 +51,10 @@ assertIncludes('src/data/gsc-seo.ts', "languages['x-default']", 'x-default hrefl
 assertIncludes('src/app/sitemap.xml/route.ts', "'code-hubs'", 'code-hubs sitemap index entry');
 assertIncludes('src/app/sitemaps/[id]/route.ts', "idStr === 'code-hubs'", 'code-hubs sitemap route');
 assertIncludes('src/app/sitemaps/[id]/route.ts', 'getCodeHubPath(locale, code)', 'localized code hub sitemap URLs');
+assertIncludes('src/app/sitemaps/[id]/route.ts', '/resources', 'resources sitemap URL');
+assertIncludes('src/app/[locale]/resources/page.tsx', '/open-data/obd2-codes.json', 'open OBD2 dataset link');
+assertIncludes('src/app/[locale]/resources/page.tsx', '/widget/obd2hq-lookup.js', 'embeddable widget link');
+assertIncludes('src/proxy.ts', "'resources'", 'resources middleware allowlist');
 
 if (failures.length) {
   console.error('SEO contract checks failed:');

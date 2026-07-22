@@ -51,50 +51,62 @@ function asLocalizedArray(value: unknown, locale: string) {
 function codeHubLabels(locale: string) {
   if (locale === 'tr') {
     return {
-      firstChecks: 'Ä°lk kontroller',
-      relatedCodes: 'Ä°lgili kodlar',
-      symptoms: 'YaygÄ±n belirtiler:',
-      causes: 'OlasÄ± nedenler:',
-      symptomFallback: 'Motor arÄ±za lambasÄ±, sÃ¼rÃ¼ÅŸte deÄŸiÅŸiklik',
-      causeFallback: 'Kablo, soket, sensÃ¶r veya sistem arÄ±zasÄ±',
-      diagnosticPath: 'teÅŸhis sÄ±rasÄ±',
-      verifyRepair: 'OnarÄ±mdan Ã¶nce doÄŸrula',
+      firstChecks: 'İlk kontroller',
+      relatedCodes: 'İlgili kodlar',
+      symptoms: 'Yaygın belirtiler:',
+      causes: 'Olası nedenler:',
+      symptomFallback: 'Motor arıza lambası, sürüşte değişiklik',
+      causeFallback: 'Kablo, soket, sensör veya sistem arızası',
+      diagnosticPath: 'teşhis sırası',
+      verifyRepair: 'Onarımdan önce doğrula',
+      opportunityBadge: 'Search Console fırsatı',
+      signalsTitle: 'Karşılaştırılacak sinyaller',
+      system: 'Sistem:',
     };
   }
   if (locale === 'de') {
     return {
-      firstChecks: 'Erste PrÃ¼fungen',
+      firstChecks: 'Erste Prüfungen',
       relatedCodes: 'Verwandte Codes',
-      symptoms: 'HÃ¤ufige Symptome:',
-      causes: 'MÃ¶gliche Ursachen:',
-      symptomFallback: 'Motorkontrollleuchte, verÃ¤ndertes Fahrverhalten',
+      symptoms: 'Häufige Symptome:',
+      causes: 'Mögliche Ursachen:',
+      symptomFallback: 'Motorkontrollleuchte, verändertes Fahrverhalten',
       causeFallback: 'Kabel, Stecker, Sensor oder Systemfehler',
       diagnosticPath: 'Diagnoseablauf',
-      verifyRepair: 'Vor der Reparatur prÃ¼fen',
+      verifyRepair: 'Vor der Reparatur prüfen',
+      opportunityBadge: 'Search-Console-Chance',
+      signalsTitle: 'Signale zum Abgleichen',
+      system: 'System:',
     };
   }
   if (locale === 'es') {
     return {
       firstChecks: 'Primeras revisiones',
-      relatedCodes: 'CÃ³digos relacionados',
-      symptoms: 'SÃ­ntomas comunes:',
+      relatedCodes: 'Códigos relacionados',
+      symptoms: 'Síntomas comunes:',
       causes: 'Causas probables:',
-      symptomFallback: 'Luz de motor, cambio en el comportamiento del vehÃ­culo',
+      symptomFallback: 'Luz de motor, cambio en el comportamiento del vehículo',
       causeFallback: 'Cableado, conector, sensor o falla del sistema',
-      diagnosticPath: 'ruta de diagnÃ³stico',
+      diagnosticPath: 'ruta de diagnóstico',
       verifyRepair: 'Verificar antes de reparar',
+      opportunityBadge: 'Oportunidad en Search Console',
+      signalsTitle: 'Señales para comparar',
+      system: 'Sistema:',
     };
   }
   if (locale === 'fr') {
     return {
-      firstChecks: 'Premiers contrÃ´les',
-      relatedCodes: 'Codes associÃ©s',
-      symptoms: 'SymptÃ´mes frÃ©quents :',
+      firstChecks: 'Premiers contrôles',
+      relatedCodes: 'Codes associés',
+      symptoms: 'Symptômes fréquents :',
       causes: 'Causes probables :',
       symptomFallback: 'Voyant moteur, changement de comportement',
-      causeFallback: 'CÃ¢blage, connecteur, capteur ou dÃ©faut systÃ¨me',
+      causeFallback: 'Câblage, connecteur, capteur ou défaut système',
       diagnosticPath: 'parcours de diagnostic',
-      verifyRepair: 'VÃ©rifier avant rÃ©paration',
+      verifyRepair: 'Vérifier avant réparation',
+      opportunityBadge: 'Opportunité Search Console',
+      signalsTitle: 'Signaux à comparer',
+      system: 'Système :',
     };
   }
   return {
@@ -106,9 +118,11 @@ function codeHubLabels(locale: string) {
     causeFallback: 'Wiring, connector, sensor or system fault',
     diagnosticPath: 'diagnostic path',
     verifyRepair: 'Verify before repair',
+    opportunityBadge: 'Search Console opportunity',
+    signalsTitle: 'Signals to compare',
+    system: 'System:',
   };
 }
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, code } = await params;
   const upperCode = code.toUpperCase();
@@ -181,7 +195,7 @@ export default async function CodeHubPage({ params }: PageProps) {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1 text-sm font-semibold text-blue-200">
               <SearchCheck size={16} />
-              Google Search Console opportunity
+              {labels.opportunityBadge}
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">{copy.h1}</h1>
             <p className="mt-5 text-lg leading-8 text-slate-300">{copy.intro}</p>
@@ -234,9 +248,9 @@ export default async function CodeHubPage({ params }: PageProps) {
             </div>
           </section>
           <section className="rounded-2xl border border-white/10 bg-[#111827] p-5">
-            <h2 className="flex items-center gap-2 text-xl font-bold text-white"><Gauge size={20} /> Signals to compare</h2>
+            <h2 className="flex items-center gap-2 text-xl font-bold text-white"><Gauge size={20} /> {labels.signalsTitle}</h2>
             <div className="mt-4 grid gap-3 text-sm text-slate-300">
-              <div><span className="font-semibold text-slate-100">System:</span> {copy.system}</div>
+              <div><span className="font-semibold text-slate-100">{labels.system}</span> {copy.system}</div>
               <div><span className="font-semibold text-slate-100">{labels.symptoms}</span> {symptoms.join(', ') || labels.symptomFallback}</div>
               <div><span className="font-semibold text-slate-100">{labels.causes}</span> {causes.join(', ') || labels.causeFallback}</div>
             </div>
@@ -283,3 +297,4 @@ export default async function CodeHubPage({ params }: PageProps) {
     </main>
   );
 }
+

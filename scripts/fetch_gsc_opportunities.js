@@ -68,7 +68,7 @@ function extractMake(query) {
 function classifyQuery(query) {
   const codes = extractCodes(query);
   const make = extractMake(query);
-  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[Ä±i]\s+[Ä±i]?[sÅŸ]Ä±k|voyants?|warnleuchten|luces/i.test(query);
+  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces/i.test(query);
   const hasYear = /\b(19|20)\d{2}\b/.test(query);
   if (warningIntent && hasYear) return 'warning_light_model_year';
   if (warningIntent && make) return 'warning_light_make';
@@ -202,7 +202,7 @@ async function fetchSearchAnalytics(accessToken, startDate, endDate) {
   const json = await response.json();
   return (json.rows || []).map(row => ({
     query: row.keys[0],
-    page: row.keys[1]?.replace(/^https:\/\/www\.obd2hq\.com/, '') || targetUrlFor(row.keys[0]),
+    page: row.keys[1]?.replace(/^https:\/\/(?:www\.)?obd2hq\.com/, '') || targetUrlFor(row.keys[0]),
     clicks: row.clicks || 0,
     impressions: row.impressions || 0,
     ctr: row.ctr || 0,

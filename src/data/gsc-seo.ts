@@ -136,7 +136,7 @@ export function extractMake(value: string) {
 export function classifyGscQuery(query: string): GscIntentType {
   const codeCount = extractCodes(query).length;
   const hasMake = Boolean(extractMake(query));
-  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[sş]ık|voyants?|warnleuchten|luces/i.test(query);
+  const warningIntent = /warning\s+lights?|dashboard\s+lights?|uyar[ıi]\s+[ıi]?[şs]ık|voyants?|warnleuchten|luces/i.test(query);
   const hasYear = /\b(19|20)\d{2}\b/.test(query);
 
   if (warningIntent && hasYear) return 'warning_light_model_year';
@@ -265,7 +265,6 @@ export function getCodeHubCopy(locale: string, code: string) {
   } as const;
   return copies[isSupportedLocale(locale) ? locale : 'en'];
 }
-
 export function getBrandWarningCopy(locale: string, make: string) {
   const displayMake = make.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
   const copies = {
@@ -307,5 +306,6 @@ export function getBrandWarningCopy(locale: string, make: string) {
   } as const;
   return copies[isSupportedLocale(locale) ? locale : 'en'];
 }
-
 export const GSC_SEO_LAST_REVIEWED = SEO_LAST_REVIEWED;
+
+

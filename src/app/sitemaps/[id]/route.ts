@@ -99,6 +99,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/maintenance`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/recalls`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/calculators`, 'weekly', '0.8');
+      urls += urlEntry(`${BASE_URL}/${locale}/resources`, 'monthly', '0.86');
       urls += urlEntry(`${BASE_URL}/${locale}/editorial-policy`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/reviewers`, 'yearly', '0.4');
       urls += urlEntry(`${BASE_URL}/${locale}/privacy`, 'yearly', '0.3');

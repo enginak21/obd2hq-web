@@ -26,10 +26,10 @@ const sectionLabels: Record<ProblemFinderLocale, {
   home: string;
 }> = {
   en: { causes: 'Most likely causes', checks: 'First checks', replace: 'Do not replace yet', drive: 'Can I drive?', codes: 'Related OBD2 codes', related: 'Related problem paths', faq: 'FAQ', home: 'Home' },
-  tr: { causes: 'En olasÄ± nedenler', checks: 'Ä°lk kontroller', replace: 'Hemen deÄŸiÅŸtirme', drive: 'Bu halde sÃ¼rÃ¼lÃ¼r mÃ¼?', codes: 'Ä°lgili OBD2 kodlarÄ±', related: 'Ä°lgili arÄ±za yollarÄ±', faq: 'SÄ±k sorulan sorular', home: 'Anasayfa' },
-  de: { causes: 'Wahrscheinliche Ursachen', checks: 'Erste PrÃ¼fungen', replace: 'Noch nicht ersetzen', drive: 'Kann ich fahren?', codes: 'Verwandte OBD2-Codes', related: 'Ã„hnliche Fehlerpfade', faq: 'FAQ', home: 'Startseite' },
-  es: { causes: 'Causas probables', checks: 'Primeras revisiones', replace: 'No cambies todavÃ­a', drive: 'Â¿Se puede conducir?', codes: 'CÃ³digos OBD2 relacionados', related: 'Rutas relacionadas', faq: 'FAQ', home: 'Inicio' },
-  fr: { causes: 'Causes probables', checks: 'Premiers contrÃ´les', replace: 'Ne remplacez pas encore', drive: 'Puis-je rouler ?', codes: 'Codes OBD2 liÃ©s', related: 'Pistes liÃ©es', faq: 'FAQ', home: 'Accueil' },
+  tr: { causes: 'En olası nedenler', checks: 'İlk kontroller', replace: 'Hemen değiştirme', drive: 'Bu halde sürülür mü?', codes: 'İlgili OBD2 kodları', related: 'İlgili arıza yolları', faq: 'Sık sorulan sorular', home: 'Anasayfa' },
+  de: { causes: 'Wahrscheinliche Ursachen', checks: 'Erste Prüfungen', replace: 'Noch nicht ersetzen', drive: 'Kann ich fahren?', codes: 'Verwandte OBD2-Codes', related: 'Ähnliche Fehlerpfade', faq: 'FAQ', home: 'Startseite' },
+  es: { causes: 'Causas probables', checks: 'Primeras revisiones', replace: 'No cambies todavía', drive: '¿Se puede conducir?', codes: 'Códigos OBD2 relacionados', related: 'Rutas relacionadas', faq: 'FAQ', home: 'Inicio' },
+  fr: { causes: 'Causes probables', checks: 'Premiers contrôles', replace: 'Ne remplacez pas encore', drive: 'Puis-je rouler ?', codes: 'Codes OBD2 liés', related: 'Pistes liées', faq: 'FAQ', home: 'Accueil' },
 };
 
 function getDescription(intent: ProblemFinderIntent, locale: ProblemFinderLocale) {

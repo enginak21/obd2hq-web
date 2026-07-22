@@ -63,7 +63,6 @@ function getVehicleCodeH1(locale: string, make: string, model: string, code: str
   if (locale === 'fr') return `${make} ${model} ${code} : diagnostic ${cleanTitle}`;
   return `${make} ${model} ${code}: ${cleanTitle} diagnosis`;
 }
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const { make, model, code } = resolvedParams;
@@ -547,3 +546,4 @@ export default async function CodePage({ params }: PageProps) {
     </main>
   );
 }
+

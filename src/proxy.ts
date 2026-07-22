@@ -97,7 +97,7 @@ export function proxy(request: NextRequest) {
     }
 
 
-    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'car-problem-finder', 'ariza-bulucu', 'auto-problemfinder', 'buscador-fallas', 'trouver-panne', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators'].includes(make);
+    const isStaticPage = ['about', 'contact', 'blog', 'news', 'privacy', 'terms', 'search', 'editorial-policy', 'reviewers', 'disclaimer', 'symptoms', 'car-symptoms', 'ariza-belirtileri', 'auto-symptome', 'sintomas-coche', 'symptomes-voiture', 'car-problem-finder', 'ariza-bulucu', 'auto-problemfinder', 'buscador-fallas', 'trouver-panne', 'tools', 'vehicles', 'engine-codes', 'oil-capacity', 'common-problems', 'engines', 'transmissions', 'maintenance', 'recalls', 'calculators', 'resources'].includes(make);
 
     if (locales.includes(locale) && !isStaticPage) {
       const isWarningLightDetail = segments.length === 5 && segments[3] === 'lights';

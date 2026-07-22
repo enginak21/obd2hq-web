@@ -40,6 +40,7 @@ export default function Footer() {
               <li><Link href={`/${locale}/about`} className="hover:text-blue-400 transition-colors">{t('aboutUs')}</Link></li>
               <li><Link href={`/${locale}/contact`} className="hover:text-blue-400 transition-colors">{t('contact')}</Link></li>
               <li><Link href={`/${locale}/blog`} className="hover:text-blue-400 transition-colors">{t('blog')}</Link></li>
+              <li><Link href={`/${locale}/resources`} className="hover:text-blue-400 transition-colors">{t('resources')}</Link></li>
             </ul>
           </div>
 
@@ -61,3 +62,4 @@ export default function Footer() {
     </footer>
   );
 }
+
