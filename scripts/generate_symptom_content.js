@@ -74,6 +74,7 @@ function writeJson(file, data) {
 }
 
 function writeRoutes(records) {
+  ensureUniqueSlugs(records);
   const routes = records
     .filter(record => record.status === 'published' && LOCALES.every(locale => record.locales?.[locale]?.slug))
     .map(record => ({
@@ -81,6 +82,29 @@ function writeRoutes(records) {
       slugs: Object.fromEntries(LOCALES.map(locale => [locale, record.locales[locale].slug])),
     }));
   writeJson(ROUTES_OUTPUT, routes);
+}
+
+function ensureUniqueSlugs(records) {
+  for (const locale of LOCALES) {
+    const seen = new Map();
+    for (const record of records) {
+      const item = record.locales?.[locale];
+      if (!item?.slug) continue;
+      const baseSlug = slugify(item.slug);
+      let slug = baseSlug;
+      if (seen.has(slug)) {
+        const suffix = slugify(record.symptomKey || record.intentKey || record.contentGroupId).replace(/_/g, '-');
+        slug = slugify(`${baseSlug}-${suffix}`);
+        let counter = 2;
+        while (seen.has(slug)) {
+          slug = slugify(`${baseSlug}-${suffix}-${counter}`);
+          counter += 1;
+        }
+      }
+      item.slug = slug;
+      seen.set(slug, record.contentGroupId);
+    }
+  }
 }
 
 function wordCount(text) {
@@ -207,7 +231,7 @@ async function generateWithRetry(seed) {
 
 function normalizeRecord(record, seed) {
   record.intentKey = seed.intentKey;
-  record.contentGroupId = slugify(record.contentGroupId || seed.intentKey);
+  record.contentGroupId = slugify(seed.intentKey);
   record.symptomKey = seed.symptom;
   for (const locale of LOCALES) completeLocaleQuality(record.locales?.[locale], locale);
   record.status = LOCALES.every(locale => record.locales?.[locale]?.slug) ? 'published' : 'needs_review';
@@ -234,6 +258,7 @@ async function main() {
     if (!record) continue;
     byId.set(record.contentGroupId, record);
     const records = Array.from(byId.values());
+    ensureUniqueSlugs(records);
     writeJson(OUTPUT, records);
     writeRoutes(records);
   }
