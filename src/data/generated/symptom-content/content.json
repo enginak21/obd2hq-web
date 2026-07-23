@@ -12338,5 +12338,3515 @@
         "schemaDescription": "Guide expert détaillant causes fréquentes, étapes de diagnostic et conseils pratiques pour le témoin moteur sur Volkswagen."
       }
     }
+  },
+  {
+    "contentGroupId": "volkswagen-hard-start",
+    "intentKey": "volkswagen_hard_start",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "hard_start",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-gec-calismiyor",
+        "title": "Volkswagen Geç Çalışma Sorunu ve Çözümleri",
+        "metaDescription": "Volkswagen araçlarda geç çalışma sorunu neden olur? Pratik kontroller, olası nedenler ve OBD2 kodları ile çözüm rehberi.",
+        "intro": "Volkswagen araçlarda motorun geç çalışması farklı sebeplerden kaynaklanabilir. Komplike elektronik sistemler ve donanım arızaları, sorunun belirlenmesini zorlaştırabilir. Bu yazıda, sorunun kesin nedenini belirlemek için öncelikle yapılması gereken pratik kontroller, olası nedenler ve arıza teşhis adımlarını detaylı şekilde inceliyoruz.",
+        "severity": "Orta - Araç her zaman çalışır ancak geç yanıyor, sürüş konforu ve performansı etkilenir.",
+        "driveAdvice": "Araç her zaman başlamasa da, uzun süre motoru zorlamamak ve mümkünse yakıt kalitesine dikkat etmek önemlidir. Sorun devam ederse tam teşhis için servise başvurulmalıdır.",
+        "likelyCauses": [
+          "Zayıf akü veya düşük şarj durumu",
+          "Enjektörlerde tıkanıklık ya da yakıt pompası problemi",
+          "Buji veya buji kablolarında aşınma",
+          "Hava filtresinde tıkanıklık veya kütle hava akış sensörü (MAF) arızası",
+          "Soğutma suyu sıcaklık sensörünün yanlış bilgi vermesi"
+        ],
+        "diagnosticSteps": [
+          "Akü voltajını ve şarj sistemini kontrol edin",
+          "Yakıt basıncını ölçün ve enjektörlerin durumunu analiz edin",
+          "Bujileri çıkararak aşınma ya da karbon kalıntılarını inceleyin",
+          "Hava filtresi ve hava giriş sistemini temizleyin",
+          "Motor arıza kodlarını OBD2 cihazı ile okuyun",
+          "Soğutma suyu sıcaklık sensörünün değerlerini doğrulayın"
+        ],
+        "firstChecks": [
+          "Akünün kutup başları temiz ve sağlam mı?",
+          "Buji sağlığı ve ateşleme sisteminde gözle görülür bir sorun var mı?",
+          "Hava filtresi temiz ve tıkalı değil mi?"
+        ],
+        "commonMistakes": [
+          "Hemen parça değiştirmeye yönelmek",
+          "Sadece arıza ışığına bakarak karar vermek",
+          "Yakıt filtresi ve hava girişini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde fakir karışım",
+          "P0300 - Rastgele/çoklu silindir ateşleme arızası",
+          "P0102 - Kütle hava akış sensörü arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Kodları Rehberi",
+            "href": "/tr/volkswagen-obd2-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları",
+            "href": "/tr/yakit-sistemi-arizalari"
+          },
+          {
+            "label": "Ateşleme Sistemi Bakımı",
+            "href": "/tr/atesleme-sistemi-bakimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen geç çalışma sorunu nasıl anlaşılır?",
+            "a": "Araç kontak çevrildiğinde motor geç yanıyorsa ve ilk çalıştırmada zorlanıyorsa geç çalışma sorunu olabilir."
+          },
+          {
+            "q": "Buji değişimi sorunu çözer mi?",
+            "a": "Bujiler aşınmışsa yardımcı olur ancak tek başına kesin çözüm olmayabilir."
+          },
+          {
+            "q": "OBD2 cihazı ile hangi kodlar geç çalışmayı işaret eder?",
+            "a": "P0171, P0300 ve P0102 gibi kodlar geç çalışma ile ilişkili olabilir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Geç Çalışma Sorunu ve Çözüm Adımları",
+        "schemaDescription": "Volkswagen araçlarda motor geç çalışıyorsa, nedenleri, ön kontrolleri ve OBD2 arıza kodlarıyla teşhis yöntemlerini keşfedin."
+      },
+      "en": {
+        "slug": "volkswagen-hard-start",
+        "title": "Volkswagen Hard Start Issue: Causes and Diagnostic Steps",
+        "metaDescription": "Explore common causes and practical checks for hard starting in Volkswagen vehicles. Learn the diagnostic steps and OBD2 codes to watch.",
+        "intro": "When a Volkswagen experiences hard starting, it can stem from various underlying issues ranging from electrical faults to fuel delivery problems. Diagnosing the root cause involves systematic checks before considering part replacements. This guide outlines practical diagnostic steps, typical causes, and common errors to avoid for effective troubleshooting.",
+        "severity": "Moderate - Vehicle starts but with delay, affecting driving comfort and reliability.",
+        "driveAdvice": "Avoid excessive attempts at starting and ensure the battery is in good condition. If hard starting persists, consult a professional for detailed diagnosis.",
+        "likelyCauses": [
+          "Weak or discharged battery",
+          "Clogged fuel injectors or failing fuel pump",
+          "Worn spark plugs or ignition components",
+          "Blocked air filter or faulty mass airflow sensor",
+          "Incorrect readings from engine coolant temperature sensor"
+        ],
+        "diagnosticSteps": [
+          "Test battery voltage and charging system",
+          "Check fuel pressure and injector functionality",
+          "Inspect spark plugs for wear or fouling",
+          "Clean or replace the air filter",
+          "Scan for engine error codes with an OBD2 scanner",
+          "Verify engine coolant temperature sensor readings"
+        ],
+        "firstChecks": [
+          "Are battery terminals clean and tightly connected?",
+          "Are the spark plugs in good condition without visible damage?",
+          "Is the air filter free of dirt and obstruction?"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Relying solely on warning lights for troubleshooting",
+          "Neglecting fuel filter and air intake system inspection"
+        ],
+        "relatedCodes": [
+          "P0171 - System too lean",
+          "P0300 - Random/multiple cylinder misfire detected",
+          "P0102 - Mass air flow sensor low input"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Codes Guide",
+            "href": "/en/volkswagen-obd2-codes"
+          },
+          {
+            "label": "Fuel System Issues",
+            "href": "/en/fuel-system-issues"
+          },
+          {
+            "label": "Ignition System Maintenance",
+            "href": "/en/ignition-system-maintenance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How to recognize a hard start issue in a Volkswagen?",
+            "a": "If the engine cranks longer than usual or struggles to start on the first try, it may indicate a hard start problem."
+          },
+          {
+            "q": "Does replacing spark plugs fix hard starting?",
+            "a": "While worn spark plugs can contribute, they are usually not the only cause."
+          },
+          {
+            "q": "Which OBD2 codes relate to hard start issues?",
+            "a": "Codes like P0171, P0300, and P0102 are commonly linked to hard starting."
+          }
+        ],
+        "schemaTitle": "Volkswagen Hard Start Causes and Diagnostics",
+        "schemaDescription": "Learn about the causes, initial checks, and OBD2 codes related to hard start issues in Volkswagen vehicles for practical troubleshooting."
+      },
+      "de": {
+        "slug": "volkswagen-schwerer-start",
+        "title": "Volkswagen startet schwer: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, warum Volkswagen schwer startet. Praktische Prüfungen, häufige Ursachen und Diagnoseschritte mit OBD2-Codes.",
+        "intro": "Ein schwerer Start bei Volkswagen-Fahrzeugen kann vielfältige Ursachen haben, von elektrischen Problemen bis zu Kraftstoffversorgungsschwächen. Um kostspielige Ersatzteile zu vermeiden, sollten zuerst einfache Kontrollen durchgeführt werden. In diesem Beitrag erläutern wir praxisnahe Diagnoseverfahren, mögliche Ursachen und Fehlerquellen bei der Fehlersuche.",
+        "severity": "Mittel - Fahrzeug startet verzögert und beeinträchtigt Fahrkomfort und Zuverlässigkeit.",
+        "driveAdvice": "Startversuche nicht unnötig wiederholen, Batterie prüfen und bei anhaltenden Problemen eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Schwache oder entladene Batterie",
+          "Verstopfte Einspritzventile oder defekte Kraftstoffpumpe",
+          "Abgenutzte Zündkerzen oder Zündsystemprobleme",
+          "Verstopfter Luftfilter oder defekter Luftmassenmesser",
+          "Fehlerhafte Werte des Kühlmitteltemperatursensors"
+        ],
+        "diagnosticSteps": [
+          "Batteriespannung und Ladegerät testen",
+          "Kraftstoffdruck und Einspritzventile prüfen",
+          "Zündkerzen auf Abrieb und Ablagerungen prüfen",
+          "Luftfilter reinigen oder wechseln",
+          "Motorfehlercodes mit OBD2 auslesen",
+          "Werte des Kühlmitteltemperatursensors überprüfen"
+        ],
+        "firstChecks": [
+          "Sind die Batterieklemmen sauber und fest?",
+          "Weisen die Zündkerzen sichtbare Schäden auf?",
+          "Ist der Luftfilter sauber und frei von Verstopfungen?"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose tauschen",
+          "Sich nur auf Warnleuchten verlassen",
+          "Kraftstofffilter und Luftansaugsystem nicht überprüfen"
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0300 - Zufällige Zylinderfehlzündung",
+          "P0102 - Fehler beim Luftmassenmesser (niedriger Eingang)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Codes Übersicht",
+            "href": "/de/volkswagen-obd2-codes"
+          },
+          {
+            "label": "Kraftstoffsystem Fehler",
+            "href": "/de/kraftstoffsystem-fehler"
+          },
+          {
+            "label": "Zündsystem Wartung",
+            "href": "/de/zuendsystem-wartung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie erkennt man einen schweren Start bei Volkswagen?",
+            "a": "Wenn der Motor ungewöhnlich lange braucht zu starten oder Startprobleme auftreten, kann dies auf schweren Start hindeuten."
+          },
+          {
+            "q": "Hilft der Zündkerzenwechsel bei Startproblemen?",
+            "a": "Abgenutzte Zündkerzen können beitragen, sind aber meist nicht allein verantwortlich."
+          },
+          {
+            "q": "Welche OBD2-Codes sind bei schwerem Start typisch?",
+            "a": "Typische Codes sind P0171, P0300 und P0102."
+          }
+        ],
+        "schemaTitle": "Volkswagen schwerer Start – Ursachen & Diagnose",
+        "schemaDescription": "Ursachen, erste Prüfungen und OBD2-Codes bei schwerem Start von Volkswagen-Fahrzeugen für eine effektive Fehlersuche."
+      },
+      "es": {
+        "slug": "volkswagen-motor-tiembla-arranca-tarde",
+        "title": "Problema de arranque difícil en Volkswagen: causas y soluciones",
+        "metaDescription": "Descubre por qué tu Volkswagen puede arrancar tarde. Revisión práctica, causas comunes y códigos OBD2 para diagnóstico efectivo.",
+        "intro": "Un arranque difícil en vehículos Volkswagen puede deberse a múltiples factores, desde problemas eléctricos hasta deficiencias en la alimentación de combustible. Para evitar cambiar piezas innecesariamente, es importante realizar comprobaciones prácticas primero. Aquí explicamos causas comunes, pasos de diagnóstico y errores habituales al solucionar este problema.",
+        "severity": "Moderado - El vehículo arranca con retraso, afectando el confort y fiabilidad de conducción.",
+        "driveAdvice": "Evita intentos prolongados de arranque y verifica el estado de la batería. Si persiste el problema, consulta a un profesional para un diagnóstico detallado.",
+        "likelyCauses": [
+          "Batería débil o descargada",
+          "Inyectores obstruidos o bomba de combustible fallida",
+          "Bujías desgastadas o problemas en el sistema de encendido",
+          "Filtro de aire sucio o sensor MAF defectuoso",
+          "Lecturas erróneas del sensor de temperatura del refrigerante"
+        ],
+        "diagnosticSteps": [
+          "Comprobar voltaje de batería y sistema de carga",
+          "Revisar presión de combustible y estado de inyectores",
+          "Inspeccionar bujías por desgaste o depósitos",
+          "Limpiar o cambiar filtro de aire",
+          "Leer códigos de error con escáner OBD2",
+          "Verificar lecturas del sensor de temperatura del motor"
+        ],
+        "firstChecks": [
+          "¿Los bornes de la batería están limpios y bien conectados?",
+          "¿Las bujías presentan desgaste visible?",
+          "¿El filtro de aire está limpio y sin obstrucciones?"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "Confiar solo en las luces de advertencia",
+          "Ignorar el filtro de combustible y sistema de admisión"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0300 - Fallo aleatorio/múltiple de encendido",
+          "P0102 - Sensor de flujo de aire con entrada baja"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 para Volkswagen",
+            "href": "/es/codigos-obd2-volkswagen"
+          },
+          {
+            "label": "Problemas del sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "Mantenimiento sistema de encendido",
+            "href": "/es/mantenimiento-sistema-encendido"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cómo saber si mi Volkswagen tiene problema de arranque difícil?",
+            "a": "Si el motor tarda en arrancar o requiere varios intentos, puede indicar un arranque difícil."
+          },
+          {
+            "q": "¿Cambiar las bujías soluciona el problema?",
+            "a": "Puede ayudar si están desgastadas, pero no es siempre la única causa."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con este problema?",
+            "a": "Los códigos comunes son P0171, P0300 y P0102 relacionados con arranque difícil."
+          }
+        ],
+        "schemaTitle": "Arranque difícil en Volkswagen: causas y diagnósticos",
+        "schemaDescription": "Conozca las causas, revisiones iniciales y códigos OBD2 relacionados con problemas de arranque difícil en vehículos Volkswagen."
+      },
+      "fr": {
+        "slug": "volkswagen-demarrage-difficile",
+        "title": "Volkswagen démarrage difficile : causes et diagnostics",
+        "metaDescription": "Découvrez pourquoi votre Volkswagen démarre difficilement. Vérifications pratiques, causes fréquentes et codes OBD2 pour un diagnostic précis.",
+        "intro": "Un démarrage difficile sur une Volkswagen peut avoir plusieurs origines, allant de problèmes électriques à des défaillances d’alimentation en carburant. Avant de remplacer des pièces, des contrôles simples sont indispensables. Ce guide présente les causes probables, les étapes de diagnostic et les erreurs courantes à éviter lors de la résolution de ce souci.",
+        "severity": "Modérée – Le véhicule démarre avec retard, impactant le confort de conduite et la fiabilité.",
+        "driveAdvice": "Évitez les tentatives répétées de démarrage et assurez-vous que la batterie est en bon état. En cas de persistance, consultez un professionnel pour un diagnostic approfondi.",
+        "likelyCauses": [
+          "Batterie faible ou déchargée",
+          "Injecteurs bouchés ou pompe à carburant défaillante",
+          "Bougies usées ou problème d’allumage",
+          "Filtre à air obstrué ou capteur de débit d’air défectueux",
+          "Lecture incorrecte du capteur de température du liquide de refroidissement"
+        ],
+        "diagnosticSteps": [
+          "Tester la tension et le système de charge de la batterie",
+          "Vérifier la pression et le fonctionnement des injecteurs",
+          "Contrôler les bougies pour usure ou dépôts",
+          "Nettoyer ou remplacer le filtre à air",
+          "Lire les codes défaut moteur avec un scanner OBD2",
+          "Vérifier les relevés du capteur de température moteur"
+        ],
+        "firstChecks": [
+          "Les bornes de la batterie sont-elles propres et bien serrées ?",
+          "Les bougies présentent-elles des signes d’usure ou de dommage ?",
+          "Le filtre à air est-il propre et non obstrué ?"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Se fier uniquement aux voyants d’alerte",
+          "Négliger le filtre à carburant et le système d’admission d’air"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0300 - Ratés d’allumage multiples/aléatoires",
+          "P0102 - Capteur de débit d’air faible signal"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Volkswagen",
+            "href": "/fr/codes-obd2-volkswagen"
+          },
+          {
+            "label": "Problèmes système carburant",
+            "href": "/fr/problemes-systeme-carburant"
+          },
+          {
+            "label": "Entretien système d’allumage",
+            "href": "/fr/entretien-systeme-allumage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Comment détecter un problème de démarrage difficile sur Volkswagen ?",
+            "a": "Si le moteur met plus de temps à se lancer ou nécessite plusieurs tentatives, cela peut indiquer un démarrage difficile."
+          },
+          {
+            "q": "Le changement des bougies résout-il le problème ?",
+            "a": "Cela peut aider si les bougies sont usées, mais ce n’est souvent pas la seule cause."
+          },
+          {
+            "q": "Quels codes OBD2 sont liés au démarrage difficile ?",
+            "a": "Les codes P0171, P0300 et P0102 sont fréquemment associés à ce problème."
+          }
+        ],
+        "schemaTitle": "Démarrage difficile Volkswagen : causes et solutions",
+        "schemaDescription": "Découvrez les causes, les vérifications initiales et les codes OBD2 liés aux problèmes de démarrage difficile sur Volkswagen."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-black-smoke",
+    "intentKey": "volkswagen_black_smoke",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "black_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "volkswagen-black-smoke-diagnosis",
+        "title": "Volkswagen Black Smoke: Diagnosis and Common Causes",
+        "metaDescription": "Discover why your Volkswagen emits black smoke. Learn common causes, diagnostic steps, and preventive checks for accurate troubleshooting.",
+        "intro": "If your Volkswagen is emitting black smoke from the exhaust, it typically indicates incomplete combustion or excess fuel in the engine. While many factors can contribute to this issue, diagnosing it correctly helps avoid unnecessary part replacements. This guide covers common causes, practical diagnostic steps, and checklist items to narrow down the root cause.",
+        "severity": "Black smoke can indicate serious engine issues but may not always mean immediate failure. Timely diagnosis is important.",
+        "driveAdvice": "Limit driving until the issue is diagnosed and addressed to prevent further engine damage or increased emissions.",
+        "likelyCauses": [
+          "Clogged air filter restricting airflow",
+          "Faulty fuel injectors delivering excess fuel",
+          "Malfunctioning turbocharger causing improper air-fuel mix",
+          "Faulty EGR valve affecting exhaust gas recirculation",
+          "Engine timing issues leading to incomplete combustion"
+        ],
+        "diagnosticSteps": [
+          "Check for stored OBD2 trouble codes using a scanner",
+          "Inspect air filter condition and replace if dirty",
+          "Examine fuel injectors for leaks or poor spray patterns",
+          "Test the turbocharger function and check for boost leaks",
+          "Monitor EGR valve operation for proper opening and closing",
+          "Verify engine timing settings against manufacturer specifications"
+        ],
+        "firstChecks": [
+          "Visual inspection of exhaust for smoke density and color",
+          "Check air filter for clogs or damage",
+          "Scan for OBD2 codes related to fuel and emissions systems"
+        ],
+        "commonMistakes": [
+          "Replacing injectors without checking fuel pressure or filter",
+          "Ignoring dirty air filters as a cause",
+          "Neglecting turbocharger or EGR valve function during diagnostics"
+        ],
+        "relatedCodes": [
+          "P0171 (System Too Lean)",
+          "P0201 (Injector Circuit Malfunction - Cylinder 1)",
+          "P0401 (EGR Flow Insufficient)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Air Filter Replacement Guide",
+            "href": "/en/volkswagen-air-filter-replacement"
+          },
+          {
+            "label": "OBD2 Diagnostic Codes for Fuel System",
+            "href": "/en/obd2-fuel-system-codes"
+          },
+          {
+            "label": "Turbocharger Fault Diagnosis",
+            "href": "/en/turbocharger-fault-diagnosis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can black smoke damage my Volkswagen engine?",
+            "a": "Prolonged black smoke emission can indicate combustion problems that may cause engine damage if left unaddressed. Early diagnosis is important."
+          },
+          {
+            "q": "Is black smoke always caused by faulty injectors?",
+            "a": "No, black smoke can have multiple causes including air intake issues, turbo problems, or EGR valve faults, so a full diagnosis is essential."
+          },
+          {
+            "q": "Can using lower quality fuel cause black smoke?",
+            "a": "While poor quality fuel can contribute, black smoke is more often caused by mechanical or sensor faults that upset the air-fuel ratio."
+          }
+        ],
+        "schemaTitle": "Volkswagen Black Smoke Causes & Diagnosis Guide",
+        "schemaDescription": "Expert insights on diagnosing black smoke from Volkswagen vehicles, including causes, checks, and related OBD2 codes."
+      },
+      "tr": {
+        "slug": "volkswagen-siyah-duman-atan-arac-teshisi",
+        "title": "Volkswagen Aracınız Siyah Duman Atıyor mu? Nedenleri ve Çözümleri",
+        "metaDescription": "Volkswagen aracınız siyah duman atıyor mu? Siyah duman nedenleri, teşhis adımları ve pratik kontrol önerileri için ipuçları.",
+        "intro": "Volkswagen aracınız egzozdan siyah duman atıyorsa, bu genellikle yanma sürecinde yakıtın tam olarak yanmadığını veya fazla yakıt kullanıldığını gösterir. Sorunun nedenini doğru belirlemek, gereksiz parça değişimlerinden kaçınmak için önemlidir. Bu rehberde, en yaygın nedenler, yapılacak kontroller ve teşhis adımları yer almaktadır.",
+        "severity": "Siyah duman, motor performansında ciddi bir sorunun işareti olabilir ancak hemen arıza anlamına gelmez. Zamanında kontrol önemlidir.",
+        "driveAdvice": "Sorun çözülene kadar aracı gereksiz yere kullanmaktan kaçının, böylece motor hasarı önlenebilir.",
+        "likelyCauses": [
+          "Hava filtresinin tıkanması ve hava akışının azalması",
+          "Yakıt enjektörlerinin fazla yakıt püskürtmesi",
+          "Turboşarjör arızası nedeniyle hava-yakıt karışımının bozulması",
+          "EGR valfinin düzgün çalışmaması (Egzoz gazı geri dönüşümü)",
+          "Motor zamanlamasında uyumsuzluklar ve yanmanın eksik gerçekleşmesi"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile arıza kodlarını okuyun",
+          "Hava filtresinin durumunu kontrol edin, gerekiyorsa değiştirin",
+          "Yakıt enjektörlerini sızıntı ve performans açısından inceleyin",
+          "Turboşarjörün basınç ve kaçak testini yapın",
+          "EGR valfinin çalışma durumunu kontrol edin",
+          "Motor zamanlamasının üretici değerlerine uygunluğunu test edin"
+        ],
+        "firstChecks": [
+          "Egzozdan çıkan dumanın yoğunluğunu ve rengini görsel olarak inceleyin",
+          "Hava filtresinde tıkanıklık veya hasar var mı kontrol edin",
+          "Yakıt ve emisyon sistemleri ile ilgili OBD2 kodlarını tarayın"
+        ],
+        "commonMistakes": [
+          "Yakıt filtresi veya basıncını kontrol etmeden enjektör değiştirmek",
+          "Kirli hava filtresini ihmal ederek sorunu başka parçalarda aramak",
+          "Turboşarjör ve EGR valfi fonksiyonlarını kontrol etmeden direkt parça değiştirmek"
+        ],
+        "relatedCodes": [
+          "P0171 (Sistem Çok Fakir Yakıt Karışımı)",
+          "P0201 (Enjektör Devre Hatası - Silindir 1)",
+          "P0401 (EGR Akışı Yetersiz)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Hava Filtresi Değişimi",
+            "href": "/tr/volkswagen-hava-filtresi-degisimi"
+          },
+          {
+            "label": "Yakıt Sistemi OBD2 Kodları",
+            "href": "/tr/yakit-sistemi-obd2-kodlari"
+          },
+          {
+            "label": "Turboşarjör Arıza Teşkisi",
+            "href": "/tr/turbosarjor-ariza-teskisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Siyah duman motoru hemen bozar mı?",
+            "a": "Sürekli siyah duman, motorun yanma sorunları yaşadığını gösterir ve erken müdahale edilmezse hasar oluşabilir."
+          },
+          {
+            "q": "Siyah duman sadece enjektörlerden mi kaynaklanır?",
+            "a": "Hayır, hava filtresi, turbo ve EGR valfi sorunları da siyah dumanın sebepleri arasında olabilir."
+          },
+          {
+            "q": "Düşük kaliteli yakıt siyah dumana yol açar mı?",
+            "a": "Yakıt kalitesi etkili olabilir ancak mekanik ve sensör sorunları daha yaygın nedenlerdendir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Siyah Duman Nedenleri ve Tespiti",
+        "schemaDescription": "Volkswagen araçlarda siyah duman nedenleri, ilk kontroller, teşhis adımları ve ilgili OBD2 kodları hakkında uzman rehberi."
+      },
+      "de": {
+        "slug": "volkswagen-schwarzer-rauch-ursachen-und-diagnose",
+        "title": "Volkswagen Schwarzer Rauch: Ursachen, Diagnose und Tipps",
+        "metaDescription": "Erfahren Sie, warum Ihr Volkswagen schwarzen Rauch ausstößt. Ursachen, Diagnoseschritte und praktische Prüfungen zur Fehlerfindung.",
+        "intro": "Wenn Ihr Volkswagen schwarzen Rauch aus dem Auspuff abgibt, deutet dies meist auf eine unvollständige Verbrennung oder ein zu fettes Kraftstoffgemisch hin. Viele Ursachen kommen in Frage, weshalb eine genaue Diagnose wichtig ist, um unnötigen Teiletausch zu vermeiden. In diesem Beitrag finden Sie häufige Ursachen, praktische Prüfmaßnahmen und Diagnoseschritte.",
+        "severity": "Schwarzer Rauch kann ein Zeichen für ernsthafte Motorprobleme sein, bedeutet aber nicht immer einen sofortigen Schaden. Eine zeitnahe Diagnose ist ratsam.",
+        "driveAdvice": "Fahren Sie das Fahrzeug möglichst wenig, bis die Ursache festgestellt und behoben wurde, um weitere Schäden zu vermeiden.",
+        "likelyCauses": [
+          "Verstopfter Luftfilter, der den Luftstrom einschränkt",
+          "Defekte Einspritzdüsen, die zu viel Kraftstoff liefern",
+          "Fehlfunktion des Turboladers, die das Luft-Kraftstoff-Gemisch beeinflusst",
+          "Defektes AGR-Ventil (Abgasrückführung)",
+          "Falsche Motorsteuerung oder Zündzeitpunkt"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der OBD2-Fehlercodes mit einem Diagnosegerät",
+          "Überprüfung des Luftfilters auf Verschmutzung und Beschädigung",
+          "Überprüfung der Einspritzdüsen auf Undichtigkeiten oder Fehlfunktion",
+          "Testen des Turboladers auf ordnungsgemäße Funktion und Luftlecks",
+          "Prüfung des AGR-Ventils auf Beweglichkeit und Funktion",
+          "Kontrolle der Motorsteuerung und Zündzeitpunkt gegen Vorgaben"
+        ],
+        "firstChecks": [
+          "Visuelle Begutachtung der Rauchfarbe und -menge am Auspuff",
+          "Überprüfung des Luftfilters auf Verschmutzung",
+          "OBD2-Scanner für relevante Fehlercodes einsetzen"
+        ],
+        "commonMistakes": [
+          "Austausch von Einspritzdüsen ohne Prüfung von Kraftstoffdruck und Filter",
+          "Vernachlässigung verschmutzter Luftfilter als Ursache",
+          "Nichtbeachtung der Turbolader- und AGR-Funktionsprüfung vor Reparatur"
+        ],
+        "relatedCodes": [
+          "P0171 (Gemisch zu mager)",
+          "P0201 (Injektor-Schaltkreis Störung Zylinder 1)",
+          "P0401 (Abgasrückführung unzureichend)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Luftfilter wechseln",
+            "href": "/de/volkswagen-luftfilter-wechseln"
+          },
+          {
+            "label": "OBD2-Codes für Kraftstoffsystem",
+            "href": "/de/obd2-kraftstoffsystem-codes"
+          },
+          {
+            "label": "Diagnose von Turbolader-Problemen",
+            "href": "/de/turbolader-probleme-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann schwarzer Rauch den Motor meines Volkswagens beschädigen?",
+            "a": "Länger andauernder schwarzer Rauch kann auf Verbrennungsprobleme hinweisen und möglicherweise Motorschäden verursachen."
+          },
+          {
+            "q": "Ist schwarzer Rauch immer durch defekte Einspritzdüsen verursacht?",
+            "a": "Nein, auch Luftfilter, Turbolader oder AGR-Ventil können Ursachen für schwarzen Rauch sein."
+          },
+          {
+            "q": "Kann minderwertiger Kraftstoff schwarzen Rauch verursachen?",
+            "a": "Minderwertiger Kraftstoff kann beitragen, doch meist sind mechanische oder sensorische Fehler die Hauptursache."
+          }
+        ],
+        "schemaTitle": "Volkswagen Schwarzer Rauch: Ursachen & Diagnose",
+        "schemaDescription": "Fachkundige Anleitung zur Ursachenfindung von schwarzem Rauch bei Volkswagen mit Diagnoseschritten und relevanten OBD2-Codes."
+      },
+      "es": {
+        "slug": "volkswagen-humo-negro-causas-y-diagnostico",
+        "title": "Volkswagen Emite Humo Negro: Causas y Diagnóstico Práctico",
+        "metaDescription": "Descubre por qué tu Volkswagen expulsa humo negro. Causas comunes, pasos para diagnosticar y consejos para revisiones prácticas.",
+        "intro": "El humo negro proveniente del escape de un Volkswagen suele indicar una combustión incompleta o exceso de combustible en el motor. Aunque existen varias causas potenciales, un diagnóstico preciso evita cambios innecesarios de piezas. En esta guía encontrarás causas frecuentes, pasos para diagnosticar y controles iniciales para identificar el problema.",
+        "severity": "El humo negro puede señalar problemas severos en el motor, pero no siempre significa fallo inmediato. Diagnosticar a tiempo es clave.",
+        "driveAdvice": "Evita conducir mucho hasta diagnosticar y corregir el problema para prevenir daños mayores al motor y evitar contaminantes excesivos.",
+        "likelyCauses": [
+          "Filtro de aire obstruido que limita la entrada de aire",
+          "Inyectores defectuosos que suministran demasiado combustible",
+          "Problemas en el turbo que afectan la mezcla aire-combustible",
+          "Válvula EGR defectuosa que afecta la recirculación de gases",
+          "Desajustes en el tiempo de motor que impiden la combustión completa"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de falla OBD2 con un escáner",
+          "Revisar y cambiar el filtro de aire si está sucio",
+          "Inspeccionar inyectores para fugas o mala pulverización",
+          "Verificar el funcionamiento del turbo y posibles fugas de presión",
+          "Evaluar el estado y operación de la válvula EGR",
+          "Comprobar que el tiempo del motor esté dentro de las especificaciones"
+        ],
+        "firstChecks": [
+          "Inspección visual del color y cantidad de humo del escape",
+          "Revisión del filtro de aire para identificar obstrucciones",
+          "Escanear el sistema OBD2 para detectar códigos relacionados"
+        ],
+        "commonMistakes": [
+          "Cambiar inyectores sin revisar presión de combustible o filtro",
+          "Ignorar filtros de aire sucios como causa del humo",
+          "No evaluar correctamente el turbo o la válvula EGR antes de reemplazos"
+        ],
+        "relatedCodes": [
+          "P0171 (Sistema Demasiado Pobre)",
+          "P0201 (Fallo en circuito del inyector cilindro 1)",
+          "P0401 (Flujo insuficiente en EGR)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Cambio de filtro de aire en Volkswagen",
+            "href": "/es/cambio-filtro-aire-volkswagen"
+          },
+          {
+            "label": "Códigos OBD2 para sistema de combustible",
+            "href": "/es/codigos-obd2-combustible"
+          },
+          {
+            "label": "Diagnóstico de fallos en turbocompresor",
+            "href": "/es/diagnostico-turbo-fallos"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿El humo negro puede dañar el motor de mi Volkswagen?",
+            "a": "El humo negro prolongado suele indicar problemas de combustión que pueden causar daños si no se atienden a tiempo."
+          },
+          {
+            "q": "¿El humo negro siempre se debe a inyectores defectuosos?",
+            "a": "No, también puede deberse a problemas con el filtro de aire, el turbo o la válvula EGR."
+          },
+          {
+            "q": "¿El combustible de mala calidad provoca humo negro?",
+            "a": "Puede contribuir, pero generalmente se debe a fallos mecánicos o sensores que afectan la mezcla aire-combustible."
+          }
+        ],
+        "schemaTitle": "Volkswagen Humo Negro: Causas y Diagnóstico",
+        "schemaDescription": "Guía experta para identificar causas de humo negro en Volkswagen, con pasos de diagnóstico y códigos OBD2 relacionados."
+      },
+      "fr": {
+        "slug": "volkswagen-fumee-noire-causes-diagnostic",
+        "title": "Volkswagen Fumée Noire : Causes Courantes et Diagnostic",
+        "metaDescription": "Comprenez pourquoi votre Volkswagen émet de la fumée noire. Causes, étapes de diagnostic et contrôles pratiques pour un dépannage efficace.",
+        "intro": "Une fumée noire à l'échappement de votre Volkswagen indique généralement une combustion incomplète ou un excès de carburant dans le moteur. Les causes peuvent être multiples, d'où l'importance d'un diagnostic précis pour éviter des remplacements inutiles. Ce guide présente les causes fréquentes, les étapes à suivre et les contrôles recommandés.",
+        "severity": "La fumée noire peut signaler un problème moteur sérieux, mais ne signifie pas toujours une panne immédiate. Un diagnostic rapide est conseillé.",
+        "driveAdvice": "Limitez la conduite jusqu'à identification et résolution du problème afin de prévenir d’éventuels dommages moteur.",
+        "likelyCauses": [
+          "Filtre à air encrassé réduisant le débit d’air",
+          "Injecteurs défectueux injectant trop de carburant",
+          "Problème de turbo perturbant le mélange air-carburant",
+          "Vanne EGR défaillante affectant la recirculation des gaz d’échappement",
+          "Problèmes de calage moteur entraînant une combustion incomplète"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts OBD2 avec un scanner",
+          "Vérifier le filtre à air et le remplacer s’il est sale",
+          "Contrôler les injecteurs pour détecter des fuites ou un mauvais fonctionnement",
+          "Tester le turbo et rechercher d’éventuelles fuites de pression",
+          "Contrôler la vanne EGR pour s’assurer de son bon fonctionnement",
+          "Vérifier le calage moteur selon les préconisations du constructeur"
+        ],
+        "firstChecks": [
+          "Observation visuelle de la fumée à l’échappement (couleur et densité)",
+          "Contrôle de l’état du filtre à air",
+          "Lecture des codes OBD2 liés aux systèmes de carburant et émissions"
+        ],
+        "commonMistakes": [
+          "Changer les injecteurs sans vérifier la pression et le filtre à carburant",
+          "Négliger un filtre à air encrassé comme cause possible",
+          "Ignorer le contrôle du turbo et de la vanne EGR avant remplacement des pièces"
+        ],
+        "relatedCodes": [
+          "P0171 (Mélange trop pauvre)",
+          "P0201 (Défaut circuit injecteur cylindre 1)",
+          "P0401 (Débit vanne EGR insuffisant)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Remplacement filtre à air Volkswagen",
+            "href": "/fr/remplacement-filtre-air-volkswagen"
+          },
+          {
+            "label": "Codes défaut OBD2 système carburant",
+            "href": "/fr/codes-obd2-systeme-carburant"
+          },
+          {
+            "label": "Diagnostic panne turbo",
+            "href": "/fr/diagnostic-panne-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "La fumée noire peut-elle endommager le moteur de ma Volkswagen ?",
+            "a": "Une fumée noire persistante signale des problèmes de combustion qui peuvent causer des dommages si non traités rapidement."
+          },
+          {
+            "q": "La fumée noire est-elle toujours causée par des injecteurs défectueux ?",
+            "a": "Non, d’autres causes possibles sont le filtre à air, le turbo ou la vanne EGR."
+          },
+          {
+            "q": "Un carburant de mauvaise qualité peut-il provoquer de la fumée noire ?",
+            "a": "Il peut contribuer au problème, mais les causes principales sont souvent d’ordre mécanique ou lié aux capteurs."
+          }
+        ],
+        "schemaTitle": "Volkswagen Fumée Noire : Causes et Diagnostic",
+        "schemaDescription": "Guide expert pour identifier et diagnostiquer la fumée noire sur Volkswagen, avec étapes pratiques et codes OBD2 associés."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-white-smoke",
+    "intentKey": "volkswagen_white_smoke",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "white_smoke",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-beyaz-duman-atiyor",
+        "title": "Volkswagen Beyaz Duman Atıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Volkswagen'de beyaz duman çıkışı birçok nedeni olabilir. Sorunu teşhis etmek için ön kontroller ve sökmeden önce yapılacaklar öğrenin.",
+        "intro": "Volkswagen aracınızdan çıkan beyaz duman, motor veya diğer sistemlerde bir sorunun işareti olabilir. Bu durumu ciddiye almalı ve birden fazla olası nedeni değerlendirerek sorunun kaynağını doğru tespit etmelisiniz. Ateşleme sistemi, soğutma sıvısı kaçağı veya yakıt enjeksiyonu gibi farklı faktörler beyaz duman oluşumuna yol açabilir. Sorunun büyümesini engellemek için bazı ilk kontrolleri yapabileceğiniz gibi, OBD2 cihazınızı kullanarak detaylı inceleme yapabilirsiniz.",
+        "severity": "Beyaz duman, motor soğutma sistemi veya segman sorunlarından kaynaklanabilir, acele müdahale gerekebilir.",
+        "driveAdvice": "Aracı kullanmaya devam etmeden önce su ve yağ seviyelerini kontrol edin, gerekirse yetkili servise başvurun.",
+        "likelyCauses": [
+          "Soğutma sıvısı motor içine sızıyor",
+          "Enjektörlerde yakıt fazlası veya hatası",
+          "Conta arızası (silindir kapağı veya subap)",
+          "Turbolader yağı yanması",
+          "Hatalı hava/yakıt karışımı veya sensör problemleri"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini ve yağ seviyesini kontrol edin",
+          "Egzoz dumanının kokusunu ve rengine dikkat edin",
+          "Silindir kapak contasını test ettirin",
+          "OBD2 cihazı ile hata kodlarını okuyun ve kaydedin",
+          "Enjektörlerin çalışma durumunu kontrol edin",
+          "Hava filtre ve emme sistemi temizliği yapın"
+        ],
+        "firstChecks": [
+          "Motor yağı ve soğutma sıvısı seviyelerini kontrol edin",
+          "Egzoz çıkışından çıkan dumanın kokusuna dikkat edin",
+          "Turbo basınç ve yağ sızıntısı kontrolü yapın"
+        ],
+        "commonMistakes": [
+          "Beyaz dumanı her zaman contadan kaynaklandığını düşünmek",
+          "Yağ veya su seviyesini kontrol etmeden parçayı değiştirmek",
+          "Sadece gözle görerek neden teşhis etmeye çalışmak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sistemi hatası",
+          "P0300 - Rastgele silindir ateşleme hatası",
+          "P0420 - Katalizör performans problemi"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 arıza kodları",
+            "href": "/tr/volkswagen-obd2-ariza-kodlari"
+          },
+          {
+            "label": "Motor beyaz duman nedenleri",
+            "href": "/tr/motor-beyaz-duman-nedenleri"
+          },
+          {
+            "label": "Silindir kapak contasının kontrolü",
+            "href": "/tr/silindir-kapak-contasi-kontrolu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen beyaz duman neden çıkar?",
+            "a": "Beyaz duman, soğutma sıvısının yanma odasına sızması, conta arızası veya yakıt sistemindeki sorunlardan kaynaklanabilir."
+          },
+          {
+            "q": "Beyaz duman çıktığında ilk ne yapmalıyım?",
+            "a": "Yağ ve soğutma sıvısı seviyelerini hemen kontrol edin, ardından motor sıcaklığını takip edin ve gerekirse servise başvurun."
+          },
+          {
+            "q": "OBD2 kodları beyaz duman sorununu nasıl gösterir?",
+            "a": "OBD2 cihazı farklı sensörlerden gelen verilerle yakıt karışımı ve ateşleme hatası gibi kodları tespit ederek beyaz dumanın nedenini araştırmaya yardımcı olur."
+          }
+        ],
+        "schemaTitle": "Volkswagen Beyaz Duman Sorunları ve Çözümleri",
+        "schemaDescription": "Volkswagen araçlarda beyaz duman neden olur? Olası sebepler, kontrol adımları ve OBD2 tanı önerileri ile sorunu hızlıca çözün."
+      },
+      "en": {
+        "slug": "volkswagen-white-smoke",
+        "title": "Volkswagen White Smoke: Causes and Diagnostic Guide",
+        "metaDescription": "Learn practical checks for Volkswagen white smoke issues. Explore possible causes before replacing parts or visiting a mechanic.",
+        "intro": "White smoke coming from your Volkswagen’s exhaust could indicate multiple underlying issues ranging from coolant leaks to fuel system problems. Diagnosing the exact cause requires careful inspection and several practical checks before assuming expensive part replacements. Using an OBD2 scanner can help pinpoint related error codes, but some initial manual diagnostics are essential to avoid misinterpretation. This guide outlines common causes, step-by-step diagnostic actions, and typical pitfalls to help you understand and address white smoke issues effectively.",
+        "severity": "White smoke may signal serious engine or cooling system problems; timely diagnosis is important.",
+        "driveAdvice": "Check fluid levels and avoid aggressive driving until the issue is diagnosed, consult a specialist if persistent.",
+        "likelyCauses": [
+          "Coolant leaking into combustion chambers",
+          "Fuel injector malfunctions",
+          "Head gasket or cylinder head issues",
+          "Turbocharger oil burning",
+          "Incorrect air-fuel mixture or sensor faults"
+        ],
+        "diagnosticSteps": [
+          "Verify coolant and engine oil levels",
+          "Observe exhaust smoke color and smell",
+          "Perform a compression and leak-down test",
+          "Scan for OBD2 trouble codes",
+          "Inspect fuel injectors and ignition system",
+          "Check air intake and filters for blockages"
+        ],
+        "firstChecks": [
+          "Engine oil and coolant quantity and condition",
+          "Smoke odor and consistency",
+          "Check for turbocharger oil leaks"
+        ],
+        "commonMistakes": [
+          "Assuming all white smoke is caused by a blown head gasket",
+          "Replacing parts without verifying fluid levels",
+          "Ignoring OBD2 codes or misinterpreting data"
+        ],
+        "relatedCodes": [
+          "P0171 - System too lean",
+          "P0300 - Random/multiple cylinder misfire",
+          "P0420 - Catalyst system efficiency below threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 error codes",
+            "href": "/en/volkswagen-obd2-error-codes"
+          },
+          {
+            "label": "White smoke engine troubleshooting",
+            "href": "/en/white-smoke-engine-troubleshooting"
+          },
+          {
+            "label": "Head gasket failure symptoms",
+            "href": "/en/head-gasket-failure-symptoms"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes white smoke in Volkswagen cars?",
+            "a": "Common causes include coolant leaks, faulty injectors, head gasket issues, or turbocharger oil burning."
+          },
+          {
+            "q": "Can I drive my Volkswagen with white smoke coming out?",
+            "a": "It’s advisable to check fluid levels and avoid heavy driving until a proper diagnosis is made."
+          },
+          {
+            "q": "How does an OBD2 scanner help diagnose white smoke issues?",
+            "a": "It reads error codes from engine sensors which indicate fuel mixture problems, misfires, or sensor faults."
+          }
+        ],
+        "schemaTitle": "Volkswagen White Smoke Causes & Diagnostic Guide",
+        "schemaDescription": "Explore probable reasons and diagnostic steps for Volkswagen white smoke. Avoid costly mistakes with OBD2 tips and checks."
+      },
+      "de": {
+        "slug": "volkswagen-weisser-rauch",
+        "title": "Volkswagen Weißer Rauch: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie praktische Überprüfungen bei weißem Rauch am Volkswagen. Ursachen erkennen, bevor Teile ersetzt werden.",
+        "intro": "Weißer Rauch aus dem Auspuff Ihres Volkswagen kann verschiedene Ursachen haben, von Kühlmittelverlust bis hin zu Problemen im Kraftstoffsystem. Eine sorgfältige Diagnose ist wichtig, bevor teure Ersatzteile beschafft werden. Mit einem OBD2-Scanner lassen sich Fehlercodes auslesen, doch praktische Voruntersuchungen sind unerlässlich, um die Fehlerquelle richtig zu identifizieren. Dieser Leitfaden zeigt häufige Ursachen, empfohlene Diagnose-Schritte und typische Fehlerquellen auf, um das Problem effizient zu beheben.",
+        "severity": "Weißer Rauch kann auf ernste Motor- oder Kühlsystemprobleme hindeuten. Schnelle Abklärung wichtig.",
+        "driveAdvice": "Flüssigkeitsstände prüfen und vorsichtig fahren, bis das Problem diagnostiziert ist. Bei Bedarf Fachwerkstatt aufsuchen.",
+        "likelyCauses": [
+          "Kühlmittel dringt in Brennraum ein",
+          "Fehlerhafte Einspritzventile",
+          "Defekte Zylinderkopfdichtung oder Zylinderkopf",
+          "Ölverbrennung im Turbolader",
+          "Fehlerhafte Luft-Kraftstoff-Mischung oder Sensoren"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittel- und Motorölstand prüfen",
+          "Farbe und Geruch des Rauchens beobachten",
+          "Kompressions- und Druckverlusttests durchführen",
+          "OBD2-Fehlercodes auslesen",
+          "Einspritzdüsen und Zündanlage prüfen",
+          "Ansaugsystem und Luftfilter kontrollieren"
+        ],
+        "firstChecks": [
+          "Motoröl- und Kühlmittelstand kontrollieren",
+          "Geruch und Konsistenz des Rauchs wahrnehmen",
+          "Nach Öllecks am Turbolader suchen"
+        ],
+        "commonMistakes": [
+          "Weißen Rauch immer mit Zylinderkopfdichtungsschaden gleichsetzen",
+          "Teile austauschen ohne Flüssigkeitsstände zu prüfen",
+          "OBD2-Codes ignorieren oder falsch interpretieren"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager",
+          "P0300 - Zufällige Fehlzündungen",
+          "P0420 - Katalysatorsystem ineffizient"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Fehlercodes",
+            "href": "/de/volkswagen-obd2-fehlercodes"
+          },
+          {
+            "label": "Weißen Rauch motorisch diagnostizieren",
+            "href": "/de/weisser-rauch-motor-diagnose"
+          },
+          {
+            "label": "Symptome defekte Zylinderkopfdichtung",
+            "href": "/de/symptome-zylinderkopfdichtung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum kommt weißer Rauch aus meinem Volkswagen?",
+            "a": "Typische Ursachen sind Kühlmittelverlust, defekte Einspritzventile, Zylinderkopfdichtungsschaden oder Turboladerölverbrennung."
+          },
+          {
+            "q": "Kann ich mit weißem Rauch noch fahren?",
+            "a": "Es ist ratsam, Flüssigkeitsstände zu kontrollieren und vorsichtig zu fahren, bis das Problem klar diagnostiziert wurde."
+          },
+          {
+            "q": "Wie unterstützt ein OBD2-Scanner bei weißem Rauch?",
+            "a": "Er liest die Fehlercodes aus und hilft, Probleme wie falsches Kraftstoff-Luft-Gemisch oder Fehlzündungen zu erkennen."
+          }
+        ],
+        "schemaTitle": "Volkswagen Weißer Rauch – Ursachen und Diagnose",
+        "schemaDescription": "Entdecken Sie Ursachen und Diagnosemöglichkeiten für weißen Rauch bei Volkswagen. Praktische Tipps und OBD2-Hilfe inklusive."
+      },
+      "es": {
+        "slug": "volkswagen-humo-blanco",
+        "title": "Volkswagen Humo Blanco: Causas y Diagnóstico",
+        "metaDescription": "Descubre las causas comunes del humo blanco en Volkswagen y cómo diagnosticarlo antes de cambiar piezas costosas.",
+        "intro": "El humo blanco que sale del escape de un Volkswagen puede indicar diversos problemas, como fugas de refrigerante o fallos en el sistema de combustible. Antes de reemplazar piezas costosas, es fundamental realizar revisiones prácticas y utilizar un escáner OBD2 para leer códigos de error. Este artículo explica las causas frecuentes, pasos para diagnosticar el problema y errores comunes que se deben evitar para solucionar efectivamente la emisión de humo blanco.",
+        "severity": "El humo blanco puede señalar problemas graves en el motor o en el sistema de refrigeración. Se requiere diagnóstico rápido.",
+        "driveAdvice": "Revisa los niveles de líquidos y conduce con precaución mientras se diagnostica el problema. Consulta a un especialista si persiste.",
+        "likelyCauses": [
+          "Fuga de refrigerante en las cámaras de combustión",
+          "Inyectores con fallas",
+          "Problemas con la junta de la cabeza o el cabezal del cilindro",
+          "Quema de aceite en el turbocompresor",
+          "Mezcla incorrecta de aire-combustible o sensores defectuosos"
+        ],
+        "diagnosticSteps": [
+          "Verifica los niveles y estado del refrigerante y aceite",
+          "Observa el color y olor del humo del escape",
+          "Realiza pruebas de compresión y de fugas",
+          "Escanea los códigos de error OBD2",
+          "Revisa inyectores y sistema de encendido",
+          "Inspecciona el filtro y sistema de admisión de aire"
+        ],
+        "firstChecks": [
+          "Cantidad y condición del aceite y refrigerante",
+          "Olor y consistencia del humo",
+          "Revisa posibles fugas de aceite en el turbocompresor"
+        ],
+        "commonMistakes": [
+          "Asumir que todo humo blanco es por junta de cabeza dañada",
+          "Cambiar piezas sin revisar los niveles de fluidos",
+          "Ignorar o interpretar mal los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0300 - Fallos aleatorios en cilindros",
+          "P0420 - Baja eficiencia del catalizador"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Volkswagen",
+            "href": "/es/codigos-obd2-volkswagen"
+          },
+          {
+            "label": "Diagnóstico de humo blanco en motor",
+            "href": "/es/diagnostico-humo-blanco"
+          },
+          {
+            "label": "Síntomas de falla en junta de cabeza",
+            "href": "/es/sintomas-falla-junta-cabeza"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué sale humo blanco de mi Volkswagen?",
+            "a": "Las causas comunes incluyen fugas de refrigerante, fallas en inyectores, problemas en la junta de la cabeza o quema de aceite en el turbo."
+          },
+          {
+            "q": "¿Es seguro conducir con humo blanco?",
+            "a": "Se recomienda revisar los niveles de líquidos y conducir con precaución hasta realizar un diagnóstico adecuado."
+          },
+          {
+            "q": "¿Cómo ayuda un escáner OBD2 con el humo blanco?",
+            "a": "Lee códigos que indican problemas con la mezcla de combustible, fallos de encendido o sensores defectuosos."
+          }
+        ],
+        "schemaTitle": "Causas y diagnóstico de humo blanco en Volkswagen",
+        "schemaDescription": "Conozca causas y pasos para diagnosticar humo blanco en Volkswagen. Evite errores comunes con consejos y ayuda OBD2."
+      },
+      "fr": {
+        "slug": "volkswagen-fumee-blanche",
+        "title": "Volkswagen Fumée Blanche : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes courantes de fumée blanche sur Volkswagen et comment diagnostiquer avant de remplacer des pièces.",
+        "intro": "La fumée blanche qui s’échappe de l’échappement de votre Volkswagen peut indiquer plusieurs problèmes, notamment des fuites de liquide de refroidissement ou des dysfonctionnements du système d’alimentation. Il est important d’effectuer des vérifications pratiques avant de remplacer des pièces coûteuses. L’utilisation d’un scanner OBD2 permet d’identifier les codes d’erreur liés, mais une inspection manuelle reste nécessaire pour un diagnostic précis. Ce guide détaille les causes fréquentes, les étapes de diagnostic et les erreurs souvent commises afin de bien traiter la fumée blanche.",
+        "severity": "La fumée blanche peut signaler des problèmes sérieux du moteur ou du système de refroidissement. Un diagnostic rapide est essentiel.",
+        "driveAdvice": "Vérifiez les niveaux de fluides et conduisez prudemment en attendant le diagnostic. Consultez un spécialiste si le problème persiste.",
+        "likelyCauses": [
+          "Fuite de liquide de refroidissement dans les chambres de combustion",
+          "Injecteurs défectueux",
+          "Joint de culasse ou culasse endommagé",
+          "Combustion d'huile dans le turbocompresseur",
+          "Mélange air-carburant incorrect ou capteurs défaillants"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez les niveaux d’huile moteur et de liquide de refroidissement",
+          "Observez la couleur et l’odeur de la fumée d’échappement",
+          "Réalisez un test de compression et d’étanchéité",
+          "Lisez les codes d’erreur avec un scanner OBD2",
+          "Vérifiez les injecteurs et le système d’allumage",
+          "Inspectez le filtre à air et le système d’admission"
+        ],
+        "firstChecks": [
+          "Niveaux d’huile moteur et liquide de refroidissement",
+          "Odeur et aspect de la fumée",
+          "Fuite d’huile au niveau du turbocompresseur"
+        ],
+        "commonMistakes": [
+          "Penser que toute fumée blanche vient forcément d’un joint de culasse défectueux",
+          "Changer des pièces sans vérifier les niveaux de fluides",
+          "Ignorer ou mal interpréter les codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre",
+          "P0300 - Ratés d’allumage aléatoires",
+          "P0420 - Rendement catalyseur insuffisant"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes d’erreur OBD2 Volkswagen",
+            "href": "/fr/codes-erreur-obd2-volkswagen"
+          },
+          {
+            "label": "Diagnostic fumée blanche moteur",
+            "href": "/fr/diagnostic-fumee-blanche"
+          },
+          {
+            "label": "Symptômes défaillance joint de culasse",
+            "href": "/fr/symptomes-joint-culasse"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes de la fumée blanche sur Volkswagen ?",
+            "a": "Les causes fréquentes sont les fuites de liquide de refroidissement, injecteurs défectueux, joint de culasse abîmé, ou combustion d’huile dans le turbo."
+          },
+          {
+            "q": "Puis-je conduire avec de la fumée blanche ?",
+            "a": "Il est conseillé de vérifier les niveaux de liquide et d’adopter une conduite prudente en attendant un diagnostic complet."
+          },
+          {
+            "q": "Comment un scanner OBD2 aide-t-il au diagnostic ?",
+            "a": "Il permet de lire les codes d’erreur liés au mélange air-carburant, aux ratés d’allumage ou aux capteurs défectueux."
+          }
+        ],
+        "schemaTitle": "Causes et diagnostic de la fumée blanche sur Volkswagen",
+        "schemaDescription": "Explorez les causes et diagnostics pour la fumée blanche sur Volkswagen. Conseils pratiques et assistance OBD2 pour une solution efficace."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-poor-fuel-economy",
+    "intentKey": "volkswagen_poor_fuel_economy",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 93,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "volkswagen-poor-fuel-economy",
+        "title": "Volkswagen Poor Fuel Economy: Common Causes and Diagnostic Tips",
+        "metaDescription": "Learn the common causes of poor fuel economy in your Volkswagen and practical diagnostic steps to help improve efficiency before replacement.",
+        "intro": "If your Volkswagen is suddenly consuming more fuel than usual, there could be multiple mechanical or sensor-related reasons behind this issue. Before replacing components, it's useful to verify a few practical points that can affect fuel efficiency, such as tire pressure, fuel quality, or engine condition. Understanding the typical causes and diagnostic approaches helps pinpoint the problem effectively.",
+        "severity": "Moderate impact on running costs and emissions",
+        "driveAdvice": "Drive conservatively and monitor fuel consumption until the issue is diagnosed to avoid excessive fuel wastage.",
+        "likelyCauses": [
+          "Faulty oxygen sensor affecting air-fuel mixture",
+          "Clogged air filter restricting airflow",
+          "Underinflated tires increasing rolling resistance",
+          "Malfunctioning fuel injectors delivering excess fuel",
+          "Worn spark plugs causing incomplete combustion"
+        ],
+        "diagnosticSteps": [
+          "Check tire pressure and adjust to recommended levels",
+          "Inspect and replace the air filter if dirty",
+          "Scan for OBD2 trouble codes related to fuel system",
+          "Test oxygen sensor performance with a multimeter or scan tool",
+          "Evaluate spark plug condition and replace if fouled",
+          "Check fuel injector spray pattern and clean if necessary"
+        ],
+        "firstChecks": [
+          "Verify tire inflation meets Volkswagen specifications",
+          "Ensure fuel used matches recommended grade",
+          "Inspect for obvious vacuum leaks in intake hoses"
+        ],
+        "commonMistakes": [
+          "Replacing expensive sensors without initial diagnostic",
+          "Ignoring routine maintenance like air filter changes",
+          "Overlooking tire condition and pressure effects"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0420 - Catalyst System Efficiency Below Threshold",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 codes for fuel system",
+            "href": "/en/obd2-codes/fuel-system"
+          },
+          {
+            "label": "How to check Volkswagen sensors",
+            "href": "/en/volkswagen-sensor-check"
+          },
+          {
+            "label": "Improving car fuel economy tips",
+            "href": "/en/fuel-economy-tips"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can low tire pressure really affect fuel consumption?",
+            "a": "Yes, underinflated tires increase rolling resistance which causes the engine to work harder and consume more fuel."
+          },
+          {
+            "q": "How often should I replace the air filter on a Volkswagen?",
+            "a": "Generally, every 12,000 to 15,000 miles or as specified in your owner’s manual, but check more frequently if you drive in dusty conditions."
+          },
+          {
+            "q": "Will fixing poor fuel economy improve emissions?",
+            "a": "Improving fuel economy usually reduces harmful emissions, as the engine runs more efficiently and combusts fuel completely."
+          }
+        ],
+        "schemaTitle": "Volkswagen Poor Fuel Economy: Causes & Diagnostics",
+        "schemaDescription": "Explore common reasons and diagnostic methods for poor fuel economy in Volkswagen vehicles before replacing parts."
+      },
+      "tr": {
+        "slug": "volkswagen-cok-yakiyor",
+        "title": "Volkswagen Çok Yakıyor: Nedenleri ve Sağlıklı Arıza Tespit Yöntemleri",
+        "metaDescription": "Volkswagen'inizin fazla yakıt tüketmesinin olası nedenlerini öğrenin ve değiştirmeden önce uygulanabilecek pratik kontrol yöntemlerini keşfedin.",
+        "intro": "Volkswagen aracınız normalden daha fazla yakıt tüketiyorsa bunun çeşitli mekanik veya sensör kaynaklı nedenleri olabilir. Parça değiştirmeden önce, lastik basıncı, hava filtresi durumu veya yakıt kalitesi gibi yakıt ekonomisini etkileyen pratik kontrolleri yapmak faydalı olacaktır. Sorunun nedenini belirlemek için tipik sebepler ve arıza tespit yöntemleri hakkında bilgi sahibi olmak önemlidir.",
+        "severity": "Yakıt tüketimi ve işletme maliyetlerinde orta düzeyde artış",
+        "driveAdvice": "Sorun çözülene kadar dikkatli sürüş yaparak yakıt tüketimini takip edin ve aşırı yakıt harcamasından kaçının.",
+        "likelyCauses": [
+          "Hatalı lambda sensörü nedeniyle hava-yakıt karışımının bozulması",
+          "Kirli veya tıkanmış hava filtresi",
+          "Düşük lastik basıncı",
+          "Yakıt enjektörlerinin fazla yakıt püskürtmesi",
+          "Bujilerin yıpranması sonucunda eksik yanma"
+        ],
+        "diagnosticSteps": [
+          "Lastik basıncını kontrol edin ve önerilen seviyelere getirin",
+          "Hava filtresini inceleyin, kirliyse değiştirin",
+          "OBD2 tarayıcı ile yakıt sistemi hatalarını kontrol edin",
+          "Lambda sensörünü multimetre veya tarayıcı ile test edin",
+          "Bujileri kontrol edin, aşınmışsa değiştirin",
+          "Yakıt enjektörlerinin püskürtme düzenini kontrol edin ve gerekirse temizleyin"
+        ],
+        "firstChecks": [
+          "Lastiklerin Volkswagen’in belirttiği basınca sahip olup olmadığını kontrol edin",
+          "Kullanılan yakıt kalitesinin uygun olduğunu doğrulayın",
+          "Emiş hortumlarında belirgin kaçak olup olmadığını inceleyin"
+        ],
+        "commonMistakes": [
+          "İlk olarak pahalı sensörleri değiştirmek",
+          "Hava filtresi ve rutin bakımı ihmal etmek",
+          "Lastik durumunun ve basıncının etkisini göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistem Zayıf Yakıtlı",
+          "P0420 - Katalizör Verimlilik Alt Eşiğinin Altında",
+          "P0300 - Rastgele Çalışmama Algılandı"
+        ],
+        "internalLinks": [
+          {
+            "label": "Yakıt sistemi OBD2 kodları",
+            "href": "/tr/obd2-kodlari/yakit-sistemi"
+          },
+          {
+            "label": "Volkswagen sensör kontrolü",
+            "href": "/tr/volkswagen-sensor-kontrol"
+          },
+          {
+            "label": "Yakıt tasarrufu için ipuçları",
+            "href": "/tr/yakit-tasarrufu-ipuclari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Düşük lastik basıncı yakıt tüketimini etkiler mi?",
+            "a": "Evet, düşük lastik basıncı yuvarlanma direncini artırır, bu da motorun daha fazla yakıt harcamasına sebep olur."
+          },
+          {
+            "q": "Volkswagen'de hava filtresi ne sıklıkta değişmeli?",
+            "a": "Genelde 20.000-25.000 km’de veya kullanım koşullarına bağlı olarak daha sık, tozlu bölgelerde daha erken değiştirilmeli."
+          },
+          {
+            "q": "Yakıt ekonomisini düzeltmek emisyonları da iyileştirir mi?",
+            "a": "Evet, motor verimli çalıştığında yakıt tam yanar ve emisyonlar azalır."
+          }
+        ],
+        "schemaTitle": "Volkswagen Çok Yakıyor: Nedenler ve Arıza Tespiti",
+        "schemaDescription": "Volkswagen'in fazla yakıt tüketmesinin sık nedenlerini ve parça değiştirmeden önce yapılacak kontrolleri öğrenin."
+      },
+      "de": {
+        "slug": "volkswagen-hoher-kraftstoffverbrauch",
+        "title": "Volkswagen Hoher Kraftstoffverbrauch: Ursachen und Diagnose-Tipps",
+        "metaDescription": "Erfahren Sie häufige Ursachen für hohen Kraftstoffverbrauch bei Volkswagen und praktische Diagnose-Schritte vor dem Austausch von Teilen.",
+        "intro": "Wenn Ihr Volkswagen plötzlich mehr Kraftstoff verbraucht, kann dies verschiedene mechanische oder sensorische Ursachen haben. Es empfiehlt sich, vor dem Austausch von Komponenten einige praktische Aspekte wie Reifendruck, Luftfilterzustand oder Kraftstoffqualität zu prüfen. Ein gutes Verständnis der möglichen Ursachen und Diagnoseschritte erleichtert die gezielte Problemerkennung.",
+        "severity": "Moderate Auswirkung auf Kraftstoffkosten und Emissionen",
+        "driveAdvice": "Fahren Sie sparsam und beobachten Sie den Verbrauch, bis die Ursache geklärt ist, um unnötigen Mehrverbrauch zu vermeiden.",
+        "likelyCauses": [
+          "Defekter Lambdasonde, der falsches Luft-Kraftstoff-Gemisch verursacht",
+          "Verschmutzter Luftfilter, der den Luftfluss einschränkt",
+          "Zu niedriger Reifendruck erhöht den Rollwiderstand",
+          "Defekte Einspritzventile, die zu viel Kraftstoff einspritzen",
+          "Verschlissene Zündkerzen führen zu unvollständiger Verbrennung"
+        ],
+        "diagnosticSteps": [
+          "Reifendruck prüfen und auf Herstellervorgabe einstellen",
+          "Luftfilter auf Verschmutzung prüfen und ggf. tauschen",
+          "OBD2-Fehlercodes im Bereich Kraftstoffsystem auslesen",
+          "Lambdasonde mit Multimeter oder Diagnosegerät testen",
+          "Zündkerzen auf Abnutzung prüfen und bei Bedarf wechseln",
+          "Einspritzventile auf gleichmäßigen Sprühnebel kontrollieren und reinigen"
+        ],
+        "firstChecks": [
+          "Überprüfen Sie den Reifendruck gemäß Volkswagen-Spezifikation",
+          "Stellen Sie sicher, dass der verwendete Kraftstoff korrekt ist",
+          "Kontrollieren Sie auf sichtbare Unterdrucklecks am Ansaugsystem"
+        ],
+        "commonMistakes": [
+          "Teure Sensoren ohne vorherige Diagnose austauschen",
+          "Regelmäßige Wartung wie Luftfilterwechsel vernachlässigen",
+          "Auswirkung von Reifendruck und Reifenverschleiß ignorieren"
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0420 - Katalysatorsystem Wirkungsgrad unterhalb Schwelle",
+          "P0300 - Mehrfachzündaussetzer erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Codes für Kraftstoffsystem",
+            "href": "/de/obd2-codes/kraftstoffsystem"
+          },
+          {
+            "label": "Volkswagen Sensorprüfung",
+            "href": "/de/volkswagen-sensor-pruefung"
+          },
+          {
+            "label": "Tipps zur Verbesserung des Kraftstoffverbrauchs",
+            "href": "/de/kraftstoffverbrauch-tipps"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Beeinflusst der Reifendruck tatsächlich den Kraftstoffverbrauch?",
+            "a": "Ja, zu niedriger Reifendruck erhöht den Rollwiderstand, wodurch mehr Kraftstoff verbraucht wird."
+          },
+          {
+            "q": "Wie oft sollte der Luftfilter im Volkswagen gewechselt werden?",
+            "a": "In der Regel alle 20.000 bis 25.000 Kilometer, oder öfter bei Fahrten in staubigen Umgebungen."
+          },
+          {
+            "q": "Verbessert eine bessere Kraftstoffeffizienz auch die Emissionen?",
+            "a": "Ja, wenn der Motor effizienter läuft, werden weniger Schadstoffe ausgestoßen."
+          }
+        ],
+        "schemaTitle": "Volkswagen Hoher Kraftstoffverbrauch: Ursachen & Diagnose",
+        "schemaDescription": "Häufige Ursachen und Diagnosemethoden bei hohem Kraftstoffverbrauch von Volkswagen-Fahrzeugen vor Teilen-Tausch."
+      },
+      "es": {
+        "slug": "volkswagen-gasta-mucho-combustible",
+        "title": "Volkswagen Gasta Mucho Combustible: Causas Comunes y Cómo Diagnosticar",
+        "metaDescription": "Descubre las causas frecuentes del alto consumo de combustible en tu Volkswagen y pasos prácticos para diagnosticar antes de reemplazar piezas.",
+        "intro": "Si tu Volkswagen está consumiendo más combustible de lo habitual, podría deberse a varias razones mecánicas o relacionadas con sensores. Antes de cambiar piezas, realiza algunas verificaciones prácticas como presión de neumáticos, estado del filtro de aire o calidad del combustible. Conocer las causas comunes y cómo diagnosticar te ayudará a identificar el problema eficazmente.",
+        "severity": "Impacto moderado en costos de combustible y emisiones",
+        "driveAdvice": "Conduce con cuidado y monitorea el consumo hasta diagnosticar el problema para evitar gastos innecesarios.",
+        "likelyCauses": [
+          "Sensor de oxígeno defectuoso que afecta la mezcla aire-combustible",
+          "Filtro de aire obstruido que limita el flujo de aire",
+          "Presión baja en los neumáticos que aumenta resistencia a la rodadura",
+          "Inyectores que funcionan mal y entregan combustible en exceso",
+          "Bujías desgastadas que provocan combustión incompleta"
+        ],
+        "diagnosticSteps": [
+          "Verifica la presión de los neumáticos y ajústala a los niveles recomendados",
+          "Revisa y reemplaza el filtro de aire si está sucio",
+          "Escanea los códigos OBD2 relacionados con el sistema de combustible",
+          "Prueba el sensor de oxígeno con multímetro o escáner",
+          "Evalúa el estado de las bujías y cámbialas si están quemadas",
+          "Revisa el patrón de pulverización de los inyectores y límpialos si es necesario"
+        ],
+        "firstChecks": [
+          "Asegúrate que la presión de los neumáticos esté según especificación",
+          "Confirma que el combustible usado sea de la calidad recomendada",
+          "Busca fugas evidentes en las mangueras de admisión"
+        ],
+        "commonMistakes": [
+          "Cambiar sensores costosos sin diagnóstico previo",
+          "Ignorar el mantenimiento rutinario como cambio de filtro de aire",
+          "No considerar el efecto del estado y presión de los neumáticos"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0420 - Eficiencia del catalizador por debajo del umbral",
+          "P0300 - Fallo de encendido aleatorio o múltiple detectado"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 sobre sistema de combustible",
+            "href": "/es/codigos-obd2/sistema-de-combustible"
+          },
+          {
+            "label": "Cómo revisar sensores en Volkswagen",
+            "href": "/es/revision-de-sensores-volkswagen"
+          },
+          {
+            "label": "Consejos para mejorar el consumo de combustible",
+            "href": "/es/consejos-para-ahorrar-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿La baja presión de los neumáticos afecta realmente el consumo?",
+            "a": "Sí, neumáticos con baja presión aumentan la resistencia al rodaje, haciendo que el motor consuma más combustible."
+          },
+          {
+            "q": "¿Con qué frecuencia debe cambiarse el filtro de aire en un Volkswagen?",
+            "a": "Generalmente cada 20,000 a 25,000 km, o antes si se conduce en ambientes polvorientos."
+          },
+          {
+            "q": "¿Mejorar el consumo de combustible ayuda con las emisiones?",
+            "a": "Sí, cuando el motor funciona eficientemente quema mejor el combustible, reduciendo emisiones contaminantes."
+          }
+        ],
+        "schemaTitle": "Volkswagen Gasta Mucho Combustible: Causas y Diagnóstico",
+        "schemaDescription": "Causas comunes y métodos de diagnóstico para el alto consumo de combustible en vehículos Volkswagen antes de reemplazar piezas."
+      },
+      "fr": {
+        "slug": "volkswagen-consomme-trop-de-carburant",
+        "title": "Volkswagen Consomme Trop de Carburant : Causes Fréquentes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes d’une consommation excessive de carburant sur Volkswagen et les étapes pratiques pour diagnostiquer avant de remplacer des pièces.",
+        "intro": "Si votre Volkswagen consomme anormalement plus de carburant, plusieurs raisons mécaniques ou liées aux capteurs peuvent en être la cause. Avant tout remplacement de pièces, il est conseillé de vérifier certains points pratiques comme la pression des pneus, l’état du filtre à air ou la qualité du carburant. Comprendre les causes habituelles et les méthodes de diagnostic facilite l’identification précise du problème.",
+        "severity": "Impact modéré sur les coûts de fonctionnement et les émissions",
+        "driveAdvice": "Conduisez prudemment et surveillez la consommation jusqu’à identification du problème pour éviter un gaspillage excessif.",
+        "likelyCauses": [
+          "Sonde lambda défectueuse perturbant le mélange air-carburant",
+          "Filtre à air obstrué limitant le débit d’air",
+          "Pneus sous-gonflés augmentant la résistance au roulement",
+          "Injecteurs défaillants délivrant trop de carburant",
+          "Bougies d’allumage usées provoquant une combustion incomplète"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez la pression des pneus et ajustez selon les préconisations",
+          "Contrôlez et remplacez le filtre à air s’il est encrassé",
+          "Scannez les codes défauts OBD2 liés au système carburant",
+          "Testez la sonde lambda avec un multimètre ou outil de diagnostic",
+          "Examinez l’état des bougies d’allumage et changez-les si nécessaire",
+          "Vérifiez le gicleur des injecteurs et nettoyez-les si besoin"
+        ],
+        "firstChecks": [
+          "Assurez-vous que la pression des pneus correspond aux spécifications Volkswagen",
+          "Confirmez que le carburant utilisé est de la qualité recommandée",
+          "Recherchez d’éventuelles fuites visibles dans les durites d’admission"
+        ],
+        "commonMistakes": [
+          "Remplacer des capteurs coûteux sans diagnostic préalable",
+          "Négliger l’entretien régulier comme le remplacement du filtre à air",
+          "Ignorer l’impact de la pression et de l’état des pneus"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0420 - Efficacité du catalyseur inférieure au seuil",
+          "P0300 - Ratés d’allumage multiples détectés"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 du système carburant",
+            "href": "/fr/codes-obd2/systeme-carburant"
+          },
+          {
+            "label": "Contrôle des capteurs Volkswagen",
+            "href": "/fr/controle-capteurs-volkswagen"
+          },
+          {
+            "label": "Conseils pour économiser le carburant",
+            "href": "/fr/conseils-economie-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "La pression des pneus influence-t-elle vraiment la consommation ?",
+            "a": "Oui, des pneus sous-gonflés augmentent la résistance au roulement, ce qui fait consommer plus de carburant."
+          },
+          {
+            "q": "À quelle fréquence faut-il changer le filtre à air sur un Volkswagen ?",
+            "a": "En général tous les 20 000 à 25 000 km, ou plus fréquemment si vous roulez dans des environnements poussiéreux."
+          },
+          {
+            "q": "Améliorer la consommation réduit-il aussi les émissions ?",
+            "a": "Oui, un moteur plus efficace brûle mieux le carburant, ce qui diminue les émissions nocives."
+          }
+        ],
+        "schemaTitle": "Volkswagen Consomme Trop de Carburant : Causes & Diagnostic",
+        "schemaDescription": "Causes fréquentes et méthodes de diagnostic de la consommation excessive de carburant sur Volkswagen avant remplacement des pièces."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-stalling",
+    "intentKey": "volkswagen_stalling",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "stalling",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-stop-ediyor",
+        "title": "Volkswagen Stop Ediyor: Olası Nedenler ve Çözümler",
+        "metaDescription": "Volkswagen araçlarda stop etme sorunu için nedenler, kontrol adımları ve sık yapılan hataları keşfedin. OBD2 kodlarıyla doğru teşhis alın.",
+        "intro": "Volkswagen marka aracınız beklenmedik şekilde stop ediyor olabilir. Bu durum sürüş güvenliğini tehdit eder ve çeşitli sebeplere bağlıdır. Stop etme sorununu belirlemek için araç üzerinde bazı temel kontroller yapılması ve doğru teşhis adımları izlenmesi önemlidir. Ani durmaların sebepleri yakıt sistemi, ateşleme, sensörler ve elektronik kontrol üniteleri gibi farklı alanlarda olabilir. Bu yazıda yaygın nedenleri, yapmanız gereken kontrolleri ve yanlış teşhislerin önüne geçmek için dikkat edilmesi gereken noktaları ele alacağız.",
+        "severity": "Araç durması ani ve kontrol kaybına sebep olabilir, kesinlikle ciddiye alınmalıdır.",
+        "driveAdvice": "Aracınız duruyorsa, mümkünse güvenli bir yerde durun ve çekici ile servise başvurun.",
+        "likelyCauses": [
+          "Kirli veya tıkalı yakıt filtresi",
+          "Arızalı ateşleme bobini",
+          "Hatalı hava akış sensörü (MAF)",
+          "Yakıt pompasında zayıflama",
+          "Bozuk krank mili sensörü"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla hata kodlarını kontrol edin",
+          "Yakıt basıncını ölçün",
+          "Hava filtresini ve MAF sensörünü temizleyin",
+          "Buji ve ateşleme sistemi parçalarını kontrol edin",
+          "Yakıt pompası performansını test edin",
+          "Krank mili ve eksantrik mili sensörlerini doğrulayın"
+        ],
+        "firstChecks": [
+          "Yakıt seviyesi yeterli mi?",
+          "Ateşleme sistemi hasarlı mı?",
+          "Hava filtresi temiz mi?"
+        ],
+        "commonMistakes": [
+          "Yakıt filtresini gereksiz yere değiştirmek",
+          "Hatalı seyreltilen cihazlarla MAF sensörünü temizlemek",
+          "OBD2 kodlarını yanlış yorumlamak"
+        ],
+        "relatedCodes": [
+          "P0300 - Çoklu Silindir Ateşleme Arızası",
+          "P0171 - Yakıt Sistemi Çok Fakir",
+          "P0101 - Kütle Hava Akış Sensörü Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Yakıt Sistemi Problemleri",
+            "href": "/tr/volkswagen-yakit-sistemi-arizalari"
+          },
+          {
+            "label": "Hava Akış Sensörü Temizliği Nasıl Yapılır?",
+            "href": "/tr/hava-akis-sensoru-temizligi"
+          },
+          {
+            "label": "OBD2 Kodları ve Anlamları",
+            "href": "/tr/obd2-kodlari-anlamlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen aracım neden aniden stop ediyor?",
+            "a": "Stop etmenin birçok sebebi olabilir; yakıt sistemi, ateşleme bileşenleri veya sensör arızaları bunların başında gelir."
+          },
+          {
+            "q": "OBD2 cihazı sorunu nasıl teşhis eder?",
+            "a": "OBD2 cihazı aracınızda tespit edilen hata kodlarını okuyarak sorunlu parçaların hangileri olabileceği hakkında bilgi verir."
+          },
+          {
+            "q": "Stop sorunu için hangi parçaları önce kontrol etmeliyim?",
+            "a": "Öncelikle yakıt seviyesi, hava filtresi durumu ve ateşleme sistemini kontrol etmeniz önerilir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Stop Etme Sorunu: Nedenleri ve Çözüm Yolları",
+        "schemaDescription": "Volkswagen araçlarda aniden stop etme problemi için pratik kontrol adımları, olası nedenler ve OBD2 kod analizlerini keşfedin."
+      },
+      "en": {
+        "slug": "volkswagen-stalling",
+        "title": "Volkswagen Stalling Issue: Common Causes and Diagnostic Guide",
+        "metaDescription": "Explore probable causes, diagnostic steps, and common mistakes for Volkswagen stalling issues. Learn how to read OBD2 codes effectively.",
+        "intro": "If your Volkswagen is stalling unexpectedly, it can hinder your driving safety and cause inconvenience. Several factors could contribute to this, including fuel delivery issues, ignition problems, or sensor malfunctions. Before replacing parts, it's essential to follow proper diagnostic steps and perform practical checks to identify the root cause. This guide covers common causes, step-by-step diagnostic actions, and pitfalls to avoid when troubleshooting stalling in Volkswagen vehicles.",
+        "severity": "Stalling can cause sudden loss of power; assess the situation carefully and avoid driving if unsafe.",
+        "driveAdvice": "If the vehicle stalls, safely pull over and consider calling roadside assistance or visiting a qualified service center.",
+        "likelyCauses": [
+          "Clogged fuel filter",
+          "Faulty ignition coil",
+          "Malfunctioning mass air flow sensor",
+          "Weak fuel pump",
+          "Damaged crankshaft position sensor"
+        ],
+        "diagnosticSteps": [
+          "Scan the vehicle with an OBD2 scanner for fault codes",
+          "Test fuel pressure at the fuel rail",
+          "Inspect and clean the air filter and MAF sensor",
+          "Check spark plugs and ignition components",
+          "Evaluate fuel pump operation",
+          "Verify crankshaft and camshaft sensor signals"
+        ],
+        "firstChecks": [
+          "Is the fuel tank sufficiently filled?",
+          "Are ignition components in good condition?",
+          "Is the air filter clean and unobstructed?"
+        ],
+        "commonMistakes": [
+          "Replacing the fuel filter prematurely",
+          "Using improper cleaning agents on sensors",
+          "Misinterpreting OBD2 diagnostic codes"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0101 - Mass Air Flow Sensor Circuit Range/Performance"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Fuel System Problems",
+            "href": "/en/volkswagen-fuel-system-issues"
+          },
+          {
+            "label": "How to Clean Mass Air Flow Sensor",
+            "href": "/en/how-to-clean-maf-sensor"
+          },
+          {
+            "label": "Understanding OBD2 Codes",
+            "href": "/en/understanding-obd2-codes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes a Volkswagen to stall suddenly?",
+            "a": "Stalling can arise from fuel delivery issues, ignition system faults, or sensor malfunctions among other reasons."
+          },
+          {
+            "q": "How does an OBD2 scanner help with stalling diagnosis?",
+            "a": "It reads stored trouble codes in the vehicle’s computer which point toward failing components affecting engine performance."
+          },
+          {
+            "q": "What should I check first if my Volkswagen stalls?",
+            "a": "Start by checking fuel level, air filter status, and ignition system components."
+          }
+        ],
+        "schemaTitle": "Volkswagen Stalling Diagnosis: Causes and Practical Checks",
+        "schemaDescription": "Diagnose Volkswagen stalling problems with common causes, practical diagnostic steps, and OBD2 code insights to help identify issues."
+      },
+      "de": {
+        "slug": "volkswagen-motor-geht-aus",
+        "title": "Volkswagen Motor Stottert und Geht Aus: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie mögliche Ursachen und Diagnosemethoden bei Stottern und Ausgehen Ihres Volkswagen. Tipps für richtige Fehlerbehebung mit OBD2.",
+        "intro": "Wenn Ihr Volkswagen unerwartet ausgeht oder stottert, beeinträchtigt dies nicht nur den Fahrkomfort, sondern kann auch gefährlich sein. Die Ursachen können vielfältig sein: von Problemen mit der Kraftstoffversorgung über Zündstörungen bis hin zu defekten Sensoren. Es ist wichtig, systematisch zu prüfen und Diagnoseschritte einzuhalten, bevor Bauteile getauscht werden. In diesem Artikel erhalten Sie praxisnahe Hinweise zu häufigen Ursachen, sinnvollen Prüfschritten und typischen Fehlern bei der Fehlerdiagnose.",
+        "severity": "Das plötzliche Ausgehen kann gefährliche Situationen verursachen, daher sollte der Zustand umgehend geprüft werden.",
+        "driveAdvice": "Bei Motorstillstand sofort sicher anhalten und gegebenenfalls Pannenhilfe kontaktieren.",
+        "likelyCauses": [
+          "Verstopfter Kraftstofffilter",
+          "Defekte Zündspule",
+          "Fehlerhafter Luftmassenmesser",
+          "Schwache Kraftstoffpumpe",
+          "Defekter Kurbelwellensensor"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Kraftstoffdruck messen",
+          "Luftfilter und Luftmassenmesser reinigen",
+          "Zündkerzen und Zündanlage prüfen",
+          "Kraftstoffpumpenfunktion testen",
+          "Signale von Kurbel- und Nockenwellensensor kontrollieren"
+        ],
+        "firstChecks": [
+          "Ausreichend Kraftstoff im Tank?",
+          "Zündanlage funktioniert korrekt?",
+          "Luftfilter sauber und frei?"
+        ],
+        "commonMistakes": [
+          "Kraftstofffilter vorschnell tauschen",
+          "Falsche Reinigungsmittel für Sensoren verwenden",
+          "OBD2-Codes falsch deuten"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige Zylinderfehlzündung",
+          "P0171 - Gemisch zu mager",
+          "P0101 - Luftmassenmesser Fehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Kraftstoffsystem überprüfen",
+            "href": "/de/volkswagen-kraftstoffsystem-probleme"
+          },
+          {
+            "label": "Reinigung des Luftmassenmessers",
+            "href": "/de/luftmassenmesser-reinigung"
+          },
+          {
+            "label": "OBD2 Fehlercodes erklärt",
+            "href": "/de/obd2-fehlercodes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum geht mein Volkswagen plötzlich aus?",
+            "a": "Häufige Gründe sind Probleme bei Kraftstoffzufuhr, Zündung oder Sensorstörungen."
+          },
+          {
+            "q": "Wie unterstützt ein OBD2-Scanner bei der Fehlersuche?",
+            "a": "Er zeigt gespeicherte Fehlercodes an, die Hinweise auf defekte Bauteile geben."
+          },
+          {
+            "q": "Worauf sollte ich zuerst achten, wenn der Motor ausgeht?",
+            "a": "Zuerst Kraftstoffstand, Luftfilter und Zündanlage prüfen."
+          }
+        ],
+        "schemaTitle": "Volkswagen Motor Geht Aus: Ursachen und Erste Hilfen",
+        "schemaDescription": "Umfassende Anleitung zur Diagnose von Ausgehproblemen bei Volkswagen mit Ursachenübersicht, Prüfverfahren und OBD2-Codes."
+      },
+      "es": {
+        "slug": "volkswagen-motor-tiembla-paradas",
+        "title": "Volkswagen Motor Tiembla y Se Para: Causas Comunes y Diagnóstico",
+        "metaDescription": "Descubre las causas posibles y los pasos para diagnosticar problemas de motor que tiembla o se para en Volkswagen. Evita errores comunes.",
+        "intro": "Si el motor de tu Volkswagen falla repentinamente o se detiene mientras conduces, puede deberse a varias razones que afectan la combustión, el sistema eléctrico o los sensores del motor. Antes de reemplazar piezas, es fundamental realizar comprobaciones básicas para identificar la causa exacta del problema. En esta guía encontrarás las causas más habituales, los pasos para diagnosticar correctamente y consejos para evitar errores frecuentes que pueden aumentar los costos de reparación.",
+        "severity": "El paro repentino del motor puede poner en riesgo la seguridad vial, actúa con precaución.",
+        "driveAdvice": "Si el vehículo se detiene, detente en un lugar seguro y solicita asistencia técnica si es necesario.",
+        "likelyCauses": [
+          "Filtro de combustible obstruido",
+          "Bobina de encendido defectuosa",
+          "Sensor de flujo de aire sucio o dañado",
+          "Bomba de combustible con bajo rendimiento",
+          "Sensor de posición del cigüeñal fallando"
+        ],
+        "diagnosticSteps": [
+          "Lee los códigos de error con un escáner OBD2",
+          "Mide la presión de combustible en el riel",
+          "Inspecciona y limpia el filtro de aire y sensor MAF",
+          "Revisa las bujías y sistema de encendido",
+          "Evalúa el funcionamiento de la bomba de combustible",
+          "Verifica las señales del cigüeñal y árbol de levas"
+        ],
+        "firstChecks": [
+          "¿El tanque tiene suficiente combustible?",
+          "¿El sistema de encendido está en buen estado?",
+          "¿Está limpio y sin obstrucciones el filtro de aire?"
+        ],
+        "commonMistakes": [
+          "Cambiar el filtro de combustible sin necesidad",
+          "Usar limpiadores inadecuados en sensores",
+          "Interpretar mal los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple",
+          "P0171 - Mezcla demasiado pobre en banco 1",
+          "P0101 - Error en circuito del sensor MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas comunes en sistema de combustible Volkswagen",
+            "href": "/es/problemas-sistema-combustible-volkswagen"
+          },
+          {
+            "label": "Cómo limpiar el sensor MAF correctamente",
+            "href": "/es/limpiar-sensor-maf"
+          },
+          {
+            "label": "Guía de códigos OBD2 para Volkswagen",
+            "href": "/es/codigos-obd2-volkswagen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Volkswagen se para mientras manejo?",
+            "a": "Puede ser causado por problemas en el suministro de combustible, encendido o sensores defectuosos."
+          },
+          {
+            "q": "¿Cómo ayuda el scanner OBD2 a diagnosticar el problema?",
+            "a": "Lee los códigos de falla almacenados en la computadora del vehículo para identificar componentes problemáticos."
+          },
+          {
+            "q": "¿Qué debo revisar primero si el motor se detiene?",
+            "a": "Revisa el nivel de combustible, el filtro de aire y el sistema de encendido inicialmente."
+          }
+        ],
+        "schemaTitle": "Diagnóstico de Paros en Motor Volkswagen: Causas y Soluciones",
+        "schemaDescription": "Identifica problemas comunes, pasos de diagnóstico y códigos OBD2 para resolver el motor que tiembla o se para en tu Volkswagen."
+      },
+      "fr": {
+        "slug": "volkswagen-calage-moteur",
+        "title": "Calage Moteur Volkswagen : Causes Fréquentes et Diagnostic",
+        "metaDescription": "Découvrez les causes possibles et les étapes de diagnostic du calage moteur sur Volkswagen. Évitez les erreurs communes et comprenez les codes OBD2.",
+        "intro": "Un moteur Volkswagen qui cale de manière inattendue peut compromettre la sécurité et résulte souvent de problèmes liés au système d'alimentation, à l’allumage ou aux capteurs. Avant d’envisager le remplacement de pièces, il est essentiel d’effectuer des contrôles simples et d’adopter une approche diagnostique méthodique. Cet article détaille les causes habituelles, les étapes pour identifier la source du calage et les erreurs fréquentes à éviter afin d’optimiser la réparation.",
+        "severity": "Le calage moteur peut entraîner une perte soudaine de contrôle, il faut agir avec prudence.",
+        "driveAdvice": "Si votre véhicule cale, garez-vous en sécurité et consultez un garage ou une assistance rapidement.",
+        "likelyCauses": [
+          "Filtre à carburant encrassé",
+          "Bobine d’allumage défectueuse",
+          "Capteur de débit d’air (MAF) défaillant",
+          "Pompe à carburant faible",
+          "Capteur de position vilebrequin endommagé"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts via un scanner OBD2",
+          "Contrôler la pression de carburant",
+          "Nettoyer ou remplacer filtre à air et capteur MAF",
+          "Vérifier bougies et système d’allumage",
+          "Tester le fonctionnement de la pompe à carburant",
+          "Contrôler les capteurs vilebrequin et arbre à cames"
+        ],
+        "firstChecks": [
+          "Niveau de carburant suffisant ?",
+          "Système d’allumage en bon état ?",
+          "Filtre à air propre et non obstrué ?"
+        ],
+        "commonMistakes": [
+          "Changer le filtre à carburant trop tôt",
+          "Nettoyer le capteur MAF avec des produits inadaptés",
+          "Mauvaise interprétation des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples",
+          "P0171 - Mélange trop pauvre banc 1",
+          "P0101 - Problème circuit capteur MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes courants du système carburant Volkswagen",
+            "href": "/fr/problemes-systeme-carburant-volkswagen"
+          },
+          {
+            "label": "Comment nettoyer le capteur MAF",
+            "href": "/fr/nettoyer-capteur-maf"
+          },
+          {
+            "label": "Comprendre les codes OBD2",
+            "href": "/fr/comprendre-codes-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Volkswagen cale-t-il soudainement ?",
+            "a": "Le calage peut être dû à des problèmes d’alimentation en carburant, d’allumage ou à des capteurs défaillants."
+          },
+          {
+            "q": "Comment le scanner OBD2 aide-t-il au diagnostic ?",
+            "a": "Il fournit les codes erreur enregistrés par l’ordinateur de bord permettant d’identifier les composants défectueux."
+          },
+          {
+            "q": "Que vérifier en priorité en cas de calage ?",
+            "a": "Contrôler le niveau de carburant, la propreté du filtre à air et l’état du système d’allumage."
+          }
+        ],
+        "schemaTitle": "Calage moteur Volkswagen : Guide de diagnostic et causes fréquentes",
+        "schemaDescription": "Diagnostiquez les problèmes de calage moteur Volkswagen avec des causes communes, étapes pratiques et analyse des codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-jerking",
+    "intentKey": "volkswagen_jerking",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "jerking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-silkeleme-yapiyor",
+        "title": "Volkswagen Silkeleme Sorunları ve Çözüm Yolları",
+        "metaDescription": "Volkswagen araçlarda silkeleme nedenleri, pratik kontrol yöntemleri ve OBD2 kodlarıyla doğru teşhis rehberi.",
+        "intro": "Volkswagen marka araçlarda motorun ya da sürüş esnasında silkeleme yaşanması, farklı sebeplerden kaynaklanabilir. Bu durum, sürüş güvenliğinizi etkileyebileceği için doğru tespit ve kontrol adımları önemlidir. Böylece gereksiz parça değişimlerinden kaçınarak ekonomik ve etkili çözümler uygulamak mümkündür.",
+        "severity": "Silkeleme sürüş esnasında araç dengesini bozabilir, ancak genellikle aniden duruma yol açmaz. Erken teşhis önemlidir.",
+        "driveAdvice": "Araç silkeliyorsa ani hızlanma ve sert hareketlerden kaçının, motor uyarı ışığını ihmal etmeyin, gerekiyorsa teknik servise başvurun.",
+        "likelyCauses": [
+          "Bujilerde aşınma veya arıza",
+          "Yakıt sistemi tıkanıklıkları veya düşük basınç",
+          "Hava filtresinin kirlenmesi",
+          "Enjektör sorunları",
+          "Elektriksel ateşleme problemleri"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile hata kodlarını kontrol edin",
+          "Bujilerin ve ateşleme kablolarının durumunu inceleyin",
+          "Yakıt filtresi ve pompa basıncını ölçün",
+          "Hava filtresini kontrol edin, temizleyin ya da değiştirin",
+          "Enjektörlerin performans testini yapın",
+          "Motorun genel elektrik devre bağlantılarını gözden geçirin"
+        ],
+        "firstChecks": [
+          "Bujileri çıkararak aşınma veya kurum oluşumunu kontrol edin",
+          "Hava filtresinin temiz ve tıkalı olmadığından emin olun",
+          "Yakıt seviyesi ve kalitesini kontrol edin"
+        ],
+        "commonMistakes": [
+          "Hemen parça değişimine yönelmek",
+          "Sadece tek bir sistem kontrolü yaparak sorunu tespit etmek",
+          "OBD2 kodlarını yanlış yorumlamak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silkeleme",
+          "P0171 - Yakıt Sistemi Zayıflaması",
+          "P0133 - Oksijen Sensörü Tepkisinde Gecikme"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Ateşleme Problemleri",
+            "href": "/tr/volkswagen-atesleme-problemleri"
+          },
+          {
+            "label": "OBD2 Hata Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-hata-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Yakıt Tüketimini Azaltma İpuçları",
+            "href": "/tr/yakit-tuketimi-azaltma"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen araçta silkeleme neden olur?",
+            "a": "Silkeleme genellikle ateşleme, yakıt sistemi veya hava girişindeki sorunlardan kaynaklanabilir."
+          },
+          {
+            "q": "Silkeleme belirtisi görüldüğünde ilk ne kontrol edilmeli?",
+            "a": "Öncelikle bujiler, hava filtresi ve yakıt filtreleri kontrol edilmelidir."
+          },
+          {
+            "q": "Silkeleme sorunu kendi kendine geçer mi?",
+            "a": "Genellikle geçmez, zamanında müdahale edilmezse motor performansı düşer ve hasar artabilir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Silkeleme Sorunları - Nedenleri ve Çözümü",
+        "schemaDescription": "Volkswagen araçlarda motor silkelemesi belirtileri, olası nedenleri, ilk kontrolleri, OBD2 kodları ve pratik teşhis yöntemleri."
+      },
+      "en": {
+        "slug": "volkswagen-jerking-issues",
+        "title": "Volkswagen Jerking Problems: Causes and Diagnostic Tips",
+        "metaDescription": "Explore common causes of Volkswagen jerking, practical checks before replacing parts, and related OBD2 codes for accurate diagnosis.",
+        "intro": "Experiencing jerking while driving a Volkswagen can be caused by various underlying problems affecting engine performance or drivetrain. It’s vital to carry out thorough inspections and diagnostic steps to avoid unnecessary replacements and find cost-effective solutions that ensure your vehicle runs smoothly.",
+        "severity": "Jerking can affect driving comfort and safety but rarely leads to immediate breakdown. Early assessment is advised.",
+        "driveAdvice": "Avoid aggressive acceleration or heavy loads when jerking occurs, watch for warning lights, and seek professional diagnostics if uncertain.",
+        "likelyCauses": [
+          "Worn or faulty spark plugs",
+          "Fuel delivery issues including clogged filters",
+          "Dirty air filter restricting airflow",
+          "Injector malfunction",
+          "Electrical ignition problems"
+        ],
+        "diagnosticSteps": [
+          "Scan OBD2 codes for related fault information",
+          "Inspect spark plugs and ignition wires for wear",
+          "Check fuel pressure and condition of fuel filter",
+          "Examine and clean or replace air filter if dirty",
+          "Conduct injector function tests",
+          "Review wiring and electrical connections for faults"
+        ],
+        "firstChecks": [
+          "Remove and inspect spark plugs for deposits or damage",
+          "Ensure air filter is clean and airflow is unblocked",
+          "Check fuel level and fuel quality in tank"
+        ],
+        "commonMistakes": [
+          "Immediately replacing parts without diagnosis",
+          "Relying on a single system test only",
+          "Misinterpreting OBD2 error codes"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0133 - Oxygen Sensor Circuit Slow Response"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Ignition Problems",
+            "href": "/en/volkswagen-ignition-problems"
+          },
+          {
+            "label": "How to Read OBD2 Codes",
+            "href": "/en/how-to-read-obd2-codes"
+          },
+          {
+            "label": "Fuel Efficiency Tips",
+            "href": "/en/fuel-efficiency-tips"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes jerking in Volkswagen vehicles?",
+            "a": "Jerking can result from ignition faults, fuel delivery issues, or air intake restrictions."
+          },
+          {
+            "q": "What should I check first if my Volkswagen is jerking?",
+            "a": "Start by inspecting spark plugs, air filter, and fuel filter."
+          },
+          {
+            "q": "Will jerking go away on its own?",
+            "a": "Usually not; ignoring it can worsen engine damage and performance."
+          }
+        ],
+        "schemaTitle": "Volkswagen Jerking Problems - Causes and Diagnostics",
+        "schemaDescription": "Learn about Volkswagen jerking symptoms, potential causes, initial checks, OBD2 codes, and diagnostic procedures for accurate repair."
+      },
+      "de": {
+        "slug": "volkswagen-ruckeln-probleme",
+        "title": "Volkswagen Ruckeln: Ursachen und Diagnosehinweise",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für Volkswagen-Ruckeln, praktische Prüfungen vor Teilewechsel und relevante OBD2-Codes für eine genaue Diagnose.",
+        "intro": "Ein Ruckeln während der Fahrt mit einem Volkswagen kann verschiedene Ursachen haben, die die Motorleistung oder den Antriebsstrang beeinflussen. Eine gründliche Überprüfung und Diagnose sind wichtig, um unnötigen Teiletausch zu vermeiden und kosteneffiziente Lösungen zu finden, die den Fahrzeugbetrieb sicherstellen.",
+        "severity": "Ruckeln beeinträchtigt den Fahrkomfort und die Sicherheit, führt aber selten zu einem sofortigen Ausfall. Eine frühzeitige Diagnose ist empfehlenswert.",
+        "driveAdvice": "Bei Ruckeln vermeiden Sie starkes Beschleunigen oder hohe Lasten, beachten Sie Warnleuchten und suchen Sie bei Unsicherheit eine Fachwerkstatt auf.",
+        "likelyCauses": [
+          "Abgenutzte oder defekte Zündkerzen",
+          "Probleme mit der Kraftstoffzufuhr, z.B. verstopfte Filter",
+          "Verschmutzter Luftfilter mit eingeschränktem Luftstrom",
+          "Fehlerhafte Einspritzventile",
+          "Elektrische Zündprobleme"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Codes mit einem Diagnosegerät auslesen",
+          "Zündkerzen und Zündkabel auf Abnutzung prüfen",
+          "Kraftstoffdruck sowie Zustand des Kraftstofffilters kontrollieren",
+          "Luftfilter überprüfen, reinigen oder austauschen",
+          "Einspritzventile auf Funktion testen",
+          "Elektrische Leitungen und Verbindungen inspizieren"
+        ],
+        "firstChecks": [
+          "Zündkerzen auf Ablagerungen oder Schäden prüfen",
+          "Sauberkeit des Luftfilters sicherstellen",
+          "Kraftstoffstand und Qualität überprüfen"
+        ],
+        "commonMistakes": [
+          "Teile sofort austauschen ohne Diagnose",
+          "Nur ein System testen und Diagnose begrenzen",
+          "Fehlinterpretation von OBD2-Fehlercodes"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/mehrfache Zündaussetzer",
+          "P0171 - System zu mager (Bank 1)",
+          "P0133 - Sauerstoffsensor reagiert verzögert"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Zündprobleme",
+            "href": "/de/volkswagen-zuendprobleme"
+          },
+          {
+            "label": "OBD2-Codes richtig auslesen",
+            "href": "/de/obd2-codes-richtig-auslesen"
+          },
+          {
+            "label": "Tipps zur Kraftstoffeffizienz",
+            "href": "/de/kraftstoffeffizienz-tipps"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wodurch entsteht Ruckeln bei Volkswagen Fahrzeugen?",
+            "a": "Ruckeln kann durch Zündprobleme, Kraftstoffmangelsysteme oder Luftmengenbegrenzungen verursacht werden."
+          },
+          {
+            "q": "Was sollte ich zuerst prüfen, wenn mein VW ruckelt?",
+            "a": "Beginnen Sie mit der Kontrolle der Zündkerzen, des Luftfilters und des Kraftstofffilters."
+          },
+          {
+            "q": "Geht das Ruckeln von alleine weg?",
+            "a": "In der Regel nicht. Wird es ignoriert, kann es zu stärkeren Schäden am Motor führen."
+          }
+        ],
+        "schemaTitle": "Volkswagen Ruckeln - Ursachen und Diagnose",
+        "schemaDescription": "Informationen zu Ruckel-Symptomen bei Volkswagen, möglichen Ursachen, ersten Prüfungen, OBD2-Codes und Diagnoseverfahren."
+      },
+      "es": {
+        "slug": "volkswagen-motor-tiembla",
+        "title": "Problemas de Sacudidas en Volkswagen: Causas y Diagnóstico",
+        "metaDescription": "Descubre las causas comunes del motor que tiembla en Volkswagen, controles prácticos antes de cambiar piezas y códigos OBD2 relacionados.",
+        "intro": "Cuando el motor de un Volkswagen tiembla durante la conducción, puede deberse a múltiples problemas que afectan el rendimiento o la transmisión. Es fundamental realizar una revisión completa y seguir métodos de diagnóstico para evitar reemplazos innecesarios y conseguir soluciones eficientes que mantengan el vehículo en óptimas condiciones.",
+        "severity": "Las sacudidas pueden afectar la comodidad y seguridad al conducir, pero rara vez causan una avería inmediata. Es importante un diagnóstico temprano.",
+        "driveAdvice": "Evite aceleraciones bruscas o cargas pesadas al notar sacudidas, preste atención a las luces de advertencia y consulte a un técnico si lo considera necesario.",
+        "likelyCauses": [
+          "Bujías desgastadas o defectuosas",
+          "Problemas en la entrega de combustible, como filtros obstruidos",
+          "Filtro de aire sucio que limita el flujo de aire",
+          "Mal funcionamiento de los inyectores",
+          "Problemas eléctricos en el sistema de encendido"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de falla con escáner OBD2",
+          "Inspeccionar bujías y cables de encendido",
+          "Comprobar la presión de combustible y estado del filtro",
+          "Revisar y limpiar o cambiar el filtro de aire",
+          "Realizar pruebas de funcionamiento en los inyectores",
+          "Verificar conexiones eléctricas y cableado"
+        ],
+        "firstChecks": [
+          "Retirar y revisar bujías por depósitos o daños",
+          "Asegurarse de que el filtro de aire esté limpio",
+          "Verificar nivel y calidad del combustible"
+        ],
+        "commonMistakes": [
+          "Sustituir piezas sin diagnóstico previo",
+          "Confiar en pruebas de un solo sistema",
+          "Interpretar mal los códigos de error OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio en múltiples cilindros",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0133 - Sensor de oxígeno respuesta lenta"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas de encendido en Volkswagen",
+            "href": "/es/problemas-encendido-volkswagen"
+          },
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          },
+          {
+            "label": "Consejos para mejorar consumo de combustible",
+            "href": "/es/consejos-consumo-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué tiembla el motor en vehículos Volkswagen?",
+            "a": "El temblor suele ser causado por problemas de encendido, suministro de combustible o entrada de aire."
+          },
+          {
+            "q": "¿Qué debo revisar primero si el motor tiembla?",
+            "a": "Lo primero es inspeccionar las bujías, filtro de aire y filtro de combustible."
+          },
+          {
+            "q": "¿Se va a solucionar el temblor por sí solo?",
+            "a": "Normalmente no; ignorarlo puede aumentar el daño en el motor."
+          }
+        ],
+        "schemaTitle": "Sacudidas en Volkswagen: Causas y Diagnóstico",
+        "schemaDescription": "Conozca los síntomas de sacudidas en Volkswagen, causas posibles, controles iniciales, códigos OBD2 relevantes y pasos para una reparación precisa."
+      },
+      "fr": {
+        "slug": "volkswagen-tremblements-moteur",
+        "title": "Problèmes de Tremblements sur Volkswagen : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes des tremblements sur Volkswagen, vérifications pratiques avant remplacement et codes OBD2 associés pour un diagnostic précis.",
+        "intro": "Les tremblements ressentis lors de la conduite d’un Volkswagen peuvent découler de divers problèmes affectant la performance moteur ou le groupe motopropulseur. Il est essentiel de réaliser des contrôles approfondis et un diagnostic complet pour éviter des remplacements inutiles et trouver des solutions efficaces garantissant un fonctionnement optimal.",
+        "severity": "Les tremblements peuvent nuire au confort et à la sécurité de conduite, mais conduisent rarement à une panne immédiate. Un diagnostic précoce est recommandé.",
+        "driveAdvice": "Évitez les accélérations brusques ou charges lourdes en cas de tremblements, surveillez les témoins d'alerte, et consultez un professionnel en cas de doute.",
+        "likelyCauses": [
+          "Bougies d’allumage usées ou défectueuses",
+          "Problèmes d’alimentation en carburant, filtres encrassés",
+          "Filtre à air sale limitant le débit d’air",
+          "Dysfonctionnement des injecteurs",
+          "Problèmes électriques dans l’allumage"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut via un scanner OBD2",
+          "Inspecter bougies et câbles d’allumage pour usure",
+          "Vérifier la pression carburant et l’état du filtre",
+          "Contrôler et nettoyer ou remplacer le filtre à air",
+          "Tester le fonctionnement des injecteurs",
+          "Vérifier les connexions électriques et le câblage"
+        ],
+        "firstChecks": [
+          "Retirer et examiner les bougies pour dépôts ou dommages",
+          "S’assurer que le filtre à air est propre",
+          "Contrôler le niveau et la qualité du carburant"
+        ],
+        "commonMistakes": [
+          "Remplacer les pièces sans diagnostic préalable",
+          "Se fier à un seul test système",
+          "Mauvaise interprétation des codes erreur OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires/multiples cylindres",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0133 - Capteur d’oxygène répond lentement"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes d’allumage Volkswagen",
+            "href": "/fr/problemes-allumage-volkswagen"
+          },
+          {
+            "label": "Comment lire les codes OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Conseils pour économiser du carburant",
+            "href": "/fr/conseils-economies-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes des tremblements sur une Volkswagen ?",
+            "a": "Les tremblements peuvent être causés par des problèmes d’allumage, d’alimentation carburant ou d’admission d’air."
+          },
+          {
+            "q": "Que vérifier en premier lorsqu’une Volkswagen tremble ?",
+            "a": "Il faut commencer par contrôler les bougies, le filtre à air et le filtre à carburant."
+          },
+          {
+            "q": "Les tremblements disparaissent-ils d’eux-mêmes ?",
+            "a": "Généralement non; les ignorer peut aggraver les dommages moteur."
+          }
+        ],
+        "schemaTitle": "Tremblements sur Volkswagen - Causes et Diagnostic",
+        "schemaDescription": "Informations sur les symptômes, causes possibles, premiers contrôles, codes OBD2 et procédures de diagnostic des tremblements Volkswagen."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-overheating",
+    "intentKey": "volkswagen_overheating",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "overheating",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-hararet-yapiyor",
+        "title": "Volkswagen Hararet Yapıyor: Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Volkswagen aracınız hararet mi yapıyor? Olası nedenler, ön kontroller ve teşhis adımları ile motor aşırı ısınmasını önleyin.",
+        "intro": "Volkswagen araçlarda hararet yapma sorunu çoğunlukla farklı nedenlerden kaynaklanabilir. Bu sorun aracın motor sağlığını etkileyebilir ve erken müdahale edilmezse daha büyük arızalara yol açabilir. Bu rehberde, Volkswagen hararet yapmasının olası sebeplerini, yapılması gereken ilk kontrolleri ve adım adım teşhis yöntemlerini bulacaksınız.",
+        "severity": "Motor aşırı ısınması ciddi hasarlara yol açabilir, mümkünse aracı hemen durdurunuz ve kontrol sağlayınız.",
+        "driveAdvice": "Aracınız hararet yapıyorsa, aracınızı kullandığınızda motoru zorlamaktan kaçının ve mümkünse soğutma sistemini kontrol ettirin.",
+        "likelyCauses": [
+          "Soğutma sıvısı eksikliği veya sızıntısı",
+          "Termostat arızası",
+          "Radyatör tıkanıklığı veya hasarı",
+          "Su pompası sorunları",
+          "Radyatör fanının çalışmaması"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Termostatın doğru çalışıp çalışmadığını test edin",
+          "Radyatörde tıkanıklık veya hasar olup olmadığını inceleyin",
+          "Su pompasının su sirkülasyonu sağladığından emin olun",
+          "Radyatör fanının devreye girip girmediğini gözlemleyin",
+          "Kontrol panelindeki sıcaklık sensörlerini ve kabloları kontrol edin"
+        ],
+        "firstChecks": [
+          "Soğutma sıvısının seviyesini ve rengini kontrol edin",
+          "Radyatör kapağının sağlamlığına bakın",
+          "Motor bölgesinde anormal sıvı sızıntısı var mı kontrol edin"
+        ],
+        "commonMistakes": [
+          "Soğutma sıvısını sadece seviyesine bakarak kontrol etmek",
+          "Termostat arızasını göz ardı etmek",
+          "Radyatör fanının çalışmasını pas geçmek"
+        ],
+        "relatedCodes": [
+          "P0128 - Termostat sıcaklık aralığı olmaması",
+          "P0480 - Radyatör fanı devre hatası",
+          "P0217 - Motor aşırı hararet arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Hata Kodları Rehberi",
+            "href": "/tr/volkswagen/obd2-hata-kodlari"
+          },
+          {
+            "label": "Soğutma Sistemi Problemleri ve Çözümleri",
+            "href": "/tr/diagnostik/sogutma-sistemi-problemleri"
+          },
+          {
+            "label": "Termostat Arızaları Nasıl Tespit Edilir?",
+            "href": "/tr/diagnostik/termostat-arizalari-tespit"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen aracımın aşırı ısınmasının en yaygın nedenleri nelerdir?",
+            "a": "Genellikle soğutma sıvısı eksikliği, termostat arızası veya radyatör fanının bozuk olması gibi nedenler hararet sorununa yol açar."
+          },
+          {
+            "q": "Aracım hararet yaptığında ne yapmalıyım?",
+            "a": "Mümkünse aracı hemen durdurun, motoru dinlendirin ve soğutma sıvısı seviyesini kontrol edin. Gerekirse profesyonel destek alın."
+          },
+          {
+            "q": "OBD2 cihazıyla hararet problemini nasıl teşhis edebilirim?",
+            "a": "OBD2 cihazı ile ilgili sensör verilerini ve hata kodlarını okuyarak termostat, radyatör fanı veya sensör sorunlarını belirleyebilirsiniz."
+          }
+        ],
+        "schemaTitle": "Volkswagen Hararet Sorunu: Nedenleri ve Teşhis Rehberi",
+        "schemaDescription": "Volkswagen araçlarda hararet yapma sorunlarının olası nedenleri ve çözüm önerilerini adım adım inceleyin."
+      },
+      "en": {
+        "slug": "volkswagen-overheating-causes-and-checks",
+        "title": "Volkswagen Overheating: Common Causes and Practical Checks",
+        "metaDescription": "Is your Volkswagen overheating? Discover possible causes, initial checks, diagnostic steps, and common mistakes to avoid engine damage.",
+        "intro": "Overheating in Volkswagen vehicles can arise from various issues, potentially risking the engine's health. Identifying the cause early helps in preventing serious damage. This guide covers likely reasons for overheating, practical first checks, detailed diagnostics, and tips to handle the problem effectively.",
+        "severity": "Engine overheating can cause severe damage; stop driving as soon as possible and check the cooling system.",
+        "driveAdvice": "If your Volkswagen overheats, avoid pushing the engine hard and have the cooling system inspected promptly.",
+        "likelyCauses": [
+          "Low or leaking coolant levels",
+          "Faulty thermostat",
+          "Clogged or damaged radiator",
+          "Malfunctioning water pump",
+          "Radiator fan failure"
+        ],
+        "diagnosticSteps": [
+          "Check coolant level and condition",
+          "Test thermostat operation",
+          "Inspect radiator for blockages or damage",
+          "Verify water pump circulates coolant properly",
+          "Observe radiator fan activation",
+          "Check temperature sensors and wiring"
+        ],
+        "firstChecks": [
+          "Inspect coolant level and color",
+          "Examine radiator cap condition",
+          "Look for any coolant leaks around the engine"
+        ],
+        "commonMistakes": [
+          "Assuming coolant level alone indicates system health",
+          "Ignoring thermostat issues",
+          "Overlooking radiator fan functionality"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat temperature below regulating temperature",
+          "P0480 - Radiator fan circuit malfunction",
+          "P0217 - Engine overtemperature condition"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Trouble Codes Guide",
+            "href": "/en/volkswagen/obd2-trouble-codes"
+          },
+          {
+            "label": "Cooling System Problems and Solutions",
+            "href": "/en/diagnostics/cooling-system-issues"
+          },
+          {
+            "label": "How to Diagnose Thermostat Issues",
+            "href": "/en/diagnostics/thermostat-diagnosis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are common causes of overheating in a Volkswagen?",
+            "a": "Common causes include low coolant, faulty thermostat, radiator blockages, water pump failure, and radiator fan issues."
+          },
+          {
+            "q": "What should I do if my Volkswagen is overheating?",
+            "a": "Stop driving immediately, allow the engine to cool, then check coolant levels and seek professional assistance if needed."
+          },
+          {
+            "q": "Can I diagnose overheating issues with an OBD2 scanner?",
+            "a": "Yes, an OBD2 scanner can help detect related fault codes and provide insights into sensor and cooling system problems."
+          }
+        ],
+        "schemaTitle": "Volkswagen Overheating: Causes, Checks & Diagnostics",
+        "schemaDescription": "Explore common reasons for Volkswagen overheating and follow expert-recommended steps to diagnose and prevent engine damage."
+      },
+      "de": {
+        "slug": "volkswagen-ueberhitzung-ursachen-und-pruefungen",
+        "title": "Volkswagen Überhitzung: Häufige Ursachen und Praktische Prüfschritte",
+        "metaDescription": "Ihr Volkswagen überhitzt? Entdecken Sie mögliche Ursachen, erste Checks und Diagnose-Tipps, um Motorschäden zu vermeiden.",
+        "intro": "Ein Überhitzungsproblem bei Volkswagen Fahrzeugen kann verschiedene Ursachen haben und die Motorleistung erheblich beeinträchtigen. Frühe Erkennung und korrekte Diagnose helfen, größere Schäden zu verhindern. In diesem Leitfaden erfahren Sie, welche Ursachen häufig sind, welche ersten Kontrollen sinnvoll sind und wie Sie systematisch vorgehen.",
+        "severity": "Motorüberhitzung kann schwere Schäden verursachen. Fahren Sie das Fahrzeug möglichst bald nicht weiter und überprüfen Sie das Kühlsystem.",
+        "driveAdvice": "Wenn Ihr Volkswagen überhitzt, vermeiden Sie starkes Fahren und lassen Sie die Kühlung umgehend überprüfen.",
+        "likelyCauses": [
+          "Niedriger oder undichter Kühlmittelstand",
+          "Defektes Thermostat",
+          "Verstopfter oder beschädigter Kühler",
+          "Probleme mit der Wasserpumpe",
+          "Ausfall des Kühlerlüfters"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittelstand und Zustand überprüfen",
+          "Thermostat auf Funktionalität prüfen",
+          "Kühler auf Verschmutzung oder Schäden untersuchen",
+          "Wasserpumpe auf korrekte Zirkulation prüfen",
+          "Kühlerlüfter auf Aktivierung kontrollieren",
+          "Temperatursensoren und Verkabelung prüfen"
+        ],
+        "firstChecks": [
+          "Kühlmittelstand und Farbe prüfen",
+          "Zustand des Kühlerdeckels kontrollieren",
+          "Auf Kühlmittellecks im Motorraum achten"
+        ],
+        "commonMistakes": [
+          "Nur den Kühlmittelstand prüfen und die Systemfunktion ignorieren",
+          "Thermostatprobleme nicht berücksichtigen",
+          "Funktion des Kühlerlüfters übersehen"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat Temperaturbereich nicht erreicht",
+          "P0480 - Kühlerlüfter Schaltkreisfehler",
+          "P0217 - Motor Übertemperatur erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Fehlercodes Übersicht",
+            "href": "/de/volkswagen/obd2-fehlercodes"
+          },
+          {
+            "label": "Kühlsystem Probleme und Lösungen",
+            "href": "/de/diagnose/kuehlsystem-probleme"
+          },
+          {
+            "label": "Thermostat Defekt erkennen",
+            "href": "/de/diagnose/thermostat-fehler"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für Überhitzung bei Volkswagen?",
+            "a": "Typische Ursachen sind niedriger Kühlmittelstand, Thermostatfehler, verstopfter Kühler, Wasserpumpenprobleme oder Lüfterausfall."
+          },
+          {
+            "q": "Was tun, wenn mein Volkswagen überhitzt?",
+            "a": "Fahren Sie nicht weiter, lassen Sie den Motor abkühlen, prüfen Sie den Kühlmittelstand und suchen Sie bei Bedarf eine Werkstatt auf."
+          },
+          {
+            "q": "Kann man Überhitzungsprobleme mit einem OBD2 Scanner diagnostizieren?",
+            "a": "Ja, ein OBD2 Scanner kann relevante Fehlercodes auslesen und Hinweise auf Sensor- und Kühlsystemprobleme geben."
+          }
+        ],
+        "schemaTitle": "Volkswagen Überhitzung: Ursachen, Checks & Diagnosen",
+        "schemaDescription": "Erfahren Sie mehr über häufige Überhitzungsursachen bei Volkswagen und wie Sie diese sicher diagnostizieren und beheben."
+      },
+      "es": {
+        "slug": "volkswagen-calienta-motor-causas-y-revisiones",
+        "title": "Volkswagen Calienta Motor: Causas Comunes y Revisiones Prácticas",
+        "metaDescription": "¿Tu Volkswagen calienta el motor? Descubre las posibles causas, revisiones iniciales y pasos de diagnóstico para evitar daños.",
+        "intro": "El sobrecalentamiento en vehículos Volkswagen puede deberse a múltiples factores que afectan la salud del motor. Detectar el problema a tiempo previene daños mayores. En esta guía encontrarás las causas frecuentes, revisiones prácticas iniciales y pasos diagnósticos para manejar el problema con eficacia.",
+        "severity": "El sobrecalentamiento del motor puede causar graves daños; detén el vehículo lo antes posible y revisa el sistema de enfriamiento.",
+        "driveAdvice": "Si tu Volkswagen está sobrecalentando, evita forzar el motor y revisa el sistema de enfriamiento a la brevedad.",
+        "likelyCauses": [
+          "Bajo o pérdida de refrigerante",
+          "Termostato defectuoso",
+          "Radiador obstruido o dañado",
+          "Bomba de agua con problema",
+          "Ventilador del radiador que no funciona"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y estado del refrigerante",
+          "Probar el funcionamiento del termostato",
+          "Inspeccionar el radiador por obstrucciones o daños",
+          "Verificar que la bomba de agua circule bien el refrigerante",
+          "Observar si el ventilador del radiador se activa",
+          "Revisar sensores de temperatura y cables"
+        ],
+        "firstChecks": [
+          "Comprobar nivel y color del refrigerante",
+          "Examinar la tapa del radiador",
+          "Buscar fugas de refrigerante alrededor del motor"
+        ],
+        "commonMistakes": [
+          "Confiar solo en el nivel del refrigerante para evaluar el sistema",
+          "Ignorar problemas con el termostato",
+          "Pasar por alto el funcionamiento del ventilador del radiador"
+        ],
+        "relatedCodes": [
+          "P0128 - Termostato no alcanza temperatura regulada",
+          "P0480 - Mal funcionamiento del circuito del ventilador",
+          "P0217 - Condición de sobrecalentamiento del motor"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de fallas OBD2 para Volkswagen",
+            "href": "/es/volkswagen/codigos-fallas-obd2"
+          },
+          {
+            "label": "Problemas y soluciones del sistema de enfriamiento",
+            "href": "/es/diagnostico/problemas-sistema-enfriamiento"
+          },
+          {
+            "label": "Cómo diagnosticar problemas de termostato",
+            "href": "/es/diagnostico/diagnostico-termostato"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuáles son las causas comunes del sobrecalentamiento en un Volkswagen?",
+            "a": "Los motivos más comunes incluyen bajo nivel de refrigerante, termostato defectuoso, radiador obstruido, falla en la bomba de agua o en el ventilador."
+          },
+          {
+            "q": "¿Qué debo hacer si mi Volkswagen calienta el motor?",
+            "a": "Detén el vehículo, deja que el motor se enfríe, revisa el nivel de refrigerante y busca ayuda profesional si es necesario."
+          },
+          {
+            "q": "¿Se puede diagnosticar el sobrecalentamiento con un escáner OBD2?",
+            "a": "Sí, un escáner OBD2 permite leer códigos de falla y verificar sensores relacionados al sistema de enfriamiento."
+          }
+        ],
+        "schemaTitle": "Volkswagen Calienta Motor: Causas y Diagnóstico",
+        "schemaDescription": "Conoce las razones más frecuentes por las cuales un Volkswagen puede sobrecalentar y cómo diagnosticar el problema paso a paso."
+      },
+      "fr": {
+        "slug": "volkswagen-surchauffe-moteur-causes-controles",
+        "title": "Volkswagen Surchauffe du Moteur : Causes Fréquentes et Contrôles Pratiques",
+        "metaDescription": "Votre Volkswagen surchauffe ? Découvrez les causes possibles, premiers contrôles et étapes de diagnostic pour éviter les dommages moteur.",
+        "intro": "La surchauffe dans les véhicules Volkswagen peut proviendra de plusieurs facteurs, susceptibles d’endommager le moteur. Une détection précoce permet d’éviter des réparations coûteuses. Ce guide présente les causes probables, les premiers contrôles à effectuer et des conseils pour diagnostiquer efficacement le problème.",
+        "severity": "La surchauffe moteur peut causer de graves dommages. Arrêtez le véhicule dès que possible et vérifiez le système de refroidissement.",
+        "driveAdvice": "Si votre Volkswagen surchauffe, évitez de solliciter le moteur et faites contrôler rapidement le système de refroidissement.",
+        "likelyCauses": [
+          "Niveau de liquide de refroidissement bas ou fuite",
+          "Thermostat défectueux",
+          "Radiateur bouché ou endommagé",
+          "Pompe à eau défaillante",
+          "Ventilateur de radiateur en panne"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et l’état du liquide de refroidissement",
+          "Tester le fonctionnement du thermostat",
+          "Inspecter le radiateur pour détection de bouchons ou dommages",
+          "S’assurer que la pompe à eau fait circuler correctement le liquide",
+          "Observer l’activation du ventilateur de radiateur",
+          "Contrôler les capteurs de température et leur câblage"
+        ],
+        "firstChecks": [
+          "Contrôler le niveau et la couleur du liquide de refroidissement",
+          "Examiner l’état du bouchon du radiateur",
+          "Chercher d’éventuelles fuites de liquide autour du moteur"
+        ],
+        "commonMistakes": [
+          "Se fier uniquement au niveau du liquide sans vérifier tout le système",
+          "Négliger les dysfonctionnements du thermostat",
+          "Omettre de vérifier le fonctionnement du ventilateur"
+        ],
+        "relatedCodes": [
+          "P0128 - Le thermostat n'atteint pas la température de régulation",
+          "P0480 - Dysfonctionnement du circuit du ventilateur de radiateur",
+          "P0217 - Condition de surchauffe moteur détectée"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défauts OBD2 Volkswagen",
+            "href": "/fr/volkswagen/codes-defauts-obd2"
+          },
+          {
+            "label": "Problèmes et solutions du système de refroidissement",
+            "href": "/fr/diagnostic/problemes-systeme-refroidissement"
+          },
+          {
+            "label": "Comment diagnostiquer un thermostat défectueux",
+            "href": "/fr/diagnostic/diagnostic-thermostat"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes courantes de surchauffe sur Volkswagen ?",
+            "a": "Les causes fréquentes incluent un manque de liquide de refroidissement, un thermostat défaillant, un radiateur obstrué, une pompe à eau en panne ou un ventilateur non fonctionnel."
+          },
+          {
+            "q": "Que faire si ma Volkswagen surchauffe ?",
+            "a": "Arrêtez le véhicule, laissez refroidir le moteur, vérifiez le niveau du liquide, puis consultez un professionnel si nécessaire."
+          },
+          {
+            "q": "Peut-on diagnostiquer une surchauffe avec un scanner OBD2 ?",
+            "a": "Oui, un scanner OBD2 permet de lire les codes défauts et d’identifier les problèmes liés au système de refroidissement."
+          }
+        ],
+        "schemaTitle": "Volkswagen Surchauffe Moteur : Causes et Diagnostics",
+        "schemaDescription": "Identifiez les causes courantes de surchauffe sur Volkswagen et suivez les étapes de diagnostic recommandées pour éviter les dommages."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-fuel-smell",
+    "intentKey": "volkswagen_fuel_smell",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "fuel_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-benzin-kokusu-nedenleri",
+        "title": "Volkswagen Araçlarda Benzin Kokusu Gelmesi: Olası Nedenler ve Çözümler",
+        "metaDescription": "Volkswagen aracınızda benzin kokusu mu var? Olası 5 neden, 6 teşhis adımı ve sık yapılan hatalarla güvenli sürüş için ipuçları burada.",
+        "intro": "Volkswagen araçlarda benzin kokusunun hissedilmesi çeşitli nedenlere bağlı olabilir ve kesin teşhis için kapsamlı kontrol şarttır. Bu belirtiler sürüş güvenliğinizi etkileyebilir. Benzin kokusunun sebebini tam olarak anlamadan parça değişimine gitmemeniz önemlidir. İşte olası nedenler ve pratik kontrol önerileri.",
+        "severity": "Benzin kokusu, yangın riski nedeniyle ciddiye alınmalıdır. Hemen müdahale ve uygun teşhis gerektirir.",
+        "driveAdvice": "Aracınızı açık alanda durdurun, motoru kapatın. Koku şiddetliyse aracı sürmeyin ve yetkili servise başvurun.",
+        "likelyCauses": [
+          "Yakıt hattında kaçak",
+          "Yakıt enjeksiyon sistemi sızıntısı",
+          "Yakıt deposu kapağına kötü oturma",
+          "Arızalı emisyon kontrol valfi",
+          "Motor bölgesinde yağ veya yakıt sızıntısı"
+        ],
+        "diagnosticSteps": [
+          "Yakıt hattında ve bağlantılarında gözle kaçak kontrolü yapın.",
+          "Yakıt deposu kapağının doğru kapandığını doğrulayın.",
+          "Yakıt enjeksiyon sistemini ve enjektörleri inceleyin.",
+          "Emisyon kontrol sistemindeki valfleri test edin.",
+          "Motor bölgesinde yağ ve yakıt lekelerini araştırın.",
+          "OBD2 tarayıcı ile ilgili yakıt sistem kodlarını okuyun."
+        ],
+        "firstChecks": [
+          "Yakıt deposu kapağının tam kapandığından emin olun.",
+          "Aracın altında ve motor bölgesinde sıvı izlerini kontrol edin.",
+          "Egzozdan koyu renkli duman ve anormal koku var mı bakın."
+        ],
+        "commonMistakes": [
+          "Yakıt kokusunu hafife almak ve hemen sürmeye devam etmek.",
+          "Hızlı ve gereksiz parça değişikliklerine yönelmek.",
+          "Sistemli teşhis yerine sadece dışarıdan kokuya göre yorum yapmak."
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt karışımı çok zayıf",
+          "P0455 - Yakıt buharı sistemi kaçak",
+          "P2195 - Yakıt metanol sensörü sorunları"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ Volkswagen Motor Sorunları",
+            "href": "/tr/volkswagen-motor-sorunlari"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri ve Çözümleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          },
+          {
+            "label": "OBD2 Kodları ve Anlamları",
+            "href": "/tr/obd2-kodlari-anlamlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Benzin kokusunun araçta en yaygın nedeni nedir?",
+            "a": "Yakıt hattı veya enjeksiyon sistemi sızıntıları en sık karşılaşılan nedenlerdir."
+          },
+          {
+            "q": "Kendim benzin kokusunu teşhis edebilir miyim?",
+            "a": "Basit ilk kontrolleri yapabilirsiniz; ancak kesin teşhis için OBD2 cihazı ve uzman yardımı gerekebilir."
+          },
+          {
+            "q": "Benzin kokusu geldiğinde hemen servise gitmeli miyim?",
+            "a": "Eğer koku şiddetliyse, sürüşü sonlandırıp aracı kontrol ettirmeniz güvenlik açısından önemlidir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Benzin Kokusu Geliyor: Nedenleri ve Teşhis Rehberi",
+        "schemaDescription": "Volkswagen araçlarda benzin kokusunun olası nedenleri, doğru teşhis adımları ve güvenli sürüş önerileri için detaylı rehber."
+      },
+      "en": {
+        "slug": "volkswagen-fuel-smell-causes",
+        "title": "Volkswagen Fuel Smell: Common Causes and Diagnostic Tips",
+        "metaDescription": "Experiencing a fuel smell in your Volkswagen? Explore common causes, step-by-step diagnostics, and what to check before replacing parts.",
+        "intro": "A fuel smell inside your Volkswagen can stem from multiple causes, none of which should be assumed without proper inspection. Detecting the source accurately is key for safety and effective repair. Before replacing components, perform thorough diagnostic checks to pinpoint the issue and avoid unnecessary costs.",
+        "severity": "Fuel odors can indicate safety risks, so timely investigation and caution are essential.",
+        "driveAdvice": "If you notice a strong fuel smell, stop driving safely, ventilate the vehicle, and have it checked by a professional promptly.",
+        "likelyCauses": [
+          "Fuel line leaks or damage",
+          "Faulty fuel injectors causing vapor release",
+          "Loose or defective fuel cap",
+          "Malfunctioning evaporative emission system components",
+          "Fuel or oil leaks around the engine bay"
+        ],
+        "diagnosticSteps": [
+          "Visually inspect fuel lines and fittings for leaks.",
+          "Check fuel cap for proper sealing and damage.",
+          "Examine fuel injectors for leaks or odor.",
+          "Test evap system valves and purge solenoids.",
+          "Inspect engine compartment for fluid traces.",
+          "Scan OBD2 for fuel system-related trouble codes."
+        ],
+        "firstChecks": [
+          "Confirm the fuel cap is securely fastened.",
+          "Look for wet spots or smells under the vehicle.",
+          "Observe exhaust emissions for unusual color or odor."
+        ],
+        "commonMistakes": [
+          "Ignoring the fuel smell and continuing to drive.",
+          "Immediately replacing parts without proper diagnostics.",
+          "Relying solely on smell without checking related systems."
+        ],
+        "relatedCodes": [
+          "P0171 - System too lean",
+          "P0455 - Evaporative emission system leak detected",
+          "P2195 - Oxygen sensor malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Engine Problems Explained",
+            "href": "/en/volkswagen-engine-problems"
+          },
+          {
+            "label": "Diagnosing Fuel System Issues",
+            "href": "/en/diagnosing-fuel-system-issues"
+          },
+          {
+            "label": "Understanding OBD2 Codes",
+            "href": "/en/understanding-obd2-codes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What usually causes a fuel smell in Volkswagen vehicles?",
+            "a": "Common causes include fuel line leaks, faulty injectors, or loose fuel caps."
+          },
+          {
+            "q": "Can I diagnose the fuel smell issue myself?",
+            "a": "Initial checks can be done, but for reliable diagnosis, professional tools and expertise are recommended."
+          },
+          {
+            "q": "Is it safe to keep driving if I smell fuel?",
+            "a": "No, a persistent fuel smell requires immediate attention due to fire risk."
+          }
+        ],
+        "schemaTitle": "Volkswagen Fuel Smell Causes and Diagnostics",
+        "schemaDescription": "Detailed guide on diagnosing the causes of fuel smell in Volkswagen vehicles with safety tips and practical checks."
+      },
+      "de": {
+        "slug": "volkswagen-kraftstoffgeruch-ursachen",
+        "title": "Volkswagen Kraftstoffgeruch: Mögliche Ursachen und Diagnosehinweise",
+        "metaDescription": "Kraftstoffgeruch im Volkswagen? Entdecken Sie häufige Ursachen, Diagnose-Schritte und wichtige Prüfungen vor Teiletausch.",
+        "intro": "Ein Kraftstoffgeruch im Innenraum eines Volkswagen kann verschiedene Ursachen haben und sollte sorgfältig untersucht werden. Eine genaue Diagnose ist wichtig, um die Sicherheit zu gewährleisten und unnötige Reparaturen zu vermeiden. Bevor Teile ausgetauscht werden, sind praktische Kontrollen unerlässlich.",
+        "severity": "Kraftstoffgerüche können auf Sicherheitsrisiken hinweisen und erfordern zeitnahe Abklärung.",
+        "driveAdvice": "Bei starkem Kraftstoffgeruch Fahrzeug sicher abstellen, gut lüften und umgehend überprüfen lassen.",
+        "likelyCauses": [
+          "Undichte Kraftstoffleitungen",
+          "Defekte Einspritzventile mit Kraftstoffaustritt",
+          "Lose oder beschädigte Tankverschlussdichtung",
+          "Fehlerhafte Bauteile der Verdunstungskontrolle",
+          "Kraftstoff- oder Öl-Lecks im Motorraum"
+        ],
+        "diagnosticSteps": [
+          "Sichtprüfung der Kraftstoffleitungen und Verbindungen auf Undichtigkeiten.",
+          "Kontrolle des Tankverschlusses auf festen Sitz und Beschädigungen.",
+          "Überprüfung der Einspritzventile auf Austritt von Kraftstoff oder Gerüche.",
+          "Test der Verdunstungskontrollventile und Solenoid-Ventile.",
+          "Begutachtung des Motorraums auf Flecken oder Flüssigkeitsanhaftungen.",
+          "Auslesen der OBD2-Codes bezüglich Kraftstoffsystem."
+        ],
+        "firstChecks": [
+          "Sichern, dass der Tankdeckel richtig verschlossen ist.",
+          "Nach feuchten Stellen oder Geruch unter dem Fahrzeug suchen.",
+          "Abgasemissionen auf ungewöhnliche Farbe oder Geruch prüfen."
+        ],
+        "commonMistakes": [
+          "Den Kraftstoffgeruch zu ignorieren und weiterzufahren.",
+          "Teile ohne Diagnose direkt zu wechseln.",
+          "Nur auf Geruch zu vertrauen, ohne Systeme zu prüfen."
+        ],
+        "relatedCodes": [
+          "P0171 - Gemisch zu mager",
+          "P0455 - Undichtigkeiten im Verdunstungssystem",
+          "P2195 - Fehler des Sauerstoffsensors"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Motorprobleme verstehen",
+            "href": "/de/volkswagen-motorprobleme"
+          },
+          {
+            "label": "Kraftstoffsystem richtig diagnostizieren",
+            "href": "/de/kraftstoffsystem-diagnose"
+          },
+          {
+            "label": "OBD2 Codes und Bedeutung",
+            "href": "/de/obd2-codes-bedeutung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für Kraftstoffgeruch im Volkswagen?",
+            "a": "Meist sind undichte Leitungen, defekte Einspritzventile oder nicht richtig schließende Tankdeckel verantwortlich."
+          },
+          {
+            "q": "Kann ich die Ursache selbst diagnostizieren?",
+            "a": "Grundprüfungen sind möglich, für eine sichere Diagnose empfehlen wir professionelle Hilfe."
+          },
+          {
+            "q": "Ist es sicher weiterzufahren bei Kraftstoffgeruch?",
+            "a": "Nein, wegen Brandgefahr sollte das Fahrzeug sofort überprüft werden."
+          }
+        ],
+        "schemaTitle": "Volkswagen Kraftstoffgeruch: Ursachen und Diagnoseschritte",
+        "schemaDescription": "Umfassender Leitfaden zur Ursachenfindung bei Kraftstoffgeruch im Volkswagen mit praxisnahen Tipps und Sicherheitsratschlägen."
+      },
+      "es": {
+        "slug": "volkswagen-olor-a-combustible-causas",
+        "title": "Olor a Combustible en Volkswagen: Causas Comunes y Cómo Diagnosticarlo",
+        "metaDescription": "¿Sientes olor a combustible en tu Volkswagen? Descubre causas comunes, pasos para diagnosticar y qué revisar antes de cambiar piezas.",
+        "intro": "El olor a combustible en un Volkswagen puede deberse a diferentes causas y requiere una inspección cuidadosa para garantizar la seguridad y evitar reparaciones innecesarias. Antes de reemplazar piezas, es aconsejable realizar varias comprobaciones prácticas para identificar el origen con precisión.",
+        "severity": "El olor a combustible implica riesgos de seguridad y debe atenderse con urgencia.",
+        "driveAdvice": "Si detectas olor fuerte a combustible, detén el vehículo en un lugar seguro, ventila y busca asistencia profesional cuanto antes.",
+        "likelyCauses": [
+          "Fugas en líneas de combustible",
+          "Inyectores defectuosos que liberan vapores",
+          "Tapa del tanque mal ajustada o dañada",
+          "Problemas en el sistema de control de emisiones evaporativas",
+          "Fugas de combustible o aceite en el compartimento del motor"
+        ],
+        "diagnosticSteps": [
+          "Inspeccionar visualmente las líneas y conexiones de combustible.",
+          "Verificar que la tapa del tanque esté bien sellada y sin daños.",
+          "Examinar inyectoras para detectar fugas u olores.",
+          "Probar válvulas y solenoides del sistema evaporativo.",
+          "Buscar evidencias de humedad o manchas en el motor.",
+          "Leer códigos OBD2 relacionados al sistema de combustible."
+        ],
+        "firstChecks": [
+          "Confirmar que la tapa del tanque esté bien colocada.",
+          "Buscar manchas o humedad debajo del auto.",
+          "Observar emisiones de escape en busca de olor o color anormal."
+        ],
+        "commonMistakes": [
+          "Ignorar el olor a combustible y continuar conduciendo.",
+          "Reemplazar piezas sin un diagnóstico correcto.",
+          "Depender solo del olor sin revisar los sistemas relacionados."
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla demasiado pobre",
+          "P0455 - Fuga en sistema evaporativo",
+          "P2195 - Falla en sensor de oxígeno"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas de motor Volkswagen",
+            "href": "/es/problemas-motor-volkswagen"
+          },
+          {
+            "label": "Diagnóstico de sistemas de combustible",
+            "href": "/es/diagnostico-sistemas-combustible"
+          },
+          {
+            "label": "Códigos OBD2 comunes y su significado",
+            "href": "/es/codigos-obd2-comunes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué causa comúnmente el olor a combustible en Volkswagen?",
+            "a": "Fugas en líneas, inyectores defectuosos o tapa de tanque mal ajustada suelen ser causas frecuentes."
+          },
+          {
+            "q": "¿Puedo diagnosticar el problema yo mismo?",
+            "a": "Puedes hacer revisiones básicas, pero lo mejor es usar herramientas profesionales o acudir a un mecánico."
+          },
+          {
+            "q": "¿Es seguro seguir conduciendo si hay olor a combustible?",
+            "a": "No, por riesgo de incendio debes detener el vehículo y revisarlo cuanto antes."
+          }
+        ],
+        "schemaTitle": "Causas y Diagnóstico del Olor a Combustible en Volkswagen",
+        "schemaDescription": "Guía detallada para identificar y diagnosticar el olor a combustible en Volkswagen, con recomendaciones de seguridad y pasos prácticos."
+      },
+      "fr": {
+        "slug": "volkswagen-odeur-carburant-causes",
+        "title": "Odeur d'Essence dans Volkswagen : Causes Possibles et Diagnostic",
+        "metaDescription": "Vous détectez une odeur d'essence dans votre Volkswagen ? Découvrez les causes fréquentes, les étapes de diagnostic et les vérifications avant remplacement.",
+        "intro": "Une odeur d'essence dans votre Volkswagen peut provenir de multiples sources. Il est important de procéder à une inspection détaillée pour assurer la sécurité et éviter des réparations inutiles. Avant de remplacer des pièces, plusieurs contrôles pratiques peuvent vous aider à trouver la source du problème.",
+        "severity": "Une odeur de carburant peut représenter un risque important et nécessite une attention rapide.",
+        "driveAdvice": "En cas d'odeur forte, arrêtez le véhicule dans un endroit sûr, aérez l’habitacle et consultez un professionnel rapidement.",
+        "likelyCauses": [
+          "Fuite sur une conduite de carburant",
+          "Injecteurs défectueux libérant des vapeurs",
+          "Bouchon de réservoir mal fermé ou endommagé",
+          "Défaillance du système de contrôle des évaporations",
+          "Fuites de carburant ou d’huile dans le compartiment moteur"
+        ],
+        "diagnosticSteps": [
+          "Inspection visuelle des conduites et raccords de carburant.",
+          "Vérification du bouchon de réservoir, son étanchéité et état.",
+          "Examen des injecteurs pour détecter fuites ou odeurs.",
+          "Test des valves et solénoïdes du système EVAP.",
+          "Recherche de traces d’humidité ou de liquide dans le moteur.",
+          "Lecture des codes défauts OBD2 liés au système carburant."
+        ],
+        "firstChecks": [
+          "Vérifier le bon verrouillage du bouchon de réservoir.",
+          "Chercher des traces d’humidité ou de carburant sous le véhicule.",
+          "Observer la fumée d’échappement pour déceler odeurs ou couleurs anormales."
+        ],
+        "commonMistakes": [
+          "Ignorer l’odeur d’essence et continuer à rouler.",
+          "Remplacer des pièces sans diagnostic approfondi.",
+          "Se fier uniquement à l’odeur sans tester les systèmes associés."
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0455 - Fuite détectée dans le système EVAP",
+          "P2195 - Problème capteur oxygène"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes moteur Volkswagen",
+            "href": "/fr/problemes-moteur-volkswagen"
+          },
+          {
+            "label": "Diagnostic des systèmes carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          },
+          {
+            "label": "Lecture des codes OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes fréquentes d'odeur d'essence dans une Volkswagen ?",
+            "a": "Les fuites sur les conduites, injecteurs défectueux ou bouchon mal fermé sont les causes courantes."
+          },
+          {
+            "q": "Puis-je diagnostiquer l'odeur d'essence moi-même ?",
+            "a": "Des premiers contrôles sont possibles, mais un diagnostic professionnel est recommandé."
+          },
+          {
+            "q": "Est-il sûr de continuer à rouler avec une odeur d'essence ?",
+            "a": "Non, pour éviter tout risque d’incendie, il faut arrêter le véhicule et faire vérifier rapidement."
+          }
+        ],
+        "schemaTitle": "Causes et Diagnostic de l'Odeur d'Essence sur Volkswagen",
+        "schemaDescription": "Guide complet pour comprendre et diagnostiquer l'odeur d'essence sur Volkswagen avec conseils de sécurité et étapes pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-oil-smell",
+    "intentKey": "volkswagen_oil_smell",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "oil_smell",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-yanik-yag-kokusu-tespiti",
+        "title": "Volkswagen Yanık Yağ Kokusu Geliyor - Nedenleri ve Çözümleri",
+        "metaDescription": "Volkswagen aracınızdan yanık yağ kokusu mu geliyor? Olası nedenler, kontrol adımları ve yaygın yanlışlar hakkında uzman rehberimizle bilgi edinin.",
+        "intro": "Volkswagen araçlarda yanık yağ kokusunun çeşitli nedenleri olabilir ve tek bir kesin sebep vermek zordur. Kokunun kaynağını bulmak için dikkatli kontrol ve genel bakım önemlidir. Bu kılavuzda en olası nedenlere, ilk yapılacak kontroller ile hata yapmaktan kaçınmaya ve basit teşhis adımlarına değineceğiz.",
+        "severity": "Orta derecede önem taşıyan bir belirti, ihmal edilirse daha büyük sorunlar çıkabilir.",
+        "driveAdvice": "Kokunun şiddetli olması veya eşlik eden duman varsa aracı kısa sürede servise götürün. Normalde aracı aşırı zorlamamaya özen gösterin.",
+        "likelyCauses": [
+          "Motor sızdıran yağ conta veya keçeleri",
+          "Egzoz sistemi yağ sızıntısı",
+          "Turbo yağ sızması",
+          "Motorun aşırı ısınması",
+          "Soğutma sıvısı sızıntısı ve yanması"
+        ],
+        "diagnosticSteps": [
+          "Motor kaputunu açıp gözle yağ sızıntısı kontrolü yapın",
+          "Yağ seviyesi ve kalitesini ölçün",
+          "Egzoz ve turbo çevresinde yağ birikintisi olup olmadığını inceleyin",
+          "Motor sıcaklığını araç göstergesiyle takip edin",
+          "Soğutma sistemi hortumlarını ve bağlantılarını kontrol edin",
+          "OBD2 cihazıyla hata kodu sorgulaması yapın"
+        ],
+        "firstChecks": [
+          "Hava filtresi temiz mi?",
+          "Motor yağ seviyesi doğru mu?",
+          "Egzoz sisteminde aşırı kurum var mı?"
+        ],
+        "commonMistakes": [
+          "Kokunun sadece yağ değişimiyle geçeceğini varsaymak",
+          "Turbo ya da egzoz kaynaklı sorunları hemen değiştirmek",
+          "Yanlış OBD2 kod yorumlaması yapmak"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0299",
+          "P0522"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Motor Hata Kodları",
+            "href": "/tr/volkswagen-motor-hata-kodlari"
+          },
+          {
+            "label": "Yağ Kaçağı ve Belirtileri",
+            "href": "/tr/yag-kacagi-belirtileri"
+          },
+          {
+            "label": "OBD2 ile Doğru Arıza Teşhisi",
+            "href": "/tr/obd2-ariza-teshisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Yanık yağ kokusu aracımda hangi durumlarda önemlidir?",
+            "a": "Eğer koku sürekli ve araç performansını etkiliyorsa mutlaka detaylı kontrol ve servis önerilir."
+          },
+          {
+            "q": "Yağ sızıntısı tespiti için en etkili yöntem nedir?",
+            "a": "Gözle kontrol, yağ seviyesi ölçümü ve motorun belirli bölgelerinde yağ birikintisi aramak en etkili yöntemlerdir."
+          },
+          {
+            "q": "Yanlış OBD2 kodu nasıl anlaşılır?",
+            "a": "Kodun aracınızla uyumsuz olması veya tek başına geçerli bir neden göstermemesi, yanlış yorumlama olabilir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Yanık Yağ Kokusu - Nedenleri ve Teşhis",
+        "schemaDescription": "Volkswagen araçlarda yanık yağ kokusunun nedenlerini, ilk yapılacak kontrolleri ve yaygın hataları ele alan kapsamlı uzman rehber."
+      },
+      "en": {
+        "slug": "volkswagen-oil-smell-diagnosis",
+        "title": "Volkswagen Oil Smell Diagnosis: Causes and Practical Checks",
+        "metaDescription": "Is your Volkswagen emitting an oil burning smell? Explore likely causes, practical diagnostic steps, and common mistakes to avoid before repairs.",
+        "intro": "If your Volkswagen emits a burning oil smell, several factors may be at play, and pinpointing a single cause is rarely straightforward. This guide helps you perform practical checks, understand possible reasons, and avoid common diagnostic errors before investing in parts replacement.",
+        "severity": "Moderate issue that can lead to bigger problems if left unchecked.",
+        "driveAdvice": "If the smell is strong or accompanied by smoke, have your vehicle inspected soon. Avoid strenuous drives until diagnosed.",
+        "likelyCauses": [
+          "Leaking engine oil seals or gaskets",
+          "Oil dripping onto hot exhaust components",
+          "Turbocharger oil leakage",
+          "Engine overheating",
+          "Coolant leaks causing heat damage"
+        ],
+        "diagnosticSteps": [
+          "Inspect under the hood for visible oil leaks",
+          "Check oil level and condition",
+          "Examine exhaust and turbo for oil residue",
+          "Monitor engine temperature gauge",
+          "Inspect cooling system hoses and connections",
+          "Scan with an OBD2 tool for related fault codes"
+        ],
+        "firstChecks": [
+          "Is the air filter clean?",
+          "Is the oil level within recommended range?",
+          "Is there excessive soot in the exhaust?"
+        ],
+        "commonMistakes": [
+          "Assuming oil smell will disappear after oil change",
+          "Replacing turbo or exhaust parts prematurely",
+          "Misinterpreting OBD2 diagnostic codes"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0299",
+          "P0522"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Engine Fault Codes",
+            "href": "/en/volkswagen-engine-fault-codes"
+          },
+          {
+            "label": "Detecting Oil Leaks",
+            "href": "/en/detecting-oil-leaks"
+          },
+          {
+            "label": "Accurate OBD2 Diagnostics",
+            "href": "/en/accurate-obd2-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "When should a burning oil smell in my Volkswagen be a concern?",
+            "a": "If the smell is persistent or affects performance, prompt inspection is recommended."
+          },
+          {
+            "q": "What is the best way to detect oil leaks?",
+            "a": "Visual inspection combined with checking oil levels and looking for residue near hot engine parts works best."
+          },
+          {
+            "q": "How can I avoid misreading OBD2 codes?",
+            "a": "Cross-reference codes with model-specific data and consult trusted sources before diagnosing."
+          }
+        ],
+        "schemaTitle": "Volkswagen Oil Smell Causes and Diagnostics",
+        "schemaDescription": "Comprehensive expert guide to Volkswagen burning oil smell causes, diagnostic steps, and avoiding common errors."
+      },
+      "de": {
+        "slug": "volkswagen-olgeruch-diagnose",
+        "title": "Volkswagen Ölgeruch: Mögliche Ursachen und Diagnose",
+        "metaDescription": "Bei brennendem Ölgeruch im Volkswagen? Entdecken Sie Ursachen, praktische Prüfungen und häufige Fehler vor dem Teileaustausch.",
+        "intro": "Ein brennender Ölgeruch im Volkswagen kann viele Ursachen haben, eine eindeutige Diagnose ist oft komplex. Dieser Leitfaden zeigt praktische Prüfungen, wahrscheinliche Ursachen und typische Fehlerquellen, die vor dem Ersatz von Bauteilen beachtet werden sollten. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Mittlerer Schweregrad, kann bei Vernachlässigung zu größeren Schäden führen.",
+        "driveAdvice": "Bei starkem Geruch oder Rauch das Fahrzeug bald überprüfen lassen. Belastung des Motors vermeiden.",
+        "likelyCauses": [
+          "Undichte Motoröldichtungen oder -ventile",
+          "Öl tropft auf heiße Auspuffteile",
+          "Ölverlust im Turbolader",
+          "Überhitzung des Motors",
+          "Kühlmittel-Leck führt zu Hitzeentwicklung"
+        ],
+        "diagnosticSteps": [
+          "Motorraum auf sichtbare Ölspuren prüfen",
+          "Ölstand und -qualität kontrollieren",
+          "Auslass und Turbolader auf Ölreste untersuchen",
+          "Motortemperatur beobachten",
+          "Kühlsystemschläuche und Anschlüsse prüfen",
+          "Mit OBD2 auf Fehlercodes scannen"
+        ],
+        "firstChecks": [
+          "Ist der Luftfilter sauber?",
+          "Ist der Ölstand korrekt?",
+          "Gibt es starke Rußbildung am Auspuff?"
+        ],
+        "commonMistakes": [
+          "Annahme, dass Ölgeruch nach Ölwechsel verschwindet",
+          "Frühzeitiger Austausch von Turbo oder Abgasanlage",
+          "Falsches Interpretieren von OBD2-Codes"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0299",
+          "P0522"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Motor Fehlercodes",
+            "href": "/de/volkswagen-motor-fehlercodes"
+          },
+          {
+            "label": "Ölverlust erkennen",
+            "href": "/de/oelverlust-erkennen"
+          },
+          {
+            "label": "OBD2 richtige Diagnose",
+            "href": "/de/obd2-richtige-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wann ist ein brennender Ölgeruch problematisch?",
+            "a": "Besteht der Geruch dauerhaft oder in Kombination mit Leistungsverlust, sollte eine Prüfung erfolgen."
+          },
+          {
+            "q": "Wie finde ich am besten Ölverlust?",
+            "a": "Kombination aus Sichtprüfung, Ölstandsmessung und Kontrolle heißer Motorteile zeigt meist die Ursache."
+          },
+          {
+            "q": "Wie vermeide ich Fehler bei der OBD2-Code-Auswertung?",
+            "a": "Codes mit modellbezogenen Infos abgleichen und verlässliche Quellen konsultieren."
+          }
+        ],
+        "schemaTitle": "Volkswagen Ölgeruch Ursachen und Diagnose",
+        "schemaDescription": "Expertenratgeber zu Ursachen, Prüfungen und typischen Fehlern bei brennendem Ölgeruch im Volkswagen."
+      },
+      "es": {
+        "slug": "volkswagen-olor-a-aceite-quemado",
+        "title": "Volkswagen Olor a Aceite Quemado: Causas y Diagnóstico",
+        "metaDescription": "¿Tu Volkswagen huele a aceite quemado? Descubre las causas comunes, pasos para diagnosticar y errores frecuentes antes de reemplazar piezas.",
+        "intro": "El olor a aceite quemado en un Volkswagen puede deberse a distintas razones y no siempre hay una causa única. En esta guía encontrarás causas comunes, recomendaciones para una revisión práctica y errores frecuentes para evitar antes de reemplazar cualquier pieza.",
+        "severity": "Problema de gravedad moderada que puede empeorar si no se atiende.",
+        "driveAdvice": "Si el olor es fuerte o hay humo, revisa el vehículo pronto. Evita conducir bajo carga pesada hasta detectar la causa.",
+        "likelyCauses": [
+          "Fugas en sellos o empaques del motor",
+          "Aceite cayendo sobre partes calientes del escape",
+          "Fuga de aceite en el turbo",
+          "Sobrecalentamiento del motor",
+          "Fugas de refrigerante que causan daño por calor"
+        ],
+        "diagnosticSteps": [
+          "Inspecciona bajo el capó buscando fugas visibles",
+          "Revisa el nivel y estado del aceite",
+          "Examina escape y turbo por residuos de aceite",
+          "Controla la temperatura del motor",
+          "Inspecciona las mangueras y conexiones del sistema de refrigeración",
+          "Realiza un escaneo con herramienta OBD2"
+        ],
+        "firstChecks": [
+          "¿El filtro de aire está limpio?",
+          "¿El nivel de aceite es el recomendado?",
+          "¿Hay hollín excesivo en el escape?"
+        ],
+        "commonMistakes": [
+          "Asumir que cambiar el aceite eliminará el olor",
+          "Reemplazar turbo o escape sin confirmar fallo",
+          "Interpretar mal los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0299",
+          "P0522"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de falla motor Volkswagen",
+            "href": "/es/codigos-falla-motor-volkswagen"
+          },
+          {
+            "label": "Cómo detectar fugas de aceite",
+            "href": "/es/detectar-fugas-de-aceite"
+          },
+          {
+            "label": "Diagnóstico preciso con OBD2",
+            "href": "/es/diagnostico-preciso-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo es preocupante el olor a aceite quemado?",
+            "a": "Si el olor persiste o afecta el rendimiento, se recomienda una revisión detallada."
+          },
+          {
+            "q": "¿Cuál es la mejor forma de detectar fugas de aceite?",
+            "a": "La inspección visual y la medición del nivel de aceite cerca de partes calientes es eficaz."
+          },
+          {
+            "q": "¿Cómo evitar errores al leer códigos OBD2?",
+            "a": "Comparar códigos con información específica del modelo y consultar fuentes confiables."
+          }
+        ],
+        "schemaTitle": "Olor a Aceite Quemado en Volkswagen: Causas y Diagnóstico",
+        "schemaDescription": "Guía experta sobre causas, pasos de diagnóstico y errores comunes del olor a aceite quemado en vehículos Volkswagen."
+      },
+      "fr": {
+        "slug": "volkswagen-odeur-dhuile-brulee",
+        "title": "Volkswagen Odeur d'Huile Brûlée : Causes et Diagnostic",
+        "metaDescription": "Votre Volkswagen dégage une odeur d'huile brûlée ? Découvrez les causes possibles, les étapes de diagnostic pratiques et erreurs fréquentes à éviter.",
+        "intro": "Une odeur d'huile brûlée dans une Volkswagen peut venir de plusieurs sources, sans cause unique évidente. Ce guide détaille les causes courantes, les vérifications faciles à réaliser et les erreurs habituelles avant toute réparation coûteuse.",
+        "severity": "Problème de gravité moyenne pouvant évoluer si non pris en charge.",
+        "driveAdvice": "Si l’odeur est forte ou accompagnée de fumée, faites contrôler rapidement le véhicule. Évitez de solliciter le moteur intensément en attendant.",
+        "likelyCauses": [
+          "Fuite d’huile au niveau des joints moteur",
+          "Huile s’écoulant sur des pièces d’échappement chaudes",
+          "Fuite d’huile au turbo",
+          "Surchauffe moteur",
+          "Fuite de liquide de refroidissement provoquant une combustion"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez visuellement sous le capot la présence de fuites d’huile",
+          "Contrôlez le niveau et l’état de l’huile moteur",
+          "Inspectez l’échappement et le turbo pour des traces d’huile",
+          "Surveillez la température moteur au tableau de bord",
+          "Examinez les tuyaux et connexions du système de refroidissement",
+          "Scannez les codes défauts avec un outil OBD2"
+        ],
+        "firstChecks": [
+          "Le filtre à air est-il propre ?",
+          "Le niveau d’huile est-il correct ?",
+          "Y a-t-il trop de suie à l’échappement ?"
+        ],
+        "commonMistakes": [
+          "Penser que l’odeur disparaîtra après une vidange",
+          "Remplacer turbo ou échappement sans diagnostic précis",
+          "Mauvaise interprétation des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0299",
+          "P0522"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut moteur Volkswagen",
+            "href": "/fr/codes-defaut-moteur-volkswagen"
+          },
+          {
+            "label": "Détection de fuite d’huile",
+            "href": "/fr/detection-fuite-huile"
+          },
+          {
+            "label": "Diagnostic OBD2 fiable",
+            "href": "/fr/diagnostic-obd2-fiable"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quand l’odeur d’huile brûlée doit-elle alerter ?",
+            "a": "Si l’odeur est persistante ou altère les performances, un contrôle rapide est conseillé."
+          },
+          {
+            "q": "Comment détecter efficacement une fuite d’huile ?",
+            "a": "Une inspection visuelle combinée à la vérification du niveau d’huile et des zones chaudes est efficace."
+          },
+          {
+            "q": "Comment éviter les erreurs d’interprétation des codes OBD2 ?",
+            "a": "Se référer aux données spécifiques au modèle et consulter des sources fiables avant diagnostic."
+          }
+        ],
+        "schemaTitle": "Volkswagen Odeur d’Huile Brûlée : Causes et Diagnostic",
+        "schemaDescription": "Guide complet sur les causes, méthodes de diagnostic et erreurs courantes en cas d’odeur d’huile brûlée dans une Volkswagen."
+      }
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-transmission-slipping",
+    "intentKey": "volkswagen_transmission_slipping",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "transmission_slipping",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-vites-kaciriyor",
+        "title": "Volkswagen Vites Kaçırıyor: Nedenleri ve Kontrol Adımları",
+        "metaDescription": "Volkswagen aracınız vites kaçırıyor mu? Bu sorun için olası nedenler, kontrol yöntemleri ve sık yapılan hataları öğrenin.",
+        "intro": "Volkswagen aracınızda vitesin kendi kendine atlaması veya geç geçiş yapması oldukça rahatsız edici ve güvenliği etkileyebilen bir durumdur. Bu yazıda, vites kaçırmanın olası nedenlerini, ilk kontrolleri, tanılama adımlarını ve yaygın hataları sizler için derledik. Sorunu teşhis etmek, gereksiz parça değişikliklerinden kaçınmak için önemli bir adımdır.",
+        "severity": "Orta derecede sürüş güvenliğini etkileyebilir; dikkatli olunmalıdır.",
+        "driveAdvice": "Araç vites kaçırıyorsa yüksek hızdan kaçının ve aracınızın kontrolünü kaybetmemek için yavaş ve dikkatli sürün.",
+        "likelyCauses": [
+          "Düşük veya kirli şanzıman yağı",
+          "Aşınmış debriyaj parçaları",
+          "Hasar görmüş vites senkromeçleri",
+          "Elektriksel sensör arızaları",
+          "Bozuk şanzıman solenoidi"
+        ],
+        "diagnosticSteps": [
+          "Şanzıman yağ seviyesini ve kalitesini kontrol edin",
+          "Debriyajın ve baskı balatanın durumunu inceleyin",
+          "Vites geçiş mekanizmasını test edin",
+          "Arıza kodlarını OBD2 cihazıyla okuyun",
+          "Sensörlerin çalışma durumunu ölçün",
+          "Şanzıman solenoidlerini doğrulayın"
+        ],
+        "firstChecks": [
+          "Yağ seviyesini kontrol edin",
+          "Vites kolunun mekanik bağlantısını inceleyin",
+          "OBD2 cihazıyla kod taraması yapın"
+        ],
+        "commonMistakes": [
+          "Parça değişmeden önce temel kontrolleri atlamak",
+          "Yağ değişim aralığını ihmal etmek",
+          "OBD2 kodlarını yanlış yorumlamak"
+        ],
+        "relatedCodes": [
+          "P0700 - Şanzıman Kontrol Sistemi Arızası",
+          "P0730 - Vites Oranı Hatası",
+          "P0750 - Vites Geçiş Solenoidi Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Araçlarda Şanzıman Arızaları",
+            "href": "/tr/volkswagen/sanziman-arizalari"
+          },
+          {
+            "label": "OBD2 Kodları ve Anlamları",
+            "href": "/tr/obd2/kodlar-ve-anlamlari"
+          },
+          {
+            "label": "Şanzıman Yağı Değişimi Rehberi",
+            "href": "/tr/ayarlar/sanziman-yagi-degisimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Volkswagen şanzıman yağı ne sıklıkla kontrol edilmeli?",
+            "a": "Genellikle her 40.000 km veya 2 yılda bir kontrol edilmesi önerilir, araç kullanım şartlarına bağlı olarak değişebilir."
+          },
+          {
+            "q": "Vites kaçırma şikayeti için önce hangi kontrol yapılmalı?",
+            "a": "Öncelikle şanzıman yağ seviyesi ve kalitesi kontrol edilmelidir."
+          },
+          {
+            "q": "OBD2 kodları nasıl okunur ve yorumlanır?",
+            "a": "OBD2 okuyucu ile aracın sisteminden alınan kodlar, kılavuzlar veya çevrimiçi veritabanları yardımıyla detaylı analiz edilir."
+          }
+        ],
+        "schemaTitle": "Volkswagen Vites Kaçırma Sorunu: Nedenleri ve Çözümleri",
+        "schemaDescription": "Volkswagen araçlarda vites kaçırma nedenleri, ilk kontroller, tanılama adımları ve OBD2 kodları hakkında detaylı rehber."
+      },
+      "en": {
+        "slug": "volkswagen-transmission-slipping",
+        "title": "Volkswagen Transmission Slipping: Causes and Diagnostic Tips",
+        "metaDescription": "Is your Volkswagen experiencing transmission slipping? Learn the common causes, initial checks, diagnostic steps, and mistakes to avoid.",
+        "intro": "Transmission slipping in a Volkswagen can lead to unpleasant driving experiences and potentially compromise safety. This guide explores potential causes, first checks to conduct, diagnostic procedures, and common pitfalls related to this issue. Diagnosing properly helps avoid unnecessary part replacements and keeps your vehicle running smoothly.",
+        "severity": "Moderate; may affect driving safety and vehicle performance.",
+        "driveAdvice": "If your transmission is slipping, avoid high speeds and drive cautiously to maintain control of your vehicle.",
+        "likelyCauses": [
+          "Low or contaminated transmission fluid",
+          "Worn clutch components",
+          "Damaged or worn synchronizers",
+          "Faulty transmission sensors",
+          "Malfunctioning transmission solenoid"
+        ],
+        "diagnosticSteps": [
+          "Check transmission fluid level and condition",
+          "Inspect clutch and pressure plate wear",
+          "Test gear shifting mechanism",
+          "Read OBD2 trouble codes",
+          "Test sensor outputs",
+          "Verify transmission solenoid function"
+        ],
+        "firstChecks": [
+          "Check fluid level",
+          "Inspect gear shift linkage",
+          "Scan for OBD2 codes"
+        ],
+        "commonMistakes": [
+          "Skipping basic checks before part replacement",
+          "Neglecting transmission fluid change intervals",
+          "Misinterpreting OBD2 codes"
+        ],
+        "relatedCodes": [
+          "P0700 - Transmission Control System Malfunction",
+          "P0730 - Gear Ratio Error",
+          "P0750 - Shift Solenoid Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Transmission Issues Explained",
+            "href": "/en/volkswagen/transmission-issues"
+          },
+          {
+            "label": "OBD2 Codes and Their Meanings",
+            "href": "/en/obd2/codes-meanings"
+          },
+          {
+            "label": "Transmission Fluid Change Guide",
+            "href": "/en/maintenance/transmission-fluid-change"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How often should I check Volkswagen transmission fluid?",
+            "a": "Typically, every 40,000 km or 2 years, depending on usage and model specifics."
+          },
+          {
+            "q": "What is the first check for transmission slipping?",
+            "a": "Start by checking the transmission fluid level and quality."
+          },
+          {
+            "q": "How to interpret OBD2 codes related to transmission?",
+            "a": "Use an OBD2 reader and consult manuals or online resources for detailed explanations."
+          }
+        ],
+        "schemaTitle": "Volkswagen Transmission Slipping Causes and Diagnostics",
+        "schemaDescription": "Detailed guide on Volkswagen transmission slipping including causes, initial checks, diagnostic steps, and OBD2 codes."
+      },
+      "de": {
+        "slug": "volkswagen-getriebe-rutscht",
+        "title": "Volkswagen Getriebe Rutscht: Ursachen und Diagnoseschritte",
+        "metaDescription": "Ihr Volkswagen rutscht beim Schalten? Erfahren Sie die häufigsten Ursachen, erste Kontrollen und wie Sie Fehler richtig diagnostizieren.",
+        "intro": "Ein rutschendes Getriebe bei Volkswagen-Fahrzeugen führt zu einer unsicheren und unangenehmen Fahrweise. Dieser Leitfaden bietet Ihnen einen Überblick über mögliche Ursachen, erste Prüfungen, diagnostische Maßnahmen und häufige Fehler. Eine genaue Diagnose hilft, unnötige Reparaturen zu vermeiden und die Zuverlässigkeit des Fahrzeugs zu sichern.",
+        "severity": "Mittel; kann die Fahrsicherheit beeinträchtigen.",
+        "driveAdvice": "Bei Getriebeschlupf sollten Sie hohe Geschwindigkeiten vermeiden und vorsichtig fahren, um die Kontrolle über das Fahrzeug zu behalten.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Getriebeölstand",
+          "Abgenutzte Kupplungsteile",
+          "Beschädigte oder verschlissene Synchronringe",
+          "Fehlerhafte Getriebesensoren",
+          "Defektes Getriebeventil (Solenoid)"
+        ],
+        "diagnosticSteps": [
+          "Getriebeölstand und Qualität prüfen",
+          "Kupplung und Druckplatte inspizieren",
+          "Schaltmechanismus testen",
+          "OBD2-Fehlercodes auslesen",
+          "Sensorwerte messen",
+          "Getriebesolenoide überprüfen"
+        ],
+        "firstChecks": [
+          "Getriebeölstand kontrollieren",
+          "Schaltgestänge prüfen",
+          "OBD2-Codes auslesen"
+        ],
+        "commonMistakes": [
+          "Grundlegende Checks vor dem Teilewechsel überspringen",
+          "Getriebeölwechselintervalle vernachlässigen",
+          "OBD2-Codes falsch interpretieren"
+        ],
+        "relatedCodes": [
+          "P0700 - Steuerung Getriebesystem Fehler",
+          "P0730 - Übersetzungsverhältnis Fehler",
+          "P0750 - Schaltventil (Solenoid) Fehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen Getriebeprobleme verstehen",
+            "href": "/de/volkswagen/getriebeprobleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes und Bedeutungen",
+            "href": "/de/obd2/codes-und-bedeutungen"
+          },
+          {
+            "label": "Getriebeölwechsel Anleitung",
+            "href": "/de/wartung/getriebeoelwechsel"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie oft sollte das Getriebeöl bei Volkswagen geprüft werden?",
+            "a": "In der Regel alle 40.000 km oder alle 2 Jahre, je nach Nutzung und Modell."
+          },
+          {
+            "q": "Was ist die erste Maßnahme bei Getriebe-Rutschen?",
+            "a": "Zuerst sollte der Getriebeölstand und dessen Zustand geprüft werden."
+          },
+          {
+            "q": "Wie interpretiert man OBD2-Codes zum Getriebe?",
+            "a": "Mit einem OBD2-Scanner und Hilfe von Handbüchern oder Online-Ressourcen."
+          }
+        ],
+        "schemaTitle": "Volkswagen Getriebe Rutschen: Ursachen und Diagnose",
+        "schemaDescription": "Ausführliche Anleitung zu Ursachen, ersten Kontrollen, Diagnose und OBD2-Codes bei Volkswagen Getriebeproblemen."
+      },
+      "es": {
+        "slug": "volkswagen-vites-escapando",
+        "title": "Volkswagen Vites Escapando: Causas y Diagnóstico",
+        "metaDescription": "¿Tu Volkswagen pierde cambios? Descubre las causas comunes, revisiones iniciales, pasos diagnósticos y errores frecuentes a evitar.",
+        "intro": "El deslizamiento de la transmisión en un Volkswagen puede afectar la experiencia de conducción y la seguridad. En esta guía, revisamos posibles causas, inspecciones iniciales, pasos para diagnosticar el problema y errores comunes. Un diagnóstico correcto evita reemplazos innecesarios y mantiene el vehículo en buen estado.",
+        "severity": "Moderado; puede afectar la seguridad y el rendimiento del vehículo.",
+        "driveAdvice": "Si la transmisión está escapando, evita altas velocidades y conduce con precaución para mantener el control.",
+        "likelyCauses": [
+          "Nivel bajo o fluido sucio de la transmisión",
+          "Desgaste en componentes del embrague",
+          "Sincronizadores dañados o desgastados",
+          "Sensores de transmisión defectuosos",
+          "Solenoide de transmisión con fallo"
+        ],
+        "diagnosticSteps": [
+          "Comprobar nivel y estado del fluido de transmisión",
+          "Inspeccionar desgaste del embrague y plato de presión",
+          "Probar mecanismo de cambios",
+          "Leer códigos de error OBD2",
+          "Medir salidas de sensores",
+          "Verificar funcionamiento del solenoide de transmisión"
+        ],
+        "firstChecks": [
+          "Revisar nivel del fluido",
+          "Inspeccionar enlace de la palanca de cambios",
+          "Escanear códigos OBD2"
+        ],
+        "commonMistakes": [
+          "Saltar revisiones básicas antes de cambiar piezas",
+          "Descuidar intervalos de cambio de fluido",
+          "Interpretar mal los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0700 - Falla en el sistema de control de la transmisión",
+          "P0730 - Error en la relación de cambio",
+          "P0750 - Falla del solenoide de cambio"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas de transmisión Volkswagen",
+            "href": "/es/volkswagen/problemas-transmision"
+          },
+          {
+            "label": "Códigos OBD2 y sus significados",
+            "href": "/es/obd2/codigos-significados"
+          },
+          {
+            "label": "Guía para cambiar el fluido de transmisión",
+            "href": "/es/mantenimiento/cambio-fluido-transmision"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Con qué frecuencia debo revisar el fluido de transmisión Volkswagen?",
+            "a": "Generalmente cada 40,000 km o 2 años, según uso y modelo."
+          },
+          {
+            "q": "¿Cuál es la primera revisión para un problema de deslizamiento?",
+            "a": "Verificar el nivel y la calidad del fluido de transmisión."
+          },
+          {
+            "q": "¿Cómo interpreto códigos OBD2 relacionados con la transmisión?",
+            "a": "Usando un lector OBD2 y consultando manuales o recursos en línea."
+          }
+        ],
+        "schemaTitle": "Deslizamiento de transmisión en Volkswagen: causas y diagnóstico",
+        "schemaDescription": "Guía completa sobre deslizamiento de transmisión en Volkswagen, causas, revisiones iniciales, diagnóstico y códigos OBD2."
+      },
+      "fr": {
+        "slug": "volkswagen-retablissement-de-vitesse",
+        "title": "Glissement de Transmission sur Volkswagen : Causes et Diagnostics",
+        "metaDescription": "Votre Volkswagen présente un glissement de transmission ? Découvrez causes fréquentes, contrôles initiaux, diagnostics et erreurs à éviter.",
+        "intro": "Le glissement de transmission sur un véhicule Volkswagen peut rendre la conduite inconfortable et potentiellement dangereuse. Ce guide détaille les causes possibles, les premières vérifications à effectuer, les étapes de diagnostic et les erreurs communes. Un diagnostic précis permet d’éviter des remplacements inutiles et de maintenir votre voiture en bon état.",
+        "severity": "Modéré ; peut impacter la sécurité et la performance du véhicule.",
+        "driveAdvice": "En cas de glissement, évitez les hautes vitesses et conduisez prudemment pour garder le contrôle du véhicule.",
+        "likelyCauses": [
+          "Niveau bas ou huile de transmission contaminée",
+          "Composants d’embrayage usés",
+          "Synchroniseurs endommagés ou usés",
+          "Capteurs de transmission défectueux",
+          "Solénoïde de transmission défaillant"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau et la qualité de l’huile de transmission",
+          "Inspecter l’usure de l’embrayage et du plateau de pression",
+          "Tester les mécanismes de passage de vitesses",
+          "Lire les codes panne OBD2",
+          "Mesurer les signaux des capteurs",
+          "Vérifier le fonctionnement du solénoïde de transmission"
+        ],
+        "firstChecks": [
+          "Contrôler le niveau d’huile",
+          "Inspecter la tringlerie de changement de vitesse",
+          "Scanner les codes OBD2"
+        ],
+        "commonMistakes": [
+          "Négliger les vérifications de base avant de remplacer des pièces",
+          "Oublier de changer l’huile aux intervalles recommandés",
+          "Mauvaise interprétation des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0700 - Dysfonctionnement du système de contrôle de transmission",
+          "P0730 - Erreur de rapport de vitesse",
+          "P0750 - Dysfonctionnement du solénoïde de passage de vitesse"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes de transmission Volkswagen",
+            "href": "/fr/volkswagen/problemes-transmission"
+          },
+          {
+            "label": "Codes OBD2 et significations",
+            "href": "/fr/obd2/codes-significations"
+          },
+          {
+            "label": "Guide de changement d’huile de transmission",
+            "href": "/fr/entretien/changement-huile-transmission"
+          }
+        ],
+        "faq": [
+          {
+            "q": "À quelle fréquence contrôler l’huile de transmission Volkswagen ?",
+            "a": "En général tous les 40 000 km ou 2 ans, selon l’usage et le modèle."
+          },
+          {
+            "q": "Quelle est la première vérification en cas de glissement de transmission ?",
+            "a": "Vérifier d’abord le niveau et l’état de l’huile de transmission."
+          },
+          {
+            "q": "Comment interpréter les codes OBD2 liés à la transmission ?",
+            "a": "Avec un lecteur OBD2 et en consultant les manuels ou ressources en ligne."
+          }
+        ],
+        "schemaTitle": "Glissement de transmission Volkswagen : causes et diagnostic",
+        "schemaDescription": "Guide détaillé sur le glissement de transmission Volkswagen incluant causes, contrôles initiaux, diagnostics et codes OBD2."
+      }
+    }
   }
 ]

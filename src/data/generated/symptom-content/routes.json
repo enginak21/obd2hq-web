@@ -348,5 +348,105 @@
       "es": "volkswagen-luz-motor-enciende",
       "fr": "volkswagen-temoin-moteur-allume"
     }
+  },
+  {
+    "contentGroupId": "volkswagen-hard-start",
+    "slugs": {
+      "en": "volkswagen-hard-start",
+      "tr": "volkswagen-gec-calismiyor",
+      "de": "volkswagen-schwerer-start",
+      "es": "volkswagen-motor-tiembla-arranca-tarde",
+      "fr": "volkswagen-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-black-smoke",
+    "slugs": {
+      "en": "volkswagen-black-smoke-diagnosis",
+      "tr": "volkswagen-siyah-duman-atan-arac-teshisi",
+      "de": "volkswagen-schwarzer-rauch-ursachen-und-diagnose",
+      "es": "volkswagen-humo-negro-causas-y-diagnostico",
+      "fr": "volkswagen-fumee-noire-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-white-smoke",
+    "slugs": {
+      "en": "volkswagen-white-smoke",
+      "tr": "volkswagen-beyaz-duman-atiyor",
+      "de": "volkswagen-weisser-rauch",
+      "es": "volkswagen-humo-blanco",
+      "fr": "volkswagen-fumee-blanche"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-poor-fuel-economy",
+    "slugs": {
+      "en": "volkswagen-poor-fuel-economy",
+      "tr": "volkswagen-cok-yakiyor",
+      "de": "volkswagen-hoher-kraftstoffverbrauch",
+      "es": "volkswagen-gasta-mucho-combustible",
+      "fr": "volkswagen-consomme-trop-de-carburant"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-stalling",
+    "slugs": {
+      "en": "volkswagen-stalling",
+      "tr": "volkswagen-stop-ediyor",
+      "de": "volkswagen-motor-geht-aus",
+      "es": "volkswagen-motor-tiembla-paradas",
+      "fr": "volkswagen-calage-moteur"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-jerking",
+    "slugs": {
+      "en": "volkswagen-jerking-issues",
+      "tr": "volkswagen-silkeleme-yapiyor",
+      "de": "volkswagen-ruckeln-probleme",
+      "es": "volkswagen-motor-tiembla",
+      "fr": "volkswagen-tremblements-moteur"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-overheating",
+    "slugs": {
+      "en": "volkswagen-overheating-causes-and-checks",
+      "tr": "volkswagen-hararet-yapiyor",
+      "de": "volkswagen-ueberhitzung-ursachen-und-pruefungen",
+      "es": "volkswagen-calienta-motor-causas-y-revisiones",
+      "fr": "volkswagen-surchauffe-moteur-causes-controles"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-fuel-smell",
+    "slugs": {
+      "en": "volkswagen-fuel-smell-causes",
+      "tr": "volkswagen-benzin-kokusu-nedenleri",
+      "de": "volkswagen-kraftstoffgeruch-ursachen",
+      "es": "volkswagen-olor-a-combustible-causas",
+      "fr": "volkswagen-odeur-carburant-causes"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-oil-smell",
+    "slugs": {
+      "en": "volkswagen-oil-smell-diagnosis",
+      "tr": "volkswagen-yanik-yag-kokusu-tespiti",
+      "de": "volkswagen-olgeruch-diagnose",
+      "es": "volkswagen-olor-a-aceite-quemado",
+      "fr": "volkswagen-odeur-dhuile-brulee"
+    }
+  },
+  {
+    "contentGroupId": "volkswagen-transmission-slipping",
+    "slugs": {
+      "en": "volkswagen-transmission-slipping",
+      "tr": "volkswagen-vites-kaciriyor",
+      "de": "volkswagen-getriebe-rutscht",
+      "es": "volkswagen-vites-escapando",
+      "fr": "volkswagen-retablissement-de-vitesse"
+    }
   }
 ]
