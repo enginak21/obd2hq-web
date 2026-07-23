@@ -11987,5 +11987,356 @@
         "schemaDescription": "Guide complet pour comprendre et diagnostiquer les vibrations moteur sur Volkswagen, incluant causes, contrôles et erreurs à éviter."
       }
     }
+  },
+  {
+    "contentGroupId": "volkswagen-check-engine-light",
+    "intentKey": "volkswagen_check_engine_light",
+    "make": "Volkswagen",
+    "model": null,
+    "symptomKey": "check_engine_light",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "volkswagen-motor-ariza-lambasi-yanarken",
+        "title": "Volkswagen Motor Arıza Lambası Yanıyor – Olası Nedenler ve Teşhis Yöntemleri",
+        "metaDescription": "Volkswagen motor arıza lambası yandığında kontrol edilmesi gereken 5 olası neden ve 6 teşhis adımıyla araç sorunlarını öğrenin.",
+        "intro": "Volkswagen araçlarda motor arıza lambasının yanması, birçok farklı sorunun habercisi olabilir. Bu uyarı, motor veya bağlı sistemlerde dikkat gerektiren bir problem olduğunu gösterir. Tek bir neden söylememekle birlikte, sorunun kaynağını bulmak için düzenli kontroller ve doğru teşhis yöntemleri uygulanması önemlidir. Bu yazıda, arıza ışığıyla ilgili sık karşılaşılan nedenlerden ve pratik kontrol adımlarından bahsedeceğiz.",
+        "severity": "Orta Derecede Ciddi – Arıza lambası acil müdahale gerektirmeyebilir ancak geciktirilirse ciddi sorunlara dönüşebilir.",
+        "driveAdvice": "Arıza lambası yandığında aracınızı aşırı zorlamamaya özen gösterin. Mümkünse motoru durdurup kısa sürede teşhis edilmesini sağlayın.",
+        "likelyCauses": [
+          "Yakıt sistemi arızaları (enjektör, pompa)",
+          "Egzoz sistemi sorunları (Oksijen sensörü hatası)",
+          "Hava filtresi tıkanıklığı veya hassasiyet kaybı",
+          "Buji veya ateşleme sisteminde problemler",
+          "Egzoz gazı geri dönüşüm (EGR) vanası arızası"
+        ],
+        "diagnosticSteps": [
+          "OBD2 hata kodlarını okuyun ve analiz edin",
+          "Hava filtresi ve emme sistemini kontrol edin",
+          "Yakıt basıncını ölçerek enjektörleri test edin",
+          "Bujileri ve ateşleme bobinlerini gözden geçirin",
+          "Egzoz sistemi ve sensörlerini kontrol edin",
+          "EGR valfini temizleyin veya test edin"
+        ],
+        "firstChecks": [
+          "Motor yağ seviyesi ve kalitesini kontrol edin",
+          "Hava filtresinin temiz olduğundan emin olun",
+          "Yakıt deposunda yeterli ve kaliteli yakıt olduğundan emin olun"
+        ],
+        "commonMistakes": [
+          "Arıza kodlarını yanlış anlamak ve gereksiz parça değiştirmek",
+          "Sistemi tam olarak sıfırlamadan yeniden denemek",
+          "Basit kontrolleri atlayıp doğrudan yüksek maliyetli tamire gitmek"
+        ],
+        "relatedCodes": [
+          "P0300",
+          "P0171",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkwagen Hata Kodları ve Anlamları",
+            "href": "/tr/volkswagen-hata-kodlari"
+          },
+          {
+            "label": "OBD2 Temel Teşhis Rehberi",
+            "href": "/tr/obd2-temel-teshis"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları Nasıl Çözülür?",
+            "href": "/tr/yakit-sistemi-arizalari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası yandığında derhal servise gitmeli miyim?",
+            "a": "Lamba hemen tehlikeli olduğuna işaret etmeyebilir ama kontrol edilmesi önemlidir. Aracı zorlamadan bir servise göstermek en iyisidir."
+          },
+          {
+            "q": "Arıza lambası sonrası aracı sürmeye devam edersem ne olur?",
+            "a": "Bazı durumlarda ek hasarlara yol açabilir. Mümkünse kısa zamanda problemi teşhis ettirip çözmelisiniz."
+          },
+          {
+            "q": "OBD2 cihazı ile kod okuyabilir miyim?",
+            "a": "Evet, OBD2 cihazları arıza kodlarını göstererek sorunun yönünü belirlemede ilk adımdır."
+          }
+        ],
+        "schemaTitle": "Volkswagen Motor Arıza Lambası Yanıyor – Nedenleri ve Çözümleri",
+        "schemaDescription": "Volkswagen araçlarda motor arıza lambasının yanmasının olası nedenleri, temel kontrol ve teşhis adımları ile süreci açıklayan uzman rehberi."
+      },
+      "en": {
+        "slug": "volkswagen-check-engine-light-on",
+        "title": "Volkswagen Check Engine Light On – Possible Causes and Diagnostic Steps",
+        "metaDescription": "Learn 5 common causes and 6 practical diagnostic steps when your Volkswagen's check engine light comes on.",
+        "intro": "When the check engine light illuminates on your Volkswagen, it signals that the vehicle's engine or emission system may have an issue requiring attention. Multiple factors can trigger this warning light, and it's important to methodically diagnose the problem before replacing parts. This guide provides practical steps, common causes, and tips to help you identify what's behind the warning.",
+        "severity": "Moderate concern – immediate driving risk may be low but should be diagnosed promptly to avoid further damage.",
+        "driveAdvice": "Avoid heavy engine loads when the light is on. Schedule a timely diagnostic to prevent potential complications.",
+        "likelyCauses": [
+          "Faulty oxygen sensors",
+          "Loose or damaged gas cap",
+          "Mass airflow sensor issues",
+          "Ignition system faults including spark plugs",
+          "Exhaust gas recirculation (EGR) valve malfunctions"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to retrieve trouble codes",
+          "Inspect and test oxygen sensors",
+          "Check the gas cap for tightness and damage",
+          "Examine air filter and mass airflow sensor cleanliness",
+          "Test spark plugs and ignition coils",
+          "Assess the EGR valve operation"
+        ],
+        "firstChecks": [
+          "Verify the gas cap is properly closed",
+          "Check engine oil level and condition",
+          "Inspect air filter for dirt or blockages"
+        ],
+        "commonMistakes": [
+          "Ignoring the warning light and continuing to drive",
+          "Replacing parts based solely on trouble codes without further diagnosis",
+          "Resetting codes repeatedly without addressing the root cause"
+        ],
+        "relatedCodes": [
+          "P0300",
+          "P0171",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Codes Explained",
+            "href": "/en/volkswagen-obd2-codes-explained"
+          },
+          {
+            "label": "OBD2 Diagnostic Basics",
+            "href": "/en/obd2-diagnostic-basics"
+          },
+          {
+            "label": "Common Fuel System Problems",
+            "href": "/en/common-fuel-system-problems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I do immediately when the check engine light comes on?",
+            "a": "Check for obvious issues like a loose gas cap and schedule a diagnostic to read error codes."
+          },
+          {
+            "q": "Is it safe to keep driving with the check engine light on?",
+            "a": "It's best to minimize driving and get the car checked soon as some issues may lead to severe damage."
+          },
+          {
+            "q": "Can I diagnose the problem myself?",
+            "a": "With an OBD2 scanner and proper guidance, many basic diagnostics can be performed at home."
+          }
+        ],
+        "schemaTitle": "Volkswagen Check Engine Light On – Causes, Diagnosis, and Tips",
+        "schemaDescription": "Expert guide explaining common causes, diagnostic steps, and practical tips for Volkswagen check engine light issues."
+      },
+      "de": {
+        "slug": "volkswagen-check-engine-leuchte-an",
+        "title": "Volkswagen Motorwarnleuchte leuchtet – Mögliche Ursachen und Diagnoseschritte",
+        "metaDescription": "Erfahren Sie 5 häufige Ursachen und 6 praktische Diagnoseschritte, wenn die Motorwarnleuchte bei Ihrem Volkswagen angeht.",
+        "intro": "Die Motorwarnleuchte Ihres Volkswagen kann aus verschiedenen Gründen aufleuchten und signalisiert potenzielle Probleme im Motor- oder Abgassystem. Es ist wichtig, die genaue Ursache systematisch zu ermitteln, bevor Teile ersetzt werden. In diesem Beitrag finden Sie praxisnahe Hinweise zu häufigen Ursachen und hilfreiche Diagnoseschritte, um das Problem zu erkennen und entsprechend zu handeln.",
+        "severity": "Mittlere Dringlichkeit – Sofortige Fahrgefahr gering, aber zeitnahe Diagnose empfohlen, um Folgeschäden zu vermeiden.",
+        "driveAdvice": "Vermeiden Sie starke Belastungen des Motors und lassen Sie das Fahrzeug möglichst bald prüfen.",
+        "likelyCauses": [
+          "Defekte Sauerstoffsensoren",
+          "Lockerer oder beschädigter Tankdeckel",
+          "Probleme mit dem Luftmassenmesser",
+          "Zündsystemfehler (z.B. Zündkerzen)",
+          "Fehler am Abgasrückführventil (AGR)"
+        ],
+        "diagnosticSteps": [
+          "Lesen Sie die Fehlercodes mit einem OBD2-Scanner aus",
+          "Überprüfen und testen Sie die Sauerstoffsensoren",
+          "Kontrollieren Sie den Tankdeckel auf Dichtigkeit und Beschädigungen",
+          "Untersuchen Sie Luftfilter und Luftmassenmesser auf Verschmutzungen",
+          "Prüfen Sie Zündkerzen und Zündspulen",
+          "Bewerten Sie die Funktion des AGR-Ventils"
+        ],
+        "firstChecks": [
+          "Überprüfen Sie, ob der Tankdeckel fest verschlossen ist",
+          "Kontrollieren Sie den Motorölstand und die Qualität",
+          "Begutachten Sie den Luftfilter auf Verunreinigungen"
+        ],
+        "commonMistakes": [
+          "Warnleuchte zu ignorieren und weiterzufahren",
+          "Teile allein aufgrund von Fehlercodes ohne genaue Diagnose zu tauschen",
+          "Fehlercodes ohne Problemlösung immer wieder zurückzusetzen"
+        ],
+        "relatedCodes": [
+          "P0300",
+          "P0171",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Volkswagen OBD2 Codes erklärt",
+            "href": "/de/volkswagen-obd2-codes-erklaert"
+          },
+          {
+            "label": "Grundlagen der OBD2-Diagnose",
+            "href": "/de/obd2-diagnose-grundlagen"
+          },
+          {
+            "label": "Häufige Kraftstoffsystemprobleme",
+            "href": "/de/haufige-kraftstoffsystemprobleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was ist zu tun, wenn die Motorwarnleuchte angeht?",
+            "a": "Überprüfen Sie zunächst den Tankdeckel und lassen Sie die Fehlercodes zeitnah auslesen."
+          },
+          {
+            "q": "Ist es sicher, weiterhin zu fahren?",
+            "a": "Fahren Sie möglichst vorsichtig und lassen Sie das Fahrzeug bald prüfen, um weitere Schäden zu vermeiden."
+          },
+          {
+            "q": "Kann ich die Diagnose selbst durchführen?",
+            "a": "Mit einem OBD2-Scanner und entsprechender Anleitung sind einfache Diagnosen zuhause möglich."
+          }
+        ],
+        "schemaTitle": "Volkswagen Motorwarnleuchte – Ursachen, Diagnose und Tipps",
+        "schemaDescription": "Expertenratgeber zu häufigen Ursachen, Diagnoseschritten und Lösungsansätzen bei Motorwarnleuchte am Volkswagen."
+      },
+      "es": {
+        "slug": "volkswagen-luz-motor-enciende",
+        "title": "Luz de Motor Encendida en Volkswagen – Causas Comunes y Pasos para Diagnóstico",
+        "metaDescription": "Descubre 5 causas habituales y 6 pasos prácticos para diagnosticar cuando la luz de motor se enciende en tu Volkswagen.",
+        "intro": "Cuando la luz de motor se enciende en un Volkswagen, es una señal de que el sistema del motor o emisiones puede estar presentando un problema. Esta alerta no apunta a una sola causa, por lo que es fundamental realizar una inspección detallada antes de reemplazar piezas. En esta guía encontrarás causas frecuentes, chequeos iniciales y pasos de diagnóstico para comprender mejor y resolver el problema.",
+        "severity": "Nivel de alerta medio – quizás no sea urgente apagar el motor pero se debe diagnosticar pronto para evitar daños mayores.",
+        "driveAdvice": "Evita exigir demasiado al motor y busca hacer el diagnóstico cuanto antes para evitar complicaciones adicionales.",
+        "likelyCauses": [
+          "Sensores de oxígeno defectuosos",
+          "Tapa de gasolina floja o dañada",
+          "Problemas con el sensor de flujo de aire",
+          "Fallos en el sistema de encendido, como bujías",
+          "Mal funcionamiento de la válvula EGR"
+        ],
+        "diagnosticSteps": [
+          "Usa un escáner OBD2 para leer los códigos de error",
+          "Inspecciona y prueba los sensores de oxígeno",
+          "Verifica que la tapa de gasolina esté bien colocada y sin daños",
+          "Revisa el filtro de aire y el sensor de flujo de aire",
+          "Comprueba las bujías y bobinas de encendido",
+          "Evalúa el funcionamiento de la válvula EGR"
+        ],
+        "firstChecks": [
+          "Confirma que la tapa del tanque de combustible esté cerrada correctamente",
+          "Revisa el nivel y condición del aceite del motor",
+          "Inspecciona que el filtro de aire esté limpio y sin obstrucciones"
+        ],
+        "commonMistakes": [
+          "Ignorar la luz encendida y seguir conduciendo sin diagnóstico",
+          "Cambiar piezas basándose solo en códigos sin más pruebas",
+          "Reiniciar códigos repetidamente sin resolver la causa raíz"
+        ],
+        "relatedCodes": [
+          "P0300",
+          "P0171",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Volkswagen Explicados",
+            "href": "/es/codigos-obd2-volkswagen-explicados"
+          },
+          {
+            "label": "Diagnóstico Básico con OBD2",
+            "href": "/es/diagnostico-basico-obd2"
+          },
+          {
+            "label": "Problemas Comunes en el Sistema de Combustible",
+            "href": "/es/problemas-comunes-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué debo hacer si se enciende la luz de motor?",
+            "a": "Revisa que la tapa de gasolina esté bien y agenda un diagnóstico para leer los códigos de error."
+          },
+          {
+            "q": "¿Es seguro seguir conduciendo con la luz encendida?",
+            "a": "Lo ideal es conducir poco y hacer revisar pronto el vehículo para evitar daños mayores."
+          },
+          {
+            "q": "¿Puedo diagnosticar el problema yo mismo?",
+            "a": "Con un escáner OBD2 y un poco de guía, puedes realizar un diagnóstico básico en casa."
+          }
+        ],
+        "schemaTitle": "Luz de Motor Encendida en Volkswagen – Diagnóstico y Consejos",
+        "schemaDescription": "Guía experta sobre causas comunes, pasos de diagnóstico y recomendaciones para problemas con la luz de motor en Volkswagen."
+      },
+      "fr": {
+        "slug": "volkswagen-temoin-moteur-allume",
+        "title": "Témoin Moteur Allumé sur Volkswagen – Causes Possibles et Étapes de Diagnostic",
+        "metaDescription": "Découvrez 5 causes fréquentes et 6 étapes pratiques pour diagnostiquer un témoin moteur allumé sur Volkswagen.",
+        "intro": "Le témoin moteur allumé sur un Volkswagen indique qu’un problème potentiel touche le moteur ou le système d’émissions. Cette alerte peut avoir plusieurs origines. Il est donc important de procéder à des vérifications méthodiques avant de remplacer des pièces. Ce guide présente des causes courantes, des vérifications simples et des étapes diagnostiques pour mieux comprendre et résoudre le problème.",
+        "severity": "Sévérité modérée – le risque immédiat peut être faible, mais il faut diagnostiquer rapidement pour éviter des dommages.",
+        "driveAdvice": "Évitez de trop solliciter le moteur et prenez rendez-vous rapidement pour un diagnostic afin d’éviter toute complication.",
+        "likelyCauses": [
+          "Sondes lambda défectueuses",
+          "Bouchon de réservoir mal fermé ou endommagé",
+          "Problèmes avec le débitmètre d’air",
+          "Défaillances du système d’allumage, y compris les bougies",
+          "Problèmes avec la vanne EGR"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un scanner OBD2",
+          "Inspecter et tester les sondes lambda",
+          "Vérifier le bouchon de réservoir (étanchéité et état)",
+          "Contrôler le filtre à air et le débitmètre d’air",
+          "Tester les bougies d’allumage et bobines",
+          "Évaluer le fonctionnement de la vanne EGR"
+        ],
+        "firstChecks": [
+          "S’assurer que le bouchon de réservoir est bien fermé",
+          "Vérifier le niveau et la qualité de l’huile moteur",
+          "Contrôler la propreté du filtre à air"
+        ],
+        "commonMistakes": [
+          "Ignorer le témoin et continuer à rouler sans diagnostic",
+          "Remplacer des pièces uniquement sur la base des codes sans tests complémentaires",
+          "Effacer les codes sans résoudre la cause racine"
+        ],
+        "relatedCodes": [
+          "P0300",
+          "P0171",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Volkswagen expliqués",
+            "href": "/fr/codes-obd2-volkswagen-expliques"
+          },
+          {
+            "label": "Bases du diagnostic OBD2",
+            "href": "/fr/bases-diagnostic-obd2"
+          },
+          {
+            "label": "Problèmes fréquents des systèmes de carburant",
+            "href": "/fr/problemes-frequents-systemes-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que faire lorsque le témoin moteur s’allume ?",
+            "a": "Vérifiez le bouchon de réservoir et faites lire les codes défauts rapidement."
+          },
+          {
+            "q": "Est-il sûr de continuer à rouler avec le témoin allumé ?",
+            "a": "Il est recommandé de limiter l’utilisation et de diagnostiquer le véhicule rapidement."
+          },
+          {
+            "q": "Puis-je effectuer le diagnostic moi-même ?",
+            "a": "Avec un scanner OBD2 et de bonnes instructions, il est possible d’effectuer un diagnostic basique."
+          }
+        ],
+        "schemaTitle": "Témoin Moteur Allumé sur Volkswagen – Causes et Diagnostic",
+        "schemaDescription": "Guide expert détaillant causes fréquentes, étapes de diagnostic et conseils pratiques pour le témoin moteur sur Volkswagen."
+      }
+    }
   }
 ]

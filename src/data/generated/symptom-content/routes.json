@@ -338,5 +338,15 @@
       "es": "volkswagen-motor-tiembla-causas-diagnostico",
       "fr": "volkswagen-moteur-vibre-causes-diagnostic"
     }
+  },
+  {
+    "contentGroupId": "volkswagen-check-engine-light",
+    "slugs": {
+      "en": "volkswagen-check-engine-light-on",
+      "tr": "volkswagen-motor-ariza-lambasi-yanarken",
+      "de": "volkswagen-check-engine-leuchte-an",
+      "es": "volkswagen-luz-motor-enciende",
+      "fr": "volkswagen-temoin-moteur-allume"
+    }
   }
 ]
