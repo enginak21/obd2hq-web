@@ -9,7 +9,6 @@ import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnosticSteps, getLocalizedSystemContent, getModelSpecificInsight, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
-import { getGscOpportunitiesForTargets, getGscOpportunityBlockCopy } from '@/data/gsc-seo';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -206,12 +205,6 @@ export default async function CodePage({ params }: PageProps) {
   };
 
   const relatedCodes = getRelatedCodes(upperCode, Object.keys(baseCodes || {}), 5);
-  const gscOpportunities = getGscOpportunitiesForTargets([
-    `/${locale}/${make}/${model}/${code}`,
-    `/en/${make}/${model}/${code}`,
-  ], 4);
-  const gscCopy = getGscOpportunityBlockCopy(locale);
-
   const severityColor = obdData.drivingSafety?.level === 'danger' ? 'text-red-500 bg-red-500/10' :
                         obdData.drivingSafety?.level === 'caution' ? 'text-amber-500 bg-amber-500/10' :
                         'text-green-500 bg-green-500/10';
@@ -296,29 +289,6 @@ export default async function CodePage({ params }: PageProps) {
               </div>
             </div>
           </section>
-
-          {gscOpportunities.length > 0 && (
-            <section className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-6 shadow-lg">
-              <div className="mb-4 inline-flex rounded-full border border-emerald-300/20 bg-black/20 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-100">
-                {gscCopy.badge}
-              </div>
-              <h2 className="text-2xl font-bold text-white">{gscCopy.title}</h2>
-              <p className="mt-3 text-sm leading-6 text-slate-300">{gscCopy.text}</p>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {gscOpportunities.map(item => (
-                  <div key={item.query} className="rounded-xl border border-white/10 bg-black/20 p-4">
-                    <div className="text-base font-bold text-emerald-100">{item.query}</div>
-                    <div className="mt-2 flex flex-wrap gap-2 text-xs text-slate-300">
-                      <span className="rounded-full bg-white/10 px-2 py-1">{item.impressions} {gscCopy.impressions}</span>
-                      {item.position !== null && (
-                        <span className="rounded-full bg-white/10 px-2 py-1">{gscCopy.position}: {item.position.toFixed(1)}</span>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
 
           <section className="prose prose-invert max-w-none">
             <h2 className="text-2xl font-bold text-white flex items-center m-0 mb-4">

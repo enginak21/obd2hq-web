@@ -221,52 +221,6 @@ export function getGscOpportunitiesForTargets(targetUrls: string[], limit = 6) {
     .slice(0, limit);
 }
 
-export function getGscOpportunityBlockCopy(locale: string) {
-  if (locale === 'tr') {
-    return {
-      badge: 'Canlı Search Console fırsatı',
-      title: 'Google’da bu aramalarla görünmeye başladı',
-      text: 'Bu sayfa, gerçek Search Console gösterimlerine göre güçlendiriliyor. Amaç aynı niyeti karşılayan sorguları tek kaliteli rehberde toplamak ve ince kopya sayfa üretmemek.',
-      impressions: 'gösterim',
-      position: 'ortalama sıra',
-    };
-  }
-  if (locale === 'de') {
-    return {
-      badge: 'Live Search Console Chance',
-      title: 'Diese Suchanfragen zeigen bereits Impressionen',
-      text: 'Diese Seite wird anhand echter Search-Console-Daten verstaerkt. Aehnliche Suchintentionen werden in einem starken Leitfaden gebuendelt, statt duenne Duplikate zu erzeugen.',
-      impressions: 'Impressionen',
-      position: 'Ø Position',
-    };
-  }
-  if (locale === 'es') {
-    return {
-      badge: 'Oportunidad real de Search Console',
-      title: 'Estas búsquedas ya generan impresiones',
-      text: 'Esta página se refuerza con datos reales de Search Console. Las consultas con la misma intención se responden en una guía sólida, sin crear páginas duplicadas débiles.',
-      impressions: 'impresiones',
-      position: 'posición media',
-    };
-  }
-  if (locale === 'fr') {
-    return {
-      badge: 'Opportunité Search Console réelle',
-      title: 'Ces recherches génèrent déjà des impressions',
-      text: 'Cette page est renforcée avec les données réelles de Search Console. Les requêtes proches sont regroupées dans un guide solide au lieu de créer des pages faibles.',
-      impressions: 'impressions',
-      position: 'position moyenne',
-    };
-  }
-  return {
-    badge: 'Live Search Console opportunity',
-    title: 'Searches already showing this page',
-    text: 'This page is being strengthened from real Search Console impressions. Similar search intents are answered in one strong guide instead of thin duplicate pages.',
-    impressions: 'impressions',
-    position: 'avg. position',
-  };
-}
-
 export function getCodeHubCopy(locale: string, code: string) {
   const upperCode = code.toUpperCase();
   const category = getCodeCategoryLabel(upperCode);

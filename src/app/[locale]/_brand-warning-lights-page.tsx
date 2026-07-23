@@ -6,7 +6,7 @@ import { AlertTriangle, Gauge, ShieldCheck } from 'lucide-react';
 import { cars } from '@/data/db';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
-import { getBrandWarningCopy, getBrandWarningLightsAlternates, getBrandWarningLightsPath, getGscOpportunitiesForTargets, getGscOpportunityBlockCopy } from '@/data/gsc-seo';
+import { getBrandWarningCopy, getBrandWarningLightsAlternates, getBrandWarningLightsPath } from '@/data/gsc-seo';
 
 type PageProps = {
   params: Promise<{
@@ -77,11 +77,6 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
   const copy = getBrandWarningCopy(locale, make);
   const displayMake = titleCase(make);
   const searchIntentBlock = getBrandSearchIntentBlock(locale, displayMake);
-  const gscOpportunities = getGscOpportunitiesForTargets([
-    getBrandWarningLightsPath(locale, make),
-    getBrandWarningLightsPath('en', make),
-  ], 5);
-  const gscCopy = getGscOpportunityBlockCopy(locale);
   const lights = Object.values(warningLights).map(light => getLocalizedWarningLight(light, locale));
   const modelLinks = car.models.slice(0, 9).map(model => ({
     model,
@@ -130,7 +125,7 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-500/10 px-3 py-1 text-sm font-semibold text-amber-100">
               <Gauge size={16} />
-              Search Console warning-light hub
+              Warning-light guide
             </div>
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">{copy.h1}</h1>
             <p className="mt-5 text-lg leading-8 text-slate-300">{copy.intro}</p>
@@ -159,29 +154,6 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
             ))}
           </div>
         </section>
-
-        {gscOpportunities.length > 0 && (
-          <section className="mt-8 rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-6">
-            <div className="mb-4 inline-flex rounded-full border border-emerald-300/20 bg-black/20 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-100">
-              {gscCopy.badge}
-            </div>
-            <h2 className="text-2xl font-bold text-white">{gscCopy.title}</h2>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300">{gscCopy.text}</p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {gscOpportunities.map(item => (
-                <div key={item.query} className="rounded-xl border border-white/10 bg-black/20 p-4">
-                  <div className="text-base font-bold text-emerald-100">{item.query}</div>
-                  <div className="mt-2 flex flex-wrap gap-2 text-xs text-slate-300">
-                    <span className="rounded-full bg-white/10 px-2 py-1">{item.impressions} {gscCopy.impressions}</span>
-                    {item.position !== null && (
-                      <span className="rounded-full bg-white/10 px-2 py-1">{gscCopy.position}: {item.position.toFixed(1)}</span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
 
         <section className="mt-8 rounded-2xl border border-white/10 bg-[#111827] p-6">
           <h2 className="flex items-center gap-2 text-2xl font-bold text-white"><ShieldCheck size={22} /> Warning lights by symbol</h2>

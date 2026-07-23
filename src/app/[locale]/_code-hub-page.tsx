@@ -9,7 +9,7 @@ import { applyGoldObdFallback } from '@/data/obd-gold-content';
 import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
 import { getRelatedCodes } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
-import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, getGscOpportunitiesForTargets, getGscOpportunityBlockCopy, isKnownCode } from '@/data/gsc-seo';
+import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, isKnownCode } from '@/data/gsc-seo';
 
 type PageProps = {
   params: Promise<{
@@ -100,7 +100,7 @@ function codeHubLabels(locale: string) {
       causeFallback: 'Kablo, soket, sensör veya sistem arızası',
       diagnosticPath: 'teşhis sırası',
       verifyRepair: 'Onarımdan önce doğrula',
-      opportunityBadge: 'Search Console fırsatı',
+      opportunityBadge: 'OBD2 kod rehberi',
       signalsTitle: 'Karşılaştırılacak sinyaller',
       system: 'Sistem:',
     };
@@ -115,7 +115,7 @@ function codeHubLabels(locale: string) {
       causeFallback: 'Kabel, Stecker, Sensor oder Systemfehler',
       diagnosticPath: 'Diagnoseablauf',
       verifyRepair: 'Vor der Reparatur prüfen',
-      opportunityBadge: 'Search-Console-Chance',
+      opportunityBadge: 'OBD2-Code-Ratgeber',
       signalsTitle: 'Signale zum Abgleichen',
       system: 'System:',
     };
@@ -130,7 +130,7 @@ function codeHubLabels(locale: string) {
       causeFallback: 'Cableado, conector, sensor o falla del sistema',
       diagnosticPath: 'ruta de diagnóstico',
       verifyRepair: 'Verificar antes de reparar',
-      opportunityBadge: 'Oportunidad en Search Console',
+      opportunityBadge: 'Guía de código OBD2',
       signalsTitle: 'Señales para comparar',
       system: 'Sistema:',
     };
@@ -145,7 +145,7 @@ function codeHubLabels(locale: string) {
       causeFallback: 'Câblage, connecteur, capteur ou défaut système',
       diagnosticPath: 'parcours de diagnostic',
       verifyRepair: 'Vérifier avant réparation',
-      opportunityBadge: 'Opportunité Search Console',
+      opportunityBadge: 'Guide de code OBD2',
       signalsTitle: 'Signaux à comparer',
       system: 'Système :',
     };
@@ -159,7 +159,7 @@ function codeHubLabels(locale: string) {
     causeFallback: 'Wiring, connector, sensor or system fault',
     diagnosticPath: 'diagnostic path',
     verifyRepair: 'Verify before repair',
-    opportunityBadge: 'Search Console opportunity',
+    opportunityBadge: 'OBD2 code guide',
     signalsTitle: 'Signals to compare',
     system: 'System:',
   };
@@ -198,12 +198,6 @@ export default async function CodeHubPage({ params }: PageProps) {
   const relatedCodes = getRelatedCodes(upperCode, Object.keys(baseCodes as Record<string, unknown>), 6);
   const vehicleTargets = getVehicleTargets(upperCode);
   const coveredSearches = getCoveredSearches(upperCode, locale);
-  const gscOpportunities = getGscOpportunitiesForTargets([
-    getCodeHubPath(locale, upperCode),
-    getCodeHubPath('en', upperCode),
-  ], 5);
-  const gscCopy = getGscOpportunityBlockCopy(locale);
-
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -356,30 +350,6 @@ export default async function CodeHubPage({ params }: PageProps) {
         </div>
       </section>
 
-      {gscOpportunities.length > 0 && (
-        <section className="mx-auto max-w-6xl px-6 pt-8">
-          <div className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-6">
-            <div className="mb-4 inline-flex rounded-full border border-emerald-300/20 bg-black/20 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-100">
-              {gscCopy.badge}
-            </div>
-            <h2 className="text-2xl font-bold text-white">{gscCopy.title}</h2>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300">{gscCopy.text}</p>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {gscOpportunities.map(item => (
-                <div key={item.query} className="rounded-xl border border-white/10 bg-black/20 p-4">
-                  <div className="text-base font-bold text-emerald-100">{item.query}</div>
-                  <div className="mt-2 flex flex-wrap gap-2 text-xs text-slate-300">
-                    <span className="rounded-full bg-white/10 px-2 py-1">{item.impressions} {gscCopy.impressions}</span>
-                    {item.position !== null && (
-                      <span className="rounded-full bg-white/10 px-2 py-1">{gscCopy.position}: {item.position.toFixed(1)}</span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
     </main>
   );
 }
