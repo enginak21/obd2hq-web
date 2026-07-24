@@ -19358,5 +19358,3515 @@
         "schemaDescription": "Guide complet des causes, diagnostics et contrôles à effectuer en cas de calage moteur sur Ford Focus."
       }
     }
+  },
+  {
+    "contentGroupId": "ford-focus-jerking",
+    "intentKey": "ford-focus_jerking",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "jerking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-silkeleme-yapiyor",
+        "title": "Ford Focus Silkeleme Yapıyor - Olası Nedenler ve Çözümler",
+        "metaDescription": "Ford Focus aracınız silkeliyor mu? Olası nedenler, yapılacak kontroller ve OBD2 kodlarıyla etkili çözüm yollarını keşfedin.",
+        "intro": "Ford Focus modellerinde yaşanan silkeleme sorunları çeşitli nedenlerden kaynaklanabilir. Bu durum sürüş güvenliğini ve konforunu etkileyebilir. Arızanın kaynağını doğru tespit etmek için öncelikle temel kontroller yapılmalı, ardından uygun teşhis adımları izlenmelidir. Bu rehberde Ford Focus silkeleme sorununun olası nedenleri, yapılacak kontroller ve sıklıkla karşılaşılan hatalar ele alınmıştır.",
+        "severity": "Araçta silkeleme problemi sürüş sırasında tehlikeli durumlara yol açabilir, detaylı kontrol edilmelidir.",
+        "driveAdvice": "Silkeleme çok şiddetliyse, motor zorlanabilir; aracınızla dikkatli sürün ve mümkünse en yakın servise gidin.",
+        "likelyCauses": [
+          "Yakıt enjeksiyon sistemi arızası veya kirlenmiş enjektörler",
+          "Ateşleme sisteminde problem (buji ya da bobin kaynaklı)",
+          "Hava emiş sistemi kaçakları veya tıkanıklık",
+          "Arızalı oksijen sensörleri",
+          "Kirli veya değiştirilmesi gereken yakıt filtresi"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla aracın hata kodlarını okuyun",
+          "Motorun hava filtresini ve emiş hortumlarını kontrol edin",
+          "Buji ve ateşleme bobinlerini muayene edin, gerekirse değiştirme işaretlerini değerlendirin",
+          "Yakıt filtresini kontrol edip, gerekiyorsa değiştirin",
+          "Enjektörlerin temizliğini ve çalışma durumunu test ettirin",
+          "Egzozdan alınan oksijen sensörleri değerlerini inceleyin"
+        ],
+        "firstChecks": [
+          "Araç yakıt seviyesi ve kalitesini kontrol edin",
+          "Motor hava filtresini gözle inceleyin",
+          "Buji ve buji kablolarının durumunu kontrol edin"
+        ],
+        "commonMistakes": [
+          "Silkeleme için doğrudan parça değiştirme yapmak",
+          "OBD2 okumadan sorunu teşhis etmeye çalışmak",
+          "Yakıt kalitesini dikkate almamak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Zenginleştirilmiş Hatası",
+          "P0420 - Katalitik Konvertör Verimlilik Alt Sınırında"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Arızaları ve Çözümleri",
+            "href": "/tr/ford-focus-arizalari-cozumleri"
+          },
+          {
+            "label": "OBD2 Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus silkeleme sorunu ne zaman ciddiye alınmalı?",
+            "a": "Silkeleme uzun süre devam ediyorsa veya motor performansı belirgin şekilde düştüyse mutlaka profesyonel müdahale gerektirir."
+          },
+          {
+            "q": "Silkeleme sorunu sadece yakıtla mı ilgilidir?",
+            "a": "Hayır, yakıt dışında ateşleme ve hava emiş sistemi de silkeleme sorununa neden olabilir."
+          },
+          {
+            "q": "Kendi kendime ne kontrol edebilirim?",
+            "a": "Öncelikle buji, hava filtresi ve yakıt kalitesini kontrol ederek başlayabilirsiniz."
+          }
+        ],
+        "schemaTitle": "Ford Focus Silkeleme Sorunu – Nedenleri, Teşhis ve Çözümler",
+        "schemaDescription": "Ford Focus araçlarda silkeleme sorunu olası nedenleri, teşhis adımları ve yaygın hatalarla ilgili detaylı rehber."
+      },
+      "en": {
+        "slug": "ford-focus-jerking-issue",
+        "title": "Ford Focus Jerking Issue – Causes, Checks and Diagnostics",
+        "metaDescription": "Experiencing jerking in your Ford Focus? Discover common causes, diagnostic steps, OBD2 codes, and practical checks before repairs.",
+        "intro": "Jerking during driving is a common symptom in Ford Focus vehicles that can arise from multiple factors. It affects driving comfort and safety, so identifying the underlying cause is crucial. This article provides detailed guidance on potential reasons, practical first checks, and diagnostic steps to help owners and technicians address the issue effectively.",
+        "severity": "Jerking can compromise vehicle control and safety; it should be diagnosed and resolved promptly.",
+        "driveAdvice": "If jerking is severe, drive carefully and avoid heavy acceleration until checked by a professional.",
+        "likelyCauses": [
+          "Fuel injection system malfunction or clogged injectors",
+          "Ignition system problems such as worn spark plugs or faulty coils",
+          "Air intake leaks or restrictions",
+          "Faulty oxygen sensors affecting air-fuel mixture",
+          "Dirty or clogged fuel filter"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to read fault codes",
+          "Inspect the air filter and intake hoses for leaks or damage",
+          "Check spark plugs and ignition coils for wear or damage",
+          "Inspect and possibly replace the fuel filter",
+          "Test fuel injectors for proper operation and cleanliness",
+          "Review oxygen sensor readings and catalytic converter status"
+        ],
+        "firstChecks": [
+          "Verify fuel quality and level",
+          "Check condition of air filter",
+          "Inspect spark plugs and ignition cables visually"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring OBD2 code readings before troubleshooting",
+          "Overlooking fuel quality as a factor"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Common Issues",
+            "href": "/en/ford-focus-common-issues"
+          },
+          {
+            "label": "How to Read OBD2 Codes",
+            "href": "/en/how-to-read-obd2-codes"
+          },
+          {
+            "label": "Fuel System Troubleshooting",
+            "href": "/en/fuel-system-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "When should jerking in my Ford Focus be a concern?",
+            "a": "If jerking persists or worsens, leading to poor engine performance, you should have the vehicle inspected promptly."
+          },
+          {
+            "q": "Is jerking always caused by fuel issues?",
+            "a": "Not necessarily; ignition and air intake problems can also cause jerking."
+          },
+          {
+            "q": "What initial checks can I perform myself?",
+            "a": "Start by inspecting spark plugs, air filter, and ensure good fuel quality."
+          }
+        ],
+        "schemaTitle": "Ford Focus Jerking Issue – Causes, Diagnostics & Fixes",
+        "schemaDescription": "Comprehensive guide on identifying and diagnosing jerking issues in Ford Focus vehicles, including common causes and practical fixes."
+      },
+      "de": {
+        "slug": "ford-focus-ruckeln-problem",
+        "title": "Ford Focus Ruckeln – Mögliche Ursachen und Diagnosehinweise",
+        "metaDescription": "Ford Focus ruckelt? Erfahren Sie mögliche Ursachen, Diagnose-Schritte, OBD2-Codes und praktische Kontrollmaßnahmen vor dem Teilewechsel.",
+        "intro": "Ein Ruckeln während der Fahrt ist bei Ford Focus Fahrzeugen ein häufiges Problem, das durch verschiedene Ursachen ausgelöst werden kann. Dieses Symptom beeinträchtigt sowohl Fahrkomfort als auch Sicherheit. Um den Fehler richtig zu erkennen, sind vor einer Reparatur grundlegende Kontrollen und gezielte Diagnose erforderlich. In diesem Beitrag stellen wir mögliche Ursachen, erste Prüfschritte und typische Fehlerquellen vor.",
+        "severity": "Das Ruckeln kann die Fahrzeugkontrolle beeinträchtigen, weshalb eine schnelle Diagnose wichtig ist.",
+        "driveAdvice": "Bei starkem Ruckeln sollte vorsichtig gefahren und schwere Lasten vermieden werden, bis eine Werkstatt das Fahrzeug überprüft hat.",
+        "likelyCauses": [
+          "Probleme mit der Kraftstoffeinspritzung oder verstopfte Einspritzdüsen",
+          "Zündungsprobleme wie verschlissene Zündkerzen oder defekte Zündspulen",
+          "Undichtigkeiten oder Verstopfungen im Ansaugsystem",
+          "Fehlerhafte Lambdasonden, die das Luft-Kraftstoff-Gemisch beeinflussen",
+          "Verschmutzter oder verstopfter Kraftstofffilter"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Diagnosegerät zur Fehlercode-Auslesung verwenden",
+          "Luftfilter und Ansaugschläuche auf Beschädigungen oder Undichtigkeiten prüfen",
+          "Zündkerzen und Zündspulen inspizieren",
+          "Kraftstofffilter kontrollieren und ggf. wechseln",
+          "Einspritzdüsen auf Funktionsfähigkeit und Sauberkeit testen",
+          "Lambdasonden-Werte und Katalysatorfunktion auswerten"
+        ],
+        "firstChecks": [
+          "Kraftstoffqualität und Füllstand prüfen",
+          "Zustand des Luftfilters kontrollieren",
+          "Zündkerzen und Zündkabel visuell inspizieren"
+        ],
+        "commonMistakes": [
+          "Teile tauschen ohne Diagnose",
+          "Fehlercodes ignorieren",
+          "Kraftstoffqualität vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufälliges/Mehrfaches Fehlzünden erkannt",
+          "P0171 - System zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem Wirkungsgrad unter Grenzwert"
+        ],
+        "internalLinks": [
+          {
+            "label": "Häufige Ford Focus Probleme",
+            "href": "/de/ford-focus-haufige-probleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes richtig lesen",
+            "href": "/de/obd2-fehlercodes-richtig-lesen"
+          },
+          {
+            "label": "Kraftstoffsystem-Fehlerbehebung",
+            "href": "/de/kraftstoffsystem-fehlerbehebung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wann ist das Ruckeln im Ford Focus kritisch?",
+            "a": "Wenn das Ruckeln dauerhaft oder stark auftritt und die Motorleistung deutlich reduziert wird, sollte das Fahrzeug überprüft werden."
+          },
+          {
+            "q": "Liegt das Ruckeln immer am Kraftstoffsystem?",
+            "a": "Nein, auch Zündungs- oder Ansaugsystem-Probleme können Auslöser sein."
+          },
+          {
+            "q": "Welche Erstprüfungen kann ich selbst durchführen?",
+            "a": "Kontrollieren Sie Zündkerzen, Luftfilter und die Kraftstoffqualität als erste Schritte."
+          }
+        ],
+        "schemaTitle": "Ford Focus Ruckeln – Ursachen, Diagnose und Lösung",
+        "schemaDescription": "Detaillierte Anleitung zur Identifikation und Behebung von Ruckelproblemen im Ford Focus mit praktischen Tipps und Fehlercodes."
+      },
+      "es": {
+        "slug": "ford-focus-motor-tiembla-jerking",
+        "title": "Ford Focus Motor Tiembla – Causas y Diagnóstico",
+        "metaDescription": "¿Tu Ford Focus tiembla? Descubre causas comunes, pasos para diagnóstico, códigos OBD2 y consejos prácticos antes de reparar.",
+        "intro": "El motor que tiembla en un Ford Focus puede ser provocado por múltiples factores que afectan la conducción y la seguridad. Para identificar la causa correctamente, es esencial realizar revisiones básicas y seguir un proceso de diagnóstico adecuado. En esta guía te explicamos las causas posibles, primeros chequeos a realizar y errores comunes que debes evitar.",
+        "severity": "El temblor puede afectar el control del vehículo, por lo que debe diagnosticarse a tiempo.",
+        "driveAdvice": "Si el temblor es fuerte, maneja con precaución y evita aceleraciones bruscas hasta que el vehículo sea revisado.",
+        "likelyCauses": [
+          "Fallas o contaminación en los inyectores de combustible",
+          "Problemas en el sistema de encendido como bujías o bobinas defectuosas",
+          "Fugas o bloqueos en el sistema de admisión de aire",
+          "Sensores de oxígeno defectuosos que afectan la mezcla aire-combustible",
+          "Filtro de combustible sucio o tapado"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de fallo con escáner OBD2",
+          "Inspeccionar filtro de aire y mangueras de admisión",
+          "Revisar bujías y bobinas de ignición",
+          "Verificar y cambiar el filtro de combustible si es necesario",
+          "Comprobar funcionamiento y limpieza de inyectores",
+          "Analizar valores de sensores de oxígeno y del catalizador"
+        ],
+        "firstChecks": [
+          "Comprobar calidad y nivel del combustible",
+          "Inspección visual del filtro de aire",
+          "Revisar bujías y cables de encendido"
+        ],
+        "commonMistakes": [
+          "Reemplazar piezas sin diagnóstico previo",
+          "Ignorar códigos OBD2 antes de buscar la causa",
+          "No considerar la calidad del combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple o aleatorio",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del sistema catalítico por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas comunes en Ford Focus",
+            "href": "/es/problemas-comunes-ford-focus"
+          },
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo debo preocuparme por el temblor en mi Ford Focus?",
+            "a": "Si el temblor persiste o empeora y afecta el rendimiento del motor, es importante hacer una revisión profesional."
+          },
+          {
+            "q": "¿El temblor siempre es por problemas de combustible?",
+            "a": "No necesariamente; el sistema de encendido y la admisión de aire también pueden provocar el temblor."
+          },
+          {
+            "q": "¿Qué revisiones iniciales puedo hacer yo mismo?",
+            "a": "Revisa las bujías, el filtro de aire y asegúrate de tener combustible de buena calidad."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor Tiembla – Causas, Diagnóstico y Soluciones",
+        "schemaDescription": "Guía completa para identificar y diagnosticar el temblor en Ford Focus, incluyendo causas comunes y pasos prácticos para solucionarlo."
+      },
+      "fr": {
+        "slug": "ford-focus-vibrations-moteur",
+        "title": "Ford Focus : Moteur qui Vibre – Causes et Diagnostic",
+        "metaDescription": "Votre Ford Focus vibre ? Découvrez les causes fréquentes, étapes de diagnostic, codes OBD2 et vérifications avant réparation.",
+        "intro": "Les vibrations du moteur sur un Ford Focus peuvent avoir plusieurs origines et nuire à la conduite ainsi qu’à la sécurité. Pour identifier correctement la source du problème, il est essentiel d’effectuer des vérifications simples puis un diagnostic précis. Ce guide présente les causes probables, les premières vérifications à faire, ainsi que les erreurs courantes à éviter.",
+        "severity": "Les vibrations peuvent compromettre la maîtrise du véhicule, un diagnostic rapide est conseillé.",
+        "driveAdvice": "En cas de vibrations fortes, conduisez prudemment et évitez les accélérations brusques en attendant le contrôle par un spécialiste.",
+        "likelyCauses": [
+          "Dysfonctionnement ou encrassement des injecteurs de carburant",
+          "Problèmes d’allumage : bougies ou bobines défectueuses",
+          "Fuites ou blocages dans le système d’admission d’air",
+          "Sondes lambda défaillantes influençant le mélange air-carburant",
+          "Filtre à carburant encrassé ou obstrué"
+        ],
+        "diagnosticSteps": [
+          "Utiliser un lecteur OBD2 pour relever les codes défaut",
+          "Contrôler le filtre à air et les durites d’admission d’air",
+          "Inspecter les bougies et bobines d’allumage",
+          "Vérifier et changer le filtre à carburant si nécessaire",
+          "Tester le bon fonctionnement et la propreté des injecteurs",
+          "Analyser les valeurs des sondes lambda et du catalyseur"
+        ],
+        "firstChecks": [
+          "Vérifier la qualité et le niveau de carburant",
+          "Inspecter visuellement le filtre à air",
+          "Contrôler l’état des bougies et câbles d’allumage"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Ignorer les codes OBD2 avant de chercher la cause",
+          "Ne pas tenir compte de la qualité du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0420 - Rendement du catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes fréquents sur Ford Focus",
+            "href": "/fr/problemes-frequents-ford-focus"
+          },
+          {
+            "label": "Comment lire les codes OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Diagnostic du système de carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quand faut-il s’alarmer face à des vibrations sur Ford Focus ?",
+            "a": "Si les vibrations persistent ou s’aggravent, affectant les performances du moteur, une inspection professionnelle est recommandée."
+          },
+          {
+            "q": "Les vibrations sont-elles toujours liées au carburant ?",
+            "a": "Pas nécessairement, des problèmes d’allumage ou d’admission peuvent aussi en être la cause."
+          },
+          {
+            "q": "Quelles vérifications simples puis-je faire moi-même ?",
+            "a": "Commencez par contrôler les bougies, le filtre à air et la qualité du carburant."
+          }
+        ],
+        "schemaTitle": "Ford Focus : Vibrations Moteur – Causes et Solutions",
+        "schemaDescription": "Guide complet pour identifier et diagnostiquer les vibrations moteur sur Ford Focus, avec causes communes et étapes pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-overheating",
+    "intentKey": "ford-focus_overheating",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "overheating",
+    "qualityScore": 93,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-hararet-yapiyor",
+        "title": "Ford Focus Hararet Yapıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Ford Focus hararet yapıyor sorununu anlamak için olası nedenler, ilk kontroller, teşhis adımları ve sık yapılan hataları keşfedin.",
+        "intro": "Ford Focus aracınızın aşırı ısınması hem sürüş güvenliğinizi hem de motor sağlığını tehdit eden önemli bir sorundur. Bu problem farklı nedenlerden kaynaklanabilir ve kesin teşhis için sistematik bir kontrol gerektirir. Parça değiştirmeden önce hangi adımları izlemeniz gerektiğini öğrenmelisiniz.",
+        "severity": "Orta düzeyde kritik; zamanında müdahale edilmezse motor hasarına yol açabilir.",
+        "driveAdvice": "Hararet artışı fark ederseniz motoru durdurup soğumasını bekleyin, radyatör kapağını açmayın, çekici çağırmanız önerilir.",
+        "likelyCauses": [
+          "Soğutma sıvısı seviyesi düşük veya sızıntı var",
+          "Termostat arızası nedeniyle soğutma devresi kapanıyor",
+          "Radyatörde tıkanıklık ya da pompa arızası",
+          "Fan motoru çalışmıyor veya yavaş dönüyor",
+          "Motor yağı eksik ya da kalitesiz"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Termostat işlevini test edin",
+          "Radyatör ve hortumlarda tıkanıklık olup olmadığını inceleyin",
+          "Fan motorunun doğru şekilde çalıştığını kontrol edin",
+          "Motor yağ seviyesini ve durumunu ölçün",
+          "OBD2 cihazı ile ilgili kodları okuyun"
+        ],
+        "firstChecks": [
+          "Soğutma sıvısı seviyesi",
+          "Motor yağ seviyesi",
+          "Fan motorunun çalışıp çalışmadığı"
+        ],
+        "commonMistakes": [
+          "Radyatör kapağını sıcak motorlarda açmak",
+          "Sadece su kullanıp soğutma sıvısını ihmal etmek",
+          "Fan kontrolünü atlamak"
+        ],
+        "relatedCodes": [
+          "P0128",
+          "P0480",
+          "P0217"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Soğutma Sistemi Sorunları",
+            "href": "/tr/ford-focus-sogutma-sistemi"
+          },
+          {
+            "label": "OBD2 Kodları ve Hararet Problemleri",
+            "href": "/tr/obd2-kodlari-hararet"
+          },
+          {
+            "label": "Termostat Arızası Belirtileri ve Çözümü",
+            "href": "/tr/termostat-arizasi-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus neden hararet yapar?",
+            "a": "Hararet çeşitli nedenlere bağlı olabilir; soğutma sıvısı azlığı, termostat arızası veya fan problemi gibi unsurlar en sık karşılaşılanlardır."
+          },
+          {
+            "q": "Hararet yükseldiğinde ne yapmalıyım?",
+            "a": "Motoru durdurup soğumasını bekleyin; radyatör kapağını açmayın ve yetkili servise başvurun."
+          },
+          {
+            "q": "OBD2 cihazıyla hararet sorunları nasıl teşhis edilir?",
+            "a": "OBD2 tarama cihazıyla ilgili hata kodları okunur, bu kodlar sorunun kaynağı hakkında detay verir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Hararet Sorunları: Nedenler ve Çözüm Yolları",
+        "schemaDescription": "Ford Focus araçlarda hararet sorunu gözlemlendiğinde yapılması gereken kontroller, olası nedenler ve yaygın hatalar ile çözüm önerileri."
+      },
+      "en": {
+        "slug": "ford-focus-overheating",
+        "title": "Ford Focus Overheating: Causes and Diagnostic Guide",
+        "metaDescription": "Learn the common causes, initial checks, diagnostic steps, and mistakes to avoid when your Ford Focus is overheating.",
+        "intro": "An overheating Ford Focus can indicate various issues that threaten both engine health and your safety. It’s essential to methodically check several components before deciding on part replacements. This guide helps you understand potential causes and practical checks to perform first.",
+        "severity": "Moderate severity; can lead to engine damage if untreated.",
+        "driveAdvice": "If overheating is detected, stop the engine and allow it to cool. Avoid opening the radiator cap when hot and seek professional help.",
+        "likelyCauses": [
+          "Low or leaking coolant level",
+          "Thermostat malfunction restricting coolant flow",
+          "Clogged radiator or faulty water pump",
+          "Cooling fan failure or slow operation",
+          "Low or poor engine oil quality"
+        ],
+        "diagnosticSteps": [
+          "Check coolant level",
+          "Test thermostat operation",
+          "Inspect radiator and hoses for blockages",
+          "Verify cooling fan function",
+          "Check engine oil level and condition",
+          "Read related OBD2 error codes"
+        ],
+        "firstChecks": [
+          "Coolant level",
+          "Engine oil level",
+          "Cooling fan operation"
+        ],
+        "commonMistakes": [
+          "Opening radiator cap while engine is hot",
+          "Using plain water instead of coolant",
+          "Skipping fan checks"
+        ],
+        "relatedCodes": [
+          "P0128",
+          "P0480",
+          "P0217"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Cooling System Problems",
+            "href": "/en/ford-focus-cooling-system"
+          },
+          {
+            "label": "OBD2 Codes for Overheating Issues",
+            "href": "/en/obd2-codes-overheating"
+          },
+          {
+            "label": "Thermostat Failure Symptoms and Fixes",
+            "href": "/en/thermostat-failure-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes my Ford Focus to overheat?",
+            "a": "Overheating can be caused by several factors including low coolant, thermostat faults, and fan issues."
+          },
+          {
+            "q": "What should I do if my car overheats?",
+            "a": "Stop the engine, let it cool down, do not open the radiator cap when hot, and get professional assistance."
+          },
+          {
+            "q": "How can OBD2 help diagnose overheating?",
+            "a": "OBD2 scanners read error codes related to cooling system faults that direct you to the source of the problem."
+          }
+        ],
+        "schemaTitle": "Ford Focus Overheating Causes and Diagnostic Tips",
+        "schemaDescription": "Detailed guide on diagnosing overheating issues in Ford Focus vehicles including common causes, prevention of common mistakes, and first checks."
+      },
+      "de": {
+        "slug": "ford-focus-ueberhitzung",
+        "title": "Ford Focus Überhitzung: Ursachen und Diagnoseschritte",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen, erste Prüfungen und Diagnoseschritte bei Überhitzung Ihres Ford Focus sowie vermeidbare Fehler.",
+        "intro": "Eine Überhitzung beim Ford Focus kann verschiedene Ursachen haben und stellt sowohl ein Sicherheits- als auch ein Motorschutzproblem dar. Um unnötigen Teileaustausch zu vermeiden, sollten Sie systematisch vorgehen und praktische Überprüfungen durchführen. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Mittlere Gefährdung; unbehandelt kann Motorschaden entstehen.",
+        "driveAdvice": "Bei Überhitzung Motor sofort abstellen und abkühlen lassen. Kühlerverschluss nicht öffnen und fachmännische Hilfe suchen.",
+        "likelyCauses": [
+          "Niedriger Kühlmittelstand oder Leckagen",
+          "Thermostatdefekt verhindert Kühlmittelzirkulation",
+          "Verstopfter Kühler oder defekte Wasserpumpe",
+          "Defekter oder langsamer Lüftermotor",
+          "Niedriger oder schlechter Motorölstand"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittelstand prüfen",
+          "Thermostatfunktion testen",
+          "Kühler und Schläuche auf Verstopfungen untersuchen",
+          "Lüfterfunktion kontrollieren",
+          "Motorölstand und Zustand prüfen",
+          "OBD2-Fehlercodes auslesen"
+        ],
+        "firstChecks": [
+          "Kühlmittelstand",
+          "Motorölstand",
+          "Lüfterbetrieb"
+        ],
+        "commonMistakes": [
+          "Kühlerdeckel bei heißem Motor öffnen",
+          "Nur Wasser nutzen und Kühlmittel vernachlässigen",
+          "Lüfterprüfung überspringen"
+        ],
+        "relatedCodes": [
+          "P0128",
+          "P0480",
+          "P0217"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Kühlsystemprobleme",
+            "href": "/de/ford-focus-kuehlsystem"
+          },
+          {
+            "label": "OBD2 Fehlercodes bei Überhitzung",
+            "href": "/de/obd2-codes-ueberhitzung"
+          },
+          {
+            "label": "Thermostatdefekt: Symptome und Lösungen",
+            "href": "/de/thermostat-defekt-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum überhitzt mein Ford Focus?",
+            "a": "Die Überhitzung kann durch niedrigen Kühlmittelstand, Thermostatfehler oder Lüfterprobleme verursacht werden."
+          },
+          {
+            "q": "Was tun bei Überhitzung?",
+            "a": "Motor abstellen, abkühlen lassen, Kühler nicht öffnen und Werkstatt kontaktieren."
+          },
+          {
+            "q": "Wie hilft OBD2 bei der Diagnose?",
+            "a": "OBD2 liefert Fehlercodes, die auf Problembereiche im Kühlsystem hinweisen."
+          }
+        ],
+        "schemaTitle": "Ford Focus Überhitzung: Ursachen, Diagnose und Tipps",
+        "schemaDescription": "Umfassender Leitfaden zur Erkennung und Behebung von Überhitzungsproblemen beim Ford Focus mit nützlichen Checks und Hinweisen zu Fehlercodes."
+      },
+      "es": {
+        "slug": "ford-focus-hararea",
+        "title": "Ford Focus Hararea: Causas y Guía de Diagnóstico",
+        "metaDescription": "Descubre causas comunes, revisiones iniciales y pasos para diagnosticar si tu Ford Focus está presentando problemas de calentamiento.",
+        "intro": "El sobrecalentamiento en un Ford Focus puede deberse a varias causas y representa un riesgo para la salud del motor y la seguridad. Antes de cambiar piezas, es vital realizar revisiones prácticas para identificar la posible fuente del problema.",
+        "severity": "Gravedad moderada; puede causar daños graves al motor si no se atiende.",
+        "driveAdvice": "Si notas que se calienta, detén el motor y deja que se enfríe. No abras el tapón del radiador en caliente y busca ayuda profesional.",
+        "likelyCauses": [
+          "Nivel bajo o pérdida de refrigerante",
+          "Termostato defectuoso que impide la circulación",
+          "Radiador obstruido o bomba de agua fallida",
+          "Ventilador no funciona o gira lento",
+          "Aceite de motor bajo o de mala calidad"
+        ],
+        "diagnosticSteps": [
+          "Verificar el nivel de refrigerante",
+          "Probar el termostato",
+          "Inspeccionar radiador y mangueras por obstrucciones",
+          "Comprobar que el ventilador funcione correctamente",
+          "Revisar nivel y estado del aceite de motor",
+          "Leer códigos OBD2 relacionados"
+        ],
+        "firstChecks": [
+          "Nivel de refrigerante",
+          "Nivel de aceite de motor",
+          "Funcionamiento del ventilador"
+        ],
+        "commonMistakes": [
+          "Abrir el tapón del radiador con el motor caliente",
+          "Usar solo agua en lugar de refrigerante",
+          "Saltar la revisión del ventilador"
+        ],
+        "relatedCodes": [
+          "P0128",
+          "P0480",
+          "P0217"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas del sistema de refrigeración Ford Focus",
+            "href": "/es/problemas-sistema-refrigeracion-ford-focus"
+          },
+          {
+            "label": "Códigos OBD2 por sobrecalentamiento",
+            "href": "/es/codigos-obd2-sobrecalentamiento"
+          },
+          {
+            "label": "Síntomas y soluciones del termostato",
+            "href": "/es/sintomas-soluciones-termostato-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué se calienta mi Ford Focus?",
+            "a": "El sobrecalentamiento puede originarse por bajo refrigerante, fallos en el termostato o problemas con el ventilador."
+          },
+          {
+            "q": "¿Qué hago si mi coche se sobrecalienta?",
+            "a": "Detén el motor, espera que se enfríe, no abras el tapón caliente y llama a un profesional."
+          },
+          {
+            "q": "¿Cómo ayuda el OBD2 a diagnosticar este problema?",
+            "a": "El escáner OBD2 revela códigos que indican fallos en el sistema de refrigeración o el motor."
+          }
+        ],
+        "schemaTitle": "Ford Focus sobrecalentamiento: causas y cómo diagnosticar",
+        "schemaDescription": "Guía completa con causas, revisión inicial, errores comunes y pasos de diagnóstico para problemas de sobrecalentamiento en Ford Focus."
+      },
+      "fr": {
+        "slug": "ford-focus-surchauffe",
+        "title": "Ford Focus Surchauffe : Causes et Guide de Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes, vérifications initiales et étapes de diagnostic quand votre Ford Focus surchauffe.",
+        "intro": "La surchauffe d’un Ford Focus peut provenir de multiples facteurs, mettant en danger la performance du moteur et la sécurité. Avant de changer des pièces, il est important d’effectuer des contrôles pratiques pour cibler la source du problème.",
+        "severity": "Gravité modérée; risque de dommages moteur sans intervention rapide.",
+        "driveAdvice": "En cas de surchauffe, arrêtez le moteur et laissez-le refroidir. N’ouvrez pas le bouchon du radiateur à chaud et consultez un professionnel.",
+        "likelyCauses": [
+          "Niveau de liquide de refroidissement bas ou fuite",
+          "Thermostat défectueux bloquant la circulation",
+          "Radiateur bouché ou pompe à eau défaillante",
+          "Ventilateur en panne ou faible rotation",
+          "Niveau d’huile moteur bas ou qualité insuffisante"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau de liquide de refroidissement",
+          "Tester le fonctionnement du thermostat",
+          "Inspecter radiateur et durites pour obstruction",
+          "Vérifier le bon fonctionnement du ventilateur",
+          "Vérifier le niveau et l’état de l’huile moteur",
+          "Lire les codes d’erreur OBD2 associés"
+        ],
+        "firstChecks": [
+          "Niveau du liquide de refroidissement",
+          "Niveau d’huile moteur",
+          "Fonctionnement du ventilateur"
+        ],
+        "commonMistakes": [
+          "Ouvrir le bouchon du radiateur moteur chaud",
+          "Utiliser uniquement de l’eau au lieu du liquide refroidissant",
+          "Négliger la vérification du ventilateur"
+        ],
+        "relatedCodes": [
+          "P0128",
+          "P0480",
+          "P0217"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes système refroidissement Ford Focus",
+            "href": "/fr/problemes-refroidissement-ford-focus"
+          },
+          {
+            "label": "Codes OBD2 liés à la surchauffe",
+            "href": "/fr/codes-obd2-surchauffe"
+          },
+          {
+            "label": "Symptômes et dépannage thermostat",
+            "href": "/fr/thermostat-defectueux-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Ford Focus surchauffe-t-il ?",
+            "a": "La surchauffe peut venir d’un niveau bas de liquide refroidissant, un thermostat défaillant ou un ventilateur défectueux."
+          },
+          {
+            "q": "Que faire en cas de surchauffe ?",
+            "a": "Arrêtez le moteur, laissez-le refroidir, n’ouvrez pas le bouchon chaud et consultez un professionnel."
+          },
+          {
+            "q": "Comment l’OBD2 aide-t-il au diagnostic ?",
+            "a": "Le scanner OBD2 lit les codes d’erreur pour orienter vers la source du problème de surchauffe."
+          }
+        ],
+        "schemaTitle": "Surchauffe Ford Focus : causes et diagnostic expert",
+        "schemaDescription": "Guide complet pour identifier et traiter la surchauffe sur Ford Focus avec causes, erreurs fréquentes et procédures de contrôle."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-fuel-smell",
+    "intentKey": "ford-focus_fuel_smell",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "fuel_smell",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-benzin-kokusu-geliyor",
+        "title": "Ford Focus Modelinde Benzin Kokusu Gelmesi: Olası Sebepler ve Çözümler",
+        "metaDescription": "Ford Focus'ta benzin kokusu hissediyorsanız, olası sebepleri ve kontrol etmeniz gereken adımları öğrenin. Doğru teşhis için uzman rehberi burada.",
+        "intro": "Ford Focus aracınızda benzin kokusu almak, güvenlik açısından önem taşıyan bir durumdur. Bu kokunun farklı sebepleri olabilir ve hemen panik yapmadan bazı basit kontroller yapmanız faydalı olacaktır. Yakıt sistemi sızıntılarını, hava filtresi ve depo kapaklarını kontrol etmek, sorunun kaynağına ulaşmayı kolaylaştırabilir.",
+        "severity": "Orta derecede, yanıcı gaz sızıntısı nedeniyle dikkatli olunmalı.",
+        "driveAdvice": "Kokuyu aldıktan sonra aracı kullanmaya devam etmeyin ve kapalı alanlarda bekletmeyin. Yakıt sızıntısı varsa risk oluşturabilir.",
+        "likelyCauses": [
+          "Yakıt hortumu veya regülatöründe sızıntı",
+          "Yakıt deposu kapağının düzgün kapanmaması",
+          "Bozuk yakıt enjektörleri",
+          "Hava filtresinde aşırı benzin buharı birikmesi",
+          "Egzoz sisteminde yakıt kaçağı"
+        ],
+        "diagnosticSteps": [
+          "Yakıt hortumlarını ve regülatörü yakından kontrol edin.",
+          "Yakıt deposu kapağının tam oturduğundan emin olun.",
+          "Yakıt enjektörlerini test için teknik ekipmana bağlayın.",
+          "Hava filtresini çıkarıp bakım durumunu kontrol edin.",
+          "Egzoz sistemi ve manifoldu sızıntı açısından inceleyin.",
+          "Motor bölümünde yakıt kokusunun kaynağına yönelik detaylı görsel kontrol yapın."
+        ],
+        "firstChecks": [
+          "Araç kapağını açıp yakıt deposu etrafını kontrol edin.",
+          "Motor sıcaklığından dolayı parazit kokular oluşmuş olabilir, motoru kapatıp bekleyin.",
+          "Yakıt deposu kapağı contalarını inceleyin, hasar varsa değiştirin."
+        ],
+        "commonMistakes": [
+          "Kokunun nedenini sadece yakıt pompasına bağlamak.",
+          "Hemen parça değiştirmeye yönelmek yerine öncelikle görsel kontrol atlamak.",
+          "Profesyonel teşhis yaptırmadan piyasadaki genel önerilere uymak."
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Havası Oranı Düşük (Zengin Karışım)",
+          "P0455 - Yakıt Sistemi Düşük Kısa Devre / Sızıntı Tespit",
+          "P0300 - Silindir Ateşleme Düzensizliği"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Arıza Kodları",
+            "href": "/tr/ford-focus-ariza-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Problemlerini Tanıma",
+            "href": "/tr/yakit-sistemi-problemleri"
+          },
+          {
+            "label": "Motor Yakıt Enjektörleri Testi",
+            "href": "/tr/motor-yakit-enjektoru-testi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus'ta benzin kokusu neden gelir?",
+            "a": "Birçok sebebi olabilir; sızıntı yapan yakıt hortumları, kapakların tam kapanmaması ya da bozuk enjektörler bunlara örnektir."
+          },
+          {
+            "q": "Benzin kokusunu nasıl güvenli şekilde kontrol edebilirim?",
+            "a": "Aracı kapalı alanlarda tutmayın, kontrolleri motor soğukken yapın ve yakıt sızıntısı varsa mutlaka profesyonelden yardım alın."
+          },
+          {
+            "q": "OBD2 kodları benzin kokusunu tespit eder mi?",
+            "a": "Bazı yakıt trim ve sızıntı kodları benzin kokusu sorunlarına işaret eder, bunun için kod tarayıcı ile kontrol faydalıdır."
+          }
+        ],
+        "schemaTitle": "Ford Focus'ta Benzin Kokusu: Nedenleri ve Çözüm Adımları",
+        "schemaDescription": "Ford Focus aracınızda benzin kokusu hissediyorsanız, olası nedenler ve yapılması gereken kontrolleri kapsamlı şekilde öğrenin."
+      },
+      "en": {
+        "slug": "ford-focus-fuel-smell-causes",
+        "title": "Ford Focus Fuel Smell: Common Causes and Diagnostic Tips",
+        "metaDescription": "Detecting a fuel smell in a Ford Focus? Learn possible causes and practical diagnostic steps before replacing parts to ensure safe driving.",
+        "intro": "If you notice a strong fuel smell in your Ford Focus, it may indicate several potential issues within the fuel system or surrounding components. It's important to carry out practical checks to pinpoint the cause without assuming a single fault. This guide covers common causes, initial inspections, and mistakes to avoid before any replacements.",
+        "severity": "Moderate: A fuel smell can indicate a flammable leak requiring immediate attention.",
+        "driveAdvice": "Avoid driving the vehicle until you locate the source of the smell, especially in enclosed spaces, to prevent fire hazards.",
+        "likelyCauses": [
+          "Leaking fuel hoses or regulator",
+          "Improperly sealed fuel tank cap",
+          "Faulty fuel injectors",
+          "Excess fuel vapor buildup in the air filter",
+          "Fuel leakage in the exhaust manifold"
+        ],
+        "diagnosticSteps": [
+          "Inspect fuel hoses and regulator for visible leaks.",
+          "Check the fuel tank cap for proper sealing.",
+          "Test fuel injectors with diagnostic tools.",
+          "Examine the air filter for signs of fuel vapor saturation.",
+          "Inspect exhaust manifold area for fuel leakage.",
+          "Conduct thorough visual inspection around engine bay."
+        ],
+        "firstChecks": [
+          "Open the fuel tank to check for spillage or odors.",
+          "Allow the engine to cool and verify if the smell persists.",
+          "Inspect seals and gaskets around the fuel tank cap."
+        ],
+        "commonMistakes": [
+          "Assuming the fuel pump is always the cause without checks.",
+          "Replacing parts prematurely without proper diagnosis.",
+          "Relying solely on generic advice instead of model-specific checks."
+        ],
+        "relatedCodes": [
+          "P0171 - Fuel Trim System Lean",
+          "P0455 - Evaporative Emission System Leak Detected",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fault Codes",
+            "href": "/en/ford-focus-obd2-fault-codes"
+          },
+          {
+            "label": "Diagnosing Fuel System Issues",
+            "href": "/en/diagnosing-fuel-system-issues"
+          },
+          {
+            "label": "Testing Fuel Injectors",
+            "href": "/en/testing-fuel-injectors"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes a fuel smell in Ford Focus?",
+            "a": "Common causes include leaks in fuel hoses, faulty injectors, or an improperly sealed fuel tank cap."
+          },
+          {
+            "q": "How can I safely check for fuel smell?",
+            "a": "Perform checks in a well-ventilated area with the engine off and cool. Avoid ignition sources."
+          },
+          {
+            "q": "Do OBD2 codes detect fuel smell issues?",
+            "a": "While there’s no direct code for fuel smell, codes related to fuel trim and EVAP leaks can help identify underlying problems."
+          }
+        ],
+        "schemaTitle": "Ford Focus Fuel Smell: Diagnostic Guide and Solutions",
+        "schemaDescription": "Comprehensive guide for Ford Focus owners to identify causes and resolve fuel smell issues effectively and safely."
+      },
+      "de": {
+        "slug": "ford-focus-kraftstoffgeruch-ursachen",
+        "title": "Kraftstoffgeruch im Ford Focus: Häufige Ursachen und Diagnose",
+        "metaDescription": "Im Ford Focus Kraftstoffgeruch wahrgenommen? Erfahren Sie mögliche Ursachen und praktische Diagnose-Tipps vor dem Austausch von Bauteilen.",
+        "intro": "Wenn im Ford Focus ein Kraftstoffgeruch auftritt, kann dies verschiedene Ursachen haben – von undichten Leitungen bis hin zu Problemen mit der Kraftstoffanlage. Bevor Sie Teile austauschen, sollten Sie einige einfache Prüfungen durchführen, um die Quelle zu finden. Diese Anleitung erklärt die häufigsten Ursachen, die ersten Kontrollschritte und vermeidet typische Fehler.",
+        "severity": "Mäßig: Kraftstoffgeruch kann auf ein Leck hinweisen und stellt ein Sicherheitsrisiko dar.",
+        "driveAdvice": "Fahren Sie das Fahrzeug nicht weiter, bis der Ursprung des Geruchs geklärt ist. Vermeiden Sie das Parken in geschlossenen Räumen.",
+        "likelyCauses": [
+          "Leck an Kraftstoffschläuchen oder Regler",
+          "Nicht korrekt verschlossener Tankdeckel",
+          "Defekte Einspritzventile",
+          "Benzindampfansammlung im Luftfilter",
+          "Kraftstoffleck im Auspuffkrümmer"
+        ],
+        "diagnosticSteps": [
+          "Kraftstoffschläuche und Regler auf sichtbare Lecks überprüfen.",
+          "Tankdeckel auf Dichtheit prüfen.",
+          "Einspritzventile mit Diagnosegerät testen.",
+          "Luftfilter auf Kraftstoffrückstände prüfen.",
+          "Auspuffkrümmerbereich auf Kraftstofflecks kontrollieren.",
+          "Ausgiebige Sichtprüfung im Motorraum durchführen."
+        ],
+        "firstChecks": [
+          "Tank öffnen und auf ausgelaufenen Kraftstoff oder Gerüche achten.",
+          "Motor abkühlen lassen und dann überprüfen, ob der Geruch bleibt.",
+          "Dichtungen und Dichtungen rund um den Tankdeckel prüfen."
+        ],
+        "commonMistakes": [
+          "Automatisch die Kraftstoffpumpe als Ursache annehmen.",
+          "Teile tauschen ohne genaue Diagnose.",
+          "Nur allgemeine Hinweise befolgen und keine modellspezifischen Prüfungen machen."
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoff-Luft-Verhältnis zu mager",
+          "P0455 - Verdunstungssystem Leck erkannt",
+          "P0300 - Zündaussetzer in mehreren Zylindern"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes",
+            "href": "/de/ford-focus-obd2-fehlercodes"
+          },
+          {
+            "label": "Kraftstoffsystem-Probleme diagnostizieren",
+            "href": "/de/kraftstoffsystem-probleme-diagnostizieren"
+          },
+          {
+            "label": "Einspritzventile testen",
+            "href": "/de/einspritzventile-testen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wodurch entsteht Kraftstoffgeruch im Ford Focus?",
+            "a": "Typische Ursachen sind undichte Schläuche, defekte Einspritzventile oder ein nicht richtig verschlossener Tankdeckel."
+          },
+          {
+            "q": "Wie kann ich Kraftstoffgeruch sicher prüfen?",
+            "a": "Am besten bei ausgeschaltetem kalten Motor und guter Belüftung kontrollieren, Zündquellen vermeiden."
+          },
+          {
+            "q": "Erkennen OBD2-Codes Kraftstoffgerüche?",
+            "a": "Direkt nein, aber Codes zu Kraftstofftrimm und Verdunstungssystem können Hinweise liefern."
+          }
+        ],
+        "schemaTitle": "Ford Focus Kraftstoffgeruch: Diagnose und Lösung",
+        "schemaDescription": "Umfassender Leitfaden für Ford Focus Besitzer zur Identifikation und Behandlung von Kraftstoffgeruchsproblemen."
+      },
+      "es": {
+        "slug": "ford-focus-olor-a-gasolina-problemas",
+        "title": "Olor a Gasolina en Ford Focus: Causas Comunes y Diagnóstico",
+        "metaDescription": "¿Sientes olor a gasolina en tu Ford Focus? Descubre posibles causas y pasos prácticos para diagnosticar antes de reemplazar piezas.",
+        "intro": "Sentir olor a gasolina en un Ford Focus puede ser señal de varios problemas relacionados con el sistema de combustible o sus componentes. Antes de realizar reparaciones costosas, es importante hacer unas revisiones básicas que te ayudarán a identificar la fuente del olor y asegurar un diagnóstico correcto sin descartar causas posibles.",
+        "severity": "Moderado: El olor a gasolina puede indicar fugas inflamables que requieren atención inmediata.",
+        "driveAdvice": "Evita conducir el vehículo hasta localizar el origen del olor, especialmente en espacios cerrados para prevenir riesgos de incendio.",
+        "likelyCauses": [
+          "Fugas en las mangueras de combustible o en el regulador",
+          "Tapón del depósito mal sellado",
+          "Inyectores de combustible defectuosos",
+          "Acumulación excesiva de vapor de gasolina en el filtro de aire",
+          "Fugas de combustible en el colector de escape"
+        ],
+        "diagnosticSteps": [
+          "Inspecciona visualmente las mangueras y el regulador de combustible en busca de fugas.",
+          "Verifica que el tapón del depósito esté perfectamente sellado.",
+          "Prueba los inyectores de combustible con equipo diagnóstico.",
+          "Revisa el filtro de aire para detectar saturación de vapores de gasolina.",
+          "Examina el colector de escape en busca de fugas.",
+          "Realiza una inspección visual completa del compartimento del motor."
+        ],
+        "firstChecks": [
+          "Abre el depósito de gasolina y verifica si hay derrames o olores fuertes.",
+          "Deja enfriar el motor y verifica si el olor persiste.",
+          "Revisa los sellos y la junta del tapón del depósito."
+        ],
+        "commonMistakes": [
+          "Asumir que siempre es la bomba de combustible sin revisar.",
+          "Cambiar piezas sin diagnóstico adecuado.",
+          "Confiar solo en consejos generales sin hacer revisiones específicas del modelo."
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre en el sistema de combustible",
+          "P0455 - Fuga detectada en sistema de emisiones evaporativas",
+          "P0300 - Fallo de encendido aleatorio múltiple"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Ford Focus",
+            "href": "/es/codigos-ford-focus"
+          },
+          {
+            "label": "Diagnóstico de problemas en sistema de combustible",
+            "href": "/es/diagnostico-problemas-combustible"
+          },
+          {
+            "label": "Cómo probar inyectores de combustible",
+            "href": "/es/probar-inyectores-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué huele a gasolina mi Ford Focus?",
+            "a": "Puede deberse a mangueras con fugas, inyectores defectuosos o tapón del depósito mal ajustado."
+          },
+          {
+            "q": "¿Cómo puedo revisar el olor a gasolina de forma segura?",
+            "a": "Hazlo en áreas bien ventiladas con el motor apagado y evita fuentes de ignición."
+          },
+          {
+            "q": "¿Los códigos OBD2 detectan olores a gasolina?",
+            "a": "No directamente, pero códigos relacionados con mezcla de combustible y fugas evaporativas pueden ayudar a identificar el problema."
+          }
+        ],
+        "schemaTitle": "Olor a gasolina en Ford Focus: Guía de diagnóstico y soluciones",
+        "schemaDescription": "Guía integral para propietarios de Ford Focus para identificar causas y resolver problemas de olor a gasolina de forma segura."
+      },
+      "fr": {
+        "slug": "ford-focus-odeur-essence-causes",
+        "title": "Odeur d’Essence dans Ford Focus : Causes Fréquentes et Diagnostic",
+        "metaDescription": "Vous sentez une odeur d’essence dans votre Ford Focus ? Découvrez les causes possibles et les étapes pour diagnostiquer avant tout remplacement.",
+        "intro": "Une odeur d’essence dans une Ford Focus peut indiquer plusieurs problèmes liés au système de carburant ou à ses composants. Il est essentiel d’effectuer quelques contrôles simples afin d’identifier la source sans présumer d’un défaut unique. Ce guide vous aidera à comprendre les causes courantes, les vérifications initiales et les erreurs à éviter.",
+        "severity": "Modéré : une odeur d’essence peut signaler une fuite inflammable nécessitant une attention rapide.",
+        "driveAdvice": "Évitez de conduire le véhicule jusqu’à ce que vous ayez localisé la source de l’odeur, surtout dans un espace fermé, pour prévenir tout risque d’incendie.",
+        "likelyCauses": [
+          "Fuite sur les durites ou le régulateur de carburant",
+          "Bouchon de réservoir mal fermé",
+          "Injecteurs défectueux",
+          "Accumulation de vapeur d’essence dans le filtre à air",
+          "Fuite de carburant au niveau du collecteur d’échappement"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez visuellement les durites et le régulateur pour des fuites éventuelles.",
+          "Contrôlez l’étanchéité du bouchon de réservoir.",
+          "Testez les injecteurs avec un outil de diagnostic.",
+          "Examinez le filtre à air pour détecter une saturation en vapeurs d’essence.",
+          "Inspectez la zone du collecteur d’échappement pour une fuite.",
+          "Effectuez une inspection visuelle complète autour du moteur."
+        ],
+        "firstChecks": [
+          "Ouvrez le réservoir et cherchez des fuites ou des odeurs fortes.",
+          "Laissez refroidir le moteur et vérifiez si l’odeur persiste.",
+          "Contrôlez les joints autour du bouchon de réservoir."
+        ],
+        "commonMistakes": [
+          "Supposer que la pompe à essence est toujours en cause, sans vérification.",
+          "Remplacer des pièces sans diagnostic complet.",
+          "Se fier uniquement à des conseils généraux sans vérifier les spécificités du modèle."
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange pauvre détecté",
+          "P0455 - Fuite détectée dans le système d’évaporation",
+          "P0300 - Ratés d’allumage multiples aléatoires"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 Ford Focus",
+            "href": "/fr/codes-defaut-ford-focus"
+          },
+          {
+            "label": "Diagnostic des problèmes de carburant",
+            "href": "/fr/diagnostic-problemes-carburant"
+          },
+          {
+            "label": "Test des injecteurs d’essence",
+            "href": "/fr/test-injecteurs-essence"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes de l’odeur d’essence dans une Ford Focus ?",
+            "a": "Les durites percées, les injecteurs défaillants ou un bouchon de réservoir mal fermé sont des causes fréquentes."
+          },
+          {
+            "q": "Comment vérifier l’odeur d’essence en toute sécurité ?",
+            "a": "Effectuez les contrôles moteur froid et dans un endroit bien ventilé, en évitant toute source d’allumage."
+          },
+          {
+            "q": "Les codes OBD2 détectent-ils une odeur d’essence ?",
+            "a": "Non directement, mais les codes liés au mélange carburant et aux fuites du système évaporatif peuvent aider."
+          }
+        ],
+        "schemaTitle": "Odeur d’essence dans Ford Focus : Guide de diagnostic et solutions",
+        "schemaDescription": "Guide complet pour identifier et résoudre les problèmes d’odeur d’essence sur Ford Focus en toute sécurité."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-oil-smell",
+    "intentKey": "ford-focus_oil_smell",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "oil_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-yanik-yag-kokusu",
+        "title": "Ford Focus Yanık Yağ Kokusu Neden Olur? Nasıl Anlaşılır?",
+        "metaDescription": "Ford Focus aracınızda yanık yağ kokusu mu geliyor? Olası nedenler, yapılması gerekenler ve sık yapılan hatalar hakkında uzman önerileri.",
+        "intro": "Ford Focus araçlarda yanık yağ kokusunun çeşitli sebepleri olabilir ve bu durum aracın motor sağlığı için önemli bir uyarıdır. Yanık yağ kokusunu hissettiğinizde, hemen parçaları değiştirmeden önce bazı basit kontroller yaparak sorunun kaynağını tespit etmek önemlidir. Bu rehberde, olası nedenler, önerilen tespit yöntemleri ve dikkat edilmesi gereken yaygın hatalar açıklanacaktır.",
+        "severity": "Orta riskli; kokunun kaynağı temizlenip sorun giderilene kadar sürüşe dikkat edilmelidir.",
+        "driveAdvice": "Kokunun yanında motor performansı veya sıcaklıkla ilgili gariplikler varsa aracı kısa sürede servise götürün. Aksi halde kısa mesafede kullanılabilir.",
+        "likelyCauses": [
+          "Motor yağ sızıntıları ve parçaların aşırı ısınması",
+          "Yağ filtresi veya conta sızıntıları",
+          "Egzoz manifoldu yakınında yağ kalıntıları",
+          "Hava filtresi kutusundaki yağ buharları",
+          "Motor havalandırma sistemi tıkanıklığı"
+        ],
+        "diagnosticSteps": [
+          "Motor sıcaklığı normal mi kontrol edin",
+          "Yağ seviyesini ve kalitesini ölçün",
+          "Motor altı ve çevresinde yağ sızıntısı arayın",
+          "Egzoz manifoldu ve çevresini kontrol edin",
+          "Hava filtresi kutusunu açıp yağ buharı var mı bakın",
+          "Motor havalandırma hortumlarını inceleyin, tıkanıklık var mı kontrol edin"
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesi ve sızıntı kontrolü",
+          "Egzoz ve manifoldu çevresi yağ kalıntıları",
+          "Hava filtresi ve motor kapağı altı kontrolleri"
+        ],
+        "commonMistakes": [
+          "Kokuyu sadece egzoz kaynaklı sanmak",
+          "Yağ değişimi yapmadan önce sızıntı kontrolü atlamak",
+          "Hava filtresi temizliğini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0524"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Arıza Kodları",
+            "href": "/tr/ford-focus/ariza-kodlari"
+          },
+          {
+            "label": "Motor Yağı Kontrolü ve Değişimi",
+            "href": "/tr/bakim/motor-yagi-kontrolde"
+          },
+          {
+            "label": "Egzoz Sistemleri ve Problemleri",
+            "href": "/tr/ariza/egzoz-sistemi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Yanık yağ kokusunu ilk ne zaman fark etmeliyim?",
+            "a": "Kokuyu fark eder etmez aracın motoru ve altı kontrol edilmeli; geçici hafif kokular bile ileride ciddi sorun oluşturabilir."
+          },
+          {
+            "q": "Ford Focus motor yağımı kendim değiştirebilir miyim?",
+            "a": "Evet, temel bilgi ve uygun ekipmanla kendiniz yapabilirsiniz ancak sızıntı varsa önce bunun tamiri gerekir."
+          },
+          {
+            "q": "OBD2 cihazı yanık yağ kokusunu hangi kodlarla ilişkilendirir?",
+            "a": "Genellikle motor verimliliğini veya emisyonu etkileyen P0420, hava-yakıt karışımı P0171 ve yağ basıncı P0524 kodları görülebilir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Yanık Yağ Kokusu Sorunları ve Çözümleri",
+        "schemaDescription": "Ford Focus araçlarında yanık yağ kokusunun olası nedenleri, teşhis adımları ve sık yapılan hatalar. Motor sağlığınızı bu uzman rehberiyle koruyun."
+      },
+      "en": {
+        "slug": "ford-focus-burning-oil-smell",
+        "title": "Ford Focus Burning Oil Smell Causes and Diagnosis",
+        "metaDescription": "Discover common causes of a burning oil smell in Ford Focus vehicles. Learn practical diagnosis steps and avoid frequent mistakes before part replacements.",
+        "intro": "If you notice a burning oil smell in your Ford Focus, it's a sign that requires careful attention. Various factors can trigger this odor, ranging from minor leaks to engine ventilation issues. Before rushing to replace parts, it’s advisable to perform basic checks and follow systematic diagnostics to identify the root cause safely.",
+        "severity": "Moderate; avoid prolonged driving until issue is identified and fixed to prevent engine damage.",
+        "driveAdvice": "Drive cautiously and inspect immediate surroundings of the engine. Visit a professional if the smell intensifies or is accompanied by performance changes.",
+        "likelyCauses": [
+          "Oil leaks on hot engine parts",
+          "Worn or leaking oil filter gasket",
+          "Oil residue around exhaust manifold",
+          "Clogged PCV system causing oil vapor buildup",
+          "Air filter box contamination with oil"
+        ],
+        "diagnosticSteps": [
+          "Check engine temperature for overheating",
+          "Inspect oil level and oil condition",
+          "Look for oil leaks under vehicle and around engine",
+          "Examine exhaust manifold area for oil traces",
+          "Remove and inspect air filter box for oil vapors",
+          "Check PCV hoses and valves for blockages"
+        ],
+        "firstChecks": [
+          "Verify oil level and look for fresh leaks",
+          "Inspect exhaust manifold for oil accumulation",
+          "Check air filter and motor cover area"
+        ],
+        "commonMistakes": [
+          "Assuming smell is only from exhaust",
+          "Replacing oil before confirming leak source",
+          "Ignoring air filter and ventilation components"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0524"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Trouble Codes",
+            "href": "/en/ford-focus/trouble-codes"
+          },
+          {
+            "label": "Oil Checking and Replacement Guide",
+            "href": "/en/maintenance/oil-check"
+          },
+          {
+            "label": "Exhaust System Diagnostics",
+            "href": "/en/diagnostics/exhaust-system"
+          }
+        ],
+        "faq": [
+          {
+            "q": "When should I first notice a burning oil smell?",
+            "a": "As soon as you detect it, inspect the engine area because even mild odors can indicate deeper issues."
+          },
+          {
+            "q": "Can I change the engine oil in my Ford Focus by myself?",
+            "a": "Yes, if you have the basic knowledge and tools. But ensure to fix any leaks before oil changes."
+          },
+          {
+            "q": "What OBD2 codes might relate to oil smell issues?",
+            "a": "Codes affecting engine efficiency like P0420, mixture issues like P0171, or oil pressure sensors like P0524 may appear."
+          }
+        ],
+        "schemaTitle": "Ford Focus Burning Oil Smell Causes & Diagnosis",
+        "schemaDescription": "Expert insights on burning oil smell in Ford Focus vehicles including common causes, step-by-step diagnostics, and prevention tips."
+      },
+      "de": {
+        "slug": "ford-focus-brennender-oelgeruch",
+        "title": "Ford Focus Brennender Ölgeruch – Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, warum Ihr Ford Focus nach verbranntem Öl riecht. Praktische Prüfungen, typische Fehler und Diagnose-Tipps für eine gezielte Fehlersuche.",
+        "intro": "Ein verbrannter Ölgeruch im Ford Focus kann verschiedene Ursachen haben und sollte nicht ignoriert werden. Oft hängen solche Gerüche mit undichten Stellen oder Problemen im Motorbelüftungssystem zusammen. Vor dem Austausch von Teilen ist es ratsam, einfache Kontrollschritte durchzuführen, um die genaue Ursache zu finden und unnötige Reparaturen zu vermeiden.",
+        "severity": "Mittlere Dringlichkeit; bei Auftreten das Fahrzeug schonend fahren und Prüfung vornehmen.",
+        "driveAdvice": "Fahren Sie vorsichtig und lassen Sie den Motor überprüfen, besonders wenn Leistungsverlust oder Überhitzung auftreten.",
+        "likelyCauses": [
+          "Öllecks an heißen Motorstellen",
+          "Undichte Ölfilterdichtung",
+          "Ölrückstände am Abgaskrümmer",
+          "Verstopftes Kurbelgehäuseentlüftungssystem (PCV)",
+          "Ölablagerungen im Luftfilterkasten"
+        ],
+        "diagnosticSteps": [
+          "Motortemperatur auf Überhitzung prüfen",
+          "Ölstand und Ölqualität kontrollieren",
+          "Nach frischen Öllecks am Fahrzeugunterboden suchen",
+          "Abgaskrümmer auf Ölspuren untersuchen",
+          "Luftfilterkasten auf Öldämpfe prüfen",
+          "PCV-Schläuche auf Verstopfungen kontrollieren"
+        ],
+        "firstChecks": [
+          "Ölstand und eventuelle Lecks prüfen",
+          "Abgaskrümmer auf Ölverschmutzungen überprüfen",
+          "Luftfilter und Motorabdeckung inspizieren"
+        ],
+        "commonMistakes": [
+          "Geruch nur vom Auspuff stammend annehmen",
+          "Ölwechsel ohne vorherigen Lecktest durchführen",
+          "Belüftungssystem und Luftfilter übersehen"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0524"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Fehlercodes",
+            "href": "/de/ford-focus/fehlercodes"
+          },
+          {
+            "label": "Motoröl prüfen und wechseln",
+            "href": "/de/wartung/motorol-pruefen"
+          },
+          {
+            "label": "Abgassystem Diagnose",
+            "href": "/de/diagnose/abgassystem"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wann sollte ich den verbrannten Ölgeruch bemerken?",
+            "a": "Sobald der Geruch auftritt, sollte der Motorbereich geprüft werden, da auch leichte Gerüche auf größere Probleme hinweisen können."
+          },
+          {
+            "q": "Kann ich selbst das Motoröl meines Ford Focus wechseln?",
+            "a": "Ja, mit dem nötigen Wissen und Werkzeug ist das möglich. Vor dem Ölwechsel sollten jedoch Lecks beseitigt werden."
+          },
+          {
+            "q": "Welche OBD2-Codes sind bei Ölgeruch relevant?",
+            "a": "Typisch sind Codes wie P0420 (Katalysatorleistung), P0171 (fettes Gemisch) und P0524 (Öldrucksensor)."
+          }
+        ],
+        "schemaTitle": "Ford Focus Brennender Ölgeruch – Ursachen und Lösung",
+        "schemaDescription": "Fachkundige Anleitung zu Ursachen, Diagnose und häufigen Fehlern bei verbranntem Ölgeruch im Ford Focus."
+      },
+      "es": {
+        "slug": "ford-focus-olor-a-aceite-quemandose",
+        "title": "Ford Focus: Causas y Diagnóstico del Olor a Aceite Quemado",
+        "metaDescription": "Descubre por qué tu Ford Focus huele a aceite quemado. Consejos para diagnosticar, causas comunes y errores frecuentes antes de reemplazar piezas.",
+        "intro": "Si percibes olor a aceite quemado en tu Ford Focus, es importante que no ignores esta señal. Este síntoma puede deberse a distintas causas, desde fugas de aceite hasta problemas en la ventilación del motor. Antes de sustituir piezas, realiza inspecciones básicas para identificar el origen y evitar reparaciones innecesarias.",
+        "severity": "Moderada; se recomienda conducir con precaución hasta detectar y solucionar el problema.",
+        "driveAdvice": "Conduce con cuidado y revisa el motor. Si el olor empeora o notas cambios en el rendimiento, visita un taller.",
+        "likelyCauses": [
+          "Fugas de aceite sobre partes calientes del motor",
+          "Juntas o filtro de aceite con fugas",
+          "Aceite acumulado cerca del múltiple de escape",
+          "Sistema PCV obstruido que acumula vapores de aceite",
+          "Contaminación con aceite en la caja del filtro de aire"
+        ],
+        "diagnosticSteps": [
+          "Verificar temperatura del motor",
+          "Comprobar nivel y calidad del aceite",
+          "Buscar fugas de aceite debajo y alrededor del motor",
+          "Inspeccionar zona del múltiple de escape por residuos de aceite",
+          "Revisar caja del filtro de aire para vapores de aceite",
+          "Controlar mangueras y válvulas del sistema PCV"
+        ],
+        "firstChecks": [
+          "Verificar nivel de aceite y posible fuga fresca",
+          "Inspeccionar múltiple de escape por acumulación de aceite",
+          "Revisar filtro de aire y zona del motor"
+        ],
+        "commonMistakes": [
+          "Pensar que el olor solo proviene del escape",
+          "Cambiar aceite sin detectar fuente de fuga",
+          "Ignorar elementos de ventilación y filtro de aire"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0524"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de Fallo Ford Focus",
+            "href": "/es/ford-focus/codigos-fallo"
+          },
+          {
+            "label": "Guía de Revisión y Cambio de Aceite",
+            "href": "/es/mantenimiento/revision-aceite"
+          },
+          {
+            "label": "Diagnóstico del Sistema de Escape",
+            "href": "/es/diagnostico/sistema-escape"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo debo preocuparme por el olor a aceite quemado?",
+            "a": "Desde el primer momento que lo percibas, revisa el motor porque puede indicar un problema serio."
+          },
+          {
+            "q": "¿Puedo cambiar el aceite de mi Ford Focus yo mismo?",
+            "a": "Sí, con las herramientas y conocimientos básicos. Pero primero debes arreglar cualquier fuga."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con el olor a aceite?",
+            "a": "Los códigos más comunes son P0420 (convertidor catalítico), P0171 (mezcla pobre) y P0524 (sensor presión aceite)."
+          }
+        ],
+        "schemaTitle": "Ford Focus: Olor a Aceite Quemado - Causas y Diagnóstico",
+        "schemaDescription": "Información experta sobre el olor a aceite quemado en Ford Focus. Causas frecuentes, pasos para diagnosticar y errores comunes a evitar."
+      },
+      "fr": {
+        "slug": "ford-focus-odeur-d-huile-brulee",
+        "title": "Ford Focus : Causes et Diagnostic de l'Odeur d'Huile Brûlée",
+        "metaDescription": "Découvrez les causes courantes d'une odeur d'huile brûlée sur Ford Focus. Conseils pratiques pour diagnostiquer et éviter les erreurs fréquentes avant le changement de pièces.",
+        "intro": "Une odeur d'huile brûlée dans votre Ford Focus peut provenir de plusieurs sources. Ce signal ne doit pas être négligé, car il peut indiquer des fuites ou des problèmes d'aération du moteur. Avant de remplacer des pièces, il est important d'effectuer des contrôles simples afin d'identifier précisément l'origine du problème.",
+        "severity": "Modérée; il est conseillé de limiter la conduite jusqu'à résolution pour éviter tout dommage moteur.",
+        "driveAdvice": "Conduisez prudemment et faites vérifier le véhicule rapidement si l'odeur s'accentue ou si vous remarquez une perte de performance.",
+        "likelyCauses": [
+          "Fuites d'huile sur des parties chaudes du moteur",
+          "Joints ou filtre à huile défectueux ou fuyants",
+          "Résidus d'huile près du collecteur d'échappement",
+          "Système PCV bouché générant des vapeurs d’huile",
+          "Contamination par de l'huile dans le boîtier du filtre à air"
+        ],
+        "diagnosticSteps": [
+          "Vérifier la température moteur",
+          "Contrôler le niveau et l’état de l’huile moteur",
+          "Inspecter sous le véhicule et autour du moteur pour détecter des fuites d’huile",
+          "Examiner la zone du collecteur d’échappement pour traces d’huile",
+          "Contrôler l’intérieur du boîtier du filtre à air pour présence de vapeurs d’huile",
+          "Vérifier les durites et soupapes du système de ventilation moteur (PCV)"
+        ],
+        "firstChecks": [
+          "Contrôle du niveau d’huile et détection de fuites visibles",
+          "Inspection du collecteur d’échappement pour présence de résidus d’huile",
+          "Examen du filtre à air et de la zone sous le capot"
+        ],
+        "commonMistakes": [
+          "Penser que l’odeur provient uniquement de l’échappement",
+          "Changer l’huile sans vérifier la source des fuites",
+          "Négliger le système de ventilation et le filtre à air"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0524"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut Ford Focus",
+            "href": "/fr/ford-focus/codes-defaut"
+          },
+          {
+            "label": "Guide vérification et changement d'huile",
+            "href": "/fr/entretien/controle-huile"
+          },
+          {
+            "label": "Diagnostic du système d'échappement",
+            "href": "/fr/diagnostic/systeme-echappement"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quand faut-il agir si je sens une odeur d'huile brûlée ?",
+            "a": "Dès que l’odeur apparaît, inspectez rapidement le moteur car elle peut signaler un problème grave."
+          },
+          {
+            "q": "Puis-je changer moi-même l’huile de mon Ford Focus ?",
+            "a": "Oui, avec un minimum de connaissances et le matériel adapté, mais il faut d’abord réparer les fuites éventuelles."
+          },
+          {
+            "q": "Quels codes OBD2 sont liés à une odeur d’huile ?",
+            "a": "Les codes courants sont P0420 (catalyseur), P0171 (mélange pauvre) et P0524 (pression huile)."
+          }
+        ],
+        "schemaTitle": "Ford Focus : Odeur d’Huile Brûlée – Causes et Solutions",
+        "schemaDescription": "Conseils d’experts sur l’odeur d’huile brûlée dans la Ford Focus. Causes habituelles, méthode de diagnostic, et erreurs fréquentes à éviter."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-transmission-slipping",
+    "intentKey": "ford-focus_transmission_slipping",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "transmission_slipping",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "ford-focus-transmission-slipping",
+        "title": "Ford Focus Transmission Slipping: Causes, Diagnostics & Tips",
+        "metaDescription": "Experiencing transmission slipping in your Ford Focus? Learn practical checks, likely causes, diagnostic steps, and common mistakes before replacements.",
+        "intro": "Transmission slipping in a Ford Focus can cause frustrating performance issues, including delayed acceleration and unexpected gear shifts. This condition may indicate several potential problems, from fluid issues to sensor faults. Before considering costly repairs, practical diagnostic steps help narrow down the cause and guide effective maintenance.",
+        "severity": "Transmission slipping can impair vehicle control and safety, particularly during acceleration or hill driving, so timely diagnosis and repair are advisable.",
+        "driveAdvice": "Avoid aggressive acceleration and monitor the transmission behavior closely. If slipping worsens, have your vehicle inspected promptly to prevent further damage.",
+        "likelyCauses": [
+          "Low or contaminated transmission fluid",
+          "Worn clutch plates or bands in the transmission",
+          "Faulty transmission solenoids",
+          "Sensor issues affecting transmission control module",
+          "Valve body malfunctions"
+        ],
+        "diagnosticSteps": [
+          "Check transmission fluid level and condition",
+          "Scan for OBD2 transmission-related codes",
+          "Inspect transmission fluid filter",
+          "Test transmission solenoid electrical function",
+          "Perform a road test to observe slipping behavior",
+          "Consult transmission control module data logs"
+        ],
+        "firstChecks": [
+          "Verify the transmission fluid is at the correct level",
+          "Look for leaks under the vehicle",
+          "Check the color and smell of fluid for burning"
+        ],
+        "commonMistakes": [
+          "Replacing the transmission without checking fluid first",
+          "Ignoring small leaks or drops in fluid levels",
+          "Assuming slipping is always a mechanical failure"
+        ],
+        "relatedCodes": [
+          "P0740 Torque Converter Clutch Circuit",
+          "P0700 Transmission Control System Malfunction",
+          "P0730 Incorrect Gear Ratio"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Codes",
+            "href": "/en/ford-focus-obd2-codes"
+          },
+          {
+            "label": "Transmission Fluid Checks",
+            "href": "/en/transmission-fluid-check"
+          },
+          {
+            "label": "Common Transmission Problems",
+            "href": "/en/common-transmission-problems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are early signs of transmission slipping in a Ford Focus?",
+            "a": "Common early signs include delayed gear engagement, a noticeable drop in acceleration, and unusual noises during shifts."
+          },
+          {
+            "q": "Is it safe to drive with a slipping transmission?",
+            "a": "Driving with transmission slipping is risky as it may worsen damage or cause loss of power. Limit driving and seek professional diagnosis soon."
+          },
+          {
+            "q": "Can I fix transmission slipping myself?",
+            "a": "Basic checks like fluid level and leaks can be done at home, but complex diagnostics and repairs require professional tools and expertise."
+          }
+        ],
+        "schemaTitle": "Ford Focus Transmission Slipping Causes and Diagnostics",
+        "schemaDescription": "Identify causes and learn diagnostic steps for transmission slipping issues in Ford Focus vehicles. Includes checks, common mistakes, and OBD2 codes."
+      },
+      "tr": {
+        "slug": "ford-focus-vites-kaciriyor",
+        "title": "Ford Focus Vites Kaçırıyor: Nedenler, Tanı ve İpuçları",
+        "metaDescription": "Ford Focus’unuz vites kaçırıyorsa, parçaları değiştirmeden önce kontrol etmeniz gereken olası nedenleri ve tanı adımlarını öğrenin.",
+        "intro": "Ford Focus'ta vites kaçırma sorunu çeşitli performans problemlere neden olabilir, örneğin vites geçişlerinde gecikme veya ani vites atlamaları. Bu durumun nedeni, sıvı seviyesinden elektronik arızalara kadar birçok faktör olabilir. Parça değiştirmeye başlamadan önce pratik kontrol ve tanı yöntemleri durumu anlamanıza yardımcı olur.",
+        "severity": "Vites kaçırma, aracın kontrolünü zorlaştırabilir ve özellikle rampalarda sürüş güvenliğini azaltabilir. Bu yüzden zamanında müdahale önemlidir.",
+        "driveAdvice": "Ani hızlanmalardan kaçının, vites geçişlerini dikkatle gözlemleyin. Sorun devam ederse yetkili servise başvurun.",
+        "likelyCauses": [
+          "Düşük veya kirli şanzıman yağı",
+          "Aşınmış kavrama plakaları veya fren bantları",
+          "Arızalı şanzıman elektrovana",
+          "Şanzıman kontrol modülünü etkileyen sensör sorunları",
+          "Valf gövdesi problemleri"
+        ],
+        "diagnosticSteps": [
+          "Şanzıman yağı seviyesini ve durumunu kontrol edin",
+          "OBD2 üzerinden şanzımanla ilgili arıza kodlarını tarayın",
+          "Şanzıman yağ filtresini inceleyin",
+          "Şanzıman elektrovana elektriksel işlevini test edin",
+          "Vites kaçırmayı gözlemlemek için yol testi yapın",
+          "Şanzıman kontrol modülünün veri kayıtlarını kontrol edin"
+        ],
+        "firstChecks": [
+          "Şanzıman yağının seviyesinin doğru olduğunu doğrulayın",
+          "Araç altındaki olası yağ sızıntılarını kontrol edin",
+          "Yağın rengi ve yanık kokusu için bakın"
+        ],
+        "commonMistakes": [
+          "Önce sıvıyı kontrol etmeden şanzımanı değiştirmek",
+          "Küçük sızıntıları veya sıvı düşüşlerini göz ardı etmek",
+          "Vites kaçırmayı hep mekanik arıza olarak varsaymak"
+        ],
+        "relatedCodes": [
+          "P0740 Tork Konvertörü Kavrama Devresi",
+          "P0700 Şanzıman Kontrol Sistemi Arızası",
+          "P0730 Yanlış Vites Oranı"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Arıza Kodları",
+            "href": "/tr/ford-focus-ariza-kodlari"
+          },
+          {
+            "label": "Şanzıman Yağı Kontrolü",
+            "href": "/tr/sanziman-yagi-kontrolu"
+          },
+          {
+            "label": "Yaygın Şanzıman Sorunları",
+            "href": "/tr/yaygin-sanziman-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus'ta vites kaçırmanın erken belirtileri nelerdir?",
+            "a": "Erken belirtiler arasında vites geçişlerinde gecikme, hızlanmada düşüş ve geçiş sırasında olağan dışı sesler bulunur."
+          },
+          {
+            "q": "Vites kaçıran araçla sürüş yapmak güvenli midir?",
+            "a": "Vites kaçıran araçla sürmek risklidir, hasarı artırabilir ve güç kaybına yol açabilir. En kısa sürede servise başvurun."
+          },
+          {
+            "q": "Vites kaçırmasını kendi başıma düzeltebilir miyim?",
+            "a": "Sıvı seviyesi ve sızıntı kontrolü evde yapılabilir ancak daha karmaşık tamirler için profesyonel yardım gerekir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Vites Kaçırma Nedenleri ve Tanısı",
+        "schemaDescription": "Ford Focus şanzıman vites kaçırma sorunlarını anlamak için olası nedenler, tanı adımları ve OBD2 kodları hakkında bilgi."
+      },
+      "de": {
+        "slug": "ford-focus-getriebe-rutscht",
+        "title": "Ford Focus Getriebe rutscht: Ursachen, Diagnose und Tipps",
+        "metaDescription": "Ihr Ford Focus hat Getrieberutschen? Erfahren Sie praktische Prüfungen, mögliche Ursachen und Diagnoseschritte, bevor Sie Teile austauschen.",
+        "intro": "Wenn das Getriebe Ihres Ford Focus rutscht, kann dies zu spürbaren Fahrproblemen wie verzögertem Schaltverhalten und unerwarteten Gangwechseln führen. Die Ursachen können vielfältig sein, einschließlich Flüssigkeitsmangel oder Sensorfehler. Bevor Sie kostspielige Reparaturen durchführen, helfen gezielte Diagnoseschritte dabei, die möglichen Probleme einzugrenzen.",
+        "severity": "Getrieberutschen beeinträchtigt die Fahrzeugkontrolle und kann die Fahrsicherheit, insbesondere beim Beschleunigen und Bergauffahren, gefährden. Eine zeitnahe Diagnose ist empfehlenswert.",
+        "driveAdvice": "Vermeiden Sie starkes Beschleunigen und beobachten Sie das Getriebeverhalten genau. Bei Verschlechterung umgehend eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Getriebeölstand",
+          "Abgenutzte Kupplungsbeläge oder Bänder",
+          "Defekte Getriebesolenoidventile",
+          "Sensorprobleme im Zusammenhang mit dem Steuergerät",
+          "Probleme im Ventilkörper"
+        ],
+        "diagnosticSteps": [
+          "Getriebeölstand und -qualität prüfen",
+          "OBD2-Codes im Bereich Getriebe auslesen",
+          "Getriebeölfilter inspizieren",
+          "Elektrische Funktion der Solenoide testen",
+          "Fahrtest zur Beobachtung des Rutschverhaltens durchführen",
+          "Daten des Getriebesteuergeräts überprüfen"
+        ],
+        "firstChecks": [
+          "Überprüfung des korrekten Getriebeölstands",
+          "Suche nach Öllecks unter dem Fahrzeug",
+          "Farbe und Geruch des Öls auf Brennen prüfen"
+        ],
+        "commonMistakes": [
+          "Getriebe austauschen ohne vorher den Ölstand zu prüfen",
+          "Kleine Lecks oder Ölverlust ignorieren",
+          "Immer von mechanischen Fehlern ausgehen"
+        ],
+        "relatedCodes": [
+          "P0740 Drehmomentwandler-Kupplung Schaltkreis",
+          "P0700 Getriebesteuerungssystem Fehler",
+          "P0730 Falsches Übersetzungsverhältnis"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2-Codes",
+            "href": "/de/ford-focus-obd2-codes"
+          },
+          {
+            "label": "Getriebeöl prüfen",
+            "href": "/de/getriebeoel-pruefen"
+          },
+          {
+            "label": "Häufige Getriebeprobleme",
+            "href": "/de/haeufige-getriebeprobleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Woran erkenne ich frühe Anzeichen für Getrieberutschen im Ford Focus?",
+            "a": "Typische frühe Anzeichen sind verzögertes Schalten, Leistungsverlust und ungewöhnliche Geräusche beim Schalten."
+          },
+          {
+            "q": "Ist das Fahren mit rutschendem Getriebe sicher?",
+            "a": "Das Fahren mit einem rutschenden Getriebe birgt Risiken und kann weitere Schäden verursachen. Am besten nur kurz fahren und Werkstatt aufsuchen."
+          },
+          {
+            "q": "Kann ich das Problem selbst beheben?",
+            "a": "Einfache Checks wie Ölstand prüfen sind möglich, für weitergehende Diagnosen und Reparaturen ist Fachwissen notwendig."
+          }
+        ],
+        "schemaTitle": "Ford Focus Getrieberutschen: Ursachen und Diagnose",
+        "schemaDescription": "Ursachen und Diagnoseschritte für Getrieberutschen beim Ford Focus. Praktische Checks, Fehlercodes und häufige Fehler werden erläutert."
+      },
+      "es": {
+        "slug": "ford-focus-vites-se-escapa",
+        "title": "Ford Focus: ¿Por qué mi transmisión se escapa? Causas y diagnóstico",
+        "metaDescription": "Transmisión deslizante en Ford Focus: aprende las causas probables, pasos de diagnóstico, errores comunes y revisiones antes de reemplazos.",
+        "intro": "Cuando la transmisión de un Ford Focus comienza a deslizarse, pueden presentarse problemas como cambios retardados o inesperados. Varias causas pueden estar detrás, desde niveles bajos de fluido hasta fallos en sensores. Realizar revisiones prácticas antes de cambiar partes ayuda a encontrar la causa y ahorrar en reparaciones.",
+        "severity": "La transmisión que desliza afecta la seguridad, especialmente al acelerar o subir cuestas; diagnosticar y reparar rápido es fundamental.",
+        "driveAdvice": "Evita acelerar bruscamente y observa el funcionamiento de la transmisión. Si el problema empeora, acude al taller a tiempo.",
+        "likelyCauses": [
+          "Fluido de transmisión bajo o contaminado",
+          "Placas de embrague o bandas desgastadas en la transmisión",
+          "Solenoides de transmisión defectuosos",
+          "Problemas en sensores que afectan el módulo de control",
+          "Mal funcionamiento del cuerpo de válvulas"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y estado del líquido de transmisión",
+          "Escanear códigos OBD2 relacionados con la transmisión",
+          "Inspeccionar filtro del líquido de transmisión",
+          "Probar función eléctrica de los solenoides",
+          "Realizar prueba de manejo observando el deslizamiento",
+          "Consultar datos del módulo de control de la transmisión"
+        ],
+        "firstChecks": [
+          "Verificar que el nivel del líquido sea el correcto",
+          "Buscar posibles fugas debajo del vehículo",
+          "Observar color y olor a quemado del fluido"
+        ],
+        "commonMistakes": [
+          "Cambiar la transmisión sin revisar primero el fluido",
+          "Ignorar pequeñas fugas o descenso del nivel de fluido",
+          "Pensar que el deslizamiento siempre es falla mecánica"
+        ],
+        "relatedCodes": [
+          "P0740 Circuito del embrague del convertidor de par",
+          "P0700 Mal funcionamiento del sistema de control de la transmisión",
+          "P0730 Relación de engranaje incorrecta"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 para Ford Focus",
+            "href": "/es/codigos-obd2-ford-focus"
+          },
+          {
+            "label": "Revisión de líquido de transmisión",
+            "href": "/es/revision-liquido-transmision"
+          },
+          {
+            "label": "Problemas comunes de transmisión",
+            "href": "/es/problemas-comunes-transmision"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuáles son los signos iniciales de que la transmisión se escapa en un Ford Focus?",
+            "a": "Los signos incluyen retraso en los cambios, disminución de aceleración y ruidos inusuales al cambiar de marcha."
+          },
+          {
+            "q": "¿Es seguro manejar si la transmisión se está escapando?",
+            "a": "No es recomendable, ya que puede empeorar el daño. Limite la conducción y acuda a un taller pronto."
+          },
+          {
+            "q": "¿Puedo reparar el deslizamiento de la transmisión por mi cuenta?",
+            "a": "Se pueden hacer revisiones básicas como niveles de fluido, pero reparaciones avanzadas requieren profesional."
+          }
+        ],
+        "schemaTitle": "Causas y diagnóstico de deslizamiento en transmisión Ford Focus",
+        "schemaDescription": "Descubre las causas, pasos para diagnosticar y códigos OBD2 relacionados con transmisión que se escapa en Ford Focus."
+      },
+      "fr": {
+        "slug": "ford-focus-glissement-boite-vitesse",
+        "title": "Ford Focus : Glissement de la transmission - Causes et diagnostic",
+        "metaDescription": "Transmission qui patine sur Ford Focus ? Découvrez causes possibles, étapes de diagnostic, erreurs fréquentes et contrôles avant remplacement.",
+        "intro": "Le glissement de la transmission sur une Ford Focus peut entraîner des difficultés de conduite, comme des changements de vitesse retardés ou brusques. Plusieurs facteurs peuvent en être la cause, comme un niveau d’huile inadéquat ou des capteurs défectueux. Il est recommandé de réaliser des contrôles pratiques avant toute intervention coûteuse.",
+        "severity": "Le glissement impacte la sécurité et le contrôle du véhicule, surtout lors d’accélérations ou montées. Un diagnostic rapide est conseillé.",
+        "driveAdvice": "Évitez les accélérations brusques et surveillez le comportement de la boîte. Consultez un professionnel rapidement si le problème s’aggrave.",
+        "likelyCauses": [
+          "Niveau ou qualité d’huile de transmission insuffisant",
+          "Disques d’embrayage ou bandes usés",
+          "Solénoïdes de transmission défectueux",
+          "Problèmes de capteurs affectant le module de contrôle",
+          "Dysfonctionnement du corps de valve"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et la qualité du liquide de transmission",
+          "Scanner les codes OBD2 liés à la transmission",
+          "Inspecter le filtre à huile de transmission",
+          "Tester les solénoïdes électriquement",
+          "Effectuer un essai routier pour observer le patinage",
+          "Consulter les données du module de contrôle"
+        ],
+        "firstChecks": [
+          "Contrôler que le niveau d’huile est correct",
+          "Rechercher des fuites sous le véhicule",
+          "Vérifier la couleur et l’odeur du liquide"
+        ],
+        "commonMistakes": [
+          "Remplacer la transmission sans vérifier d’abord l’huile",
+          "Ignorer les petites fuites ou baisse du niveau d’huile",
+          "Penser que le patinage est toujours une panne mécanique"
+        ],
+        "relatedCodes": [
+          "P0740 Circuit d’embrayage du convertisseur de couple",
+          "P0700 Dysfonctionnement du système de contrôle de transmission",
+          "P0730 Rapport de vitesse incorrect"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Ford Focus",
+            "href": "/fr/codes-obd2-ford-focus"
+          },
+          {
+            "label": "Vérification du liquide de transmission",
+            "href": "/fr/verifier-liquide-transmission"
+          },
+          {
+            "label": "Problèmes courants de transmission",
+            "href": "/fr/problemes-transmission-courants"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quels sont les premiers signes d’un glissement de transmission sur Ford Focus ?",
+            "a": "Les signes typiques sont un délai aux changements de vitesse, une perte de puissance et des bruits inhabituels lors des passages de vitesses."
+          },
+          {
+            "q": "Est-il sûr de conduire avec une transmission qui patine ?",
+            "a": "Ce n’est pas recommandé car cela peut aggraver les dommages. Limitez la conduite et consultez rapidement un professionnel."
+          },
+          {
+            "q": "Puis-je réparer ce problème moi-même ?",
+            "a": "Vous pouvez vérifier le niveau d’huile et rechercher des fuites, mais les réparations complexes nécessitent un spécialiste."
+          }
+        ],
+        "schemaTitle": "Glissement de la transmission sur Ford Focus: causes et diagnostic",
+        "schemaDescription": "Découvrez les causes et les étapes pour diagnostiquer un glissement de transmission sur Ford Focus, avec codes OBD2 et erreurs fréquentes."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-loss-of-power",
+    "intentKey": "fiat-egea_loss_of_power",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "loss_of_power",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-gaz-yemiyor",
+        "title": "Fiat Egea Gaz Yemiyor - Güç Kaybı Sorunları ve Çözümleri",
+        "metaDescription": "Fiat Egea'da gaz yememe ve güç kaybı sorunları için pratik tespit adımları ve olası nedenler. Parça değişiminden önce yapılması gerekenler burada.",
+        "intro": "Fiat Egea kullanıcılarının karşılaştığı gaz yememe ve güç kaybı sorunları çeşitli sebeplerden doğabilir. Bu durum aracın performansını olumsuz etkiler ve sürüş güvenliğini azaltabilir. Sorunun net belirlenmesi için bazı kontrol noktalarını adım adım incelemek önemlidir. Parça değiştirmeden önce temel teşhis işlemleri yapılmalıdır.",
+        "severity": "Orta - aracınızın performansı düşer, özellikle yokuş çıkarken ve hızlanmada zorlanma olur.",
+        "driveAdvice": "Aracı zorlamamaya özen gösterin, mümkünse en kısa sürede kontrol ve bakım yaptırın.",
+        "likelyCauses": [
+          "Yakıt enjektörlerinde tıkanıklık veya arıza",
+          "Hava filtresinin kirlenmiş olması",
+          "Bujilerde aşınma veya yanlış ateşleme",
+          "Turbo basınç sorunu (varsa)",
+          "Egzoz sisteminde tıkanma"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazınızı bağlayarak hata kodlarını okuyun",
+          "Yakıt filtre ve enjektörlerini kontrol edin",
+          "Hava filtresini çıkarıp durumu inceleyin",
+          "Bujileri sökerek görsel muayene yapın",
+          "Turbo basıncını ve hortumlarını test edin",
+          "Egzoz kapağı ve katalizörü gözden geçirin"
+        ],
+        "firstChecks": [
+          "Aracın yakıt seviyesi ve kalitesini kontrol edin",
+          "Hava filtresinin temiz olduğundan emin olun",
+          "Bujilerde açık bir sorun var mı kontrol edin"
+        ],
+        "commonMistakes": [
+          "Parça değiştirmeden önce kesin teşhis yapmamak",
+          "Sadece yakıt pompasını suçlamak",
+          "Hatalı veya kalitesiz yakıt kullanmak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt karışımı çok fakir",
+          "P0300 - Çoklu silindir ateşleme hatası",
+          "P0299 - Turbo basıncında düşük sorun"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 kodları nasıl okunur?",
+            "href": "/tr/obd2-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Yakıt sistemi arızaları",
+            "href": "/tr/yakit-sistemi-arizalari"
+          },
+          {
+            "label": "Turbo arızaları ve belirtileri",
+            "href": "/tr/turbo-arizalari-ve-belirtileri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea gaz yememe sorunu neden kaynaklanır?",
+            "a": "Genellikle yakıt sistemi, hava filtresi ya da buji kaynaklı sorunlar gaz yememeye yol açabilir. Kesin teşhis için OBD2 taraması faydalıdır."
+          },
+          {
+            "q": "Aracımda turbo varsa bu sorun turbo ile ilgili olabilir mi?",
+            "a": "Evet, turbo basınç kayıpları güçsüzlüğe sebep olabilir. Turbo hortumları ve bağlantıları mutlaka kontrol edilmelidir."
+          },
+          {
+            "q": "Parça değiştirmeden önce ne yapmalıyım?",
+            "a": "Öncelikle OBD2 cihazıyla arıza kodlarını okuyup, temel kontrolleri yaparak sorunu netleştirmelisiniz."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Gaz Yemiyor Sorunu - Nedenleri ve Çözümleri",
+        "schemaDescription": "Fiat Egea araçlarda gaz yememe ve güç kaybı şikayetleri için kapsamlı teşhis ve öneriler. Parça değiştirmeden önce yapılması gereken kontroller."
+      },
+      "en": {
+        "slug": "fiat-egea-loss-of-power",
+        "title": "Fiat Egea Loss of Power Issues and Troubleshooting Guide",
+        "metaDescription": "Explore practical diagnostic steps for Fiat Egea loss of power problems. Identify common causes and checks before replacing parts.",
+        "intro": "Experiencing a loss of power in your Fiat Egea can stem from multiple potential issues. This common symptom affects driving performance and safety. Before replacing any parts, it's crucial to perform a detailed diagnosis including several practical checks. Understanding these causes helps avoid unnecessary expenses and ensures effective repairs.",
+        "severity": "Moderate - noticeable reduction in engine power affecting acceleration and hill climbing.",
+        "driveAdvice": "Avoid stressing the engine and schedule a diagnostic check as soon as possible.",
+        "likelyCauses": [
+          "Clogged or faulty fuel injectors",
+          "Dirty or clogged air filter",
+          "Worn or misfiring spark plugs",
+          "Turbocharger pressure issues (if equipped)",
+          "Blocked exhaust system or catalytic converter"
+        ],
+        "diagnosticSteps": [
+          "Connect OBD2 scanner and retrieve fault codes",
+          "Check fuel filter and fuel injection system",
+          "Inspect air filter condition",
+          "Remove spark plugs for visual inspection",
+          "Test turbocharger pressure and connections",
+          "Inspect exhaust system for blockages"
+        ],
+        "firstChecks": [
+          "Verify fuel level and quality",
+          "Ensure air filter is clean",
+          "Check spark plugs for damage or wear"
+        ],
+        "commonMistakes": [
+          "Replacing parts without reliable diagnosis",
+          "Blaming the fuel pump prematurely",
+          "Using faulty or low-quality fuel"
+        ],
+        "relatedCodes": [
+          "P0171 - System too lean",
+          "P0300 - Random/multiple cylinder misfire detected",
+          "P0299 - Turbocharger underboost condition"
+        ],
+        "internalLinks": [
+          {
+            "label": "How to read OBD2 codes",
+            "href": "/en/how-to-read-obd2-codes"
+          },
+          {
+            "label": "Fuel system issues explained",
+            "href": "/en/fuel-system-issues"
+          },
+          {
+            "label": "Turbocharger faults and symptoms",
+            "href": "/en/turbocharger-faults"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are the common causes of power loss in Fiat Egea?",
+            "a": "Common causes include fuel injection problems, clogged air filters, worn spark plugs, and turbocharger issues if applicable."
+          },
+          {
+            "q": "Could the turbocharger be responsible for the loss of power?",
+            "a": "Yes, turbo pressure loss or leaks can significantly reduce engine power and should be checked."
+          },
+          {
+            "q": "What should I check before replacing parts?",
+            "a": "Start with reading OBD2 codes, inspecting filters, spark plugs, and checking the fuel quality to pinpoint the issue."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Loss of Power - Causes and Diagnostic Guide",
+        "schemaDescription": "Comprehensive guide to diagnosing loss of power issues in Fiat Egea. Includes likely causes, diagnostic steps, and preventive checks."
+      },
+      "de": {
+        "slug": "fiat-egea-leistungsverlust",
+        "title": "Fiat Egea Leistungsverlust: Ursachen und Diagnosemaßnahmen",
+        "metaDescription": "Ursachen und Diagnose von Leistungsverlust bei Fiat Egea. Praktische Prüfungen vor Teilwechseln helfen, Fehlersuche zu erleichtern.",
+        "intro": "Ein Leistungsverlust bei Ihrem Fiat Egea kann verschiedene Ursachen haben, die das Fahrverhalten beeinträchtigen. Es ist wichtig, vor dem Austausch von Bauteilen gründliche Diagnose- und Kontrollschritte durchzuführen. So vermeiden Sie unnötige Kosten und beheben das Problem gezielt. In diesem Leitfaden erläutern wir praktische Schritte zur Fehlererkennung bei Leistungsverlusten.",
+        "severity": "Mittel - das Fahrzeug zeigt reduzierte Motorleistung, insbesondere beim Beschleunigen und Anfahren.",
+        "driveAdvice": "Vermeiden Sie starke Belastungen des Motors und lassen Sie das Fahrzeug zeitnah prüfen.",
+        "likelyCauses": [
+          "Verstopfte oder defekte Einspritzdüsen",
+          "Verschmutzter Luftfilter",
+          "Abgenutzte oder falsch zündende Zündkerzen",
+          "Probleme mit dem Turboladerdruck (falls vorhanden)",
+          "Verstopfung im Abgassystem"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Diagnosegerät anschließen und Fehlercodes auslesen",
+          "Kraftstofffilter und Einspritzanlage prüfen",
+          "Luftfilter inspizieren",
+          "Zündkerzen ausbauen und Sichtprüfung durchführen",
+          "Turboladerdruck und Schläuche testen",
+          "Abgasanlage auf Blockaden kontrollieren"
+        ],
+        "firstChecks": [
+          "Kraftstoffstand und Qualität kontrollieren",
+          "Sauberkeit des Luftfilters sicherstellen",
+          "Zündkerzen auf Beschädigungen prüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne eindeutige Diagnose austauschen",
+          "Kraftstoffpumpe voreilig verdächtigen",
+          "Schlechter Kraftstoff oder falsche Mischung verwenden"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager",
+          "P0300 - Zündaussetzer an mehreren Zylindern",
+          "P0299 - Turboladerunterdruck erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "Wie man OBD2-Codes ausliest",
+            "href": "/de/obd2-codes-auslesen"
+          },
+          {
+            "label": "Kraftstoffsystemprobleme verstehen",
+            "href": "/de/kraftstoffsystemprobleme"
+          },
+          {
+            "label": "Turbolader Probleme erkennen",
+            "href": "/de/turbolader-probleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für Leistungsverlust beim Fiat Egea?",
+            "a": "Häufige Ursachen sind Probleme mit Kraftstoffeinspritzung, Luftfilterverstopfung, Zündkerzenverschleiß und Turboladerprobleme."
+          },
+          {
+            "q": "Kann der Turbolader für den Leistungsverlust verantwortlich sein?",
+            "a": "Ja, Druckverlust am Turbolader führt zu weniger Motorleistung und sollte überprüft werden."
+          },
+          {
+            "q": "Was sollte ich vor dem Teilewechsel prüfen?",
+            "a": "Lesen Sie zuerst die Fehlercodes aus, prüfen Sie Filter, Zündkerzen und Kraftstoffqualität."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Leistungsverlust - Ursachen und Diagnose",
+        "schemaDescription": "Leitfaden zur Diagnose von Leistungsverlust Ursachen beim Fiat Egea mit typischen Fehlercodes und Checklisten."
+      },
+      "es": {
+        "slug": "fiat-egea-pierde-potencia",
+        "title": "Fiat Egea pierde potencia: causas y diagnóstico práctico",
+        "metaDescription": "Descubre las causas comunes y pasos para diagnosticar pérdida de potencia en Fiat Egea antes de reemplazar piezas.",
+        "intro": "La pérdida de potencia en un Fiat Egea puede deberse a varias causas que afectan el rendimiento del vehículo. Es esencial realizar revisiones y diagnósticos prácticos antes de cambiar componentes para evitar gastos innecesarios. En esta guía te mostramos los puntos clave para reconocer y resolver la pérdida de potencia con recomendaciones útiles.",
+        "severity": "Moderada - reducción notable en la potencia del motor que afecta aceleración y subida de pendientes.",
+        "driveAdvice": "Evita exigir demasiado al vehículo y realiza un diagnóstico lo antes posible.",
+        "likelyCauses": [
+          "Inyectores de combustible obstruidos o defectuosos",
+          "Filtro de aire sucio o tapado",
+          "Bujías desgastadas o con fallos de encendido",
+          "Problemas de presión en el turbo (si lo tiene)",
+          "Obstrucciones en el sistema de escape"
+        ],
+        "diagnosticSteps": [
+          "Conecta un escáner OBD2 para leer códigos de error",
+          "Revisa el filtro de combustible y los inyectores",
+          "Inspecciona el estado del filtro de aire",
+          "Retira las bujías para examinarlas visualmente",
+          "Prueba la presión y conexiones del turbo",
+          "Verifica el sistema de escape por posibles bloqueos"
+        ],
+        "firstChecks": [
+          "Comprueba nivel y calidad del combustible",
+          "Asegúrate de que el filtro de aire esté limpio",
+          "Revisa las bujías para detectar daños"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico certero",
+          "Culpar prematuramente a la bomba de combustible",
+          "Usar combustible de mala calidad"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla demasiado pobre",
+          "P0300 - Fallos de encendido múltiples o aleatorios",
+          "P0299 - Baja presión en turbo"
+        ],
+        "internalLinks": [
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          },
+          {
+            "label": "Problemas comunes del sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "Fallos y síntomas del turbo",
+            "href": "/es/fallos-sintomas-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuáles son las causas comunes de pérdida de potencia en Fiat Egea?",
+            "a": "Las causas habituales incluyen problemas en los inyectores, filtro de aire sucio, bujías desgastadas y fallos en el turbo."
+          },
+          {
+            "q": "¿Puede el turbo ser la causa de la pérdida de potencia?",
+            "a": "Sí, pérdidas de presión en el turbo afectan notablemente la potencia y deben ser revisadas."
+          },
+          {
+            "q": "¿Qué debo revisar antes de cambiar piezas?",
+            "a": "Leer los códigos de error OBD2, revisar filtros, bujías y la calidad del combustible es fundamental para un diagnóstico apropiado."
+          }
+        ],
+        "schemaTitle": "Fiat Egea pierde potencia: causas y solución",
+        "schemaDescription": "Guía completa para diagnosticar y solucionar pérdida de potencia en Fiat Egea con pasos prácticos y códigos OBD2 relacionados."
+      },
+      "fr": {
+        "slug": "fiat-egea-perte-de-puissance",
+        "title": "Fiat Egea perte de puissance : causes possibles et diagnostic",
+        "metaDescription": "Découvrez les causes et étapes de diagnostic pour une perte de puissance sur Fiat Egea avant de remplacer des pièces.",
+        "intro": "Une perte de puissance sur votre Fiat Egea peut avoir plusieurs origines affectant la conduite. Il est essentiel d'effectuer des vérifications approfondies avant tout remplacement de pièces. Cette approche évite des dépenses inutiles et permet un diagnostic précis. Ce guide fournit des conseils pratiques pour identifier et résoudre ce problème efficacement.",
+        "severity": "Modérée - baisse sensible de la puissance moteur, impactant accélération et montée.",
+        "driveAdvice": "Ne sollicitez pas trop le moteur et consultez rapidement un professionnel pour un diagnostic.",
+        "likelyCauses": [
+          "Injecteurs de carburant encrassés ou défectueux",
+          "Filtre à air sale ou obstrué",
+          "Bougies d’allumage usées ou défaillantes",
+          "Problèmes de pression turbo (si équipé)",
+          "Blocage dans le système d’échappement"
+        ],
+        "diagnosticSteps": [
+          "Brancher un outil de diagnostic OBD2 pour lire les codes d’erreur",
+          "Vérifier le filtre à carburant et les injecteurs",
+          "Inspecter le filtre à air",
+          "Examiner visuellement les bougies après retrait",
+          "Tester la pression et les connexions du turbo",
+          "Contrôler le système d’échappement pour obstruction"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et la qualité du carburant",
+          "S’assurer que le filtre à air est propre",
+          "Contrôler l’état des bougies"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic fiable",
+          "Accuser prématurément la pompe à carburant",
+          "Utiliser un carburant de mauvaise qualité"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0300 - Ratés d’allumage multiples",
+          "P0299 - Sous-pression turbo détectée"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comment lire les codes OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Problèmes du système de carburant",
+            "href": "/fr/problemes-systeme-carburant"
+          },
+          {
+            "label": "Défaillances et symptômes du turbo",
+            "href": "/fr/defaillances-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes fréquentes d’une perte de puissance sur Fiat Egea ?",
+            "a": "Les causes courantes incluent les injecteurs, filtre à air sale, bougies usées et problèmes turbo."
+          },
+          {
+            "q": "Le turbo peut-il provoquer une perte de puissance ?",
+            "a": "Oui, une pression insuffisante du turbo peut réduire fortement la puissance moteur."
+          },
+          {
+            "q": "Que vérifier avant de remplacer des pièces ?",
+            "a": "Lire les codes OBD2, vérifier filtres, bougies et qualité du carburant est indispensable."
+          }
+        ],
+        "schemaTitle": "Fiat Egea perte de puissance : diagnostic et causes",
+        "schemaDescription": "Guide complet pour diagnostiquer et résoudre la perte de puissance sur Fiat Egea avec codes OBD2 et conseils pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-engine-noise",
+    "intentKey": "fiat-egea_engine_noise",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "engine_noise",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-motordan-ses-geliyor",
+        "title": "Fiat Egea Motordan Gelen Garip Sesler ve Teşhis Yöntemleri",
+        "metaDescription": "Fiat Egea motordan ses geliyor mu? Olası nedenler, yapılacak kontroller ve teşhis adımlarıyla motor sesini anlamanıza yardımcı oluyoruz.",
+        "intro": "Fiat Egea motorundan gelen sesler, aracınızın performansını ve güvenli sürüş deneyimini etkileyebilir. Bu sesi dikkate almak, olası mekanik sorunları erken teşhis etmek açısından önemlidir. Motor sesleri birçok farklı kaynaktan olabilir ve her zaman tek bir nedene bağlanmamalıdır.",
+        "severity": "Motor sesleri genellikle aracın sağlığını gösterebilir, bazen ciddi hasarlara yol açabilir. Duruma göre ciddiyet değişir, acele ederek parça değişimine gitmeden önce kapsamlı kontrol yapılmalıdır.",
+        "driveAdvice": "Motorunuzdan ses duyduğunuzda aracı yüksek hızda kullanmaktan kaçının. Arıza giderilene kadar yumuşak sürüş yapmak ve motoru zorlamamak önemlidir.",
+        "likelyCauses": [
+          "Yağ seviyesi düşük veya kalitesiz yağ kullanımı",
+          "Aşınmış veya gevşemiş kayışlar",
+          "Motor yataklarında aşınma",
+          "Egzoz sistemindeki kaçaklar veya hasarlar",
+          "Enjektörlerde tıkanıklık veya arıza"
+        ],
+        "diagnosticSteps": [
+          "Motor yağ seviyesini ve kalitesini kontrol edin.",
+          "Kayışların gerginliğini ve durumunu inceleyin.",
+          "Egzoz sisteminde kaçak ve ses artışına neden olacak sorunları araştırın.",
+          "Motor yataklarında aşınma veya oyun olup olmadığını ölçün.",
+          "Enjektörlerin çalışmasını ve temizliğini kontrol edin.",
+          "OBD2 cihazı ile motor arıza kodlarını okuyarak sorunu tespit edin."
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesini mutlaka ölçün.",
+          "Kayış ve kayış gerginlik durumunu hızlıca gözden geçirin.",
+          "Egzoz kaçaklarını araç altından kontrol edin."
+        ],
+        "commonMistakes": [
+          "Motor sesini direkt parça değişimi ile çözmeye çalışmak",
+          "Yağ seviyesini atlamadan kontrol etmemek",
+          "OBD2 cihazı olmadan kesin teşhis koymaya çalışmak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele veya yaygın ateşleme hata kodu",
+          "P0171 - Yakıt sistemi zengin olmayan karışım",
+          "P0420 - Katalizör etkinliği düşük"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea motor arıza okuma",
+            "href": "/tr/fiat-egea-motor-ariza-okuma"
+          },
+          {
+            "label": "Motor yağı kontrolü ve önemi",
+            "href": "/tr/motor-yagi-kontrolu-onemi"
+          },
+          {
+            "label": "OBD2 ile yaygın hata kodları anlamı",
+            "href": "/tr/obd2-yaygin-ariza-kodlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea motordan gelen ses ne kadar ciddidir?",
+            "a": "Motor sesi her zaman acil müdahale gerektirmez. Ancak sürekli artan veya farklı bir ses varsa mutlaka kontrol edilmelidir."
+          },
+          {
+            "q": "Sesin kaynağını nasıl hızlıca tespit edebilirim?",
+            "a": "Yağ seviyesi ve kayış gerginliği gibi temel kontrollerle başlayabilirsiniz. Ardından OBD2 kodları destekleyici teşhis sağlar."
+          },
+          {
+            "q": "OBD2 cihazı olmadan sorun tespiti mümkün mü?",
+            "a": "Kısmen mümkün olmakla birlikte kesin ve hızlı teşhis için OBD2 cihazı kullanmak önerilir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motordan Ses Geliyor - Nedenleri ve Teşhis",
+        "schemaDescription": "Fiat Egea motordan ses geliyor? Olası nedenler, ilk kontroller ve OBD2 destekli teşhis ile motor sesinin nedenlerini öğrenin."
+      },
+      "en": {
+        "slug": "fiat-egea-engine-noise",
+        "title": "Fiat Egea Engine Noise: Causes and Diagnostic Steps",
+        "metaDescription": "Learn common causes, practical checks, and step-by-step diagnostics to address engine noise in your Fiat Egea.",
+        "intro": "Noticing unusual noises coming from your Fiat Egea’s engine can be concerning and may indicate an underlying issue. Engine noises can stem from various sources and do not always point to a single cause. Before replacing parts, it's essential to perform thorough checks to identify potential problems accurately.",
+        "severity": "Engine noises vary in seriousness from minor irritations to signals of significant mechanical problems. A careful diagnostic approach helps avoid unnecessary expenses and ensures vehicle safety.",
+        "driveAdvice": "If your Fiat Egea’s engine is noisy, avoid high-speed driving and excessive engine loads until the cause is identified and addressed to prevent further damage.",
+        "likelyCauses": [
+          "Low or degraded engine oil",
+          "Worn or loose drive belts",
+          "Worn engine bearings",
+          "Exhaust leaks or damage",
+          "Faulty or clogged fuel injectors"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and quality thoroughly.",
+          "Inspect belts for wear and tension issues.",
+          "Examine exhaust system for leaks and damage.",
+          "Measure engine bearing play or wear if accessible.",
+          "Test fuel injectors for proper operation and cleanliness.",
+          "Scan for diagnostic trouble codes (DTCs) using an OBD2 scanner."
+        ],
+        "firstChecks": [
+          "Verify the engine oil level immediately.",
+          "Quickly inspect belt condition and tension.",
+          "Examine under the car for potential exhaust leaks."
+        ],
+        "commonMistakes": [
+          "Replacing parts without confirming the source of noise",
+          "Neglecting oil level and condition checks",
+          "Attempting diagnosis without OBD2 code reading"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Engine Diagnostics",
+            "href": "/en/fiat-egea-engine-diagnostics"
+          },
+          {
+            "label": "Importance of Engine Oil Checks",
+            "href": "/en/engine-oil-checks-importance"
+          },
+          {
+            "label": "Common OBD2 Codes Explained",
+            "href": "/en/common-obd2-codes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How serious is an engine noise in the Fiat Egea?",
+            "a": "Engine noise may not always indicate a severe issue but should be evaluated to prevent potential damage if it persists or worsens."
+          },
+          {
+            "q": "What is the fastest way to identify the source of engine noise?",
+            "a": "Starting with oil level and belt inspections followed by scanning OBD2 codes can help pinpoint the problem quickly."
+          },
+          {
+            "q": "Can I diagnose engine noise without an OBD2 scanner?",
+            "a": "Basic checks are possible without a scanner, but an OBD2 scan offers a more accurate diagnosis."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Engine Noise Causes and Diagnostics",
+        "schemaDescription": "Explore causes and diagnostic steps for engine noise on your Fiat Egea and how to perform safe practical checks before repairs."
+      },
+      "de": {
+        "slug": "fiat-egea-motorschaden-ruhe",
+        "title": "Fiat Egea Motorgeräusche: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für Motorgeräusche beim Fiat Egea sowie praktische Prüfungen und Diagnoseschritte.",
+        "intro": "Motorgeräusche beim Fiat Egea können auf verschiedene Probleme hinweisen und sollten ernst genommen werden. Die Ursachen sind vielfältig und lassen sich nicht sofort auf einen einzigen Defekt zurückführen. Vor einem Teilewechsel sollten daher sorgfältige Diagnosen und Prüfungen erfolgen.",
+        "severity": "Motorgeräusche können von harmlosen bis zu schwerwiegenden mechanischen Problemen reichen. Eine genaue Diagnose verhindert unnötige Reparaturen und schützt den Motor.",
+        "driveAdvice": "Vermeiden Sie bei hörbaren Motorgeräuschen hohe Drehzahlen und starke Belastungen, bis die Ursache geklärt ist, um weitere Schäden zu vermeiden.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Motorölstand",
+          "Abgenutzte oder lockere Keilriemen",
+          "Verschlissene Motorlager",
+          "Auspuffanlagenleckagen oder Beschädigungen",
+          "Defekte oder verstopfte Einspritzdüsen"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und Ölqualität prüfen.",
+          "Zustand und Spannung der Riemen untersuchen.",
+          "Auspuffanlage auf Undichtigkeiten kontrollieren.",
+          "Motorlager auf Verschleiß oder Spiel prüfen.",
+          "Einspritzdüsen auf Funktion und Sauberkeit testen.",
+          "OBD2-Diagnosegerät anschließen und Fehlercodes auslesen."
+        ],
+        "firstChecks": [
+          "Motorölstand sofort überprüfen.",
+          "Riemenzustand und Spannung schnell beurteilen.",
+          "Unter dem Fahrzeug auf Auspufflecks prüfen."
+        ],
+        "commonMistakes": [
+          "Teile austauschen ohne genaue Fehlerursache zu kennen",
+          "Motorölstand und -qualität nicht prüfen",
+          "Diagnose ohne OBD2-Fehlerscanner durchführen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/mehrfache Fehlzündungen",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0420 - Abgasreinigungssystem ineffizient"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Motor Diagnose Anleitung",
+            "href": "/de/fiat-egea-motor-diagnose"
+          },
+          {
+            "label": "Wichtigkeit der Motorölprüfung",
+            "href": "/de/motoröl-pruefung-wichtigkeit"
+          },
+          {
+            "label": "Häufige OBD2-Fehlercodes erklärt",
+            "href": "/de/obd2-fehlercodes-erklaert"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie ernst sind Motorgeräusche beim Fiat Egea?",
+            "a": "Motorgeräusche sind nicht immer kritisch, sollten aber überprüft werden, um größere Schäden zu vermeiden."
+          },
+          {
+            "q": "Wie erkenne ich schnell die Ursache von Motorgeräuschen?",
+            "a": "Kontrolle von Ölstand und Keilriemen sowie Auslesen der OBD2-Codes hilft bei der schnellen Diagnose."
+          },
+          {
+            "q": "Kann man ohne OBD2-Scanner Motorgeräusche diagnostizieren?",
+            "a": "Grundchecks sind möglich, eine OBD2-Diagnose liefert jedoch genauere Ergebnisse."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motorgeräusche - Ursachen und Diagnose",
+        "schemaDescription": "Erfahren Sie die Ursachen und Diagnoseverfahren für Motorgeräusche beim Fiat Egea und wie Sie praktische Prüfungen durchführen."
+      },
+      "es": {
+        "slug": "fiat-egea-motor-tiembla-ruido",
+        "title": "Fiat Egea: Ruido en el Motor - Causas y Diagnóstico",
+        "metaDescription": "Descubra causas comunes, comprobaciones prácticas y pasos diagnósticos para el ruido en el motor de su Fiat Egea.",
+        "intro": "El ruido proveniente del motor de un Fiat Egea puede ser indicativo de diversas fallas mecánicas que necesitan diagnóstico cuidadoso. No siempre responde a una sola causa, por lo que es vital realizar revisiones antes de cambiar piezas para evitar reparaciones innecesarias.",
+        "severity": "Los ruidos en el motor pueden variar desde problemas leves hasta condiciones que pueden dañar el vehículo. La evaluación oportuna ayuda a mantener la seguridad y funcionamiento óptimo.",
+        "driveAdvice": "Evite conducir a altas velocidades o exigir demasiado al motor hasta identificar y solucionar la fuente del ruido para prevenir daños mayores.",
+        "likelyCauses": [
+          "Nivel de aceite bajo o aceite en mal estado",
+          "Correas desgastadas o flojas",
+          "Desgaste en rodamientos del motor",
+          "Fugas o daños en el sistema de escape",
+          "Inyectores obstruidos o mal funcionamiento"
+        ],
+        "diagnosticSteps": [
+          "Verificar nivel y calidad del aceite del motor.",
+          "Inspeccionar estado y tensión de las correas.",
+          "Revisar el sistema de escape por fugas o daños.",
+          "Comprobar desgaste o juego en rodamientos del motor.",
+          "Probar funcionamiento y limpieza de inyectores.",
+          "Leer códigos de fallo con escáner OBD2."
+        ],
+        "firstChecks": [
+          "Medir inmediatamente el nivel de aceite del motor.",
+          "Revisar rápidamente la condición y tensión de las correas.",
+          "Inspeccionar fugas debajo del automóvil en el escape."
+        ],
+        "commonMistakes": [
+          "Sustituir piezas sin confirmar la causa exacta",
+          "No comprobar el nivel y estado del aceite",
+          "Intentar diagnóstico sin leer códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio o múltiple",
+          "P0171 - Mezcla pobre en banco 1",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico del motor Fiat Egea",
+            "href": "/es/diagnostico-motor-fiat-egea"
+          },
+          {
+            "label": "Importancia de la revisión del aceite",
+            "href": "/es/importancia-revision-aceite"
+          },
+          {
+            "label": "Códigos OBD2 comunes y su significado",
+            "href": "/es/codigos-obd2-comunes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tan serio es un ruido en el motor del Fiat Egea?",
+            "a": "El ruido no siempre indica un problema grave, pero debe revisarse para evitar daños mayores si persiste."
+          },
+          {
+            "q": "¿Cómo identificar rápido la causa del ruido del motor?",
+            "a": "Comience con una inspección del aceite y correas y luego lea los códigos OBD2 para un diagnóstico rápido."
+          },
+          {
+            "q": "¿Se puede diagnosticar sin un escáner OBD2?",
+            "a": "Se pueden hacer algunas revisiones básicas, pero un escáner OBD2 proporciona un diagnóstico más preciso."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Ruido en el Motor - Causas y Diagnóstico",
+        "schemaDescription": "Conozca las causas y pasos para diagnosticar ruidos en el motor del Fiat Egea y cómo realizar revisiones antes de reparaciones."
+      },
+      "fr": {
+        "slug": "fiat-egea-bruit-moteur",
+        "title": "Fiat Egea Bruit Moteur : Causes et Diagnostics",
+        "metaDescription": "Découvrez les causes fréquentes, contrôles pratiques et étapes de diagnostic pour le bruit moteur de votre Fiat Egea.",
+        "intro": "Un bruit inhabituel provenant du moteur de votre Fiat Egea peut révéler divers problèmes mécaniques. Ces bruits ne sont pas toujours liés à une seule cause. Avant tout remplacement de pièce, il est important d’effectuer des contrôles approfondis afin d’identifier précisément la source du problème.",
+        "severity": "Les bruits moteur peuvent aller d’un simple désagrément à un signe de problème mécanique sérieux. Un diagnostic rigoureux aide à éviter des réparations inutiles et à préserver la sécurité du véhicule.",
+        "driveAdvice": "Évitez de solliciter fortement le moteur ou de rouler à haute vitesse tant que le bruit n’est pas diagnostiqué et corrigé pour éviter d’aggraver la situation.",
+        "likelyCauses": [
+          "Niveau d’huile moteur bas ou dégradé",
+          "Courroies usées ou détendues",
+          "Paliers moteur usés",
+          "Fuites ou dégâts sur le système d’échappement",
+          "Injecteurs encrassés ou défectueux"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau et la qualité de l’huile moteur.",
+          "Inspecter l’état et la tension des courroies.",
+          "Vérifier les fuites ou dommages du système d’échappement.",
+          "Examiner les paliers moteur pour usure ou jeu.",
+          "Tester le fonctionnement et la propreté des injecteurs.",
+          "Scanner les codes défaut via outil OBD2."
+        ],
+        "firstChecks": [
+          "Contrôler immédiatement le niveau d’huile moteur.",
+          "Vérifier rapidement l’état et la tension des courroies.",
+          "Rechercher les fuites sous le véhicule au niveau de l’échappement."
+        ],
+        "commonMistakes": [
+          "Remplacer les pièces sans identifier précisément la cause",
+          "Omettre le contrôle du niveau et de la qualité d’huile",
+          "Diagnostiquer sans lire les codes défaut via OBD2"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Mélange trop pauvre (banc 1)",
+          "P0420 - Efficacité du catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostic moteur Fiat Egea",
+            "href": "/fr/diagnostic-moteur-fiat-egea"
+          },
+          {
+            "label": "L’importance du contrôle de l’huile moteur",
+            "href": "/fr/controle-importance-huile-moteur"
+          },
+          {
+            "label": "Codes d’erreur OBD2 courants",
+            "href": "/fr/codes-erreur-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la gravité d’un bruit moteur sur Fiat Egea ?",
+            "a": "Le bruit moteur n'est pas toujours grave mais doit être vérifié pour éviter d’éventuels dommages importants."
+          },
+          {
+            "q": "Comment identifier rapidement la source du bruit moteur ?",
+            "a": "Commencez par contrôler le niveau d’huile et les courroies, puis analysez les codes défauts OBD2."
+          },
+          {
+            "q": "Peut-on diagnostiquer sans outil OBD2 ?",
+            "a": "Quelques contrôles basiques sont possibles, mais un diagnostic OBD2 offre une meilleure précision."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Bruit Moteur - Causes et Diagnostic",
+        "schemaDescription": "Comprenez les causes et les étapes de diagnostic du bruit moteur sur Fiat Egea et comment effectuer des contrôles pratiques avant réparations."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-rough-idle",
+    "intentKey": "fiat-egea_rough_idle",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "rough_idle",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-rolanti-dalgalanma",
+        "title": "Fiat Egea Rölanti Dalgalanıyor: Sebepler ve Çözümler",
+        "metaDescription": "Fiat Egea rölanti dalgalanması problemlerinde kontrol edilmesi gereken olası nedenler ve basit teşhis yöntemleri hakkında detaylı rehber.",
+        "intro": "Fiat Egea araçlarda rölanti sırasında motorun düzensiz çalışması yani dalgalanma sıkça karşılaşılan bir sorundur. Bu durum sürüş konforunu etkilerken motor performansında da tutarsızlıklara yol açabilir. Çözüme ulaşmak için sorunun kaynağına dair birtakım kontroller yapılması gerekir. Tek bir sebebi kesin kılmadan, olası nedenleri ve çözüm yollarını birlikte inceleyelim.",
+        "severity": "Orta düzeyde rahatsızlık yaratır, uzun süre ihmal edilmemelidir.",
+        "driveAdvice": "Rölanti dalgalanması hissedildiğinde ani hızlanma ve yüksek devirden kaçının, mümkünse servis kontrolü yaptırın.",
+        "likelyCauses": [
+          "Kirli ya da tıkalı rölanti hava kontrol valfi (IAC)",
+          "Enjektörlerde tıkanıklık veya verimsizlik",
+          "Ateşleme sisteminde buji veya bobin sorunları",
+          "Yakıt kalitesinin düşüklüğü ya da yakıt filtresi tıkanması",
+          "Egzoz gazı devridaim sistemi (EGR) valfının arızası"
+        ],
+        "diagnosticSteps": [
+          "Motor çalışma sıcaklığına gelince OBD2 cihazıyla parametreleri okuyun",
+          "Rölanti hava kontrol valfini gözle ve ölçümle test edin",
+          "Bujileri ve ateşleme bobinlerini kontrol edin, kıvılcım testi yapın",
+          "Yakıt enjeksiyonlarını ultrasonik temizleyici ile test ettirin",
+          "Yakıt filtresini kontrol edin ve gerekiyorsa değiştirin",
+          "EGR valfi üzerinde karbon birikintisi olup olmadığını kontrol edin"
+        ],
+        "firstChecks": [
+          "Hava filtresinin temiz olup olmadığı",
+          "Araç bilgisayarından motor parametrelerini kontrol etmek",
+          "Yakıt seviyesinin düşük olmadığından emin olmak"
+        ],
+        "commonMistakes": [
+          "Yalnızca tek bir parça değiştirip sorunu çözücü olarak görmek",
+          "Sadece gözle görünür tıkanıklıkla ilgilenmek, elektronik arızaları göz ardı etmek",
+          "Servise gitmeden önce OBD2 cihazı ile veri okumamak"
+        ],
+        "relatedCodes": [
+          "P0505 - Rölanti Hızı Kontrol Sistemi Arızası",
+          "P0300 - Rastgele veya Çoklu Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Sisteminde Çok Fakir Karışım"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-ariza-kodlari",
+            "href": "/tr/fiat-egea-ariza-kodlari"
+          },
+          {
+            "label": "rolanti-hatasi-oncesi-kontroller",
+            "href": "/tr/rolanti-hatasi-oncesi-kontroller"
+          },
+          {
+            "label": "obd2-cihazlari-nasil-kullanilir",
+            "href": "/tr/obd2-cihazlari-nasil-kullanilir"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea rölanti dalgalanması yaşadığımda ilk ne kontrol etmeliyim?",
+            "a": "İlk olarak hava filtresi ve rölanti hava kontrol valfi (IAC) temizliğini kontrol edin. Ardından OBD2 cihazıyla motor parametrelerine bakmak faydalı olur."
+          },
+          {
+            "q": "Rölanti dalgalanması aracın performansını nasıl etkiler?",
+            "a": "Dalgalanan rölanti, motorun düzensiz çalışmasına ve yanma verimliliğinin düşmesine yol açarak performans kaybı ve yakıt artışına neden olabilir."
+          },
+          {
+            "q": "Bujiler rölanti dalgalanmasına neden olabilir mi?",
+            "a": "Evet, bujilerde aşınma veya yanlış ateşleme rölantide düzensizliğe yol açabilir. Kontrol edilmesi önemlidir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Rölanti Dalgalanması Rehberi",
+        "schemaDescription": "Fiat Egea araçlarda rölanti dalgalanması problemi için olası nedenleri, teşhis yöntemlerini ve çözüm önerilerini içeren kapsamlı bilgilendirme."
+      },
+      "en": {
+        "slug": "fiat-egea-rough-idle",
+        "title": "Fiat Egea Rough Idle: Causes and How to Diagnose",
+        "metaDescription": "Discover common causes and practical diagnostics for rough idle in Fiat Egea models, including first checks and OBD2 codes.",
+        "intro": "Experiencing a rough idle in your Fiat Egea can indicate various underlying issues affecting engine performance and drivability. Identifying the root cause involves systematic checks rather than assuming a single problem. This guide covers potential causes, diagnostic steps, and practical advice to help you troubleshoot safely and effectively.",
+        "severity": "Moderate impact on comfort and engine smoothness; should be inspected timely.",
+        "driveAdvice": "Avoid aggressive acceleration and high revs when rough idle occurs. Schedule a thorough check soon.",
+        "likelyCauses": [
+          "Dirty or failing idle air control valve (IAC)",
+          "Clogged or malfunctioning fuel injectors",
+          "Worn spark plugs or faulty ignition coils",
+          "Poor fuel quality or blocked fuel filter",
+          "Defective exhaust gas recirculation (EGR) valve"
+        ],
+        "diagnosticSteps": [
+          "Scan engine parameters with an OBD2 scanner at normal operating temperature",
+          "Inspect and test the idle air control valve for proper operation",
+          "Check spark plugs and ignition coils for wear and spark quality",
+          "Test fuel injectors for clogs and clean if necessary",
+          "Examine and replace fuel filter if clogged",
+          "Check for carbon buildup and functionality of the EGR valve"
+        ],
+        "firstChecks": [
+          "Check cleanliness and condition of the air filter",
+          "Review engine data with OBD2 scanner for irregular parameters",
+          "Ensure adequate fuel level and fuel quality"
+        ],
+        "commonMistakes": [
+          "Replacing parts without confirming the root cause",
+          "Ignoring electronic or sensor faults, focusing only on mechanical issues",
+          "Failing to read OBD2 codes before attempting repairs"
+        ],
+        "relatedCodes": [
+          "P0505 - Idle Control System Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-trouble-codes",
+            "href": "/en/fiat-egea-trouble-codes"
+          },
+          {
+            "label": "idle-issue-preliminary-checks",
+            "href": "/en/idle-issue-preliminary-checks"
+          },
+          {
+            "label": "how-to-use-obd2-scanner",
+            "href": "/en/how-to-use-obd2-scanner"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I check first for rough idle on my Fiat Egea?",
+            "a": "Start by inspecting the air filter and idle air control valve for dirt or malfunction. Using an OBD2 scanner to read engine data can provide further clues."
+          },
+          {
+            "q": "How does rough idle affect my vehicle's performance?",
+            "a": "Rough idle can lead to unstable engine operation, decreased fuel efficiency, and poor driving comfort due to inconsistent power delivery."
+          },
+          {
+            "q": "Can spark plugs cause rough idle issues?",
+            "a": "Yes, worn or faulty spark plugs can cause misfires and uneven engine running at idle, so their condition should be checked."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Rough Idle Diagnostic Guide",
+        "schemaDescription": "Comprehensive guide covering causes, diagnostics, and fixes for rough idle problems in Fiat Egea vehicles."
+      },
+      "de": {
+        "slug": "fiat-egea-unstabile-leerlauf",
+        "title": "Fiat Egea Ruckelnder Leerlauf: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen und wie Sie Instabilitäten im Leerlauf bei Fiat Egea diagnostizieren. Tipps für erste Kontrollen und relevante OBD2-Codes.",
+        "intro": "Ein unruhiger Leerlauf beim Fiat Egea kann verschiedene Ursachen haben und beeinflusst die Motorleistung sowie den Fahrkomfort negativ. Um den Fehler einzugrenzen, sind gezielte Prüfungen notwendig. Diese Anleitung erklärt mögliche Gründe, Diagnoseschritte und praktische Hinweise zur sicheren Fehlersuche.",
+        "severity": "Mittlere Beeinträchtigung, sollte zeitnah überprüft werden.",
+        "driveAdvice": "Vermeiden Sie abruptes Gasgeben und hohe Drehzahlen bei unruhigem Leerlauf. Lassen Sie das Fahrzeug baldmöglichst überprüfen.",
+        "likelyCauses": [
+          "Verschmutztes oder defektes Leerlaufregelventil (IAC)",
+          "Verstopfte oder fehlerhafte Einspritzdüsen",
+          "Abgenutzte Zündkerzen oder defekte Zündspulen",
+          "Minderwertiger Kraftstoff oder verstopfter Kraftstofffilter",
+          "Fehlerhaftes Abgasrückführventil (AGR)"
+        ],
+        "diagnosticSteps": [
+          "Mit OBD2-Scanner Motorparameter bei Betriebstemperatur auslesen",
+          "Leerlaufregelventil visuell und funktionell prüfen",
+          "Zündkerzen und Zündspulen auf Verschleiß und Funken testen",
+          "Einspritzdüsen auf Verstopfung testen und reinigen",
+          "Kraftstofffilter kontrollieren und bei Bedarf tauschen",
+          "AGR-Ventil auf Rußablagerungen und Funktion prüfen"
+        ],
+        "firstChecks": [
+          "Sauberkeit und Zustand des Luftfilters überprüfen",
+          "Motorparameter per OBD2-Scanner auslesen",
+          "Kraftstoffstand und -qualität prüfen"
+        ],
+        "commonMistakes": [
+          "Teile austauschen ohne genaue Fehleranalyse",
+          "Elektronische Fehler ignorieren und nur mechanische Ursachen betrachten",
+          "Vor Reparaturversuchen keine OBD2-Diagnose durchführen"
+        ],
+        "relatedCodes": [
+          "P0505 - Leerlaufregelung Fehler",
+          "P0300 - Zufällige/Mehrfachzylinderfehlzündung",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-fehlercodes",
+            "href": "/de/fiat-egea-fehlercodes"
+          },
+          {
+            "label": "leerlauf-problem-erste-schritte",
+            "href": "/de/leerlauf-problem-erste-schritte"
+          },
+          {
+            "label": "obd2-scanner-richtig nutzen",
+            "href": "/de/obd2-scanner-richtig-nutzen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sollte ich zuerst bei ruckelndem Leerlauf prüfen?",
+            "a": "Beginnen Sie mit der Kontrolle des Luftfilters und des Leerlaufregelventils. Anschließend empfiehlt sich eine OBD2-Diagnose."
+          },
+          {
+            "q": "Wie wirkt sich ruckelnder Leerlauf auf das Fahrzeug aus?",
+            "a": "Ein unruhiger Leerlauf führt zu Leistungsverlust, höherem Verbrauch und beeinträchtigtem Fahrkomfort."
+          },
+          {
+            "q": "Können Zündkerzen die Ursache für den ruckelnden Leerlauf sein?",
+            "a": "Ja, verschlissene oder defekte Zündkerzen verursachen Fehlzündungen und beeinflussen den Leerlauf negativ."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Leerlaufprobleme diagnostizieren",
+        "schemaDescription": "Umfassender Leitfaden zur Ursachenfindung, Diagnose und Behebung von ruckelndem Leerlauf im Fiat Egea."
+      },
+      "es": {
+        "slug": "fiat-egea-motor-tiembla-en-relenti",
+        "title": "Fiat Egea Motor Tiembla en Ralentí: Causas y Diagnóstico",
+        "metaDescription": "Identifica las causas comunes y cómo diagnosticar el motor que tiembla en ralentí en Fiat Egea. Incluye cheques iniciales y códigos OBD2 relevantes.",
+        "intro": "Cuando el motor de un Fiat Egea tiembla durante el ralentí, puede deberse a varios factores que afectan su rendimiento y suavidad. Es importante investigar de forma sistemática y no asumir un único problema. Esta guía presenta posibles causas, pasos para diagnosticar y consejos prácticos para resolverlo.",
+        "severity": "Impacto moderado en el confort y la suavidad del motor; se recomienda revisión oportuna.",
+        "driveAdvice": "Evita aceleraciones bruscas y revoluciones altas si notas temblores en ralentí. Programa una revisión pronto.",
+        "likelyCauses": [
+          "Válvula de control de aire en ralentí sucia o defectuosa",
+          "Inyectores obstruidos o mal funcionamiento",
+          "Bujías desgastadas o bobinas de encendido defectuosas",
+          "Combustible de baja calidad o filtro de combustible bloqueado",
+          "Válvula EGR (recirculación de gases) averiada"
+        ],
+        "diagnosticSteps": [
+          "Lee los parámetros del motor con un escáner OBD2 a temperatura normal de funcionamiento",
+          "Inspecciona y prueba la válvula de control de aire en ralentí",
+          "Revisa bujías y bobinas de encendido por desgaste y chispa",
+          "Prueba y limpia inyectores si están obstruidos",
+          "Verifica y cambia el filtro de combustible si está saturado",
+          "Comprueba acumulación de carbono y funcionamiento de la válvula EGR"
+        ],
+        "firstChecks": [
+          "Revisar el estado y limpieza del filtro de aire",
+          "Consultar datos del motor con el escáner OBD2 para detectar irregularidades",
+          "Confirmar nivel y calidad adecuada de combustible"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin confirmar la causa raíz del problema",
+          "Ignorar fallos electrónicos o sensores y solo revisar mecánica",
+          "No revisar códigos OBD2 antes de reparar"
+        ],
+        "relatedCodes": [
+          "P0505 - Mal funcionamiento del sistema de control de ralentí",
+          "P0300 - Fallo aleatorio/múltiple de encendido",
+          "P0171 - Sistema demasiado pobre (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "codigos-de-fallo-fiat-egea",
+            "href": "/es/codigos-de-fallo-fiat-egea"
+          },
+          {
+            "label": "primeros-pasos-problemas-ralenti",
+            "href": "/es/primeros-pasos-problemas-ralenti"
+          },
+          {
+            "label": "como-usar-escanner-obd2",
+            "href": "/es/como-usar-escanner-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué debo revisar primero si el Fiat Egea tiembla al ralentí?",
+            "a": "Primero verifica el filtro de aire y la válvula de control de aire en ralentí. Luego, usa un escáner OBD2 para revisar los parámetros del motor."
+          },
+          {
+            "q": "¿Cómo afecta el motor que tiembla en ralentí al rendimiento?",
+            "a": "Causa funcionamiento inestable, mayor consumo y disminución del confort de conducción."
+          },
+          {
+            "q": "¿Las bujías pueden causar temblores en el ralentí?",
+            "a": "Sí, las bujías desgastadas o defectuosas pueden provocar fallos de encendido y afectar el ralentí."
+          }
+        ],
+        "schemaTitle": "Diagnóstico de motor que tiembla en ralentí Fiat Egea",
+        "schemaDescription": "Guía detallada con causas, diagnóstico y soluciones para problemas de temblores en ralentí en Fiat Egea."
+      },
+      "fr": {
+        "slug": "fiat-egea-ralenti-instable",
+        "title": "Fiat Egea Ralenti Instable : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes et comment diagnostiquer un ralenti instable sur Fiat Egea, avec contrôles initiaux et codes OBD2 liés.",
+        "intro": "Un ralenti instable sur une Fiat Egea peut provenir de plusieurs facteurs affectant la performance moteur et la conduite. Il est important d’effectuer des vérifications méthodiques sans se focaliser sur une seule cause possible. Ce guide détaille les causes probables, les étapes de diagnostic et des conseils pratiques pour une intervention efficace.",
+        "severity": "Impact modéré sur le confort et la régularité du moteur, à vérifier rapidement.",
+        "driveAdvice": "Évitez les accélérations brusques et régimes élevés en cas de ralenti instable. Prévoir une vérification rapide.",
+        "likelyCauses": [
+          "Valve de contrôle du ralenti (IAC) encrassée ou défectueuse",
+          "Injecteurs bouchés ou dysfonctionnels",
+          "Bougies usées ou bobines d’allumage défaillantes",
+          "Qualité de carburant insuffisante ou filtre à carburant obstrué",
+          "Valve EGR (recyclage des gaz) défectueuse"
+        ],
+        "diagnosticSteps": [
+          "Lire les paramètres moteur avec un scanner OBD2 à température de fonctionnement normale",
+          "Inspecter et tester la valve de contrôle du ralenti",
+          "Vérifier bougies et bobines d’allumage pour usure et qualité de l’étincelle",
+          "Tester les injecteurs pour obstruction et les nettoyer si besoin",
+          "Contrôler et remplacer le filtre à carburant si colmaté",
+          "Vérifier l’encrassement et le fonctionnement de la valve EGR"
+        ],
+        "firstChecks": [
+          "Vérifier la propreté et l’état du filtre à air",
+          "Analyser les données moteur via un scanner OBD2",
+          "Contrôler le niveau et la qualité du carburant"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans confirmer la cause réelle",
+          "Négliger les pannes électroniques ou capteurs en ne considérant que la mécanique",
+          "Ne pas lire les codes OBD2 avant d’entreprendre des réparations"
+        ],
+        "relatedCodes": [
+          "P0505 - Dysfonctionnement du système de contrôle du ralenti",
+          "P0300 - Ratés d’allumage aléatoires / multiples",
+          "P0171 - Système trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "codes-defauts-fiat-egea",
+            "href": "/fr/codes-defauts-fiat-egea"
+          },
+          {
+            "label": "premieres-verifications-ralenti",
+            "href": "/fr/premieres-verifications-ralenti"
+          },
+          {
+            "label": "utiliser-scanner-obd2",
+            "href": "/fr/utiliser-scanner-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que vérifier en premier en cas de ralenti instable sur Fiat Egea ?",
+            "a": "Commencez par contrôler la propreté du filtre à air et la valve de contrôle du ralenti. Ensuite, analysez les données moteur avec un scanner OBD2."
+          },
+          {
+            "q": "Quel impact a un ralenti instable sur la voiture ?",
+            "a": "Il provoque une perte de performance, une consommation accrue et une sensation de conduite moins confortable."
+          },
+          {
+            "q": "Les bougies peuvent-elles causer un ralenti instable ?",
+            "a": "Oui, des bougies usées ou défectueuses peuvent entraîner des ratés d’allumage et perturber le ralenti."
+          }
+        ],
+        "schemaTitle": "Guide diagnostic ralenti instable Fiat Egea",
+        "schemaDescription": "Guide complet des causes, diagnostics et solutions pour un ralenti instable sur Fiat Egea."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-engine-shaking",
+    "intentKey": "fiat-egea_engine_shaking",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "engine_shaking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-titreme-sorunu",
+        "title": "Fiat Egea Motor Titremesi Sorunu ve Temel Kontroller",
+        "metaDescription": "Fiat Egea araçlarda motor titremesi birçok sebepten kaynaklanabilir. Bu rehberle olası nedenleri, kontrolleri ve OBD2 kodlarını öğrenin.",
+        "intro": "Fiat Egea'nızda motorun titremesi sürüş konforunuzu etkileyebilir ve çeşitli mekanik veya elektronik sorunların habercisi olabilir. Bu durumu değerlendirirken, satın almadan önce hemen parça değiştirmeye yönelmemeli, temel kontrolleri yaparak olası sebepleri ele almalısınız. Bu makalede, motor titremesi için olası sebepler, kolayca uygulanabilecek testler ve OBD2 kodları hakkında kapsamlı bilgi sunulacaktır.",
+        "severity": "Motor titremesi problemi genellikle araç performansını ve sürüş güvenliğini etkileyebilir, dikkat edilmelidir.",
+        "driveAdvice": "Titreme hissedildiğinde ani hızlanma veya yüksek devirden kaçının, kısa mesafede servise gidin.",
+        "likelyCauses": [
+          "Arızalı ateşleme bujileri veya bobinleri",
+          "Kirli veya tıkalı enjektörler",
+          "Motor motor takozlarının aşınması",
+          "Hava-yakıt karışımının dengesiz olması",
+          "Vakum kaçakları"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile motor kodlarını tarayın",
+          "Bujileri ve ateşleme bobinlerini kontrol edin",
+          "Enjektör temizliği için servis önerin",
+          "Motor motor takozlarının kontrolünü yaptırın",
+          "Hava giriş sistemi ve hortumlarda kaçak arayın",
+          "Yakıt filtresi ve yakıt kalitesini değerlendirin"
+        ],
+        "firstChecks": [
+          "Bujilerin aşınma durumu ve kıvılcım kontrolü",
+          "Motor motor takozlarında gözle görünür hasar araştırılması",
+          "Hava filtresi ve hava giriş yollarının temizliği"
+        ],
+        "commonMistakes": [
+          "Hemen ateşleme parçalarını değiştirmek",
+          "Motor takozlarını görmezden gelmek",
+          "Yakıt kalitesini ve yakıt filtresini gözardı etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Çoklu silindir ateşleme hatası",
+          "P0171 - Yakıt sisteminde fazla hava",
+          "P0420 - Katalitik konvertör performans düşüklüğü"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Hataları ve Kodları",
+            "href": "/tr/obd2-hatalari-ve-kodlari"
+          },
+          {
+            "label": "Bujiler ve Ateşleme Sistemi",
+            "href": "/tr/bujiler-ve-atesleme-sistemi"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor titremesi aracımı sürüşte nasıl etkiler?",
+            "a": "Titreme sürüş konforunu düşürür ve motorun zarar görmesine neden olabilir, bu yüzden kontrol edilmelidir."
+          },
+          {
+            "q": "OBD2 cihazıyla motor titremesi nedenlerini nasıl tespit ederim?",
+            "a": "Cihaz motor arıza kodlarını okur, bu kodlar olası sorunların yönlendirilmesini sağlar."
+          },
+          {
+            "q": "Motor takozu nedir ve titremede etkisi var mıdır?",
+            "a": "Motor takozları titreşimleri emer, aşınmaları titremeye neden olabilir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motor Titremesi - Nedenleri ve Çözümleri",
+        "schemaDescription": "Fiat Egea araçlarda motor titremesi yaşandığında yapılacak kontroller, olası nedenler ve OBD2 arıza kodları hakkında detaylı rehber."
+      },
+      "en": {
+        "slug": "fiat-egea-engine-shaking",
+        "title": "Fiat Egea Engine Shaking: Common Causes and Diagnostic Tips",
+        "metaDescription": "Explore common causes, practical checks, and diagnostic steps for engine shaking issues in Fiat Egea models to avoid unnecessary part replacements.",
+        "intro": "Experiencing engine shaking in your Fiat Egea can point to several underlying issues ranging from ignition faults to vacuum leaks. Before replacing any parts, it’s important to perform systematic checks and diagnostics. This guide covers likely causes, diagnostic procedures, and related OBD2 codes to help you understand and address your vehicle’s engine vibrations effectively.",
+        "severity": "Engine shaking can impact driving smoothness and may signal issues affecting vehicle safety and performance.",
+        "driveAdvice": "Avoid harsh acceleration or sustained high RPMs when shaking occurs; seek professional inspection promptly.",
+        "likelyCauses": [
+          "Faulty spark plugs or ignition coils",
+          "Clogged or dirty fuel injectors",
+          "Worn engine mounts",
+          "Unbalanced air-fuel mixture",
+          "Vacuum leaks"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 codes with a diagnostic tool",
+          "Inspect spark plugs and ignition coils",
+          "Recommend injector cleaning or servicing",
+          "Check engine mounts for wear or damage",
+          "Inspect intake system and vacuum hoses",
+          "Evaluate fuel filter condition and fuel quality"
+        ],
+        "firstChecks": [
+          "Condition and spark of spark plugs",
+          "Visual inspection of engine mounts",
+          "Cleanliness of air filter and intake pathways"
+        ],
+        "commonMistakes": [
+          "Replacing ignition components prematurely",
+          "Ignoring deteriorated engine mounts",
+          "Overlooking fuel quality and filter condition"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/multiple cylinder misfire detected",
+          "P0171 - System too lean (bank 1)",
+          "P0420 - Catalyst system efficiency below threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Codes and Faults",
+            "href": "/en/obd2-codes-and-faults"
+          },
+          {
+            "label": "Ignition System Components",
+            "href": "/en/ignition-system-components"
+          },
+          {
+            "label": "Fuel System Issues",
+            "href": "/en/fuel-system-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How does engine shaking affect my Fiat Egea?",
+            "a": "It reduces driving comfort and may indicate mechanical issues that could cause further damage if ignored."
+          },
+          {
+            "q": "Can an OBD2 scanner identify causes of engine shaking?",
+            "a": "Yes, it can read fault codes that highlight potential ignition or fuel system problems."
+          },
+          {
+            "q": "What role do engine mounts play in reducing engine vibration?",
+            "a": "They dampen engine vibrations; worn mounts lead to increased shaking."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Engine Shaking Causes & Diagnostic Guide",
+        "schemaDescription": "Comprehensive guide on why your Fiat Egea engine is shaking, including practical checks, possible causes, and OBD2 code references."
+      },
+      "de": {
+        "slug": "fiat-egea-motor-vibrieren",
+        "title": "Fiat Egea Motorvibrationen: Häufige Ursachen und Diagnosehinweise",
+        "metaDescription": "Erfahren Sie mehr über mögliche Ursachen, praktische Prüfungen und Diagnoseverfahren bei Motorvibrationen im Fiat Egea, bevor Sie Bauteile austauschen.",
+        "intro": "Motorvibrationen bei Ihrem Fiat Egea können verschiedene Ursachen haben, von Zündproblemen bis zu Vakuumlecks. Bevor Sie Teile austauschen, sollten Sie gründliche Kontrollen und Diagnosen durchführen. Dieser Leitfaden behandelt wahrscheinliche Ursachen, Diagnoseabläufe und relevante OBD2-Codes, um Ihnen bei der effektiven Fehlerbehebung zu helfen.",
+        "severity": "Motorvibrationen können den Fahrkomfort beeinträchtigen und auf sicherheitsrelevante Probleme hinweisen.",
+        "driveAdvice": "Vermeiden Sie bei auftretenden Vibrationen starkes Beschleunigen und hohe Drehzahlen; suchen Sie zeitnah eine Werkstatt auf.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfte Einspritzdüsen",
+          "Abgenutzte Motorlager",
+          "Unausgewogenes Luft-Kraftstoff-Gemisch",
+          "Vakuumlecks"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Diagnosegerät zur Fehlercodeauslesung verwenden",
+          "Zündkerzen und Zündspulen überprüfen",
+          "Einspritzdüsenreinigung empfehlen",
+          "Motorlager auf Verschleiß kontrollieren",
+          "Ansaugsystem und Schläuche auf Undichtigkeiten prüfen",
+          "Kraftstofffilter und Qualität prüfen"
+        ],
+        "firstChecks": [
+          "Zustand und Funkenbildung der Zündkerzen",
+          "Sichtprüfung der Motorlager",
+          "Sauberkeit von Luftfilter und Ansaugsystem"
+        ],
+        "commonMistakes": [
+          "Vorzeitiger Austausch von Zündkomponenten",
+          "Ignorieren abgenutzter Motorlager",
+          " Vernachlässigung von Kraftstoffqualität und Filter"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufälliger/mehrfacher Zündaussetzer",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem unter Effizienzgrenze"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Zündsystem Komponenten",
+            "href": "/de/zuendsystem-komponenten"
+          },
+          {
+            "label": "Kraftstoffsystem Probleme",
+            "href": "/de/kraftstoffsystem-probleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie beeinflussen Motorvibrationen mein Fahrzeug?",
+            "a": "Sie mindern den Fahrkomfort und können auf mechanische Probleme hinweisen."
+          },
+          {
+            "q": "Kann ein OBD2-Scanner Ursachen für Motorvibrationen erkennen?",
+            "a": "Ja, er liest Fehlercodes aus, die auf Zündungs- oder Kraftstoffprobleme hinweisen."
+          },
+          {
+            "q": "Welche Rolle spielen Motorlager bei der Vibrationsdämpfung?",
+            "a": "Sie absorbieren Vibrationen, verschlissene Lager führen zu stärkerem Zittern."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motorvibrationen: Ursachen & Diagnose",
+        "schemaDescription": "Detaillierter Leitfaden zu Motorvibrationen bei Fiat Egea – mit möglichen Ursachen, praktischen Prüfungen und OBD2-Code-Übersicht."
+      },
+      "es": {
+        "slug": "fiat-egea-motor-tiembla",
+        "title": "Fiat Egea Motor Tiembla: Causas Frecuentes y Diagnóstico Práctico",
+        "metaDescription": "Descubre las causas comunes, revisiones prácticas y pasos para diagnosticar el temblor del motor en Fiat Egea sin remplazar piezas innecesariamente.",
+        "intro": "Si tu Fiat Egea presenta temblores en el motor, puede deberse a diversas causas que van desde fallos en la ignición hasta fugas de vacío. Antes de cambiar piezas, es fundamental realizar revisiones y diagnósticos precisos. Esta guía explica las causas más probables, los procedimientos diagnósticos y los códigos OBD2 relacionados para ayudarte a solucionar eficazmente el problema.",
+        "severity": "El temblor del motor afecta la suavidad de la conducción y puede indicar problemas mecánicos o eléctricos importantes.",
+        "driveAdvice": "Evita aceleraciones bruscas o altas revoluciones en caso de temblores; acude pronto a un taller especializado.",
+        "likelyCauses": [
+          "Bujías o bobinas de ignición defectuosas",
+          "Inyectores de combustible sucios o obstruidos",
+          "Soportes del motor desgastados",
+          "Mezcla aire-combustible desequilibrada",
+          "Fugas de vacío"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos OBD2 con un dispositivo adecuado",
+          "Inspeccionar bujías y bobinas de ignición",
+          "Recomendar limpieza o servicio de inyectores",
+          "Comprobar estado de los soportes del motor",
+          "Revisar sistema de admisión y mangueras por fugas",
+          "Evaluar filtro de combustible y calidad del combustible"
+        ],
+        "firstChecks": [
+          "Estado y chispa de las bujías",
+          "Inspección visual de los soportes del motor",
+          "Limpieza del filtro de aire y conductos de admisión"
+        ],
+        "commonMistakes": [
+          "Cambiar componentes de ignición sin diagnóstico",
+          "Ignorar soportes del motor deteriorados",
+          "Descuidar la calidad y el filtro de combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple/aleatorio",
+          "P0171 - Sistema demasiado pobre (banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos y fallos OBD2",
+            "href": "/es/codigos-fallos-obd2"
+          },
+          {
+            "label": "Sistema de encendido",
+            "href": "/es/sistema-encendido"
+          },
+          {
+            "label": "Problemas en el sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cómo afecta el temblor del motor a mi Fiat Egea?",
+            "a": "Reduce el confort de conducción e indica posibles problemas mecánicos que pueden empeorar."
+          },
+          {
+            "q": "¿Puede un escáner OBD2 detectar causas del temblor?",
+            "a": "Sí, detecta códigos de error relacionados con problemas en ignición o combustible."
+          },
+          {
+            "q": "¿Cuál es la función de los soportes del motor?",
+            "a": "Absorben vibraciones; si están desgastados, aumentan el temblor."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motor Tiembla: Guía de Causas y Diagnóstico",
+        "schemaDescription": "Guía completa para identificar y diagnosticar temblores en el motor del Fiat Egea con causas comunes y códigos OBD2 relevantes."
+      },
+      "fr": {
+        "slug": "fiat-egea-moteur-vibre",
+        "title": "Fiat Egea Moteur Qui Vibre : Causes Courantes et Conseils de Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes, vérifications pratiques et étapes de diagnostic du moteur qui vibre sur Fiat Egea, sans changer inutilement des pièces.",
+        "intro": "Un moteur qui vibre sur votre Fiat Egea peut signaler plusieurs problèmes potentiels, allant d’un défaut d’allumage à une fuite de dépression. Avant de remplacer des pièces, il est essentiel d'effectuer des contrôles rigoureux et un diagnostic complet. Ce guide présente les causes probables, les méthodes de diagnostic et les codes OBD2 associés pour vous aider à comprendre et résoudre efficacement ce désagrément.",
+        "severity": "Les vibrations moteur peuvent affecter le confort de conduite et indiquer des soucis impactant la sécurité du véhicule.",
+        "driveAdvice": "Évitez les accélérations brusques et les régimes élevés en cas de vibration ; consultez rapidement un professionnel.",
+        "likelyCauses": [
+          "Bougies d’allumage ou bobines défectueuses",
+          "Injecteurs encrassés ou obstrués",
+          "Supports moteur usés",
+          "Mélange air-carburant déséquilibré",
+          "Fuites de dépression"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts via un outil OBD2",
+          "Contrôler les bougies et bobines d’allumage",
+          "Proposer un nettoyage des injecteurs",
+          "Vérifier l’état des supports moteur",
+          "Rechercher des fuites dans le circuit d’admission",
+          "Évaluer l’état du filtre à carburant et la qualité du carburant"
+        ],
+        "firstChecks": [
+          "État et étincelle des bougies d’allumage",
+          "Inspection visuelle des supports moteur",
+          "Propreté du filtre à air et système d’admission"
+        ],
+        "commonMistakes": [
+          "Changer prématurément les pièces d’allumage",
+          "Ignorer l’usure des supports moteur",
+          "Négliger la qualité du carburant et le filtre"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés multiples aléatoires",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0420 - Efficacité catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défauts OBD2",
+            "href": "/fr/codes-defauts-obd2"
+          },
+          {
+            "label": "Système d’allumage",
+            "href": "/fr/systeme-allumage"
+          },
+          {
+            "label": "Problèmes système carburant",
+            "href": "/fr/problemes-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Comment les vibrations moteur affectent-elles mon Fiat Egea ?",
+            "a": "Elles réduisent le confort de conduite et peuvent indiquer des problèmes mécaniques graves."
+          },
+          {
+            "q": "Un scanner OBD2 peut-il identifier les causes des vibrations ?",
+            "a": "Oui, il lit les codes d’erreur liés aux problèmes d’allumage ou de carburant."
+          },
+          {
+            "q": "Quel est le rôle des supports moteur ?",
+            "a": "Ils absorbent les vibrations du moteur ; s’ils sont usés, les vibrations augmentent."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Moteur Qui Vibre : Causes et Diagnostic",
+        "schemaDescription": "Guide complet sur les vibrations moteur du Fiat Egea, incluant causes possibles, vérifications pratiques et codes défauts OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-check-engine-light",
+    "intentKey": "fiat-egea_check_engine_light",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "check_engine_light",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-motor-ariza-lambasi-yaniyor",
+        "title": "Fiat Egea Motor Arıza Lambası Yanıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Fiat Egea'da motor arıza lambası yanıyor? Olası sebepleri, temel kontrolleri ve doğru teşhis yöntemlerini öğrenin.",
+        "intro": "Fiat Egea araçlarda motor arıza lambasının yanması, aracın motor sistemiyle ilgili olası sorunlara işaret eder. Bu durumun kesin sebebini anlamak için kapsamlı bir inceleme gerekir. Arızanın nedenlerini araştırırken hızlıca yapılabilecek bazı ön kontroller, doğru teşhis ve güvenli sürüş için önemlidir. Kesin parça değişimine geçmeden önce adım adım kontrol önerileri ile sorunu anlamaya çalışmalıyız.",
+        "severity": "Motor arıza lambasının yanması, genellikle aracın performansını ve emisyonlarını etkileyebilecek sorunlara işaret eder. Duruma göre sürüş güvenliği etkilenebilir.",
+        "driveAdvice": "Motor arıza lambası yanıyorsa, sürüş sırasında güç kaybı veya anormal gürültü varsa aracı kısa sürede kontrol ettirin. Gerektiğinde moturu zorlamadan servise yönlendirin.",
+        "likelyCauses": [
+          "Oksijen sensörü arızası veya kirliliği",
+          "Yakıt sistemi basınç düşüklüğü",
+          "Hava filtresinin tıkanması",
+          "Egzoz gazı recirculation (EGR) valfi sorunları",
+          "Buji ve ateşleme sistemindeki arızalar"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile hata kodlarını okuyun",
+          "Hava filtresini söküp kontrol edin",
+          "Yakıt pompası ve basıncını ölçün",
+          "Oksijen sensörü sinyallerini test edin",
+          "EGR valfi temizliğini veya işlevini kontrol edin",
+          "Motor soğutma sistemi basıncını gözden geçirin"
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesini ve kalitesini kontrol edin",
+          "Hava filtresinde tıkanıklık olup olmadığını inceleyin",
+          "Yakıt deposunda kir veya su olup olmadığını doğrulayın"
+        ],
+        "commonMistakes": [
+          "Doğrudan parça değiştirmeye başlamak",
+          "Tekrar eden hata kodlarını ihmal etmek",
+          "Motor arıza lambası yanınca aracı zorlamaya devam etmek"
+        ],
+        "relatedCodes": [
+          "P0130 - Oksijen sensörü arızası",
+          "P0171 - Yakıt sisteminde zengin karışım",
+          "P0401 - EGR sistemi akış yetersizliği"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Hata Kodları ve Anlamları",
+            "href": "/tr/obd2-hata-kodlari-ve-anlamlari"
+          },
+          {
+            "label": "Fiat Egea Yakıt Sistemi Sorunları",
+            "href": "/tr/fiat-egea-yakit-sistemi-sorunlari"
+          },
+          {
+            "label": "Motor Arıza Lambası Nasıl Okunur?",
+            "href": "/tr/motor-ariza-lambasi-nasil-okunur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası neden aniden yanar?",
+            "a": "Sensor arızaları, yakıt karışımı sorunları veya egzoz sistemindeki problemler gibi çeşitli sebeplerden dolayı motor arıza lambası aniden yanabilir."
+          },
+          {
+            "q": "Yaşadığım sorun için hangi OBD2 kodunu kontrol etmeliyim?",
+            "a": "Öncelikle P0130, P0171 ve P0401 gibi motor yönetimi ile ilgili yaygın hata kodlarını kontrol etmek faydalı olur."
+          },
+          {
+            "q": "Motor arıza lambası yandığında araçla yolculuğa devam edebilir miyim?",
+            "a": "Eğer araçta performans düşüşü veya anormal sesler yoksa kısa süreli olarak sürüş devam edilebilir, ancak mümkün olan en kısa sürede kontrol ettirilmelidir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motor Arıza Lambası Neden Yanıyor? - Teşhis ve Çözümler",
+        "schemaDescription": "Fiat Egea'da motor arıza lambasının yanmasının olası nedenleri, yapılacak kontroller ve sık karşılaşılan sorunlar hakkında uzman rehberi."
+      },
+      "en": {
+        "slug": "fiat-egea-check-engine-light-on",
+        "title": "Fiat Egea Check Engine Light On: Common Causes and Diagnostics",
+        "metaDescription": "Is your Fiat Egea check engine light on? Discover common causes, practical checks, and diagnostic steps before replacing parts.",
+        "intro": "When the check engine light illuminates on a Fiat Egea, it signals that the engine management system has detected a potential issue. Identifying the exact cause requires careful diagnosis since multiple factors can trigger this warning. This guide covers practical checks, common fault causes, and diagnostic steps to help you understand and address the problem safely and efficiently.",
+        "severity": "A check engine light can indicate a range of issues, some affecting performance or emissions. While some faults are minor, others may impact vehicle safety or drivability.",
+        "driveAdvice": "If the check engine light comes on, monitor the vehicle for any unusual sounds or performance loss. Avoid hard driving and seek inspection soon to prevent possible damage.",
+        "likelyCauses": [
+          "Faulty or contaminated oxygen sensor",
+          "Low fuel pressure in the fuel system",
+          "Clogged air filter restricting airflow",
+          "Malfunctioning EGR (exhaust gas recirculation) valve",
+          "Ignition coil or spark plug issues"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to read error codes",
+          "Inspect and clean or replace the air filter",
+          "Check fuel pump operation and fuel pressure",
+          "Test oxygen sensor signal accuracy",
+          "Examine EGR valve for soot buildup or failure",
+          "Inspect engine cooling system pressure"
+        ],
+        "firstChecks": [
+          "Verify engine oil level and condition",
+          "Check air filter for dirt or blockage",
+          "Ensure fuel tank is free of contaminants"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring recurring error codes",
+          "Driving aggressively with the warning light on"
+        ],
+        "relatedCodes": [
+          "P0130 - Oxygen Sensor Malfunction",
+          "P0171 - System Too Lean",
+          "P0401 - Insufficient EGR Flow"
+        ],
+        "internalLinks": [
+          {
+            "label": "Understanding OBD2 Fault Codes",
+            "href": "/en/understanding-obd2-fault-codes"
+          },
+          {
+            "label": "Fiat Egea Fuel System Issues",
+            "href": "/en/fiat-egea-fuel-system-issues"
+          },
+          {
+            "label": "How To Read Your Check Engine Light",
+            "href": "/en/how-to-read-your-check-engine-light"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why did my check engine light suddenly come on?",
+            "a": "It can be caused by sensor failures, fuel mixture issues, or problems with the exhaust system among other factors."
+          },
+          {
+            "q": "Which OBD2 codes should I check first for this issue?",
+            "a": "Common codes like P0130, P0171, and P0401 related to engine management are a good starting point."
+          },
+          {
+            "q": "Can I keep driving if the check engine light is on?",
+            "a": "If you notice no performance loss or strange noises, short-term driving is possible but have it inspected promptly."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Check Engine Light On: Causes, Diagnosis & Tips",
+        "schemaDescription": "Expert guide on common reasons for Fiat Egea check engine light, step-by-step diagnostic advice, and practical troubleshooting tips."
+      },
+      "de": {
+        "slug": "fiat-egea-motor-warnleuchte-an",
+        "title": "Fiat Egea Motor-Warnleuchte leuchtet: Ursachen und Diagnose",
+        "metaDescription": "Motor-Warnleuchte beim Fiat Egea an? Entdecken Sie mögliche Ursachen, praktische Prüfungen und Diagnoseschritte vor dem Teileaustausch.",
+        "intro": "Wenn beim Fiat Egea die Motor-Warnleuchte aufleuchtet, zeigt das an, dass ein Problem im Motor- oder Abgassystem vorliegen könnte. Die genaue Ursache lässt sich häufig nur durch gezielte Diagnose herausfinden, da viele Faktoren das Warnsignal auslösen können. In diesem Beitrag finden Sie praktische Prüfempfehlungen sowie häufige Ursachen und Diagnoseverfahren, um das Problem richtig zu identifizieren.",
+        "severity": "Die Warnleuchte weist auf Fehler hin, die Leistung und Emissionen beeinträchtigen können. Je nach Schweregrad kann auch die Fahrsicherheit betroffen sein.",
+        "driveAdvice": "Leuchtet die Warnleuchte, beobachten Sie Fahrzeugverhalten aufmerksam. Bei Leistungsverlust oder ungewöhnlichen Geräuschen sollte das Fahrzeug zeitnah überprüft werden.",
+        "likelyCauses": [
+          "Defekter oder verschmutzter Lambdasonde",
+          "Zu niedriger Kraftstoffdruck",
+          "Verstopfter Luftfilter",
+          "Fehlerhafte AGR-Ventilsteuerung",
+          "Probleme mit Zündspule oder Zündkerzen"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Diagnosegerät auslesen",
+          "Luftfilter überprüfen und ggf. reinigen oder tauschen",
+          "Kraftstoffdruck und Pumpe kontrollieren",
+          "Signale der Lambdasonde testen",
+          "AGR-Ventil auf Rußablagerungen prüfen",
+          "Kühlsystemdruck überprüfen"
+        ],
+        "firstChecks": [
+          "Motorölstand und Qualität prüfen",
+          "Luftfilter auf Verschmutzungen kontrollieren",
+          "Kraftstofftank auf Verunreinigungen prüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose tauschen",
+          "Wiederkehrende Fehlercodes ignorieren",
+          "Weiterfahren trotz Warnleuchte ohne Prüfung"
+        ],
+        "relatedCodes": [
+          "P0130 - Lambdasonde Fehler",
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0401 - Unzureichender AGR-Durchfluss"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/obd2-fehlercodes-verstehen"
+          },
+          {
+            "label": "Fiat Egea Kraftstoffsystem Problematik",
+            "href": "/de/fiat-egea-kraftstoffsystem-problematik"
+          },
+          {
+            "label": "Anleitung zum Lesen der Motor-Warnleuchte",
+            "href": "/de/anleitung-zum-lesen-der-motor-warnleuchte"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum leuchtet plötzlich die Motor-Warnleuchte?",
+            "a": "Die Ursache kann von Sensorfehlern über falsches Kraftstoffgemisch bis hin zu Abgasproblemen reichen."
+          },
+          {
+            "q": "Welche OBD2-Codes sind bei diesem Problem relevant?",
+            "a": "Typische Codes sind P0130, P0171 und P0401, die Fehler im Motorsteuerungssystem anzeigen."
+          },
+          {
+            "q": "Darf ich trotz Motor-Warnleuchte weiterfahren?",
+            "a": "Bei fehlenden Auffälligkeiten ist eine kurze Weiterfahrt möglich, ein baldiger Werkstattbesuch ist dennoch ratsam."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motor-Warnleuchte: Ursachen, Diagnose und Tipps",
+        "schemaDescription": "Detaillierter Leitfaden zu häufigen Ursachen der Motor-Warnleuchte beim Fiat Egea sowie praxisorientierte Diagnose- und Lösungsansätze."
+      },
+      "es": {
+        "slug": "fiat-egea-luz-de-motor-encendida",
+        "title": "Fiat Egea Luz de Motor Encendida: Causas Comunes y Diagnóstico",
+        "metaDescription": "¿Luz de motor encendida en tu Fiat Egea? Descubre causas comunes, revisiones prácticas y pasos para diagnosticar antes de cambiar piezas.",
+        "intro": "La luz de motor encendida en un Fiat Egea indica que el sistema detectó un posible problema en la gestión del motor. Determinar la causa exacta requiere diagnóstico, ya que múltiples factores pueden activar la luz. Aquí te ofrecemos revisiones prácticas, causas frecuentes y pasos de diagnóstico para entender y solucionar el problema de forma segura y eficaz.",
+        "severity": "La luz de motor puede señalar diferentes problemas que afectan el rendimiento o las emisiones. Algunos pueden ser leves, otros afectar la seguridad y conducción.",
+        "driveAdvice": "Si la luz de motor se enciende, presta atención a ruidos inusuales o pérdida de rendimiento. Evita conducir con dificultad y revisa el vehículo pronto para evitar daños.",
+        "likelyCauses": [
+          "Sensor de oxígeno defectuoso o contaminado",
+          "Presión baja de combustible en el sistema",
+          "Filtro de aire obstruido",
+          "Válvula EGR con mal funcionamiento",
+          "Problemas en bobina de encendido o bujías"
+        ],
+        "diagnosticSteps": [
+          "Lee los códigos de error con un escáner OBD2",
+          "Revisa y limpia o cambia el filtro de aire",
+          "Comprueba el funcionamiento de la bomba y presión de combustible",
+          "Prueba la señal del sensor de oxígeno",
+          "Inspecciona la válvula EGR por suciedad o fallos",
+          "Revisa la presión del sistema de refrigeración"
+        ],
+        "firstChecks": [
+          "Verifica el nivel y estado del aceite motor",
+          "Controla que el filtro de aire no esté sucio",
+          "Asegura que el tanque de combustible esté libre de contaminantes"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnosticar correctamente",
+          "Ignorar códigos de error repetitivos",
+          "Seguir conduciendo agresivamente con la luz encendida"
+        ],
+        "relatedCodes": [
+          "P0130 - Mal funcionamiento del sensor de oxígeno",
+          "P0171 - Sistema demasiado pobre",
+          "P0401 - Flujo insuficiente en EGR"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comprender códigos de fallo OBD2",
+            "href": "/es/comprender-codigos-fallo-obd2"
+          },
+          {
+            "label": "Problemas del sistema de combustible en Fiat Egea",
+            "href": "/es/problemas-sistema-combustible-fiat-egea"
+          },
+          {
+            "label": "Cómo leer la luz de motor",
+            "href": "/es/como-leer-luz-de-motor"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué se enciende de repente la luz de motor?",
+            "a": "Puede deberse a sensores defectuosos, problemas de mezcla de combustible o fallos en el sistema de escape, entre otros."
+          },
+          {
+            "q": "¿Qué códigos OBD2 debería revisar primero?",
+            "a": "Los códigos comunes son P0130, P0171 y P0401 relacionados con la gestión del motor."
+          },
+          {
+            "q": "¿Puedo seguir conduciendo con la luz de motor encendida?",
+            "a": "Si no hay pérdida notable de potencia o ruidos extraños, se puede conducir a corto plazo, pero revise pronto el vehículo."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Luz de Motor Encendida: Causas, Diagnóstico y Consejos",
+        "schemaDescription": "Guía experta sobre causas comunes de la luz de motor en Fiat Egea, con pasos para diagnóstico y solución práctica."
+      },
+      "fr": {
+        "slug": "fiat-egea-temoin-moteur-allume",
+        "title": "Fiat Egea Témoins Moteur Allumé : Causes Courantes et Diagnostic",
+        "metaDescription": "Témoin moteur allumé sur votre Fiat Egea ? Découvrez les causes possibles, contrôles pratiques et étapes de diagnostic avant remplacement de pièces.",
+        "intro": "Le témoin moteur allumé sur une Fiat Egea signale un dysfonctionnement potentiel du système de gestion moteur. La cause précise nécessite un diagnostic approfondi, car plusieurs éléments peuvent déclencher cet avertissement. Ce guide présente des contrôles pratiques, des causes fréquentes et les étapes de diagnostic pour comprendre et traiter le problème efficacement et en toute sécurité.",
+        "severity": "Le témoin moteur indique des anomalies pouvant affecter les performances ou les émissions. Certaines pannes sont mineures, d’autres peuvent impacter la sécurité et la conduite.",
+        "driveAdvice": "En cas d’allumage du témoin moteur, surveillez les bruits inhabituels ou pertes de puissance. Évitez de solliciter fortement le moteur et faites vérifier le véhicule rapidement.",
+        "likelyCauses": [
+          "Sonde lambda défectueuse ou encrassée",
+          "Pression de carburant trop basse",
+          "Filtre à air obstrué",
+          "Défaillance de la vanne EGR",
+          "Problèmes de bobine d’allumage ou bougies"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut avec un scanner OBD2",
+          "Vérifier et nettoyer ou changer le filtre à air",
+          "Contrôler la pompe et la pression de carburant",
+          "Tester le signal de la sonde lambda",
+          "Inspecter la vanne EGR pour encrassement ou défaut",
+          "Vérifier la pression du système de refroidissement"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et l’état de l’huile moteur",
+          "Contrôler l’état du filtre à air",
+          "S’assurer que le réservoir de carburant est propre"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic préalable",
+          "Ignorer les codes d’erreur récurrents",
+          "Continuer à rouler avec le témoin allumé sans vérification"
+        ],
+        "relatedCodes": [
+          "P0130 - Défaut sonde lambda",
+          "P0171 - Mélange trop pauvre",
+          "P0401 - Débit insuffisant vanne EGR"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comprendre les codes défaut OBD2",
+            "href": "/fr/comprendre-codes-defaut-obd2"
+          },
+          {
+            "label": "Problèmes du système carburant Fiat Egea",
+            "href": "/fr/problemes-systeme-carburant-fiat-egea"
+          },
+          {
+            "label": "Comment interpréter le témoin moteur",
+            "href": "/fr/comment-interpret-témoin-moteur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi le témoin moteur s’allume-t-il soudainement ?",
+            "a": "Cela peut venir d’un capteur défectueux, d’un problème de mélange carburant ou d’un défaut dans le système d’échappement."
+          },
+          {
+            "q": "Quels codes OBD2 vérifier en priorité ?",
+            "a": "Les codes fréquents sont P0130, P0171 et P0401, liés à la gestion moteur."
+          },
+          {
+            "q": "Puis-je continuer à rouler avec le témoin moteur allumé ?",
+            "a": "Si aucune perte de puissance ni bruit anormal n’est constaté, une courte utilisation est possible, mais un contrôle rapide est conseillé."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Témoins Moteur Allumé : Causes, Diagnostic et Conseils",
+        "schemaDescription": "Guide expert sur les causes fréquentes du témoin moteur chez Fiat Egea avec méthodes de diagnostic et solutions pratiques."
+      }
+    }
   }
 ]

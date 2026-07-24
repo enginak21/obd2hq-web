@@ -548,5 +548,105 @@
       "es": "ford-focus-motor-tiembla-stalling",
       "fr": "ford-focus-calage-moteur"
     }
+  },
+  {
+    "contentGroupId": "ford-focus-jerking",
+    "slugs": {
+      "en": "ford-focus-jerking-issue",
+      "tr": "ford-focus-silkeleme-yapiyor",
+      "de": "ford-focus-ruckeln-problem",
+      "es": "ford-focus-motor-tiembla-jerking",
+      "fr": "ford-focus-vibrations-moteur"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-overheating",
+    "slugs": {
+      "en": "ford-focus-overheating",
+      "tr": "ford-focus-hararet-yapiyor",
+      "de": "ford-focus-ueberhitzung",
+      "es": "ford-focus-hararea",
+      "fr": "ford-focus-surchauffe"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-fuel-smell",
+    "slugs": {
+      "en": "ford-focus-fuel-smell-causes",
+      "tr": "ford-focus-benzin-kokusu-geliyor",
+      "de": "ford-focus-kraftstoffgeruch-ursachen",
+      "es": "ford-focus-olor-a-gasolina-problemas",
+      "fr": "ford-focus-odeur-essence-causes"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-oil-smell",
+    "slugs": {
+      "en": "ford-focus-burning-oil-smell",
+      "tr": "ford-focus-yanik-yag-kokusu",
+      "de": "ford-focus-brennender-oelgeruch",
+      "es": "ford-focus-olor-a-aceite-quemandose",
+      "fr": "ford-focus-odeur-d-huile-brulee"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-transmission-slipping",
+    "slugs": {
+      "en": "ford-focus-transmission-slipping",
+      "tr": "ford-focus-vites-kaciriyor",
+      "de": "ford-focus-getriebe-rutscht",
+      "es": "ford-focus-vites-se-escapa",
+      "fr": "ford-focus-glissement-boite-vitesse"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-loss-of-power",
+    "slugs": {
+      "en": "fiat-egea-loss-of-power",
+      "tr": "fiat-egea-gaz-yemiyor",
+      "de": "fiat-egea-leistungsverlust",
+      "es": "fiat-egea-pierde-potencia",
+      "fr": "fiat-egea-perte-de-puissance"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-engine-noise",
+    "slugs": {
+      "en": "fiat-egea-engine-noise",
+      "tr": "fiat-egea-motordan-ses-geliyor",
+      "de": "fiat-egea-motorschaden-ruhe",
+      "es": "fiat-egea-motor-tiembla-ruido",
+      "fr": "fiat-egea-bruit-moteur"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-rough-idle",
+    "slugs": {
+      "en": "fiat-egea-rough-idle",
+      "tr": "fiat-egea-rolanti-dalgalanma",
+      "de": "fiat-egea-unstabile-leerlauf",
+      "es": "fiat-egea-motor-tiembla-en-relenti",
+      "fr": "fiat-egea-ralenti-instable"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-engine-shaking",
+    "slugs": {
+      "en": "fiat-egea-engine-shaking",
+      "tr": "fiat-egea-titreme-sorunu",
+      "de": "fiat-egea-motor-vibrieren",
+      "es": "fiat-egea-motor-tiembla",
+      "fr": "fiat-egea-moteur-vibre"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-check-engine-light",
+    "slugs": {
+      "en": "fiat-egea-check-engine-light-on",
+      "tr": "fiat-egea-motor-ariza-lambasi-yaniyor",
+      "de": "fiat-egea-motor-warnleuchte-an",
+      "es": "fiat-egea-luz-de-motor-encendida",
+      "fr": "fiat-egea-temoin-moteur-allume"
+    }
   }
 ]
