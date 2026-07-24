@@ -15848,5 +15848,3515 @@
         "schemaDescription": "Guide détaillé sur le glissement de transmission Volkswagen incluant causes, contrôles initiaux, diagnostics et codes OBD2."
       }
     }
+  },
+  {
+    "contentGroupId": "ford-focus-loss-of-power",
+    "intentKey": "ford-focus_loss_of_power",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "loss_of_power",
+    "qualityScore": 93,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-gaz-yemiyor",
+        "title": "Ford Focus Gaz Yemiyor: Güç Kaybı Problemleri ve Çözüm Yolları",
+        "metaDescription": "Ford Focus aracınız gaz yemiyor mu? Güç kaybının muhtemel sebepleri ve pratik kontrol adımları için eksiksiz rehber.",
+        "intro": "Ford Focus araçlarda gaz yeme sorunu, performans düşüklüğüne ve sürüş zorluklarına yol açabilir. Bu durumun birçok potansiyel nedeni vardır ve doğrudan parça değiştirmeden önce bazı temel kontroller yapılmalıdır. Bu rehberde, güç kaybına neden olabilecek yaygın sebepleri, kontrol aşamalarını ve dikkat edilmesi gereken yaygın hataları ele alacağız.",
+        "severity": "Orta - Güç kaybı sürüş güvenliğini etkileyebilir ve aracınızın performansını düşürebilir.",
+        "driveAdvice": "Aracınızı zorlamadan önce gaz kelebeği, hava filtresi gibi temel parçaları kontrol edin. Ani güç kaybı hissederseniz güvenli bir yerde durup sorunu tespit etmeye çalışın.",
+        "likelyCauses": [
+          "Kirli veya tıkalı hava filtresi",
+          "Arızalı yakıt pompası ya da yakıt filtresi",
+          "Bujilerin aşınması ya da arızalanması",
+          "Egzoz sistemi tıkanması veya katalitik konvertör sorunu",
+          "Motor sensörlerinde sorun (MAP, MAF sensörleri)"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile hata kodlarını kontrol edin",
+          "Yakıt basıncını ölçün",
+          "Hava giriş sisteminde tıkanıklık kontrolü yapın",
+          "Bujileri ve ateşleme sistemini inceleyin",
+          "Egzoz sistemini kontrol ederek tıkanma olup olmadığını test edin",
+          "Motor sensör verilerini canlı olarak takip edin"
+        ],
+        "firstChecks": [
+          "Hava filtresi temiz mi kontrol edin",
+          "Yakıt seviyesi ve kalitesini gözden geçirin",
+          "Bujilerde aşınma ya da korozyon var mı bakın"
+        ],
+        "commonMistakes": [
+          "Hemen parça değiştirmek",
+          "Sadece hata koduna bakarak sorunu teşhis etmek",
+          "Temel bakım kontrollerini atlamak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sistemi karışımı çok fakir",
+          "P0300 - Rastgele silindir ateşleme hatası",
+          "P0420 - Katalitik konvertör verim düşüklüğü"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Hata Kodları",
+            "href": "/tr/ford-focus/obd2-hata-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Arızaları",
+            "href": "/tr/yakit-sistemi-arizalari"
+          },
+          {
+            "label": "Hava Filtresi Bakımı",
+            "href": "/tr/hava-filtresi-bakimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Gaz yememe sorunu nedenleri nelerdir?",
+            "a": "Genellikle hava filtresi tıkanıklığı, yakıt pompası arızası veya buji sorunları gaz yememe şikayetlerine neden olur."
+          },
+          {
+            "q": "Gaz yemeyen Ford Focus'u kendim kontrol edebilir miyim?",
+            "a": "Evet, OBD2 cihazı ile hata kodlarını okuyarak ve basit hava/yakıt kontrolleri yaparak temel bir ön teşhis yapılabilir."
+          },
+          {
+            "q": "Performans kaybında hangi kodlar çıkabilir?",
+            "a": "P0171, P0300, P0420 gibi motorun hava-yakıt karışımını ve egzoz sistemini gösteren kodlar sıkça görülür."
+          }
+        ],
+        "schemaTitle": "Ford Focus Gaz Yemiyor Sorunu - Nedenleri ve Çözüm Adımları",
+        "schemaDescription": "Ford Focus araçlarda sık görülen gaz yememe sorunu için olası nedenler, ön kontrol yöntemleri ve OBD2 hata kodları rehberi."
+      },
+      "en": {
+        "slug": "ford-focus-loss-of-power",
+        "title": "Ford Focus Loss of Power: Causes and Practical Troubleshooting Steps",
+        "metaDescription": "Experiencing loss of power in your Ford Focus? Discover likely causes, practical checks, and diagnostic tips to help you pinpoint the issue.",
+        "intro": "A noticeable loss of power in a Ford Focus can significantly affect driving safety and vehicle performance. There are multiple potential causes for this symptom, so it's important to perform practical checks before assuming part replacement. This guide covers common reasons, diagnostic steps, and mistakes to avoid when troubleshooting power loss.",
+        "severity": "Moderate - Loss of power can affect driving and vehicle control.",
+        "driveAdvice": "Avoid stressing the engine until basic checks like throttle response and air filter condition are confirmed. Stop safely if sudden power loss occurs and diagnose before continuing.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Fuel pump or fuel filter issues",
+          "Worn or faulty spark plugs",
+          "Exhaust system blockage or catalytic converter problems",
+          "Malfunctioning engine sensors (MAP, MAF)"
+        ],
+        "diagnosticSteps": [
+          "Read OBD2 codes with a scanner",
+          "Check fuel pressure",
+          "Inspect air intake system for blockages",
+          "Examine spark plugs and ignition system",
+          "Test exhaust system for restrictions",
+          "Monitor live sensor data for abnormalities"
+        ],
+        "firstChecks": [
+          "Check condition of air filter",
+          "Verify fuel level and quality",
+          "Inspect spark plugs for wear or damage"
+        ],
+        "commonMistakes": [
+          "Replacing parts without diagnostics",
+          "Relying solely on error codes to diagnose",
+          "Skipping basic maintenance inspections"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Trouble Codes",
+            "href": "/en/ford-focus/obd2-trouble-codes"
+          },
+          {
+            "label": "Fuel System Problems",
+            "href": "/en/fuel-system-problems"
+          },
+          {
+            "label": "Air Filter Maintenance",
+            "href": "/en/air-filter-maintenance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes power loss in a Ford Focus?",
+            "a": "Common causes include clogged air filters, fuel delivery issues, or faulty spark plugs leading to reduced engine performance."
+          },
+          {
+            "q": "Can I diagnose a power loss issue myself?",
+            "a": "Yes, using an OBD2 scanner to read codes and performing simple checks on fuel and air systems can help identify problems."
+          },
+          {
+            "q": "Which OBD2 codes usually indicate power loss problems?",
+            "a": "Codes like P0171, P0300, and P0420 often appear when there are fuel mixture, misfire, or exhaust system issues."
+          }
+        ],
+        "schemaTitle": "Ford Focus Loss of Power - Causes and Diagnostic Guide",
+        "schemaDescription": "Learn about the common causes and diagnostic procedures for power loss in Ford Focus vehicles, including OBD2 codes and practical checks."
+      },
+      "de": {
+        "slug": "ford-focus-leistungsverlust",
+        "title": "Ford Focus Leistungsverlust: Ursachen und Praktische Diagnosehinweise",
+        "metaDescription": "Leistungsverlust im Ford Focus? Erfahren Sie häufige Ursachen, Prüfschritte und diagnostische Tipps für eine effektive Fehlersuche.",
+        "intro": "Leistungsverlust beim Ford Focus kann die Fahrsicherheit und Performance deutlich beeinträchtigen. Die Ursachen sind vielfältig, daher ist es wichtig, praktische Prüfungen durchzuführen, bevor Teile ausgetauscht werden. Diese Anleitung zeigt typische Ursachen, Diagnoseverfahren und häufige Fehler bei der Fehlersuche auf.",
+        "severity": "Mittel - Leistungsverlust beeinträchtigt Fahrverhalten und Sicherheit.",
+        "driveAdvice": "Belasten Sie den Motor nicht, bis Grundkontrollen wie Luftfilterzustand und Gasanlage geprüft wurden. Bei plötzlichem Leistungsverlust sicher anhalten und erst dann diagnostizieren.",
+        "likelyCauses": [
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Problem mit Kraftstoffpumpe oder Kraftstofffilter",
+          "Abgenutzte oder defekte Zündkerzen",
+          "Verstopfung im Auspuffsystem oder Katalysatorprobleme",
+          "Fehlerhafte Motoren Sensoren (MAP, MAF)"
+        ],
+        "diagnosticSteps": [
+          "OBD2 Fehlercodes mit Scanner auslesen",
+          "Kraftstoffdruck messen",
+          "Lufteinlass auf Verstopfungen prüfen",
+          "Zündkerzen und Zündsystem inspizieren",
+          "Auspuffanlage auf Blockaden testen",
+          "Live-Daten der Sensoren überwachen"
+        ],
+        "firstChecks": [
+          "Zustand des Luftfilters prüfen",
+          "Kraftstoffstand und Qualität kontrollieren",
+          "Zündkerzen auf Verschleiß prüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Ausschließlich auf Fehlercodes zu vertrauen",
+          "Grundwartungskontrollen zu überspringen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager",
+          "P0300 - Zufällige/mehrfache Zündaussetzer",
+          "P0420 - Katalysatorsystem unter Effizienzgrenze"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes",
+            "href": "/de/ford-focus/obd2-fehlercodes"
+          },
+          {
+            "label": "Kraftstoffsystemprobleme",
+            "href": "/de/kraftstoffsystemprobleme"
+          },
+          {
+            "label": "Luftfilter Wartung",
+            "href": "/de/luftfilter-wartung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für Leistungsverlust?",
+            "a": "Häufige Ursachen sind Verschmutzungen im Luftfilter, Probleme bei der Kraftstoffzufuhr oder defekte Zündkerzen."
+          },
+          {
+            "q": "Kann ich Leistungsverlust selbst diagnostizieren?",
+            "a": "Ja, mit einem OBD2 Scanner Fehlercodes auslesen und einfache Kontrollen an Kraftstoff- und Luftsystem durchführen."
+          },
+          {
+            "q": "Welche OBD2 Codes deuten auf Leistungsverlust hin?",
+            "a": "Codes wie P0171, P0300 und P0420 treten häufig bei Problemen mit Kraftstoffgemisch, Zündaussetzern oder Auspuff auf."
+          }
+        ],
+        "schemaTitle": "Ford Focus Leistungsverlust - Ursachen und Diagnoseanleitung",
+        "schemaDescription": "Erfahren Sie mehr über Ursachen und Diagnosemöglichkeiten bei Leistungsverlust im Ford Focus inklusive OBD2 Codes und praktischen Prüfungen."
+      },
+      "es": {
+        "slug": "ford-focus-pierde-potencia",
+        "title": "Ford Focus Pierde Potencia: Causas y Pasos para Diagnosticarlo",
+        "metaDescription": "¿Tu Ford Focus pierde potencia? Descubre causas comunes, consejos prácticos y cómo diagnosticar con códigos OBD2 fácilmente.",
+        "intro": "La pérdida de potencia en un Ford Focus puede afectar la seguridad y el rendimiento de tu vehículo. Existen varias causas posibles, por lo que es fundamental realizar revisiones simples antes de cambiar piezas. Esta guía te ayudará a identificar las causas más comunes, los pasos para diagnosticar la falla y errores frecuentes que debes evitar.",
+        "severity": "Moderada - La pérdida de potencia afecta el manejo y desempeño del vehículo.",
+        "driveAdvice": "No forces el motor hasta revisar filtros de aire y respuesta del acelerador. Si la potencia cae de forma súbita, detente en un lugar seguro para evaluar el problema.",
+        "likelyCauses": [
+          "Filtro de aire sucio o tapado",
+          "Problemas con la bomba o filtro de combustible",
+          "Bujías desgastadas o defectuosas",
+          "Obstrucciones en el sistema de escape o problemas en el catalizador",
+          "Sensores del motor defectuosos (MAP, MAF)"
+        ],
+        "diagnosticSteps": [
+          "Leer los códigos OBD2 con un escáner",
+          "Comprobar presión de combustible",
+          "Inspeccionar admisión de aire por bloqueos",
+          "Revisar bujías y sistema de encendido",
+          "Verificar sistema de escape por obstrucciones",
+          "Monitorear datos en tiempo real de los sensores"
+        ],
+        "firstChecks": [
+          "Revisar estado del filtro de aire",
+          "Verificar nivel y calidad del combustible",
+          "Inspeccionar bujías en busca de desgaste o daño"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "Depender solo de los códigos de error",
+          "Omitir controles de mantenimiento básicos"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla de combustible demasiado pobre",
+          "P0300 - Fallo de encendido aleatorio o múltiple",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de OBD2 Ford Focus",
+            "href": "/es/ford-focus/codigos-obd2"
+          },
+          {
+            "label": "Problemas en el sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "Mantenimiento del filtro de aire",
+            "href": "/es/mantenimiento-filtro-aire"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué causa la pérdida de potencia en un Ford Focus?",
+            "a": "Filtros sucios, problemas con el combustible o bujías defectuosas suelen causar una caída en el rendimiento del motor."
+          },
+          {
+            "q": "¿Puedo diagnosticar yo mismo la pérdida de potencia?",
+            "a": "Sí, usando un escáner OBD2 y revisando combustible y aire puedes identificar problemas básicos."
+          },
+          {
+            "q": "¿Qué códigos OBD2 indican pérdida de potencia?",
+            "a": "Los códigos P0171, P0300 y P0420 son comunes cuando hay mala mezcla de combustible, fallos de encendido o problemas en el escape."
+          }
+        ],
+        "schemaTitle": "Ford Focus Pierde Potencia - Guía de Causas y Diagnóstico",
+        "schemaDescription": "Conoce las causas comunes y cómo diagnosticar la pérdida de potencia en Ford Focus, con códigos OBD2 y comprobaciones prácticas."
+      },
+      "fr": {
+        "slug": "ford-focus-perte-de-puissance",
+        "title": "Ford Focus Perte de Puissance : Causes et Conseils de Diagnostic",
+        "metaDescription": "Votre Ford Focus perd de la puissance ? Découvrez les causes probables, vérifications pratiques et diagnostics OBD2 pour résoudre le problème.",
+        "intro": "La perte de puissance sur un Ford Focus peut nuire à la sécurité et aux performances du véhicule. Plusieurs causes possibles existent, il est donc essentiel de réaliser des contrôles simples avant de remplacer des pièces. Ce guide détaille les causes fréquentes, les étapes de diagnostic et les erreurs courantes à éviter.",
+        "severity": "Modérée - La perte de puissance impacte la conduite et le contrôle du véhicule.",
+        "driveAdvice": "Évitez de solliciter le moteur avant de vérifier l’état du filtre à air et la réponse de l’accélérateur. En cas de perte soudaine de puissance, arrêtez-vous en sécurité pour diagnostiquer.",
+        "likelyCauses": [
+          "Filtre à air bouché ou sale",
+          "Problèmes de pompe ou filtre à carburant",
+          "Bougies usées ou défectueuses",
+          "Obstruction dans le système d’échappement ou problème de catalyseur",
+          "Capteurs moteur défaillants (MAP, MAF)"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut OBD2 avec un scanner",
+          "Vérifier la pression de carburant",
+          "Contrôler l’admission d’air pour blocages",
+          "Examiner les bougies et l’allumage",
+          "Tester le système d’échappement pour restrictions",
+          "Surveiller les données en direct des capteurs"
+        ],
+        "firstChecks": [
+          "Contrôler l’état du filtre à air",
+          "Vérifier le niveau et la qualité du carburant",
+          "Inspecter les bougies pour usure ou dommage"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis",
+          "Se fier uniquement aux codes défaut",
+          "Négliger les contrôles d’entretien de base"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre",
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0420 - Efficacité catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défauts OBD2 Ford Focus",
+            "href": "/fr/ford-focus/codes-defauts-obd2"
+          },
+          {
+            "label": "Problèmes système carburant",
+            "href": "/fr/systeme-carburant-problemes"
+          },
+          {
+            "label": "Entretien filtre à air",
+            "href": "/fr/entretien-filtre-air"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes courantes de perte de puissance ?",
+            "a": "Filtres encrassés, problèmes d’alimentation en carburant ou bougies défectueuses provoquent souvent une perte de puissance."
+          },
+          {
+            "q": "Puis-je diagnostiquer la perte de puissance moi-même ?",
+            "a": "Oui, avec un scanner OBD2 et des contrôles simples du carburant et de l’air, vous pouvez identifier des problèmes basiques."
+          },
+          {
+            "q": "Quels codes OBD2 indiquent une perte de puissance ?",
+            "a": "Les codes P0171, P0300 et P0420 apparaissent fréquemment lors de problèmes de mélange carburant, ratés d’allumage ou échappement."
+          }
+        ],
+        "schemaTitle": "Ford Focus Perte de Puissance - Causes et Guide de Diagnostic",
+        "schemaDescription": "Découvrez les causes principales et méthodes de diagnostic de la perte de puissance sur Ford Focus, avec codes OBD2 et contrôles pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-engine-noise",
+    "intentKey": "ford-focus_engine_noise",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "engine_noise",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-motordan-ses-geliyor",
+        "title": "Ford Focus Motordan Ses Geliyor: Olası Sebepler ve Kontroller",
+        "metaDescription": "Ford Focus motorundan gelen seslerin olası nedenlerini ve yapılması gereken pratik kontrolleri keşfedin. Parça değişimi öncesi dikkat edilmesi gerekenler burada.",
+        "intro": "Ford Focus aracınızın motorundan gelen anormal sesler pek çok farklı sebepten kaynaklanabilir. Bu yazıda, motor sesi problemlerinin olası nedenlerini ve basit teşhis yöntemlerini ele alacağız. Parçaları değiştirmeden önce yapacağınız kontroller sayesinde zaman ve maliyet tasarrufu sağlayabilirsiniz.",
+        "severity": "Orta – Motor gürültüsü, zamanında müdahale edilmezse performans kaybı ve daha büyük arızalara yol açabilir.",
+        "driveAdvice": "Aracı mümkünse düşük devirde kullanın ve aşırı zorlamaktan kaçının. Sorun düzelene dek uzun yolculuklardan kaçının.",
+        "likelyCauses": [
+          "Motor aşınması veya tolerans sorunları",
+          "Eksik veya kalitesiz yağ seviyeleri",
+          "Egzoz gazı kaçışından kaynaklı sesler",
+          "Zamanlama kayışı ya da zinciri sorunları",
+          "Aşınmış kayışlar ve kasnaklar"
+        ],
+        "diagnosticSteps": [
+          "Motor yağ seviyesi ve kalitesini kontrol edin.",
+          "Egzoz sistemi ve manifoldu gözle muayene edin.",
+          "Motor kayışlarını ve gerilimini kontrol edin.",
+          "Motorun çalışma sıcaklığına ulaşmasını sağlayın ve sesleri dinleyin.",
+          "OBD2 cihazıyla arıza kodlarını okuyun.",
+          "Motor kapaklarını ve sızdırmazlık contalarını inceleyin."
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesini kontrol edin.",
+          "Egzoz manifoldu ve boruları inceleyin.",
+          "Kayışların ve kasnakların durumunu gözden geçirin."
+        ],
+        "commonMistakes": [
+          "Sesin kaynağını doğru teşhis etmeden parçaları değiştirmek",
+          "Yağ seviyesini veya kalitesini ihmal etmek",
+          "OBD2 kodlarını göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0340 - Eksantrik zamanlama sensörü arızası",
+          "P0300 - Rastgele veya çoklu ateşleme hatası",
+          "P0171 - Yakıt sisteminde zengin karışım sorunu"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Arıza Kodları",
+            "href": "/tr/ford-focus-obd2-ariza-kodlari"
+          },
+          {
+            "label": "Motor Performans Testi Nasıl Yapılır?",
+            "href": "/tr/motor-performans-testi"
+          },
+          {
+            "label": "Ford Focus Kayış ve Zincir Değişimi",
+            "href": "/tr/ford-focus-kayis-zincir-degisimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor gürültüsünü kendi başıma tespit edebilir miyim?",
+            "a": "Evet, temel kontrolleri yaparak ve sesi dikkatle dinleyerek olası kaynakları belirleyebilirsiniz. Ancak kesin teşhis için profesyonel destek önerilir."
+          },
+          {
+            "q": "Motor yağı sorunu ses yapar mı?",
+            "a": "Evet, düşük kaliteli veya az yağ motor parçalarının daha fazla sürtünmesine ve ses çıkarmasına neden olabilir."
+          },
+          {
+            "q": "OBD2 kodları motor sesiyle ilgili ne kadar güvenilir?",
+            "a": "OBD2 kodları ilgili sensörler ve sistemlerden bilgi verir; motor sesi gibi mekanik sorunların tespiti için yardımcı olur ama tek başına yeterli olmayabilir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motordan Ses Geliyor - Nedenleri ve Çözümleri",
+        "schemaDescription": "Ford Focus aracınızın motorundan gelen seslerin nedenlerini öğrenin, olası arıza sebeplerini ve yapılacak kontrolleri keşfedin."
+      },
+      "en": {
+        "slug": "ford-focus-engine-noise",
+        "title": "Ford Focus Engine Noise: Possible Causes and Practical Checks",
+        "metaDescription": "Discover common causes and practical diagnostic steps for engine noise in Ford Focus. Learn what to check before replacing parts.",
+        "intro": "Unusual engine noises in a Ford Focus can stem from various issues. This guide covers potential causes and essential diagnostic steps you can take before opting for part replacements. Early checks can save time and avoid unnecessary expenses.",
+        "severity": "Moderate – Engine noise might indicate issues that could lead to performance loss or costly repairs if left unattended.",
+        "driveAdvice": "Drive gently at low RPM until the issue is diagnosed. Avoid heavy acceleration or long trips until the noise source is identified.",
+        "likelyCauses": [
+          "Engine wear or tolerance problems",
+          "Low or degraded engine oil",
+          "Exhaust leaks causing unusual sounds",
+          "Timing belt or chain issues",
+          "Worn belts or pulleys"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and condition.",
+          "Inspect exhaust manifold and pipes for leaks.",
+          "Examine belts and check for tension or wear.",
+          "Warm up the engine and listen carefully for noise sources.",
+          "Scan for OBD2 trouble codes.",
+          "Inspect valve cover and gaskets for leaks or damage."
+        ],
+        "firstChecks": [
+          "Engine oil level and quality",
+          "Exhaust system integrity",
+          "Condition of belts and pulleys"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring oil levels or oil condition",
+          "Disregarding OBD2 diagnostic codes"
+        ],
+        "relatedCodes": [
+          "P0340 - Camshaft Position Sensor Circuit Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Trouble Codes",
+            "href": "/en/ford-focus-obd2-trouble-codes"
+          },
+          {
+            "label": "How to Perform Engine Performance Tests",
+            "href": "/en/engine-performance-tests"
+          },
+          {
+            "label": "Ford Focus Belt and Chain Replacement Guide",
+            "href": "/en/ford-focus-belt-chain-replacement"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can I diagnose engine noise myself?",
+            "a": "Basic checks and attentive listening can help identify possible sources, but professional diagnosis is recommended for accuracy."
+          },
+          {
+            "q": "Does engine oil affect noise?",
+            "a": "Yes, low or poor-quality oil can increase friction and cause unusual engine sounds."
+          },
+          {
+            "q": "How reliable are OBD2 codes for engine noises?",
+            "a": "OBD2 codes provide useful diagnostic information but may not capture all mechanical noise issues alone."
+          }
+        ],
+        "schemaTitle": "Ford Focus Engine Noise Causes and Checks",
+        "schemaDescription": "Learn about causes and practical diagnostic steps for Ford Focus engine noise to avoid unnecessary repairs and ensure proper maintenance."
+      },
+      "de": {
+        "slug": "ford-focus-motor-geraeusch",
+        "title": "Ford Focus Motor Geräusch: Mögliche Ursachen und Praktische Checks",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen und praktische Prüfschritte bei Motorgeräuschen im Ford Focus. Was vor dem Teilewechsel zu beachten ist.",
+        "intro": "Motorgeräusche im Ford Focus können unterschiedliche Ursachen haben. In diesem Beitrag werden mögliche Gründe und wichtige Diagnoseverfahren vorgestellt, die vor einem Teiletausch durchgeführt werden sollten. So lassen sich Kosten und Zeit sparen. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Mittel – Motorgeräusche können auf Probleme hindeuten, die unbehandelt zu Leistungsverlust oder teuren Folgeschäden führen können.",
+        "driveAdvice": "Fahren Sie vorsichtig bei niedriger Drehzahl, bis der Fehler identifiziert ist. Vermeiden Sie starke Beschleunigung oder lange Fahrten.",
+        "likelyCauses": [
+          "Motorverschleiß oder Toleranzprobleme",
+          "Niedriger oder verschlechterter Motorölstand",
+          "Auspuffundichtigkeiten verursachen Geräusche",
+          "Probleme mit Zahnriemen oder Steuerkette",
+          "Abgenutzte Riemen oder Rollen"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und Zustand kontrollieren.",
+          "Auspuffkrümmer und Leitungen auf Undichtigkeiten prüfen.",
+          "Zustand und Spannung der Riemen überprüfen.",
+          "Motor auf Betriebstemperatur bringen und Geräusche analysieren.",
+          "Fehlercodes mit OBD2 auslesen.",
+          "Ventildeckel und Dichtungen auf Schäden untersuchen."
+        ],
+        "firstChecks": [
+          "Motorölstand und Qualität",
+          "Auspuffanlage auf Dichtheit",
+          "Zustand von Riemen und Rollen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Ölstand bzw. Ölqualität vernachlässigen",
+          "OBD2 Fehercodes ignorieren"
+        ],
+        "relatedCodes": [
+          "P0340 - Nockenwellensensor-Störung",
+          "P0300 - Zufällige oder mehrere Zylinderfehlzündungen",
+          "P0171 - Kraftstoffsystem zu mager, Bank 1"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes",
+            "href": "/de/ford-focus-obd2-fehlercodes"
+          },
+          {
+            "label": "Motorleistungsdiagnose Anleitung",
+            "href": "/de/motorleistungsdiagnose-anleitung"
+          },
+          {
+            "label": "Ford Focus Riemen- und Kettenwechsel",
+            "href": "/de/ford-focus-riemen-kettenwechsel"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ich Motorgeräusche selbst diagnostizieren?",
+            "a": "Grundlegende Prüfungen und genaues Zuhören helfen mögliche Ursachen zu finden, professionelle Diagnose wird jedoch empfohlen."
+          },
+          {
+            "q": "Beeinflusst Motoröl die Geräusche?",
+            "a": "Ja, niedriger oder schlechter Ölstand kann Reibung erhöhen und ungewöhnliche Geräusche verursachen."
+          },
+          {
+            "q": "Wie zuverlässig sind OBD2 Codes für Motorgeräusche?",
+            "a": "OBD2 Codes liefern hilfreiche Hinweise, können aber mechanische Geräusche allein nicht vollständig erklären."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motorgeräusche: Ursachen und Prüfschritte",
+        "schemaDescription": "Entdecken Sie die Ursachen und diagnostischen Methoden bei Motorgeräuschen im Ford Focus, um unnötige Reparaturen zu vermeiden."
+      },
+      "es": {
+        "slug": "ford-focus-motor-tiembla-ruidos",
+        "title": "Ruido en el Motor del Ford Focus: Causas Comunes y Revisión Práctica",
+        "metaDescription": "Conozca las causas comunes del ruido en el motor del Ford Focus y los pasos prácticos para diagnosticarlo antes de cambiar piezas.",
+        "intro": "El ruido en el motor de un Ford Focus puede tener diversas causas. En esta guía revisamos posibles motivos y métodos diagnósticos simples para realizar antes de reemplazar componentes. Esto ayuda a ahorrar tiempo y dinero con un diagnóstico correcto.",
+        "severity": "Moderado – El ruido en el motor podría indicar problemas que, sin atención, causan pérdida de rendimiento o daños costosos.",
+        "driveAdvice": "Conduzca suavemente a bajas revoluciones hasta identificar el problema. Evite aceleraciones bruscas y viajes largos mientras no se arregle la causa del ruido.",
+        "likelyCauses": [
+          "Desgaste del motor o problemas de tolerancia",
+          "Nivel bajo o aceite en mal estado",
+          "Fugas en el escape que causan ruidos",
+          "Problemas en la correa o cadena de distribución",
+          "Correas y poleas desgastadas"
+        ],
+        "diagnosticSteps": [
+          "Verificar nivel y calidad del aceite.",
+          "Inspeccionar el colector y las tuberías de escape.",
+          "Revisar estado y tensión de correas.",
+          "Calentar el motor y escuchar detenidamente.",
+          "Leer códigos de fallo con OBD2.",
+          "Revisar tapa de válvulas y juntas."
+        ],
+        "firstChecks": [
+          "Nivel y calidad del aceite",
+          "Integridad del sistema de escape",
+          "Condición de correas y poleas"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Ignorar niveles o estado del aceite",
+          "Descartar códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0340 - Fallo en el sensor de posición del árbol de levas",
+          "P0300 - Fallo de encendido aleatorio o múltiple",
+          "P0171 - Sistema demasiado pobre (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Ford Focus",
+            "href": "/es/codigos-obd2-ford-focus"
+          },
+          {
+            "label": "Cómo realizar prueba de rendimiento del motor",
+            "href": "/es/prueba-rendimiento-motor"
+          },
+          {
+            "label": "Cambio de correas y cadenas Ford Focus",
+            "href": "/es/cambio-correas-cadenas-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puedo diagnosticar el ruido del motor por mí mismo?",
+            "a": "Sí, con revisiones básicas y atención al ruido es posible identificar causas, pero se recomienda diagnóstico profesional para mayor precisión."
+          },
+          {
+            "q": "¿El aceite afecta el ruido del motor?",
+            "a": "Sí, bajo nivel o aceite en mal estado genera mayor fricción y ruido inusual."
+          },
+          {
+            "q": "¿Qué tan fiables son los códigos OBD2 para ruidos del motor?",
+            "a": "Los códigos OBD2 aportan información útil, pero no detectan todos los problemas mecánicos solo."
+          }
+        ],
+        "schemaTitle": "Ruido en el Motor Ford Focus: Causas y Diagnóstico",
+        "schemaDescription": "Aprenda las causas y pasos para diagnosticar el ruido en el motor Ford Focus y evitar reparaciones innecesarias."
+      },
+      "fr": {
+        "slug": "ford-focus-bruit-moteur",
+        "title": "Bruit Moteur sur Ford Focus : Causes Possibles et Vérifications Pratiques",
+        "metaDescription": "Découvrez les causes courantes du bruit moteur sur Ford Focus et les étapes de diagnostic avant de remplacer une pièce.",
+        "intro": "Un bruit inhabituel provenant du moteur d’une Ford Focus peut avoir plusieurs origines. Cet article présente les causes possibles ainsi que des vérifications simples à effectuer avant de remplacer des pièces, afin d’éviter des dépenses inutiles.",
+        "severity": "Modéré – Un bruit moteur peut signaler un problème pouvant entraîner une perte de performance ou des réparations coûteuses s’il est ignoré.",
+        "driveAdvice": "Conduisez prudemment en basse vitesse tant que le problème n’est pas identifié. Évitez les accélérations brusques et les longs trajets.",
+        "likelyCauses": [
+          "Usure du moteur ou problèmes de tolérance",
+          "Niveau d’huile moteur faible ou huile dégradée",
+          "Fuite d’échappement générant du bruit",
+          "Problèmes avec la courroie ou la chaîne de distribution",
+          "Courroies et poulies usées"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et la qualité de l’huile moteur.",
+          "Inspecter le collecteur d’échappement et les conduits.",
+          "Vérifier l’état et la tension des courroies.",
+          "Faire chauffer le moteur et écouter attentivement.",
+          "Lire les codes défaut OBD2.",
+          "Contrôler le cache-culbuteur et les joints."
+        ],
+        "firstChecks": [
+          "Niveau et qualité de l’huile",
+          "Intégrité du système d’échappement",
+          "État des courroies et poulies"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic correct",
+          "Négliger le niveau ou la qualité de l’huile",
+          "Ignorer les codes défaut OBD2"
+        ],
+        "relatedCodes": [
+          "P0340 - Dysfonctionnement du capteur de position d’arbre à cames",
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Mélange trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 Ford Focus",
+            "href": "/fr/codes-defaut-obd2-ford-focus"
+          },
+          {
+            "label": "Comment réaliser un test de performance moteur",
+            "href": "/fr/test-performance-moteur"
+          },
+          {
+            "label": "Remplacement des courroies et chaînes Ford Focus",
+            "href": "/fr/remplacement-courroies-chaines-ford-focus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Puis-je diagnostiquer le bruit moteur moi-même ?",
+            "a": "Oui, avec des vérifications basiques et une écoute attentive, mais un diagnostic professionnel est conseillé."
+          },
+          {
+            "q": "L’huile moteur influence-t-elle le bruit ?",
+            "a": "Oui, un niveau bas ou une huile dégradée augmente les frottements et les bruits anormaux."
+          },
+          {
+            "q": "Les codes OBD2 sont-ils fiables pour les bruits moteurs ?",
+            "a": "Ils fournissent des indications utiles mais ne détectent pas tous les problèmes mécaniques seuls."
+          }
+        ],
+        "schemaTitle": "Bruit Moteur Ford Focus : Causes et Vérifications",
+        "schemaDescription": "Identifiez les causes et étapes clés pour diagnostiquer les bruits moteur sur Ford Focus afin d’éviter des réparations inutiles."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-rough-idle",
+    "intentKey": "ford-focus_rough_idle",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "rough_idle",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-rolanti-dalgalaniyor",
+        "title": "Ford Focus Rölanti Dalgalanıyor Sorununun Nedenleri ve Çözümleri",
+        "metaDescription": "Ford Focus rölanti dalgalanıyor sorununda olası nedenler, basit kontroller ve doğru teşhis yöntemleri için kılavuz.",
+        "intro": "Ford Focus araçlarda rölanti dalgalanması, motorun sabit devirde çalışmaması nedeniyle sürüş performansını etkileyebilir. Bu durum çeşitli mekanik veya elektronik sorunlardan kaynaklanabilir. Kesin teşhis için parça değişimine başlamadan önce bazı temel kontroller yapılmalıdır. Bu yazıda, dalgalanmanın olası nedenleri, öncelikli kontrol adımları ve sık yapılan hatalar detaylı şekilde ele alınacaktır.",
+        "severity": "Orta şiddetli; sürüş esnasında motor titremesi ve performans düşüşüne yol açabilir.",
+        "driveAdvice": "Dalgalanma artarsa araç daha fazla zorlanabileceğinden, araç mümkünse kontrol edilene kadar düşük hızda ve dikkatli kullanılmalıdır.",
+        "likelyCauses": [
+          "Arızalı buji veya buji kabloları",
+          "Kirli veya tıkanmış hava filtresi",
+          "Yakıt enjeksiyon sisteminde sorunlar",
+          "Hatalı veya kirli MAF (Kütle Hava Akış) sensörü",
+          "Vakum kaçakları"
+        ],
+        "diagnosticSteps": [
+          "Araçtaki OBD2 hata kodlarını taramak",
+          "Buji ve buji kablolarını görsel ve ölçüm ile kontrol etmek",
+          "Hava filtresinin durumunu incelemek",
+          "MAF sensörünü temizleyip test etmek",
+          "Yakıt sistemi basıncını ölçmek",
+          "Vakum hortumlarında kaçak testi yapmak"
+        ],
+        "firstChecks": [
+          "Araç aküsü ve klemenslerinin sağlamlığı",
+          "Motor soğutma sistemi seviyeleri",
+          "Egzoz sistemi görsel kontrolü"
+        ],
+        "commonMistakes": [
+          "Hata kodu olmadan doğrudan parça değişimine gitmek",
+          "Sadece hava filtresi değiştirip sorunu çözülmüş sanmak",
+          "Vakum kaçaklarını göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Çoklu Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Düşük Karışımı",
+          "P0101 - Kütle Hava Akış Sensörü Performans Sorunu"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Hata Kodları Rehberi",
+            "href": "/tr/ford-focus-hata-kodlari"
+          },
+          {
+            "label": "Rölanti Sorunları Nasıl Teşhis Edilir?",
+            "href": "/tr/rolanti-sorunlari-teshisi"
+          },
+          {
+            "label": "OBD2 Kod Tarama ve Okuma Yöntemleri",
+            "href": "/tr/obd2-kod-tarama"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus rölanti dalgalanmasının en yaygın nedeni nedir?",
+            "a": "En yaygın nedenler arasında ateşleme sistemi sorunları ve hava yakıt karışımındaki dengesizlikler bulunmaktadır."
+          },
+          {
+            "q": "Rölanti dalgalanması için hangi parça önce kontrol edilmeli?",
+            "a": "Öncelikle bujiler, hava filtresi ve vakum kaçakları kontrol edilmelidir."
+          },
+          {
+            "q": "OBD2 kodları rölanti dalgalanmasında nasıl yardımcı olur?",
+            "a": "OBD2 kodları, aracın motor kontrol ünitesinden alınan hata mesajlarıyla sorunun kaynağı hakkında yol gösterir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Rölanti Dalgalanıyor – Teşhis ve Nedenler",
+        "schemaDescription": "Ford Focus model araçlarda rölanti dalgalanması durumları için olası nedenler, kontroller ve hata kodları hakkında kapsamlı rehber."
+      },
+      "en": {
+        "slug": "ford-focus-rough-idle",
+        "title": "Ford Focus Rough Idle Symptoms: Causes and Diagnostic Guide",
+        "metaDescription": "Discover common causes and practical checks for rough idle issues on a Ford Focus before replacing parts.",
+        "intro": "Experiencing a rough idle in your Ford Focus can indicate several underlying issues affecting the engine’s performance. Rather than assuming a single cause, it’s important to systematically diagnose possible mechanical and electronic faults. This guide provides practical checks, common causes, and diagnostic steps to help identify the issue without unnecessary part replacements.",
+        "severity": "Moderate severity; may cause engine vibrations and affect drivability at idle.",
+        "driveAdvice": "If rough idling worsens, drive cautiously at low speeds and avoid heavy engine loads until the vehicle is inspected.",
+        "likelyCauses": [
+          "Faulty spark plugs or ignition wires",
+          "Dirty or clogged air filter",
+          "Fuel injection system problems",
+          "Malfunctioning or dirty Mass Air Flow (MAF) sensor",
+          "Vacuum leaks"
+        ],
+        "diagnosticSteps": [
+          "Scan the vehicle for OBD2 trouble codes",
+          "Check spark plugs and ignition wires visually and with testing equipment",
+          "Inspect and possibly replace the air filter",
+          "Clean and test the MAF sensor",
+          "Measure fuel system pressure",
+          "Perform vacuum leak detection"
+        ],
+        "firstChecks": [
+          "Battery condition and terminal connections",
+          "Engine coolant levels",
+          "Visual inspection of the exhaust system"
+        ],
+        "commonMistakes": [
+          "Replacing parts without verifying fault codes first",
+          "Assuming air filter replacement solves all idle issues",
+          "Ignoring potential vacuum leaks"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0101 - Mass Air Flow Sensor Performance Problem"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Trouble Codes Guide",
+            "href": "/en/ford-focus-obd2-trouble-codes"
+          },
+          {
+            "label": "How to Diagnose Rough Idle Problems",
+            "href": "/en/diagnose-rough-idle"
+          },
+          {
+            "label": "OBD2 Code Scanning Basics",
+            "href": "/en/obd2-code-scanning-basics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is the most common cause of rough idle in a Ford Focus?",
+            "a": "Common causes include ignition system faults and an improper air-fuel mixture."
+          },
+          {
+            "q": "Which components should I check first with rough idle symptoms?",
+            "a": "Start with spark plugs, air filter, and check for any vacuum leaks."
+          },
+          {
+            "q": "How can OBD2 codes help diagnose rough idle?",
+            "a": "OBD2 codes provide error messages from the engine control unit, guiding you to the potential root causes."
+          }
+        ],
+        "schemaTitle": "Ford Focus Rough Idle - Causes and Troubleshooting",
+        "schemaDescription": "Comprehensive guide to identifying and diagnosing rough idle issues on a Ford Focus, including likely causes and diagnostic steps."
+      },
+      "de": {
+        "slug": "ford-focus-rauher-leerlauf",
+        "title": "Ford Focus Rauher Leerlauf: Ursachen und Diagnoseanleitung",
+        "metaDescription": "Erfahren Sie praktische Tipps zur Fehlerdiagnose bei rauem Leerlauf im Ford Focus, bevor Sie Teile austauschen.",
+        "intro": "Ein rauher Leerlauf bei einem Ford Focus kann mehrere Ursachen haben, die die Motorleistung beeinträchtigen. Eine eindeutige Fehlerquelle lässt sich meist nicht sofort benennen. Bevor Teile ausgetauscht werden, sollten einige grundlegende Checks durchgeführt werden. Diese Anleitung beschreibt mögliche Ursachen, erste Prüfschritte und gängige Fehlerquellen bei der Diagnose.",
+        "severity": "Mittlere Schwere; Motorvibrationen und Leistungseinbußen können im Leerlauf auftreten.",
+        "driveAdvice": "Sollte sich der rauhe Leerlauf verschlechtern, fahren Sie vorsichtig mit geringer Geschwindigkeit und vermeiden Sie hohe Motorlasten, bis das Fahrzeug geprüft wurde.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündkabel",
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Probleme mit der Kraftstoffeinspritzung",
+          "Fehlerhafter oder verschmutzter Luftmassenmesser (MAF)",
+          "Unterdruck-Lecks"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Fehlercodes auslesen",
+          "Zündkerzen und Zündkabel visuell sowie messtechnisch prüfen",
+          "Luftfilter auf Verschmutzungen kontrollieren",
+          "MAF-Sensor reinigen und testen",
+          "Kraftstoffsystemdruck messen",
+          "Unterdruckleitungen auf Dichtheit prüfen"
+        ],
+        "firstChecks": [
+          "Zustand der Fahrzeugbatterie und Anschlüsse",
+          "Kühlmittelstand im Motor prüfen",
+          "Sichtprüfung des Abgassystems"
+        ],
+        "commonMistakes": [
+          "Teile austauschen ohne Fehlercodes zu prüfen",
+          "Nur den Luftfilter wechseln und dann auf Besserung hoffen",
+          "Unterdruckleckagen ignorieren"
+        ],
+        "relatedCodes": [
+          "P0300 – Zufällige/mehrfache Zündaussetzer",
+          "P0171 – System zu mager (Bank 1)",
+          "P0101 – Luftmassenmesser Leistungsproblem"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes Übersicht",
+            "href": "/de/ford-focus-obd2-fehlercodes"
+          },
+          {
+            "label": "Leerlaufprobleme richtig diagnostizieren",
+            "href": "/de/leerlaufprobleme-diagnose"
+          },
+          {
+            "label": "Grundlagen des OBD2-Auslesens",
+            "href": "/de/obd2-grundlagen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was ist die häufigste Ursache für rauhen Leerlauf im Ford Focus?",
+            "a": "Häufige Ursachen sind Zündprobleme und falsches Luft-Kraftstoff-Gemisch."
+          },
+          {
+            "q": "Welche Bauteile sollten bei rauhem Leerlauf zuerst geprüft werden?",
+            "a": "Zündkerzen, Luftfilter und Unterdruckleitungen sollten initial überprüft werden."
+          },
+          {
+            "q": "Wie helfen OBD2-Codes bei der Diagnose von rauhem Leerlauf?",
+            "a": "OBD2-Codes liefern Fehlermeldungen der Motorsteuerung und weisen auf mögliche Ursachen hin."
+          }
+        ],
+        "schemaTitle": "Ford Focus rauher Leerlauf – Ursachen und Diagnose",
+        "schemaDescription": "Detaillierte Anleitung zur Erkennung und Diagnose von rauhem Leerlauf beim Ford Focus mit Tipps zu häufigen Ursachen und Prüfschritten."
+      },
+      "es": {
+        "slug": "ford-focus-motor-tiembla-en-relenti",
+        "title": "Ford Focus Motor Tiembla en Relenti: Causas y Diagnóstico",
+        "metaDescription": "Guía práctica para diagnosticar el motor que tiembla en relenti en Ford Focus antes de cambiar piezas.",
+        "intro": "Si tu Ford Focus presenta un motor que tiembla en relenti, puede deberse a diferentes causas que afectan su rendimiento. No existe una única causa fija y es importante hacer pruebas prácticas para identificar el problema real. En esta guía encontrarás causas comunes, pasos de diagnóstico, chequeos iniciales y errores frecuentes para abordar el problema efectivamente.",
+        "severity": "Gravedad moderada; puede afectar el funcionamiento estable del motor al estar en reposo.",
+        "driveAdvice": "Si el temblor empeora, conduce con precaución y evita exigir demasiado al motor hasta que el vehículo sea revisado.",
+        "likelyCauses": [
+          "Bujías o cables de encendido en mal estado",
+          "Filtro de aire sucio o tapado",
+          "Problemas en el sistema de inyección de combustible",
+          "Sensor de flujo de masa de aire (MAF) defectuoso o sucio",
+          "Fugas de vacío"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos de error OBD2",
+          "Revisar visualmente y medir las bujías y cables de encendido",
+          "Inspeccionar y cambiar el filtro de aire si es necesario",
+          "Limpiar y probar el sensor MAF",
+          "Medir la presión del sistema de combustible",
+          "Detectar fugas de vacío"
+        ],
+        "firstChecks": [
+          "Estado de la batería y conexiones",
+          "Nivel del líquido refrigerante",
+          "Inspección visual del sistema de escape"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin revisar códigos de error primero",
+          "Creer que con sólo cambiar el filtro de aire se solucionan los problemas",
+          "No revisar las fugas de vacío"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple/aleatorio",
+          "P0171 - Sistema pobre (Banco 1)",
+          "P0101 - Problema en el rendimiento del sensor MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Ford Focus",
+            "href": "/es/codigos-obd2-ford-focus"
+          },
+          {
+            "label": "Cómo diagnosticar problemas de relenti",
+            "href": "/es/como-diagnosticar-problemas-relenti"
+          },
+          {
+            "label": "Introducción al escaneo de códigos OBD2",
+            "href": "/es/introduccion-escaneo-codigos-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la causa más común del motor que tiembla en relenti en Ford Focus?",
+            "a": "Las causas comunes incluyen fallos en el sistema de encendido y mezcla aire-combustible incorrecta."
+          },
+          {
+            "q": "¿Qué partes debo revisar primero ante temblores en relenti?",
+            "a": "Primero revisa bujías, filtro de aire y posibles fugas de vacío."
+          },
+          {
+            "q": "¿Cómo ayudan los códigos OBD2 en el diagnóstico del relenti irregular?",
+            "a": "Los códigos OBD2 indican errores en la ECU que guían en la identificación de causas del problema."
+          }
+        ],
+        "schemaTitle": "Ford Focus motor tiembla en relenti – Diagnóstico y causas",
+        "schemaDescription": "Guía completa para identificar y diagnosticar problemas de motor que tiembla en relenti en Ford Focus con causas y pasos recomendados."
+      },
+      "fr": {
+        "slug": "ford-focus-regime-instable-au-ralenti",
+        "title": "Ford Focus Régime Instable au Ralenti : Causes et Diagnostic",
+        "metaDescription": "Guide pratique pour identifier les causes du régime instable au ralenti sur Ford Focus avant de remplacer des pièces.",
+        "intro": "Un régime instable au ralenti sur une Ford Focus peut provenir de plusieurs causes affectant la performance moteur. Il n’existe pas de cause unique et il est essentiel d’effectuer des contrôles méthodiques avant tout remplacement. Ce guide vous aide à comprendre les causes fréquentes, les vérifications initiales, les étapes de diagnostic et les erreurs à éviter.",
+        "severity": "Gravité modérée ; peut provoquer des vibrations moteur et une perte de fluidité au ralenti.",
+        "driveAdvice": "Si le régime instable s’aggrave, conduisez prudemment à faible vitesse et évitez les fortes charges moteur jusqu’à l’examen du véhicule.",
+        "likelyCauses": [
+          "Bougies d’allumage ou câbles défectueux",
+          "Filtre à air encrassé ou obstrué",
+          "Problèmes du système d’injection de carburant",
+          "Capteur de débit d’air massique (MAF) sale ou défaillant",
+          "Fuites de dépression (vacuum)"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts via OBD2",
+          "Contrôler les bougies et câbles d’allumage visuellement et avec des outils",
+          "Inspecter le filtre à air et le remplacer si nécessaire",
+          "Nettoyer et tester le capteur MAF",
+          "Mesurer la pression du système carburant",
+          "Effectuer un test d’étanchéité des conduites de dépression"
+        ],
+        "firstChecks": [
+          "État et connexions de la batterie",
+          "Niveau du liquide de refroidissement moteur",
+          "Inspection visuelle du système d’échappement"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans vérifier les codes défauts",
+          "Penser qu’un simple changement de filtre à air résout le problème",
+          "Négliger les fuites de dépression"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples/alarme aléatoire",
+          "P0171 - Mélange trop pauvre (Banque 1)",
+          "P0101 - Problème de performance du capteur MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défauts OBD2 Ford Focus",
+            "href": "/fr/codes-defauts-ford-focus"
+          },
+          {
+            "label": "Comment diagnostiquer un ralenti instable",
+            "href": "/fr/diagnostic-ralenti-instable"
+          },
+          {
+            "label": "Principes de lecture des codes OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la cause la plus fréquente d’un ralenti instable sur Ford Focus ?",
+            "a": "Les causes fréquentes sont des problèmes d’allumage et un mélange air-carburant inadapté."
+          },
+          {
+            "q": "Quels composants vérifier en priorité en cas de ralenti instable ?",
+            "a": "Commencez par vérifier les bougies, le filtre à air et les éventuelles fuites de dépression."
+          },
+          {
+            "q": "Comment les codes OBD2 aident-ils au diagnostic ?",
+            "a": "Ils fournissent des indications précises depuis l’ECU du moteur pour identifier les causes possibles."
+          }
+        ],
+        "schemaTitle": "Ford Focus régime instable au ralenti - causes et diagnostic",
+        "schemaDescription": "Guide complet pour comprendre et diagnostiquer les problèmes de régime instable au ralenti sur Ford Focus, avec causes probables et conseils pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-engine-shaking",
+    "intentKey": "ford-focus_engine_shaking",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "engine_shaking",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-titriyor",
+        "title": "Ford Focus Titriyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Ford Focus motor titremesi neden olur? 6 adımlı tanı ve yaygın hatalarla motor titremesini anlamanıza yardımcı olun.",
+        "intro": "Ford Focus'un motorda oluşan titreme, sürüş konforunu etkileyen ve çeşitli sorunların belirtisi olabilen önemli bir sorundur. Bu titreşim, motorun çalışması sırasında hissedilebilir ve birçok farklı sebepten kaynaklanabilir. Motor titremesiyle karşılaştığınızda öncelikle profesyonel ve sistematik bir yaklaşım benimsemek gereklidir. Bu yazıda Ford Focus motor titremesinin olası nedenlerini, yapılacak kontrol aşamalarını ve dikkat edilmesi gereken yaygın hataları ele alacağız.",
+        "severity": "Orta derecede önemli; erken teşhis motor hasarını önleyebilir.",
+        "driveAdvice": "Titreme artarsa düşük hızda güvenli bir şekilde servise yönelin.",
+        "likelyCauses": [
+          "Enjektör arızaları veya düzensiz yakıt püskürtme",
+          "Ateşleme sistemindeki sorunlar (buji, bobin)",
+          "Motor takozlarının yıpranması veya zarar görmesi",
+          "Hava-yakıt karışımında dengesizlik",
+          "EGR valfi veya motor sensörlerinde arızalar"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile arıza kodlarını kontrol edin",
+          "Bujileri ve ateşleme bobinlerini inceleyin",
+          "Yakıt enjeksiyon sistemini test edin",
+          "Motor takozlarının fiziksel durumunu kontrol edin",
+          "Hava filtresini ve emme sistemini kontrol edin",
+          "Egzoz sistemindeki EGR valfi ve sensörleri kontrol edin"
+        ],
+        "firstChecks": [
+          "Yakıt filtresinin temizliği ve tıkanıklığı",
+          "Bujilerin kirlenme ve aşınma durumu",
+          "Motor yağı seviyesinin uygunluğu"
+        ],
+        "commonMistakes": [
+          "Sadece arıza lambasına güvenerek işlem yapmak",
+          "Motor takozları kolayca değiştirilebilir sanmak",
+          "Hızlı parça değişimi yapmadan temel kontrolleri atlamak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Çoklu Yanma Hatası",
+          "P0171 - Yakıt Sistemi Çok Fakir Karışım",
+          "P0507 - Motor Rölanti Hızı Yüksek"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Arıza Kodları",
+            "href": "/tr/ford-focus-ariza-kodlari"
+          },
+          {
+            "label": "Motor Titreşimi Nasıl Diagnostik Edilir?",
+            "href": "/tr/motor-titreme-diagnostik"
+          },
+          {
+            "label": "OBD2 Sensörleri ve İşlevleri",
+            "href": "/tr/obd2-sensorleri-islevleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus motor titremesi ne kadar ciddi?",
+            "a": "Motordaki titreme genellikle zamanında müdahale edilmezse daha büyük motor arızalarına yol açabilir."
+          },
+          {
+            "q": "Motor titremesi için gerekli özel ekipman var mı?",
+            "a": "OBD2 tarayıcı ile arıza kodları okunabilir, ancak bazı kontroller görsel ve manuel yapılmalıdır."
+          },
+          {
+            "q": "Titreme giderilene kadar araç sürülmeli mi?",
+            "a": "Şiddetli titreme varsa aracı uzun süre sürmemek ve hemen kontrol yaptırmak gerekir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor Titremesi - Nedenleri ve Çözümleri",
+        "schemaDescription": "Ford Focus araçta motor titremesinin olası nedenleri, tanı adımları ve yaygın hatalar hakkında kapsamlı rehber."
+      },
+      "en": {
+        "slug": "ford-focus-engine-shaking",
+        "title": "Ford Focus Engine Shaking: Causes and Diagnosis",
+        "metaDescription": "Discover common causes and diagnostic steps for Ford Focus engine shaking with expert tips to avoid common mistakes.",
+        "intro": "If your Ford Focus engine is shaking, it can be a symptom of various underlying issues affecting performance and comfort. Engine vibration can stem from problems in the ignition system, fuel delivery, or engine mounts. Diagnosing this requires careful checks before swapping parts. This guide explores potential causes, practical diagnostic steps, and common pitfalls to help you restore smooth operation.",
+        "severity": "Moderate severity; timely check can prevent further damage.",
+        "driveAdvice": "Drive carefully and seek service promptly if shaking worsens.",
+        "likelyCauses": [
+          "Faulty fuel injectors or uneven fuel delivery",
+          "Issues in ignition system such as spark plugs or coils",
+          "Worn or damaged engine mounts",
+          "Imbalanced air-fuel mixture",
+          "Malfunctioning EGR valve or engine sensors"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 trouble codes",
+          "Inspect spark plugs and ignition coils",
+          "Test the fuel injection system",
+          "Check physical condition of engine mounts",
+          "Inspect air filter and intake system",
+          "Evaluate EGR valve and related sensors"
+        ],
+        "firstChecks": [
+          "Fuel filter condition and clogging",
+          "Spark plugs for wear and fouling",
+          "Engine oil level and quality"
+        ],
+        "commonMistakes": [
+          "Relying solely on the check engine light",
+          "Assuming engine mounts are easy to replace without inspection",
+          "Skipping basic checks and jumping to part replacements"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0507 - Elevated Idle RPM Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Trouble Codes",
+            "href": "/en/ford-focus-obd2-trouble-codes"
+          },
+          {
+            "label": "Diagnosing Engine Shaking",
+            "href": "/en/diagnosing-engine-shaking"
+          },
+          {
+            "label": "OBD2 Sensors and Their Roles",
+            "href": "/en/obd2-sensors-roles"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How serious is engine shaking in a Ford Focus?",
+            "a": "Engine shaking can indicate issues that, if unaddressed, may lead to more serious engine damage."
+          },
+          {
+            "q": "What tools do I need to diagnose engine shaking?",
+            "a": "An OBD2 scanner is essential for code reading; some checks require manual inspection."
+          },
+          {
+            "q": "Can I keep driving with engine shaking?",
+            "a": "If shaking gets worse, it’s advisable to limit driving and seek professional inspection promptly."
+          }
+        ],
+        "schemaTitle": "Ford Focus Engine Shaking Causes and Diagnostics",
+        "schemaDescription": "Comprehensive guide to understanding and diagnosing Ford Focus engine shaking symptoms, causes, and mistakes to avoid."
+      },
+      "de": {
+        "slug": "ford-focus-motor-vibriert",
+        "title": "Ford Focus Motor Vibriert: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie mögliche Ursachen und Diagnosevorgänge bei Motorvibrationen im Ford Focus und vermeiden Sie häufige Fehler.",
+        "intro": "Wenn Ihr Ford Focus-Motor vibriert, kann dies auf verschiedene Probleme hinweisen, die Leistung und Fahrkomfort beeinträchtigen. Das Vibrieren kann durch Zündprobleme, unregelmäßige Kraftstoffzufuhr oder verschlissene Motorlager verursacht werden. Eine gründliche Diagnose ist wichtig, um kostspielige Reparaturen zu vermeiden. In diesem Artikel erläutern wir mögliche Ursachen, praktische Prüfmethoden sowie typische Fehlerquellen.",
+        "severity": "Mittlere Relevanz; eine zeitnahe Überprüfung kann Folgeschäden verhindern.",
+        "driveAdvice": "Fahren Sie vorsichtig und lassen Sie den Wagen bei zunehmenden Vibrationen überprüfen.",
+        "likelyCauses": [
+          "Defekte Einspritzventile oder ungleichmäßige Kraftstoffzufuhr",
+          "Probleme im Zündsystem, z. B. Zündkerzen oder Zündspulen",
+          "Verschlissene oder beschädigte Motorlager",
+          "Ungleichgewicht im Luft-Kraftstoff-Gemisch",
+          "Fehlfunktion des AGR-Ventils oder von Motorsensoren"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Fehlercodes auslesen",
+          "Zündkerzen und Zündspulen überprüfen",
+          "Kraftstoffeinspritzsystem testen",
+          "Motorlager auf Beschädigungen prüfen",
+          "Luftfilter und Ansaugsystem kontrollieren",
+          "AGR-Ventil und Sensorik inspizieren"
+        ],
+        "firstChecks": [
+          "Kraftstofffilter auf Verunreinigungen prüfen",
+          "Zündkerzen auf Verschleiß kontrollieren",
+          "Motorölstand und Qualität überprüfen"
+        ],
+        "commonMistakes": [
+          "Nur auf die Motorkontrollleuchte vertrauen",
+          "Motorlager ohne genaue Prüfung einfach ersetzen",
+          "Grundlegende Prüfungen überspringen und direkt Teile tauschen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/Mehrfach-Zündaussetzer erkannt",
+          "P0171 - System zu mager (Bank 1)",
+          "P0507 - Erhöhte Leerlaufdrehzahl erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes",
+            "href": "/de/ford-focus-obd2-fehlercodes"
+          },
+          {
+            "label": "Motorvibrationen richtig diagnostizieren",
+            "href": "/de/motorvibrationen-diagnose"
+          },
+          {
+            "label": "OBD2 Sensoren und Funktionen",
+            "href": "/de/obd2-sensoren-funktionen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie ernst ist ein vibrierender Motor im Ford Focus?",
+            "a": "Motorvibrationen können auf ernsthafte Probleme hinweisen, die bei Nichtbeachtung zu größeren Schäden führen."
+          },
+          {
+            "q": "Welche Werkzeuge benötigt man zur Diagnose?",
+            "a": "Ein OBD2-Scanner ist notwendig, manche Inspektionen sind manuell durchzuführen."
+          },
+          {
+            "q": "Kann ich mit einem vibrierenden Motor weiterfahren?",
+            "a": "Bei zunehmenden Vibrationen sollte das Fahrzeug möglichst wenig gefahren und zeitnah geprüft werden."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor Vibriert: Ursachen und Diagnose-Anleitung",
+        "schemaDescription": "Umfassender Leitfaden zur Ursachenfindung und Diagnose von Motorvibrationen im Ford Focus mit Tipps zur Fehlervermeidung."
+      },
+      "es": {
+        "slug": "ford-focus-motor-tiembla",
+        "title": "El Motor del Ford Focus Tiembla: Causas y Diagnóstico",
+        "metaDescription": "Conozca causas comunes del motor que tiembla en Ford Focus, pasos de diagnóstico y errores frecuentes para resolverlo.",
+        "intro": "Cuando el motor de un Ford Focus tiembla, puede indicar diferentes problemas que afectan el rendimiento y la conducción. Estas vibraciones suelen estar relacionadas con fallas en el sistema de encendido, inyectores u otros componentes mecánicos. Antes de reemplazar piezas, es importante realizar una serie de pruebas y controles prácticos. En esta guía, exploraremos las posibles causas, los diagnósticos más efectivos y los errores comunes que se deben evitar.",
+        "severity": "Gravedad media; una revisión oportuna evitará daños mayores.",
+        "driveAdvice": "Conduzca con precaución y acuda a taller si el temblor empeora.",
+        "likelyCauses": [
+          "Inyectores de combustible defectuosos o suministro irregular",
+          "Problemas en el sistema de encendido, como bujías o bobinas",
+          "Soportes del motor desgastados o dañados",
+          "Desbalance en la mezcla aire-combustible",
+          "Mal funcionamiento de la válvula EGR o sensores del motor"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de fallo con escáner OBD2",
+          "Inspeccionar bujías y bobinas de encendido",
+          "Probar sistema de inyección de combustible",
+          "Verificar estado físico de los soportes de motor",
+          "Revisar filtro de aire y sistema de admisión",
+          "Evaluar válvula EGR y sensores relacionados"
+        ],
+        "firstChecks": [
+          "Estado y obstrucción del filtro de combustible",
+          "Desgaste o suciedad en las bujías",
+          "Nivel y calidad del aceite del motor"
+        ],
+        "commonMistakes": [
+          "Confiar únicamente en la luz check engine",
+          "Suponer que los soportes del motor se pueden cambiar fácilmente sin inspección",
+          "Omitir controles básicos y cambiar piezas innecesariamente"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple o aleatorio",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0507 - Revoluciones en ralentí elevadas"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 de Ford Focus",
+            "href": "/es/codigos-ford-focus"
+          },
+          {
+            "label": "Cómo diagnosticar motor que tiembla",
+            "href": "/es/diagnosticar-motor-tiembla"
+          },
+          {
+            "label": "Sensores OBD2 y sus funciones",
+            "href": "/es/sensores-obd2-funciones"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tan grave es que el motor tiemble en un Ford Focus?",
+            "a": "El temblor puede señalar problemas que si no se reparan a tiempo pueden causar daños mayores."
+          },
+          {
+            "q": "¿Qué herramientas necesito para diagnosticar el temblor?",
+            "a": "Un escáner OBD2 es esencial, además de inspecciones visuales y manuales."
+          },
+          {
+            "q": "¿Puedo seguir conduciendo con el motor temblando?",
+            "a": "Si el temblor aumenta, es mejor limitar el uso y llevar el coche a revisión pronto."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor Tiembla: Causas y Guía de Diagnóstico",
+        "schemaDescription": "Guía completa para entender y diagnosticar el temblor del motor en un Ford Focus con consejos para evitar errores comunes."
+      },
+      "fr": {
+        "slug": "ford-focus-moteur-vibre",
+        "title": "Ford Focus : Le Moteur Vibre - Causes et Diagnostic",
+        "metaDescription": "Explorez les causes fréquentes des vibrations moteur sur Ford Focus, les étapes de diagnostic et les erreurs courantes à éviter.",
+        "intro": "Une vibration du moteur sur votre Ford Focus peut révéler diverses anomalies affectant ses performances. Ce phénomène peut provenir du système d'allumage, des injecteurs ou des supports moteur. Avant toute réparation, un diagnostic approfondi est nécessaire. Cet article présente les causes possibles, les contrôles pratiques à réaliser et les erreurs communes à éviter pour retrouver un fonctionnement optimal.",
+        "severity": "Gravité modérée ; une vérification rapide évite des dommages conséquents.",
+        "driveAdvice": "Conduisez prudemment et faites contrôler le véhicule si les vibrations s’aggravent.",
+        "likelyCauses": [
+          "Injecteurs défectueux ou alimentation en carburant irrégulière",
+          "Problèmes dans le système d’allumage (bougies, bobines)",
+          "Supports moteur usés ou endommagés",
+          "Mélange air-carburant déséquilibré",
+          "Vanne EGR ou capteurs moteur défaillants"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut avec un outil OBD2",
+          "Inspecter bougies et bobines d’allumage",
+          "Tester le système d’injection de carburant",
+          "Contrôler l’état des supports moteur",
+          "Examiner le filtre à air et le système d’admission",
+          "Vérifier la vanne EGR et les capteurs liés"
+        ],
+        "firstChecks": [
+          "État et obstruction du filtre à carburant",
+          "Usure et encrassement des bougies",
+          "Niveau et qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Se fier uniquement au témoin moteur",
+          "Changer les supports moteur sans inspection préalable",
+          "Zapper les contrôles de base et remplacer les pièces inutilement"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0507 - Régime de ralenti élevé détecté"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 Ford Focus",
+            "href": "/fr/codes-defaut-ford-focus"
+          },
+          {
+            "label": "Diagnostiquer les vibrations moteur",
+            "href": "/fr/diagnostiquer-vibrations-moteur"
+          },
+          {
+            "label": "Capteurs OBD2 et leurs fonctions",
+            "href": "/fr/capteurs-obd2-fonctions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "À quel point une vibration moteur est-elle grave sur Ford Focus ?",
+            "a": "Elle peut indiquer des problèmes susceptibles d’entraîner des dégâts majeurs si non traités rapidement."
+          },
+          {
+            "q": "Quels outils pour diagnostiquer la vibration ?",
+            "a": "Un outil OBD2 est essentiel, complété par des contrôles visuels et manuels."
+          },
+          {
+            "q": "Puis-je continuer à rouler avec une vibration moteur ?",
+            "a": "En cas d’aggravation, il est conseillé de limiter la conduite et de consulter rapidement."
+          }
+        ],
+        "schemaTitle": "Ford Focus : Causes et Diagnostic des Vibrations Moteur",
+        "schemaDescription": "Guide complet pour comprendre et diagnostiquer les vibrations moteur sur Ford Focus, avec conseils pour éviter les erreurs courantes."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-check-engine-light",
+    "intentKey": "ford-focus_check_engine_light",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "check_engine_light",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "ford-focus-check-engine-light",
+        "title": "Ford Focus Check Engine Light On: Diagnosing the Warning",
+        "metaDescription": "Learn why your Ford Focus check engine light is on with practical tips, common causes, and diagnostic steps before replacing parts.",
+        "intro": "When the check engine light illuminates on your Ford Focus, it indicates that the vehicle's onboard diagnostics system has detected a possible issue. While this warning can signal anything from a minor sensor fault to a more serious engine problem, it’s important to perform systematic checks before replacing components.",
+        "severity": "The severity of the check engine light can vary. It may be a minor issue if the light is steady, but a flashing light often suggests serious problems that require immediate attention.",
+        "driveAdvice": "If the check engine light is steady, drive cautiously to a diagnostic center. If it’s flashing, reduce speed and avoid heavy acceleration to prevent damage.",
+        "likelyCauses": [
+          "Loose or damaged gas cap",
+          "Faulty oxygen sensor",
+          "Malfunctioning mass airflow sensor",
+          "Worn spark plugs or ignition coils",
+          "Vacuum leak in the intake system"
+        ],
+        "diagnosticSteps": [
+          "Check for loose or missing gas cap",
+          "Use an OBD2 scanner to read trouble codes",
+          "Inspect and test oxygen sensors",
+          "Examine mass airflow sensor for contamination",
+          "Check ignition system components (spark plugs/coils)",
+          "Look for vacuum leaks using a smoke test"
+        ],
+        "firstChecks": [
+          "Ensure the gas cap is tight and undamaged",
+          "Verify the engine oil level is sufficient",
+          "Look for obvious signs of corrosion on battery terminals"
+        ],
+        "commonMistakes": [
+          "Ignoring the warning light and delaying diagnostics",
+          "Replacing parts without reading error codes first",
+          "Attempting repairs without appropriate diagnostic tools"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Bank 1)",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Troubleshooting Guide",
+            "href": "/en/ford-focus/obd2-troubleshooting"
+          },
+          {
+            "label": "Understanding OBD2 Check Engine Codes",
+            "href": "/en/guides/understanding-obd2-codes"
+          },
+          {
+            "label": "How to Use an OBD2 Scanner",
+            "href": "/en/guides/using-obd2-scanner"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can I drive my Ford Focus when the check engine light is on?",
+            "a": "If the light is steady, you can drive cautiously to a service center. Avoid driving if the light is flashing to prevent potential engine damage."
+          },
+          {
+            "q": "Will disconnecting the battery reset the check engine light?",
+            "a": "Disconnecting the battery may reset the light temporarily, but it does not solve the root problem and error codes will likely reappear."
+          },
+          {
+            "q": "How often should I scan my Ford Focus for OBD2 codes?",
+            "a": "Ideally, scan whenever the check engine light turns on or during regular maintenance intervals to detect issues early."
+          }
+        ],
+        "schemaTitle": "Ford Focus Check Engine Light Diagnostic Guide",
+        "schemaDescription": "Expert advice on identifying causes and performing checks when your Ford Focus check engine light comes on."
+      },
+      "tr": {
+        "slug": "ford-focus-motor-ariza-lambasi-yaniyor",
+        "title": "Ford Focus Motor Arıza Lambası Yanıyor: Sorun Giderme Rehberi",
+        "metaDescription": "Ford Focus motor arıza lambası yanıyorsa, parçaları değiştirmeden önce pratik kontroller ve yaygın nedenler hakkında bilgi edinin.",
+        "intro": "Ford Focus aracınızın motor arıza lambası yandığında, araçtaki OBD sisteminin bir sorun tespit ettiğini gösterir. Bu uyarı, küçük bir sensör arızasından ciddi motor problemlerine kadar pek çok sebebe işaret edebilir. Parça değiştirmeden önce sistematik kontroller yapmak önemlidir.",
+        "severity": "Motor arıza lambasının yoğunluğu değişebilir. Lambanın sabit yanması genellikle ciddi olmayan bir soruna işaret ederken, yanıp sönmesi motor için acil müdahale gerektiğini gösterebilir.",
+        "driveAdvice": "Lamba sabit yanıyorsa dikkatli sürüşle servise gidilebilir. Yanıp sönüyorsa ağır hızlanmalardan kaçınarak hızınızı düşürmeniz tavsiye edilir.",
+        "likelyCauses": [
+          "Geç sıkışan veya hasarlı depo kapağı",
+          "Arızalı oksijen sensörü",
+          "Hatalı kütle hava akış sensörü",
+          "Aşınmış bujiler veya ateşleme bobinleri",
+          "Emme hattında vakum kaçakları"
+        ],
+        "diagnosticSteps": [
+          "Depo kapağının sıkı ve sağlam olduğundan emin olun",
+          "OBD2 cihazıyla hata kodlarını okuyun",
+          "Oksijen sensörlerini test edin",
+          "Kütle hava akış sensörünü temizleyin veya kontrol edin",
+          "Bujileri ve bobinleri inceleyin",
+          "Vakum kaçaklarını tespit etmek için duman testi yapın"
+        ],
+        "firstChecks": [
+          "Depo kapağının tam kapalı ve sağlam olduğundan emin olun",
+          "Motor yağ seviyesini kontrol edin",
+          "Akü kutup başlarında korozyon olup olmadığını inceleyin"
+        ],
+        "commonMistakes": [
+          "Arıza lambasını görmezden gelmek ve geç müdahale etmek",
+          "Hata kodları okunmadan parça değiştirmek",
+          "Uygun tanısal cihaz olmadan tamir yapmaya çalışmak"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistem Çok Fakir (Bank 1)",
+          "P0300 - Rastgele/Sık Çok Silindir Yanma Hatası",
+          "P0420 - Katalizör Sistemi Verimlilik Altında"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Arıza Tespiti",
+            "href": "/tr/ford-focus/obd2-ariza-tespiti"
+          },
+          {
+            "label": "OBD2 Arıza Kodları Nasıl Anlaşılır?",
+            "href": "/tr/rehberler/obd2-ariza-kodlari"
+          },
+          {
+            "label": "OBD2 Cihazı Nasıl Kullanılır?",
+            "href": "/tr/rehberler/obd2-cihazi-kullanimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası yanıyorsa Ford Focus ile sürüş yapmak güvenli midir?",
+            "a": "Lamba sabit yanıyorsa dikkatli sürüş yapılabilir. Yanıp sönüyorsa, motor hasarını önlemek için aracı ağır kullanmamak gerekir."
+          },
+          {
+            "q": "Aküyü söküp takmak motor arıza lambasını söndürür mü?",
+            "a": "Akü bağlantısını kesmek lambayı geçici olarak kapatabilir ama sorunu çözmez ve kodlar tekrar ortaya çıkar."
+          },
+          {
+            "q": "Ford Focus aracı ne sıklıkla OBD2 cihazıyla taramalıyım?",
+            "a": "Arıza lambası yandığında veya düzenli bakımda erken sorun tespiti için cihazla inceleme yapılması önerilir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor Arıza Lambası Tanılama Rehberi",
+        "schemaDescription": "Ford Focus aracınızın motor arıza lambası yanarsa nedenlerini ve gerekli kontrolleri uzman bakış açısıyla öğrenin."
+      },
+      "de": {
+        "slug": "ford-focus-motor-warnleuchte-an",
+        "title": "Ford Focus Motor-Warnleuchte Leuchtet: Diagnose und Tipps",
+        "metaDescription": "Erfahren Sie, warum die Motor-Warnleuchte Ihres Ford Focus an ist, mit praktischen Tipps, häufigen Ursachen und Diagnoseschritten.",
+        "intro": "Wenn bei Ihrem Ford Focus die Motor-Warnleuchte aufleuchtet, signalisiert das, dass das Onboard-Diagnosesystem eine mögliche Störung erkannt hat. Die Gründe können von kleinen Sensorfehlern bis zu ernsthaften Motorproblemen reichen. Vor dem Austausch von Bauteilen sollten systematische Prüfungen durchgeführt werden.",
+        "severity": "Die Dringlichkeit der Warnleuchte variiert: ein dauerhaftes Leuchten weist meist auf kleinere Probleme hin, ein blinkendes Licht signalisiert oft schwerwiegende Defekte mit Handlungsbedarf.",
+        "driveAdvice": "Leuchtet die Lampe konstant, fahren Sie vorsichtig zur Werkstatt. Blinklicht bedeutet, dass Sie starke Belastungen vermeiden und möglichst früh anhalten sollten.",
+        "likelyCauses": [
+          "Lockere oder beschädigte Tankverschlusskappe",
+          "Defekter Sauerstoffsensor",
+          "Fehlerhafter Luftmassenmesser",
+          "Abgenutzte Zündkerzen oder Zündspulen",
+          "Unterdruckleck im Ansaugsystem"
+        ],
+        "diagnosticSteps": [
+          "Tankverschluss auf festen Sitz prüfen",
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Sauerstoffsensoren testen und inspizieren",
+          "Luftmassenmesser auf Verschmutzungen kontrollieren",
+          "Zündkerzen und Spulen prüfen",
+          "Unterdruckleck mit Rauchtest aufspüren"
+        ],
+        "firstChecks": [
+          "Tankverschluss auf Dichtheit und Beschädigungen prüfen",
+          "Motorölstand messen",
+          "Batteriepolklemmen auf Korrosion untersuchen"
+        ],
+        "commonMistakes": [
+          "Warnleuchte ignorieren und Diagnose verzögern",
+          "Teile ohne Fehlercodeauslesung wechseln",
+          "Reparaturen ohne geeignetes Diagnosewerkzeug durchführen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager (Bank 1)",
+          "P0300 - Zufälliger/mehrfacher Zündaussetzer erkannt",
+          "P0420 - Katalysatorsystem Wirkungsgrad unterhalb Schwelle"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlerbehebung",
+            "href": "/de/ford-focus/obd2-fehlerbehebung"
+          },
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/leitfaden/obd2-fehlercodes"
+          },
+          {
+            "label": "OBD2 Scanner richtig nutzen",
+            "href": "/de/leitfaden/obd2-scanner-anleitung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ich mit der Motor-Warnleuchte am Ford Focus weiterfahren?",
+            "a": "Bei konstant leuchtender Lampe vorsichtig fahren, zur Werkstatt. Blinkt die Lampe, Belastungen vermeiden und sofort anhalten."
+          },
+          {
+            "q": "Wird die Warnleuchte durch Batterie abklemmen zurückgesetzt?",
+            "a": "Ja, aber nur temporär. Das eigentliche Problem bleibt bestehen und Fehlercodes erscheinen erneut."
+          },
+          {
+            "q": "Wie oft sollte ich meinen Ford Focus mit OBD2 auslesen?",
+            "a": "Beim Aufleuchten der Warnleuchte oder regelmäßig zur vorbeugenden Wartung empfiehlt sich das Auslesen."
+          }
+        ],
+        "schemaTitle": "Ford Focus Motor-Warnleuchte Diagnose und Hilfe",
+        "schemaDescription": "Expertenrat zur Erkennung möglicher Ursachen und sinnvoller Kontrollen bei leuchtender Motor-Warnleuchte im Ford Focus."
+      },
+      "es": {
+        "slug": "ford-focus-luz-de-check-engine-encendida",
+        "title": "Ford Focus Luz de Check Engine Encendida: Guía de Diagnóstico",
+        "metaDescription": "Descubre por qué la luz de check engine de tu Ford Focus está encendida con causas comunes, pasos de diagnóstico y consejos antes de cambiar piezas.",
+        "intro": "Cuando la luz de check engine se enciende en tu Ford Focus, el sistema de diagnóstico detectó un posible problema. Esta señal puede indicar desde un sensor defectuoso hasta un inconveniente serio en el motor. Es importante realizar revisiones prácticas antes de reemplazar cualquier componente.",
+        "severity": "La gravedad del aviso puede variar. Una luz fija suele ser una alerta ligera, mientras que una luz intermitente puede señalar un problema grave que requiere atención inmediata.",
+        "driveAdvice": "Si la luz está fija, conduce con precaución hasta un taller. Si parpadea, reduce la velocidad y evita acelerar para prevenir daños.",
+        "likelyCauses": [
+          "Tapa del combustible floja o dañada",
+          "Sensor de oxígeno defectuoso",
+          "Sensor de flujo de aire con mal funcionamiento",
+          "Bujías o bobinas de encendido desgastadas",
+          "Fugas de vacío en el sistema de admisión"
+        ],
+        "diagnosticSteps": [
+          "Verifica que la tapa del combustible esté bien cerrada",
+          "Escanea los códigos de error con un escáner OBD2",
+          "Inspecciona y prueba los sensores de oxígeno",
+          "Revisa que el sensor de flujo de aire esté limpio",
+          "Chequea las bujías y bobinas de encendido",
+          "Realiza una prueba de humo para detectar fugas de vacío"
+        ],
+        "firstChecks": [
+          "Asegúrate que la tapa del tanque esté bien colocada",
+          "Verifica el nivel de aceite del motor",
+          "Revisa los bornes de la batería por corrosión visible"
+        ],
+        "commonMistakes": [
+          "Ignorar la luz sin hacer diagnóstico",
+          "Cambiar piezas sin leer primero los códigos",
+          "Intentar reparaciones sin herramientas adecuadas"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0300 - Fallos de encendido múltiples/aleatorios",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico OBD2 para Ford Focus",
+            "href": "/es/ford-focus/diagnostico-obd2"
+          },
+          {
+            "label": "Cómo entender los códigos OBD2",
+            "href": "/es/guias/codigos-obd2"
+          },
+          {
+            "label": "Cómo usar un escáner OBD2",
+            "href": "/es/guias/uso-escaner-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puedo conducir mi Ford Focus con la luz check engine encendida?",
+            "a": "Si la luz es fija, conduce con cuidado hasta un taller. Si parpadea, reduce velocidad y evita aceleraciones fuertes."
+          },
+          {
+            "q": "¿Desconectar la batería apaga la luz check engine?",
+            "a": "Puede apagarla temporalmente, pero no resuelve el problema y los códigos volverán a aparecer."
+          },
+          {
+            "q": "¿Cada cuánto debo escanear mi Ford Focus con OBD2?",
+            "a": "Se recomienda escanear cuando la luz se enciende o durante mantenimientos regulares."
+          }
+        ],
+        "schemaTitle": "Guía para la luz check engine en Ford Focus",
+        "schemaDescription": "Consejos expertos para identificar causas comunes y pasos de diagnóstico cuando la luz check engine de tu Ford Focus está encendida."
+      },
+      "fr": {
+        "slug": "ford-focus-temoin-moteur-allume",
+        "title": "Ford Focus Témoin Moteur Allumé : Guide de Diagnostic",
+        "metaDescription": "Comprenez pourquoi le témoin moteur de votre Ford Focus s’allume avec des conseils pratiques, causes fréquentes et étapes de diagnostic.",
+        "intro": "Lorsque le témoin moteur s’allume sur votre Ford Focus, cela signifie que le système de diagnostic embarqué a détecté une anomalie possible. Cette alerte peut révéler un simple problème de capteur ou un dysfonctionnement plus sérieux du moteur. Il est essentiel de réaliser des vérifications avant de remplacer des pièces.",
+        "severity": "La gravité peut varier : un témoin fixe indique souvent un problème léger alors qu’un clignotant signale une panne grave nécessitant une intervention rapide.",
+        "driveAdvice": "Si le témoin est fixe, conduisez prudemment jusqu’à un garage. Si le témoin clignote, évitez les accélérations et limitez la vitesse pour éviter des dommages.",
+        "likelyCauses": [
+          "Bouchon de réservoir mal fermé ou endommagé",
+          "Sonde lambda défectueuse",
+          "Débitmètre d’air en panne ou sale",
+          "Bougies d’allumage ou bobines usées",
+          "Fuite de vide dans le système d’admission"
+        ],
+        "diagnosticSteps": [
+          "Vérifier que le bouchon de carburant est bien serré",
+          "Lire les codes d’erreur avec un outil OBD2",
+          "Tester les sondes lambda",
+          "Contrôler le débitmètre d’air et le nettoyer si besoin",
+          "Inspecter les bougies et les bobines d’allumage",
+          "Détecter les fuites de vide avec un test à la fumée"
+        ],
+        "firstChecks": [
+          "S’assurer que le bouchon de réservoir est intact et bien fermé",
+          "Vérifier le niveau d’huile moteur",
+          "Regarder si les cosses de batterie sont corrodées"
+        ],
+        "commonMistakes": [
+          "Ignorer le témoin et retarder le diagnostic",
+          "Changer des pièces sans lecture des codes d’erreur",
+          "Intervenir sans outils de diagnostic adaptés"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0420 - Rendement du catalyseur sous le seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostic OBD2 Ford Focus",
+            "href": "/fr/ford-focus/diagnostic-obd2"
+          },
+          {
+            "label": "Comprendre les codes OBD2",
+            "href": "/fr/guides/comprendre-codes-obd2"
+          },
+          {
+            "label": "Utiliser un scanner OBD2",
+            "href": "/fr/guides/utiliser-scanner-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Puis-je conduire mon Ford Focus avec le témoin moteur allumé ?",
+            "a": "Si le témoin est fixe, roulez prudemment jusqu’à un garage. S’il clignote, évitez les sollicitations fortes du moteur et consultez rapidement."
+          },
+          {
+            "q": "Débrancher la batterie éteint-il le témoin moteur ?",
+            "a": "Cela peut l’éteindre temporairement, mais sans corriger le problème, le témoin se rallumera."
+          },
+          {
+            "q": "À quelle fréquence faut-il scanner mon Ford Focus avec un outil OBD2 ?",
+            "a": "Il est conseillé de scanner lors de l’allumage du témoin ou régulièrement pour anticiper les pannes."
+          }
+        ],
+        "schemaTitle": "Guide de diagnostic du témoin moteur Ford Focus",
+        "schemaDescription": "Conseils d’expert pour détecter les causes possibles et effectuer les contrôles nécessaires lorsque le témoin moteur de votre Ford Focus s’allume."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-hard-start",
+    "intentKey": "ford-focus_hard_start",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "hard_start",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "ford-focus-hard-start",
+        "title": "Ford Focus Hard Starting: Causes and Diagnostics",
+        "metaDescription": "Discover common reasons and diagnostic steps for hard starting issues in Ford Focus models. Practical checks before part replacement.",
+        "intro": "If your Ford Focus struggles to start, several factors might be influencing this issue. From fuel supply problems to electrical faults, diagnosing a hard start requires a thorough and systematic approach. This guide covers practical checks and common causes, helping you understand potential faults without jumping to immediate replacements.",
+        "severity": "Starting issues may indicate underlying problems but are usually manageable if diagnosed early.",
+        "driveAdvice": "Avoid repeated hard starts to prevent battery drain and starter motor wear. Ensure battery is fully charged and components are checked promptly.",
+        "likelyCauses": [
+          "Weak or discharged battery",
+          "Faulty fuel pump or clogged fuel filter",
+          "Ignition system problems such as worn spark plugs",
+          "Issues with the engine coolant temperature sensor",
+          "Air intake obstructions or vacuum leaks"
+        ],
+        "diagnosticSteps": [
+          "Check battery voltage and terminals for corrosion",
+          "Inspect fuel pump operation and fuel pressure",
+          "Evaluate spark plugs condition and ignition coils",
+          "Test engine coolant temperature sensor readings",
+          "Scan with OBD2 scanner for relevant trouble codes",
+          "Verify air intake system including filters and vacuum lines"
+        ],
+        "firstChecks": [
+          "Battery charge level and terminal connections",
+          "Fuel level in tank to ensure supply availability",
+          "Condition of spark plugs for wear or fouling"
+        ],
+        "commonMistakes": [
+          "Replacing parts without confirming fault via diagnostics",
+          "Overlooking battery condition as starting power source",
+          "Ignoring vacuum leaks or air intake obstructions"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Bank 1)",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0115 - Engine Coolant Temperature Circuit Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Code List",
+            "href": "/en/ford-focus/obd2-codes"
+          },
+          {
+            "label": "How to Test Spark Plugs Ford Focus",
+            "href": "/en/ford-focus/test-spark-plugs"
+          },
+          {
+            "label": "Fuel Pump Diagnosis Guide",
+            "href": "/en/general/fuel-pump-diagnosis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a bad battery cause a hard start?",
+            "a": "Yes, if the battery is weak or discharged, it may not provide enough power to crank the engine properly, causing a hard start."
+          },
+          {
+            "q": "Should I replace spark plugs if my Focus is hard starting?",
+            "a": "Not immediately. First inspect the spark plugs for wear or fouling and verify if ignition issues exist before replacing."
+          },
+          {
+            "q": "Can cold weather affect Ford Focus starting?",
+            "a": "Cold weather can affect battery performance and fuel vaporization, potentially leading to harder starts. Checking sensors and battery is advisable."
+          }
+        ],
+        "schemaTitle": "Ford Focus Hard Starting Symptoms and Troubleshooting",
+        "schemaDescription": "Comprehensive guide on causes, diagnostics, and practical checks for hard starting Ford Focus models."
+      },
+      "tr": {
+        "slug": "ford-focus-gec-calisiyor",
+        "title": "Ford Focus Geç Çalışıyor: Nedenleri ve Tanı Yöntemleri",
+        "metaDescription": "Ford Focus'unuz geç çalışıyorsa sık karşılaşılan nedenler ve uygulanabilir kontrol adımları hakkında bilgi edinin.",
+        "intro": "Ford Focus'unuzun geç çalışması birçok faktörden kaynaklanabilir. Yakıt sistemi, ateşleme sistemi ve sensör arızaları gibi birçok olası sebep vardır. Parça değiştirmeden önce yapılacak pratik kontrollerle sorunun kaynağına yaklaşabilirsiniz. Bu rehber size sistematik bir tanı süreci sunar.",
+        "severity": "Geç çalışma sorunu, çoğu zaman erken müdahale ile kontrol altına alınabilir ancak önemli sorunlara işaret edebilir.",
+        "driveAdvice": "Aracı zorlamadan gerektiğinde aküyü kontrol edin. Sürekli geç çalıştırmak akü ve marş motoruna zarar verebilir.",
+        "likelyCauses": [
+          "Zayıf veya bitmiş akü",
+          "Arızalı yakıt pompası veya tıkalı yakıt filtresi",
+          "Ateşleme sisteminde sorunlar (bujiler, bobinler)",
+          "Motor soğutma suyu sıcaklık sensörü arızası",
+          "Hava emiş sistemi tıkanıklıkları veya vakum kaçakları"
+        ],
+        "diagnosticSteps": [
+          "Akü voltajını ve kutup başlarını kontrol edin",
+          "Yakıt pompasının çalışmasını ve basıncını test edin",
+          "Bujilerin durumunu ve ateşleme bobinlerini inceleyin",
+          "Soğutma suyu sıcaklık sensörü değerlerini ölçün",
+          "OBD2 cihazı ile arıza kodlarını okuyun",
+          "Hava filtresi ve vakum hatlarını kontrol edin"
+        ],
+        "firstChecks": [
+          "Akü şarj durumu ve bağlantılarının sağlamlığı",
+          "Yakıt seviyesinin yeterli olması",
+          "Bujilerin temizliği ve yıpranma durumu"
+        ],
+        "commonMistakes": [
+          "Sistemi teşhis etmeden parça değiştirmek",
+          "Aküyü göz ardı etmek",
+          "Hava kaçaklarını ve filtre tıkanıklıklarını incelememek"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistem Zenginlik Oranı Düşük (Banka 1)",
+          "P0300 - Rastgele veya Birden Fazla Silindir Ateşlememesi",
+          "P0115 - Soğutma Suyu Sıcaklık Sensör Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Kod Listesi",
+            "href": "/tr/ford-focus/obd2-kodlari"
+          },
+          {
+            "label": "Ford Focus Bujilerini Test Etme",
+            "href": "/tr/ford-focus/buji-test"
+          },
+          {
+            "label": "Yakıt Pompası Tanı Rehberi",
+            "href": "/tr/genel/yakit-pompasi-tani"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Zayıf akü geç çalışmaya neden olur mu?",
+            "a": "Evet, zayıf veya bitmiş bir akü motoru yeterince hızlı çeviremediği için geç çalışmaya sebep olabilir."
+          },
+          {
+            "q": "Ford Focus'ta bujiler hemen değiştirilmelimi?",
+            "a": "İlk olarak bujiler kontrol edilmeli, aşınma veya kirlenme varsa değiştirilmelidir."
+          },
+          {
+            "q": "Soğuk hava geç çalışmaya etkili midir?",
+            "a": "Soğuk hava akü performansını düşürebilir ve yakıtın buharlaşmasını zorlaştırabilir, bu da geç çalışmaya neden olabilir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Geç Çalışma Sorunu: Nedenler ve Tanı",
+        "schemaDescription": "Ford Focus'ta geç çalışma sorununun nedenleri, tanı yöntemleri ve pratik kontroller içeren kapsamlı rehber."
+      },
+      "de": {
+        "slug": "ford-focus-schwierigkeiten-beim-starten",
+        "title": "Ford Focus startet schwer: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie typische Ursachen und Diagnose-Schritte bei Startschwierigkeiten des Ford Focus. Praktische Tipps vor dem Teiletausch.",
+        "intro": "Wenn Ihr Ford Focus schwer startet, können verschiedene Ursachen dahinterstecken. Von Problemen mit der Kraftstoffversorgung bis zu elektrischen Fehlern ist eine systematische Untersuchung wichtig. Diese Anleitung zeigt Ihnen praktische Checks und gängige Ursachen, um Schäden ohne voreilige Ersatzmaßnahmen zu vermeiden.",
+        "severity": "Startprobleme können auf ernste Fehler hinweisen, sind aber meist frühzeitig gut zu beheben.",
+        "driveAdvice": "Versuchen Sie, wiederholte Startversuche zu vermeiden, um Batterie und Anlasser zu schonen. Halten Sie die Batterie geladen und prüfen Sie zeitnah die Bauteile.",
+        "likelyCauses": [
+          "Schwache oder entladene Batterie",
+          "Defekte Kraftstoffpumpe oder verstopfter Kraftstofffilter",
+          "Zündsystemprobleme wie abgenutzte Zündkerzen",
+          "Defekter Kühlmitteltemperatursensor",
+          "Luftansaugstörungen oder Unterdrucklecks"
+        ],
+        "diagnosticSteps": [
+          "Batteriespannung und Pole auf Korrosion prüfen",
+          "Kraftstoffpumpe und -druck kontrollieren",
+          "Zündkerzen und Zündspulen inspizieren",
+          "Temperatursensor ausmessen",
+          "Mit OBD2-Scanner Fehlerspeicher auslesen",
+          "Luftansaugsystem und Schläuche prüfen"
+        ],
+        "firstChecks": [
+          "Batterieladestand und Anschlüsse",
+          "Kraftstoffstand im Tank",
+          "Zustand der Zündkerzen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose tauschen",
+          "Batterie als Ursache ignorieren",
+          "Unterdrucklecks und Luftfilter vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager (Bank 1)",
+          "P0300 - Zufällige Mehrfachfehlzündungen",
+          "P0115 - Kühlmitteltemperatursensor-Fehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2-Code Liste",
+            "href": "/de/ford-focus/obd2-codes"
+          },
+          {
+            "label": "Zündkerzen prüfen beim Ford Focus",
+            "href": "/de/ford-focus/zuendkerzen-pruefen"
+          },
+          {
+            "label": "Kraftstoffpumpe diagnostizieren",
+            "href": "/de/allgemein/kraftstoffpumpe-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann eine schwache Batterie Startprobleme verursachen?",
+            "a": "Ja, eine schwache oder entladene Batterie liefert nicht genug Strom zum Starten, was zu Schwierigkeiten führt."
+          },
+          {
+            "q": "Sollten Zündkerzen bei Startproblemen sofort gewechselt werden?",
+            "a": "Zunächst sollten Zündkerzen auf Verschleiß geprüft werden, ein sofortiger Wechsel ist nicht immer nötig."
+          },
+          {
+            "q": "Beeinflusst kaltes Wetter das Startverhalten?",
+            "a": "Kaltes Wetter reduziert die Batterieleistung und erschwert die Kraftstoffverdampfung, was das Starten erschweren kann."
+          }
+        ],
+        "schemaTitle": "Ford Focus Startprobleme: Ursachen und Diagnose",
+        "schemaDescription": "Detaillierter Leitfaden zu Ursachen, Diagnose und praktischen Checks bei schwierigen Startvorgängen im Ford Focus."
+      },
+      "es": {
+        "slug": "ford-focus-dificultad-para-arrancar",
+        "title": "Ford Focus Dificultad para Arrancar: Causas y Diagnóstico",
+        "metaDescription": "Conozca las causas más comunes y pasos para diagnosticar dificultades de arranque en Ford Focus. Recomendaciones prácticas antes de cambiar piezas.",
+        "intro": "Si su Ford Focus tarda en arrancar, puede deberse a varios factores. Desde problemas con el suministro de combustible hasta fallas en el sistema de encendido, es importante realizar un diagnóstico cuidadoso. Esta guía ofrece comprobaciones prácticas y causas probables para entender el problema antes de reemplazar componentes.",
+        "severity": "El problema de arranque puede señalar fallas tempranas que se pueden controlar si se detectan a tiempo.",
+        "driveAdvice": "Evite intentos de arranque repetidos que puedan debilitar la batería o dañar el motor de arranque. Revise la batería y otros sistemas cuanto antes.",
+        "likelyCauses": [
+          "Batería débil o descargada",
+          "Bomba de combustible defectuosa o filtro de combustible obstruido",
+          "Problemas en el sistema de encendido como bujías gastadas",
+          "Sensor de temperatura del motor defectuoso",
+          "Obstrucción en la admisión de aire o fugas de vacío"
+        ],
+        "diagnosticSteps": [
+          "Revisar el voltaje y conexiones de la batería",
+          "Comprobar el funcionamiento y presión de la bomba de combustible",
+          "Inspeccionar bujías y bobinas de encendido",
+          "Medir valores del sensor de temperatura del motor",
+          "Escanear códigos de error con escáner OBD2",
+          "Verificar filtros de aire y líneas de vacío"
+        ],
+        "firstChecks": [
+          "Nivel de carga y conexiones de batería",
+          "Cantidad de combustible en el tanque",
+          "Estado de las bujías"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin confirmar el fallo mediante diagnóstico",
+          "Desestimar problemas de batería",
+          "Ignorar fugas de vacío o bloqueo en la entrada de aire"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0300 - Fallos de encendido múltiples o aleatorios",
+          "P0115 - Mal funcionamiento del sensor de temperatura del refrigerante"
+        ],
+        "internalLinks": [
+          {
+            "label": "Lista de códigos OBD2 Ford Focus",
+            "href": "/es/ford-focus/codigos-obd2"
+          },
+          {
+            "label": "Cómo probar las bujías en Ford Focus",
+            "href": "/es/ford-focus/prueba-bujias"
+          },
+          {
+            "label": "Guía para diagnosticar bomba de combustible",
+            "href": "/es/general/diagnostico-bomba-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede una batería mala causar dificultad para arrancar?",
+            "a": "Sí, una batería débil o descargada no entrega suficiente energía para arrancar correctamente el motor."
+          },
+          {
+            "q": "¿Debo cambiar las bujías si mi Ford Focus cuesta arrancar?",
+            "a": "Primero inspeccione las bujías para desgaste o suciedad antes de reemplazarlas inmediatamente."
+          },
+          {
+            "q": "¿El frío afecta el arranque de mi Ford Focus?",
+            "a": "El frío puede reducir la capacidad de la batería y dificultar la vaporización del combustible, causando arranques complicados."
+          }
+        ],
+        "schemaTitle": "Ford Focus problemas de arranque: causas y diagnóstico",
+        "schemaDescription": "Guía completa sobre causas, diagnóstico y chequeos prácticos para dificultades de arranque en Ford Focus."
+      },
+      "fr": {
+        "slug": "ford-focus-demarrage-difficile",
+        "title": "Ford Focus Démarrage Difficile : Causes et Diagnostic",
+        "metaDescription": "Explorez les causes fréquentes et les étapes de diagnostic pour un démarrage difficile sur Ford Focus. Vérifications pratiques avant changement de pièces.",
+        "intro": "Un Ford Focus qui démarre difficilement peut avoir plusieurs raisons possibles. Des problèmes d’alimentation en carburant aux défauts électriques, un diagnostic précis est essentiel. Ce guide présente des contrôles pratiques et des causes courantes pour vous aider à identifier les problèmes sans remplacer inutilement les composants.",
+        "severity": "Le démarrage compliqué peut signaler un problème sous-jacent, mais souvent, il est réparable s’il est détecté à temps.",
+        "driveAdvice": "Évitez les tentatives de démarrage répétées qui peuvent user la batterie et le démarreur. Maintenez la batterie chargée et faites vérifier rapidement les équipements concernés.",
+        "likelyCauses": [
+          "Batterie faible ou déchargée",
+          "Pompe à carburant défectueuse ou filtre à carburant bouché",
+          "Problèmes au niveau de l’allumage (bougies d’allumage usées)",
+          "Défaillance du capteur de température du liquide de refroidissement",
+          "Obstruction du système d’admission d’air ou fuites de vide"
+        ],
+        "diagnosticSteps": [
+          "Vérifier la tension de la batterie et les connectiques",
+          "Contrôler le fonctionnement et la pression de la pompe à carburant",
+          "Examiner les bougies d’allumage et les bobines",
+          "Mesurer les données du capteur de température moteur",
+          "Effectuer un diagnostic avec un scanner OBD2 pour codes d’erreur",
+          "Inspecter le filtre à air et les conduites de dépression"
+        ],
+        "firstChecks": [
+          "Niveau de charge et connexions de la batterie",
+          "Niveau de carburant dans le réservoir",
+          "État des bougies d’allumage"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnotic préalable",
+          "Négliger l’état de la batterie",
+          "Ignorer les fuites d’air ou les obstructions d’admission"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0300 - Ratés d'allumage multiples ou aléatoires",
+          "P0115 - Problème circuit capteur température liquide de refroidissement"
+        ],
+        "internalLinks": [
+          {
+            "label": "Liste des codes OBD2 Ford Focus",
+            "href": "/fr/ford-focus/codes-obd2"
+          },
+          {
+            "label": "Tester les bougies d’allumage Ford Focus",
+            "href": "/fr/ford-focus/test-bougies"
+          },
+          {
+            "label": "Guide diagnostic pompe à carburant",
+            "href": "/fr/general/diagnostic-pompe-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Une batterie faible peut-elle causer un démarrage difficile ?",
+            "a": "Oui, une batterie déchargée ne fournit pas assez de courant pour un démarrage optimal du moteur."
+          },
+          {
+            "q": "Dois-je changer les bougies d’allumage immédiatement ?",
+            "a": "Il est préférable d’inspecter les bougies d’allumage avant tout remplacement pour vérifier leur usure ou encrassement."
+          },
+          {
+            "q": "Le froid influence-t-il le démarrage de la voiture ?",
+            "a": "Le froid diminue les performances de la batterie et complique la vaporisation du carburant, ce qui peut rendre le démarrage plus difficile."
+          }
+        ],
+        "schemaTitle": "Ford Focus démarrage difficile : causes et guide diagnostic",
+        "schemaDescription": "Guide complet des causes, diagnostics et vérifications pour un démarrage difficile sur Ford Focus."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-black-smoke",
+    "intentKey": "ford-focus_black_smoke",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "black_smoke",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-siyah-duman-atma",
+        "title": "Ford Focus Siyah Duman Atıyor - Olası Nedenler ve Çözümler",
+        "metaDescription": "Ford Focus'ta siyah duman sorunu yaşayanlar için en olası nedenler, tanılama adımları ve pratik kontroller burada.",
+        "intro": "Ford Focus aracınızdan siyah duman çıkması, motor veya yakıt sisteminde çeşitli sorunlara işaret edebilir. Bu durumun kesin nedenini belirlemek için kapsamlı bir kontrol yapılması önemlidir. Yanlış teşhis yerine, önce temel kontrolleri gerçekleştirmek ve ardından olası nedenleri değerlendirmek daha yararlıdır.",
+        "severity": "Siyah duman, egzozda aşırı yakıt yanması ya da hava-yakıt karışımı dengesizliği olduğunu gösterir ve motor verimliliğini olumsuz etkileyebilir.",
+        "driveAdvice": "Aracınızı kullanmaya devam etmek mümkün olsa da yakıt tüketimi artabilir ve motor hasar riski olabilir. Mümkünse kısa sürede kontrol ettirin.",
+        "likelyCauses": [
+          "Tıkalı hava filtresi",
+          "Yakıt püskürtme enjektörlerinde sorun",
+          "Turbo basınç kaybı veya turbo arızası",
+          "Egzoz gazı geri dönüşüm sisteminde (EGR) arıza",
+          "Yanma odasında fazla yakıt kalması"
+        ],
+        "diagnosticSteps": [
+          "Hava filtresini kontrol edin ve gerekirse temizleyin veya değiştirin",
+          "Yakıt enjeksiyon sistemini test edin",
+          "Turbo basınç sensörlerini ve hattını kontrol edin",
+          "EGR valfini test ve temizleyin",
+          "Motor yağ seviyesini ve kalitesini kontrol edin",
+          "OBD2 cihazıyla aracın hata kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Hava filtresi temiz mi?",
+          "Motor yağı seviyesi uygun mu?",
+          "Egzozda anormal koku veya ses var mı?"
+        ],
+        "commonMistakes": [
+          "Hatalı parça değişimi yapmadan önce teşhis yapılmaması",
+          "Yalnızca dış belirtilere bakarak karar verilmesi",
+          "OBD2 kodlarının yanlış yorumlanması"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zengin karışım",
+          "P0299 - Turbo düşük basınç sorunu",
+          "P0401 - EGR devresi yetersiz işlev"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Hata Kodları",
+            "href": "/tr/ford-focus-hata-kodlari"
+          },
+          {
+            "label": "EGR Sistemi Sorunları ve Çözümleri",
+            "href": "/tr/egr-sistemi-arizalari"
+          },
+          {
+            "label": "Turbo Sorunları Nasıl Anlaşılır?",
+            "href": "/tr/turbo-arizalari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Siyah duman atmanın en yaygın nedeni nedir?",
+            "a": "Genellikle hava-yakıt karışımının zenginleşmesi nedeniyle olur, ancak kesin teşhis için diğer kontroller yapılmalıdır."
+          },
+          {
+            "q": "Ford Focus'ta siyah duman egzoz sistemiyle ilgili olabilir mi?",
+            "a": "Evet, EGR sistemi veya turbo sorunları egzozdan siyah duman çıkmasına yol açabilir."
+          },
+          {
+            "q": "Siyah dumanı evde nasıl kontrol ederim?",
+            "a": "Hava filtresi kontrolleriyle başlayabilir, motor yağı seviyesini kontrol edip temel görsel muayene yapabilirsiniz."
+          }
+        ],
+        "schemaTitle": "Ford Focus Siyah Duman Atıyor - Tanılama ve Çözümler",
+        "schemaDescription": "Ford Focus aracınızdan siyah duman çıkıyorsa, olası nedenleri, kontrol adımlarını ve sık yapılan hataları öğrenin."
+      },
+      "en": {
+        "slug": "ford-focus-black-smoke-causes",
+        "title": "Ford Focus Black Smoke – Possible Causes and Practical Diagnostics",
+        "metaDescription": "Experiencing black smoke from your Ford Focus? Explore common causes, key diagnostics, and practical checks before replacing parts.",
+        "intro": "Black smoke from your Ford Focus exhaust often indicates issues related to fuel combustion or air intake. It is important to perform thorough checks before jumping to conclusions about specific parts. This guides you through practical diagnostics and common causes without guaranteeing one single cause.",
+        "severity": "Black smoke signals excessive fuel or incomplete combustion, which can impact performance and emissions if left unchecked.",
+        "driveAdvice": "You can usually continue driving, but keep awareness of potential engine strain and increased fuel consumption. Seek diagnostics promptly.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Faulty fuel injectors",
+          "Turbocharger malfunction or pressure loss",
+          "Exhaust Gas Recirculation (EGR) system failure",
+          "Excess fuel in the combustion chamber"
+        ],
+        "diagnosticSteps": [
+          "Inspect and replace or clean the air filter",
+          "Check fuel injector operation and spray patterns",
+          "Test turbo pressure sensors and hoses",
+          "Examine and clean the EGR valve",
+          "Check engine oil level and condition",
+          "Scan the vehicle for OBD2 fault codes"
+        ],
+        "firstChecks": [
+          "Is the air filter clean?",
+          "Is engine oil at correct level and quality?",
+          "Any abnormal smells or noises from exhaust?"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Relying solely on visual signs to pinpoint cause",
+          "Misinterpreting OBD2 trouble codes"
+        ],
+        "relatedCodes": [
+          "P0171 - System too lean or rich",
+          "P0299 - Turbocharger underboost",
+          "P0401 - Insufficient EGR flow"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Trouble Codes",
+            "href": "/en/ford-focus-trouble-codes"
+          },
+          {
+            "label": "EGR System Issues and Fixes",
+            "href": "/en/egr-system-faults"
+          },
+          {
+            "label": "Turbocharger Problems Explained",
+            "href": "/en/turbocharger-faults"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What usually causes black smoke in a Ford Focus?",
+            "a": "It’s often caused by an overly rich fuel mixture or issues with air intake, but further checks are needed."
+          },
+          {
+            "q": "Can EGR problems lead to black smoke?",
+            "a": "Yes, malfunctioning EGR valves can cause black smoke due to improper exhaust gas recirculation."
+          },
+          {
+            "q": "How can I initially check black smoke at home?",
+            "a": "Start by checking the air filter and oil levels, and observe exhaust for unusual smells or sounds."
+          }
+        ],
+        "schemaTitle": "Ford Focus Black Smoke - Causes & Diagnostics",
+        "schemaDescription": "Learn how to diagnose black smoke issues on your Ford Focus with practical steps and common causes explained."
+      },
+      "de": {
+        "slug": "ford-focus-schwarzer-rauch-ursachen",
+        "title": "Ford Focus Schwarzer Rauch – Mögliche Ursachen und Diagnose",
+        "metaDescription": "Probleme mit schwarzem Rauch beim Ford Focus? Entdecken Sie häufige Ursachen, Diagnosehinweise und praktische Prüfschritte.",
+        "intro": "Wenn Ihr Ford Focus schwarzen Rauch ausstößt, deutet dies häufig auf Verbrennungsprobleme oder eine falsche Luft-Kraftstoff-Mischung hin. Es ist wichtig, vor dem Austausch von Teilen gründliche Prüfungen durchzuführen. Dieser Leitfaden zeigt praktische Diagnoseansätze ohne eine einzelne Ursache zu behaupten.",
+        "severity": "Schwarzer Rauch weist auf eine zu reiche Kraftstoffzufuhr oder unvollständige Verbrennung hin, was Leistung und Emissionen beeinträchtigen kann.",
+        "driveAdvice": "Das Fahrzeug kann meist weiter genutzt werden, dennoch sollten Sie zeitnah eine Diagnose durchführen lassen, um Motorschäden zu vermeiden.",
+        "likelyCauses": [
+          "Verstopfter oder verschmutzter Luftfilter",
+          "Defekte Einspritzventile",
+          "Fehlerhafter Turbolader oder Druckverlust",
+          "Probleme im Abgasrückführungssystem (AGR)",
+          "Zu viel Kraftstoff im Brennraum"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter prüfen und bei Bedarf reinigen oder tauschen",
+          "Einspritzdüsen auf Funktion prüfen",
+          "Turboladedrucksensoren und Leitungen kontrollieren",
+          "AGR-Ventil testen und reinigen",
+          "Motorölstand und Ölqualität überprüfen",
+          "OBD2-Diagnosegerät zum Auslesen der Fehlercodes verwenden"
+        ],
+        "firstChecks": [
+          "Ist der Luftfilter sauber?",
+          "Ist der Ölstand korrekt?",
+          "Gibt es ungewöhnliche Gerüche oder Geräusche am Auspuff?"
+        ],
+        "commonMistakes": [
+          "Teilwechsel ohne gründliche Diagnose",
+          "Entscheidungen basierend nur auf äußerlichen Symptomen",
+          "Falsche Interpretation der OBD2-Codes"
+        ],
+        "relatedCodes": [
+          "P0171 - Gemisch zu mager oder zu fett",
+          "P0299 - Lader-Unterdruck erkannt",
+          "P0401 - AGR-System unzureichend"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Fehlercodes",
+            "href": "/de/ford-focus-fahrzeugfehlercodes"
+          },
+          {
+            "label": "AGR-System Probleme und Lösungen",
+            "href": "/de/agr-system-fehler"
+          },
+          {
+            "label": "Probleme mit Turbolader erkennen",
+            "href": "/de/turbolader-fehler"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind die häufigsten Ursachen für schwarzen Rauch im Ford Focus?",
+            "a": "Oft sind es falsche Kraftstoff-Luft-Gemische oder Luftzufuhrprobleme, weitere Diagnosen sind wichtig."
+          },
+          {
+            "q": "Kann ein defektes AGR-Ventil schwarzen Rauch verursachen?",
+            "a": "Ja, ein defektes AGR-Ventil kann falsche Abgasrückführung und dadurch schwarzen Rauch verursachen."
+          },
+          {
+            "q": "Wie kann ich schwarzen Rauch zunächst selbst prüfen?",
+            "a": "Luftfilter und Ölstand kontrollieren sowie auf ungewöhnliche Auspuffgerüche achten."
+          }
+        ],
+        "schemaTitle": "Ford Focus Schwarzer Rauch - Ursachen und Diagnose",
+        "schemaDescription": "So diagnostizieren Sie schwarzen Rauch beim Ford Focus: praktische Schritte und häufige Ursachen einfach erklärt."
+      },
+      "es": {
+        "slug": "ford-focus-humo-negro-causas",
+        "title": "Ford Focus Humo Negro – Causas Comunes y Diagnóstico Práctico",
+        "metaDescription": "¿Tu Ford Focus expulsa humo negro? Descubre causas frecuentes, pasos para diagnosticar y primeras revisiones antes de cambiar piezas.",
+        "intro": "El humo negro en un Ford Focus suele indicar problemas en la combustión o en la mezcla de aire y combustible. Antes de reemplazar componentes, es fundamental realizar comprobaciones prácticas. Esta guía te ofrece causas probables y los pasos diagnósticos adecuados, sin afirmar una causa exacta.",
+        "severity": "El humo negro señala una combustión incompleta o un exceso de combustible, afectando el rendimiento y las emisiones.",
+        "driveAdvice": "Puedes seguir conduciendo con precaución, pero es recomendable hacer una revisión pronto para evitar daños mayores.",
+        "likelyCauses": [
+          "Filtro de aire obstruido o sucio",
+          "Inyectores de combustible defectuosos",
+          "Fallo o pérdida de presión del turbo",
+          "Problemas en el sistema de recirculación de gases de escape (EGR)",
+          "Exceso de combustible en la cámara de combustión"
+        ],
+        "diagnosticSteps": [
+          "Revisar y limpiar o cambiar el filtro de aire",
+          "Comprobar el funcionamiento de los inyectores",
+          "Verificar sensores y mangueras del turbo",
+          "Probar y limpiar la válvula EGR",
+          "Comprobar nivel y calidad del aceite motor",
+          "Escanear códigos de error OBD2"
+        ],
+        "firstChecks": [
+          "¿Está limpio el filtro de aire?",
+          "¿El nivel y calidad del aceite son correctos?",
+          "¿Hay olores o ruidos anormales en el escape?"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnosticar correctamente",
+          "Guiarse solo por síntomas visibles",
+          "Interpretar mal los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla demasiado rica o pobre",
+          "P0299 - Baja presión del turbo",
+          "P0401 - Flujo insuficiente en EGR"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de fallo OBD2 Ford Focus",
+            "href": "/es/codigos-ford-focus"
+          },
+          {
+            "label": "Problemas comunes en el sistema EGR",
+            "href": "/es/fallos-sistema-egr"
+          },
+          {
+            "label": "Cómo identificar fallos en el turbo",
+            "href": "/es/fallos-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la causa más común de humo negro en un Ford Focus?",
+            "a": "Generalmente se debe a una mezcla de combustible demasiado rica o problemas en la entrada de aire."
+          },
+          {
+            "q": "¿Puede el sistema EGR causar humo negro?",
+            "a": "Sí, un mal funcionamiento en la válvula EGR puede generar humo negro por mala recirculación de gases."
+          },
+          {
+            "q": "¿Cómo puedo hacer una revisión inicial en casa?",
+            "a": "Revisa el estado del filtro de aire, el nivel de aceite y presta atención a olores o ruidos inusuales en el escape."
+          }
+        ],
+        "schemaTitle": "Ford Focus Humo Negro - Causas y Diagnóstico",
+        "schemaDescription": "Diagnostica el humo negro en tu Ford Focus con pasos prácticos y conoce las causas más comunes explicadas claramente."
+      },
+      "fr": {
+        "slug": "ford-focus-fumee-noire-causes",
+        "title": "Ford Focus Fumée Noire – Causes Possibles et Diagnostic Pratique",
+        "metaDescription": "Votre Ford Focus dégage de la fumée noire ? Découvrez les causes fréquentes, les étapes de diagnostic et les contrôles avant remplacement des pièces.",
+        "intro": "La fumée noire à l’échappement d’une Ford Focus indique souvent un problème de combustion ou un déséquilibre du mélange air-carburant. Avant de remplacer des pièces, effectuez des contrôles pratiques. Ce guide présente des causes probables sans présumer une origine unique.",
+        "severity": "La fumée noire révèle une combustion incomplète ou un excès de carburant pouvant nuire aux performances et émissions.",
+        "driveAdvice": "Il est possible de continuer à rouler, mais une vérification rapide est recommandée pour éviter d’autres dommages.",
+        "likelyCauses": [
+          "Filtre à air encrassé",
+          "Injecteurs de carburant défectueux",
+          "Défaillance ou perte de pression du turbo",
+          "Problème au niveau du système de recirculation des gaz d’échappement (EGR)",
+          "Excès de carburant dans la chambre de combustion"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez et nettoyez ou remplacez le filtre à air",
+          "Contrôlez les injecteurs de carburant",
+          "Testez les capteurs et durites du turbo",
+          "Examinez et nettoyez la valve EGR",
+          "Vérifiez le niveau et la qualité de l’huile moteur",
+          "Scannez les codes défauts OBD2"
+        ],
+        "firstChecks": [
+          "Le filtre à air est-il propre ?",
+          "Le niveau d’huile moteur est-il correct ?",
+          "Y a-t-il des odeurs ou bruits inhabituels à l’échappement ?"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic précis",
+          "Se fier uniquement aux symptômes visibles",
+          "Mauvaise interprétation des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre ou trop riche",
+          "P0299 - Sous-pression du turbo",
+          "P0401 - Flux EGR insuffisant"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défauts OBD2 Ford Focus",
+            "href": "/fr/codes-defauts-ford-focus"
+          },
+          {
+            "label": "Problèmes fréquents du système EGR",
+            "href": "/fr/pannes-systeme-egr"
+          },
+          {
+            "label": "Identifier les pannes turbo",
+            "href": "/fr/pannes-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la cause la plus courante de fumée noire sur Ford Focus ?",
+            "a": "Souvent un mélange trop riche en carburant ou un problème d’admission d’air, mais un contrôle est nécessaire."
+          },
+          {
+            "q": "Le système EGR peut-il causer de la fumée noire ?",
+            "a": "Oui, un dysfonctionnement de la vanne EGR peut provoquer de la fumée noire en perturbant la recirculation des gaz."
+          },
+          {
+            "q": "Comment effectuer un premier diagnostic simple à la maison ?",
+            "a": "Contrôlez le filtre à air et le niveau d’huile, et soyez attentif aux odeurs ou bruits inhabituels à l’échappement."
+          }
+        ],
+        "schemaTitle": "Ford Focus Fumée Noire – Causes et Diagnostic",
+        "schemaDescription": "Diagnostiquez la fumée noire sur votre Ford Focus grâce à des étapes pratiques et découvrez les causes les plus fréquentes."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-white-smoke",
+    "intentKey": "ford-focus_white_smoke",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "white_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-beyaz-duman-atiyor",
+        "title": "Ford Focus Beyaz Duman Atıyor: Olası Nedenler ve Çözümler",
+        "metaDescription": "Ford Focus'unuz beyaz duman çıkartıyorsa olası nedenleri keşfedin. Pratik kontroller ve yaygın hatalardan kaçınma yöntemleri burada.",
+        "intro": "Ford Focus aracınızın egzozundan beyaz duman çıkıyorsa bu durum çeşitli motor sorunlarının işareti olabilir. Beyaz duman atmanın birçok nedeni olup öncelikle basit kontroller yaparak sorunun kaynağına yaklaşmak önemlidir. Bu rehberde beyaz duman atmanın muhtemel sebeplerini, yapılabilecek pratik testleri ve sık yapılan hataları bulacaksınız.",
+        "severity": "Beyaz duman genellikle soğutma sıvısının yanma odasına sızdığını gösterebilir ve motor hasarına yol açabilir, bu yüzden hızlı kontrol ve müdahale önemlidir.",
+        "driveAdvice": "Aracı kullanmaya devam etmek zorundaysanız kısa mesafelerde ve düşük hızda sürün. Uzun yolculuklardan kaçının ve motor sıcaklığını sık sık kontrol edin.",
+        "likelyCauses": [
+          "Silindir kapak contası sızıntısı",
+          "Soğutma sıvısı sızıntısı veya radyatör problemi",
+          "Yakıt enjektörlerinde arıza veya aşırı yakıt girişi",
+          "Turbo yağ keçesi sızıntısı (turbolu modeller için)",
+          "Motorun erken aşınması ve yanma odasında soğuk kalıntı oluşumu"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Egzoz dumanının kokusuna ve kıvamına bakın",
+          "Motor yağında soğutma sıvısı karışımı kontrolü yapın",
+          "Silindir sıkıştırma testi uygulayın",
+          "Soğutma sisteminde kaçak testi gerçekleştirin",
+          "OBD2 cihazıyla ilgili motor arıza kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Radyatör ve hortumlarında sızıntı var mı kontrol edin",
+          "Motor yağı rengine dikkat edin (bulanık veya sütlü yağ olabilir)",
+          "Egzozdan çıkan dumanın yoğunluğunu ve renk tonunu gözlemleyin"
+        ],
+        "commonMistakes": [
+          "Beyaz dumanı hemen pahalı parça değişimiyle çözmeye çalışmak",
+          "Soğutma sıvısı seviyesini göz ardı etmek",
+          "Arıza kodlarını okumadan müdahale etmek"
+        ],
+        "relatedCodes": [
+          "P0217 - Soğutucu sıcaklığı yüksek",
+          "P0410 - Egzoz gaz geri dönüşüm hatası",
+          "P0300 - Rastgele/çoklu silindir ateşleme arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-ariza-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Motor Soğutma Sistemi Kontrolleri",
+            "href": "/tr/motor-sogutma-sistemi-kontrolleri"
+          },
+          {
+            "label": "Beyaz Duman Sorunları ve Çözüm Yolları",
+            "href": "/tr/beyaz-duman-sorunlari-cozum-yollari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus'ta beyaz duman neden çıkar?",
+            "a": "Genellikle soğutma sıvısının yanma odasına sızması ya da yakıt sorunları beyaz duman oluşumuna neden olabilir."
+          },
+          {
+            "q": "Beyaz duman tehlikeli midir?",
+            "a": "Evet, uzun süreli kullanım motorun ciddi zarar görmesine yol açabilir. Erken teşhis önemlidir."
+          },
+          {
+            "q": "Beyaz dumanı kendi başıma nasıl kontrol ederim?",
+            "a": "Yağ ve soğutma sıvısı seviyelerini kontrol ederek, egzoz dumanını gözlemleyerek başlayabilirsiniz."
+          }
+        ],
+        "schemaTitle": "Ford Focus Beyaz Duman Sorunu ve Çözüm Önerileri",
+        "schemaDescription": "Ford Focus aracınız egzozdan beyaz duman çıkartıyorsa olası sebepleri ve yapılması gereken kontrolleri öğrenin."
+      },
+      "en": {
+        "slug": "ford-focus-white-smoke",
+        "title": "Ford Focus White Smoke: Possible Causes and Diagnostic Guide",
+        "metaDescription": "Experiencing white smoke from your Ford Focus? Learn possible causes, practical checks, and common mistakes to avoid.",
+        "intro": "If your Ford Focus is emitting white smoke from the exhaust, this often indicates underlying engine issues. White smoke can be caused by several factors, so performing practical preliminary checks before replacing parts is crucial. This guide covers likely causes, step-by-step diagnostics, and common pitfalls to help you pinpoint the issue efficiently.",
+        "severity": "White smoke may signify coolant entering the combustion chamber, which can lead to serious engine damage if untreated.",
+        "driveAdvice": "If you must drive, limit the distance and speed, keep an eye on the engine temperature, and avoid prolonged use until the problem is diagnosed.",
+        "likelyCauses": [
+          "Blown head gasket allowing coolant into cylinders",
+          "Coolant leaks or radiator problems",
+          "Faulty fuel injectors causing rich fuel mixture",
+          "Turbocharger oil seals leaking (for turbo models)",
+          "Engine wear causing combustion abnormalities"
+        ],
+        "diagnosticSteps": [
+          "Check coolant level and condition",
+          "Observe exhaust smoke color and smell",
+          "Inspect engine oil for milky discoloration",
+          "Perform a compression test",
+          "Conduct a coolant system pressure test",
+          "Scan for engine fault codes with an OBD2 reader"
+        ],
+        "firstChecks": [
+          "Inspect radiator and hoses for leaks",
+          "Check oil condition for coolant contamination",
+          "Observe exhaust for smoke thickness and color"
+        ],
+        "commonMistakes": [
+          "Replacing expensive parts without diagnosis",
+          "Ignoring coolant level drops",
+          "Attempting repairs before reading fault codes"
+        ],
+        "relatedCodes": [
+          "P0217 - Engine Over Temperature Condition",
+          "P0410 - Exhaust Gas Recirculation Flow Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "How to Read OBD2 Fault Codes",
+            "href": "/en/how-to-read-obd2-fault-codes"
+          },
+          {
+            "label": "Engine Cooling System Checks",
+            "href": "/en/engine-cooling-system-checks"
+          },
+          {
+            "label": "White Smoke Issues and Solutions",
+            "href": "/en/white-smoke-issues-solutions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes white smoke in a Ford Focus?",
+            "a": "Commonly, coolant entering the combustion chamber or fuel delivery problems cause white smoke."
+          },
+          {
+            "q": "Is white smoke dangerous?",
+            "a": "Yes, prolonged white smoke can damage the engine. Early diagnosis is essential."
+          },
+          {
+            "q": "How can I check white smoke issues myself?",
+            "a": "Start by checking oil and coolant levels and observe the exhaust smoke characteristics."
+          }
+        ],
+        "schemaTitle": "Ford Focus White Smoke Troubleshooting and Causes",
+        "schemaDescription": "Discover why your Ford Focus is producing white smoke and learn essential checks to diagnose the problem."
+      },
+      "de": {
+        "slug": "ford-focus-weisser-rauch",
+        "title": "Ford Focus Weißer Rauch: Mögliche Ursachen und Diagnose",
+        "metaDescription": "Weißer Rauch bei Ford Focus? Erfahren Sie die möglichen Ursachen, praktische Prüfungen und häufige Fehler bei der Diagnose.",
+        "intro": "Wenn Ihr Ford Focus weißen Rauch aus dem Auspuff ausstößt, kann dies auf verschiedene Motorprobleme hinweisen. Es ist wichtig, vor dem Austausch von Teilen praktische Kontrollen durchzuführen, da weiße Rauchentwicklung verschiedene Ursachen haben kann. Dieser Leitfaden erklärt mögliche Ursachen, Diagnoseschritte und typische Fehler bei der Fehlersuche.",
+        "severity": "Weißer Rauch deutet oft darauf hin, dass Kühlmittel in die Brennkammer gelangt, was zu schweren Motorschäden führen kann.",
+        "driveAdvice": "Falls eine Weiterfahrt nötig ist, fahren Sie nur kurze Strecken und langsam, beobachten Sie die Motortemperatur und vermeiden Sie längeren Gebrauch bis zur Diagnose.",
+        "likelyCauses": [
+          "Defekte Zylinderkopfdichtung mit Kühlmittelleck",
+          "Kühlmittellecks oder Probleme am Kühler",
+          "Defekte Einspritzventile mit zu fettem Kraftstoffgemisch",
+          "Öllecks an Turbolader-Dichtungen (bei Turbo-Modellen)",
+          "Motorverschleiß mit Verbrennungsstörungen"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittelstand und Zustand prüfen",
+          "Farbe und Geruch des Auspuffs beobachten",
+          "Motoröl auf milchige Verfärbung überprüfen",
+          "Kompressionstest durchführen",
+          "Drucktest am Kühlsystem vornehmen",
+          "Motordiagnosecodes mit OBD2 auslesen"
+        ],
+        "firstChecks": [
+          "Kühler und Schläuche auf Undichtigkeiten prüfen",
+          "Motoröl auf Kühlmittelkontamination untersuchen",
+          "Auspuffrauch auf Dichte und Farbe beobachten"
+        ],
+        "commonMistakes": [
+          "Teure Teile ohne Diagnose austauschen",
+          "Kühlmittelstand ignorieren",
+          "Reparaturen durchführen ohne Fehlercodes zu lesen"
+        ],
+        "relatedCodes": [
+          "P0217 - Motor Übertemperatur",
+          "P0410 - Fehler im Abgasrückführungssystem",
+          "P0300 - Mehrfachzündaussetzer"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes richtig lesen",
+            "href": "/de/obd2-fehlercodes-richtig-lesen"
+          },
+          {
+            "label": "Prüfung des Motorkühlsystems",
+            "href": "/de/motorkuehlsystem-pruefung"
+          },
+          {
+            "label": "Weißer Rauch: Ursachen und Lösungen",
+            "href": "/de/weisser-rauch-ursachen-loesungen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was verursacht weißen Rauch im Ford Focus?",
+            "a": "Typisch ist, dass Kühlmittel in die Brennkammer gelangt oder Kraftstoffprobleme vorliegen."
+          },
+          {
+            "q": "Ist weißer Rauch gefährlich?",
+            "a": "Ja, dauerhafter weißer Rauch kann den Motor schädigen. Frühe Diagnose ist wichtig."
+          },
+          {
+            "q": "Wie kann ich weißen Rauch selbst prüfen?",
+            "a": "Kontrollieren Sie Öl- und Kühlmittelstände und beobachten Sie den Auspuffrauch."
+          }
+        ],
+        "schemaTitle": "Ford Focus Weißer Rauch Ursachen und Diagnose",
+        "schemaDescription": "Erfahren Sie, warum Ihr Ford Focus weißen Rauch erzeugt und wie Sie das Problem selbst prüfen können."
+      },
+      "es": {
+        "slug": "ford-focus-duda-blanca-exceso",
+        "title": "Ford Focus Expulsa Humo Blanco: Causas Probables y Diagnóstico",
+        "metaDescription": "¿Ford Focus con humo blanco? Descubre causas comunes, pasos para diagnosticar y errores frecuentes para evitar.",
+        "intro": "Si tu Ford Focus está expulsando humo blanco por el escape, es señal de posibles problemas en el motor que requieren atención. Antes de reemplazar partes costosas, realiza verificaciones prácticas para identificar el origen. En esta guía encontrarás las causas más comunes, pasos para diagnosticar y errores habituales que debes evitar al diagnosticar.",
+        "severity": "El humo blanco puede indicar que el refrigerante está entrando en la cámara de combustión, lo cual puede dañar seriamente el motor si no se atiende a tiempo.",
+        "driveAdvice": "Si debes conducir, limita la distancia y velocidad, revisa la temperatura del motor con frecuencia y evita el uso prolongado hasta resolver el problema.",
+        "likelyCauses": [
+          "Junta de culata dañada que permite filtración de refrigerante",
+          "Fugas de refrigerante o problemas en el radiador",
+          "Inyectores defectuosos provocando exceso de combustible",
+          "Fugas en los retenes del turbo (modelos turbo)",
+          "Desgaste del motor que afecta la combustión"
+        ],
+        "diagnosticSteps": [
+          "Verificar nivel y estado del refrigerante",
+          "Observar color y olor del humo de escape",
+          "Revisar aceite del motor en busca de aspecto lechoso",
+          "Realizar prueba de compresión",
+          "Ejecutar prueba de presión en el sistema de refrigeración",
+          "Escanear códigos de falla con un lector OBD2"
+        ],
+        "firstChecks": [
+          "Inspeccionar radiador y mangueras por fugas",
+          "Comprobar el estado del aceite para detectar contaminación",
+          "Observar grosor y color del humo en el escape"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas costosas sin diagnóstico previo",
+          "Ignorar la pérdida de refrigerante",
+          "Intentar reparar sin leer los códigos de falla"
+        ],
+        "relatedCodes": [
+          "P0217 - Temperatura excesiva del motor",
+          "P0410 - Mal funcionamiento en recirculación de gases de escape",
+          "P0300 - Fallos aleatorios o múltiples en ignición"
+        ],
+        "internalLinks": [
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          },
+          {
+            "label": "Revisiones del sistema de enfriamiento motor",
+            "href": "/es/revisiones-sistema-enfriamiento"
+          },
+          {
+            "label": "Problemas comunes con humo blanco",
+            "href": "/es/problemas-humo-blanco-ford"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué sale humo blanco en un Ford Focus?",
+            "a": "Normalmente, el refrigerante entrando a la cámara de combustión o problemas en la alimentación de combustible son las causas."
+          },
+          {
+            "q": "¿Es peligroso el humo blanco?",
+            "a": "Sí, su presencia continua puede dañar el motor. Es importante diagnosticar temprano."
+          },
+          {
+            "q": "¿Cómo puedo revisar el humo blanco yo mismo?",
+            "a": "Empieza revisando los niveles de aceite y refrigerante y observa el color y grosor del humo."
+          }
+        ],
+        "schemaTitle": "Ford Focus Humo Blanco: Diagnóstico y Causas Comunes",
+        "schemaDescription": "Identifica por qué tu Ford Focus expulsa humo blanco y aprende a realizar los controles para detectar el problema."
+      },
+      "fr": {
+        "slug": "ford-focus-fumee-blanche",
+        "title": "Ford Focus Fumée Blanche : Causes Possibles et Guide de Diagnostic",
+        "metaDescription": "Votre Ford Focus dégage de la fumée blanche ? Découvrez les causes fréquentes, contrôles simples et erreurs à éviter.",
+        "intro": "Si votre Ford Focus émet de la fumée blanche, cela peut indiquer plusieurs problèmes moteurs potentiels. Avant de remplacer des pièces coûteuses, il est essentiel de réaliser des contrôles pratiques pour mieux diagnostiquer l'origine du phénomène. Ce guide présente les causes probables, les étapes de diagnostic et les erreurs fréquentes à éviter.",
+        "severity": "La fumée blanche peut révéler une infiltration de liquide de refroidissement dans la chambre de combustion, ce qui peut endommager gravement le moteur.",
+        "driveAdvice": "Si vous devez conduire, limitez la distance et la vitesse. Surveillez la température du moteur et évitez une utilisation prolongée en attendant le diagnostic.",
+        "likelyCauses": [
+          "Joint de culasse défectueux laissant passer du liquide de refroidissement",
+          "Fuite de liquide de refroidissement ou problème de radiateur",
+          "Injecteurs défaillants provoquant un mélange trop riche",
+          "Fuites aux joints d’huile du turbo (modèles turbo)",
+          "Usure moteur avec dysfonctionnements de combustion"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et l’état du liquide de refroidissement",
+          "Observer la couleur et l’odeur de la fumée d’échappement",
+          "Contrôler l’huile moteur pour détecter une coloration laiteuse",
+          "Effectuer un test de compression",
+          "Réaliser un test de pression du circuit de refroidissement",
+          "Scanner les codes défauts moteur avec un outil OBD2"
+        ],
+        "firstChecks": [
+          "Inspecter radiateur et durites pour détecter des fuites",
+          "Vérifier l’état de l’huile moteur pour contamination",
+          "Observer la densité et la couleur de la fumée"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces coûteuses sans diagnostic préalable",
+          "Ignorer la baisse du liquide de refroidissement",
+          "Effectuer des réparations sans lire les codes défauts"
+        ],
+        "relatedCodes": [
+          "P0217 - Surcharge thermique moteur",
+          "P0410 - Dysfonctionnement du circuit de recirculation des gaz d’échappement",
+          "P0300 - Ratés d’allumage aléatoires ou multiples"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comment lire les codes défauts OBD2",
+            "href": "/fr/comment-lire-codes-defauts-obd2"
+          },
+          {
+            "label": "Contrôles du système de refroidissement moteur",
+            "href": "/fr/controle-systeme-refroidissement"
+          },
+          {
+            "label": "Problèmes de fumée blanche : causes et solutions",
+            "href": "/fr/problemes-fumee-blanche"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes de la fumée blanche sur Ford Focus ?",
+            "a": "La présence de liquide de refroidissement dans la chambre de combustion ou des problèmes d'alimentation peuvent en être la cause."
+          },
+          {
+            "q": "La fumée blanche est-elle dangereuse ?",
+            "a": "Oui, une fumée blanche persistante peut endommager le moteur. Un diagnostic précoce est important."
+          },
+          {
+            "q": "Comment vérifier la fumée blanche soi-même ?",
+            "a": "Commencez par contrôler les niveaux d’huile et de liquide de refroidissement, puis observez la fumée à l’échappement."
+          }
+        ],
+        "schemaTitle": "Ford Focus Fumée Blanche : Causes et Diagnostic",
+        "schemaDescription": "Découvrez pourquoi votre Ford Focus dégage de la fumée blanche et apprenez les contrôles essentiels pour identifier le problème."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-poor-fuel-economy",
+    "intentKey": "ford-focus_poor_fuel_economy",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-cok-yakiyor",
+        "title": "Ford Focus Çok Yakıyor: Yakıt Tüketimi Sorunları ve Çözümleri",
+        "metaDescription": "Ford Focus çok yakıyorsa, yakıt tüketimini artıran olası nedenleri ve teşhis adımlarını burada bulabilirsiniz.",
+        "intro": "Ford Focus aracınızda artan yakıt tüketimi fark ettiyseniz, bunun birçok nedeni olabilir. Yakıt ekonomisinin kötüleşmesi, araç bakımından, sensör arızalarına kadar farklı etkenlerden kaynaklanabilir. Bu rehberde Ford Focus'unuzda yakıtın gereğinden fazla kullanılmasının olası sebeplerini ve kontrol edebileceğiniz önemli noktaları detaylı şekilde ele alacağız.",
+        "severity": "Orta derecede önem taşıyan bir sorundur. Yakıt tüketimi artarken aracınızın ekonomik performansı düşer, onarım gecikirse maliyetler artabilir.",
+        "driveAdvice": "Gereksiz sürüşlerden kaçının, aracınızın bakım kayıtlarını gözden geçirin ve mümkünse OBD2 ile arıza kodlarını okuyup teşhise erken başlayın.",
+        "likelyCauses": [
+          "Kirli veya tıkanmış hava filtresi",
+          "Arızalı oksijen sensörü",
+          "Tıkalı yakıt enjektörleri",
+          "Yol bilgisayarı hatası veya yanlış sensör verileri",
+          "Yanlış lastik basıncı veya aşınmış lastikler"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile motorun arıza kodlarını kontrol edin",
+          "Hava filtresini inceleyip gerekiyorsa değiştirin",
+          "Yakıt enjeksiyon sistemini temizleyin veya profesyonel destek alın",
+          "Oksijen sensörünü test edin ve gerekirse değişimi planlayın",
+          "Lastik basınçlarını üretici değerlerine getirin",
+          "Yakıt kalitesini kontrol edin ve düşük kaliteli yakıttan kaçının"
+        ],
+        "firstChecks": [
+          "Hava filtresinin temiz ve engelsiz olduğundan emin olun",
+          "Lastiklerin hava basıncını kontrol edin",
+          "Motor yağı seviyesini ve kalitesini kontrol edin"
+        ],
+        "commonMistakes": [
+          "Hızlıca parça değişimi yapmadan önce teşhis koymak",
+          "Yakıt kalitesine dikkat etmemek",
+          "Lastik basıncını düzenli kontrol etmemek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zengin karışım",
+          "P0420 - Katalizatör verim düşüklüğü",
+          "P0135 - Oksijen sensörü ısıtıcı devre hatası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Uygulama Rehberi",
+            "href": "/tr/ford-focus-obd2-uygulama-rehberi"
+          },
+          {
+            "label": "Araç Yakıt Tüketimi Neden Artar?",
+            "href": "/tr/arabada-yakit-tuketimi-neden-artar"
+          },
+          {
+            "label": "Oksijen Sensörü Arızası Nasıl Anlaşılır?",
+            "href": "/tr/oksijen-sensoru-arizasi-anlama"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus çok yakıyorsa ilk ne yapmalıyım?",
+            "a": "İlk olarak hava filtresi ve lastik basıncını kontrol edin, ardından OBD2 tarayıcı ile araç arıza kodlarına bakmak faydalı olur."
+          },
+          {
+            "q": "Yakıt tasarrufu için nelere dikkat etmeliyim?",
+            "a": "Düzenli bakım, kaliteli yakıt kullanımı ve doğru lastik basıncı yakıt tasarrufunu artırır."
+          },
+          {
+            "q": "OBD2 kodları yakıt tüketimini nasıl etkiler?",
+            "a": "OBD2 kodları, aracın motor ve egzoz sistemindeki performans sorunlarını gösterir ve sebep yakıt tüketiminde artış olabilir."
+          }
+        ],
+        "schemaTitle": "Ford Focus Çok Yakıyor: Nedenleri ve Çözümleri",
+        "schemaDescription": "Ford Focus aracınızda yakıt tüketimi artıyorsa olası nedenler, teşhis ve öneriler hakkında detaylı rehber."
+      },
+      "en": {
+        "slug": "ford-focus-poor-fuel-economy",
+        "title": "Ford Focus Poor Fuel Economy: Causes and Diagnostic Tips",
+        "metaDescription": "Is your Ford Focus consuming too much fuel? Learn practical causes, checks, and diagnostic steps to improve fuel efficiency.",
+        "intro": "If you’ve noticed your Ford Focus is using more fuel than usual, multiple factors might be involved. Poor fuel economy can result from maintenance issues, sensor malfunctions, or even driving habits. This guide provides practical tips and diagnostic steps to help you understand the common causes and perform initial checks before replacing any parts.",
+        "severity": "This issue moderately affects vehicle running costs and emissions. Prompt diagnosis helps avoid unnecessary repairs and increased expenses.",
+        "driveAdvice": "Avoid aggressive driving and unnecessary trips. Conduct basic maintenance checks regularly and use an OBD2 scanner to identify underlying codes early on.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Faulty oxygen sensor",
+          "Restricted or dirty fuel injectors",
+          "Incorrect fuel pressure",
+          "Low tire pressure or worn tires"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 trouble codes to identify potential system errors",
+          "Inspect and replace the air filter if it’s dirty",
+          "Clean or test fuel injectors for proper spray and function",
+          "Check oxygen sensor performance and consider replacement if faulty",
+          "Verify tire pressure matches manufacturer recommendations",
+          "Assess fuel quality and avoid low-grade fuel"
+        ],
+        "firstChecks": [
+          "Confirm air filter condition and airflow",
+          "Check tire pressure and tire wear",
+          "Assess engine oil level and quality"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Neglecting fuel quality and additives",
+          "Ignoring tire pressure maintenance"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold",
+          "P0135 - Oxygen Sensor Heater Circuit Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Usage Guide",
+            "href": "/en/ford-focus-obd2-usage-guide"
+          },
+          {
+            "label": "Reasons for Increased Fuel Consumption",
+            "href": "/en/reasons-for-increased-fuel-consumption"
+          },
+          {
+            "label": "How to Diagnose Oxygen Sensor Issues",
+            "href": "/en/how-to-diagnose-oxygen-sensor-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I check first if my Ford Focus is consuming too much fuel?",
+            "a": "Start by inspecting the air filter and tire pressure. Then, use an OBD2 scanner to look for any engine fault codes."
+          },
+          {
+            "q": "How can I improve fuel economy in my Ford Focus?",
+            "a": "Regular maintenance, using high-quality fuel, and proper tire pressure help improve fuel efficiency."
+          },
+          {
+            "q": "Do OBD2 codes affect fuel consumption?",
+            "a": "Yes, OBD2 codes can indicate engine or exhaust system problems that lead to poor fuel economy."
+          }
+        ],
+        "schemaTitle": "Ford Focus Poor Fuel Economy - Causes and Solutions",
+        "schemaDescription": "Discover common causes and diagnostic steps for Ford Focus poor fuel economy to help improve your vehicle’s fuel efficiency."
+      },
+      "de": {
+        "slug": "ford-focus-hoher-kraftstoffverbrauch",
+        "title": "Ford Focus hoher Kraftstoffverbrauch: Ursachen und Diagnose",
+        "metaDescription": "Ihr Ford Focus verbraucht zu viel Kraftstoff? Entdecken Sie mögliche Ursachen, erste Prüfungen und Diagnosehinweise für bessere Effizienz.",
+        "intro": "Wenn Ihr Ford Focus auffällig viel Kraftstoff verbraucht, können verschiedene Gründe verantwortlich sein. Ein hoher Kraftstoffverbrauch kann durch Wartungsmängel, Sensorprobleme oder Fahrgewohnheiten verursacht werden. In diesem Leitfaden erfahren Sie praktische Tipps, mögliche Ursachen und erste Kontrollmaßnahmen, bevor Sie Bauteile austauschen.",
+        "severity": "Der erhöhte Verbrauch wirkt sich mittelmäßig auf die Unterhaltskosten aus. Eine frühzeitige Diagnose verhindert unnötige Reparaturen.",
+        "driveAdvice": "Vermeiden Sie unnötige und aggressive Fahrweise. Führen Sie regelmäßig Wartungen durch und nutzen Sie ein OBD2-Diagnosegerät zur Früherkennung von Fehlercodes.",
+        "likelyCauses": [
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Defekter Sauerstoffsensor",
+          "Verunreinigte oder blockierte Kraftstoffeinspritzdüsen",
+          "Falscher Kraftstoffdruck",
+          "Zu geringer Reifenluftdruck oder abgefahrene Reifen"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Luftfilter auf Verschmutzung prüfen und bei Bedarf wechseln",
+          "Kraftstoffeinspritzung auf Verunreinigungen prüfen und reinigen",
+          "Sauerstoffsensor testen und bei Defekt tauschen",
+          "Reifendruck kontrollieren und an Herstellervorgaben anpassen",
+          "Kraftstoffqualität überprüfen und minderwertigen Sprit vermeiden"
+        ],
+        "firstChecks": [
+          "Luftfilter auf Sauberkeit und Durchfluss prüfen",
+          "Reifendruck und Profiltiefe kontrollieren",
+          "Motorölstand und -qualität prüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Kraftstoffqualität vernachlässigen",
+          "Reifendruck nicht regelmäßig prüfen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem unwirksam",
+          "P0135 - Fehler im Heizkreis des Sauerstoffsensors"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus OBD2 Gebrauchsanleitung",
+            "href": "/de/ford-focus-obd2-gebrauchsanleitung"
+          },
+          {
+            "label": "Ursachen für erhöhten Kraftstoffverbrauch",
+            "href": "/de/ursachen-fuer-erhoehten-kraftstoffverbrauch"
+          },
+          {
+            "label": "Sauerstoffsensor Fehler diagnostizieren",
+            "href": "/de/sauerstoffsensor-fehler-diagnostizieren"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sollte ich zuerst prüfen bei hohem Kraftstoffverbrauch?",
+            "a": "Beginnen Sie mit der Kontrolle des Luftfilters und des Reifendrucks. Danach empfiehlt sich das Auslesen der OBD2-Fehlercodes."
+          },
+          {
+            "q": "Wie kann ich den Kraftstoffverbrauch verbessern?",
+            "a": "Regelmäßige Wartung, Verwendung von Qualitätskraftstoff und korrekter Reifendruck tragen zu besserer Effizienz bei."
+          },
+          {
+            "q": "Beeinflussen OBD2-Codes den Kraftstoffverbrauch?",
+            "a": "Ja, sie zeigen Motor- oder Abgassystemprobleme an, die den Verbrauch erhöhen können."
+          }
+        ],
+        "schemaTitle": "Ford Focus hoher Kraftstoffverbrauch – Ursachen & Lösungen",
+        "schemaDescription": "Erfahren Sie die häufigsten Ursachen für hohen Kraftstoffverbrauch beim Ford Focus und wie Sie ihn diagnostizieren und beheben können."
+      },
+      "es": {
+        "slug": "ford-focus-gasta-mucho-combustible",
+        "title": "Ford Focus gasta mucho combustible: causas y diagnóstico",
+        "metaDescription": "Tu Ford Focus consume demasiado combustible? Descubre causas comunes, revisiones prácticas y pasos para mejorar el consumo.",
+        "intro": "Si notas que tu Ford Focus consume más combustible del habitual, pueden existir varias causas. Un consumo elevado puede estar relacionado con mantenimiento, sensores defectuosos o problemas con la presión de los neumáticos. Esta guía te ayudará a identificar causas probables y a realizar revisiones iniciales antes de reemplazar piezas.",
+        "severity": "Un problema de gravedad media que afecta los costos y la eficiencia del vehículo. Diagnosticar a tiempo evita gastos innecesarios.",
+        "driveAdvice": "Evita aceleraciones bruscas y viajes innecesarios. Realiza mantenimientos periódicos y utiliza un escáner OBD2 para detectar códigos de error temprano.",
+        "likelyCauses": [
+          "Filtro de aire sucio o obstruido",
+          "Sensor de oxígeno defectuoso",
+          "Inyectores de combustible sucios o bloqueados",
+          "Presión de combustible incorrecta",
+          "Presión baja en los neumáticos o neumáticos desgastados"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos de error OBD2",
+          "Revisar y cambiar el filtro de aire si está sucio",
+          "Limpiar o comprobar inyectores de combustible",
+          "Verificar el sensor de oxígeno y reemplazar si falla",
+          "Comprobar presión de neumáticos y ajustarla",
+          "Verificar la calidad del combustible"
+        ],
+        "firstChecks": [
+          "Estado y limpieza del filtro de aire",
+          "Presión y desgaste de neumáticos",
+          "Nivel y calidad del aceite del motor"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "Ignorar la calidad del combustible",
+          "No revisar regularmente la presión de neumáticos"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral",
+          "P0135 - Malfuncionamiento del circuito calefactor del sensor de oxígeno"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de uso OBD2 para Ford Focus",
+            "href": "/es/guia-obd2-ford-focus"
+          },
+          {
+            "label": "Por qué aumenta el consumo de combustible",
+            "href": "/es/por-que-aumenta-consumo-combustible"
+          },
+          {
+            "label": "Cómo diagnosticar fallos en sensores de oxígeno",
+            "href": "/es/diagnosticar-fallo-sensor-oxigeno"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué debo revisar primero si mi Ford Focus gasta mucho combustible?",
+            "a": "Revisa primero el filtro de aire y la presión de los neumáticos, luego usa un escáner OBD2 para detectar códigos de error."
+          },
+          {
+            "q": "¿Cómo mejorar el consumo de combustible en mi Ford Focus?",
+            "a": "Mantén el vehículo al día, usa combustible de calidad y controla la presión de los neumáticos."
+          },
+          {
+            "q": "¿Influyen los códigos OBD2 en el consumo de combustible?",
+            "a": "Sí, indican problemas en el motor o sistema de escape que pueden aumentar el consumo."
+          }
+        ],
+        "schemaTitle": "Ford Focus gasta mucho combustible: causas y soluciones",
+        "schemaDescription": "Conoce las causas comunes y soluciones para el alto consumo de combustible en tu Ford Focus."
+      },
+      "fr": {
+        "slug": "ford-focus-consommation-excessive-carburant",
+        "title": "Ford Focus consommation excessive de carburant : causes et diagnostic",
+        "metaDescription": "Votre Ford Focus consomme trop de carburant ? Découvrez les causes communes, contrôles pratiques et étapes de diagnostic efficaces.",
+        "intro": "Si votre Ford Focus consomme plus de carburant que d’habitude, plusieurs facteurs peuvent être en cause. Une mauvaise consommation peut provenir d’un entretien insuffisant, de capteurs défectueux ou de problèmes liés aux pneus. Ce guide vous aide à identifier les causes probables et à effectuer les premiers contrôles avant tout remplacement de pièces.",
+        "severity": "Ce problème impacte modérément les coûts d’utilisation et les émissions. Un diagnostic rapide évite des réparations coûteuses.",
+        "driveAdvice": "Évitez les accélérations brusques et les trajets inutiles. Effectuez un entretien régulier et utilisez un scanner OBD2 pour détecter tôt les codes défauts.",
+        "likelyCauses": [
+          "Filtre à air encrassé ou obstrué",
+          "Sonde lambda défectueuse",
+          "Injecteurs de carburant sales ou bouchés",
+          "Pression de carburant inadaptée",
+          "Pression insuffisante ou usure des pneus"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts OBD2",
+          "Contrôler et remplacer le filtre à air si nécessaire",
+          "Nettoyer ou tester les injecteurs de carburant",
+          "Vérifier la sonde lambda et envisager son remplacement",
+          "Contrôler la pression des pneus et la régler aux préconisations",
+          "Évaluer la qualité du carburant utilisé"
+        ],
+        "firstChecks": [
+          "Contrôler l’état et la propreté du filtre à air",
+          "Vérifier la pression et l’usure des pneus",
+          "Contrôler le niveau et la qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic précis",
+          "Négliger la qualité du carburant",
+          "Oublier le contrôle régulier de la pression des pneus"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre (banc 1)",
+          "P0420 - Rendement catalyseur insuffisant",
+          "P0135 - Défaillance du circuit de chauffage de la sonde lambda"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide d’utilisation OBD2 Ford Focus",
+            "href": "/fr/guide-obd2-ford-focus"
+          },
+          {
+            "label": "Pourquoi la consommation de carburant augmente",
+            "href": "/fr/pourquoi-consommation-carburant-augmente"
+          },
+          {
+            "label": "Comment diagnostiquer les pannes de la sonde lambda",
+            "href": "/fr/diagnostiquer-panne-sonde-lambda"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que vérifier en premier si ma Ford Focus consomme trop de carburant ?",
+            "a": "Vérifiez d’abord le filtre à air et la pression des pneus, puis utilisez un scanner OBD2 pour repérer les codes défauts."
+          },
+          {
+            "q": "Comment améliorer la consommation de carburant de ma Ford Focus ?",
+            "a": "Un entretien régulier, un carburant de qualité et une pression correcte des pneus améliorent la consommation."
+          },
+          {
+            "q": "Les codes OBD2 influencent-ils la consommation de carburant ?",
+            "a": "Oui, ils révèlent des problèmes moteur ou échappement pouvant augmenter la consommation."
+          }
+        ],
+        "schemaTitle": "Ford Focus consommation excessive de carburant : causes & solutions",
+        "schemaDescription": "Découvrez les causes fréquentes et les solutions pour améliorer la consommation de carburant de votre Ford Focus."
+      }
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-stalling",
+    "intentKey": "ford-focus_stalling",
+    "make": "Ford",
+    "model": "Focus",
+    "symptomKey": "stalling",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "ford-focus-stop-ediyor",
+        "title": "Ford Focus Stop Ediyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Ford Focus stop ediyor mu? Bu yazıda arıza nedenleri, teşhis adımları ve ilk kontroller için pratik öneriler bulabilirsiniz.",
+        "intro": "Ford Focus'unuzun aniden stop etmesi can sıkıcı ve tehlikeli olabilir. Bu sorunun birden fazla sebebi olabilir ve kesin teşhis için dikkatli bir kontrol gerekir. Parça değiştirmeden önce basit kontrollerle başlayarak sorun kaynağını adım adım daraltmak en doğru yaklaşım olacaktır.",
+        "severity": "Orta dereceli, güvenlik açısından dikkat gerektirir.",
+        "driveAdvice": "Aracınızı mümkünse trafiğe çıkarmadan önce ilk kontrolleri yapın ve gerektiğinde çekici yardımı alın.",
+        "likelyCauses": [
+          "Yakıt sistemi sorunları (örneğin tıkanmış yakıt filtresi)",
+          "Ateşleme problemi (bujiler veya bobin arızası)",
+          "Enjeksiyon sistemi sorunları",
+          "Hava akış sensörü hatası",
+          "EGR valfi kirlenmesi veya arızası"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile arıza kodlarını okuyun",
+          "Yakıt basıncını ölçün",
+          "Bujilerin ve ateşleme bobinlerinin durumunu kontrol edin",
+          "Hava filtresini ve hava akış sensörünü inceleyin",
+          "Enjeksiyon sistemini test ettirin",
+          "EGR sistemini görsel ve işlevsel olarak inceleyin"
+        ],
+        "firstChecks": [
+          "Depoda yeterli yakıt olduğunu doğrulayın",
+          "Akü bağlantılarını ve şarj durumunu kontrol edin",
+          "Hava filtresinin temiz ve uygun halde olduğundan emin olun"
+        ],
+        "commonMistakes": [
+          "Hemen parça değiştirme yoluna gitmek",
+          "OBD2 kodlarını yanlış yorumlamak",
+          "Yakıt kalitesini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele silindir ateşleme hatası",
+          "P0171 - Yakıt sistemi karışımı çok fakir",
+          "P0507 - Rölanti devri yüksek"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Motor Arızası Kodu Okuma",
+            "href": "/tr/ford-focus/ariza-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları Nasıl Anlaşılır?",
+            "href": "/tr/ariza-tespit/yakit-sistemi"
+          },
+          {
+            "label": "EGR Valfi Temizliği ve Bakımı",
+            "href": "/tr/bakim/egr-valfi-temizligi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ford Focus neden aniden stop eder?",
+            "a": "Birçok sebep olabilir; yakıt sorunları, ateşleme arızaları ya da sensör problemleri gibi. Kesin teşhis için arıza kodu okumak önemlidir."
+          },
+          {
+            "q": "Stop etme sorunu nasıl önlenir?",
+            "a": "Düzenli bakım, kaliteli yakıt kullanımı ve arıza kodlarının erken teşhisi ile önlenebilir."
+          },
+          {
+            "q": "OBD2 cihazı kullanmadan da arıza bulunabilir mi?",
+            "a": "Evet, görsel ve mekanik kontroller yapılabilir ancak kod okumak sorunun nedenini daha hızlı bulmanızı sağlar."
+          }
+        ],
+        "schemaTitle": "Ford Focus Stop Etme Sorunları ve Çözümleri",
+        "schemaDescription": "Ford Focus'unuzun stop etme sorunları için olası nedenler, teşhis yöntemleri ve ilk yapılması gereken kontroller hakkında kapsamlı rehber."
+      },
+      "en": {
+        "slug": "ford-focus-stalling",
+        "title": "Ford Focus Stalling: Causes and Troubleshooting Tips",
+        "metaDescription": "Is your Ford Focus stalling unexpectedly? Discover likely causes, step-by-step diagnostics, and simple first checks before replacements.",
+        "intro": "Experiencing sudden stalling with your Ford Focus can be frustrating and potentially unsafe. Various factors could lead to this issue, requiring careful diagnosis before replacing any parts. Starting with practical initial checks can help pinpoint the root cause efficiently and save unnecessary repair costs.",
+        "severity": "Moderate; requires attention as stalling can affect driving safety.",
+        "driveAdvice": "Avoid driving the car in heavy traffic until the issue is diagnosed. Perform initial checks and consider professional assistance if needed.",
+        "likelyCauses": [
+          "Fuel system blockages or filter clogs",
+          "Ignition system faults, including spark plugs or coils",
+          "Malfunctioning fuel injectors",
+          "Faulty mass airflow sensor",
+          "Clogged or malfunctioning EGR valve"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 diagnostic trouble codes",
+          "Check fuel pressure and delivery",
+          "Inspect spark plugs and ignition coils",
+          "Evaluate air filter and mass airflow sensor condition",
+          "Test fuel injector operation",
+          "Visually and functionally inspect EGR valve"
+        ],
+        "firstChecks": [
+          "Ensure the fuel tank has adequate fuel",
+          "Check battery connections and charge level",
+          "Verify air filter is clean and unobstructed"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Misinterpreting OBD2 codes",
+          "Ignoring fuel quality and contamination"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0507 - Idle Control System RPM Higher Than Expected"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Troubleshooting & Fault Codes",
+            "href": "/en/ford-focus/trouble-codes"
+          },
+          {
+            "label": "Understanding Fuel System Problems",
+            "href": "/en/diagnostics/fuel-system"
+          },
+          {
+            "label": "EGR Valve Cleaning & Maintenance",
+            "href": "/en/maintenance/egr-valve-cleaning"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes a Ford Focus to stall suddenly?",
+            "a": "Multiple causes like fuel delivery problems, ignition faults, or sensor failures can lead to stalling. Reading diagnostic codes helps identify the precise issue."
+          },
+          {
+            "q": "How to prevent stalling issues?",
+            "a": "Regular maintenance, using quality fuel, and addressing warning codes early can reduce stalling risks."
+          },
+          {
+            "q": "Can I diagnose stalling without an OBD2 scanner?",
+            "a": "Basic visual and mechanical checks are possible, but OBD2 scanning offers quicker, accurate diagnosis."
+          }
+        ],
+        "schemaTitle": "Ford Focus Stalling Trouble Diagnosis and Fixes",
+        "schemaDescription": "Comprehensive guide on Ford Focus stalling causes, diagnostic steps, and practical first checks before replacing components."
+      },
+      "de": {
+        "slug": "ford-focus-stottern-und-ausgehen",
+        "title": "Ford Focus Stottert und Geht Aus: Ursachen und Diagnose",
+        "metaDescription": "Ford Focus stottert oder geht aus? Erfahren Sie mögliche Ursachen, Diagnose-Schritte und erste Checks vor dem Teilewechsel.",
+        "intro": "Wenn Ihr Ford Focus plötzlich ausgeht oder stottert, kann das verschiedene Ursachen haben. Eine genaue Diagnose ist wichtig, bevor Teile ausgetauscht werden. Praktische Erstkontrollen helfen, das Problem einzugrenzen und unnötige Reparaturen zu vermeiden. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Mittlere Dringlichkeit; das Problem beeinträchtigt die Fahrsicherheit.",
+        "driveAdvice": "Fahren Sie das Fahrzeug möglichst nicht im dichten Verkehr, bis das Problem geklärt ist. Erstkontrollen können selbst durchgeführt werden, ansonsten professionelle Hilfe suchen.",
+        "likelyCauses": [
+          "Probleme im Kraftstoffsystem, z.B. verstopfter Filter",
+          "Zündungsprobleme wie defekte Zündkerzen oder Zündspulen",
+          "Fehlerhafte Einspritzventile",
+          "Defekter Luftmassenmesser",
+          "Verstopftes oder fehlerhaftes AGR-Ventil"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der OBD2-Fehlercodes",
+          "Kraftstoffdruck und -versorgung prüfen",
+          "Zündkerzen und Zündspulen kontrollieren",
+          "Luftfilter und Luftmassenmesser begutachten",
+          "Einspritzanlage testen",
+          "AGR-Ventil funktional und optisch überprüfen"
+        ],
+        "firstChecks": [
+          "Tankfüllstand kontrollieren",
+          "Batterieanschlüsse und Ladezustand prüfen",
+          "Luftfilter auf Sauberkeit und Durchlässigkeit prüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Fehlercodes falsch interpretieren",
+          "Kraftstoffqualität vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige Zündaussetzer erkannt",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0507 - Leerlaufregler Drehzahl zu hoch"
+        ],
+        "internalLinks": [
+          {
+            "label": "Ford Focus Fehlercodes und Diagnose",
+            "href": "/de/ford-focus/fehlercodes"
+          },
+          {
+            "label": "Kraftstoffsystemprobleme erkennen",
+            "href": "/de/diagnose/kraftstoffsystem"
+          },
+          {
+            "label": "AGR-Ventil Reinigung und Wartung",
+            "href": "/de/wartung/agr-ventil-reinigung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum geht mein Ford Focus plötzlich aus?",
+            "a": "Ursachen können Kraftstoffmangel, Zündprobleme oder Sensorfehler sein. OBD2-Codes helfen bei der genauen Diagnose."
+          },
+          {
+            "q": "Wie kann man Aussetzer beim Ford Focus verhindern?",
+            "a": "Regelmäßige Wartung, gute Kraftstoffqualität und frühzeitiges Beheben von Fehlercodes helfen, Probleme zu vermeiden."
+          },
+          {
+            "q": "Kann man ohne OBD2-Scanner stottern diagnostizieren?",
+            "a": "Erste Prüfungen sind möglich, jedoch ermöglicht ein OBD2-Scanner eine schnellere und präzisere Fehleranalyse."
+          }
+        ],
+        "schemaTitle": "Ford Focus Stottern und Ausgehen effektiv diagnostizieren",
+        "schemaDescription": "Umfassender Leitfaden zu Ursachen, Diagnose und ersten Prüfungen bei Stottern und Ausgehen Ihres Ford Focus."
+      },
+      "es": {
+        "slug": "ford-focus-motor-tiembla-stalling",
+        "title": "Ford Focus Motor Tiembla y Se Apaga: Causas y Diagnóstico",
+        "metaDescription": "¿Tu Ford Focus se apaga o tiembla? Descubre causas comunes, cómo diagnosticar y primeras revisiones antes de cambiar piezas.",
+        "intro": "Cuando un Ford Focus se apaga inesperadamente, existen múltiples causas posibles que deben ser identificadas cuidadosamente. Antes de reemplazar piezas, es aconsejable realizar controles prácticos para reducir el problema de forma segura y precisa, evitando gastos innecesarios.",
+        "severity": "Moderado; el problema puede afectar la seguridad al conducir.",
+        "driveAdvice": "Evita circular en tráfico pesado hasta diagnosticar el problema. Realiza controles iniciales y busca ayuda profesional si es necesario.",
+        "likelyCauses": [
+          "Problemas en el sistema de combustible, como filtro bloqueado",
+          "Fallas en el encendido (bujías o bobinas)",
+          "Inyectores de combustible defectuosos",
+          "Sensor de flujo de aire en mal estado",
+          "Válvula EGR sucia o con fallos"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con escáner OBD2",
+          "Medir presión y flujo de combustible",
+          "Inspeccionar bujías y bobinas de encendido",
+          "Revisar estado del filtro y sensor de aire",
+          "Probar funcionamiento de inyectores",
+          "Revisar válvula EGR visual y funcionalmente"
+        ],
+        "firstChecks": [
+          "Verificar suficiente combustible en el tanque",
+          "Comprobar conexiones y estado de la batería",
+          "Asegurar que el filtro de aire está limpio y sin obstrucciones"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnosticar correctamente",
+          "Interpretar mal los códigos OBD2",
+          "Desatender la calidad del combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple o aleatorio",
+          "P0171 - Mezcla pobre en banco 1",
+          "P0507 - Ralentí más alto de lo esperado"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de fallos en Ford Focus",
+            "href": "/es/ford-focus/codigos-fallos"
+          },
+          {
+            "label": "Guía de problemas en sistema de combustible",
+            "href": "/es/diagnostico/sistema-combustible"
+          },
+          {
+            "label": "Mantenimiento de la válvula EGR",
+            "href": "/es/mantenimiento/valvula-egr"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Ford Focus se apaga de repente?",
+            "a": "Puede deberse a fallos en el suministro de combustible, problemas de encendido o sensores defectuosos. Leer códigos ayuda a diagnosticar."
+          },
+          {
+            "q": "¿Cómo puedo evitar que el motor se apague?",
+            "a": "Con mantenimiento regular, combustible de calidad y atención a los códigos de error a tiempo."
+          },
+          {
+            "q": "¿Se puede diagnosticar sin escáner OBD2?",
+            "a": "Se pueden hacer revisiones básicas, pero el escáner OBD2 facilita un diagnóstico más rápido y certero."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y soluciones para motor que tiembla o se apaga en Ford Focus",
+        "schemaDescription": "Guía completa sobre causas, diagnóstico y primeros controles para problemas de motor que tiembla o se apaga en Ford Focus."
+      },
+      "fr": {
+        "slug": "ford-focus-calage-moteur",
+        "title": "Ford Focus Calage Moteur : Causes et Diagnostic",
+        "metaDescription": "Votre Ford Focus cale ? Découvrez les causes probables, les étapes de diagnostic et les vérifications à faire avant tout remplacement.",
+        "intro": "Un calage soudain du moteur sur votre Ford Focus peut être dû à plusieurs facteurs. Il est important d’établir un diagnostic précis avant d’envisager un remplacement de pièces. Commencer par des contrôles simples permet souvent d’identifier rapidement la source du problème et d’éviter des réparations inutiles.",
+        "severity": "Gravité modérée ; un calage peut compromettre la sécurité de conduite.",
+        "driveAdvice": "Évitez de conduire en zones à fort trafic tant que le problème n’est pas identifié. Effectuez les premières vérifications et sollicitez une aide professionnelle si nécessaire.",
+        "likelyCauses": [
+          "Problèmes d’alimentation en carburant (filtre encrassé, pompe défaillante)",
+          "Défaillance du système d’allumage (bougies ou bobines)",
+          "Injecteurs défectueux",
+          "Défaillance du capteur de débit d’air",
+          "Vanne EGR encrassée ou défectueuse"
+        ],
+        "diagnosticSteps": [
+          "Lecture des codes défauts via OBD2",
+          "Contrôle de la pression et du débit carburant",
+          "Vérification des bougies et bobines d’allumage",
+          "Inspection du filtre à air et du capteur de flux d’air",
+          "Test des injecteurs",
+          "Contrôle visuel et fonctionnel de la vanne EGR"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau de carburant dans le réservoir",
+          "Contrôler les connexions et l’état de la batterie",
+          "S’assurer que le filtre à air est propre et non obstrué"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis",
+          "Mauvaise interprétation des codes OBD2",
+          "Négliger la qualité du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0507 - Régime ralenti supérieur à la valeur attendue"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut Ford Focus",
+            "href": "/fr/ford-focus/codes-defauts"
+          },
+          {
+            "label": "Diagnostic des problèmes d’alimentation carburant",
+            "href": "/fr/diagnostic/systeme-carburant"
+          },
+          {
+            "label": "Entretien de la vanne EGR",
+            "href": "/fr/entretien/vanne-egr"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Ford Focus cale-t-il soudainement ?",
+            "a": "Plusieurs causes possibles : alimentation en carburant, allumage ou capteurs défaillants. La lecture des codes défauts aide au diagnostic."
+          },
+          {
+            "q": "Comment éviter les calages ?",
+            "a": "Un entretien régulier, l’utilisation d’un carburant de qualité et la prise en compte précoce des codes défauts contribuent à éviter ce problème."
+          },
+          {
+            "q": "Peut-on diagnostiquer un calage sans scanner OBD2 ?",
+            "a": "Des contrôles visuels sont possibles, mais le scanner OBD2 offre un diagnostic rapide et précis."
+          }
+        ],
+        "schemaTitle": "Diagnostic et solutions pour calage moteur Ford Focus",
+        "schemaDescription": "Guide complet des causes, diagnostics et contrôles à effectuer en cas de calage moteur sur Ford Focus."
+      }
+    }
   }
 ]

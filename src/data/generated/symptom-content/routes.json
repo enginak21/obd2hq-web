@@ -448,5 +448,105 @@
       "es": "volkswagen-vites-escapando",
       "fr": "volkswagen-retablissement-de-vitesse"
     }
+  },
+  {
+    "contentGroupId": "ford-focus-loss-of-power",
+    "slugs": {
+      "en": "ford-focus-loss-of-power",
+      "tr": "ford-focus-gaz-yemiyor",
+      "de": "ford-focus-leistungsverlust",
+      "es": "ford-focus-pierde-potencia",
+      "fr": "ford-focus-perte-de-puissance"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-engine-noise",
+    "slugs": {
+      "en": "ford-focus-engine-noise",
+      "tr": "ford-focus-motordan-ses-geliyor",
+      "de": "ford-focus-motor-geraeusch",
+      "es": "ford-focus-motor-tiembla-ruidos",
+      "fr": "ford-focus-bruit-moteur"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-rough-idle",
+    "slugs": {
+      "en": "ford-focus-rough-idle",
+      "tr": "ford-focus-rolanti-dalgalaniyor",
+      "de": "ford-focus-rauher-leerlauf",
+      "es": "ford-focus-motor-tiembla-en-relenti",
+      "fr": "ford-focus-regime-instable-au-ralenti"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-engine-shaking",
+    "slugs": {
+      "en": "ford-focus-engine-shaking",
+      "tr": "ford-focus-titriyor",
+      "de": "ford-focus-motor-vibriert",
+      "es": "ford-focus-motor-tiembla",
+      "fr": "ford-focus-moteur-vibre"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-check-engine-light",
+    "slugs": {
+      "en": "ford-focus-check-engine-light",
+      "tr": "ford-focus-motor-ariza-lambasi-yaniyor",
+      "de": "ford-focus-motor-warnleuchte-an",
+      "es": "ford-focus-luz-de-check-engine-encendida",
+      "fr": "ford-focus-temoin-moteur-allume"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-hard-start",
+    "slugs": {
+      "en": "ford-focus-hard-start",
+      "tr": "ford-focus-gec-calisiyor",
+      "de": "ford-focus-schwierigkeiten-beim-starten",
+      "es": "ford-focus-dificultad-para-arrancar",
+      "fr": "ford-focus-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-black-smoke",
+    "slugs": {
+      "en": "ford-focus-black-smoke-causes",
+      "tr": "ford-focus-siyah-duman-atma",
+      "de": "ford-focus-schwarzer-rauch-ursachen",
+      "es": "ford-focus-humo-negro-causas",
+      "fr": "ford-focus-fumee-noire-causes"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-white-smoke",
+    "slugs": {
+      "en": "ford-focus-white-smoke",
+      "tr": "ford-focus-beyaz-duman-atiyor",
+      "de": "ford-focus-weisser-rauch",
+      "es": "ford-focus-duda-blanca-exceso",
+      "fr": "ford-focus-fumee-blanche"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-poor-fuel-economy",
+    "slugs": {
+      "en": "ford-focus-poor-fuel-economy",
+      "tr": "ford-focus-cok-yakiyor",
+      "de": "ford-focus-hoher-kraftstoffverbrauch",
+      "es": "ford-focus-gasta-mucho-combustible",
+      "fr": "ford-focus-consommation-excessive-carburant"
+    }
+  },
+  {
+    "contentGroupId": "ford-focus-stalling",
+    "slugs": {
+      "en": "ford-focus-stalling",
+      "tr": "ford-focus-stop-ediyor",
+      "de": "ford-focus-stottern-und-ausgehen",
+      "es": "ford-focus-motor-tiembla-stalling",
+      "fr": "ford-focus-calage-moteur"
+    }
   }
 ]
