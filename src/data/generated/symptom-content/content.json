@@ -26378,5 +26378,3515 @@
         "schemaDescription": "Comprenez les causes du glissement de transmission sur Fiat Egea et suivez les étapes pratiques de diagnostic."
       }
     }
+  },
+  {
+    "contentGroupId": "opel-astra-loss-of-power",
+    "intentKey": "opel-astra_loss_of_power",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "loss_of_power",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-gaz-yemiyor-nedenleri-ve-tespit",
+        "title": "Opel Astra Gaz Yemiyor: Olası Nedenler ve Doğru Tespiti",
+        "metaDescription": "Opel Astra gaz yemiyor sorunu için yaygın nedenler ve pratik kontrol adımları. Hangi parçaları değiştirmeden önce nelere dikkat etmelisiniz?",
+        "intro": "Opel Astra model aracınız gaz yememe sorunu yaşıyorsa, bunun birçok nedeni olabilir. Bu durum, performans düşüklüğüne ve sürüş güvenliğinin azalmasına sebep olabilir. Olası nedenleri ve hızlı teşhis yöntemlerini öğrenerek, gereksiz parça değişikliklerinden kaçınabilir ve ekonomik çözümlere yönelebilirsiniz.",
+        "severity": "Orta ila yüksek performans kaybı, sürüş esnasında güvenlik riskleri oluşturabilir.",
+        "driveAdvice": "Araç yeterli güç sağlamıyorsa hız kazanmaya çalışmayın, gerektiğinde çekici ile servise götürün.",
+        "likelyCauses": [
+          "Kirli ya da tıkanmış hava filtresi",
+          "Yakıt pompası arızası veya düşük basınç",
+          "Enjektörlerde tıkanıklık veya kaçak",
+          "Bozuk buji ya da ateşleme sistemi sorunları",
+          "Egzoz sistemi tıkanması, katalitik konvertör arızası"
+        ],
+        "diagnosticSteps": [
+          "OBD2 okuyucu ile hata kodlarını kontrol edin",
+          "Yakıt basıncını ölçün",
+          "Hava filtresinin temizliğini ve kondisyonunu kontrol edin",
+          "Bujileri ve ateşleme bobinlerini test edin",
+          "Egzoz sisteminde tıkanıklık olup olmadığını kontrol edin",
+          "Enjektör performans testini yapın"
+        ],
+        "firstChecks": [
+          "Hava filtresini gözle inceleyin",
+          "Yakıt deposunda yeterli yakıt olduğundan emin olun",
+          "Motor yağı seviyesini ve kalitesini kontrol edin"
+        ],
+        "commonMistakes": [
+          "Yakıt kalitesini göz ardı etmek",
+          "Parça değişikliğine hemen başvurmak",
+          "Hatalı OBD2 kod yorumlamak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zenginlik problemi",
+          "P0300 - Çoklu silindir ateşleme arızası",
+          "P0420 - Katalitik konvertör verimlilik düşük"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ateşleme Sistemi Sorunları",
+            "href": "/tr/opel-astra-atesleme-sorunlari"
+          },
+          {
+            "label": "OBD2 Hata Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-hata-kodlari-okuma"
+          },
+          {
+            "label": "Yakıt Sistemi Temizliği ve Bakımı",
+            "href": "/tr/yakit-sistemi-temizligi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra gaz yemiyor 'P0171' kodu ne anlama gelir?",
+            "a": "Bu kod motorun hava-yakıt karışımında zenginlik sorunu olduğunu gösterir, yani yakıt hava oranı dengesi bozulmuştur."
+          },
+          {
+            "q": "Arabanın güç kaybında önce hangi parçalar kontrol edilmeli?",
+            "a": "Öncelikle hava filtresi, yakıt basıncı ve buji gibi temel sistemler kontrol edilmelidir."
+          },
+          {
+            "q": "OBD2 cihazıyla hangi sistemlere bakmalıyım?",
+            "a": "Motor kontrol ünitesi (ECU) ve ilgili sensörlerin hata kodları yakından incelenmelidir."
+          }
+        ],
+        "schemaTitle": "Opel Astra gaz yemiyor sorunu nasıl anlaşılır ve çözülür?",
+        "schemaDescription": "Opel Astra aracınızda gaz yememe ve güç kaybı sorunu için profesyonel kontrol listesi, olası nedenler ve adım adım teşhis rehberi."
+      },
+      "en": {
+        "slug": "opel-astra-loss-of-power-causes-diagnosis",
+        "title": "Opel Astra Loss of Power: Common Causes and How to Diagnose",
+        "metaDescription": "Experiencing power loss in your Opel Astra? Learn practical checks, possible causes, and diagnostic steps before replacing parts.",
+        "intro": "If your Opel Astra is struggling with a loss of power, several underlying issues might be at play. This can lead to decreased vehicle performance and impact drive safety. By understanding common causes and employing straightforward diagnostic steps, you can avoid unnecessary part replacements and focus on cost-effective repairs.",
+        "severity": "Moderate to severe performance loss, potentially affecting safety during driving.",
+        "driveAdvice": "Avoid hard acceleration when power is low and consider towing the vehicle to a professional workshop if needed.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Fuel pump malfunction or low pressure",
+          "Injector blockages or leaks",
+          "Faulty spark plugs or ignition system issues",
+          "Exhaust system blockage, catalytic converter failure"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 codes using a diagnostic tool",
+          "Measure fuel pressure",
+          "Inspect the air filter for cleanliness and condition",
+          "Test spark plugs and ignition coils",
+          "Check for exhaust system blockages",
+          "Perform injector function tests"
+        ],
+        "firstChecks": [
+          "Visual check of the air filter",
+          "Confirm sufficient fuel in the tank",
+          "Check engine oil level and condition"
+        ],
+        "commonMistakes": [
+          "Ignoring fuel quality",
+          "Replacing parts without proper diagnosis",
+          "Misinterpreting OBD2 trouble codes"
+        ],
+        "relatedCodes": [
+          "P0171 - Fuel system too lean",
+          "P0300 - Random/multiple cylinder misfire detected",
+          "P0420 - Catalyst system efficiency below threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ignition System Issues",
+            "href": "/en/opel-astra-ignition-issues"
+          },
+          {
+            "label": "How to Read OBD2 Codes",
+            "href": "/en/how-to-read-obd2-codes"
+          },
+          {
+            "label": "Fuel System Cleaning and Maintenance",
+            "href": "/en/fuel-system-cleaning"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What does the P0171 code mean for my Opel Astra?",
+            "a": "It indicates a lean fuel condition, meaning there's an imbalance in the air-fuel mixture."
+          },
+          {
+            "q": "Which parts should I check first when experiencing power loss?",
+            "a": "Start with the air filter, fuel pressure, and spark plugs for basic troubleshooting."
+          },
+          {
+            "q": "What systems do OBD2 scans typically evaluate?",
+            "a": "They examine the engine control unit (ECU) and sensors related to fuel, ignition, and emissions."
+          }
+        ],
+        "schemaTitle": "Diagnosing and fixing Opel Astra loss of power problems",
+        "schemaDescription": "Professional guide to diagnose Opel Astra power loss issues with causes, testing steps, and necessary checks before replacement."
+      },
+      "de": {
+        "slug": "opel-astra-leistungsverlust-ursachen-diagnose",
+        "title": "Opel Astra Leistungsverlust: Häufige Ursachen und Diagnose",
+        "metaDescription": "Leistungsverlust beim Opel Astra? Entdecken Sie praktische Prüfungen, mögliche Ursachen und Diagnoseschritte vor dem Teileaustausch.",
+        "intro": "Wenn Ihr Opel Astra an Leistung verliert, kann dies verschiedene Ursachen haben. Ein Leistungsverlust beeinträchtigt die Fahrleistung und kann die Sicherheit im Straßenverkehr gefährden. Mit dem Wissen um häufige Ursachen und gezielten Diagnoseverfahren lassen sich unnötige Reparaturen vermeiden und kostengünstige Lösungen finden.",
+        "severity": "Mittlerer bis starker Leistungsverlust, möglicherweise sicherheitsrelevant während der Fahrt.",
+        "driveAdvice": "Vermeiden Sie starkes Beschleunigen bei Leistungsverlust und lassen Sie das Fahrzeug im Bedarfsfall abschleppen.",
+        "likelyCauses": [
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Defekte Kraftstoffpumpe oder niedriger Druck",
+          "Verstopfte oder undichte Einspritzdüsen",
+          "Fehlerhafte Zündkerzen oder Zündsystemprobleme",
+          "Verstopfte Abgasanlage oder defekter Katalysator"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Fehlercodes auslesen",
+          "Kraftstoffdruck messen",
+          "Luftfilter auf Zustand prüfen",
+          "Zündkerzen und Zündspulen testen",
+          "Abgasanlage auf Verstopfungen überprüfen",
+          "Einspritzdüsenfunktion testen"
+        ],
+        "firstChecks": [
+          "Optische Kontrolle des Luftfilters",
+          "Tankfüllstand überprüfen",
+          "Ölstand und Qualität prüfen"
+        ],
+        "commonMistakes": [
+          "Kraftstoffqualität vernachlässigen",
+          "Teile ohne Diagnose austauschen",
+          "OBD2-Codes falsch interpretieren"
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0300 - Zufällige oder mehrere Zylinderaussetzer",
+          "P0420 - Katalysatorsystem unter Effizienzgrenze"
+        ],
+        "internalLinks": [
+          {
+            "label": "Zündsystemprobleme beim Opel Astra",
+            "href": "/de/opel-astra-zundsystem-probleme"
+          },
+          {
+            "label": "OBD2-Fehlercodes richtig auslesen",
+            "href": "/de/obd2-fehlercodes-auslesen"
+          },
+          {
+            "label": "Reinigung und Wartung des Kraftstoffsystems",
+            "href": "/de/kraftstoffsystem-wartung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet der Fehlercode P0171 beim Opel Astra?",
+            "a": "Dieser Code zeigt ein zu mageres Gemisch im Kraftstoffsystem an, eine Fehlbalance zwischen Luft und Kraftstoff."
+          },
+          {
+            "q": "Welche Teile sollte ich bei Leistungsverlust zuerst prüfen?",
+            "a": "Luftfilter, Kraftstoffdruck und Zündkerzen sind die ersten Schritte zur Fehlersuche."
+          },
+          {
+            "q": "Auf welche Systeme prüft ein OBD2-Scan typischerweise?",
+            "a": "Der Scan untersucht Steuergerät und Sensoren für Kraftstoff, Zündung und Emissionen."
+          }
+        ],
+        "schemaTitle": "Diagnose und Behebung von Leistungsverlust beim Opel Astra",
+        "schemaDescription": "Fachkundige Anleitung zur Diagnose von Leistungsproblemen beim Opel Astra mit Ursachen, Test-Schritten und wichtigen Prüfungen vor Austausch."
+      },
+      "es": {
+        "slug": "opel-astra-sintoma-perdida-potencia-causas",
+        "title": "Opel Astra pierde potencia: Causas comunes y diagnóstico",
+        "metaDescription": "¿Tu Opel Astra pierde potencia? Descubre causas frecuentes, revisiones prácticas y pasos para diagnosticar antes de cambiar piezas.",
+        "intro": "Si tu Opel Astra está experimentando pérdida de potencia, es posible que existan varias causas potenciales. Esto afecta el rendimiento y puede poner en riesgo la seguridad al conducir. Conocer las causas más frecuentes y realizar revisiones sencillas puede ayudarte a evitar cambios innecesarios y a identificar la solución más adecuada.",
+        "severity": "Pérdida de rendimiento moderada a severa, con posible impacto en la seguridad al conducir.",
+        "driveAdvice": "Evita aceleraciones bruscas y considera remolcar el vehículo a un taller si la potencia es insuficiente.",
+        "likelyCauses": [
+          "Filtro de aire sucio o bloqueado",
+          "Bomba de combustible defectuosa o con baja presión",
+          "Inyectores obstruidos o con fugas",
+          "Problemas en las bujías o en el sistema de encendido",
+          "Obstrucción en el sistema de escape o fallo en el catalizador"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos OBD2 con un escáner",
+          "Medir la presión de combustible",
+          "Revisar el estado y limpieza del filtro de aire",
+          "Probar bujías y bobinas de encendido",
+          "Verificar bloqueos en el sistema de escape",
+          "Realizar prueba de funcionamiento de los inyectores"
+        ],
+        "firstChecks": [
+          "Inspección visual del filtro de aire",
+          "Verificar que haya suficiente combustible en el tanque",
+          "Revisar el nivel y estado del aceite del motor"
+        ],
+        "commonMistakes": [
+          "Ignorar la calidad del combustible",
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Interpretar incorrectamente los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema de combustible demasiado pobre",
+          "P0300 - Fallo aleatorio o múltiple de cilindros",
+          "P0420 - Eficiencia del sistema de catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas en el sistema de encendido Opel Astra",
+            "href": "/es/opel-astra-problemas-encendido"
+          },
+          {
+            "label": "Cómo interpretar códigos OBD2",
+            "href": "/es/como-interpretar-codigos-obd2"
+          },
+          {
+            "label": "Limpieza y mantenimiento del sistema de combustible",
+            "href": "/es/mantenimiento-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué indica el código P0171 en mi Opel Astra?",
+            "a": "Se refiere a una mezcla de combustible demasiado pobre, un desequilibrio entre aire y combustible."
+          },
+          {
+            "q": "¿Qué componentes debo revisar primero al perder potencia?",
+            "a": "Filtro de aire, presión de combustible y bujías son las primeras opciones para diagnosticar."
+          },
+          {
+            "q": "¿Qué sistemas analiza un escáner OBD2 generalmente?",
+            "a": "Evalúa la unidad de control del motor (ECU) y sensores relacionados con combustible, encendido y emisiones."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y solución de pérdida de potencia en Opel Astra",
+        "schemaDescription": "Guía experta para diagnosticar pérdida de potencia en Opel Astra con causas, pasos de prueba y controles esenciales antes del cambio de piezas."
+      },
+      "fr": {
+        "slug": "opel-astra-perte-puissance-causes-diagnostic",
+        "title": "Opel Astra perte de puissance : causes fréquentes et diagnostic",
+        "metaDescription": "Votre Opel Astra perd de la puissance ? Découvrez les causes possibles, vérifications pratiques et étapes de diagnostic avant de remplacer des pièces.",
+        "intro": "Si votre Opel Astra souffre d'une perte de puissance, cela peut avoir diverses origines. Ce problème impacte les performances du véhicule et peut réduire la sécurité de conduite. En comprenant les causes courantes et en effectuant des contrôles simples, vous pouvez éviter des remplacements coûteux et cibler la réparation la plus adaptée.",
+        "severity": "Perte de puissance modérée à sévère, pouvant affecter la sécurité au volant.",
+        "driveAdvice": "Évitez les accélérations brusques et envisagez de faire remorquer le véhicule chez un professionnel si la puissance manque.",
+        "likelyCauses": [
+          "Filtre à air sale ou bouché",
+          "Pompe à carburant défaillante ou pression faible",
+          "Injecteurs bouchés ou qui fuient",
+          "Problèmes de bougies ou du système d’allumage",
+          "Obstruction du système d’échappement ou défaillance du catalyseur"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts OBD2 avec un outil de diagnostic",
+          "Mesurer la pression de carburant",
+          "Vérifier l’état et la propreté du filtre à air",
+          "Tester les bougies et bobines d’allumage",
+          "Contrôler les obstructions dans le système d’échappement",
+          "Réaliser un test de fonctionnement des injecteurs"
+        ],
+        "firstChecks": [
+          "Inspection visuelle du filtre à air",
+          "S’assurer du niveau suffisant de carburant",
+          "Contrôler le niveau et la qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Négliger la qualité du carburant",
+          "Remplacer les pièces sans diagnostic",
+          "Mauvaise interprétation des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre dans le système de carburant",
+          "P0300 - Ratés d’allumage multiples aléatoires",
+          "P0420 - Efficacité du catalyseur inférieure au seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes d’allumage sur Opel Astra",
+            "href": "/fr/opel-astra-problemes-allumage"
+          },
+          {
+            "label": "Comment lire les codes OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Nettoyage et entretien du système de carburant",
+            "href": "/fr/nettoyage-entretiens-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que signifie le code P0171 sur mon Opel Astra ?",
+            "a": "Ce code indique un mélange trop pauvre, c’est-à-dire un déséquilibre entre l’air et le carburant."
+          },
+          {
+            "q": "Quels éléments vérifier en priorité en cas de perte de puissance ?",
+            "a": "Contrôlez d’abord le filtre à air, la pression de carburant et les bougies."
+          },
+          {
+            "q": "Quels systèmes un diagnostic OBD2 analyse-t-il généralement ?",
+            "a": "Il examine l’ECU moteur ainsi que les capteurs liés au carburant, à l’allumage et aux émissions."
+          }
+        ],
+        "schemaTitle": "Diagnostic et résolution de la perte de puissance sur Opel Astra",
+        "schemaDescription": "Guide professionnel pour diagnostiquer la perte de puissance sur Opel Astra : causes, étapes de tests et vérifications nécessaires avant remplacement."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-engine-noise",
+    "intentKey": "opel-astra_engine_noise",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "engine_noise",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-motordan-ses-geliyor",
+        "title": "Opel Astra Motordan Ses Geliyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra motordan ses geliyor mu? Olası nedenler, teşhis adımları ve ilk kontrol önerileri ile sorunları anlamanıza yardımcı olun.",
+        "intro": "Opel Astra aracınızın motorundan duyulan sesler, çeşitli mekanik veya elektronik sorunları işaret edebilir. Kesin sebebi anlamak için öncelikle temel kontrolleri yapmak önemlidir. Bu rehberde en sık karşılaşılan nedenleri ve kolay uygulanabilir teşhis yöntemlerini inceleyerek, gereksiz parça değişimlerinden kaçınabilirsiniz.",
+        "severity": "Orta derecede dikkat gerektirir, hızla müdahale edilmezse motor hasarına yol açabilir.",
+        "driveAdvice": "Aracınızı aşırı zorlamadan, sessiz sürüş tercih edin ve gerekirse servise başvurun.",
+        "likelyCauses": [
+          "Motor yağı seviyesi veya kalitesinin düşük olması",
+          "Aşınmış veya gevşemiş kayışlar",
+          "Egzoz sisteminde tıkanıklık veya hasar",
+          "Buji veya ateşleme sistemi problemleri",
+          "Motor yataklarında aşırı aşınma"
+        ],
+        "diagnosticSteps": [
+          "Motor yağı seviyesini ve kalitesini kontrol edin",
+          "Kayışların durumunu ve gerilimini inceleyin",
+          "Egzoz sistemini dışarıdan hasar ve tıkanıklık için gözden geçirin",
+          "Buji ve ateşleme sistemini test edin",
+          "Motor çalışırken anormal titreşim ve sesleri not alın",
+          "OBD2 cihazıyla ilgili arıza kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesini eksiksiz kontrol edin",
+          "Kayışların kopuk veya gevşek olup olmadığını inceleyin",
+          "Egzoz çıkışında anormal duman veya ses var mı kontrol edin"
+        ],
+        "commonMistakes": [
+          "Arızayı sadece tek bir parçaya bağlayıp tüm sistemi kontrol etmemek",
+          "Ses nedenini direk yedek parça değişimi ile çözmeye çalışmak",
+          "Motor yağı kontrolünü ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele veya Çoklu Silindir Ateşleme Arızası",
+          "P0340 - Eksantrik Mili Sensörü Devresinde Arıza",
+          "P0171 - Karışım Çok Faktörlü Yakıt Oranı Zenginlik Sorunu"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 HQ Opel Astra Arıza Kodları",
+            "href": "/tr/opel-astra-ariza-kodlari"
+          },
+          {
+            "label": "Motor Gürültüsü Sorunları Nasıl Çözülür?",
+            "href": "/tr/motor-gurultusu-diagnostik"
+          },
+          {
+            "label": "Kayış Bakımı ve Kontrol Rehberi",
+            "href": "/tr/kayis-bakimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra motorundan gelen sesler ne sıklıkla kontrol edilmeli?",
+            "a": "Her 10.000 km veya şüpheli bir ses duyulduğunda motor kontrolü yapılmalıdır."
+          },
+          {
+            "q": "Motor yağı az varsa ne gibi sesler duyulur?",
+            "a": "Motordan tıkırtı, vınlama veya vuruş benzeri sesler duyulabilir."
+          },
+          {
+            "q": "Kayış sesini nasıl ayırt edebilirim?",
+            "a": "Genellikle kayışlar gıcırdama veya hırıltı yapar, yüksek devirde ses artar."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Sesleri: Nedenleri ve Çözüm Yolları",
+        "schemaDescription": "Opel Astra aracınızın motordan gelen seslerini anlamak için olası nedenler, ilk kontrol adımları ve OBD2 kodlarıyla kapsamlı bir rehber."
+      },
+      "en": {
+        "slug": "opel-astra-engine-noise",
+        "title": "Opel Astra Engine Noise: Causes and Diagnostic Guide",
+        "metaDescription": "Is your Opel Astra engine making unusual noises? Learn likely causes, practical checks, and diagnostic steps to identify and address the issue.",
+        "intro": "Unusual noises coming from your Opel Astra’s engine can indicate multiple possible issues ranging from minor wear to mechanical concerns. Before replacing parts, it’s important to conduct key checks and proper diagnostics to avoid unnecessary expenses. This guide explains common causes and practical steps to diagnose the engine noise accurately.",
+        "severity": "Moderate severity; can lead to engine damage if left unchecked.",
+        "driveAdvice": "Avoid aggressive driving and conduct early diagnostics to prevent further damage.",
+        "likelyCauses": [
+          "Low engine oil level or degraded oil quality",
+          "Worn or loose belts",
+          "Exhaust system blockages or damage",
+          "Spark plug or ignition system faults",
+          "Worn engine bearings"
+        ],
+        "diagnosticSteps": [
+          "Check the engine oil level and condition",
+          "Inspect belts for wear and tension",
+          "Visually examine the exhaust system for damage or blockages",
+          "Test spark plugs and ignition components",
+          "Listen for abnormal vibrations or noises while idling",
+          "Use an OBD2 scanner to read related fault codes"
+        ],
+        "firstChecks": [
+          "Verify oil level is sufficient and oil quality is good",
+          "Inspect belts for looseness or visible damage",
+          "Observe exhaust outputs for unusual smoke or sounds"
+        ],
+        "commonMistakes": [
+          "Assuming a single cause without full inspection",
+          "Replacing parts without proper diagnosis",
+          "Ignoring the engine oil level and quality checks"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0340 - Camshaft Position Sensor Circuit Malfunction",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Fault Code List",
+            "href": "/en/opel-astra-fault-codes"
+          },
+          {
+            "label": "Engine Noise Diagnostic Tips",
+            "href": "/en/engine-noise-diagnostics"
+          },
+          {
+            "label": "Belt Inspection and Maintenance",
+            "href": "/en/belt-maintenance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How often should I check engine noises on my Opel Astra?",
+            "a": "Regularly check every 10,000 km or if you notice any unusual sounds."
+          },
+          {
+            "q": "What noises indicate low engine oil?",
+            "a": "Tapping, whining, or knocking sounds often suggest low or degraded oil."
+          },
+          {
+            "q": "How to identify belt-related noises?",
+            "a": "Belt noises usually present as squealing or squeaking, especially on acceleration."
+          }
+        ],
+        "schemaTitle": "Opel Astra Engine Noise: Causes and Diagnostics",
+        "schemaDescription": "Comprehensive guide to identifying and diagnosing engine noises in Opel Astra with common causes, quick checks, and OBD2 codes."
+      },
+      "de": {
+        "slug": "opel-astra-motorgeraeusche",
+        "title": "Opel Astra Motorgeräusche: Ursachen und Diagnose",
+        "metaDescription": "Ihr Opel Astra macht Motorgeräusche? Erfahren Sie mögliche Ursachen, praktische Prüfungen und Diagnoseschritte für die Fehlerbehebung.",
+        "intro": "Motorgeräusche am Opel Astra können verschiedene Ursachen haben, von leichter Abnutzung bis hin zu mechanischen Problemen. Um kostspielige Reparaturen zu vermeiden, sollten Sie zuerst grundlegende Kontrollen durchführen und die Ursache präzise diagnostizieren. Diese Anleitung hilft Ihnen, häufige Gründe zu erkennen und systematisch vorzugehen.",
+        "severity": "Mittlere Dringlichkeit, bei Vernachlässigung mögliches Motorschadenrisiko.",
+        "driveAdvice": "Vermeiden Sie starke Belastungen des Motors und führen Sie zeitnah Diagnosen durch.",
+        "likelyCauses": [
+          "Niedriger Ölstand oder verschmutztes Motoröl",
+          "Abgenutzte oder gelockerte Keilriemen",
+          "Verstopfungen oder Schäden am Auspuffsystem",
+          "Probleme mit Zündkerzen oder Zündanlage",
+          "Starke Abnutzung der Motorlager"
+        ],
+        "diagnosticSteps": [
+          "Ölstand und Ölqualität prüfen",
+          "Keilriemen auf Risse und Spannung kontrollieren",
+          "Auspuffanlage auf Beschädigungen und Verstopfungen begutachten",
+          "Zündkerzen und Zündsystem testen",
+          "Motorgeräusche im Leerlauf genau abhören",
+          "Fehlercodes mit OBD2 Scanner auslesen"
+        ],
+        "firstChecks": [
+          "Ölstand prüfen und bei Bedarf nachfüllen",
+          "Keilriemen auf sichtbare Schäden kontrollieren",
+          "Am Auspuff auf ungewöhnliche Geräusche oder Rauch achten"
+        ],
+        "commonMistakes": [
+          "Nur einen einzelnen Defekt zu vermuten ohne ganzheitliche Prüfung",
+          "Teile austauschen ohne gründliche Diagnose",
+          "Ölstand und -qualität zu vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/Mehrfachzündaussetzer erkannt",
+          "P0340 - Fehler im Nockenwellensensor-Stromkreis",
+          "P0171 - Gemisch zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Fehlercodes",
+            "href": "/de/opel-astra-fehlercodes"
+          },
+          {
+            "label": "Motorgeräusche Diagnose",
+            "href": "/de/motorgeraeusche-diagnose"
+          },
+          {
+            "label": "Keilriemen Wartung",
+            "href": "/de/keilriemen-wartung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie oft sollte ich Motorgeräusche überprüfen?",
+            "a": "Alle 10.000 km oder bei ungewöhnlichen Geräuschen sollten Sie eine Prüfung vornehmen."
+          },
+          {
+            "q": "Welche Geräusche weisen auf zu wenig Motoröl hin?",
+            "a": "Klackernde oder heulende Geräusche können auf niedrigen Ölstand hindeuten."
+          },
+          {
+            "q": "Wie kann ich Keilriemengeräusche erkennen?",
+            "a": "Keilriemengeräusche erscheinen meist als quietschendes oder kreischendes Geräusch bei Drehzahländerungen."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motorgeräusche Ursachen & Diagnosen",
+        "schemaDescription": "Detaillierter Leitfaden zur Identifikation und Diagnose von Motorgeräuschen beim Opel Astra mit häufigen Ursachen und OBD2 Codes."
+      },
+      "es": {
+        "slug": "opel-astra-motor-tiembla",
+        "title": "Opel Astra: Ruido en el Motor, Causas y Diagnóstico",
+        "metaDescription": "¿Tu Opel Astra tiene ruidos en el motor? Descubre las causas más probables, pasos de diagnóstico y comprobaciones iniciales prácticas.",
+        "intro": "Los ruidos provenientes del motor de un Opel Astra pueden deberse a diferentes problemas, desde desgaste menor hasta fallos mecánicos más serios. Antes de reemplazar piezas, es fundamental realizar comprobaciones básicas y diagnósticos adecuados. Esta guía te ayudará a entender las causas habituales y a realizar un diagnóstico acertado para evitar gastos innecesarios.",
+        "severity": "Nivel de gravedad moderado; sin atención puede causar daños en el motor.",
+        "driveAdvice": "Evita conducir agresivamente y realiza un diagnóstico temprano para prevenir daños mayores.",
+        "likelyCauses": [
+          "Bajo nivel o mala calidad del aceite del motor",
+          "Correas desgastadas o flojas",
+          "Obstrucciones o daños en el sistema de escape",
+          "Problemas en las bujías o sistema de encendido",
+          "Desgaste excesivo en los cojinetes del motor"
+        ],
+        "diagnosticSteps": [
+          "Verifica el nivel y estado del aceite del motor",
+          "Inspecciona las correas por desgaste y tensión",
+          "Revisa visualmente el sistema de escape en busca de daños o bloqueos",
+          "Comprueba las bujías y el sistema de encendido",
+          "Escucha vibraciones o ruidos anormales con el motor en marcha",
+          "Usa un escáner OBD2 para leer códigos de error relacionados"
+        ],
+        "firstChecks": [
+          "Asegúrate de que el nivel y la calidad del aceite sean adecuados",
+          "Verifica que las correas no estén flojas ni dañadas",
+          "Observa el escape para detectar humo o ruidos inusuales"
+        ],
+        "commonMistakes": [
+          "Asumir una única causa sin hacer una inspección completa",
+          "Cambiar piezas sin un diagnóstico previo correcto",
+          "Ignorar el control del nivel y calidad del aceite"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio/múltiple",
+          "P0340 - Mal funcionamiento del sensor de posición del árbol de levas",
+          "P0171 - Mezcla demasiado pobre (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de fallo Opel Astra",
+            "href": "/es/codigos-fallos-opel-astra"
+          },
+          {
+            "label": "Diagnóstico de ruidos en el motor",
+            "href": "/es/diagnostico-ruidos-motor"
+          },
+          {
+            "label": "Mantenimiento de correas",
+            "href": "/es/mantenimiento-correas"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Con qué frecuencia debo revisar ruidos en el motor?",
+            "a": "Se recomienda revisar cada 10,000 km o si notas sonidos inusuales."
+          },
+          {
+            "q": "¿Qué ruidos indican poco aceite en el motor?",
+            "a": "Golpes, chillidos o ruidos metálicos pueden indicar bajo nivel o mala calidad de aceite."
+          },
+          {
+            "q": "¿Cómo identificar ruidos causados por las correas?",
+            "a": "Usualmente producen chirridos o chirridos, especialmente al acelerar."
+          }
+        ],
+        "schemaTitle": "Ruido en el Motor Opel Astra: Causas y Diagnóstico",
+        "schemaDescription": "Guía completa para identificar y diagnosticar ruidos en el motor del Opel Astra, con causas comunes y códigos OBD2."
+      },
+      "fr": {
+        "slug": "opel-astra-bruit-moteur",
+        "title": "Bruit moteur sur Opel Astra : Causes et Diagnostic",
+        "metaDescription": "Votre Opel Astra fait un bruit moteur ? Découvrez les causes possibles, les vérifications pratiques et les étapes de diagnostic.",
+        "intro": "Les bruits inhabituels provenant du moteur de votre Opel Astra peuvent indiquer divers problèmes, allant de l’usure normale à des défaillances mécaniques. Avant de remplacer des pièces, il est essentiel de réaliser des contrôles simples et un diagnostic précis pour ne pas engager de dépenses inutiles. Ce guide vous accompagne à travers les causes fréquentes et les méthodes de diagnostic adaptées.",
+        "severity": "Gravité modérée ; peut endommager le moteur si non pris en charge rapidement.",
+        "driveAdvice": "Évitez de solliciter fortement le moteur et procédez à un diagnostic rapide.",
+        "likelyCauses": [
+          "Niveau d'huile moteur bas ou huile de mauvaise qualité",
+          "Courroies usées ou détendues",
+          "Obstructions ou dommages dans l’échappement",
+          "Problèmes de bougies ou d’allumage",
+          "Usure excessive des paliers moteur"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez le niveau et la qualité de l’huile moteur",
+          "Vérifiez l’état et la tension des courroies",
+          "Examinez visuellement le système d’échappement pour repérer des dommages ou blocages",
+          "Testez les bougies et le système d’allumage",
+          "Écoutez les vibrations ou bruits anormaux au ralenti",
+          "Lisez les codes défauts avec un scanner OBD2"
+        ],
+        "firstChecks": [
+          "Vérifiez que le niveau d’huile est suffisant et que l’huile est propre",
+          "Inspectez les courroies pour déceler fissures ou desserrage",
+          "Observez la sortie d’échappement pour détecter fumée ou bruit anormal"
+        ],
+        "commonMistakes": [
+          "Supposer une seule cause sans contrôle complet",
+          "Remplacer des pièces sans diagnostic approfondi",
+          "Négliger le contrôle du niveau et de la qualité de l’huile"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d'allumage multiples/aléatoires",
+          "P0340 - Dysfonctionnement du capteur d'arbre à cames",
+          "P0171 - Mélange trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut Opel Astra",
+            "href": "/fr/codes-defaut-opel-astra"
+          },
+          {
+            "label": "Diagnostic des bruits moteur",
+            "href": "/fr/diagnostic-bruits-moteur"
+          },
+          {
+            "label": "Entretien des courroies",
+            "href": "/fr/entretien-courroies"
+          }
+        ],
+        "faq": [
+          {
+            "q": "À quelle fréquence vérifier les bruits du moteur?",
+            "a": "Il est conseillé de vérifier tous les 10 000 km ou dès que vous entendez un bruit suspect."
+          },
+          {
+            "q": "Quels bruits indiquent un faible niveau d'huile?",
+            "a": "Des claquements, des sifflements ou des cognements peuvent indiquer un niveau d’huile bas."
+          },
+          {
+            "q": "Comment reconnaître un bruit de courroie défectueuse?",
+            "a": "Les courroies défectueuses provoquent souvent des grincements ou des sifflements, surtout à l’accélération."
+          }
+        ],
+        "schemaTitle": "Bruit moteur Opel Astra : Causes et Méthodes de Diagnostic",
+        "schemaDescription": "Guide complet pour identifier et diagnostiquer les bruits moteur sur Opel Astra, avec causes fréquentes et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-rough-idle",
+    "intentKey": "opel-astra_rough_idle",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "rough_idle",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-rolanti-dalgalanma",
+        "title": "Opel Astra Rölanti Dalgalanıyor: Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Opel Astra rölanti dalgalanma sorunları için olası nedenleri ve pratik kontrol adımlarını öğrenin. Sorunu doğru tespit edin, gereksiz parça değişiminden kaçının.",
+        "intro": "Opel Astra aracınızda rölanti dalgalanması yaşanıyorsa, bu durum sürüş kalitenizi olumsuz etkileyebilir. Bu yazıda, rölanti dalgalanmasının olası nedenlerini ve aracınızı kontrol etmeniz gereken pratik aşamaları detaylı şekilde ele alacağız. Sorunu doğru analiz etmek, gereksiz parça değişimlerinden ve yüksek maliyetlerden korunmanızı sağlar.",
+        "severity": "Orta seviye; araç sürüş sırasında sarsıntı yapabilir ve yakıt tüketimi artabilir.",
+        "driveAdvice": "Aracınızı düzenli olarak yüksek devirde kullanmaktan kaçının ve motorun aşırı ısınmasına izin vermeyin.",
+        "likelyCauses": [
+          "Enjektörlerde kısmi tıkanıklık veya arıza",
+          "Ateşleme sistemi problemleri (buji, bobin)",
+          "Hava filtresi veya emme sistemi kirlenmeleri",
+          "Rölanti kontrol valfi (IAC) arızası",
+          "Yakıt basıncı düşüklüğü veya pompa sorunları"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile hata kodlarını kontrol edin",
+          "Yakıt basıncını ölçün ve pompa performansını değerlendirin",
+          "Rölanti kontrol valfini temizleyin veya test edin",
+          "Hava giriş sisteminde kaçak veya tıkanıklık kontrolü yapın",
+          "Buji ve ateşleme bobinlerini inceleyin, gerekiyorsa değiştirin",
+          "Enjektörlerin püskürtme şeklini ve elektrik bağlantılarını test edin"
+        ],
+        "firstChecks": [
+          "Hava filtresi ve emme manifoldunda tıkanıklık olup olmadığını kontrol edin",
+          "Buji uçlarını görsel olarak inceleyin",
+          "Yakıt deposunda yeterli yakıt ve kalitesini teyit edin"
+        ],
+        "commonMistakes": [
+          "Sadece rölanti kontrol valfi değişimi ile sorunu çözmeye çalışmak",
+          "Hata kodunu göz ardı edip doğrudan parça değişimine gitmek",
+          "Yakıt kalitesi sorununu veya depo durumu kontrol etmemek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Zengin Karışım",
+          "P0505 - Rölanti Hızı Kontrol Sistemi"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 ile Rölanti Problemi Tespiti",
+            "href": "/tr/obd2-ile-rolanti-problemi-tespiti"
+          },
+          {
+            "label": "Opel Astra Motor Arızaları",
+            "href": "/tr/opel-astra-motor-arizalari"
+          },
+          {
+            "label": "Rölanti Kontrol Valfi Kontrolü",
+            "href": "/tr/rolanti-kontrol-valfi-kontrolu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Rölanti dalgalanması aracımı kullanmaya engel midir?",
+            "a": "Genellikle araç sürüşüne devam edilebilir ancak sorunun ilerlemesi motor ve yakıt sistemi için zarar verebilir."
+          },
+          {
+            "q": "Rölanti dalgalanması için hangi parça ilk değiştirilmelidir?",
+            "a": "Öncelikle detaylı kontrol sonrası soruna yönelik parçalar belirlenmeli, doğrudan parça değiştirmekten kaçınılmalıdır."
+          },
+          {
+            "q": "OBD2 cihazı ile hangi kodlar rölanti dalgalanmasını ifade eder?",
+            "a": "P0300, P0171 ve P0505 gibi kodlar rölanti ve ateşleme ile alakalı sorunları gösterebilir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Rölanti Dalgalanma Sorunları ve Çözüm",
+        "schemaDescription": "Opel Astra modellerinde rölanti dalgalanmasının olası nedenleri, teşhis yöntemleri, ve sık yapılan hatalar hakkında detaylı bilgi."
+      },
+      "en": {
+        "slug": "opel-astra-rough-idle",
+        "title": "Opel Astra Rough Idle: Causes and Troubleshooting Tips",
+        "metaDescription": "Learn the common causes of rough idle on Opel Astra and step-by-step diagnostic checks to avoid unnecessary repairs and costs.",
+        "intro": "If your Opel Astra experiences a rough idle, it can affect driving smoothness and fuel efficiency. This guide covers possible reasons for rough idling and practical diagnostic steps to help you identify the issue effectively before replacing any parts.",
+        "severity": "Moderate; may cause engine vibrations and increased fuel consumption during idle.",
+        "driveAdvice": "Avoid prolonged idling and high RPMs; maintain regular engine maintenance to prevent worsening the issue.",
+        "likelyCauses": [
+          "Clogged or malfunctioning fuel injectors",
+          "Ignition system issues, such as faulty spark plugs or coils",
+          "Dirty air filter or intake system restrictions",
+          "Faulty Idle Air Control (IAC) valve",
+          "Low fuel pressure or failing fuel pump"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 trouble codes related to engine performance",
+          "Check fuel pressure with a gauge and test the pump",
+          "Inspect or clean the Idle Air Control valve",
+          "Check the intake system for leaks or blockages",
+          "Test spark plugs and ignition coils for proper function",
+          "Evaluate fuel injector spray patterns and electrical connections"
+        ],
+        "firstChecks": [
+          "Condition of air filter and intake manifold",
+          "Visual inspection of spark plugs",
+          "Fuel level and quality in the tank"
+        ],
+        "commonMistakes": [
+          "Replacing the IAC valve without thorough diagnosis",
+          "Ignoring OBD2 codes and replacing parts blindly",
+          "Overlooking fuel quality or low fuel levels"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0505 - Idle Control System Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnosing Idle Problems with OBD2",
+            "href": "/en/diagnosing-idle-problems-obd2"
+          },
+          {
+            "label": "Opel Astra Engine Faults Overview",
+            "href": "/en/opel-astra-engine-faults"
+          },
+          {
+            "label": "Idle Air Control Valve Cleaning Guide",
+            "href": "/en/idle-air-control-valve-cleaning"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can I continue driving with a rough idle?",
+            "a": "While typically safe for short periods, continuous rough idle can lead to further engine damage and reduced efficiency."
+          },
+          {
+            "q": "Which part should be replaced first for rough idle?",
+            "a": "Diagnosis is key—it's recommended to verify components before replacing anything to avoid unnecessary costs."
+          },
+          {
+            "q": "Which OBD2 codes commonly indicate rough idle issues?",
+            "a": "Codes like P0300, P0171, and P0505 are often related to rough idling conditions."
+          }
+        ],
+        "schemaTitle": "Opel Astra Rough Idle Causes & Troubleshooting Guide",
+        "schemaDescription": "Comprehensive guide on Opel Astra rough idle symptoms, possible causes, practical checks, and common diagnostic tips for car owners."
+      },
+      "de": {
+        "slug": "opel-astra-ruckelnder-leerlauf",
+        "title": "Opel Astra Ruckelnder Leerlauf: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, warum Ihr Opel Astra im Leerlauf unruhig läuft und welche Diagnoseschritte wichtig sind, um Fehlersuchen effizient durchzuführen.",
+        "intro": "Ein ruckelnder Leerlauf beim Opel Astra kann auf verschiedene Ursachen hinweisen und die Fahrsicherheit sowie den Kraftstoffverbrauch beeinträchtigen. In diesem Artikel erläutern wir praktische Diagnoseverfahren und mögliche Ursachen, um fundierte Reparaturentscheidungen zu treffen und unnötigen Teiletausch zu vermeiden.",
+        "severity": "Mittelschwer; kann zu Vibrationen und unruhigem Motorlauf führen.",
+        "driveAdvice": "Langes Leerlauffahren vermeiden und regelmäßige Wartungen durchführen, um eine Verschlechterung zu verhindern.",
+        "likelyCauses": [
+          "Verstopfte oder defekte Einspritzdüsen",
+          "Probleme im Zündsystem (Kerzen, Zündspulen)",
+          "Verschmutzter Luftfilter oder Ansaugsystem",
+          "Defektes Leerlaufregelventil (IAC)",
+          "Niedriger Kraftstoffdruck oder defekte Kraftstoffpumpe"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Fehlercodes auslesen und interpretieren",
+          "Kraftstoffdruck messen und Pumpe prüfen",
+          "Leerlaufregelventil reinigen oder prüfen",
+          "Ansaugsystem auf Undichtigkeiten oder Verstopfungen untersuchen",
+          "Zündkerzen und Zündspulen überprüfen",
+          "Einspritzdüsenfunktion und elektrische Anschlüsse testen"
+        ],
+        "firstChecks": [
+          "Luftfilterzustand und Ansaugkrümmer prüfen",
+          "Sichtprüfung der Zündkerzen",
+          "Kraftstoffstand und Qualität im Tank kontrollieren"
+        ],
+        "commonMistakes": [
+          "Austausch des IAC-Ventils ohne gründliche Diagnose",
+          "Ignorieren von OBD2-Codes und vorschneller Teilewechsel",
+          "Übersehen von Kraftstoffqualität oder Tankinhalt"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige Zylinderfehlzündung erkannt",
+          "P0171 - System zu mager (Bank 1)",
+          "P0505 - Leerlauflregelventil Fehlfunktion"
+        ],
+        "internalLinks": [
+          {
+            "label": "Leerlaufprobleme mit OBD2 diagnostizieren",
+            "href": "/de/leerlaufprobleme-mit-obd2-diagnostizieren"
+          },
+          {
+            "label": "Opel Astra Motorprobleme Übersicht",
+            "href": "/de/opel-astra-motorprobleme-uebersicht"
+          },
+          {
+            "label": "Leerlaufregelventil Reinigung und Test",
+            "href": "/de/leerlaufregelventil-reinigung-test"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ich mit ruckelndem Leerlauf weiterhin fahren?",
+            "a": "Kurzfristig meist ja, jedoch kann eine andauernde Problematik den Motor schädigen."
+          },
+          {
+            "q": "Welches Bauteil sollte bei Leerlaufproblemen zuerst geprüft werden?",
+            "a": "Eine gründliche Diagnose ist wichtig, bevor Teile tauscht werden, um unnötige Kosten zu vermeiden."
+          },
+          {
+            "q": "Welche OBD2-Codes deuten oft auf Leerlaufprobleme hin?",
+            "a": "Codes wie P0300, P0171 und P0505 sind typische Hinweise auf Leerlaufprobleme."
+          }
+        ],
+        "schemaTitle": "Opel Astra Ruckelnder Leerlauf - Ursachen & Diagnose",
+        "schemaDescription": "Informationen zu Symptomen, möglichen Ursachen und Diagnose-Tipps für ruckelnden Leerlauf im Opel Astra."
+      },
+      "es": {
+        "slug": "opel-astra-motor-tiembla-al-ralenti",
+        "title": "Opel Astra Motor Tiembla al Ralentí: Causas y Diagnóstico",
+        "metaDescription": "Descubre por qué tu Opel Astra tiembla al ralentí y aprende pasos prácticos para diagnosticarlo antes de cambiar piezas.",
+        "intro": "Si tu Opel Astra presenta temblores o un ralentí irregular, es importante entender que varias causas pueden provocar este síntoma. En esta guía te mostramos posibles razones y cómo realizar diagnósticos prácticos para evitar reparaciones innecesarias y reducir costos.",
+        "severity": "Moderado; puede generar vibraciones en el motor y aumentar el consumo de combustible.",
+        "driveAdvice": "Evita dejar el motor al ralentí por largos períodos y mantén su mantenimiento en día para prevenir el deterioro.",
+        "likelyCauses": [
+          "Inyectores de combustible obstruidos o defectuosos",
+          "Problemas en el sistema de encendido (bujías o bobinas)",
+          "Filtro de aire sucio o sistemas de admisión bloqueados",
+          "Fallo en la válvula de control de aire en ralentí (IAC)",
+          "Presión de combustible baja o bomba de combustible defectuosa"
+        ],
+        "diagnosticSteps": [
+          "Revisar códigos de error OBD2 relacionados con el motor",
+          "Medir presión de combustible y probar la bomba",
+          "Inspeccionar o limpiar la válvula de control de aire en ralentí",
+          "Verificar fugas o bloqueos en admisión",
+          "Comprobar bujías y bobinas de encendido",
+          "Evaluar inyectores y conexiones eléctricas"
+        ],
+        "firstChecks": [
+          "Estado del filtro de aire y múltiple de admisión",
+          "Inspección visual de las bujías",
+          "Nivel y calidad de combustible en el tanque"
+        ],
+        "commonMistakes": [
+          "Cambiar la válvula IAC sin diagnóstico completo",
+          "Ignorar los códigos OBD2 y cambiar piezas innecesariamente",
+          "No revisar la calidad o cantidad de combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Falla de encendido múltiple o aleatoria",
+          "P0171 - Mezcla pobre en banco 1",
+          "P0505 - Mal funcionamiento del sistema de control de ralentí"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico de problemas en ralentí con OBD2",
+            "href": "/es/diagnostico-problemas-ralenti-obd2"
+          },
+          {
+            "label": "Fallas comunes en motores Opel Astra",
+            "href": "/es/fallas-comunes-opel-astra"
+          },
+          {
+            "label": "Limpieza de la válvula IAC paso a paso",
+            "href": "/es/limpieza-valvula-iac"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puedo manejar con motor que tiembla en ralentí?",
+            "a": "Se puede manejar por periodos cortos, pero el problema puede dañar el motor si continúa."
+          },
+          {
+            "q": "¿Qué pieza debo revisar primero si el motor tiembla?",
+            "a": "Lo ideal es diagnosticar bien antes de cambiar alguna pieza para evitar gastos innecesarios."
+          },
+          {
+            "q": "¿Qué códigos OBD2 indican problemas de ralentí?",
+            "a": "Los códigos P0300, P0171 y P0505 suelen asociarse a problemas de ralentí."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Tiembla al Ralentí: Guía de Causas y Diagnóstico",
+        "schemaDescription": "Guía completa para identificar causas, realizar chequeos prácticos y diagnosticar temblores en ralentí del Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-ralenti-instable",
+        "title": "Opel Astra Ralenti Instable : Causes et Conseils de Diagnostic",
+        "metaDescription": "Découvrez les causes courantes du ralenti instable sur Opel Astra et comment effectuer un diagnostic avant de remplacer des pièces.",
+        "intro": "Un ralenti instable sur votre Opel Astra peut causer des vibrations et augmenter la consommation de carburant. Ce guide vous propose d’examiner les causes possibles et les étapes de diagnostic pratiques afin d’identifier le problème avec précision avant toute intervention coûteuse.",
+        "severity": "Modéré ; peut entraîner des vibrations moteur et une consommation excessive au ralenti.",
+        "driveAdvice": "Évitez les longues périodes de ralenti prolongé et effectuez un entretien régulier pour éviter que le problème ne s'aggrave.",
+        "likelyCauses": [
+          "Injecteurs encrassés ou défectueux",
+          "Problèmes d’allumage (bougies, bobines)",
+          "Filtre à air ou système d’admission encrassé",
+          "Défaillance de la valve de régulation du ralenti (IAC)",
+          "Basse pression de carburant ou pompe défaillante"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts moteur via OBD2",
+          "Mesurer la pression de carburant et tester la pompe",
+          "Vérifier ou nettoyer la valve de régulation du ralenti",
+          "Inspecter le système d’admission pour fuites ou obstructions",
+          "Contrôler les bougies et bobines d’allumage",
+          "Tester le fonctionnement des injecteurs et connexions électriques"
+        ],
+        "firstChecks": [
+          "État du filtre à air et collecteur d'admission",
+          "Inspection visuelle des bougies",
+          "Niveau et qualité du carburant dans le réservoir"
+        ],
+        "commonMistakes": [
+          "Changer la valve IAC sans diagnostic complet",
+          "Ignorer les codes défauts OBD2 et remplacer des pièces inutilement",
+          "Ne pas contrôler la qualité ou le niveau du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples aléatoires",
+          "P0171 - Mélange trop pauvre (banc 1)",
+          "P0505 - Dysfonctionnement du système de ralenti"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostiquer les problèmes de ralenti avec l’OBD2",
+            "href": "/fr/diagnostiquer-problemes-ralenti-obd2"
+          },
+          {
+            "label": "Panorama des pannes moteur Opel Astra",
+            "href": "/fr/pannes-moteur-opel-astra"
+          },
+          {
+            "label": "Guide de nettoyage de la valve de ralenti",
+            "href": "/fr/nettoyage-valve-ralenti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Puis-je rouler avec un ralenti instable ?",
+            "a": "Vous pouvez rouler temporairement, mais une utilisation prolongée peut endommager le moteur."
+          },
+          {
+            "q": "Quelle pièce vérifier en priorité en cas de ralenti instable ?",
+            "a": "Il est essentiel de diagnostiquer précisément avant de changer une pièce pour éviter les coûts inutiles."
+          },
+          {
+            "q": "Quels codes OBD2 indiquent souvent un ralenti instable ?",
+            "a": "Les codes P0300, P0171 et P0505 sont fréquemment liés à ce type de problème."
+          }
+        ],
+        "schemaTitle": "Opel Astra Ralenti Instable : Causes et Diagnostic Complet",
+        "schemaDescription": "Guide détaillé sur les symptômes, causes possibles et conseils de diagnostic pour le ralenti instable sur Opel Astra."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-engine-shaking",
+    "intentKey": "opel-astra_engine_shaking",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "engine_shaking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-titriyor",
+        "title": "Opel Astra Titriyor: Sebepler, Kontroller ve OBD2 Teşhisi",
+        "metaDescription": "Opel Astra titreme sorunları için olası nedenler, ilk kontroller ve OBD2 kodları ile adım adım teşhis rehberi.",
+        "intro": "Opel Astra araçlarda motordaki titreme hissi pek çok sürücünün karşılaştığı bir sorun olabilir. Bu durum, performans düşüklüğünden sürüş güvenliğine kadar farklı alanları etkileyebilir. Titremenin kesin sebebi birçok faktöre bağlıdır, bu nedenle öncelikle temel kontroller yapılmalı ve sorunun nedenine yaklaşılmalıdır.",
+        "severity": "Motor titremesi, genellikle aracın çalışma performansını olumsuz etkileyebilir ve sürüş konforunu azaltabilir. Bazı durumlarda, problemin ilerlemesi motor hasarına yol açabilir.",
+        "driveAdvice": "Titreme hissettiğinizde aracınızı yavaşlatıp, mümkünse motoru durdurun ve en kısa sürede detaylı kontrol yaptırın. Sorunu görmezden gelmek, daha ciddi mekanik arızalara sebep olabilir.",
+        "likelyCauses": [
+          "Bujilerde aşınma veya bozulma",
+          "Yakıt enjeksiyon sisteminde arıza",
+          "Hava filtresinde tıkanma",
+          "Motor mountlarında yıpranma",
+          "Enjeksiyonun kötü ayarlanması veya sensör hataları"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile motor arıza kodlarını okuyun",
+          "Bujileri ve ateşleme sistemini kontrol edin",
+          "Yakıt basıncını ve enjeksiyon performansını test edin",
+          "Hava filtresini kontrol edip gerekirse değiştirin",
+          "Motor motor bağlama elemanlarını gözden geçirin",
+          "Egzoz sisteminde tıkanıklık olup olmadığını inceleyin"
+        ],
+        "firstChecks": [
+          "Bujilerin durumu ve kıvılcım kalitesi",
+          "Hava filtresinin temizliği",
+          "Yakıt kalitesini ve pompa basıncını kontrol edin"
+        ],
+        "commonMistakes": [
+          "Motoru sadece görsel olarak kontrol edip çalıştırmadan değerlendirmek",
+          "OBD2 kodlarını yanlış yorumlamak",
+          "Büyük parça değişikliklerine hemen yönelmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Çok Fakir",
+          "P0420 - Katalitik Konvertör Etkinliği Düşük"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ateşleme Sorunları",
+            "href": "/tr/opel-astra-atesleme-sorunlari"
+          },
+          {
+            "label": "OBD2 Hata Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-hata-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Motor Titreşimi ve Performans Kaybı",
+            "href": "/tr/motor-titresimi-ve-performans-kaybi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra'da motor titremesi neden olur?",
+            "a": "Birden fazla sebep olabilir, bujiler, yakıt sistemi ya da motor mountlarında arızalar yaygındır. Kesin sebep için detaylı kontrol gerekir."
+          },
+          {
+            "q": "Motor titresini basitçe nasıl kontrol edebilirim?",
+            "a": "Bujileri ve hava filtresini kontrol etmekle başlayabilirsiniz. Ardından OBD2 cihazı ile arıza kodlarını okuyun."
+          },
+          {
+            "q": "OBD2 kodları titremeyle nasıl ilişkilidir?",
+            "a": "OBD2 kodları aracın motor yönetim sistemi tarafından kaydedilir ve sıkıntı olan bölgeyi tespit etmede yardımcı olur."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Titremesi: Sebepler, Kontroller ve Teşhis",
+        "schemaDescription": "Opel Astra'da motor titremesi sorunlarını pratik kontroller, olası nedenler ve OBD2 kodlarıyla teşhis yöntemleri."
+      },
+      "en": {
+        "slug": "opel-astra-engine-shaking",
+        "title": "Opel Astra Engine Shaking: Causes, Checks, and OBD2 Diagnosis",
+        "metaDescription": "Discover common causes, practical checks, and OBD2 diagnostic steps for engine shaking in Opel Astra vehicles.",
+        "intro": "Experiencing engine shaking in your Opel Astra can be unsettling and may indicate underlying mechanical or electrical issues. Since engine vibration can stem from various components or conditions, a careful step-by-step evaluation is essential before replacing any parts to avoid unnecessary expenses or further complications.",
+        "severity": "Engine shaking might reduce vehicle performance and driving comfort. Ignoring persistent vibration could lead to more significant engine or drivetrain damage.",
+        "driveAdvice": "If you notice shaking while driving, reduce speed safely and have the vehicle inspected as soon as possible. Avoid pushing the car hard until the issue is diagnosed.",
+        "likelyCauses": [
+          "Worn or faulty spark plugs",
+          "Fuel injection system issues",
+          "Clogged air filter",
+          "Worn engine mounts",
+          "Faulty sensors or engine misfires"
+        ],
+        "diagnosticSteps": [
+          "Connect an OBD2 scanner to read engine codes",
+          "Inspect spark plugs and ignition system",
+          "Check fuel pressure and injector performance",
+          "Examine air filter condition and replace if needed",
+          "Assess engine mounts for wear or damage",
+          "Inspect exhaust system for blockages"
+        ],
+        "firstChecks": [
+          "Spark plug condition and spark quality",
+          "Air filter cleanliness",
+          "Fuel quality and fuel pump pressure"
+        ],
+        "commonMistakes": [
+          "Assessing the issue visually without running the engine",
+          "Misinterpreting OBD2 fault codes",
+          "Replacing costly components prematurely"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ignition Problems",
+            "href": "/en/opel-astra-ignition-problems"
+          },
+          {
+            "label": "How to Read OBD2 Codes?",
+            "href": "/en/how-to-read-obd2-codes"
+          },
+          {
+            "label": "Engine Vibration and Performance Loss",
+            "href": "/en/engine-vibration-and-performance-loss"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes engine shaking in an Opel Astra?",
+            "a": "Engine shaking can be caused by various factors such as spark plug issues, fuel system problems, or worn engine mounts. A thorough check is needed for diagnosis."
+          },
+          {
+            "q": "How can I do a preliminary vibration check?",
+            "a": "Start with inspecting spark plugs and air filter, then use an OBD2 scanner to check for error codes."
+          },
+          {
+            "q": "How do OBD2 codes relate to engine shaking?",
+            "a": "They help identify which engine components or systems might be causing misfires or performance issues."
+          }
+        ],
+        "schemaTitle": "Opel Astra Engine Shaking: Causes, Checks & OBD2 Diagnosis",
+        "schemaDescription": "Learn practical steps and likely causes of engine shaking in Opel Astra, with OBD2 codes and diagnostic guidance."
+      },
+      "de": {
+        "slug": "opel-astra-motor-tittern",
+        "title": "Opel Astra Motor Tittert: Ursachen, Kontrollen und OBD2 Diagnose",
+        "metaDescription": "Häufige Ursachen und sinnvolle Überprüfungen bei Motorvibrationen im Opel Astra sowie relevante OBD2 Fehlercodes.",
+        "intro": "Ein Motor, der im Opel Astra vibriert, kann verschiedene Ursachen haben und sollte nicht ignoriert werden. Um unnötige Reparaturen zu vermeiden, ist es wichtig, systematisch vorzugehen und vor dem Austausch von Teilen gründliche Kontrollen durchzuführen, da die Ursachen vielfältig sein können.",
+        "severity": "Motorvibrationen können die Fahrleistung und den Komfort beeinträchtigen. Längeres Fahren mit solchen Problemen kann zu größeren Schäden führen.",
+        "driveAdvice": "Bei spürbaren Vibrationen sollten Sie vorsichtig fahren und den Wagen bald überprüfen lassen. Vermeiden Sie hohe Drehzahlen oder starke Belastungen, bis das Problem diagnostiziert ist.",
+        "likelyCauses": [
+          "Verschlissene oder defekte Zündkerzen",
+          "Probleme mit dem Einspritzsystem",
+          "Verstopfter Luftfilter",
+          "Defekte Motorlager",
+          "Fehlerhafte Sensoren oder Zündaussetzer"
+        ],
+        "diagnosticSteps": [
+          "OBD2 Diagnosegerät anschließen und Fehlercodes auslesen",
+          "Zündkerzen und Zündsystem prüfen",
+          "Kraftstoffdruck und Einspritzleistung kontrollieren",
+          "Luftfilter begutachten und ggf. wechseln",
+          "Motorlager auf Schäden untersuchen",
+          "Auspuffanlage auf Verstopfungen prüfen"
+        ],
+        "firstChecks": [
+          "Zustand der Zündkerzen und Funkenqualität",
+          "Sauberkeit des Luftfilters",
+          "Kraftstoffqualität und Pumpendruck"
+        ],
+        "commonMistakes": [
+          "Nur visuelle Prüfung ohne laufenden Motor",
+          "Fehlercodes falsch interpretieren",
+          "Teure Teile zu früh austauschen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zündungsfehler in mehreren Zylindern",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem Effizienz unter Schwelle"
+        ],
+        "internalLinks": [
+          {
+            "label": "Zündungsprobleme beim Opel Astra",
+            "href": "/de/opel-astra-zuendungsprobleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes richtig lesen",
+            "href": "/de/obd2-fehlercodes-richtig-lesen"
+          },
+          {
+            "label": "Motorvibration und Leistungsverlust",
+            "href": "/de/motorvibration-und-leistungsverlust"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum titriert der Motor meines Opel Astra?",
+            "a": "Das kann an Zündkerzen, dem Kraftstoffsystem oder Motorlagern liegen. Eine genaue Prüfung ist erforderlich."
+          },
+          {
+            "q": "Wie kann ich erste Kontrollen selbst durchführen?",
+            "a": "Überprüfen Sie Zündkerzen und Luftfilter, dann lesen Sie Fehlercodes mit einem OBD2 Gerät aus."
+          },
+          {
+            "q": "Wie hängen OBD2 Codes mit Motorvibration zusammen?",
+            "a": "Sie zeigen an, ob Fehler bei Zündungen oder Bauteilen vorliegen, die Vibrationen verursachen."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Tittert: Ursachen & OBD2 Diagnose",
+        "schemaDescription": "Erfahren Sie die möglichen Ursachen von Motorvibrationen beim Opel Astra und wie man diese mit OBD2 kontrolliert."
+      },
+      "es": {
+        "slug": "opel-astra-motor-tiembla-engine-shaking",
+        "title": "Opel Astra Motor Tiembla: Causas, Revisiones y Diagnóstico OBD2",
+        "metaDescription": "Descubre las causas más comunes y pasos para diagnosticar el motor que tiembla en Opel Astra con códigos OBD2.",
+        "intro": "El motor que tiembla en tu Opel Astra puede ser señal de diversos problemas mecánicos o eléctricos. Para evitar gastos innecesarios es fundamental realizar revisiones prácticas antes de cambiar piezas, ya que las causas son variadas y requieren un diagnóstico cuidadoso.",
+        "severity": "Las vibraciones del motor pueden afectar el rendimiento y la comodidad al conducir. Ignorar este problema puede derivar en daños mayores.",
+        "driveAdvice": "Si sientes que el motor tiembla, reduce la velocidad y lleva tu vehículo a revisión cuanto antes. Evita exigirle demasiado hasta que se identifique la causa.",
+        "likelyCauses": [
+          "Bujías desgastadas o defectuosas",
+          "Problemas en el sistema de inyección de combustible",
+          "Filtro de aire obstruido",
+          "Soportes de motor dañados",
+          "Sensores defectuosos o fallos de encendido"
+        ],
+        "diagnosticSteps": [
+          "Conectar un escáner OBD2 para leer códigos de error",
+          "Inspeccionar bujías y sistema de encendido",
+          "Verificar la presión del combustible y el rendimiento de los inyectores",
+          "Revisar el estado del filtro de aire y cambiar si es necesario",
+          "Comprobar los soportes del motor por desgaste o daños",
+          "Inspeccionar el sistema de escape para detectar obstrucciones"
+        ],
+        "firstChecks": [
+          "Condición y calidad de las bujías",
+          "Limpieza del filtro de aire",
+          "Calidad del combustible y presión de la bomba"
+        ],
+        "commonMistakes": [
+          "Solo hacer una inspección visual sin arrancar el motor",
+          "Interpretar mal los códigos OBD2",
+          "Cambiar piezas costosas sin diagnóstico previo"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio en varios cilindros",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas de encendido en Opel Astra",
+            "href": "/es/opel-astra-problemas-encendido"
+          },
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          },
+          {
+            "label": "Vibraciones y pérdida de rendimiento del motor",
+            "href": "/es/vibracion-perdida-rendimiento-motor"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué tiembla el motor de mi Opel Astra?",
+            "a": "Puede deberse a bujías, sistema de combustible o soportes del motor, entre otros. Se requiere una revisión completa para saberlo."
+          },
+          {
+            "q": "¿Cómo hacer una revisión inicial del motor que tiembla?",
+            "a": "Empieza por revisar las bujías y el filtro de aire y luego usa un escáner OBD2 para detectar códigos de error."
+          },
+          {
+            "q": "¿Cómo ayudan los códigos OBD2 al diagnóstico del motor que tiembla?",
+            "a": "Indican problemas en componentes o sistemas que pueden causar fallos de encendido o rendimiento irregular."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Tiembla: Causas, Revisiones y Diagnóstico OBD2",
+        "schemaDescription": "Guía práctica para identificar causas y realizar diagnósticos con códigos OBD2 sobre el motor que tiembla en Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-moteur-vibre",
+        "title": "Opel Astra Moteur Qui Vibre : Causes, Contrôles et Diagnostic OBD2",
+        "metaDescription": "Découvrez les causes fréquentes, vérifications pratiques et étapes de diagnostic OBD2 pour un moteur Opel Astra qui vibre.",
+        "intro": "Un moteur qui vibre dans une Opel Astra peut signaler divers problèmes mécaniques ou électriques. Avant de remplacer des pièces coûteuses, il est essentiel de réaliser des contrôles simples afin de cerner l'origine du problème, car les causes peuvent être multiples.",
+        "severity": "Les vibrations du moteur peuvent diminuer les performances du véhicule et altérer le confort de conduite. Négliger ce symptôme peut entraîner des dommages plus importants.",
+        "driveAdvice": "En cas de vibrations ressenties au volant, réduisez la vitesse en toute sécurité et faites contrôler le véhicule rapidement. Évitez les accélérations brusques tant que la source du problème n’est pas identifiée.",
+        "likelyCauses": [
+          "Bougies d’allumage usées ou défectueuses",
+          "Problèmes d’injection carburant",
+          "Filtre à air obstrué",
+          "Supports moteur usés",
+          "Capteurs défaillants ou ratés d’allumage"
+        ],
+        "diagnosticSteps": [
+          "Brancher un lecteur OBD2 pour relever les codes défaut moteur",
+          "Vérifier les bougies et le système d’allumage",
+          "Contrôler la pression carburant et les injecteurs",
+          "Examiner l’état du filtre à air et le remplacer si nécessaire",
+          "Inspecter les supports moteur pour usure ou dégâts",
+          "Vérifier le système d’échappement pour toute obstruction"
+        ],
+        "firstChecks": [
+          "État des bougies et qualité de l’étincelle",
+          "Propreté du filtre à air",
+          "Qualité du carburant et pression de la pompe"
+        ],
+        "commonMistakes": [
+          "Contrôler uniquement visuellement sans faire tourner le moteur",
+          "Mal interpréter les codes défaut OBD2",
+          "Remplacer des pièces coûteuses sans diagnostic préalable"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires/multiples cylindres",
+          "P0171 - Système trop pauvre (Banque 1)",
+          "P0420 - Efficacité catalyseur sous le seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes d’allumage Opel Astra",
+            "href": "/fr/opel-astra-problemes-allumage"
+          },
+          {
+            "label": "Comment lire les codes OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Vibrations moteur et perte de performance",
+            "href": "/fr/vibrations-moteur-perte-performance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes du moteur qui vibre sur Opel Astra ?",
+            "a": "Elles peuvent être liées aux bougies, à l’injection ou aux supports moteur. Un diagnostic approfondi est nécessaire."
+          },
+          {
+            "q": "Comment faire un contrôle initial des vibrations moteur ?",
+            "a": "Commencez par inspecter les bougies et le filtre à air, puis utilisez un lecteur OBD2 pour relever les codes défaut."
+          },
+          {
+            "q": "Comment les codes OBD2 aident-ils au diagnostic des vibrations ?",
+            "a": "Ils indiquent les dysfonctionnements dans les systèmes moteur responsables de ratés ou de performances irrégulières."
+          }
+        ],
+        "schemaTitle": "Opel Astra Moteur Qui Vibre : Causes, Contrôles et Diagnostic OBD2",
+        "schemaDescription": "Guide pour identifier les causes possibles et diagnostiquer les vibrations moteur sur Opel Astra grâce aux codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-check-engine-light",
+    "intentKey": "opel-astra_check_engine_light",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "check_engine_light",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-motor-ariza-lambasi-yaniyor",
+        "title": "Opel Astra Motor Arıza Lambası Yanıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra'da motor arıza lambası yanıyor, olası nedenler ve pratik teşhis adımlarıyla arızayı tespit edin. Parça değişiminden önce öneriler için tıklayın.",
+        "intro": "Opel Astra kullanırken motor arıza lambasının yanması, aracınızın motor sistemi ile ilgili bir sorunun işareti olabilir. Ancak bu ışığın yanmasının birçok farklı nedeni olabilir ve her zaman ciddi bir arıza anlamına gelmez. Öncelikle bazı basit kontroller yaparak sorunun kaynağını tespit etmek faydalıdır. Bu yazıda, motor arıza lambasının yanmasının yaygın nedenlerini, yapılması gereken ilk kontrolleri ve teşhis prosedürlerini detaylandırıyoruz.",
+        "severity": "Motor arıza lambası genellikle motor sistemini ilgilendiren önemli sorunları işaret eder, bu nedenle gecikmeden kontrol edilmelidir.",
+        "driveAdvice": "Aracınızı kullanmaya devam etmek genellikle mümkündür, ancak ani performans düşüşü veya anormal ses hissederseniz aracı durdurup uzman yardımı alın.",
+        "likelyCauses": [
+          "Bozuk oksijen sensörü",
+          "Gevşemiş veya hasar görmüş yakıt kapağı",
+          "Arızalı katalitik konvertör",
+          "Yanlış çalışan ateşleme bujileri",
+          "Hava akış sensörü sorunları"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla arıza kodlarını okuyun",
+          "Yakıt kapağının sıkılığını ve contanın durumunu kontrol edin",
+          "Hava filtresini inceleyin ve gerekirse değiştirin",
+          "Oksijen sensörünün elektriksel bağlantılarını kontrol edin",
+          "Bujileri kontrol ederek aşınma veya arızayı tespit edin",
+          "Katalitik konvertörün durumuna bakmak için egzoz emisyon testleri yapın"
+        ],
+        "firstChecks": [
+          "Yakıt kapağının tam kapalı olduğundan emin olun",
+          "Hava filtresinin temiz ve tıkalı olmadığını kontrol edin",
+          "Motor yağı seviyesini ve kalitesini kontrol edin"
+        ],
+        "commonMistakes": [
+          "Hemen parça değişimi yapmaya çalışmak",
+          "Arıza kodunu okumadan parça değiştirmek",
+          "Araç sinyalini görmezden gelmek ve sorunu uzun süre ertelemek"
+        ],
+        "relatedCodes": [
+          "P0420 - Katalitik Konvertör Verimsizliği",
+          "P0171 - Yakıt Sisteminde Zengin Olmayan Karışım",
+          "P0300 - Rastgele veya Çoklu Silindir Ateşleme Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 arıza kodları rehberi",
+            "href": "/tr/opel-astra-ariza-kodlari"
+          },
+          {
+            "label": "Motor arıza lambası neden yanar?",
+            "href": "/tr/motor-ariza-lambasi-neden-yanar"
+          },
+          {
+            "label": "OBD2 arıza teşhisi nasıl yapılır?",
+            "href": "/tr/obd2-ariza-teshisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası yandıysa hemen servise mi gitmeliyim?",
+            "a": "Her durumda hemen servise gitmek gerekmez. Öncelikle basit kontroller yapılarak sorunun ne olabileceği anlaşılmalıdır."
+          },
+          {
+            "q": "OBD2 cihazı ile arıza kodlarını kendim okuyabilir miyim?",
+            "a": "Evet, piyasada uygun fiyatlı OBD2 tarayıcılar bulunmakta ve kolayca arıza kodlarını okuyabilirsiniz."
+          },
+          {
+            "q": "Arıza lambası yanınca aracımı kullanmaya devam edersem ne olur?",
+            "a": "Araç sürüşü etkilenmeyebilir ancak sorun ciddileşebilir, ileride daha büyük hasarlara neden olabilir. Dikkatli olunmalı."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor Arıza Lambası Neden Yanıyor? Teşhis ve Çözümler",
+        "schemaDescription": "Opel Astra motor arıza lambasının yanmasının olası nedenleri, teşhis adımları ve dikkat edilmesi gereken pratik bilgiler."
+      },
+      "en": {
+        "slug": "opel-astra-check-engine-light",
+        "title": "Opel Astra Check Engine Light On: Causes and Practical Diagnostics",
+        "metaDescription": "Discover common reasons for the Opel Astra check engine light and practical diagnostic steps before replacing parts or seeking repairs.",
+        "intro": "If the check engine light illuminates on your Opel Astra, it signals that the vehicle's engine or emission system has detected an issue. This warning light can be triggered by a variety of causes, ranging from minor to more serious faults. Before rushing to replace any parts, it is wise to perform some basic checks and diagnostic steps to accurately identify the problem. This guide covers likely causes, recommended checks, and how to approach troubleshooting effectively.",
+        "severity": "The check engine light indicates potential engine or emission system issues that should be inspected promptly to avoid escalating damage.",
+        "driveAdvice": "You can usually continue driving cautiously but be alert to unusual noises, performance loss, or other symptoms, and seek professional help if they worsen.",
+        "likelyCauses": [
+          "Faulty oxygen sensor",
+          "Loose or damaged fuel cap",
+          "Malfunctioning catalytic converter",
+          "Worn spark plugs",
+          "Mass air flow sensor issues"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to read trouble codes",
+          "Check fuel cap tightness and seal condition",
+          "Inspect and replace air filter if clogged",
+          "Verify oxygen sensor connections and performance",
+          "Examine spark plugs for wear or damage",
+          "Perform emission tests to assess catalytic converter"
+        ],
+        "firstChecks": [
+          "Ensure the fuel cap is properly tightened",
+          "Check the cleanliness and condition of the air filter",
+          "Verify engine oil level and quality"
+        ],
+        "commonMistakes": [
+          "Replacing parts without reading error codes",
+          "Ignoring the warning light for too long",
+          "Assuming a single cause without proper diagnosis"
+        ],
+        "relatedCodes": [
+          "P0420 - Catalyst System Efficiency Below Threshold",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 Trouble Codes Guide",
+            "href": "/en/opel-astra-trouble-codes"
+          },
+          {
+            "label": "Why Does the Check Engine Light Turn On?",
+            "href": "/en/check-engine-light-causes"
+          },
+          {
+            "label": "How to Perform OBD2 Diagnostics",
+            "href": "/en/obd2-diagnostic-steps"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Should I stop driving immediately when the check engine light comes on?",
+            "a": "Not always. It depends on the symptoms. Perform basic checks and if the car drives normally, schedule a diagnostic soon."
+          },
+          {
+            "q": "Can I read error codes myself with an OBD2 scanner?",
+            "a": "Yes, OBD2 scanners are widely available and can help you identify trouble codes without professional tools."
+          },
+          {
+            "q": "What happens if I ignore the check engine light?",
+            "a": "Ignoring it can result in worsening engine damage or increased emissions, leading to costly repairs."
+          }
+        ],
+        "schemaTitle": "Opel Astra Check Engine Light Causes and How to Diagnose",
+        "schemaDescription": "Learn about the common reasons behind the Opel Astra check engine light and practical steps to diagnose and address the issue."
+      },
+      "de": {
+        "slug": "opel-astra-motor-warnleuchte-an",
+        "title": "Opel Astra Motor-Warnleuchte an: Ursachen und praktische Diagnosehinweise",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für die Motor-Warnleuchte beim Opel Astra und nützliche Diagnose-Schritte vor dem Teilewechsel.",
+        "intro": "Leuchtet die Motor-Warnleuchte bei Ihrem Opel Astra auf, weist dies darauf hin, dass das Motor- oder Abgassystem ein Problem erkannt hat. Die Ursachen sind vielfältig und reichen von kleinen bis zu potenziell ernsten Fehlern. Bevor Sie Teile austauschen, sollten Sie grundlegende Überprüfungen und Diagnoseschritte durchführen, um die genaue Ursache zu ermitteln. In diesem Artikel erklären wir die häufigsten Ursachen, erste Kontrollen und sinnvolle Vorgehensweisen zur Fehlersuche.",
+        "severity": "Die Motor-Warnleuchte signalisiert potenzielle Motor- oder Abgasprobleme, die zeitnah untersucht werden sollten, um größeren Schaden zu vermeiden.",
+        "driveAdvice": "In den meisten Fällen können Sie vorsichtig weiterfahren, achten Sie jedoch auf ungewöhnliche Geräusche oder Leistungsverlust und suchen Sie bei Verschlechterung eine Werkstatt auf.",
+        "likelyCauses": [
+          "Defekter Sauerstoffsensor",
+          "Lose oder beschädigte Tankverschlusskappe",
+          "Fehlerhafter Katalysator",
+          "Abgenutzte Zündkerzen",
+          "Probleme mit dem Luftmassenmesser"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit einem OBD2-Scanner auslesen",
+          "Tankverschlusskappe auf festen Sitz und Dichtigkeit prüfen",
+          "Luftfilter auf Verschmutzung kontrollieren und bei Bedarf wechseln",
+          "Elektrische Verbindungen des Sauerstoffsensors überprüfen",
+          "Zündkerzen auf Verschleiß oder Defekte untersuchen",
+          "Abgastests zur Kontrolle des Katalysators durchführen"
+        ],
+        "firstChecks": [
+          "Sicherstellen, dass die Tankverschlusskappe fest sitzt",
+          "Sichtprüfung des Luftfilters auf Sauberkeit",
+          "Motorölstand und -qualität kontrollieren"
+        ],
+        "commonMistakes": [
+          "Teile tauschen ohne Fehlercodes zu lesen",
+          "Warnleuchte zu lange ignorieren",
+          "Ursachenannahmen ohne Diagnostik treffen"
+        ],
+        "relatedCodes": [
+          "P0420 - Kat-System Wirkungsgrad unter Schwellenwert",
+          "P0171 - System zu mager (Bank 1)",
+          "P0300 - Zufällige/mehrfache Zündaussetzer erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 Fehlercodes Übersicht",
+            "href": "/de/opel-astra-fehlercodes"
+          },
+          {
+            "label": "Warum leuchtet die Motor-Warnleuchte?",
+            "href": "/de/motor-warnleuchte-ursachen"
+          },
+          {
+            "label": "OBD2 Diagnose-Schritte erklärt",
+            "href": "/de/obd2-diagnose-anleitung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Sollte ich sofort anhalten, wenn die Motor-Warnleuchte angeht?",
+            "a": "Nicht immer. Beobachten Sie das Fahrzeugverhalten und führen Sie erste Checks durch. Bei gravierenden Symptomen sollten Sie anhalten."
+          },
+          {
+            "q": "Kann ich die Fehlercodes selbst auslesen?",
+            "a": "Ja, mit einem OBD2-Scanner lassen sich Fehlercodes einfach auslesen und erste Hinweise erhalten."
+          },
+          {
+            "q": "Was passiert, wenn ich die Warnleuchte ignoriere?",
+            "a": "Das Ignorieren kann zu größeren Schäden und höheren Reparaturkosten führen."
+          }
+        ],
+        "schemaTitle": "Opel Astra Motor-Warnleuchte: Ursachen & Diagnose",
+        "schemaDescription": "Informationen zu typischen Ursachen der Motor-Warnleuchte beim Opel Astra und Anleitung zur Fehlerdiagnose."
+      },
+      "es": {
+        "slug": "opel-astra-luz-de-aviso-motor",
+        "title": "Luz de Aviso Motor Encendida en Opel Astra: Causas y Diagnóstico Práctico",
+        "metaDescription": "Conoce las causas comunes de la luz de aviso motor en Opel Astra y cómo realizar diagnósticos prácticos antes de cambiar piezas.",
+        "intro": "Cuando la luz de aviso de motor se enciende en un Opel Astra, indica que el sistema detectó un problema en el motor o las emisiones del vehículo. Esta señal puede deberse a múltiples causas, desde pequeñas hasta más graves. Es importante realizar algunas comprobaciones básicas antes de cambiar piezas para identificar correctamente el problema. Aquí te explicamos causas frecuentes, controles iniciales y cómo diagnosticar eficazmente este problema.",
+        "severity": "La luz de aviso indica posibles problemas en el motor o sistema de emisiones que deben revisarse pronto para evitar daños mayores.",
+        "driveAdvice": "Normalmente puedes seguir conduciendo con precaución, pero si notas ruidos extraños o pérdida de rendimiento, busca ayuda profesional cuanto antes.",
+        "likelyCauses": [
+          "Sensor de oxígeno defectuoso",
+          "Tapón de gasolina flojo o dañado",
+          "Convertidor catalítico averiado",
+          "Bujías desgastadas",
+          "Problemas con el sensor de flujo de aire"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con un escáner OBD2",
+          "Comprobar que el tapón del combustible esté bien cerrado",
+          "Revisar y cambiar el filtro de aire si está obstruido",
+          "Verificar conexiones y función del sensor de oxígeno",
+          "Inspeccionar las bujías en busca de desgaste",
+          "Realizar pruebas de emisiones para evaluar el convertidor catalítico"
+        ],
+        "firstChecks": [
+          "Asegurarse de que el tapón de combustible está bien apretado",
+          "Verificar que el filtro de aire esté limpio",
+          "Comprobar el nivel y la calidad del aceite del motor"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin leer códigos de error",
+          "Ignorar la luz de aviso durante mucho tiempo",
+          "Asumir una única causa sin diagnóstico adecuado"
+        ],
+        "relatedCodes": [
+          "P0420 - Eficiencia del sistema catalizador por debajo de umbral",
+          "P0171 - Mezcla demasiado pobre (Banco 1)",
+          "P0300 - Fallos de encendido aleatorios/múltiples"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos de error OBD2 para Opel Astra",
+            "href": "/es/opel-astra-codigos-error"
+          },
+          {
+            "label": "¿Por qué se enciende la luz de aviso motor?",
+            "href": "/es/luz-aviso-motor-causas"
+          },
+          {
+            "label": "Cómo realizar diagnósticos OBD2",
+            "href": "/es/diagnostico-obd2-pasos"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Debo dejar de conducir inmediatamente si se enciende la luz de aviso?",
+            "a": "No siempre. Realiza algunas comprobaciones básicas y si el coche funciona bien, agenda una revisión pronto."
+          },
+          {
+            "q": "¿Puedo leer los códigos con un escáner OBD2 yo mismo?",
+            "a": "Sí, los escáneres OBD2 son accesibles y te permiten identificar los códigos de error fácilmente."
+          },
+          {
+            "q": "¿Qué ocurre si ignoro la luz de aviso motor?",
+            "a": "Ignorarla puede causar daños mayores y reparaciones costosas en el futuro."
+          }
+        ],
+        "schemaTitle": "Luz de Aviso Motor en Opel Astra: Causas y Diagnóstico",
+        "schemaDescription": "Conoce las causas típicas y los pasos para diagnosticar la luz de aviso motor en Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-temoin-moteur-allume",
+        "title": "Témoin Moteur Allumé sur Opel Astra : Causes et Diagnostics Pratiques",
+        "metaDescription": "Découvrez les causes courantes du témoin moteur allumé sur Opel Astra et les étapes de diagnostic avant le remplacement des pièces.",
+        "intro": "Lorsque le témoin moteur s’allume sur votre Opel Astra, cela signifie qu’une anomalie a été détectée dans le système moteur ou des émissions. Cette alerte peut être déclenchée par diverses causes, des plus bénignes aux plus graves. Avant de remplacer des pièces, il est recommandé d’effectuer quelques vérifications de base afin d’identifier précisément le problème. Ce guide présente les causes fréquentes, les contrôles initiaux et la démarche pour un diagnostic efficace.",
+        "severity": "Le témoin moteur signale des problèmes potentiels affectant le moteur ou le système d’émission, nécessitant une inspection rapide pour éviter des dommages importants.",
+        "driveAdvice": "Il est généralement possible de continuer à rouler prudemment, mais soyez attentif à tout bruit anormal ou perte de performance, et consultez un professionnel en cas d’aggravation.",
+        "likelyCauses": [
+          "Sonde lambda défectueuse",
+          "Bouchon de réservoir mal fermé ou endommagé",
+          "Catalyseur défaillant",
+          "Bougies d’allumage usées",
+          "Problème avec le débitmètre d’air"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un outil OBD2",
+          "Vérifier que le bouchon de réservoir est bien fermé et en bon état",
+          "Contrôler et changer le filtre à air s’il est encrassé",
+          "Examiner les connexions et le fonctionnement de la sonde lambda",
+          "Inspecter les bougies d’allumage pour usure ou défaut",
+          "Effectuer des tests d’émission pour évaluer le catalyseur"
+        ],
+        "firstChecks": [
+          "S’assurer du bon serrage du bouchon de réservoir",
+          "Contrôler la propreté du filtre à air",
+          "Vérifier le niveau et la qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans lire les codes défauts",
+          "Ignorer le témoin moteur trop longtemps",
+          "Supposer une cause unique sans diagnostic approfondi"
+        ],
+        "relatedCodes": [
+          "P0420 - Efficacité du système catalytique sous seuil",
+          "P0171 - Mélange trop pauvre (Banc 1)",
+          "P0300 - Ratés d’allumage multiples ou aléatoires"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 pour Opel Astra",
+            "href": "/fr/opel-astra-codes-defaut"
+          },
+          {
+            "label": "Pourquoi le témoin moteur s’allume-t-il ?",
+            "href": "/fr/temoin-moteur-causes"
+          },
+          {
+            "label": "Comment réaliser un diagnostic OBD2",
+            "href": "/fr/diagnostic-obd2-etapes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Dois-je arrêter de conduire dès que le témoin moteur s’allume ?",
+            "a": "Pas toujours. Surveillez le comportement du véhicule et effectuez des vérifications. En cas de problème sérieux, arrêtez-vous."
+          },
+          {
+            "q": "Puis-je lire moi-même les codes défaut avec un outil OBD2 ?",
+            "a": "Oui, les outils OBD2 sont accessibles et permettent d’identifier facilement les codes défaut."
+          },
+          {
+            "q": "Que se passe-t-il si j’ignore le témoin moteur ?",
+            "a": "Ignorer ce témoin peut entraîner des dommages plus graves et des réparations coûteuses."
+          }
+        ],
+        "schemaTitle": "Témoin moteur Opel Astra : causes et diagnostic",
+        "schemaDescription": "Informations sur les causes fréquentes du témoin moteur sur Opel Astra et les étapes pour diagnostiquer le problème."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-hard-start",
+    "intentKey": "opel-astra_hard_start",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "hard_start",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-gec-calisma-nedenleri",
+        "title": "Opel Astra Geç Çalışıyor - Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Opel Astra'da geç çalışma sorunu mu yaşıyorsunuz? Olası nedenler, hızlı kontroller ve teşhis adımlarıyla aracınızı güvenle çalıştırın.",
+        "intro": "Opel Astra araçlarda motorun geç çalışması çeşitli nedenlere bağlı olabilir. Bu durum yalnızca sürüş konforunu etkilemekle kalmaz, aynı zamanda aracınızın performansını ve yakıt verimliliğini de düşürebilir. Bu yazıda, geç çalışmanın muhtemel sebeplerini, yapılabilecek temel kontrolleri ve doğru teşhis yöntemlerini ele alacağız. Parça değiştirmeden önce otomobilinizin durumunu doğru anlamak için bu bilgileri kullanabilirsiniz.",
+        "severity": "Önemli bir sorun olabilir, dikkatle değerlendirilmelidir.",
+        "driveAdvice": "Motor geç çalışıyorsa uzun süre marş yapmaktan kaçının ve aracı mümkünse servise götürün.",
+        "likelyCauses": [
+          "Zayıf akü gücü veya eski akü",
+          "Bujiler ve ateşleme sistemindeki arızalar",
+          "Yakıt pompası veya enjektörlerde tıkanıklık",
+          "Hava filtresinin kirli veya tıkalı olması",
+          "Soğuk hava sensörü arızası veya yanlış ölçüm"
+        ],
+        "diagnosticSteps": [
+          "Akü voltajını ölçün ve bağlantılarını kontrol edin.",
+          "Bujilerin ve ateşleme kablolarının durumunu inceleyin.",
+          "Yakıt basıncını test ederek pompa ve enjektörleri kontrol edin.",
+          "Hava filtresini çıkarıp temiz veya yeni filtre ile değiştirin.",
+          "Soğuk hava sensörü verilerini OBD2 ile okuyun.",
+          "Motorun genel durumunu ve ECU bağlantılarını gözden geçirin."
+        ],
+        "firstChecks": [
+          "Akü kutup başlarını temizleyip sıkılaştırın.",
+          "Bujileri çıkarıp aşınma veya kirlenme açısından bakın.",
+          "Hava filtresinin tıkanıklığını kontrol edin."
+        ],
+        "commonMistakes": [
+          "Parça değiştirmeden önce temel kontrolleri atlamak",
+          "Akü yeterince güçlü değilken marş motorunu aşırı zorlamak",
+          "Hatalı OBD2 kod yorumlaması yapmak"
+        ],
+        "relatedCodes": [
+          "P0300 - Silindir Rastgele Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Zenginlik Oranı Hatası (Bank 1)",
+          "P0128 - Soğutma Sıvısı Termostatı Etkinleşmedi"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ateşleme Problemleri",
+            "href": "/tr/opel-astra-atesleme-problemleri"
+          },
+          {
+            "label": "OBD2 Kodları ve Anlamları",
+            "href": "/tr/obd2-kodlari-ve-anlamlari"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları Teşhisi",
+            "href": "/tr/yakit-sistemi-sorunlari-teshisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra geç çalışmasının en sık nedeni nedir?",
+            "a": "Genellikle zayıf akü gücü veya ateşleme sistemi sorunları en yaygın nedenlerdendir, ancak tam teşhis için kapsamlı kontrol gereklidir."
+          },
+          {
+            "q": "Bujiler geç çalışma sorununa nasıl etki eder?",
+            "a": "Aşınmış veya kirli bujiler, motorun düzgün ateşlenmesini engeller ve zor çalışma sorunlarına yol açabilir."
+          },
+          {
+            "q": "OBD2 kodları geç çalışma sorunu için nasıl kullanılır?",
+            "a": "OBD2 cihazı ile alınan kodlar, motor kontrol ünitesinden gelen arızalar hakkında bilgi vererek sorunun kaynağının belirlenmesine yardımcı olur."
+          }
+        ],
+        "schemaTitle": "Opel Astra Geç Çalışıyor - Nedenleri ve Çözümü",
+        "schemaDescription": "Opel Astra araçlarda motorun geç çalışmasının muhtemel nedenleri, temel kontroller ve teşhis adımları bu kapsamlı rehberde."
+      },
+      "en": {
+        "slug": "opel-astra-hard-start-causes",
+        "title": "Opel Astra Hard Start Issues – Causes and Diagnostic Tips",
+        "metaDescription": "Experiencing hard start with your Opel Astra? Learn likely reasons, initial checks, and step-by-step diagnostics to fix the issue safely.",
+        "intro": "Hard starting in an Opel Astra can stem from multiple factors impacting engine performance and driver experience. This guide explores common causes for difficult engine startup, practical initial checks, and diagnostic methods to identify the root problem without unnecessary part replacement. Understanding these elements can help you maintain your vehicle effectively and avoid costly repairs.",
+        "severity": "Can indicate an important issue; timely diagnosis is recommended.",
+        "driveAdvice": "Avoid prolonged cranking if your engine is hard to start and consult a professional if the issue persists.",
+        "likelyCauses": [
+          "Weak or aged battery reducing cranking power",
+          "Faulty spark plugs or ignition system components",
+          "Fuel pump or injectors malfunctioning or clogged",
+          "Dirty or blocked air filter restricting airflow",
+          "Malfunctioning coolant temperature sensor giving wrong readings"
+        ],
+        "diagnosticSteps": [
+          "Measure battery voltage and check terminals for corrosion or looseness.",
+          "Inspect spark plugs and ignition cables for wear or damage.",
+          "Test fuel pressure to assess pump and injector function.",
+          "Remove and inspect the air filter, replace if dirty or clogged.",
+          "Read coolant temperature sensor data via OBD2 scanner.",
+          "Examine ECU connections and overall engine condition."
+        ],
+        "firstChecks": [
+          "Clean and tighten battery terminals.",
+          "Check spark plugs for fouling or wear.",
+          "Inspect air filter for restrictions."
+        ],
+        "commonMistakes": [
+          "Replacing parts without performing basic diagnostics first.",
+          "Over-cranking a weak battery leading to further damage.",
+          "Misinterpreting OBD2 trouble codes without context."
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0128 - Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Ignition Troubleshooting",
+            "href": "/en/opel-astra-ignition-troubleshooting"
+          },
+          {
+            "label": "Understanding OBD2 Codes",
+            "href": "/en/understanding-obd2-codes"
+          },
+          {
+            "label": "Fuel System Diagnostics",
+            "href": "/en/fuel-system-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is the most common cause of hard starting in an Opel Astra?",
+            "a": "Weak battery power and ignition system faults are frequent culprits, but a thorough check is needed for precise diagnosis."
+          },
+          {
+            "q": "How do spark plugs affect hard start problems?",
+            "a": "Worn or fouled spark plugs can prevent proper combustion, causing the engine to struggle during starting."
+          },
+          {
+            "q": "Can OBD2 codes pinpoint the cause of hard starting?",
+            "a": "Yes, OBD2 codes provide valuable clues from the engine control unit that aid in identifying the underlying issues."
+          }
+        ],
+        "schemaTitle": "Opel Astra Hard Start Causes and Diagnostics",
+        "schemaDescription": "Detailed guide on common causes and diagnostic procedures for hard starting issues in Opel Astra vehicles."
+      },
+      "de": {
+        "slug": "opel-astra-schwerer-start-ursachen",
+        "title": "Opel Astra startet schwer – Ursachen und Diagnosetipps",
+        "metaDescription": "Probleme beim Starten Ihres Opel Astra? Erfahren Sie die wahrscheinlichen Ursachen, erste Prüfungen und Diagnoseschritte für sichere Fehlerbehebung.",
+        "intro": "Ein schwerer Start bei einem Opel Astra kann verschiedene Ursachen haben und die Motorleistung sowie das Fahrerlebnis erheblich beeinträchtigen. In diesem Beitrag beleuchten wir häufige Ursachen für Startschwierigkeiten, erläutern praktische Erstschecks und zeigen Diagnosemöglichkeiten auf. So vermeiden Sie unnötigen Teiletausch und sorgen für eine zuverlässige Fehlererkennung.",
+        "severity": "Hinweis auf mögliche schwerwiegende Probleme, sollte zeitnah überprüft werden.",
+        "driveAdvice": "Vermeiden Sie langes Anlassen und lassen Sie das Fahrzeug bei Problem weiterhin fachmännisch prüfen.",
+        "likelyCauses": [
+          "Schwache oder alte Batterie mit geringer Startleistung",
+          "Defekte Zündkerzen oder Zündsystemkomponenten",
+          "Probleme mit Kraftstoffpumpe oder Einspritzdüsen",
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Fehlerhafte Kühlmitteltemperatursensoren mit falschen Messwerten"
+        ],
+        "diagnosticSteps": [
+          "Batteriespannung messen und Pole auf Korrosion prüfen.",
+          "Zündkerzen und Zündkabel auf Verschleiß kontrollieren.",
+          "Kraftstoffdruck testen, um Pumpe und Einspritzdüsen zu überprüfen.",
+          "Luftfilter entnehmen und auf Verschmutzung prüfen, ggf. ersetzen.",
+          "Daten des Kühlmitteltemperatursensors mittels OBD2 auslesen.",
+          "ECU-Anschlüsse und den allgemeinen Motorzustand kontrollieren."
+        ],
+        "firstChecks": [
+          "Batteriepole reinigen und festziehen.",
+          "Zündkerzen auf Ablagerungen und Zustand prüfen.",
+          "Luftfilter auf Verstopfungen kontrollieren."
+        ],
+        "commonMistakes": [
+          "Austausch von Teilen ohne vorherige Basisdiagnose.",
+          "Übermäßiges Anlassen mit schwacher Batterie führt zu Schäden.",
+          "Fehlinterpretation von OBD2-Fehlercodes ohne Kontext."
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige bzw. mehrere Zündaussetzer erkannt",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0128 - Kühlmittelthermostat nicht erreicht"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra Zündungsprobleme",
+            "href": "/de/opel-astra-zuendungsprobleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/obd2-fehlercodes-verstehen"
+          },
+          {
+            "label": "Kraftstoffsystem Diagnose",
+            "href": "/de/kraftstoffsystem-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was ist die häufigste Ursache für schweres Starten beim Opel Astra?",
+            "a": "Oft sind eine schwache Batterie oder Probleme im Zündsystem die Ursache, eine genaue Diagnose ist jedoch notwendig."
+          },
+          {
+            "q": "Welche Rolle spielen Zündkerzen bei Startproblemen?",
+            "a": "Abgenutzte oder verschmutzte Zündkerzen können die Verbrennung stören und den Motorstart erschweren."
+          },
+          {
+            "q": "Wie helfen OBD2 Codes bei Startproblemen?",
+            "a": "OBD2 Codes liefern Hinweise aus dem Motorsteuergerät, um die Fehlerquelle einzugrenzen."
+          }
+        ],
+        "schemaTitle": "Opel Astra Startprobleme – Ursachen und Diagnoseschritte",
+        "schemaDescription": "Ausführliche Anleitung zu Ursachen und Diagnosen von Startproblemen beim Opel Astra."
+      },
+      "es": {
+        "slug": "opel-astra-motor-dificil-arranque",
+        "title": "Opel Astra Dificultad para Arrancar – Causas y Diagnóstico",
+        "metaDescription": "¿Tu Opel Astra tiene dificultad para arrancar? Descubre causas comunes, chequeos iniciales y pasos diagnósticos para resolverlo eficazmente.",
+        "intro": "La dificultad para arrancar un Opel Astra puede deberse a varios factores que afectan el rendimiento del motor y la experiencia de conducción. En esta guía, analizamos las causas más probables para un arranque complicado, revisiones prácticas iniciales y métodos de diagnóstico para identificar el problema sin sustituir piezas innecesariamente. Conocer estos aspectos te ayudará a mantener tu vehículo en buen estado y evitar gastos innecesarios.",
+        "severity": "Puede indicar un problema serio; se recomienda diagnóstico oportuno.",
+        "driveAdvice": "Evita hacer arranques prolongados si el motor cuesta arrancar y consulta a un profesional si el problema persiste.",
+        "likelyCauses": [
+          "Batería débil o envejecida que reduce la potencia de arranque",
+          "Bujías o componentes de encendido defectuosos",
+          "Fallo o bloqueo en la bomba o los inyectores de combustible",
+          "Filtro de aire sucio o obstruido que limita el flujo de aire",
+          "Sensor de temperatura del refrigerante defectuoso que da lecturas erróneas"
+        ],
+        "diagnosticSteps": [
+          "Medir el voltaje de la batería y revisar terminales por corrosión o aflojamiento.",
+          "Inspeccionar bujías y cables de encendido por desgaste o daño.",
+          "Probar la presión de combustible para evaluar bomba e inyectores.",
+          "Extraer y revisar el filtro de aire, reemplazar si está sucio.",
+          "Leer datos del sensor de temperatura del refrigerante con escáner OBD2.",
+          "Examinar conexiones de la ECU y condición general del motor."
+        ],
+        "firstChecks": [
+          "Limpiar y ajustar los terminales de la batería.",
+          "Revisar bujías por suciedad o desgaste.",
+          "Inspeccionar el filtro de aire por obstrucciones."
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin realizar diagnósticos básicos previos.",
+          "Forzar arranques prolongados con batería débil, causando daños.",
+          "Interpretar erróneamente los códigos OBD2 sin contexto adecuado."
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio o múltiple en cilindros",
+          "P0171 - Mezcla pobre en banco 1",
+          "P0128 - Termostato del refrigerante no alcanza temperatura"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas de encendido en Opel Astra",
+            "href": "/es/opel-astra-problemas-encendido"
+          },
+          {
+            "label": "Comprender códigos OBD2",
+            "href": "/es/comprender-codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la causa más común de dificultad para arrancar en un Opel Astra?",
+            "a": "Generalmente, una batería débil o problemas en el sistema de encendido son las causas más frecuentes, pero se requiere una revisión completa."
+          },
+          {
+            "q": "¿Cómo afectan las bujías a los problemas de arranque?",
+            "a": "Las bujías desgastadas o sucias dificultan una combustión correcta, lo que puede hacer que el motor tenga problemas para arrancar."
+          },
+          {
+            "q": "¿Pueden los códigos OBD2 identificar la causa del arranque difícil?",
+            "a": "Sí, los códigos OBD2 ofrecen pistas importantes desde la unidad de control del motor que ayudan a localizar el problema."
+          }
+        ],
+        "schemaTitle": "Dificultad de arranque en Opel Astra: Causas y diagnóstico",
+        "schemaDescription": "Guía detallada sobre las causas comunes y procedimientos diagnósticos para problemas de arranque en Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-demarrage-difficile-causes",
+        "title": "Opel Astra Démarrage Difficile – Causes et Conseils de Diagnostic",
+        "metaDescription": "Votre Opel Astra démarre difficilement ? Découvrez les causes possibles, premiers contrôles et étapes de diagnostic pour résoudre ce problème.",
+        "intro": "Un démarrage difficile sur une Opel Astra peut être causé par plusieurs facteurs qui impactent les performances du moteur et le confort de conduite. Ce guide détaille les causes fréquentes, les contrôles pratiques à réaliser en premier lieu et la procédure diagnostique à suivre. Vous pourrez ainsi identifier précisément le problème sans remplacer de pièces inutilement et entretenir efficacement votre véhicule.",
+        "severity": "Peut indiquer un problème important ; un diagnostic rapide est conseillé.",
+        "driveAdvice": "Évitez de forcer le démarrage trop longtemps et consultez un professionnel si le problème persiste.",
+        "likelyCauses": [
+          "Batterie faible ou vieillissante réduisant la puissance au démarrage",
+          "Bougies d’allumage ou composants du système d’allumage défectueux",
+          "Pompe à carburant ou injecteurs obstrués ou en panne",
+          "Filtre à air sale ou bouché limitant le débit d’air",
+          "Capteur de température du liquide de refroidissement défaillant donnant de mauvaises valeurs"
+        ],
+        "diagnosticSteps": [
+          "Mesurer la tension de la batterie et vérifier les bornes pour corrosion ou desserrage.",
+          "Contrôler l’état des bougies et des câbles d’allumage.",
+          "Tester la pression du carburant pour vérifier pompe et injecteurs.",
+          "Retirer et inspecter le filtre à air, le remplacer si nécessaire.",
+          "Lire les données du capteur de température via un scanner OBD2.",
+          "Inspecter les connexions de l’ECU et l’état général du moteur."
+        ],
+        "firstChecks": [
+          "Nettoyer et resserrer les bornes de batterie.",
+          "Vérifier les bougies pour dépôts ou usure.",
+          "Contrôler le filtre à air pour détecter toute obstruction."
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans avoir fait les contrôles de base.",
+          "Forcer les démarrages avec une batterie faible, ce qui cause d’autres dégâts.",
+          "Mal interpréter les codes d’erreur OBD2 hors contexte."
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires/multiples détectés",
+          "P0171 - Mélange trop pauvre (Banc 1)",
+          "P0128 - Thermostat de liquide de refroidissement en dessous de la température réglementée"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes d’allumage Opel Astra",
+            "href": "/fr/opel-astra-problemes-allumage"
+          },
+          {
+            "label": "Comprendre les codes OBD2",
+            "href": "/fr/comprendre-codes-obd2"
+          },
+          {
+            "label": "Diagnostic du système carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la cause la plus fréquente d’un démarrage difficile sur Opel Astra ?",
+            "a": "La batterie faible ou un problème dans le système d’allumage sont souvent en cause, mais un diagnostic complet est nécessaire."
+          },
+          {
+            "q": "Quel rôle jouent les bougies d’allumage dans les problèmes de démarrage ?",
+            "a": "Les bougies usées ou encrassées empêchent une combustion correcte, rendant le démarrage plus difficile."
+          },
+          {
+            "q": "Les codes OBD2 permettent-ils d’identifier la cause du démarrage difficile ?",
+            "a": "Oui, les codes OBD2 fournissent des indications précieuses provenant du calculateur moteur pour localiser la source du problème."
+          }
+        ],
+        "schemaTitle": "Opel Astra démarrage difficile - causes et diagnostic",
+        "schemaDescription": "Guide complet des causes courantes et des étapes de diagnostic pour un démarrage difficile sur Opel Astra."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-black-smoke",
+    "intentKey": "opel-astra_black_smoke",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "black_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "opel-astra-black-smoke",
+        "title": "Opel Astra Black Smoke Diagnosis: Causes and Solutions",
+        "metaDescription": "Learn to diagnose the cause of black smoke from your Opel Astra’s exhaust with practical checks, common causes, and OBD2 troubleshooting steps.",
+        "intro": "If your Opel Astra is emitting black smoke from the exhaust, it usually indicates an issue with the combustion process. Black smoke can result from too much fuel being burned or insufficient air supply. Diagnosing this symptom carefully with systematic checks can help identify the underlying cause before considering costly parts replacement.",
+        "severity": "Moderate; prolonged black smoke may damage the engine and emissions system.",
+        "driveAdvice": "Avoid heavy acceleration and keep engine RPMs low until the issue is diagnosed to prevent further damage.",
+        "likelyCauses": [
+          "Clogged air filter reducing air intake",
+          "Faulty fuel injectors delivering excess fuel",
+          "Malfunctioning turbocharger or intercooler leaks",
+          "Bad EGR (Exhaust Gas Recirculation) valve operation",
+          "Incorrect fuel pressure or fuel pump issues"
+        ],
+        "diagnosticSteps": [
+          "Check and replace the air filter if dirty",
+          "Inspect fuel injectors for leaks or malfunction",
+          "Test the turbocharger for proper boost and leaks",
+          "Scan for OBD2 codes related to air/fuel mixture",
+          "Check EGR valve operation and carbon buildup",
+          "Examine fuel pressure with a gauge and compare specs"
+        ],
+        "firstChecks": [
+          "Visual inspection of air intake for blockages",
+          "Check fuel system lines for leaks",
+          "Review recent changes in fuel quality or type"
+        ],
+        "commonMistakes": [
+          "Replacing parts without diagnosing (injectors, turbo)",
+          "Ignoring air filter condition",
+          "Overlooking vacuum leaks affecting air sensors"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0299 - Turbocharger/Supercharger Underboost",
+          "P0401 - EGR Flow Insufficient Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Codes Guide",
+            "href": "/en/obd2-codes-guide"
+          },
+          {
+            "label": "Fuel Injector Troubleshooting",
+            "href": "/en/fuel-injector-troubleshooting"
+          },
+          {
+            "label": "Turbocharger Diagnostics",
+            "href": "/en/turbocharger-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can black smoke damage my Opel Astra engine?",
+            "a": "Yes, persistent black smoke can cause carbon buildup and damage the engine components and emissions system over time."
+          },
+          {
+            "q": "Is black smoke always caused by fuel system problems?",
+            "a": "Not always; it can also be caused by air intake restrictions or exhaust recirculation issues."
+          },
+          {
+            "q": "Can I drive the car safely with black smoke present?",
+            "a": "It’s best to drive gently and get it diagnosed promptly to avoid further damage."
+          }
+        ],
+        "schemaTitle": "Opel Astra Black Smoke: Causes, Diagnostics & Solutions",
+        "schemaDescription": "Expert guide to diagnosing black smoke from an Opel Astra including likely causes, diagnostic steps, common mistakes, and OBD2 codes."
+      },
+      "tr": {
+        "slug": "opel-astra-siyah-duman-atma",
+        "title": "Opel Astra Siyah Duman Atıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra’nız egzozdan siyah duman çıkarıyorsa olası nedenler, pratik kontrol yöntemleri ve OBD2 kodları ile teşhis rehberi.",
+        "intro": "Opel Astra aracınız egzozdan siyah duman atıyorsa, bu genellikle yanma sürecinde yakıt ve hava dengesizliğine işaret eder. Bu sorunu anlamak için öncelikle basit kontroller yapmalı, gereksiz parça değişiminden kaçınmalısınız. Bu yazıda siyah dumanın olası nedenlerini ve nasıl teşhis edeceğinizi anlatıyoruz.",
+        "severity": "Orta şiddette; uzun süre devam eden siyah duman motor ve egzoz sistemine zarar verebilir.",
+        "driveAdvice": "Sorun çözülene kadar sert hızlanmalardan kaçının ve motor devrini düşük tutun.",
+        "likelyCauses": [
+          "Kirli veya tıkalı hava filtresi",
+          "Arızalı yakıt enjektörleri",
+          "Turbo veya intercooler kaçakları",
+          "Eksik ya da bozulan EGR valfi",
+          "Yakıt basıncı düşüklüğü veya yakıt pompası sorunları"
+        ],
+        "diagnosticSteps": [
+          "Hava filtresini kontrol edip gerekirse değiştirin",
+          "Yakıt enjektörlerini sızıntı ve doğru çalışması açısından inceleyin",
+          "Turbo basıncını ve kaçakları test edin",
+          "OBD2 cihazı ile hava-yakıt karışım kodlarını tarayın",
+          "EGR valfi işleyişini ve karbon oluşumunu kontrol edin",
+          "Yakıt basıncını ölçerek üretici değerleriyle karşılaştırın"
+        ],
+        "firstChecks": [
+          "Hava girişinde tıkanıklık kontrolü",
+          "Yakıt hattında sızıntı olup olmadığını gözden geçirme",
+          "Son dolan yakıtın kalitesi veya türü hakkında bilgi edinme"
+        ],
+        "commonMistakes": [
+          "Teşhis yapmadan parça değiştirme (enjektör, turbo gibi)",
+          "Hava filtresini göz ardı etmek",
+          "Vakum kaçaklarını ve sensör sinyallerini kontrol etmemek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Sistemi Çok Fakir",
+          "P0299 - Turbo Basıncı Düşük",
+          "P0401 - EGR Akışı Yetersiz"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Kodları Rehberi",
+            "href": "/tr/obd2-kodlari-rehberi"
+          },
+          {
+            "label": "Yakıt Enjektörleri Kontrolü",
+            "href": "/tr/yakit-enjektorleri-kontrolu"
+          },
+          {
+            "label": "Turbo Problemleri Teşhisi",
+            "href": "/tr/turbo-problemleri-teshisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Siyah duman motoruma zarar verir mi?",
+            "a": "Evet, sürekli siyah duman motor parçalarında ve egzoz sisteminde karbon birikimine neden olabilir."
+          },
+          {
+            "q": "Siyah duman sadece yakıt sisteminden mi kaynaklanır?",
+            "a": "Hayır, hava filtresi tıkanıklığı veya EGR arızası gibi durumlar da siyah duman sebebi olabilir."
+          },
+          {
+            "q": "Siyah duman varken aracı kullanmak güvenli mi?",
+            "a": "Aracı nazikçe kullanmanız ve en kısa sürede sorunu tespit ettirmeniz en iyisidir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Siyah Duman: Nedenler, Teşhis ve Çözümler",
+        "schemaDescription": "Opel Astra siyah duman sorunu için olası nedenler, teşhis adımları, yaygın hatalar ve OBD2 kodları rehberi."
+      },
+      "de": {
+        "slug": "opel-astra-schwarzer-rauch",
+        "title": "Opel Astra schwarzer Rauch: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, warum Ihr Opel Astra schwarzen Rauch ausstößt und wie Sie das Problem mit praktischen Prüfungen und OBD2-Diagnose finden.",
+        "intro": "Wenn Ihr Opel Astra schwarzen Rauch aus dem Auspuff ausstößt, deutet dies meist auf Probleme im Verbrennungsprozess hin. Überschüssiger Kraftstoff oder unzureichende Luftzufuhr können die Ursache sein. Mit gezielten Tests und systematischer Fehlerdiagnose können Sie die Ursache eingrenzen, bevor Teile ausgetauscht werden.",
+        "severity": "Mittel; Langfristig kann schwarzer Rauch Motorschäden und Probleme mit dem Abgassystem verursachen.",
+        "driveAdvice": "Vermeiden Sie starkes Beschleunigen und halten Sie die Drehzahl niedrig, bis das Problem behoben ist.",
+        "likelyCauses": [
+          "Verstopfter Luftfilter, der die Luftzufuhr reduziert",
+          "Defekte Einspritzventile liefern zu viel Kraftstoff",
+          "Fehler beim Turbolader oder Undichtigkeiten im Ladeluftsystem",
+          "Probleme mit dem AGR-Ventil",
+          "Kraftstoffdruck zu niedrig oder beschädigte Kraftstoffpumpe"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter auf Verschmutzung prüfen und ggf. wechseln",
+          "Einspritzdüsen auf Lecks und Funktion testen",
+          "Turbolader auf ordnungsgemäße Funktion sowie Undichtigkeiten prüfen",
+          "Mit OBD2-Scanner Fehlercodes des Luft-/Kraftstoffsystems auslesen",
+          "AGR-Ventil-Funktion und Rußablagerungen kontrollieren",
+          "Kraftstoffdruck messen und mit Sollwerten vergleichen"
+        ],
+        "firstChecks": [
+          "Sichtprüfung des Ansaugsystems auf Blockaden",
+          "Kraftstoffleitungen auf Lecks überprüfen",
+          "Kürzliche Kraftstoffwechsel oder Qualität prüfen"
+        ],
+        "commonMistakes": [
+          "Teilewechsel ohne Diagnose (z.B. Einspritzdüsen oder Turbolader)",
+          "Luftfilterzustand ignorieren",
+          "Unterdrucklecks und Sensorfehler übersehen"
+        ],
+        "relatedCodes": [
+          "P0171 - System Zu Mager",
+          "P0299 - Turbolader Unterboost",
+          "P0401 - AGR-Rückführung unzureichend"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Code Übersicht",
+            "href": "/de/obd2-code-uebersicht"
+          },
+          {
+            "label": "Einspritzdüsen Diagnose",
+            "href": "/de/einspritzduesen-diagnose"
+          },
+          {
+            "label": "Turbolader Fehleranalyse",
+            "href": "/de/turbolader-fehleranalyse"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann schwarzer Rauch dem Motor schaden?",
+            "a": "Ja, dauerhafter schwarzer Rauch kann zu Rußablagerungen und Motorschäden führen."
+          },
+          {
+            "q": "Ist schwarzer Rauch immer ein Problem mit dem Kraftstoffsystem?",
+            "a": "Nicht immer. Auch Luftmangel oder AGR-Probleme können Ursache sein."
+          },
+          {
+            "q": "Kann ich mit schwarzem Rauch sicher fahren?",
+            "a": "Fahren Sie vorsichtig und lassen Sie das Problem schnellstmöglich prüfen."
+          }
+        ],
+        "schemaTitle": "Opel Astra schwarzer Rauch: Ursachen, Diagnose & Lösungen",
+        "schemaDescription": "Fachkundige Anleitung zur Diagnose von schwarzem Rauch beim Opel Astra: Ursachen, Prüfungen, Fehlercodes und Tipps."
+      },
+      "es": {
+        "slug": "opel-astra-duda-negra",
+        "title": "Opel Astra Duda Negra en el Escape: Causas y Diagnóstico",
+        "metaDescription": "Descubre por qué tu Opel Astra emite humo negro, con causas comunes, pasos para diagnosticar y códigos OBD2 relacionados.",
+        "intro": "Si tu Opel Astra produce humo negro por el escape, generalmente indica un desequilibrio en la mezcla de combustible y aire durante la combustión. Identificar la causa empieza por realizar controles sencillos que permiten evitar cambios innecesarios de piezas. En esta guía te enseñamos cómo detectar el origen del problema.",
+        "severity": "Moderada; el humo negro continuo puede dañar el motor y el sistema de emisiones.",
+        "driveAdvice": "Evita acelerar bruscamente y mantén revoluciones bajas hasta que se diagnostique el problema.",
+        "likelyCauses": [
+          "Filtro de aire sucio o bloqueado",
+          "Inyectores que suministran demasiado combustible",
+          "Problemas en el turbo o fugas en el intercooler",
+          "Mal funcionamiento de la válvula EGR",
+          "Presión de combustible incorrecta o bomba dañada"
+        ],
+        "diagnosticSteps": [
+          "Revisa y cambia el filtro de aire si está sucio",
+          "Inspecciona los inyectores en busca de fugas o fallos",
+          "Verifica el turbo y busca fugas en el sistema",
+          "Escanea códigos OBD2 relacionados con mezcla aire-combustible",
+          "Comprueba la operación y suciedad en la válvula EGR",
+          "Mide la presión de combustible y compara con los valores recomendados"
+        ],
+        "firstChecks": [
+          "Inspecciona visualmente el sistema de admisión por bloqueos",
+          "Revisa las tuberías de combustible en busca de fugas",
+          "Considera cambios recientes en la calidad o tipo de combustible"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo (inyectores, turbo)",
+          "Ignorar el estado del filtro de aire",
+          "No detectar fugas al vacío que afectan sensores"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0299 - Bajo impulso del turbocompresor",
+          "P0401 - Flujo insuficiente del EGR"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos OBD2",
+            "href": "/es/guia-codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico de inyectores",
+            "href": "/es/diagnostico-inyectores"
+          },
+          {
+            "label": "Solución problemas turbo",
+            "href": "/es/solucion-problemas-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿El humo negro puede dañar mi motor?",
+            "a": "Sí, el humo negro constante puede causar acumulación de carbono y dañar el motor y el sistema de emisiones."
+          },
+          {
+            "q": "¿Siempre el humo negro es por problemas del combustible?",
+            "a": "No, también puede deberse a falta de aire o fallos en la válvula EGR."
+          },
+          {
+            "q": "¿Es seguro conducir con humo negro?",
+            "a": "Es recomendable conducir con precaución y diagnosticar el problema cuanto antes para evitar daños."
+          }
+        ],
+        "schemaTitle": "Opel Astra Humo Negro: Causas, Diagnóstico y Soluciones",
+        "schemaDescription": "Guía experta para diagnosticar humo negro en Opel Astra: causas comunes, pasos para diagnóstico, errores frecuentes y códigos OBD2."
+      },
+      "fr": {
+        "slug": "opel-astra-fumee-noire",
+        "title": "Opel Astra Fumée Noire : Causes et Diagnostic",
+        "metaDescription": "Découvrez pourquoi une Opel Astra émet de la fumée noire et comment diagnostiquer le problème avec des vérifications pratiques et des codes OBD2.",
+        "intro": "Si votre Opel Astra dégage de la fumée noire à l'échappement, cela traduit souvent un mauvais équilibre entre le carburant et l'air dans la combustion. Il est important de procéder à des vérifications simples avant de remplacer des pièces coûteuses. Ce guide vous aide à identifier les causes possibles et à effectuer un diagnostic efficace.",
+        "severity": "Modérée ; une fumée noire persistante peut endommager le moteur et le système d’émission.",
+        "driveAdvice": "Évitez les accélérations brusques et roulez à bas régime jusqu’au diagnostic complet.",
+        "likelyCauses": [
+          "Filtre à air encrassé ou obstrué",
+          "Injecteurs défectueux fournissant trop de carburant",
+          "Problèmes de turbocompresseur ou fuites d’intercooler",
+          "Mauvais fonctionnement de la vanne EGR",
+          "Pression de carburant incorrecte ou pompe défaillante"
+        ],
+        "diagnosticSteps": [
+          "Vérifier et changer le filtre à air s’il est sale",
+          "Inspecter les injecteurs pour déceler une fuite ou un dysfonctionnement",
+          "Tester le turbocompresseur et rechercher des fuites éventuelles",
+          "Scanner les codes OBD2 liés au mélange air/carburant",
+          "Contrôler la vanne EGR et le dépôt de carbone",
+          "Mesurer la pression de carburant et comparer aux spécifications"
+        ],
+        "firstChecks": [
+          "Inspection visuelle du système d’admission pour détection d’obstruction",
+          "Vérification des conduites de carburant pour détecter des fuites",
+          "Évaluer toute modification récente du type ou de la qualité du carburant"
+        ],
+        "commonMistakes": [
+          "Remplacement de pièces sans diagnostic préalable (injecteurs, turbo)",
+          "Négliger l’état du filtre à air",
+          "Ignorer les fuites de dépression affectant les capteurs"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre",
+          "P0299 - Sous-pression turbocompresseur",
+          "P0401 - Débit insuffisant vanne EGR"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes OBD2",
+            "href": "/fr/guide-codes-obd2"
+          },
+          {
+            "label": "Diagnostic injecteurs",
+            "href": "/fr/diagnostic-injecteurs"
+          },
+          {
+            "label": "Problèmes de turbocompresseur",
+            "href": "/fr/problemes-turbocompresseur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "La fumée noire peut-elle endommager mon moteur ?",
+            "a": "Oui, une fumée noire constante peut entraîner des dépôts de carbone et endommager le moteur ainsi que le système d’émission."
+          },
+          {
+            "q": "La fumée noire vient-elle toujours du système d’alimentation en carburant ?",
+            "a": "Pas forcément, cela peut aussi être dû à un manque d’air ou un problème de vanne EGR."
+          },
+          {
+            "q": "Est-il sûr de conduire avec de la fumée noire ?",
+            "a": "Mieux vaut limiter la conduite et faire diagnostiquer rapidement le problème pour éviter des dommages supplémentaires."
+          }
+        ],
+        "schemaTitle": "Opel Astra Fumée Noire : Causes, Diagnostic et Solutions",
+        "schemaDescription": "Guide complet pour diagnostiquer la fumée noire sur une Opel Astra : causes fréquentes, étapes de diagnostic, erreurs courantes et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-white-smoke",
+    "intentKey": "opel-astra_white_smoke",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "white_smoke",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-beyaz-duman-atiyor",
+        "title": "Opel Astra Beyaz Duman Atıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra'nız beyaz duman atıyorsa olası nedenleri, ön kontrolleri ve tanı adımlarını öğrenin. Arızadan önce neler yapılabilir?",
+        "intro": "Opel Astra model aracınızdan çıkan beyaz duman çeşitli motor sorunlarının işareti olabilir. Ancak kesin bir sonuca varmadan önce, birkaç temel kontrol ve tanı adımı ve olası nedenleri değerlendirmeniz önemlidir. Bu sayede gereksiz parça değişimlerinden kaçınabilir, güvenli ve ekonomik bir çözüm yoluna gidebilirsiniz.",
+        "severity": "Beyaz duman ciddi motor problemlerine işaret edebilir, acil müdahale gerekebilir.",
+        "driveAdvice": "Güvenli sürüş için motor soğuyana kadar aracı kullanmamak ve mümkünse servise çekmek en doğrusudur.",
+        "likelyCauses": [
+          "Soğutma suyunun yanma odasına sızması (conta arızası)",
+          "Yakıt enjektörlerinin arızalanması",
+          "Turbo yağ sızıntısı",
+          "Egzoz sistemi su buharı",
+          "Motor blok çatlakları"
+        ],
+        "diagnosticSteps": [
+          "Motor yağı seviyesi ve rengini kontrol edin",
+          "Radyatör su seviyesini ve basıncını ölçün",
+          "Egzoz dumanının kokusunu analiz edin",
+          "Soğutma sisteminde baskı testi yapın",
+          "Yakıt sistemini ve enjektörleri kontrol ettirin",
+          "OBD2 cihazıyla motor hata kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Motor yağı rengini kontrol edin, sütlü gibi ise soğutma suyu karışıyor olabilir",
+          "Radyatör kapağı ve hortumlarında sızıntı var mı bakın",
+          "Egzoz gazının yoğunluğunu ve rengini gözlemleyin"
+        ],
+        "commonMistakes": [
+          "Beyaz dumanı sadece su buharı sanmak",
+          "Parça değiştirmeden önce OBD2 hata kodlarını kontrol etmemek",
+          "Soğutma sisteminin basınç testi yapılmadan işlem yapmak"
+        ],
+        "relatedCodes": [
+          "P0217",
+          "P0420",
+          "P0455"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 Arıza Kodları",
+            "href": "/tr/opel-astra-ariza-kodlari"
+          },
+          {
+            "label": "Beyaz Duman Hangi Arızalarla İlişkilidir?",
+            "href": "/tr/beyaz-duman-ariza-nedenleri"
+          },
+          {
+            "label": "Motor Soğutma Sistemi Kontrolü",
+            "href": "/tr/motor-sogutma-sistemi-kontrolu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Beyaz duman sürekli mi yoksa sadece motor soğukken mi çıkıyor?",
+            "a": "Eğer sadece motor soğukken çıkıyorsa bu genellikle su buharıdır ve daha az ciddi olabilir. Sürekli mevcutsa, soğutma suyu yanma odasına sızıyor olabilir."
+          },
+          {
+            "q": "Beyaz duman için önce hangi kontroller yapılmalı?",
+            "a": "İlk olarak motor yağı ve soğutma suyu seviyelerini kontrol etmek, ardından radyatör ve hortumlarda sızıntı aramak önemlidir."
+          },
+          {
+            "q": "OBD2 cihazıyla hangi kodlara bakmalıyım?",
+            "a": "P0217, P0420 ve P0455 gibi motor ve egzoz sistemiyle alakalı kodlar beyaz duman sorununu işaret edebilir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Beyaz Duman Sorunu: Olası Nedenler ve Çözümler",
+        "schemaDescription": "Opel Astra aracınızda beyaz duman varsa, olası nedenler, yapılacak ilk kontroller ve OBD2 kodları ile nasıl teşhis edileceğini öğrenin."
+      },
+      "en": {
+        "slug": "opel-astra-white-smoke",
+        "title": "Opel Astra White Smoke: Possible Causes and Diagnostics",
+        "metaDescription": "Experiencing white smoke from your Opel Astra? Learn common causes, practical checks, and diagnostic steps before replacing parts.",
+        "intro": "White smoke coming from your Opel Astra's exhaust can indicate several potential engine issues. To avoid unnecessary repairs, it’s important to follow a systematic diagnostic approach. This guide outlines common causes, initial checks, and key steps to help you identify the problem effectively.",
+        "severity": "White smoke can signal serious engine or cooling system concerns; timely diagnostics are recommended.",
+        "driveAdvice": "Avoid driving the vehicle if white smoke persists. Let the engine cool and seek professional inspection to prevent further damage.",
+        "likelyCauses": [
+          "Coolant leaking into the combustion chamber (head gasket fault)",
+          "Malfunctioning fuel injectors",
+          "Turbocharger oil seal leak",
+          "Condensation in exhaust system",
+          "Cracks in engine block or cylinder head"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and look for milky discoloration",
+          "Inspect coolant level and perform a radiator pressure test",
+          "Observe exhaust smoke smell and intensity",
+          "Test cooling system pressure for leaks",
+          "Examine fuel injectors for faults",
+          "Use an OBD2 scanner to read engine fault codes"
+        ],
+        "firstChecks": [
+          "Look for milky oil indicating coolant contamination",
+          "Check radiator cap and hoses for leaks",
+          "Assess exhaust smoke density and smell"
+        ],
+        "commonMistakes": [
+          "Assuming white smoke is always harmless steam",
+          "Replacing parts without scanning for OBD2 codes",
+          "Skipping cooling system pressure testing"
+        ],
+        "relatedCodes": [
+          "P0217",
+          "P0420",
+          "P0455"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 Fault Codes",
+            "href": "/en/opel-astra-fault-codes"
+          },
+          {
+            "label": "White Smoke Common Causes",
+            "href": "/en/white-smoke-causes"
+          },
+          {
+            "label": "Cooling System Inspection Guide",
+            "href": "/en/cooling-system-check"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is the white smoke present only during cold starts or all the time?",
+            "a": "If white smoke appears only when the engine is cold, it may be harmless condensation. Continuous white smoke may indicate coolant entering the combustion chamber."
+          },
+          {
+            "q": "What basic checks should I perform first?",
+            "a": "Start by checking engine oil and coolant levels, followed by inspecting the radiator and hoses for leaks."
+          },
+          {
+            "q": "Which OBD2 codes should I watch for white smoke issues?",
+            "a": "Codes like P0217, P0420, and P0455 are commonly related to engine and exhaust system faults causing white smoke."
+          }
+        ],
+        "schemaTitle": "Opel Astra White Smoke Troubleshooting and Causes",
+        "schemaDescription": "Discover key diagnostics and causes for white smoke in Opel Astra vehicles, including practical checks and related OBD2 fault codes."
+      },
+      "de": {
+        "slug": "opel-astra-weisser-rauch",
+        "title": "Opel Astra Weißer Rauch: Mögliche Ursachen und Diagnose",
+        "metaDescription": "Weißer Rauch beim Opel Astra kann verschiedene Ursachen haben. Erfahren Sie wichtige Prüfungen und Diagnoseschritte vor Ersatzteilen.",
+        "intro": "Wenn Ihr Opel Astra weißen Rauch ausstößt, kann dies auf unterschiedliche Motorprobleme hinweisen. Eine genaue Diagnose ist unerlässlich, um unnötige Reparaturen zu vermeiden. In diesem Beitrag finden Sie häufige Ursachen, erste Kontrollen und detaillierte Prüfverfahren zur effektiven Fehlerbestimmung.",
+        "severity": "Weißer Rauch kann auf schwere Motor- oder Kühlsystemprobleme hindeuten und sollte schnell geprüft werden.",
+        "driveAdvice": "Fahren Sie nicht weiter, wenn weißer Rauch auftritt. Lassen Sie den Motor zuerst abkühlen und suchen Sie eine Werkstatt auf.",
+        "likelyCauses": [
+          "Kühlflüssigkeitsleck im Brennraum (Zylinderkopfdichtung defekt)",
+          "Defekte Einspritzdüsen",
+          "Ölverlust im Turbolader",
+          "Kondensation im Auspuffsystem",
+          "Risse im Motorblock oder Zylinderkopf"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und Milchglasverfärbung prüfen",
+          "Kühlwasserstand kontrollieren und Drucktest am Kühler durchführen",
+          "Geruch und Farbe des Abgases beobachten",
+          "Druckprüfung des Kühlsystems durchführen",
+          "Kraftstoffsystem und Einspritzventile prüfen",
+          "OBD2-Scanner nutzen und Fehlercodes auslesen"
+        ],
+        "firstChecks": [
+          "Öl auf Milchigkeit prüfen wegen möglicher Kühlflüssigkeitsbeimischung",
+          "Kühlerdeckel und Schläuche auf Lecks kontrollieren",
+          "Dichte und Geruch des Auspuffs beurteilen"
+        ],
+        "commonMistakes": [
+          "Weißen Rauch fälschlich als harmlosen Wasserdampf ansehen",
+          "Teile wechseln ohne zuvor OBD2-Codes zu prüfen",
+          "Kühlwasserdrucktest auslassen"
+        ],
+        "relatedCodes": [
+          "P0217",
+          "P0420",
+          "P0455"
+        ],
+        "internalLinks": [
+          {
+            "label": "Opel Astra OBD2 Fehlercodes",
+            "href": "/de/opel-astra-fehlercodes"
+          },
+          {
+            "label": "Ursachen von weißem Rauch",
+            "href": "/de/weisser-rauch-ursachen"
+          },
+          {
+            "label": "Kühlsystem prüfen",
+            "href": "/de/kuehlsystem-pruefen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Tritt der weiße Rauch nur beim Kaltstart oder dauerhaft auf?",
+            "a": "Nur beim Kaltstart ist meist Kondensation der Grund. Bei dauerhaftem weißen Rauch kann Kühlflüssigkeit in den Brennraum gelangen."
+          },
+          {
+            "q": "Welche ersten Kontrollen sind sinnvoll?",
+            "a": "Zuerst Öl- und Kühlwasserstand prüfen sowie Kühler und Schläuche auf undichte Stellen kontrollieren."
+          },
+          {
+            "q": "Welche OBD2-Codes sind bei weißem Rauch relevant?",
+            "a": "P0217, P0420 und P0455 weisen häufig auf Probleme hin, die weißen Rauch verursachen können."
+          }
+        ],
+        "schemaTitle": "Weißer Rauch beim Opel Astra - Ursachen und Diagnose",
+        "schemaDescription": "Informieren Sie sich über Ursachen, Diagnose und praktische Tipps bei weißem Rauch am Opel Astra sowie relevante OBD2-Fehlercodes."
+      },
+      "es": {
+        "slug": "opel-astra-sale-humo-blanco",
+        "title": "Opel Astra Sale Humo Blanco: Causas Comunes y Diagnóstico",
+        "metaDescription": "Si tu Opel Astra expulsa humo blanco, descubre las causas posibles, los chequeos básicos y los pasos para diagnosticar antes de cambiar piezas.",
+        "intro": "El humo blanco en tu Opel Astra puede indicar distintos problemas en el motor o el sistema de refrigeración. Para evitar reparaciones innecesarias, es fundamental realizar una serie de chequeos prácticos y seguir un método diagnóstico claro. Aquí te presentamos las causas más comunes y cómo proceder para detectar el origen del humo.",
+        "severity": "El humo blanco puede señalar problemas graves, es importante revisarlo a tiempo para evitar daños mayores.",
+        "driveAdvice": "Evita conducir si el humo persiste. Deja que el motor se enfríe y acude a un taller especializado para una inspección completa.",
+        "likelyCauses": [
+          "Filtración de refrigerante en la cámara de combustión (junta de culata dañada)",
+          "Inyectores de combustible defectuosos",
+          "Fuga de aceite en el turbo",
+          "Condensación en el sistema de escape",
+          "Grietas en el bloque del motor o culata"
+        ],
+        "diagnosticSteps": [
+          "Verifica nivel y color del aceite, buscando tonalidad lechosa",
+          "Revisa el nivel de refrigerante y realiza prueba de presión en el radiador",
+          "Observa olor e intensidad del humo del escape",
+          "Realiza test de presión en el sistema de enfriamiento",
+          "Inspecciona fallas en los inyectores de combustible",
+          "Lee códigos de falla con un escáner OBD2"
+        ],
+        "firstChecks": [
+          "Chequea si el aceite tiene aspecto lechoso que indique mezcla con refrigerante",
+          "Verifica si hay fugas en la tapa del radiador o mangueras",
+          "Observa la densidad y olor del humo en el escape"
+        ],
+        "commonMistakes": [
+          "Confundir el humo blanco con vapor de agua sin importancia",
+          "Reemplazar piezas antes de revisar códigos OBD2",
+          "No realizar prueba de presión al sistema de refrigeración"
+        ],
+        "relatedCodes": [
+          "P0217",
+          "P0420",
+          "P0455"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de falla OBD2 para Opel Astra",
+            "href": "/es/codigos-falla-opel-astra"
+          },
+          {
+            "label": "Causas comunes del humo blanco",
+            "href": "/es/causas-humo-blanco"
+          },
+          {
+            "label": "Revisión del sistema de refrigeración",
+            "href": "/es/revision-sistema-refrigeracion"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿El humo blanco aparece solo al arrancar frío o constantemente?",
+            "a": "Si aparece solo en arranques en frío, puede ser vapor de agua. Si es constante, es posible que refrigerante se esté filtrando al motor."
+          },
+          {
+            "q": "¿Qué controles iniciales debo hacer?",
+            "a": "Primero revisa niveles de aceite y refrigerante, luego inspecciona fugas en el radiador y mangueras."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con el humo blanco?",
+            "a": "Los códigos P0217, P0420 y P0455 suelen estar relacionados con fallas que provocan humo blanco."
+          }
+        ],
+        "schemaTitle": "Solución para Humo Blanco en Opel Astra: Causas y Diagnóstico",
+        "schemaDescription": "Conoce cómo diagnosticar y resolver el problema de humo blanco en Opel Astra, con pasos prácticos y códigos OBD2 relevantes."
+      },
+      "fr": {
+        "slug": "opel-astra-fumee-blanche",
+        "title": "Opel Astra Fumée Blanche : Causes Possibles et Diagnostic",
+        "metaDescription": "Votre Opel Astra dégage de la fumée blanche ? Découvrez les causes fréquentes, contrôles pratiques et étapes de diagnostic avant remplacement des pièces.",
+        "intro": "La fumée blanche qui sort de votre Opel Astra peut indiquer plusieurs problèmes moteurs ou liés au système de refroidissement. Avant toute intervention coûteuse, il est important de réaliser des vérifications simples et un diagnostic précis pour éviter des réparations inutiles et garantir la sécurité de votre véhicule.",
+        "severity": "La fumée blanche peut annoncer un problème moteur sérieux nécessitant une attention rapide.",
+        "driveAdvice": "Évitez de rouler si la fumée persiste. Laissez refroidir le moteur et faites contrôler votre voiture par un professionnel.",
+        "likelyCauses": [
+          "Fuite de liquide de refroidissement dans la chambre de combustion (joint de culasse défectueux)",
+          "Injecteurs de carburant défaillants",
+          "Fuite d’huile au niveau du turbo",
+          "Condensation dans le système d’échappement",
+          "Fissures dans le bloc moteur ou la culasse"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez le niveau d’huile moteur et sa couleur (aspect laiteux)",
+          "Vérifiez le niveau de liquide de refroidissement et effectuez un test de pression radiateur",
+          "Observez l’odeur et l’intensité de la fumée d’échappement",
+          "Réalisez un test de pression du système de refroidissement",
+          "Examinez les injecteurs de carburant",
+          "Utilisez un scanner OBD2 pour lire les codes d’erreur moteur"
+        ],
+        "firstChecks": [
+          "Vérifiez si l’huile moteur a un aspect laiteux signe de mélange avec le liquide de refroidissement",
+          "Inspectez le bouchon du radiateur et les durites pour détecter des fuites",
+          "Évaluez la densité et l’odeur de la fumée à l’échappement"
+        ],
+        "commonMistakes": [
+          "Prendre la fumée blanche uniquement pour de la vapeur inoffensive",
+          "Changer des pièces sans consulter les codes d’erreur OBD2",
+          "Négliger le test de pression du circuit de refroidissement"
+        ],
+        "relatedCodes": [
+          "P0217",
+          "P0420",
+          "P0455"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 pour Opel Astra",
+            "href": "/fr/opel-astra-codes-defaut"
+          },
+          {
+            "label": "Causes fréquentes de la fumée blanche",
+            "href": "/fr/causes-fumee-blanche"
+          },
+          {
+            "label": "Contrôle du système de refroidissement",
+            "href": "/fr/controle-systeme-refroidissement"
+          }
+        ],
+        "faq": [
+          {
+            "q": "La fumée blanche apparaît-elle seulement au démarrage à froid ou en permanence ?",
+            "a": "Si la fumée apparaît uniquement à froid, il peut s’agir de condensation. En revanche, une fumée permanente peut indiquer une fuite de liquide de refroidissement dans le moteur."
+          },
+          {
+            "q": "Quelles sont les premières vérifications à effectuer ?",
+            "a": "Contrôler le niveau et la couleur de l’huile moteur, le niveau du liquide de refroidissement et rechercher des fuites visibles."
+          },
+          {
+            "q": "Quels codes OBD2 sont liés à la fumée blanche ?",
+            "a": "Les codes P0217, P0420 et P0455 sont fréquemment associés à des problèmes provoquant de la fumée blanche."
+          }
+        ],
+        "schemaTitle": "Fumée Blanche Opel Astra : Diagnostic et Causes Possibles",
+        "schemaDescription": "Apprenez à diagnostiquer la fumée blanche sur Opel Astra grâce à des conseils pratiques et aux codes défauts OBD2 associés."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-poor-fuel-economy",
+    "intentKey": "opel-astra_poor_fuel_economy",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-cok-yakiyor",
+        "title": "Opel Astra Çok Yakıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra'nın yüksek yakıt tüketimi neden kaynaklanır? Pratik kontroller, yaygın hatalar, teşhis adımları ve ilgili OBD2 kodları burada.",
+        "intro": "Opel Astra aracınızın beklenenden fazla yakıt tükettiğini mi gözlemliyorsunuz? Bu durum birçok faktör nedeniyle olabilir ve kesin teşhis için dikkatli bir inceleme gerektirir. Yakıt ekonomisini etkileyen nedenlerden başlayarak, basit kontrollerden gelişmiş diagnostik adımlarına kadar her aşamayı ele alacağız.",
+        "severity": "Yüksek yakıt tüketimi aracınızın kullanım maliyetini artırır ve uzun vadede çevreye zarar verebilir.",
+        "driveAdvice": "Yakıt tüketimini azaltmak için agresif sürüşten kaçının ve düzenli bakım yaptırın.",
+        "likelyCauses": [
+          "Hatalı oksijen sensörü",
+          "Tıkalı hava filtresi",
+          "Yanlış lastik basıncı",
+          "Yakıt enjeksiyon sisteminde sorun",
+          "Motor soğutma sistemi arızası"
+        ],
+        "diagnosticSteps": [
+          "Arıza kodlarını OBD2 cihazı ile okuyun.",
+          "Hava filtresini kontrol ederek temizliğini yapın veya değiştirin.",
+          "Yakıt enjeksiyon sisteminin performansını test edin.",
+          "Lastik hava basınçlarını önerilen seviyelere getirin.",
+          "Ateşleme sistemi parçalarını gözden geçirin.",
+          "Motor soğutma sıvısı ve termostat kontrolü yapın."
+        ],
+        "firstChecks": [
+          "Lastik basınçlarını kontrol edin.",
+          "Hava filtresinin temiz olduğundan emin olun.",
+          "Motor yağı seviyesini ve kalitesini inceleyin."
+        ],
+        "commonMistakes": [
+          "Yanlış yakıt kalitesi kullanmak",
+          "Arızalı sensörleri göz ardı etmek",
+          "Düzenli bakım ve filtre değişimini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0420",
+          "P0133"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları Nedir?",
+            "href": "/tr/obd2-ariza-kodlari-nedir"
+          },
+          {
+            "label": "Yakıt Tüketimini Düşürme Yöntemleri",
+            "href": "/tr/yakit-tuketimini-dusurme"
+          },
+          {
+            "label": "Oksijen Sensörü Arızası Nasıl Anlaşılır?",
+            "href": "/tr/oksijen-sensoru-arizasi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra neden fazla yakıt tüketir?",
+            "a": "Birden çok sebep olabilir; sensör arızaları, filtre tıkanmaları veya lastik basıncı düşük olması en yaygın nedenler arasında yer alır."
+          },
+          {
+            "q": "Yakıt tüketimini azaltmak için ne yapabilirim?",
+            "a": "Düzenli bakım, doğru lastik basıncı, kaliteli yakıt kullanımı ve sürüş alışkanlıklarına dikkat etmek önemlidir."
+          },
+          {
+            "q": "OBD2 cihazı ile hangi kodlar yakıt tüketimiyle ilişkilidir?",
+            "a": "P0171, P0420, ve P0133 gibi kodlar motorun yakıt sistemi performansını etkileyebilir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Çok Yakıyor - Yakıt Tüketimi Arıza Rehberi",
+        "schemaDescription": "Opel Astra aracınızın yakıt tüketimi neden yüksek? Pratik kontrol ve teşhis yöntemleri, yaygın nedenler ve OBD2 kodları burada."
+      },
+      "en": {
+        "slug": "opel-astra-poor-fuel-economy",
+        "title": "Opel Astra Poor Fuel Economy: Causes and Diagnostic Tips",
+        "metaDescription": "Discover common causes and diagnostic steps for poor fuel economy in Opel Astra models. Learn practical checks and avoid common repair mistakes.",
+        "intro": "If your Opel Astra is consuming more fuel than expected, there are various potential reasons behind this issue. Diagnosing poor fuel economy requires a systematic approach, from basic checks to more advanced diagnostics. This guide covers common causes and practical advice to help you identify and address the problem.",
+        "severity": "Poor fuel economy increases running costs and environmental impact over time.",
+        "driveAdvice": "To improve fuel economy, avoid aggressive driving and maintain regular vehicle servicing.",
+        "likelyCauses": [
+          "Faulty oxygen sensor",
+          "Clogged air filter",
+          "Incorrect tire pressure",
+          "Fuel injector issues",
+          "Engine cooling system faults"
+        ],
+        "diagnosticSteps": [
+          "Scan for trouble codes using an OBD2 scanner.",
+          "Inspect and clean or replace the air filter.",
+          "Test fuel injectors for proper function.",
+          "Check and adjust tire pressures to manufacturer specs.",
+          "Inspect ignition system components.",
+          "Verify coolant levels and thermostat operation."
+        ],
+        "firstChecks": [
+          "Check tire pressures.",
+          "Ensure air filter is clean.",
+          "Verify engine oil level and quality."
+        ],
+        "commonMistakes": [
+          "Using low-quality fuel",
+          "Ignoring faulty sensors",
+          "Skipping regular maintenance and filter changes"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0420",
+          "P0133"
+        ],
+        "internalLinks": [
+          {
+            "label": "What Are OBD2 Trouble Codes?",
+            "href": "/en/what-are-obd2-trouble-codes"
+          },
+          {
+            "label": "How to Reduce Fuel Consumption",
+            "href": "/en/how-to-reduce-fuel-consumption"
+          },
+          {
+            "label": "Signs of Oxygen Sensor Fault",
+            "href": "/en/signs-of-oxygen-sensor-fault"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why is my Opel Astra using too much fuel?",
+            "a": "Several issues such as sensor failures, clogged filters, or incorrect tire pressure could contribute to increased fuel consumption."
+          },
+          {
+            "q": "What can I do to improve fuel economy?",
+            "a": "Regular maintenance, proper tire pressure, good fuel quality, and mindful driving habits can help improve efficiency."
+          },
+          {
+            "q": "Which OBD2 codes relate to fuel economy issues?",
+            "a": "Codes like P0171, P0420, and P0133 often indicate problems affecting fuel efficiency."
+          }
+        ],
+        "schemaTitle": "Opel Astra Poor Fuel Economy Diagnostic Guide",
+        "schemaDescription": "Learn about common causes of poor fuel economy on Opel Astra and practical diagnostics including related OBD2 codes."
+      },
+      "de": {
+        "slug": "opel-astra-hoher-kraftstoffverbrauch",
+        "title": "Opel Astra hoher Kraftstoffverbrauch: Ursachen und Diagnosehinweise",
+        "metaDescription": "Erfahren Sie mehr über häufige Ursachen und Diagnoseschritte für hohen Kraftstoffverbrauch bei Opel Astra. Praktische Tipps zur Fehlerbehebung.",
+        "intro": "Wenn Ihr Opel Astra mehr Kraftstoff verbraucht als üblich, können verschiedene Ursachen dahinterstecken. Die Diagnose erfordert eine systematische Vorgehensweise – von einfachen Kontrollen bis zu fortgeschrittenen Diagnoseschritten. In diesem Leitfaden erklären wir die häufigsten Gründe und praktische Tipps zur Behebung des Problems.",
+        "severity": "Hoher Kraftstoffverbrauch erhöht die Betriebskosten und belastet die Umwelt.",
+        "driveAdvice": "Vermeiden Sie aggressives Fahren und sorgen Sie für regelmäßige Wartung, um den Verbrauch zu senken.",
+        "likelyCauses": [
+          "Defekter Lambdasonde",
+          "Verstopfter Luftfilter",
+          "Falscher Reifendruck",
+          "Probleme mit der Einspritzanlage",
+          "Fehler im Kühlkreislauf des Motors"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit einem OBD2-Scanner auslesen.",
+          "Luftfilter prüfen und gegebenenfalls reinigen oder tauschen.",
+          "Einspritzdüsen auf Funktion testen.",
+          "Reifendruck kontrollieren und angleichen.",
+          "Zündanlage überprüfen.",
+          "Kühlmittelstand und Thermostat kontrollieren."
+        ],
+        "firstChecks": [
+          "Reifendruck prüfen.",
+          "Luftfilter auf Sauberkeit kontrollieren.",
+          "Motorölstand und Qualität überprüfen."
+        ],
+        "commonMistakes": [
+          "Verwendung von minderwertigem Kraftstoff",
+          "Defekte Sensoren ignorieren",
+          "Wartung und Filterwechsel vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0420",
+          "P0133"
+        ],
+        "internalLinks": [
+          {
+            "label": "Was sind OBD2-Fehlercodes?",
+            "href": "/de/was-sind-obd2-fehlercodes"
+          },
+          {
+            "label": "Wie man Kraftstoffverbrauch reduziert",
+            "href": "/de/kraftstoffverbrauch-reduzieren"
+          },
+          {
+            "label": "Anzeichen für Lambdasondenfehler",
+            "href": "/de/lambdasondenfehler-anzeichen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum verbraucht mein Opel Astra zu viel Kraftstoff?",
+            "a": "Verschiedene Ursachen wie Sensorfehler, verstopfte Filter oder falscher Reifendruck können den Verbrauch erhöhen."
+          },
+          {
+            "q": "Wie kann ich den Kraftstoffverbrauch verbessern?",
+            "a": "Regelmäßige Wartung, korrekter Reifendruck, gute Kraftstoffqualität und angepasstes Fahrverhalten helfen."
+          },
+          {
+            "q": "Welche OBD2-Codes stehen im Zusammenhang mit hohem Kraftstoffverbrauch?",
+            "a": "Codes wie P0171, P0420 und P0133 weisen häufig auf verbrauchsrelevante Probleme hin."
+          }
+        ],
+        "schemaTitle": "Opel Astra hoher Kraftstoffverbrauch Diagnoseleitfaden",
+        "schemaDescription": "Erfahren Sie die häufigsten Ursachen für hohen Kraftstoffverbrauch beim Opel Astra und praktische Diagnoseschritte inklusive OBD2-Codes."
+      },
+      "es": {
+        "slug": "opel-astra-consumo-excesivo-combustible",
+        "title": "Opel Astra con consumo excesivo de combustible: causas y diagnóstico",
+        "metaDescription": "Descubre causas comunes y pasos para diagnosticar el consumo excesivo de combustible en Opel Astra. Consejos prácticos y códigos OBD2 relacionados.",
+        "intro": "Si tu Opel Astra está gastando más combustible de lo habitual, existen diversas causas posibles. Diagnosticar este problema requiere una revisión ordenada, desde chequeos básicos hasta pruebas más avanzadas. En esta guía te mostramos las causas más comunes y cómo identificarlas para mejorar el rendimiento.",
+        "severity": "El alto consumo de combustible aumenta costos y el impacto ambiental del vehículo.",
+        "driveAdvice": "Evita aceleraciones bruscas y realiza mantenimientos periódicos para mejorar la eficiencia.",
+        "likelyCauses": [
+          "Sensor de oxígeno defectuoso",
+          "Filtro de aire obstruido",
+          "Presión incorrecta en los neumáticos",
+          "Problemas en el sistema de inyección de combustible",
+          "Fallas en el sistema de refrigeración del motor"
+        ],
+        "diagnosticSteps": [
+          "Escanea los códigos de falla con un escáner OBD2.",
+          "Revisa y limpia o reemplaza el filtro de aire.",
+          "Prueba el correcto funcionamiento de los inyectores.",
+          "Verifica y ajusta la presión de los neumáticos.",
+          "Inspecciona el sistema de encendido.",
+          "Comprueba el nivel del refrigerante y el termostato."
+        ],
+        "firstChecks": [
+          "Revisa la presión de los neumáticos.",
+          "Asegúrate de que el filtro de aire esté limpio.",
+          "Verifica el nivel y la calidad del aceite del motor."
+        ],
+        "commonMistakes": [
+          "Usar combustible de baja calidad",
+          "Ignorar sensores defectuosos",
+          "Omitir mantenimientos regulares y cambios de filtro"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0420",
+          "P0133"
+        ],
+        "internalLinks": [
+          {
+            "label": "Qué son los códigos de error OBD2",
+            "href": "/es/que-son-codigos-error-obd2"
+          },
+          {
+            "label": "Cómo reducir el consumo de combustible",
+            "href": "/es/como-reducir-consumo-combustible"
+          },
+          {
+            "label": "Síntomas de fallo en el sensor de oxígeno",
+            "href": "/es/sintomas-fallo-sensor-oxigeno"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Opel Astra consume tanto combustible?",
+            "a": "Puede deberse a sensores defectuosos, filtros sucios o presión inadecuada en los neumáticos, entre otros factores."
+          },
+          {
+            "q": "¿Cómo puedo mejorar el consumo de combustible?",
+            "a": "Manteniendo el vehículo regularmente, asegurando una presión correcta en los neumáticos y usando combustible de buena calidad."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con el consumo excesivo?",
+            "a": "Los códigos P0171, P0420 y P0133 suelen indicar problemas que afectan el consumo."
+          }
+        ],
+        "schemaTitle": "Diagnóstico consumo excesivo de combustible Opel Astra",
+        "schemaDescription": "Conoce causas comunes del consumo excesivo en Opel Astra y cómo diagnosticar con códigos OBD2 relacionados."
+      },
+      "fr": {
+        "slug": "opel-astra-forte-consommation-carburant",
+        "title": "Opel Astra forte consommation de carburant : causes et diagnostics",
+        "metaDescription": "Découvrez les causes courantes et les étapes pour diagnostiquer une consommation excessive de carburant sur Opel Astra. Conseils pratiques et codes OBD2 associés.",
+        "intro": "Si votre Opel Astra consomme plus de carburant que prévu, plusieurs causes peuvent en être à l'origine. Le diagnostic nécessite une approche méthodique, allant des contrôles simples aux vérifications plus approfondies. Ce guide présente les causes fréquentes et des conseils pratiques pour en identifier la source.",
+        "severity": "Une consommation élevée de carburant augmente les coûts d’utilisation et l’impact environnemental.",
+        "driveAdvice": "Évitez les accélérations brutales et maintenez un entretien régulier pour améliorer la consommation.",
+        "likelyCauses": [
+          "Sonde lambda défectueuse",
+          "Filtre à air obstrué",
+          "Pression des pneus incorrecte",
+          "Problèmes d’injecteurs de carburant",
+          "Défaillance du système de refroidissement du moteur"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un lecteur OBD2.",
+          "Contrôler et nettoyer ou remplacer le filtre à air.",
+          "Tester le bon fonctionnement des injecteurs.",
+          "Vérifier et ajuster la pression des pneus.",
+          "Inspecter le système d’allumage.",
+          "Vérifier le niveau de liquide de refroidissement et le thermostat."
+        ],
+        "firstChecks": [
+          "Contrôler la pression des pneus.",
+          "S’assurer que le filtre à air est propre.",
+          "Vérifier le niveau et la qualité de l’huile moteur."
+        ],
+        "commonMistakes": [
+          "Utiliser un carburant de mauvaise qualité",
+          "Ignorer les capteurs défectueux",
+          "Négliger l’entretien régulier et le changement des filtres"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0420",
+          "P0133"
+        ],
+        "internalLinks": [
+          {
+            "label": "Qu'est-ce que les codes d'erreur OBD2 ?",
+            "href": "/fr/codes-erreur-obd2"
+          },
+          {
+            "label": "Comment réduire la consommation de carburant",
+            "href": "/fr/reduire-consommation-carburant"
+          },
+          {
+            "label": "Signes d’un défaut de sonde lambda",
+            "href": "/fr/defaut-sonde-lambda"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Opel Astra consomme-t-elle trop de carburant ?",
+            "a": "Divers facteurs peuvent être en cause : capteurs défectueux, filtres encrassés ou pression des pneus mal réglée."
+          },
+          {
+            "q": "Comment améliorer la consommation de carburant ?",
+            "a": "Un entretien régulier, une pression correcte des pneus et la qualité du carburant sont essentiels."
+          },
+          {
+            "q": "Quels codes OBD2 sont liés à une consommation excessive ?",
+            "a": "Les codes P0171, P0420 et P0133 indiquent souvent des problèmes impactant la consommation."
+          }
+        ],
+        "schemaTitle": "Diagnostic consommation excessive carburant Opel Astra",
+        "schemaDescription": "Découvrez les causes courantes de forte consommation sur Opel Astra et les diagnostics avec les codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-stalling",
+    "intentKey": "opel-astra_stalling",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "stalling",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-stop-ediyor",
+        "title": "Opel Astra Stop Etme Sorunu: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra modellerinde araç stop etme nedenleri ve ilk kontrolleri. Sorunu anlamak için pratik önerilerle adım adım çözüm rehberi.",
+        "intro": "Opel Astra aracınızın stop etme sorunu birçok farklı nedenle ortaya çıkabilir. Bu durumda, tamir öncesi yapılacak temel kontrollerle sorunun kaynağını tespit etmek önemlidir. Ani durmalar, motor performansını etkileyebilir ve sürüş güvenliğini tehlikeye atabilir. Bu rehberde, oluşabilecek sebepleri ve pratik teşhis yöntemlerini anlatacağız.",
+        "severity": "Araç stop etme problemi yüksek güvenlik riski oluşturabilir ve uzun sürüşlerde arızaların kötüleşmesine yol açabilir.",
+        "driveAdvice": "Araç stop ediyorsa yavaşlayarak güvenli bir şekilde yolun kenarına çekin ve motoru yeniden çalıştırmadan önce gerekli kontrolleri yapın.",
+        "likelyCauses": [
+          "Yakıt pompası arızası veya yetersiz yakıt basıncı",
+          "Hava filtresinin tıkanması veya hava akış problemi",
+          "Ateşleme sistemindeki sorunlar (buji, bobin)",
+          "Enjektörlerin kirlenmesi veya düzgün çalışmaması",
+          "Rölanti havası kontrol vanasında kaçak veya arıza"
+        ],
+        "diagnosticSteps": [
+          "Yakıt deposundaki yakıt seviyesini kontrol edin",
+          "Yakıt pompasının çalışma sesini dinleyin",
+          "Hava filtresini çıkarıp temiz veya değişmiş olduğunu kontrol edin",
+          "OBD2 cihazıyla hata kodlarını tarayın",
+          "Buji ve buji kablolarının sağlamlığını test edin",
+          "Rölanti hava kontrol vanasının temiz ve sızdırmaz olduğundan emin olun"
+        ],
+        "firstChecks": [
+          "Akü voltajını ölçün, zayıf akü arıza oluşturabilir",
+          "Yakıt filtresinin temiz olup olmadığını kontrol edin",
+          "Elektrik bağlantılarında gevşeklik veya korozyon yok mu bakın"
+        ],
+        "commonMistakes": [
+          "Hemen parça değiştirmeye çalışmak, önce teşhis önemli",
+          "Yakıt kalitesini göz ardı etmek",
+          "Hata kodlarını doğru şekilde yorumlamamak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zengin olmayan karışım",
+          "P0300 - Rastgele veya çoklu silindir ateşleme hatası",
+          "P0505 - Rölanti kontrol sistemi arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Hata Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-hata-kodlari-nasil-okunur"
+          },
+          {
+            "label": "Yakıt Pompası Arızası Belirtileri",
+            "href": "/tr/yakit-pompasi-arizasi-belirtileri"
+          },
+          {
+            "label": "Rölanti Sorunları ve Çözümleri",
+            "href": "/tr/rolanti-sorunlari-cozumleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra'nın neden ani şekilde stop ettiğini nasıl anlarım?",
+            "a": "Genellikle hatalı yakıt akışı, hava sorunu veya ateşleme problemi olabilir. İlk olarak OBD2 kodlarını okuyarak başlamak faydalıdır."
+          },
+          {
+            "q": "Araç stop ettiğinde hemen hangi parçaları kontrol etmeliyim?",
+            "a": "Akü voltajı, yakıt seviyesi ve hava filtresini kontrol etmek, basit ve etkili ilk adımlardır."
+          },
+          {
+            "q": "Parça değişimi yapmadan önce neler yapılmalı?",
+            "a": "Sorunun kaynağını doğru tespit etmek için sistematik teşhis yapılmalı, gereksiz parça değişiminden kaçınılmalıdır."
+          }
+        ],
+        "schemaTitle": "Opel Astra Stop Etme Sorunları ve Çözüm Rehberi",
+        "schemaDescription": "Opel Astra araçlarda yaşanan stop etme problemlerine karşı yapılması gereken temel kontroller ve olası nedenler."
+      },
+      "en": {
+        "slug": "opel-astra-stalling-issues",
+        "title": "Opel Astra Stalling Issues: Causes and Diagnostic Steps",
+        "metaDescription": "Explore common causes and troubleshooting steps for Opel Astra stalling problems. Learn practical checks before replacing parts.",
+        "intro": "If your Opel Astra is stalling, it could be due to a number of different issues. Diagnosing the problem before replacing any parts can save time and money. Stalling can affect driving safety and vehicle reliability. This guide outlines common causes and practical diagnostic steps to help you find the source of the problem.",
+        "severity": "Stalling can pose a safety risk and should be addressed promptly to avoid further vehicle damage.",
+        "driveAdvice": "If your car stalls while driving, safely pull over and do basic checks before attempting to restart to prevent further issues.",
+        "likelyCauses": [
+          "Fuel pump failure or inadequate fuel pressure",
+          "Clogged air filter or airflow restrictions",
+          "Ignition system faults including spark plugs or coils",
+          "Dirty or malfunctioning fuel injectors",
+          "Faulty or leaking idle air control valve"
+        ],
+        "diagnosticSteps": [
+          "Check fuel level in the tank",
+          "Listen for fuel pump operation noise",
+          "Inspect and clean or replace air filter",
+          "Scan vehicle with an OBD2 scanner for fault codes",
+          "Test spark plugs and ignition components",
+          "Check idle air control valve for proper function"
+        ],
+        "firstChecks": [
+          "Measure battery voltage as weak battery can cause stalling",
+          "Verify fuel filter is clean and unobstructed",
+          "Inspect electrical connections for corrosion or looseness"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring fuel quality issues",
+          "Misinterpreting OBD2 codes leading to incorrect repairs"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0505 - Idle Control System Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "How to Read OBD2 Fault Codes",
+            "href": "/en/how-to-read-obd2-fault-codes"
+          },
+          {
+            "label": "Signs of Fuel Pump Failure",
+            "href": "/en/fuel-pump-failure-signs"
+          },
+          {
+            "label": "Idle Air Control Valve Issues",
+            "href": "/en/idle-air-control-valve-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are common reasons an Opel Astra might stall suddenly?",
+            "a": "Common causes include fuel delivery problems, air intake restrictions, or ignition faults. Reading OBD2 codes is a good start."
+          },
+          {
+            "q": "What should I check first if my car stalls unexpectedly?",
+            "a": "Check battery voltage, fuel level, and air filter condition before proceeding to deeper diagnostics."
+          },
+          {
+            "q": "Is it necessary to replace parts immediately when stalling occurs?",
+            "a": "No, identifying the root cause via diagnostics first is essential to avoid unnecessary replacements."
+          }
+        ],
+        "schemaTitle": "Opel Astra Stalling Causes and Diagnostics",
+        "schemaDescription": "A comprehensive guide to diagnosing stalling issues on Opel Astra vehicles with practical checks and insights."
+      },
+      "de": {
+        "slug": "opel-astra-stottern-und-ausgehen",
+        "title": "Opel Astra Stottern und Ausgehen: Ursachen und Diagnose",
+        "metaDescription": "Häufige Ursachen für das Ausgehen des Opel Astra und praktische Diagnose-Tipps für die Fehlerbehebung vor Teilenwechsel.",
+        "intro": "Beim Opel Astra kann das plötzliche Ausgehen des Motors verschiedene Ursachen haben. Es ist wichtig, vor dem Austausch von Bauteilen gründliche Kontrollen durchzuführen, um Kosten und Zeit zu sparen. Ausfälle können die Fahrsicherheit beeinträchtigen. In diesem Leitfaden erfahren Sie die wahrscheinlichen Ursachen und diagnostische Schritte.",
+        "severity": "Das plötzliche Ausgehen birgt Sicherheitsrisiken und sollte zeitnah geprüft werden, um Folgeschäden zu vermeiden.",
+        "driveAdvice": "Fährt das Auto aus, sollten Sie sicher anhalten und vor dem Neustart erste Prüfungen durchführen, um weitere Schäden zu verhindern.",
+        "likelyCauses": [
+          "Defekte Kraftstoffpumpe oder zu geringer Kraftstoffdruck",
+          "Verstopfter Luftfilter oder Luftstromprobleme",
+          "Probleme mit der Zündanlage (Zündkerzen, Zündspulen)",
+          "Verschmutzte oder fehlerhafte Einspritzventile",
+          "Fehlerhaftes oder undichtes Leerlaufregelventil"
+        ],
+        "diagnosticSteps": [
+          "Kraftstoffstand im Tank prüfen",
+          "Kraftstoffpumpengeräusch beim Starten hören",
+          "Luftfilter auf Verschmutzung prüfen und reinigen/ersetzen",
+          "Mit OBD2-Scanner Fehlercodes auslesen",
+          "Zündkerzen und Zündkomponenten testen",
+          "Leerlaufregelventil auf Funktion und Dichtigkeit prüfen"
+        ],
+        "firstChecks": [
+          "Batteriespannung messen, da eine schwache Batterie Ausfälle verursacht",
+          "Kraftstofffilter auf Verunreinigungen prüfen",
+          "Elektrische Verbindungen auf Korrosion oder Lockerheit kontrollieren"
+        ],
+        "commonMistakes": [
+          "Teile tauschen ohne vorherige Diagnose",
+          "Kraftstoffqualität außer Acht lassen",
+          "Fehlercodes falsch interpretieren und dadurch falsche Reparaturen durchführen"
+        ],
+        "relatedCodes": [
+          "P0171 - Gemisch zu mager",
+          "P0300 - Zufällige/mehrfache Zündaussetzer",
+          "P0505 - Fehler Leerlaufregelung"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes auslesen – Anleitung",
+            "href": "/de/obd2-fehlercodes-auslesen-anleitung"
+          },
+          {
+            "label": "Anzeichen einer defekten Kraftstoffpumpe",
+            "href": "/de/anzeichen-kraftstoffpumpe-defekt"
+          },
+          {
+            "label": "Probleme mit dem Leerlaufregelventil",
+            "href": "/de/probleme-leerlaufregelventil"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum geht mein Opel Astra plötzlich während der Fahrt aus?",
+            "a": "Mögliche Ursachen sind Kraftstoffmangel, Luftmengenprobleme oder Zündfehler. Das Auslesen von OBD2-Codes hilft bei der Diagnose."
+          },
+          {
+            "q": "Welche Kontrollen sollte ich bei Ausfall zuerst durchführen?",
+            "a": "Prüfen Sie zuerst die Batteriespannung, den Kraftstoffstand und den Luftfilter."
+          },
+          {
+            "q": "Muss ich bei Stallproblemen sofort Teile tauschen?",
+            "a": "Eine korrekte Ursachenfindung durch Diagnostik ist wichtig, um unnötige Reparaturen zu vermeiden."
+          }
+        ],
+        "schemaTitle": "Opel Astra Stottern und Ausgehen Ursachen und Diagnose",
+        "schemaDescription": "Leitfaden zur Diagnose von Ausgeh-Problemen beim Opel Astra mit praktischen Prüfungen und Ursacheinschätzungen."
+      },
+      "es": {
+        "slug": "opel-astra-motor-tiembla-se-pare",
+        "title": "Problemas de Parada del Opel Astra: Causas y Diagnóstico",
+        "metaDescription": "Descubre causas comunes y pasos para diagnosticar problemas de parada en Opel Astra. Consejos prácticos antes de cambiar piezas.",
+        "intro": "El Opel Astra puede experimentar problemas de parada por múltiples razones. Antes de reemplazar piezas, es fundamental realizar inspecciones básicas para identificar correctamente la causa. Estas fallas pueden afectar la seguridad al conducir. En esta guía encontrarás posibles causas y pasos prácticos para diagnosticar el problema.",
+        "severity": "La parada del motor puede ser un riesgo para la seguridad y debe atenderse rápidamente para evitar daños mayores.",
+        "driveAdvice": "Si el vehículo se detiene, deténgase en un lugar seguro y realice las revisiones básicas antes de intentar arrancar nuevamente.",
+        "likelyCauses": [
+          "Fallo en la bomba de combustible o baja presión de combustible",
+          "Filtro de aire obstruido o restricción en la entrada de aire",
+          "Problemas en el sistema de encendido (bujías o bobinas)",
+          "Inyectores sucios o que no funcionan correctamente",
+          "Válvula de control de aire en ralentí defectuosa o con fugas"
+        ],
+        "diagnosticSteps": [
+          "Verifique el nivel de combustible en el tanque",
+          "Escuche el sonido de la bomba de combustible al arrancar",
+          "Revise y limpie o reemplace el filtro de aire",
+          "Lea los códigos de falla con un escáner OBD2",
+          "Pruebe las bujías y componentes de encendido",
+          "Compruebe el funcionamiento de la válvula de control de aire en ralentí"
+        ],
+        "firstChecks": [
+          "Mida el voltaje de la batería, ya que una batería débil puede causar paradas",
+          "Compruebe que el filtro de combustible esté limpio",
+          "Revise conexiones eléctricas por corrosión o aflojamiento"
+        ],
+        "commonMistakes": [
+          "Reemplazar piezas sin diagnóstico previo",
+          "Ignorar problemas con la calidad del combustible",
+          "Interpretar erróneamente los códigos OBD2 y hacer reparaciones incorrectas"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre",
+          "P0300 - Fallo de encendido aleatorio/múltiple",
+          "P0505 - Mal funcionamiento del control de ralentí"
+        ],
+        "internalLinks": [
+          {
+            "label": "Cómo leer códigos de falla OBD2",
+            "href": "/es/como-leer-codigos-falla-obd2"
+          },
+          {
+            "label": "Síntomas de fallo en la bomba de combustible",
+            "href": "/es/sintomas-fallo-bomba-combustible"
+          },
+          {
+            "label": "Problemas con la válvula de control de ralentí",
+            "href": "/es/problemas-valvula-control-ralenti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué se puede detener mi Opel Astra mientras conduzco?",
+            "a": "Puede deberse a problemas con el suministro de combustible, restricciones en la entrada de aire o fallos en la ignición. Leer los códigos OBD2 es un buen inicio."
+          },
+          {
+            "q": "¿Qué debo comprobar primero si el coche se detiene inesperadamente?",
+            "a": "Revise primero el voltaje de la batería, el nivel de combustible y el estado del filtro de aire."
+          },
+          {
+            "q": "¿Es necesario cambiar piezas de inmediato ante una parada del motor?",
+            "a": "No, es fundamental diagnosticar correctamente antes de reemplazar partes para evitar gastos innecesarios."
+          }
+        ],
+        "schemaTitle": "Causas y Diagnóstico de Parada del Opel Astra",
+        "schemaDescription": "Guía completa para diagnosticar problemas de parada en Opel Astra con inspecciones prácticas y causa probable."
+      },
+      "fr": {
+        "slug": "opel-astra-calage-moteur",
+        "title": "Problèmes de Calage sur Opel Astra : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes et les étapes de diagnostic pour les calages moteur sur Opel Astra. Conseils pratiques avant le remplacement des pièces.",
+        "intro": "Le calage moteur sur votre Opel Astra peut résulter de plusieurs causes. Avant de remplacer des pièces, il est essentiel d’effectuer des contrôles simples afin d’identifier l’origine du problème. Ce dysfonctionnement peut compromettre la sécurité de conduite. Ce guide présente les causes probables et les étapes pour diagnostiquer efficacement le calage.",
+        "severity": "Le calage moteur représente un risque pour la sécurité et doit être traité rapidement afin d’éviter des dommages supplémentaires.",
+        "driveAdvice": "En cas de calage en roulant, garez-vous en sécurité puis effectuez les contrôles de base avant de redémarrer le véhicule.",
+        "likelyCauses": [
+          "Défaillance de la pompe à carburant ou pression insuffisante",
+          "Filtre à air encrassé ou restriction d’air",
+          "Problèmes dans le système d’allumage (bougies, bobines)",
+          "Injecteurs encrassés ou défectueux",
+          "Problème ou fuite de la soupape de contrôle de ralenti"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez le niveau de carburant dans le réservoir",
+          "Écoutez le fonctionnement de la pompe à carburant au démarrage",
+          "Contrôlez et remplacez ou nettoyez le filtre à air",
+          "Analysez les codes défauts avec un outil OBD2",
+          "Testez les bougies et les éléments d’allumage",
+          "Vérifiez le bon fonctionnement de la soupape de ralenti"
+        ],
+        "firstChecks": [
+          "Mesurez la tension de la batterie, une batterie faible peut causer un calage",
+          "Contrôlez la propreté du filtre à carburant",
+          "Inspectez les connexions électriques pour corrosion ou desserrage"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic complet",
+          "Négliger la qualité du carburant",
+          "Mauvaise interprétation des codes OBD2 entraînant des réparations inutiles"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre",
+          "P0300 - Ratés d’allumage aléatoires/multiples",
+          "P0505 - Dysfonctionnement du contrôle de ralenti"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comment lire les codes défaut OBD2",
+            "href": "/fr/comment-lire-codes-obd2"
+          },
+          {
+            "label": "Signes de défaillance de la pompe à carburant",
+            "href": "/fr/signes-defaillance-pompe-carburant"
+          },
+          {
+            "label": "Problèmes de soupape de contrôle de ralenti",
+            "href": "/fr/problemes-soupape-controle-ralenti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Opel Astra cale-t-il soudainement ?",
+            "a": "Cela peut être dû à un problème d’alimentation en carburant, une restriction d’air ou un défaut d’allumage. L’analyse des codes OBD2 est recommandée."
+          },
+          {
+            "q": "Quelles vérifications faire en premier en cas de calage ?",
+            "a": "Commencez par contrôler la tension de la batterie, le niveau de carburant et l’état du filtre à air."
+          },
+          {
+            "q": "Dois-je changer les pièces immédiatement si le moteur cale ?",
+            "a": "Il est important de diagnostiquer correctement avant tout remplacement afin d’éviter des réparations inutiles."
+          }
+        ],
+        "schemaTitle": "Diagnostic des Problèmes de Calage sur Opel Astra",
+        "schemaDescription": "Guide complet pour détecter et comprendre les causes de calage moteur sur Opel Astra avec conseils pratiques."
+      }
+    }
   }
 ]

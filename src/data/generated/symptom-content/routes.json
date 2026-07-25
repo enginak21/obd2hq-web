@@ -748,5 +748,105 @@
       "es": "fiat-egea-vites-se-desliza",
       "fr": "fiat-egea-glissement-rapport"
     }
+  },
+  {
+    "contentGroupId": "opel-astra-loss-of-power",
+    "slugs": {
+      "en": "opel-astra-loss-of-power-causes-diagnosis",
+      "tr": "opel-astra-gaz-yemiyor-nedenleri-ve-tespit",
+      "de": "opel-astra-leistungsverlust-ursachen-diagnose",
+      "es": "opel-astra-sintoma-perdida-potencia-causas",
+      "fr": "opel-astra-perte-puissance-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-engine-noise",
+    "slugs": {
+      "en": "opel-astra-engine-noise",
+      "tr": "opel-astra-motordan-ses-geliyor",
+      "de": "opel-astra-motorgeraeusche",
+      "es": "opel-astra-motor-tiembla",
+      "fr": "opel-astra-bruit-moteur"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-rough-idle",
+    "slugs": {
+      "en": "opel-astra-rough-idle",
+      "tr": "opel-astra-rolanti-dalgalanma",
+      "de": "opel-astra-ruckelnder-leerlauf",
+      "es": "opel-astra-motor-tiembla-al-ralenti",
+      "fr": "opel-astra-ralenti-instable"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-engine-shaking",
+    "slugs": {
+      "en": "opel-astra-engine-shaking",
+      "tr": "opel-astra-titriyor",
+      "de": "opel-astra-motor-tittern",
+      "es": "opel-astra-motor-tiembla-engine-shaking",
+      "fr": "opel-astra-moteur-vibre"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-check-engine-light",
+    "slugs": {
+      "en": "opel-astra-check-engine-light",
+      "tr": "opel-astra-motor-ariza-lambasi-yaniyor",
+      "de": "opel-astra-motor-warnleuchte-an",
+      "es": "opel-astra-luz-de-aviso-motor",
+      "fr": "opel-astra-temoin-moteur-allume"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-hard-start",
+    "slugs": {
+      "en": "opel-astra-hard-start-causes",
+      "tr": "opel-astra-gec-calisma-nedenleri",
+      "de": "opel-astra-schwerer-start-ursachen",
+      "es": "opel-astra-motor-dificil-arranque",
+      "fr": "opel-astra-demarrage-difficile-causes"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-black-smoke",
+    "slugs": {
+      "en": "opel-astra-black-smoke",
+      "tr": "opel-astra-siyah-duman-atma",
+      "de": "opel-astra-schwarzer-rauch",
+      "es": "opel-astra-duda-negra",
+      "fr": "opel-astra-fumee-noire"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-white-smoke",
+    "slugs": {
+      "en": "opel-astra-white-smoke",
+      "tr": "opel-astra-beyaz-duman-atiyor",
+      "de": "opel-astra-weisser-rauch",
+      "es": "opel-astra-sale-humo-blanco",
+      "fr": "opel-astra-fumee-blanche"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-poor-fuel-economy",
+    "slugs": {
+      "en": "opel-astra-poor-fuel-economy",
+      "tr": "opel-astra-cok-yakiyor",
+      "de": "opel-astra-hoher-kraftstoffverbrauch",
+      "es": "opel-astra-consumo-excesivo-combustible",
+      "fr": "opel-astra-forte-consommation-carburant"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-stalling",
+    "slugs": {
+      "en": "opel-astra-stalling-issues",
+      "tr": "opel-astra-stop-ediyor",
+      "de": "opel-astra-stottern-und-ausgehen",
+      "es": "opel-astra-motor-tiembla-se-pare",
+      "fr": "opel-astra-calage-moteur"
+    }
   }
 ]
