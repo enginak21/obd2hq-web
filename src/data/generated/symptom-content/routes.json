@@ -648,5 +648,105 @@
       "es": "fiat-egea-luz-de-motor-encendida",
       "fr": "fiat-egea-temoin-moteur-allume"
     }
+  },
+  {
+    "contentGroupId": "fiat-egea-hard-start",
+    "slugs": {
+      "en": "fiat-egea-hard-start-guide",
+      "tr": "fiat-egea-gec-calisma-sorunu",
+      "de": "fiat-egea-schwerer-start",
+      "es": "fiat-egea-arranque-dificil",
+      "fr": "fiat-egea-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-black-smoke",
+    "slugs": {
+      "en": "fiat-egea-black-smoke-issues",
+      "tr": "fiat-egea-siyah-duman-atiyor",
+      "de": "fiat-egea-schwarzer-rauch-probleme",
+      "es": "fiat-egea-sale-humo-negro-problemas",
+      "fr": "fiat-egea-fumee-noire-problemes"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-white-smoke",
+    "slugs": {
+      "en": "fiat-egea-white-smoke-causes-diagnosis",
+      "tr": "fiat-egea-beyaz-duman-atiyor-nedenleri",
+      "de": "fiat-egea-weisser-rauch-gruende-diagnose",
+      "es": "fiat-egea-humo-blanco-causas-soluciones",
+      "fr": "fiat-egea-fumee-blanche-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-poor-fuel-economy",
+    "slugs": {
+      "en": "fiat-egea-poor-fuel-economy",
+      "tr": "fiat-egea-cok-yakiyor",
+      "de": "fiat-egea-hoher-kraftstoffverbrauch",
+      "es": "fiat-egea-consumo-excesivo-combustible",
+      "fr": "fiat-egea-consommation-excessive-carburant"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-stalling",
+    "slugs": {
+      "en": "fiat-egea-stalling",
+      "tr": "fiat-egea-stop-ediyor",
+      "de": "fiat-egea-motoraussetzer",
+      "es": "fiat-egea-motor-tiembla-stalling",
+      "fr": "fiat-egea-calage-moteur"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-jerking",
+    "slugs": {
+      "en": "fiat-egea-engine-jerking",
+      "tr": "fiat-egea-silkeleme-yapiyor",
+      "de": "fiat-egea-ruckeln",
+      "es": "fiat-egea-motor-tiembla-jerking",
+      "fr": "fiat-egea-moteur-hoquette"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-overheating",
+    "slugs": {
+      "en": "fiat-egea-engine-overheating",
+      "tr": "fiat-egea-hararet-yapiyor",
+      "de": "fiat-egea-motor-ueberhitzt",
+      "es": "fiat-egea-calienta-motor",
+      "fr": "fiat-egea-surchauffe-moteur"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-fuel-smell",
+    "slugs": {
+      "en": "fiat-egea-fuel-smell",
+      "tr": "fiat-egea-benzin-kokusu-geliyor",
+      "de": "fiat-egea-kraftstoffgeruch-probleme",
+      "es": "fiat-egea-olor-a-gasolina",
+      "fr": "fiat-egea-odeur-essence"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-oil-smell",
+    "slugs": {
+      "en": "fiat-egea-burning-oil-smell",
+      "tr": "fiat-egea-yanik-yag-kokusu",
+      "de": "fiat-egea-verbrennungs-oel-geruch",
+      "es": "fiat-egea-olor-a-aceite-quemado",
+      "fr": "fiat-egea-odeur-huile-brulee"
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-transmission-slipping",
+    "slugs": {
+      "en": "fiat-egea-transmission-slipping",
+      "tr": "fiat-egea-vites-kaciriyor",
+      "de": "fiat-egea-getriebe-rutscht",
+      "es": "fiat-egea-vites-se-desliza",
+      "fr": "fiat-egea-glissement-rapport"
+    }
   }
 ]

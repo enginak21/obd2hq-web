@@ -22868,5 +22868,3515 @@
         "schemaDescription": "Guide expert sur les causes fréquentes du témoin moteur chez Fiat Egea avec méthodes de diagnostic et solutions pratiques."
       }
     }
+  },
+  {
+    "contentGroupId": "fiat-egea-hard-start",
+    "intentKey": "fiat-egea_hard_start",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "hard_start",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-gec-calisma-sorunu",
+        "title": "Fiat Egea Geç Çalışıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Fiat Egea'nın geç çalışmasının olası sebeplerini ve pratik kontrolleri öğrenin. Doğru tanı için adım adım öneriler.",
+        "intro": "Fiat Egea model aracınızın motoru geç çalışıyorsa, bunun altında farklı nedenler yatabilir. Geç çalışma sorunu; yakıt, ateşleme, veya elektriksel sistemler gibi pek çok unsurdan kaynaklanabilir. Bu yazıda, sorunu belirlemek için yapılması gereken temel kontrolleri, sık karşılaşılan hataları ve olası nedenleri ele alacağız.",
+        "severity": "Genellikle motorun direkt çalışmasını engellemez ama kullanım konforunu ve performansı olumsuz etkiler.",
+        "driveAdvice": "Aracınızı mümkünse uygun bir yerlerde ve güvenli koşullarda çalıştırmaya devam edin. Uzun süreli zorlamalardan kaçının ve gerektiğinde uzman desteği alın.",
+        "likelyCauses": [
+          "Bujilerin aşınması veya kirlenmesi",
+          "Yakıt pompası veya enjektör arızaları",
+          "Zayıf akü veya bağlantı sorunları",
+          "Soğuk hava sıcaklıklarında zayıf motor ısıtması",
+          "Hava filtresinin tıkanması"
+        ],
+        "diagnosticSteps": [
+          "Motorun ateşleme ve yakıt sistemini kontrol edin",
+          "Akü voltaj ve bağlantılarını test edin",
+          "Hava filtresini temizleyin veya gerektiğinde değiştirin",
+          "Bujilerin kondisyonunu gözden geçirin",
+          "OBD2 tarayıcı ile hata kodlarını okuyun",
+          "Motorun çalışma sıcaklığını kontrol edin"
+        ],
+        "firstChecks": [
+          "Akü kutup başlarını temizleyin ve sıkıca bağlayın",
+          "Bujilerin görünümünü inceleyin",
+          "Hava filtresinin durumunu değerlendirin"
+        ],
+        "commonMistakes": [
+          "Bujiler değiştirilmeden önce yeterince kontrol edilmemesi",
+          "Yakıt kalitesi ve seviyesinin göz ardı edilmesi",
+          "Sadece sensör değişimi ile sorunun çözülmeye çalışılması"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Çok Fakir",
+          "P0113 - Hava Sıcaklık Sensörü Aşırı Giriş"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Hata Kodları Nedir?",
+            "href": "/tr/obd2-hata-kodlari-nedir"
+          },
+          {
+            "label": "Bujiler Nasıl Kontrol Edilir?",
+            "href": "/tr/bujiler-nasil-kontrol-edilir"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea’da geç çalışma ne kadar normaldir?",
+            "a": "Kısa süreli geç çalışma soğuk havalarda normal olabilir ancak sürekli hale gelirse detaylı kontrol gerekir."
+          },
+          {
+            "q": "Bujiler ne zaman değiştirilmelidir?",
+            "a": "Bujiler genellikle 30.000-50.000 km arası değiştirilir; kontrollerde aşınma veya kirlilik varsa daha erken değiştirilmelidir."
+          },
+          {
+            "q": "Akü zayıflığının geç çalışmaya etkisi nedir?",
+            "a": "Zayıf akü motorun yeterince hızlı çalışmamasına ve geç çalışmaya neden olabilir. Voltaj testi önemlidir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Geç Çalışma Sorunu Rehberi",
+        "schemaDescription": "Fiat Egea aracınızın geç çalışmasının olası nedenleri, pratik kontrol adımları ve sık yapılan hatalar hakkında detaylı bilgi."
+      },
+      "en": {
+        "slug": "fiat-egea-hard-start-guide",
+        "title": "Fiat Egea Hard Start Issues: Causes & Diagnostic Tips",
+        "metaDescription": "Discover common reasons for Fiat Egea hard start and practical diagnostic steps to identify the issue before replacing parts.",
+        "intro": "If your Fiat Egea is experiencing hard starts, several underlying factors could be responsible. The issue may stem from fuelsystem inefficiencies, ignition problems, or electrical faults. This guide provides practical suggestions to diagnose and potentially resolve the issue without immediately replacing components.",
+        "severity": "Typically, the problem doesn’t prevent engine start but affects drivability and could lead to further mechanical wear.",
+        "driveAdvice": "Continue starting the vehicle in safe locations, avoid excessive cranking, and seek professional diagnosis if difficulties persist.",
+        "likelyCauses": [
+          "Worn or fouled spark plugs",
+          "Fuel pump or injector faults",
+          "Weak battery or poor electrical connections",
+          "Cold temperature causing slow engine warm-up",
+          "Clogged air filter restricting airflow"
+        ],
+        "diagnosticSteps": [
+          "Check ignition and fuel system operation",
+          "Perform battery voltage and connection tests",
+          "Inspect and clean or replace the air filter",
+          "Examine spark plug condition",
+          "Scan OBD2 for diagnostic trouble codes",
+          "Assess engine operating temperature"
+        ],
+        "firstChecks": [
+          "Clean and tighten battery terminals",
+          "Visually inspect spark plugs",
+          "Check air filter status"
+        ],
+        "commonMistakes": [
+          "Replacing spark plugs without thorough inspection",
+          "Ignoring fuel quality or level",
+          "Replacing sensors prematurely without diagnosis"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0113 - Intake Air Temperature Sensor High Input"
+        ],
+        "internalLinks": [
+          {
+            "label": "What Are OBD2 Codes?",
+            "href": "/en/what-are-obd2-codes"
+          },
+          {
+            "label": "How to Check Spark Plugs",
+            "href": "/en/how-to-check-spark-plugs"
+          },
+          {
+            "label": "Fuel System Problems Explained",
+            "href": "/en/fuel-system-problems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is a hard start normal for the Fiat Egea?",
+            "a": "Short hard starts can be normal in cold weather but persistent issues require detailed checks."
+          },
+          {
+            "q": "When should spark plugs be replaced?",
+            "a": "Generally every 30,000-50,000 km or sooner if fouling or wear is found."
+          },
+          {
+            "q": "Can battery health affect hard starting?",
+            "a": "Yes, a weak battery can significantly impact starting performance."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Hard Start Diagnostic Guide",
+        "schemaDescription": "Learn about common causes, diagnostic steps, and mistakes to avoid for Fiat Egea hard start issues."
+      },
+      "de": {
+        "slug": "fiat-egea-schwerer-start",
+        "title": "Fiat Egea startet schwer: Ursachen & Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Gründe für schweres Starten beim Fiat Egea und praktische Tipps zur eigenständigen Diagnose.",
+        "intro": "Wenn Ihr Fiat Egea schwer startet, können verschiedene Ursachen zugrunde liegen. Probleme können im Kraftstoff- oder Zündsystem sowie bei elektrischen Verbindungen liegen. In diesem Leitfaden erhalten Sie praktische Hinweise zur Überprüfung und Diagnose, bevor Sie Teile austauschen.",
+        "severity": "Das Fahrzeug startet meist, aber es beeinträchtigt die Fahrbarkeit und kann längerfristig Schäden verursachen.",
+        "driveAdvice": "Starten Sie das Fahrzeug möglichst an sicheren Orten und vermeiden Sie zu langes Anlassen. Bei anhaltenden Problemen sollten Sie eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Abgenutzte oder verschmutzte Zündkerzen",
+          "Fehlerhafte Kraftstoffpumpe oder Einspritzdüsen",
+          "Schwache Batterie oder schlechte Kabelverbindungen",
+          "Kalte Temperaturen verzögern die Motoraufwärmung",
+          "Verstopfter Luftfilter"
+        ],
+        "diagnosticSteps": [
+          "Überprüfung des Zünd- und Kraftstoffsystems",
+          "Batteriespannung und Anschluss testen",
+          "Luftfilter reinigen oder ersetzen",
+          "Zündkerzenzustand kontrollieren",
+          "OBD2-Diagnosecodes auslesen",
+          "Motortemperatur überprüfen"
+        ],
+        "firstChecks": [
+          "Batteriepole reinigen und festziehen",
+          "Zündkerzen optisch prüfen",
+          "Zustand des Luftfilters prüfen"
+        ],
+        "commonMistakes": [
+          "Zündkerzen austauschen ohne vorherige Kontrolle",
+          "Kraftstoffqualität und -menge ignorieren",
+          "Sensoren ohne Diagnose vorschnell wechseln"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/mehrfache Zündaussetzer",
+          "P0171 - System zu mager (Bank 1)",
+          "P0113 - Ansauglufttemperatursensor hoher Eingang"
+        ],
+        "internalLinks": [
+          {
+            "label": "Was sind OBD2-Codes?",
+            "href": "/de/was-sind-obd2-codes"
+          },
+          {
+            "label": "Zündkerzen prüfen Anleitung",
+            "href": "/de/zuendkerzen-pruefen"
+          },
+          {
+            "label": "Probleme im Kraftstoffsystem",
+            "href": "/de/kraftstoffsystem-probleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ist schweres Starten beim Fiat Egea normal?",
+            "a": "Kurzes schweres Starten bei Kälte ist normal, dauerhaft deutet es auf Probleme hin."
+          },
+          {
+            "q": "Wann sollten Zündkerzen gewechselt werden?",
+            "a": "In der Regel alle 30.000 bis 50.000 km oder bei Verschmutzung früher."
+          },
+          {
+            "q": "Beeinflusst die Batterie das Startverhalten?",
+            "a": "Ja, eine schwache Batterie kann das Starten erheblich erschweren."
+          }
+        ],
+        "schemaTitle": "Diagnose bei schwerem Start Fiat Egea",
+        "schemaDescription": "Häufige Ursachen, Diagnoseschritte und Fehler bei schwerem Start des Fiat Egea verständlich erklärt."
+      },
+      "es": {
+        "slug": "fiat-egea-arranque-dificil",
+        "title": "Fiat Egea con Arranque Difícil: Causas y Diagnóstico",
+        "metaDescription": "Conoce por qué tu Fiat Egea puede tener arranque difícil y qué pasos prácticos tomar para diagnosticar antes de reemplazar piezas.",
+        "intro": "El problema de arranque difícil en un Fiat Egea puede deberse a varios factores, desde fallas en el sistema de combustible, problemas de encendido o fallos eléctricos. Aquí te presentamos las causas más comunes y cómo realizar comprobaciones prácticas para diagnosticar correctamente el problema.",
+        "severity": "No suele impedir el arranque, pero afecta la comodidad y puede dañar otros componentes si se mantiene.",
+        "driveAdvice": "Arranca el vehículo en lugares seguros y evita forzar el motor con intentos prolongados. Consulta con un especialista si persiste el problema.",
+        "likelyCauses": [
+          "Bujías gastadas o sucias",
+          "Falla en la bomba o inyectores de combustible",
+          "Batería débil o conexiones malas",
+          "Motor frío con calentamiento lento",
+          "Filtro de aire obstruido"
+        ],
+        "diagnosticSteps": [
+          "Revisar sistemas de encendido y combustible",
+          "Medir la tensión y conexiones de la batería",
+          "Limpiar o cambiar el filtro de aire",
+          "Inspeccionar las bujías",
+          "Leer códigos de diagnóstico OBD2",
+          "Verificar temperatura de funcionamiento del motor"
+        ],
+        "firstChecks": [
+          "Limpiar y ajustar terminales de batería",
+          "Revisar bujías visualmente",
+          "Verificar estado del filtro de aire"
+        ],
+        "commonMistakes": [
+          "Cambiar bujías sin una inspección previa",
+          "Ignorar la calidad o nivel de combustible",
+          "Cambiar sensores sin diagnóstico adecuado"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio o múltiple",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0113 - Entrada alta del sensor de temperatura de aire"
+        ],
+        "internalLinks": [
+          {
+            "label": "¿Qué son los códigos OBD2?",
+            "href": "/es/que-son-codigos-obd2"
+          },
+          {
+            "label": "Cómo revisar bujías",
+            "href": "/es/como-revisar-bujias"
+          },
+          {
+            "label": "Problemas comunes en el sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿El arranque difícil es normal en el Fiat Egea?",
+            "a": "En climas fríos, puede ser ocasional, pero si es constante, se debe revisar el vehículo."
+          },
+          {
+            "q": "¿Cuándo cambiar las bujías?",
+            "a": "Usualmente entre 30,000 y 50,000 km o antes si hay evidencia de desgaste o suciedad."
+          },
+          {
+            "q": "¿La batería afecta el arranque?",
+            "a": "Sí, una batería débil puede causar arranques difíciles."
+          }
+        ],
+        "schemaTitle": "Guía para Diagnosticar Arranque Difícil en Fiat Egea",
+        "schemaDescription": "Conoce las causas más comunes, pasos de diagnóstico y errores frecuentes en arranque difícil del Fiat Egea."
+      },
+      "fr": {
+        "slug": "fiat-egea-demarrage-difficile",
+        "title": "Fiat Egea Démarrage Difficile : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes du démarrage difficile sur Fiat Egea et suivez nos conseils de diagnostic avant tout remplacement.",
+        "intro": "Un démarrage difficile sur Fiat Egea peut avoir plusieurs origines : système d’alimentation en carburant, problèmes d’allumage ou pannes électriques. Ce guide vous offre des conseils pratiques pour identifier la source du problème sans remplacer inutilement des pièces.",
+        "severity": "Ce symptôme n’empêche pas toujours de démarrer, mais affecte le confort de conduite et peut engendrer d’autres pannes.",
+        "driveAdvice": "Démarrez le véhicule dans un endroit sûr, évitez les sollicitations prolongées du démarreur et consultez un spécialiste si le problème persiste.",
+        "likelyCauses": [
+          "Bougies usées ou encrassées",
+          "Pompe à carburant ou injecteurs défectueux",
+          "Batterie faible ou connexions électriques mauvaises",
+          "Températures froides ralentissant le moteur",
+          "Filtre à air bouché"
+        ],
+        "diagnosticSteps": [
+          "Vérifier l’allumage et le système carburant",
+          "Tester la tension et les connexions de la batterie",
+          "Nettoyer ou remplacer le filtre à air",
+          "Contrôler l’état des bougies",
+          "Lire les codes défauts via OBD2",
+          "Contrôler la température du moteur"
+        ],
+        "firstChecks": [
+          "Nettoyer et resserrer les bornes de batterie",
+          "Inspecter visuellement les bougies",
+          "Évaluer l’état du filtre à air"
+        ],
+        "commonMistakes": [
+          "Remplacer les bougies sans contrôle préalable",
+          "Négliger la qualité ou le niveau de carburant",
+          "Changer les capteurs sans diagnostic approprié"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0113 - Signal élevé du capteur de température d’air"
+        ],
+        "internalLinks": [
+          {
+            "label": "Qu'est-ce que les codes OBD2 ?",
+            "href": "/fr/quest-ce-que-les-codes-obd2"
+          },
+          {
+            "label": "Comment vérifier les bougies",
+            "href": "/fr/comment-verifier-les-bougues"
+          },
+          {
+            "label": "Problèmes courants du système carburant",
+            "href": "/fr/problemes-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Un démarrage difficile est-il normal sur Fiat Egea ?",
+            "a": "En cas de basse température, cela peut arriver, mais si c’est fréquent, une vérification est nécessaire."
+          },
+          {
+            "q": "Quand changer les bougies d’allumage ?",
+            "a": "En général tous les 30 000 à 50 000 km, ou plus tôt si elles sont encrassées ou usées."
+          },
+          {
+            "q": "Une batterie faible peut-elle causer un démarrage difficile ?",
+            "a": "Oui, une batterie défaillante affecte directement la capacité de démarrage du moteur."
+          }
+        ],
+        "schemaTitle": "Guide du Démarrage Difficile sur Fiat Egea",
+        "schemaDescription": "Causes fréquentes, étapes de diagnostic et erreurs à éviter pour un démarrage difficile sur Fiat Egea."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-black-smoke",
+    "intentKey": "fiat-egea_black_smoke",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "black_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-siyah-duman-atiyor",
+        "title": "Fiat Egea Siyah Duman Atıyor: Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Fiat Egea'nın siyah duman atmasının olası nedenleri, teşhis adımları ve ilk kontroller konusunda detaylı rehber.",
+        "intro": "Fiat Egea araçlarda siyah duman çıkması, motor performansını etkileyen ve çevreye zarar verebilen önemli bir belirtidir. Bu sorun birçok farklı sebepten kaynaklanabilir. Doğru teşhis ve adımlar ile maliyetli parça değişimlerinden önce temel kontroller yapılmalıdır. Bu rehberde, siyah dumanın olası nedenlerine, yapılabilecek testlere ve sık yapılan hatalara değinilecektir.",
+        "severity": "Orta - Siyah duman, motorun yakıt-hava karışımı ve yanma verimliliğinde sorun olduğunu gösterir.",
+        "driveAdvice": "Araç siyah duman çıkarıyorsa, uzun süre yüksek devirde sürüşten kaçının ve mümkünse yakıt kalitesini kontrol ettirin.",
+        "likelyCauses": [
+          "Enjektörlerde yakıt püskürtme problemi",
+          "Hava filtresinin tıkanması veya kirlenmesi",
+          "Turbo şarj sisteminde sorunlar",
+          "EGR (Egzoz Gazı Resirkülasyonu) vanasının arızalanması",
+          "Yanlış veya bozuk yakıt kullanımı"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile motor kodlarını kontrol edin",
+          "Hava filtresini çıkarıp inceleyin",
+          "Enjektörlerin yakıt püskürtme kalitesini test edin",
+          "Turbo basıncını ölçün",
+          "EGR valfinin durumunu gözlemleyin",
+          "Yakıt kalitesini ve deposunu kontrol edin"
+        ],
+        "firstChecks": [
+          "Hava filtresinin temizliğini kontrol edin",
+          "Yakıt filtresinin tıkanıklığını gözden geçirin",
+          "Egzoz çıkışından gelen dumanı ve rengini gözlemleyin"
+        ],
+        "commonMistakes": [
+          "Sadece siyah duman çıkar diye hemen enjektör değiştirmek",
+          "Turbo sorununu görmezden gelmek",
+          "Düşük kaliteli yakıt kullanmaya devam etmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zengin karışım",
+          "P0269 - Enjektör zamanlama sorunu",
+          "P0299 - Turbo basınç düşük"
+        ],
+        "internalLinks": [
+          {
+            "label": "Motor arızaları nasıl teşhis edilir?",
+            "href": "/tr/motor-arizalari-teshisi"
+          },
+          {
+            "label": "Enjektör sorunları ve çözümleri",
+            "href": "/tr/enjektor-sorunlari-cozumleri"
+          },
+          {
+            "label": "OBD2 kodları rehberi",
+            "href": "/tr/obd2-kodlari-rehberi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea siyah duman atmaya başladığında ilk ne yapmalıyım?",
+            "a": "İlk olarak hava filtresi ve yakıt filtresini kontrol edin, ardından OBD2 kod taraması yaparak sorunun nereden kaynaklandığını anlamaya çalışın."
+          },
+          {
+            "q": "Siyah duman çıkaran aracımı hemen tamir ettirmesem olur mu?",
+            "a": "Uzun süre ihmal etmek motor performansını daha da kötüleştirir ve yakıt tüketimini artırır, mümkünse kısa sürede kontrole götürün."
+          },
+          {
+            "q": "Yakıt kalitesi siyah duman etkiler mi?",
+            "a": "Evet, düşük kaliteli veya kirli yakıt yanmayı etkiler ve siyah duman oluşmasına neden olabilir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Siyah Duman Sorunu ve Çözümleri",
+        "schemaDescription": "Fiat Egea siyah duman atması sorununa dair olası nedenler, temel kontroller, teşhis yöntemleri ve sık yapılan hatalar."
+      },
+      "en": {
+        "slug": "fiat-egea-black-smoke-issues",
+        "title": "Fiat Egea Black Smoke: Causes and Diagnostic Guide",
+        "metaDescription": "Explore common causes and diagnostic steps for black smoke from a Fiat Egea. Practical advice before replacing parts.",
+        "intro": "Experiencing black smoke from your Fiat Egea is an important sign that your engine may be running rich or facing combustion issues. Various factors can contribute to this symptom, and proper diagnostic steps can help you identify the root cause without unnecessary parts replacement. This guide covers common causes, checks, and mistakes to avoid.",
+        "severity": "Moderate - Black smoke indicates incomplete combustion or excess fuel in the engine.",
+        "driveAdvice": "Avoid prolonged high RPM driving and consider checking fuel quality to prevent further damage if your Egea emits black smoke.",
+        "likelyCauses": [
+          "Malfunctioning fuel injectors causing excess fuel",
+          "Clogged or dirty air filter restricting airflow",
+          "Issues with the turbocharger system",
+          "Faulty EGR valve leading to poor combustion",
+          "Use of improper or contaminated fuel"
+        ],
+        "diagnosticSteps": [
+          "Scan OBD2 codes to identify engine faults",
+          "Inspect and clean the air filter",
+          "Test fuel injector spray patterns",
+          "Measure turbocharger boost pressure",
+          "Check EGR valve operation",
+          "Verify fuel quality and filter condition"
+        ],
+        "firstChecks": [
+          "Check air filter cleanliness",
+          "Inspect fuel filter for clogs",
+          "Observe smoke color and density at exhaust"
+        ],
+        "commonMistakes": [
+          "Replacing injectors without thorough diagnosis",
+          "Ignoring turbocharger system faults",
+          "Continuing with low-grade fuel"
+        ],
+        "relatedCodes": [
+          "P0171 - Lean fuel mixture",
+          "P0269 - Injector timing fault",
+          "P0299 - Turbocharger underboost"
+        ],
+        "internalLinks": [
+          {
+            "label": "Engine Diagnostics Guide",
+            "href": "/en/engine-diagnostics"
+          },
+          {
+            "label": "Fuel Injector Troubleshooting",
+            "href": "/en/fuel-injector-troubleshooting"
+          },
+          {
+            "label": "OBD2 Codes Explained",
+            "href": "/en/obd2-codes-explained"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I check first if my Fiat Egea emits black smoke?",
+            "a": "Start by inspecting the air and fuel filters, then use an OBD2 scanner to check for engine codes."
+          },
+          {
+            "q": "Is it safe to drive with black smoke coming from my vehicle?",
+            "a": "It is not recommended for extended use, as it may cause engine damage and increased fuel consumption."
+          },
+          {
+            "q": "Can poor-quality fuel cause black smoke?",
+            "a": "Yes, contaminated or unsuitable fuel can lead to incomplete combustion and black smoke."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Black Smoke Causes and Diagnosis",
+        "schemaDescription": "Identify reasons behind black smoke in Fiat Egea with diagnostic tips, common causes, and best practices to avoid costly repairs."
+      },
+      "de": {
+        "slug": "fiat-egea-schwarzer-rauch-probleme",
+        "title": "Fiat Egea Schwarzer Rauch: Ursachen und Diagnose",
+        "metaDescription": "Ursachen für schwarzen Rauch bei Fiat Egea und praktische Diagnoseschritte, die vor dem Teilewechsel helfen.",
+        "intro": "Wenn Ihr Fiat Egea schwarzen Rauch ausstößt, deutet dies auf eine unvollständige Verbrennung oder eine falsche Kraftstoffzufuhr hin. Die Ursachen können vielfältig sein. Es empfiehlt sich, systematisch vorzugehen und vor teuren Reparaturen einfache Kontrollen durchzuführen. In diesem Beitrag finden Sie typische Ursachen, Diagnoseverfahren und häufige Fehler.",
+        "severity": "Mittel - Schwarzer Rauch signalisiert eine fehlerhafte Kraftstoff-Luft-Mischung im Motor.",
+        "driveAdvice": "Vermeiden Sie längere Fahrten mit hoher Drehzahl und überprüfen Sie die Kraftstoffqualität, wenn schwarzer Rauch auftritt.",
+        "likelyCauses": [
+          "Defekte oder undichte Einspritzdüsen",
+          "Verstopfter oder verschmutzter Luftfilter",
+          "Probleme mit dem Turbolader",
+          "Fehlerhaftes AGR-Ventil (Abgasrückführung)",
+          "Verwendung von minderwertigem Kraftstoff"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der OBD2 Fehlercodes",
+          "Überprüfung und Reinigung des Luftfilters",
+          "Test der Einspritzdüsenfunktion",
+          "Messung des Turbolader-Drucks",
+          "Funktionsprüfung des AGR-Ventils",
+          "Kontrolle der Kraftstoffqualität"
+        ],
+        "firstChecks": [
+          "Sauberkeit des Luftfilters prüfen",
+          "Kraftstofffilter auf Verstopfung kontrollieren",
+          "Abgasfarbe und -dichte am Auspuff beobachten"
+        ],
+        "commonMistakes": [
+          "Einspritzdüsen austauschen ohne Diagnose",
+          "Turbo-Probleme ignorieren",
+          "Weiterbetrieb mit schlechtem Kraftstoff"
+        ],
+        "relatedCodes": [
+          "P0171 - Mageres Kraftstoffgemisch",
+          "P0269 - Einspritzdüsen-Timing-Fehler",
+          "P0299 - Turbolader-Unterdruck"
+        ],
+        "internalLinks": [
+          {
+            "label": "Motor-Diagnose Anleitung",
+            "href": "/de/motor-diagnose-anleitung"
+          },
+          {
+            "label": "Einspritzdüsendiagnose",
+            "href": "/de/einspritzduesendiagnose"
+          },
+          {
+            "label": "OBD2 Fehlercodes Übersicht",
+            "href": "/de/obd2-fehlercodes-uebersicht"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was prüfe ich zuerst bei schwarzem Rauch am Fiat Egea?",
+            "a": "Überprüfen Sie zuerst Luft- und Kraftstofffilter, dann OBD2-Codes auslesen, um Fehler zu entdecken."
+          },
+          {
+            "q": "Kann ich mit schwarzem Rauch sicher weiterfahren?",
+            "a": "Längeres Fahren sollte vermieden werden, da es den Motor schädigen kann."
+          },
+          {
+            "q": "Verursacht schlechter Kraftstoff schwarzen Rauch?",
+            "a": "Ja, minderwertiger oder verunreinigter Kraftstoff kann zu unvollständiger Verbrennung führen."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Schwarzer Rauch: Ursachen und Diagnose",
+        "schemaDescription": "Erfahren Sie, warum der Fiat Egea schwarzen Rauch produziert und wie Sie mit gezielten Diagnoseschritten Probleme vermeiden."
+      },
+      "es": {
+        "slug": "fiat-egea-sale-humo-negro-problemas",
+        "title": "Fiat Egea Sale Humo Negro: Causas y Diagnóstico",
+        "metaDescription": "Conoce las causas comunes del humo negro en Fiat Egea, pasos de diagnóstico y consejos antes de cambiar piezas.",
+        "intro": "Que tu Fiat Egea emita humo negro indica que la mezcla de combustible y aire no es la adecuada, lo que puede afectar el motor y el medio ambiente. Este problema puede tener múltiples causas. Antes de realizar reparaciones costosas, es importante realizar revisiones prácticas y diagnósticos detallados para detectar el origen exacto.",
+        "severity": "Moderado - El humo negro sugiere combustión incompleta o exceso de combustible.",
+        "driveAdvice": "Evita conducir a altas revoluciones por mucho tiempo y revisa la calidad del combustible si notas humo negro.",
+        "likelyCauses": [
+          "Inyectores de combustible con fallas o goteo",
+          "Filtro de aire sucio o tapado",
+          "Problemas con el sistema de turbo",
+          "Válvula EGR defectuosa",
+          "Uso de combustible inapropiado o contaminado"
+        ],
+        "diagnosticSteps": [
+          "Escanear los códigos OBD2",
+          "Inspeccionar y limpiar el filtro de aire",
+          "Probar el funcionamiento de los inyectores",
+          "Medir la presión del turbo",
+          "Verificar el funcionamiento de la válvula EGR",
+          "Revisar la calidad del combustible y filtro"
+        ],
+        "firstChecks": [
+          "Revisar limpieza del filtro de aire",
+          "Verificar si el filtro de combustible está obstruido",
+          "Observar color y densidad del humo en el escape"
+        ],
+        "commonMistakes": [
+          "Cambiar inyectores sin diagnóstico previo",
+          "Ignorar fallas en el turbo",
+          "Usar combustible de baja calidad"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre de combustible",
+          "P0269 - Fallo en tiempo de inyección",
+          "P0299 - Baja presión en turbo"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de diagnóstico de motor",
+            "href": "/es/diagnostico-motor"
+          },
+          {
+            "label": "Problemas comunes de inyectores",
+            "href": "/es/problemas-inyectores"
+          },
+          {
+            "label": "Códigos OBD2 explicados",
+            "href": "/es/codigos-obd2-explicados"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué debo revisar primero si mi Fiat Egea saca humo negro?",
+            "a": "Revisa primero los filtros de aire y combustible y luego escanea los códigos OBD2 para identificar fallas."
+          },
+          {
+            "q": "¿Es seguro seguir conduciendo con humo negro?",
+            "a": "No es recomendable, ya que puede causar daños al motor y aumentar el consumo de combustible."
+          },
+          {
+            "q": "¿Puede el combustible de mala calidad causar humo negro?",
+            "a": "Sí, un combustible contaminado o inapropiado puede provocar una combustión incompleta."
+          }
+        ],
+        "schemaTitle": "Causas y diagnóstico del humo negro en Fiat Egea",
+        "schemaDescription": "Descubre por qué tu Fiat Egea genera humo negro y aprende a diagnosticar el problema para evitar reparaciones costosas."
+      },
+      "fr": {
+        "slug": "fiat-egea-fumee-noire-problemes",
+        "title": "Fiat Egea Fumée Noire : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes de fumée noire sur Fiat Egea, les étapes de diagnostic et conseils avant remplacement des pièces.",
+        "intro": "La fumée noire émise par un Fiat Egea indique une combustion incomplète ou un excès de carburant. Plusieurs causes peuvent être en jeu, et un diagnostic précis est essentiel avant de procéder à des réparations coûteuses. Ce guide présente les causes possibles, les vérifications initiales, et les erreurs à éviter pour un diagnostic efficace.",
+        "severity": "Modéré - La fumée noire signale un problème d'équilibre air-carburant ou de combustion.",
+        "driveAdvice": "Évitez les longues accélérations et contrôlez la qualité du carburant en cas de fumée noire.",
+        "likelyCauses": [
+          "Injecteurs défectueux causant un excès de carburant",
+          "Filtre à air encrassé ou obstrué",
+          "Problèmes liés au système de turbo",
+          "Vanne EGR défaillante",
+          "Carburant inapproprié ou contaminé"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts via OBD2",
+          "Inspecter et nettoyer le filtre à air",
+          "Tester les injecteurs de carburant",
+          "Mesurer la pression du turbo",
+          "Vérifier le bon fonctionnement de la vanne EGR",
+          "Contrôler la qualité du carburant et du filtre"
+        ],
+        "firstChecks": [
+          "Vérifier la propreté du filtre à air",
+          "Contrôler l'état du filtre à carburant",
+          "Observer la couleur et la densité de la fumée d’échappement"
+        ],
+        "commonMistakes": [
+          "Changer les injecteurs sans diagnostic complet",
+          "Ignorer les problèmes du turbo",
+          "Utiliser un carburant de mauvaise qualité"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0269 - Problème de synchronisation injecteur",
+          "P0299 - Sous-pression turbo"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide de diagnostic moteur",
+            "href": "/fr/diagnostic-moteur"
+          },
+          {
+            "label": "Problèmes injecteurs et solutions",
+            "href": "/fr/problemes-injecteurs"
+          },
+          {
+            "label": "Codes défauts OBD2 expliqués",
+            "href": "/fr/codes-obd2-expliques"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que vérifier en priorité en cas de fumée noire sur Fiat Egea ?",
+            "a": "Commencez par vérifier les filtres à air et carburant, puis lisez les codes défauts avec l’OBD2."
+          },
+          {
+            "q": "Est-il dangereux de rouler avec de la fumée noire ?",
+            "a": "Il est déconseillé de rouler longtemps car cela peut endommager le moteur et augmenter la consommation."
+          },
+          {
+            "q": "Le carburant de mauvaise qualité peut-il provoquer de la fumée noire ?",
+            "a": "Oui, un carburant contaminé ou inadapté peut causer une combustion incomplète et donc de la fumée noire."
+          }
+        ],
+        "schemaTitle": "Causes et diagnostic de la fumée noire sur Fiat Egea",
+        "schemaDescription": "Comprenez les causes de la fumée noire sur Fiat Egea et les étapes de diagnostic pour éviter des réparations coûteuses."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-white-smoke",
+    "intentKey": "fiat-egea_white_smoke",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "white_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-beyaz-duman-atiyor-nedenleri",
+        "title": "Fiat Egea Beyaz Duman Atıyor: Olası Nedenler ve Teşhis Yöntemleri",
+        "metaDescription": "Fiat Egea'da beyaz duman görülmesi çeşitli nedenlerden olabilir. Pratik kontrol ve tespit yöntemleriyle duman sorununu çözmenize yardımcı olur.",
+        "intro": "Fiat Egea araçlarda motorun egzozundan çıkan beyaz duman, farklı mekanik ve elektronik sorunlara işaret edebilir. Bu durum hemen müdahale gerektirir, ancak tek bir sebebe bağlanması doğru olmaz. Bu yazıda beyaz dumanın olası nedenlerini, aracınızı nasıl kontrol edeceğinizi ve doğru teşhis adımlarını inceleyeceğiz. Böylece gereksiz parça değişimlerinden kaçınabilirsiniz.",
+        "severity": "Beyaz duman, motorun çalışma düzenini bozabilir ve zamanla ciddi hasarlara yol açabilir. Hemen kontrol edilmelidir.",
+        "driveAdvice": "Aracınızı çalıştırırken motor sıcaklığını ve egzoz dumanını yakından izleyin. Ani yükselen beyaz duman varsa sürüşü sınırlandırın ve en yakın servise gidin.",
+        "likelyCauses": [
+          "Soğuk motor veya yoğuşma sonucu su buharı",
+          "Motor soğutma sıvısı sızıntısı (silindir kapağı contasında hasar)",
+          "Enjektör arızası veya yakıt karışımının yanlış ayarlanması",
+          "Turboşarj yağ sızıntısı",
+          "Silindir aşınması veya piston segmanı problemleri"
+        ],
+        "diagnosticSteps": [
+          "Motor soğukken sabah egzozundan duman kontrolü",
+          "Motor yağı seviyesini ve rengini gözlemleyin",
+          "Soğutma sıvısı seviyesini kontrol edin ve yağ ile karışımına bakın",
+          "Silindir kapak contasından sızıntı testi yaptırın",
+          "Yakıt enjektör kürünü ve kalibrasyonunu ölçümleyin",
+          "OBD2 taraması ile ilgili hata kodları alın"
+        ],
+        "firstChecks": [
+          "Yağ seviyesi ve rengi",
+          "Soğutma sıvısı seviyesi",
+          "Egzoz gürültüsü ve karakteristiği"
+        ],
+        "commonMistakes": [
+          "Beyaz dumanı direk hararet olarak değerlendirmek",
+          "Parça değişiminden önce detaylı teşhis yapmamak",
+          "Egzoz dumanını sadece soğuk havaya bağlamak"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0301"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-ariza-kodlari",
+            "href": "/tr/faq/fiat-egea-ariza-kodlari"
+          },
+          {
+            "label": "motor-yag-seviyesi-kontrolu",
+            "href": "/tr/rehberler/motor-yag-seviyesi-kontrolu"
+          },
+          {
+            "label": "obd2-ariza-kodlari-ve-tesbiti",
+            "href": "/tr/ogren/obd2-ariza-kodlari-ve-tesbiti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea'da beyaz duman neden çıkar?",
+            "a": "Beyaz duman genellikle motor soğutma sıvısı sızıntısı, su buharı ya da enjektör sorunlarından kaynaklanabilir."
+          },
+          {
+            "q": "Beyaz dumanı önlemek için ne yapabilirim?",
+            "a": "Motor yağ ve soğutma sıvısı seviyelerini düzenli kontrol edin, zamansız aşırı zorlamalardan kaçının."
+          },
+          {
+            "q": "OBD2 cihazıyla hangi kodlar beyaz duman sorunu için önemli?",
+            "a": "P0420 (katalizör verim düşüklüğü), P0171 (yakıt karışımı fakir), P0301 (silindir ateşleme hatası) önemli kodlardır."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Beyaz Duman Atıyor - Nedenleri ve Teşhis Yöntemleri",
+        "schemaDescription": "Fiat Egea aracınızın egzozundan beyaz duman çıkıyorsa olası nedenler, pratik teşhis adımları ve doğru kontroller hakkında detaylı bilgi bulun."
+      },
+      "en": {
+        "slug": "fiat-egea-white-smoke-causes-diagnosis",
+        "title": "Fiat Egea White Smoke Issues: Causes and Diagnostic Steps",
+        "metaDescription": "Discover common reasons for white smoke in Fiat Egea and follow practical diagnostic tips before part replacement.",
+        "intro": "White smoke from the exhaust of a Fiat Egea can indicate various underlying mechanical or electronic issues. While it should be addressed promptly, it’s important not to assume a single cause. This guide covers possible reasons, key diagnostic steps, and initial checks to help you identify the problem without unnecessary repairs.",
+        "severity": "White smoke may signal engine malfunctions that can lead to serious damage if ignored. Timely diagnosis is crucial.",
+        "driveAdvice": "Monitor engine temperature and exhaust smoke closely while driving. If thick white smoke appears suddenly, reduce driving and seek professional inspection.",
+        "likelyCauses": [
+          "Condensation or water vapor during cold starts",
+          "Coolant leak due to damaged cylinder head gasket",
+          "Fuel injector issues or incorrect fuel mixture",
+          "Turbocharger oil seal leaks",
+          "Worn cylinders or piston ring problems"
+        ],
+        "diagnosticSteps": [
+          "Check exhaust for white smoke during cold engine start",
+          "Inspect engine oil level and color",
+          "Check coolant level and signs of oil contamination",
+          "Perform leak test on cylinder head gasket",
+          "Evaluate fuel injector performance and calibration",
+          "Scan with OBD2 tool for trouble codes"
+        ],
+        "firstChecks": [
+          "Oil level and condition",
+          "Coolant level",
+          "Exhaust noise and appearance"
+        ],
+        "commonMistakes": [
+          "Assuming white smoke automatically means overheating",
+          "Replacing parts without thorough diagnosis",
+          "Attributing smoke only to cold weather condensation"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0301"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-trouble-codes",
+            "href": "/en/faq/fiat-egea-trouble-codes"
+          },
+          {
+            "label": "engine-oil-level-check",
+            "href": "/en/guides/engine-oil-level-check"
+          },
+          {
+            "label": "obd2-trouble-codes-and-diagnosis",
+            "href": "/en/learn/obd2-trouble-codes-and-diagnosis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes white smoke in a Fiat Egea?",
+            "a": "White smoke commonly results from coolant leaks, water vapor, or fuel injection problems."
+          },
+          {
+            "q": "How can I prevent white smoke from my engine?",
+            "a": "Regularly check oil and coolant levels and avoid aggressive driving until the engine is fully warm."
+          },
+          {
+            "q": "Which OBD2 codes are relevant for white smoke issues?",
+            "a": "Codes like P0420, P0171, and P0301 may provide clues about catalytic converter, fuel mixture, or misfire problems."
+          }
+        ],
+        "schemaTitle": "Fiat Egea White Smoke | Causes and Diagnostics",
+        "schemaDescription": "Learn about the causes of white smoke from your Fiat Egea’s exhaust, practical diagnostic steps, and important checks."
+      },
+      "de": {
+        "slug": "fiat-egea-weisser-rauch-gruende-diagnose",
+        "title": "Fiat Egea Weißer Rauch: Mögliche Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für weißen Rauch am Fiat Egea und wie Sie vor dem Austausch von Teilen praktisch prüfen können.",
+        "intro": "Weißer Rauch aus dem Auspuff Ihres Fiat Egea kann auf verschiedene mechanische oder elektronische Probleme hinweisen. Es ist wichtig, die Ursachen sorgfältig zu prüfen, bevor Sie Teile austauschen. In diesem Artikel zeigen wir Ihnen mögliche Ursachen, erste Kontrollen und diagnostische Schritte, um teure Fehlentscheidungen zu vermeiden.",
+        "severity": "Weißer Rauch kann auf ernsthafte Motorschäden hinweisen und sollte umgehend überprüft werden.",
+        "driveAdvice": "Beobachten Sie während der Fahrt genau die Motortemperatur und das Auspuffverhalten. Bei plötzlichem starken weißen Rauch sollten Sie die Fahrt einschränken und eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Kondensation bei kaltem Motorstart",
+          "Kühlmittelverlust durch defekte Zylinderkopfdichtung",
+          "Einspritzdüsenprobleme oder falsches Kraftstoff-Luft-Gemisch",
+          "Öldichtungsschäden am Turbolader",
+          "Zylinder- oder Kolbenringschäden"
+        ],
+        "diagnosticSteps": [
+          "Ausstoß von weißem Rauch bei kaltem Motorstart prüfen",
+          "Motorölstand und -farbe begutachten",
+          "Kühlmittelstand kontrollieren und auf Ölspuren untersuchen",
+          "Dichtigkeitsprüfung der Zylinderkopfdichtung durchführen",
+          "Einspritzdüsenfunktion und Kalibrierung untersuchen",
+          "OBD2-Fehlercodes auslesen"
+        ],
+        "firstChecks": [
+          "Ölstand und -zustand",
+          "Kühlmittelstand",
+          "Auspuffgeräusch und -erscheinung"
+        ],
+        "commonMistakes": [
+          "Weißen Rauch sofort mit Motorschaden verwechseln",
+          "Teile ohne genaue Diagnose tauschen",
+          "Dampf nur auf kalte Witterung zurückführen"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0301"
+        ],
+        "internalLinks": [
+          {
+            "label": "fiat-egea-fehlercodes",
+            "href": "/de/faq/fiat-egea-fehlercodes"
+          },
+          {
+            "label": "motor-oel-stand-pruefung",
+            "href": "/de/anleitungen/motor-oel-stand-pruefung"
+          },
+          {
+            "label": "obd2-fehlercodes-und-diagnose",
+            "href": "/de/lernen/obd2-fehlercodes-und-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum entsteht weißer Rauch bei Fiat Egea?",
+            "a": "Weißer Rauch entsteht häufig durch Kühlmittellecks, Kondensation oder Probleme mit der Kraftstoffeinspritzung."
+          },
+          {
+            "q": "Wie vermeide ich weißen Rauch am Motor?",
+            "a": "Regelmäßige Kontrolle von Öl- und Kühlmittelstand sowie schonendes Fahren im kalten Zustand helfen."
+          },
+          {
+            "q": "Welche OBD2-Codes sind bei weißem Rauch relevant?",
+            "a": "P0420, P0171 und P0301 weisen auf Katalysatorprobleme, falsches Kraftstoffgemisch und Zündaussetzer hin."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Weißer Rauch - Ursachen und Diagnose",
+        "schemaDescription": "Erfahren Sie die Ursachen von weißem Rauch am Fiat Egea, praktische Diagnoseschritte und wichtige Kontrollen für Ihr Fahrzeug."
+      },
+      "es": {
+        "slug": "fiat-egea-humo-blanco-causas-soluciones",
+        "title": "Fiat Egea Humo Blanco: Causas Comunes y Pasos para Diagnóstico",
+        "metaDescription": "Conoce las razones del humo blanco en Fiat Egea y consejos prácticos para diagnosticar antes de cambiar piezas.",
+        "intro": "El humo blanco que sale del escape de un Fiat Egea puede tener diversas causas, desde problemas mecánicos hasta fallos en la electrónica. Aunque es importante atenderlo rápido, no hay una única causa clara. Esta guía te ayudará a identificar posibles orígenes, realizar chequeos prácticos y seguir pasos para diagnosticar correctamente sin hacer cambios innecesarios.",
+        "severity": "El humo blanco puede indicar fallos graves en el motor si no se atienden a tiempo.",
+        "driveAdvice": "Mientras conduces, observa la temperatura del motor y el humo del escape. Si aparece humo blanco denso de forma repentina, limita la conducción y consulta con un taller.",
+        "likelyCauses": [
+          "Condensación o vapor de agua en arranques en frío",
+          "Pérdidas de refrigerante por junta de culata dañada",
+          "Problemas con inyectores o mezcla de combustible incorrecta",
+          "Fugas de aceite en el turbo",
+          "Desgaste de cilindros o anillos de pistón"
+        ],
+        "diagnosticSteps": [
+          "Revisar humo blanco al arrancar motor frío",
+          "Inspeccionar nivel y color del aceite de motor",
+          "Verificar nivel del refrigerante y mezcla con aceite",
+          "Realizar prueba de fugas en junta de culata",
+          "Evaluar rendimiento y calibración de inyectores",
+          "Leer códigos de error con escáner OBD2"
+        ],
+        "firstChecks": [
+          "Nivel y estado del aceite",
+          "Nivel del refrigerante",
+          "Ruido y aspecto del escape"
+        ],
+        "commonMistakes": [
+          "Pensar que humo blanco es siempre sobrecalentamiento",
+          "Cambiar piezas sin diagnóstico preciso",
+          "Atribuir el humo solo a la condensación por frío"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0301"
+        ],
+        "internalLinks": [
+          {
+            "label": "codigos-fallos-fiat-egea",
+            "href": "/es/faq/codigos-fallos-fiat-egea"
+          },
+          {
+            "label": "comprobar-nivel-aceite-motor",
+            "href": "/es/guias/comprobar-nivel-aceite-motor"
+          },
+          {
+            "label": "codigos-fallos-obd2-y-diagnostico",
+            "href": "/es/aprender/codigos-fallos-obd2-y-diagnostico"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué sale humo blanco en un Fiat Egea?",
+            "a": "El humo blanco suele deberse a pérdida de refrigerante, vapor de agua o problemas con los inyectores de combustible."
+          },
+          {
+            "q": "¿Cómo puedo evitar que salga humo blanco?",
+            "a": "Revisa regularmente los niveles de aceite y refrigerante y evita exigir el motor cuando está frío."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con humo blanco?",
+            "a": "Los códigos P0420, P0171 y P0301 pueden indicar problemas en el catalizador, mezcla pobre de combustible o fallos de encendido."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Humo Blanco | Causas y Diagnóstico",
+        "schemaDescription": "Aprende las causas del humo blanco en Fiat Egea, pasos prácticos para diagnosticar y controles importantes."
+      },
+      "fr": {
+        "slug": "fiat-egea-fumee-blanche-causes-diagnostic",
+        "title": "Fiat Egea Fumée Blanche : Causes Possibles et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes de fumée blanche sur Fiat Egea et les étapes de diagnostic avant remplacement de pièces.",
+        "intro": "La fumée blanche qui s’échappe de l’échappement d’une Fiat Egea peut avoir plusieurs origines, mécaniques ou électroniques. Il est essentiel de ne pas attribuer ce symptôme à une cause unique. Cet article détaille les causes probables, les contrôles pratiques et les étapes de diagnostic pour vous aider à identifier la source sans changer inutilement des pièces.",
+        "severity": "La fumée blanche peut signaler une défaillance moteur grave en cas de négligence. Un diagnostic rapide est recommandé.",
+        "driveAdvice": "Surveillez la température du moteur et la fumée d’échappement lors de la conduite. En cas de fumée blanche dense soudaine, limitez la route et consultez un professionnel.",
+        "likelyCauses": [
+          "Condensation ou vapeur d’eau au démarrage à froid",
+          "Fuite de liquide de refroidissement due à une joint de culasse endommagé",
+          "Problème injecteur ou mauvais mélange carburant",
+          "Fuite d’huile au niveau du turbocompresseur",
+          "Usure des cylindres ou des segments de piston"
+        ],
+        "diagnosticSteps": [
+          "Contrôler la fumée blanche au démarrage à froid",
+          "Vérifier le niveau et la couleur de l’huile moteur",
+          "Contrôler le niveau de liquide de refroidissement et la présence d’huile",
+          "Effectuer un test d’étanchéité du joint de culasse",
+          "Tester le bon fonctionnement et le calibrage des injecteurs",
+          "Lire les codes défaut via un outil OBD2"
+        ],
+        "firstChecks": [
+          "Niveau et qualité de l’huile",
+          "Niveau du liquide de refroidissement",
+          "Bruits et aspect de l’échappement"
+        ],
+        "commonMistakes": [
+          "Interpréter la fumée blanche comme une surchauffe systématique",
+          "Changer les pièces sans diagnostic approfondi",
+          "Attribuer la fumée uniquement à la condensation due au froid"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0301"
+        ],
+        "internalLinks": [
+          {
+            "label": "codes-defauts-fiat-egea",
+            "href": "/fr/faq/codes-defauts-fiat-egea"
+          },
+          {
+            "label": "controle-niveau-huile-moteur",
+            "href": "/fr/guides/controle-niveau-huile-moteur"
+          },
+          {
+            "label": "codes-defauts-obd2-et-diagnostic",
+            "href": "/fr/apprendre/codes-defauts-obd2-et-diagnostic"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi ma Fiat Egea produit-elle de la fumée blanche ?",
+            "a": "La fumée blanche provient souvent de fuites de liquide de refroidissement, de vapeur d’eau ou de problèmes liés aux injecteurs."
+          },
+          {
+            "q": "Comment éviter la fumée blanche sur mon moteur ?",
+            "a": "Contrôlez régulièrement les niveaux d’huile et de liquide de refroidissement, et évitez de solliciter le moteur à froid."
+          },
+          {
+            "q": "Quels codes OBD2 sont associés à la fumée blanche ?",
+            "a": "Les codes P0420, P0171 et P0301 peuvent indiquer un problème de catalyseur, un mélange pauvre ou des ratés d’allumage."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Fumée Blanche - Causes et Diagnostic",
+        "schemaDescription": "Découvrez les causes de la fumée blanche sur Fiat Egea, les étapes de diagnostic et les vérifications essentielles."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-poor-fuel-economy",
+    "intentKey": "fiat-egea_poor_fuel_economy",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-cok-yakiyor",
+        "title": "Fiat Egea Çok Yakıyor: Yakıt Tüketimi Neden Artar?",
+        "metaDescription": "Fiat Egea araçlarda artan yakıt tüketimi için olası nedenler ve temel kontrol önerileri. Doğru tanı ve önlemlerle yakıt tasarrufu sağlayın.",
+        "intro": "Fiat Egea’nın yüksek yakıt tüketimi çeşitli sebeplerden kaynaklanabilir. Tek bir neden söz konusu olmayabilir, bu nedenle aracınızda yakıt tüketimini artıran sorunları anlamak için sistematik bir kontrol yapmanız önemlidir. Parça değişimi öncesi pratik testler ve genel kontrollerle sorunun kaynağını doğru teşhis edebilirsiniz.",
+        "severity": "Orta - Yüksek",
+        "driveAdvice": "Yakıt tüketimi artışı sürüş maliyetlerinizi yükseltir; gereksiz yakıt harcamasını önlemek için erken teşhis ve bakım önerilir.",
+        "likelyCauses": [
+          "Enjeksiyon sisteminde tıkanıklık veya arıza",
+          "Hava filtresinin kirli olması",
+          "Tekerleklerde düşük hava basıncı",
+          "Oksijen sensörü arızası",
+          "Yakıt sistemi sızıntıları veya yanlış ayarlanması"
+        ],
+        "diagnosticSteps": [
+          "Araçtaki OBD2 cihazıyla yakıt tüketim kodlarını kontrol edin",
+          "Hava filtresi ve yakıt filtrelerini inceleyin, gerekirse değiştirin",
+          "Lastik hava basınçlarını kontrol edin ve üretici önerilerine göre ayarlayın",
+          "Egzoz emisyon testleri yaptırarak sensörlerin durumunu kontrol edin",
+          "Yakıt enjeksiyon sistemi ve hortumlarda sızıntı kontrolü yapın",
+          "Aracın performansında ani değişiklikleri sürüş esnasında gözlemleyin"
+        ],
+        "firstChecks": [
+          "Lastik hava basıncının uygun seviyede olup olmadığını kontrol edin",
+          "Hava filtresinin temizliğini ve durumunu inceleyin",
+          "Motor yağ seviyesinin ve kalitesinin doğru olduğundan emin olun"
+        ],
+        "commonMistakes": [
+          "Oksijen sensörünü değiştirmeden önce teşhis yapmamak",
+          "Yakıt tüketimi artışını sadece motor performansına bağlamak",
+          "Lastik basıncının düzenli kontrolünü ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt hava karışımının fakir olması",
+          "P0133 - Oksijen sensörü devresi yavaş tepki",
+          "P0300 - Silindir ateşleme arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea OBD2 Kodları",
+            "href": "/tr/fiat-egea/obd2-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri",
+            "href": "/tr/arac-yakit-sistemi-arizalari"
+          },
+          {
+            "label": "Lastik Basıncı ve Performans",
+            "href": "/tr/arac-lastik-basinci-nasil-kontrol edilir"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea neden fazla yakıt tüketir?",
+            "a": "Çeşitli sebepler olabilir; hava filtresi kirliliği, oksijen sensörü arızası veya lastik basıncı gibi faktörleri kontrol etmek gerekir."
+          },
+          {
+            "q": "Yakıt tüketimini azaltmak için ne yapabilirim?",
+            "a": "Düzenli bakım, hava filtresi değişimi, lastik basıncının uygun seviyede tutulması ve OBD2 arıza kodlarının kontrolü önerilir."
+          },
+          {
+            "q": "Sorunu anlamadan parça değiştirmeli miyim?",
+            "a": "Hayır, parça değiştirmeden önce sistematik bir teşhis ve test yapmak doğru çözüm için önemlidir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Çok Yakıyor Nedenleri ve Çözüm Yolları",
+        "schemaDescription": "Fiat Egea’da yakıt tüketimi artışı için olası nedenler, kontrol adımları ve sık yapılan hatalar hakkında detaylı bilgi."
+      },
+      "en": {
+        "slug": "fiat-egea-poor-fuel-economy",
+        "title": "Fiat Egea Poor Fuel Economy: Common Causes and Diagnostics",
+        "metaDescription": "Explore practical checks and common reasons behind poor fuel economy in Fiat Egea. Learn steps to diagnose and improve efficiency.",
+        "intro": "Poor fuel economy in your Fiat Egea can stem from multiple factors and not just one single issue. Before replacing any parts, it’s vital to perform systematic inspections and diagnostics to pinpoint what might be increasing fuel consumption. This guide outlines practical checks and potential causes to help you restore efficient performance.",
+        "severity": "Medium to High",
+        "driveAdvice": "Increased fuel consumption directly impacts running costs. Early diagnosis and corrective measures can save money and reduce environmental impact.",
+        "likelyCauses": [
+          "Clogged or malfunctioning fuel injectors",
+          "Dirty air filter restricting airflow",
+          "Under-inflated tires increasing rolling resistance",
+          "Faulty oxygen sensors affecting air-fuel mix",
+          "Fuel system leaks or improper calibration"
+        ],
+        "diagnosticSteps": [
+          "Scan the car’s OBD2 system for fuel-related trouble codes",
+          "Inspect and replace air and fuel filters if necessary",
+          "Check tire pressures and adjust to manufacturer specs",
+          "Perform exhaust emissions testing for sensor function",
+          "Inspect fuel lines and injector seals for leaks",
+          "Monitor driving performance for irregularities"
+        ],
+        "firstChecks": [
+          "Verify tire pressure is at recommended levels",
+          "Check the air filter cleanliness and replace if dirty",
+          "Confirm engine oil level and quality is adequate"
+        ],
+        "commonMistakes": [
+          "Replacing oxygen sensors without a proper diagnosis",
+          "Assuming fuel economy issues are solely engine related",
+          "Neglecting regular tire pressure checks"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0133 - Oxygen Sensor Circuit Slow Response",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea OBD2 Codes",
+            "href": "/en/fiat-egea/obd2-codes"
+          },
+          {
+            "label": "Fuel System Issues",
+            "href": "/en/fuel-system-troubleshooting"
+          },
+          {
+            "label": "Tire Pressure and Vehicle Efficiency",
+            "href": "/en/tire-pressure-checks"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why is my Fiat Egea using too much fuel?",
+            "a": "Several factors can contribute, including dirty air filters, faulty oxygen sensors, or incorrect tire pressures. Diagnosis is key."
+          },
+          {
+            "q": "How to improve fuel consumption in my Fiat Egea?",
+            "a": "Regular maintenance such as changing filters, maintaining tire pressure, and checking for sensor codes helps improve fuel efficiency."
+          },
+          {
+            "q": "Should I replace parts immediately if fuel consumption rises?",
+            "a": "No, thorough diagnostics should precede any replacement to avoid unnecessary costs."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Poor Fuel Economy Causes and Diagnostics",
+        "schemaDescription": "Detailed guide on causes, checks, and solutions for poor fuel economy issues in Fiat Egea."
+      },
+      "de": {
+        "slug": "fiat-egea-hoher-kraftstoffverbrauch",
+        "title": "Fiat Egea hoher Kraftstoffverbrauch: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, welche Ursachen hohem Kraftstoffverbrauch beim Fiat Egea zugrunde liegen. Praktische Prüfungen und Diagnoseschritte helfen bei der Fehlerfindung.",
+        "intro": "Ein erhöhter Kraftstoffverbrauch bei Ihrem Fiat Egea kann verschiedene Ursachen haben und lässt sich nicht auf eine einzelne Ursache zurückführen. Bevor Sie Teile austauschen, sollten systematische Prüfungen und Diagnosen durchgeführt werden, um die Ursache zu ermitteln. Dieser Leitfaden zeigt praktische Kontrollen und mögliche Ursachen für einen ineffizienten Verbrauch.",
+        "severity": "Mittel bis hoch",
+        "driveAdvice": "Ein hoher Kraftstoffverbrauch erhöht Ihre Betriebskosten. Frühzeitige Diagnose und Maßnahmen helfen, Kosten zu reduzieren und die Umwelt zu schonen.",
+        "likelyCauses": [
+          "Verstopfte oder defekte Einspritzdüsen",
+          "Verschmutzter Luftfilter",
+          "Zu niedriger Reifendruck erhöht den Rollwiderstand",
+          "Defekter Sauerstoffsensor beeinflusst das Luft-Kraftstoff-Gemisch",
+          "Kraftstoffsystem mit Undichtigkeiten oder falscher Einstellung"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Diagnosegerät auf Kraftstoff-bezogene Fehlercodes auslesen",
+          "Luft- und Kraftstofffilter kontrollieren und bei Bedarf wechseln",
+          "Reifendruck überprüfen und auf Herstellervorgaben einstellen",
+          "Abgase testen, um Sensorfunktionen zu prüfen",
+          "Kraftstoffleitungen und Einspritzdüsen auf Undichtigkeiten prüfen",
+          "Fahrverhalten auf Unregelmäßigkeiten beobachten"
+        ],
+        "firstChecks": [
+          "Reifendruck auf empfohlenen Wert prüfen",
+          "Luftfilter auf Verschmutzungen inspizieren",
+          "Motorölstand und Ölqualität kontrollieren"
+        ],
+        "commonMistakes": [
+          "Sauerstoffsensor ohne Diagnose tauschen",
+          "Kraftstoffverbrauch ausschließlich auf den Motor schieben",
+          "Regelmäßige Kontrolle des Reifendrucks vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager",
+          "P0133 - Sauerstoffsensor reagiert langsam",
+          "P0300 - Zufällige/mehrfache Zündaussetzer"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea OBD2 Codes",
+            "href": "/de/fiat-egea/obd2-codes"
+          },
+          {
+            "label": "Probleme mit dem Kraftstoffsystem",
+            "href": "/de/kraftstoffsystem-fehlerdiagnose"
+          },
+          {
+            "label": "Reifendruck und Fahrzeugeffizienz",
+            "href": "/de/reifendruck-kontrolle"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum verbraucht mein Fiat Egea zu viel Kraftstoff?",
+            "a": "Verschiedene Ursachen sind möglich, darunter verschmutzte Luftfilter, defekte Sensoren oder falscher Reifendruck."
+          },
+          {
+            "q": "Wie kann ich den Kraftstoffverbrauch verbessern?",
+            "a": "Regelmäßige Wartung wie Filterwechsel, Reifendruckkontrolle und Fehlercode-Auswertung helfen, den Verbrauch zu senken."
+          },
+          {
+            "q": "Sollte ich bei höherem Verbrauch sofort Teile tauschen?",
+            "a": "Nein, eine gründliche Diagnose ist vor dem Austausch von Teilen wichtig, um unnötige Kosten zu vermeiden."
+          }
+        ],
+        "schemaTitle": "Fiat Egea hoher Kraftstoffverbrauch: Ursachen und Lösungsansätze",
+        "schemaDescription": "Umfassende Informationen zu Ursachen, Prüfungen und Lösungen bei hohem Kraftstoffverbrauch im Fiat Egea."
+      },
+      "es": {
+        "slug": "fiat-egea-consumo-excesivo-combustible",
+        "title": "Fiat Egea consume mucho combustible: causas comunes y diagnóstico",
+        "metaDescription": "Descubre por qué tu Fiat Egea puede consumir más combustible. Chequeos prácticos y pasos de diagnóstico para mejorar la eficiencia.",
+        "intro": "Un consumo excesivo de combustible en el Fiat Egea puede tener varias causas. No es recomendable cambiar piezas sin antes realizar una revisión minuciosa. Este artículo ofrece consejos prácticos para detectar y entender los factores que afectan el consumo de combustible y cómo diagnosticar posibles fallas.",
+        "severity": "Media a alta",
+        "driveAdvice": "Un mayor consumo de combustible eleva tus gastos de manejo. Realizar un diagnóstico temprano y mantenimiento adecuado puede reducir costos y emisiones.",
+        "likelyCauses": [
+          "Inyectores de combustible sucios o defectuosos",
+          "Filtro de aire obstruido",
+          "Presión baja en los neumáticos",
+          "Sensor de oxígeno dañado",
+          "Fugas o mala calibración del sistema de combustible"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos OBD2 relacionados con el consumo",
+          "Revisar y cambiar filtros de aire y combustible si es necesario",
+          "Comprobar y ajustar la presión de los neumáticos según especificaciones",
+          "Realizar prueba de emisiones para verificar sensores",
+          "Inspeccionar líneas y sellos del combustible en busca de fugas",
+          "Observar cambios en el comportamiento del motor durante la conducción"
+        ],
+        "firstChecks": [
+          "Revisar que la presión de los neumáticos sea adecuada",
+          "Verificar que el filtro de aire esté limpio",
+          "Confirmar que el nivel y calidad del aceite del motor sean correctos"
+        ],
+        "commonMistakes": [
+          "Cambiar el sensor de oxígeno sin diagnóstico previo",
+          "Asumir que el consumo elevado es solo un problema del motor",
+          "Descuidar revisar regularmente la presión de los neumáticos"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre",
+          "P0133 - Sensor de oxígeno con respuesta lenta",
+          "P0300 - Fallos de encendido múltiples o aleatorios"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Fiat Egea",
+            "href": "/es/fiat-egea/codigos-obd2"
+          },
+          {
+            "label": "Problemas en el sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "Presión de neumáticos y eficiencia",
+            "href": "/es/presion-neumaticos"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Fiat Egea consume mucho combustible?",
+            "a": "Puede deberse a varias causas como filtros sucios, sensores oxígeno defectuosos o presión inadecuada en neumáticos."
+          },
+          {
+            "q": "¿Cómo puedo mejorar el consumo de combustible?",
+            "a": "Mantener el vehículo con revisiones periódicas, cambiar filtros y mantener la presión correcta en los neumáticos ayuda a mejorar la eficiencia."
+          },
+          {
+            "q": "¿Debo cambiar piezas si aumenta el consumo sin diagnóstico?",
+            "a": "No es recomendable; primero debe realizarse un diagnóstico correcto para evitar gastos innecesarios."
+          }
+        ],
+        "schemaTitle": "Consumo excesivo de combustible en Fiat Egea: causas y soluciones",
+        "schemaDescription": "Información detallada sobre causas, revisiones y soluciones al problema de alto consumo de combustible en Fiat Egea."
+      },
+      "fr": {
+        "slug": "fiat-egea-consommation-excessive-carburant",
+        "title": "Fiat Egea Consommation Excessive de Carburant : Causes et Diagnostics",
+        "metaDescription": "Découvrez les causes fréquentes d’une consommation excessive de carburant sur Fiat Egea, avec des contrôles pratiques et conseils pour diagnostiquer.",
+        "intro": "Une consommation de carburant élevée sur votre Fiat Egea peut être due à plusieurs facteurs. Il est important de ne pas se précipiter pour changer des pièces sans diagnostic préalable. Ce guide vous propose des vérifications simples et des étapes pour identifier l’origine du problème et améliorer l’efficacité de votre véhicule.",
+        "severity": "Moyenne à élevée",
+        "driveAdvice": "Une consommation accrue impacte le coût d’utilisation. Un diagnostic précoce et un entretien adapté permettent d’économiser du carburant et de réduire les émissions polluantes.",
+        "likelyCauses": [
+          "Injecteurs encrassés ou défectueux",
+          "Filtre à air sale limitant le flux d’air",
+          "Pression des pneus insuffisante augmentant la résistance au roulement",
+          "Sonde lambda défaillante faussant le mélange air/carburant",
+          "Fuites ou mauvais réglages du système d’alimentation en carburant"
+        ],
+        "diagnosticSteps": [
+          "Scanner le véhicule avec un outil OBD2 pour détecter les codes liés à la consommation",
+          "Contrôler et remplacer les filtres à air et à carburant si nécessaire",
+          "Vérifier la pression des pneus et régler selon les préconisations constructeur",
+          "Réalisations des tests d’émissions pour vérifier le bon fonctionnement des capteurs",
+          "Inspection des conduites et joints du circuit de carburant pour détecter des fuites",
+          "Observer le comportement du moteur pendant la conduite"
+        ],
+        "firstChecks": [
+          "Vérifier la pression des pneus aux niveaux recommandés",
+          "Inspecter la propreté du filtre à air",
+          "Contrôler le niveau et la qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Changer la sonde lambda sans diagnostic précis",
+          "Attribuer uniquement au moteur un problème de consommation accrue",
+          "Oublier le contrôle régulier de la pression des pneus"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0133 - Réponse lente du capteur d’oxygène",
+          "P0300 - Ratés d'allumage aléatoires ou multiples"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Fiat Egea",
+            "href": "/fr/fiat-egea/codes-obd2"
+          },
+          {
+            "label": "Problèmes du système d’alimentation",
+            "href": "/fr/problemes-systeme-carburant"
+          },
+          {
+            "label": "Pression des pneus et efficacité",
+            "href": "/fr/controle-pression-pneus"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi ma Fiat Egea consomme-t-elle trop de carburant ?",
+            "a": "Plusieurs causes possibles : filtre à air encrassé, sonde lambda défectueuse, pression des pneus incorrecte, entre autres."
+          },
+          {
+            "q": "Comment améliorer la consommation de carburant de mon véhicule ?",
+            "a": "Un entretien régulier, le remplacement des filtres, et la vérification de la pression des pneus sont essentiels pour optimiser la consommation."
+          },
+          {
+            "q": "Dois-je remplacer des pièces sans diagnostic en cas de consommation élevée ?",
+            "a": "Non, un diagnostic précis est nécessaire avant tout remplacement pour éviter des dépenses inutiles."
+          }
+        ],
+        "schemaTitle": "Fiat Egea consommation excessive carburant : causes et diagnostics",
+        "schemaDescription": "Guide complet des causes, contrôles et solutions pour une consommation excessive de carburant sur Fiat Egea."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-stalling",
+    "intentKey": "fiat-egea_stalling",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "stalling",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-stop-ediyor",
+        "title": "Fiat Egea Stop Ediyor Sorunu ve Çözümleri",
+        "metaDescription": "Fiat Egea aracınızın aniden stop etme sorununu anlamak ve çözmek için pratik tanı yöntemleri ve olası sebepler.",
+        "intro": "Fiat Egea aracınızın beklenmedik şekilde stop etmesi can sıkıcı olabilir ve birden çok farklı sebepten kaynaklanabilir. Bu yazıda, sorunun kesin nedenini iddia etmeden, öncelikle basit kontrolleri ve ardından detaylı tanı adımlarını ele alacağız. Böylece gereksiz parça değişimlerinden kaçınabilirsiniz.",
+        "severity": "Orta şiddette bir sorun olup, trafik güvenliğini etkileyebileceğinden dikkatli olunmalıdır.",
+        "driveAdvice": "Araç stop ettiğinde hemen güvenli bir yere çekip motoru kapatmanız ve tekrar çalıştırmadan önce temel kontrolleri yapmanız önerilir.",
+        "likelyCauses": [
+          "Enjektör veya yakıt pompası sorunları",
+          "Hava filtresi veya emme sisteminde tıkanma",
+          "ATEŞLEME sistemi arızaları (buji, bobin)",
+          "Bozuk rölanti kontrol valfi (IAC)",
+          "Motor sensör hataları (MAP, MAF, oksijen sensörü)"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile arıza kodlarını kontrol edin",
+          "Yakıt basıncını ölçün",
+          "Hava filtresi ve giriş sistemini gözden geçirin",
+          "Enjektör ve ateşleme sistemini test edin",
+          "Rölanti kontrol valfini temizleyin veya değiştirin",
+          "Sensör sinyallerini ve bağlantılarını kontrol edin"
+        ],
+        "firstChecks": [
+          "Yakıt seviyesini ve kalitesini kontrol edin",
+          "Hava filtresi tıkanıklığını kontrol edin",
+          "Akü voltajı ve bağlantılarını kontrol edin"
+        ],
+        "commonMistakes": [
+          "Yalnızca sensörleri değiştirmek sorunu çözmeyebilir",
+          "Yanlış yakıt kullanımı nedeniyle sorun çözülmez",
+          "Sadece arıza koduna bakarak karar vermek yanlış olabilir"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminin zengin karışım yapması",
+          "P0300 - Silindirde rastgele ateşleme hataları",
+          "P0505 - İdling kontrol sistemi arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları ve Anlamları",
+            "href": "/tr/obd2-ariza-kodlari"
+          },
+          {
+            "label": "Fiat Egea Yakıt Sistemi Bakımı",
+            "href": "/tr/fiat-egea-yakit-sistemi-bakimi"
+          },
+          {
+            "label": "Rölanti Problemleri ve Çözümleri",
+            "href": "/tr/rolanti-problemleri-cozumleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea neden yolda stop eder?",
+            "a": "Bu durum yakıt temini, hava akışı, ateşleme ya da sensör arızalarından kaynaklanabilir; doğru tanı için kapsamlı kontrol gerekir."
+          },
+          {
+            "q": "Acil durumlarda ne yapmalıyım?",
+            "a": "Aracı güvenli bir yere çekip motoru kapatın, temel kontrolleri yaptıktan sonra gerekiyorsa profesyonel destek alın."
+          },
+          {
+            "q": "Arıza kodları olmadan da stalling olabilir mi?",
+            "a": "Evet, bazı sorunlar OBD2 sisteminde kod üretmeyebilir; manuel kontroller önem kazanır."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Stop Etme Sorunları: Sebepler ve Diagnostik Adımlar",
+        "schemaDescription": "Fiat Egea araçlarda aniden stop etme sorunları için olası nedenler, kontrol yöntemleri ve OBD2 kodları rehberi."
+      },
+      "en": {
+        "slug": "fiat-egea-stalling",
+        "title": "Fiat Egea Stalling Issue: Causes and Diagnostic Guide",
+        "metaDescription": "Explore practical diagnostic steps and likely causes for Fiat Egea stalling without jumping to conclusions.",
+        "intro": "If your Fiat Egea unexpectedly stalls, it can be frustrating and potentially unsafe. Multiple factors could be at play. This guide outlines practical, non-assumptive checks and diagnostic steps to help pinpoint the root cause before replacing any parts.",
+        "severity": "Moderate severity, as stalling directly impacts vehicle control and safety.",
+        "driveAdvice": "When stalling occurs, safely pull over, turn off the engine, and perform basic checks before attempting to restart or drive.",
+        "likelyCauses": [
+          "Fuel injector or pump malfunction",
+          "Clogged air filter or intake restrictions",
+          "Ignition system faults (spark plugs, coils)",
+          "Faulty idle air control valve (IAC)",
+          "Malfunctioning engine sensors (MAP, MAF, oxygen sensor)"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to retrieve fault codes",
+          "Check fuel pressure for stability and adequacy",
+          "Inspect the air filter and intake system for blockages",
+          "Test ignition components like spark plugs and coils",
+          "Clean or replace the idle air control valve if needed",
+          "Verify sensor signals and wiring connections"
+        ],
+        "firstChecks": [
+          "Verify fuel level and quality",
+          "Check for dirty or clogged air filters",
+          "Test battery voltage and terminal connections"
+        ],
+        "commonMistakes": [
+          "Replacing sensors without confirming faults",
+          "Using incorrect or contaminated fuel",
+          "Relying solely on fault codes without physical checks"
+        ],
+        "relatedCodes": [
+          "P0171 - Fuel system running lean",
+          "P0300 - Random misfire detected",
+          "P0505 - Idle control system malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fault Codes Explained",
+            "href": "/en/obd2-fault-codes"
+          },
+          {
+            "label": "Fiat Egea Fuel System Maintenance",
+            "href": "/en/fiat-egea-fuel-system-maintenance"
+          },
+          {
+            "label": "Idle Problems and Solutions",
+            "href": "/en/idle-problems-solutions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes Fiat Egea to stall unexpectedly?",
+            "a": "Stalling may be caused by issues with fuel delivery, air intake, ignition system, or faulty sensors, requiring thorough diagnostics."
+          },
+          {
+            "q": "What should I do immediately if the car stalls?",
+            "a": "Pull over safely, switch off the engine, perform basic checks, and seek professional help if necessary."
+          },
+          {
+            "q": "Can stalling occur without triggering fault codes?",
+            "a": "Yes, some issues don't generate OBD2 codes, so physical inspections remain vital."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Stalling Diagnostic and Possible Causes",
+        "schemaDescription": "Detailed guide to identifying and troubleshooting Fiat Egea stalling issues with practical checks and OBD2 codes."
+      },
+      "de": {
+        "slug": "fiat-egea-motoraussetzer",
+        "title": "Fiat Egea Motoraussetzer: Ursachen und Diagnoseanleitung",
+        "metaDescription": "Praktische Diagnoseschritte und mögliche Ursachen für Motoraussetzer beim Fiat Egea – fundierte Hilfe ohne voreilige Schlussfolgerungen.",
+        "intro": "Wenn Ihr Fiat Egea unerwartet ausgeht, kann das frustrierend und gefährlich sein. Es gibt verschiedene mögliche Ursachen. Diese Anleitung zeigt Ihnen praktische, fundierte Prüfungen und Diagnoseschritte, um die Ursache sicher zu finden, bevor Sie Teile austauschen.",
+        "severity": "Mittlere Schwere, da Motoraussetzer die Fahrzeugkontrolle und Sicherheit beeinträchtigen.",
+        "driveAdvice": "Bei Motoraussetzern halten Sie das Fahrzeug sicher an und schalten Sie den Motor aus. Führen Sie grundlegende Prüfungen durch, bevor Sie weiterfahren.",
+        "likelyCauses": [
+          "Probleme mit Einspritzventilen oder Kraftstoffpumpe",
+          "Verstopfter Luftfilter oder Ansaugsystem",
+          "Fehler im Zündsystem (Zündkerzen, Zündspulen)",
+          "Defektes Leerlaufregelventil (IAC)",
+          "Fehlerhafte Motorelle Sensoren (MAP, MAF, Lambdasonde)"
+        ],
+        "diagnosticSteps": [
+          "Mit OBD2-Scanner Fehlercodes auslesen",
+          "Kraftstoffdruck messen und prüfen",
+          "Luftfilter und Ansaugsystem kontrollieren",
+          "Zündkomponenten testen (Kerzen, Spulen)",
+          "Leerlaufregelventil reinigen oder austauschen",
+          "Sensoren und Verkabelung überprüfen"
+        ],
+        "firstChecks": [
+          "Kraftstoffstand und Qualität prüfen",
+          "Verschmutzung des Luftfilters kontrollieren",
+          "Batteriespannung und Anschlüsse prüfen"
+        ],
+        "commonMistakes": [
+          "Sensoren ohne klare Fehlerdiagnose austauschen",
+          "Falschen oder verunreinigten Kraftstoff verwenden",
+          "Nur auf Fehlercodes verlassen, ohne physische Überprüfung"
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoffsystem läuft zu mager",
+          "P0300 - Zufällige Zündaussetzer erkannt",
+          "P0505 - Leerlaufsteuerung defekt"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Fiat Egea Kraftstoffsystem Pflege",
+            "href": "/de/fiat-egea-kraftstoffsystem-pflege"
+          },
+          {
+            "label": "Leerlaufprobleme erkennen und beheben",
+            "href": "/de/leerlaufprobleme-beheben"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum geht der Fiat Egea unterwegs aus?",
+            "a": "Motoraussetzer können durch Probleme mit Kraftstoff, Luftzufuhr, Zündung oder Sensoren verursacht werden. Eine genaue Diagnose ist wichtig."
+          },
+          {
+            "q": "Was tun, wenn das Fahrzeug ausgeht?",
+            "a": "Fahrzeug sicher abstellen, Motor ausschalten, grundlegende Prüfungen durchführen und ggf. professionelle Hilfe holen."
+          },
+          {
+            "q": "Kann der Motor auch ohne Fehlercodes ausgehen?",
+            "a": "Ja, manche Probleme lösen keine OBD2-Codes aus. Daher sind physische Kontrollen unerlässlich."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motoraussetzer: Ursachen und Diagnoseschritte",
+        "schemaDescription": "Detaillierte Anleitung zur Fehlersuche bei Motoraussetzern im Fiat Egea mit praktischen Tipps und OBD2-Codes."
+      },
+      "es": {
+        "slug": "fiat-egea-motor-tiembla-stalling",
+        "title": "Problema de Paro del Fiat Egea: Causas y Diagnóstico",
+        "metaDescription": "Aprende posibles causas y pasos prácticos para diagnosticar el paro del motor del Fiat Egea sin asumir causas definitivas.",
+        "intro": "El paro inesperado del Fiat Egea puede ser frustrante y peligroso. Son varias las causas posibles. Esta guía te ofrece controles prácticos y pasos de diagnóstico para identificar la causa sin cambiar piezas innecesariamente. Esta guía prioriza las primeras comprobaciones seguras, los códigos OBD2 que suelen aparecer con este síntoma y una secuencia de diagnóstico que ayuda a diferenciar sensores, cableado, combustible, encendido, admisión, refrigeración, escape o transmisión antes de cambiar piezas costosas.",
+        "severity": "Gravedad moderada, ya que puede afectar la seguridad y control del vehículo.",
+        "driveAdvice": "Ante un paro, detente en un lugar seguro, apaga el motor y revisa aspectos básicos antes de volver a arrancar o conducir.",
+        "likelyCauses": [
+          "Fallos en los inyectores o bomba de combustible",
+          "Filtro de aire sucio o entradas obstruidas",
+          "Problemas en el sistema de encendido (bujías, bobinas)",
+          "Válvula de control de ralentí defectuosa (IAC)",
+          "Sensores del motor con mal funcionamiento (MAP, MAF, oxígeno)"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de falla con escáner OBD2",
+          "Medir presión de combustible",
+          "Inspeccionar filtro de aire y admisión",
+          "Probar componentes de encendido (bujías, bobinas)",
+          "Limpiar o cambiar la válvula IAC si es necesario",
+          "Verificar señales y conexiones de sensores"
+        ],
+        "firstChecks": [
+          "Comprobar nivel y calidad del combustible",
+          "Verificar estado del filtro de aire",
+          "Revisar voltaje y conexiones de batería"
+        ],
+        "commonMistakes": [
+          "Cambiar sensores sin diagnóstico confirmado",
+          "Usar combustible incorrecto o contaminado",
+          "Basarse solo en códigos sin inspección física"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre en el sistema de combustible",
+          "P0300 - Fallos aleatorios de encendido",
+          "P0505 - Falla en el sistema de control de ralentí"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 y su significado",
+            "href": "/es/codigos-obd2"
+          },
+          {
+            "label": "Mantenimiento del sistema de combustible Fiat Egea",
+            "href": "/es/mantenimiento-combustible-fiat-egea"
+          },
+          {
+            "label": "Problemas comunes de ralentí y soluciones",
+            "href": "/es/problemas-ralenti-soluciones"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué el Fiat Egea se para en marcha?",
+            "a": "Puede ser por problemas en suministro de combustible, admisión, encendido o sensores defectuosos; es necesaria una revisión completa."
+          },
+          {
+            "q": "¿Qué hacer si el auto se para repentinamente?",
+            "a": "Detén el vehículo en un lugar seguro, apaga el motor, realiza revisiones básicas y consulta un especialista si es necesario."
+          },
+          {
+            "q": "¿Puede fallar sin códigos de error?",
+            "a": "Sí, algunas fallas no generan códigos OBD2; por eso las inspecciones físicas son importantes."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y causas del paro de motor en Fiat Egea",
+        "schemaDescription": "Guía completa para identificar y diagnosticar el paro del motor en Fiat Egea con pasos prácticos y códigos OBD2."
+      },
+      "fr": {
+        "slug": "fiat-egea-calage-moteur",
+        "title": "Calage Moteur Fiat Egea : Causes et Diagnostique",
+        "metaDescription": "Découvrez les causes possibles et étapes pratiques pour diagnostiquer un calage moteur sur Fiat Egea sans conclusions hâtives.",
+        "intro": "Un calage moteur soudain sur votre Fiat Egea peut être frustrant et dangereux. De nombreuses causes sont possibles. Ce guide vous propose des vérifications pratiques et des étapes de diagnostic pour identifier la cause avant tout remplacement de pièces.",
+        "severity": "Sévérité modérée car le calage affecte la sécurité et le contrôle du véhicule.",
+        "driveAdvice": "En cas de calage, garez-vous en sécurité, coupez le moteur et effectuez des vérifications simples avant de redémarrer ou de reprendre la route.",
+        "likelyCauses": [
+          "Problèmes d’injecteurs ou pompe à carburant",
+          "Filtre à air obstrué ou restrictions d’admission",
+          "Défaillance du système d’allumage (bougies, bobines)",
+          "Valve de contrôle de ralenti (IAC) défectueuse",
+          "Capteurs moteurs défaillants (MAP, MAF, sonde lambda)"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut avec un scanner OBD2",
+          "Contrôler la pression de carburant",
+          "Inspecter le filtre à air et le circuit d’admission",
+          "Tester les composants d’allumage (bougies, bobines)",
+          "Nettoyer ou remplacer la valve IAC",
+          "Vérifier les signaux et connexions des capteurs"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et la qualité du carburant",
+          "Contrôler l’état du filtre à air",
+          "Tester la tension batterie et connexions"
+        ],
+        "commonMistakes": [
+          "Changer les capteurs sans diagnostic clair",
+          "Utiliser un carburant inadapté ou souillé",
+          "Se fier uniquement aux codes défaut sans inspection physique"
+        ],
+        "relatedCodes": [
+          "P0171 - Système carburant trop pauvre",
+          "P0300 - Ratés d’allumage aléatoires",
+          "P0505 - Défaut du système de régulation ralenti"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 expliqués",
+            "href": "/fr/codes-defaut-obd2"
+          },
+          {
+            "label": "Entretien du système carburant Fiat Egea",
+            "href": "/fr/entretien-carburant-fiat-egea"
+          },
+          {
+            "label": "Problèmes de ralenti et solutions",
+            "href": "/fr/problemes-ralenti-solutions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Fiat Egea cale-t-il en roulant ?",
+            "a": "Le calage peut venir de l’alimentation carburant, de l’admission d’air, de l’allumage ou des capteurs; un diagnostic complet est nécessaire."
+          },
+          {
+            "q": "Que faire en cas de calage moteur ?",
+            "a": "Garez-vous en sécurité, coupez le moteur, effectuez des vérifications simples et demandez de l’aide si besoin."
+          },
+          {
+            "q": "Un calage peut-il survenir sans code défaut ?",
+            "a": "Oui, certaines pannes ne génèrent pas de codes OBD2, l’inspection physique reste donc essentielle."
+          }
+        ],
+        "schemaTitle": "Diagnostic et causes du calage moteur Fiat Egea",
+        "schemaDescription": "Guide complet pour identifier et diagnostiquer le calage moteur sur Fiat Egea avec conseils pratiques et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-jerking",
+    "intentKey": "fiat-egea_jerking",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "jerking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-silkeleme-yapiyor",
+        "title": "Fiat Egea Silkeleme Sorunu: Olası Nedenler ve Çözüm Yolları",
+        "metaDescription": "Fiat Egea silkeleme yapıyor mu? Olası nedenler, pratik kontroller ve tanı adımları ile sorun giderme rehberi.",
+        "intro": "Fiat Egea'da silkeleme veya sarsıntı hissedilmesi sık karşılaşılan sorunlardandır. Bu durumun birçok olası sebebi vardır ve genellikle tek bir parçanın değiştirilmesiyle çözülemez. Araç sahibinin ilk olarak basit kontrolleri yapması ve sistematik şekilde teşhis yöntemlerini uygulaması sonrasında daha kapsamlı müdahaleler gerekip gerekmediğine karar verilmelidir.",
+        "severity": "Silkeleme sorunu genellikle sürüş güvenliğini etkileyebilir ve performans kaybına yol açabilir. Bu nedenle erken teşhis önemli.",
+        "driveAdvice": "Aracı yüksek hızda sürmemek ve ani hızlanma veya yavaşlamalardan kaçınmak önerilir. Mümkünse sorunsuz sürüş için yetkili servise başvurun.",
+        "likelyCauses": [
+          "Ateşleme sistemi arızaları (buji, bobin)",
+          "Yakıt enjektörlerinde tıkanıklık",
+          "Hava filtresi tıkanması",
+          "Yakıt pompası sorunları",
+          "Egzoz sistemi tıkanıklıkları"
+        ],
+        "diagnosticSteps": [
+          "OBD2 scanner ile hata kodlarını kontrol edin",
+          "Buji ve bobinleri gözle muayene edin, test edin",
+          "Yakıt filtresi ve enjektörleri temizleyin veya kontrol ettirin",
+          "Hava filtresini kontrol edin, gerekirse değiştirin",
+          "Yakıt sisteminde basınç ölçümü yapın",
+          "Egzoz sisteminde tıkanıklık veya kaçak kontrolü yapın"
+        ],
+        "firstChecks": [
+          "Buji ve ateşleme bobinlerinin durumu",
+          "Hava filtresi temizliği",
+          "Yakıt deposunda kalitesi"
+        ],
+        "commonMistakes": [
+          "Tüm parçaları aynı anda değiştirmek",
+          "Sadece elektronik ekipman üzerinden teşhis yapmaya çalışmak",
+          "Kısa sürede yapılan parça değişiklikleri"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Çok Zengin",
+          "P0420 - Katalizör Performans Alt Sınırda"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 arıza kodları rehberi",
+            "href": "/tr/obd2-ariza-kodlari"
+          },
+          {
+            "label": "Yakıt enjeksiyon sistemi sorunları",
+            "href": "/tr/yakit-enjeksiyon-sistemleri"
+          },
+          {
+            "label": "Ateşleme sistemi kontrolleri",
+            "href": "/tr/atesleme-sistemi-tanimlama"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea'da silkeleme neden olur?",
+            "a": "Silkeleme genellikle ateşleme, yakıt veya hava sistemindeki aksaklıklardan kaynaklanabilir."
+          },
+          {
+            "q": "Buji değişimi silkeleme sorununu çözer mi?",
+            "a": "Buji kontrol edilmeli ancak tek başına sorun çözmeyebilir."
+          },
+          {
+            "q": "OBD2 cihazı ile nasıl teşhis yapılır?",
+            "a": "OBD2 cihazı ile aracın ECU’sundaki hata kodları okunabilir, bu da sorunun tespiti için yol gösterir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Silkeleme Sorunu ve Çözüm Rehberi",
+        "schemaDescription": "Fiat Egea’da silkeleme yapan araçlarda olası nedenler, ilk kontroller, tanı adımları ve sık karşılaşılan hatalar hakkında kapsamlı bilgi."
+      },
+      "en": {
+        "slug": "fiat-egea-engine-jerking",
+        "title": "Fiat Egea Jerking Issue: Possible Causes and Diagnostic Guide",
+        "metaDescription": "Experiencing jerking in your Fiat Egea? Discover potential causes, practical checks, and step-by-step diagnostics to address the issue.",
+        "intro": "Jerking or hesitation during driving can be an unpleasant experience and indicates something might be affecting your Fiat Egea’s engine performance. Multiple factors may lead to this symptom, so it’s important to perform systematic diagnostic steps before replacing parts. Early practical checks can save time and help pinpoint the underlying cause.",
+        "severity": "Jerking can compromise driving comfort and safety, potentially leading to further engine damage if left unresolved.",
+        "driveAdvice": "Avoid aggressive acceleration or high speeds until the issue is diagnosed. If jerking worsens, seek professional inspection promptly.",
+        "likelyCauses": [
+          "Faulty spark plugs or ignition coils",
+          "Clogged fuel injectors",
+          "Dirty or blocked air filter",
+          "Fuel pump problems",
+          "Exhaust system restrictions"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 trouble codes",
+          "Inspect spark plugs and ignition coils for wear",
+          "Check and clean fuel injectors",
+          "Examine and replace air filter if dirty",
+          "Measure fuel pressure in the system",
+          "Inspect exhaust system for blockages or leaks"
+        ],
+        "firstChecks": [
+          "Condition of spark plugs and ignition coils",
+          "Cleanliness of air filter",
+          "Fuel quality and level"
+        ],
+        "commonMistakes": [
+          "Replacing all parts without proper diagnosis",
+          "Relying solely on electronic diagnostics without visual checks",
+          "Frequent part changes in short intervals"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Trouble Code Guide",
+            "href": "/en/obd2-trouble-code-guide"
+          },
+          {
+            "label": "Fuel Injection System Issues",
+            "href": "/en/fuel-injection-issues"
+          },
+          {
+            "label": "Ignition System Diagnostics",
+            "href": "/en/ignition-system-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes jerking in a Fiat Egea?",
+            "a": "Jerking usually stems from ignition, fuel delivery, or air intake problems."
+          },
+          {
+            "q": "Will changing spark plugs fix the issue?",
+            "a": "Spark plugs should be checked but may not resolve jerking alone."
+          },
+          {
+            "q": "How does an OBD2 scanner help?",
+            "a": "It reads fault codes from the vehicle's ECU to help identify issues."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Jerking Issue: Diagnostic and Repair Guide",
+        "schemaDescription": "Comprehensive guide on causes, initial checks, diagnostic steps, and common mistakes for Fiat Egea jerking problems."
+      },
+      "de": {
+        "slug": "fiat-egea-ruckeln",
+        "title": "Fiat Egea Ruckeln: Mögliche Ursachen und Diagnoseanleitung",
+        "metaDescription": "Fiat Egea ruckelt beim Fahren? Erfahren Sie mögliche Ursachen, einfache Prüfungen und die wichtigsten Diagnoseschritte.",
+        "intro": "Ein Ruckeln oder Stocken während der Fahrt mit dem Fiat Egea kann verschiedene Ursachen haben. Es ist wichtig, systematisch vorzugehen und zuerst einfache Kontrollen durchzuführen, bevor Bauteile ausgetauscht werden. Eine sorgfältige Diagnose kann helfen, unnötige Kosten zu vermeiden und das Problem zielgerichtet zu beheben.",
+        "severity": "Ruckeln beeinträchtigt die Fahrsicherheit und den Fahrkomfort. Bei Verschlechterung sollte bald eine fachkundige Kontrolle erfolgen.",
+        "driveAdvice": "Vermeiden Sie starkes Beschleunigen und hohe Geschwindigkeiten. Lassen Sie das Fahrzeug bei anhaltendem Ruckeln überprüfen.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfte Kraftstoffeinspritzdüsen",
+          "Verdreckter Luftfilter",
+          "Probleme mit der Kraftstoffpumpe",
+          "Abgasrückstau im Auspuff"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Zündkerzen und Zündspulen prüfen",
+          "Einspritzdüsen auf Verstopfungen untersuchen",
+          "Luftfilter kontrollieren und ggf. tauschen",
+          "Kraftstoffdruck messen",
+          "Auspuffanlage auf Blockaden überprüfen"
+        ],
+        "firstChecks": [
+          "Zündkerzen- und Zündspulenzustand",
+          "Sauberkeit des Luftfilters",
+          "Kraftstoffqualität und -stand"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Nur elektronische Diagnose ohne Sichtprüfung",
+          "Zu häufige Teilewechsel in kurzer Zeit"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige Zylinderfehlzündung",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem-Effizienz unter Grenzwert"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercode-Liste",
+            "href": "/de/obd2-fehlercode-liste"
+          },
+          {
+            "label": "Kraftstoffeinspritzsystem Fehler",
+            "href": "/de/kraftstoffeinspritzsystem-fehler"
+          },
+          {
+            "label": "Zündsystem Diagnosen",
+            "href": "/de/zuendsystem-diagnosen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum ruckelt mein Fiat Egea?",
+            "a": "Ruckeln entsteht meist durch Probleme mit Zündung, Kraftstoffzufuhr oder Luftfilter."
+          },
+          {
+            "q": "Löst der Wechsel der Zündkerzen das Problem?",
+            "a": "Zündkerzen sollten geprüft werden, lösen das Ruckeln aber nicht immer allein."
+          },
+          {
+            "q": "Wie hilft ein OBD2-Scanner bei der Diagnose?",
+            "a": "Er liest Fehlercodes aus dem Fahrzeugsteuergerät aus und hilft so bei der Fehlersuche."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Ruckeln – Ursachen und Diagnoseanleitung",
+        "schemaDescription": "Umfassende Anleitung zu Ursachen, ersten Prüfungen, Diagnoseschritten und typischen Fehlern bei Fiat Egea Ruckeln."
+      },
+      "es": {
+        "slug": "fiat-egea-motor-tiembla-jerking",
+        "title": "Fiat Egea Motor Tiembla: Causas Frecuentes y Guía de Diagnóstico",
+        "metaDescription": "¿Tu Fiat Egea tiembla al conducir? Descubre causas comunes, revisiones prácticas y pasos para diagnosticar el problema correctamente.",
+        "intro": "El temblor o tironeo en un Fiat Egea puede deberse a diversas razones que afectan la entrega de potencia del motor. Antes de reemplazar piezas costosas, es esencial realizar revisiones prácticas y seguir una metodología de diagnóstico que permita identificar el origen real del problema.",
+        "severity": "El temblor compromete la seguridad y el confort al conducir, además puede ocasionar daños mayores si no se atiende a tiempo.",
+        "driveAdvice": "Evita aceleraciones bruscas y velocidades altas hasta tener un diagnóstico claro. Consulta con un taller especializado si el problema persiste.",
+        "likelyCauses": [
+          "Bujías o bobinas de encendido en mal estado",
+          "Inyectores de combustible obstruidos",
+          "Filtro de aire sucio o tapado",
+          "Problemas con la bomba de combustible",
+          "Restricciones en el sistema de escape"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos OBD2",
+          "Revisar bujías y bobinas de encendido",
+          "Limpiar o verificar los inyectores",
+          "Chequear el filtro de aire y cambiar si está sucio",
+          "Medir presión de combustible",
+          "Inspeccionar sistema de escape en busca de bloqueos"
+        ],
+        "firstChecks": [
+          "Estado de bujías y bobinas",
+          "Limpieza del filtro de aire",
+          "Calidad y nivel de combustible"
+        ],
+        "commonMistakes": [
+          "Cambiar todas las piezas sin diagnóstico previo",
+          "Confiar sólo en diagnósticos electrónicos sin inspección visual",
+          "Realizar cambios frecuentes y prematuros de piezas"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio/múltiple",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos de falla OBD2",
+            "href": "/es/guias-codigos-falla-obd2"
+          },
+          {
+            "label": "Problemas con sistema de inyección",
+            "href": "/es/problemas-sistema-inyeccion"
+          },
+          {
+            "label": "Diagnóstico del sistema de encendido",
+            "href": "/es/diagnostico-sistema-encendido"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué tiembla mi Fiat Egea?",
+            "a": "Normalmente, el temblor se debe a problemas en la ignición, el suministro de combustible o el filtro de aire."
+          },
+          {
+            "q": "¿Cambiar bujías arreglará el problema?",
+            "a": "Es importante revisar las bujías, pero el cambio solo puede no ser suficiente para solucionar el temblor."
+          },
+          {
+            "q": "¿Cómo ayuda un escáner OBD2?",
+            "a": "Lee los códigos de fallos del ECU para ayudar a identificar la causa del problema."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Motor Tiembla: Guía de Diagnóstico y Soluciones",
+        "schemaDescription": "Guía completa sobre causas, primeras revisiones, pasos diagnósticos y errores comunes para resolver el temblor en Fiat Egea."
+      },
+      "fr": {
+        "slug": "fiat-egea-moteur-hoquette",
+        "title": "Fiat Egea Hoquette : Causes Possibles et Guide de Diagnostic",
+        "metaDescription": "Votre Fiat Egea hoquette ? Découvrez les causes probables, contrôles pratiques et étapes de diagnostic pour résoudre ce problème.",
+        "intro": "Un moteur qui hoquette ou qui saccade peut avoir plusieurs origines chez une Fiat Egea. Avant de remplacer des pièces, il est recommandé de réaliser des contrôles simples et une démarche de diagnostic méthodique afin d'identifier la cause réelle du problème et éviter des interventions inutiles.",
+        "severity": "La hoquette peut nuire à la sécurité et au confort de conduite, et elle peut endommager le moteur si elle est ignorée.",
+        "driveAdvice": "Évitez les accélérations brusques et les vitesses élevées jusqu’à ce que le problème soit identifié. Si la situation s’aggrave, consultez un professionnel rapidement.",
+        "likelyCauses": [
+          "Bougies d’allumage ou bobines défaillantes",
+          "Injecteurs encrassés",
+          "Filtre à air sale ou obstrué",
+          "Problèmes de pompe à carburant",
+          "Restrictions dans le système d’échappement"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts OBD2",
+          "Inspecter les bougies et bobines d’allumage",
+          "Nettoyer ou contrôler les injecteurs",
+          "Vérifier et remplacer le filtre à air si nécessaire",
+          "Mesurer la pression de carburant",
+          "Inspecter le système d’échappement pour des obstructions"
+        ],
+        "firstChecks": [
+          "État des bougies et bobines",
+          "Propreté du filtre à air",
+          "Qualité et niveau du carburant"
+        ],
+        "commonMistakes": [
+          "Remplacer toutes les pièces sans diagnostic précis",
+          "Se fier uniquement au diagnostic électronique sans inspection visuelle",
+          "Changer fréquemment les pièces sans analyse approfondie"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Mélange trop pauvre (banc 1)",
+          "P0420 - Efficacité du catalyseur inférieure au seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes erreur OBD2",
+            "href": "/fr/guide-codes-erreur-obd2"
+          },
+          {
+            "label": "Problèmes d’injection carburant",
+            "href": "/fr/problemes-injection-carburant"
+          },
+          {
+            "label": "Diagnostic du système d’allumage",
+            "href": "/fr/diagnostic-systeme-allumage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Fiat Egea hoquette-t-il ?",
+            "a": "La hoquette vient généralement de problèmes d’allumage, de carburant ou d’admission d’air."
+          },
+          {
+            "q": "Le remplacement des bougies suffit-il ?",
+            "a": "Il faut vérifier les bougies, mais leur remplacement seul ne garantit pas la résolution."
+          },
+          {
+            "q": "Comment un scanner OBD2 aide-t-il ?",
+            "a": "Il lit les codes d’erreur du calculateur pour identifier la source du problème."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Hoquette : Causes et Diagnostic",
+        "schemaDescription": "Guide complet des causes, premiers contrôles, étapes de diagnostic et erreurs fréquentes pour résoudre la hoquette moteur sur Fiat Egea."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-overheating",
+    "intentKey": "fiat-egea_overheating",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "overheating",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-hararet-yapiyor",
+        "title": "Fiat Egea Hararet Yapıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Fiat Egea hararet sorunu yaşarken ilk kontrol edilmesi gerekenler, olası nedenler ve doğru teşhis adımları.",
+        "intro": "Fiat Egea aracınızın motoru hararet yapıyorsa, bunun pek çok farklı nedeni olabilir. Bu sorunu anlamak ve arızayı büyütmeden önlemek için doğru teşhis adımları önem kazanır. Aşırı ısınmanın ana nedenleri motor soğutma sistemi, termostat, radyatör ve su pompası kontrollerini içerir. Yalnızca parçayı değiştirmeden önce yapılacak pratik kontroller, zaman ve maliyet tasarrufu sağlar.",
+        "severity": "Motor hararetinin artması motorun ciddi zarar görmesine yol açabilir, bu nedenle sorunun ciddiyetini dikkate almak önemlidir.",
+        "driveAdvice": "Hararet göstergesi yanarken aracı sürmekten kaçının; motoru soğutmak için mümkünse aracınızı kenara çekip motor kapatılmalıdır.",
+        "likelyCauses": [
+          "Düşük soğutma sıvısı seviyesi veya sızıntı",
+          "Arızalı termostat",
+          "Tıkanmış veya hasarlı radyatör",
+          "Su pompası problemleri",
+          "Fan motorunun çalışmaması"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Termostatın doğru çalışıp çalışmadığını test edin",
+          "Radyatörün dış yüzeyini kir ve tıkanıklık açısından inceleyin",
+          "Soğutma fanının çalışıp çalışmadığını gözlemleyin",
+          "Su pompası sızıntısı veya aşınması var mı kontrol edin",
+          "OBD2 arıza kodlarını okuyarak sorunu tespit edin"
+        ],
+        "firstChecks": [
+          "Radyatör kapağının sıkılığını ve durumunu kontrol edin",
+          "Hararet göstergesinde ani yükselmeleri izleyin",
+          "Soğutma sıvısı rengi ve seviyesini inceleyin"
+        ],
+        "commonMistakes": [
+          "Soğutma sistemini yeterince basınçlandırmadan kontrol etmek",
+          "Termostat arızası varmış gibi hemen değiştirmek",
+          "Hararet sorununu sadece elektronik parçalara bağlamak"
+        ],
+        "relatedCodes": [
+          "P0128 - Termostat açılmıyor",
+          "P0480 - Soğutma fanı devresi arızası",
+          "P0217 - Motor aşırı ısınma koruması"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea OBD2 Arıza Kodları",
+            "href": "/tr/fiat-egea-ariza-kodlari"
+          },
+          {
+            "label": "Motor Soğutma Sistemi Sorunları",
+            "href": "/tr/motor-sogutma-sistemi-problemleri"
+          },
+          {
+            "label": "Termostat Arızası Nasıl Anlaşılır?",
+            "href": "/tr/termostat-arizasi-belirtileri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea motoru neden hararet yapar?",
+            "a": "Motorun aşırı ısınması genellikle soğutma sıvısı eksikliği, termostat arızası veya fan motorundaki sorunlardan kaynaklanabilir."
+          },
+          {
+            "q": "Hararet yapınca aracı sürmek güvenli midir?",
+            "a": "Hararet artışı yaşandığında aracı sürmek motorun zarar görmesine yol açabilir; mümkünse durdurup soğumasını bekleyin."
+          },
+          {
+            "q": "Harareti önlemek için hangi düzenli kontroller yapılmalı?",
+            "a": "Soğutma sıvı seviyesi, radyatör ve termostat kontrolleri ile fan motorunun çalışıp çalışmadığının düzenli kontrolü önerilir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Hararet Sorunu Çözüm Rehberi",
+        "schemaDescription": "Fiat Egea araçlarda motor hararetinin olası nedenleri, teşhis yöntemleri ve temel kontrolleri hakkında uzman rehberi."
+      },
+      "en": {
+        "slug": "fiat-egea-engine-overheating",
+        "title": "Fiat Egea Overheating: Causes, Checks, and Diagnostics",
+        "metaDescription": "Learn practical diagnostics for Fiat Egea overheating issues with common causes and effective checks before part replacements.",
+        "intro": "If your Fiat Egea is experiencing engine overheating, it's a sign of an underlying issue that should be diagnosed carefully. Overheating can stem from various sources including coolant levels, thermostat function, radiator condition, or cooling fan operation. Understanding these factors and performing key checks can help prevent costly damage and pinpoint the fault before replacing parts unnecessarily.",
+        "severity": "Overheating can cause significant engine damage if not addressed promptly, making it a critical issue to diagnose correctly.",
+        "driveAdvice": "Avoid driving when the engine temperature rises sharply. Stop the vehicle safely, turn off the engine, and allow it to cool before further action.",
+        "likelyCauses": [
+          "Low coolant levels or coolant leaks",
+          "Malfunctioning thermostat",
+          "Clogged or damaged radiator",
+          "Faulty water pump",
+          "Cooling fan failure"
+        ],
+        "diagnosticSteps": [
+          "Inspect coolant level and top up if needed",
+          "Test the thermostat’s opening and closing function",
+          "Examine radiator for blockages or damage",
+          "Verify cooling fan operation",
+          "Check water pump for leaks or wear",
+          "Use OBD2 scanner to read related fault codes"
+        ],
+        "firstChecks": [
+          "Check radiator cap tightness and condition",
+          "Monitor sudden spikes in temperature gauge",
+          "Inspect coolant color and level"
+        ],
+        "commonMistakes": [
+          "Failing to pressure test the cooling system properly",
+          "Replacing thermostat without confirmation of failure",
+          "Assuming electrical components are always at fault"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat Below Regulating Temperature",
+          "P0480 - Cooling Fan Relay Circuit",
+          "P0217 - Engine Overtemperature Condition"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea OBD2 Fault Codes",
+            "href": "/en/fiat-egea-fault-codes"
+          },
+          {
+            "label": "Common Cooling System Problems",
+            "href": "/en/cooling-system-issues"
+          },
+          {
+            "label": "Thermostat Failure Symptoms",
+            "href": "/en/thermostat-failure-signs"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes Fiat Egea engine overheating?",
+            "a": "Common causes include low coolant, thermostat malfunction, radiator issues, or cooling fan failure."
+          },
+          {
+            "q": "Is it safe to drive when the car is overheating?",
+            "a": "No, driving while overheating risks severe engine damage. Stop and let the engine cool down."
+          },
+          {
+            "q": "How can I prevent overheating issues in my Fiat Egea?",
+            "a": "Regularly check coolant levels, radiator cleanliness, thermostat function, and cooling fan operation."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Overheating Guide",
+        "schemaDescription": "Expert guide for diagnosing and addressing Fiat Egea engine overheating issues with practical steps and common causes."
+      },
+      "de": {
+        "slug": "fiat-egea-motor-ueberhitzt",
+        "title": "Fiat Egea Überhitzung: Ursachen und Diagnose",
+        "metaDescription": "Praktische Tipps zur Diagnose von Überhitzungsproblemen beim Fiat Egea mit häufigen Ursachen und Kontrollpunkten.",
+        "intro": "Wenn Ihr Fiat Egea-Motor überhitzt, kann dies verschiedene Ursachen haben. Eine genaue Diagnose ist wichtig, um größere Schäden zu vermeiden. Mögliche Gründe sind niedriger Kühlmittelstand, ein defektes Thermostat, ein verstopfter oder beschädigter Kühler sowie Probleme mit der Wasserpumpe oder dem Lüfter. Vor dem Austausch von Bauteilen sollten Sie praktische Prüfungen durchführen, um die Fehlerquelle gezielt zu finden.",
+        "severity": "Eine anhaltende Überhitzung kann den Motor schwer beschädigen, daher ist schnelles Handeln erforderlich.",
+        "driveAdvice": "Bei Überhitzungsanzeige den Wagen sofort anhalten und den Motor abkühlen lassen, bevor Sie weiterfahren.",
+        "likelyCauses": [
+          "Niedriger Kühlmittelstand oder Leckagen",
+          "Defektes Thermostat",
+          "Verstopfter oder beschädigter Kühler",
+          "Probleme mit der Wasserpumpe",
+          "Ausfall des Lüftermotors"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittelstand kontrollieren und ggf. auffüllen",
+          "Funktionsweise des Thermostats testen",
+          "Kühler auf Blockaden oder Schäden prüfen",
+          "Lüfterfunktion überprüfen",
+          "Wasserpumpe auf Lecks oder Verschleiß prüfen",
+          "Motorsteuergerät via OBD2 auf Fehlermeldungen auslesen"
+        ],
+        "firstChecks": [
+          "Kühlerdeckel auf Dichtigkeit und Zustand prüfen",
+          "Temperaturanzeige auf plötzliche Ausschläge überwachen",
+          "Kühlmittelfarbe und -stand kontrollieren"
+        ],
+        "commonMistakes": [
+          "Kühlsystem nicht ausreichend drucktesten",
+          "Thermostat ohne genaue Prüfung sofort tauschen",
+          "Elektronische Fehlerquellen voreilig annehmen"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat öffnet nicht rechtzeitig",
+          "P0480 - Lüfterrelais-Schaltkreisfehler",
+          "P0217 - Motorüberhitzung erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Fehlercodes",
+            "href": "/de/fiat-egea-fehlercodes"
+          },
+          {
+            "label": "Probleme mit dem Kühlsystem",
+            "href": "/de/kuehlsystem-probleme"
+          },
+          {
+            "label": "Thermostat defekt erkennen",
+            "href": "/de/thermostat-defekt-anzeichen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum überhitzt mein Fiat Egea-Motor?",
+            "a": "Ursachen können niedriger Kühlmittelstand, Thermostatfehler oder defekte Lüfter sein."
+          },
+          {
+            "q": "Kann ich bei Überhitzung weiterfahren?",
+            "a": "Nein, fahren Sie nicht weiter, um Motorschäden zu vermeiden. Lassen Sie den Motor abkühlen."
+          },
+          {
+            "q": "Wie vermeide ich Überhitzung beim Fiat Egea?",
+            "a": "Regelmäßige Kontrolle von Kühlmittel, Kühler und Lüfter schützt vor Überhitzung."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Überhitzung Ursachen & Lösungen",
+        "schemaDescription": "Detaillierte Anleitung zur Diagnose von Überhitzungsproblemen beim Fiat Egea mit möglichen Ursachen und Prüfmethoden."
+      },
+      "es": {
+        "slug": "fiat-egea-calienta-motor",
+        "title": "Fiat Egea Calienta el Motor: Causas y Diagnóstico",
+        "metaDescription": "Guía práctica para diagnosticar el sobrecalentamiento en Fiat Egea con causas comunes y consejos antes de cambiar piezas.",
+        "intro": "Si el motor de tu Fiat Egea se calienta demasiado, puede deberse a diversas causas. Diagnosticar correctamente este problema es fundamental para evitar daños graves. Las causas posibles incluyen niveles bajos de refrigerante, termostato defectuoso, radiador sucio o dañado, bomba de agua y problemas con el ventilador. Antes de reemplazar componentes, se recomiendan comprobaciones básicas y lecturas de códigos OBD2.",
+        "severity": "El sobrecalentamiento puede ocasionar daños severos en el motor si no se atiende a tiempo.",
+        "driveAdvice": "No conduzcas con el motor sobrecalentado. Detén el vehículo, apaga el motor y deja que se enfríe antes de continuar.",
+        "likelyCauses": [
+          "Nivel bajo o fuga de refrigerante",
+          "Termostato defectuoso",
+          "Radiador obstruido o dañado",
+          "Bomba de agua averiada",
+          "Problemas con el ventilador"
+        ],
+        "diagnosticSteps": [
+          "Revisa el nivel de refrigerante y complétalo si es necesario",
+          "Verifica el funcionamiento del termostato",
+          "Inspecciona el radiador en busca de bloqueos o daños",
+          "Confirma que el ventilador está funcionando",
+          "Revisa la bomba de agua por fugas o desgaste",
+          "Lee los códigos de falla con un escáner OBD2"
+        ],
+        "firstChecks": [
+          "Comprueba el estado y ajuste de la tapa del radiador",
+          "Observa si el indicador de temperatura sube abruptamente",
+          "Inspecciona el color y nivel del refrigerante"
+        ],
+        "commonMistakes": [
+          "No realizar una prueba de presión adecuada al sistema",
+          "Cambiar el termostato sin confirmar que está fallando",
+          "Asumir erróneamente que todos los problemas son eléctricos"
+        ],
+        "relatedCodes": [
+          "P0128 - Termostato no alcanza la temperatura regulada",
+          "P0480 - Circuito del relé del ventilador",
+          "P0217 - Condición de sobre temperatura del motor"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de falla Fiat Egea",
+            "href": "/es/codigos-fiat-egea"
+          },
+          {
+            "label": "Problemas comunes del sistema de refrigeración",
+            "href": "/es/problemas-sistema-refrigeracion"
+          },
+          {
+            "label": "Síntomas de termostato defectuoso",
+            "href": "/es/sintomas-termostato"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Fiat Egea calienta demasiado el motor?",
+            "a": "Generalmente se debe a bajo nivel de refrigerante, fallo en el termostato o problemas con el ventilador."
+          },
+          {
+            "q": "¿Es seguro conducir si el motor se sobrecalienta?",
+            "a": "No, es peligroso. Detén el coche y deja que el motor se enfríe para evitar daños mayores."
+          },
+          {
+            "q": "¿Cómo puedo prevenir el sobrecalentamiento en mi Fiat Egea?",
+            "a": "Realiza revisiones periódicas del refrigerante, radiador, termostato y ventilador para evitar problemas."
+          }
+        ],
+        "schemaTitle": "Guía para el Sobrecalentamiento en Fiat Egea",
+        "schemaDescription": "Soluciones y diagnóstico experto para problemas de sobrecalentamiento en motores Fiat Egea con pasos prácticos y causas comunes."
+      },
+      "fr": {
+        "slug": "fiat-egea-surchauffe-moteur",
+        "title": "Fiat Egea : Causes et Diagnostic de la Surchauffe Moteur",
+        "metaDescription": "Guide pratique pour diagnostiquer la surchauffe du moteur Fiat Egea avec les causes fréquentes et contrôles essentiels.",
+        "intro": "La surchauffe du moteur sur une Fiat Egea peut avoir plusieurs origines. Un diagnostic précis est crucial pour éviter des dommages importants. Parmi les causes possibles, on trouve un niveau bas de liquide de refroidissement, un thermostat défectueux, un radiateur obstrué ou endommagé, une pompe à eau défaillante ou un problème de ventilateur. Avant de remplacer des pièces, il est conseillé de réaliser des vérifications simples et d’analyser les codes défaut via OBD2.",
+        "severity": "La surchauffe prolongée peut gravement endommager le moteur, d’où l’importance d’une intervention rapide.",
+        "driveAdvice": "Ne conduisez pas si la température monte trop. Arrêtez-vous dès que possible et laissez refroidir le moteur.",
+        "likelyCauses": [
+          "Niveau bas ou fuite de liquide de refroidissement",
+          "Thermostat défectueux",
+          "Radiateur bouché ou endommagé",
+          "Pompe à eau défaillante",
+          "Problème avec le ventilateur de refroidissement"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau du liquide de refroidissement",
+          "Tester le fonctionnement du thermostat",
+          "Inspecter le radiateur pour déceler obstructions ou dommages",
+          "Vérifier le bon fonctionnement du ventilateur",
+          "Rechercher des fuites ou usures sur la pompe à eau",
+          "Lire les codes défauts avec un outil OBD2"
+        ],
+        "firstChecks": [
+          "Vérifier l’état et la fermeture du bouchon de radiateur",
+          "Surveiller les variations brutales de la température moteur",
+          "Examiner la couleur et le niveau du liquide de refroidissement"
+        ],
+        "commonMistakes": [
+          "Ne pas effectuer un test de pression suffisant du système de refroidissement",
+          "Remplacer le thermostat sans diagnostic clair",
+          "Imputer trop rapidement les pannes aux composants électroniques"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat en dessous de la température réglementée",
+          "P0480 - Circuit du relais de ventilateur",
+          "P0217 - Surchauffe du moteur détectée"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut Fiat Egea",
+            "href": "/fr/codes-fiat-egea"
+          },
+          {
+            "label": "Problèmes fréquents du système de refroidissement",
+            "href": "/fr/problemes-systeme-refroidissement"
+          },
+          {
+            "label": "Symptômes de thermostat défectueux",
+            "href": "/fr/symptomes-thermostat-defectueux"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes de la surchauffe du moteur sur Fiat Egea ?",
+            "a": "Cela peut être dû à un niveau de liquide bas, un thermostat défaillant ou un ventilateur en panne."
+          },
+          {
+            "q": "Puis-je conduire si le moteur surchauffe ?",
+            "a": "Il est déconseillé de rouler car cela peut causer des dommages graves. Arrêtez-vous et laissez refroidir."
+          },
+          {
+            "q": "Comment prévenir la surchauffe de mon Fiat Egea ?",
+            "a": "Vérifiez régulièrement le niveau de liquide, l’état du radiateur, le thermostat et le ventilateur."
+          }
+        ],
+        "schemaTitle": "Guide sur la surchauffe moteur Fiat Egea",
+        "schemaDescription": "Conseils experts pour diagnostiquer et résoudre les problèmes de surchauffe moteur sur Fiat Egea avec contrôles efficaces."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-fuel-smell",
+    "intentKey": "fiat-egea_fuel_smell",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "fuel_smell",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-benzin-kokusu-geliyor",
+        "title": "Fiat Egea Benzin Kokusu Geliyor - Sebepler ve Çözümler",
+        "metaDescription": "Fiat Egea araçlarda benzin kokusu neden gelir? Olası sebepler, kontroller ve sık yapılan hatalar içeren kapsamlı rehber.",
+        "intro": "Fiat Egea model aracınızda benzin kokusu alıyorsanız, bu durum birçok farklı sebepten kaynaklanabilir ve hemen müdahale gerektirebilir. Bu yazıda, benzin kokusunun olası nedenlerini, yapılacak ilk kontrolleri ve doğru teşhis yöntemlerini detaylı şekilde inceleyeceğiz. Parça değişimi yapmadan önce uygulamanız gereken pratik öneriler sizlerle.",
+        "severity": "Benzin kokusu, sızıntı ve yangın riski nedeniyle önemli bir sorundur ve acilen incelenmelidir.",
+        "driveAdvice": "Koku yoğun ise aracı kullanmayın ve yetkili servise başvurun. Kısa mesafede dikkatlice sürüş yapabilirsiniz ancak riskleri göz önünde bulundurun.",
+        "likelyCauses": [
+          "Yakıt hortumu ya da bağlantılarında sızıntı",
+          "Yakıt enjeksiyon sistemi sorunları",
+          "Yakıt deposunun hava kaçırıcısı arızası",
+          "Yakıt filtresi tıkanıklığı ya da kaçak",
+          "Motor bölgesindeki sıcak yüzeylerde yakıt buharı"
+        ],
+        "diagnosticSteps": [
+          "Gözle yakıt hortumu ve bağlantılarını kontrol edin.",
+          "Depo ve dolum ağzı çevresinde sızıntı arayın.",
+          "Motor çalışırken koku ve buhar çıkışını hissedin.",
+          "OBD2 cihaz ile enjeksiyon sistemi kodlarını okuyun.",
+          "Yakıt filtresi ve pompa performansını gözden geçirin.",
+          "Yakıt deposu hava kaçırıcısını test edin."
+        ],
+        "firstChecks": [
+          "Yakıt kapağının tam kapandığını kontrol edin.",
+          "Motor bölgesinde yakıt lekesi olup olmadığını inceleyin.",
+          "Egzoz gazı kokusuyla karıştırmayın."
+        ],
+        "commonMistakes": [
+          "Benzin kokusunu ihmal etmek veya geç müdahale etmek",
+          "Yakıt sistemi yerine sadece filtre veya pompa değişimi yapmak",
+          "Kodu okumadan parça değişimine yönelmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sisteminde zengin hava-yakıt karışımı",
+          "P0456 - Yakıt buharı sistemi kaçak tespiti (küçük kaçak)",
+          "P0442 - Yakıt buhar sistemi kaçak tespiti (küçük kaçak)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodu Okuma Rehberi",
+            "href": "/tr/obd2-ariza-kodu-okuma"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları ve Çözümleri",
+            "href": "/tr/yakit-sistemi-sorunlari"
+          },
+          {
+            "label": "Motor Performans Problemleri Analizi",
+            "href": "/tr/motor-performans-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea'da benzin kokusunun en yaygın sebebi nedir?",
+            "a": "En yaygın sebep yakıt hattında kaçak olmasıdır ancak kesin teşhis için detaylı kontrol gerekir."
+          },
+          {
+            "q": "Benzin kokusu tehlikeli midir?",
+            "a": "Evet, yakıt buharı yangın riskine yol açabilir, bu yüzden dikkate almak önemlidir."
+          },
+          {
+            "q": "Kendi kendime kontrol etmek için ne yapabilirim?",
+            "a": "Yakıt kapağını ve hortum bağlantılarını sıkı ve sağlam olup olmadığını kontrol edin."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Benzin Kokusu Arıza Teşhis Rehberi",
+        "schemaDescription": "Fiat Egea araçlarında benzin kokusu sorununun olası nedenleri, teşhis adımları ve pratik kontrolleri detaylı şekilde öğrenin."
+      },
+      "en": {
+        "slug": "fiat-egea-fuel-smell",
+        "title": "Fiat Egea Fuel Smell Causes and Diagnostic Guide",
+        "metaDescription": "Experiencing a fuel smell in your Fiat Egea? Discover potential causes, diagnostic steps, and how to effectively troubleshoot the issue.",
+        "intro": "If you notice a fuel smell coming from your Fiat Egea, it can indicate various underlying issues that need prompt diagnosis to avoid safety risks. This guide explores common reasons for fuel odors, practical initial checks, and step-by-step diagnostic tips before considering part replacements.",
+        "severity": "Fuel odors should be treated seriously as they may indicate leaks and potential fire hazards requiring immediate attention.",
+        "driveAdvice": "If the fuel smell is strong, avoid driving and seek professional inspection. For faint odors, cautious short trips may be possible but monitor the situation closely.",
+        "likelyCauses": [
+          "Leaking fuel lines or connections",
+          "Issues with the fuel injection system",
+          "Faulty fuel tank vent valve",
+          "Clogged or leaking fuel filter",
+          "Fuel vapors contacting hot engine parts"
+        ],
+        "diagnosticSteps": [
+          "Visually inspect fuel lines and connections for leaks.",
+          "Check around the fuel tank and filler area for any spill or odor.",
+          "Smell for fuel vapors near the engine while running.",
+          "Use an OBD2 scanner to check for fuel system related error codes.",
+          "Examine fuel filter and pump performance.",
+          "Test the fuel tank vent valve functionality."
+        ],
+        "firstChecks": [
+          "Ensure the fuel cap is properly tightened.",
+          "Look for any visible fuel stains around the engine.",
+          "Avoid confusing fuel smell with exhaust emissions."
+        ],
+        "commonMistakes": [
+          "Ignoring the fuel smell or delaying inspection",
+          "Replacing filters or pumps without proper diagnosis",
+          "Attempting repairs without reading diagnostic codes"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Fuel-Air Mixture)",
+          "P0456 - Evaporative Emission System Leak Detected (Small Leak)",
+          "P0442 - Evaporative Emission System Leak Detected (Small Leak)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Error Code Reading Guide",
+            "href": "/en/obd2-error-code-reading"
+          },
+          {
+            "label": "Common Fuel System Problems",
+            "href": "/en/fuel-system-problems"
+          },
+          {
+            "label": "Engine Performance Issues Explained",
+            "href": "/en/engine-performance-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is the most frequent cause of fuel smell in a Fiat Egea?",
+            "a": "The most frequent cause is typically a leak in the fuel line, but proper diagnosis is essential."
+          },
+          {
+            "q": "Is a fuel smell dangerous?",
+            "a": "Yes, it poses a fire risk and should be addressed promptly."
+          },
+          {
+            "q": "What simple checks can I do myself?",
+            "a": "Check if the fuel cap is securely tightened and look for visible leaks or stains."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Fuel Smell Diagnostic Expert Guide",
+        "schemaDescription": "Learn common causes and diagnostic steps to identify and troubleshoot fuel smell issues in Fiat Egea vehicles safely."
+      },
+      "de": {
+        "slug": "fiat-egea-kraftstoffgeruch-probleme",
+        "title": "Fiat Egea: Kraftstoffgeruch erkennen und diagnostizieren",
+        "metaDescription": "Kraftstoffgeruch im Fiat Egea? Erfahren Sie mögliche Ursachen, Diagnoseschritte und praktische Tipps zur Fehlerbehebung.",
+        "intro": "Wenn Sie bei Ihrem Fiat Egea Kraftstoffgeruch wahrnehmen, kann dies verschiedene Ursachen haben und potenzielle Sicherheitsrisiken bergen. In diesem Leitfaden zeigen wir, welche Ursachen häufig sind, welche ersten Kontrollen sinnvoll sind und wie Sie systematisch mögliche Fehlerquellen eingrenzen können, bevor Teile ausgetauscht werden.",
+        "severity": "Kraftstoffgeruch kann auf Lecks und Brandgefahr hinweisen und sollte schnellstmöglich untersucht werden.",
+        "driveAdvice": "Bei starkem Geruch das Fahrzeug nicht fahren und eine Werkstatt aufsuchen. Bei leichter Geruchsentwicklung vorsichtig fahren und aufmerksam bleiben.",
+        "likelyCauses": [
+          "Undichte Kraftstoffleitungen oder Anschlüsse",
+          "Probleme mit der Einspritzanlage",
+          "Defektes Entlüftungsventil des Kraftstofftanks",
+          "Verstopfter oder undichter Kraftstofffilter",
+          "Kraftstoffdämpfe an heißen Motorbauteilen"
+        ],
+        "diagnosticSteps": [
+          "Kraftstoffleitungen und Anschlüsse auf sichtbare Lecks prüfen.",
+          "Bereich um Tank und Einfüllstutzen auf Flüssigkeit oder Geruch untersuchen.",
+          "Geruchsentwicklung am laufenden Motor ertasten.",
+          "Mit OBD2-Diagnosegerät Fehlermeldungen auslesen.",
+          "Filter und Pumpe auf Funktion kontrollieren.",
+          "Tankentlüftungsventil testen."
+        ],
+        "firstChecks": [
+          "Kraftstoffverschlussdeckel auf sicheren Sitz überprüfen.",
+          "Sichtbare Kraftstoffflecken am Motorraum suchen.",
+          "Kraftstoffgeruch nicht mit Abgasen verwechseln."
+        ],
+        "commonMistakes": [
+          "Kraftstoffgeruch zu ignorieren",
+          "Filterwechsel ohne Diagnose",
+          "Reparaturen durchführen ohne Fehlercodes zu lesen"
+        ],
+        "relatedCodes": [
+          "P0171 - Gemisch zu mager",
+          "P0456 - Verdunstungssystem-Leck (kleines Leck)",
+          "P0442 - Verdunstungssystem-Leck (kleines Leck)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes auslesen",
+            "href": "/de/obd2-fehlercodes-auslesen"
+          },
+          {
+            "label": "Probleme im Kraftstoffsystem",
+            "href": "/de/kraftstoffsystem-probleme"
+          },
+          {
+            "label": "Motorleistungsprobleme erkennen",
+            "href": "/de/motorleistungsprobleme-erkennen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was verursacht häufig Kraftstoffgeruch im Fiat Egea?",
+            "a": "Häufig sind undichte Kraftstoffleitungen die Ursache, eine genaue Diagnose ist jedoch wichtig."
+          },
+          {
+            "q": "Ist der Geruch gefährlich?",
+            "a": "Ja, er kann auf Brand- und Explosionsgefahr hinweisen."
+          },
+          {
+            "q": "Was kann ich als Laie prüfen?",
+            "a": "Den Kraftstoffdeckel prüfen und auf sichtbare Lecks achten."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Kraftstoffgeruch Fehlerdiagnose Leitfaden",
+        "schemaDescription": "Erfahren Sie, wie Sie Kraftstoffgeruch im Fiat Egea erkennen, mögliche Ursachen untersuchen und sicher diagnostizieren."
+      },
+      "es": {
+        "slug": "fiat-egea-olor-a-gasolina",
+        "title": "Fiat Egea: Guía para detectar olor a gasolina y soluciones",
+        "metaDescription": "¿Hueles gasolina en tu Fiat Egea? Conoce las causas comunes, pasos para diagnosticar y cómo hacer revisiones prácticas antes de cambiar piezas.",
+        "intro": "Si sientes olor a gasolina en tu Fiat Egea, es importante identificar varias posibles causas para evitar riesgos. Este artículo te ofrece una guía con las causas más comunes, pasos para diagnosticar el problema y recomendaciones prácticas para revisar el sistema de combustible sin sustituir partes innecesariamente.",
+        "severity": "El olor a gasolina puede indicar fugas y riesgos de incendio, por lo que debe atenderse rápidamente.",
+        "driveAdvice": "Si el olor es fuerte, evita conducir y lleva el vehículo a revisión. En olores leves, maneja con precaución y supervisa la situación.",
+        "likelyCauses": [
+          "Fugas en mangueras o conexiones de combustible",
+          "Problemas en el sistema de inyección de combustible",
+          "Válvula de ventilación del tanque defectuosa",
+          "Filtro de combustible obstruido o con pérdida",
+          "Vapores de combustible en contacto con partes calientes del motor"
+        ],
+        "diagnosticSteps": [
+          "Revisar visualmente las mangueras y conexiones en busca de fugas.",
+          "Inspeccionar alrededor del tanque y la tapa de llenado por derrames u olor.",
+          "Sentir vapores de combustible alrededor del motor con el motor encendido.",
+          "Leer códigos de error relacionados con combustible usando un escáner OBD2.",
+          "Evaluar el estado del filtro y la bomba de combustible.",
+          "Probar la válvula de ventilación del tanque."
+        ],
+        "firstChecks": [
+          "Verificar que la tapa del tanque esté bien cerrada.",
+          "Buscar manchas visibles de combustible cerca del motor.",
+          "No confundir el olor a gasolina con el escape del vehículo."
+        ],
+        "commonMistakes": [
+          "Ignorar el olor a gasolina o demorar la revisión",
+          "Cambiar filtros o bombas sin diagnóstico previo",
+          "Intentar arreglos sin leer los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre de combustible",
+          "P0456 - Fuga pequeña en sistema de emisiones evaporativas",
+          "P0442 - Fuga pequeña en sistema de emisiones evaporativas"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía para leer códigos OBD2",
+            "href": "/es/guia-lectura-codigos-obd2"
+          },
+          {
+            "label": "Problemas comunes en el sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "Problemas de rendimiento del motor",
+            "href": "/es/problemas-rendimiento-motor"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la causa más común del olor a gasolina en Fiat Egea?",
+            "a": "Normalmente se debe a fugas en mangueras, pero es necesaria una buena diagnosis."
+          },
+          {
+            "q": "¿Es peligroso el olor a gasolina?",
+            "a": "Sí, representa riesgo de incendio y debe atenderse rápido."
+          },
+          {
+            "q": "¿Qué revisiones puedo hacer yo mismo?",
+            "a": "Asegurarte que la tapa del tanque está bien puesta y buscar señales visibles de fugas."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Olor a Gasolina: Diagnóstico y Soluciones",
+        "schemaDescription": "Identifica causas frecuentes y pasos para diagnosticar olores a gasolina en Fiat Egea antes de cambiar piezas."
+      },
+      "fr": {
+        "slug": "fiat-egea-odeur-essence",
+        "title": "Fiat Egea : causes et diagnostic de l'odeur d'essence",
+        "metaDescription": "Vous sentez une odeur d'essence dans votre Fiat Egea ? Découvrez les causes probables, les étapes de diagnostic et les vérifications pratiques.",
+        "intro": "Une odeur d'essence dans votre Fiat Egea peut révéler plusieurs problèmes potentiels et doit être examinée rapidement pour éviter tout danger. Ce guide détaille les causes fréquentes, les contrôles à effectuer en premier lieu, ainsi que les étapes pour diagnostiquer correctement avant tout remplacement de pièce.",
+        "severity": "L'odeur d'essence peut signaler une fuite et un risque d'incendie, elle nécessite une intervention rapide.",
+        "driveAdvice": "Si l'odeur est forte, évitez de conduire et consultez un spécialiste. En cas d'odeur légère, conduisez prudemment tout en surveillant le véhicule.",
+        "likelyCauses": [
+          "Fuite dans les conduites ou raccords de carburant",
+          "Problème d'injection de carburant",
+          "Valve de ventilation du réservoir défectueuse",
+          "Filtre à carburant bouché ou fuyant",
+          "Vapeurs d'essence en contact avec des pièces moteur chaudes"
+        ],
+        "diagnosticSteps": [
+          "Inspecter visuellement les durites et raccords de carburant pour détecter les fuites.",
+          "Vérifier autour du réservoir et du bouchon d'arrivée d'essence des traces ou odeurs.",
+          "Sentir les vapeurs au niveau du moteur moteur allumé.",
+          "Utiliser un scanner OBD2 pour relever les codes d'erreur liés au carburant.",
+          "Contrôler le filtre à carburant et la pompe.",
+          "Tester la valve de ventilation du réservoir."
+        ],
+        "firstChecks": [
+          "Vérifier que le bouchon de réservoir est bien fermé.",
+          "Chercher des taches visibles de carburant autour du moteur.",
+          "Ne pas confondre l'odeur d'essence avec celle des gaz d'échappement."
+        ],
+        "commonMistakes": [
+          "Ignorer l'odeur d'essence ou tarder à intervenir",
+          "Changer des pièces sans diagnostic préalable",
+          "Effectuer des réparations sans lecture des codes OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0456 - Fuite système évaporatif (petite fuite)",
+          "P0442 - Fuite système évaporatif (petite fuite)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide de lecture codes erreur OBD2",
+            "href": "/fr/guide-lecture-codes-obd2"
+          },
+          {
+            "label": "Problèmes fréquents du système carburant",
+            "href": "/fr/problemes-systeme-carburant"
+          },
+          {
+            "label": "Diagnostic des problèmes de performance moteur",
+            "href": "/fr/diagnostic-performance-moteur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la cause la plus fréquente de l'odeur d'essence sur Fiat Egea ?",
+            "a": "Le plus souvent, une fuite dans les conduites de carburant, mais un diagnostic précis est recommandé."
+          },
+          {
+            "q": "L'odeur d'essence est-elle dangereuse ?",
+            "a": "Oui, elle signale un risque potentiel d'incendie."
+          },
+          {
+            "q": "Quelles vérifications simples puis-je faire moi-même ?",
+            "a": "Vérifiez que le bouchon est bien serré et recherchez des fuites visibles."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Odeur d'Essence : guide de diagnostic expert",
+        "schemaDescription": "Découvrez les causes et méthodes pour diagnostiquer efficacement une odeur d'essence sur Fiat Egea."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-oil-smell",
+    "intentKey": "fiat-egea_oil_smell",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "oil_smell",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-yanik-yag-kokusu",
+        "title": "Fiat Egea Yanık Yağ Kokusu Geliyor: Sebepler ve Çözümler",
+        "metaDescription": "Fiat Egea'da yanık yağ kokusu alıyorsanız, olası nedenler ve yapılacak temel kontroller için rehberimizi inceleyin.",
+        "intro": "Fiat Egea aracınızda yanık yağ kokusu almak, motor veya yağ sisteminde bir sorun olduğuna işaret edebilir. Bu tür bir koku, çeşitli nedenlerden kaynaklanabilir ve ciddiye alınmalıdır. Ancak, kesin teşhis için önce temel kontrollerin yapılması önemlidir. Bu yazıda yaygın nedenleri, ilk teşhis adımlarını ve dikkat edilmesi gereken noktaları detaylı şekilde ele alacağız.",
+        "severity": "Orta düzeyde önem taşır. Kokunun devam etmesi motorun zarar görmesine yol açabilir.",
+        "driveAdvice": "Kokunun şiddetlenmesi durumunda aracı sürmeyi bırakıp detaylı kontrol yapılması önerilir.",
+        "likelyCauses": [
+          "Motor yağ sızıntısı",
+          "Egzozmanifolduna yağ damlaması",
+          "Patlak conta veya sızdıran silindir kapağı",
+          "Aşınmış conta veya keçeler",
+          "Soğutma sıvısı sızıntısı"
+        ],
+        "diagnosticSteps": [
+          "Motor yağ seviyesi ve durumu kontrol edilir",
+          "Motor kapağı çevresinde yağ lekeleri aranır",
+          "Egzoz manifoldu ve çevresi için görsel muayene yapılır",
+          "Conta ve keçelerde yağ sızıntısı testi yapılır",
+          "Soğutma sistemi sızıntısına bakılır",
+          "OBD2 taraması ile ilgili hata kodları kontrol edilir"
+        ],
+        "firstChecks": [
+          "Motor yağı seviyesini kontrol edin",
+          "Egzoz altındaki yağı inceleyin",
+          "Motor kaputunun altındaki yağ lekelerini araştırın"
+        ],
+        "commonMistakes": [
+          "Kokuyu sadece plastik gibi yanma kokusu sanmak",
+          "Yağ eksikliğini ve sızıntısını şüpheye almamak",
+          "Hemen parça değişimine gitmekten kaçınmak"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0300",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Yağ Sorunları Teşhis",
+            "href": "/tr/fiat-egea-yag-sorunlari-teshis"
+          },
+          {
+            "label": "OBD2 Yağ Seviyesi Kodları",
+            "href": "/tr/obd2-yag-seviyesi-kodlari"
+          },
+          {
+            "label": "Fiat Egea Motor Bakımı",
+            "href": "/tr/fiat-egea-motor-bakimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Yanık yağ kokusu ne kadar tehlikelidir?",
+            "a": "Yanık yağ kokusu, motor veya conta sorunlarına işaret edebilir ve ihmal edilirse ciddi hasarlara yol açabilir."
+          },
+          {
+            "q": "Yağ sızıntısı nasıl tespit edilir?",
+            "a": "Motor ve çevresinde yağ lekeleri aranarak, özellikle conta ve keçelerde görsel kontrol yapılarak sızıntı tespit edilir."
+          },
+          {
+            "q": "Kodu okuyarak sorunu netleştirebilir miyim?",
+            "a": "OBD2 taraması ile bazı ilgili hata kodları alınabilir ancak kesin teşhis için kontrollerde bulunmak önemlidir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Yanık Yağ Kokusu Nedenleri ve Çözümleri",
+        "schemaDescription": "Fiat Egea araçlarda yanık yağ kokusunun sebep olabilecek durumları, yapılacak kontrolleri ve önerilerimizi içeren detaylı rehber."
+      },
+      "en": {
+        "slug": "fiat-egea-burning-oil-smell",
+        "title": "Fiat Egea Burning Oil Smell: Causes and Diagnostic Guide",
+        "metaDescription": "Experiencing a burning oil smell in your Fiat Egea? Learn common causes and practical checks before replacing parts.",
+        "intro": "If you notice a burning oil smell in your Fiat Egea, it could indicate an issue related to the engine or oil system. Several factors may contribute to this odor, and proper diagnosis requires systematic checks before jumping to conclusions. In this article, we'll explore frequent causes, step-by-step diagnostic procedures, and essential tips to understand and address the problem effectively.",
+        "severity": "Moderate urgency. Continuing to drive may risk engine damage.",
+        "driveAdvice": "If the smell worsens, minimize driving and seek professional inspection promptly.",
+        "likelyCauses": [
+          "Engine oil leak",
+          "Oil dripping onto exhaust components",
+          "Damaged head gasket or valve cover gasket",
+          "Worn seals or gaskets",
+          "Coolant leakage mixing with oil"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and condition",
+          "Inspect engine bay for oil stains",
+          "Examine exhaust manifold for oil residue",
+          "Test gaskets and seals for leakage",
+          "Evaluate cooling system for leaks",
+          "Scan for OBD2 trouble codes"
+        ],
+        "firstChecks": [
+          "Verify engine oil level",
+          "Look under the exhaust system for dripping oil",
+          "Inspect engine compartment for fresh oil spots"
+        ],
+        "commonMistakes": [
+          "Mistaking oil smell for plastic burning",
+          "Ignoring low oil levels or minor leaks",
+          "Replacing parts without thorough diagnosis"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0300",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Oil Issues Diagnostics",
+            "href": "/en/fiat-egea-oil-issues-diagnostics"
+          },
+          {
+            "label": "OBD2 Oil Level Codes Explained",
+            "href": "/en/obd2-oil-level-codes-explained"
+          },
+          {
+            "label": "Fiat Egea Engine Maintenance Tips",
+            "href": "/en/fiat-egea-engine-maintenance-tips"
+          }
+        ],
+        "faq": [
+          {
+            "q": "How dangerous is a burning oil smell?",
+            "a": "A burning oil smell can indicate engine or gasket problems and may cause serious damage if left unaddressed."
+          },
+          {
+            "q": "How can I check for oil leaks?",
+            "a": "Look for oil stains around the engine and on the ground, paying close attention to gaskets and seals."
+          },
+          {
+            "q": "Can OBD2 codes pinpoint the issue?",
+            "a": "OBD2 codes can help identify related problems but visual and physical checks are also necessary for accurate diagnosis."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Burning Oil Smell: Causes and Fixes Guide",
+        "schemaDescription": "Comprehensive guide covering common reasons behind burning oil smell in Fiat Egea, with practical diagnostic steps and advice."
+      },
+      "de": {
+        "slug": "fiat-egea-verbrennungs-oel-geruch",
+        "title": "Fiat Egea: Verbrannter Ölgeruch – Ursachen und Diagnose",
+        "metaDescription": "Verbrannter Ölgeruch im Fiat Egea? Hier erfahren Sie häufige Ursachen, erste Prüfungen und Schritte zur Diagnose.",
+        "intro": "Ein verbrannter Ölgeruch im Fiat Egea kann auf Probleme im Motor- oder Ölkreislauf hinweisen. Verschiedene Ursachen sind möglich, weshalb eine sorgfältige Überprüfung nötig ist, bevor Teile ersetzt werden. Dieser Artikel zeigt typische Ursachen, diagnostische Maßnahmen und wichtige Kontrollpunkte, um das Problem richtig einzuschätzen und anzugehen.",
+        "severity": "Mittlere Dringlichkeit. Weiteres Fahren kann Motorschäden verursachen.",
+        "driveAdvice": "Bei Verschlimmerung des Geruchs das Fahrzeug nicht weiter fahren und eine Fachwerkstatt konsultieren.",
+        "likelyCauses": [
+          "Motorölverlust",
+          "Öl tropft auf Auspuffkomponenten",
+          "Defekte Zylinderkopfdichtung oder Ventildeckeldichtung",
+          "Abgenutzte Dichtungen und Simmeringe",
+          "Kühlmittelleckage vermischt mit Öl"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und -zustand prüfen",
+          "Ölflecken im Motorraum suchen",
+          "Auspuffkrümmer auf Ölrückstände untersuchen",
+          "Dichtungen auf Undichtigkeiten prüfen",
+          "Kühlsystem auf Lecks kontrollieren",
+          "OBD2-Diagnosecodes auslesen"
+        ],
+        "firstChecks": [
+          "Motorölstand kontrollieren",
+          "Unter dem Auspuff nach Ölspuren schauen",
+          "Motorraum auf frische Ölflecken inspizieren"
+        ],
+        "commonMistakes": [
+          "Ölgeruch mit Plastikgeruch verwechseln",
+          "Ölmangel oder kleine Lecks übersehen",
+          "Teile tauschen ohne genaue Fehleranalyse"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0300",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Ölprobleme Diagnose",
+            "href": "/de/fiat-egea-oelprobleme-diagnose"
+          },
+          {
+            "label": "OBD2 Ölstand Codes erklärt",
+            "href": "/de/obd2-oelstand-codes-erklaert"
+          },
+          {
+            "label": "Fiat Egea Motorwartung Tipps",
+            "href": "/de/fiat-egea-motorwartung-tipps"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie gefährlich ist verbrannter Ölgeruch?",
+            "a": "Verbrannter Ölgeruch kann auf Motorschäden hinweisen und sollte nicht ignoriert werden, da sonst größere Schäden entstehen können."
+          },
+          {
+            "q": "Wie erkenne ich Öl-Lecks?",
+            "a": "Suchen Sie nach Ölflecken am Motor und Unterboden sowie an Dichtungen und Simmeringen."
+          },
+          {
+            "q": "Erkennen OBD2-Codes das Problem genau?",
+            "a": "OBD2-Codes helfen bei der Fehlersuche, eine sorgfältige Sichtprüfung ist aber ebenso wichtig."
+          }
+        ],
+        "schemaTitle": "Fiat Egea: Ursachen für verbrannten Ölgeruch & Diagnose",
+        "schemaDescription": "Detaillierter Leitfaden zu den Ursachen von verbranntem Ölgeruch im Fiat Egea mit praktischen Diagnose-Schritten und Tipps."
+      },
+      "es": {
+        "slug": "fiat-egea-olor-a-aceite-quemado",
+        "title": "Fiat Egea Olor a Aceite Quemado: Causas y Diagnóstico",
+        "metaDescription": "¿Hueles aceite quemado en tu Fiat Egea? Descubre las causas comunes y revisiones prácticas antes de cambiar piezas.",
+        "intro": "El olor a aceite quemado en tu Fiat Egea puede indicar problemas en el motor o en el sistema de lubricación. Hay múltiples causas posibles y es importante hacer verificaciones antes de reemplazar componentes. Aquí analizamos causas frecuentes, pasos para diagnosticar y consejos útiles para abordar el problema de forma segura y efectiva.",
+        "severity": "Nivel de urgencia moderado. Continuar conduciendo puede causar daños en el motor.",
+        "driveAdvice": "Si el olor empeora, evita conducir y busca una revisión profesional cuanto antes.",
+        "likelyCauses": [
+          "Fuga de aceite del motor",
+          "Aceite goteando sobre el escape",
+          "Junta de culata o tapa de válvulas dañadas",
+          "Sellos o juntas desgastadas",
+          "Fuga de líquido refrigerante mezclada con aceite"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y estado del aceite",
+          "Inspeccionar el compartimiento del motor para manchas de aceite",
+          "Examinar el múltiple de escape para residuos de aceite",
+          "Probar juntas y sellos por fugas",
+          "Verificar el sistema de refrigeración",
+          "Escanear códigos de OBD2 relacionados"
+        ],
+        "firstChecks": [
+          "Comprobar nivel de aceite del motor",
+          "Buscar aceite debajo del escape",
+          "Inspeccionar el motor para manchas recientes de aceite"
+        ],
+        "commonMistakes": [
+          "Confundir olor a aceite con plástico quemado",
+          "Ignorar niveles bajos o pequeñas fugas",
+          "Cambiar piezas sin diagnóstico adecuado"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0300",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico de problemas de aceite en Fiat Egea",
+            "href": "/es/fiat-egea-problemas-aceite"
+          },
+          {
+            "label": "Códigos OBD2 para nivel de aceite",
+            "href": "/es/codigos-obd2-nivel-aceite"
+          },
+          {
+            "label": "Mantenimiento de motor Fiat Egea",
+            "href": "/es/mantenimiento-motor-fiat-egea"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tan peligroso es el olor a aceite quemado?",
+            "a": "Este olor puede indicar problemas mecánicos que, si se ignoran, pueden causar daños graves al motor."
+          },
+          {
+            "q": "¿Cómo detectar fugas de aceite?",
+            "a": "Busca manchas de aceite en el motor, debajo del vehículo y especialmente en las juntas y sellos."
+          },
+          {
+            "q": "¿Los códigos OBD2 identifican el problema con precisión?",
+            "a": "Los códigos OBD2 ayudan en la detección, pero se requiere una inspección visual y física para un diagnóstico certero."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Olor a Aceite Quemado: Guía de Causas y Soluciones",
+        "schemaDescription": "Guía completa sobre causas comunes del olor a aceite quemado en Fiat Egea y pasos prácticos para diagnosticar y solucionar."
+      },
+      "fr": {
+        "slug": "fiat-egea-odeur-huile-brulee",
+        "title": "Fiat Egea Odeur d'Huile Brûlée : Causes et Diagnostic",
+        "metaDescription": "Vous sentez une odeur d'huile brûlée dans votre Fiat Egea ? Découvrez les causes fréquentes et les contrôles avant réparation.",
+        "intro": "Une odeur d'huile brûlée dans votre Fiat Egea peut révéler un problème au niveau du moteur ou du système d'huile. Plusieurs causes sont possibles, et il est important d'effectuer des contrôles simples avant de remplacer une pièce. Cet article détaille les causes probables, les étapes de diagnostic et les conseils pour gérer efficacement ce symptôme.",
+        "severity": "Importance modérée. Continuer à rouler peut endommager le moteur.",
+        "driveAdvice": "Si l'odeur persiste ou s'accentue, évitez de conduire et faites vérifier le véhicule rapidement.",
+        "likelyCauses": [
+          "Fuite d'huile moteur",
+          "Huile gouttant sur le collecteur d'échappement",
+          "Joint de culasse ou cache-culbuteurs endommagé",
+          "Joints d'étanchéité usés",
+          "Fuite de liquide de refroidissement dans l'huile"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau et l'état de l'huile moteur",
+          "Examiner le compartiment moteur pour taches d'huile",
+          "Inspecter le collecteur d'échappement pour résidus d'huile",
+          "Tester les joints pour détecter des fuites",
+          "Vérifier le système de refroidissement",
+          "Scanner les codes défaut OBD2"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau d'huile moteur",
+          "Chercher des traces d'huile sous l'échappement",
+          "Inspecter la présence de taches d'huile dans le moteur"
+        ],
+        "commonMistakes": [
+          "Confondre l'odeur d'huile avec celle du plastique brûlé",
+          "Négliger un faible niveau d'huile ou de petites fuites",
+          "Remplacer des pièces sans diagnostic approfondi"
+        ],
+        "relatedCodes": [
+          "P0171",
+          "P0300",
+          "P0420"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostic problèmes d'huile Fiat Egea",
+            "href": "/fr/fiat-egea-diagnostic-huile"
+          },
+          {
+            "label": "Codes OBD2 liés au niveau d'huile",
+            "href": "/fr/codes-obd2-niveau-huile"
+          },
+          {
+            "label": "Entretien moteur Fiat Egea",
+            "href": "/fr/entretien-moteur-fiat-egea"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quel est le risque d'une odeur d'huile brûlée ?",
+            "a": "Cette odeur peut signaler des dommages moteur importants si elle n'est pas prise en compte."
+          },
+          {
+            "q": "Comment détecter une fuite d'huile ?",
+            "a": "Recherchez des traces d'huile visibles autour du moteur et sous le véhicule, notamment au niveau des joints."
+          },
+          {
+            "q": "Les codes OBD2 permettent-ils de localiser le problème ?",
+            "a": "Les codes OBD2 orientent le diagnostic, mais un examen visuel et manuel est indispensable."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Odeur d'Huile Brûlée : Causes et Solutions",
+        "schemaDescription": "Guide complet expliquant les causes courantes d'odeur d'huile brûlée sur Fiat Egea avec des conseils et étapes de diagnostic adaptés."
+      }
+    }
+  },
+  {
+    "contentGroupId": "fiat-egea-transmission-slipping",
+    "intentKey": "fiat-egea_transmission_slipping",
+    "make": "Fiat",
+    "model": "Egea",
+    "symptomKey": "transmission_slipping",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "fiat-egea-vites-kaciriyor",
+        "title": "Fiat Egea Vites Kaçırma Sorunu ve Çözüm Yolları",
+        "metaDescription": "Fiat Egea vites kaçırıyor mu? Olası nedenler, ilk kontroller ve doğru teşhis için pratik adımları keşfedin.",
+        "intro": "Fiat Egea modellerinde vites kaçırma şikayeti araca binen yük ve sürüş koşullarına bağlı olarak farklı nedenlerden kaynaklanabilir. Bu durum, sürüş güvenliğinizi tehlikeye atabilir ve aracınızın performansını olumsuz etkileyebilir. Vites kaçırma sorununu anlamak için öncelikle temel kontroller yapılmalı, ardından profesyonel teşhis adımlarına geçilmelidir. Bu rehberde, Fiat Egea’da vites kaçırma problemine yol açabilecek olası sebepler ve yapılması gerekenler detaylı şekilde ele alınmaktadır.",
+        "severity": "Orta ila yüksek; vites kaçırma sürüş güvenliğini azaltabilir.",
+        "driveAdvice": "Aracınızı kullanırken vites değişimlerinde ani kaymalar veya dişli atlamalar fark ederseniz dikkatli olun ve kısa sürede kontrol ettirin.",
+        "likelyCauses": [
+          "Düşük veya kirli şanzıman yağı",
+          "Aşınmış debriyaj balatası veya dişliler",
+          "Şanzıman kayışı veya zincirinde gevşeklik",
+          "Elektrik sinyal arızaları veya sensör hataları",
+          "Vites mekanizmasında mekanik hasar veya aşınma"
+        ],
+        "diagnosticSteps": [
+          "Şanzıman yağı seviyesini ve kalitesini kontrol edin",
+          "Debriyaj performansını test edin",
+          "OBD2 tarayıcı ile şanzıman kodlarını okuyun",
+          "Vites kutusu bağlantı parçalarını inceleyin",
+          "Araç yazılım güncellemelerini kontrol edin",
+          "Sürüş testi ile vites geçiş davranışlarını izleyin"
+        ],
+        "firstChecks": [
+          "Şanzıman yağ seviyesini ölçün",
+          "Debriyaj pedal boşluğunu kontrol edin",
+          "Vites topuzu ve bağlantılarında oynama araştın"
+        ],
+        "commonMistakes": [
+          "Yağ seviyesini kontrol etmeden sadece değişim yapmak",
+          "Vites geçiş sorununu elektronik arıza zannetmek",
+          "Debriyaj sorunlarını görmezden gelmek"
+        ],
+        "relatedCodes": [
+          "P0700 - Şanzıman Kontrol Sistemi",
+          "P0730 - Vites Oranı Hatası",
+          "P0740 - Tork Konvertörü Kilitleme Devresi"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 HQ Fiat Egea Diagnostik Rehberi",
+            "href": "/tr/fiat-egea-diagnostik"
+          },
+          {
+            "label": "Şanzıman Arıza Kodları Açıklaması",
+            "href": "/tr/sanziman-ariza-kodlari"
+          },
+          {
+            "label": "Fiat Egea Vites Geçiş Problemleri Çözümü",
+            "href": "/tr/fiat-egea-vites-gecis-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Fiat Egea’da vites kaçırmanın en yaygın nedeni nedir?",
+            "a": "Genellikle şanzıman yağı düşük veya kirli olduğunda vites kaçırma yaşanabilir ancak kesin sebep profesyonel kontrolle belirlenmelidir."
+          },
+          {
+            "q": "Vites kaçırma sorunu evde çözülebilir mi?",
+            "a": "İlk yağ seviyesi ve debriyaj kontrolleri evde yapılabilir ancak detaylı teşhis ve tamir uzman gerektirir."
+          },
+          {
+            "q": "OBD2 cihazı ile vites kaçırma sorunu tespit edilir mi?",
+            "a": "Evet, özellikle şanzımanla ilgili hata kodları OBD2 cihazıyla öğrenilerek sorunun kaynağı araştırılabilir."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Vites Kaçırma Sorunu - Nedenleri ve Çözümü",
+        "schemaDescription": "Fiat Egea modellerinde vites kaçırma sorununa dair olası nedenler, yapılması gereken ilk kontroller ve doğru teşhis adımları burada."
+      },
+      "en": {
+        "slug": "fiat-egea-transmission-slipping",
+        "title": "Fiat Egea Transmission Slipping: Causes and Diagnostic Guide",
+        "metaDescription": "Is your Fiat Egea experiencing transmission slipping? Learn practical checks, possible causes, and steps to diagnose without rushing to replace parts.",
+        "intro": "Transmission slipping in the Fiat Egea can stem from various underlying causes related to mechanical wear, fluid conditions, or sensor faults. It can negatively impact driving safety and vehicle performance. Before replacing parts, it’s important to carefully diagnose including fluid checks and electronic diagnostics. This guide covers common reasons for slipping and practical steps to identify issues effectively.",
+        "severity": "Moderate to high; transmission slipping can compromise safe vehicle operation.",
+        "driveAdvice": "If you notice sudden gear shifts or slipping while driving, avoid aggressive use and have your vehicle inspected promptly.",
+        "likelyCauses": [
+          "Low or contaminated transmission fluid",
+          "Worn clutch plates or internal gears",
+          "Loose or damaged transmission linkage",
+          "Faulty sensors or electrical issues",
+          "Mechanical wear in the gear mechanism"
+        ],
+        "diagnosticSteps": [
+          "Check transmission fluid level and condition",
+          "Test clutch operation and pedal free play",
+          "Scan for transmission fault codes with an OBD2 tool",
+          "Inspect gear linkage and mounts for damage",
+          "Verify software updates for transmission control",
+          "Perform a detailed road test focusing on gear shifts"
+        ],
+        "firstChecks": [
+          "Measure transmission fluid level",
+          "Check clutch pedal free play",
+          "Inspect gear shifter mechanism for excessive play"
+        ],
+        "commonMistakes": [
+          "Replacing parts without checking fluid quality",
+          "Assuming the issue is electronic without mechanical inspection",
+          "Ignoring clutch wear symptoms"
+        ],
+        "relatedCodes": [
+          "P0700 - Transmission Control System",
+          "P0730 - Incorrect Gear Ratio",
+          "P0740 - Torque Converter Clutch Circuit"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Diagnostic Guide",
+            "href": "/en/fiat-egea-diagnostic"
+          },
+          {
+            "label": "Transmission Trouble Codes Explained",
+            "href": "/en/transmission-trouble-codes"
+          },
+          {
+            "label": "Common Gear Shift Problems in Fiat Egea",
+            "href": "/en/fiat-egea-gear-shift-problems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What commonly causes transmission slipping in the Fiat Egea?",
+            "a": "Low or degraded transmission fluid is a frequent cause, but proper diagnosis is necessary to identify exact reasons."
+          },
+          {
+            "q": "Can I fix transmission slipping myself?",
+            "a": "Basic checks like fluid level and clutch adjustment can be done at home, but comprehensive repairs require professionals."
+          },
+          {
+            "q": "Does an OBD2 scanner detect transmission slipping issues?",
+            "a": "Yes, scanning for fault codes can help pinpoint transmission-related problems linked to sensors or control units."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Transmission Slipping - Causes and Diagnosis",
+        "schemaDescription": "Explore possible reasons behind transmission slipping in Fiat Egea and learn practical diagnostic steps to resolve it effectively."
+      },
+      "de": {
+        "slug": "fiat-egea-getriebe-rutscht",
+        "title": "Fiat Egea Getriebe rutscht: Ursachen und Diagnose",
+        "metaDescription": "Fiat Egea Getriebe rutscht? Ursachen, erste Überprüfungen und praxisnahe Diagnoseschritte ohne voreilige Teilewechsel.",
+        "intro": "Ein rutschendes Getriebe im Fiat Egea kann verschiedene Ursachen haben, von verschlissenen Teilen bis hin zu Problemen mit der Flüssigkeitsqualität oder elektrischen Komponenten. Dies beeinträchtigt die Fahrsicherheit und sollte dringend diagnostiziert werden. Vor einem Austausch von Teilen sind grundlegende Kontrollen und eine Fehlerdiagnose unerlässlich. In diesem Artikel werden häufige Ursachen und praktische Prüfverfahren beschrieben.",
+        "severity": "Mittel bis hoch; Getrieberutschen kann die Fahrsicherheit erheblich beeinträchtigen.",
+        "driveAdvice": "Beobachten Sie ungewöhnliche Gangwechsel oder Schlupf und lassen Sie das Fahrzeug unverzüglich überprüfen.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Getriebeölstand",
+          "Abgenutzte Kupplungsbeläge oder Zahnräder",
+          "Lose oder beschädigte Schalthebelmechanik",
+          "Defekte Sensoren oder elektrische Fehler",
+          "Mechanischer Verschleiß im Getriebemechanismus"
+        ],
+        "diagnosticSteps": [
+          "Getriebeölstand und -qualität prüfen",
+          "Kupplungsfunktion und Pedalspiel testen",
+          "Mit OBD2-Gerät Getriebefehler auslesen",
+          "Schalthebel und Halterungen inspizieren",
+          "Software-Updates für Getriebesteuerung prüfen",
+          "Fahrtentest mit Fokus auf Gangwechsel durchführen"
+        ],
+        "firstChecks": [
+          "Getriebeölstand messen",
+          "Kupplungspedalspiel kontrollieren",
+          "Ganghebelmechanismus auf übermäßiges Spiel untersuchen"
+        ],
+        "commonMistakes": [
+          "Teile austauschen ohne Ölqualität prüfen",
+          "Probleme elektronischer Natur annehmen ohne mechanische Inspektion",
+          "Kupplungsverschleiß ignorieren"
+        ],
+        "relatedCodes": [
+          "P0700 - Getriebesteuerungssystem",
+          "P0730 - Falsches Übersetzungsverhältnis",
+          "P0740 - Drehmomentwandler-Kupplung"
+        ],
+        "internalLinks": [
+          {
+            "label": "Fiat Egea Diagnoseleitfaden",
+            "href": "/de/fiat-egea-diagnose"
+          },
+          {
+            "label": "Getriebe-Fehlercodes erklärt",
+            "href": "/de/getriebe-fehlercodes"
+          },
+          {
+            "label": "Häufige Schaltprobleme beim Fiat Egea",
+            "href": "/de/fiat-egea-schaltprobleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für Getrieberutschen im Fiat Egea?",
+            "a": "Ein niedriger oder verschmutzter Getriebeölstand ist oft verantwortlich, genaue Ursachen müssen aber professionell diagnostiziert werden."
+          },
+          {
+            "q": "Kann ich das Problem selbst beheben?",
+            "a": "Grundlegende Checks wie Ölstand und Kupplung kann man selbst durchführen, größere Reparaturen sollten Fachleute übernehmen."
+          },
+          {
+            "q": "Erkennt ein OBD2-Scanner Getriebeprobleme?",
+            "a": "Ja, Fehlercodes können Hinweise auf Probleme mit Sensoren oder Steuergeräten liefern."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Getrieberutschen - Ursachen und Diagnose",
+        "schemaDescription": "Ursachen für Getrieberutschen im Fiat Egea verstehen und mit praxisnahen Diagnoseschritten beheben."
+      },
+      "es": {
+        "slug": "fiat-egea-vites-se-desliza",
+        "title": "Fiat Egea: ¿Por qué el cambio se desliza? Guía de diagnóstico",
+        "metaDescription": "¿Tu Fiat Egea presenta deslizamiento en la transmisión? Descubre causas comunes, revisiones iniciales y cómo diagnosticar paso a paso.",
+        "intro": "El deslizamiento de la transmisión en un Fiat Egea puede deberse a múltiples factores, desde el desgaste mecánico hasta problemas con el nivel o estado del líquido. Esto puede afectar la seguridad y el rendimiento del vehículo. Antes de reemplazar piezas, es fundamental realizar inspecciones prácticas y un diagnóstico detallado. En esta guía encontrarás las causas más comunes y los pasos para identificar correctamente la fuente del problema.",
+        "severity": "Moderado a alto; el deslizamiento afecta la seguridad durante la conducción.",
+        "driveAdvice": "Si notas cambios de marcha bruscos o deslizamientos, maneja con precaución y revisa tu vehículo pronto.",
+        "likelyCauses": [
+          "Nivel bajo o líquido de transmisión sucio",
+          "Discos de embrague desgastados o engranajes dañados",
+          "Vínculos del cambio flojos o defectuosos",
+          "Problemas eléctricos o sensores defectuosos",
+          "Desgaste mecánico en el sistema de engranajes"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y calidad del líquido de transmisión",
+          "Probar operación del embrague y holgura del pedal",
+          "Leer códigos de fallo con escáner OBD2",
+          "Inspeccionar mecanismos y soportes del cambio",
+          "Verificar actualizaciones del software de control",
+          "Realizar prueba de manejo enfocada en cambios"
+        ],
+        "firstChecks": [
+          "Medir nivel de líquido de transmisión",
+          "Comprobar respuesta y holgura del pedal de embrague",
+          "Inspeccionar el mecanismo de palanca de cambios"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin revisar estado del líquido",
+          "Asumir que es problema electrónico sin inspección mecánica",
+          "Ignorar señales de desgaste del embrague"
+        ],
+        "relatedCodes": [
+          "P0700 - Sistema de control de transmisión",
+          "P0730 - Relación de cambio incorrecta",
+          "P0740 - Circuito del embrague del convertidor de par"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de diagnóstico Fiat Egea",
+            "href": "/es/fiat-egea-diagnostico"
+          },
+          {
+            "label": "Códigos de error de transmisión",
+            "href": "/es/codigos-error-transmision"
+          },
+          {
+            "label": "Problemas comunes de cambio en Fiat Egea",
+            "href": "/es/problemas-cambio-fiat-egea"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué causa comúnmente el deslizamiento de transmisión en el Fiat Egea?",
+            "a": "El nivel bajo o líquido sucio es la causa frecuente, pero se necesita diagnóstico para identificar el problema exacto."
+          },
+          {
+            "q": "¿Puedo reparar el deslizamiento de la transmisión por mí mismo?",
+            "a": "Revisiones básicas pueden hacerse en casa, pero reparaciones extensas requieren un técnico especializado."
+          },
+          {
+            "q": "¿Un escáner OBD2 detecta problemas de deslizamiento?",
+            "a": "Sí, es útil para identificar códigos relacionados con sensores y controladores."
+          }
+        ],
+        "schemaTitle": "Deslizamiento de transmisión Fiat Egea - Causas y diagnóstico",
+        "schemaDescription": "Aprende las causas y pasos para diagnosticar el deslizamiento en la transmisión del Fiat Egea de forma práctica."
+      },
+      "fr": {
+        "slug": "fiat-egea-glissement-rapport",
+        "title": "Fiat Egea : Glissement de la transmission – Causes et diagnostic",
+        "metaDescription": "Votre Fiat Egea a des à-coups de transmission ? Découvrez les causes fréquentes, vérifications initiales et méthode de diagnostic efficace.",
+        "intro": "Le glissement de la transmission sur une Fiat Egea peut résulter de divers problèmes, tels qu’une usure mécanique, un niveau d’huile insuffisant ou des défauts électroniques. Ce phénomène peut nuire à la sécurité et aux performances du véhicule. Il est essentiel de procéder à des vérifications de base avant de changer des pièces. Ce guide présente les causes possibles et les étapes de diagnostic pour identifier clairement le problème.",
+        "severity": "Modéré à élevé ; le glissement de la transmission peut compromettre la sécurité de conduite.",
+        "driveAdvice": "En cas de changement de vitesse saccadé ou glissant, conduisez prudemment et faites contrôler votre véhicule rapidement.",
+        "likelyCauses": [
+          "Niveau d’huile de transmission bas ou contaminé",
+          "Disques d’embrayage usés ou engrenages internes endommagés",
+          "Liaison de boîte de vitesses détendue ou défectueuse",
+          "Défauts de capteurs ou problèmes électriques",
+          "Usure mécanique dans le mécanisme de changement de vitesse"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et l’état de l’huile de transmission",
+          "Tester le fonctionnement de l’embrayage et le jeu de la pédale",
+          "Scanner les codes défaut avec un outil OBD2",
+          "Inspecter les leviers et supports de la boîte",
+          "Contrôler les mises à jour logicielles du système de transmission",
+          "Effectuer un essai routier ciblé sur les passages de vitesses"
+        ],
+        "firstChecks": [
+          "Mesurer le niveau d’huile de transmission",
+          "Vérifier le jeu de la pédale d’embrayage",
+          "Inspecter le mécanisme du levier de vitesses"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans vérifier la qualité de l’huile",
+          "Supposer un problème électronique sans inspection mécanique",
+          "Ignorer les signes d’usure de l’embrayage"
+        ],
+        "relatedCodes": [
+          "P0700 - Système de contrôle de transmission",
+          "P0730 - Rapport de vitesse incorrect",
+          "P0740 - Circuit d’embrayage de convertisseur de couple"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide de diagnostic Fiat Egea",
+            "href": "/fr/fiat-egea-diagnostic"
+          },
+          {
+            "label": "Codes défaut transmission expliqués",
+            "href": "/fr/codes-defaut-transmission"
+          },
+          {
+            "label": "Problèmes courants de passage de vitesse Fiat Egea",
+            "href": "/fr/problemes-changement-vitesses"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes fréquentes du glissement de transmission sur Fiat Egea ?",
+            "a": "Un faible niveau ou une huile de transmission contaminée est souvent à l’origine, mais un diagnostic précis est nécessaire."
+          },
+          {
+            "q": "Puis-je réparer ce problème moi-même ?",
+            "a": "Les vérifications simples sont possibles à domicile, mais les réparations complexes demandent un professionnel."
+          },
+          {
+            "q": "Un scanner OBD2 détecte-t-il le glissement de la transmission ?",
+            "a": "Oui, les codes défauts aident à identifier les problèmes liés aux capteurs ou au système de contrôle."
+          }
+        ],
+        "schemaTitle": "Fiat Egea Glissement de transmission – Causes et diagnostic",
+        "schemaDescription": "Comprenez les causes du glissement de transmission sur Fiat Egea et suivez les étapes pratiques de diagnostic."
+      }
+    }
   }
 ]
