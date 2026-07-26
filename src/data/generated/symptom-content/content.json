@@ -29888,5 +29888,3515 @@
         "schemaDescription": "Guide complet pour détecter et comprendre les causes de calage moteur sur Opel Astra avec conseils pratiques."
       }
     }
+  },
+  {
+    "contentGroupId": "opel-astra-jerking",
+    "intentKey": "opel-astra_jerking",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "jerking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "opel-astra-engine-jerking",
+        "title": "Opel Astra Engine Jerking: Causes & Diagnostics",
+        "metaDescription": "Explore common reasons why your Opel Astra jerks during driving and learn practical diagnostic steps before replacing parts.",
+        "intro": "If your Opel Astra jerks or stutters unexpectedly during acceleration or steady driving, it can be both frustrating and alarming. This guide outlines frequent causes and practical diagnostic steps to help identify the root of the problem before replacing components. Proper checks can save time and money while ensuring safe operation.",
+        "severity": "Jerking can indicate issues ranging from minor sensor malfunctions to more significant engine or fuel delivery concerns, so timely diagnosis is recommended.",
+        "driveAdvice": "Avoid aggressive acceleration and keep speeds moderate until the cause is identified. Regularly check engine warning lights and consult diagnostics promptly.",
+        "likelyCauses": [
+          "Dirty or faulty spark plugs causing intermittent ignition",
+          "Worn or clogged fuel injectors leading to inconsistent fuel delivery",
+          "Vacuum leaks disrupting the air-fuel mixture",
+          "Malfunctioning mass air flow (MAF) sensor affecting engine performance",
+          "Weak or failing ignition coils causing misfires"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to check for stored fault codes",
+          "Inspect spark plugs visually and test their condition",
+          "Check for vacuum leaks using a smoke test or soapy water",
+          "Test the MAF sensor's voltage output and clean if necessary",
+          "Examine fuel injectors for clogs or leaks",
+          "Perform a coil-on-plug test to verify ignition coil integrity"
+        ],
+        "firstChecks": [
+          "Verify fuel level and quality",
+          "Look for any illuminated check engine light",
+          "Check air filter condition for clogging"
+        ],
+        "commonMistakes": [
+          "Replacing spark plugs without checking ignition coils",
+          "Ignoring vacuum leaks and focusing only on fuel system",
+          "Assuming throttle body faults without proper sensor testing"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0101 - Mass Air Flow Circuit Range/Performance Problem"
+        ],
+        "internalLinks": [
+          {
+            "label": "Understanding OBD2 Codes",
+            "href": "/en/obd2-codes"
+          },
+          {
+            "label": "Diagnosing Ignition Misfires",
+            "href": "/en/diagnose-ignition-misfire"
+          },
+          {
+            "label": "Testing Fuel Injectors",
+            "href": "/en/test-fuel-injectors"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can bad spark plugs cause engine jerking?",
+            "a": "Yes, worn or fouled spark plugs can cause misfires that result in jerking during acceleration or idle."
+          },
+          {
+            "q": "Is it safe to drive an Opel Astra that is jerking?",
+            "a": "It’s best to drive cautiously and have the car checked as jerking could indicate an issue that may worsen."
+          },
+          {
+            "q": "Will cleaning the MAF sensor fix jerking problems?",
+            "a": "Cleaning the MAF sensor can help if dirt is causing incorrect airflow readings, but this should be part of a broader diagnostic approach."
+          }
+        ],
+        "schemaTitle": "Opel Astra Engine Jerking Causes & Diagnostics",
+        "schemaDescription": "In-depth look at Opel Astra jerking symptoms, causes, diagnostic steps, and best practices for repair and maintenance."
+      },
+      "tr": {
+        "slug": "opel-astra-silkeleme-nedenleri",
+        "title": "Opel Astra Silkeleme Sorunu: Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Opel Astra’da silkeleme yapan araçlar için sık rastlanan nedenler ve parça değişimine başlamadan önce yapılabilecek basit kontroller.",
+        "intro": "Opel Astra aracınız sürüş sırasında istemsiz silkeleme yapıyorsa, bu durum sürüş konforunuzu etkileyebilir ve aracınızda bazı arızaların işareti olabilir. Bu yazıda, silkeleme problemlerinin başlıca sebeplerini ve öncelikle uygulanması gereken tanı adımlarını anlatarak gereksiz parça değiştirmeden önce yapabileceklerinizi paylaşıyoruz.",
+        "severity": "Silkeleme motor veya yakıt sistemi kaynaklı olabilir; erken teşhis hem güvenlik hem de maliyet açısından önemlidir.",
+        "driveAdvice": "Sorunun kaynağı bulunana kadar ani gaz verme ve yüksek hızlardan kaçının. Motor uyarı ışıklarını takip edin ve vakit kaybetmeden kontrol ettirin.",
+        "likelyCauses": [
+          "Kirli veya aşınmış ateşleme bujileri",
+          "Tıkalı veya arızalı enjeksiyon memeleri",
+          "Emme manifoldundaki vakum kaçakları",
+          "Arızalı hava akış sensörü (MAF)",
+          "Zayıf çalışan ateşleme bobinleri"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla arıza kodlarını okuyun",
+          "Bujileri gözle kontrol edin ve test edin",
+          "Vakıum kaçaklarını duman testi ya da sabunlu suyla kontrol edin",
+          "MAF sensör voltaj değerlerini ölçün ve gerekiyorsa temizleyin",
+          "Enjeksiyon memelerini tıkalı olup olmadığına göre inceleyin",
+          "Bobinleri siklet testiyle deneyin"
+        ],
+        "firstChecks": [
+          "Yakıt seviyesini ve kalitesini kontrol edin",
+          "Motor arıza ışığı yanıp yanmadığına bakın",
+          "Hava filtresinin temiz olup olmadığını kontrol edin"
+        ],
+        "commonMistakes": [
+          "Bobinleri kontrol etmeden sadece bujileri değiştirmek",
+          "Sadece yakıt sistemiyle ilgilenip vakum kaçaklarını gözardı etmek",
+          "Sensör test etmeden gaz kelebeğini değiştirmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele birden fazla silindir ateşleme hatası",
+          "P0171 - Yakıt sistemi fazla fakir (Banka 1)",
+          "P0101 - Kütle Hava Akış (MAF) sensörü performans sorunu"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodlarını Anlamak",
+            "href": "/tr/obd2-kodlar"
+          },
+          {
+            "label": "Ateşleme Arızası Nasıl Teşhis Edilir?",
+            "href": "/tr/atesleme-arizasi-tespiti"
+          },
+          {
+            "label": "Yakıt Enjeksiyonunu Test Etme",
+            "href": "/tr/yakit-enjeksiyonu-test"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Bujiler silkeleme yapmasına sebep olur mu?",
+            "a": "Evet, aşınmış veya kirlenmiş bujiler motorun silkelemesine neden olabilir."
+          },
+          {
+            "q": "Silkeleme olan araçla güvenle yol alınır mı?",
+            "a": "Mümkünse dikkatli sürüş yapın ve sorunu araştırana kadar aşırı hız ve ani gaz kullanımından kaçının."
+          },
+          {
+            "q": "MAF sensörünü temizlemek sorunu çözer mi?",
+            "a": "Eğer sensör kirliyse temizlik faydalı olabilir ancak mutlaka diğer kontrollerle desteklenmelidir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Silkeleme Sorunu: Nedenler & Çözümler",
+        "schemaDescription": "Opel Astra araçlarda naklen şikayet edilen silkeleme problemleri, muhtemel nedenler, tanı yöntemleri ve önerilen çözümler."
+      },
+      "de": {
+        "slug": "opel-astra-motor-ruckelt-probleme",
+        "title": "Opel Astra Motor Ruckeln: Ursachen und Diagnose",
+        "metaDescription": "Ursachen für Motorruckeln beim Opel Astra erkennen und praktische Diagnoseverfahren vor dem Austausch von Teilen kennenlernen.",
+        "intro": "Wenn Ihr Opel Astra während der Fahrt ruckelt oder unruhig läuft, kann dies verschiedene Ursachen haben und die Fahrsicherheit beeinträchtigen. In diesem Beitrag erfahren Sie die häufigsten Gründe für das Ruckeln sowie praktische Diagnoseschritte, die vor dem Austausch von Bauteilen durchgeführt werden sollten, um Zeit und Kosten zu sparen.",
+        "severity": "Motorruckeln kann auf Probleme von harmlosen Sensorfehlern bis hin zu ernsteren Motor- oder Kraftstoffproblemen hinweisen, daher sollte es schnell diagnostiziert werden.",
+        "driveAdvice": "Vermeiden Sie scharfes Beschleunigen und fahren Sie vorsichtig, bis die Ursache gefunden wurde. Prüfen Sie regelmäßig Warnleuchten und führen Sie rasch Diagnosen durch.",
+        "likelyCauses": [
+          "Verschmutzte oder defekte Zündkerzen, die zu Zündaussetzern führen",
+          "Verstopfte oder verschlissene Einspritzdüsen, die eine ungleichmäßige Kraftstoffzufuhr bewirken",
+          "Unterdrucklecks im Ansaugsystem stören das Luft-Kraftstoff-Verhältnis",
+          "Fehlerhafte Luftmassenmesser (MAF) beeinträchtigen die Motorleistung",
+          "Schwache oder defekte Zündspulen verursachen Fehlzündungen"
+        ],
+        "diagnosticSteps": [
+          "Mit einem OBD2-Scanner gespeicherte Fehlercodes auslesen",
+          "Zündkerzen visuell prüfen und auf Zustand testen",
+          "Unterdrucklecks mittels Rauch- oder Seifenwasser-Test aufdecken",
+          "MAF-Sensor auf Spannungswerte prüfen und reinigen falls nötig",
+          "Kraftstoffeinspritzdüsen auf Verstopfung oder Leckagen untersuchen",
+          "Zündspulen mit Tests am Zündmodul überprüfen"
+        ],
+        "firstChecks": [
+          "Kraftstoffstand und -qualität prüfen",
+          "Kontrollleuchten im Armaturenbrett beachten",
+          "Luftfilter auf Sauberkeit überprüfen"
+        ],
+        "commonMistakes": [
+          "Zündspulen zu ignorieren und nur Zündkerzen zu tauschen",
+          "Das Ansaugsystem zu vernachlässigen und nur Kraftstoffsystem zu prüfen",
+          "Gashahn ohne Sensorprüfung auszutauschen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/mehrfache Zylinderfehlzündung",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0101 - Luftmassenmesser Leistung/Verbrauchsfehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Zündaussetzer Diagnose",
+            "href": "/de/zuendaussetzer-diagnose"
+          },
+          {
+            "label": "Kraftstoffeinspritzung prüfen",
+            "href": "/de/kraftstoffeinspritzung-pruefen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Können defekte Zündkerzen Motorruckeln verursachen?",
+            "a": "Ja, verschlissene Zündkerzen können Fehlzündungen verursachen, was wiederum zum Ruckeln führt."
+          },
+          {
+            "q": "Ist es sicher, mit einem ruckelnden Opel Astra zu fahren?",
+            "a": "Fahren Sie vorsichtig und vermeiden Sie starke Beschleunigungen, bis die Ursache gefunden wurde."
+          },
+          {
+            "q": "Hilft das Reinigen des MAF-Sensors gegen Ruckeln?",
+            "a": "Eine Reinigung kann helfen, wenn Verschmutzungen die Sensorwerte verfälschen, sollte aber Teil einer umfassenden Diagnose sein."
+          }
+        ],
+        "schemaTitle": "Opel Astra Ruckeln Ursachen und Diagnose",
+        "schemaDescription": "Ausführliche Informationen zu Opel Astra Motorruckeln, mögliche Ursachen, Diagnoseverfahren und empfohlene Maßnahmen."
+      },
+      "es": {
+        "slug": "opel-astra-motor-tiembla-causas",
+        "title": "El motor de Opel Astra tiembla: causas y diagnóstico",
+        "metaDescription": "Descubre por qué tu Opel Astra puede estar temblando y los pasos prácticos para diagnosticar antes de cambiar piezas.",
+        "intro": "Si el motor de tu Opel Astra tiembla durante la conducción, esto puede indicar varias causas potenciales. Antes de realizar cualquier reemplazo, es importante hacer revisiones prácticas para identificar el problema real. Este artículo te guía en las causas más comunes y cómo diagnosticar correctamente para evitar gastos innecesarios.",
+        "severity": "Los temblores pueden deberse a problemas menores o fallas importantes en el motor o sistema de combustible, por lo que se recomienda una revisión oportuna.",
+        "driveAdvice": "Conduce con cuidado evitando aceleraciones bruscas hasta que se detecte la causa. Mantén la atención en las luces de advertencia y realiza diagnósticos cuanto antes.",
+        "likelyCauses": [
+          "Bujías sucias o fallidas causando fallos de encendido",
+          "Inyectores de combustible obstruidos o defectuosos",
+          "Fugas de vacío que alteran la mezcla de aire y combustible",
+          "Sensor de flujo de masa de aire (MAF) defectuoso",
+          "Bobinas de encendido débiles o en mal estado"
+        ],
+        "diagnosticSteps": [
+          "Usar un escáner OBD2 para leer códigos de error",
+          "Revisar visualmente y probar las bujías",
+          "Detectar fugas de vacío con prueba de humo o agua jabonosa",
+          "Medir y limpiar si es necesario el sensor MAF",
+          "Inspeccionar los inyectores por obstrucciones o fugas",
+          "Probar las bobinas de encendido con equipo especializado"
+        ],
+        "firstChecks": [
+          "Verificar nivel y calidad de combustible",
+          "Comprobar si está encendida la luz check engine",
+          "Revisar estado del filtro de aire"
+        ],
+        "commonMistakes": [
+          "Cambiar solo bujías sin revisar las bobinas",
+          "Ignorar fugas de vacío y enfocarse solo en el sistema de combustible",
+          "Cambiar cuerpo de aceleración sin probar sensores"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallos múltiples o aleatorios de encendido",
+          "P0171 - Mezcla pobre (banco 1)",
+          "P0101 - Problema en el rendimiento del sensor MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Entendiendo códigos OBD2",
+            "href": "/es/codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico de fallos de encendido",
+            "href": "/es/diagnostico-fallos-encendido"
+          },
+          {
+            "label": "Cómo probar inyectores de combustible",
+            "href": "/es/probar-inyectores-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Pueden las bujías malas causar que el motor tiemble?",
+            "a": "Sí, las bujías desgastadas o sucias provocan fallos de encendido que causan temblores."
+          },
+          {
+            "q": "¿Es seguro conducir con el motor que tiembla?",
+            "a": "Se recomienda manejar con precaución y evitar aceleraciones fuertes hasta corregir el problema."
+          },
+          {
+            "q": "¿La limpieza del sensor MAF ayuda a solucionar el temblor?",
+            "a": "La limpieza puede ayudar si el sensor está sucio, pero se debe hacer un diagnóstico integral."
+          }
+        ],
+        "schemaTitle": "Causas y diagnóstico del motor que tiembla en Opel Astra",
+        "schemaDescription": "Información esencial sobre las razones del motor que tiembla en Opel Astra, con pasos de diagnóstico y recomendaciones."
+      },
+      "fr": {
+        "slug": "opel-astra-secousses-moteur-causes",
+        "title": "Secousses moteur Opel Astra : causes et diagnostic",
+        "metaDescription": "Découvrez pourquoi votre Opel Astra peut avoir des secousses moteur et les étapes pratiques pour un diagnostic avant remplacement des pièces.",
+        "intro": "Si votre Opel Astra présente des secousses moteur lors de la conduite, cela peut provenir de plusieurs causes possibles. Avant tout remplacement, il est conseillé d’effectuer des contrôles pratiques pour comprendre l’origine du problème. Ce guide vous présente les causes fréquentes et les étapes de diagnostic à suivre pour éviter des réparations inutiles.",
+        "severity": "Les secousses peuvent signaler des problèmes mineurs ou plus graves liés au moteur ou à l’alimentation en carburant, une intervention rapide est donc recommandée.",
+        "driveAdvice": "Évitez les accélérations brusques et conduisez prudemment jusqu’à identification du problème. Surveillez les témoins moteurs et réalisez un diagnostic au plus tôt.",
+        "likelyCauses": [
+          "Bougies d’allumage encrassées ou défectueuses provoquant des ratés",
+          "Injecteurs de carburant bouchés ou défaillants",
+          "Fuites de vide perturbant le mélange air-carburant",
+          "Défaillance du capteur de débit d’air (MAF)",
+          "Bobines d’allumage faibles ou hors service"
+        ],
+        "diagnosticSteps": [
+          "Utiliser un scanner OBD2 pour lire les codes défauts",
+          "Inspecter visuellement les bougies et les tester",
+          "Détecter les fuites de vide avec un test à la fumée ou à l’eau savonneuse",
+          "Mesurer et nettoyer le capteur MAF si nécessaire",
+          "Contrôler les injecteurs pour détecter obstructions ou fuites",
+          "Tester les bobines d’allumage avec les outils appropriés"
+        ],
+        "firstChecks": [
+          "Vérifier niveau et qualité du carburant",
+          "Contrôler l’allumage du témoin moteur",
+          "Inspecter l’état du filtre à air"
+        ],
+        "commonMistakes": [
+          "Changer uniquement les bougies sans vérifier les bobines",
+          "Négliger les fuites de vide et se concentrer seulement sur l’alimentation en carburant",
+          "Remplacer le corps de papillon sans tester les capteurs"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Mélange trop pauvre (banc 1)",
+          "P0101 - Problème de performance du capteur MAF"
+        ],
+        "internalLinks": [
+          {
+            "label": "Comprendre les codes défaut OBD2",
+            "href": "/fr/codes-defauts-obd2"
+          },
+          {
+            "label": "Diagnostic des ratés d’allumage",
+            "href": "/fr/diagnostic-rates-allumage"
+          },
+          {
+            "label": "Tester les injecteurs de carburant",
+            "href": "/fr/test-injecteurs-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Des bougies défectueuses peuvent-elles provoquer des secousses ?",
+            "a": "Oui, des bougies usées ou encrassées provoquent des ratés moteur, source de secousses."
+          },
+          {
+            "q": "Peut-on conduire avec des secousses moteur ?",
+            "a": "Il est conseillé de rouler prudemment et d’éviter les accélérations brusques jusqu’à détection du problème."
+          },
+          {
+            "q": "Le nettoyage du capteur MAF résout-il les secousses ?",
+            "a": "Le nettoyage peut aider si le capteur est encrassé, mais un diagnostic complet reste indispensable."
+          }
+        ],
+        "schemaTitle": "Causes et diagnostic des secousses moteur Opel Astra",
+        "schemaDescription": "Analyse complète des secousses moteur sur Opel Astra, causes possibles, diagnostic et conseils pour les solutions à apporter."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-overheating",
+    "intentKey": "opel-astra_overheating",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "overheating",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-hararet-yapiyor",
+        "title": "Opel Astra Hararet Yapıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Opel Astra hararet yapıyor mu? Hararetin olası nedenlerini ve kontrol aşamalarını öğrenin, garantili çözümler için adımlar burada.",
+        "intro": "Opel Astra araçlarında hararet problemi çeşitli nedenlere bağlı olarak ortaya çıkabilir. Bu durum aracınızın motorunun aşırı ısınması anlamına gelir ve ciddi hasarlar doğurabilir. Ancak, hemen parça değiştirmeden önce, sorunun kaynağını doğru teşhis etmek için bazı basit kontroller yapmak önemlidir.",
+        "severity": "Motorun aşırı ısınması, sürüş güvenliğini ve motor sağlığını tehdit edebilir. Erken müdahale gerektirir.",
+        "driveAdvice": "Aracı uzun süre durdurun ve soğumasını bekleyin. Hararet gösterge ışığı yanıyorsa, yol kenarında güvenli bir yerde park edin ve motoru kapatın.",
+        "likelyCauses": [
+          "Soğutma sıvısı eksikliği veya sızıntısı",
+          "Termostat arızası",
+          "Radyatör tıkalı veya hasarlı",
+          "Su pompası bozukluğu",
+          "Fan motoru çalışmaması"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Radyatör ve hortumları hasar veya sızıntı açısından inceleyin",
+          "Termostatın açılıp kapanma işlevini test edin",
+          "Fan motorunun devreye girip girmediğini gözlemleyin",
+          "Motor bloğundaki olası çatlak veya aşırı ısınma belirtileri araştırın",
+          "OBD2 cihazıyla sıcaklık sensörlerini ve ilgili kodları okuyun"
+        ],
+        "firstChecks": [
+          "Soğutma sıvısı seviyesini ve kalitesini kontrol edin",
+          "Fan motorunun çalışıp çalışmadığını dinleyin veya gözlemleyin",
+          "Hararet göstergesinin doğru çalışıp çalışmadığını teyit edin"
+        ],
+        "commonMistakes": [
+          "Soğutma sıvısını yanlış tür kullanmak",
+          "Termostat arızasını göz ardı etmek",
+          "Fan motoru arızasını görmezden gelmek"
+        ],
+        "relatedCodes": [
+          "P0128 - Soğutma Sıvısı Termostat Anahtarlama Hatası",
+          "P0115 - Soğutma Sıvısı Sıcaklık Sensörü Devresi Hatası",
+          "P0480 - Fan Kontrol Devresi Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "opel-astra obd2 sorunsuz soğutma sistemi testi",
+            "href": "/tr/opel-astra/soğutma-sistemi-testi"
+          },
+          {
+            "label": "opel-astra termostat arızası nasıl anlaşılır",
+            "href": "/tr/opel-astra/termostat-arizasi"
+          },
+          {
+            "label": "opel-astra fan motoru kontrolü adımları",
+            "href": "/tr/opel-astra/fan-motoru-kontrolu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra'da hararet yaparsa ne yapmalıyım?",
+            "a": "Aracı durdurup motorun soğumasını bekleyin, soğutma sıvısı seviyesini kontrol edin ve gerekirse profesyonel destek alın."
+          },
+          {
+            "q": "Hararet göstergesi yanlış sinyal verebilir mi?",
+            "a": "Evet, sensör veya gösterge arızası nedeniyle yanlış alarm olabilir; OBD2 cihazı ile doğru teşhis önemlidir."
+          },
+          {
+            "q": "Hararet sorununu kendim tamir edebilir miyim?",
+            "a": "Basit sıvı kontrolleri ve küçük müdahaleler yapılabilir ancak pompa veya termostat gibi parçaların kontrolü uzmanlık gerektirir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Hararet Problemi: Nedenleri ve Çözüm Yolları",
+        "schemaDescription": "Opel Astra araçlarda hararet yapma sebebi ve nasıl kontrol edileceği hakkında detaylı bilgi ve pratik teşhis adımları."
+      },
+      "en": {
+        "slug": "opel-astra-overheating",
+        "title": "Opel Astra Overheating: Causes and Diagnostic Guide",
+        "metaDescription": "Having overheating issues with your Opel Astra? Explore common causes, diagnostic tips, and practical checks to identify and address engine temperature problems.",
+        "intro": "Experiencing overheating in your Opel Astra engine can be troubling and may lead to costly repairs if neglected. Before replacing parts, it’s vital to perform some practical checks to understand potential causes and ensure an accurate diagnosis. This guide will help you determine what might be causing the engine to overheat.",
+        "severity": "Engine overheating can damage your vehicle and compromise safety. Immediate attention is recommended.",
+        "driveAdvice": "Stop driving as soon as safe, allow the engine to cool down before checking fluid levels or attempting further action.",
+        "likelyCauses": [
+          "Low or leaking coolant levels",
+          "Faulty thermostat",
+          "Blocked or damaged radiator",
+          "Malfunctioning water pump",
+          "Cooling fan not engaging"
+        ],
+        "diagnosticSteps": [
+          "Check coolant reservoir level and condition",
+          "Inspect radiator and hoses for leaks or damage",
+          "Test thermostat operation for proper opening",
+          "Monitor cooling fan activation while engine warms",
+          "Look for signs of engine block cracks or overheating",
+          "Scan with an OBD2 tool for temperature sensor codes"
+        ],
+        "firstChecks": [
+          "Coolant level and mixture verification",
+          "Cooling fan operation when engine is hot",
+          "Confirm that the temperature gauge reads accurately"
+        ],
+        "commonMistakes": [
+          "Using incorrect coolant type",
+          "Neglecting thermostat malfunction",
+          "Ignoring cooling fan faults"
+        ],
+        "relatedCodes": [
+          "P0128 - Coolant Thermostat Below Regulating Temperature",
+          "P0115 - Engine Coolant Temperature Sensor Circuit",
+          "P0480 - Cooling Fan Relay Circuit"
+        ],
+        "internalLinks": [
+          {
+            "label": "opel-astra cooling system checks",
+            "href": "/en/opel-astra/cooling-system-checks"
+          },
+          {
+            "label": "opel-astra thermostat troubleshooting",
+            "href": "/en/opel-astra/thermostat-troubleshooting"
+          },
+          {
+            "label": "opel-astra cooling fan diagnostics",
+            "href": "/en/opel-astra/cooling-fan-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I do if my Opel Astra starts overheating?",
+            "a": "Stop driving safely, let the engine cool, then check coolant levels and consult a mechanic if needed."
+          },
+          {
+            "q": "Can the temperature gauge give false overheating warnings?",
+            "a": "Yes, faulty sensors or gauge issues can cause incorrect readings; using an OBD2 scanner helps confirm."
+          },
+          {
+            "q": "Is it possible to fix overheating issues myself?",
+            "a": "Basic checks like coolant level are doable, but thermostat or pump issues usually require professional service."
+          }
+        ],
+        "schemaTitle": "Opel Astra Engine Overheating: Causes & Diagnostics",
+        "schemaDescription": "Detailed insights on diagnosing and addressing overheating problems in Opel Astra for better vehicle maintenance."
+      },
+      "de": {
+        "slug": "opel-astra-uberhitzung",
+        "title": "Opel Astra Überhitzung: Ursachen und Diagnoseleitfaden",
+        "metaDescription": "Probleme mit Überhitzung beim Opel Astra? Entdecken Sie häufige Ursachen, Diagnosemöglichkeiten und praktische Prüfungen zur Identifikation von Motortemperaturproblemen.",
+        "intro": "Eine Überhitzung Ihres Opel Astra-Motors kann ernsthafte Schäden verursachen und sollte nicht ignoriert werden. Bevor Sie Ersatzteile austauschen, empfiehlt es sich, einige praktische Kontrollen durchzuführen, um mögliche Ursachen besser zu verstehen und eine genaue Diagnose zu stellen.",
+        "severity": "Motorüberhitzung kann zu schweren Schäden führen und die Fahrsicherheit beeinträchtigen. Sofortige Maßnahmen sind ratsam.",
+        "driveAdvice": "Fahren Sie so schnell wie möglich sicher an den Straßenrand, schalten Sie den Motor aus und lassen Sie ihn abkühlen, bevor Sie weitere Prüfungen durchführen.",
+        "likelyCauses": [
+          "Niedriger Kühlmittelstand oder Leckagen",
+          "Defektes Thermostat",
+          "Verstopfter oder beschädigter Kühler",
+          "Defekte Wasserpumpe",
+          "Kühlerventilator arbeitet nicht"
+        ],
+        "diagnosticSteps": [
+          "Kühlflüssigkeitsstand und Zustand prüfen",
+          "Kühler sowie Schläuche auf Schäden oder Lecks untersuchen",
+          "Thermostatfunktion testen",
+          "Beobachten, ob der Lüfter beim Erwärmen anspringt",
+          "Anzeichen für Risse im Motorblock oder Überhitzung suchen",
+          "Mit OBD2-Scanner Temperaturfühlercodes auslesen"
+        ],
+        "firstChecks": [
+          "Kühlmittelstand und Konzentration prüfen",
+          "Funktion des Kühlerventilators bei warmem Motor kontrollieren",
+          "Abgleich der Temperaturanzeige mit realer Motortemperatur"
+        ],
+        "commonMistakes": [
+          "Falsches Kühlmittel verwenden",
+          "Thermostatdefekt ignorieren",
+          "Fehlerhafte Lüfterfunktion übersehen"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat arbeitet nicht korrekt",
+          "P0115 - Kühlmitteltemperatursensor Fehler",
+          "P0480 - Lüftersteuerkreisfehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "opel-astra kühlkreislauf prüfen",
+            "href": "/de/opel-astra/kuehlkreislauf-pruefung"
+          },
+          {
+            "label": "opel-astra thermostat-fehlerbehebung",
+            "href": "/de/opel-astra/thermostat-fehlerbehebung"
+          },
+          {
+            "label": "opel-astra lüfterdiagnose",
+            "href": "/de/opel-astra/luefterdiagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was tun bei Überhitzung meines Opel Astra?",
+            "a": "Sofort anhalten, Motor abkühlen lassen, Kühlmittel prüfen und gegebenenfalls Fachwerkstatt aufsuchen."
+          },
+          {
+            "q": "Kann die Temperaturanzeige falsche Werte liefern?",
+            "a": "Ja, defekte Sensoren oder Anzeigen können falsche Warnungen auslösen; OBD2-Scanner erleichtert genaue Diagnose."
+          },
+          {
+            "q": "Kann ich Überhitzungsprobleme selbst beheben?",
+            "a": "Grundlegende Kontrollen sind möglich, jedoch sollten komplexere Reparaturen Fachleuten überlassen werden."
+          }
+        ],
+        "schemaTitle": "Opel Astra Überhitzung: Ursachen erkennen und diagnostizieren",
+        "schemaDescription": "Umfassender Leitfaden zur Diagnose und Behebung von Überhitzungsproblemen beim Opel Astra."
+      },
+      "es": {
+        "slug": "opel-astra-se-sobrecalienta",
+        "title": "Opel Astra se sobrecalienta: causas y diagnóstico",
+        "metaDescription": "¿Tu Opel Astra se sobrecalienta? Descubre causas comunes, pasos para diagnosticar y consejos para controlar el problema de temperatura del motor.",
+        "intro": "El sobrecalentamiento en un Opel Astra puede generar problemas serios si no se atiende a tiempo. Antes de cambiar piezas, es importante realizar algunas comprobaciones prácticas para identificar las posibles causas y asegurar un diagnóstico correcto. Este artículo ofrece una guía detallada para esto.",
+        "severity": "El sobrecalentamiento puede dañar el motor y afectar la seguridad al conducir. Se requiere atención rápida.",
+        "driveAdvice": "Detén el vehículo en un lugar seguro, apaga el motor y espera a que se enfríe antes de revisar cualquier elemento.",
+        "likelyCauses": [
+          "Nivel de refrigerante bajo o fugas",
+          "Termostato defectuoso",
+          "Radiador obstruido o dañado",
+          "Bomba de agua en mal estado",
+          "Ventilador de enfriamiento que no funciona"
+        ],
+        "diagnosticSteps": [
+          "Verificar nivel y estado del refrigerante",
+          "Inspeccionar radiador y mangueras en busca de daños o fugas",
+          "Probar el termostato para confirmar que se abre correctamente",
+          "Observar si el ventilador se activa cuando el motor está caliente",
+          "Buscar signos de grietas o sobrecalentamiento en el motor",
+          "Usar escáner OBD2 para leer códigos del sensor de temperatura"
+        ],
+        "firstChecks": [
+          "Comprobar nivel y mezcla del refrigerante",
+          "Revisar si el ventilador de enfriamiento funciona con el motor caliente",
+          "Confirmar que el indicador de temperatura del tablero es preciso"
+        ],
+        "commonMistakes": [
+          "Usar un tipo incorrecto de refrigerante",
+          "Ignorar problemas con el termostato",
+          "No detectar fallos en el ventilador de refrigeración"
+        ],
+        "relatedCodes": [
+          "P0128 - Termostato fuera de rango de temperatura",
+          "P0115 - Sensor de temperatura del refrigerante fallo en circuito",
+          "P0480 - Error en el circuito del relé del ventilador"
+        ],
+        "internalLinks": [
+          {
+            "label": "opel-astra revisiones sistema de refrigeración",
+            "href": "/es/opel-astra/revisiones-sistema-refrigeracion"
+          },
+          {
+            "label": "opel-astra solución de problemas termostato",
+            "href": "/es/opel-astra/solucion-problemas-termostato"
+          },
+          {
+            "label": "opel-astra diagnóstico ventilador enfriamiento",
+            "href": "/es/opel-astra/diagnostico-ventilador"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hacer si mi Opel Astra se sobrecalienta?",
+            "a": "Detén el vehículo en un lugar seguro, deja que el motor se enfríe y revisa el nivel de refrigerante o consulta a un profesional."
+          },
+          {
+            "q": "¿Puede el medidor de temperatura dar lecturas falsas?",
+            "a": "Sí, sensores o medidores defectuosos pueden generar falsas alertas; un escáner OBD2 puede ayudar a confirmar."
+          },
+          {
+            "q": "¿Puedo reparar el sobrecalentamiento yo mismo?",
+            "a": "Puedes revisar niveles básicos de refrigerante, pero reparación de termostato o bomba requiere experiencia."
+          }
+        ],
+        "schemaTitle": "Opel Astra: causas y diagnóstico del sobrecalentamiento",
+        "schemaDescription": "Guía completa para diagnosticar y resolver problemas de sobrecalentamiento en tu Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-surchauffe",
+        "title": "Opel Astra Surchauffe : causes et diagnostic",
+        "metaDescription": "Votre Opel Astra surchauffe ? Découvrez les causes fréquentes, les étapes de diagnostic et les contrôles pratiques pour gérer la surchauffe moteur.",
+        "intro": "La surchauffe du moteur d’une Opel Astra peut entraîner des dommages importants si elle n’est pas traitée rapidement. Avant de remplacer des pièces, il est essentiel d’effectuer des vérifications simples pour identifier les causes possibles et assurer un diagnostic fiable. Ce guide vous accompagne dans ces étapes.",
+        "severity": "La surchauffe peut endommager le moteur et compromettre la sécurité. Une intervention rapide est primordiale.",
+        "driveAdvice": "Arrêtez-vous en toute sécurité, laissez refroidir le moteur avant d’envisager toute intervention ou contrôle.",
+        "likelyCauses": [
+          "Niveau de liquide de refroidissement bas ou fuite",
+          "Thermostat défectueux",
+          "Radiateur bouché ou endommagé",
+          "Pompe à eau défaillante",
+          "Ventilateur de refroidissement non fonctionnel"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez le niveau et l'état du liquide de refroidissement",
+          "Inspectez le radiateur et les durites pour détecter fuites ou dommages",
+          "Testez le thermostat pour vérifier qu’il s’ouvre correctement",
+          "Vérifiez l’activation du ventilateur moteur chaud",
+          "Cherchez des signes de fissures ou surchauffe au bloc moteur",
+          "Analysez les codes capteur de température avec un scan OBD2"
+        ],
+        "firstChecks": [
+          "Vérification du niveau et de la qualité du liquide de refroidissement",
+          "Contrôle du fonctionnement du ventilateur moteur chaud",
+          "Confirmation de la justesse de l’affichage de température au tableau de bord"
+        ],
+        "commonMistakes": [
+          "Utilisation d’un mauvais type de liquide de refroidissement",
+          "Ignorer un dysfonctionnement du thermostat",
+          "Négliger un dysfonctionnement du ventilateur"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat en dessous de la température de régulation",
+          "P0115 - Circuit du capteur de température du liquide de refroidissement",
+          "P0480 - Circuit du relais du ventilateur de refroidissement"
+        ],
+        "internalLinks": [
+          {
+            "label": "opel-astra contrôle système de refroidissement",
+            "href": "/fr/opel-astra/controle-systeme-refroidissement"
+          },
+          {
+            "label": "opel-astra dépannage thermostat",
+            "href": "/fr/opel-astra/depannage-thermostat"
+          },
+          {
+            "label": "opel-astra diagnostic ventilateur",
+            "href": "/fr/opel-astra/diagnostic-ventilateur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que faire en cas de surchauffe de mon Opel Astra ?",
+            "a": "Arrêtez le véhicule, laissez refroidir le moteur, vérifiez le niveau de liquide et consultez un professionnel si nécessaire."
+          },
+          {
+            "q": "Le voyant de température peut-il indiquer une fausse surchauffe ?",
+            "a": "Oui, des capteurs ou voyants défectueux peuvent provoquer de fausses alertes ; un scanner OBD2 permet de vérifier."
+          },
+          {
+            "q": "Puis-je réparer la surchauffe moi-même ?",
+            "a": "Les vérifications simples sont faisables, mais la réparation du thermostat ou de la pompe à eau nécessite un professionnel."
+          }
+        ],
+        "schemaTitle": "Opel Astra : causes et diagnostic de la surchauffe moteur",
+        "schemaDescription": "Guide détaillé pour diagnostiquer et résoudre les problèmes de surchauffe sur Opel Astra."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-fuel-smell",
+    "intentKey": "opel-astra_fuel_smell",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "fuel_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-benzin-kokusu-geliyor",
+        "title": "Opel Astra’da Benzin Kokusu Geliyor - Nedenleri ve Kontroller",
+        "metaDescription": "Opel Astra’da benzin kokusu gelmesi çeşitli nedenlerden kaynaklanabilir. Bu yazıda olası sebepler ve pratik kontrolleri öğrenin.",
+        "intro": "Opel Astra aracınızda benzin kokusunun gelmesi, motor veya yakıt sistemiyle ilgili çeşitli problemlerin habercisi olabilir. Benzin kokusu, güvenlik açısından önemli bir uyarıdır ve ihmal edilmemelidir. Koku kaynağını tam olarak tespit etmeden önce birkaç temel kontrol yapmak faydalı olacaktır. Bu rehberde benzin kokusunun olası nedenlerini, erken tespit için yapılabilecek temel kontrolleri ve doğru teşhis adımlarını bulabilirsiniz.",
+        "severity": "Benzin kokusu genellikle önemli bir sorun sinyalidir ve yangın riski oluşturabilir. Uyarıyı ciddiye almak gerekir.",
+        "driveAdvice": "Kokunun yoğun olduğu durumlarda aracı kullanmamayı tercih edin ve mümkünse kapalı alanlardan uzak durun.",
+        "likelyCauses": [
+          "Yakıt hattında çatlak ya da kaçaklar",
+          "Yakıt enjeksiyon sisteminde sızıntı",
+          "Yakıt doldurma kapağının tam kapanmaması",
+          "Karbon filtre veya evaporatif emisyon sistemindeki arızalar",
+          "Egzoz sistemi kaçakları"
+        ],
+        "diagnosticSteps": [
+          "Yakıt deposu ve yakıt hattını gözle kontrol edin",
+          "Yakıt doldurma kapağının düzgün kapandığını doğrulayın",
+          "Motorun altında veya çevresinde benzin lekeleri arayın",
+          "Yakıt enjeksiyon sistemi onarımı için basınç testi yapın",
+          "Evaporatif emisyon sistemi ve karbon filtreyi kontrol edin",
+          "Egzoz sızıntısı olup olmadığını dinleyin ve kontrol edin"
+        ],
+        "firstChecks": [
+          "Yakıt kapağının tam kapanıp kapanmadığını kontrol edin",
+          "Motorun altında belirgin yakıt sızıntısı var mı bakın",
+          "Aracın kapalı alanlarda koku yoğunluğu arttığında özel dikkat gösterin"
+        ],
+        "commonMistakes": [
+          "Kendi başına parçaları değiştirmeden önce neden araştırılmaması",
+          "Yakıt kokusunu sadece egzozdan kaynaklandığını düşünmek",
+          "Erken dönemde servise başvurmamak ve sorunu büyütmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Sistemi Çalışma Arızası (Yakıt Fakir Karışımı)",
+          "P0455 - Emisyon Sistemi Büyük Birkaçak Tespit Edildi",
+          "P0442 - Emisyon Sistemi Küçük Birkaçak Tespit Edildi"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 HQ / tr / yakit-sistem-arizalari",
+            "href": "/tr/yakit-sistem-arizalari"
+          },
+          {
+            "label": "OBD2 HQ / tr / egzoz-kacak-tespiti",
+            "href": "/tr/egzoz-kacak-tespiti"
+          },
+          {
+            "label": "OBD2 HQ / tr / arac-koku-hizmetleri",
+            "href": "/tr/arac-koku-hizmetleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Benzin kokusu ne kadar acil bir sorun?",
+            "a": "Benzin kokusu araçta yakıt sızıntısı veya kaçak belirtisi olabilir ve yangın riski oluşturabilir, bu yüzden acil kontrol edilmelidir."
+          },
+          {
+            "q": "Kendi imkanlarımla hangi kontrolü yapabilirim?",
+            "a": "İlk olarak yakıt kapağının tam kapalı olduğundan emin olun, motor altını yakıt lekesi açısından gözlemleyin."
+          },
+          {
+            "q": "OBD2 kodları benzin kokusunu teşhis eder mi?",
+            "a": "İlgili emisyon ve yakıt sistemine ait OBD2 kodları arızanın yerini daraltmaya yardımcı olabilir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Benzin Kokusu Sorunu - Nedenleri ve Çözümleri",
+        "schemaDescription": "Opel Astra araçlarda benzin kokusu neden olur? Güvenli ve pratik kontrol adımları, olası arıza nedenleri, OBD2 kodları ve sık sorulan sorular."
+      },
+      "en": {
+        "slug": "opel-astra-fuel-smell-causes-checks",
+        "title": "Opel Astra Fuel Smell: Causes and Practical Diagnostic Steps",
+        "metaDescription": "Discover common reasons for fuel smell in Opel Astra and practical checks before repairs. Safety tips and related OBD2 codes included.",
+        "intro": "Smelling fuel in your Opel Astra can be concerning and may indicate potential issues within the fuel system or engine components. While this symptom should never be ignored, it's important not to jump to conclusions about the exact cause. Many factors could contribute to fuel odor, and performing some basic checks can help you identify the possible source. This guide outlines common causes, practical diagnostic steps, essential initial checks, and common mistakes to avoid when addressing fuel smells.",
+        "severity": "Fuel smell may indicate leaks that present fire hazards; treat the symptom seriously and act promptly.",
+        "driveAdvice": "Avoid driving the vehicle if the fuel smell is strong, and ensure good ventilation to reduce risk.",
+        "likelyCauses": [
+          "Leaks in fuel lines or hoses",
+          "Faulty fuel injectors",
+          "Poorly sealed fuel filler cap",
+          "Issues with the evaporative emission control system",
+          "Exhaust system leaks"
+        ],
+        "diagnosticSteps": [
+          "Visual inspection of the fuel lines and connections",
+          "Check the fuel filler cap for proper sealing",
+          "Look under the vehicle for signs of fuel leakage",
+          "Perform fuel pressure test for injector leaks",
+          "Inspect the evaporative emission canister and purge valve",
+          "Listen for exhaust leaks and check related components"
+        ],
+        "firstChecks": [
+          "Ensure the fuel cap is tightly closed",
+          "Look for obvious fuel stains under the vehicle",
+          "Note if the odor intensifies in enclosed spaces"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Assuming fuel smell always comes from the exhaust",
+          "Delaying professional diagnosis and repair"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Fuel Trim)",
+          "P0455 - Evaporative Emission System Leak Detected - Large Leak",
+          "P0442 - Evaporative Emission System Leak Detected - Small Leak"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ / en / fuel-system-issues",
+            "href": "/en/fuel-system-issues"
+          },
+          {
+            "label": "OBD2HQ / en / exhaust-leaks",
+            "href": "/en/exhaust-leaks"
+          },
+          {
+            "label": "OBD2HQ / en / vehicle-smell-troubleshooting",
+            "href": "/en/vehicle-smell-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is a fuel smell a serious issue?",
+            "a": "Yes, it can indicate fuel leaks which are fire hazards; prompt diagnosis and repair are essential."
+          },
+          {
+            "q": "What simple checks can I do myself?",
+            "a": "Check if your fuel cap is tight and look underneath the car for any wet spots or stains."
+          },
+          {
+            "q": "Can OBD2 codes help with fuel smell?",
+            "a": "Yes, related codes can point to leaks or faults in the fuel and evaporative systems."
+          }
+        ],
+        "schemaTitle": "Opel Astra Fuel Smell Diagnosis and Solutions",
+        "schemaDescription": "Learn about possible causes and safe diagnostic steps for fuel smells in Opel Astra including OBD2 codes and expert advice."
+      },
+      "de": {
+        "slug": "opel-astra-benzingeruch-ursachen-und-pruefung",
+        "title": "Opel Astra Benzingeruch: Mögliche Ursachen und praktische Diagnoseschritte",
+        "metaDescription": "Erfahren Sie mehr über Ursachen für Benzingeruch im Opel Astra, praktische Prüfungen vor Reparaturen und relevante OBD2-Codes.",
+        "intro": "Wenn Sie im Opel Astra Benzingeruch wahrnehmen, kann dies auf verschiedene Probleme im Kraftstoffsystem oder Motor hinweisen. Ein Benzingeruch sollte stets ernst genommen werden, da er auf Lecks hinweisen kann, die Sicherheitsrisiken darstellen. Bevor Teile ausgetauscht werden, empfiehlt sich eine sorgfältige Überprüfung, um die genaue Ursache zu identifizieren. In diesem Leitfaden finden Sie häufige Ursachen, erste praktische Kontrollen, Diagnoseschritte sowie typische Fehler, die Sie vermeiden sollten.",
+        "severity": "Benzingeruch kann auf gefährliche Lecks hindeuten und stellt ein erhöhtes Brandrisiko dar. Daher ist schnelle Handlung wichtig.",
+        "driveAdvice": "Bei starkem Benzingeruch sollte das Fahrzeug möglichst nicht bewegt werden; für gute Belüftung sorgen.",
+        "likelyCauses": [
+          "Defekte oder undichte Kraftstoffleitungen",
+          "Fehlerhafte Einspritzdüsen",
+          "Nicht richtig geschlossener Tankverschluss",
+          "Probleme mit dem Verdunstungsemissionssystem",
+          "Undichtigkeiten im Abgassystem"
+        ],
+        "diagnosticSteps": [
+          "Sichtprüfung der Kraftstoffleitungen und Verbindungen",
+          "Überprüfung des Tankverschlusses auf ordnungsgemäßen Sitz",
+          "Untersuchen des Unterbodens auf Kraftstoffspuren",
+          "Kraftstoffdruckprüfung zur Erkennung von Einspritzerdichtungsdefekten",
+          "Kontrolle des Aktivkohlefilters und der Belüftungsventile",
+          "Überprüfung des Abgassystems auf Undichtigkeiten"
+        ],
+        "firstChecks": [
+          "Tankdeckel richtig verschlossen?",
+          "Vorhandensein von Benzinflecken unter dem Fahrzeug?",
+          "Intensiviert sich der Geruch in geschlossenen Räumen?"
+        ],
+        "commonMistakes": [
+          "Teile tauschen ohne korrekte Diagnose",
+          "Immer nur vom Auspuff als Ursache ausgehen",
+          "Zu langes Warten mit der Fehlersuche"
+        ],
+        "relatedCodes": [
+          "P0171 – Kraftstoffsystem: Gemisch zu mager",
+          "P0455 – Verdunstungssystem: Großer Lecknachweis",
+          "P0442 – Verdunstungssystem: Kleiner Lecknachweis"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ / de / kraftstoffsystem-fehler",
+            "href": "/de/kraftstoffsystem-fehler"
+          },
+          {
+            "label": "OBD2HQ / de / abgas-undichtigkeiten",
+            "href": "/de/abgas-undichtigkeiten"
+          },
+          {
+            "label": "OBD2HQ / de / fahrzeug-geruchsprobleme",
+            "href": "/de/fahrzeug-geruchsprobleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wie gefährlich ist Benzingeruch im Auto?",
+            "a": "Benzingeruch kann auf Lecks hindeuten und birgt Brandgefahr. Daher sollte man schnell handeln."
+          },
+          {
+            "q": "Welche Checks kann ich selbst durchführen?",
+            "a": "Überprüfen Sie, ob der Tankverschluss fest sitzt und suchen Sie nach Kraftstoffflecken unter dem Fahrzeug."
+          },
+          {
+            "q": "Sind OBD2-Codes bei Benzingeruch hilfreich?",
+            "a": "Ja, sie können auf Lecks oder Defekte im Kraftstoff- und Verdunstungssystem hinweisen."
+          }
+        ],
+        "schemaTitle": "Opel Astra Benzingeruch erkennen und diagnostizieren",
+        "schemaDescription": "Ursachen, Diagnoseschritte und OBD2-Codes bei Benzingeruch im Opel Astra – praktische Tipps vom Experten."
+      },
+      "es": {
+        "slug": "opel-astra-olor-a-combustible-causas-y-soluciones",
+        "title": "Opel Astra olor a combustible: causas comunes y cómo diagnosticarlo",
+        "metaDescription": "Descubre las causas de olor a combustible en Opel Astra, pasos para revisarlo y códigos OBD2 relacionados con consejos útiles.",
+        "intro": "El olor a combustible en un Opel Astra puede indicar diversos problemas en el sistema de combustible o en componentes asociados. Es importante no ignorar esta señal por razones de seguridad. Antes de reemplazar piezas, es recomendable realizar algunas revisiones prácticas para identificar el origen del olor. En esta guía encontrarás causas frecuentes, pasos para diagnosticar, verificaciones iniciales y errores comunes a evitar al tratar este problema.",
+        "severity": "El olor a combustible puede significar fugas que representan un riesgo de incendio. Se debe actuar con prontitud y cuidado.",
+        "driveAdvice": "Si el olor es intenso, evite conducir el vehículo y asegure buena ventilación en el área.",
+        "likelyCauses": [
+          "Fugas en las líneas o mangueras de combustible",
+          "Inyectores de combustible defectuosos",
+          "Tapón del depósito mal cerrado",
+          "Problemas en el sistema de control de emisiones evaporativas",
+          "Fugas en el sistema de escape"
+        ],
+        "diagnosticSteps": [
+          "Inspección visual de líneas y conexiones de combustible",
+          "Verificar que el tapón del depósito esté bien cerrado",
+          "Buscar manchas o líquidos bajo el vehículo",
+          "Prueba de presión para detectar fugas en inyectores",
+          "Revisar el filtro de carbón y la válvula de purga",
+          "Escuchar y revisar posibles fugas de escape"
+        ],
+        "firstChecks": [
+          "Asegurarse que el tapón del tanque esté bien cerrado",
+          "Buscar manchas evidentes de combustible debajo del coche",
+          "Observar si el olor se intensifica en espacios cerrados"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "Asumir que siempre el olor viene del escape",
+          "Retrasar la reparación y diagnóstico profesional"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre (ajuste de combustible)",
+          "P0455 - Fuga del sistema de emisión evaporativa - gran fuga",
+          "P0442 - Fuga del sistema de emisión evaporativa - pequeña fuga"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ / es / problemas-sistema-combustible",
+            "href": "/es/problemas-sistema-combustible"
+          },
+          {
+            "label": "OBD2HQ / es / fugas-de-escape",
+            "href": "/es/fugas-de-escape"
+          },
+          {
+            "label": "OBD2HQ / es / diagnostico-olor-vehiculo",
+            "href": "/es/diagnostico-olor-vehiculo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Es grave el olor a combustible?",
+            "a": "Sí, puede indicar fugas que son peligro de incendio, por lo que requiere atención inmediata."
+          },
+          {
+            "q": "¿Qué revisiones básicas puedo hacer por mi cuenta?",
+            "a": "Verificar que el tapón del combustible esté cerrado y buscar manchas debajo del coche."
+          },
+          {
+            "q": "¿Pueden ayudar los códigos OBD2 con el olor a combustible?",
+            "a": "Sí, los códigos pueden identificar fugas o fallos en el sistema evaporativo y de combustible."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y soluciones para olor a combustible en Opel Astra",
+        "schemaDescription": "Causas, pasos diagnósticos y códigos OBD2 para el olor a combustible en Opel Astra, con consejos especializados."
+      },
+      "fr": {
+        "slug": "opel-astra-odeur-essence-causes-controles",
+        "title": "Opel Astra : Odeur d'essence - Causes courantes et contrôles pratiques",
+        "metaDescription": "Comprenez les causes possibles d'odeur d'essence sur Opel Astra, avec des étapes de diagnostic simples et codes OBD2 associés.",
+        "intro": "Sentir une odeur d'essence dans votre Opel Astra peut indiquer divers problèmes liés au système de carburant ou au moteur. Il est crucial de ne pas négliger cette odeur, car elle peut signaler des fuites potentiellement dangereuses. Avant tout remplacement de pièces, effectuer quelques contrôles de base peut aider à identifier précisément l'origine de cette odeur. Ce guide vous présente les causes fréquentes, les étapes de diagnostic, les vérifications initiales et les erreurs courantes à éviter.",
+        "severity": "Une odeur d'essence peut révéler une fuite présentant un risque d'incendie, il est donc important d'agir rapidement.",
+        "driveAdvice": "En cas d'odeur forte, évitez de conduire et assurez une bonne aération du véhicule.",
+        "likelyCauses": [
+          "Fuites sur les conduites ou durites de carburant",
+          "Injecteurs défectueux",
+          "Bouchon de réservoir mal fermé",
+          "Problèmes dans le système de contrôle des évaporations",
+          "Fuites dans le système d'échappement"
+        ],
+        "diagnosticSteps": [
+          "Inspection visuelle des conduites et raccords de carburant",
+          "Vérifier que le bouchon de réservoir est bien fermé",
+          "Chercher des traces ou taches de carburant sous le véhicule",
+          "Tester la pression du carburant pour détecter les fuites d'injecteurs",
+          "Contrôler le filtre à charbon actif et la valve de purge",
+          "Écouter et rechercher les fuites d'échappement"
+        ],
+        "firstChecks": [
+          "S’assurer que le bouchon de carburant est parfaitement fermé",
+          "Chercher des taches visibles sous la voiture",
+          "Noter si l’odeur est plus forte dans un espace fermé"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis",
+          "Penser que l’odeur vient toujours de l’échappement",
+          "Reporter la réparation, aggravant le problème"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre",
+          "P0455 - Fuite importante du système d’évaporation",
+          "P0442 - Fuite mineure du système d’évaporation"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2HQ / fr / probleme-systeme-carburant",
+            "href": "/fr/probleme-systeme-carburant"
+          },
+          {
+            "label": "OBD2HQ / fr / fuite-echappement",
+            "href": "/fr/fuite-echappement"
+          },
+          {
+            "label": "OBD2HQ / fr / diagnostique-odeur-vehicule",
+            "href": "/fr/diagnostique-odeur-vehicule"
+          }
+        ],
+        "faq": [
+          {
+            "q": "L'odeur d'essence est-elle grave ?",
+            "a": "Oui, elle peut signaler une fuite avec risque d'incendie, nécessitant une intervention rapide."
+          },
+          {
+            "q": "Quels contrôles simples puis-je faire ?",
+            "a": "Vérifiez que le bouchon est bien fermé et cherchez des traces sous la voiture."
+          },
+          {
+            "q": "Les codes OBD2 sont-ils utiles pour cette odeur ?",
+            "a": "Oui, ils peuvent aider à détecter des fuites ou dysfonctionnements dans le système de carburant."
+          }
+        ],
+        "schemaTitle": "Opel Astra : détection et solutions pour odeur d'essence",
+        "schemaDescription": "Causes, contrôles diagnostics et codes OBD2 liés à l'odeur d'essence sur Opel Astra avec conseils d'experts."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-oil-smell",
+    "intentKey": "opel-astra_oil_smell",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "oil_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "opel-astra-oil-smell-diagnosis",
+        "title": "Opel Astra Oil Smell Diagnosis: Causes and Checks",
+        "metaDescription": "Discover practical steps to diagnose an oil smell in your Opel Astra. Learn common causes and avoid mistakes to keep your vehicle safe.",
+        "intro": "If you notice an unpleasant oil smell inside or around your Opel Astra, it can indicate several possible issues. Rather than rushing to replace parts, it's advisable to perform some preliminary checks. This guide outlines practical diagnostic steps and common causes to help you identify the source safely and efficiently.",
+        "severity": "Moderate – Investigate promptly to avoid potential engine damage or fire risk.",
+        "driveAdvice": "Avoid driving for long periods if the smell intensifies or smoke appears. Check for leaks and monitor oil levels frequently.",
+        "likelyCauses": [
+          "Leaking valve cover gasket",
+          "Oil spilled on hot engine components",
+          "Damaged or deteriorated oil pan gasket",
+          "Worn turbocharger oil seal (if equipped)",
+          "Cracked or loose oil filter or oil filler cap"
+        ],
+        "diagnosticSteps": [
+          "Check for visible oil leaks under the vehicle",
+          "Inspect valve cover gasket for seepage",
+          "Look for oil residue on engine block or exhaust manifold",
+          "Examine oil pan and drain plug for tightening and leaks",
+          "Ensure oil filter and filler cap are properly sealed",
+          "Scan for OBD2 codes related to engine and emission system"
+        ],
+        "firstChecks": [
+          "Inspect oil level and top up if low",
+          "Smell inside the cabin for locating the strongest odor source",
+          "Look for signs of oil burning on exhaust pipes"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring low oil levels or leaks",
+          "Not checking simple seals before expensive repairs"
+        ],
+        "relatedCodes": [
+          "P0520 - Engine Oil Pressure Sensor Circuit Malfunction",
+          "P0521 - Engine Oil Pressure Sensor Range/Performance",
+          "P2187 - System Too Lean at Idle"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 codes list",
+            "href": "/en/obd2-code-list"
+          },
+          {
+            "label": "Valve cover gasket leak symptoms",
+            "href": "/en/valve-cover-gasket-leak"
+          },
+          {
+            "label": "How to check oil leaks",
+            "href": "/en/check-oil-leaks"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a burning oil smell hurt the engine?",
+            "a": "Yes, prolonged oil leaks causing burning smells can lead to engine damage or fire risk, so timely diagnosis is essential."
+          },
+          {
+            "q": "Is it safe to drive with an oil smell in my Opel Astra?",
+            "a": "Short drives are generally safe but if the smell worsens, avoid driving and have the car inspected immediately."
+          },
+          {
+            "q": "Do OBD2 codes always show up when there is an oil leak?",
+            "a": "Not always. Some oil leaks don’t trigger codes; visual inspection remains important."
+          }
+        ],
+        "schemaTitle": "Opel Astra Oil Smell Diagnosis and Troubleshooting",
+        "schemaDescription": "Expert guide to diagnosing oil smell issues in Opel Astra with causes, checks, OBD2 codes, and repair tips."
+      },
+      "tr": {
+        "slug": "opel-astra-yanik-yag-kokusu-tespiti",
+        "title": "Opel Astra Yanık Yağ Kokusu Nedenleri ve Kontrolleri",
+        "metaDescription": "Opel Astra aracınızda yanık yağ kokusu varsa, olası nedenleri ve kontrol adımlarını öğrenin. Arıza öncesi dikkat edilmesi gerekenler burada.",
+        "intro": "Opel Astra aracınızdan yanık yağ kokusu gelmesi birçok farklı sorunu işaret edebilir. Parçaları değiştirmeden önce bazı basit kontroller yapmak önemlidir. Bu rehberde, olası nedenleri, yapılabilecek kontrolleri ve dikkat edilmesi gereken noktaları bulabilirsiniz. Bu rehber pahalı parça değişimine geçmeden önce yapılması gereken güvenli ilk kontrolleri, bu belirtiyle birlikte sık görülen OBD2 kodlarını ve arızanın sensör, tesisat, yakıt, ateşleme, hava emiş, soğutma, egzoz veya şanzıman kaynaklı olup olmadığını ayırmaya yarayan test sırasını anlatır.",
+        "severity": "Orta seviye – Kısa sürede kontrol edilmelidir, motor hasarı veya yangın riski olabilir.",
+        "driveAdvice": "Koku şiddetlenir veya duman gözlemlerseniz uzun yolculuklardan kaçının. Yağ seviyesini düzenli kontrol edin ve sızıntı var mı inceleyin.",
+        "likelyCauses": [
+          "Kapak contası sızdırıyor olabilir",
+          "Motor sıcak yüzeylerine dökülen yağ",
+          "Yağ karteri contasında hasar",
+          "Turbo yağ keçesi aşınması (varsa)",
+          "Yağ filtresi veya yağ doldurma kapağının gevşemesi"
+        ],
+        "diagnosticSteps": [
+          "Aracın altını yağ lekesi için kontrol edin",
+          "Kapak contasını sızıntı yönünden inceleyin",
+          "Motor bloğu ve egzoz manifoldu üzerindeki yağ izlerini arayın",
+          "Yağ karteri ve tappayı sıkılığı açısından kontrol edin",
+          "Yağ filtresi ve kapakların doğru kapandığından emin olun",
+          "OBD2 cihazı ile motor ve emisyon sistem kodlarını tarayın"
+        ],
+        "firstChecks": [
+          "Yağ seviyesini kontrol edip eksikse tamamlayın",
+          "Kokunun en yoğun olduğu bölgeyi aracın içinde tespit edin",
+          "Egzoz borusu üzerinde yanmış yağ kalıntısı arayın"
+        ],
+        "commonMistakes": [
+          "Tanısız parça değişimi yapmak",
+          "Yağ seviyesindeki azalmayı ve sızıntıyı görmezden gelmek",
+          "Basit conta ve kapak kontrollerini atlamak"
+        ],
+        "relatedCodes": [
+          "P0520 - Motor Yağ Basınç Sensörü Hatası",
+          "P0521 - Yağ Basınç Sensörü Performans Arızası",
+          "P2187 - Rölantide Yakıt Sistemi Çok Fakir"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 hata kodları listesi",
+            "href": "/tr/obd2-hata-kodlari"
+          },
+          {
+            "label": "Kapak contası sızıntısı belirtileri",
+            "href": "/tr/kapak-contasi-sizintisi"
+          },
+          {
+            "label": "Yağ sızıntısı nasıl kontrol edilir",
+            "href": "/tr/yag-sizintisi-kontrolu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Yanık yağ kokusu motora zarar verir mi?",
+            "a": "Evet, uzun süre devam eden yağ sızıntıları motor hasarına veya yangın riskine yol açabilir, bu yüzden erken müdahale önemlidir."
+          },
+          {
+            "q": "Opel Astra’da yanık yağ kokusu varsa araç kullanmak güvenli midir?",
+            "a": "Kısa mesafeli sürüşler genellikle sorun olmaz fakat koku artarsa aracı hemen kontrol ettirin."
+          },
+          {
+            "q": "Yağ sızıntılarında mutlaka OBD2 kodu çıkar mı?",
+            "a": "Her zaman değil. Bazı yağ kaçakları cihazda kod oluşturmaz, görsel kontrol önemlidir."
+          }
+        ],
+        "schemaTitle": "Opel Astra Yanık Yağ Kokusu Teşhisi ve Çözümü",
+        "schemaDescription": "Opel Astra’da yanık yağ kokusu sorunlarının nedenleri, kontrolleri, OBD2 kodları ve pratik çözüm önerileri."
+      },
+      "de": {
+        "slug": "opel-astra-oelgeruch-erkennen",
+        "title": "Opel Astra Ölgeruch: Ursachen, Diagnose und erste Checks",
+        "metaDescription": "Erfahren Sie, wie Sie Ölgeruch bei Ihrem Opel Astra diagnostizieren können. Häufige Ursachen und praktische Tipps zur Fehlersuche.",
+        "intro": "Ein Ölgeruch im oder am Opel Astra kann auf verschiedene Ursachen hindeuten. Bevor Sie Teile austauschen, sollten Sie einige grundlegende Prüfungen durchführen. Diese Anleitung zeigt Ihnen mögliche Ursachen, Diagnose-Schritte und erste Kontrollen, um das Problem fachgerecht anzugehen.",
+        "severity": "Mittlere Dringlichkeit – zeitnahe Überprüfung empfohlen, um Motorschäden oder Brandgefahr zu vermeiden.",
+        "driveAdvice": "Vermeiden Sie längere Fahrten bei starkem Ölgeruch oder Rauchentwicklung. Kontrollieren Sie regelmäßig den Ölstand und suchen Sie nach Lecks.",
+        "likelyCauses": [
+          "Undichte Ventildeckeldichtung",
+          "Öl, das auf heiße Motorteile gelangt ist",
+          "Beschädigte Ölwanne oder Dichtung",
+          "Abgenutzte Turbolader-Öldichtung (falls vorhanden)",
+          "Lockerer oder beschädigter Ölfilter bzw. Öleinfülldeckel"
+        ],
+        "diagnosticSteps": [
+          "Sichtprüfung auf Ölspuren unter dem Fahrzeug",
+          "Überprüfung des Ventildeckels auf Ölaustritt",
+          "Suche nach Ölrückständen an Motorblock und Auspuffkrümmer",
+          "Prüfung der Ölwanne und Ablassschraube auf Dichtigkeit",
+          "Kontrolle von Ölfilter und Einfüllverschluss",
+          "Auslesen der OBD2-Codes im Motor- und Abgassystem"
+        ],
+        "firstChecks": [
+          "Ölstand prüfen und bei Bedarf auffüllen",
+          "Quelle des Geruchs innerhalb des Fahrzeugs lokalisieren",
+          "Den Auspuff auf verbrannte Ölspuren untersuchen"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Ölstand und Lecks ignorieren",
+          "Einfache Dichtungen und Verschlüsse nicht prüfen"
+        ],
+        "relatedCodes": [
+          "P0520 - Fehler Öldrucksensor",
+          "P0521 - Öldrucksensor Reichweite/Performance",
+          "P2187 - System zu mager im Leerlauf"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodeliste",
+            "href": "/de/obd2-fehlercodeliste"
+          },
+          {
+            "label": "Symptome einer Ventildeckeldichtung undicht",
+            "href": "/de/ventildeckeldichtung-undicht"
+          },
+          {
+            "label": "Öllecks richtig prüfen",
+            "href": "/de/oellecks-pruefen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann Ölgeruch den Motor beschädigen?",
+            "a": "Ja, langfristige Ölundichtigkeiten können Motorschäden oder Brandgefahr verursachen, daher ist eine schnelle Diagnose wichtig."
+          },
+          {
+            "q": "Ist es gefährlich, mit Ölgeruch zu fahren?",
+            "a": "Kurzstrecken sind meist unproblematisch, bei starkem Geruch oder Rauch sollte das Fahrzeug jedoch schnell geprüft werden."
+          },
+          {
+            "q": "Zeigen OBD2-Codes immer Ölprobleme an?",
+            "a": "Nein, manche Lecks lösen keine Codes aus. Eine Sichtprüfung ist daher unerlässlich."
+          }
+        ],
+        "schemaTitle": "Opel Astra Ölgeruch Ursachen und Diagnose",
+        "schemaDescription": "Fachkundige Anleitung zur Diagnose von Ölgeruch im Opel Astra mit möglichen Ursachen, Diagnoseschritten und OBD2-Code-Hinweisen."
+      },
+      "es": {
+        "slug": "opel-astra-olor-a-aceite-quemado",
+        "title": "Opel Astra: Causas y Diagnóstico del Olor a Aceite Quemado",
+        "metaDescription": "Aprende a identificar las causas del olor a aceite quemado en tu Opel Astra. Sigue pasos prácticos y evita errores comunes.",
+        "intro": "Si tu Opel Astra desprende un olor a aceite quemado, puede tener diversas causas. Antes de cambiar piezas, es recomendable realizar algunas inspecciones básicas. Esta guía ofrece pasos diagnósticos prácticos, causas comunes y consejos para detectar el problema de forma segura.",
+        "severity": "Moderado – Revisar lo antes posible para prevenir daños o riesgo de incendio.",
+        "driveAdvice": "No conduzcas por períodos prolongados si el olor empeora o hay humo. Revisa frecuentemente el nivel de aceite y busca fugas.",
+        "likelyCauses": [
+          "Fuga en la junta de la tapa de válvulas",
+          "Aceite derramado sobre componentes calientes",
+          "Daño en la junta del cárter de aceite",
+          "Fuga en el sello de aceite del turbo (si tiene)",
+          "Filtro de aceite o tapa de llenado flojos o dañados"
+        ],
+        "diagnosticSteps": [
+          "Revisar fuga visible de aceite debajo del vehículo",
+          "Inspeccionar junta de tapa de válvulas por pérdidas",
+          "Buscar restos de aceite sobre block del motor o colector de escape",
+          "Comprobar ajuste del cárter y tapón de drenaje",
+          "Verificar que el filtro y tapa de aceite estén bien sellados",
+          "Escanear códigos OBD2 relacionados con motor y emisiones"
+        ],
+        "firstChecks": [
+          "Comprobar nivel de aceite y rellenar si está bajo",
+          "Oler dentro del habitáculo para localizar la fuente más fuerte",
+          "Buscar señales de aceite quemado en el escape"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Ignorar nivel bajo o fugas de aceite",
+          "No revisar sellos simples antes de reparar"
+        ],
+        "relatedCodes": [
+          "P0520 - Sensor de presión de aceite fallo",
+          "P0521 - Sensor de presión de aceite rendimiento incorrecto",
+          "P2187 - Sistema muy pobre en ralentí"
+        ],
+        "internalLinks": [
+          {
+            "label": "Lista de códigos OBD2",
+            "href": "/es/lista-codigos-obd2"
+          },
+          {
+            "label": "Síntomas de fuga en junta de tapa de válvulas",
+            "href": "/es/fuga-junta-tapa-valvulas"
+          },
+          {
+            "label": "Cómo revisar fugas de aceite",
+            "href": "/es/revisar-fugas-aceite"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿El olor a aceite quemado puede dañar el motor?",
+            "a": "Sí, fugas prolongadas pueden causar daños o riesgo de incendio, por lo que la revisión rápida es clave."
+          },
+          {
+            "q": "¿Es seguro conducir con olor a aceite quemado?",
+            "a": "Viajes cortos suelen ser seguros, pero si el olor aumenta, revisa el vehículo cuanto antes."
+          },
+          {
+            "q": "¿Siempre aparecen códigos OBD2 con fugas de aceite?",
+            "a": "No siempre. Algunas fugas no generan códigos, por eso es necesario revisar visualmente."
+          }
+        ],
+        "schemaTitle": "Opel Astra olor a aceite: diagnóstico y causas",
+        "schemaDescription": "Guía experta con causas, pasos diagnósticos y códigos OBD2 para abordar el olor a aceite en Opel Astra."
+      },
+      "fr": {
+        "slug": "opel-astra-odeur-d-huile-brulee",
+        "title": "Opel Astra : Causes et Diagnostique de l'Odeur d'Huile Brûlée",
+        "metaDescription": "Identifiez les causes possibles d'odeur d'huile brûlée sur votre Opel Astra. Suivez nos conseils de diagnostic et évitez les erreurs fréquentes.",
+        "intro": "Une odeur d'huile brûlée à l'intérieur ou autour de votre Opel Astra peut révéler plusieurs problèmes. Avant de remplacer des pièces, il est conseillé d'effectuer quelques contrôles simples. Ce guide détaille les causes fréquentes et les étapes diagnostiques pratiques pour vous aider à détecter la source en toute sécurité.",
+        "severity": "Sévérité modérée – Contrôle rapide recommandé pour éviter des dégâts moteurs ou risque d’incendie.",
+        "driveAdvice": "Évitez de rouler longtemps si l’odeur s’intensifie ou s’il y a de la fumée. Surveillez régulièrement le niveau d’huile et vérifiez l’absence de fuites.",
+        "likelyCauses": [
+          "Fuite du joint de culasse",
+          "Huile déversée sur des pièces moteur chaudes",
+          "Joint de carter d’huile endommagé",
+          "Joint d’étanchéité du turbo usé (si équipé)",
+          "Filtre à huile ou bouchon de remplissage mal serré"
+        ],
+        "diagnosticSteps": [
+          "Vérifier des fuites visibles sous le véhicule",
+          "Inspecter le joint de culasse pour des traces d’huile",
+          "Chercher des résidus d’huile sur le moteur ou collecteur d’échappement",
+          "Contrôler le carter d’huile et son bouchon",
+          "S'assurer que le filtre à huile et le bouchon de remplissage sont bien serrés",
+          "Scanner les codes OBD2 liés au moteur et aux émissions"
+        ],
+        "firstChecks": [
+          "Contrôler et compléter le niveau d’huile",
+          "Localiser la source de l’odeur à l’intérieur de l’habitacle",
+          "Rechercher des traces d’huile brûlée sur l’échappement"
+        ],
+        "commonMistakes": [
+          "Remplacer les pièces sans diagnostic clair",
+          "Ignorer la baisse du niveau d’huile ou les fuites",
+          "Négliger les joints simples avant d’engager des réparations coûteuses"
+        ],
+        "relatedCodes": [
+          "P0520 - Dysfonctionnement capteur pression d’huile",
+          "P0521 - Capteur pression huile plage/performance",
+          "P2187 - Système trop pauvre au ralenti"
+        ],
+        "internalLinks": [
+          {
+            "label": "Liste codes OBD2",
+            "href": "/fr/liste-codes-obd2"
+          },
+          {
+            "label": "Fuite joint de culasse symptômes",
+            "href": "/fr/fuite-joint-culasse"
+          },
+          {
+            "label": "Comment vérifier fuites d’huile",
+            "href": "/fr/verification-fuites-huile"
+          }
+        ],
+        "faq": [
+          {
+            "q": "L’odeur d’huile brûlée peut-elle abîmer le moteur ?",
+            "a": "Oui, des fuites prolongées peuvent causer des dommages moteurs ou un risque d’incendie, il faut donc agir rapidement."
+          },
+          {
+            "q": "Est-il dangereux de rouler avec une odeur d’huile brûlée ?",
+            "a": "Les trajets courts sont généralement sûrs, mais si l’odeur se renforce, faites inspecter le véhicule rapidement."
+          },
+          {
+            "q": "Le code OBD2 apparaît-il toujours lors d’une fuite d’huile ?",
+            "a": "Pas systématiquement. Certaines fuites ne génèrent pas de codes, la vérification visuelle est indispensable."
+          }
+        ],
+        "schemaTitle": "Opel Astra odeur d’huile brûlée : causes et diagnostic",
+        "schemaDescription": "Guide expert pour diagnostiquer l’odeur d’huile sur Opel Astra avec causes, étapes diagnostiques, codes OBD2 et conseils pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-transmission-slipping",
+    "intentKey": "opel-astra_transmission_slipping",
+    "make": "Opel",
+    "model": "Astra",
+    "symptomKey": "transmission_slipping",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "opel-astra-vites-kaciriyor",
+        "title": "Opel Astra Vites Kaçırıyor: Nedenleri ve Çözüm Önerileri",
+        "metaDescription": "Opel Astra vites kaçırıyor sorunu için olası nedenleri, pratik kontrol adımlarını ve yaygın hataları öğrenin. Profesyonel OBD2 rehberiyle çözüm bulun.",
+        "intro": "Opel Astra model araçlarda vites kaçırma sorunu sürüş güvenliğini etkileyebilir ve aracın performansında düşüşe neden olabilir. Bu problem birçok farklı nedenle ortaya çıkabilir ve doğru teşhis için bazı temel kontrollerin yapılması gerekir. Vites kaçırma sorununun kesin sebebini anlamadan parça değişimine gitmek hem maliyet hem de zaman açısından verimli olmayabilir.",
+        "severity": "Orta - Vites kaçırma performansı ve sürüş güvenliğini etkiler, ancak acil durdurma gerektirmez.",
+        "driveAdvice": "Vites geçişlerinde dikkatli olun, ani hızlanmalardan kaçının. Mümkünse aracı güvenli bir yerde kontrol ettirin.",
+        "likelyCauses": [
+          "Şanzıman sıvısı seviyesinin az olması ya da kalitesiz olması",
+          "Aşınmış veya zarar görmüş debriyaj bileşenleri",
+          "Hasar görmüş şanzıman dişlileri veya mekanik parçalar",
+          "Elektronik şanzıman kontrol modülünde arıza",
+          "Bağlantı ve sensörlerdeki hatalar veya kopukluklar"
+        ],
+        "diagnosticSteps": [
+          "Şanzıman yağı seviyesini ve kalitesini kontrol edin",
+          "Debriyaj pedalının ve sisteminin doğru çalıştığından emin olun",
+          "OBD2 tarayıcı ile şanzıman arıza kodlarını okuyun",
+          "Dişli ve mekanik parçaların aşınma durumunu inceleyin",
+          "Elektronik kontrol biriminin (TCU) bağlantılarını gözden geçirin",
+          "Test sürüşü sırasında vites geçişlerindeki davranışları dikkatle izleyin"
+        ],
+        "firstChecks": [
+          "Şanzıman yağı seviyesini kontrol edin",
+          "Vites kolunun mekanik bağlantılarını gözden geçirin",
+          "El freni ve debriyaj pedal ayarlarını ölçün"
+        ],
+        "commonMistakes": [
+          "Parçaları değiştirmeden önce temel sıvı ve ayar kontrollerini atlamak",
+          "OBD2 kodlarını görmezden gelmek veya yanlış yorumlamak",
+          "Sadece motor arızası olarak düşünmek, transmisyon sorunlarını göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0700 - Şanzıman kontrol sistemi arızası",
+          "P0730 - Vites oranı sorunu",
+          "P0750 - Şanzıman vites değiştirme solenoidi arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Şanzıman yağı kontrolü ve değişimi",
+            "href": "/tr/sanziman-yagi-kontrolu"
+          },
+          {
+            "label": "OBD2 kodları ve temel anlamları",
+            "href": "/tr/obd2-kodlari-anlamlari"
+          },
+          {
+            "label": "Debriyaj arızalarını teşhis etme",
+            "href": "/tr/debriyaj-arizalari-teshis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Opel Astra'da vites neden kaçırır?",
+            "a": "Vites kaçırma birçok nedenden olabilir; şanzıman sıvısı eksikliği, aşınmış debriyaj parçaları veya elektronik kontrol problemleri en yaygın sebeplerdendir."
+          },
+          {
+            "q": "Vites kaçırma sorunu nasıl anlaşılır?",
+            "a": "Vites geçişlerinde zorlanma, vitesin kendi kendine boşta kalması veya güç kaybı yaşanması gibi belirtiler vites kaçırmanın işaretleridir."
+          },
+          {
+            "q": "Parça değiştirmeden önce ne kontrol edilmeli?",
+            "a": "Öncelikle sıvı seviyeleri, bağlantılar ve OBD2 kodları kontrol edilmeli; gereksiz parça değişiminden kaçınılmalıdır."
+          }
+        ],
+        "schemaTitle": "Opel Astra Vites Kaçırıyor - Uzman Teşhis ve Çözümler",
+        "schemaDescription": "Opel Astra model araçlarda vites kaçırma sorunu için uzman tavsiyeleri, olası nedenler ve adım adım teşhis rehberi."
+      },
+      "en": {
+        "slug": "opel-astra-transmission-slipping",
+        "title": "Opel Astra Transmission Slipping: Causes and Diagnostic Tips",
+        "metaDescription": "Learn about common causes of transmission slipping in Opel Astra, practical checks to perform, and diagnostic steps before part replacement.",
+        "intro": "Transmission slipping in an Opel Astra can impact driving comfort and vehicle control significantly. The issue could stem from various factors, so it’s important to perform systematic checks before concluding the root cause. Rushing into parts replacement without proper diagnosis may lead to unnecessary expenses and unresolved issues.",
+        "severity": "Moderate - Transmission slipping affects shifting smoothness but usually doesn’t require immediate stop.",
+        "driveAdvice": "Drive gently to avoid sudden acceleration. Avoid heavy loads or aggressive driving until issue is diagnosed.",
+        "likelyCauses": [
+          "Low or contaminated transmission fluid",
+          "Worn clutch components",
+          "Damaged transmission gears or mechanical wear",
+          "Faulty transmission control module or electronics",
+          "Malfunctioning sensors or electrical connections"
+        ],
+        "diagnosticSteps": [
+          "Check transmission fluid level and condition",
+          "Inspect clutch pedal operation and related mechanisms",
+          "Scan OBD2 for transmission-related fault codes",
+          "Examine gears and mechanical components for wear",
+          "Verify electrical connections to transmission control unit",
+          "Perform test drive focusing on gear shifting behavior"
+        ],
+        "firstChecks": [
+          "Verify transmission fluid level",
+          "Check mechanical linkage of the gear shifter",
+          "Inspect clutch pedal adjustment and functionality"
+        ],
+        "commonMistakes": [
+          "Ignoring basic fluid and adjustment checks before replacing parts",
+          "Misinterpreting OBD2 fault codes",
+          "Assuming engine issues are the cause without considering transmission faults"
+        ],
+        "relatedCodes": [
+          "P0700 - Transmission Control System Malfunction",
+          "P0730 - Incorrect Gear Ratio",
+          "P0750 - Shift Solenoid A Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Transmission Fluid Check and Replacement",
+            "href": "/en/transmission-fluid-check"
+          },
+          {
+            "label": "Understanding OBD2 Codes",
+            "href": "/en/understanding-obd2-codes"
+          },
+          {
+            "label": "Clutch System Diagnostics",
+            "href": "/en/clutch-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes transmission slipping in Opel Astra?",
+            "a": "It can be caused by low or dirty transmission fluid, worn clutch components, mechanical damage, or electrical faults."
+          },
+          {
+            "q": "How can I tell if my transmission is slipping?",
+            "a": "Signs include delayed or erratic gear changes, loss of power during acceleration, and unusual noises."
+          },
+          {
+            "q": "Should I replace parts immediately?",
+            "a": "No, it's best to perform fluid checks, scan for codes, and inspect linkage before replacing any components."
+          }
+        ],
+        "schemaTitle": "Opel Astra Transmission Slipping - Expert Diagnostic Guide",
+        "schemaDescription": "Expert advice on diagnosing transmission slipping in Opel Astra including common causes, checks, and related OBD2 codes."
+      },
+      "de": {
+        "slug": "opel-astra-getriebe-rutscht",
+        "title": "Opel Astra Getriebe Rutscht: Ursachen und Diagnosehinweise",
+        "metaDescription": "Erfahren Sie, warum das Getriebe beim Opel Astra rutschen kann, wie Sie praktische Kontrollen durchführen und welche Diagnoseschritte sinnvoll sind.",
+        "intro": "Wenn das Getriebe bei einem Opel Astra rutscht, kann dies die Fahrleistung und Sicherheit beeinträchtigen. Die Ursachen sind vielfältig und eine genaue Diagnose ist unerlässlich, bevor Teile ersetzt werden. Oft machen praktische Kontrollen den Unterschied und helfen, unnötige Reparaturen zu vermeiden.",
+        "severity": "Mittel - Getrieberutschen beeinträchtigt das Schaltverhalten, erfordert aber meist keinen sofortigen Stillstand.",
+        "driveAdvice": "Fahren Sie vorsichtig und vermeiden Sie ruckartige Beschleunigungen. Lassen Sie das Fahrzeug baldmöglichst prüfen.",
+        "likelyCauses": [
+          "Zu wenig oder verunreinigtes Getriebeöl",
+          "Abgenutzte Kupplungsteile",
+          "Beschädigte Getriebeteile oder mechanischer Verschleiß",
+          "Fehler im Steuergerät für das Getriebe",
+          "Probleme mit Sensoren oder elektrischen Verbindungen"
+        ],
+        "diagnosticSteps": [
+          "Getriebeölstand und -qualität prüfen",
+          "Kupplungspedal und Mechanik kontrollieren",
+          "OBD2 Scanner auf Getriebefehler auslesen",
+          "Getriebeteile auf Verschleiß und Beschädigung untersuchen",
+          "Elektrische Anschlüsse des Steuergeräts überprüfen",
+          "Probefahrt mit Fokus auf das Schaltverhalten durchführen"
+        ],
+        "firstChecks": [
+          "Getriebeölstand kontrollieren",
+          "Mechanische Verbindung des Schalthebels prüfen",
+          "Kupplungspedal-Einstellungen inspizieren"
+        ],
+        "commonMistakes": [
+          "Grundlegende Öl- und Einstellungskontrollen vor Reparaturen überspringen",
+          "OBD2 Fehlercodes falsch interpretieren",
+          "Ursache nur im Motor suchen und Getriebe außer Acht lassen"
+        ],
+        "relatedCodes": [
+          "P0700 - Fehler im Getriebesteuergerät",
+          "P0730 - Falsches Übersetzungsverhältnis",
+          "P0750 - Fehler Schaltmagnetventil A"
+        ],
+        "internalLinks": [
+          {
+            "label": "Getriebeöl prüfen und wechseln",
+            "href": "/de/getriebeoel-pruefen"
+          },
+          {
+            "label": "OBD2 Fehlercodes verstehen",
+            "href": "/de/obd2-fehlercodes-verstehen"
+          },
+          {
+            "label": "Kupplungsdiagnose beim Opel Astra",
+            "href": "/de/kupplungsdiagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum rutscht das Getriebe beim Opel Astra?",
+            "a": "Mögliche Ursachen sind Ölstand, Mechanikverschleiß oder elektronische Fehler im Getriebesteuergerät."
+          },
+          {
+            "q": "Wie erkenne ich Getrieberutschen?",
+            "a": "Anzeichen sind verzögerte Schaltvorgänge, Leistungsverlust und ungewöhnliche Geräusche beim Schalten."
+          },
+          {
+            "q": "Sollte ich sofort Teile tauschen?",
+            "a": "Besser vorab Ölstand prüfen, OBD2 Codes auslesen und Mechanik kontrollieren, um Fehlentscheidungen zu vermeiden."
+          }
+        ],
+        "schemaTitle": "Opel Astra Getriebe Rutscht - Diagnose und Ursachen",
+        "schemaDescription": "Fundierte Tipps zur Fehlersuche bei Getrieberutschen im Opel Astra inklusive Ursachen, Prüfungen und OBD2-Codes."
+      },
+      "es": {
+        "slug": "opel-astra-vites-queda-suelto",
+        "title": "Opel Astra Vites Queda Suelto: Causas y Diagnóstico",
+        "metaDescription": "Descubre las causas del vites que queda suelto en Opel Astra, cómo realizar comprobaciones prácticas y pasos para diagnosticar antes de cambiar piezas.",
+        "intro": "El problema de que el vites quede suelto o 'se escape' en un Opel Astra puede causar dificultades en la conducción y afectar la seguridad. Existen diversas causas posibles, por lo que es importante hacer una inspección detallada antes de cambiar piezas. Evitar reparaciones innecesarias es clave para ahorrar tiempo y dinero.",
+        "severity": "Moderada - Afecta la estabilidad del cambio; no obliga a detener el vehículo de inmediato.",
+        "driveAdvice": "Conduce con suavidad, evita aceleraciones bruscas y reduce la carga hasta que el problema sea diagnosticado.",
+        "likelyCauses": [
+          "Nivel bajo o contaminación del líquido de transmisión",
+          "Desgaste en componentes del embrague",
+          "Dañados los engranajes o desgaste mecánico",
+          "Fallo en el módulo electrónico de transmisión",
+          "Sensores o conexiones eléctricas defectuosas"
+        ],
+        "diagnosticSteps": [
+          "Comprobar nivel y estado del líquido de transmisión",
+          "Revisar correcto funcionamiento del pedal de embrague",
+          "Leer códigos de error con escáner OBD2",
+          "Inspeccionar engranajes y componentes mecánicos",
+          "Verificar conexiones eléctricas del módulo de control",
+          "Realizar prueba de conducción observando cambios de marcha"
+        ],
+        "firstChecks": [
+          "Verificar el nivel de líquido de transmisión",
+          "Inspeccionar el enlace mecánico de la palanca de cambios",
+          "Comprobar ajuste y función del pedal de embrague"
+        ],
+        "commonMistakes": [
+          "No revisar niveles de líquidos ni ajustes básicos antes de cambiar piezas",
+          "Interpretar mal los códigos OBD2",
+          "Pensar sólo en problemas del motor sin revisar la transmisión"
+        ],
+        "relatedCodes": [
+          "P0700 - Mal funcionamiento del sistema de transmisión",
+          "P0730 - Relación de engranajes incorrecta",
+          "P0750 - Falla en solenoide de cambio A"
+        ],
+        "internalLinks": [
+          {
+            "label": "Revisión y cambio de líquido de transmisión",
+            "href": "/es/revision-liquido-transmision"
+          },
+          {
+            "label": "Interpretar códigos OBD2",
+            "href": "/es/codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico del embrague",
+            "href": "/es/diagnostico-embrague"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué el vites del Opel Astra queda suelto?",
+            "a": "Puede deberse a bajo nivel de líquido, desgaste mecánico o problemas electrónicos en la transmisión."
+          },
+          {
+            "q": "¿Cómo sé si la transmisión está resbalando?",
+            "a": "Se nota por cambios tardíos o inestables y pérdida de potencia al acelerar."
+          },
+          {
+            "q": "¿Debo cambiar piezas de inmediato?",
+            "a": "No, primero es fundamental comprobar líquidos, códigos y ajustes antes de reemplazar partes."
+          }
+        ],
+        "schemaTitle": "Opel Astra Vites Queda Suelto - Guía de Diagnóstico",
+        "schemaDescription": "Consejos expertos para diagnosticar cuando vites 'queda suelto' en Opel Astra, con causas comunes, revisiones y códigos OBD2."
+      },
+      "fr": {
+        "slug": "opel-astra-pb-passage-vitesses",
+        "title": "Opel Astra : Problème de Passage de Vitesses - Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes courantes de patinage de la transmission sur Opel Astra, les contrôles pratiques et les étapes de diagnostic à suivre.",
+        "intro": "Le patinage de la transmission sur une Opel Astra peut nuire à la conduite et à la sécurité. Plusieurs facteurs peuvent en être la cause. Il est essentiel d’effectuer des vérifications élémentaires avant tout remplacement de pièce afin d’éviter des réparations coûteuses et inutiles.",
+        "severity": "Modéré - Altère la fluidité des passages de vitesses sans nécessiter un arrêt immédiat.",
+        "driveAdvice": "Conduisez prudemment, évitez les accélérations brusques et la surcharge jusqu’au diagnostic complet.",
+        "likelyCauses": [
+          "Niveau bas ou liquides de transmission contaminés",
+          "Usure des composants d’embrayage",
+          "Dommages aux engrenages ou usure mécanique",
+          "Défaillance du module de contrôle de transmission",
+          "Problèmes de capteurs ou connexions électriques"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez le niveau et la qualité du liquide de transmission",
+          "Contrôlez le fonctionnement de la pédale d’embrayage",
+          "Lire les codes défaut via un scanner OBD2",
+          "Inspectez les engrenages et éléments mécaniques",
+          "Vérifiez les connexions électriques du calculateur de transmission",
+          "Effectuez un essai routier en observant le passage des vitesses"
+        ],
+        "firstChecks": [
+          "Contrôle du niveau de liquide de transmission",
+          "Inspection de la liaison mécanique du levier de vitesses",
+          "Vérification de l’ajustement et du fonctionnement de la pédale d’embrayage"
+        ],
+        "commonMistakes": [
+          "Négliger les contrôles simples avant le remplacement de pièces",
+          "Mauvaise interprétation des codes défaut OBD2",
+          "Penser uniquement à un problème moteur sans vérifier la transmission"
+        ],
+        "relatedCodes": [
+          "P0700 - Défaut du système de transmission",
+          "P0730 - Rapport de vitesse incorrect",
+          "P0750 - Dysfonctionnement du solénoïde de passage A"
+        ],
+        "internalLinks": [
+          {
+            "label": "Contrôle et changement du liquide de transmission",
+            "href": "/fr/controle-liquide-transmission"
+          },
+          {
+            "label": "Comprendre les codes OBD2",
+            "href": "/fr/codes-obd2"
+          },
+          {
+            "label": "Diagnostic embrayage",
+            "href": "/fr/diagnostic-embrayage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes du patinage de la transmission sur Opel Astra ?",
+            "a": "Cela peut être dû à un liquide bas ou sale, une usure mécanique ou un problème électronique."
+          },
+          {
+            "q": "Comment reconnaître un patinage de transmission ?",
+            "a": "Retards au changement de vitesse, perte de puissance et bruits anormaux sont des signes fréquents."
+          },
+          {
+            "q": "Faut-il remplacer les pièces immédiatement ?",
+            "a": "Non, il est recommandé de vérifier d’abord les liquides, les codes défaut et les réglages."
+          }
+        ],
+        "schemaTitle": "Opel Astra Problème de Passage de Vitesses - Diagnostic Expert",
+        "schemaDescription": "Guide complet pour diagnostiquer le patinage de transmission sur Opel Astra avec causes fréquentes, contrôles et codes OBD2 associés."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-loss-of-power",
+    "intentKey": "peugeot_loss_of_power",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "loss_of_power",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-gaz-yemiyor-nedenleri-ve-cozumleri",
+        "title": "Peugeot Gaz Yemiyor: Olası Nedenler ve Çözümler",
+        "metaDescription": "Peugeot araçlarda gaz yememe sorunu için pratik kontroller ve olası sebepler. Parça değiştirmeden önce yapılması gerekenler.",
+        "intro": "Peugeot marka araçlarda gaz yememe, sürüş performansını olumsuz etkileyen ve çeşitli sebeplerden kaynaklanabilen karmaşık bir sorundur. Bu durumda, aracı tamir ettirmeden önce bazı temel kontroller yapmak, sorunları daha net teşhis etmek için önemlidir. Elektrik sisteminden yakıt girişine, hava filtresinden egzoz sistemine kadar birçok faktör bu duruma neden olabilir.",
+        "severity": "Orta seviye sürüş performansı kaybı, aracın hızlanmasını ve genel işlevselliğini etkiler.",
+        "driveAdvice": "Aracınızı zorlamayın ve mümkünse kısa mesafelerde kullanarak motoru zorlamaktan kaçının. Acil durumda yetkili servise başvurun.",
+        "likelyCauses": [
+          "Kirli ya da tıkanmış hava filtresi",
+          "Yakıt enjeksiyon problemi",
+          "Bujilerde aşınma veya arıza",
+          "Egzoz sistemi tıkanıklığı (örneğin katalitik konvertör)",
+          "Hava emiş sisteminde kaçak veya sensör arızası"
+        ],
+        "diagnosticSteps": [
+          "Aracın hava filtresinin temizliğini ve durumunu kontrol edin.",
+          "Yakıt basıncını ve enjeksiyon sistemini ölçün.",
+          "Bujileri çıkarıp kontrol edin, gerekirse değiştirin.",
+          "Egzoz çıkışında tıkanıklık veya hasar var mı bakın.",
+          "Hava emiş hattında kaçak veya sensör hatası olup olmadığını OBD2 taraması ile analiz edin.",
+          "Arızalı parçaların bluetooth veya onboard teşhis cihazı ile izlenmesini sağlayın."
+        ],
+        "firstChecks": [
+          "Hava filtresini çıkarıp kontrol edin, aşırı toz varsa temizleyin.",
+          "Yakıt deposunu kontrol ederek yakıt kalitesinin uygun olduğundan emin olun.",
+          "Motor yağı seviyesini ve rengini kontrol edin."
+        ],
+        "commonMistakes": [
+          "Hemen parça değişimine yönelmek",
+          "OBD2 kodlarını yanlış yorumlamak",
+          "Temel kontrolleri atlayıp hemen tamirciye gitmek"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Sistemi Zayıf Karışım",
+          "P0300 - Rastgele/Çoklu Silindir Ateşlememe",
+          "P0420 - Katalitik Konvertör Verim Düşüklüğü"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları | Türkçe",
+            "href": "/tr/obd2-ariza-kodlari"
+          },
+          {
+            "label": "Hava Filtresi Temizliği",
+            "href": "/tr/hava-filtresi-temizligi"
+          },
+          {
+            "label": "Yakıt Enjeksiyon Sorunları",
+            "href": "/tr/yakit-enjeksiyon-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot gaz yememe sorunu neden aniden ortaya çıkar?",
+            "a": "Genellikle yakıt kalitesi, hava filtresi tıkanıklığı veya elektronik sensör arızaları gibi sebeplerden kaynaklanabilir."
+          },
+          {
+            "q": "Sorun için ilk neyi kontrol etmeliyim?",
+            "a": "Öncelikle hava filtresi ve yakıt deposunu kontrol edin, basit temizlik veya yakıt takviyesi sorunu çözebilir."
+          },
+          {
+            "q": "OBD2 cihazı ile hangi kodlar gaz yememe sorununa işaret eder?",
+            "a": "P0171, P0300 ve P0420 gibi motor performansını etkileyen kodlar bu sorunun göstergesi olabilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Gaz Yemiyor Sorunu ve Çözüm Yöntemleri",
+        "schemaDescription": "Peugeot araçlarda gaz yememe sorununun olası nedenleri, yapılması gereken ilk kontroller ve sık yapılan hatalar."
+      },
+      "en": {
+        "slug": "peugeot-loss-of-power-causes-solutions",
+        "title": "Peugeot Loss of Power: Common Causes and Practical Solutions",
+        "metaDescription": "Explore possible causes of loss of power in Peugeot vehicles with practical diagnostic steps before replacing parts.",
+        "intro": "Experiencing loss of power in your Peugeot can significantly affect your driving experience and vehicle performance. This symptom often stems from various potential causes, ranging from air intake issues to fuel delivery or ignition problems. Before opting for part replacements, certain practical checks can help you accurately identify the issue.",
+        "severity": "Moderate reduction in engine power impacting acceleration and overall driveability.",
+        "driveAdvice": "Avoid aggressive driving and long trips until the issue is diagnosed. Seek professional diagnosis if the problem persists.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Fuel injection system malfunction",
+          "Worn or faulty spark plugs",
+          "Blocked exhaust system, including catalytic converter issues",
+          "Air intake leaks or faulty sensors"
+        ],
+        "diagnosticSteps": [
+          "Inspect and clean or replace the air filter if necessary.",
+          "Measure fuel pressure and inspect the injection system.",
+          "Check spark plugs for wear and replace as needed.",
+          "Examine the exhaust outlet for blockages or damage.",
+          "Use an OBD2 scanner to detect air intake leaks and sensor faults.",
+          "Monitor suspect components with onboard diagnostics before replacement."
+        ],
+        "firstChecks": [
+          "Visually inspect the air filter for excessive dirt.",
+          "Verify fuel quality and quantity in the tank.",
+          "Check engine oil level and condition."
+        ],
+        "commonMistakes": [
+          "Replacing parts without diagnostics",
+          "Misinterpreting OBD2 codes",
+          "Skipping basic preliminary checks"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Trouble Codes Guide",
+            "href": "/en/obd2-trouble-codes"
+          },
+          {
+            "label": "Air Filter Maintenance Tips",
+            "href": "/en/air-filter-maintenance"
+          },
+          {
+            "label": "Fuel Injection Problems Explained",
+            "href": "/en/fuel-injection-problems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What can cause sudden loss of power in my Peugeot?",
+            "a": "Common causes include poor fuel quality, clogged air filters, or sensor malfunctions."
+          },
+          {
+            "q": "What should I check first if my Peugeot loses power?",
+            "a": "Start with checking the air filter and fuel tank content as simple fixes can often solve the issue."
+          },
+          {
+            "q": "Which OBD2 codes indicate power loss problems?",
+            "a": "Codes such as P0171, P0300, and P0420 often relate to engine performance and power loss."
+          }
+        ],
+        "schemaTitle": "Peugeot Loss of Power: Causes and Diagnostics",
+        "schemaDescription": "Discover causes and practical diagnostics for Peugeot power loss issues, including key checks and common errors."
+      },
+      "de": {
+        "slug": "peugeot-leistungsabfall-ursachen-loesungen",
+        "title": "Peugeot Leistungsabfall: Häufige Ursachen und praktische Lösungen",
+        "metaDescription": "Erfahren Sie die möglichen Ursachen für Leistungsabfall bei Peugeot Fahrzeugen mit praktischen Prüfungen vor Teileaustausch.",
+        "intro": "Ein Leistungsabfall bei Peugeot Autos kann die Fahrsicherheit und den Fahrkomfort stark beeinträchtigen. Die Ursachen sind vielfältig und reichen von Problemen mit der Luftzufuhr über Kraftstoffsystem bis hin zu Zündungsstörungen. Bevor Bauteile ausgetauscht werden, sind praktische Kontrollen essenziell, um die Fehlerquelle einzugrenzen.",
+        "severity": "Mäßige Leistungsminderung, die Beschleunigung und Fahrbarkeit beeinflusst.",
+        "driveAdvice": "Vermeiden Sie es, das Fahrzeug stark zu belasten. Bei anhaltenden Problemen sollte eine fachmännische Diagnose erfolgen.",
+        "likelyCauses": [
+          "Verschmutzter oder verstopfter Luftfilter",
+          "Probleme mit der Kraftstoffeinspritzung",
+          "Abgenutzte oder defekte Zündkerzen",
+          "Verstopfung im Abgassystem, z. B. Katalysator",
+          "Undichte Luftansaugung oder fehlerhafte Sensoren"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter auf Verschmutzung prüfen und ggf. reinigen oder wechseln.",
+          "Kraftstoffdruck messen und Einspritzanlage kontrollieren.",
+          "Zündkerzen überprüfen und bei Bedarf tauschen.",
+          "Abgasendrohr auf Blockaden oder Beschädigungen untersuchen.",
+          "Mit OBD2-Scanner Ansaugluftlecks und Sensorfehler auslesen.",
+          "Verdächtige Bauteile vor Austausch mit Onboard-Diagnose überwachen."
+        ],
+        "firstChecks": [
+          "Sichtprüfung des Luftfilters auf Verschmutzung.",
+          "Tankinhalt und Kraftstoffqualität prüfen.",
+          "Motorölstand und Ölqualität kontrollieren."
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "OBD2-Codes falsch interpretieren",
+          "Grundlegende Prüfungen überspringen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager",
+          "P0300 - Zufällige/mehrfache Zylinderfehlzündung erkannt",
+          "P0420 - Katalysatorsystem Wirkungsgrad unter Schwellenwert"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes Übersicht",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Luftfilter richtig warten",
+            "href": "/de/luftfilter-wartung"
+          },
+          {
+            "label": "Probleme mit der Kraftstoffeinspritzung",
+            "href": "/de/kraftstoffeinspritzung-problem"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum fällt die Leistung meines Peugeot plötzlich ab?",
+            "a": "Ursachen können schlechte Kraftstoffqualität, Luftfilterverstopfung oder Sensorfehler sein."
+          },
+          {
+            "q": "Was sollte ich zuerst prüfen bei Leistungsabfall?",
+            "a": "Beginnen Sie mit der Kontrolle des Luftfilters und des Kraftstoffvorrats, da einfache Maßnahmen oft helfen."
+          },
+          {
+            "q": "Welche OBD2-Codes deuten auf Leistungsprobleme hin?",
+            "a": "Codes wie P0171, P0300 und P0420 sind häufig mit Motorleistungsverlust verbunden."
+          }
+        ],
+        "schemaTitle": "Leistungsabfall bei Peugeot: Ursachen und Diagnose",
+        "schemaDescription": "Ursachen und praktische Diagnosemöglichkeiten für Leistungsabfall bei Peugeot, inklusive wichtiger Checks und Fehlerquellen."
+      },
+      "es": {
+        "slug": "peugeot-pierde-potencia-causas-soluciones",
+        "title": "Peugeot Pierde Potencia: Causas Comunes y Soluciones Prácticas",
+        "metaDescription": "Conozca las causas de la pérdida de potencia en Peugeot con pasos prácticos para diagnosticar antes de cambiar piezas.",
+        "intro": "La pérdida de potencia en un Peugeot puede afectar drásticamente el rendimiento y la experiencia de conducción. Esta situación puede deberse a diversas causas, desde problemas en el sistema de aire hasta fallas en la inyección de combustible o encendido. Antes de reemplazar componentes, es recomendable realizar revisiones prácticas para identificar correctamente el problema.",
+        "severity": "Reducción moderada de potencia que afecta aceleración y manejo general.",
+        "driveAdvice": "Evite conducir de forma exigente y viajes largos hasta encontrar la causa. Busque diagnóstico profesional si persiste la falla.",
+        "likelyCauses": [
+          "Filtro de aire sucio o taponado",
+          "Problema en el sistema de inyección de combustible",
+          "Bujías gastadas o defectuosas",
+          "Obstrucción en el sistema de escape, incluyendo catalizador",
+          "Fugas en la admisión de aire o sensores defectuosos"
+        ],
+        "diagnosticSteps": [
+          "Revisar y limpiar o cambiar el filtro de aire si es necesario.",
+          "Medir presión de combustible e inspeccionar sistema de inyección.",
+          "Verificar estado de las bujías y cambiarlas si es necesario.",
+          "Examinar la salida del escape para detectar obstrucciones o daños.",
+          "Utilizar un scanner OBD2 para detectar fugas en la admisión y fallos en sensores.",
+          "Monitorear componentes sospechosos con diagnóstico a bordo antes de reemplazarlos."
+        ],
+        "firstChecks": [
+          "Inspeccionar visualmente el filtro de aire por suciedad excesiva.",
+          "Verificar la calidad y cantidad de combustible en el tanque.",
+          "Comprobar nivel y estado del aceite del motor."
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico adecuado",
+          "Interpretar mal los códigos OBD2",
+          "Omitir revisiones básicas preliminares"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0300 - Fallo de encendido aleatorio o múltiple en cilindro",
+          "P0420 - Eficiencia del sistema catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos OBD2",
+            "href": "/es/guiacodigos-obd2"
+          },
+          {
+            "label": "Mantenimiento del filtro de aire",
+            "href": "/es/mantenimiento-filtro-aire"
+          },
+          {
+            "label": "Problemas en la inyección de combustible",
+            "href": "/es/problemas-inyeccion-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot pierde potencia de repente?",
+            "a": "Suele deberse a mala calidad del combustible, filtro de aire sucio o fallos en sensores."
+          },
+          {
+            "q": "¿Qué debo revisar primero si pierdo potencia?",
+            "a": "Lo primero es inspeccionar el filtro de aire y el nivel de combustible, soluciones simples pueden resolver el problema."
+          },
+          {
+            "q": "¿Qué códigos OBD2 indican pérdida de potencia?",
+            "a": "Los códigos P0171, P0300 y P0420 comúnmente están asociados a problemas de rendimiento y potencia."
+          }
+        ],
+        "schemaTitle": "Pérdida de potencia en Peugeot: Causas y diagnóstico",
+        "schemaDescription": "Causas y diagnóstico práctico para pérdida de potencia en Peugeot, incluyendo chequeos clave y errores comunes."
+      },
+      "fr": {
+        "slug": "peugeot-perte-de-puissance-causes-solutions",
+        "title": "Peugeot Perte de Puissance : Causes Fréquentes et Solutions Pratiques",
+        "metaDescription": "Découvrez les causes possibles de perte de puissance sur Peugeot, avec des étapes de diagnostic avant remplacement des pièces.",
+        "intro": "Une perte de puissance sur un véhicule Peugeot peut nuire considérablement aux performances et au confort de conduite. Ce symptôme peut provenir de différentes causes, telles que des problèmes d’admission d’air, d’injection de carburant ou d’allumage. Avant toute intervention coûteuse, il est essentiel d'effectuer des vérifications simples pour localiser précisément la source du problème.",
+        "severity": "Réduction modérée de la puissance moteur affectant accélération et maniabilité.",
+        "driveAdvice": "Évitez les accélérations fortes et les longs trajets. Consultez un professionnel si le problème persiste.",
+        "likelyCauses": [
+          "Filtre à air encrassé ou obstrué",
+          "Défaillance du système d’injection de carburant",
+          "Bougies d’allumage usées ou défectueuses",
+          "Obstruction dans le système d’échappement, y compris catalyseur",
+          "Fuite dans l’admission d’air ou capteurs défaillants"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez et nettoyez ou changez le filtre à air si nécessaire.",
+          "Mesurez la pression de carburant et inspectez le système d’injection.",
+          "Vérifiez l’état des bougies et remplacez-les si besoin.",
+          "Examinez la sortie d’échappement pour détecter toute obstruction ou dommage.",
+          "Utilisez un scanner OBD2 pour détecter fuites d’air et défauts de capteurs.",
+          "Surveillez les composants suspects via diagnostic embarqué avant remplacement."
+        ],
+        "firstChecks": [
+          "Inspection visuelle du filtre à air pour saleté excessive.",
+          "Vérification de la qualité et de la quantité de carburant dans le réservoir.",
+          "Contrôle du niveau et de l’état de l’huile moteur."
+        ],
+        "commonMistakes": [
+          "Remplacer les pièces sans diagnostics",
+          "Mauvaise interprétation des codes OBD2",
+          "Négliger les vérifications de base"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre",
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0420 - Efficacité du système catalytique sous seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes OBD2",
+            "href": "/fr/guide-codes-obd2"
+          },
+          {
+            "label": "Entretien du filtre à air",
+            "href": "/fr/entretien-filtre-air"
+          },
+          {
+            "label": "Problèmes d’injection carburant",
+            "href": "/fr/problemes-injection-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Peugeot perd-il de la puissance soudainement ?",
+            "a": "Cela peut être lié à la qualité du carburant, un filtre à air bouché ou des capteurs défectueux."
+          },
+          {
+            "q": "Que vérifier en premier en cas de perte de puissance ?",
+            "a": "Commencez par contrôler le filtre à air et le niveau de carburant, des solutions simples peuvent suffire."
+          },
+          {
+            "q": "Quels codes OBD2 indiquent une perte de puissance ?",
+            "a": "Les codes P0171, P0300 et P0420 sont souvent associés à des problèmes de performance moteur."
+          }
+        ],
+        "schemaTitle": "Perte de puissance Peugeot : Causes et diagnostic",
+        "schemaDescription": "Causes et solutions de perte de puissance sur Peugeot avec guide de diagnostic simple et erreurs fréquentes."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-engine-noise",
+    "intentKey": "peugeot_engine_noise",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "engine_noise",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "peugeot-engine-noise-diagnosis",
+        "title": "Diagnosing Engine Noise in Your Peugeot",
+        "metaDescription": "Explore common causes and practical steps to diagnose engine noise in your Peugeot before considering part replacements or repairs.",
+        "intro": "If your Peugeot’s engine is making unusual noises, you’re not alone. Engine noise can stem from various issues ranging from minor mechanical problems to more serious concerns. Understanding common causes and performing some basic checks can help you identify the problem before costly repairs.",
+        "severity": "Variable depending on the noise type and underlying cause.",
+        "driveAdvice": "Avoid high RPMs and heavy load until diagnosis is complete to prevent potential engine damage.",
+        "likelyCauses": [
+          "Worn engine bearings",
+          "Faulty timing chain or belt",
+          "Low engine oil or poor lubrication",
+          "Exhaust system leaks",
+          "Malfunctioning fuel injectors"
+        ],
+        "diagnosticSteps": [
+          "Listen carefully to pinpoint the noise location.",
+          "Check engine oil level and quality.",
+          "Inspect timing belt or chain for wear.",
+          "Examine exhaust system for leaks or damage.",
+          "Use OBD2 scanner to retrieve trouble codes.",
+          "Perform compression test to assess engine health."
+        ],
+        "firstChecks": [
+          "Ensure engine oil is at correct level and clean.",
+          "Look for visible signs of leaks or damage under the engine.",
+          "Verify timing belt or chain condition visually if accessible."
+        ],
+        "commonMistakes": [
+          "Ignoring early warning signs and continuing to drive.",
+          "Replacing parts without proper diagnosis.",
+          "Assuming all engine noises indicate internal engine failure."
+        ],
+        "relatedCodes": [
+          "P0340 - Camshaft Position Sensor Circuit",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Codes for Peugeot Engines",
+            "href": "/en/peugeot/obd2-codes"
+          },
+          {
+            "label": "How to Check Engine Oil Correctly",
+            "href": "/en/general/check-engine-oil"
+          },
+          {
+            "label": "Common Timing Belt Problems",
+            "href": "/en/general/timing-belt-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What noises indicate a serious engine problem?",
+            "a": "Knocking or clanking sounds often suggest internal engine issues and should be checked promptly."
+          },
+          {
+            "q": "Can low oil cause engine noise?",
+            "a": "Yes, insufficient oil causes poor lubrication which may lead to increased engine noise and damage."
+          },
+          {
+            "q": "Is it safe to drive with engine noise?",
+            "a": "Minimal noises sometimes are not urgent, but if the sound is loud or persistent, avoid driving and get it diagnosed."
+          }
+        ],
+        "schemaTitle": "Diagnosing and Troubleshooting Peugeot Engine Noise",
+        "schemaDescription": "Expert guidance on practical checks, common causes, and diagnostic steps to handle unusual engine noises in Peugeot vehicles."
+      },
+      "tr": {
+        "slug": "peugeot-motordan-ses-geliyor-tespit",
+        "title": "Peugeot Motordan Gelen Seslerin Tanısı",
+        "metaDescription": "Peugeot aracınızın motorundan gelen seslerin olası nedenlerini ve doğru teşhis için yapılacak pratik kontrolleri öğrenin.",
+        "intro": "Peugeot motorunuzdan gelen olağandışı sesler, aracınızda çeşitli problemler olduğuna işaret edebilir. Bu sesler, küçük bir sorun olabileceği gibi motorun daha ciddi bir arızasının göstergesi de olabilir. İlk olarak yapılacak kontrolleri bilmek, gereksiz parça değişimlerinden kaçınmanıza yardımcı olur.",
+        "severity": "Motor sesinin türüne ve sebebine bağlı olarak değişir.",
+        "driveAdvice": "Arıza tespiti yapılana kadar motoru zorlamayın, özellikle yüksek devir ve yükten kaçının.",
+        "likelyCauses": [
+          "Aşınmış motor yatakları",
+          "Sorunlu zamanlama zinciri veya kayışı",
+          "Düşük motor yağı veya yetersiz yağlama",
+          "Egzoz sistemi kaçakları",
+          "Yakıt enjektörlerinde arıza"
+        ],
+        "diagnosticSteps": [
+          "Sesi dikkatli dinleyerek yerini belirleyin.",
+          "Motor yağ seviyesini ve kalitesini kontrol edin.",
+          "Zamanlama kayışı veya zinciri durumunu inceleyin.",
+          "Egzoz sisteminde kaçak veya hasar kontrolü yapın.",
+          "OBD2 cihazıyla arıza kodlarını okuyun.",
+          "Motor sıkıştırma testi yaparak genel durumu değerlendirin."
+        ],
+        "firstChecks": [
+          "Motor yağının seviyesinin doğru ve temiz olduğundan emin olun.",
+          "Motor altı ve çevresinde sızıntı ya da hasar olup olmadığını gözleyin.",
+          "Zamanlama kayış veya zincirini görsel olarak kontrol edin."
+        ],
+        "commonMistakes": [
+          "Erken uyarı işaretlerini görmezden gelip kullanmaya devam etmek.",
+          "Doğru teşhis yapılmadan parça değiştirmek.",
+          "Tüm motor seslerini iç motor arızası olarak varsaymak."
+        ],
+        "relatedCodes": [
+          "P0340 - Kam Mili Pozisyon Sensörü Devresi",
+          "P0300 - Rastgele veya Çoklu Silindir Hatası",
+          "P0171 - Sistem Çok Fakir (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot için OBD2 Arıza Kodları",
+            "href": "/tr/peugeot/obd2-kodlari"
+          },
+          {
+            "label": "Motor Yağı Nasıl Kontrol Edilir?",
+            "href": "/tr/genel/motor-yagi-kontrolu"
+          },
+          {
+            "label": "Zamanlama Kayışı Problemleri",
+            "href": "/tr/genel/zamanlama-kayisi-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Hangi motor sesleri ciddi arıza işaretidir?",
+            "a": "Tıklama veya vuruntu sesleri genellikle iç motor sorunlarına işaret eder ve acilen kontrol edilmelidir."
+          },
+          {
+            "q": "Düşük yağ seviyesi motor sesine neden olur mu?",
+            "a": "Evet, yetersiz yağlama motor parçalarında sürtünmeye ve ses artışına sebep olur."
+          },
+          {
+            "q": "Motor sesiyken araç sürmek güvenli midir?",
+            "a": "Hafif sesler bazen önemli olmayabilir ama yüksek ve devam eden seslerde aracı kullanmamak ve kontrol ettirmek en iyisidir."
+          }
+        ],
+        "schemaTitle": "Peugeot Motorundan Gelen Seslerin Teşhisi ve Çözümleri",
+        "schemaDescription": "Peugeot araçlarda motor sesi sorunlarının olası nedenleri, yapılacak kontroller ve tanı adımları hakkında uzman rehberi."
+      },
+      "de": {
+        "slug": "peugeot-motor-geraeusche-diagnose",
+        "title": "Diagnose von Motorgeräuschen bei Peugeot",
+        "metaDescription": "Erfahren Sie mögliche Ursachen und praktische Schritte zur Diagnose von Motorgeräuschen bei Peugeot, bevor Sie Teile ersetzen.",
+        "intro": "Wenn Ihr Peugeot-Motor ungewöhnliche Geräusche macht, können verschiedene Ursachen dahinterstecken – von kleineren mechanischen Problemen bis hin zu ernsthaften Schäden. Ein grundlegendes Verständnis häufiger Ursachen und erste einfache Kontrollen helfen, kostspielige Reparaturen zu vermeiden. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Abhängig von Geräuscheart und Ursache unterschiedlich.",
+        "driveAdvice": "Vermeiden Sie hohe Drehzahlen und starke Belastungen, bis die Ursache festgestellt ist, um Motorschäden zu verhindern.",
+        "likelyCauses": [
+          "Abgenutzte Motorlager",
+          "Defekte Steuerkette oder Keilriemen",
+          "Niedriger Motorölstand oder schlechte Schmierung",
+          "Auspuffanlagenleckagen",
+          "Fehlerhafte Einspritzdüsen"
+        ],
+        "diagnosticSteps": [
+          "Geräuschquelle genau lokalisieren.",
+          "Motorölstand und -qualität kontrollieren.",
+          "Zustand von Steuerkette oder Keilriemen prüfen.",
+          "Auspuffanlage auf Lecks oder Schäden untersuchen.",
+          "OBD2-Scanner zur Fehlercodeauslesung verwenden.",
+          "Kompressionstest zur Motorzustandsbewertung durchführen."
+        ],
+        "firstChecks": [
+          "Sicherstellen, dass der Motorölstand korrekt und das Öl sauber ist.",
+          "Sichtprüfung auf Lecks oder äußere Schäden unter dem Motor.",
+          "Sichtprüfung der Steuerkette oder des Keilriemens, sofern zugänglich."
+        ],
+        "commonMistakes": [
+          "Frühwarnzeichen ignorieren und weiterfahren.",
+          "Teile ohne Diagnose austauschen.",
+          "Alle Geräusche als interne Motorprobleme interpretieren."
+        ],
+        "relatedCodes": [
+          "P0340 - Nockenwellensensor Schaltkreis",
+          "P0300 - Zündaussetzer Zylinderübergreifend",
+          "P0171 - System zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2-Codes für Peugeot-Motoren",
+            "href": "/de/peugeot/obd2-codes"
+          },
+          {
+            "label": "So überprüfen Sie Motoröl richtig",
+            "href": "/de/allgemein/motor-oel-kontrolle"
+          },
+          {
+            "label": "Häufige Probleme mit dem Steuerband",
+            "href": "/de/allgemein/steuerband-probleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Welche Geräusche deuten auf ernste Motorschäden hin?",
+            "a": "Klopf- oder Klackgeräusche deuten häufig auf innere Motorschäden hin und sollten umgehend geprüft werden."
+          },
+          {
+            "q": "Kann geringer Ölstand Motorgeräusche verursachen?",
+            "a": "Ja, fehlendes Öl führt zu schlechter Schmierung und kann vermehrte Geräusche verursachen."
+          },
+          {
+            "q": "Ist es sicher mit Motorgeräuschen weiterzufahren?",
+            "a": "Leichte Geräusche sind manchmal unbedenklich, bei lauten oder anhaltenden Geräuschen sollten Sie jedoch das Fahren vermeiden."
+          }
+        ],
+        "schemaTitle": "Diagnose und Fehlerbehebung von Peugeot-Motorgeräuschen",
+        "schemaDescription": "Fachkundige Anleitung zu praktischen Prüfungen, möglichen Ursachen und Diagnoseschritten bei ungewöhnlichen Motorgeräuschen in Peugeot-Fahrzeugen."
+      },
+      "es": {
+        "slug": "peugeot-motor-tiembla",
+        "title": "Diagnóstico de Ruidos en el Motor de Peugeot",
+        "metaDescription": "Descubre causas comunes y pasos prácticos para diagnosticar ruidos en el motor de tu Peugeot antes de reemplazar piezas.",
+        "intro": "Si el motor de tu Peugeot emite ruidos extraños, puede deberse a varias causas. Desde problemas mecánicos leves hasta fallos más serios, detectar la fuente a tiempo y realizar revisiones básicas puede evitar reparaciones costosas y complicadas.",
+        "severity": "Varía según el tipo de ruido y la causa subyacente.",
+        "driveAdvice": "Evita acelerar demasiado o cargar el motor hasta realizar un diagnóstico adecuado para prevenir daños mayores.",
+        "likelyCauses": [
+          "Cojinetes del motor desgastados",
+          "Cadena o correa de distribución defectuosa",
+          "Bajo nivel de aceite o lubricación insuficiente",
+          "Fugas en el sistema de escape",
+          "Inyectores de combustible averiados"
+        ],
+        "diagnosticSteps": [
+          "Escuchar con atención para localizar el origen del ruido.",
+          "Verificar nivel y estado del aceite del motor.",
+          "Inspeccionar la cadena o correa de distribución.",
+          "Revisar el sistema de escape en busca de fugas.",
+          "Leer códigos de fallas con un escáner OBD2.",
+          "Realizar prueba de compresión para evaluar el estado del motor."
+        ],
+        "firstChecks": [
+          "Asegurarse que el nivel de aceite sea correcto y el aceite esté limpio.",
+          "Buscar daños visibles o fugas debajo del motor.",
+          "Comprobar visualmente el estado de la correa o cadena de distribución."
+        ],
+        "commonMistakes": [
+          "Ignorar las primeras señales y seguir conduciendo.",
+          "Cambiar piezas sin un diagnóstico adecuado.",
+          "Suponer que todos los ruidos indican una falla interna grave."
+        ],
+        "relatedCodes": [
+          "P0340 - Circuito del sensor de posición del árbol de levas",
+          "P0300 - Falla de encendido múltiple o aleatoria",
+          "P0171 - Sistema demasiado pobre (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 para motores Peugeot",
+            "href": "/es/peugeot/codigos-obd2"
+          },
+          {
+            "label": "Cómo verificar el nivel de aceite correctamente",
+            "href": "/es/general/revision-aceite-motor"
+          },
+          {
+            "label": "Problemas comunes de la correa de distribución",
+            "href": "/es/general/problemas-correa-distribucion"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué ruidos indican problemas serios en el motor?",
+            "a": "Los ruidos de golpeteo o traqueteo suelen ser señales de daños internos y deben revisarse de inmediato."
+          },
+          {
+            "q": "¿Puede el bajo nivel de aceite causar ruidos en el motor?",
+            "a": "Sí, la falta de aceite provoca mala lubricación y puede generar ruidos aumentados."
+          },
+          {
+            "q": "¿Es seguro seguir conduciendo con ruidos en el motor?",
+            "a": "Ruidos leves pueden no ser urgentes, pero si son fuertes o persistentes se recomienda detener el vehículo y revisarlo."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y solución de ruidos en el motor Peugeot",
+        "schemaDescription": "Guía experta para revisiones, causas comunes y pasos de diagnóstico ante ruidos inusuales en motores Peugeot."
+      },
+      "fr": {
+        "slug": "bruit-moteur-peugeot-diagnostic",
+        "title": "Diagnostiquer les Bruits Moteur sur Peugeot",
+        "metaDescription": "Découvrez les causes fréquentes et les étapes pratiques pour diagnostiquer un bruit moteur sur votre Peugeot avant toute réparation.",
+        "intro": "Un bruit inhabituel provenant du moteur de votre Peugeot peut signaler différentes anomalies, allant de petits problèmes mécaniques à des défauts plus graves. Connaître les causes possibles et réaliser quelques vérifications simples vous aidera à mieux comprendre la source du bruit avant d'engager des réparations coûteuses.",
+        "severity": "Varie selon le type de bruit et la cause sous-jacente.",
+        "driveAdvice": "Évitez les régimes élevés et les charges lourdes avant un diagnostic complet afin de protéger votre moteur.",
+        "likelyCauses": [
+          "Paliers moteur usés",
+          "Chaîne ou courroie de distribution défectueuse",
+          "Niveau d'huile moteur bas ou mauvaise lubrification",
+          "Fuites dans le système d'échappement",
+          "Injecteurs défaillants"
+        ],
+        "diagnosticSteps": [
+          "Localiser précisément la source du bruit.",
+          "Vérifier le niveau et la qualité de l’huile moteur.",
+          "Contrôler l’état de la chaîne ou courroie de distribution.",
+          "Examiner le système d’échappement pour détecter des fuites.",
+          "Lire les codes défauts avec un scanner OBD2.",
+          "Effectuer un test de compression pour évaluer la santé du moteur."
+        ],
+        "firstChecks": [
+          "S’assurer que le niveau d’huile est correct et que l’huile est propre.",
+          "Rechercher des fuites ou dommages visibles sous le moteur.",
+          "Contrôler visuellement la chaîne ou courroie de distribution si accessible."
+        ],
+        "commonMistakes": [
+          "Ignorer les premiers signes d’alerte et continuer à rouler.",
+          "Changer les pièces sans diagnostic approprié.",
+          "Penser que tous les bruits moteur indiquent une panne interne grave."
+        ],
+        "relatedCodes": [
+          "P0340 - Circuit capteur position arbre à cames",
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Mélange trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 pour moteurs Peugeot",
+            "href": "/fr/peugeot/codes-obd2"
+          },
+          {
+            "label": "Comment vérifier correctement l’huile moteur",
+            "href": "/fr/general/verifier-huile-moteur"
+          },
+          {
+            "label": "Problèmes courants de la courroie de distribution",
+            "href": "/fr/general/problemes-courroie-distribution"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quels bruits indiquent un problème moteur sérieux ?",
+            "a": "Les bruits de cognement ou claquement suggèrent souvent un problème interne nécessitant un contrôle rapide."
+          },
+          {
+            "q": "Un faible niveau d’huile peut-il causer des bruits moteur ?",
+            "a": "Oui, un manque de lubrification génère des bruits anormaux et peut endommager le moteur."
+          },
+          {
+            "q": "Est-il sûr de rouler avec un bruit moteur ?",
+            "a": "Les bruits légers ne sont pas forcément alarmants, mais en cas de bruits forts ou persistants, mieux vaut arrêter le véhicule et faire vérifier."
+          }
+        ],
+        "schemaTitle": "Diagnostic et résolution des bruits moteur sur Peugeot",
+        "schemaDescription": "Guide expert des causes, contrôles et diagnostics des bruits moteurs sur véhicules Peugeot."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-rough-idle",
+    "intentKey": "peugeot_rough_idle",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "rough_idle",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "peugeot-rough-idle-causes-and-checks",
+        "title": "Peugeot Rough Idle: Causes, Diagnostics & Practical Checks",
+        "metaDescription": "Discover common reasons your Peugeot has a rough idle. Learn diagnostic steps and practical checks before replacing parts.",
+        "intro": "Experiencing a rough idle in your Peugeot can be frustrating as it affects smooth running and driving comfort. There are multiple potential causes, from ignition system issues to air or fuel supply problems. This guide helps you identify symptoms, perform initial checks, and diagnose before costly repairs.",
+        "severity": "A rough idle generally indicates inefficiency in engine combustion but is usually not immediately dangerous. However, prolonged issues may lead to further engine damage or increased emissions.",
+        "driveAdvice": "Avoid high revs or heavy acceleration while diagnosing. If the rough idle worsens or is accompanied by stalling, consider professional inspection promptly.",
+        "likelyCauses": [
+          "Faulty spark plugs or ignition coils",
+          "Vacuum leaks in intake system",
+          "Dirty or malfunctioning idle air control valve",
+          "Clogged fuel injectors",
+          "Faulty mass airflow or oxygen sensors"
+        ],
+        "diagnosticSteps": [
+          "Check for vacuum leaks around intake manifold",
+          "Inspect and test spark plugs and ignition coils",
+          "Clean or test the idle air control valve",
+          "Scan for OBD2 fault codes related to idle issues",
+          "Test fuel pressure and fuel injector function",
+          "Check condition and readings of MAF and O2 sensors"
+        ],
+        "firstChecks": [
+          "Inspect spark plugs for fouling or wear",
+          "Listen for unusual hissing sounds indicating vacuum leaks",
+          "Check idle air control valve operation"
+        ],
+        "commonMistakes": [
+          "Replacing parts without performing diagnostics",
+          "Ignoring vacuum leaks as a cause",
+          "Assuming rough idle always means a fuel system issue"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0505 - Idle Control System Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Scanner Guide",
+            "href": "/en/diagnostics/peugeot-obd2-scanner-guide"
+          },
+          {
+            "label": "How to Test Ignition Components",
+            "href": "/en/repair/ignition-testing-basics"
+          },
+          {
+            "label": "Vacuum Leak Diagnosis Tips",
+            "href": "/en/diagnostics/vacuum-leak-detection"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a dirty air filter cause rough idle in my Peugeot?",
+            "a": "While a dirty air filter can reduce airflow, it usually causes performance issues more than rough idling. Still, it's wise to check and replace it if clogged."
+          },
+          {
+            "q": "Is rough idle bad for the engine?",
+            "a": "Rough idle itself may not cause immediate damage but can stress engine components and worsen fuel consumption if not addressed."
+          },
+          {
+            "q": "Should I replace spark plugs if I have rough idle symptoms?",
+            "a": "Check their condition first; replacing worn plugs can help, but proper diagnosis is recommended before replacement."
+          }
+        ],
+        "schemaTitle": "Peugeot Rough Idle Causes and Diagnostics Guide",
+        "schemaDescription": "Comprehensive expert-level advice on diagnosing and addressing rough idle problems in Peugeot vehicles."
+      },
+      "tr": {
+        "slug": "peugeot-rolanti-dalgalanma-nedenleri-ve-tespitleri",
+        "title": "Peugeot Rölanti Dalgalanıyor: Nedenleri, Tanı ve Pratik Kontroller",
+        "metaDescription": "Peugeot araçlarda rölanti dalgalanmasının yaygın nedenlerini öğrenin. Parça değişmeden önce yapılacak pratik kontroller ve tanı adımları burada.",
+        "intro": "Peugeot aracınızda rölanti dalgalanması sürüşü olumsuz etkileyebilir ve motorun düzgün çalışmamasına neden olabilir. Birden fazla sebebi olabilir; ateşleme sistemi arızaları, hava veya yakıt beslemesi sorunları gibi. Bu yazıda, belirtileri fark etme, ilk kontroller ve doğru tanı yöntemleri açıklanmaktadır.",
+        "severity": "Rölanti dalgalanması genellikle motor verimliliğinde düşüşü işaret eder ve anında tehlike yaratmaz. Ancak uzun süre ihmal edilirse motor hasarına ya da artan emisyonlara yol açabilir.",
+        "driveAdvice": "Tespit sürecinde yüksek devirlerden ve ani hızlanmalardan kaçının. Rölanti düzensizliği artarsa veya araç stop ediyorsa uzman kontrolü önerilir.",
+        "likelyCauses": [
+          "Arızalı buji veya bobinler",
+          "Emme manifoldunda vakum kaçağı",
+          "Kirlenmiş veya arızalı rölanti hava kontrol valfi",
+          "Tıkanmış yakıt enjektörleri",
+          "Arızalı hava kütle akış ya da oksijen sensörleri"
+        ],
+        "diagnosticSteps": [
+          "Emme manifoldundaki vakum kaçaklarını kontrol edin",
+          "Buji ve bobinleri muayene edip test edin",
+          "Rölanti hava kontrol valfini temizleyin veya test edin",
+          "OBD2 arıza kodlarını taratın",
+          "Yakıt basıncını ve enjektör performansını test edin",
+          "MAF ve O2 sensörlerinin durumunu ve değerlerini kontrol edin"
+        ],
+        "firstChecks": [
+          "Bujileri kir ve aşınma açısından kontrol edin",
+          "Vakum kaçağı olup olmadığını fısıltı sesi ile dinleyin",
+          "Rölanti hava kontrol valfinin çalışma durumunu test edin"
+        ],
+        "commonMistakes": [
+          "Tanı yapmadan parça değiştirmek",
+          "Vakum kaçaklarını göz ardı etmek",
+          "Rölanti dalgalanmasını sadece yakıt sistemi problemi sanmak"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele/Çoklu Silindir Ateşleme Hatası",
+          "P0171 - Sistem Çok Fakir (Banka 1)",
+          "P0505 - Rölanti Kontrol Sistemi Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Kod Okuyucu Rehberi",
+            "href": "/tr/diagnostik/peugeot-obd2-kod-okuyucu-rehberi"
+          },
+          {
+            "label": "Ateşleme Parçaları Nasıl Test Edilir",
+            "href": "/tr/tamir/atesleme-parcalari-testleri"
+          },
+          {
+            "label": "Vakum Kaçağı Tespiti İpuçları",
+            "href": "/tr/diagnostik/vakum-kacagi-tespiti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kirli hava filtresi rölanti dalgalanmasına neden olur mu?",
+            "a": "Kirli hava filtresi havanın geçişini zorlaştırabilir ama genellikle rölanti dalgalanmasından çok performans sorunlarına yol açar. Yine de kontrol etmek iyidir."
+          },
+          {
+            "q": "Rölanti dalgalanması motora zarar verir mi?",
+            "a": "Rölanti dalgalanması anlık zarar yaratmaz ama uzun vadede motora zarar verebilir ve yakıt tüketimini artırabilir."
+          },
+          {
+            "q": "Rölanti dalgalanması varsa bujileri değiştirmeli miyim?",
+            "a": "Önce bujilerin durumunu kontrol edin. Aşınmışsa değiştirmek yardımcı olabilir ama öncelikle tanı yapmak en doğrusu."
+          }
+        ],
+        "schemaTitle": "Peugeot Rölanti Dalgalanması Nedenleri ve Tanı Rehberi",
+        "schemaDescription": "Peugeot araçlarda rölanti dalgalanması problemlerini çözmek için uzman düzeyde tanı ve öneriler."
+      },
+      "de": {
+        "slug": "peugeot-unruhiger-leerlauf-ursachen-und-pruefung",
+        "title": "Peugeot Unruhiger Leerlauf: Ursachen, Diagnose & praktische Prüfungen",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für unruhigen Leerlauf bei Peugeot. Praktische Prüfschritte vor Teilewechsel erklärt.",
+        "intro": "Ein unruhiger Leerlauf bei Ihrem Peugeot beeinträchtigt die Fahrqualität und kann verschiedene Ursachen haben. Von Zündproblemen bis zu Fehlern im Luft- oder Kraftstoffsystem sind verschiedene Faktoren möglich. Diese Anleitung unterstützt Sie bei ersten Kontrollen und einer gezielten Diagnose vor teuren Reparaturen.",
+        "severity": "Ein unruhiger Leerlauf weist auf eine ineffiziente Verbrennung hin und ist meist nicht unmittelbar gefährlich. Ungelöste Probleme können jedoch Folgeschäden und erhöhte Emissionen bewirken.",
+        "driveAdvice": "Vermeiden Sie während der Fehlersuche hohe Drehzahlen und starkes Beschleunigen. Bei Verschlechterung oder Absterben des Motors sollten Sie zeitnah eine Fachwerkstatt aufsuchen.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündspulen",
+          "Unterdrucklecks im Ansaugsystem",
+          "Verschmutztes oder defektes Leerlaufregelventil",
+          "Verstopfte Einspritzdüsen",
+          "Fehlerhafte Luftmassen- oder Lambdasonden"
+        ],
+        "diagnosticSteps": [
+          "Untersuchen Sie das Ansaugrohr auf Unterdrucklecks",
+          "Zündkerzen und Zündspulen prüfen und testen",
+          "Leerlaufregelventil reinigen oder prüfen",
+          "OBD2-Fehlercodes auslesen und analysieren",
+          "Kraftstoffdruck und Einspritzdüsenfunktion testen",
+          "Zustand und Werte von MAF- und Lambdasonden messen"
+        ],
+        "firstChecks": [
+          "Zündkerzen auf Ablagerungen und Verschleiß prüfen",
+          "Ansaugluftsystem auf ungewöhnliche Geräusche abhorchen",
+          "Funktion des Leerlaufregelventils überprüfen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Unterdrucklecks zu übersehen",
+          "Immer zuerst an ein Kraftstoffproblem zu denken"
+        ],
+        "relatedCodes": [
+          "P0300 - Zündaussetzer erkannt (zufällig/mehrfach)",
+          "P0171 - System zu mager (Bank 1)",
+          "P0505 - Leerlaufsteuerung fehlerhaft"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Diagnosegerät Anleitung",
+            "href": "/de/diagnose/peugeot-obd2-anleitung"
+          },
+          {
+            "label": "Wie man Zündkomponenten testet",
+            "href": "/de/reparatur/zuendungstest-grundlagen"
+          },
+          {
+            "label": "Unterdruckleck erkennen",
+            "href": "/de/diagnose/unterdruckleck-erkennung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ein verschmutzter Luftfilter unruhigen Leerlauf verursachen?",
+            "a": "Ein verschmutzter Luftfilter verringert meist die Motorleistung, verursacht aber selten unruhigen Leerlauf. Dennoch sollte der Filter überprüft werden."
+          },
+          {
+            "q": "Ist unruhiger Leerlauf schädlich für den Motor?",
+            "a": "Unruhiger Leerlauf allein verursacht normalerweise keinen sofortigen Schaden, kann aber langfristig Motorschäden und höheren Kraftstoffverbrauch fördern."
+          },
+          {
+            "q": "Sollte ich bei unruhigem Leerlauf die Zündkerzen wechseln?",
+            "a": "Zündkerzen sollten überprüft werden. Bei Abnutzung ist ein Wechsel empfehlenswert, doch eine Diagnose vor dem Austausch ist sinnvoll."
+          }
+        ],
+        "schemaTitle": "Peugeot Unruhiger Leerlauf Ursachen und Diagnose",
+        "schemaDescription": "Expertenrat zur Diagnose und Fehlersuche bei unruhigem Leerlauf im Peugeot Fahrzeug."
+      },
+      "es": {
+        "slug": "peugeot-motor-tiembla-en-relenti-causas-y-soluciones",
+        "title": "Peugeot Motor Tiembla en Relenti: Causas, Diagnóstico y Controles Prácticos",
+        "metaDescription": "Aprende las causas comunes del motor que tiembla en relenti en Peugeot. Diagnóstico y controles prácticos antes de cambiar piezas.",
+        "intro": "El temblor del motor en relenti puede afectar negativamente el confort de conducción y señalar diversos problemas subyacentes en tu Peugeot. Desde fallos en el sistema de encendido hasta problemas con el suministro de aire o combustible, existen varias posibles causas. Esta guía orienta sobre cómo identificar síntomas, realizar revisiones iniciales y diagnosticar correctamente para evitar reparaciones innecesarias.",
+        "severity": "Un motor que tiembla en relenti usualmente indica una combustión irregular pero no representa un peligro inmediato. Sin embargo, dejar el problema sin resolver puede causar daños mayores o aumentar las emisiones contaminantes.",
+        "driveAdvice": "Evita revoluciones altas o aceleraciones fuertes mientras haces el diagnóstico. Si el problema empeora o el motor se apaga, busca ayuda profesional cuanto antes.",
+        "likelyCauses": [
+          "Bujías o bobinas defectuosas",
+          "Fugas de vacío en el sistema de admisión",
+          "Válvula de control de aire en ralentí sucia o fallando",
+          "Inyectores de combustible obstruidos",
+          "Sensores de masa de aire u oxígeno defectuosos"
+        ],
+        "diagnosticSteps": [
+          "Verificar fugas de vacío alrededor del múltiple de admisión",
+          "Inspeccionar y probar bujías y bobinas de encendido",
+          "Limpiar o probar la válvula de control de aire en ralentí",
+          "Leer códigos de error OBD2 relacionados con ralentí",
+          "Probar la presión de combustible y función de inyectores",
+          "Comprobar estado y lecturas del sensor MAF y sensores O2"
+        ],
+        "firstChecks": [
+          "Revisar bujías por desgaste o suciedad",
+          "Escuchar silbidos que indiquen fugas de vacío",
+          "Verificar funcionamiento de la válvula de ralentí"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "No detectar fugas de vacío",
+          "Pensar que el temblor siempre es problema de combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido múltiple o aleatorio",
+          "P0171 - Sistema demasiado pobre (banco 1)",
+          "P0505 - Mal funcionamiento sistema control ralentí"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía del escáner OBD2 para Peugeot",
+            "href": "/es/diagnostico/guia-escanner-obd2-peugeot"
+          },
+          {
+            "label": "Cómo probar componentes de encendido",
+            "href": "/es/reparacion/pruebas-componentes-encendido"
+          },
+          {
+            "label": "Detección de fugas de vacío",
+            "href": "/es/diagnostico/deteccion-fugas-vacio"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede un filtro de aire sucio causar temblor en ralentí?",
+            "a": "Aunque un filtro sucio restringe el flujo de aire, generalmente afecta más el rendimiento que el ralentí. Sin embargo, es conveniente revisarlo."
+          },
+          {
+            "q": "¿El temblor en ralentí daña el motor?",
+            "a": "El temblor por sí solo no causa daño inmediato, pero puede estresar componentes y aumentar el consumo si no se corrige."
+          },
+          {
+            "q": "¿Debo cambiar las bujías si mi Peugeot tiene temblor en ralentí?",
+            "a": "Es recomendable revisar su estado antes. Si están desgastadas, su sustitución puede mejorar el rendimiento, aunque siempre conviene diagnosticar primero."
+          }
+        ],
+        "schemaTitle": "Causas y Diagnóstico del Motor Tiembla en Relenti en Peugeot",
+        "schemaDescription": "Consejos expertos para diagnosticar y resolver problemas de temblor en ralentí en vehículos Peugeot."
+      },
+      "fr": {
+        "slug": "peugeot-raletit-irregulier-causes-et-controles",
+        "title": "Ralenti Irrégulier Peugeot : Causes, Diagnostic et Contrôles Pratiques",
+        "metaDescription": "Découvrez les causes courantes du ralenti irrégulier sur Peugeot. Apprenez les étapes de diagnostic et contrôles avant tout remplacement.",
+        "intro": "Un ralenti irrégulier sur votre Peugeot peut nuire au confort de conduite et indiquer divers dysfonctionnements, du système d’allumage à l’alimentation en air ou carburant. Ce guide vous aide à comprendre les symptômes, réaliser des premiers contrôles utiles et poser un diagnostic fiable avant d’engager des réparations coûteuses.",
+        "severity": "Un ralenti irrégulier reflète une combustion inefficace et n’est généralement pas dangereux immédiatement. Toutefois, un problème persistant peut entraîner des dommages moteurs ou une pollution accrue.",
+        "driveAdvice": "Évitez les hauts régimes et les accélérations brutales pendant vos investigations. En cas d’aggravation ou de calage, consultez rapidement un professionnel.",
+        "likelyCauses": [
+          "Bougies ou bobines défectueuses",
+          "Fuite de vide sur le circuit d’admission",
+          "Volet de contrôle d’air au ralenti encrassé ou défaillant",
+          "Injecteurs carburant partiellement bouchés",
+          "Capteurs de débit d’air ou oxygène défaillants"
+        ],
+        "diagnosticSteps": [
+          "Vérifier les fuites de vide autour du collecteur d’admission",
+          "Contrôler et tester les bougies et bobines d’allumage",
+          "Nettoyer ou tester le volet de contrôle d’air au ralenti",
+          "Scanner les codes défauts OBD2 liés au ralenti",
+          "Tester la pression de carburant et le fonctionnement des injecteurs",
+          "Contrôler l’état et les valeurs des capteurs MAF et O2"
+        ],
+        "firstChecks": [
+          "Examiner les bougies pour dépôts ou usure",
+          "Écouter les sifflements indiquant une fuite de vide",
+          "Vérifier le fonctionnement du volet d’air au ralenti"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Négliger les fuites de vide",
+          "Penser systématiquement à un problème d’injection"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Système trop pauvre (banc 1)",
+          "P0505 - Dysfonctionnement du système de contrôle du ralenti"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide du scanner OBD2 Peugeot",
+            "href": "/fr/diagnostic/guide-scanner-obd2-peugeot"
+          },
+          {
+            "label": "Comment tester les composants d’allumage",
+            "href": "/fr/reparation/test-composants-allumage"
+          },
+          {
+            "label": "Conseils pour détecter les fuites de vide",
+            "href": "/fr/diagnostic/detection-fuite-vide"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Un filtre à air sale peut-il causer un ralenti irrégulier ?",
+            "a": "Un filtre à air bouché limite souvent les performances mais n’entraîne pas forcément un ralenti irrégulier. Il reste cependant conseillé de le vérifier."
+          },
+          {
+            "q": "Le ralenti irrégulier peut-il endommager le moteur ?",
+            "a": "Le ralenti irrégulier ne provoque pas de dégâts immédiats, mais peut à terme solliciter le moteur et augmenter la consommation."
+          },
+          {
+            "q": "Dois-je changer mes bougies si le ralenti est irrégulier ?",
+            "a": "Il est préférable de vérifier leur état d’abord. Si elles sont usées, leur remplacement peut améliorer la situation, mais un diagnostic préalable est conseillé."
+          }
+        ],
+        "schemaTitle": "Ralenti irrégulier Peugeot : diagnostic et causes courantes",
+        "schemaDescription": "Conseils et méthode experts pour détecter et résoudre un ralenti irrégulier sur véhicules Peugeot."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-engine-shaking",
+    "intentKey": "peugeot_engine_shaking",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "engine_shaking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-titriyor",
+        "title": "Peugeot Motor Titremesi: Nedenleri ve Çözümleri",
+        "metaDescription": "Peugeot motor titremesi birçok sebepten olabilir. İşte olası nedenler, kontrol adımları ve sık yapılan hatalar hakkında eksiksiz rehber.",
+        "intro": "Peugeot motor titremesi yaşamak can sıkıcı olabilir ve aracınızın performansını olumsuz etkileyebilir. Motor titremesi pek çok farklı nedenden kaynaklanabilir. Bu rehberde, motorunuzu değiştirmeden önce yapabileceğiniz ilk kontrollerden, sık yapılan hatalara kadar kapsamlı bilgi ile sorununuzun nedenini bulmanıza yardımcı olacağız.",
+        "severity": "Motor titremesi genellikle aracın çalışma kalitesini düşürür ve sürüş esnasında rahatsızlık verebilir, ancak çoğu durumda acil bir tehlike oluşturmaz.",
+        "driveAdvice": "Titreme şiddetli olduğunda hız yapmaktan kaçının ve aracı mümkünse servis kontrolüne götürün.",
+        "likelyCauses": [
+          "Ateşleme sistemi arızaları (buji veya bobinlerde sorun)",
+          "Yakıt enjektörlerinde tıkanıklık veya arıza",
+          "Sensör arızaları (oksijen sensörü, MAF sensörü gibi)",
+          "Hava ve yakıt karışımı problemleri",
+          "Motor takozu veya motor bağlantılarında hasar"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile hata kodlarını kontrol edin",
+          "Buji ve bobinleri gözle ve ölçüm cihazıyla test edin",
+          "Yakıt enjektörlerinin püskürtme performansını değerlendirin",
+          "Hava filtresi ve hortumlarda kaçak arayın",
+          "Motor takozlarını ve bağlantı noktalarını kontrol edin",
+          "Sensörlerin elektriksel bağlantılarını ve veri çıktısını inceleyin"
+        ],
+        "firstChecks": [
+          "Araç motor yağı seviyesini ve kalitesini kontrol edin",
+          "Hava filtresi ve emme manifoldunda tıkanıklık olup olmadığını inceleyin",
+          "Buji uçlarını görsel olarak kontrol edin, aşınma veya kirlenme var mı?"
+        ],
+        "commonMistakes": [
+          "Hemen parça değiştirmeye yönelmek, öncelikle arıza tespiti yapılmalıdır",
+          "Sensör problemlerini göz ardı ederek sadece mekanik parçalara odaklanmak",
+          "Yakıt kalitesini kontrol etmeden sadece parçaları değiştirmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silindir Ateşleme Problemleri",
+          "P0171 - Yakıt Sisteminde Fakir Karışım",
+          "P0420 - Katalizör Verimlilik Alt Sınırda"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Hata Kodları Rehberi",
+            "href": "/tr/obd2-hata-kodlari"
+          },
+          {
+            "label": "Peugeot Ateşleme Sistemi Sorunları",
+            "href": "/tr/peugeot-atesleme-sistemi"
+          },
+          {
+            "label": "Motor Rölanti Sorunları ve Çözümleri",
+            "href": "/tr/motor-rolanti-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot titremesi güvenlik riski oluşturur mu?",
+            "a": "Genel olarak, hafif titremeler ciddi tehlike oluşturmaz ancak motor performansını etkileyebilir ve sorunun kötüleşmemesi için kontrol edilmesi önerilir."
+          },
+          {
+            "q": "OBD2 cihazı titreme sorununu tespit edebilir mi?",
+            "a": "Evet, OBD2 cihazları motor sensörlerinden ve ateşleme sisteminden alınan hata kodlarını göstererek titremenin olası nedenlerini belirlemede yardımcı olabilir."
+          },
+          {
+            "q": "Titreme sorunu parça değiştirmeden çözülür mü?",
+            "a": "Bazen temizlik, ayar veya elektriksel kontroller ile sorun çözülebilir; ancak öncelikle detaylı teşhis yapılmalıdır."
+          }
+        ],
+        "schemaTitle": "Peugeot Motor Titremesi Sorunları ve Çözümleri",
+        "schemaDescription": "Peugeot aracınızda yaşanan motor titremesinin nedenleri, teşhis yöntemleri ve pratik çözümleri içeren uzman rehberi."
+      },
+      "en": {
+        "slug": "peugeot-engine-shaking",
+        "title": "Peugeot Engine Shaking: Causes and Diagnostic Steps",
+        "metaDescription": "Discover practical causes and diagnostic steps for Peugeot engine shaking issues to help you identify and fix the problem effectively.",
+        "intro": "Experiencing engine shaking in your Peugeot can be frustrating and may also point to underlying mechanical or electrical issues. Various factors can cause this symptom, and it’s important to follow systematic checks before replacing parts. This guide outlines common causes, initial inspections, and diagnostic steps to assist you in addressing engine shaking safely and efficiently.",
+        "severity": "Engine shaking often affects driving comfort and performance but usually does not indicate immediate critical danger.",
+        "driveAdvice": "Avoid high speeds if the shaking is severe and arrange for a professional inspection as soon as possible.",
+        "likelyCauses": [
+          "Faulty ignition components such as spark plugs or coils",
+          "Dirty or malfunctioning fuel injectors",
+          "Defective sensors including oxygen or mass airflow sensors",
+          "Incorrect air-fuel mixture",
+          "Worn engine mounts causing excessive vibration"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to check for trouble codes",
+          "Inspect spark plugs and ignition coils visually and electrically",
+          "Evaluate fuel injector spray patterns and operation",
+          "Check for air leaks or blockages in the intake system",
+          "Examine engine mounts for cracks or deterioration",
+          "Test sensor outputs and wiring connections"
+        ],
+        "firstChecks": [
+          "Check engine oil level and quality",
+          "Inspect the air filter and intake hoses for obstruction or damage",
+          "Visually examine spark plugs for wear or fouling"
+        ],
+        "commonMistakes": [
+          "Replacing parts before performing detailed diagnostics",
+          "Ignoring sensor issues and focusing solely on mechanical parts",
+          "Overlooking fuel quality when troubleshooting engine problems"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide to OBD2 Trouble Codes",
+            "href": "/en/obd2-trouble-codes"
+          },
+          {
+            "label": "Peugeot Ignition System Issues",
+            "href": "/en/peugeot-ignition-problems"
+          },
+          {
+            "label": "Common Engine Idle Problems",
+            "href": "/en/engine-idle-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is engine shaking dangerous while driving?",
+            "a": "Minor shaking usually does not pose immediate danger but can affect vehicle performance and should be inspected promptly."
+          },
+          {
+            "q": "Can an OBD2 scanner detect engine shaking causes?",
+            "a": "Yes, by reading engine sensor data and fault codes, an OBD2 scanner helps identify potential causes of engine shaking."
+          },
+          {
+            "q": "Is part replacement always necessary to fix engine shaking?",
+            "a": "Not always; some cases can be resolved through cleaning, adjustments, or electrical repairs after proper diagnosis."
+          }
+        ],
+        "schemaTitle": "Peugeot Engine Shaking Causes and Diagnostics",
+        "schemaDescription": "Expert guide explaining common causes and diagnostic methods to troubleshoot engine shaking in Peugeot vehicles effectively."
+      },
+      "de": {
+        "slug": "peugeot-motor-vibriert",
+        "title": "Peugeot Motor Vibriert: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die möglichen Ursachen für Motorvibrationen bei Peugeot und erhalten Sie praktische Prüf- und Diagnosehinweise.",
+        "intro": "Motorvibrationen bei einem Peugeot können verschiedene Ursachen haben und beeinträchtigen oft das Fahrvergnügen. Bevor Teile ausgetauscht werden, sollten systematische Untersuchungen durchgeführt werden. In diesem Leitfaden finden Sie häufige Ursachen, erste Prüfschritte und eine angepasste Diagnosestrategie, um Probleme am Motor gezielt anzugehen.",
+        "severity": "Motorvibrationen können den Fahrkomfort erheblich stören, stellen aber in der Regel keine unmittelbare Gefahr dar.",
+        "driveAdvice": "Bei starken Vibrationen das Fahrzeug vorsichtig fahren und zeitnah eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfte oder fehlerhafte Einspritzdüsen",
+          "Sensorprobleme (z.B. Sauerstoff- oder Luftmassenmesser)",
+          "Ungleichgewicht im Luft-Kraftstoff-Gemisch",
+          "Beschädigte Motorlager"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Diagnosegerät zum Auslesen der Fehlercodes verwenden",
+          "Zündkerzen und Zündspulen visuell und elektrisch prüfen",
+          "Einspritzdüsen testen und prüfen",
+          "Auf Luftleckagen und Verstopfungen im Ansaugsystem kontrollieren",
+          "Motorlager auf Risse oder Verschleiß begutachten",
+          "Sensoren und deren Verkabelung überprüfen"
+        ],
+        "firstChecks": [
+          "Motorölstand und -qualität prüfen",
+          "Luftfilter und Ansaugleitungen auf Beschädigung kontrollieren",
+          "Zündkerzen auf Verschleiß oder Ablagerungen inspizieren"
+        ],
+        "commonMistakes": [
+          "Teile tauschen ohne genaue Fehleranalyse",
+          "Sensorprobleme ignorieren und nur auf mechanische Teile fokussieren",
+          "Kraftstoffqualität nicht beachten"
+        ],
+        "relatedCodes": [
+          "P0300 - Zündaussetzer auf mehreren Zylindern",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem Effizienz unter Grenzwert"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes Übersicht",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Peugeot Zündprobleme erkennen",
+            "href": "/de/peugeot-zundprobleme"
+          },
+          {
+            "label": "Leerlaufprobleme am Motor verstehen",
+            "href": "/de/motor-leerlaufprobleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Ist Motorvibration beim Fahren gefährlich?",
+            "a": "Leichte Vibrationen sind meist nicht sofort gefährlich, beeinflussen aber die Fahrsicherheit und sollten überprüft werden."
+          },
+          {
+            "q": "Kann ein OBD2-Scanner die Ursache von Vibrationen erkennen?",
+            "a": "Ja, der Scanner liest Fehlercodes und Sensordaten aus und unterstützt so die Diagnose."
+          },
+          {
+            "q": "Muss immer ein Teil ausgetauscht werden, wenn der Motor vibriert?",
+            "a": "Nicht unbedingt. Manchmal sind Reinigungen oder Einstellarbeiten ausreichend."
+          }
+        ],
+        "schemaTitle": "Peugeot Motorvibrationen: Ursachen und Diagnosen",
+        "schemaDescription": "Fachliche Anleitung zur Erkennung und Behebung von Motorvibrationen bei Peugeot Fahrzeugen."
+      },
+      "es": {
+        "slug": "peugeot-motor-tiembla-engine-shaking",
+        "title": "Peugeot Motor Tiembla: Causas y Diagnóstico",
+        "metaDescription": "Conozca las causas comunes y los pasos para diagnosticar el temblor del motor en Peugeot y cómo solucionarlo de manera efectiva.",
+        "intro": "El temblor del motor en un Peugeot puede ser síntoma de múltiples problemas mecánicos o eléctricos. Antes de reemplazar piezas, es fundamental realizar inspecciones prácticas y seguir un proceso de diagnóstico ordenado. Esta guía ofrece las causas más comunes, las primeras revisiones y los pasos para diagnosticar y solucionar el problema de forma segura.",
+        "severity": "El temblor afecta la comodidad y el rendimiento del vehículo pero generalmente no es un peligro crítico inmediato.",
+        "driveAdvice": "Evite acelerar en exceso si el temblor es intenso y lleve el vehículo a revisión profesional pronto.",
+        "likelyCauses": [
+          "Bujías o bobinas defectuosas",
+          "Inyectores de combustible obstruidos o con falla",
+          "Sensores defectuosos (oxígeno, flujo de aire)",
+          "Mezcla aire-combustible incorrecta",
+          "Soportes del motor desgastados"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de fallo con un escáner OBD2",
+          "Revisar visual y eléctricamente las bujías y bobinas",
+          "Comprobar el funcionamiento y pulverización de los inyectores",
+          "Detectar fugas o bloqueos en el sistema de admisión",
+          "Evaluar el estado de los soportes del motor",
+          "Verificar salidas y conexiones de los sensores"
+        ],
+        "firstChecks": [
+          "Nivel y calidad del aceite del motor",
+          "Filtro de aire y mangueras de admisión",
+          "Estado visual de las bujías"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas antes de un diagnóstico completo",
+          "Ignorar problemas de sensores y centrarse solo en partes mecánicas",
+          "No considerar la calidad del combustible en la revisión"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio o múltiple",
+          "P0171 - Mezcla demasiado pobre en sistema",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos OBD2",
+            "href": "/es/gui-codigos-obd2"
+          },
+          {
+            "label": "Problemas de encendido en Peugeot",
+            "href": "/es/problemas-encendido-peugeot"
+          },
+          {
+            "label": "Problemas comunes de ralentí",
+            "href": "/es/problemas-ralenti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Es peligroso conducir con el motor temblando?",
+            "a": "Temblores leves no suelen ser peligros inmediatos, pero pueden afectar el rendimiento y deben revisarse pronto."
+          },
+          {
+            "q": "¿Puede un escáner OBD2 detectar las causas del temblor?",
+            "a": "Sí, el escáner lee códigos y datos de sensores que ayudan a identificar causas probables."
+          },
+          {
+            "q": "¿Siempre es necesario cambiar piezas para arreglar el temblor?",
+            "a": "No siempre; algunas veces se solucionan con limpieza o ajustes tras un diagnóstico adecuado."
+          }
+        ],
+        "schemaTitle": "Temblor del motor en Peugeot: causas y diagnóstico",
+        "schemaDescription": "Guía experta para detectar y solucionar temblores en el motor de vehículos Peugeot de forma efectiva."
+      },
+      "fr": {
+        "slug": "peugeot-moteur-vibre",
+        "title": "Peugeot Moteur Qui Vibre : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes et les étapes de diagnostic pour un moteur Peugeot qui vibre, afin de résoudre le problème efficacement.",
+        "intro": "Un moteur qui vibre sur une Peugeot peut avoir plusieurs origines, électriques ou mécaniques. Avant de remplacer des pièces, il est important d’effectuer quelques vérifications pratiques. Ce guide présente les causes possibles, les premiers contrôles à faire, ainsi que les étapes de diagnostic pour vous aider à identifier et corriger cette vibration en toute sécurité.",
+        "severity": "Les vibrations du moteur affectent souvent le confort de conduite sans constituer un danger immédiat dans la majorité des cas.",
+        "driveAdvice": "Évitez de rouler rapidement si les vibrations sont fortes et consultez un professionnel rapidement.",
+        "likelyCauses": [
+          "Problèmes d’allumage (bougies ou bobines défectueuses)",
+          "Injecteurs encrassés ou défaillants",
+          "Capteurs défectueux (sonde lambda, capteur de débit d’air)",
+          "Mauvais mélange air-carburant",
+          "Supports moteur usés"
+        ],
+        "diagnosticSteps": [
+          "Utiliser un scanner OBD2 pour lire les codes défauts",
+          "Contrôler visuellement et électriquement bougies et bobines",
+          "Vérifier le fonctionnement des injecteurs",
+          "Rechercher des fuites ou blocages dans le circuit d’admission",
+          "Examiner l’état des supports moteur",
+          "Tester les capteurs et leurs connexions"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et la qualité de l’huile moteur",
+          "Contrôler le filtre à air et les durites d’admission",
+          "Inspecter visuellement les bougies"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic précis",
+          "Négliger les capteurs en se concentrant uniquement sur la mécanique",
+          "Ignorer la qualité du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires",
+          "P0171 - Mélange trop pauvre",
+          "P0420 - Rendement du catalyseur inférieur au seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes défaut OBD2",
+            "href": "/fr/codes-defaut-obd2"
+          },
+          {
+            "label": "Problèmes d’allumage Peugeot",
+            "href": "/fr/problemes-allumage-peugeot"
+          },
+          {
+            "label": "Problèmes de ralenti moteur",
+            "href": "/fr/problemes-ralenti-moteur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Les vibrations moteur sont-elles dangereuses en roulant ?",
+            "a": "Les vibrations légères ne sont généralement pas dangereuses mais peuvent affecter le bon fonctionnement et méritent d’être contrôlées."
+          },
+          {
+            "q": "Un scanner OBD2 peut-il identifier la cause des vibrations ?",
+            "a": "Oui, il permet de lire les codes erreurs et les données des capteurs utiles au diagnostic."
+          },
+          {
+            "q": "Faut-il toujours remplacer des pièces pour régler les vibrations ?",
+            "a": "Pas nécessairement, des réglages ou nettoyages suffisent parfois après un diagnostic approfondi."
+          }
+        ],
+        "schemaTitle": "Vibrations moteur Peugeot : causes et diagnostic complet",
+        "schemaDescription": "Guide expert pour comprendre, diagnostiquer et résoudre les vibrations moteur sur véhicules Peugeot."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-check-engine-light",
+    "intentKey": "peugeot_check_engine_light",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "check_engine_light",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-motor-ariza-lambasi-yaniyor",
+        "title": "Peugeot Motor Arıza Lambası Yanıyor: Nedenleri ve Çözümler",
+        "metaDescription": "Peugeot motor arıza lambası yanıyor ise olası nedenleri, ön kontrolleri ve doğru teşhis adımlarını öğrenin. Parça değiştirmeden önce kontrol edin.",
+        "intro": "Peugeot motor arıza lambasının yanması, aracınızda çeşitli sorunların belirtisi olabilir. Bu ışık, motor yönetim sistemindeki problemlere işaret eder ancak kesin sebebi hemen belli olmaz. Yanlış parça değiştirmektense, temel kontrolleri yaparak sorunun kaynağını tespit etmek önemlidir. Aşağıda yaygın nedenler ve teşhis yöntemleri açıklanmıştır.",
+        "severity": "Motor arıza lambası yanması genellikle ciddi bir sorundur ama araç sürülebilir. Sorunu ihmal etmek performans ve yakıt verimliliğini etkiler.",
+        "driveAdvice": "Aracınızı mümkünse zorlamadan kullanın ve en kısa sürede detaylı teşhis yaptırın. Ani hızlanmalar ve yüksek motor yüklerinden kaçının.",
+        "likelyCauses": [
+          "Oksijen sensörü arızası",
+          "Egzoz gazı recirculation (EGR) sistemi problemi",
+          "Yakıt enjeksiyon sistemi sorunları",
+          "Bujiler veya ateşleme bobini sorunları",
+          "Hava filtresi tıkanıklığı"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile arıza kodlarını okuyun",
+          "Motorun emme manifoldu ve egzoz kaçaklarını kontrol edin",
+          "Oksijen sensörlerinin durumunu değerlendirin",
+          "Yakıt basıncını ölçün",
+          "Bujileri ve ateşleme sistemini inceleyin",
+          "Hava filtresi ve hava giriş sistemini kontrol edin"
+        ],
+        "firstChecks": [
+          "Yakıt seviyesini kontrol edin",
+          "Motor yağı ve sıvı seviyelerini gözden geçirin",
+          "Aracın ateşleme sisteminin temel durumuna bakın"
+        ],
+        "commonMistakes": [
+          "Bütün parçaları aynı anda değiştirmek",
+          "Arıza kodlarını gözardı etmek",
+          "Erken ve gereksiz parça değişiklikleri"
+        ],
+        "relatedCodes": [
+          "P0130 - Oksijen Sensörü Devre Hatası",
+          "P0401 - EGR Akış Yetersizliği",
+          "P0300 - Rastgele/Çoklu Silindir Ateşleme Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Nedir? Nasıl Kullanılır?",
+            "href": "/tr/obd2-nedir-nasil-kullanilir"
+          },
+          {
+            "label": "Motor Arıza Lambası Temel Bilgiler",
+            "href": "/tr/motor-ariza-lambasi-temel-bilgiler"
+          },
+          {
+            "label": "Yakıt Sistemi Problemleri ve Çözümleri",
+            "href": "/tr/yakit-sistemi-problemleri"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası yandığında ne yapmalıyım?",
+            "a": "İlk olarak aracınızı daha fazla zorlamadan bir OBD2 tarayıcı ile arıza kodlarını okuyun ve kapsamlı kontroller için servise başvurun."
+          },
+          {
+            "q": "Arıza kodlarını kendim okuyabilir miyim?",
+            "a": "Evet, uygun bir OBD2 cihazıyla kodları okuyabilir ve temel bilgi edinebilirsiniz ancak detaylı analiz profesyonellerce yapılmalıdır."
+          },
+          {
+            "q": "Lamba sönmezse aracımı sürmeye devam edebilir miyim?",
+            "a": "Kısa mesafelerde dikkatli sürüş mümkün ancak uzun süreli sürüşten kaçının ve en yakın zamanda kontrol yaptırın."
+          }
+        ],
+        "schemaTitle": "Peugeot Motor Arıza Lambası Yanıyor - Nedenleri ve Teşhis",
+        "schemaDescription": "Peugeot araçlarda motor arıza lambasının yanmasının olası nedenleri, ilk kontroller ve OBD2 ile teşhis yöntemleri uzman içeriği."
+      },
+      "en": {
+        "slug": "peugeot-check-engine-light-causes",
+        "title": "Peugeot Check Engine Light On: Causes, Checks, and Diagnostics",
+        "metaDescription": "If your Peugeot’s check engine light is on, explore common reasons, initial checks, and effective diagnostic steps before replacing parts.",
+        "intro": "When the check engine light illuminates on your Peugeot, it indicates that the vehicle’s engine management system has detected a potential issue. However, the light does not specify a single cause, so a methodical diagnosis is essential. Before replacing any parts, perform basic checks and read diagnostic trouble codes to understand the problem better.",
+        "severity": "While the check engine light may not always indicate an immediate emergency, ignoring it can lead to decreased performance and fuel efficiency.",
+        "driveAdvice": "Drive cautiously, avoiding high engine loads and sudden accelerations. Schedule a diagnostic check promptly to prevent further damage.",
+        "likelyCauses": [
+          "Faulty oxygen sensor",
+          "Issues in the exhaust gas recirculation (EGR) system",
+          "Fuel injection system faults",
+          "Worn spark plugs or ignition coils",
+          "Clogged air filter"
+        ],
+        "diagnosticSteps": [
+          "Read trouble codes using an OBD2 scanner",
+          "Inspect intake manifold and exhaust for leaks",
+          "Check oxygen sensors for proper function",
+          "Measure fuel pressure",
+          "Examine spark plugs and ignition components",
+          "Inspect air filter and intake system"
+        ],
+        "firstChecks": [
+          "Verify fuel level",
+          "Check engine oil and other fluid levels",
+          "Assess basic ignition system condition"
+        ],
+        "commonMistakes": [
+          "Replacing all parts without proper diagnosis",
+          "Ignoring error codes",
+          "Performing premature or unnecessary part replacements"
+        ],
+        "relatedCodes": [
+          "P0130 - Oxygen Sensor Circuit Malfunction",
+          "P0401 - EGR Flow Insufficient Detected",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "What is OBD2 and How to Use It?",
+            "href": "/en/what-is-obd2-how-to-use"
+          },
+          {
+            "label": "Check Engine Light Basics",
+            "href": "/en/check-engine-light-basics"
+          },
+          {
+            "label": "Fuel System Problems and Solutions",
+            "href": "/en/fuel-system-problems-solutions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I do when my check engine light comes on?",
+            "a": "Stop heavy engine use and read the OBD2 codes as soon as possible. Have a proper diagnosis done to prevent serious issues."
+          },
+          {
+            "q": "Can I read OBD2 trouble codes myself?",
+            "a": "Yes, with an OBD2 scanner you can retrieve codes and get basic insights. Professional analysis is recommended for accurate repair."
+          },
+          {
+            "q": "Is it safe to drive with the check engine light on?",
+            "a": "Short, cautious trips are usually okay, but avoid long drives until the problem is identified and fixed."
+          }
+        ],
+        "schemaTitle": "Peugeot Check Engine Light Causes and Diagnostics",
+        "schemaDescription": "Expert guide to common causes, first checks, and diagnostic steps for Peugeot vehicles when the check engine light turns on."
+      },
+      "de": {
+        "slug": "peugeot-motor-warnleuchte-gruende",
+        "title": "Peugeot Motor-Warnleuchte leuchtet: Ursachen, Prüfungen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für das Leuchten der Motor-Warnleuchte bei Peugeot sowie erste Prüfungen und Diagnoseverfahren, bevor Sie Teile austauschen.",
+        "intro": "Leuchtet die Motor-Warnleuchte bei Ihrem Peugeot auf, signalisiert dies eine potenzielle Störung im Motorsteuerungssystem. Die Warnleuchte allein sagt jedoch nichts über die genaue Ursache aus. Daher sind sorgfältige Prüfungen und eine schrittweise Diagnose erforderlich, um Fehlerquellen zu finden, bevor Ersatzteile gewechselt werden.",
+        "severity": "Die Warnleuchte deutet meist auf ein ernstzunehmendes Problem hin, allerdings ist eine sofortige Gefahr nicht immer gegeben. Eine späte Diagnose kann jedoch Leistungseinbußen verursachen.",
+        "driveAdvice": "Fahren Sie vorsichtig, vermeiden Sie hohe Lasten und abruptes Beschleunigen. Lassen Sie die Ursache zeitnah diagnostizieren, um größeren Schaden zu vermeiden.",
+        "likelyCauses": [
+          "Defekter Lambdasonde",
+          "Probleme mit dem Abgasrückführungssystem (AGR)",
+          "Fehler im Einspritzsystem",
+          "Abgenutzte Zündkerzen oder Zündspulen",
+          "Verstopfter Luftfilter"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit einem OBD2-Scanner auslesen",
+          "Ansaugkrümmer und Auspuff auf Undichtigkeiten prüfen",
+          "Lambdasonden prüfen",
+          "Kraftstoffdruck messen",
+          "Zündkerzen und Zündungskomponenten kontrollieren",
+          "Luftfilter und Ansaugsystem inspizieren"
+        ],
+        "firstChecks": [
+          "Kraftstoffstand prüfen",
+          "Motoröl- und Flüssigkeitsstände kontrollieren",
+          "Grundzustand der Zündanlage bewerten"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Fehlercodes ignorieren",
+          "Zu frühe oder unnötige Teilewechsel"
+        ],
+        "relatedCodes": [
+          "P0130 - Lambdasonde Stromkreisfehler",
+          "P0401 - AGR-Durchfluss unzureichend erkannt",
+          "P0300 - Zufällige/mehrfache Zündaussetzer"
+        ],
+        "internalLinks": [
+          {
+            "label": "Was ist OBD2 und wie verwendet man es?",
+            "href": "/de/was-ist-obd2-wie-verwendet-man-es"
+          },
+          {
+            "label": "Motorwarnleuchte Grundwissen",
+            "href": "/de/motorwarnleuchte-grundwissen"
+          },
+          {
+            "label": "Probleme mit dem Kraftstoffsystem und Lösungen",
+            "href": "/de/kraftstoffsystem-probleme-loesungen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was soll ich tun, wenn die Motor-Warnleuchte leuchtet?",
+            "a": "Reduzieren Sie Fahrweise und lesen Sie die Fehlercodes mit einem OBD2-Gerät aus. Lassen Sie die Ursache professionell prüfen."
+          },
+          {
+            "q": "Kann ich Fehlercodes selbst auslesen?",
+            "a": "Ja, mit einem OBD2-Scanner können Sie Fehlercodes abrufen und grundlegende Informationen erhalten."
+          },
+          {
+            "q": "Ist es sicher, mit leuchtender Warnleuchte weiterzufahren?",
+            "a": "Kurze und vorsichtige Fahrten sind meist möglich, vermeiden Sie jedoch längere Fahrten bis zur Fehlerbehebung."
+          }
+        ],
+        "schemaTitle": "Peugeot Motor-Warnleuchte: Ursachen und Diagnose",
+        "schemaDescription": "Expertenratgeber zu Ursachen, Erster Prüfungen und Diagnoseprozessen bei leuchtender Motor-Warnleuchte im Peugeot."
+      },
+      "es": {
+        "slug": "peugeot-luz-de-check-engine-encendida",
+        "title": "Luz de Check Engine en Peugeot: Causas, Revisiones y Diagnóstico",
+        "metaDescription": "Descubra las causas comunes de la luz check engine en Peugeot, las revisiones iniciales y los pasos de diagnóstico antes de cambiar piezas.",
+        "intro": "Cuando la luz de check engine se enciende en un Peugeot, indica que el sistema de gestión del motor detectó un posible problema. No siempre señala una causa concreta, por eso es importante realizar una revisión sistemática. Antes de cambiar piezas, verifique aspectos básicos y lea los códigos de error para un diagnóstico acertado.",
+        "severity": "La luz puede no indicar una emergencia inmediata, pero ignorarla puede afectar el rendimiento y la eficiencia del vehículo.",
+        "driveAdvice": "Conduzca con precaución, evitando cargas fuertes y aceleraciones bruscas. Realice un diagnóstico lo antes posible para evitar daños mayores.",
+        "likelyCauses": [
+          "Sensor de oxígeno defectuoso",
+          "Problemas en el sistema de recirculación de gases de escape (EGR)",
+          "Fallos en el sistema de inyección de combustible",
+          "Bujías o bobinas de encendido en mal estado",
+          "Filtro de aire obstruido"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con un escáner OBD2",
+          "Inspectar fugas en el múltiple de admisión y escape",
+          "Verificar el estado de los sensores de oxígeno",
+          "Medir la presión de combustible",
+          "Revisar las bujías y componentes de encendido",
+          "Controlar el filtro de aire y sistema de admisión"
+        ],
+        "firstChecks": [
+          "Verificar nivel de combustible",
+          "Revisar niveles de aceite y otros fluidos",
+          "Evaluar estado básico del sistema de encendido"
+        ],
+        "commonMistakes": [
+          "Cambiar todas las piezas sin un diagnóstico claro",
+          "Ignorar los códigos de error",
+          "Realizar cambios prematuros o innecesarios"
+        ],
+        "relatedCodes": [
+          "P0130 - Mal funcionamiento del circuito del sensor de oxígeno",
+          "P0401 - Flujo insuficiente del EGR detectado",
+          "P0300 - Fallos de encendido aleatorios o múltiples cilindros"
+        ],
+        "internalLinks": [
+          {
+            "label": "Qué es OBD2 y cómo usarlo",
+            "href": "/es/que-es-obd2-y-como-usarlo"
+          },
+          {
+            "label": "Conceptos básicos de la luz check engine",
+            "href": "/es/conceptos-basicos-luz-check-engine"
+          },
+          {
+            "label": "Problemas y soluciones del sistema de combustible",
+            "href": "/es/problemas-y-soluciones-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hacer cuando se enciende la luz check engine?",
+            "a": "Conduzca con precaución, lea los códigos OBD2 pronto y haga un diagnóstico para evitar daños mayores."
+          },
+          {
+            "q": "¿Puedo leer los códigos OBD2 por mi cuenta?",
+            "a": "Sí, con un escáner OBD2 puede obtener códigos y entender problemas básicos, pero se recomienda un análisis profesional."
+          },
+          {
+            "q": "¿Es seguro conducir con la luz encendida?",
+            "a": "Para distancias cortas y con precaución generalmente sí, pero evite viajes largos hasta que se revise el vehículo."
+          }
+        ],
+        "schemaTitle": "Luz Check Engine en Peugeot - Causas y Diagnóstico",
+        "schemaDescription": "Guía experta sobre causas comunes, revisiones iniciales y diagnóstico cuando la luz check engine está encendida en Peugeot."
+      },
+      "fr": {
+        "slug": "peugeot-temoin-de-moteur-allume",
+        "title": "Témoin de Moteur Allumé sur Peugeot : Causes, Contrôles et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes du témoin moteur allumé sur Peugeot, les premiers contrôles et les étapes de diagnostic avant de changer des pièces.",
+        "intro": "Lorsque le témoin de moteur s’allume sur votre Peugeot, cela signale un dysfonctionnement potentiel dans le système de gestion moteur. Ce témoin ne donne pas une cause précise, il est donc essentiel d'effectuer des vérifications méthodiques. Avant de remplacer des pièces, il est conseillé de faire des contrôles simples et de lire les codes d'erreur pour mieux cibler le problème.",
+        "severity": "Le témoin moteur indique souvent un problème sérieux, mais ce n’est pas toujours une urgence immédiate. Négliger ce signal peut affecter les performances et la consommation.",
+        "driveAdvice": "Conduisez prudemment en évitant les charges élevées et accélérations brutales. Faites diagnostiquer rapidement pour éviter des dommages importants.",
+        "likelyCauses": [
+          "Sonde lambda défectueuse",
+          "Problèmes dans le système de recirculation des gaz d’échappement (EGR)",
+          "Défaillances du système d’injection de carburant",
+          "Bougies ou bobines d’allumage usées",
+          "Filtre à air encrassé"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un scanner OBD2",
+          "Vérifier les fuites au niveau du collecteur d’admission et d’échappement",
+          "Contrôler les sondes lambda",
+          "Mesurer la pression de carburant",
+          "Examiner les bougies et les composants d’allumage",
+          "Inspecter le filtre à air et le système d’admission"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau de carburant",
+          "Contrôler les niveaux d’huile et autres liquides",
+          "Évaluer l’état basique du système d’allumage"
+        ],
+        "commonMistakes": [
+          "Remplacer les pièces sans diagnostic préalable",
+          "Ignorer les codes d’erreur",
+          "Effectuer des remplacements prématurés ou inutiles"
+        ],
+        "relatedCodes": [
+          "P0130 - Défaut circuit sonde lambda",
+          "P0401 - Débit EGR insuffisant détecté",
+          "P0300 - Ratés d’allumage multiples ou aléatoires"
+        ],
+        "internalLinks": [
+          {
+            "label": "Qu’est-ce que l’OBD2 et comment l’utiliser ?",
+            "href": "/fr/quest-ce-que-obd2-comment-utiliser"
+          },
+          {
+            "label": "Bases du témoin moteur",
+            "href": "/fr/bases-temoin-moteur"
+          },
+          {
+            "label": "Problèmes et solutions du système d’alimentation",
+            "href": "/fr/problemes-solutions-systeme-alimentation"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que faire lorsque le témoin moteur s’allume ?",
+            "a": "Réduisez la sollicitation du moteur, lisez les codes OBD2 rapidement et faites diagnostiquer par un professionnel."
+          },
+          {
+            "q": "Puis-je lire les codes OBD2 moi-même ?",
+            "a": "Oui, un scanner OBD2 permet de lire les codes et d’obtenir des infos de base, mais un diagnostic approfondi est conseillé."
+          },
+          {
+            "q": "Est-il sûr de continuer à rouler avec le témoin allumé ?",
+            "a": "Pour de courts trajets prudents oui, mais évitez les longs trajets jusqu’à réparation du problème."
+          }
+        ],
+        "schemaTitle": "Témoin de Moteur Allumé Peugeot - Causes et Diagnostic",
+        "schemaDescription": "Guide expert des causes fréquentes, premiers contrôles et démarches de diagnostic pour le témoin moteur allumé sur Peugeot."
+      }
+    }
   }
 ]

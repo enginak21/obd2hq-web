@@ -848,5 +848,105 @@
       "es": "opel-astra-motor-tiembla-se-pare",
       "fr": "opel-astra-calage-moteur"
     }
+  },
+  {
+    "contentGroupId": "opel-astra-jerking",
+    "slugs": {
+      "en": "opel-astra-engine-jerking",
+      "tr": "opel-astra-silkeleme-nedenleri",
+      "de": "opel-astra-motor-ruckelt-probleme",
+      "es": "opel-astra-motor-tiembla-causas",
+      "fr": "opel-astra-secousses-moteur-causes"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-overheating",
+    "slugs": {
+      "en": "opel-astra-overheating",
+      "tr": "opel-astra-hararet-yapiyor",
+      "de": "opel-astra-uberhitzung",
+      "es": "opel-astra-se-sobrecalienta",
+      "fr": "opel-astra-surchauffe"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-fuel-smell",
+    "slugs": {
+      "en": "opel-astra-fuel-smell-causes-checks",
+      "tr": "opel-astra-benzin-kokusu-geliyor",
+      "de": "opel-astra-benzingeruch-ursachen-und-pruefung",
+      "es": "opel-astra-olor-a-combustible-causas-y-soluciones",
+      "fr": "opel-astra-odeur-essence-causes-controles"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-oil-smell",
+    "slugs": {
+      "en": "opel-astra-oil-smell-diagnosis",
+      "tr": "opel-astra-yanik-yag-kokusu-tespiti",
+      "de": "opel-astra-oelgeruch-erkennen",
+      "es": "opel-astra-olor-a-aceite-quemado",
+      "fr": "opel-astra-odeur-d-huile-brulee"
+    }
+  },
+  {
+    "contentGroupId": "opel-astra-transmission-slipping",
+    "slugs": {
+      "en": "opel-astra-transmission-slipping",
+      "tr": "opel-astra-vites-kaciriyor",
+      "de": "opel-astra-getriebe-rutscht",
+      "es": "opel-astra-vites-queda-suelto",
+      "fr": "opel-astra-pb-passage-vitesses"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-loss-of-power",
+    "slugs": {
+      "en": "peugeot-loss-of-power-causes-solutions",
+      "tr": "peugeot-gaz-yemiyor-nedenleri-ve-cozumleri",
+      "de": "peugeot-leistungsabfall-ursachen-loesungen",
+      "es": "peugeot-pierde-potencia-causas-soluciones",
+      "fr": "peugeot-perte-de-puissance-causes-solutions"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-engine-noise",
+    "slugs": {
+      "en": "peugeot-engine-noise-diagnosis",
+      "tr": "peugeot-motordan-ses-geliyor-tespit",
+      "de": "peugeot-motor-geraeusche-diagnose",
+      "es": "peugeot-motor-tiembla",
+      "fr": "bruit-moteur-peugeot-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-rough-idle",
+    "slugs": {
+      "en": "peugeot-rough-idle-causes-and-checks",
+      "tr": "peugeot-rolanti-dalgalanma-nedenleri-ve-tespitleri",
+      "de": "peugeot-unruhiger-leerlauf-ursachen-und-pruefung",
+      "es": "peugeot-motor-tiembla-en-relenti-causas-y-soluciones",
+      "fr": "peugeot-raletit-irregulier-causes-et-controles"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-engine-shaking",
+    "slugs": {
+      "en": "peugeot-engine-shaking",
+      "tr": "peugeot-titriyor",
+      "de": "peugeot-motor-vibriert",
+      "es": "peugeot-motor-tiembla-engine-shaking",
+      "fr": "peugeot-moteur-vibre"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-check-engine-light",
+    "slugs": {
+      "en": "peugeot-check-engine-light-causes",
+      "tr": "peugeot-motor-ariza-lambasi-yaniyor",
+      "de": "peugeot-motor-warnleuchte-gruende",
+      "es": "peugeot-luz-de-check-engine-encendida",
+      "fr": "peugeot-temoin-de-moteur-allume"
+    }
   }
 ]
