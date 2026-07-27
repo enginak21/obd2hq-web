@@ -1048,5 +1048,105 @@
       "es": "peugeot-vitesa-caida-posibles-causas-y-revision",
       "fr": "peugeot-passage-de-vitesses-glissant-causes-et-diagnostic"
     }
+  },
+  {
+    "contentGroupId": "toyota-corolla-loss-of-power",
+    "slugs": {
+      "en": "toyota-corolla-loss-of-power",
+      "tr": "toyota-corolla-guc-kaybi-nedenleri",
+      "de": "toyota-corolla-leistungsverlust",
+      "es": "toyota-corolla-perdida-poder",
+      "fr": "toyota-corolla-perte-puissance"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-engine-noise",
+    "slugs": {
+      "en": "toyota-corolla-engine-noise",
+      "tr": "toyota-corolla-motordan-ses-geliyor",
+      "de": "toyota-corolla-motorgeraeusch",
+      "es": "toyota-corolla-ruido-motor",
+      "fr": "toyota-corolla-bruit-moteur"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-rough-idle",
+    "slugs": {
+      "en": "toyota-corolla-rough-idle",
+      "tr": "toyota-corolla-rolanti-dalgalaniyor",
+      "de": "toyota-corolla-unstabile-leerlauf",
+      "es": "toyota-corolla-motor-tiembla-en-relenti",
+      "fr": "toyota-corolla-regime-instable-au-relenti"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-engine-shaking",
+    "slugs": {
+      "en": "toyota-corolla-engine-shaking",
+      "tr": "toyota-corolla-titriyor",
+      "de": "toyota-corolla-motor-vibriert",
+      "es": "toyota-corolla-motor-tiembla",
+      "fr": "toyota-corolla-moteur-vibre"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-check-engine-light",
+    "slugs": {
+      "en": "toyota-corolla-check-engine-light",
+      "tr": "toyota-corolla-motor-ariza-lambasi-yaniyor",
+      "de": "toyota-corolla-motor-warnleuchte-an",
+      "es": "toyota-corolla-luz-de-motor-enciende",
+      "fr": "toyota-corolla-temoin-moteur-allume"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-hard-start",
+    "slugs": {
+      "en": "toyota-corolla-hard-start",
+      "tr": "toyota-corolla-gec-calisma-sorunu",
+      "de": "toyota-corolla-schwerer-start",
+      "es": "toyota-corolla-motor-tiembla-dificultad-arranque",
+      "fr": "toyota-corolla-demarrage-difficile"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-black-smoke",
+    "slugs": {
+      "en": "toyota-corolla-black-smoke-causes",
+      "tr": "toyota-corolla-siyah-duman-atiyor",
+      "de": "toyota-corolla-schwarzer-rauch-probleme",
+      "es": "toyota-corolla-humo-negro-problemas",
+      "fr": "toyota-corolla-fumee-noire-causes"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-white-smoke",
+    "slugs": {
+      "en": "toyota-corolla-white-smoke-causes-and-diagnostics",
+      "tr": "toyota-corolla-beyaz-duman-atiyor",
+      "de": "toyota-corolla-weisser-rauch-ursachen-und-diagnose",
+      "es": "toyota-corolla-duda-blanca-causas-diagnostico",
+      "fr": "toyota-corolla-fumee-blanche-causes-diagnostic"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-poor-fuel-economy",
+    "slugs": {
+      "en": "toyota-corolla-poor-fuel-economy",
+      "tr": "toyota-corolla-cok-yakiyor",
+      "de": "toyota-corolla-hoher-kraftstoffverbrauch",
+      "es": "toyota-corolla-mucho-consumo-combustible",
+      "fr": "toyota-corolla-consommation-carburant-elevee"
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-stalling",
+    "slugs": {
+      "en": "toyota-corolla-stalling-causes-and-diagnostics",
+      "tr": "toyota-corolla-stop-ediyor-nedenleri-ve-tespit",
+      "de": "toyota-corolla-absterben-ursachen-und-diagnose",
+      "es": "toyota-corolla-motor-tiembla-stallo-causas",
+      "fr": "toyota-corolla-calage-causes-diagnostic"
+    }
   }
 ]

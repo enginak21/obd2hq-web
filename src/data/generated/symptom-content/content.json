@@ -36908,5 +36908,3515 @@
         "schemaDescription": "Guide complet sur les causes, diagnostics et conseils pour résoudre le patinage de vitesses sur Peugeot."
       }
     }
+  },
+  {
+    "contentGroupId": "toyota-corolla-loss-of-power",
+    "intentKey": "toyota-corolla_loss_of_power",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "loss_of_power",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "toyota-corolla-loss-of-power",
+        "title": "Toyota Corolla Loss of Power Diagnosis and Solutions",
+        "metaDescription": "Discover practical steps and common causes behind your Toyota Corolla losing power. Learn key checks before replacing parts.",
+        "intro": "Experiencing a loss of power in your Toyota Corolla can feel frustrating and unsafe. This common symptom may arise from numerous potential issues, making a thorough diagnostic approach essential. Before rushing to replace components, it's important to follow systematic steps to pinpoint the underlying cause and ensure proper repairs.",
+        "severity": "Moderate to severe impact on drivability; not recommended to drive long distances without diagnosis.",
+        "driveAdvice": "Avoid heavy acceleration and high speeds until the cause is identified. Drive cautiously or consider towing if the power loss is severe.",
+        "likelyCauses": [
+          "Clogged fuel filter restricting fuel flow",
+          "Faulty ignition coils causing misfires",
+          "Dirty or failing mass airflow sensor (MAF)",
+          "Weak or failing fuel pump",
+          "Exhaust restrictions like a clogged catalytic converter"
+        ],
+        "diagnosticSteps": [
+          "Check engine light scan for stored OBD2 codes",
+          "Inspect fuel pressure with gauge to verify pump/filter status",
+          "Test ignition coils and spark plugs for proper function",
+          "Clean or test the mass airflow sensor",
+          "Check for exhaust backpressure or clogged catalytic converter",
+          "Examine air intake for leaks or blockages"
+        ],
+        "firstChecks": [
+          "Visual inspection of spark plugs for wear or fouling",
+          "Check for vacuum leaks in intake hoses and connections",
+          "Scan OBD2 device for relevant trouble codes"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnostics",
+          "Ignoring minor OBD2 codes that indicate early issues",
+          "Overlooking fuel quality and contamination"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Misfire Diagnosis",
+            "href": "/en/toyota-corolla-misfire"
+          },
+          {
+            "label": "Reading OBD2 Codes Guide",
+            "href": "/en/obd2-codes-reading"
+          },
+          {
+            "label": "Fuel System Troubleshooting",
+            "href": "/en/fuel-system-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a clogged fuel filter cause loss of power?",
+            "a": "Yes, a clogged filter restricts fuel flow which can reduce engine power and cause hesitation."
+          },
+          {
+            "q": "How to check if the MAF sensor is faulty?",
+            "a": "Use a multimeter or scan tool to check sensor outputs, or try cleaning it carefully with MAF cleaner."
+          },
+          {
+            "q": "Is it safe to drive with loss of power?",
+            "a": "It’s better to drive gently and avoid high speeds, but if power loss is severe, consider professional inspection to prevent damage."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Loss of Power Diagnosis & Solutions",
+        "schemaDescription": "Troubleshoot and understand the causes behind Toyota Corolla power loss with expert guidance on checks, common causes, and diagnostic steps."
+      },
+      "tr": {
+        "slug": "toyota-corolla-guc-kaybi-nedenleri",
+        "title": "Toyota Corolla Gaz Yememe ve Güç Kaybı Sorunları",
+        "metaDescription": "Toyota Corolla'nuzun gaz yememesi ve güç kaybı nedenlerini keşfedin. Parça değiştirmeden önce yapılması gereken kontroller burada.",
+        "intro": "Toyota Corolla aracınızda yaşanan gaz yememe ve güç kaybı sorunları, sürüş güvenliğinizi olumsuz etkileyebilir. Bu durumun birçok farklı sebebi olabilir, bu yüzden teşhise başlamadan önce sistematik kontroller yapmak önemlidir. Yanlış parça değişimi yapmadan önce temel adımları takip etmek hem zaman hem de maliyetten tasarruf sağlar.",
+        "severity": "Sürüş performansını önemli ölçüde etkiler; uzun mesafe sürüşlerde dikkatli olunmalı.",
+        "driveAdvice": "Gücü azalmış araçla ani hızlanmalardan kaçının. Eğer güç kaybı yoğunsa çekici ile taşımak güvenlidir.",
+        "likelyCauses": [
+          "Kirlenmiş veya tıkanmış yakıt filtresi",
+          "Arızalı ateşleme bobinleri",
+          "Kirlenmiş ya da arızalı kütle hava akış sensörü (MAF)",
+          "Zayıf veya arızalı yakıt pompası",
+          "Egzoz sisteminde katalizör tıkanması"
+        ],
+        "diagnosticSteps": [
+          "Arıza tespit cihazıyla OBD2 kodlarını kontrol edin",
+          "Yakıt basıncını ölçerek pompa ve filtresinin durumunu değerlendirin",
+          "Ateşleme bobinleri ve bujuları test edin",
+          "MAF sensörünü temizleyin ve/veya test edin",
+          "Egzoz geri basıncını ve katalizör tıkanıklığını kontrol edin",
+          "Hava emiş sisteminde kaçak veya tıkanma olup olmadığını inceleyin"
+        ],
+        "firstChecks": [
+          "Bujuları aşınma veya kirlenme açısından kontrol edin",
+          "Potansiyel vakum kaçakları için hava hortumlarını inceleyin",
+          "OBD2 cihazıyla olası hata kodlarını okuyun"
+        ],
+        "commonMistakes": [
+          "Tanı koymadan parça değiştirme",
+          "Erken uyarı kodlarını göz ardı etmek",
+          "Yakıt kalitesi ve kirliliğini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele/Çoklu Silindir Ateşleme Sorunu",
+          "P0171 - Yakıt Sistemi Çok Zengin veya Çok Fakir (Bank 1)",
+          "P0420 - Katalizör Verim Düşüklüğü"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Ateşleme Sorunları",
+            "href": "/tr/toyota-corolla-atesleme-sorunlari"
+          },
+          {
+            "label": "OBD2 Arıza Kodları Okuma Rehberi",
+            "href": "/tr/obd2-kodlari-okuma"
+          },
+          {
+            "label": "Yakıt Sistemi Arıza Tespiti",
+            "href": "/tr/yakit-sistemi-ariza-tespiti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Tıkanmış yakıt filtresi güç kaybına neden olur mu?",
+            "a": "Evet, yakıt akışını kısıtlar ve performans düşüklüğüne sebep olur."
+          },
+          {
+            "q": "MAF sensörünü nasıl kontrol ederim?",
+            "a": "Multimetre veya scan tool ile sensör çıkışlarını ölçebilir veya temizleyebilirsiniz."
+          },
+          {
+            "q": "Güç kaybıyla araç kullanmak güvenli midir?",
+            "a": "Hafif kullanımlarda dikkatli sürüş önerilir, ancak şiddetli güç kaybında profesyonel kontrol şarttır."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Gaz Yememe ve Güç Kaybı Sorunları",
+        "schemaDescription": "Toyota Corolla’nuzda gaz yememe ve güç kaybının nedenlerini tanımlayın, nasıl kontrol edeceğinizi öğrenin."
+      },
+      "de": {
+        "slug": "toyota-corolla-leistungsverlust",
+        "title": "Toyota Corolla Leistungsverlust: Ursachen und Diagnose",
+        "metaDescription": "Praktische Ursachen und Diagnosetipps bei Leistungsverlust im Toyota Corolla. Wichtige Checks vor dem Teilewechsel.",
+        "intro": "Ein Leistungsverlust bei Ihrem Toyota Corolla beeinträchtigt die Fahrsicherheit und kann vielfältige Ursachen haben. Um unnötige Reparaturen zu vermeiden, sollten vor dem Austausch von Bauteilen gezielte Diagnoseschritte durchgeführt werden. Dieser Leitfaden hilft Ihnen, die häufigsten Ursachen einzuschätzen und erste Kontrollen durchzuführen.",
+        "severity": "Kann die Fahrbarkeit stark einschränken; längere Fahrten ohne Diagnose nicht zu empfehlen.",
+        "driveAdvice": "Vermeiden Sie starke Beschleunigungen und hohe Geschwindigkeiten. Bei starkem Leistungsverlust empfehlen wir eine Werkstatt aufsuchen oder Abschleppen.",
+        "likelyCauses": [
+          "Verstopfter Kraftstofffilter",
+          "Defekte Zündspulen",
+          "Verschmutzter oder defekter Luftmassenmesser (MAF)",
+          "Schwache oder defekte Kraftstoffpumpe",
+          "Abgasrückstau durch verstopften Katalysator"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der Fehlerspeicher mit OBD2-Scanner",
+          "Kraftstoffdruck messen, Filter und Pumpe prüfen",
+          "Zündspulen und Zündkerzen kontrollieren",
+          "Luftmassenmesser reinigen oder testen",
+          "Abgasrückstau bzw. Katalysator prüfen",
+          "Ansaugluftsystem auf Lecks und Verstopfungen überprüfen"
+        ],
+        "firstChecks": [
+          "Sichtprüfung der Zündkerzen auf Abnutzung oder Verschmutzung",
+          "Ansaugluftschläuche auf Undichtigkeiten prüfen",
+          "OBD2-Codes auslesen"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose ersetzen",
+          "Fehlercodes ignorieren",
+          "Kraftstoffqualität vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zündaussetzer erkannt",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem unter Effizienzgrenze"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Zündungsprobleme",
+            "href": "/de/toyota-corolla-zuendungsprobleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes lesen",
+            "href": "/de/obd2-fehlercodes"
+          },
+          {
+            "label": "Kraftstoffsystem Diagnostik",
+            "href": "/de/kraftstoffsystem-diagnostik"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ein verstopfter Kraftstofffilter Leistungsverlust verursachen?",
+            "a": "Ja, ein verstopfter Filter reduziert den Kraftstofffluss und mindert die Leistung."
+          },
+          {
+            "q": "Wie teste ich den Luftmassenmesser?",
+            "a": "Mit einem Multimeter oder OBD2-Tester die Sensorwerte prüfen oder den Sensor reinigen."
+          },
+          {
+            "q": "Ist es sicher mit Leistungsverlust zu fahren?",
+            "a": "Bei starkem Leistungsverlust sollte das Fahren vermieden und eine Werkstatt aufgesucht werden."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Leistungsverlust Ursachen & Diagnose",
+        "schemaDescription": "Leistungsverlust am Toyota Corolla erkennen, Ursachen verstehen und systematisch diagnostizieren."
+      },
+      "es": {
+        "slug": "toyota-corolla-perdida-poder",
+        "title": "Toyota Corolla Pérdida de Potencia: Diagnóstico y Soluciones",
+        "metaDescription": "Identifica causas comunes y pasos prácticos para diagnosticar pérdida de potencia en tu Toyota Corolla antes de cambiar piezas.",
+        "intro": "La pérdida de potencia en un Toyota Corolla es un problema común que puede tener múltiples causas, afectando la seguridad y el rendimiento. Es importante realizar inspecciones cuidadosas antes de reemplazar componentes para evitar costos innecesarios y detectar el problema real.",
+        "severity": "Impacto moderado a severo en la conducción, no recomendable manejar largas distancias sin diagnóstico.",
+        "driveAdvice": "Evita aceleraciones fuertes y velocidades altas. Si la pérdida de potencia es grave, considera llevar el vehículo al taller o usar grúa.",
+        "likelyCauses": [
+          "Filtro de combustible obstruido",
+          "Bobinas de encendido defectuosas",
+          "Sensor de flujo de masa de aire (MAF) sucio o dañado",
+          "Bomba de combustible débil o averiada",
+          "Restricción en el escape, como catalizador tapado"
+        ],
+        "diagnosticSteps": [
+          "Leer los códigos de error con un escáner OBD2",
+          "Medir presión de combustible para evaluar bomba y filtro",
+          "Probar bobinas de encendido y bujías",
+          "Limpiar o probar el sensor MAF",
+          "Verificar presión en sistema de escape y catalizador",
+          "Inspeccionar admisión de aire para fugas o bloqueos"
+        ],
+        "firstChecks": [
+          "Revisar visualmente bujías por desgaste o suciedad",
+          "Buscar fugas de vacío en mangueras de admisión",
+          "Escanear códigos OBD2 relacionados"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnóstico previo",
+          "Ignorar códigos de error tempranos",
+          "Desestimar la calidad del combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallos de encendido aleatorios o múltiples",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico de fallos de encendido Toyota Corolla",
+            "href": "/es/toyota-corolla-fallos-encendido"
+          },
+          {
+            "label": "Guía para leer códigos OBD2",
+            "href": "/es/leer-codigos-obd2"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede un filtro de combustible tapado causar pérdida de potencia?",
+            "a": "Sí, al restringir el flujo de combustible disminuye la potencia del motor."
+          },
+          {
+            "q": "¿Cómo se verifica si el sensor MAF está dañado?",
+            "a": "Con un multímetro o escáner se pueden revisar sus señales, también se puede limpiar con limpiador específico."
+          },
+          {
+            "q": "¿Es seguro conducir con pérdida de potencia?",
+            "a": "Se recomienda conducir con precaución y evitar altas velocidades; si es muy grave, acudir al taller."
+          }
+        ],
+        "schemaTitle": "Pérdida de Potencia en Toyota Corolla: Diagnóstico y Causas",
+        "schemaDescription": "Aprende a diagnosticar las causas de la pérdida de potencia en Toyota Corolla y cómo realizar revisiones previas al cambio de piezas."
+      },
+      "fr": {
+        "slug": "toyota-corolla-perte-puissance",
+        "title": "Toyota Corolla Perte de Puissance : Diagnostic et Solutions",
+        "metaDescription": "Explorez les causes possibles de perte de puissance sur Toyota Corolla et découvrez les vérifications avant remplacement des pièces.",
+        "intro": "Une perte de puissance sur votre Toyota Corolla peut être source d’inquiétude et de risque au volant. Ce symptôme a de nombreuses origines potentielles qui nécessitent un diagnostic rigoureux. Avant de remplacer des composants coûteux, il est conseillé d’effectuer des contrôles simples pour identifier la cause réelle.",
+        "severity": "Impact modéré à sévère sur la conduite, à éviter sur longues distances sans diagnostic.",
+        "driveAdvice": "Évitez les accélérations brusques et les vitesses élevées. En cas de perte de puissance importante, privilégiez un remorquage vers un garage.",
+        "likelyCauses": [
+          "Filtre à carburant encrassé",
+          "Bobines d’allumage défectueuses",
+          "Capteur de masse d’air (MAF) encrassé ou hors service",
+          "Pompe à carburant faible ou défaillante",
+          "Restriction dans l’échappement due à un catalyseur bouché"
+        ],
+        "diagnosticSteps": [
+          "Lecture des codes défauts avec un outil OBD2",
+          "Mesure de la pression carburant pour évaluer pompe et filtre",
+          "Test des bobines d’allumage et des bougies",
+          "Nettoyage ou test du capteur MAF",
+          "Contrôle du contre-pression dans l’échappement et catalyseur",
+          "Inspection du système d’admission pour fuites ou blocages"
+        ],
+        "firstChecks": [
+          "Inspection visuelle des bougies pour usure ou encrassement",
+          "Rechercher des fuites dans les durites d’admission",
+          "Scanner les codes défauts OBD2"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Ignorer les codes défauts mineurs",
+          "Négliger la qualité du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples",
+          "P0171 - Système trop pauvre (banque 1)",
+          "P0420 - Efficacité catalyseur sous seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostic allumage Toyota Corolla",
+            "href": "/fr/toyota-corolla-diagnostic-allumage"
+          },
+          {
+            "label": "Lecture des codes OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          },
+          {
+            "label": "Diagnostic système carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Un filtre à carburant bouché peut-il causer une perte de puissance ?",
+            "a": "Oui, cela limite le débit de carburant et peut réduire significativement les performances moteur."
+          },
+          {
+            "q": "Comment tester un capteur MAF défectueux ?",
+            "a": "Avec un multimètre ou un outil de diagnostic OBD2, ou en nettoyant le capteur soigneusement."
+          },
+          {
+            "q": "Est-il sûr de conduire en cas de perte de puissance ?",
+            "a": "Il vaut mieux éviter les accélérations fortes. En cas de perte importante, faites vérifier rapidement le véhicule."
+          }
+        ],
+        "schemaTitle": "Perte de Puissance Toyota Corolla : Causes & Diagnostic",
+        "schemaDescription": "Identifiez et diagnostiquez efficacement la perte de puissance de votre Toyota Corolla grâce à nos conseils experts en vérifications et diagnostics."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-engine-noise",
+    "intentKey": "toyota-corolla_engine_noise",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "engine_noise",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-motordan-ses-geliyor",
+        "title": "Toyota Corolla Motordan Ses Geliyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Toyota Corolla motordan ses geliyor. Olası nedenler, ilk kontroller ve doğru teşhis için ipuçlarıyla motorunuzun durumunu değerlendirin.",
+        "intro": "Toyota Corolla’nız motordan alışılmadık bir ses geliyorsa, bunun birçok nedeni olabilir. Ani veya sürekli motor sesleri, aracınızın performansını etkileyebilir. Parça değiştirmeden önce, motor yağ seviyesinden başlayarak farklı kontroller yapmalı ve doğru teşhis için adımları takip etmelisiniz.",
+        "severity": "Orta dereceli motor sorunu, ihmal edilmemeli.",
+        "driveAdvice": "Motor sesliyken uzun sürüşlerden kaçının, gerekirse servise başvurun.",
+        "likelyCauses": [
+          "Düşük veya kirli motor yağı",
+          "Aşınmış veya gevşek kayışlar",
+          "Egzoz sistemi kaçakları",
+          "Arızalı buji veya ateşleme sistemi",
+          "Motor yataklarında aşınma"
+        ],
+        "diagnosticSteps": [
+          "Motor yağı seviyesini ve kalitesini kontrol edin.",
+          "Motor kayışlarını gözle kontrol edin, olağan dışı gevşeklik veya çatlak var mı bakın.",
+          "Egzozdan gelen ses değişikliklerini dinleyin.",
+          "Buji ve ateşleme sistemini test edin.",
+          "Motor soğukken kapakları açarak kapak altı yağ ve kir durumunu inceleyin.",
+          "OBD2 cihazı ile motor kodlarını okuyun."
+        ],
+        "firstChecks": [
+          "Motor yağ seviyesi ve rengi",
+          "Kayışlarda çatlak veya gevşeklik",
+          "Motor soğutma sıvısı durumu"
+        ],
+        "commonMistakes": [
+          "Motor sesi duyunca hemen parça değiştirmek",
+          "Yağ değişimini ihmal etmek",
+          "Egzoz sızıntılarını göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0300 (Düzensiz Ateşleme)",
+          "P0171 (Yakıt Sistemi Zenginleşme)",
+          "P0455 (Buhar Kaçağı)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Hataları",
+            "href": "/tr/toyota-corolla-obd2-hatalari"
+          },
+          {
+            "label": "Motor Yağı Seviyesi Nasıl Kontrol Edilir",
+            "href": "/tr/motor-yagi-seviyesi-kontrol"
+          },
+          {
+            "label": "Araç Sesleri ve Anlamları",
+            "href": "/tr/arac-sesleri-ve-anlamlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla motordan gelen sese ne neden olabilir?",
+            "a": "Birçok sebep olabilir; motor yağı eksikliği, kayış problemleri veya ateşleme sorunları en yaygın olanlardır."
+          },
+          {
+            "q": "Motordan ses gelirse hemen parça değiştirmeli miyim?",
+            "a": "Hayır, öncelikle temel kontroller yapmalı ve doğru tanı koymalısınız."
+          },
+          {
+            "q": "OBD2 cihazı motordaki ses sorunlarını nasıl tespit eder?",
+            "a": "Araçtan alınan hata kodları ile ateşleme, yakıt sistemi ve diğer sensör verilerindeki problemleri gösterir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motordan Ses Geliyor - Nedenler ve Teşhis",
+        "schemaDescription": "Toyota Corolla motordan gelen sesin olası nedenleri, yapılacak kontroller ve OBD2 arıza kodları hakkında detaylı rehber."
+      },
+      "en": {
+        "slug": "toyota-corolla-engine-noise",
+        "title": "Toyota Corolla Engine Noise: Common Causes and Diagnostic Tips",
+        "metaDescription": "Learn practical steps to diagnose and understand engine noise in your Toyota Corolla. Avoid premature replacements with expert checks and tips.",
+        "intro": "If your Toyota Corolla is producing unusual engine noises, there can be several potential causes to consider. Engine noises can affect performance and may indicate underlying issues. Before replacing parts, perform essential checks such as oil level inspection and use an OBD2 scanner for an accurate diagnosis.",
+        "severity": "Moderate engine concern; timely attention is advised.",
+        "driveAdvice": "Avoid prolonged driving with engine noise; have your vehicle inspected promptly.",
+        "likelyCauses": [
+          "Low or dirty engine oil",
+          "Worn or loose belts",
+          "Exhaust leaks",
+          "Faulty spark plugs or ignition system",
+          "Worn engine bearings"
+        ],
+        "diagnosticSteps": [
+          "Check engine oil level and condition.",
+          "Inspect belts for cracking or looseness.",
+          "Listen for unusual exhaust noises.",
+          "Test spark plugs and ignition components.",
+          "Examine underneath valve cover for sludge or damage.",
+          "Scan OBD2 codes for fault indications."
+        ],
+        "firstChecks": [
+          "Engine oil quantity and quality",
+          "Condition of drive belts",
+          "Coolant fluid level"
+        ],
+        "commonMistakes": [
+          "Immediately replacing parts without diagnosis",
+          "Neglecting oil changes",
+          "Ignoring exhaust leaks"
+        ],
+        "relatedCodes": [
+          "P0300 (Random Misfire Detected)",
+          "P0171 (System Too Lean)",
+          "P0455 (Evaporative Emission Leak Detected)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Troubleshooting",
+            "href": "/en/toyota-corolla-obd2-troubleshooting"
+          },
+          {
+            "label": "How to Check Engine Oil Level",
+            "href": "/en/check-engine-oil-level"
+          },
+          {
+            "label": "Understanding Car Engine Noises",
+            "href": "/en/understanding-car-engine-noises"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes engine noise in a Toyota Corolla?",
+            "a": "Common causes include low oil, loose belts, ignition issues, or exhaust leaks, among others."
+          },
+          {
+            "q": "Should I replace parts immediately when I hear engine noise?",
+            "a": "No, it’s important to perform basic checks and diagnostics before replacing any components."
+          },
+          {
+            "q": "How can an OBD2 scanner help with diagnosing engine noise?",
+            "a": "It reads fault codes related to ignition, fuel system, and sensors that might point to the noise’s cause."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Engine Noise Diagnosis and Causes",
+        "schemaDescription": "Detailed guide on potential causes, diagnostic steps, and OBD2 codes related to engine noise in Toyota Corolla vehicles."
+      },
+      "de": {
+        "slug": "toyota-corolla-motorgeraeusch",
+        "title": "Toyota Corolla Motorgeräusche: Ursachen und Diagnosetipps",
+        "metaDescription": "Erfahren Sie, wie Sie Motorgeräusche beim Toyota Corolla erkennen und diagnostizieren. Vermeiden Sie unnötigen Teilewechsel durch praktische Tipps.",
+        "intro": "Wenn Ihr Toyota Corolla ungewöhnliche Motorgeräusche macht, kann dies verschiedene Ursachen haben. Solche Geräusche können die Leistung beeinträchtigen und auf Probleme hinweisen. Bevor Sie Teile austauschen, sollten Sie grundlegende Prüfungen wie den Ölstand kontrollieren und eine OBD2-Diagnose durchführen.",
+        "severity": "Mittelschweres Motorproblem, sollte zeitnah überprüft werden.",
+        "driveAdvice": "Längeres Fahren bei Motorgeräuschen vermeiden und zeitnah eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Motorölstand",
+          "Abgenutzte oder lockere Riemen",
+          "Auspufflecks",
+          "Defekte Zündkerzen oder Zündsystem",
+          "Verschlissene Motorlager"
+        ],
+        "diagnosticSteps": [
+          "Motorölstand und Qualität prüfen.",
+          "Riemen auf Risse oder Lockerheit kontrollieren.",
+          "Ungewöhnliche Auspuffgeräusche erkennen.",
+          "Zündkerzen und Zündanlage testen.",
+          "Über Ventildeckel auf Ablagerungen prüfen.",
+          "OBD2-Codes auslesen."
+        ],
+        "firstChecks": [
+          "Motorölmenge und -zustand",
+          "Zustand der Antriebsriemen",
+          "Kühlmittelstand"
+        ],
+        "commonMistakes": [
+          "Teile sofort ohne Diagnose austauschen",
+          "Ölwechsel vernachlässigen",
+          "Auspufflecks ignorieren"
+        ],
+        "relatedCodes": [
+          "P0300 (Zufälliger Fehlzündungsfehler)",
+          "P0171 (System zu mager)",
+          "P0455 (Großes Leck im Verdunstungssystem)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Fehlercodes",
+            "href": "/de/toyota-corolla-obd2-fehlercodes"
+          },
+          {
+            "label": "Ölstand prüfen: Schritt für Schritt",
+            "href": "/de/oelstand-pruefen"
+          },
+          {
+            "label": "Motorgeräusche verstehen",
+            "href": "/de/motorgeraeusche-verstehen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wodurch entstehen Motorgeräusche beim Toyota Corolla?",
+            "a": "Häufige Ursachen sind niedriger Ölstand, lockere Riemen, Zündprobleme oder Auspufflecks."
+          },
+          {
+            "q": "Sollte ich bei Motorgeräuschen direkt Teile austauschen?",
+            "a": "Nein, zuerst grundsätzliche Prüfungen und eine Diagnose durchführen."
+          },
+          {
+            "q": "Wie hilft ein OBD2-Scanner bei Motorgeräuschen?",
+            "a": "Er zeigt Fehlerspeicher-Codes aus Zünd-, Kraftstoff- und Sensorsystemen an."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motorgeräusche: Ursachen und Diagnose",
+        "schemaDescription": "Umfassender Leitfaden zu Ursachen, Diagnoseschritten und OBD2-Codes bei Motorgeräuschen im Toyota Corolla."
+      },
+      "es": {
+        "slug": "toyota-corolla-ruido-motor",
+        "title": "Ruido en el Motor del Toyota Corolla: Causas y Cómo Diagnosticarlo",
+        "metaDescription": "Descubre las causas comunes del ruido en el motor del Toyota Corolla y cómo realizar revisiones prácticas antes de reemplazar piezas.",
+        "intro": "Si tu Toyota Corolla presenta ruidos extraños en el motor, puede deberse a diversas causas. Estos sonidos pueden afectar el rendimiento y señalar problemas internos. Es fundamental realizar revisiones básicas, como el nivel de aceite y escaneo OBD2, antes de tomar decisiones sobre reemplazos.",
+        "severity": "Problema moderado en el motor que requiere atención oportuna.",
+        "driveAdvice": "Evita conducir por largos periodos con ruidos en el motor y consulta un taller lo antes posible.",
+        "likelyCauses": [
+          "Aceite de motor bajo o sucio",
+          "Correas desgastadas o flojas",
+          "Fugas en el sistema de escape",
+          "Bujías o sistema de encendido defectuosos",
+          "Rodamientos del motor gastados"
+        ],
+        "diagnosticSteps": [
+          "Verificar nivel y estado del aceite de motor.",
+          "Inspeccionar correas por grietas o flojedad.",
+          "Escuchar cambios en el ruido del escape.",
+          "Probar bujías y componentes de encendido.",
+          "Revisar debajo de la tapa de válvulas por suciedad o daños.",
+          "Leer códigos de diagnóstico OBD2."
+        ],
+        "firstChecks": [
+          "Cantidad y calidad del aceite",
+          "Estado de las correas",
+          "Nivel del líquido refrigerante"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin un diagnóstico previo",
+          "Ignorar cambios de aceite",
+          "Pasar por alto fugas en el escape"
+        ],
+        "relatedCodes": [
+          "P0300 (Fallo de encendido aleatorio)",
+          "P0171 (Sistema demasiado pobre)",
+          "P0455 (Fuga en el sistema de evaporación)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 Toyota Corolla",
+            "href": "/es/codigos-obd2-toyota-corolla"
+          },
+          {
+            "label": "Cómo revisar nivel de aceite",
+            "href": "/es/como-revisar-nivel-aceite"
+          },
+          {
+            "label": "Ruido en el motor: causas comunes",
+            "href": "/es/ruido-en-el-motor-causas"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué hace ruido el motor de mi Toyota Corolla?",
+            "a": "Puede ser por aceite bajo, correas flojas, problemas en el encendido o fugas de escape."
+          },
+          {
+            "q": "¿Debo cambiar piezas inmediatamente si escucho ruido en el motor?",
+            "a": "No, primero realiza revisiones básicas y diagnóstico para identificar la causa."
+          },
+          {
+            "q": "¿Cómo ayuda un escáner OBD2 con los ruidos del motor?",
+            "a": "Detecta códigos de falla en el sistema de encendido, combustible y sensores relacionados."
+          }
+        ],
+        "schemaTitle": "Ruido en el motor del Toyota Corolla: diagnóstico y causas",
+        "schemaDescription": "Guía detallada sobre posibles causas, pasos de diagnóstico y códigos OBD2 relacionados con ruidos en el motor del Toyota Corolla."
+      },
+      "fr": {
+        "slug": "toyota-corolla-bruit-moteur",
+        "title": "Bruit au Moteur Toyota Corolla : Causes Courantes et Diagnostic",
+        "metaDescription": "Comprenez les causes possibles du bruit moteur sur Toyota Corolla et apprenez à effectuer des contrôles pratiques avant tout remplacement.",
+        "intro": "Un bruit inhabituel provenant du moteur de votre Toyota Corolla peut avoir plusieurs origines. Ces bruits peuvent affecter les performances et signaler des problèmes mécaniques. Avant de remplacer des pièces, il est conseillé de vérifier le niveau d’huile, les courroies, et d’utiliser un outil OBD2 pour un diagnostic précis.",
+        "severity": "Problème moteur modéré, nécessite une attention rapide.",
+        "driveAdvice": "Évitez les longs trajets avec un bruit moteur et consultez un professionnel rapidement.",
+        "likelyCauses": [
+          "Niveau d’huile moteur bas ou huile sale",
+          "Courroies usées ou détendues",
+          "Fuites dans le système d’échappement",
+          "Bougies ou système d’allumage défectueux",
+          "Paliers moteur usés"
+        ],
+        "diagnosticSteps": [
+          "Contrôler le niveau et l’état de l’huile moteur.",
+          "Vérifier les courroies pour fissures ou relâchements.",
+          "Écouter les bruits d’échappement inhabituels.",
+          "Tester les bougies et l’allumage.",
+          "Inspecter sous le couvre-culasse pour dépôts ou dommages.",
+          "Lire les codes d’erreur via un outil OBD2."
+        ],
+        "firstChecks": [
+          "Quantité et qualité de l’huile moteur",
+          "État des courroies",
+          "Niveau du liquide de refroidissement"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Négliger les vidanges d’huile",
+          "Ignorer les fuites d’échappement"
+        ],
+        "relatedCodes": [
+          "P0300 (Ratés d’allumage aléatoires)",
+          "P0171 (Système trop pauvre)",
+          "P0455 (Fuite importante du système d’évaporation)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Toyota Corolla",
+            "href": "/fr/codes-obd2-toyota-corolla"
+          },
+          {
+            "label": "Comment vérifier le niveau d’huile moteur",
+            "href": "/fr/verifier-niveau-huile-moteur"
+          },
+          {
+            "label": "Comprendre les bruits moteur",
+            "href": "/fr/comprendre-bruits-moteur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes possibles d’un bruit moteur sur Toyota Corolla ?",
+            "a": "Les causes fréquentes incluent un faible niveau d’huile, des courroies détendues, des problèmes d’allumage ou des fuites d’échappement."
+          },
+          {
+            "q": "Dois-je remplacer les pièces immédiatement si j’entends un bruit moteur ?",
+            "a": "Non, il est conseillé de réaliser des vérifications et un diagnostic avant tout remplacement."
+          },
+          {
+            "q": "Comment un scanner OBD2 peut-il aider à diagnostiquer un bruit moteur ?",
+            "a": "Il permet de lire les codes d’erreur liés à l’allumage, au carburant et aux capteurs, facilitant ainsi l’identification du problème."
+          }
+        ],
+        "schemaTitle": "Bruit moteur Toyota Corolla : causes et diagnostic complet",
+        "schemaDescription": "Guide complet des causes potentielles, étapes de diagnostic et codes OBD2 associés aux bruits moteur sur Toyota Corolla."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-rough-idle",
+    "intentKey": "toyota-corolla_rough_idle",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "rough_idle",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-rolanti-dalgalaniyor",
+        "title": "Toyota Corolla Rölanti Dalgalanıyor Sorunları ve Çözümleri",
+        "metaDescription": "Toyota Corolla’da rölanti dalgalanması neden olur? Pratik kontroller, olası sebepler ve OBD2 kodlarıyla sorunu teşhis edin.",
+        "intro": "Toyota Corolla araçlarınızda rölanti dalgalanması sık karşılaşılan sorunlar arasında yer alır. Bu durum, motorun sabit hızda çalışmaması ve dalgalı seyretmesiyle kendini gösterir. Rölanti dalgalanmasına birçok farklı neden yol açabilir. Öncelikle basit kontrollerle başlamak ve parçaları gereksiz değiştirmemek önemlidir.",
+        "severity": "Rölanti dalgalanması, motorun performansını etkileyebilir ve yakıt verimliliğini düşürebilir. Sürekli devam ederse motor hasar riski artar.",
+        "driveAdvice": "Aracı önemli yolculuklar için kullanmadan önce kontrol ettirin. Ani durmalar ve zor çalıştırma yaşanabilir.",
+        "likelyCauses": [
+          "Kirli veya tıkalı rölanti hava kontrol valfi (IAC)",
+          "Yakıt enjeksiyon sisteminde sorunlar",
+          "Bozuk kıvılcım bobini veya buji problemleri",
+          "Hava kaçakları (vakum kaçakları)",
+          "Kirli veya arızalı kütle hava akış sensörü (MAF)"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile aracın arıza kodlarını kontrol edin",
+          "İlk olarak hava emiş sistemi ve vakum hatlarında kaçak araştırması yapın",
+          "Rölanti hava kontrol valfini temizleyin ve test edin",
+          "Buji ve ateşleme sistemlerini kontrol edin",
+          "Yakıt enjektörlerini test ederek püskürtme performansını değerlendirin",
+          "Kütle hava akış sensörünü temizleyin veya test edin"
+        ],
+        "firstChecks": [
+          "Hava emiş hortumlarını gevşeklik ve çatlaklar için kontrol edin",
+          "Rölanti hava kontrol valfi üstü karbon temizliği yapın",
+          "Akünün voltajını ve şarj durumunu değerlendirin"
+        ],
+        "commonMistakes": [
+          "Önce parçaları değiştirmeye çalışmak yerine teşhis yapmamak",
+          "Hava kaçaklarını ihmal ederek doğrudan yakıt sistemine odaklanmak",
+          "Temizlik ve görsel kontrolleri atlamak"
+        ],
+        "relatedCodes": [
+          "P0505 - Rölanti Hız Kontrol Sistemi Arızası",
+          "P0300 - Silindir Ateşleme Arızası",
+          "P0171 - Yakıt Sisteminde Düşük Yakıt Basıncı"
+        ],
+        "internalLinks": [
+          {
+            "label": "Rölanti Hızı Problemleri Teşhis Rehberi",
+            "href": "/tr/rolanti-hizi-problemleri-teshis"
+          },
+          {
+            "label": "Toyota Corolla Ateşleme Sistemi Sorunları",
+            "href": "/tr/toyota-corolla-atesleme-sistemi"
+          },
+          {
+            "label": "MAF Sensörü Temizleme ve Test Önerileri",
+            "href": "/tr/maf-sensoru-temizleme-test"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla rölanti dalgalanmasının en yaygın nedeni nedir?",
+            "a": "Genellikle hava kaçakları veya rölanti hava kontrol valfi problemi dalgalanmaya yol açar. Ancak kesin teşhis OBD2 cihazı ile yapılmalıdır."
+          },
+          {
+            "q": "Rölanti dalgalanması için hangi parçaları ilk önce kontrol etmeliyim?",
+            "a": "Hava emiş sistemi, vakum hortumları ve rölanti hava kontrol valfi gibi parçalar öncelikle kontrol edilmelidir."
+          },
+          {
+            "q": "Arıza kodsuz rölanti dalgalanması olur mu?",
+            "a": "Evet, elektronik arıza kodu vermeyen mekanik veya vakum kaynaklı sorunlar da rölanti dalgalanmasına neden olabilir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Rölanti Dalgalanıyor – Olası Sebepler ve Teşhis",
+        "schemaDescription": "Toyota Corolla'da rölanti dalgalanması sorunlarının nedenleri, teşhis yöntemleri ve çözüm önerileri. OBD2 kodları ve uygulamalı kontroller ile ayrıntılı rehber."
+      },
+      "en": {
+        "slug": "toyota-corolla-rough-idle",
+        "title": "Toyota Corolla Rough Idle Causes and Diagnostic Tips",
+        "metaDescription": "Explore common causes and practical diagnostic tips for rough idle issues in Toyota Corolla. Learn checks before replacing parts.",
+        "intro": "Experiencing a rough idle with your Toyota Corolla is a fairly common issue that can stem from various underlying causes. A rough idle means the engine fluctuates or shakes instead of running smoothly at rest. Before replacing components, conducting practical and systematic diagnostics helps avoid unnecessary repairs and costs.",
+        "severity": "A rough idle can affect your engine's performance and fuel efficiency. Ignoring persistent rough idling can lead to more serious engine problems.",
+        "driveAdvice": "Avoid long or critical trips until the issue is diagnosed and addressed, as unstable idle can cause stalling or difficult restarts.",
+        "likelyCauses": [
+          "Dirty or faulty idle air control valve (IAC)",
+          "Fuel injection system issues",
+          "Ignition coil or spark plug problems",
+          "Vacuum leaks in the intake system",
+          "Dirty or malfunctioning mass air flow (MAF) sensor"
+        ],
+        "diagnosticSteps": [
+          "Scan vehicle with an OBD2 scanner for trouble codes",
+          "Check intake system and vacuum lines for leaks",
+          "Clean and test the idle air control valve",
+          "Inspect ignition components including spark plugs and coils",
+          "Evaluate fuel injector performance",
+          "Clean or test the mass air flow sensor"
+        ],
+        "firstChecks": [
+          "Inspect air intake hoses for cracks or looseness",
+          "Clean carbon buildup on the idle air control valve",
+          "Check battery voltage and charging system"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnostics",
+          "Ignoring vacuum leaks and focusing only on fuel system",
+          "Skipping cleaning and visual inspections"
+        ],
+        "relatedCodes": [
+          "P0505 - Idle Control System Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Idle Speed Issues Diagnostic Guide",
+            "href": "/en/idle-speed-issues-diagnostic-guide"
+          },
+          {
+            "label": "Toyota Corolla Ignition System Problems",
+            "href": "/en/toyota-corolla-ignition-system-problems"
+          },
+          {
+            "label": "Mass Air Flow Sensor Cleaning Tips",
+            "href": "/en/mass-air-flow-sensor-cleaning-tips"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are the common causes of rough idle in a Toyota Corolla?",
+            "a": "Common causes include vacuum leaks, faulty idle air control valves, ignition issues, and dirty sensors. Proper diagnosis is essential."
+          },
+          {
+            "q": "Which parts should be checked first for rough idle?",
+            "a": "Start with the air intake system, vacuum lines, and idle air control valve to identify any obvious faults."
+          },
+          {
+            "q": "Can rough idle occur without any trouble codes?",
+            "a": "Yes, some mechanical or vacuum leak issues might not trigger OBD2 codes but still cause rough idle."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Rough Idle Causes and Diagnostics",
+        "schemaDescription": "Detailed guide on causes, diagnostics, and fixes for Toyota Corolla rough idle problems, including OBD2 codes and practical checks."
+      },
+      "de": {
+        "slug": "toyota-corolla-unstabile-leerlauf",
+        "title": "Toyota Corolla Ruckelnder Leerlauf – Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie häufige Ursachen und praktische Diagnosehinweise für ruckelnden Leerlauf beim Toyota Corolla. Checks vor dem Teilewechsel.",
+        "intro": "Ein ruckelnder Leerlauf beim Toyota Corolla ist ein häufiges Problem mit verschiedenen möglichen Ursachen. Dabei läuft der Motor nicht gleichmäßig im Stand. Um unnötige Teilewechsel zu vermeiden, sollten zunächst praktische Diagnoseschritte durchgeführt werden, bevor Komponenten ersetzt werden.",
+        "severity": "Ein instabiler Leerlauf kann die Motorleistung und den Kraftstoffverbrauch negativ beeinflussen. Bleibt das Problem bestehen, drohen ernste Motorschäden.",
+        "driveAdvice": "Vermeiden Sie längere Fahrten, bis das Problem diagnostiziert und behoben ist, da der Motor sonst abstürzen oder Startprobleme auftreten können.",
+        "likelyCauses": [
+          "Verschmutztes oder defektes Leerlaufregelventil (IAC)",
+          "Probleme mit der Kraftstoffeinspritzung",
+          "Zündspulen- oder Kerzenprobleme",
+          "Unterdrucklecks im Ansaugsystem",
+          "Verschmutzter oder defekter Luftmassenmesser (MAF)"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Ansaugsystem auf Unterdrucklecks prüfen",
+          "Leerlaufregelventil reinigen und testen",
+          "Zündkerzen und Zündspulen inspizieren",
+          "Einspritzdüsen testen",
+          "Luftmassenmesser reinigen oder prüfen"
+        ],
+        "firstChecks": [
+          "Ansaugluftschläuche auf Risse und lose Verbindungen prüfen",
+          "Kohlenstoffablagerungen am Leerlaufregelventil entfernen",
+          "Batteriespannung und Ladesystem kontrollieren"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose ersetzen",
+          "Unterdrucklecks ignorieren und nur Kraftstoffsystem prüfen",
+          "Reinigung und Sichtkontrolle auslassen"
+        ],
+        "relatedCodes": [
+          "P0505 - Leerlaufsteuerung Fehler",
+          "P0300 - Zündaussetzer in mehreren Zylindern",
+          "P0171 - Kraftstoffsystem zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Leerlaufprobleme Diagnoseschritte",
+            "href": "/de/leerlaufprobleme-diagnose"
+          },
+          {
+            "label": "Toyota Corolla Zündsystem Fehler",
+            "href": "/de/toyota-corolla-zuendsystem-fehler"
+          },
+          {
+            "label": "Luftmassenmesser Reinigung und Test",
+            "href": "/de/luftmassenmesser-reinigung-test"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was sind häufige Ursachen für ruckelnden Leerlauf beim Toyota Corolla?",
+            "a": "Häufige Ursachen sind Unterdrucklecks, defektes Leerlaufregelventil, Zündprobleme und verschmutzte Sensoren. Eine genaue Diagnose ist wichtig."
+          },
+          {
+            "q": "Welche Teile sollte ich zuerst überprüfen?",
+            "a": "Beginnen Sie mit der Überprüfung des Ansaugsystems, der Unterdruckleitungen und des Leerlaufregelventils."
+          },
+          {
+            "q": "Kann ein ruckelnder Leerlauf auch ohne Fehlercodes auftreten?",
+            "a": "Ja, mechanische Probleme oder Unterdrucklecks können auftreten, ohne dass OBD2-Codes gespeichert werden."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Ruckelnder Leerlauf - Ursachen & Diagnose",
+        "schemaDescription": "Umfassender Leitfaden zur Fehlersuche bei ruckelndem Leerlauf beim Toyota Corolla, inklusive OBD2-Codes und praktischen Diagnoseschritten."
+      },
+      "es": {
+        "slug": "toyota-corolla-motor-tiembla-en-relenti",
+        "title": "Toyota Corolla Motor Tiembla en Relenti: Causas y Diagnóstico",
+        "metaDescription": "Conozca las causas comunes y pasos para diagnosticar el motor que tiembla en relenti en Toyota Corolla. Compruebe antes de reemplazar piezas.",
+        "intro": "El motor que tiembla en relenti en un Toyota Corolla es un problema frecuente con diversas causas posibles. Esto indica que el motor no mantiene un funcionamiento estable en reposo. Es importante realizar diagnósticos prácticos para identificar la causa antes de cambiar piezas, evitando gastos innecesarios.",
+        "severity": "Un relenti irregular puede disminuir la eficiencia del motor y aumentar el consumo de combustible. Ignorar el problema puede generar daños mayores en el motor.",
+        "driveAdvice": "Evite viajes largos o críticos hasta que se diagnostique y solucione el problema, ya que el motor podría apagarse o tener dificultades para arrancar.",
+        "likelyCauses": [
+          "Válvula de control de aire de relenti sucia o defectuosa (IAC)",
+          "Problemas en el sistema de inyección de combustible",
+          "Bobina de encendido o bujías en mal estado",
+          "Fugas de vacío en el sistema de admisión",
+          "Sensor de flujo de masa de aire (MAF) sucio o defectuoso"
+        ],
+        "diagnosticSteps": [
+          "Escanear el vehículo con un escáner OBD2 para obtener códigos de error",
+          "Revisar sistema de admisión y mangueras de vacío para detectar fugas",
+          "Limpiar y probar la válvula de control de aire de relenti",
+          "Inspeccionar bujías y bobinas de encendido",
+          "Evaluar el desempeño de los inyectores de combustible",
+          "Limpiar o probar el sensor de flujo de masa de aire"
+        ],
+        "firstChecks": [
+          "Inspeccionar mangueras de admisión por grietas o conexiones flojas",
+          "Limpiar acumulación de carbono en la válvula IAC",
+          "Verificar voltaje de la batería y estado de carga"
+        ],
+        "commonMistakes": [
+          "Reemplazar piezas sin realizar un diagnóstico adecuado",
+          "Ignorar fugas de vacío y concentrarse solo en el sistema de combustible",
+          "Saltar inspecciones visuales y limpieza"
+        ],
+        "relatedCodes": [
+          "P0505 - Problema en el sistema de control del ralentí",
+          "P0300 - Fallo de encendido en múltiples cilindros",
+          "P0171 - Sistema demasiado pobre (banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía para diagnosticar problemas de ralentí",
+            "href": "/es/guia-diagnostico-problemas-ralenti"
+          },
+          {
+            "label": "Problemas del sistema de encendido Toyota Corolla",
+            "href": "/es/problemas-sistema-encendido-toyota-corolla"
+          },
+          {
+            "label": "Consejos para limpiar el sensor MAF",
+            "href": "/es/consejos-limpieza-sensor-maf"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuáles son las causas comunes del motor que tiembla en relenti en un Toyota Corolla?",
+            "a": "Las causas frecuentes incluyen fugas de vacío, válvula IAC defectuosa, problemas de encendido y sensores sucios. Un diagnóstico correcto es fundamental."
+          },
+          {
+            "q": "¿Qué partes debería revisar primero para el problema de relenti irregular?",
+            "a": "Comience por el sistema de admisión, las mangueras de vacío y la válvula de control de aire de relenti."
+          },
+          {
+            "q": "¿Puede ocurrir el temblor en relenti sin códigos de error?",
+            "a": "Sí, problemas mecánicos o fugas de vacío pueden ocasionar temblor sin que se registren códigos de error OBD2."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motor Tiembla en Relenti - Causas y Diagnóstico",
+        "schemaDescription": "Guía detallada de causas, diagnóstico y soluciones para el motor que tiembla en ralentí en Toyota Corolla, con códigos OBD2 y revisiones prácticas."
+      },
+      "fr": {
+        "slug": "toyota-corolla-regime-instable-au-relenti",
+        "title": "Toyota Corolla : Causes et Diagnostic du Régime Instable au Relenti",
+        "metaDescription": "Découvrez les causes fréquentes et les conseils de diagnostic pour un régime instable au relenti sur Toyota Corolla. Contrôles avant remplacement.",
+        "intro": "Un régime instable au ralenti sur une Toyota Corolla est un problème courant pouvant avoir plusieurs causes. Cela signifie que le moteur ne tourne pas régulièrement au repos. Avant de remplacer des pièces, il est essentiel de réaliser des contrôles pratiques et précis pour éviter des réparations inutiles.",
+        "severity": "Un ralenti instable peut affecter les performances du moteur et la consommation de carburant. Ignorer ce problème peut entraîner des dommages moteurs plus importants.",
+        "driveAdvice": "Évitez les longs trajets ou les déplacements importants jusqu'à ce que le problème soit diagnostiqué et corrigé car le moteur peut caler ou être difficile à démarrer.",
+        "likelyCauses": [
+          "Valve de contrôle d'air au ralenti (IAC) encrassée ou défectueuse",
+          "Problèmes dans le système d'injection de carburant",
+          "Bobine d'allumage ou bougies défectueuses",
+          "Fuites de vide dans le système d'admission",
+          "Capteur de débit d'air massique (MAF) sale ou défaillant"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un scanner OBD2",
+          "Vérifier les fuites dans le système d'admission et les durites de dépression",
+          "Nettoyer et tester la valve de contrôle d'air au ralenti",
+          "Contrôler les bougies et bobines d'allumage",
+          "Tester les injecteurs de carburant",
+          "Nettoyer ou tester le capteur de débit d'air massique"
+        ],
+        "firstChecks": [
+          "Inspecter les durites d'admission pour fissures ou jeux",
+          "Nettoyer les dépôts de carbone sur la valve IAC",
+          "Vérifier la tension de la batterie et le système de charge"
+        ],
+        "commonMistakes": [
+          "Remplacer sans diagnostic préalable",
+          "Négliger les fuites de vide et se concentrer uniquement sur le système de carburant",
+          "Omettre nettoyage et inspection visuelle"
+        ],
+        "relatedCodes": [
+          "P0505 - Anomalie du système de contrôle du ralenti",
+          "P0300 - Ratés d’allumage aléatoires/multiples",
+          "P0171 - Système trop pauvre (banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide diagnostic problèmes de ralenti",
+            "href": "/fr/guide-diagnostic-problemes-ralenti"
+          },
+          {
+            "label": "Problèmes d’allumage Toyota Corolla",
+            "href": "/fr/problemes-allumage-toyota-corolla"
+          },
+          {
+            "label": "Conseils nettoyage capteur MAF",
+            "href": "/fr/conseils-nettoyage-capteur-maf"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes fréquentes d’un ralenti instable sur Toyota Corolla ?",
+            "a": "Les causes courantes sont les fuites de vide, une valve IAC défectueuse, des problèmes d’allumage et des capteurs encrassés. Un diagnostic précis est nécessaire."
+          },
+          {
+            "q": "Quels éléments vérifier en priorité en cas de ralenti instable ?",
+            "a": "Commencez par inspecter le système d’admission, les durites de dépression et la valve de régulation d’air au ralenti."
+          },
+          {
+            "q": "Un ralenti instable peut-il se produire sans codes défauts ?",
+            "a": "Oui, certains problèmes mécaniques ou fuites de dépression peuvent ne pas générer de codes DTC mais provoquer un ralenti instable."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla : Régime Instable au Relenti – Causes et Diagnostic",
+        "schemaDescription": "Guide complet des causes, diagnostic et solutions du régime instable au ralenti sur Toyota Corolla, avec codes OBD2 et contrôles pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-engine-shaking",
+    "intentKey": "toyota-corolla_engine_shaking",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "engine_shaking",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-titriyor",
+        "title": "Toyota Corolla Titriyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Toyota Corolla titriyor mu? Motor titremesinin muhtemel nedenlerini, yapılması gereken kontrolleri ve OBD2 kodlarını keşfedin.",
+        "intro": "Toyota Corolla’da motor titremesi sürüş deneyimini önemli ölçüde etkileyebilir. Birçok farklı sebep bu duruma yol açabilir ve kesin neden için kapsamlı bir kontrol gereklidir. Bu rehberde, Toyota Corolla motor titremesi durumunda yapılması gereken pratik kontrolleri, olası sebepleri ve teşhis adımlarını inceleyeceğiz.",
+        "severity": "Orta derecede önem taşıyan bu titreme, animasyonlu motordan şasiye kadar farklı parçalarda oluşan sorunların belirtisi olabilir.",
+        "driveAdvice": "Araç titriyor ise hızınızı artırmayın ve en kısa sürede aracı güvenli bir yere çekerek kontrol yapın.",
+        "likelyCauses": [
+          "Kötü ateşleme bobini veya buji arızası",
+          "Kirlenmiş yakıt enjektörleri",
+          "Yakıt pompasında yetersiz basınç",
+          "Motor bağlantı parçalarında gevşeklik",
+          "Hava-yakıt karışımında dengesizlik"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla motor kodlarını okuyun",
+          "Buji ve ateşleme bobinlerini kontrol edin",
+          "Yakıt enjeksiyon sistemini temizleyin veya test edin",
+          "Motor takozlarını gözle kontrol edin",
+          "Hava filtre ve yakıt filtresini kontrol edip değiştirin",
+          "Rölanti devrini ve motor performansını gözlemleyin"
+        ],
+        "firstChecks": [
+          "Motor yağı ve seviyesini kontrol edin",
+          "Buji arızası için ateşleme sistemini inceleyin",
+          "Hava filtresinin temiz ve tıkalı olmadığını kontrol edin"
+        ],
+        "commonMistakes": [
+          "Parça değiştirmeden önce kapsamlı teşhis yapmamak",
+          "Sadece gözle görünen sorunlara odaklanmak",
+          "OBD2 kodlarını tam yorumlamadan parça değiştirmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele/çoklu silindir ateşleme arızası",
+          "P0171 - Yakıt sisteminde zengin olmayan karışım",
+          "P0420 - Katalitik konvertör etkinliği düşük"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Arıza Kodları",
+            "href": "/tr/toyota-corolla-ariza-kodlari"
+          },
+          {
+            "label": "Motor Titremesi Sorun Giderme",
+            "href": "/tr/motor-titremesi-cozumu"
+          },
+          {
+            "label": "Yakıt Sistemi Temizliği Rehberi",
+            "href": "/tr/yakit-sistemi-temizligi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla motor titremesi ne zaman tehlikelidir?",
+            "a": "Eğer titreme ani güç kaybı veya motor ışığı yanmasıyla birlikteyse mutlaka profesyonel kontrol gerektirir."
+          },
+          {
+            "q": "Motor titremesi için hangi OBD2 cihazı uygundur?",
+            "a": "En azından P0300, P0171 gibi motor performansı kodlarını tanıyabilen bir OBD2 tarayıcı tercih edilmelidir."
+          },
+          {
+            "q": "Motor titremesini önlemek için rutin bakımda neler yapılmalı?",
+            "a": "Buji, hava ve yakıt filtreleri düzenli kontrol edilmeli; yakıt kalitesi ve motor yağı da ihmal edilmemelidir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motor Titremesi - Nedenleri ve Teşhisi",
+        "schemaDescription": "Toyota Corolla motor titremesi yaşanıyorsa olası nedenleri, teşhis yöntemlerini ve yapılması gereken ilk kontrolleri adım adım öğrenin."
+      },
+      "en": {
+        "slug": "toyota-corolla-engine-shaking",
+        "title": "Toyota Corolla Engine Shaking: Causes and Diagnostic Tips",
+        "metaDescription": "Is your Toyota Corolla engine shaking? Discover common causes, practical checks, OBD2 codes, and diagnostic steps to troubleshoot engine shaking.",
+        "intro": "Engine shaking in a Toyota Corolla can indicate various underlying issues affecting vehicle performance. Identifying the exact cause requires careful diagnostics since multiple components might contribute to this symptom. This guide outlines practical checks, likely causes, and step-by-step diagnosis methods to tackle engine shaking effectively.",
+        "severity": "This issue ranges from moderate to potentially serious depending on the underlying cause and driving conditions.",
+        "driveAdvice": "If your car is shaking, avoid high speeds and stop safely to perform initial inspections or to seek professional help.",
+        "likelyCauses": [
+          "Faulty ignition coils or spark plugs",
+          "Clogged fuel injectors",
+          "Insufficient fuel pump pressure",
+          "Loose engine mounts",
+          "Imbalanced air-fuel mixture"
+        ],
+        "diagnosticSteps": [
+          "Scan for engine fault codes with an OBD2 scanner",
+          "Inspect spark plugs and ignition coils",
+          "Test and clean fuel injection system",
+          "Check engine mounts visually for looseness or damage",
+          "Inspect and replace air and fuel filters if needed",
+          "Monitor idle stability and engine response"
+        ],
+        "firstChecks": [
+          "Check engine oil level and condition",
+          "Examine spark plugs for wear or fouling",
+          "Inspect air filter for clogs"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Focusing only on visible issues",
+          "Misinterpreting OBD2 codes resulting in unnecessary repairs"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/multiple cylinder misfire detected",
+          "P0171 - System too lean (fuel mixture)",
+          "P0420 - Catalyst system efficiency below threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Trouble Codes",
+            "href": "/en/toyota-corolla-obd2-trouble-codes"
+          },
+          {
+            "label": "Engine Shaking Diagnostic Guide",
+            "href": "/en/engine-shaking-diagnosis"
+          },
+          {
+            "label": "Fuel System Cleaning Tips",
+            "href": "/en/fuel-system-cleaning"
+          }
+        ],
+        "faq": [
+          {
+            "q": "When is engine shaking dangerous in a Toyota Corolla?",
+            "a": "If shaking occurs alongside power loss or a check engine light, immediate professional assessment is recommended."
+          },
+          {
+            "q": "What type of OBD2 scanner is best for detecting engine shaking causes?",
+            "a": "A scanner capable of reading misfire and fuel system related codes like P0300 and P0171 is ideal."
+          },
+          {
+            "q": "How can regular maintenance prevent engine shaking?",
+            "a": "Regularly inspect and replace spark plugs, filters, and ensure quality fuel and oil are used."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Engine Shaking Causes & Diagnosis Guide",
+        "schemaDescription": "Learn how to diagnose and troubleshoot engine shaking issues in your Toyota Corolla with detailed steps and common OBD2 codes."
+      },
+      "de": {
+        "slug": "toyota-corolla-motor-vibriert",
+        "title": "Toyota Corolla Motor Vibriert: Ursachen und Diagnosehinweise",
+        "metaDescription": "Toyota Corolla Motor vibriert? Entdecken Sie häufige Ursachen, praktische Prüfungen, OBD2-Codes und Diagnoseschritte gegen Motorvibrationen.",
+        "intro": "Ein vibrierender Motor bei einem Toyota Corolla kann verschiedene Ursachen haben, die die Fahrzeugleistung beeinträchtigen. Um die genaue Ursache zu finden, sind sorgfältige Diagnosen erforderlich, da mehrere Komponenten betroffen sein können. Dieser Leitfaden beschreibt praktische Prüfmethoden, mögliche Ursachen und eine strukturierte Diagnose.",
+        "severity": "Je nach Ursache und Fahrbedingungen kann die Vibration von moderat bis potenziell schwerwiegend reichen.",
+        "driveAdvice": "Bei Motorvibrationen sollten Sie hohe Geschwindigkeiten vermeiden und das Fahrzeug sicher abstellen, um erste Kontrollen durchzuführen oder professionelle Hilfe zu holen.",
+        "likelyCauses": [
+          "Defekte Zündspulen oder Zündkerzen",
+          "Verstopfte Einspritzdüsen",
+          "Ungenügender Kraftstoffdruck der Pumpe",
+          "Lockere Motorhalterungen",
+          "Ungleichgewicht im Luft-Kraftstoff-Gemisch"
+        ],
+        "diagnosticSteps": [
+          "OBD2-Fehlercodes auslesen",
+          "Zündkerzen und Zündspulen prüfen",
+          "Einspritzsystem reinigen und testen",
+          "Motorhalterungen visuell kontrollieren",
+          "Luft- und Kraftstofffilter prüfen und ggf. tauschen",
+          "Leerlaufstabilität und Motorreaktion beobachten"
+        ],
+        "firstChecks": [
+          "Motorölstand und Zustand prüfen",
+          "Zündkerzen auf Verschleiß kontrollieren",
+          "Luftfilter auf Verstopfungen untersuchen"
+        ],
+        "commonMistakes": [
+          "Teile ohne ausreichende Diagnose ersetzen",
+          "Nur sichtbare Fehler beachten",
+          "OBD2-Codes falsch interpretieren und unnötig reparieren"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/mehrachsige Zündaussetzer",
+          "P0171 - System zu mager",
+          "P0420 - Katalysatorsystem unter Effizienzschwelle"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Fehlercodes",
+            "href": "/de/toyota-corolla-obd2-fehlercodes"
+          },
+          {
+            "label": "Motorvibration Diagnose",
+            "href": "/de/motor-vibration-diagnose"
+          },
+          {
+            "label": "Kraftstoffsystem Reinigung",
+            "href": "/de/kraftstoffsystem-reinigung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wann ist eine Motorvibration beim Toyota Corolla gefährlich?",
+            "a": "Wenn die Vibration mit Leistungsverlust oder Motorleuchte einhergeht, sollte das Fahrzeug umgehend geprüft werden."
+          },
+          {
+            "q": "Welcher OBD2-Scanner ist für die Diagnose geeignet?",
+            "a": "Ein Scanner, der Zündaussetzer- (z.B. P0300) und Kraftstoffsystem-Codes liest, ist am besten geeignet."
+          },
+          {
+            "q": "Wie kann eine regelmäßige Wartung Vibrationen verhindern?",
+            "a": "Regelmäßige Kontrolle und Wechsel von Zündkerzen, Filtern sowie die Verwendung von Qualitätskraftstoff und Motoröl sind wichtig."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motorvibration: Ursachen & Diagnose",
+        "schemaDescription": "Erfahren Sie, wie Sie Motorvibrationen bei Ihrem Toyota Corolla diagnostizieren und mit OBD2-Codes sowie praktischen Schritten beheben."
+      },
+      "es": {
+        "slug": "toyota-corolla-motor-tiembla",
+        "title": "Toyota Corolla Motor Tiembla: Causas y Diagnóstico",
+        "metaDescription": "¿Tu Toyota Corolla tiene el motor que tiembla? Descubre causas comunes, revisiones prácticas, códigos OBD2 y pasos para diagnosticar el problema.",
+        "intro": "El temblor del motor en un Toyota Corolla puede afectar la experiencia de manejo y tener diversas causas. Para identificar el problema exacto es necesario realizar un diagnóstico cuidadoso, ya que distintos componentes pueden influir. Esta guía presenta revisiones prácticas, causas probables y pasos detallados para diagnosticar el temblor del motor.",
+        "severity": "Este problema puede variar de moderado a grave según la causa y condiciones de conducción.",
+        "driveAdvice": "Si el motor tiembla, evite acelerar y detenga el vehículo en un lugar seguro para realizar inspecciones o buscar ayuda profesional.",
+        "likelyCauses": [
+          "Bobinas de encendido o bujías defectuosas",
+          "Inyectores de combustible obstruidos",
+          "Baja presión en la bomba de combustible",
+          "Soportes de motor sueltos",
+          "Mezcla aire-combustible desequilibrada"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con un escáner OBD2",
+          "Inspeccionar bujías y bobinas de encendido",
+          "Limpiar y probar el sistema de inyección de combustible",
+          "Revisar visualmente soportes del motor",
+          "Verificar y reemplazar filtros de aire y combustible si es necesario",
+          "Observar la estabilidad del ralentí y respuesta del motor"
+        ],
+        "firstChecks": [
+          "Verificar nivel y estado del aceite de motor",
+          "Revisar bujías por desgaste o contaminación",
+          "Inspeccionar filtro de aire que no esté obstruido"
+        ],
+        "commonMistakes": [
+          "Cambiar partes sin diagnóstico previo",
+          "Solo concentrarse en problemas visibles",
+          "Interpretar mal los códigos OBD2 y hacer reparaciones innecesarias"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio/múltiple cilindros",
+          "P0171 - Mezcla demasiado pobre",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de error OBD2 Toyota Corolla",
+            "href": "/es/codigos-fallos-toyota-corolla"
+          },
+          {
+            "label": "Guía para diagnosticar temblor de motor",
+            "href": "/es/diagnostico-temblor-motor"
+          },
+          {
+            "label": "Limpieza del sistema de combustible",
+            "href": "/es/limpieza-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo es peligroso que tiemble el motor en un Toyota Corolla?",
+            "a": "Si el temblor viene acompañado de pérdida de potencia o luz de motor encendida, se recomienda una revisión profesional inmediata."
+          },
+          {
+            "q": "¿Qué escáner OBD2 es recomendable para diagnosticar temblores?",
+            "a": "Uno que lea códigos de fallos de encendido y sistema de combustible como P0300 y P0171 es ideal."
+          },
+          {
+            "q": "¿Cómo evitar temblores con mantenimiento regular?",
+            "a": "Inspeccionando y reemplazando bujías, filtros y usando combustible y aceite de buena calidad regularmente."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motor Tiembla: Causas y Diagnóstico",
+        "schemaDescription": "Aprende a diagnosticar y resolver temblores en el motor de tu Toyota Corolla con pasos detallados y códigos OBD2 comunes."
+      },
+      "fr": {
+        "slug": "toyota-corolla-moteur-vibre",
+        "title": "Toyota Corolla Moteur Qui Vibre : Causes et Diagnostic",
+        "metaDescription": "Votre Toyota Corolla a un moteur qui vibre ? Découvrez les causes fréquentes, vérifications pratiques, codes OBD2 et étapes de diagnostic pour y remédier.",
+        "intro": "Un moteur qui vibre sur une Toyota Corolla peut résulter de différentes causes affectant les performances du véhicule. Identifier la raison exacte demande un diagnostic précis, car plusieurs composants peuvent être impliqués. Ce guide propose des vérifications pratiques, les causes probables et les étapes pour diagnostiquer efficacement ce symptôme.",
+        "severity": "Ce problème peut être modéré à sévère selon l'origine et les conditions de conduite.",
+        "driveAdvice": "En cas de vibrations, évitez les hautes vitesses et arrêtez-vous en sécurité pour effectuer des contrôles ou consulter un professionnel.",
+        "likelyCauses": [
+          "Bobines d’allumage ou bougies défectueuses",
+          "Injecteurs de carburant encrassés",
+          "Pression insuffisante de la pompe à carburant",
+          "Supports moteur desserrés",
+          "Mélange air-carburant déséquilibré"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut avec un scanner OBD2",
+          "Contrôler les bougies et bobines d’allumage",
+          "Nettoyer et tester le système d’injection de carburant",
+          "Vérifier visuellement les supports moteur",
+          "Vérifier et remplacer les filtres à air et à carburant si nécessaire",
+          "Observer la stabilité du régime au ralenti et la réponse du moteur"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et l’état de l’huile moteur",
+          "Examiner les bougies pour signes d’usure ou d’encrassement",
+          "Contrôler que le filtre à air n’est pas obstrué"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic approfondi",
+          "Se focaliser uniquement sur les problèmes visibles",
+          "Mauvaise interprétation des codes OBD2 entraînant des réparations inutiles"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0171 - Système trop pauvre",
+          "P0420 - Rendement du catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 Toyota Corolla",
+            "href": "/fr/codes-defaut-toyota-corolla"
+          },
+          {
+            "label": "Diagnostic des vibrations moteur",
+            "href": "/fr/diagnostic-vibrations-moteur"
+          },
+          {
+            "label": "Nettoyage du système de carburant",
+            "href": "/fr/nettoyage-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quand les vibrations moteur sont-elles dangereuses sur une Toyota Corolla ?",
+            "a": "Si elles s’accompagnent d’une perte de puissance ou d’un voyant moteur allumé, il faut consulter rapidement."
+          },
+          {
+            "q": "Quel scanner OBD2 est adapté au diagnostic des vibrations ?",
+            "a": "Un scanner capable de lire les codes d’allumage (P0300) et de mélange carburant (P0171) est recommandé."
+          },
+          {
+            "q": "Comment prévenir les vibrations par un entretien régulier ?",
+            "a": "Contrôler et remplacer bougies, filtres, utiliser un carburant et une huile de bonne qualité régulièrement."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Moteur Qui Vibre : Causes et Diagnostic",
+        "schemaDescription": "Apprenez à diagnostiquer et traiter les vibrations moteur sur Toyota Corolla grâce aux codes OBD2 et étapes détaillées."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-check-engine-light",
+    "intentKey": "toyota-corolla_check_engine_light",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "check_engine_light",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-motor-ariza-lambasi-yaniyor",
+        "title": "Toyota Corolla Motor Arıza Lambası Yanıyor: Olası Sebepler ve Çözümler",
+        "metaDescription": "Toyota Corolla motor arıza lambasının yanma nedenleri, yapılması gereken kontroller ve sık yapılan hatalar hakkında detaylı bilgi.",
+        "intro": "Toyota Corolla araçlarda motor arıza lambasının yanması birçok farklı durumdan kaynaklanabilir. Kesin sebebi belirlemek için bazı basit ön kontroller ve tanı adımlarını uygulamak önemlidir. Bu rehberde, Toyota Corolla’da check engine lambası yanması durumunda yapılması gereken kontrolleri, muhtemel sebepleri ve sık yapılan hataları ele alacağız.",
+        "severity": "Motor arıza lambasının yanması bazen büyük bir arızaya işaret etmeyebilir ancak tedbirli olmakta fayda vardır. Erken müdahale ile daha büyük sorunların önüne geçebilirsiniz.",
+        "driveAdvice": "Aracınızı kullanmaya devam edebilirsiniz ancak motor arıza lambası yanıyorsa performans düşebilir. Mümkünse en kısa sürede detaylı bir teşhis yaptırılmalıdır.",
+        "likelyCauses": [
+          "Boğaz kelebeği veya hava akış sensörü arızası",
+          "Oksijen sensörünün hatalı veri iletmesi",
+          "Yakıt enjektörlerinde tıkanıklık veya arıza",
+          "Bujilerde aşınma veya hatalı ateşleme",
+          "Egzoz gazı emisyon sistemi sorunları (örneğin EGR valfi)"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazıyla arıza kodlarını okuyun",
+          "Havanın dolaşımını kontrol etmek için hava filtresini inceleyin",
+          "Yakıt sistemini basınç ve sızıntı açısından test edin",
+          "Bujileri söküp aşınma veya yanma durumunu inceleyin",
+          "Egzoz sisteminde tıkanıklık veya kaçak araştırması yapın",
+          "Sensör ve kablo bağlantılarını kontrol edin"
+        ],
+        "firstChecks": [
+          "Depo kapağının sıkıca kapalı olduğundan emin olun",
+          "Hava filtresini temizleyin veya değiştirin",
+          "Basit arıza kodlarını OBD2 cihazıyla kontrol edin"
+        ],
+        "commonMistakes": [
+          "Sadece arıza koduna bakıp parçayı değiştirmek",
+          "Arıza lambası yandığında motorun otomatik olarak ciddi arızalı olduğunu varsaymak",
+          "Yakıt kalitesi düşükken arıza lambasını görmezden gelmek"
+        ],
+        "relatedCodes": [
+          "P0171 (Yakıt karışımında fakir çalışma)",
+          "P0300 (Çoklu silindir ateşleme hatası)",
+          "P0420 (Katalizör verimlilik alt sınırında)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Tanı Cihazı Kullanımı",
+            "href": "/tr/toyota-corolla-obd2-tani-cihazi-kullanimi"
+          },
+          {
+            "label": "Motor Arıza Kodları ve Anlamları",
+            "href": "/tr/motor-ariza-kodlari-ve-anlamlari"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları ve Çözümü",
+            "href": "/tr/yakit-sistemi-sorunlari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Motor arıza lambası neden yanar?",
+            "a": "Motor arıza lambası, motor veya emisyon sistemlerinizde bir sorun algılandığı zaman yanar ancak bu her zaman ciddi bir arıza anlamına gelmez."
+          },
+          {
+            "q": "Arıza lambası yandığında hemen servise gitmeli miyim?",
+            "a": "Işığın yanmasının şiddetine ve aracın performansına bağlı olarak hemen veya kısa süre içinde kontrol ettirmek önerilir."
+          },
+          {
+            "q": "OBD2 cihazı ile kendi arızamı teşhis edebilir miyim?",
+            "a": "Evet, OBD2 cihazları arıza kodlarını okuyarak sorunun nerede olabileceğine dair bilgi verir ancak doğrudan tamir için profesyonel yardım gerekebilir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motor Arıza Lambası ve Muhtemel Sebepler",
+        "schemaDescription": "Toyota Corolla motor arıza lambasının neden yandığını anlamak için yapılacak temel kontroller, olası arızalar ve sık yapılan hatalar."
+      },
+      "en": {
+        "slug": "toyota-corolla-check-engine-light",
+        "title": "Toyota Corolla Check Engine Light On: Common Causes and Diagnostic Tips",
+        "metaDescription": "Explore common reasons why the Toyota Corolla check engine light comes on with practical diagnostic steps and common errors to avoid.",
+        "intro": "The check engine light on a Toyota Corolla can illuminate for many reasons, ranging from minor sensor issues to more significant engine challenges. Understanding the probable causes and performing some initial diagnostic checks can save you time and expense. This guide outlines the common reasons for the check engine light and provides practical steps before replacing any parts.",
+        "severity": "A check engine light doesn't always indicate an immediate serious issue but should not be ignored. Timely diagnosis often prevents costly repairs.",
+        "driveAdvice": "You may continue driving cautiously, but if the light remains on, professional diagnostics are advised to prevent potential damage or reduced performance.",
+        "likelyCauses": [
+          "Faulty throttle position or mass airflow sensor",
+          "Malfunctioning oxygen sensor",
+          "Fuel injector clogs or failures",
+          "Worn spark plugs causing misfires",
+          "Issues with the exhaust emission system such as EGR valve faults"
+        ],
+        "diagnosticSteps": [
+          "Read OBD2 codes with a diagnostic scanner",
+          "Inspect and clean air filter and intake system",
+          "Check fuel system pressure and leaks",
+          "Remove and inspect spark plugs for damage",
+          "Evaluate the exhaust system for blockages or leaks",
+          "Inspect sensor wiring and connectors"
+        ],
+        "firstChecks": [
+          "Ensure the gas cap is properly tightened",
+          "Check and replace the air filter if dirty",
+          "Scan for error codes with an OBD2 reader"
+        ],
+        "commonMistakes": [
+          "Replacing parts solely based on error codes without further checks",
+          "Assuming an illuminated check engine light always means severe engine damage",
+          "Ignoring the light when using poor quality fuel"
+        ],
+        "relatedCodes": [
+          "P0171 (System too lean)",
+          "P0300 (Random/multiple cylinder misfire detected)",
+          "P0420 (Catalyst system efficiency below threshold)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Diagnostic Guide",
+            "href": "/en/toyota-corolla-obd2-diagnostic-guide"
+          },
+          {
+            "label": "Understanding Engine Trouble Codes",
+            "href": "/en/understanding-engine-trouble-codes"
+          },
+          {
+            "label": "Fuel System Problems and Solutions",
+            "href": "/en/fuel-system-problems-solutions"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why does my check engine light come on?",
+            "a": "The check engine light signals that the engine or emission system has detected an issue but does not always mean a critical failure."
+          },
+          {
+            "q": "Should I stop driving when the light turns on?",
+            "a": "It depends on the severity. If the car is running normally, you can drive cautiously, but a diagnostic check is recommended as soon as possible."
+          },
+          {
+            "q": "Can I diagnose the problem myself with an OBD2 scanner?",
+            "a": "Yes, an OBD2 scanner can provide error codes to help identify potential issues, though some problems require professional diagnosis."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Check Engine Light Causes and Diagnostics",
+        "schemaDescription": "Learn practical checks, common causes, and diagnostic steps for the Toyota Corolla check engine light before considering part replacements."
+      },
+      "de": {
+        "slug": "toyota-corolla-motor-warnleuchte-an",
+        "title": "Toyota Corolla Motor Warnleuchte An: Häufige Ursachen und Diagnosetipps",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für das Aufleuchten der Motorwarnleuchte beim Toyota Corolla und erhalten Sie praktische Diagnosehinweise.",
+        "intro": "Die Motorwarnleuchte bei einem Toyota Corolla kann viele Ursachen haben, von einfachen Sensorproblemen bis hin zu komplexeren Motordefekten. Es ist wichtig, vor dem Austausch von Teilen einige grundlegende Prüfungen durchzuführen. Diese Anleitung hilft Ihnen dabei, typische Ursachen und sinnvolle Diagnose-Schritte zu verstehen.",
+        "severity": "Die Warnleuchte zeigt nicht immer sofort einen schweren Defekt an, sollte aber nicht ignoriert werden. Eine zeitnahe Diagnose kann größere Schäden verhindern.",
+        "driveAdvice": "Sie können vorsichtig weiterfahren. Bleibt die Warnleuchte an, sollten Sie so bald wie möglich eine professionelle Diagnose durchführen lassen.",
+        "likelyCauses": [
+          "Defekter Drosselklappen- oder Luftmassenmesser",
+          "Fehlerhafter Sauerstoffsensor",
+          "Verstopfte oder defekte Einspritzdüsen",
+          "Abgenutzte Zündkerzen verursachen Fehlzündungen",
+          "Probleme im Abgassystem wie defektes AGR-Ventil"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der OBD2-Fehlercodes mit Scanner",
+          "Luftfilter und Ansaugsystem kontrollieren und reinigen",
+          "Kraftstoffsystem auf Druck und Lecks prüfen",
+          "Zündkerzen auf Schäden untersuchen",
+          "Abgassystem auf Blockaden oder Lecks prüfen",
+          "Sensorleitungen und Steckverbindungen untersuchen"
+        ],
+        "firstChecks": [
+          "Tankverschluss auf festen Sitz prüfen",
+          "Luftfilter bei Verschmutzung tauschen",
+          "Mit OBD2-Gerät Fehlercodes auslesen"
+        ],
+        "commonMistakes": [
+          "Teile nur anhand der Fehlercodes austauschen ohne weitere Prüfung",
+          "Automatisch davon ausgehen, dass die Warnleuchte schwere Schäden bedeutet",
+          "Das Warnzeichen bei schlechter Kraftstoffqualität ignorieren"
+        ],
+        "relatedCodes": [
+          "P0171 (System läuft zu mager)",
+          "P0300 (Zufällige/mehrfache Zündaussetzer)",
+          "P0420 (Katalysatorsystem unter Effizienzgrenze)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Diagnoseanleitung",
+            "href": "/de/toyota-corolla-obd2-diagnoseanleitung"
+          },
+          {
+            "label": "Motorfehlercodes verstehen",
+            "href": "/de/motorfehlercodes-verstehen"
+          },
+          {
+            "label": "Kraftstoffsystemprobleme und Lösungen",
+            "href": "/de/kraftstoffsystemprobleme-und-loesungen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum leuchtet die Motorwarnleuchte?",
+            "a": "Sie signalisiert, dass das Motor- oder Emissionssystem einen Fehler erkannt hat, aber nicht immer einen kritischen Defekt."
+          },
+          {
+            "q": "Sollte ich sofort anhalten, wenn die Leuchte angeht?",
+            "a": "Das hängt vom Zustand ab. Wenn das Fahrzeug normal läuft, kann vorsichtig weitergefahren werden, eine Diagnose ist aber bald nötig."
+          },
+          {
+            "q": "Kann ich die Diagnose selbst mit einem OBD2-Scanner durchführen?",
+            "a": "Ja, ein OBD2-Scanner zeigt Fehlercodes an, die Hinweise geben, aber eine professionelle Prüfung kann notwendig sein."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motor Warnleuchte: Ursachen und Diagnose",
+        "schemaDescription": "Praktische Prüfungen, häufige Ursachen und Diagnosehinweise für die Motorwarnleuchte bei Toyota Corolla vor Teileaustausch."
+      },
+      "es": {
+        "slug": "toyota-corolla-luz-de-motor-enciende",
+        "title": "Toyota Corolla Luz de Motor Encendida: Causas Comunes y Diagnóstico",
+        "metaDescription": "Descubre las causas comunes por las que se enciende la luz de motor en Toyota Corolla, con pasos prácticos para diagnosticar el problema correctamente.",
+        "intro": "La luz de motor encendida en un Toyota Corolla puede deberse a múltiples factores, desde sensores defectuosos hasta problemas con el sistema de emisiones. Antes de reemplazar piezas, es importante realizar algunas comprobaciones prácticas para entender la causa. Esta guía explica las causas probables y pasos para diagnosticar correctamente la luz de motor encendida.",
+        "severity": "La luz de motor no siempre indica una falla grave inmediata, pero no debe ser ignorada para evitar problemas mayores en el futuro.",
+        "driveAdvice": "Se puede conducir con cuidado, pero se recomienda realizar un diagnóstico lo antes posible para evitar daños o rendimiento deficiente.",
+        "likelyCauses": [
+          "Sensor de posición del acelerador o flujo de aire defectuoso",
+          "Sensor de oxígeno funcionando mal",
+          "Inyectores de combustible obstruidos o dañados",
+          "Bujías en mal estado que provocan fallos de encendido",
+          "Problemas en el sistema de emisiones del escape, como válvula EGR dañada"
+        ],
+        "diagnosticSteps": [
+          "Leer los códigos OBD2 con un escáner de diagnóstico",
+          "Inspeccionar y limpiar el filtro de aire y la admisión",
+          "Verificar la presión y fugas en el sistema de combustible",
+          "Retirar y revisar las bujías para detectar desgaste",
+          "Evaluar el sistema de escape en busca de obstrucciones o fugas",
+          "Revisar conexiones y cables de sensores"
+        ],
+        "firstChecks": [
+          "Verificar que la tapa del combustible esté bien cerrada",
+          "Revisar y cambiar el filtro de aire si está sucio",
+          "Escanear códigos con lector OBD2"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas solo basándose en códigos sin verificar",
+          "Pensar que la luz indica siempre una falla grave",
+          "Ignorar la luz cuando se usa combustible de mala calidad"
+        ],
+        "relatedCodes": [
+          "P0171 (Sistema demasiado pobre)",
+          "P0300 (Fallo aleatorio/múltiple en cilindros)",
+          "P0420 (Eficiencia del catalizador por debajo del umbral)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de diagnóstico OBD2 para Toyota Corolla",
+            "href": "/es/toyota-corolla-guia-diagnostico-obd2"
+          },
+          {
+            "label": "Significado de códigos de error del motor",
+            "href": "/es/significado-codigos-error-motor"
+          },
+          {
+            "label": "Problemas y soluciones del sistema de combustible",
+            "href": "/es/problemas-soluciones-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué se enciende la luz de motor?",
+            "a": "Indica que el motor o el sistema de emisiones detectó un problema; no siempre significa una falla grave."
+          },
+          {
+            "q": "¿Debo detener el auto inmediatamente cuando se enciende la luz?",
+            "a": "Depende del comportamiento del vehículo; si funciona normal, puede seguir conduciendo con precaución y revisar pronto."
+          },
+          {
+            "q": "¿Puedo diagnosticar el problema con un lector OBD2?",
+            "a": "Sí, un lector OBD2 muestra los códigos de error que ayudan a identificar problemas, pero puede requerir diagnóstico profesional."
+          }
+        ],
+        "schemaTitle": "Causas y Diagnóstico de la Luz de Motor Encendida en Toyota Corolla",
+        "schemaDescription": "Pasos prácticos, causas comunes y diagnóstico para la luz de motor encendida en Toyota Corolla antes de reemplazar piezas."
+      },
+      "fr": {
+        "slug": "toyota-corolla-temoin-moteur-allume",
+        "title": "Toyota Corolla : Témoin Moteur Allumé - Causes Possibles et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes du témoin moteur allumé sur Toyota Corolla et des conseils pratiques pour un diagnostic efficace.",
+        "intro": "Le témoin moteur allumé sur une Toyota Corolla peut provenir de nombreuses raisons, allant de problèmes simples de capteurs à des dysfonctionnements plus complexes du moteur. Avant de remplacer des pièces, il est important d'effectuer quelques vérifications simples. Ce guide présente les causes possibles, les étapes de diagnostic et les erreurs courantes à éviter.",
+        "severity": "Un témoin moteur allumé ne signifie pas toujours une panne grave immédiate, mais il ne faut pas le négliger. Un diagnostic rapide permet souvent d'éviter des réparations coûteuses.",
+        "driveAdvice": "Vous pouvez continuer à rouler prudemment, mais il est conseillé de faire vérifier votre véhicule rapidement pour prévenir tout dommage potentiel.",
+        "likelyCauses": [
+          "Défaillance du capteur de position papillon ou débitmètre d’air",
+          "Sonde lambda défectueuse",
+          "Injecteurs de carburant encrassés ou défectueux",
+          "Bougies d'allumage usées provoquant des ratés",
+          "Problèmes dans le système d’émission des gaz d’échappement, comme la vanne EGR"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes d’erreur OBD2 avec un scanner",
+          "Vérifier et nettoyer le filtre à air et le système d’admission",
+          "Contrôler la pression et les fuites du système de carburant",
+          "Extraire et examiner les bougies d’allumage",
+          "Inspecter le système d’échappement pour des obstructions ou fuites",
+          "Vérifier les câblages et connecteurs des capteurs"
+        ],
+        "firstChecks": [
+          "S’assurer que le bouchon de réservoir est bien fermé",
+          "Contrôler le filtre à air et le remplacer si nécessaire",
+          "Scanner les codes d’erreur avec un appareil OBD2"
+        ],
+        "commonMistakes": [
+          "Changer des pièces uniquement en se basant sur les codes d’erreur sans vérification",
+          "Penser que le témoin signifie toujours une panne grave",
+          "Ignorer le témoin en utilisant un carburant de mauvaise qualité"
+        ],
+        "relatedCodes": [
+          "P0171 (Système trop pauvre)",
+          "P0300 (Ratés d’allumage aléatoires/multiples)",
+          "P0420 (Efficacité du catalyseur en dessous du seuil)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide diagnostic OBD2 Toyota Corolla",
+            "href": "/fr/toyota-corolla-guide-diagnostic-obd2"
+          },
+          {
+            "label": "Comprendre les codes panne moteur",
+            "href": "/fr/comprendre-codes-panne-moteur"
+          },
+          {
+            "label": "Problèmes et solutions du système d’alimentation",
+            "href": "/fr/problemes-solutions-systeme-alimentation"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi le témoin moteur s’allume-t-il ?",
+            "a": "Il signale un problème détecté par le moteur ou le système d’émission, mais ce n’est pas toujours une panne grave."
+          },
+          {
+            "q": "Dois-je arrêter de rouler lorsque le témoin s’allume ?",
+            "a": "Cela dépend de la gravité; si la voiture roule normalement, continuez prudemment et faites contrôler rapidement."
+          },
+          {
+            "q": "Puis-je diagnostiquer moi-même avec un lecteur OBD2 ?",
+            "a": "Oui, un lecteur OBD2 peut afficher les codes erreur, mais un diagnostic professionnel peut être nécessaire."
+          }
+        ],
+        "schemaTitle": "Causes et diagnostics du témoin moteur allumé sur Toyota Corolla",
+        "schemaDescription": "Diagnostics pratiques, causes fréquentes et conseils avant de remplacer des pièces suite à l’allumage du témoin moteur sur Toyota Corolla."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-hard-start",
+    "intentKey": "toyota-corolla_hard_start",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "hard_start",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "toyota-corolla-hard-start",
+        "title": "Toyota Corolla Hard Start Troubleshooting Guide",
+        "metaDescription": "Comprehensive guide to diagnosing hard start issues on Toyota Corolla. Learn practical checks, common causes, and OBD2 diagnostics.",
+        "intro": "If your Toyota Corolla is experiencing hard starting, it can be frustrating and inconvenient. Hard start symptoms can arise from various causes including fuel delivery issues, ignition problems, or sensor malfunctions. Understanding the potential reasons and conducting practical checks before replacing parts can save time and money. This guide offers insights into common causes and step-by-step diagnostics to help you get your Corolla starting smoothly again.",
+        "severity": "Medium severity - prompt diagnosis advised to avoid further issues.",
+        "driveAdvice": "Avoid repeated hard starting attempts and make sure to keep your battery adequately charged until the issue is resolved.",
+        "likelyCauses": [
+          "Weak or failing battery",
+          "Faulty spark plugs or ignition coils",
+          "Clogged fuel filter or failing fuel pump",
+          "Dirty or malfunctioning mass airflow sensor (MAF)",
+          "Problematic engine coolant temperature sensor (ECT)"
+        ],
+        "diagnosticSteps": [
+          "Check battery voltage and condition with a multimeter.",
+          "Inspect spark plugs and ignition coils for wear or damage.",
+          "Test fuel pressure to ensure proper delivery.",
+          "Clean or test the mass airflow sensor.",
+          "Use an OBD2 scanner to read any stored trouble codes.",
+          "Check engine coolant temperature sensor readings."
+        ],
+        "firstChecks": [
+          "Ensure battery terminals are clean and tight.",
+          "Look for loose or corroded spark plug wires.",
+          "Verify fuel pump operation by listening for its activation."
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis.",
+          "Ignoring battery health even if it appears fine.",
+          "Neglecting to check sensor connectors and wiring."
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0117 - Engine Coolant Temperature Circuit Low Input"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Codes Explained",
+            "href": "/en/toyota-corolla/obd2-codes"
+          },
+          {
+            "label": "Fuel System Diagnosis Guide",
+            "href": "/en/fuel-system-diagnostics"
+          },
+          {
+            "label": "Ignition System Troubleshooting",
+            "href": "/en/ignition-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a weak battery cause hard starting on a Toyota Corolla?",
+            "a": "Yes, a weak or discharged battery can prevent the engine from cranking properly, leading to hard starting symptoms."
+          },
+          {
+            "q": "Is it safe to keep trying to start a hard-starting engine?",
+            "a": "Repeated attempts can strain the starter and battery; it's better to diagnose and address the root cause promptly."
+          },
+          {
+            "q": "Do OBD2 codes always reveal the cause of hard starts?",
+            "a": "Not always, but they provide valuable clues that guide further diagnostic steps."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Hard Start Diagnosis and Solutions",
+        "schemaDescription": "Explore causes, practical checks, diagnostic steps, and OBD2 code insights to resolve hard start issues in a Toyota Corolla."
+      },
+      "tr": {
+        "slug": "toyota-corolla-gec-calisma-sorunu",
+        "title": "Toyota Corolla Geç Çalışma Sorunu ve Çözüm Rehberi",
+        "metaDescription": "Toyota Corolla'da geç çalışma sorunlarını teşhis etmek için pratik kontrol ve OBD2 kodlarıyla detaylı rehber.",
+        "intro": "Toyota Corolla’nuz geç çalışıyorsa, bu durum hem can sıkıcı hem de aracınızın performansını etkileyebilir. Sorunun birçok sebebi olabilir; yakıt sistemi problemleri, ateşleme arızaları veya sensör hataları gibi. Parça değiştirmeye başlamadan önce basit kontroller yapmak zaman ve maliyetten tasarruf sağlar. Bu rehber, olası nedenleri ve adım adım yapılacak kontrolleri sunarak sorunu çözmenize yardımcı olur.",
+        "severity": "Orta düzey önem; sorunu erken fark edip çözmek aracınızın sağlığı için önemlidir.",
+        "driveAdvice": "Araç geç çalışırken tekrar tekrar çalıştırma denemesi yapmayın, akünüzün dolu olduğundan emin olun.",
+        "likelyCauses": [
+          "Zayıf veya ömrünü doldurmuş akü",
+          "Ateşleme bujileri veya bobinlerinde arıza",
+          "Tıkalı yakıt filtresi veya zayıf yakıt pompası",
+          "Kirlenmiş veya arızalı hava akış ölçer (MAF sensörü)",
+          "Motor soğutma suyu sıcaklık sensörü (ECT) problemli olabilir"
+        ],
+        "diagnosticSteps": [
+          "Akü voltajını multimetr ile kontrol edin.",
+          "Bujileri ve ateşleme bobinlerini aşınma açısından inceleyin.",
+          "Yakıt basıncını test ederek yakıt akışını doğrulayın.",
+          "MAF sensörünü temizleyin veya test edin.",
+          "OBD2 cihazı ile arıza kodlarını okuyun.",
+          "Motor soğutma suyu sıcaklık sensörünü kontrol edin."
+        ],
+        "firstChecks": [
+          "Akü terminallerinin temiz ve sağlam olduğundan emin olun.",
+          "Bujilerin kablolarında gevşeklik veya korozyon kontrolü yapın.",
+          "Yakıt pompasının çalıştığını dinleyerek doğrulayın."
+        ],
+        "commonMistakes": [
+          "Tanısız parça değiştirmek.",
+          "Akü sağlığını gözardı etmek.",
+          "Sensör bağlantılarını ve kablolarını kontrol etmemek."
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele veya Çoklu Silindir Ateşleme Hatası",
+          "P0171 - Sistem Çok Fakir (Bank 1)",
+          "P0117 - Motor Soğutma Suyu Sıcaklık Devresi Düşük Giriş"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Kodları Açıklaması",
+            "href": "/tr/toyota-corolla/obd2-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Teşhis Rehberi",
+            "href": "/tr/yakit-sistemi-teshisi"
+          },
+          {
+            "label": "Ateşleme Sistemi Arıza Tespiti",
+            "href": "/tr/atesleme-sistemi-teshisi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Zayıf akü Toyota Corolla’da geç çalışmaya neden olur mu?",
+            "a": "Evet, zayıf veya bitmiş bir akü motorun düzgün marş almasını engelleyip geç çalışmaya sebep olabilir."
+          },
+          {
+            "q": "Geç çalışan aracı tekrar tekrar çalıştırmak güvenli midir?",
+            "a": "Tekrarlayan denemeler marş motoru ve aküye zarar verebilir, sorunu erkenden çözmek daha iyidir."
+          },
+          {
+            "q": "OBD2 kodları her zaman geç çalışma nedenini gösterir mi?",
+            "a": "Hayır, ancak teşhiste önemli ipuçları sağlayarak ilerlemeyi kolaylaştırır."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Geç Çalışma Sorunu Teşhisi ve Çözümleri",
+        "schemaDescription": "Toyota Corolla geç çalışma sorununun sebepleri, pratik kontrolleri, teşhis adımları ve OBD2 kodları hakkında detaylı bilgi."
+      },
+      "de": {
+        "slug": "toyota-corolla-schwerer-start",
+        "title": "Toyota Corolla Schwerer Start: Ursachen und Diagnose",
+        "metaDescription": "Umfassender Ratgeber zur Diagnose von Startproblemen beim Toyota Corolla. Praktische Tipps und OBD2-Codes zur Fehlersuche.",
+        "intro": "Ein schwerer Start beim Toyota Corolla kann verschiedene Ursachen haben und ärgerlich sein. Mögliche Probleme sind Kraftstoffversorgung, Zündanlage oder defekte Sensoren. Bevor Sie Teile austauschen, sollten Sie praktische Überprüfungen durchführen, um Zeit und Kosten zu sparen. Diese Anleitung erklärt die häufigsten Ursachen und zeigt schrittweise, wie Sie das Problem diagnostizieren können.",
+        "severity": "Mittlere Dringlichkeit – zeitnahe Diagnose empfohlen, um Folgeschäden zu vermeiden.",
+        "driveAdvice": "Vermeiden Sie mehrfache Startversuche und stellen Sie sicher, dass die Batterie ausreichend geladen ist.",
+        "likelyCauses": [
+          "Schwache oder defekte Batterie",
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfter Kraftstofffilter oder schwache Kraftstoffpumpe",
+          "Verschmutzter oder defekter Luftmassenmesser (MAF)",
+          "Fehlerhafter Kühlmitteltemperatursensor (ECT)"
+        ],
+        "diagnosticSteps": [
+          "Batteriespannung mit Multimeter prüfen.",
+          "Zündkerzen und Zündspulen auf Verschleiß untersuchen.",
+          "Kraftstoffdruck messen, um die Versorgung zu prüfen.",
+          "Luftmassenmesser reinigen oder testen.",
+          "OBD2-Scanner verwenden, um Fehlercodes auszulesen.",
+          "Kühlmitteltemperatursensor überprüfen."
+        ],
+        "firstChecks": [
+          "Batterieklemmen auf Sauberkeit und festen Sitz prüfen.",
+          "Zündkerzenkabel auf Beschädigungen oder Wackelkontakte kontrollieren.",
+          "Kraftstoffpumpe durch Geräusch beim Einschalten des Zündschalters prüfen."
+        ],
+        "commonMistakes": [
+          "Teile austauschen ohne genaue Diagnose.",
+          "Batteriezustand vernachlässigen, obwohl er kritisch ist.",
+          "Sensorsteckverbindungen und Kabelsalat ignorieren."
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige oder Mehrfachzündaussetzer erkannt",
+          "P0171 - System zu mager (Bank 1)",
+          "P0117 - Kühlmitteltemperatursensor-Schaltkreis zu niedriger Eingang"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Fehlercodes erklärt",
+            "href": "/de/toyota-corolla/obd2-fehlercodes"
+          },
+          {
+            "label": "Diagnose des Kraftstoffsystems",
+            "href": "/de/kraftstoffsystem-diagnose"
+          },
+          {
+            "label": "Zündsystem Fehlerbehebung",
+            "href": "/de/zuendsystem-fehlerbehebung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann eine schwache Batterie Startprobleme beim Toyota Corolla verursachen?",
+            "a": "Ja, eine schwache oder entladene Batterie kann dazu führen, dass der Motor schwer oder gar nicht startet."
+          },
+          {
+            "q": "Ist es sicher, einen schwer startenden Motor mehrfach zu starten?",
+            "a": "Mehrfache Startversuche können Anlasser und Batterie belasten; eine schnelle Fehlerbehebung ist ratsam."
+          },
+          {
+            "q": "Zeigen OBD2-Codes immer die Ursache für Startprobleme an?",
+            "a": "Nicht immer, sie geben jedoch wichtige Hinweise für die weitere Diagnose."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Startprobleme: Ursachen, Diagnose und Lösungen",
+        "schemaDescription": "Erfahren Sie mehr über Ursachen, praktische Prüfungen, Diagnoseschritte und OBD2-Codes bei Startproblemen des Toyota Corolla."
+      },
+      "es": {
+        "slug": "toyota-corolla-motor-tiembla-dificultad-arranque",
+        "title": "Guía para Diagnosticar Dificultad de Arranque en Toyota Corolla",
+        "metaDescription": "Aprende a diagnosticar dificultad para arrancar en Toyota Corolla con revisiones prácticas, causas comunes y códigos OBD2.",
+        "intro": "Si tu Toyota Corolla presenta dificultad para arrancar, es importante identificar la causa para evitar daños mayores. Esta dificultad puede deberse a problemas en la alimentación de combustible, sistema de encendido o sensores defectuosos. Realizar inspecciones prácticas antes de cambiar piezas te ahorrará tiempo y dinero. Esta guía detalla las causas más comunes y los pasos de diagnóstico para solucionar este problema.",
+        "severity": "Gravedad media; se recomienda diagnosticar pronto para evitar complicaciones.",
+        "driveAdvice": "Evita múltiples intentos de arranque seguidos y asegúrate de que la batería esté en buen estado hasta resolver el problema.",
+        "likelyCauses": [
+          "Batería débil o deteriorada",
+          "Bujías o bobinas de encendido defectuosas",
+          "Filtro de combustible obstruido o bomba de combustible débil",
+          "Sensor de flujo de masa de aire (MAF) sucio o defectuoso",
+          "Sensor de temperatura del líquido refrigerante (ECT) con fallas"
+        ],
+        "diagnosticSteps": [
+          "Medir voltaje y estado de la batería con multímetro.",
+          "Inspeccionar bujías y bobinas de encendido para desgaste o daño.",
+          "Probar presión de combustible para verificar suministro adecuado.",
+          "Limpiar o evaluar el sensor de flujo de masa de aire.",
+          "Leer códigos de error almacenados con un escáner OBD2.",
+          "Verificar lecturas del sensor de temperatura del refrigerante."
+        ],
+        "firstChecks": [
+          "Revisar que los terminales de batería estén limpios y firmes.",
+          "Verificar que los cables de las bujías no estén sueltos o corroídos.",
+          "Escuchar el funcionamiento de la bomba de combustible cuando se encienda el vehículo."
+        ],
+        "commonMistakes": [
+          "Reemplazar piezas sin un diagnóstico claro.",
+          "Ignorar el estado de la batería aunque parezca buena.",
+          "No revisar conexiones de sensores y cableado."
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo aleatorio o múltiple en los cilindros",
+          "P0171 - Sistema demasiado pobre (Banco 1)",
+          "P0117 - Circuito de sensor de temperatura del refrigerante bajo"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 para Toyota Corolla",
+            "href": "/es/toyota-corolla/codigos-obd2"
+          },
+          {
+            "label": "Guía de diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          },
+          {
+            "label": "Solución de problemas del sistema de encendido",
+            "href": "/es/solucion-problemas-encendido"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede una batería débil causar dificultad de arranque en el Toyota Corolla?",
+            "a": "Sí, una batería débil o descargada puede impedir que el motor arranque correctamente."
+          },
+          {
+            "q": "¿Es seguro intentar arrancar varias veces un motor que cuesta arrancar?",
+            "a": "No es recomendable; puede dañar el motor de arranque y la batería. Es mejor diagnosticar y resolver pronto."
+          },
+          {
+            "q": "¿Los códigos OBD2 siempre indican la causa de la dificultad de arranque?",
+            "a": "No siempre, pero son un buen punto de partida para la diagnosis."
+          }
+        ],
+        "schemaTitle": "Dificultad de arranque en Toyota Corolla - Diagnóstico y soluciones",
+        "schemaDescription": "Conoce causas, revisiones prácticas, pasos de diagnóstico y códigos OBD2 para solucionar la dificultad para arrancar en Toyota Corolla."
+      },
+      "fr": {
+        "slug": "toyota-corolla-demarrage-difficile",
+        "title": "Diagnostic des Démarrages Difficiles sur Toyota Corolla",
+        "metaDescription": "Guide complet pour diagnostiquer un démarrage difficile sur Toyota Corolla avec vérifications pratiques et codes OBD2.",
+        "intro": "Un démarrage difficile sur votre Toyota Corolla peut avoir de nombreuses causes, telles qu’un problème d’alimentation en carburant, d’allumage ou de capteurs défectueux. Il est conseillé de réaliser des vérifications simples avant de remplacer des pièces, afin d’économiser temps et argent. Ce guide vous présente les causes fréquentes ainsi que les étapes de diagnostic à suivre pour retrouver un démarrage fiable.",
+        "severity": "Gravité modérée – un diagnostic rapide est recommandé pour éviter des dommages supplémentaires.",
+        "driveAdvice": "Évitez les tentatives répétées de démarrage et assurez-vous que la batterie est suffisamment chargée en attendant la réparation.",
+        "likelyCauses": [
+          "Batterie faible ou défaillante",
+          "Bougies d’allumage ou bobines en mauvais état",
+          "Filtre à carburant bouché ou pompe à carburant défaillante",
+          "Capteur de débit d’air massique (MAF) encrassé ou défectueux",
+          "Capteur de température du liquide de refroidissement (ECT) problématique"
+        ],
+        "diagnosticSteps": [
+          "Mesurer la tension et l’état de la batterie au multimètre.",
+          "Contrôler l’usure des bougies et des bobines d’allumage.",
+          "Tester la pression d’essence pour vérifier le bon approvisionnement.",
+          "Nettoyer ou tester le capteur MAF.",
+          "Utiliser un lecteur OBD2 pour vérifier les codes d’erreur.",
+          "Contrôler le capteur de température du liquide de refroidissement."
+        ],
+        "firstChecks": [
+          "Vérifier la propreté et la solidité des cosses de batterie.",
+          "Rechercher des fils de bougies lâches ou corrodés.",
+          "Écouter la pompe à carburant lors de la mise sous contact."
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis.",
+          "Négliger l’état de la batterie, même si elle semble correcte.",
+          "Omettre de vérifier les connecteurs et le câblage des capteurs."
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage aléatoires ou multiples",
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0117 - Circuit de capteur de température du liquide de refroidissement faible"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 Toyota Corolla expliqués",
+            "href": "/fr/toyota-corolla/codes-obd2"
+          },
+          {
+            "label": "Guide diagnostic système carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          },
+          {
+            "label": "Dépannage système d’allumage",
+            "href": "/fr/depannage-allumage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Une batterie faible peut-elle causer un démarrage difficile ?",
+            "a": "Oui, une batterie faible ou déchargée peut empêcher le moteur de démarrer correctement."
+          },
+          {
+            "q": "Est-il conseillé de tenter plusieurs démarrages lorsqu’il est difficile ?",
+            "a": "Non, cela peut endommager le démarreur et la batterie. Il vaut mieux diagnostiquer rapidement."
+          },
+          {
+            "q": "Les codes OBD2 indiquent-ils toujours la cause du problème de démarrage ?",
+            "a": "Pas toujours, mais ils donnent des indications précieuses pour le diagnostic."
+          }
+        ],
+        "schemaTitle": "Diagnostic des problèmes de démarrage difficile sur Toyota Corolla",
+        "schemaDescription": "Découvrez les causes, vérifications pratiques, étapes de diagnostic et codes OBD2 pour résoudre un démarrage difficile sur Toyota Corolla."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-black-smoke",
+    "intentKey": "toyota-corolla_black_smoke",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "black_smoke",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-siyah-duman-atiyor",
+        "title": "Toyota Corolla Siyah Duman Atıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Toyota Corolla'nın siyah duman atmasının olası nedenleri ve pratik çözüm önerilerini keşfedin. Arıza tespiti için kontrol adımları burada.",
+        "intro": "Toyota Corolla aracınız egzozundan siyah duman çıkması, çeşitli mekanik veya yakıt sistemine dair problemlerden kaynaklanabilir. Bu durum motorun verimli çalışmadığını gösterir ve sorunun kaynağını belirlemek için sistematik bir kontrol gerektirir. Aşağıdaki bilgiler, temel nedenleri ve kontrol yöntemlerini anlamanıza yardımcı olacaktır.",
+        "severity": "Siyah duman, genellikle motor verimliliğinde düşüş ve yakıt israfı belirtisi olup, zamanla motor hasarına yol açabilir.",
+        "driveAdvice": "Aracınızı gereksiz yere sürmeye devam etmekten kaçının ve mümkünse en kısa sürede detaylı bir kontrol yaptırın.",
+        "likelyCauses": [
+          "Yakıt enjektörlerinde aşırı yakıt püskürtmesi",
+          "Hava filtresinde tıkanıklık veya düşük hava girişi",
+          "Turboşarj sisteminde arıza veya sızıntı",
+          "DPF (dizel partikül filtresi) tıkanması",
+          "Yanlış veya kaliteli olmayan yakıt kullanımı"
+        ],
+        "diagnosticSteps": [
+          "Hava filtresini kontrol edin ve gerekiyorsa değiştirin",
+          "Yakıt enjeksiyon sistemini inceleyin, sızıntı veya tıkanmaya bakın",
+          "Turboşarj basınç değerlerini ölçün",
+          "Egzoz emisyon testleri yapın",
+          "DPF sistemini kontrol edin, tıkanıklık varsa temizleyin",
+          "OBD2 cihazı ile kayıtlı hata kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Motor yağ seviyesini ve kalitesini kontrol edin",
+          "Hava filtresi tıkanıklığını görsel olarak inceleyin",
+          "Yakıt kalitesini ve dolum alışkanlıklarını gözden geçirin"
+        ],
+        "commonMistakes": [
+          "Hemen parça değişimine gitmek yerine doğru tespit yapılmaması",
+          "Yanlış yakıt kullanımı alışkanlığının görmezden gelinmesi",
+          "Sadece görünür belirtilere bakarak testleri atlamak"
+        ],
+        "relatedCodes": [
+          "P0201 - Yakıt Enjektör A Hatası",
+          "P0299 - Turboşarj Basınç Düşüklüğü",
+          "P2002 - Dizel Partikül Filtresi Performans Sorunu"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Yakıt Sistemi Sorunları",
+            "href": "/tr/toyota-corolla-yakit-sistemi"
+          },
+          {
+            "label": "Egzoz Dumanı Problemleri ve Çözümleri",
+            "href": "/tr/egzoz-dumani-problemleri"
+          },
+          {
+            "label": "OBD2 Kodları Nasıl Okunur?",
+            "href": "/tr/obd2-kodlari-nasil-okunur"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla siyah duman atması ne anlama gelir?",
+            "a": "Siyah duman, motorun fazla yakıt yakması veya hava yakıt karışımında sorun olması gibi çeşitli problemlerin işaretidir."
+          },
+          {
+            "q": "Siyah duman için hemen hangi parçalar değiştirilmelidir?",
+            "a": "Öncelikle hava filtresi, yakıt enjektörleri ve turboşarj gibi temel sistemler kontrol edilmelidir, doğrudan parça değişimi önerilmez."
+          },
+          {
+            "q": "Aracımda siyah duman var OBD2 cihazı hangi kodları gösterebilir?",
+            "a": "P0201, P0299 ve P2002 gibi yakıt enjektör, turboşarj veya DPF ile ilgili kodlar görülebilir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Siyah Duman Çıkartıyor - Sebepler ve Çözümler",
+        "schemaDescription": "Toyota Corolla'da siyah duman sorunu için olası sebepler, kontrol adımları ve yaygın hatalar hakkında kapsamlı rehber."
+      },
+      "en": {
+        "slug": "toyota-corolla-black-smoke-causes",
+        "title": "Toyota Corolla Black Smoke Causes and Diagnosis Guide",
+        "metaDescription": "Explore common causes and practical diagnostics for black smoke from Toyota Corolla exhaust. Step-by-step checks before part replacement.",
+        "intro": "If your Toyota Corolla is emitting black smoke from the exhaust, it often indicates a fuel or air mixture problem that requires careful diagnosis. Various factors could be at play including fuel injection issues or air intake restrictions. This guide will walk you through likely causes and systematic checks to identify the source before making repairs.",
+        "severity": "Black smoke can signal inefficient combustion or engine issues that may worsen without timely attention.",
+        "driveAdvice": "Avoid unnecessary driving until the issue is diagnosed to prevent further engine wear or environmental damage.",
+        "likelyCauses": [
+          "Faulty or leaking fuel injectors causing rich fuel mixture",
+          "Clogged or dirty air filter reducing airflow",
+          "Turbocharger malfunction or boost leaks",
+          "Blocked Diesel Particulate Filter (DPF) if applicable",
+          "Poor-quality or incorrect fuel usage"
+        ],
+        "diagnosticSteps": [
+          "Inspect and replace air filter if dirty",
+          "Check fuel injectors for leaks or malfunction",
+          "Measure turbocharger boost pressure",
+          "Perform an exhaust emission test",
+          "Examine and clean the DPF if necessary",
+          "Read stored fault codes using an OBD2 scanner"
+        ],
+        "firstChecks": [
+          "Check engine oil level and condition",
+          "Visually inspect air filter for clogging",
+          "Review fuel quality and fueling habits"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring poor fuel quality and refill sources",
+          "Skipping basic checks and relying on symptoms alone"
+        ],
+        "relatedCodes": [
+          "P0201 - Fuel Injector Circuit Malfunction",
+          "P0299 - Turbocharger Underboost",
+          "P2002 - Diesel Particulate Filter Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Fuel System Issues",
+            "href": "/en/toyota-corolla-fuel-system-issues"
+          },
+          {
+            "label": "Exhaust Smoke Troubleshooting",
+            "href": "/en/exhaust-smoke-troubleshooting"
+          },
+          {
+            "label": "How to Read OBD2 Codes",
+            "href": "/en/how-to-read-obd2-codes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What does black smoke from a Toyota Corolla exhaust mean?",
+            "a": "It usually means the engine is running a rich fuel mixture or has air intake issues that need diagnosing."
+          },
+          {
+            "q": "Should I replace parts immediately if I see black smoke?",
+            "a": "No, perform thorough checks first to avoid unnecessary replacements."
+          },
+          {
+            "q": "Which OBD2 codes relate to black smoke problems?",
+            "a": "Codes like P0201, P0299, and P2002 are commonly linked to fuel injection, turbocharger, and DPF issues."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Black Smoke Diagnosis and Solutions",
+        "schemaDescription": "Comprehensive guide to causes, diagnostic steps, and common mistakes when addressing black smoke in Toyota Corolla vehicles."
+      },
+      "de": {
+        "slug": "toyota-corolla-schwarzer-rauch-probleme",
+        "title": "Toyota Corolla Schwarzer Rauch: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für schwarzen Rauch bei Toyota Corolla und wie Sie diese anhand praktischer Prüfschritte diagnostizieren.",
+        "intro": "Wenn Ihr Toyota Corolla schwarzen Rauch aus dem Auspuff abgibt, kann dies auf verschiedene Probleme im Kraftstoff- oder Luftsystem hinweisen. Eine sorgfältige Diagnose ist notwendig, da mehrere Faktoren eine Rolle spielen können. Diese Anleitung beschreibt mögliche Ursachen und die wichtigsten Kontrollschritte vor einem Teilewechsel.",
+        "severity": "Schwarzer Rauch deutet auf eine ineffiziente Verbrennung oder Motorprobleme hin, die sich ohne schnelle Behebung verschlimmern können.",
+        "driveAdvice": "Vermeiden Sie unnötiges Fahren, bis die Ursache geklärt ist, um Motorverschleiß zu reduzieren.",
+        "likelyCauses": [
+          "Defekte oder undichte Einspritzdüsen, die zu fettem Gemisch führen",
+          "Verschmutzter Luftfilter mit eingeschränktem Luftstrom",
+          "Defekt oder Undichtigkeit im Turboladersystem",
+          "Verstopfter Dieselpartikelfilter (DPF), falls vorhanden",
+          "Falscher oder minderwertiger Kraftstoff"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter auf Verunreinigungen prüfen und gegebenenfalls tauschen",
+          "Einspritzdüsen auf Dichtheit und Funktion untersuchen",
+          "Turbolader-Ladedruck messen",
+          "Abgasuntersuchung durchführen",
+          "DPF kontrollieren und reinigen wenn nötig",
+          "Fehlercodes mit OBD2-Scanner auslesen"
+        ],
+        "firstChecks": [
+          "Motorölstand und -qualität prüfen",
+          "Luftfilter visuell auf Verstopfung kontrollieren",
+          "Kraftstoffqualität und Tankstelle bewerten"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Schlechte Kraftstoffqualität ignorieren",
+          "Basisprüfungen überspringen und nur Symptome analysieren"
+        ],
+        "relatedCodes": [
+          "P0201 - Fehler bei Einspritzdüsen-Stromkreis",
+          "P0299 - Turbolader-Ladedruck zu niedrig",
+          "P2002 - Leistung Dieselpartikelfilter unter Soll"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla Kraftstoffsystemprobleme",
+            "href": "/de/toyota-corolla-kraftstoffsystem"
+          },
+          {
+            "label": "Abgasrauch Fehlerbehebung",
+            "href": "/de/abgasrauch-fehlerbehebung"
+          },
+          {
+            "label": "OBD2 Diagnosecodes richtig lesen",
+            "href": "/de/obd2-codes-richtig-lesen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was bedeutet schwarzer Rauch beim Toyota Corolla?",
+            "a": "Er weist meist auf ein zu fettes Gemisch oder Probleme im Luftsystem hin."
+          },
+          {
+            "q": "Sollte ich bei schwarzem Rauch sofort Teile wechseln?",
+            "a": "Eine gründliche Diagnose ist wichtiger, um unnötige Ausgaben zu vermeiden."
+          },
+          {
+            "q": "Welche OBD2 Codes sind typisch für schwarzen Rauch?",
+            "a": "Codes wie P0201, P0299 und P2002 stehen oft in Zusammenhang mit Einspritzung, Turbolader und DPF."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Schwarzer Rauch: Ursachen und Diagnose",
+        "schemaDescription": "Ausführliche Anleitung zu Ursachen, Diagnose und Fehlervermeidung bei schwarzem Rauch am Toyota Corolla."
+      },
+      "es": {
+        "slug": "toyota-corolla-humo-negro-problemas",
+        "title": "Toyota Corolla Humo Negro: Causas y Diagnóstico",
+        "metaDescription": "Descubra las causas comunes del humo negro en un Toyota Corolla y cómo diagnosticar el problema con pasos prácticos.",
+        "intro": "Si su Toyota Corolla expulsa humo negro por el escape, esto puede deberse a problemas en la mezcla de aire y combustible. Varias causas pueden estar involucradas, desde inyectores defectuosos hasta filtros obstruidos. En este artículo encontrará las causas más probables y una guía paso a paso para identificar el origen antes de reemplazar piezas.",
+        "severity": "El humo negro indica una combustión ineficiente que puede provocar daños en el motor si no se revisa a tiempo.",
+        "driveAdvice": "Procure no conducir el vehículo innecesariamente hasta que se realice un diagnóstico adecuado para evitar daños mayores.",
+        "likelyCauses": [
+          "Inyectores con fugas o mal funcionamiento que generan mezcla rica",
+          "Filtro de aire sucio o bloqueado",
+          "Problemas en el turbo o pérdida de presión",
+          "Filtro de partículas diésel (DPF) obstruido",
+          "Uso de combustible de mala calidad o incorrecto"
+        ],
+        "diagnosticSteps": [
+          "Revisar y cambiar filtro de aire si está sucio",
+          "Inspeccionar inyectores por fugas o fallas",
+          "Medir presión del turbo",
+          "Realizar prueba de emisiones",
+          "Verificar y limpiar filtro DPF si es necesario",
+          "Leer códigos de error con un escáner OBD2"
+        ],
+        "firstChecks": [
+          "Comprobar nivel y estado del aceite motor",
+          "Inspeccionar visualmente el filtro de aire",
+          "Evaluar calidad del combustible y puntos de carga"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin un diagnóstico adecuado",
+          "Ignorar la calidad del combustible utilizado",
+          "Omitir las revisiones básicas y basarse sólo en síntomas"
+        ],
+        "relatedCodes": [
+          "P0201 - Fallo en inyector de combustible",
+          "P0299 - Baja presión del turbo",
+          "P2002 - Eficiencia del filtro de partículas diésel baja"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas en el sistema de combustible Toyota Corolla",
+            "href": "/es/problemas-combustible-toyota-corolla"
+          },
+          {
+            "label": "Solución de humos en el escape",
+            "href": "/es/solucion-humo-exhaust"
+          },
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/como-leer-codigos-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué significa el humo negro en el Toyota Corolla?",
+            "a": "Generalmente indica una mezcla rica de combustible o problemas en la entrada de aire que requieren diagnóstico."
+          },
+          {
+            "q": "¿Debo cambiar piezas inmediatamente si veo humo negro?",
+            "a": "No, es mejor realizar un diagnóstico completo antes de sustituir componentes para evitar costos innecesarios."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con el humo negro?",
+            "a": "Los códigos P0201, P0299 y P2002 suelen estar vinculados a inyectores, turbo y filtro de partículas."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Humo Negro: Diagnóstico y Causas",
+        "schemaDescription": "Guía completa para identificar causas, realizar diagnósticos y evitar errores al tratar el problema del humo negro en Toyota Corolla."
+      },
+      "fr": {
+        "slug": "toyota-corolla-fumee-noire-causes",
+        "title": "Toyota Corolla Fumée Noire : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes de fumée noire sur Toyota Corolla et suivez un guide de diagnostic pratique avant toute réparation.",
+        "intro": "La fumée noire à l’échappement de votre Toyota Corolla peut résulter de divers problèmes liés au système de carburant ou à l’admission d’air. Cette situation nécessite une analyse approfondie car plusieurs facteurs peuvent être impliqués. Ce guide vous présente les causes probables ainsi que les contrôles essentiels à réaliser avant de procéder à un remplacement de pièces.",
+        "severity": "La fumée noire indique une combustion inefficace pouvant entraîner des dommages moteur sans intervention rapide.",
+        "driveAdvice": "Évitez de conduire inutilement le véhicule avant diagnostic pour limiter les risques d’aggravation.",
+        "likelyCauses": [
+          "Injecteurs de carburant défectueux ou fuite provoquant un mélange riche",
+          "Filtre à air sale ou obstrué diminuant l’arrivée d’air",
+          "Dysfonctionnement ou fuite dans le turbo",
+          "Filtre à particules diesel (FAP) bouché",
+          "Carburant de mauvaise qualité ou inadapté"
+        ],
+        "diagnosticSteps": [
+          "Contrôler et remplacer le filtre à air si nécessaire",
+          "Vérifier les injecteurs pour fuite ou défaut",
+          "Mesurer la pression du turbo",
+          "Effectuer un test d’émissions",
+          "Inspecter et nettoyer le FAP si requis",
+          "Lire les codes défaut via un scanner OBD2"
+        ],
+        "firstChecks": [
+          "Vérifier le niveau et la qualité de l’huile moteur",
+          "Examiner visuellement le filtre à air",
+          "Contrôler la qualité du carburant utilisé"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis",
+          "Négliger la qualité du carburant",
+          "Sauter les vérifications de base en se basant uniquement sur les symptômes"
+        ],
+        "relatedCodes": [
+          "P0201 - Défaut circuit injecteur carburant",
+          "P0299 - Surpression turbo insuffisante",
+          "P2002 - Efficacité filtre à particules diesel insuffisante"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes de système carburant Toyota Corolla",
+            "href": "/fr/toyota-corolla-problemes-carburant"
+          },
+          {
+            "label": "Diagnostic fumées d’échappement",
+            "href": "/fr/diagnostic-fumee-echappement"
+          },
+          {
+            "label": "Lecture des codes défaut OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que signifie la fumée noire sur Toyota Corolla ?",
+            "a": "Elle signale souvent un mélange air/carburant trop riche ou un soucis d’admission nécessitant vérification."
+          },
+          {
+            "q": "Faut-il changer des pièces dès l’apparition de la fumée noire ?",
+            "a": "Non, un diagnostic complet est recommandé pour éviter des réparations inutiles."
+          },
+          {
+            "q": "Quels codes OBD2 sont associés à la fumée noire ?",
+            "a": "Les codes P0201, P0299 et P2002 se rapportent souvent aux injecteurs, au turbo ou au filtre à particules."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Fumée Noire : Guide des Causes et Diagnostic",
+        "schemaDescription": "Guide détaillé des causes, des étapes de diagnostic et des erreurs à éviter face à la fumée noire sur Toyota Corolla."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-white-smoke",
+    "intentKey": "toyota-corolla_white_smoke",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "white_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-beyaz-duman-atiyor",
+        "title": "Toyota Corolla Beyaz Duman Atıyor: Olası Nedenler ve Tanı Rehberi",
+        "metaDescription": "Toyota Corolla beyaz duman sorunu için olası nedenler, tanı adımları ve yaygın hatalar hakkında bilgi alın. Güvenli sürüş için ilk kontrolleri öğrenin.",
+        "intro": "Toyota Corolla aracınızdan çıkan beyaz duman, genellikle motorda su ya da soğutma sıvısının yanması gibi pek çok sebep olabilir. Sorunun kesin nedenini öğrenmeden önce bazı basit kontrollerle hasar olup olmadığını anlamak önemlidir. Bu rehberde, beyaz dumanın muhtemel nedenlerini ve tanı yöntemlerini detaylı biçimde inceleyeceğiz. Parça değiştirmeden önce sistematik bir kontrol yapmanız faydalı olacaktır.",
+        "severity": "Beyaz duman genellikle motor soğutma sistemi veya yakıt sisteminde sorun olduğuna işaret eder. Sorun devam ederse motor hasarı oluşabilir.",
+        "driveAdvice": "Beyaz duman fark edildiyse motor suyunu ve seviyesi kontrol edin. Araç aşırı ısınırken sürüşten kaçının ve vakit kaybetmeden servise başvurun.",
+        "likelyCauses": [
+          "Soğutma sıvısının motor yağına karışması",
+          "Silindir kapağı contası arızası",
+          "Yakıt enjektörlerinden aşırı yakıt püskürtülmesi",
+          "Turboşarjda yağ sızıntısı",
+          "Motorun soğutma sıvısı sızıntısı"
+        ],
+        "diagnosticSteps": [
+          "Motor yağına karışmış su olup olmadığını kontrol edin",
+          "Soğutma sistemindeki basınç testini yapın",
+          "Egzozdan çıkan dumanın rengini dikkatle gözlemleyin",
+          "Yakıt enjeksiyon sistemini kontrol edin",
+          "Silindir kapağı contasını test edin",
+          "OBD2 tarayıcı ile kod okuyun ve motor performansı verilerini inceleyin"
+        ],
+        "firstChecks": [
+          "Motor yağı ve soğutma sıvısı seviyesini kontrol edin",
+          "Egzozu soğukken duman rengini gözlemleyin",
+          "Servis kitapçığında önerilen bakım aralıklarına uyulduğundan emin olun"
+        ],
+        "commonMistakes": [
+          "Belirtileri sadece egzoza bağlayarak motor parçalarını değiştirmek",
+          "Soğutma sıvısı kaçağını geciktirerek kullanmaya devam etmek",
+          "OBD2 kodlarını görmezden gelerek sorunu büyütmek"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0300"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Arıza Kodları",
+            "href": "/tr/toyota-corolla-ariza-kodlari"
+          },
+          {
+            "label": "Beyaz Duman Neden Olur?",
+            "href": "/tr/arac-beyaz-duman-neden"
+          },
+          {
+            "label": "Silindir Kapağı Contası Problemleri",
+            "href": "/tr/silindir-kapagi-contasi-arizasi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla beyaz duman atması aracın derhal tamir edilmesini gerektirir mi?",
+            "a": "Beyaz duman genellikle ciddi sorunların işareti olabilir. Ağır hasar oluşmadan önce araç acilen kontrol ettirilmelidir."
+          },
+          {
+            "q": "Beyaz duman neden sadece soğuk havalarda görülür?",
+            "a": "Soğuk havalarda motor suyu buharı olarak çıkan beyaz duman görülür ancak sürekli beyaz duman farklı sorunlara işaret eder."
+          },
+          {
+            "q": "OBD2 cihazı beyaz duman sorununu tam olarak tespit eder mi?",
+            "a": "OBD2 cihazı hata kodlarını gösterir ancak beyaz dumanın sebebi genellikle bazı fiziksel testlerle desteklenmelidir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Beyaz Duman Sorunu ve Çözüm Yolları",
+        "schemaDescription": "Toyota Corolla beyaz duman atma problemi için olası sebepler, tanı yöntemleri ve dikkat edilmesi gereken ilk kontroller."
+      },
+      "en": {
+        "slug": "toyota-corolla-white-smoke-causes-and-diagnostics",
+        "title": "Toyota Corolla White Smoke: Possible Causes and Diagnostic Guide",
+        "metaDescription": "Explore common reasons and diagnostic steps for white smoke in Toyota Corolla. Learn practical checks and avoid typical mistakes.",
+        "intro": "If your Toyota Corolla is emitting white smoke, it could point to several underlying issues ranging from coolant leaks to fuel system faults. Understanding the potential causes before replacing parts helps ensure you save time and money. This guide details practical diagnostic steps and likely causes to assist you in identifying the root of the problem reliably.",
+        "severity": "White smoke often signals coolant entering combustion chambers. Ignoring this can cause serious engine damage over time.",
+        "driveAdvice": "On noticing white smoke, promptly check coolant levels and engine temperature. Avoid driving if overheating occurs and seek professional help.",
+        "likelyCauses": [
+          "Blown head gasket allowing coolant into cylinders",
+          "Coolant leaks in the engine block or cylinder head",
+          "Faulty fuel injectors causing excess fuel",
+          "Turbocharger oil seal failure",
+          "Condensation burning off in the exhaust during startup"
+        ],
+        "diagnosticSteps": [
+          "Inspect engine oil for milky appearance indicating coolant contamination",
+          "Conduct a cooling system pressure test",
+          "Observe smoke patterns during startup and steady operation",
+          "Check fuel injector operation and spray pattern",
+          "Perform a compression test to check cylinder sealing",
+          "Scan with an OBD2 reader to identify fault codes"
+        ],
+        "firstChecks": [
+          "Check engine oil and coolant fluid levels and condition",
+          "Note smoke color and quantity when starting the engine",
+          "Verify vehicle maintenance history and recent repairs"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis of smoke cause",
+          "Ignoring coolant leaks and continuing to drive",
+          "Neglecting OBD2 fault codes when diagnosing"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0300"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Trouble Codes",
+            "href": "/en/toyota-corolla-trouble-codes"
+          },
+          {
+            "label": "Why Does My Car Emit White Smoke?",
+            "href": "/en/vehicle-white-smoke-causes"
+          },
+          {
+            "label": "Diagnosing Head Gasket Failures",
+            "href": "/en/head-gasket-failure-diagnosis"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is immediate repair necessary when white smoke appears on a Toyota Corolla?",
+            "a": "White smoke often signals significant issues; early inspection prevents costly engine damage."
+          },
+          {
+            "q": "Why does white smoke sometimes only appear during cold starts?",
+            "a": "Condensation in the exhaust can cause brief white smoke that disappears; persistent smoke indicates other problems."
+          },
+          {
+            "q": "Can an OBD2 scanner detect the cause of white smoke precisely?",
+            "a": "OBD2 scanners provide related error codes but physical inspections and tests are often needed for a conclusive diagnosis."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla White Smoke Causes and Diagnostic Methods",
+        "schemaDescription": "Identify causes and solutions for white smoke in Toyota Corolla with detailed diagnostic steps and practical advice."
+      },
+      "de": {
+        "slug": "toyota-corolla-weisser-rauch-ursachen-und-diagnose",
+        "title": "Toyota Corolla Weißer Rauch: Mögliche Ursachen und Diagnoseleitfaden",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für weißen Rauch bei Toyota Corolla und praxisnahe Diagnose-Tipps zur Problemlösung.",
+        "intro": "Wenn Ihr Toyota Corolla weißen Rauch ausstößt, kann dies mehrere Ursachen haben – von Kühlmittelverlust bis zu Problemen im Kraftstoffsystem. Bevor Sie Teile austauschen, sollten Sie praktische Prüfungen durchführen, um den Schaden besser einschätzen zu können. Dieser Leitfaden stellt wahrscheinliche Ursachen vor und zeigt Schritt-für-Schritt-Diagnosen auf.",
+        "severity": "Weißer Rauch weist oft auf Kühlmittel im Brennraum hin. Wird dies nicht behoben, kann dies zu schwerwiegenden Motorschäden führen.",
+        "driveAdvice": "Bei Auftreten von weißem Rauch sollten Sie Kühlmittelstand und Motortemperatur überprüfen. Vermeiden Sie Überhitzung und suchen Sie zeitnah eine Werkstatt auf.",
+        "likelyCauses": [
+          "Defekte Zylinderkopfdichtung, die Kühlmittel in den Brennraum lässt",
+          "Kühlmittellecks im Motorblock oder Zylinderkopf",
+          "Fehlerhafte Einspritzventile mit zuviel Kraftstoff",
+          "Ölaustritt im Turbolader",
+          "Abdampfen von Kondenswasser im Auspuff beim Start"
+        ],
+        "diagnosticSteps": [
+          "Motoröl auf milchige Verfärbung prüfen, Hinweis auf Kühlmittel",
+          "Druckprüfung des Kühlsystems durchführen",
+          "Rauchverhalten beim Kaltstart und im Betrieb beobachten",
+          "Einspritzdüsen auf Funktion und Sprühmuster prüfen",
+          "Kompressionstest zur Überprüfung der Zylinderabdichtung durchführen",
+          "Mit OBD2-Scanner Fehlerspeicher auslesen"
+        ],
+        "firstChecks": [
+          "Motoröl- und Kühlmittelstand sowie Zustand prüfen",
+          "Rauchfarbe und Fülle beim Motorstart notieren",
+          "Wartungshistorie und letzte Reparaturen kontrollieren"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose tauschen",
+          "Kühlmittelverlust ignorieren und weiterfahren",
+          "OBD2-Fehlercodes nicht berücksichtigen"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0300"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Fehlercodes",
+            "href": "/de/toyota-corolla-fehlercodes"
+          },
+          {
+            "label": "Ursachen für weißen Rauch am Auto",
+            "href": "/de/weisser-rauch-ursachen"
+          },
+          {
+            "label": "Diagnose von Zylinderkopfdichtungsschäden",
+            "href": "/de/zylinderkopfdichtung-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Muss bei weißem Rauch am Toyota Corolla sofort repariert werden?",
+            "a": "Weißer Rauch deutet meist auf ernste Probleme hin. Eine zeitnahe Prüfung verhindert größere Motorschäden."
+          },
+          {
+            "q": "Warum erscheint weißer Rauch oft nur beim Kaltstart?",
+            "a": "Kondenswasser im Auspuff verursacht kurzzeitigen weißen Rauch. Dauerhafter weißer Rauch zeigt technische Probleme an."
+          },
+          {
+            "q": "Kann ein OBD2-Scanner die Ursache von weißem Rauch genau bestimmen?",
+            "a": "Der Scanner zeigt angrenzende Fehlercodes, für eine sichere Diagnose sind jedoch weitere Tests nötig."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Weißer Rauch: Ursachen und Diagnose",
+        "schemaDescription": "Finden Sie Ursachen und Lösungen für weißen Rauch am Toyota Corolla mit praxisnahen Diagnose-Methoden."
+      },
+      "es": {
+        "slug": "toyota-corolla-duda-blanca-causas-diagnostico",
+        "title": "Toyota Corolla Duda Blanca: Causas Probables y Guía de Diagnóstico",
+        "metaDescription": "Descubre causas comunes y pasos de diagnóstico para humo blanco en Toyota Corolla. Consejos prácticos para revisiones y errores frecuentes.",
+        "intro": "El humo blanco en un Toyota Corolla puede deberse a diversas causas, desde fugas de líquido refrigerante hasta fallos en el sistema de combustible. Antes de cambiar piezas es importante realizar algunas pruebas prácticas para identificar el problema real. Este artículo comparte las causas más probables y los métodos de diagnóstico clave para ayudarte a resolver la falla con confianza.",
+        "severity": "El humo blanco suele indicar refrigerante que entra en la cámara de combustión. Ignorar esto puede dañar gravemente el motor con el tiempo.",
+        "driveAdvice": "Al notar humo blanco, verifica rápidamente los niveles de refrigerante y la temperatura del motor. Evita conducir si el motor se sobrecalienta y acude a un taller.",
+        "likelyCauses": [
+          "Empaquetadura de culata dañada que permite el paso de refrigerante",
+          "Fugas de líquido refrigerante en el bloque o culata",
+          "Inyectores con exceso de combustible",
+          "Fallo en el sello de aceite del turbo",
+          "Condensación que se quema al arrancar"
+        ],
+        "diagnosticSteps": [
+          "Revisa el aceite para detectar aspecto lechoso que indique mezcla con refrigerante",
+          "Realiza prueba de presión en el sistema de refrigeración",
+          "Observa el color y cantidad de humo al arrancar y en marcha",
+          "Controla el funcionamiento y patrón de rociado de los inyectores",
+          "Haz prueba de compresión en los cilindros",
+          "Escanea con lector OBD2 para detectar códigos de error"
+        ],
+        "firstChecks": [
+          "Verifica niveles y estado del aceite y refrigerante",
+          "Observa el humo al encender el motor en frío",
+          "Consulta historial de mantenimiento y reparaciones recientes"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin diagnosticar correctamente la causa del humo",
+          "Ignorar fugas de refrigerante y continuar conduciendo",
+          "No prestar atención a los códigos de error OBD2 al diagnosticar"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0300"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos de falla OBD2 Toyota Corolla",
+            "href": "/es/toyota-corolla-codigos-falla"
+          },
+          {
+            "label": "¿Por qué mi coche expulsa humo blanco?",
+            "href": "/es/causas-humo-blanco-coche"
+          },
+          {
+            "label": "Cómo diagnosticar fallos en la junta de culata",
+            "href": "/es/diagnostico-junta-culata"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Necesita reparación inmediata el humo blanco en Toyota Corolla?",
+            "a": "El humo blanco suele indicar problemas serios; una inspección temprana evita daños mayores."
+          },
+          {
+            "q": "¿Por qué el humo blanco aparece solo al arrancar en frío?",
+            "a": "La condensación quemada genera humo blanco temporal al arrancar; si persiste, hay otros problemas."
+          },
+          {
+            "q": "¿Puede un escáner OBD2 detectar exactamente la causa del humo blanco?",
+            "a": "El OBD2 muestra códigos relacionados, pero se requieren pruebas adicionales para un diagnóstico definitivo."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Humo Blanco: Causas y Diagnóstico",
+        "schemaDescription": "Identifica causas y soluciones para humo blanco en Toyota Corolla mediante métodos diagnósticos y consejos útiles."
+      },
+      "fr": {
+        "slug": "toyota-corolla-fumee-blanche-causes-diagnostic",
+        "title": "Toyota Corolla Fumée Blanche : Causes Possibles et Guide de Diagnostic",
+        "metaDescription": "Découvrez les causes communes de fumée blanche sur Toyota Corolla, les étapes de diagnostic et les vérifications pratiques à effectuer.",
+        "intro": "La présence de fumée blanche sur votre Toyota Corolla peut provenir de plusieurs problèmes, allant des fuites de liquide de refroidissement à des dysfonctionnements du système d'injection. Avant de remplacer des pièces, il est essentiel d'effectuer des contrôles simples pour cibler précisément la source du problème. Ce guide présente les causes fréquentes et les étapes clés pour un diagnostic efficace.",
+        "severity": "La fumée blanche indique souvent une infiltration de liquide de refroidissement dans les cylindres. Ignorer cette situation peut endommager gravement le moteur.",
+        "driveAdvice": "Si vous remarquez de la fumée blanche, vérifiez rapidement les niveaux de liquide de refroidissement et la température moteur. Évitez de rouler en cas de surchauffe et consultez un professionnel.",
+        "likelyCauses": [
+          "Joint de culasse défectueux permettant le passage du liquide de refroidissement",
+          "Fuites de liquide de refroidissement au niveau du bloc ou de la culasse",
+          "Injecteurs défaillants provoquant un excès de carburant",
+          "Fuite d’huile au niveau du turbocompresseur",
+          "Condensation brûlée à l’échappement au démarrage"
+        ],
+        "diagnosticSteps": [
+          "Vérifier l’huile moteur pour détecter une coloration laiteuse indiquant un mélange avec le liquide de refroidissement",
+          "Effectuer un test de pression du système de refroidissement",
+          "Observer la fumée au démarrage et en fonctionnement",
+          "Contrôler le fonctionnement et le jet des injecteurs",
+          "Réaliser un test de compression des cylindres",
+          "Scanner le véhicule avec un outil OBD2 pour détecter les codes défauts"
+        ],
+        "firstChecks": [
+          "Contrôler le niveau et l’état de l’huile moteur et du liquide de refroidissement",
+          "Observer la couleur et la quantité de fumée au démarrage à froid",
+          "Vérifier l’historique d’entretien et les réparations récentes"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis de la cause de la fumée",
+          "Ignorer les fuites de liquide de refroidissement en continuant de rouler",
+          "Négliger les codes défauts OBD2 lors du diagnostic"
+        ],
+        "relatedCodes": [
+          "P0420",
+          "P0171",
+          "P0300"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes panne OBD2 Toyota Corolla",
+            "href": "/fr/toyota-corolla-codes-panne"
+          },
+          {
+            "label": "Pourquoi mon véhicule dégage-t-il de la fumée blanche ?",
+            "href": "/fr/causes-fumee-blanche-vehicule"
+          },
+          {
+            "label": "Diagnostic des joints de culasse défectueux",
+            "href": "/fr/diagnostic-joint-culasse"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Faut-il réparer immédiatement en cas de fumée blanche sur Toyota Corolla ?",
+            "a": "La fumée blanche est souvent le signe d’un problème sérieux. Il est conseillé de faire vérifier rapidement le véhicule."
+          },
+          {
+            "q": "Pourquoi la fumée blanche apparaît-elle principalement au démarrage à froid ?",
+            "a": "La condensation brûlée produit une fumée blanche temporaire au démarrage ; si elle persiste, un problème mécanique est probable."
+          },
+          {
+            "q": "Un outil OBD2 peut-il détecter précisément la cause de la fumée blanche ?",
+            "a": "L’OBD2 fournit des codes défauts liés, mais un diagnostic complet nécessite des tests complémentaires."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Fumée Blanche : Causes et Diagnostic",
+        "schemaDescription": "Identifiez les causes et solutions de la fumée blanche sur Toyota Corolla grâce à un guide complet de diagnostic et conseils pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-poor-fuel-economy",
+    "intentKey": "toyota-corolla_poor_fuel_economy",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "toyota-corolla-cok-yakiyor",
+        "title": "Toyota Corolla Çok Yakıyor: Yakıt Tüketimini Azaltma Rehberi",
+        "metaDescription": "Toyota Corolla'nızın yakıt tüketimi fazla mı? Olası nedenler, kontrol adımları ve önerilen çözümlerle yakıt verimliliğinizi artırın.",
+        "intro": "Toyota Corolla'nın beklediğinizden daha fazla yakıt tüketmesi birçok farklı faktöre bağlı olabilir. Motor parçası arızalarından hava yakıt karışımına kadar çeşitli sorunlar yakıt ekonomisini olumsuz etkileyebilir. Bu yazıda, sorunun kesin bir kaynağını belirtmeden önce yapabileceğiniz temel kontrolleri ve yaygın nedenleri detaylı olarak ele alacağız.",
+        "severity": "Orta - Yakıt tüketimi artışı hem ekonomik hem çevresel açıdan önemlidir, hızlı müdahale önerilir.",
+        "driveAdvice": "Yakıt tüketiminin fazla olduğu durumlarda agresif sürüşten kaçının ve düzenli bakımlarınızı yaptırın.",
+        "likelyCauses": [
+          "Kirli veya tıkalı hava filtresi",
+          "Yanlış lastik basıncı",
+          "Arızalı oksijen sensörü",
+          "Yakıt enjektörlerinde sorun",
+          "Lastiklerin aşırı eskimesi veya yanlış hizalanması"
+        ],
+        "diagnosticSteps": [
+          "Aracın hava filtresini kontrol edin ve gerekiyorsa temizleyin veya değiştirin.",
+          "Lastik basınçlarını önerilen seviyelerde ayarlayın.",
+          "OBD2 tarayıcı ile aracın sensör değerlerini kontrol edin.",
+          "Yakıt enjektörlerini ve temizliğini inceleyin.",
+          "Egzoz emisyon testine girerek sensör performansını değerlendirin.",
+          "Motor soğutma sistemi ile ilgili sızıntı veya arızaları kontrol edin."
+        ],
+        "firstChecks": [
+          "Hava filtresi temizliği",
+          "Lastik hava basıncı",
+          "Servis geçmişi ve yağ seviyesi"
+        ],
+        "commonMistakes": [
+          "Sorunu tek bir parçaya indirgemek",
+          "Bakımı ağırdan almak",
+          "Yanlış yakıt kullanmak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt sistemi çok fakir",
+          "P0420 - Katalizör verimliliği düşük",
+          "P0133 - Oksijen sensörü yavaş tepki veriyor"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Kılavuzu",
+            "href": "/tr/toyota-corolla-obd2-kilavuzu"
+          },
+          {
+            "label": "Yakıt Verimliliği Artırma Önerileri",
+            "href": "/tr/yakit-verimliligi-artirma-onerileri"
+          },
+          {
+            "label": "OBD2 Kodu P0171 Açıklaması",
+            "href": "/tr/obd2-kodu-p0171"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Toyota Corolla neden fazla yakıt harcar?",
+            "a": "Bunun birçok nedeni olabilir; kirli hava filtresi, arızalı sensörler veya yanlış lastik basıncı gibi faktörler yakıt tüketimini artırabilir."
+          },
+          {
+            "q": "Yakıt sistemi arızası nasıl anlaşılır?",
+            "a": "OBD2 tarayıcı ile aracın motor kontrol ünitesinden alınan kodlarla ve araç performansında yaşanan sorunlarla anlaşılır."
+          },
+          {
+            "q": "Hangi basit kontroller yakıt tüketimini etkiler?",
+            "a": "Hava filtresi durumu, lastik basıncı ve motor yağ seviyesi gibi temel kontroller hemen yapılabilir."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Çok Yakıyor Sorunları ve Çözümleri",
+        "schemaDescription": "Toyota Corolla'nın fazla yakıt tüketmesinin nedenleri, teşhis yöntemleri ve sık yapılan hatalar hakkında detaylı rehber."
+      },
+      "en": {
+        "slug": "toyota-corolla-poor-fuel-economy",
+        "title": "Toyota Corolla Poor Fuel Economy: Causes and Diagnostic Guide",
+        "metaDescription": "Is your Toyota Corolla consuming too much fuel? Discover common causes, practical checks, and diagnostic steps to improve fuel economy.",
+        "intro": "If your Toyota Corolla is using more fuel than expected, several factors could be involved. From clogged filters to sensor issues, many components affect fuel efficiency. This guide provides practical checks and common causes you should consider before replacing parts or seeking costly repairs.",
+        "severity": "Moderate - Increased fuel consumption affects both cost and environment; addressing it soon is recommended.",
+        "driveAdvice": "Drive smoothly and avoid aggressive acceleration to help improve fuel economy while diagnosing the issue.",
+        "likelyCauses": [
+          "Clogged air filter reducing airflow",
+          "Underinflated tires increasing rolling resistance",
+          "Faulty oxygen sensor causing poor fuel mixture",
+          "Dirty or malfunctioning fuel injectors",
+          "Incorrect wheel alignment or worn tires"
+        ],
+        "diagnosticSteps": [
+          "Inspect and replace or clean the air filter if dirty.",
+          "Check and adjust tire pressure to manufacturer specs.",
+          "Scan the vehicle’s OBD2 system for error codes.",
+          "Examine fuel injectors for proper function and cleanliness.",
+          "Perform an exhaust emission test to check sensor efficiency.",
+          "Inspect the cooling system for leaks or malfunctions."
+        ],
+        "firstChecks": [
+          "Air filter condition",
+          "Tire pressure levels",
+          "Oil level and service history"
+        ],
+        "commonMistakes": [
+          "Assuming a single cause without thorough investigation",
+          "Delaying regular maintenance checks",
+          "Using incorrect fuel types"
+        ],
+        "relatedCodes": [
+          "P0171 - Fuel system too lean",
+          "P0420 - Catalyst system efficiency below threshold",
+          "P0133 - Oxygen sensor slow response"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Guide",
+            "href": "/en/toyota-corolla-obd2-guide"
+          },
+          {
+            "label": "Tips to Improve Fuel Economy",
+            "href": "/en/tips-to-improve-fuel-economy"
+          },
+          {
+            "label": "OBD2 Code P0171 Explained",
+            "href": "/en/obd2-code-p0171-explained"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why is my Toyota Corolla consuming too much fuel?",
+            "a": "Various factors may cause this including dirty filters, faulty sensors, or incorrect tire pressures affecting the fuel mixture and efficiency."
+          },
+          {
+            "q": "How can I tell if my fuel system has an issue?",
+            "a": "Using an OBD2 scanner to check for diagnostic trouble codes and monitoring vehicle performance can help detect fuel system issues."
+          },
+          {
+            "q": "What simple checks can improve fuel consumption?",
+            "a": "Checking air filter condition, tire pressures, and regular oil changes are good first steps to enhance fuel economy."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Poor Fuel Economy Causes and Diagnostics",
+        "schemaDescription": "A detailed guide on why your Toyota Corolla may be consuming excess fuel and practical steps to diagnose and improve it."
+      },
+      "de": {
+        "slug": "toyota-corolla-hoher-kraftstoffverbrauch",
+        "title": "Toyota Corolla Hoher Kraftstoffverbrauch: Ursachen und Diagnose",
+        "metaDescription": "Ihr Toyota Corolla verbraucht zu viel Kraftstoff? Entdecken Sie mögliche Ursachen und praktische Diagnose-Tipps zur Verbesserung des Verbrauchs.",
+        "intro": "Ein erhöhter Kraftstoffverbrauch beim Toyota Corolla kann viele Ursachen haben, die von verschmutzten Filtern bis hin zu fehlerhaften Sensoren reichen. In diesem Leitfaden erfahren Sie, welche praktischen Überprüfungen vor einem Teiltausch sinnvoll sind und welche Faktoren den Verbrauch beeinflussen können.",
+        "severity": "Mittel - Ein erhöhter Verbrauch wirkt sich auf Kosten und Umwelt aus und sollte zeitnah geprüft werden.",
+        "driveAdvice": "Vermeiden Sie abruptes Beschleunigen und fahren Sie vorausschauend, um den Kraftstoffverbrauch zu senken.",
+        "likelyCauses": [
+          "Verschmutzter Luftfilter",
+          "Zu geringer Reifendruck",
+          "Defekter Sauerstoffsensor",
+          "Probleme mit den Einspritzdüsen",
+          "Falsche Spureinstellung oder abgefahrene Reifen"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter überprüfen und bei Bedarf reinigen oder ersetzen.",
+          "Reifendruck auf korrekte Werte einstellen.",
+          "Mit OBD2-Scanner Fehlerspeicher auslesen.",
+          "Einspritzdüsen auf Sauberkeit und Funktion prüfen.",
+          "Abgasuntersuchung zur Sensorüberprüfung durchführen.",
+          "Kühlsystem auf Lecks und Funktion kontrollieren."
+        ],
+        "firstChecks": [
+          "Zustand des Luftfilters",
+          "Reifendruck messen",
+          "Ölstand und Servicehistorie prüfen"
+        ],
+        "commonMistakes": [
+          "Fehlannahme einer einzelnen Ursache ohne gründliche Prüfung",
+          "Vernachlässigung der Wartung",
+          "Falschen Kraftstoff verwenden"
+        ],
+        "relatedCodes": [
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0420 - Katalysatorsystem wirkungsgradmindernd",
+          "P0133 - Sauerstoffsensor reagiert verzögert"
+        ],
+        "internalLinks": [
+          {
+            "label": "Toyota Corolla OBD2 Anleitung",
+            "href": "/de/toyota-corolla-obd2-anleitung"
+          },
+          {
+            "label": "Tipps zur Verbesserung des Kraftstoffverbrauchs",
+            "href": "/de/tipps-zur-verbesserung-des-kraftstoffverbrauchs"
+          },
+          {
+            "label": "OBD2 Code P0171 Erklärung",
+            "href": "/de/obd2-code-p0171-erklaerung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum verbraucht mein Toyota Corolla zu viel Kraftstoff?",
+            "a": "Gründe können verschmutzte Filter, defekte Sensoren oder falscher Reifendruck sein, die das Luft-Kraftstoff-Gemisch beeinflussen."
+          },
+          {
+            "q": "Wie erkenne ich eine Störung im Kraftstoffsystem?",
+            "a": "Durch Auslesen von Fehlercodes mit einem OBD2-Scanner und Beobachtung der Fahrzeugleistung lässt sich das erkennen."
+          },
+          {
+            "q": "Welche einfachen Kontrollen helfen den Verbrauch zu senken?",
+            "a": "Eine Überprüfung von Luftfilter, Reifendruck und regelmäßiger Ölwechsel sind gute erste Schritte."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla: Hoher Kraftstoffverbrauch Ursachen und Lösungen",
+        "schemaDescription": "Detaillierter Leitfaden zur Diagnose von hohem Kraftstoffverbrauch beim Toyota Corolla mit praktischen Tipps."
+      },
+      "es": {
+        "slug": "toyota-corolla-mucho-consumo-combustible",
+        "title": "Toyota Corolla Mucho Consumo de Combustible: Causas y Diagnóstico",
+        "metaDescription": "¿Tu Toyota Corolla consume demasiado combustible? Descubre causas comunes, pasos para diagnosticar y mejorar la eficiencia del coche.",
+        "intro": "Un consumo excesivo de combustible en el Toyota Corolla puede deberse a muchas causas, desde filtros sucios hasta sensores defectuosos. Esta guía ofrece revisiones prácticas y posibles causas sin señalar un único motivo, ayudándote a diagnosticar antes de reemplazar piezas costosas.",
+        "severity": "Moderado - El exceso de consumo impacta en el bolsillo y el medio ambiente, conviene diagnosticar cuanto antes.",
+        "driveAdvice": "Conduce de forma suave, evitando aceleraciones bruscas para reducir el consumo mientras buscas el origen del problema.",
+        "likelyCauses": [
+          "Filtro de aire obstruido",
+          "Presión baja en los neumáticos",
+          "Sensor de oxígeno defectuoso",
+          "Inyectores de combustible sucios o fallando",
+          "Desalineación de ruedas o neumáticos desgastados"
+        ],
+        "diagnosticSteps": [
+          "Revisar y cambiar o limpiar el filtro de aire si está sucio.",
+          "Comprobar y ajustar la presión de los neumáticos según especificaciones.",
+          "Escanear con OBD2 para detectar códigos de error.",
+          "Inspeccionar y limpiar los inyectores de combustible.",
+          "Realizar prueba de emisiones para verificar sensorización.",
+          "Revisar el sistema de enfriamiento por fugas o fallos."
+        ],
+        "firstChecks": [
+          "Estado del filtro de aire",
+          "Presión de los neumáticos",
+          "Nivel de aceite y mantenimiento reciente"
+        ],
+        "commonMistakes": [
+          "Buscar una sola causa sin diagnóstico completo",
+          "Postergar revisiones y mantenimiento",
+          "Usar combustible inadecuado"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema demasiado pobre",
+          "P0420 - Eficiencia del catalizador reducida",
+          "P0133 - Sensor de oxígeno con respuesta lenta"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía OBD2 Toyota Corolla",
+            "href": "/es/guia-obd2-toyota-corolla"
+          },
+          {
+            "label": "Consejos para mejorar el consumo",
+            "href": "/es/consejos-mejorar-consumo-combustible"
+          },
+          {
+            "label": "Código OBD2 P0171 explicado",
+            "href": "/es/codigo-obd2-p0171-explicacion"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Toyota Corolla consume mucho combustible?",
+            "a": "Diversos factores como filtros sucios, sensores defectuosos o baja presión en neumáticos pueden afectar el consumo."
+          },
+          {
+            "q": "¿Cómo detectar un problema en el sistema de combustible?",
+            "a": "Usando un escáner OBD2 para verificar códigos de error y observando el rendimiento del vehículo."
+          },
+          {
+            "q": "¿Qué revisiones básicas ayudan a mejorar el consumo?",
+            "a": "Comprobar filtro de aire, presión de neumáticos y realizar mantenimiento rutinario del motor."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Mucho Consumo de Combustible: Diagnóstico y Soluciones",
+        "schemaDescription": "Guía detallada para identificar y solucionar el consumo excesivo de combustible en un Toyota Corolla."
+      },
+      "fr": {
+        "slug": "toyota-corolla-consommation-carburant-elevee",
+        "title": "Toyota Corolla Consommation de Carburant Élevée : Causes et Diagnostic",
+        "metaDescription": "Votre Toyota Corolla consomme trop de carburant ? Découvrez les causes possibles, les vérifications pratiques et le diagnostic à suivre.",
+        "intro": "Une consommation de carburant élevée sur une Toyota Corolla peut résulter de plusieurs facteurs, allant d'un filtre à air encrassé à des capteurs défaillants. Ce guide propose des vérifications simples et des causes courantes sans prétendre à une réponse unique, afin d'optimiser votre diagnostic avant tout remplacement.",
+        "severity": "Modéré - Une surconsommation impacte le budget et l’environnement, il est conseillé d’agir rapidement.",
+        "driveAdvice": "Adoptez une conduite souple et évitez les accélérations brusques pour limiter la consommation pendant le diagnostic.",
+        "likelyCauses": [
+          "Filtre à air encrassé",
+          "Pression des pneus insuffisante",
+          "Sonde lambda défectueuse",
+          "Injecteurs de carburant sales ou défaillants",
+          "Mauvais alignement des roues ou pneus usés"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez et remplacez ou nettoyez le filtre à air s’il est sale.",
+          "Vérifiez et réajustez la pression des pneus aux valeurs recommandées.",
+          "Scannez le véhicule avec un outil OBD2 pour repérer les codes défauts.",
+          "Inspectez les injecteurs et nettoyez-les si nécessaire.",
+          "Effectuez un test des émissions pour évaluer l’efficacité des capteurs.",
+          "Examinez le système de refroidissement pour détecter fuites ou dysfonctionnements."
+        ],
+        "firstChecks": [
+          "État du filtre à air",
+          "Pression des pneus",
+          "Niveau d’huile moteur et historique d’entretien"
+        ],
+        "commonMistakes": [
+          "Attribuer le problème à une seule cause sans diagnostic complet",
+          "Négliger les entretiens réguliers",
+          "Utiliser un carburant non adapté"
+        ],
+        "relatedCodes": [
+          "P0171 - Système carburant trop pauvre",
+          "P0420 - Efficacité du catalyseur insuffisante",
+          "P0133 - Sonde lambda réponse lente"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide OBD2 Toyota Corolla",
+            "href": "/fr/guide-obd2-toyota-corolla"
+          },
+          {
+            "label": "Conseils pour améliorer la consommation",
+            "href": "/fr/conseils-pour-ameliorer-la-consommation"
+          },
+          {
+            "label": "Code OBD2 P0171 expliqué",
+            "href": "/fr/code-obd2-p0171-explique"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi ma Toyota Corolla consomme-t-elle trop ?",
+            "a": "Plusieurs facteurs peuvent être en cause, comme un filtre encrassé, des capteurs défectueux ou une pression de pneus incorrecte."
+          },
+          {
+            "q": "Comment détecter un problème dans le système de carburant ?",
+            "a": "L’utilisation d’un outil OBD2 pour lire les codes défauts et l’observation des performances du véhicule sont essentielles."
+          },
+          {
+            "q": "Quelles vérifications simples peuvent améliorer la consommation ?",
+            "a": "Contrôler le filtre à air, la pression des pneus et effectuer un entretien régulier sont d’excellents premiers gestes."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Consommation Élevée : Causes et Diagnostic",
+        "schemaDescription": "Guide complet pour identifier et résoudre les problèmes de surconsommation de carburant sur Toyota Corolla."
+      }
+    }
+  },
+  {
+    "contentGroupId": "toyota-corolla-stalling",
+    "intentKey": "toyota-corolla_stalling",
+    "make": "Toyota",
+    "model": "Corolla",
+    "symptomKey": "stalling",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "toyota-corolla-stalling-causes-and-diagnostics",
+        "title": "Toyota Corolla Stalling Issues: Causes and Diagnostic Guide",
+        "metaDescription": "Explore common reasons why your Toyota Corolla stalls and practical steps to diagnose the problem before replacing parts.",
+        "intro": "Experiencing stalling issues with your Toyota Corolla can be stressful and dangerous. This guide outlines common causes of stalling and practical diagnostic steps to help you identify the problem accurately, avoiding unnecessary repairs and ensuring your vehicle runs smoothly.",
+        "severity": "Stalling can range from occasional hesitations to frequent engine shutdowns, potentially causing safety risks on the road. Immediate attention is recommended if stalling occurs during driving.",
+        "driveAdvice": "If your Corolla stalls while driving, safely pull over to the roadside and restart the engine. Avoid continuing to drive until the issue is diagnosed to prevent further damage or accidents.",
+        "likelyCauses": [
+          "Dirty or failing mass airflow sensor (MAF)",
+          "Faulty idle air control valve (IAC)",
+          "Clogged fuel filter or weak fuel pump",
+          "Vacuum leak in intake manifold or hoses",
+          "Issues with the ignition system such as worn spark plugs"
+        ],
+        "diagnosticSteps": [
+          "Scan for OBD2 codes using a compatible scanner",
+          "Visual inspection for vacuum leaks and damaged hoses",
+          "Test fuel pressure to verify fuel delivery",
+          "Check condition and function of IAC valve",
+          "Inspect and clean or replace the MAF sensor",
+          "Evaluate ignition components including spark plugs and wires"
+        ],
+        "firstChecks": [
+          "Make sure the fuel tank has sufficient gasoline",
+          "Check for loose or disconnected vacuum hoses",
+          "Look for visible engine warning lights on the dashboard"
+        ],
+        "commonMistakes": [
+          "Replacing parts without diagnostic confirmation",
+          "Ignoring minor vacuum leaks that worsen the problem",
+          "Failing to check OBD2 codes before repairs"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Bank 1)",
+          "P0505 - Idle Control System Malfunction",
+          "P0300 - Random/Multiple Cylinder Misfire Detected"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Scan Guide",
+            "href": "/en/obd2/scanning-your-vehicle"
+          },
+          {
+            "label": "Mass Airflow Sensor Diagnosis",
+            "href": "/en/sensors/mass-airflow-sensor"
+          },
+          {
+            "label": "Fuel System Troubleshooting",
+            "href": "/en/fuel/fuel-system-troubleshooting"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can stalling be caused by running out of fuel?",
+            "a": "Yes, insufficient fuel can cause your engine to stall. Always ensure your tank has enough fuel before concluding other issues."
+          },
+          {
+            "q": "Is an idle air control valve replacement always necessary when stalling occurs?",
+            "a": "Not necessarily. It's best to test and clean the IAC valve before replacing it, as dirt buildup often causes issues."
+          },
+          {
+            "q": "How can I read OBD2 codes for my Toyota Corolla stalling?",
+            "a": "Use an OBD2 scanner compatible with your vehicle, connect it to the diagnostic port, and run a scan to retrieve trouble codes."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Stalling: Causes, Diagnostics, and Solutions",
+        "schemaDescription": "Learn why your Toyota Corolla stalls and practical ways to diagnose the issue including common causes, OBD2 codes, and safe repair tips."
+      },
+      "tr": {
+        "slug": "toyota-corolla-stop-ediyor-nedenleri-ve-tespit",
+        "title": "Toyota Corolla Stop Etme Sorunu: Nedenleri ve Diagnostik Rehber",
+        "metaDescription": "Toyota Corolla'nuzun neden stop ettiğini ve parça değişimi yapmadan önce yapabileceğiniz pratik kontrolleri öğrenin.",
+        "intro": "Toyota Corolla aracınızın ani olarak stop etmesi stresli bir durum olabilir. Bu rehberde, aracınızın stop etmesinin olası nedenlerini ve sorunu doğru teşhis etmek için uygulanabilir adımları bulabilirsiniz. Gereksiz masraflardan kaçınarak aracınızın sorunsuz çalışmasını sağlamanıza yardımcı olur.",
+        "severity": "Stop etme sorunu, zaman zaman yaşanan duraklamalardan sık sık motorun kapanmasına kadar değişebilir ve trafikte güvenliği tehlikeye atabilir. Araç kullanırken stop ediyorsa hemen kontrol edilmelidir.",
+        "driveAdvice": "Araç sürüş sırasında stop ederse, güvenli bir şekilde kenara çekin ve motoru yeniden çalıştırmayı deneyin. Sorun teşhis edilmeden aracı kullanmaya devam etmeyin, böylece daha büyük hasarların önüne geçebilirsiniz.",
+        "likelyCauses": [
+          "Kirlenmiş veya arızalı kütle hava akış sensörü",
+          "Bozuk rölanti hava kontrol valfi",
+          "Tıkalı yakıt filtresi veya zayıf yakıt pompası",
+          "Emme manifoldunda veya hortumlarda vakum kaçağı",
+          "Ateşleme sisteminde, örn. aşınmış bujiler"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile arıza kodlarını tarama",
+          "Vakum kaçakları ve hortumları görsel kontrol",
+          "Yakıt basıncını ölçme ve yakıt iletimini doğrulama",
+          "Rölanti hava kontrol valfini test etme",
+          "Kütle hava akış sensörünü temizleme veya değiştirme",
+          "Bujileri ve ateşleme kablolarını inceleme"
+        ],
+        "firstChecks": [
+          "Yakıt deposunda yeterince benzin olduğundan emin olun",
+          "Hortumların gevşek veya bağlantısının kesik olmadığını kontrol edin",
+          "Gösterge panelinde motor arıza ışığı olup olmadığına bakın"
+        ],
+        "commonMistakes": [
+          "Tanısız parça değişimi yapmak",
+          "Küçük vakum kaçaklarını görmezden gelmek",
+          "Onarım öncesi OBD2 kodlarını kontrol etmemek"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistem Çok Fakir Yakıt (Bank 1)",
+          "P0505 - Rölanti Kontrol Sistemi Arızası",
+          "P0300 - Rastgele/Çoklu Silindir Yanma Hatası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Tarama Rehberi",
+            "href": "/tr/obd2/araç-tarama"
+          },
+          {
+            "label": "Kütle Hava Akış Sensörü Teşhisi",
+            "href": "/tr/sensorler/kutle-hava-akis-sensoru"
+          },
+          {
+            "label": "Yakıt Sistemi Arıza Tespiti",
+            "href": "/tr/yakıt/yakit-sistemi-kontrol"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Araç stop etmeye neden olabilir mi yakıt bitmesi?",
+            "a": "Evet, yeterli yakıt olmadığında motor stop eder. Önce yakıt seviyesini kontrol etmek önemlidir."
+          },
+          {
+            "q": "Rölanti hava kontrol valfi mutlaka değiştirilmelidir mi?",
+            "a": "Hayır, önce valf test edilmeli ve gerekiyorsa temizlenmelidir; çoğunlukla kirlenme nedeniyle sorun olur."
+          },
+          {
+            "q": "Toyota Corolla'nın OBD2 kodları nasıl okunur?",
+            "a": "Uyumlu bir OBD2 tarayıcı kullanarak aracın diagnostik portuna bağlanıp kodları okuyabilirsiniz."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Stop Etme Sorunları: Nedenler ve Çözümler",
+        "schemaDescription": "Toyota Corolla'nuzun stop etme nedenlerini, OBD2 kodlarını ve teşhis adımlarını pratik şekilde öğrenin."
+      },
+      "de": {
+        "slug": "toyota-corolla-absterben-ursachen-und-diagnose",
+        "title": "Toyota Corolla Motorabsterben: Ursachen und Diagnoseschritte",
+        "metaDescription": "Erfahren Sie, warum Ihr Toyota Corolla abstirbt und wie Sie praktische Diagnoseschritte vor dem Teiletausch durchführen.",
+        "intro": "Motorabsterben beim Toyota Corolla kann gefährlich und ärgerlich sein. Diese Anleitung erläutert mögliche Ursachen und praktische Diagnoseschritte, um das Problem effizient zu erkennen, bevor kostspielige Reparaturen eingeleitet werden. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Das Absterben des Motors kann von gelegentlichem Ruckeln bis zum kompletten Stillstand reichen und stellt insbesondere im Straßenverkehr ein Sicherheitsrisiko dar. Eine zeitnahe Diagnose ist wichtig.",
+        "driveAdvice": "Sollte Ihr Corolla während der Fahrt absterben, halten Sie bitte sicher an und versuchen Sie, den Motor neu zu starten. Nutzen Sie das Fahrzeug nicht weiter, bis die Ursache geklärt ist, um Schäden zu vermeiden.",
+        "likelyCauses": [
+          "Verschmutzter oder defekter Luftmassenmesser (MAF)",
+          "Fehlerhaftes Leerlaufregelventil (IAC)",
+          "Verstopfter Kraftstofffilter oder schwache Kraftstoffpumpe",
+          "Unterdruckleck im Ansaugkrümmer oder Schläuchen",
+          "Probleme mit der Zündanlage, z.B. verschlissene Zündkerzen"
+        ],
+        "diagnosticSteps": [
+          "Auslesen der OBD2-Fehlercodes mit geeignetem Scanner",
+          "Sichtprüfung auf Unterdrucklecks und beschädigte Schläuche",
+          "Kraftstoffdruck messen und Kraftstoffversorgung prüfen",
+          "Funktionsprüfung und Reinigung/Austausch des IAC-Ventils",
+          "Reinigung oder Austausch des MAF-Sensors",
+          "Überprüfung von Zündkerzen und Zündkabeln"
+        ],
+        "firstChecks": [
+          "Prüfen Sie den Füllstand des Kraftstofftanks",
+          "Kontrollieren Sie auf lose oder abgezogene Vakuumschläuche",
+          "Achten Sie auf Motorkontrollleuchten am Armaturenbrett"
+        ],
+        "commonMistakes": [
+          "Teile ohne Diagnose austauschen",
+          "Kleine Unterdrucklecks ignorieren",
+          "OBD2-Codes vor Reparaturen nicht auslesen"
+        ],
+        "relatedCodes": [
+          "P0171 - System zu mager (Bank 1)",
+          "P0505 - Leerlaufsteuerungssystemfehler",
+          "P0300 - Zufällige oder mehrere Zündaussetzer erkannt"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Scan Anleitung",
+            "href": "/de/obd2/auto-scannen"
+          },
+          {
+            "label": "Diagnose des Luftmassenmessers",
+            "href": "/de/sensoren/luftmassenmesser"
+          },
+          {
+            "label": "Kraftstoffsystem Fehlerbehebung",
+            "href": "/de/kraftstoff/kraftstoffsystem-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ein leerer Tank zum Absterben führen?",
+            "a": "Ja, eine unzureichende Kraftstoffversorgung lässt den Motor absterben. Tankinhalt immer prüfen."
+          },
+          {
+            "q": "Muss das Leerlaufregelventil immer ersetzt werden?",
+            "a": "Nicht unbedingt. Zuerst sollte es gereinigt oder getestet werden, bevor ein Austausch erfolgt."
+          },
+          {
+            "q": "Wie liest man OBD2-Codes beim Toyota Corolla aus?",
+            "a": "Mit einem kompatiblen OBD2-Scanner am Diagnoseanschluss des Fahrzeugs die Fehlercodes auslesen."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla Motorabsterben: Ursachen, Diagnose & Lösungen",
+        "schemaDescription": "Erfahren Sie, warum Ihr Toyota Corolla abstirbt, inklusive OBD2-Codes, häufigen Ursachen und sicheren Diagnosehinweisen."
+      },
+      "es": {
+        "slug": "toyota-corolla-motor-tiembla-stallo-causas",
+        "title": "Problemas de Stalling en Toyota Corolla: Causas y Diagnóstico",
+        "metaDescription": "Descubre las causas comunes del stalling en tu Toyota Corolla y pasos prácticos para diagnosticar antes de cambiar piezas.",
+        "intro": "Que tu Toyota Corolla se apague inesperadamente puede ser preocupante y peligroso. Esta guía explica las causas más frecuentes del stalling y cómo realizar diagnósticos efectivos para identificar el problema sin reemplazos innecesarios. Esta guía prioriza las primeras comprobaciones seguras, los códigos OBD2 que suelen aparecer con este síntoma y una secuencia de diagnóstico que ayuda a diferenciar sensores, cableado, combustible, encendido, admisión, refrigeración, escape o transmisión antes de cambiar piezas costosas.",
+        "severity": "El stalling puede variar desde pequeñas fallas hasta apagones constantes del motor, lo que representa un riesgo de seguridad. Se recomienda actuar rápidamente si ocurre el problema mientras conduces.",
+        "driveAdvice": "Si el Corolla se apaga durante la conducción, detente en un lugar seguro y reinicia el motor. No continúes conduciendo hasta que el problema sea diagnosticado para evitar daños mayores.",
+        "likelyCauses": [
+          "Sensor de flujo de aire sucio o defectuoso",
+          "Válvula de control de ralentí averiada",
+          "Filtro de combustible obstruido o bomba débil",
+          "Fugas de vacío en el múltiple de admisión o mangueras",
+          "Problemas en el sistema de encendido, como bujías desgastadas"
+        ],
+        "diagnosticSteps": [
+          "Escanear códigos OBD2 con un escáner compatible",
+          "Inspección visual para detectar fugas de vacío y daños",
+          "Medir presión de combustible para verificar suministro",
+          "Probar el funcionamiento de la válvula IAC",
+          "Limpiar o reemplazar el sensor de flujo de aire",
+          "Revisar componentes de encendido (bujías y cables)"
+        ],
+        "firstChecks": [
+          "Asegurarse de que el tanque tenga suficiente combustible",
+          "Verificar mangueras de vacío desconectadas o flojas",
+          "Comprobar si hay luces de advertencia en el tablero"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin un diagnóstico adecuado",
+          "Ignorar pequeñas fugas de vacío que empeoran el problema",
+          "No revisar códigos OBD2 antes de reparar"
+        ],
+        "relatedCodes": [
+          "P0171 - Sistema muy pobre (Banco 1)",
+          "P0505 - Mal funcionamiento del sistema de control de ralentí",
+          "P0300 - Fallo de encendido aleatorio o múltiple detectado"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía para Escanear OBD2",
+            "href": "/es/obd2/como-usar-el-escanner"
+          },
+          {
+            "label": "Diagnóstico del Sensor de Flujo de Aire",
+            "href": "/es/sensores/sensor-flujo-aire"
+          },
+          {
+            "label": "Solución de Problemas del Sistema de Combustible",
+            "href": "/es/combustible/diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede el motor apagarse por falta de combustible?",
+            "a": "Sí, si el tanque está vacío o casi vacío, el motor puede apagarse. Siempre verifica el nivel de combustible primero."
+          },
+          {
+            "q": "¿Es necesario cambiar siempre la válvula de control de ralentí?",
+            "a": "No necesariamente. Primero debe limpiarse o probarse, ya que la suciedad suele ser la causa."
+          },
+          {
+            "q": "¿Cómo leo los códigos OBD2 en mi Toyota Corolla?",
+            "a": "Usa un escáner OBD2 compatible, conéctalo al puerto de diagnóstico del vehículo y obtén los códigos de falla."
+          }
+        ],
+        "schemaTitle": "Toyota Corolla y Problemas de Stalling: Causas y Diagnóstico",
+        "schemaDescription": "Aprende por qué tu Toyota Corolla se apaga y cómo diagnosticar el problema con códigos OBD2 y pasos prácticos."
+      },
+      "fr": {
+        "slug": "toyota-corolla-calage-causes-diagnostic",
+        "title": "Problèmes de Calage sur Toyota Corolla : Causes et Diagnostic",
+        "metaDescription": "Découvrez les raisons fréquentes du calage sur Toyota Corolla et les étapes pratiques pour diagnostiquer avant de remplacer des pièces.",
+        "intro": "Le calage du moteur sur une Toyota Corolla peut être source d’inquiétude et dangereux. Ce guide présente les causes possibles et les démarches de diagnostic afin d’identifier précisément le problème, sans se précipiter vers des réparations coûteuses.",
+        "severity": "Le calage peut aller de légères hésitations à des arrêts fréquents du moteur, ce qui représente un risque pour la sécurité. Il est conseillé de réagir rapidement si le problème survient en roulant.",
+        "driveAdvice": "En cas de calage durant la conduite, garez-vous en sécurité et tentez de redémarrer le moteur. Ne poursuivez pas la route avant d’avoir diagnostiqué le problème pour éviter des dommages supplémentaires.",
+        "likelyCauses": [
+          "Capteur de débit d’air massique encrassé ou défaillant",
+          "Vanne de contrôle du ralenti défectueuse",
+          "Filtre à carburant bouché ou pompe à essence faible",
+          "Fuite de dépression dans le collecteur ou les durites",
+          "Problèmes d’allumage comme bougies usées"
+        ],
+        "diagnosticSteps": [
+          "Lecture des codes OBD2 avec un scanner adapté",
+          "Inspection visuelle des durites et recherche de fuites",
+          "Mesure de la pression du carburant pour vérifier l’alimentation",
+          "Test et nettoyage ou remplacement de la vanne IAC",
+          "Nettoyage ou remplacement du capteur MAF",
+          "Contrôle des bougies et des câbles d’allumage"
+        ],
+        "firstChecks": [
+          "S’assurer que le réservoir contient suffisamment de carburant",
+          "Vérifier les durites de dépression déconnectées ou mal fixées",
+          "Regarder si un témoin moteur est allumé au tableau de bord"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic préalable",
+          "Négliger les petites fuites de dépression",
+          "Ne pas vérifier les codes OBD2 avant les réparations"
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0505 - Dysfonctionnement du système de ralenti",
+          "P0300 - Ratés d’allumage aléatoires ou multiples détectés"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide de Lecture OBD2",
+            "href": "/fr/obd2/lecture-codes"
+          },
+          {
+            "label": "Diagnostic du Capteur MAF",
+            "href": "/fr/capteurs/capteur-masse-air"
+          },
+          {
+            "label": "Dépannage Système de Carburant",
+            "href": "/fr/carburant/diagnostic-systeme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Le calage peut-il être dû à un manque de carburant?",
+            "a": "Oui, un réservoir trop bas peut provoquer le calage. Toujours vérifier le niveau de carburant en priorité."
+          },
+          {
+            "q": "Faut-il toujours remplacer la vanne de ralenti en cas de calage?",
+            "a": "Pas forcément. Il est préférable de tester et nettoyer la vanne avant de la remplacer."
+          },
+          {
+            "q": "Comment lire les codes OBD2 sur Toyota Corolla?",
+            "a": "Avec un scanner OBD2 compatible, connectez-vous à la prise diagnostic et récupérez les codes d’erreur."
+          }
+        ],
+        "schemaTitle": "Calage sur Toyota Corolla : Causes, Diagnostic et Solutions",
+        "schemaDescription": "Comprenez pourquoi votre Toyota Corolla cale et comment diagnostiquer le problème avec les codes OBD2 et des conseils pratiques."
+      }
+    }
   }
 ]
