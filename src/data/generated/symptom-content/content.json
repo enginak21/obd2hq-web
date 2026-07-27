@@ -33398,5 +33398,3515 @@
         "schemaDescription": "Guide expert des causes fréquentes, premiers contrôles et démarches de diagnostic pour le témoin moteur allumé sur Peugeot."
       }
     }
+  },
+  {
+    "contentGroupId": "peugeot-hard-start",
+    "intentKey": "peugeot_hard_start",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "hard_start",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "peugeot-hard-start",
+        "title": "Peugeot Hard Start Issues: Diagnosis and Practical Solutions",
+        "metaDescription": "Experiencing hard start issues with your Peugeot? Learn practical diagnostic steps, common causes, and what to check before replacing parts.",
+        "intro": "If your Peugeot is having trouble starting, it can be frustrating and inconvenient. Hard starts may be caused by various factors including fuel delivery, ignition, or electrical problems. Understanding the potential causes and methodical diagnosis can save you time and unnecessary expenses. In this guide, we explore practical checks and likely issues without jumping to conclusions.",
+        "severity": "Moderate - affects daily use but usually not immediate breakdown",
+        "driveAdvice": "Avoid repeated attempts to start the engine to prevent battery drain. Have the vehicle checked if problems persist.",
+        "likelyCauses": [
+          "Weak or failing battery",
+          "Faulty spark plugs or ignition coils",
+          "Clogged fuel filter or fuel system issues",
+          "Malfunctioning crankshaft position sensor",
+          "Cold weather effects impacting fuel vaporization"
+        ],
+        "diagnosticSteps": [
+          "Check battery voltage and health",
+          "Inspect spark plugs for wear or fouling",
+          "Test fuel pressure using a gauge",
+          "Scan OBD2 codes related to ignition and fuel systems",
+          "Examine crankshaft position sensor signals",
+          "Perform cold start tests to observe behavior"
+        ],
+        "firstChecks": [
+          "Ensure battery terminals are clean and tight",
+          "Listen for fuel pump operation during ignition",
+          "Check for excess moisture or dirt on ignition components"
+        ],
+        "commonMistakes": [
+          "Replacing spark plugs without checking ignition coils",
+          "Ignoring fuel system pressure and focusing only on electrical parts",
+          "Assuming starter motor is faulty without testing battery first"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0335 - Crankshaft Position Sensor Circuit Malfunction",
+          "P0171 - System Too Lean (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Spark Plug Troubleshooting",
+            "href": "/en/peugeot-spark-plug-troubleshooting"
+          },
+          {
+            "label": "Understanding OBD2 Codes for Hard Start",
+            "href": "/en/obd2-hard-start-codes"
+          },
+          {
+            "label": "Fuel System Diagnostics Guide",
+            "href": "/en/fuel-system-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a weak battery cause hard starting?",
+            "a": "Yes, a weak or discharged battery may not provide enough power to start the engine quickly or reliably."
+          },
+          {
+            "q": "Is it common for faulty spark plugs to cause hard starts?",
+            "a": "Absolutely, worn or fouled spark plugs can cause weak ignition, leading to difficult engine starts."
+          },
+          {
+            "q": "Should I replace the starter motor if starting is hard?",
+            "a": "Not necessarily. Test the battery and ignition system first, as these are common culprits."
+          }
+        ],
+        "schemaTitle": "Peugeot Hard Start Diagnostic Guide",
+        "schemaDescription": "Comprehensive guide to diagnosing and resolving hard start issues on Peugeot vehicles with practical tips and common OBD2 codes."
+      },
+      "tr": {
+        "slug": "peugeot-gec-calisma-sorunu",
+        "title": "Peugeot Geç Çalışma Sorunları: Tanı ve Pratik Çözümler",
+        "metaDescription": "Peugeot aracınız geç mi çalışıyor? Parça değiştirmeden önce yapabileceğiniz kontroller, olası nedenler ve tanı adımlarını öğrenin.",
+        "intro": "Peugeot aracınızın geç çalışması can sıkıcı olabilir. Bu problem birçok farklı nedenden kaynaklanabilir; yakıt sistemi, ateşleme, elektriksel arızalar gibi. Doğru tespit için sistematik kontroller yapmak gereklidir. Bu rehberde, parça değişimine geçmeden önce uygulanabilecek pratik kontrolleri ve olası sebepleri ele alıyoruz.",
+        "severity": "Orta - Günlük kullanımda sorun yaratabilir ancak aracın tamamen çalışmaması nadirdir",
+        "driveAdvice": "Aracı tekrar tekrar çalıştırmaya çalışmak bataryanın bitmesine neden olabilir. Sorun devam ederse kontrol ettirin.",
+        "likelyCauses": [
+          "Zayıf veya bitmek üzere olan akü",
+          "Arızalı buji veya ateşleme bobini",
+          "Tıkanmış yakıt filtresi veya yakıt sistemi sorunları",
+          "Arızalı krank pozisyon sensörü",
+          "Soğuk hava şartlarının yakıtın buharlaşmasını etkilemesi"
+        ],
+        "diagnosticSteps": [
+          "Akü voltajını ve durumunu kontrol edin",
+          "Bujileri aşınma ve kirlenme açısından muayene edin",
+          "Yakıt basıncını ölçüm cihazıyla test edin",
+          "OBD2 cihazıyla ateşleme ve yakıt sistemi kodlarını tarayın",
+          "Krank sensörünün sinyallerini kontrol edin",
+          "Soğuk start testleri yaparak aracın davranışını gözleyin"
+        ],
+        "firstChecks": [
+          "Akü terminallerinin temiz ve sıkı olduğundan emin olun",
+          "Kontak açıldığında yakıt pompasının çalıştığını dinleyin",
+          "Ateşleme parçalarında nem veya kir var mı kontrol edin"
+        ],
+        "commonMistakes": [
+          "Ateşleme bobinlerini kontrol etmeden sadece buji değiştirmek",
+          "Yakıt sistemi problemlerini göz ardı edip sadece elektrik aksanlarına odaklanmak",
+          "Bataryayı test etmeden marş motorunu değiştirmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele / Çoklu Silindir Ateşleme Hatası",
+          "P0335 - Krank Pozisyon Sensörü Arızası",
+          "P0171 - Yakıt Sistemi Zenginlik Ayarından Fakir"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Buji Problemleri",
+            "href": "/tr/peugeot-buji-problemleri"
+          },
+          {
+            "label": "OBD2 Kodları ile Geç Çalışma Analizi",
+            "href": "/tr/obd2-gec-calisma-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Tanı Rehberi",
+            "href": "/tr/yakit-sistemi-tani"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Zayıf akü geç çalışmaya neden olur mu?",
+            "a": "Evet, zayıf veya düşük akü motoru gerektiği gibi çeviremez ve geç çalışma yapabilir."
+          },
+          {
+            "q": "Arızalı bujiler geç çalışmaya sebep olur mu?",
+            "a": "Kesinlikle, aşınmış veya kirli bujiler ateşlemeyi zayıflatır ve zor çalışmaya yol açar."
+          },
+          {
+            "q": "Marş motorunu hemen değiştirmeli miyim?",
+            "a": "Önce akü ve ateşleme sistemini kontrol etmek daha mantıklıdır; bunlar daha yaygın sorun kaynaklarıdır."
+          }
+        ],
+        "schemaTitle": "Peugeot Geç Çalışma Sorunu Tanı Rehberi",
+        "schemaDescription": "Peugeot araçlarda geç çalışma sorunlarının tanısı ve çözümleri için kapsamlı rehber. Pratik kontroller ve OBD2 kodları."
+      },
+      "de": {
+        "slug": "peugeot-schwerer-start",
+        "title": "Peugeot Startprobleme: Diagnose und Praxistipps",
+        "metaDescription": "Probleme mit schwerem Start bei Peugeot? Praktische Diagnose-Schritte, häufige Ursachen und erste Kontrollen vor dem Teiletausch.",
+        "intro": "Wenn Ihr Peugeot schwer startet, kann das verschiedene Ursachen haben. Störungen im Kraftstoffsystem, der Zündung oder der Elektrik sind häufige Gründe. Eine strukturierte Diagnose hilft, die Ursache zu finden und unnötigen Austausch von Teilen zu vermeiden. In diesem Leitfaden finden Sie praxisnahe Tipps für die Überprüfung und mögliche Ursachen.",
+        "severity": "Mittel - Beeinträchtigt den Fahrkomfort, aber meist kein sofortiger Ausfall",
+        "driveAdvice": "Vermeiden Sie mehrfache Startversuche hintereinander, um die Batterie zu schonen. Lassen Sie das Fahrzeug bei anhaltenden Problemen überprüfen.",
+        "likelyCauses": [
+          "Schwache oder beschädigte Batterie",
+          "Defekte Zündkerzen oder Zündspulen",
+          "Verstopfter Kraftstofffilter oder Kraftstoffsystem-Probleme",
+          "Fehlerhafter Kurbelwellensensor",
+          "Kalte Temperaturen beeinträchtigen die Kraftstoffverdampfung"
+        ],
+        "diagnosticSteps": [
+          "Batteriespannung und Zustand überprüfen",
+          "Zündkerzen auf Abnutzung und Verschmutzung prüfen",
+          "Kraftstoffdruck mit Manometer messen",
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Signale des Kurbelwellensensors testen",
+          "Verhalten bei Kaltstart beobachten"
+        ],
+        "firstChecks": [
+          "Batterieanschlüsse reinigen und festziehen",
+          "Geräusch der Kraftstoffpumpe beim Zündschlüsselkontakt kontrollieren",
+          "Zündanlage auf Feuchtigkeit und Verschmutzung prüfen"
+        ],
+        "commonMistakes": [
+          "Zündkerzen tauschen ohne Zündspule zu überprüfen",
+          "Sich nur auf Elektrik zu konzentrieren und das Kraftstoffsystem zu ignorieren",
+          "Startermotor tauschen, bevor Batterie überprüft wurde"
+        ],
+        "relatedCodes": [
+          "P0300 - Zündaussetzer mehrere Zylinder",
+          "P0335 - Kurbelwellensensor-Schaltkreisfehler",
+          "P0171 - Gemisch zu mager (Bank 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Zündkerzen prüfen",
+            "href": "/de/peugeot-zundkerzen-prufen"
+          },
+          {
+            "label": "OBD2-Codes bei Startproblemen",
+            "href": "/de/obd2-startprobleme-codes"
+          },
+          {
+            "label": "Kraftstoffsystem Diagnose",
+            "href": "/de/kraftstoffsystem-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann die Batterie schwere Startprobleme verursachen?",
+            "a": "Ja, eine schwache Batterie liefert oft nicht genug Energie für den Startvorgang."
+          },
+          {
+            "q": "Verursachen defekte Zündkerzen Startprobleme?",
+            "a": "Defekte oder verschmutzte Zündkerzen führen häufig zu Schwierigkeiten beim Starten."
+          },
+          {
+            "q": "Sollte man den Anlasser bei Startproblemen sofort tauschen?",
+            "a": "Nicht unbedingt, zuerst sollten Batterie und Zündanlage geprüft werden."
+          }
+        ],
+        "schemaTitle": "Peugeot Startprobleme Diagnose Leitfaden",
+        "schemaDescription": "Umfassender Leitfaden zur Diagnose und Behebung von Startproblemen bei Peugeot mit praxisnahen Tipps und OBD2-Codes."
+      },
+      "es": {
+        "slug": "peugeot-motor-dificultad-arranque",
+        "title": "Problemas de Arranque en Peugeot: Diagnóstico y Soluciones Prácticas",
+        "metaDescription": "¿Tu Peugeot tiene dificultad para arrancar? Descubre causas comunes, pasos de diagnóstico y controles básicos antes de cambiar piezas.",
+        "intro": "Cuando un Peugeot tiene dificultad para arrancar, puede deberse a múltiples factores. Problemas en el sistema de combustible, la ignición o la electricidad pueden ser responsables. Conocer las causas más frecuentes y realizar un diagnóstico paso a paso puede evitar gastos innecesarios. Aquí encontrarás consejos prácticos para identificar el problema sin suponer una causa fija.",
+        "severity": "Moderada - Afecta el uso diario pero no suele dejar el vehículo parado de inmediato",
+        "driveAdvice": "Evita intentos repetidos de arranque para no agotar la batería. Si el problema persiste, lleva tu coche a revisión.",
+        "likelyCauses": [
+          "Batería débil o en mal estado",
+          "Bujías o bobinas de encendido defectuosas",
+          "Filtro de combustible obstruido o problemas en el sistema de combustible",
+          "Sensor de posición del cigüeñal defectuoso",
+          "Efectos del frío que dificultan la vaporización del combustible"
+        ],
+        "diagnosticSteps": [
+          "Verificar voltaje y estado de la batería",
+          "Inspeccionar bujías por desgaste o suciedad",
+          "Medir presión del combustible con manómetro",
+          "Leer códigos OBD2 relacionados con sistemas de encendido y combustible",
+          "Comprobar señales del sensor del cigüeñal",
+          "Realizar pruebas de arranque en frío"
+        ],
+        "firstChecks": [
+          "Asegurar que los terminales de la batería estén limpios y bien conectados",
+          "Escuchar si la bomba de combustible opera al girar la llave",
+          "Revisar humedad o suciedad en componentes de encendido"
+        ],
+        "commonMistakes": [
+          "Cambiar solo las bujías sin revisar las bobinas de encendido",
+          "Ignorar la presión del sistema de combustible y fijarse solo en la parte eléctrica",
+          "Pensar que el motor de arranque está roto sin probar primero la batería"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallo de encendido aleatorio/múltiple",
+          "P0335 - Mal funcionamiento del sensor de posición del cigüeñal",
+          "P0171 - Sistema demasiado pobre (Banco 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnóstico de bujías Peugeot",
+            "href": "/es/diagnostico-bujias-peugeot"
+          },
+          {
+            "label": "Códigos OBD2 para problemas de arranque",
+            "href": "/es/codigos-obd2-problemas-arranque"
+          },
+          {
+            "label": "Guía de diagnóstico del sistema de combustible",
+            "href": "/es/guia-diagnostico-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede una batería débil causar dificultad en el arranque?",
+            "a": "Sí, una batería en mal estado puede no suministrar suficiente energía para arrancar el motor correctamente."
+          },
+          {
+            "q": "¿Las bujías defectuosas afectan el arranque?",
+            "a": "Claro, bujías gastadas o sucias dificultan la ignición y pueden causar problemas de arranque."
+          },
+          {
+            "q": "¿Debo cambiar el motor de arranque inmediatamente si hay problemas?",
+            "a": "No necesariamente. Es recomendable revisar antes batería y sistema de encendido."
+          }
+        ],
+        "schemaTitle": "Guía para Diagnosticar Problemas de Arranque en Peugeot",
+        "schemaDescription": "Guía completa para diagnosticar y solucionar problemas de arranque en Peugeot con consejos prácticos y códigos OBD2 comunes."
+      },
+      "fr": {
+        "slug": "demarrage-difficile-peugeot",
+        "title": "Démarrage difficile sur Peugeot : Diagnostic et Solutions",
+        "metaDescription": "Votre Peugeot démarre difficilement ? Découvrez les causes probables, les étapes de diagnostic et les contrôles simples avant de remplacer des pièces.",
+        "intro": "Un démarrage difficile sur une Peugeot peut venir de plusieurs facteurs : système d’alimentation en carburant, allumage ou problèmes électriques. Comprendre les causes possibles et réaliser des contrôles méthodiques permet d’éviter des réparations coûteuses inutiles. Ce guide vous propose des conseils pratiques et des vérifications pour mieux diagnostiquer le problème avant tout remplacement.",
+        "severity": "Modérée - Impacte le confort d’utilisation sans immobilisation immédiate du véhicule",
+        "driveAdvice": "Évitez les tentatives répétées de démarrage afin de ne pas décharger la batterie. En cas de souci persistant, faites contrôler votre véhicule rapidement.",
+        "likelyCauses": [
+          "Batterie faible ou en fin de vie",
+          "Bougies d’allumage ou bobines défectueuses",
+          "Filtre à carburant obstrué ou problèmes sur le circuit de carburant",
+          "Capteur de position du vilebrequin défaillant",
+          "Conditions froides qui empêchent la bonne vaporisation du carburant"
+        ],
+        "diagnosticSteps": [
+          "Mesurer la tension et la santé de la batterie",
+          "Contrôler l’état des bougies d’allumage",
+          "Tester la pression de carburant à l’aide d’un manomètre",
+          "Lire les codes défaut OBD2 liés à l’allumage et au carburant",
+          "Vérifier le signal du capteur de vilebrequin",
+          "Effectuer des tests de démarrage à froid"
+        ],
+        "firstChecks": [
+          "S’assurer que les cosses de batterie sont propres et bien serrées",
+          "Écouter le fonctionnement de la pompe à carburant au contact",
+          "Rechercher humidité ou salissures sur les composants d’allumage"
+        ],
+        "commonMistakes": [
+          "Changer uniquement les bougies sans contrôler les bobines",
+          "Négliger le système de carburant en se concentrant uniquement sur l’électronique",
+          "Remplacer le démarreur sans tester la batterie au préalable"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples ou aléatoires",
+          "P0335 - Dysfonctionnement du capteur de position vilebrequin",
+          "P0171 - Mélange trop pauvre (Banc 1)"
+        ],
+        "internalLinks": [
+          {
+            "label": "Diagnostic bougies Peugeot",
+            "href": "/fr/diagnostic-bougies-peugeot"
+          },
+          {
+            "label": "Lecture des codes OBD2 pour démarrage difficile",
+            "href": "/fr/codes-obd2-demarrage-difficile"
+          },
+          {
+            "label": "Guide diagnostic du système de carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Une batterie faible peut-elle causer un démarrage difficile ?",
+            "a": "Oui, une batterie faible ou déchargée peut ne pas fournir assez d’énergie pour un démarrage rapide."
+          },
+          {
+            "q": "Les bougies défectueuses provoquent-elles des difficultés au démarrage ?",
+            "a": "Certainement, des bougies usées ou encrassées rendent l’allumage moins efficace."
+          },
+          {
+            "q": "Faut-il remplacer le démarreur dès qu’il y a un problème de démarrage ?",
+            "a": "Pas forcément, il est important de vérifier d’abord la batterie et le système d’allumage."
+          }
+        ],
+        "schemaTitle": "Guide de Diagnostic des Démarrages Difficiles sur Peugeot",
+        "schemaDescription": "Guide complet pour diagnostiquer et résoudre les problèmes de démarrage difficiles sur Peugeot, avec conseils pratiques et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-black-smoke",
+    "intentKey": "peugeot_black_smoke",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "black_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-siyah-duman-atiyor",
+        "title": "Peugeot Siyah Duman Atıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Peugeot aracınız siyah duman atıyorsa, olası nedenleri ve yapılması gereken kontrolleri öğrenin. Pratik adımlarla sorunu tanımlayın.",
+        "intro": "Peugeot aracınızdan siyah duman çıktığını fark ettiyseniz, bu durum genellikle motor yakıt karışımın zengin olduğunu ya da hava-gaz dengesiyle ilgili sorunlar yaşandığını gösterir. Siyah dumanın birçok nedeni olabilir; belirli bir parçayı değiştirmeden önce bazı temel kontroller yaparak arızanın kaynağını tespit etmek önemlidir.",
+        "severity": "Orta düzeyde bir motor sorunu olabilir ancak ciddi hasar öncesi müdahale önerilir.",
+        "driveAdvice": "Aracı sürmeye devam etmek durumu kötüleştirebilir, kısa mesafeler dışında kullanmamalısınız.",
+        "likelyCauses": [
+          "Hava filtresinin tıkanması",
+          "Enjektörlerde aşırı yakıt püskürtme",
+          "Turbo basınç kaybı veya arızası",
+          "EGR sistemi tıkanması veya arızası",
+          "DPF (Dizel Partikül Filtresi) tıkanıklığı"
+        ],
+        "diagnosticSteps": [
+          "Hava filtresini görsel olarak kontrol edin, gerekirse değiştirin.",
+          "Enjektörlerin çalışma durumunu bir serviste test ettirin.",
+          "Turbo basıncını ölçün ve bağlantıları kontrol edin.",
+          "EGR valfini temizleyin veya fonksiyonunu doğrulayın.",
+          "DPF rejenerasyon durumunu kontrol edin veya temizleyin.",
+          "OBD2 cihazıyla aracın arıza kodlarını okuyun."
+        ],
+        "firstChecks": [
+          "Hava filtresi tıkanıklığı kontrolü",
+          "Yakıt kalitesi ve enjektör sızıntısı kontrolü",
+          "Motor yağ seviyesi ve kalitesi"
+        ],
+        "commonMistakes": [
+          "Sadece siyah duman üzerinden parça değişimi yapmak",
+          "OBD2 kodlarını görmezden gelmek",
+          "Turbo ve EGR sorunlarını ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0401 - EGR Akış Problemi",
+          "P0234 - Turbo Besleme Basıncı Yüksek",
+          "P0191 - Yakıt Basınç Sensörü Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Arıza Kodları Rehberi",
+            "href": "/tr/obd2-ariza-kodlari-rehberi"
+          },
+          {
+            "label": "Peugeot Yakıt Sistemi Sorunları",
+            "href": "/tr/peugeot-yakıt-sistemi-sorunlari"
+          },
+          {
+            "label": "Dizel Partikül Filtresi Temizliği",
+            "href": "/tr/dizel-partikul-filtresi-temizligi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot'da siyah duman atmasının en yaygın nedeni nedir?",
+            "a": "Genellikle hava filtresi tıkanıklığı ve fazla yakıt püskürtülmesi siyah dumanın ana sebeplerindendir."
+          },
+          {
+            "q": "Siyah duman neden motoru daha fazla yıpratır?",
+            "a": "Yanma odasında fazla yakıt ve az hava yanma kalitesini düşürür, motor performansını ve ömrünü olumsuz etkiler."
+          },
+          {
+            "q": "OBD2 cihazı hangi kodlar siyah dumanla ilişkilidir?",
+            "a": "P0401, P0234 ve P0191 kodları siyah duman ile ilişkilendirilen yaygın arıza kodlarıdır."
+          }
+        ],
+        "schemaTitle": "Peugeot Siyah Duman Atıyor - Nedenleri ve Çözümleri",
+        "schemaDescription": "Peugeot aracınızın siyah duman atması durumunda kapsamlı kontrol listesi, olası nedenler ve önerilen teşhis adımları."
+      },
+      "en": {
+        "slug": "peugeot-black-smoke-causes",
+        "title": "Peugeot Black Smoke: Causes and Diagnostic Steps",
+        "metaDescription": "Discover common causes of black smoke in your Peugeot and practical diagnostic steps before replacing parts.",
+        "intro": "If your Peugeot is emitting black smoke, it often indicates a rich fuel mixture or airflow issues within the engine. Several factors may cause this symptom, so it’s crucial to perform systematic checks before replacing any components to accurately identify the root cause.",
+        "severity": "Moderate engine concern; recommended to address soon to prevent further damage.",
+        "driveAdvice": "Avoid extended driving to prevent worsening the condition; short trips may be safer.",
+        "likelyCauses": [
+          "Clogged air filter",
+          "Fuel injectors delivering excess fuel",
+          "Faulty or low turbocharger boost pressure",
+          "EGR valve blockage or malfunction",
+          "Clogged Diesel Particulate Filter (DPF)"
+        ],
+        "diagnosticSteps": [
+          "Inspect and replace air filter if dirty",
+          "Test fuel injector operation at specialist shop",
+          "Measure turbo boost pressure and check hoses",
+          "Clean or test EGR valve functionality",
+          "Check DPF regeneration status and clean if needed",
+          "Read error codes with an OBD2 scanner"
+        ],
+        "firstChecks": [
+          "Air filter condition",
+          "Fuel quality and injector leaks",
+          "Engine oil level and quality"
+        ],
+        "commonMistakes": [
+          "Replacing parts based solely on black smoke",
+          "Ignoring OBD2 diagnostic codes",
+          "Overlooking turbocharger and EGR system faults"
+        ],
+        "relatedCodes": [
+          "P0401 - EGR Flow Insufficient",
+          "P0234 - Turbocharger Overboost Condition",
+          "P0191 - Fuel Rail Pressure Sensor Circuit Range/Performance"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Trouble Codes Guide",
+            "href": "/en/obd2-trouble-codes-guide"
+          },
+          {
+            "label": "Peugeot Fuel System Issues",
+            "href": "/en/peugeot-fuel-system-issues"
+          },
+          {
+            "label": "Diesel Particulate Filter Maintenance",
+            "href": "/en/diesel-particulate-filter-maintenance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is the most common cause of black smoke in a Peugeot?",
+            "a": "Clogged air filters and overly rich fuel injection are among the top reasons."
+          },
+          {
+            "q": "Why does black smoke wear the engine faster?",
+            "a": "Excess fuel and insufficient air reduce combustion quality, damaging engine components over time."
+          },
+          {
+            "q": "Which OBD2 codes are related to black smoke issues?",
+            "a": "Codes like P0401, P0234, and P0191 commonly indicate problems linked to black smoke."
+          }
+        ],
+        "schemaTitle": "Peugeot Black Smoke Causes and Diagnostics",
+        "schemaDescription": "Comprehensive guide for diagnosing black smoke in Peugeot vehicles, including causes and practical troubleshooting steps."
+      },
+      "de": {
+        "slug": "peugeot-schwarzer-rauch-ursachen",
+        "title": "Peugeot Schwarzer Rauch: Ursachen und Diagnoseschritte",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für schwarzen Rauch bei Peugeot und praktische Diagnose vor dem Austausch von Teilen.",
+        "intro": "Wenn Ihr Peugeot schwarzen Rauch ausstößt, deutet dies meist auf ein zu fettes Kraftstoff-Luft-Gemisch oder Probleme mit der Luftzufuhr hin. Es gibt mehrere mögliche Ursachen, daher ist es wichtig, vor dem Teilewechsel systematische Kontrollen durchzuführen, um die Ursache genau zu ermitteln.",
+        "severity": "Mittleres Motorproblem; eine baldige Prüfung wird empfohlen, um Folgeschäden zu vermeiden.",
+        "driveAdvice": "Vermeiden Sie längere Fahrten, um eine Verschlimmerung zu verhindern; kurze Fahrten sind sicherer.",
+        "likelyCauses": [
+          "Verstopfter Luftfilter",
+          "Kraftstoffeinspritzventile spritzen zu viel Kraftstoff",
+          "Turbo-Druckverlust oder Defekt",
+          "EGR-Ventil verstopft oder defekt",
+          "Verstopfter Dieselpartikelfilter (DPF)"
+        ],
+        "diagnosticSteps": [
+          "Luftfilter prüfen und bei Bedarf wechseln",
+          "Kraftstoffeinspritzung in Fachwerkstatt testen lassen",
+          "Turbolader-Druck und Schläuche prüfen",
+          "EGR-Ventil reinigen oder Funktion überprüfen",
+          "DPF-Regeneration kontrollieren und gegebenenfalls reinigen",
+          "Fehlercodes mit OBD2-Gerät auslesen"
+        ],
+        "firstChecks": [
+          "Zustand des Luftfilters",
+          "Kraftstoffqualität und Einspritzdüsen-Dichtigkeit",
+          "Motorölstand und -qualität"
+        ],
+        "commonMistakes": [
+          "Teile nur wegen schwarzem Rauch austauschen",
+          "OBD2-Codes ignorieren",
+          "Turbo und EGR-Probleme nicht beachten"
+        ],
+        "relatedCodes": [
+          "P0401 - EGR Durchfluss unzureichend",
+          "P0234 - Turbolader Überdruck",
+          "P0191 - Kraftstoffdrucksensor Fehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercode Übersicht",
+            "href": "/de/obd2-fehlercode-uebersicht"
+          },
+          {
+            "label": "Peugeot Kraftstoffsystem Probleme",
+            "href": "/de/peugeot-kraftstoffsystem-probleme"
+          },
+          {
+            "label": "Dieselpartikelfilter Reinigung",
+            "href": "/de/dieselpartikelfilter-reinigung"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was ist die häufigste Ursache für schwarzen Rauch bei Peugeot?",
+            "a": "In der Regel sind verstopfte Luftfilter und zu reichliche Kraftstoffzufuhr die Ursachen."
+          },
+          {
+            "q": "Warum schädigt schwarzer Rauch den Motor stärker?",
+            "a": "Zu viel Kraftstoff und zu wenig Luft verschlechtern die Verbrennung und führen zu motorischem Verschleiß."
+          },
+          {
+            "q": "Welche OBD2-Codes sind mit schwarzem Rauch verbunden?",
+            "a": "P0401, P0234 und P0191 sind typische Codes bei Problemen mit schwarzem Rauch."
+          }
+        ],
+        "schemaTitle": "Peugeot schwarzer Rauch: Ursachen und Diagnose",
+        "schemaDescription": "Umfassender Leitfaden zur Diagnose von schwarzem Rauch bei Peugeot-Fahrzeugen mit Ursachen und praktischen Tipps."
+      },
+      "es": {
+        "slug": "peugeot-humo-negro-causas",
+        "title": "Peugeot Humo Negro: Causas y Pasos para Diagnóstico",
+        "metaDescription": "Conozca las causas comunes del humo negro en Peugeot y pasos prácticos para diagnosticar antes de cambiar piezas.",
+        "intro": "Si su Peugeot expulsa humo negro, generalmente indica una mezcla rica de combustible o problemas en el flujo de aire del motor. Esta situación puede tener múltiples causas, por lo que es fundamental realizar verificaciones prácticas antes de reemplazar componentes para identificar el problema con precisión.",
+        "severity": "Problema moderado del motor; se recomienda abordar pronto para evitar daños mayores.",
+        "driveAdvice": "Evite conducir distancias largas para no agravar la situación; trayectos cortos son más seguros.",
+        "likelyCauses": [
+          "Filtro de aire obstruido",
+          "Inyectores que suministran exceso de combustible",
+          "Presión errónea o fallo en el turbo",
+          "Válvula EGR obstruida o defectuosa",
+          "Filtro de partículas diésel (DPF) saturado"
+        ],
+        "diagnosticSteps": [
+          "Revisar y cambiar el filtro de aire si está sucio",
+          "Probar el funcionamiento de los inyectores en taller especializado",
+          "Medir la presión del turbo y comprobar las mangueras",
+          "Limpiar o comprobar la válvula EGR",
+          "Verificar el estado de la regeneración del DPF y limpiarlo si es necesario",
+          "Leer códigos de error con escáner OBD2"
+        ],
+        "firstChecks": [
+          "Condición del filtro de aire",
+          "Calidad del combustible y fugas en inyectores",
+          "Nivel y calidad del aceite de motor"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas solo por presencia de humo negro",
+          "Ignorar códigos de diagnóstico OBD2",
+          "No revisar problemas en el turbo y sistema EGR"
+        ],
+        "relatedCodes": [
+          "P0401 - Flujo insuficiente de EGR",
+          "P0234 - Condición de sobrepresión del turbo",
+          "P0191 - Rango/funcionamiento del sensor de presión de riel de combustible"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de códigos de problema OBD2",
+            "href": "/es/guia-codigos-error-obd2"
+          },
+          {
+            "label": "Problemas del sistema de combustible Peugeot",
+            "href": "/es/problemas-sistema-combustible-peugeot"
+          },
+          {
+            "label": "Mantenimiento del filtro de partículas diésel",
+            "href": "/es/mantenimiento-filtro-particulas-diesel"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuál es la causa más común del humo negro en Peugeot?",
+            "a": "Filtros de aire obstruidos y una alimentación excesiva de combustible son las causas más comunes."
+          },
+          {
+            "q": "¿Por qué el humo negro daña más el motor?",
+            "a": "El exceso de combustible y la falta de aire disminuyen la calidad de la combustión y dañan el motor."
+          },
+          {
+            "q": "¿Qué códigos OBD2 están relacionados con el humo negro?",
+            "a": "Los códigos P0401, P0234 y P0191 indican problemas comunes que generan humo negro."
+          }
+        ],
+        "schemaTitle": "Causas y diagnóstico de humo negro en Peugeot",
+        "schemaDescription": "Guía completa para diagnosticar el humo negro en vehículos Peugeot, incluyendo causas y consejos prácticos."
+      },
+      "fr": {
+        "slug": "peugeot-fumee-noire-causes",
+        "title": "Peugeot Fumée Noire : Causes et Étapes de Diagnostic",
+        "metaDescription": "Découvrez les causes courantes de fumée noire sur votre Peugeot et les étapes pratiques de diagnostic avant remplacement.",
+        "intro": "Si votre Peugeot rejette de la fumée noire, cela indique souvent un mélange carburant trop riche ou des problèmes d’arrivée d’air. Plusieurs causes peuvent être en jeu, il est donc important de réaliser des contrôles avant tout remplacement pour identifier précisément la source du problème.",
+        "severity": "Problème moteur modéré ; il est conseillé d’intervenir rapidement pour éviter des dégâts plus sérieux.",
+        "driveAdvice": "Évitez les longs trajets pour ne pas aggraver la situation ; privilégiez les déplacements courts.",
+        "likelyCauses": [
+          "Filtre à air bouché",
+          "Injecteurs fournissant trop de carburant",
+          "Faible pression ou défaillance du turbo",
+          "Vanne EGR obstruée ou défectueuse",
+          "Filtre à particules diesel (FAP) encrassé"
+        ],
+        "diagnosticSteps": [
+          "Contrôlez et remplacez le filtre à air si nécessaire",
+          "Testez les injecteurs en atelier spécialisé",
+          "Mesurez la pression turbo et vérifiez les durites",
+          "Nettoyez ou vérifiez le bon fonctionnement de la vanne EGR",
+          "Contrôlez la régénération du FAP et nettoyez-le si besoin",
+          "Lisez les codes défaut avec un scanner OBD2"
+        ],
+        "firstChecks": [
+          "État du filtre à air",
+          "Qualité du carburant et fuite des injecteurs",
+          "Niveau et qualité de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces uniquement à cause de la fumée noire",
+          "Ignorer les codes défaut OBD2",
+          "Négliger les problèmes liés au turbo et à l’EGR"
+        ],
+        "relatedCodes": [
+          "P0401 - Débit insuffisant de l’EGR",
+          "P0234 - Surrégime du turbocompresseur",
+          "P0191 - Problème capteur pression rampe carburant"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes défaut OBD2",
+            "href": "/fr/guide-codes-defaut-obd2"
+          },
+          {
+            "label": "Problèmes du système carburant Peugeot",
+            "href": "/fr/problemes-systeme-carburant-peugeot"
+          },
+          {
+            "label": "Entretien du filtre à particules diesel",
+            "href": "/fr/entretien-filtre-particules-diesel"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelle est la cause la plus fréquente de fumée noire sur Peugeot ?",
+            "a": "Un filtre à air bouché et une injection excessive de carburant sont les causes principales."
+          },
+          {
+            "q": "Pourquoi la fumée noire use-t-elle plus le moteur ?",
+            "a": "Un excès de carburant et un manque d’air dégradent la combustion et endommagent le moteur."
+          },
+          {
+            "q": "Quels sont les codes OBD2 liés à la fumée noire ?",
+            "a": "Les codes P0401, P0234 et P0191 sont fréquemment associés à ce problème."
+          }
+        ],
+        "schemaTitle": "Causes et diagnostic de la fumée noire sur Peugeot",
+        "schemaDescription": "Guide complet pour diagnostiquer la fumée noire sur les véhicules Peugeot, avec causes et conseils pratiques."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-white-smoke",
+    "intentKey": "peugeot_white_smoke",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "white_smoke",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-beyaz-duman-atiyor",
+        "title": "Peugeot Beyaz Duman Atıyor: Olası Nedenler ve Kontroller",
+        "metaDescription": "Peugeot aracınız beyaz duman çıkarıyorsa nedenleri ve yapılacak temel kontrolleri öğrenin. Parça değiştirmeden önce pratik öneriler burada.",
+        "intro": "Peugeot aracınızın egzozundan çıkan beyaz duman çeşitli sebeplerden kaynaklanabilir. Soğuk havalar, motor içi sorunlar ve sıvı kaçakları ilk akla gelenlerdir. Bu durumun sebebini kesin olarak belirlemek için adım adım kontrol yapmak gerekir. Parça değişimine başlamadan önce önerilen basit testlerle teşhis koymak en iyisidir.",
+        "severity": "Beyaz duman genellikle motor performansını etkileyebilir ve çevre dostu sürüşü zorlaştırabilir. Duruma göre aracın daha fazla zarara uğramaması için vakit kaybetmeden kontrol edilmelidir.",
+        "driveAdvice": "Araç beyaz duman atıyorsa motor ya da soğutma sistemi zarar görmemesi için uzun süre yüksek hızda sürmeyin, gerekirse servise danışın.",
+        "likelyCauses": [
+          "Eskimiş veya hasarlı silindir kapağı contası",
+          "Soğutma sıvısı sızıntısı nedeniyle silindirlere su girmesi",
+          "Enjektörlerden kaynaklanan yakıt fazlalığı",
+          "Turbo şarj cihazı problem veya yağ sızıntısı",
+          "Düşük motor yağı seviyesi veya kalitesiz yağ"
+        ],
+        "diagnosticSteps": [
+          "Egzoz gazından beyaz dumanda su buharı olup olmadığını kontrol edin",
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Motor yağı durumunu ve rengini inceleyin",
+          "Silindir kapağı contasında sızıntı testi yapın",
+          "Yakıt enjeksiyon sistemini kontrol edin",
+          "Turbo varsa, yağ kaçakları ve arızalar için görünür kontroller yapın"
+        ],
+        "firstChecks": [
+          "Soğutma suyu seviyesi ve kirlilik kontrolü",
+          "Motor yağı seviyesi ve rengini kontrol edin",
+          "Hava filtresini ve emme hortumlarını inceleyin"
+        ],
+        "commonMistakes": [
+          "Beyaz dumanı hemen turbo arızasıyla bağdaştırmak",
+          "Soğutma sıvısı seviyesini kontrol etmeden direk parça değiştirmek",
+          "Motor yağı değişim ve bakımını ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0299",
+          "P0420",
+          "P0171"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Arıza Kodları",
+            "href": "/tr/peugeot-obd2-ariza-kodlari"
+          },
+          {
+            "label": "Soğutma Sistemi Kontrolü",
+            "href": "/tr/sogutma-sistemi-tesisi"
+          },
+          {
+            "label": "Turbo Problemleri ve Çözümleri",
+            "href": "/tr/turbo-ariza-tespiti"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot beyaz duman neden çıkarır?",
+            "a": "Beyaz duman genellikle soğutma sıvısının silindirlere sızması, silindir kapağı contası sorunları veya enjeksiyon problemleri gibi çeşitli sebeplerle ortaya çıkar."
+          },
+          {
+            "q": "Beyaz duman için hemen parça değiştirmeli miyim?",
+            "a": "Öncelikle temel kontrolleri yapıp sorunu teşhis etmeden parça değiştirmek maliyetli ve gereksiz olabilir."
+          },
+          {
+            "q": "Beyaz dumanı engellemek için hangi düzenli bakım önemli?",
+            "a": "Motor yağı ve soğutma sıvısı seviyelerinin kontrolü ve periyodik değişimleri önemlidir."
+          }
+        ],
+        "schemaTitle": "Peugeot Beyaz Duman Atıyor - Nedenleri ve Çözümleri",
+        "schemaDescription": "Peugeot araçlarda beyaz duman çıkışı sık rastlanan bir sorundur. Sebepleri, ilk kontrolleri ve olası çözüm yollarını detaylı inceleyin."
+      },
+      "en": {
+        "slug": "peugeot-white-smoke-causes",
+        "title": "Peugeot White Smoke Causes and Diagnostic Tips",
+        "metaDescription": "Discover common reasons why your Peugeot emits white smoke and practical checks before replacing parts. Expert advice for preliminary diagnostics.",
+        "intro": "White smoke coming from your Peugeot can be caused by various factors such as coolant leaks, worn gaskets, or fuel injection issues. Identifying the root cause requires careful inspection and step-by-step diagnosis. Before rushing to replace components, it's wise to perform some basic checks to avoid unnecessary repairs.",
+        "severity": "White smoke may indicate underlying engine issues that can worsen if left unattended. While it might not cause immediate breakdown, timely diagnosis is crucial to prevent damage.",
+        "driveAdvice": "If you notice white smoke, avoid high RPMs and long drives. Have the vehicle inspected promptly to minimize potential engine damage.",
+        "likelyCauses": [
+          "Blown head gasket allowing coolant into combustion chamber",
+          "Coolant leaking into the engine due to cracks or damage",
+          "Excessive fuel injected causing incomplete combustion",
+          "Turbolcharger oil seals leaking or malfunctioning",
+          "Low or degraded engine oil affecting combustion"
+        ],
+        "diagnosticSteps": [
+          "Check for signs of coolant in the exhaust smoke",
+          "Inspect coolant reservoir levels and condition",
+          "Examine engine oil for contamination or discoloration",
+          "Perform compression and leak-down tests on cylinders",
+          "Inspect fuel injectors for leaks or malfunctions",
+          "Check turbocharger for oil leaks and mechanical issues"
+        ],
+        "firstChecks": [
+          "Coolant level and condition",
+          "Engine oil level and appearance",
+          "Air filter and intake hoses condition"
+        ],
+        "commonMistakes": [
+          "Immediately assuming turbo failure",
+          "Replacing parts without proper diagnostics",
+          "Ignoring regular oil changes and maintenance"
+        ],
+        "relatedCodes": [
+          "P0299",
+          "P0420",
+          "P0171"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Trouble Codes",
+            "href": "/en/peugeot-obd2-trouble-codes"
+          },
+          {
+            "label": "Cooling System Diagnosis",
+            "href": "/en/cooling-system-diagnosis"
+          },
+          {
+            "label": "Turbocharger Issues and Fixes",
+            "href": "/en/turbocharger-issues-fixes"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What causes white smoke in a Peugeot?",
+            "a": "Common causes include coolant entering the cylinders due to head gasket failure, injector problems, or turbocharger oil leaks."
+          },
+          {
+            "q": "Should I replace parts immediately when I see white smoke?",
+            "a": "No, it's recommended to perform thorough diagnostics first to identify the root cause and avoid unnecessary replacements."
+          },
+          {
+            "q": "How can I prevent white smoke issues?",
+            "a": "Regular maintenance like checking coolant and oil levels, and timely servicing of injectors and turbocharger can help prevent white smoke."
+          }
+        ],
+        "schemaTitle": "Peugeot White Smoke Causes and Diagnostic Advice",
+        "schemaDescription": "Learn about the reasons behind white smoke in Peugeot vehicles, initial troubleshooting steps, and practical advice before part replacements."
+      },
+      "de": {
+        "slug": "peugeot-weissrauch-ursachen",
+        "title": "Peugeot Weißer Rauch: Ursachen und Diagnosehinweise",
+        "metaDescription": "Erfahren Sie, warum Ihr Peugeot weißen Rauch produziert und welche praktischen Prüfungen vor einem Teiletausch sinnvoll sind.",
+        "intro": "Weißer Rauch aus dem Auspuff Ihres Peugeot kann verschiedene Ursachen haben, von Kühlmittelverlust bis zu Problemen mit der Einspritzung oder defekten Dichtungen. Eine genaue Diagnose ist wichtig, bevor Teile getauscht werden. Mit systematischen Kontrollen lassen sich Fehlerquellen eingrenzen und kostspielige Reparaturen vermeiden.",
+        "severity": "Weißer Rauch deutet oft auf ernste Motorprobleme hin, die bei Vernachlässigung zu größeren Schäden führen können. Eine frühzeitige Prüfung ist daher ratsam.",
+        "driveAdvice": "Bei weißem Rauch sollten Sie hohe Drehzahlen und lange Fahrten vermeiden und das Fahrzeug zeitnah überprüfen lassen.",
+        "likelyCauses": [
+          "Defekte Zylinderkopfdichtung lässt Kühlmittel in Brennraum",
+          "Kühlmittelleckagen im Motor",
+          "Übermäßige Kraftstoffeinspritzung",
+          "Turbo-Öldichtungen undichte oder defekt",
+          "Niedriger oder verschmutzter Motorölstand"
+        ],
+        "diagnosticSteps": [
+          "Prüfen Sie, ob der weiße Rauch Wasser enthält",
+          "Kühlmittelstand und Zustand prüfen",
+          "Motoröl auf Verunreinigungen oder Verfärbung untersuchen",
+          "Kompressions- und Lecktest an Zylindern durchführen",
+          "Kraftstoffeinspritzung auf Fehler prüfen",
+          "Turbo auf Ölspuren und mechanische Beschädigungen kontrollieren"
+        ],
+        "firstChecks": [
+          "Kühlmittelstand und -qualität",
+          "Motorölstand und Erscheinungsbild",
+          "Luftfilter und Ansaugschläuche kontrollieren"
+        ],
+        "commonMistakes": [
+          "Sofortige Annahme eines Turboschaden",
+          "Teile ohne Diagnose austauschen",
+          "Regelmäßigen Ölwechsel und Wartung ignorieren"
+        ],
+        "relatedCodes": [
+          "P0299",
+          "P0420",
+          "P0171"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot OBD2 Fehlercodes",
+            "href": "/de/peugeot-obd2-fehlercodes"
+          },
+          {
+            "label": "Kühlsystem Diagnose",
+            "href": "/de/kuehlsystem-diagnose"
+          },
+          {
+            "label": "Turbo Probleme und Lösungen",
+            "href": "/de/turbo-probleme-loesungen"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum kommt weißer Rauch aus meinem Peugeot?",
+            "a": "Häufige Ursachen sind Kühlmittellecks, defekte Zylinderkopfdichtungen oder Probleme bei der Einspritzung."
+          },
+          {
+            "q": "Sollte ich bei weißem Rauch sofort Teile wechseln?",
+            "a": "Es ist besser, erst eine gründliche Diagnose durchzuführen, bevor Teile ersetzt werden, um unnötige Kosten zu vermeiden."
+          },
+          {
+            "q": "Wie kann ich weißen Rauch verhindern?",
+            "a": "Regelmäßige Wartung, Öl- und Kühlmittelkontrolle sowie rechtzeitige Servicemaßnahmen helfen, das Problem zu vermeiden."
+          }
+        ],
+        "schemaTitle": "Peugeot Weißer Rauch: Ursachen, Diagnose und Tipps",
+        "schemaDescription": "Informationen zu Ursachen von weißem Rauch bei Peugeot Fahrzeugen und praxisnahe Tipps zur Fehlerdiagnose vor Teiletausch."
+      },
+      "es": {
+        "slug": "peugeot-humo-blanco-causas",
+        "title": "Peugeot Humo Blanco: Causas Comunes y Diagnóstico",
+        "metaDescription": "Descubre las razones por las que tu Peugeot genera humo blanco y los chequeos prácticos antes de cambiar piezas. Diagnóstico experto aquí.",
+        "intro": "El humo blanco que sale del escape de tu Peugeot puede deberse a múltiples causas, como fugas de refrigerante, juntas dañadas o problemas con la inyección de combustible. Identificar la causa precisa requiere un diagnóstico paso a paso. Antes de reemplazar piezas, es importante realizar verificaciones prácticas para evitar costos innecesarios.",
+        "severity": "El humo blanco puede indicar problemas en el motor que, si se ignoran, pueden empeorar. Un diagnóstico a tiempo es clave para evitar daños mayores.",
+        "driveAdvice": "Si notas humo blanco, evita aceleraciones fuertes y recorridos largos. Lleva el vehículo para revisión cuanto antes para minimizar daños.",
+        "likelyCauses": [
+          "Junta de culata dañada que permite entrada de refrigerante",
+          "Fugas de refrigerante dentro del motor",
+          "Exceso de combustible inyectado que no se quema correctamente",
+          "Fugas o fallos en los sellos del turbo",
+          "Nivel bajo o aceite de motor en mal estado"
+        ],
+        "diagnosticSteps": [
+          "Detectar si el humo blanco contiene vapor de agua",
+          "Revisar nivel y estado del refrigerante",
+          "Comprobar aceite de motor por contaminación o cambio de color",
+          "Realizar pruebas de compresión y fugas en cilindros",
+          "Inspeccionar inyectores de combustible",
+          "Verificar el turbo para fugas de aceite o daños"
+        ],
+        "firstChecks": [
+          "Nivel y estado del refrigerante",
+          "Nivel y aspecto del aceite de motor",
+          "Filtro de aire y mangueras de admisión"
+        ],
+        "commonMistakes": [
+          "Pensar inmediatamente que es problema del turbo",
+          "Cambiar piezas sin diagnóstico previo",
+          "Descuidar mantenimiento e intercambio regular de aceite"
+        ],
+        "relatedCodes": [
+          "P0299",
+          "P0420",
+          "P0171"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 para Peugeot",
+            "href": "/es/codigos-obd2-peugeot"
+          },
+          {
+            "label": "Diagnóstico del sistema de refrigeración",
+            "href": "/es/diagnostico-sistema-refrigeracion"
+          },
+          {
+            "label": "Problemas comunes en turbo y soluciones",
+            "href": "/es/problemas-turbo-soluciones"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot produce humo blanco?",
+            "a": "Las causas más frecuentes incluyen fuga de refrigerante, problemas en la junta de culata o fallos en la inyección de combustible."
+          },
+          {
+            "q": "¿Debo cambiar piezas inmediatamente al ver humo blanco?",
+            "a": "Se recomienda realizar un diagnóstico completo antes para identificar la causa y evitar gastos innecesarios."
+          },
+          {
+            "q": "¿Cómo evitar el humo blanco en el Peugeot?",
+            "a": "Mantener el nivel de aceite y refrigerante, y realizar servicio regular ayuda a prevenir este problema."
+          }
+        ],
+        "schemaTitle": "Peugeot Humo Blanco: Diagnóstico y Causas Más Comunes",
+        "schemaDescription": "Información completa sobre las causas de humo blanco en Peugeot y consejos prácticos para diagnosticar antes de cambiar piezas."
+      },
+      "fr": {
+        "slug": "peugeot-fumee-blanche-causes",
+        "title": "Peugeot Fumée Blanche : Causes Possibles et Diagnostic",
+        "metaDescription": "Comprenez pourquoi votre Peugeot émet de la fumée blanche et effectuez des vérifications simples avant de remplacer des pièces.",
+        "intro": "La fumée blanche provenant de l'échappement d'une Peugeot peut résulter de plusieurs causes, telles que des fuites de liquide de refroidissement, un joint de culasse défectueux ou des problèmes d'injection. Un diagnostic précis est nécessaire pour identifier la cause exacte. Avant tout remplacement de pièce, il est conseillé de réaliser des contrôles pratiques afin d'éviter des réparations inutiles.",
+        "severity": "La fumée blanche peut révéler un problème moteur sérieux pouvant entraîner des dommages importants si on ne l'intervient pas rapidement. Un contrôle rapide est donc conseillé.",
+        "driveAdvice": "En cas de fumée blanche, limitez les régimes élevés et les longs trajets, puis consultez un professionnel rapidement.",
+        "likelyCauses": [
+          "Joint de culasse soufflé entraînant une fuite de liquide de refroidissement",
+          "Fuite de liquide de refroidissement dans le moteur",
+          "Injection excessive de carburant",
+          "Fuites au niveau des joints du turbo",
+          "Niveau d'huile moteur bas ou huile de mauvaise qualité"
+        ],
+        "diagnosticSteps": [
+          "Vérifier la présence de vapeur d'eau dans la fumée blanche",
+          "Contrôler le niveau et l'état du liquide de refroidissement",
+          "Examiner l'huile moteur pour détecter une contamination ou une coloration anormale",
+          "Effectuer un test de compression des cylindres",
+          "Contrôler les injecteurs",
+          "Inspecter le turbo pour des fuites ou défaillances mécaniques"
+        ],
+        "firstChecks": [
+          "Niveau et qualité du liquide de refroidissement",
+          "Niveau et aspect de l'huile moteur",
+          "Filtre à air et conduits d'admission"
+        ],
+        "commonMistakes": [
+          "Penser immédiatement à une panne du turbo",
+          "Remplacer des pièces sans diagnostic préalable",
+          "Ignorer l'entretien régulier et les vidanges"
+        ],
+        "relatedCodes": [
+          "P0299",
+          "P0420",
+          "P0171"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes défaut OBD2 Peugeot",
+            "href": "/fr/codes-defaut-obd2-peugeot"
+          },
+          {
+            "label": "Diagnostic du système de refroidissement",
+            "href": "/fr/diagnostic-systeme-refroidissement"
+          },
+          {
+            "label": "Problèmes et solutions du turbo",
+            "href": "/fr/problemes-solutions-turbo"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi ma Peugeot émet-elle de la fumée blanche ?",
+            "a": "Cela peut être dû à une fuite de liquide de refroidissement, un joint de culasse défectueux ou un problème d'injection."
+          },
+          {
+            "q": "Dois-je remplacer des pièces dès que je vois de la fumée blanche ?",
+            "a": "Il est préférable d'effectuer un diagnostic complet avant de changer des pièces afin d'éviter des réparations inutiles."
+          },
+          {
+            "q": "Comment éviter la fumée blanche sur Peugeot ?",
+            "a": "Un entretien régulier, notamment le contrôle des niveaux d'huile et de liquide de refroidissement, aide à prévenir ce problème."
+          }
+        ],
+        "schemaTitle": "Peugeot Fumée Blanche : Causes et Guide de Diagnostic",
+        "schemaDescription": "Découvrez les causes principales de la fumée blanche sur Peugeot et apprenez les étapes de diagnostic avant remplacement des pièces."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-poor-fuel-economy",
+    "intentKey": "peugeot_poor_fuel_economy",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "poor_fuel_economy",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-cok-yakiyor-nedenleri-ve-cozumleri",
+        "title": "Peugeot Çok Yakıyor: Nedenleri ve Pratik Çözümleri",
+        "metaDescription": "Peugeot aracınızın çok yakmasının olası nedenlerini öğrenin. Yakıt tüketimini artıran yaygın sorunlar ve adım adım kontrol önerileri burada.",
+        "intro": "Peugeot araçlarda beklenmedik yüksek yakıt tüketimi şikayetleri sıkça karşılaşılır. Yakıtın fazla kullanılması çeşitli sebeplerden olabilir, bu yüzden öncelikle temel kontrolleri yaparak zaman ve maliyetten tasarruf sağlamak önemlidir. Bu rehberde, Peugeot'unuzun çok yakmasının olası nedenleri ve öncelikli kontrol adımları hakkında kapsamlı bilgiler bulacaksınız.",
+        "severity": "Orta düzey önemli: Yakıt tüketiminin artması ekonomik açıdan sorun yaratır ve çevresel etkileri vardır.",
+        "driveAdvice": "Yakıt tüketimi yüksekse ani hızlanma ve gereksiz rölantilerden kaçının. Araç bakımı ve yakıt kalitesine dikkat edin.",
+        "likelyCauses": [
+          "Hatalı veya kirli hava filtresi",
+          "Arızalı oksijen sensörü",
+          "Yanlış kerrozinasyon ayarı veya yakıt enjeksiyonu problemi",
+          "Lastik basınçlarının düşük olması",
+          "Yakıt sisteminde kaçak veya sızıntı"
+        ],
+        "diagnosticSteps": [
+          "Yakıt tüketimini düzenli olarak ölçün ve sürüş alışkanlıklarınızı inceleyin.",
+          "Hava filtresi ve kabin filtresi durumunu kontrol edin, gerekirse değiştirin.",
+          "OBD2 cihazı ile sensör verilerini tarayın, özellikle oksijen sensörü ve MAF sensörlerini.",
+          "Lastik hava basınçlarını üretici önerilerine göre ayarlayın.",
+          "Enjeksiyon sisteminde sızıntı ve yakıt pompası kontrolü yapın.",
+          "Egzoz emisyon değerlerini test ederek yanma verimliliğini değerlendirin."
+        ],
+        "firstChecks": [
+          "Yakıt kalitesi ve dolum alışkanlıklarını gözden geçirin.",
+          "Lastiklerin doğru hava basıncında olduğundan emin olun.",
+          "Motor yağı ve filtrenin uygun seviyede ve temiz olduğundan emin olun."
+        ],
+        "commonMistakes": [
+          "Yakıt tüketimi artınca doğrudan parçaları değiştirmek.",
+          "Yanlış hava filtresi veya kalitesiz yedek parça kullanımı.",
+          "Düzenli bakım ve kontrollerin ihmal edilmesi."
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Sistemi Zengin Karışım (Bank 1)",
+          "P0420 - Katalitik Konvertör Verimlilik Alt Sınır",
+          "P0135 - Oksijen Sensörü Isıtıcısı Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot yakıt tasarrufu için bakım rehberi",
+            "href": "/tr/peugeot-yakit-tasarrufu-bakim"
+          },
+          {
+            "label": "OBD2 kodlarıyla yakıt sistemi analizi",
+            "href": "/tr/obd2-yakit-sistemi-analizi"
+          },
+          {
+            "label": "Peugeot hava filtresi değişimi nasıl yapılır?",
+            "href": "/tr/peugeot-hava-filtresi-degisimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Yakıt ekonomisi neden birden kötüleşir?",
+            "a": "Bu, sensör arızaları, filtre tıkanmaları veya sürüş alışkanlıklarındaki değişikliklerden kaynaklanabilir."
+          },
+          {
+            "q": "Yakıt sisteminde kaçak nasıl anlaşılır?",
+            "a": "Yakıt kokusu, yakıt basıncında düşme veya duman gibi belirtiler sızıntı işareti olabilir."
+          },
+          {
+            "q": "Lastik basıncı yakıt tüketimini ne kadar etkiler?",
+            "a": "Düşük lastik basıncı sürtünmeyi artırır, tüketimi yüzde 3-5 oranında yükseltebilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Çok Yakıyor - Nedenleri ve Çözümleri | OBD2HQ",
+        "schemaDescription": "Peugeot araçların yüksek yakıt tüketimi nedenleri ve basit kontrol adımları hakkında kapsamlı rehber. Arızaları tespit edip uygun çözümleri bulun."
+      },
+      "en": {
+        "slug": "peugeot-poor-fuel-economy-causes-and-solutions",
+        "title": "Peugeot Poor Fuel Economy: Possible Causes and Practical Checks",
+        "metaDescription": "Discover common reasons why your Peugeot might be consuming too much fuel. Practical diagnostic steps and tips to improve fuel efficiency.",
+        "intro": "Experiencing poor fuel economy with your Peugeot can be frustrating and costly. Various factors might contribute to increased gas consumption, so it’s best to start with simple checks before considering part replacements. This guide highlights potential causes, diagnostic steps, and helpful advice to tackle fuel efficiency issues.",
+        "severity": "Moderate concern: Increased fuel consumption affects running costs and environmental impact.",
+        "driveAdvice": "Avoid aggressive acceleration and unnecessary idling. Ensure regular maintenance and use quality fuel.",
+        "likelyCauses": [
+          "Clogged or dirty air filter",
+          "Faulty oxygen sensor",
+          "Incorrect fuel mixture or injector issues",
+          "Underinflated tires",
+          "Fuel system leaks or pressure problems"
+        ],
+        "diagnosticSteps": [
+          "Monitor fuel consumption over time and review driving habits.",
+          "Check and replace air and cabin filters if dirty.",
+          "Scan for OBD2 trouble codes, especially oxygen sensor and MAF sensor data.",
+          "Inspect and adjust tire pressures to manufacturer recommendations.",
+          "Test for fuel leaks or injector malfunctions.",
+          "Conduct exhaust emissions testing to evaluate combustion efficiency."
+        ],
+        "firstChecks": [
+          "Verify fuel quality and refueling habits.",
+          "Ensure tires are properly inflated.",
+          "Check engine oil and filter condition."
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis.",
+          "Using incorrect or low-quality replacement filters.",
+          "Skipping regular maintenance intervals."
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (Bank 1)",
+          "P0420 - Catalyst System Efficiency Below Threshold",
+          "P0135 - O2 Sensor Heater Circuit Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Fuel Economy Maintenance Tips",
+            "href": "/en/peugeot-fuel-economy-maintenance"
+          },
+          {
+            "label": "Diagnosing Fuel System with OBD2 Codes",
+            "href": "/en/obd2-fuel-system-diagnosis"
+          },
+          {
+            "label": "Replacing Peugeot Air Filter: Step-by-Step",
+            "href": "/en/peugeot-air-filter-replacement"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why has my Peugeot's fuel economy suddenly worsened?",
+            "a": "Possible reasons include sensor faults, clogged filters, or changes in driving behavior."
+          },
+          {
+            "q": "How can I tell if there’s a fuel leak?",
+            "a": "Signs include fuel smell, drop in fuel pressure, or visible leaks."
+          },
+          {
+            "q": "Do low tire pressures really affect fuel economy?",
+            "a": "Yes, underinflated tires increase rolling resistance, raising consumption by about 3-5%."
+          }
+        ],
+        "schemaTitle": "Peugeot Poor Fuel Economy Causes and Checks | OBD2HQ",
+        "schemaDescription": "Comprehensive guide to understanding and diagnosing high fuel consumption in Peugeot vehicles, including practical tips and OBD2 troubleshooting."
+      },
+      "de": {
+        "slug": "peugeot-hoher-kraftstoffverbrauch-ursachen-und-loesungen",
+        "title": "Peugeot hoher Kraftstoffverbrauch: Mögliche Ursachen und praktische Prüfungen",
+        "metaDescription": "Erfahren Sie, warum Ihr Peugeot möglicherweise zu viel Kraftstoff verbraucht. Praktische Diagnose und Tipps zur Verbesserung der Kraftstoffeffizienz.",
+        "intro": "Ein erhöhter Kraftstoffverbrauch bei Peugeot-Fahrzeugen ist ein häufiges Problem, das unterschiedliche Ursachen haben kann. Es ist sinnvoll, zunächst einfache Kontrollen durchzuführen, bevor Teile ersetzt werden. Dieser Artikel erläutert mögliche Ursachen, diagnostische Schritte und hilfreiche Tipps zur Optimierung des Kraftstoffverbrauchs.",
+        "severity": "Mittlere Bedeutung: Erhöhter Verbrauch belastet das Budget und die Umwelt.",
+        "driveAdvice": "Vermeiden Sie aggressives Beschleunigen und unnötiges Leerlaufen. Achten Sie auf regelmäßige Wartung und gute Kraftstoffqualität.",
+        "likelyCauses": [
+          "Verschmutzter Luftfilter",
+          "Defekter Sauerstoffsensor",
+          "Fehljustierung der Kraftstoffmenge oder Einspritzprobleme",
+          "Zu geringer Reifendruck",
+          "Kraftstoffsystem-Lecks oder Druckprobleme"
+        ],
+        "diagnosticSteps": [
+          "Führen Sie Verbrauchsmessungen durch und analysieren Sie Fahrgewohnheiten.",
+          "Überprüfen Sie Luft- und Innenraumfilter, gegebenenfalls tauschen.",
+          "OBD2-Diagnose auf Sensorfehler, insbesondere Sauerstoff- und MAF-Sensor.",
+          "Reifendruck kontrollieren und auf Herstellervorgaben anpassen.",
+          "Kraftstoffleitungen und Einspritzanlage auf Dichtheit prüfen.",
+          "Auspuff-Emissionsmessungen zur Verbrennungseffizienz durchführen."
+        ],
+        "firstChecks": [
+          "Kraftstoffqualität und Tankgewohnheiten prüfen.",
+          "Reifendruck korrekt einstellen.",
+          "Motorölstand und Filter kontrollieren."
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose tauschen.",
+          "Falsche oder minderwertige Ersatzteile verwenden.",
+          "Regelmäßige Wartungen vernachlässigen."
+        ],
+        "relatedCodes": [
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0420 - Katalysatorsystem nicht effizient",
+          "P0135 - Fehler im Heizkreis des Lambdasensors"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Kraftstoffspar-Tipps",
+            "href": "/de/peugeot-kraftstoff-sparen"
+          },
+          {
+            "label": "OBD2-Diagnose Kraftstoffsystem",
+            "href": "/de/obd2-kraftstoff-system-diagnose"
+          },
+          {
+            "label": "Luftfilterwechsel beim Peugeot",
+            "href": "/de/peugeot-luftfilter-wechsel"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum erhöht sich der Kraftstoffverbrauch plötzlich?",
+            "a": "Ursachen können Sensorfehler, verschmutzte Filter oder geändertes Fahrverhalten sein."
+          },
+          {
+            "q": "Wie erkenne ich Kraftstofflecks?",
+            "a": "Anzeichen sind Kraftstoffgeruch, Druckabfall oder sichtbare Lecks."
+          },
+          {
+            "q": "Beeinflusst Reifendruck den Verbrauch wirklich?",
+            "a": "Ja, zu geringer Druck erhöht den Rollwiderstand und damit den Verbrauch um 3-5%."
+          }
+        ],
+        "schemaTitle": "Peugeot hoher Kraftstoffverbrauch - Ursachen & Prüfungen | OBD2HQ",
+        "schemaDescription": "Ausführliche Anleitung zur Diagnose von hohem Kraftstoffverbrauch bei Peugeot, inklusive Tipps und OBD2-Fehlercodes."
+      },
+      "es": {
+        "slug": "peugeot-consumo-excesivo-de-combustible-causas",
+        "title": "Peugeot Consumo Excesivo de Combustible: Causas y Diagnóstico Práctico",
+        "metaDescription": "Descubre por qué tu Peugeot puede estar consumiendo demasiado combustible y cómo realizar controles prácticos para mejorar eficiencia.",
+        "intro": "El consumo excesivo de combustible en vehículos Peugeot es un problema común que puede deberse a varios factores. Antes de reemplazar piezas, es ideal realizar revisiones sencillas y sistemáticas para identificar la causa. Esta guía ofrece causas probables, pasos para diagnosticar y consejos útiles para mejorar el rendimiento del combustible.",
+        "severity": "Grado medio: El aumento en el consumo afecta la economía y el medio ambiente.",
+        "driveAdvice": "Evita aceleraciones bruscas y ralentí prolongado. Realiza mantenimientos periódicos y usa combustible de calidad.",
+        "likelyCauses": [
+          "Filtro de aire sucio u obstruido",
+          "Sensor de oxígeno defectuoso",
+          "Problemas en la mezcla de combustible o inyectores",
+          "Presión baja en los neumáticos",
+          "Fugas o problemas en el sistema de combustible"
+        ],
+        "diagnosticSteps": [
+          "Monitorea el consumo de combustible y analiza tus hábitos de conducción.",
+          "Revisa y cambia filtros de aire y cabina si están sucios.",
+          "Escanea códigos OBD2, presta atención a sensores de oxígeno y de flujo de aire.",
+          "Verifica y ajusta la presión de neumáticos según especificaciones.",
+          "Revisa posibles fugas o fallas en los inyectores.",
+          "Prueba las emisiones para evaluar la eficiencia de combustión."
+        ],
+        "firstChecks": [
+          "Comprueba la calidad del combustible y tus hábitos de recarga.",
+          "Asegúrate que la presión de los neumáticos sea la correcta.",
+          "Verifica el nivel y estado del aceite y filtro de motor."
+        ],
+        "commonMistakes": [
+          "Reemplazar componentes sin diagnóstico adecuado.",
+          "Usar filtros incorrectos o de mala calidad.",
+          "Descuidar el mantenimiento regular."
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla pobre en banco 1",
+          "P0420 - Eficiencia del catalizador por debajo del umbral",
+          "P0135 - Falla en el calentador del sensor de oxígeno"
+        ],
+        "internalLinks": [
+          {
+            "label": "Mantenimiento para ahorrar combustible en Peugeot",
+            "href": "/es/mantenimiento-ahorro-combustible-peugeot"
+          },
+          {
+            "label": "Cómo diagnosticar el sistema de combustible con OBD2",
+            "href": "/es/diagnostico-sistema-combustible-obd2"
+          },
+          {
+            "label": "Cambio de filtro de aire Peugeot paso a paso",
+            "href": "/es/cambio-filtro-aire-peugeot"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot consume más combustible de repente?",
+            "a": "Puede deberse a sensores dañados, filtros sucios o cambios en la forma de conducir."
+          },
+          {
+            "q": "¿Cómo identificar una fuga de combustible?",
+            "a": "Olor a combustible, caída de presión o manchas visibles pueden ser indicios."
+          },
+          {
+            "q": "¿Influye la presión de los neumáticos en el consumo?",
+            "a": "Sí, una presión baja aumenta la resistencia y eleva el consumo entre 3-5%."
+          }
+        ],
+        "schemaTitle": "Peugeot consumo excesivo de combustible - causas y diagnósticos | OBD2HQ",
+        "schemaDescription": "Guía detallada para identificar y solucionar el alto consumo de combustible en vehículos Peugeot, con consejos y códigos OBD2."
+      },
+      "fr": {
+        "slug": "peugeot-consommation-excessive-de-carburant-causes",
+        "title": "Peugeot Consommation Excessive de Carburant : Causes et Contrôles Pratiques",
+        "metaDescription": "Découvrez les causes possibles d'une surconsommation de carburant sur Peugeot et les étapes diagnostiques simples à suivre.",
+        "intro": "Une consommation excessive de carburant sur une Peugeot peut résulter de plusieurs facteurs. Avant de remplacer des pièces, il est conseillé de réaliser des vérifications simples pour localiser la source du problème. Ce guide propose les causes probables, les étapes à suivre pour le diagnostic, ainsi que des conseils pour améliorer l’efficacité énergétique.",
+        "severity": "Gravité modérée : une surconsommation impacte le budget et l’environnement.",
+        "driveAdvice": "Évitez les accélérations brutales et les temps de ralenti inutiles. Assurez-vous d’un entretien régulier et d’un carburant de qualité.",
+        "likelyCauses": [
+          "Filtre à air encrassé",
+          "Sonde lambda défectueuse",
+          "Mauvais réglage du mélange carburant ou problème d’injecteurs",
+          "Pression des pneus insuffisante",
+          "Fuites ou problèmes dans le circuit de carburant"
+        ],
+        "diagnosticSteps": [
+          "Surveillez la consommation et analysez vos habitudes de conduite.",
+          "Contrôlez et remplacez les filtres à air et d’habitacle si sales.",
+          "Utilisez un outil OBD2 pour scanner les codes d’erreur, notamment sondes lambda et débitmètre d’air.",
+          "Vérifiez et ajustez la pression des pneus selon les recommandations constructeur.",
+          "Contrôlez les injecteurs et le système d’alimentation pour détecter des fuites.",
+          "Effectuez un test des émissions pour évaluer l’efficacité de la combustion."
+        ],
+        "firstChecks": [
+          "Contrôlez la qualité du carburant et vos habitudes de remplissage.",
+          "Assurez-vous que la pression des pneus est correcte.",
+          "Vérifiez le niveau et l'état de l'huile moteur et du filtre."
+        ],
+        "commonMistakes": [
+          "Remplacer des pièces sans diagnostic précis.",
+          "Utiliser des filtres inadéquats ou de mauvaise qualité.",
+          "Négliger l’entretien régulier."
+        ],
+        "relatedCodes": [
+          "P0171 - Système trop pauvre (banque 1)",
+          "P0420 - Efficacité du catalyseur en dessous du seuil",
+          "P0135 - Dysfonctionnement du circuit de chauffage de la sonde lambda"
+        ],
+        "internalLinks": [
+          {
+            "label": "Conseils pour économiser du carburant sur Peugeot",
+            "href": "/fr/conseils-economie-carburant-peugeot"
+          },
+          {
+            "label": "Diagnostic du système de carburant avec OBD2",
+            "href": "/fr/diagnostic-systeme-carburant-obd2"
+          },
+          {
+            "label": "Changer le filtre à air Peugeot étape par étape",
+            "href": "/fr/changer-filtre-air-peugeot"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi ma consommation de carburant a-t-elle soudainement augmenté ?",
+            "a": "Cela peut venir d’un capteur défaillant, d’un filtre encrassé ou d’un changement de conduite."
+          },
+          {
+            "q": "Comment détecter une fuite de carburant ?",
+            "a": "Une odeur de carburant, une baisse de pression ou une fuite visible sont des signes à surveiller."
+          },
+          {
+            "q": "La pression des pneus influence-t-elle la consommation ?",
+            "a": "Oui, une pression insuffisante augmente la résistance au roulement et la consommation de 3 à 5%."
+          }
+        ],
+        "schemaTitle": "Peugeot consommation excessive de carburant - causes et diagnostic | OBD2HQ",
+        "schemaDescription": "Guide complet pour identifier et résoudre les problèmes de surconsommation de carburant sur Peugeot, avec conseils et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-stalling",
+    "intentKey": "peugeot_stalling",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "stalling",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-stop-ediyor",
+        "title": "Peugeot Stop Ediyor: Nedenleri ve Çözüm Yolları",
+        "metaDescription": "Peugeot aracınızın stop etmesi çeşitli sorunlardan kaynaklanabilir. Pratik kontroller ve olası nedenlerle başlayın, doğru tanı için ipuçları burada.",
+        "intro": "Peugeot aracınızın beklenmedik şekilde stop etmesi, farklı sistemlerde ortaya çıkabilecek çeşitli problemlerden kaynaklanabilir. Ani durmalar, sürüş güvenliğiniz için risk oluşturabilir. Bu yüzden, aracınızı gereksiz parça değişiminden önce detaylı olarak kontrol etmek önemlidir. Makalemizde, en sık rastlanan nedenleri, başlangıçta yapılması gereken 3 kontrolü, yaygın yanlışları ve OBD2 kodlarını bulabilirsiniz.",
+        "severity": "Peugeot'un stalling (stop etme) problemi, sürüş açısından orta ila yüksek risk taşıyabilir. Ani duruşlar trafikte tehlike yaratabilir. Problemin devam etmesi durumunda yetkili servise başvurmanız önerilir.",
+        "driveAdvice": "Aracınız hareket halindeyken stop etmeye başladıysa, güvenli bir yerde durun ve motoru kapatıp yeniden çalıştırmayı deneyin. Sorun devam ederse yavaşça kenara çekin ve profesyonel destek alın.",
+        "likelyCauses": [
+          "Yakıt pompası arızası ya da yakıt filtresinin tıkanması",
+          "Hava giriş sensörü (MAF) veya oksijen sensörlerinde sorun",
+          "Ateşleme bobini veya buji kaynaklı problemler",
+          "Elektriksel bağlantılar veya batarya sorunları",
+          "EGR valfi tıkanması veya bozulması"
+        ],
+        "diagnosticSteps": [
+          "OBD2 cihazı ile aracın arıza kodlarını okuyun",
+          "Yakıt basınç ve filtre durumunu kontrol edin",
+          "Hava filtresi ve MAF sensörünü temizleyin",
+          "Buji ve ateşleme bobinlerini test edin",
+          "EGR valfinin çalışma mekanizmasını inceleyin",
+          "Akü voltajını ve elektrik devresini ölçün"
+        ],
+        "firstChecks": [
+          "Yakıt deposunda yeterli ve temiz yakıt olduğundan emin olun",
+          "Hava filtresi tıkanıklığını kontrol edin",
+          "Akü bağlantılarının sağlam ve temiz olduğundan emin olun"
+        ],
+        "commonMistakes": [
+          "Direkt parça değişimlerine yönelmek",
+          "Yakıt sistemi sorunlarını atlamak",
+          "Elektrik sistemini ihmal etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rastgele Silindir Ateşleme Arızası",
+          "P0171 - Yakıt Karışımı Fazla Fakir",
+          "P0507 - Rölanti Devri Çok Yüksek"
+        ],
+        "internalLinks": [
+          {
+            "label": "peugeot yakıt sistemi sorunları",
+            "href": "/tr/peugeot-yakit-sistemi-sorunlari"
+          },
+          {
+            "label": "obd2 kodları ve anlamları",
+            "href": "/tr/obd2-kodlari-ve-anlamlari"
+          },
+          {
+            "label": "ateşleme sistemi bakımı",
+            "href": "/tr/atesleme-sistemi-bakimi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot araç neden aniden stop eder?",
+            "a": "Genellikle yakıt, hava veya ateşleme sistemindeki sorunlar nedeniyle olur. Kesin teşhis için kontroller gereklidir."
+          },
+          {
+            "q": "OBD2 cihazı ile hangi kodlar stalling belirtir?",
+            "a": "P0300, P0171 ve P0507 gibi motor performansını etkileyen kodlar stalling durumunda ortaya çıkabilir."
+          },
+          {
+            "q": "Stop etme problemi nasıl önlenebilir?",
+            "a": "Periyodik bakım, yakıt ve hava filtrelerinin değişimi ve sensörlerin temizliği ile önlem alınabilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Araçlarda Stop Etme Sorunları ve Diagnostik Rehberi",
+        "schemaDescription": "Peugeot araçların aniden stop etme sorunları için olası nedenler, yapılacak kontroller ve OBD2 kodları ile detaylı diagnostik rehberi."
+      },
+      "en": {
+        "slug": "peugeot-stalling-issues",
+        "title": "Peugeot Stalling Issues: Causes and Diagnosis",
+        "metaDescription": "Discover practical checks and likely causes for Peugeot stalling issues. Learn diagnostic steps before replacing parts to avoid unnecessary costs.",
+        "intro": "Experiencing stalling issues with your Peugeot can stem from multiple sources, affecting fuel supply, ignition, or sensors. Sudden engine stoppage poses safety risks and requires careful diagnosis. Before replacing parts, it is best to conduct thorough checks. This guide outlines common causes, initial inspections, frequent mistakes, diagnostic codes, and useful resources tailored for Peugeot owners.",
+        "severity": "Stalling in a Peugeot represents a moderate to high severity problem. Sudden engine stops can compromise safety, especially during driving. It’s important to address these issues promptly.",
+        "driveAdvice": "If your Peugeot stalls while driving, carefully pull over to a safe location, then try restarting the engine. If the issue persists, seek professional assistance to avoid hazards.",
+        "likelyCauses": [
+          "Faulty fuel pump or clogged fuel filter",
+          "Malfunctioning mass airflow (MAF) or oxygen sensors",
+          "Problems with ignition coil or spark plugs",
+          "Electrical connection issues or battery faults",
+          "Clogged or faulty EGR valve"
+        ],
+        "diagnosticSteps": [
+          "Scan vehicle with OBD2 scanner for trouble codes",
+          "Check fuel pressure and inspect fuel filter",
+          "Clean air filter and MAF sensor",
+          "Test spark plugs and ignition coils",
+          "Inspect EGR valve operation",
+          "Measure battery voltage and test electrical circuits"
+        ],
+        "firstChecks": [
+          "Verify clean and sufficient fuel in the tank",
+          "Check for air filter blockages",
+          "Ensure battery terminals are clean and secure"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Ignoring potential fuel system problems",
+          "Overlooking electrical system inspections"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0507 - Idle Control System RPM Higher Than Expected"
+        ],
+        "internalLinks": [
+          {
+            "label": "peugeot fuel system problems",
+            "href": "/en/peugeot-fuel-system-problems"
+          },
+          {
+            "label": "obd2 codes and meanings",
+            "href": "/en/obd2-codes-and-meanings"
+          },
+          {
+            "label": "ignition system maintenance",
+            "href": "/en/ignition-system-maintenance"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why does my Peugeot stall unexpectedly?",
+            "a": "Stalling is often related to fuel, air intake, or ignition system issues. Proper diagnosis can identify the root cause."
+          },
+          {
+            "q": "Which OBD2 codes are linked to stalling problems?",
+            "a": "Codes like P0300, P0171, and P0507 often appear when stalling occurs."
+          },
+          {
+            "q": "How can I prevent Peugeot stalling problems?",
+            "a": "Regular maintenance including fuel and air filter replacement, plus sensor cleaning, helps prevent stalling."
+          }
+        ],
+        "schemaTitle": "Peugeot Stalling Troubleshooting and Diagnostic Guide",
+        "schemaDescription": "A comprehensive guide for diagnosing and addressing stalling issues in Peugeot vehicles, including common causes, checks, OBD2 codes, and tips."
+      },
+      "de": {
+        "slug": "peugeot-motor-stottert",
+        "title": "Peugeot Motor Stottert: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie, warum Ihr Peugeot stottert. Praktische Checks, mögliche Ursachen und Diagnosehinweise, bevor Sie Teile austauschen.",
+        "intro": "Das plötzliche Ausgehen des Motors bei Peugeot-Fahrzeugen kann viele Ursachen haben, von Kraftstoffproblemen bis zu Sensorstörungen. Ein solcher Ausfall kann gefährlich sein und sollte sorgfältig diagnostiziert werden. Bevor Sie Bauteile austauschen, empfehlen wir eine gründliche Überprüfung. In diesem Artikel finden Sie häufige Ursachen, erste Kontrollen, typische Fehler und relevante OBD2-Codes.",
+        "severity": "Ein Stottern des Motors kann die Fahrsicherheit erheblich beeinträchtigen. Die Dringlichkeit zur Behebung ist mittel bis hoch, insbesondere bei plötzlichen Ausfällen während der Fahrt.",
+        "driveAdvice": "Wenn Ihr Peugeot während der Fahrt stehen bleibt, fahren Sie sicher an den Straßenrand und starten Sie den Motor neu. Bleibt das Problem bestehen, sollten Sie eine Werkstatt aufsuchen.",
+        "likelyCauses": [
+          "Defekte Kraftstoffpumpe oder verstopfter Kraftstofffilter",
+          "Fehlerhafte Luftmassen- (MAF) oder Lambdasonden",
+          "Probleme mit Zündspule oder Zündkerzen",
+          "Elektrische Verbindungsprobleme oder Batteriefehler",
+          "Verstopftes oder defektes AGR-Ventil"
+        ],
+        "diagnosticSteps": [
+          "Fahrzeug mit OBD2-Scanner auf Fehlercodes prüfen",
+          "Kraftstoffdruck und Filterzustand kontrollieren",
+          "Luftfilter und MAF-Sensor reinigen",
+          "Zündkerzen und Zündspulen testen",
+          "AGR-Ventil auf Funktion prüfen",
+          "Batteriespannung messen und elektrische Verbindungen prüfen"
+        ],
+        "firstChecks": [
+          "Ausreichenden und sauberen Kraftstofftank sicherstellen",
+          "Luftfilter auf Verstopfungen prüfen",
+          "Batterieanschlüsse auf Sauberkeit und festen Sitz überprüfen"
+        ],
+        "commonMistakes": [
+          "Bauteile ohne Diagnose austauschen",
+          "Kraftstoffsystemprobleme ignorieren",
+          "Elektrische Systemprüfungen vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0300 - Zufällige/Mehrfachzündung Fehler",
+          "P0171 - Gemisch zu mager (Bank 1)",
+          "P0507 - Leerlaufregelung Drehzahl höher als erwartet"
+        ],
+        "internalLinks": [
+          {
+            "label": "peugeot kraftstoffsystem probleme",
+            "href": "/de/peugeot-kraftstoffsystem-probleme"
+          },
+          {
+            "label": "obd2-codes und bedeutungen",
+            "href": "/de/obd2-codes-und-bedeutungen"
+          },
+          {
+            "label": "wartung des zündsystems",
+            "href": "/de/wartung-des-zuendsystems"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum stottert mein Peugeot Motor?",
+            "a": "Ursachen sind häufig Kraftstoff-, Luftzufuhr- oder Zündungsprobleme. Eine genaue Diagnose ist wichtig."
+          },
+          {
+            "q": "Welche OBD2-Codes zeigen ein Stottern an?",
+            "a": "Codes wie P0300, P0171 und P0507 sind typisch bei Stotterproblemen."
+          },
+          {
+            "q": "Wie vermeide ich Probleme mit dem Motorstottern?",
+            "a": "Regelmäßige Wartung mit Wechsel von Filtern und Reinigung der Sensoren hilft, Probleme zu verhindern."
+          }
+        ],
+        "schemaTitle": "Peugeot Stottern Diagnose- und Lösungsleitfaden",
+        "schemaDescription": "Umfassender Leitfaden zur Fehlersuche und Behebung von Stotterproblemen bei Peugeot Fahrzeugen mit wichtigen Ursachen, Checks und OBD2-Codes."
+      },
+      "es": {
+        "slug": "peugeot-motor-tiembla-stalling",
+        "title": "Peugeot Motor Tiembla y Se Detiene: Causas y Diagnóstico",
+        "metaDescription": "Conoce las causas frecuentes del motor que tiembla o se detiene en Peugeot. Revisa antes de reemplazar piezas con nuestra guía práctica.",
+        "intro": "Que tu Peugeot se detenga inesperadamente puede indicar problemas en áreas como el combustible, la ignición o sensores. Esta situación afecta la seguridad y requiere un diagnóstico detallado. Antes de cambiar piezas, es recomendable realizar comprobaciones prácticas. Aquí te presentamos causas comunes, pasos para diagnosticar, errores frecuentes, códigos OBD2 y recursos útiles para tu vehículo Peugeot.",
+        "severity": "El problema de que el motor se detenga representa una gravedad moderada a alta, pues puede poner en riesgo la seguridad al detenerse abruptamente durante la conducción.",
+        "driveAdvice": "Si el motor de tu Peugeot se detiene mientras conduces, detente en un lugar seguro y trata de reiniciar el vehículo. Si falla, solicita ayuda profesional para evitar riesgos.",
+        "likelyCauses": [
+          "Bomba de combustible defectuosa o filtro de combustible obstruido",
+          "Sensor de flujo de masa de aire (MAF) o sensor de oxígeno dañados",
+          "Problemas con la bobina de encendido o las bujías",
+          "Fallos en conexiones eléctricas o batería en mala condición",
+          "Válvula EGR sucia o dañada"
+        ],
+        "diagnosticSteps": [
+          "Escanear el vehículo con un dispositivo OBD2 para códigos de falla",
+          "Verificar presión del combustible y condición del filtro",
+          "Limpiar el filtro de aire y el sensor MAF",
+          "Probar bujías y bobinas de encendido",
+          "Revisar funcionamiento de la válvula EGR",
+          "Medir voltaje de la batería y revisar circuitos eléctricos"
+        ],
+        "firstChecks": [
+          "Confirmar que hay suficiente combustible y está limpio",
+          "Revisar bloqueo en el filtro de aire",
+          "Asegurar que los terminales de la batería estén limpios y bien conectados"
+        ],
+        "commonMistakes": [
+          "Sustituir partes sin diagnóstico adecuado",
+          "Ignorar problemas en el sistema de combustible",
+          "No revisar el sistema eléctrico completamente"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallos de encendido aleatorios o múltiples cilindros",
+          "P0171 - Mezcla demasiado pobre (Banco 1)",
+          "P0507 - RPM del sistema de control de ralentí más alto de lo esperado"
+        ],
+        "internalLinks": [
+          {
+            "label": "problemas del sistema de combustible Peugeot",
+            "href": "/es/problemas-sistema-combustible-peugeot"
+          },
+          {
+            "label": "códigos OBD2 y su significado",
+            "href": "/es/codigos-obd2-significado"
+          },
+          {
+            "label": "mantenimiento del sistema de encendido",
+            "href": "/es/mantenimiento-sistema-encendido"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot se detiene sin aviso?",
+            "a": "Generalmente es por fallos en el combustible, aire o sistema de ignición. Se recomienda un diagnóstico completo."
+          },
+          {
+            "q": "¿Qué códigos OBD2 indican problemas de detención?",
+            "a": "Los códigos P0300, P0171 y P0507 suelen estar relacionados con estos fallos."
+          },
+          {
+            "q": "¿Cómo evitar que mi Peugeot se detenga inesperadamente?",
+            "a": "Manteniendo filtros limpios, sensores en buen estado y realizando mantenimiento periódico."
+          }
+        ],
+        "schemaTitle": "Guía para Diagnosticar y Solucionar Paradas del Motor en Peugeot",
+        "schemaDescription": "Una guía completa para detectar y resolver problemas de detención en motores Peugeot, con causas comunes, diagnósticos paso a paso y códigos OBD2 relevantes."
+      },
+      "fr": {
+        "slug": "peugeot-calage-moteur",
+        "title": "Calage Moteur Peugeot : Causes et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes du calage moteur sur Peugeot. Conseils pratiques pour vérifier avant de remplacer des pièces.",
+        "intro": "Le calage soudain du moteur sur un véhicule Peugeot peut provenir de plusieurs sources telles que l’alimentation en carburant, l’allumage ou les capteurs. Ce phénomène impacte la sécurité et nécessite un diagnostic précis. Avant de changer des pièces, il est recommandé d’effectuer des contrôles pratiques. Ce guide présente les causes habituelles, les premières vérifications, les erreurs communes, les codes OBD2 à surveiller et des ressources utiles.",
+        "severity": "Le calage moteur est un problème de gravité moyenne à élevée, surtout s’il intervient pendant la conduite, pouvant entraîner une perte de contrôle du véhicule.",
+        "driveAdvice": "Si votre Peugeot cale en roulant, garez-vous en sécurité dès que possible puis essayez de redémarrer. Si le problème persiste, faites appel à un professionnel.",
+        "likelyCauses": [
+          "Pompe à carburant défaillante ou filtre à carburant obstrué",
+          "Capteur de débit d’air massique (MAF) ou sonde lambda défectueux",
+          "Problèmes avec la bobine d’allumage ou les bougies",
+          "Problèmes de connexions électriques ou batterie faible",
+          "Vanne EGR encrassée ou défectueuse"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défaut avec un outil OBD2",
+          "Contrôler la pression de carburant et l’état du filtre",
+          "Nettoyer le filtre à air et le capteur MAF",
+          "Tester les bougies et les bobines d’allumage",
+          "Vérifier la vanne EGR en fonctionnement",
+          "Mesurer la tension de la batterie et vérifier les circuits électriques"
+        ],
+        "firstChecks": [
+          "S’assurer que le réservoir contient du carburant propre et suffisant",
+          "Vérifier l’encrassement du filtre à air",
+          "Contrôler la propreté et la fixation des câbles de batterie"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic complet",
+          "Ignorer les problèmes du système de carburant",
+          "Négliger le contrôle du système électrique"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples",
+          "P0171 - Mélange trop pauvre (Banque 1)",
+          "P0507 - Régime de ralenti supérieur à la valeur attendue"
+        ],
+        "internalLinks": [
+          {
+            "label": "problèmes système carburant Peugeot",
+            "href": "/fr/problemes-systeme-carburant-peugeot"
+          },
+          {
+            "label": "codes OBD2 et signification",
+            "href": "/fr/codes-obd2-signification"
+          },
+          {
+            "label": "entretien du système d’allumage",
+            "href": "/fr/entretien-systeme-allumage"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Peugeot cale-t-il soudainement ?",
+            "a": "Les causes courantes sont des soucis d’alimentation, d’admission d’air ou d’allumage. Un diagnostic précis est nécessaire."
+          },
+          {
+            "q": "Quels codes OBD2 indiquent un calage moteur ?",
+            "a": "Les codes P0300, P0171 et P0507 sont fréquemment associés aux calages."
+          },
+          {
+            "q": "Comment prévenir les calages sur Peugeot ?",
+            "a": "En réalisant un entretien régulier, en changeant filtres et en nettoyant les capteurs."
+          }
+        ],
+        "schemaTitle": "Guide de Diagnostic des Problèmes de Calage sur Peugeot",
+        "schemaDescription": "Un guide complet pour diagnostiquer et résoudre les problèmes de calage moteur sur Peugeot avec causes habituelles, contrôles et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-jerking",
+    "intentKey": "peugeot_jerking",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "jerking",
+    "qualityScore": 90,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-silkeleme-yapiyor",
+        "title": "Peugeot Silkeleme Sorunları: Nedenleri ve Çözümleri",
+        "metaDescription": "Peugeot araçlarda silkeleme neden olur? Olası sebepler, ön kontroller ve teşhis adımları hakkında uzman rehberi.",
+        "intro": "Peugeot marka aracınızda yaşanan silkeleme sorunu sürüşte rahatsızlık yaratır ve farklı mekanik nedenlere işaret edebilir. Bu rehberde, Peugeot silkeleme sorunları için kontrol etmeniz gereken temel unsurlar, olası sebepler ve doğru teşhis yöntemleri ele alınmaktadır. Parça değiştirmeden önce uygulanacak pratik kontroller önemlidir.",
+        "severity": "Orta seviyede sürüş konforunu etkiler, performans düşüşüne yol açabilir.",
+        "driveAdvice": "Silkelemenin şiddetine göre dikkatli sürüş önerilir. Ani hızlanma ve ağır yüklerden kaçının.",
+        "likelyCauses": [
+          "Yakıt enjeksiyon sistemindeki tıkanıklık veya arıza",
+          "Ateşleme sisteminde sorun (buji veya bobin arızası)",
+          "HAVA akışı sensörlerinin yanlış değer vermesi",
+          "Hatalı yakıt kalitesi veya yakıt filtresi tıkanıklığı",
+          "Motor kontrol ünitesi (ECU) yazılımında sorunlar"
+        ],
+        "diagnosticSteps": [
+          "OBD2 tarayıcı ile hata kodlarını okuyun",
+          "Yakıt enjeksiyon basıncını test edin",
+          "Bujileri ve ateşleme bobinlerini kontrol edin",
+          "Hava filtresi ve hava akışı sensörünü temizleyin",
+          "Motor soğutma sistemi ve sensörlerini inceleyin",
+          "Yakıt kalitesini ve yakıt filtresini kontrol edin"
+        ],
+        "firstChecks": [
+          "Hava filtresi temizliği ve kontrolü",
+          "Bujilerin durumu ve ateşleme sisteminin testi",
+          "OBD2 cihazı ile temel arıza kodlarının okunması"
+        ],
+        "commonMistakes": [
+          "Parça değiştirmeden önce teşhisi atlamak",
+          "Kalitesiz yedek parça kullanmak",
+          "Yakıt kalitesi sorununu göz ardı etmek"
+        ],
+        "relatedCodes": [
+          "P0300 - Rasgele Silindir Ateşleme Hatası",
+          "P0171 - Yakıt Sistemi Çıkış Hatası (Zengin Olmayan Karışım)",
+          "P0507 - Rölanti Hızı Yüksek"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 ile Hata Kodu Okuma",
+            "href": "/tr/obd2-hata-kodu-okuma"
+          },
+          {
+            "label": "Peugeot Ateşleme Problemleri",
+            "href": "/tr/peugeot-atesleme-arizalari"
+          },
+          {
+            "label": "Yakıt Sistemi Sorunları",
+            "href": "/tr/yakit-sistemi-arizalari"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot aracım silkeliyor, hemen ne yapmalıyım?",
+            "a": "Öncelikle hava filtresi ve bujilerin durumunu kontrol edin ve OBD2 cihazı ile hata kodlarını okuyun."
+          },
+          {
+            "q": "Silkeleme sorunu aracımın performansını etkiler mi?",
+            "a": "Evet, motor titreme ve silkeleme sürüş konforunu azaltır ve yakıt tüketimini artırabilir."
+          },
+          {
+            "q": "Parça değişimi yapmadan önce hangi kontrolleri yapmalıyım?",
+            "a": "Yakıt filtre, hava filtresi ve ateşleme sistemini dikkatle kontrol etmek önemlidir."
+          }
+        ],
+        "schemaTitle": "Peugeot Silkeleme Sorunları ve Teşhis Rehberi",
+        "schemaDescription": "Peugeot araçlarda silkeleme probleminin olası nedenleri, ön kontrolleri ve teşhis adımları."
+      },
+      "en": {
+        "slug": "peugeot-jerking-issues",
+        "title": "Peugeot Jerking Problems: Causes and Diagnostic Tips",
+        "metaDescription": "Discover common causes and practical diagnostics for Peugeot jerking issues. Perform key checks before part replacements.",
+        "intro": "Jerking in your Peugeot can signal various mechanical or electrical issues affecting performance and drive quality. This guide explores likely causes, practical diagnostic steps, and first checks to perform before replacing any parts. Proper troubleshooting helps ensure cost-effective and precise repairs.",
+        "severity": "Moderate impact on driving comfort and engine smoothness.",
+        "driveAdvice": "Drive cautiously, avoiding sudden acceleration or heavy loads until issue is addressed.",
+        "likelyCauses": [
+          "Clogged or malfunctioning fuel injection system",
+          "Ignition system faults such as spark plugs or ignition coils",
+          "Incorrect readings from airflow sensors",
+          "Poor quality fuel or clogged fuel filters",
+          "ECU (Engine Control Unit) software glitches"
+        ],
+        "diagnosticSteps": [
+          "Use an OBD2 scanner to retrieve fault codes",
+          "Check fuel injection pressure",
+          "Inspect spark plugs and ignition coils",
+          "Clean air filter and airflow sensors",
+          "Examine the cooling system and related sensors",
+          "Assess fuel quality and fuel filter condition"
+        ],
+        "firstChecks": [
+          "Air filter cleanliness and condition",
+          "Spark plug condition and ignition system check",
+          "Reading basic error codes with an OBD2 tool"
+        ],
+        "commonMistakes": [
+          "Replacing parts without proper diagnosis",
+          "Using low-quality replacement parts",
+          "Ignoring fuel quality issues"
+        ],
+        "relatedCodes": [
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0171 - Fuel System Too Lean",
+          "P0507 - Idle Control System RPM Higher Than Expected"
+        ],
+        "internalLinks": [
+          {
+            "label": "How to Read OBD2 Error Codes",
+            "href": "/en/obd2-error-code-reading"
+          },
+          {
+            "label": "Peugeot Ignition System Issues",
+            "href": "/en/peugeot-ignition-problems"
+          },
+          {
+            "label": "Fuel System Diagnosis and Repair",
+            "href": "/en/fuel-system-issues"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What should I do first if my Peugeot is jerking?",
+            "a": "Start by inspecting the air filter, spark plugs, and reading OBD2 diagnostic codes."
+          },
+          {
+            "q": "Does jerking affect the car's performance?",
+            "a": "Yes, it can reduce engine smoothness and increase fuel consumption."
+          },
+          {
+            "q": "Can I fix jerking without replacing parts?",
+            "a": "Often, cleaning sensors and filters or addressing fuel quality helps before considering part replacements."
+          }
+        ],
+        "schemaTitle": "Peugeot Jerking Issues Diagnostic Guide",
+        "schemaDescription": "Learn to diagnose Peugeot jerking problems accurately with likely causes, key checks, and OBD2 codes."
+      },
+      "de": {
+        "slug": "peugeot-ruckeln-probleme",
+        "title": "Peugeot Ruckeln: Ursachen und Diagnose-Tipps",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für Ruckeln bei Peugeot und praktische Diagnoseschritte vor dem Austausch von Teilen.",
+        "intro": "Wenn Ihr Peugeot ruckelt, können verschiedene mechanische oder elektrische Probleme dahinterstecken, die Leistung und Fahrverhalten beeinträchtigen. Dieser Leitfaden erläutert mögliche Ursachen, wichtige Diagnoseschritte und erste Kontrollen, die vor einem Teilewechsel durchgeführt werden sollten. Eine sorgfältige Untersuchung spart Zeit und Kosten.",
+        "severity": "Beeinträchtigt den Fahrkomfort und die Motorlaufqualität mittelgradig.",
+        "driveAdvice": "Fahren Sie vorsichtig und vermeiden Sie plötzliche Beschleunigungen sowie schwere Lasten bis zur Behebung des Problems.",
+        "likelyCauses": [
+          "Verstopftes oder defektes Einspritzsystem",
+          "Probleme mit der Zündanlage (Zündkerzen oder -spulen)",
+          "Fehlerhafte Werte von Luftmassen- oder Luftdrucksensoren",
+          "Schlechte Kraftstoffqualität oder verstopfter Kraftstofffilter",
+          "Softwareprobleme im Motorsteuergerät (ECU)"
+        ],
+        "diagnosticSteps": [
+          "Fehlercodes mit OBD2-Scanner auslesen",
+          "Kraftstoffdruck überprüfen",
+          "Zündkerzen und Zündspulen inspizieren",
+          "Luftfilter und Luftmassenmesser reinigen",
+          "Kühlsystem und Sensoren prüfen",
+          "Kraftstoffqualität und Filter kontrollieren"
+        ],
+        "firstChecks": [
+          "Kontrolle und Reinigung des Luftfilters",
+          "Zustand der Zündkerzen prüfen",
+          "Auslesen von Grundfehlercodes mit OBD2-Gerät"
+        ],
+        "commonMistakes": [
+          "Teile ohne genaue Diagnose austauschen",
+          "Verwendung minderwertiger Ersatzteile",
+          "Kraftstoffqualität außer Acht lassen"
+        ],
+        "relatedCodes": [
+          "P0300 - Fehlerhafte Zündung in mehreren Zylindern",
+          "P0171 - Kraftstoffsystem zu mager",
+          "P0507 - Leerlaufdrehzahl zu hoch"
+        ],
+        "internalLinks": [
+          {
+            "label": "OBD2 Fehlercodes auslesen",
+            "href": "/de/obd2-fehlercode-auslesen"
+          },
+          {
+            "label": "Zündprobleme bei Peugeot",
+            "href": "/de/peugeot-zuendprobleme"
+          },
+          {
+            "label": "Probleme mit Kraftstoffsystemen",
+            "href": "/de/kraftstoffsystem-probleme"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Was soll ich tun, wenn mein Peugeot ruckelt?",
+            "a": "Überprüfen Sie zunächst Luftfilter, Zündkerzen und lesen Sie die Fehlercodes mit einem OBD2-Scanner aus."
+          },
+          {
+            "q": "Beeinflusst das Ruckeln die Fahrzeugleistung?",
+            "a": "Ja, es kann den Motorlauf beeinträchtigen und den Kraftstoffverbrauch erhöhen."
+          },
+          {
+            "q": "Kann ich das Ruckeln ohne Teilewechsel beheben?",
+            "a": "Oft helfen Reinigungen der Sensoren und Filter oder die Verbesserung der Kraftstoffqualität."
+          }
+        ],
+        "schemaTitle": "Diagnose-Leitfaden für Peugeot Ruckeln",
+        "schemaDescription": "So erkennen und diagnostizieren Sie Ruckelprobleme bei Peugeot mit möglichen Ursachen, wichtigen Kontrollen und OBD2-Codes."
+      },
+      "es": {
+        "slug": "peugeot-motor-tiembla-jerking",
+        "title": "Problemas de Temblor en Peugeot: Causas y Diagnóstico",
+        "metaDescription": "Identifica las causas comunes del motor que tiembla en Peugeot. Pasos prácticos de diagnóstico y controles antes de cambiar piezas.",
+        "intro": "Si tu Peugeot presenta temblores o sacudidas al conducir, podría deberse a varias causas mecánicas o eléctricas que afectan el rendimiento y la conducción. En esta guía te explicamos las causas probables, cómo realizar un diagnóstico adecuado y qué revisar primero antes de reemplazar componentes. Así evitarás costos innecesarios y asegurarás una reparación efectiva.",
+        "severity": "Impacto moderado en el confort de manejo y suavidad del motor.",
+        "driveAdvice": "Conduce con precaución, evitando aceleraciones bruscas o cargas pesadas hasta solucionar el problema.",
+        "likelyCauses": [
+          "Sistema de inyección de combustible obstruido o defectuoso",
+          "Problemas en el sistema de encendido, como bujías o bobinas dañadas",
+          "Lecturas incorrectas de sensores de flujo de aire",
+          "Combustible de mala calidad o filtro de combustible obstruido",
+          "Problemas en el software de la unidad de control del motor (ECU)"
+        ],
+        "diagnosticSteps": [
+          "Leer códigos de error con escáner OBD2",
+          "Verificar la presión de inyección de combustible",
+          "Revisar bujías y bobinas de encendido",
+          "Limpiar el filtro de aire y sensores de flujo de aire",
+          "Inspeccionar el sistema de refrigeración y sensores relacionados",
+          "Comprobar la calidad del combustible y el filtro de combustible"
+        ],
+        "firstChecks": [
+          "Estado y limpieza del filtro de aire",
+          "Revisión de bujías y sistema de encendido",
+          "Lectura básica de códigos con herramienta OBD2"
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin un diagnóstico adecuado",
+          "Usar repuestos de baja calidad",
+          "Ignorar problemas de calidad del combustible"
+        ],
+        "relatedCodes": [
+          "P0300 - Fallos de encendido aleatorios/múltiples cilindros",
+          "P0171 - Mezcla de combustible demasiado pobre",
+          "P0507 - Revoluciones de ralentí más altas de lo esperado"
+        ],
+        "internalLinks": [
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/lectura-codigos-obd2"
+          },
+          {
+            "label": "Problemas de encendido en Peugeot",
+            "href": "/es/problemas-encendido-peugeot"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/problemas-sistema-combustible"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué debo hacer si mi Peugeot tiembla?",
+            "a": "Primero revisa el filtro de aire, las bujías y lee los códigos de error con un escáner OBD2."
+          },
+          {
+            "q": "¿El temblor afecta el rendimiento?",
+            "a": "Sí, puede disminuir la suavidad del motor y aumentar el consumo de combustible."
+          },
+          {
+            "q": "¿Puedo solucionar el temblor sin cambiar piezas?",
+            "a": "Muchas veces basta con limpiar sensores, filtros y mejorar la calidad del combustible."
+          }
+        ],
+        "schemaTitle": "Guía para Diagnosticar Temblor en Peugeot",
+        "schemaDescription": "Aprende a diagnosticar correctamente el temblor en Peugeot con causas probables, controles clave y códigos OBD2."
+      },
+      "fr": {
+        "slug": "peugeot-secousse-moteur",
+        "title": "Peugeot : Causes et Diagnostic des Secousses Moteur",
+        "metaDescription": "Découvrez les causes fréquentes des secousses moteur sur Peugeot. Diagnostics pratiques et vérifications avant remplacement de pièces.",
+        "intro": "Un moteur qui saccade sur votre Peugeot peut résulter de divers problèmes mécaniques ou électroniques affectant la performance et le confort de conduite. Ce guide détaille les causes potentielles, les étapes de diagnostic utiles et les vérifications initiales avant toute intervention ou remplacement. Une analyse précise évite des coûts inutiles.",
+        "severity": "Impact modéré sur le confort de conduite et la régularité du moteur.",
+        "driveAdvice": "Conduisez prudemment, en évitant les accélérations brusques et les charges lourdes jusqu’à résolution du problème.",
+        "likelyCauses": [
+          "Système d’injection de carburant encrassé ou défectueux",
+          "Problèmes d’allumage (bougies ou bobines défaillantes)",
+          "Capteurs de débit d’air délivrant des valeurs erronées",
+          "Carburant de mauvaise qualité ou filtre à carburant bouché",
+          "Anomalies logicielles de l’unité de contrôle moteur (ECU)"
+        ],
+        "diagnosticSteps": [
+          "Lire les codes défauts avec un scanner OBD2",
+          "Tester la pression d’injection de carburant",
+          "Vérifier bougies et bobines d’allumage",
+          "Nettoyer filtre à air et capteurs de débit d’air",
+          "Examiner le circuit de refroidissement et ses capteurs",
+          "Contrôler la qualité du carburant et l’état du filtre"
+        ],
+        "firstChecks": [
+          "État et propreté du filtre à air",
+          "Contrôle des bougies et du système d’allumage",
+          "Lecture des codes d’erreur grâce à un outil OBD2"
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans diagnostic précis",
+          "Utiliser des pièces de rechange de mauvaise qualité",
+          "Négliger la qualité du carburant"
+        ],
+        "relatedCodes": [
+          "P0300 - Ratés d’allumage multiples",
+          "P0171 - Mélange trop pauvre",
+          "P0507 - Régime de ralenti trop élevé"
+        ],
+        "internalLinks": [
+          {
+            "label": "Lecture des codes défauts OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          },
+          {
+            "label": "Problèmes d’allumage Peugeot",
+            "href": "/fr/problemes-allumage-peugeot"
+          },
+          {
+            "label": "Diagnostiquer les problèmes d’alimentation",
+            "href": "/fr/problemes-systeme-carburant"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que faire en cas de secousses moteur sur Peugeot ?",
+            "a": "Commencez par vérifier le filtre à air, les bougies et lire les codes défauts avec un outil OBD2."
+          },
+          {
+            "q": "Les secousses affectent-elles la performance ?",
+            "a": "Oui, elles réduisent la régularité du moteur et augmentent la consommation."
+          },
+          {
+            "q": "Peut-on corriger les secousses sans changer de pièces ?",
+            "a": "Souvent, un nettoyage ou une amélioration de la qualité du carburant suffit."
+          }
+        ],
+        "schemaTitle": "Guide de Diagnostic des Secousses sur Peugeot",
+        "schemaDescription": "Comprenez comment diagnostiquer efficacement les secousses moteur sur Peugeot grâce aux causes probables, vérifications et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-overheating",
+    "intentKey": "peugeot_overheating",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "overheating",
+    "qualityScore": 95,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-hararet-yapiyor",
+        "title": "Peugeot Hararet Yapıyor: Nedenleri ve Çözümleri",
+        "metaDescription": "Peugeot aracınız hararet yapıyorsa olası nedenleri, temel kontrolleri ve doğru teşhis adımlarını keşfedin. Parçaları değiştirmeden önce yapmanız gerekenler burada.",
+        "intro": "Peugeot marka aracınızın motor sıcaklığı anormal şekilde yükseliyorsa bu, aracınızda çeşitli sorunların işareti olabilir. Hararet yapmasının birçok muhtemel sebebi bulunmakla birlikte, öncelikle basit kontrollerle problemi anlayıp doğru adımlar atmak önemlidir. Bu rehber, Peugeot araçlarda görülen hararet problemlerini tanıma, olası nedenleri gözden geçirme ve sistemi gereksiz parça değiştirmeden önce nasıl kontrol edeceğinize dair pratik bilgiler içerir.",
+        "severity": "Orta şiddette bir problemdir ve motorun zarar görmesini önlemek için hızlıca müdahale edilmelidir.",
+        "driveAdvice": "Aracı uzun süre zorlamayın, motoru kapatıp soğumasını bekleyin. Gerekirse çekici yardımı alın.",
+        "likelyCauses": [
+          "Soğutma sıvısı eksikliği veya kaçak",
+          "Termostatın arızalanması",
+          "Radyatör tıkanıklığı veya hasarı",
+          "Su pompası problemleri",
+          "Fan motorunun çalışmaması"
+        ],
+        "diagnosticSteps": [
+          "Soğutma sıvısı seviyesini kontrol edin",
+          "Termostatın açılıp açılmadığını test edin",
+          "Radyatör ve hortumlarda sızıntı veya tıkanıklık var mı gözlemleyin",
+          "Su pompasının dönüp dönmediğini kontrol edin",
+          "Fan motorunun devreye girip girmediğini kontrol edin",
+          "OBD2 cihazı ile motor sıcaklık sensörü ve fan kontrol kodlarını okuyun"
+        ],
+        "firstChecks": [
+          "Motor soğukken soğutma suyu seviyesini kontrol edin",
+          "Radyatörde dışarıdan görünür bir hasar veya sızıntı var mı bakın",
+          "Motor fanının sıcaklık arttığında devreye girip girmediğini dinleyin"
+        ],
+        "commonMistakes": [
+          "Soğutma sıvısı seviyesini sıcak motor durumundayken kontrol etmek",
+          "Hararet sorunu yaşarken motoru zorlamaya devam etmek",
+          "Termostat veya su pompası arızasını doğrudan parça değişimiyle çözmeye çalışmak"
+        ],
+        "relatedCodes": [
+          "P0128 - Soğutma Sıvısı Termostat Kontrol Performans",
+          "P0217 - Motor Aşırı Isınması",
+          "P0480 - Fan Motoru Devre Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Soğutma Suyu Problemleri",
+            "href": "/tr/peugeot-sogutma-suyu-problemleri"
+          },
+          {
+            "label": "OBD2 Kodları ile Termostat Arızası Teşhisi",
+            "href": "/tr/obd2-kodlari-termostat-arizasi"
+          },
+          {
+            "label": "Peugeot Motor Fanı Kontrol Rehberi",
+            "href": "/tr/peugeot-motor-fani-kontrol"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot aracım neden hararet yapıyor olabilir?",
+            "a": "Hararetin sebebi soğutma sıvısı seviyesi, fan motoru, termostat arızası gibi çeşitli faktörlerden kaynaklanabilir. Öncelikle temel kontroller yapılmalıdır."
+          },
+          {
+            "q": "Hararet sorunu yaşarken aracı kullanmaya devam etmeli miyim?",
+            "a": "Motor hasarı riskinden dolayı hararet sorunu yaşanırken aracı kullanmamanız, motoru soğuttuktan sonra profesyonel destek almanız tavsiye edilir."
+          },
+          {
+            "q": "Termostat arızası nasıl anlaşılır?",
+            "a": "Sürekli yüksek hararet göstergesi veya ısınma sonrası motorun geç soğuması termostat arızasının işaretleri olabilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Hararet Sorunu - Olası Nedenler ve Teşhis",
+        "schemaDescription": "Peugeot araçlarda motor harareti sorunlarına dair olası nedenler, ilk kontroller ve adım adım teşhis yöntemleri hakkında uzman bilgisi."
+      },
+      "en": {
+        "slug": "peugeot-overheating",
+        "title": "Peugeot Overheating Troubleshooting: Causes and Checks",
+        "metaDescription": "Experiencing overheating in your Peugeot? Learn practical checks, common causes, and step-by-step diagnostics before replacing parts.",
+        "intro": "If your Peugeot vehicle shows signs of overheating, it might indicate various underlying issues. Overheating can stem from several causes and requires a careful diagnostic approach before jumping to repairs. This guide covers common reasons for overheating in Peugeot cars, step-by-step diagnostic tips, initial checks, and important considerations to prevent unnecessary part replacements.",
+        "severity": "Moderate severity; overheating should be addressed promptly to prevent engine damage.",
+        "driveAdvice": "Avoid heavy driving when overheating occurs. Turn off the engine and allow it to cool down before further use; consider towing if needed.",
+        "likelyCauses": [
+          "Low or leaking coolant level",
+          "Faulty thermostat",
+          "Blocked or damaged radiator",
+          "Malfunctioning water pump",
+          "Non-operational radiator fan"
+        ],
+        "diagnosticSteps": [
+          "Check coolant level and inspect for leaks",
+          "Test thermostat operation",
+          "Inspect radiator and hoses for blockages or damage",
+          "Verify water pump function",
+          "Confirm radiator fan activation at high temperature",
+          "Use an OBD2 scanner to read temperature sensor and fan control codes"
+        ],
+        "firstChecks": [
+          "Check coolant reservoir level when the engine is cold",
+          "Visually inspect radiator for leaks or damage",
+          "Listen for radiator fan engagement during engine warm-up"
+        ],
+        "commonMistakes": [
+          "Checking coolant level on a hot engine, risking burns",
+          "Continuing to drive despite overheating symptoms",
+          "Replacing parts like thermostat or water pump without diagnosis"
+        ],
+        "relatedCodes": [
+          "P0128 - Coolant Thermostat Performance",
+          "P0217 - Engine Overtemperature Condition",
+          "P0480 - Cooling Fan 1 Control Circuit Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Cooling System Issues",
+            "href": "/en/peugeot-cooling-system-issues"
+          },
+          {
+            "label": "Diagnosing Thermostat Faults with OBD2 Codes",
+            "href": "/en/obd2-codes-thermostat-fault"
+          },
+          {
+            "label": "Peugeot Radiator Fan Diagnostics Guide",
+            "href": "/en/peugeot-radiator-fan-diagnostics"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What are common reasons for Peugeot overheating?",
+            "a": "Overheating can be caused by low coolant, faulty thermostat, radiator blockages, water pump issues, or fan failure."
+          },
+          {
+            "q": "Can I keep driving if my Peugeot is overheating?",
+            "a": "It's best to stop driving immediately, let the engine cool, and seek professional assistance to avoid damage."
+          },
+          {
+            "q": "How can I tell if the thermostat is faulty?",
+            "a": "Signs include the engine overheating quickly or not reaching operating temperature properly."
+          }
+        ],
+        "schemaTitle": "Peugeot Overheating: Common Causes and Diagnostic Steps",
+        "schemaDescription": "Discover expert advice on diagnosing and addressing overheating issues in Peugeot vehicles with practical checks and OBD2 codes."
+      },
+      "de": {
+        "slug": "peugeot-ueberhaizung-probleme",
+        "title": "Peugeot Überhitzung: Ursachen und Diagnoseschritte",
+        "metaDescription": "Probleme mit Überhitzung im Peugeot? Erfahren Sie praktische Prüfungen, häufige Ursachen und Diagnoseschritte vor dem Teileaustausch.",
+        "intro": "Wenn Ihr Peugeot-Antrieb überhitzt, kann dies verschiedene Ursachen haben. Überhitzung deutet auf ein potenzielles Problem hin, das vor Reparaturen sorgfältig diagnostiziert werden sollte. Diese Anleitung beschreibt häufige Gründe für Überhitzung bei Peugeot-Fahrzeugen, wie Sie erste Kontrollen durchführen und einen systematischen Diagnoseweg einhalten können, um unnötigen Teilewechsel zu vermeiden.",
+        "severity": "Mittlere Dringlichkeit – Überhitzung sollte zügig behandelt werden, um Motorschäden zu verhindern.",
+        "driveAdvice": "Vermeiden Sie schweres Fahren bei Überhitzung. Schalten Sie den Motor aus und lassen Sie ihn abkühlen. Gegebenenfalls Pannenhilfe rufen.",
+        "likelyCauses": [
+          "Niedriger oder fehlender Kühlmittelstand",
+          "Defektes Thermostat",
+          "Verstopfter oder beschädigter Kühler",
+          "Probleme mit der Wasserpumpe",
+          "Ausfall des Kühlerlüfters"
+        ],
+        "diagnosticSteps": [
+          "Kühlmittelstand und Undichtigkeiten prüfen",
+          "Thermostat auf Funktion testen",
+          "Kühler und Schläuche auf Verstopfungen oder Schäden inspizieren",
+          "Wasserpumpe auf Drehfunktion überprüfen",
+          "Überprüfen, ob Lüfter bei hoher Temperatur anspringt",
+          "Mit OBD2-Scanner Temperatur- und Lüftersteuerungscodes auslesen"
+        ],
+        "firstChecks": [
+          "Kühlmittel bei kaltem Motor kontrollieren",
+          "Sichtprüfung auf Kühlerleckagen oder Beschädigungen",
+          "Hören, ob der Lüfter beim Erwärmen des Motors anspringt"
+        ],
+        "commonMistakes": [
+          "Kühlmittelstand bei heißem Motor messen (Verletzungsgefahr)",
+          "Weiterfahren trotz Überhitzung",
+          "Austausch von Thermostat oder Wasserpumpe ohne Diagnose"
+        ],
+        "relatedCodes": [
+          "P0128 - Thermostat Leistungsverlust",
+          "P0217 - Motorüberhitzung erkannt",
+          "P0480 - Kühlerlüfter Steuerkreis Fehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Kühlsystem Probleme",
+            "href": "/de/peugeot-kuehlsystem-probleme"
+          },
+          {
+            "label": "Thermostat Fehler mit OBD2 Codes erkennen",
+            "href": "/de/obd2-codes-thermostat-fehler"
+          },
+          {
+            "label": "Peugeot Lüfter Diagnose Leitfaden",
+            "href": "/de/peugeot-luefter-diagnose"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum überhitzt mein Peugeot?",
+            "a": "Häufige Ursachen sind niedriger Kühlmittelstand, defektes Thermostat, verstopfter Kühler oder Lüfterausfall."
+          },
+          {
+            "q": "Kann ich mit Überhitzung weiterfahren?",
+            "a": "Nein, um Motorschäden zu vermeiden, sollte bei Überhitzung das Fahrzeug sofort abgestellt werden."
+          },
+          {
+            "q": "Wie erkenne ich einen Thermostatdefekt?",
+            "a": "Das Fahrzeug wird schnell zu heiß oder erreicht die Betriebstemperatur nicht richtig."
+          }
+        ],
+        "schemaTitle": "Peugeot Überhitzung: Ursachen erkennen und diagnostizieren",
+        "schemaDescription": "Fachliche Anleitung zur Diagnose und Behebung von Überhitzungsproblemen bei Peugeot mit praktischen Prüfungen und OBD2-Codes."
+      },
+      "es": {
+        "slug": "peugeot-sobrecalentamiento-problemas",
+        "title": "Peugeot sobrecalienta: causas comunes y diagnóstico",
+        "metaDescription": "¿Tu Peugeot se está sobrecalentando? Descubre causas frecuentes, revisiones prácticas y pasos de diagnóstico antes de reemplazar piezas.",
+        "intro": "El sobrecalentamiento en un Peugeot puede indicar diferentes problemas subyacentes. Antes de reemplazar cualquier componente, es vital realizar controles prácticos para identificar la causa correcta. En esta guía encontrarás las posibles razones del sobrecalentamiento, pasos para diagnosticarlo y consejos para evitar errores comunes durante la revisión o reparación.",
+        "severity": "Problema de gravedad media; debe atenderse pronto para evitar daños mayores en el motor.",
+        "driveAdvice": "Evita conducir el vehículo cuando esté sobrecalentando. Apaga el motor y deja que se enfríe antes de continuar. Usa asistencia si es necesario.",
+        "likelyCauses": [
+          "Nivel de líquido refrigerante bajo o fugas",
+          "Termostato defectuoso",
+          "Radiador bloqueado o dañado",
+          "Problemas con la bomba de agua",
+          "Ventilador del radiador que no funciona"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y posibles fugas de refrigerante",
+          "Comprobar el funcionamiento del termostato",
+          "Inspeccionar radiador y mangueras para bloqueos o daños",
+          "Verificar el correcto giro de la bomba de agua",
+          "Confirmar que el ventilador se activa con alta temperatura",
+          "Leer códigos OBD2 relacionados con temperatura y control del ventilador"
+        ],
+        "firstChecks": [
+          "Revisar nivel de líquido refrigerante con motor frío",
+          "Inspeccionar visualmente el radiador en busca de daños o fugas",
+          "Escuchar si el ventilador se activa durante el calentamiento"
+        ],
+        "commonMistakes": [
+          "Verificar el nivel de refrigerante con el motor caliente (riesgo de quemaduras)",
+          "Seguir conduciendo con síntomas de sobrecalentamiento",
+          "Cambiar piezas sin una correcta diagnosis previa"
+        ],
+        "relatedCodes": [
+          "P0128 - Rendimiento del termostato del refrigerante",
+          "P0217 - Condición de sobretemperatura del motor",
+          "P0480 - Fallo en el circuito de control del ventilador"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas del sistema de enfriamiento Peugeot",
+            "href": "/es/problemas-sistema-enfriamiento-peugeot"
+          },
+          {
+            "label": "Diagnóstico de fallo de termostato con códigos OBD2",
+            "href": "/es/diagnostico-fallo-termostato-codigos-obd2"
+          },
+          {
+            "label": "Guía para diagnosticar el ventilador del radiador Peugeot",
+            "href": "/es/ventilador-radiador-peugeot"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot se está sobrecalentando?",
+            "a": "Puede deberse a bajo nivel de refrigerante, termostato defectuoso, bloqueos en el radiador, problemas con la bomba de agua o falla del ventilador."
+          },
+          {
+            "q": "¿Puedo seguir conduciendo si se sobrecalienta?",
+            "a": "No se recomienda; es mejor detenerse, dejar enfriar el motor y buscar ayuda profesional para evitar daños."
+          },
+          {
+            "q": "¿Cómo saber si el termostato está fallando?",
+            "a": "El motor se calienta demasiado rápido o no alcanza la temperatura normal de funcionamiento."
+          }
+        ],
+        "schemaTitle": "Sobrecalentamiento en Peugeot: causas y diagnóstico experto",
+        "schemaDescription": "Aprenda a diagnosticar y solucionar problemas de sobrecalentamiento en Peugeot con revisiones prácticas y códigos OBD2 relevantes."
+      },
+      "fr": {
+        "slug": "peugeot-surchauffe-symptomes",
+        "title": "Peugeot en surchauffe : causes possibles et diagnostic",
+        "metaDescription": "Votre Peugeot surchauffe ? Découvrez les causes fréquentes, vérifications utiles et étapes de diagnostic avant de remplacer des pièces.",
+        "intro": "Une surchauffe sur une Peugeot peut avoir plusieurs origines. Avant toute intervention ou remplacement de pièce, il est essentiel d’effectuer des vérifications pratiques pour bien identifier la source du problème. Ce guide vous présente les causes probables de surchauffe, les étapes de diagnostic à suivre, ainsi que les erreurs courantes à éviter pour un diagnostic efficace.",
+        "severity": "Problème de gravité moyenne à traiter rapidement pour éviter des dommages moteur.",
+        "driveAdvice": "Évitez de rouler avec une surchauffe. Coupez le moteur et laissez-le refroidir avant de reprendre la route ; faites appel à une assistance si nécessaire.",
+        "likelyCauses": [
+          "Niveau de liquide de refroidissement insuffisant ou fuites",
+          "Thermostat défectueux",
+          "Radiateur bouché ou endommagé",
+          "Pompe à eau défaillante",
+          "Ventilateur du radiateur non fonctionnel"
+        ],
+        "diagnosticSteps": [
+          "Vérifier le niveau et les éventuelles fuites de liquide de refroidissement",
+          "Tester le thermostat",
+          "Contrôler radiateur et durites pour bouchons ou dommages",
+          "S’assurer du bon fonctionnement de la pompe à eau",
+          "Vérifier que le ventilateur se déclenche à haute température",
+          "Scanner les codes OBD2 relatifs à la température moteur et au ventilateur"
+        ],
+        "firstChecks": [
+          "Contrôler le niveau de liquide quand le moteur est froid",
+          "Examiner visuellement le radiateur pour détecter fuites ou dégâts",
+          "Écouter si le ventilateur démarre lors du réchauffement moteur"
+        ],
+        "commonMistakes": [
+          "Vérifier le liquide de refroidissement moteur chaud (risque de brûlure)",
+          "Continuer à rouler malgré la surchauffe",
+          "Remplacer thermostat ou pompe à eau sans diagnostic préalable"
+        ],
+        "relatedCodes": [
+          "P0128 - Performance du thermostat de liquide de refroidissement",
+          "P0217 - Condition de surchauffe moteur",
+          "P0480 - Dysfonctionnement du circuit de contrôle du ventilateur"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes du système de refroidissement Peugeot",
+            "href": "/fr/problemes-systeme-refroidissement-peugeot"
+          },
+          {
+            "label": "Diagnostiquer une panne de thermostat avec OBD2",
+            "href": "/fr/diagnostic-panne-thermostat-obd2"
+          },
+          {
+            "label": "Guide diagnostic ventilateur Peugeot",
+            "href": "/fr/diagnostic-ventilateur-peugeot"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quelles sont les causes fréquentes de surchauffe sur Peugeot ?",
+            "a": "La surchauffe peut être due à un faible niveau de liquide, un thermostat défectueux, un radiateur bouché, un problème de pompe à eau ou un ventilateur en panne."
+          },
+          {
+            "q": "Puis-je continuer à conduire avec une surchauffe ?",
+            "a": "Il est recommandé d’arrêter le véhicule et de laisser refroidir pour éviter des dommages moteurs importants."
+          },
+          {
+            "q": "Comment détecter une panne de thermostat ?",
+            "a": "Un moteur qui chauffe trop vite ou qui ne chauffe pas correctement peut indiquer un thermostat défectueux."
+          }
+        ],
+        "schemaTitle": "Surchauffe Peugeot : causes fréquentes et diagnostic détaillé",
+        "schemaDescription": "Conseils d’expert pour identifier et résoudre les problèmes de surchauffe sur Peugeot avec vérifications basiques et codes OBD2."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-fuel-smell",
+    "intentKey": "peugeot_fuel_smell",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "fuel_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "en": {
+        "slug": "peugeot-fuel-odor-causes",
+        "title": "Peugeot Fuel Smell: Causes and Diagnostic Guide",
+        "metaDescription": "Experiencing a fuel smell in your Peugeot? Explore practical checks, common causes, and essential diagnostic steps before replacing parts.",
+        "intro": "If you notice a fuel smell inside or around your Peugeot, it’s important to investigate promptly. Fuel odors can indicate potential issues ranging from minor leaks to more serious problems affecting vehicle safety and performance. Understanding possible causes and performing systematic checks can help you avoid unnecessary repairs and ensure your Peugeot runs safely.",
+        "severity": "Moderate. Fuel smell indicates possible fuel leakage risks or evaporative emissions but not an immediate engine failure.",
+        "driveAdvice": "Avoid driving until you confirm no active fuel leaks are present. If you must drive, do so cautiously and park outdoors to reduce fire risk.",
+        "likelyCauses": [
+          "Loose or damaged fuel filler cap",
+          "Leaking fuel lines or hoses",
+          "Faulty fuel injectors",
+          "Evaporative emission control system leaks",
+          "Cracked or worn fuel tank"
+        ],
+        "diagnosticSteps": [
+          "Inspect the fuel filler cap for tightness and damage.",
+          "Check fuel lines and hoses for visible leaks or cracks under the vehicle.",
+          "Test fuel injectors for leaks or dripping.",
+          "Use a smoke machine to detect evaporative emission system leaks.",
+          "Examine the fuel tank for damage or corrosion.",
+          "Scan for OBD2 codes related to fuel and emissions."
+        ],
+        "firstChecks": [
+          "Ensure the fuel cap clicks securely.",
+          "Look for visible fuel stains or wet spots.",
+          "Smell near the fuel tank and lines for pinpointing leaks."
+        ],
+        "commonMistakes": [
+          "Replacing fuel components without inspection",
+          "Ignoring evaporative system leak checks",
+          "Driving extensively with a persistent fuel smell"
+        ],
+        "relatedCodes": [
+          "P0442 - Evaporative Emission Control System Leak Detected (small leak)",
+          "P0171 - System Too Lean (Bank 1)",
+          "P0461 - Fuel Level Sensor Circuit Range/Performance"
+        ],
+        "internalLinks": [
+          {
+            "label": "Common Peugeot OBD2 Codes",
+            "href": "/en/peugeot-common-obd2-codes"
+          },
+          {
+            "label": "Fuel System Diagnostics",
+            "href": "/en/fuel-system-diagnostics"
+          },
+          {
+            "label": "Evaporative Emission System Guide",
+            "href": "/en/evaporative-emission-system"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can a loose fuel cap cause a fuel smell?",
+            "a": "Yes, a loose or damaged fuel cap can allow fuel vapors to escape, leading to a noticeable fuel smell."
+          },
+          {
+            "q": "Is it safe to drive with a fuel smell?",
+            "a": "It is usually not recommended, as it may indicate a leak that could become a fire hazard. Have the issue checked promptly."
+          },
+          {
+            "q": "Will OBD2 codes always appear with a fuel leak?",
+            "a": "Not necessarily. Some leaks, especially small ones in the evaporative system, may trigger a code, but others might not immediately register."
+          }
+        ],
+        "schemaTitle": "Peugeot Fuel Smell Diagnosis and Solutions",
+        "schemaDescription": "Learn how to identify, diagnose, and safely address fuel smell issues in your Peugeot with detailed steps, common causes, and expert advice."
+      },
+      "tr": {
+        "slug": "peugeot-benzin-kokusu-nedenleri",
+        "title": "Peugeot Benzin Kokusu: Nedenleri ve Tanı Rehberi",
+        "metaDescription": "Peugeot aracınızda benzin kokusu mu alıyorsunuz? Parça değişimi öncesi pratik kontroller ve olası nedenleri keşfedin.",
+        "intro": "Peugeot aracınızda benzin kokusu hissetmeniz, aracınızda yakıt kaçakları ya da sistemsel sorunlar olabileceğine işaret eder. Bu tür durumlar aracınızın güvenliği ve performansı için ciddiye alınmalıdır. Sorunun kesin nedenini belirlemek için sistematik kontroller yapmak, gereksiz masraflardan kaçınmanızı sağlar.",
+        "severity": "Orta derecede risk taşır. Benzin kokusu yakıt kaçağı veya kaçak emisyon sistemi sorunlarını gösterebilir ama acil motor arızası anlamına gelmez.",
+        "driveAdvice": "Yakıt kaçağı tespit edilene kadar aracı kullanmaktan kaçının. Eğer kullanmanız gerekiyorsa dikkatli sürün ve aracınızı açık alana park edin.",
+        "likelyCauses": [
+          "Gevşek veya hasarlı yakıt depo kapağı",
+          "Yakıt hatlarında veya borularında sızıntı",
+          "Arızalı yakıt enjektörleri",
+          "Buharlaşma emisyon kontrol sistemi kaçakları",
+          "Çatlamış veya aşınmış yakıt deposu"
+        ],
+        "diagnosticSteps": [
+          "Yakıt depo kapağının tam kapandığını ve hasarsız olduğunu kontrol edin.",
+          "Araç altındaki yakıt hatlarında çatlak veya sızıntı arayın.",
+          "Yakıt enjektörlerini damlama veya kaçak açısından test edin.",
+          "Buharlaşma emisyon sistemi kaçaklarını tespit için duman testi yapın.",
+          "Yakıt deposunu hasar ya da korozyon için inceleyin.",
+          "OBD2 cihazı ile yakıt ve emisyon sistemine dair kodları tarayın."
+        ],
+        "firstChecks": [
+          "Yakıt kapağının sıkıca kapandığından emin olun.",
+          "Yakıt sızıntısı belirtileri veya ıslak alanlar arayın.",
+          "Yakıt deposu ve hatları etrafında kokuya odaklanarak kontrol yapın."
+        ],
+        "commonMistakes": [
+          "Parça değiştirmeden önce kontrol yapmamak",
+          "Buharlaşma sistemi kaçaklarını göz ardı etmek",
+          "Benzin kokusu varken uzun süre sürüş yapmak"
+        ],
+        "relatedCodes": [
+          "P0442 - Buharlaşma Emisyon Sistemi Kaçağı (küçük kaçak)",
+          "P0171 - Sistem Çok Fakir (Bank 1)",
+          "P0461 - Yakıt Seviye Sensörü Aralığı/Performansı"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Yaygın OBD2 Kodları",
+            "href": "/tr/peugeot-yaygin-obd2-kodlari"
+          },
+          {
+            "label": "Yakıt Sistemi Tanı Rehberi",
+            "href": "/tr/yakit-sistemi-tani"
+          },
+          {
+            "label": "Buharlaşma Emisyon Sistemi",
+            "href": "/tr/buharlasma-emisyon-sistemi"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Gevşek yakıt kapağı benzin kokusuna neden olur mu?",
+            "a": "Evet, gevşek veya hasarlı yakıt kapağı yakıt buharlarının kaçmasına ve kokuya sebep olabilir."
+          },
+          {
+            "q": "Benzin kokusu varken araç kullanmak güvenli mi?",
+            "a": "Genellikle tavsiye edilmez çünkü bu bir yakıt kaçağına işaret edebilir ve yangın riski oluşturabilir."
+          },
+          {
+            "q": "Yakıt kaçağı her zaman OBD2 kodu verir mi?",
+            "a": "Hayır, özellikle küçük buharlaşma kaçakları bazen hemen kod oluşturmayabilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Benzin Kokusu Tanısı ve Çözümleri",
+        "schemaDescription": "Peugeot aracınızdaki benzin kokusunun nedenlerini tespit edin, güvenli ve etkili çözümler için adım adım rehberimizi izleyin."
+      },
+      "de": {
+        "slug": "peugeot-benzingeruch-ursachen",
+        "title": "Peugeot Benzingeruch: Ursachen und Diagnoseleitfaden",
+        "metaDescription": "Bemerken Sie Benzingeruch in Ihrem Peugeot? Erfahren Sie praktische Prüfungen, häufige Ursachen und Diagnoseschritte vor dem Teilewechsel.",
+        "intro": "Wenn Ihnen in oder an Ihrem Peugeot Benzingeruch auffällt, ist es wichtig, die Ursache zeitnah abzuklären. Benzingeruch kann verschiedene Ursachen haben, von kleineren Lecks bis zu sicherheitsrelevanten Problemen. Durch gut strukturierte Prüfungen können Sie unnötige Reparaturen vermeiden und die Sicherheit Ihres Fahrzeugs gewährleisten.",
+        "severity": "Mittelmäßig. Benzingeruch deutet auf mögliche Kraftstofflecks oder Emissionsprobleme hin, jedoch meist kein akutes Motorproblem.",
+        "driveAdvice": "Fahren Sie nur, wenn kein aktiver Kraftstoffleck vorhanden ist. Falls notwendig, vorsichtig fahren und im Freien parken, um Brandrisiken zu minimieren.",
+        "likelyCauses": [
+          "Locker sitzender oder beschädigter Tankverschluss",
+          "Undichte Kraftstoffleitungen oder Schläuche",
+          "Defekte Kraftstoffeinspritzventile",
+          "Lecks im Verdunstungsemissionssystem",
+          "Rissiger oder verschlissener Kraftstofftank"
+        ],
+        "diagnosticSteps": [
+          "Den Tankverschluss auf festen Sitz und Schäden überprüfen.",
+          "Kraftstoffleitungen und Schläuche auf sichtbare Lecks und Risse kontrollieren.",
+          "Kraftstoffeinspritzventile auf Tropfen oder Undichtigkeiten prüfen.",
+          "Mit einer Rauchmaschine das Verdunstungssystem auf Lecks untersuchen.",
+          "Den Kraftstofftank auf Beschädigungen und Korrosion prüfen.",
+          "OBD2-System auf codes bezüglich Kraftstoff und Emissionen auslesen."
+        ],
+        "firstChecks": [
+          "Sicherstellen, dass der Tankverschluss richtig einrastet.",
+          "Auf sichtbare Kraftstoffflecken oder nasse Stellen achten.",
+          "Am Tank und an den Leitungen gezielt nach Geruch suchen."
+        ],
+        "commonMistakes": [
+          "Austausch von Teilen ohne vorherige Kontrolle",
+          "Lecksuche im Verdunstungssystem vernachlässigen",
+          "Längere Fahrten trotz anhaltendem Benzingeruch"
+        ],
+        "relatedCodes": [
+          "P0442 - Verdunstungsemissionssystem Leck erkannt (kleines Leck)",
+          "P0171 - System zu mager (Bank 1)",
+          "P0461 - Kraftstoffstandsensor Bereich/Leistung"
+        ],
+        "internalLinks": [
+          {
+            "label": "Häufige Peugeot OBD2-Codes",
+            "href": "/de/peugeot-haeufige-obd2-codes"
+          },
+          {
+            "label": "Diagnose des Kraftstoffsystems",
+            "href": "/de/kraftstoffsystem-diagnose"
+          },
+          {
+            "label": "Leitfaden Verdunstungsemissionssystem",
+            "href": "/de/verdunstungsemissionssystem"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Kann ein loser Tankverschluss Benzingeruch verursachen?",
+            "a": "Ja, ein loser oder beschädigter Tankverschluss kann Kraftstoffdämpfe entweichen lassen, was zu Geruch führt."
+          },
+          {
+            "q": "Ist es sicher, mit Benzingeruch zu fahren?",
+            "a": "Es wird nicht empfohlen, da es auf ein Leck hindeuten kann, das ein Brandrisiko darstellt. Lassen Sie es schnell überprüfen."
+          },
+          {
+            "q": "Zeigen sich bei jedem Kraftstoffleck OBD2-Codes?",
+            "a": "Nicht immer. Kleine Lecks im Verdunstungssystem lösen eventuell erst später einen Code aus."
+          }
+        ],
+        "schemaTitle": "Peugeot Benzingeruch Diagnose und Lösungen",
+        "schemaDescription": "Erfahren Sie, wie Sie Benzingeruch in Ihrem Peugeot erkennen, diagnostizieren und sicher beheben können – mit Experten-Tipps und Schritt-für-Schritt-Anleitung."
+      },
+      "es": {
+        "slug": "peugeot-olor-a-gasolina-causas",
+        "title": "Olor a Gasolina en Peugeot: Causas y Guía de Diagnóstico",
+        "metaDescription": "¿Sientes olor a gasolina en tu Peugeot? Descubre causas comunes y pasos prácticos de diagnóstico antes de cambiar piezas.",
+        "intro": "Si detectas olor a gasolina dentro o alrededor de tu Peugeot, es fundamental revisar el vehículo con prontitud. Este síntoma puede indicar desde fugas menores hasta problemas serios que afectan la seguridad y el rendimiento. Conocer las posibles causas y realizar una revisión ordenada te ayudará a evitar gastos innecesarios y a mantener tu vehículo seguro.",
+        "severity": "Moderada. El olor a gasolina puede señalar fugas o problemas en el sistema de emisiones, sin indicar necesariamente una falla inmediata en el motor.",
+        "driveAdvice": "Evita conducir hasta descartar fugas activas de gasolina. Si debes usar el auto, hazlo con precaución y estaciona al aire libre para minimizar riesgos.",
+        "likelyCauses": [
+          "Tapa del depósito suelta o dañada",
+          "Fugas en las líneas o mangueras de combustible",
+          "Inyectores de combustible defectuosos",
+          "Fugas en el sistema de control de emisiones por evaporación",
+          "Tanque de combustible agrietado o desgastado"
+        ],
+        "diagnosticSteps": [
+          "Revisa que la tapa del depósito esté cerrada y en buen estado.",
+          "Inspecciona debajo del vehículo las líneas o mangueras en busca de grietas o fugas.",
+          "Verifica que los inyectores no tengan goteos ni fugas.",
+          "Usa una máquina de humo para detectar fugas en el sistema de emisiones por evaporación.",
+          "Examina el tanque de combustible para detectar daños o corrosión.",
+          "Escanea los códigos OBD2 relacionados con combustible y emisiones."
+        ],
+        "firstChecks": [
+          "Confirma que la tapa del combustible cierre de forma segura.",
+          "Busca manchas o áreas húmedas que indiquen fugas.",
+          "Olfatea cerca del tanque y líneas para localizar posibles escapes."
+        ],
+        "commonMistakes": [
+          "Cambiar piezas sin una inspección previa",
+          "No revisar fugas en el sistema de evaporación",
+          "Conducir mucho tiempo con olor persistente a gasolina"
+        ],
+        "relatedCodes": [
+          "P0442 - Fuga detectada en sistema de evaporación (pequeña fuga)",
+          "P0171 - Mezcla demasiado pobre (Banco 1)",
+          "P0461 - Rango/Rendimiento sensor nivel de combustible"
+        ],
+        "internalLinks": [
+          {
+            "label": "Códigos OBD2 comunes en Peugeot",
+            "href": "/es/codigos-comunes-peugeot"
+          },
+          {
+            "label": "Diagnóstico del sistema de combustible",
+            "href": "/es/diagnostico-sistema-combustible"
+          },
+          {
+            "label": "Guía sistema de emisiones por evaporación",
+            "href": "/es/guia-emisiones-evaporacion"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Puede una tapa de combustible suelta causar olor a gasolina?",
+            "a": "Sí, una tapa suelta o dañada permite la salida de vapores de gasolina, causando olor."
+          },
+          {
+            "q": "¿Es seguro conducir con olor a gasolina?",
+            "a": "Generalmente no se recomienda, ya que puede indicar una fuga con riesgo de incendio."
+          },
+          {
+            "q": "¿Siempre aparecen códigos OBD2 con una fuga de combustible?",
+            "a": "No siempre, especialmente con fugas pequeñas en el sistema de evaporación pueden tardar en generar códigos."
+          }
+        ],
+        "schemaTitle": "Diagnóstico y Soluciones para Olor a Gasolina en Peugeot",
+        "schemaDescription": "Aprende a detectar, diagnosticar y resolver el olor a gasolina en tu Peugeot con pasos detallados, causas comunes y recomendaciones de expertos."
+      },
+      "fr": {
+        "slug": "peugeot-odeur-essence-causes",
+        "title": "Peugeot Odeur d’Essence : Causes et Guide de Diagnostic",
+        "metaDescription": "Vous sentez une odeur d’essence dans votre Peugeot ? Découvrez les causes fréquentes et des contrôles pratiques avant de remplacer des pièces.",
+        "intro": "Une odeur d’essence dans votre Peugeot peut signaler un problème de fuite ou du système d’émissions. Il est important d’agir rapidement pour éviter tout risque de sécurité ou de performance. En identifiant les causes potentielles et en réalisant des vérifications méthodiques, vous pouvez éviter des réparations inutiles et assurer la sécurité de votre véhicule.",
+        "severity": "Modérée. L’odeur d’essence indique un risque de fuite ou un problème d’évaporation, sans forcément une panne moteur immédiate.",
+        "driveAdvice": "Évitez de conduire tant qu’une fuite active n’est pas exclue. Si vous devez rouler, faites-le prudemment et stationnez à l’extérieur pour réduire les risques d’incendie.",
+        "likelyCauses": [
+          "Bouchon de réservoir desserré ou endommagé",
+          "Fuites sur les durites ou conduites de carburant",
+          "Injecteurs de carburant défectueux",
+          "Fuites dans le système de contrôle des émissions par évaporation",
+          "Réservoir de carburant fissuré ou usé"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez que le bouchon de réservoir est bien fermé et en bon état.",
+          "Inspectez sous le véhicule les conduites et durites de carburant pour détecter d’éventuelles fuites ou fissures.",
+          "Testez les injecteurs pour détecter des fuites ou suintements.",
+          "Utilisez une machine à fumée pour identifier les fuites dans le système d’évaporation.",
+          "Examinez le réservoir pour déceler toute fissure ou corrosion.",
+          "Scannez les codes OBD2 relatifs au carburant et aux émissions."
+        ],
+        "firstChecks": [
+          "Assurez-vous que le bouchon de réservoir est bien clipsé.",
+          "Recherchez des traces ou taches de carburant visibles.",
+          "Sentez au niveau du réservoir et des conduites pour localiser les fuites."
+        ],
+        "commonMistakes": [
+          "Changer des pièces sans inspection préalable",
+          "Négliger la recherche de fuites dans le système d’évaporation",
+          "Continuer à rouler malgré une odeur persistante d’essence"
+        ],
+        "relatedCodes": [
+          "P0442 - Fuite détectée dans le système d’émissions par évaporation (petite fuite)",
+          "P0171 - Système trop pauvre (Banc 1)",
+          "P0461 - Plage/Performance du capteur de niveau de carburant"
+        ],
+        "internalLinks": [
+          {
+            "label": "Codes OBD2 courants Peugeot",
+            "href": "/fr/codes-obd2-peugeot"
+          },
+          {
+            "label": "Diagnostic du système carburant",
+            "href": "/fr/diagnostic-systeme-carburant"
+          },
+          {
+            "label": "Guide du système d’émissions par évaporation",
+            "href": "/fr/guide-systeme-evaporation"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Un bouchon de réservoir desserré peut-il faire sentir l’essence ?",
+            "a": "Oui, un bouchon mal fermé laisse échapper des vapeurs d’essence, provoquant une odeur."
+          },
+          {
+            "q": "Est-il sûr de rouler avec une odeur d’essence ?",
+            "a": "Ce n’est généralement pas recommandé, car cela peut indiquer une fuite avec risque d’incendie."
+          },
+          {
+            "q": "Les fuites d’essence génèrent-elles toujours des codes OBD2 ?",
+            "a": "Pas toujours, surtout les petites fuites dans le système d’évaporation peuvent ne pas générer de codes immédiatement."
+          }
+        ],
+        "schemaTitle": "Diagnostic et Solutions pour Odeur d’Essence sur Peugeot",
+        "schemaDescription": "Apprenez à détecter, diagnostiquer et résoudre les problèmes d’odeur d’essence sur Peugeot avec des conseils d’experts et un guide étape par étape."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-oil-smell",
+    "intentKey": "peugeot_oil_smell",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "oil_smell",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-yanik-yag-kokusu-nedenleri",
+        "title": "Peugeot Yanık Yağ Kokusu: Olası Nedenler ve Çözümler",
+        "metaDescription": "Peugeot aracınızda yanık yağ kokusu mu geliyor? Sorunun nedenlerini keşfedin, pratik kontroller yapın ve doğru teşhis adımlarını öğrenin.",
+        "intro": "Peugeot aracınızdan gelen yanık yağ kokusu sürüş sırasında rahatsızlık yaratabilir ve aracınızda potansiyel problemler olduğunun işareti olabilir. Bu tür kokuların birçok farklı nedeni olabilir. Herhangi bir parça değiştirmeden önce basit kontroller yaparak sorunun kaynağını belirlemek önemlidir. Bu rehber, olası nedenleri, kontrol adımlarını, sık yapılan hataları ve yaygın OBD2 kodlarını içerir.",
+        "severity": "Orta - Uzun süreli ihmal edilmesi motor ve çevre bileşenlerde hasara yol açabilir.",
+        "driveAdvice": "Yağ kokusu yoğun ve yanıcı bir kaynaktan geliyorsa uzun süre sürüş yapmaktan kaçının ve aracınızı kontrol ettirin.",
+        "likelyCauses": [
+          "Motor yağı sızıntısı veya conta hasarı",
+          "Egzoz manifoldunda yağ kalıntısı",
+          "Hava filtresi veya turbo yağ sızıntısı",
+          "Soğutma sistemi borularında yağ teması",
+          "Fren sisteminde aşırı ısınma ve yağ kaçışı"
+        ],
+        "diagnosticSteps": [
+          "Motor kapağını açıp yağ sızıntısı ve yanık izlerini kontrol edin",
+          "Egzoz sisteminde olağandışı yağ kalıntılarını inceleyin",
+          "Hava filtresi ve turbo borularında yağ damlama veya sızıntısına bakın",
+          "Radyatör ve soğutma hortumlarını yağ teması açısından inceleyin",
+          "Fren disk ve kaliperlerini aşırı ısınma belirtisi için kontrol edin",
+          "OBD2 cihazı ile motor kodlarını tarayarak soruna dair ipuçları elde edin"
+        ],
+        "firstChecks": [
+          "Motor altında ve kaput içinde yağ sızıntısı arayın",
+          "Egzoz dumanında siyah veya mavi renk ve koku kontrolü",
+          "Rutin yağ seviyesi ve filtre durumunu gözden geçirin"
+        ],
+        "commonMistakes": [
+          "Kokusun nedenini yalnızca hava filtresi zannedip gereksiz değişim yapmak",
+          "Yağ seviyesi normalken sızıntı kaynaklarını önemsememek",
+          "OBD2 kodlarını görmezden gelmek veya yanlış yorumlamak"
+        ],
+        "relatedCodes": [
+          "P0171 - Yakıt Karışımı Çok Zengin (Motor Yağının Yanması İle İlgili Olabilir)",
+          "P0300 - Silindir Ateşleme Problemi",
+          "P0420 - Katalitik Konvertör Verim Düşüşü"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Arıza Kodları Rehberi",
+            "href": "/tr/peugeot-ariza-kodlari"
+          },
+          {
+            "label": "Motor Yağı Kaçağı Nasıl Tespit Edilir?",
+            "href": "/tr/motor-yagi-kacagi-tepki"
+          },
+          {
+            "label": "OBD2 ile Yağ Kokusu Problemleri Diagnostik",
+            "href": "/tr/obd2-yag-kokusu"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot aracımda yanık yağ kokusu ne zaman tehlikeli olur?",
+            "a": "Kokunun şiddetli olduğu, duman ya da motor performansında düşüş olduğu durumlarda hemen ustaya gösterilmelidir."
+          },
+          {
+            "q": "Yağ kokusunu gidermek için hangi parçalar öncelikle kontrol edilmeli?",
+            "a": "Motor yağı sızıntısı, conta ve turbo sistemleri gibi yerler öncelikle incelenmelidir."
+          },
+          {
+            "q": "OBD2 cihazı ile yağ kokusu problemi nasıl tespit edilir?",
+            "a": "Yağla ilgili kaçaklar veya yanmaya bağlı motor kodları taranarak, sorunun kaynağı hakkında bilgi edinilebilir."
+          }
+        ],
+        "schemaTitle": "Peugeot Yanık Yağ Kokusu: Nedenleri, Teşhis ve Çözümler",
+        "schemaDescription": "Peugeot aracınızdan gelen yanık yağ kokusunun olası nedenlerini öğrenin. Pratik kontroller ve OBD2 kodları rehberi ile doğru teşhise ulaşın."
+      },
+      "en": {
+        "slug": "peugeot-oil-smell-causes",
+        "title": "Peugeot Oil Smell: Possible Causes and Diagnostic Tips",
+        "metaDescription": "Experiencing an oil smell in your Peugeot? Discover common causes, practical checks, and how to diagnose before replacing parts.",
+        "intro": "Noticing an oil smell from your Peugeot can be concerning as it often indicates potential issues under the hood. Multiple factors might cause such odors, and pinpointing the exact source is key before making repairs. This guide covers common causes, diagnostic steps, initial checks, common errors, and related OBD2 codes to help you address the issue effectively.",
+        "severity": "Medium - Ignoring the issue may lead to engine damage or expensive repairs.",
+        "driveAdvice": "If the oil smell is strong or accompanied by smoke, avoid prolonged driving and have your vehicle inspected promptly.",
+        "likelyCauses": [
+          "Engine oil leak or gasket failure",
+          "Oil residue on the exhaust manifold",
+          "Turbocharger or air intake oil leaks",
+          "Oil contact with cooling system hoses",
+          "Overheated brakes causing oil or fluid burning"
+        ],
+        "diagnosticSteps": [
+          "Inspect under the hood for visible oil leaks or burnt residue",
+          "Check exhaust manifold for oil traces",
+          "Examine air filter and turbo hoses for oil drips",
+          "Inspect radiator and cooling hoses for oil contamination",
+          "Check brake components for overheating signs",
+          "Scan engine codes with an OBD2 scanner for clues"
+        ],
+        "firstChecks": [
+          "Look for oil leaks under the engine and inside the engine bay",
+          "Observe exhaust smoke color and smell",
+          "Check oil level and condition regularly"
+        ],
+        "commonMistakes": [
+          "Assuming the smell is always from the air filter and replacing unnecessarily",
+          "Ignoring oil leak signs when oil levels appear normal",
+          "Misinterpreting or overlooking OBD2 fault codes"
+        ],
+        "relatedCodes": [
+          "P0171 - System Too Lean (may relate to burning oil)",
+          "P0300 - Random/Multiple Cylinder Misfire Detected",
+          "P0420 - Catalyst System Efficiency Below Threshold"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Fault Codes Guide",
+            "href": "/en/peugeot-fault-codes"
+          },
+          {
+            "label": "How to Detect Engine Oil Leaks",
+            "href": "/en/engine-oil-leak-diagnosis"
+          },
+          {
+            "label": "Using OBD2 for Oil Smell Issues",
+            "href": "/en/obd2-oil-smell"
+          }
+        ],
+        "faq": [
+          {
+            "q": "When is an oil smell from my Peugeot dangerous?",
+            "a": "If the smell is strong, smoky, or accompanied by performance issues, have it checked immediately."
+          },
+          {
+            "q": "Which parts should I check first for oil smell?",
+            "a": "Start with engine oil seals, gaskets, and turbocharger components."
+          },
+          {
+            "q": "Can OBD2 help identify oil smell causes?",
+            "a": "Yes, scanning for engine trouble codes can provide clues about leaks or burning oil."
+          }
+        ],
+        "schemaTitle": "Peugeot Oil Smell: Causes, Diagnosis, and Fixes",
+        "schemaDescription": "Learn about common causes of oil smell in Peugeot vehicles. Perform practical checks and use OBD2 scan codes for accurate diagnostics."
+      },
+      "de": {
+        "slug": "peugeot-oelgeruch-ursachen",
+        "title": "Peugeot Ölgeruch: Mögliche Ursachen und Diagnosehinweise",
+        "metaDescription": "Ihr Peugeot riecht nach Öl? Erfahren Sie die häufigsten Ursachen, praktische Kontrollmöglichkeiten und wie Sie vor dem Teiletausch richtig diagnostizieren.",
+        "intro": "Ein Ölgeruch im Peugeot kann auf verschiedene technische Probleme hinweisen und sollte nicht ignoriert werden. Bevor Sie Teile ersetzen, empfiehlt es sich, einfache Kontrollen durchzuführen und die Ursache einzugrenzen. Dieser Leitfaden erläutert potenzielle Ursachen, Diagnoseschritte, erste Checks, häufige Fehler und relevante OBD2-Codes für eine fundierte Fehlersuche.",
+        "severity": "Mittel - Eine unbehandelte Ursache kann zu Motorschäden führen.",
+        "driveAdvice": "Bei intensivem Ölgeruch oder Rauch vermeiden Sie längere Fahrten und lassen Sie das Fahrzeug umgehend prüfen.",
+        "likelyCauses": [
+          "Ölverlust durch defekte Dichtungen oder Ventildeckel",
+          "Ölrückstände am Abgaskrümmer",
+          "Ölleckagen am Turbolader oder Ansaugsystem",
+          "Ölkontakt an Kühlschläuchen",
+          "Stark überhitzte Bremsen mit Ölablagerungen"
+        ],
+        "diagnosticSteps": [
+          "Motorraum auf Öllecks und Brandspuren prüfen",
+          "Abgaskrümmer auf Ölablagerungen untersuchen",
+          "Luftfilter und Turboladerschläuche kontrollieren",
+          "Kühlerschläuche auf Ölkontamination checken",
+          "Bremssystem auf Überhitzungssymptome inspizieren",
+          "Motor mit OBD2 Scanner auf Fehlercodes auslesen"
+        ],
+        "firstChecks": [
+          "Öllecks unter dem Motor und im Motorraum suchen",
+          "Farbe und Geruch des Auspuffs beobachten",
+          "Ölstand und Filterzustand prüfen"
+        ],
+        "commonMistakes": [
+          "Ölgeruch nur auf Luftfilter zurückführen und unnötig wechseln",
+          "Öllecks übersehen, wenn der Ölstand normal erscheint",
+          "OBD2 Fehlercodes ignorieren oder falsch interpretieren"
+        ],
+        "relatedCodes": [
+          "P0171 - Zu mageres Gemisch (kann auf Ölverbrennung hindeuten)",
+          "P0300 - Zündaussetzer erkannt",
+          "P0420 - Katalysatorsystem Wirkungsgrad unter Schwelle"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Fehlercodes Übersicht",
+            "href": "/de/peugeot-fehlercodes"
+          },
+          {
+            "label": "Erkennung von Motoröl-Leckagen",
+            "href": "/de/motor-oel-leck-diagnose"
+          },
+          {
+            "label": "OBD2 Anwendung bei Ölgeruch",
+            "href": "/de/obd2-oelgeruch"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Wann ist der Ölgeruch beim Peugeot gefährlich?",
+            "a": "Bei starkem Geruch, Rauchentwicklung oder Leistungsverlust sollte umgehend eine Werkstatt aufgesucht werden."
+          },
+          {
+            "q": "Welche Teile sollte ich zuerst prüfen, wenn Ölgeruch auftritt?",
+            "a": "Beginnen Sie mit der Überprüfung der Öl-Dichtungen und des Turboladers."
+          },
+          {
+            "q": "Hilft ein OBD2 Scanner bei der Diagnose von Ölgeruch?",
+            "a": "Ja, er kann Motorfehlercodes auslesen, die auf Ölprobleme hindeuten."
+          }
+        ],
+        "schemaTitle": "Peugeot Ölgeruch: Ursachen, Diagnose und Lösungen",
+        "schemaDescription": "Informieren Sie sich über häufige Ursachen von Ölgeruch beim Peugeot, diagnostische Schritte und den Einsatz von OBD2-Codes."
+      },
+      "es": {
+        "slug": "peugeot-olor-a-aceite-causas",
+        "title": "Olor a Aceite en Peugeot: Causas Comunes y Diagnóstico",
+        "metaDescription": "¿Tu Peugeot huele a aceite quemado? Descubre causas comunes, controles prácticos y cómo diagnosticar antes de reemplazar piezas.",
+        "intro": "El olor a aceite en un Peugeot puede ser señal de diversos problemas mecánicos. Antes de reemplazar piezas, es importante realizar verificaciones simples para identificar la fuente del olor. Esta guía proporciona causas probables, pasos de diagnóstico, chequeos iniciales, errores comunes y códigos OBD2 relacionados para ayudarte a entender y resolver el problema.",
+        "severity": "Medio - Ignorar el problema puede dañar el motor o generar reparaciones costosas.",
+        "driveAdvice": "Si el olor a aceite es fuerte o aparece humo, evita conducir por tiempo prolongado y lleva el vehículo a revisión pronto.",
+        "likelyCauses": [
+          "Fuga de aceite o daño en juntas",
+          "Residuos de aceite en el colector de escape",
+          "Pérdidas de aceite en turbo o admisión",
+          "Contacto de aceite con mangueras del sistema de refrigeración",
+          "Frenos sobrecalentados con fuga o quemado de aceite"
+        ],
+        "diagnosticSteps": [
+          "Inspecciona el motor buscando fugas o residuos de aceite quemado",
+          "Revisa el colector de escape para restos de aceite",
+          "Examina filtros de aire y mangueras del turbo en busca de aceite",
+          "Verifica mangueras de radiador y sistema de refrigeración por contaminación de aceite",
+          "Controla componentes de freno por signos de sobrecalentamiento",
+          "Escanea los códigos del motor con un lector OBD2 para identificar problemas"
+        ],
+        "firstChecks": [
+          "Busca fugas de aceite debajo del motor y dentro del compartimiento",
+          "Observa el color y olor del humo del escape",
+          "Revisa regularmente el nivel y estado del aceite"
+        ],
+        "commonMistakes": [
+          "Asumir que el olor proviene siempre del filtro de aire y cambiarlo innecesariamente",
+          "Ignorar señales de fugas de aceite si el nivel parece normal",
+          "Interpretar mal o no revisar los códigos OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mezcla demasiado pobre (relacionado con quemado de aceite)",
+          "P0300 - Fallos de encendido aleatorios",
+          "P0420 - Eficiencia del catalizador por debajo del umbral"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guía de Códigos de Fallo Peugeot",
+            "href": "/es/codigos-fallo-peugeot"
+          },
+          {
+            "label": "Cómo detectar fugas de aceite en motor",
+            "href": "/es/deteccion-fugas-aceite"
+          },
+          {
+            "label": "Diagnóstico OBD2 para olor a aceite",
+            "href": "/es/obd2-olor-aceite"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Cuándo es peligroso el olor a aceite en Peugeot?",
+            "a": "Si el olor es intenso, hay humo o pérdida de rendimiento, debe revisarse de inmediato."
+          },
+          {
+            "q": "¿Qué partes debo revisar primero por olor a aceite?",
+            "a": "Primero verifica sellos del motor, juntas y turbo."
+          },
+          {
+            "q": "¿Puede el OBD2 ayudar a identificar el olor a aceite?",
+            "a": "Sí, escanear códigos de error puede revelar problemas relacionados."
+          }
+        ],
+        "schemaTitle": "Olor a Aceite en Peugeot: Causas, Diagnóstico y Soluciones",
+        "schemaDescription": "Aprende las causas comunes del olor a aceite en Peugeot. Realiza controles prácticos y usa códigos OBD2 para diagnóstico preciso."
+      },
+      "fr": {
+        "slug": "peugeot-odeur-d-huile-conseils",
+        "title": "Peugeot Odeur d'Huile : Causes Possibles et Conseils de Diagnostic",
+        "metaDescription": "Une odeur d'huile dans votre Peugeot ? Découvrez les causes fréquentes, vérifications pratiques et comment diagnostiquer avant de remplacer des pièces.",
+        "intro": "Une odeur d'huile dans une Peugeot peut signaler divers problèmes mécaniques. Avant de changer des pièces, il est important d'effectuer des vérifications simples pour identifier la source. Ce guide présente les causes probables, étapes de diagnostic, premiers contrôles, erreurs courantes et codes OBD2 associés pour vous guider efficacement.",
+        "severity": "Moyen - Négliger ce problème peut entraîner des dommages moteurs coûteux.",
+        "driveAdvice": "Si l'odeur d'huile est forte ou accompagnée de fumée, évitez de conduire longtemps et faites vérifier votre véhicule rapidement.",
+        "likelyCauses": [
+          "Fuite d'huile moteur ou joint défectueux",
+          "Dépôts d'huile sur le collecteur d’échappement",
+          "Fuite d'huile au niveau du turbo ou admission d'air",
+          "Contact d'huile avec les durites du système de refroidissement",
+          "Freins surchauffés causant brûlures d'huile ou liquide"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez sous le capot pour détecter fuites ou traces de brûlé",
+          "Inspectez le collecteur d’échappement pour des traces d’huile",
+          "Contrôlez le filtre à air et les durites du turbo pour des fuites",
+          "Examinez les durites du radiateur pour contamination par de l’huile",
+          "Contrôlez le système de freinage pour signes de surchauffe",
+          "Analysez les codes moteur via un outil OBD2 pour obtenir des indices"
+        ],
+        "firstChecks": [
+          "Recherchez des fuites d'huile sous le moteur et dans le compartiment moteur",
+          "Observez la couleur et l'odeur des fumées d'échappement",
+          "Contrôlez régulièrement le niveau et l’état de l’huile moteur"
+        ],
+        "commonMistakes": [
+          "Penser que l'odeur vient toujours du filtre à air et le changer inutilement",
+          "Ignorer les signes de fuite d'huile si le niveau semble normal",
+          "Mal interpréter ou négliger les codes défaut OBD2"
+        ],
+        "relatedCodes": [
+          "P0171 - Mélange trop pauvre (peut être lié à la combustion d'huile)",
+          "P0300 - Ratés d’allumage aléatoires détectés",
+          "P0420 - Rendement du catalyseur en dessous du seuil"
+        ],
+        "internalLinks": [
+          {
+            "label": "Guide des codes défaut Peugeot",
+            "href": "/fr/codes-defaut-peugeot"
+          },
+          {
+            "label": "Comment détecter une fuite d’huile moteur",
+            "href": "/fr/detection-fuite-huile"
+          },
+          {
+            "label": "Diagnostic OBD2 pour odeur d’huile",
+            "href": "/fr/obd2-odeur-huile"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quand une odeur d’huile dans ma Peugeot est-elle dangereuse ?",
+            "a": "En cas d’odeur forte, de fumée ou de perte de performance, consultez rapidement un professionnel."
+          },
+          {
+            "q": "Quelles pièces vérifier en priorité en cas d’odeur d’huile ?",
+            "a": "Contrôlez en premier lieu les joints moteur, les cache-culbuteurs et le turbo."
+          },
+          {
+            "q": "Le scanner OBD2 peut-il aider à identifier une fuite d’huile ?",
+            "a": "Oui, la lecture des codes défaut moteur peut orienter vers des problèmes d’huile."
+          }
+        ],
+        "schemaTitle": "Peugeot Odeur d'Huile : Causes, Diagnostic et Solutions",
+        "schemaDescription": "Découvrez les causes courantes de l’odeur d’huile dans les Peugeot. Effectuez des vérifications simples et utilisez les codes OBD2 pour un diagnostic précis."
+      }
+    }
+  },
+  {
+    "contentGroupId": "peugeot-transmission-slipping",
+    "intentKey": "peugeot_transmission_slipping",
+    "make": "Peugeot",
+    "model": null,
+    "symptomKey": "transmission_slipping",
+    "qualityScore": 92,
+    "status": "published",
+    "locales": {
+      "tr": {
+        "slug": "peugeot-vites-kaciriyor-nedenleri-ve-cozumleri",
+        "title": "Peugeot Vites Kaçırıyor? Nedenleri ve Çözüm Önerileri",
+        "metaDescription": "Peugeot araçlarda vites kaçırma sorunu için olası nedenler ve nasıl teşhis edileceğine dair detaylı rehber. Pratik kontrollerle sorun kaynağını bulun.",
+        "intro": "Peugeot marka araçlarda vitesin kaçırması çeşitli nedenlerle ortaya çıkabilir ve sürüş güvenliğini olumsuz etkiler. Bu rehberde, vites kaçırma sorununun olası sebeplerini, araçta yapılacak pratik kontrolleri ve teşhis adımlarını ele alacağız. Sorunun doğruya yakın tespiti için bu yöntemleri takip etmek önemlidir.",
+        "severity": "Vites kaçırma, özellikle sürüş sırasında kontrolü zorlaştırabilir ve aracın performansını etkileyebilir. Bu nedenle sorunun ciddiyetini hafife almamak gerekir.",
+        "driveAdvice": "Vites kaçırma meydana geldiğinde ani hızlanmalardan ve ani hız değişikliklerinden kaçının. Aracınızın hasar görmesini engellemek için mümkünse servise gidene kadar dikkatli sürüş yapın.",
+        "likelyCauses": [
+          "Şanzıman yağı seviyesinin düşük veya kalitesiz olması",
+          "Aşınmış veya hasarlı debriyaj balatası",
+          "Bozuk vites kutusu dişlileri veya senkromeçler",
+          "Elektronik kontrol ünitesi (ECU) ile ilgili arızalar",
+          "Şanzıman hidrolik basıncında düşüş"
+        ],
+        "diagnosticSteps": [
+          "Şanzıman yağı seviyesini ve rengini kontrol edin",
+          "Arıza kodlarını OBD2 cihazıyla okuyun",
+          "Debriyaj balatasının durumunu inceleyin",
+          "Vites geçişlerinin mekanik parçalarını kontrol ettirin",
+          "ECU yazılım güncellemelerini kontrol edin",
+          "Şanzıman hidrolik basıncını ölçtürün"
+        ],
+        "firstChecks": [
+          "Vites geçişleri sırasında garip ses olup olmadığını kontrol edin",
+          "Şanzıman yağı seviyesi ve sızıntı olup olmadığını kontrol edin",
+          "Aracı OBD2 cihazına bağlayarak arıza kodlarını alın"
+        ],
+        "commonMistakes": [
+          "Yağı tamamen değiştirmeden önce sadece üst seviyesini kontrol etmek",
+          "Arıza kodlarını dikkate almadan sadece parçaları değiştirmek",
+          "Şanzıman problemi olduğunu varsayıp debriyaj dışındaki kontrolleri atlamak"
+        ],
+        "relatedCodes": [
+          "P0700 - Şanzıman Kontrol Sistemi Arızası",
+          "P0730 - Uygun Vites Oranı Algılanmadı",
+          "P0740 - Tork Konvertörü Kilitli Devre Arızası"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Şanzıman Problemleri",
+            "href": "/tr/peugeot-sanziman-problemleri"
+          },
+          {
+            "label": "OBD2 Arıza Kodu Okuma Rehberi",
+            "href": "/tr/obd2-ariza-kodu-okuma"
+          },
+          {
+            "label": "Şanzıman Yağı Değişimi Ne Zaman Yapılmalı?",
+            "href": "/tr/sanziman-yagi-degisimi-zamani"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Peugeot aracım neden vites kaçırıyor?",
+            "a": "Vites kaçırma birçok faktöre bağlı olabilir; yağ seviyesi, debriyaj problemi, mekanik aşınma veya elektronik arızalar en yaygın nedenlerdir."
+          },
+          {
+            "q": "Vites kaçırma sorunu kendiliğinden düzelir mi?",
+            "a": "Genellikle kendiliğinden düzelmez; sorunun kaynağını belirlemek ve müdahale etmek gerekir."
+          },
+          {
+            "q": "Uygun araç yağı kullanmak vites kaçırmayı önler mi?",
+            "a": "Uygun ve kaliteli şanzıman yağı kullanımı performansı artırır ancak diğer mekanik ve elektronik faktörlerin de kontrol edilmesi gerekir."
+          }
+        ],
+        "schemaTitle": "Peugeot Vites Kaçırıyor: Olasi Nedenler ve Teşhis",
+        "schemaDescription": "Peugeot marka araçlarda vites kaçırma sorunları için detaylı neden analizi, teşhis adımları ve çözüm önerilerinden oluşan kapsamlı rehber."
+      },
+      "en": {
+        "slug": "peugeot-transmission-slipping-causes-checks",
+        "title": "Peugeot Transmission Slipping: Causes and Diagnostic Steps",
+        "metaDescription": "Learn about common reasons behind Peugeot transmission slipping and practical checks to diagnose this issue before costly repairs.",
+        "intro": "Transmission slipping in a Peugeot can significantly impact driving safety and comfort. This guide covers common causes, practical diagnostic steps, and checks you can perform to better understand the issue before considering any part replacements.",
+        "severity": "Transmission slipping can lead to unpredictable shifting and loss of power transfer, which can be hazardous if not addressed properly.",
+        "driveAdvice": "Avoid sudden acceleration or hard shifting when you notice transmission slipping. Drive cautiously and seek professional diagnostics to prevent further damage.",
+        "likelyCauses": [
+          "Low or degraded transmission fluid level",
+          "Worn or damaged clutch plates",
+          "Faulty gearbox synchronizers or gears",
+          "Issues with the transmission control unit (TCU)",
+          "Decreased hydraulic pressure in the transmission system"
+        ],
+        "diagnosticSteps": [
+          "Check the transmission fluid level and condition",
+          "Scan for transmission-related fault codes using OBD2",
+          "Inspect the clutch for wear or damage",
+          "Have the gearbox components examined",
+          "Verify transmission control unit firmware updates",
+          "Measure hydraulic pressure in the transmission"
+        ],
+        "firstChecks": [
+          "Listen for unusual noises during gear shifts",
+          "Check for transmission fluid leaks and level",
+          "Connect an OBD2 scanner and read fault codes"
+        ],
+        "commonMistakes": [
+          "Only topping up transmission fluid without full replacement",
+          "Replacing parts based solely on symptoms without diagnostics",
+          "Ignoring clutch inspection when facing slipping issues"
+        ],
+        "relatedCodes": [
+          "P0700 - Transmission Control System Malfunction",
+          "P0730 - Incorrect Gear Ratio",
+          "P0740 - Torque Converter Clutch Circuit Malfunction"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Transmission Issues Overview",
+            "href": "/en/peugeot-transmission-issues"
+          },
+          {
+            "label": "How to Read OBD2 Fault Codes",
+            "href": "/en/obd2-fault-code-reading"
+          },
+          {
+            "label": "When to Change Transmission Fluid",
+            "href": "/en/transmission-fluid-change-interval"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Why is my Peugeot slipping gears?",
+            "a": "Gear slipping can be caused by fluid problems, clutch wear, mechanical issues, or electronic faults within the transmission system."
+          },
+          {
+            "q": "Will transmission slipping fix itself?",
+            "a": "Transmission slipping typically requires diagnosis and repair; it rarely resolves without intervention."
+          },
+          {
+            "q": "Does using the correct fluid prevent transmission slipping?",
+            "a": "Using the right quality fluid helps maintain transmission health but doesn't rule out other mechanical or electronic causes."
+          }
+        ],
+        "schemaTitle": "Peugeot Transmission Slipping: Causes and How to Diagnose",
+        "schemaDescription": "Detailed guide to common causes, diagnostic steps, and practical advice for Peugeot transmission slipping issues."
+      },
+      "de": {
+        "slug": "peugeot-getriebe-schlupf-ursachen-und-pruefung",
+        "title": "Peugeot Getriebe rutscht durch: Ursachen und Diagnose",
+        "metaDescription": "Erfahren Sie die häufigsten Ursachen für Getriebe-Schlupf bei Peugeot und praktische Prüfschritte zur Problemerkennung vor Reparaturen.",
+        "intro": "Getriebe-Schlupf bei Peugeot-Fahrzeugen kann die Fahrsicherheit beeinträchtigen und verschiedene Ursachen haben. In diesem Artikel werden mögliche Ursachen, sinnvolle Diagnosemethoden und praxistaugliche Prüfungen vorgestellt, um eine fundierte Fehleranalyse zu ermöglichen. Dieser Leitfaden konzentriert sich auf sichere Erstprüfungen, häufig passende OBD2-Codes und eine sinnvolle Testreihenfolge, damit Sensorfehler, Verkabelung, Kraftstoffversorgung, Zündung, Ansaugung, Kühlung, Abgasstrang oder Getriebe getrennt bewertet werden können, bevor teure Teile ersetzt werden.",
+        "severity": "Ein rutschendes Getriebe kann zu unvorhersehbaren Schaltvorgängen und Leistungsverlust führen und stellt ein Sicherheitsrisiko dar.",
+        "driveAdvice": "Vermeiden Sie starkes Beschleunigen und abruptes Schalten bei Getriebeschlupf. Fahren Sie vorsichtig und lassen Sie das Fahrzeug bald von einem Fachbetrieb prüfen.",
+        "likelyCauses": [
+          "Niedriger oder verschmutzter Getriebeölstand",
+          "Abgenutzte oder beschädigte Kupplungsbeläge",
+          "Defekte Zahnräder oder Synchronringe im Getriebe",
+          "Probleme mit der Steuerungselektronik (TCU)",
+          "Abfall des hydraulischen Drucks im Getriebe"
+        ],
+        "diagnosticSteps": [
+          "Getriebeölstand und -farbe prüfen",
+          "Fehlercodes mit OBD2 auslesen",
+          "Kupplung auf Verschleiß untersuchen",
+          "Mechanische Getriebeteile inspizieren lassen",
+          "Steuergerät-Software prüfen und aktualisieren",
+          "Hydraulikdruck des Getriebes messen"
+        ],
+        "firstChecks": [
+          "Auf ungewöhnliche Geräusche beim Schalten achten",
+          "Getriebeölstand und eventuelle Lecks kontrollieren",
+          "OBD2-Scanner anschließen und Fehlercodes auslesen"
+        ],
+        "commonMistakes": [
+          "Nur Öl nachfüllen statt kompletten Wechsel durchführen",
+          "Teile austauschen ohne vorherige Diagnose",
+          "Kupplungskontrolle bei Schlupfproblemen vernachlässigen"
+        ],
+        "relatedCodes": [
+          "P0700 - Getriebesteuerungssystem-Fehler",
+          "P0730 - Falsches Übersetzungsverhältnis erkannt",
+          "P0740 - Drehmomentwandlerkupplungs-Schaltkreisfehler"
+        ],
+        "internalLinks": [
+          {
+            "label": "Peugeot Getriebeprobleme Übersicht",
+            "href": "/de/peugeot-getriebeprobleme"
+          },
+          {
+            "label": "OBD2 Fehlercodes Auslesen Anleitung",
+            "href": "/de/obd2-fehlercodes-auslesen"
+          },
+          {
+            "label": "Getriebeölwechsel - Wann und Warum?",
+            "href": "/de/getriebeolwechsel-intervalle"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Warum rutscht mein Peugeot Getriebe?",
+            "a": "Getrieberutschen kann durch Ölprobleme, Kupplungsverschleiß, mechanische Defekte oder elektronische Störungen verursacht werden."
+          },
+          {
+            "q": "Kann sich das Problem von selbst lösen?",
+            "a": "In der Regel nicht; eine fachkundige Diagnose und Reparatur sind notwendig."
+          },
+          {
+            "q": "Hilft korrektes Getriebeöl gegen Schlupf?",
+            "a": "Qualitativ hochwertiges Öl unterstützt die Getriebefunktion, beseitigt aber nicht alle anderen Ursachen."
+          }
+        ],
+        "schemaTitle": "Peugeot Getriebe schlüpft durch: Ursachen und Diagnose",
+        "schemaDescription": "Umfassender Leitfaden zu Ursachen, Prüfungen und Lösungen bei Getriebeschlupf von Peugeot Fahrzeugen."
+      },
+      "es": {
+        "slug": "peugeot-vitesa-caida-posibles-causas-y-revision",
+        "title": "Peugeot Tiembla o Pierde la Marcha: Causas y Diagnóstico",
+        "metaDescription": "Descubre las causas comunes por las que un Peugeot puede perder la marcha y los pasos para diagnosticarlo antes de reparar.",
+        "intro": "Cuando un Peugeot presenta problemas de que la transmisión 'salte' o 'tiemble', es importante entender las posibles causas y cómo hacer revisiones prácticas. Este artículo explica los motivos más frecuentes, junto con pasos para diagnosticar el problema y evitar cambios innecesarios de piezas.",
+        "severity": "La pérdida de marcha puede afectar la seguridad y la conducción, provocando cambios inesperados y pérdida de potencia.",
+        "driveAdvice": "Evita aceleraciones bruscas y cambios violentos mientras la transmisión da problemas. Maneja con cuidado hasta que lo revise un profesional.",
+        "likelyCauses": [
+          "Nivel bajo o aceite de transmisión en mal estado",
+          "Desgaste o daño en las placas del embrague",
+          "Engranajes o sincronizadores defectuosos",
+          "Problemas en la unidad de control de la transmisión",
+          "Presión hidráulica reducida en la transmisión"
+        ],
+        "diagnosticSteps": [
+          "Revisar nivel y estado del aceite de la transmisión",
+          "Leer códigos de error con escáner OBD2",
+          "Inspeccionar el embrague en busca de desgaste",
+          "Verificar componentes mecánicos del cambio",
+          "Comprobar actualizaciones del software de control",
+          "Medir presión hidráulica en transmisión"
+        ],
+        "firstChecks": [
+          "Escuchar ruidos extraños al cambiar marchas",
+          "Verificar nivel de aceite y fugas visibles",
+          "Conectar escáner OBD2 para obtener códigos"
+        ],
+        "commonMistakes": [
+          "Solo rellenar aceite sin cambiarlo completamente",
+          "Reemplazar piezas sin diagnóstico previo",
+          "No revisar el embrague ante problemas de pérdida de marcha"
+        ],
+        "relatedCodes": [
+          "P0700 - Falla en sistema de control de transmisión",
+          "P0730 - Relación de marcha incorrecta detectada",
+          "P0740 - Falla en circuito del embrague del convertidor de torque"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problemas comunes en la transmisión Peugeot",
+            "href": "/es/problemas-transmision-peugeot"
+          },
+          {
+            "label": "Cómo leer códigos OBD2",
+            "href": "/es/leer-codigos-obd2"
+          },
+          {
+            "label": "Cuándo cambiar el aceite de transmisión",
+            "href": "/es/cambio-aceite-transmision"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Por qué mi Peugeot pierde la marcha?",
+            "a": "Puede deberse a problemas con el aceite, desgaste del embrague, fallas mecánicas o electrónicas del sistema de transmisión."
+          },
+          {
+            "q": "¿Se puede arreglar el problema solo?",
+            "a": "Generalmente no. Es recomendable hacer un diagnóstico y reparación especializada."
+          },
+          {
+            "q": "¿Ayuda usar el aceite correcto en la transmisión?",
+            "a": "Sí, usar aceite adecuado ayuda, pero no elimina otras causas posibles."
+          }
+        ],
+        "schemaTitle": "Peugeot pierde la marcha: causas comunes y diagnóstico",
+        "schemaDescription": "Guía práctica para entender las causas, revisar y diagnosticar problemas de pérdida de marcha en Peugeot."
+      },
+      "fr": {
+        "slug": "peugeot-passage-de-vitesses-glissant-causes-et-diagnostic",
+        "title": "Peugeot Vitesse qui Patine : Causes Possibles et Diagnostic",
+        "metaDescription": "Découvrez les causes fréquentes du patinage de vitesse sur Peugeot et les contrôles pratiques avant réparation.",
+        "intro": "Le patinage des vitesses sur un Peugeot peut affecter la sécurité et le confort de conduite. Ce guide présente les causes possibles, les étapes de diagnostic et les vérifications à effectuer pour mieux cerner le problème avant tout remplacement de pièce.",
+        "severity": "Le patinage de la transmission peut entraîner des passages de vitesse irréguliers et une perte de puissance, ce qui est potentiellement dangereux.",
+        "driveAdvice": "Évitez les accélérations brusques et changements de vitesse violents en cas de patinage. Conduisez prudemment en attendant le diagnostic professionnel.",
+        "likelyCauses": [
+          "Niveau ou qualité d'huile de transmission insuffisant",
+          "Disques d'embrayage usés ou endommagés",
+          "Engrenages ou synchroniseurs de boîte défectueux",
+          "Problèmes liés à l’unité de contrôle de transmission (TCU)",
+          "Pression hydraulique insuffisante dans la transmission"
+        ],
+        "diagnosticSteps": [
+          "Vérifiez le niveau et l’état de l’huile de transmission",
+          "Analysez les codes défauts liés à la transmission avec un outil OBD2",
+          "Inspectez l’embrayage pour détecter usures ou dommages",
+          "Examinez les composants mécaniques de la boîte",
+          "Vérifiez la mise à jour du logiciel du calculateur TCU",
+          "Mesurez la pression hydraulique dans la transmission"
+        ],
+        "firstChecks": [
+          "Écoutez les bruits anormaux lors des passages de vitesse",
+          "Contrôlez le niveau d’huile et les éventuelles fuites",
+          "Branchez un scanner OBD2 pour lire les codes défauts"
+        ],
+        "commonMistakes": [
+          "Se contenter d’ajouter de l’huile sans la changer",
+          "Remplacer des pièces sans diagnostic préalable",
+          "Négliger le contrôle de l’embrayage en cas de patinage"
+        ],
+        "relatedCodes": [
+          "P0700 - Dysfonctionnement du système de commande de transmission",
+          "P0730 - Rapport de vitesse incorrect détecté",
+          "P0740 - Dysfonctionnement du circuit de l’embrayage du convertisseur de couple"
+        ],
+        "internalLinks": [
+          {
+            "label": "Problèmes de transmission Peugeot",
+            "href": "/fr/problemes-transmission-peugeot"
+          },
+          {
+            "label": "Guide lecture des codes défauts OBD2",
+            "href": "/fr/lecture-codes-obd2"
+          },
+          {
+            "label": "Quand changer l’huile de transmission ?",
+            "href": "/fr/changement-huile-transmission"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Pourquoi mon Peugeot glisse-t-il les vitesses ?",
+            "a": "Le patinage peut être dû à un problème d’huile, à une usure de l’embrayage, à des défauts mécaniques ou électroniques de la transmission."
+          },
+          {
+            "q": "Le problème peut-il se résoudre spontanément ?",
+            "a": "Rarement, un diagnostic et une réparation sont généralement nécessaires."
+          },
+          {
+            "q": "L’utilisation de la bonne huile prévient-elle le patinage ?",
+            "a": "Utiliser la bonne huile maintient la transmission en bonne santé, mais ne supprime pas toutes les autres causes possibles."
+          }
+        ],
+        "schemaTitle": "Patinage de boîte Peugeot : causes et diagnostic",
+        "schemaDescription": "Guide complet sur les causes, diagnostics et conseils pour résoudre le patinage de vitesses sur Peugeot."
+      }
+    }
   }
 ]

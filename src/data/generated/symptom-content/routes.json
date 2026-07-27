@@ -948,5 +948,105 @@
       "es": "peugeot-luz-de-check-engine-encendida",
       "fr": "peugeot-temoin-de-moteur-allume"
     }
+  },
+  {
+    "contentGroupId": "peugeot-hard-start",
+    "slugs": {
+      "en": "peugeot-hard-start",
+      "tr": "peugeot-gec-calisma-sorunu",
+      "de": "peugeot-schwerer-start",
+      "es": "peugeot-motor-dificultad-arranque",
+      "fr": "demarrage-difficile-peugeot"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-black-smoke",
+    "slugs": {
+      "en": "peugeot-black-smoke-causes",
+      "tr": "peugeot-siyah-duman-atiyor",
+      "de": "peugeot-schwarzer-rauch-ursachen",
+      "es": "peugeot-humo-negro-causas",
+      "fr": "peugeot-fumee-noire-causes"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-white-smoke",
+    "slugs": {
+      "en": "peugeot-white-smoke-causes",
+      "tr": "peugeot-beyaz-duman-atiyor",
+      "de": "peugeot-weissrauch-ursachen",
+      "es": "peugeot-humo-blanco-causas",
+      "fr": "peugeot-fumee-blanche-causes"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-poor-fuel-economy",
+    "slugs": {
+      "en": "peugeot-poor-fuel-economy-causes-and-solutions",
+      "tr": "peugeot-cok-yakiyor-nedenleri-ve-cozumleri",
+      "de": "peugeot-hoher-kraftstoffverbrauch-ursachen-und-loesungen",
+      "es": "peugeot-consumo-excesivo-de-combustible-causas",
+      "fr": "peugeot-consommation-excessive-de-carburant-causes"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-stalling",
+    "slugs": {
+      "en": "peugeot-stalling-issues",
+      "tr": "peugeot-stop-ediyor",
+      "de": "peugeot-motor-stottert",
+      "es": "peugeot-motor-tiembla-stalling",
+      "fr": "peugeot-calage-moteur"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-jerking",
+    "slugs": {
+      "en": "peugeot-jerking-issues",
+      "tr": "peugeot-silkeleme-yapiyor",
+      "de": "peugeot-ruckeln-probleme",
+      "es": "peugeot-motor-tiembla-jerking",
+      "fr": "peugeot-secousse-moteur"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-overheating",
+    "slugs": {
+      "en": "peugeot-overheating",
+      "tr": "peugeot-hararet-yapiyor",
+      "de": "peugeot-ueberhaizung-probleme",
+      "es": "peugeot-sobrecalentamiento-problemas",
+      "fr": "peugeot-surchauffe-symptomes"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-fuel-smell",
+    "slugs": {
+      "en": "peugeot-fuel-odor-causes",
+      "tr": "peugeot-benzin-kokusu-nedenleri",
+      "de": "peugeot-benzingeruch-ursachen",
+      "es": "peugeot-olor-a-gasolina-causas",
+      "fr": "peugeot-odeur-essence-causes"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-oil-smell",
+    "slugs": {
+      "en": "peugeot-oil-smell-causes",
+      "tr": "peugeot-yanik-yag-kokusu-nedenleri",
+      "de": "peugeot-oelgeruch-ursachen",
+      "es": "peugeot-olor-a-aceite-causas",
+      "fr": "peugeot-odeur-d-huile-conseils"
+    }
+  },
+  {
+    "contentGroupId": "peugeot-transmission-slipping",
+    "slugs": {
+      "en": "peugeot-transmission-slipping-causes-checks",
+      "tr": "peugeot-vites-kaciriyor-nedenleri-ve-cozumleri",
+      "de": "peugeot-getriebe-schlupf-ursachen-und-pruefung",
+      "es": "peugeot-vitesa-caida-posibles-causas-y-revision",
+      "fr": "peugeot-passage-de-vitesses-glissant-causes-et-diagnostic"
+    }
   }
 ]
