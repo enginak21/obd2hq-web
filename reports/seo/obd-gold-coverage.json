@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T23:11:22.341Z",
+  "generatedAt": "2026-07-29T18:03:28.394Z",
   "totalCodes": 2223,
   "sitemapKnownCodes": 2223,
   "families": {
@@ -25,8 +25,8 @@
     "network": 177
   },
   "invalidCodes": [],
-  "rawGoldReady": 356,
-  "runtimeGoldFallbackNeeded": 1867,
+  "rawGoldReady": 364,
+  "runtimeGoldFallbackNeeded": 1859,
   "runtimeGoldFallbackSample": [
     "P0103",
     "P0104",
