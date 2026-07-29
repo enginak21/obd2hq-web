@@ -28,20 +28,30 @@ function asStringArray(value: string | string[] | null) {
   return Array.isArray(value) ? value : null;
 }
 
+function formatVehicleName(value: string) {
+  const upper = value.toUpperCase();
+  const acronyms = new Set(['CR-V', 'HR-V', 'RAV4', 'TLX', 'MDX', 'RX', 'IS', 'ES', 'NX', 'GX', 'F-150', 'MX-5']);
+  if (acronyms.has(upper)) return upper;
+  return value
+    .split('-')
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join('-');
+}
+
 function getCodeMetaDescription(locale: string, code: string, make: string, model: string) {
-  if (locale === 'tr') return `${make} ${model} ${code} arıza kodu: belirtiler, canlı veri kontrolleri, parça değiştirmeden önce test sırası ve onarım doğrulaması.`;
-  if (locale === 'de') return `${make} ${model} ${code}: Symptome, Live-Daten-Prüfung, Testreihenfolge vor dem Teiletausch und Reparaturbestätigung.`;
-  if (locale === 'es') return `${make} ${model} ${code}: síntomas, datos en vivo, pruebas antes de reemplazar piezas y verificación de reparación.`;
-  if (locale === 'fr') return `${make} ${model} ${code}: symptômes, données en direct, tests avant remplacement et vérification après réparation.`;
-  return `${make} ${model} ${code} diagnosis: symptoms, live-data checks, tests before replacing parts, repair cost, and post-repair verification.`;
+  if (locale === 'tr') return `${make} ${model} ${code}: belirtiler, olas\u0131 nedenler, ilk kontroller, onar\u0131m maliyeti ve par\u00e7a de\u011fi\u015ftirmeden \u00f6nce test s\u0131ras\u0131.`;
+  if (locale === 'de') return `${make} ${model} ${code}: Symptome, Ursachen, erste Pr\u00fcfungen, Kosten und Testreihenfolge vor dem Teiletausch.`;
+  if (locale === 'es') return `${make} ${model} ${code}: s\u00edntomas, causas, primeras revisiones, coste y pruebas antes de reemplazar piezas.`;
+  if (locale === 'fr') return `${make} ${model} ${code}: sympt\u00f4mes, causes, premiers contr\u00f4les, co\u00fbt et tests avant remplacement.`;
+  return `${make} ${model} ${code}: symptoms, causes, first checks, repair cost and fix steps before replacing parts.`;
 }
 
 function getCodeMetaTitle(locale: string, code: string, make: string, model: string) {
-  if (locale === 'tr') return `${make} ${model} ${code} Arıza Kodu Teşhisi`;
-  if (locale === 'de') return `${make} ${model} ${code} Fehlercode Diagnose`;
-  if (locale === 'es') return `${make} ${model} ${code} diagnóstico OBD2`;
-  if (locale === 'fr') return `${make} ${model} ${code} diagnostic OBD2`;
-  return `${make} ${model} ${code} Diagnostic Guide`;
+  if (locale === 'tr') return `${make} ${model} ${code}: Nedenleri, Belirtileri ve \u00c7\u00f6z\u00fcm\u00fc`;
+  if (locale === 'de') return `${make} ${model} ${code}: Ursachen, Symptome und Reparatur`;
+  if (locale === 'es') return `${make} ${model} ${code}: causas, s\u00edntomas y soluci\u00f3n`;
+  if (locale === 'fr') return `${make} ${model} ${code} : causes, sympt\u00f4mes et solution`;
+  return `${make} ${model} ${code}: Causes, Symptoms and Fix`;
 }
 
 function normalizeCodeTitle(code: string, title: string) {
@@ -68,8 +78,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { make, model, code } = resolvedParams;
   const obdData = getHybridObdData(make, model, code);
   if (!obdData) return { title: 'Code Not Found' };
-  const capMake = make.charAt(0).toUpperCase() + make.slice(1);
-  const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const capMake = formatVehicleName(make);
+  const capModel = formatVehicleName(model);
   return {
     title: fitSeoTitle(getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
     description: fitSeoDescription(getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
@@ -93,8 +103,8 @@ export default async function CodePage({ params }: PageProps) {
   const tExtra = await getTranslations({ locale, namespace: 'CodePageExtra' });
   const tDb = await getTranslations({ locale, namespace: 'DB' });
 
-  const capMake = make.charAt(0).toUpperCase() + make.slice(1);
-  const capModel = model.charAt(0).toUpperCase() + model.slice(1);
+  const capMake = formatVehicleName(make);
+  const capModel = formatVehicleName(model);
 
   const rawTitle = asString(getLocalized(obdData.title, locale), obdData.code);
   const rawDescription = asString(getLocalized(obdData.description, locale));
