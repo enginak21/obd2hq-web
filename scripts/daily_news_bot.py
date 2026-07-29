@@ -6,7 +6,11 @@ from datetime import datetime, timezone
 import re
 import time
 import sys
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ModuleNotFoundError:
+    def load_dotenv():
+        return None
 
 load_dotenv()
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -50,7 +54,7 @@ def fetch_rss_feed(url):
                     image_url = media_content.get('url')
             
             # Simple check if article already exists by slug
-            slug = slugify(title)[:50]
+            slug = slugify(title)[:50].strip('-')
             if not os.path.exists(os.path.join(NEWS_DIR, f"{slug}.json")):
                 items.append({'title': title, 'link': link, 'description': description, 'slug': slug, 'image_url': image_url})
         return items

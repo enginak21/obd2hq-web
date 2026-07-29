@@ -5,7 +5,7 @@ const path = require('path');
 const ROOT = process.cwd();
 const OUTPUT_FILE = path.join(ROOT, 'src/data/generated/gsc-opportunities.json');
 const REPORT_DIR = path.join(ROOT, 'reports/seo');
-const SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:obd2hq.com';
+const PRIMARY_SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:obd2hq.com';
 const DRY_RUN = process.argv.includes('--dry-run');
 const REQUIRE_GSC_CREDENTIALS = process.env.REQUIRE_GSC_CREDENTIALS === '1';
 
@@ -212,8 +212,20 @@ async function getAccessToken() {
   return json.access_token;
 }
 
-async function fetchSearchAnalytics(accessToken, startDate, endDate) {
-  const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE_URL)}/searchAnalytics/query`;
+function getSiteUrlCandidates() {
+  const normalized = new Set();
+  const add = value => {
+    if (value && typeof value === 'string') normalized.add(value.trim().replace(/\/$/, ''));
+  };
+  add(PRIMARY_SITE_URL);
+  add('sc-domain:obd2hq.com');
+  add('https://obd2hq.com');
+  add('https://www.obd2hq.com');
+  return Array.from(normalized);
+}
+
+async function fetchSearchAnalyticsForSite(accessToken, siteUrl, startDate, endDate) {
+  const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
   const response = await fetch(endpoint, {
     method: 'POST',
     headers: {
@@ -230,7 +242,9 @@ async function fetchSearchAnalytics(accessToken, startDate, endDate) {
   });
   if (!response.ok) {
     const text = await response.text();
-    throw new Error(`GSC query failed: ${response.status} ${text}`);
+    const error = new Error(`GSC query failed for ${siteUrl}: ${response.status} ${text}`);
+    error.status = response.status;
+    throw error;
   }
   const json = await response.json();
   return (json.rows || []).map(row => ({
@@ -241,6 +255,20 @@ async function fetchSearchAnalytics(accessToken, startDate, endDate) {
     ctr: row.ctr || 0,
     position: row.position || null,
   }));
+}
+
+async function fetchSearchAnalytics(accessToken, startDate, endDate) {
+  const errors = [];
+  for (const siteUrl of getSiteUrlCandidates()) {
+    try {
+      const rows = await fetchSearchAnalyticsForSite(accessToken, siteUrl, startDate, endDate);
+      return { rows, siteUrl };
+    } catch (error) {
+      errors.push(error.message);
+      if (error.status && error.status !== 403 && error.status !== 404) break;
+    }
+  }
+  throw new Error(`GSC query failed for all configured properties:\n${errors.join('\n')}`);
 }
 
 function seedRows() {
@@ -254,13 +282,13 @@ function seedRows() {
   }));
 }
 
-function writeReport(opportunities) {
+function writeReport(opportunities, siteUrl) {
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const today = new Date().toISOString().slice(0, 10);
   const lines = [
     `# GSC SEO Opportunity Report - ${today}`,
     '',
-    `Site: ${SITE_URL}`,
+    `Site: ${siteUrl}`,
     '',
     '| Priority | Query | Impressions | Clicks | CTR | Position | Target URL | Action |',
     '|---|---:|---:|---:|---:|---:|---|---|',
@@ -274,6 +302,7 @@ async function main() {
   const token = await getAccessToken();
   let rows28;
   let rows7;
+  let activeSiteUrl = PRIMARY_SITE_URL;
   if (!token) {
     if (REQUIRE_GSC_CREDENTIALS) {
       throw new Error('GSC credentials are required in this environment. Add GSC_CLIENT_EMAIL and GSC_PRIVATE_KEY repository secrets, and give that service account access to the Search Console property.');
@@ -283,8 +312,11 @@ async function main() {
     rows7 = seedRows();
   } else {
     const endDate = getDate(2);
-    rows28 = await fetchSearchAnalytics(token, getDate(30), endDate);
-    rows7 = await fetchSearchAnalytics(token, getDate(9), endDate);
+    const result28 = await fetchSearchAnalytics(token, getDate(30), endDate);
+    const result7 = await fetchSearchAnalytics(token, getDate(9), endDate);
+    activeSiteUrl = result28.siteUrl;
+    rows28 = result28.rows;
+    rows7 = result7.rows;
   }
 
   const opportunities = normalizeRows(rows28, rows7);
@@ -293,7 +325,7 @@ async function main() {
   if (!DRY_RUN) {
     fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, `${JSON.stringify(opportunities, null, 2)}\n`);
-    writeReport(opportunities);
+    writeReport(opportunities, activeSiteUrl);
   }
 }
 
