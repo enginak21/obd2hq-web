@@ -29,14 +29,14 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
         : locale === 'fr'
           ? 'Si vous connaissez le code, la recherche et les guides de code sont le chemin le plus rapide. Sans code, décrivez le symptôme dans l’outil de panne puis utilisez entretien, profil véhicule et voyants. Les outils clarifient coût, risque et contrôles avant remplacement.'
           : 'If you know the code, search and code guides are the fastest path. If you do not know the code, describe the symptom in the car problem finder, then use maintenance, vehicle profiles and warning-light pages to build the first-check sequence. Tools clarify cost, risk and verification before replacing parts.';
-  const pageUrl = `https://obd2hq.com/${locale}/tools`;
+  const pageUrl = `https://www.obd2hq.com/${locale}/tools`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
           { '@type': 'ListItem', position: 2, name: copy.toolsTitle, item: pageUrl },
         ],
       },

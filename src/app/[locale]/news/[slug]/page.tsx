@@ -1,4 +1,4 @@
-﻿import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound, permanentRedirect } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -113,7 +113,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     "author": [{
       "@type": "Organization",
       "name": "OBD2HQ AI Desk",
-      "url": "https://obd2hq.com"
+      "url": "https://www.obd2hq.com"
     }]
   };
 

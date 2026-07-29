@@ -43,14 +43,14 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
   const tCode = await getTranslations({ locale, namespace: 'CodePage' });
 
   const articles = getAllNews();
-  const pageUrl = `https://obd2hq.com/${locale}/news`;
+  const pageUrl = `https://www.obd2hq.com/${locale}/news`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
           { '@type': 'ListItem', position: 2, name: t('title'), item: pageUrl },
         ],
       },

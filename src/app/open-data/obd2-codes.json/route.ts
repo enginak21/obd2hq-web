@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { baseCodes, getLocalized } from '@/data/db';
 import { SEO_LAST_REVIEWED, getCodeCategoryLabel, getCodeSystem, getRelatedCodes } from '@/data/seo';
 
-const BASE_URL = 'https://obd2hq.com';
+const BASE_URL = 'https://www.obd2hq.com';
 
 export async function GET() {
   const codes = Object.entries(baseCodes).map(([code, data]) => {

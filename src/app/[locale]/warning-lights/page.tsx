@@ -113,8 +113,8 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-        { '@type': 'ListItem', position: 2, name: nav.warningLights, item: `https://obd2hq.com${getWarningLightsHubPath(locale)}` },
+        { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+        { '@type': 'ListItem', position: 2, name: nav.warningLights, item: `https://www.obd2hq.com${getWarningLightsHubPath(locale)}` },
       ],
     },
     {
@@ -122,7 +122,7 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
       '@type': 'CollectionPage',
       name: c.title,
       description: c.description,
-      url: `https://obd2hq.com${getWarningLightsHubPath(locale)}`,
+      url: `https://www.obd2hq.com${getWarningLightsHubPath(locale)}`,
       mainEntity: {
         '@type': 'ItemList',
         itemListElement: lights.map((light, index) => ({

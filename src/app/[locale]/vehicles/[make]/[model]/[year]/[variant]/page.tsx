@@ -98,10 +98,10 @@ export default async function VehicleVariantPage({ params }: { params: Promise<{
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://obd2hq.com/${locale}/vehicles` },
-          { '@type': 'ListItem', position: 3, name: vehicleName, item: `https://obd2hq.com/${locale}/vehicles/${make}/${model}` },
-          { '@type': 'ListItem', position: 4, name: pageName, item: `https://obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://www.obd2hq.com/${locale}/vehicles` },
+          { '@type': 'ListItem', position: 3, name: vehicleName, item: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}` },
+          { '@type': 'ListItem', position: 4, name: pageName, item: `https://www.obd2hq.com/${locale}/vehicles/${make}/${model}/${year}/${variant}` },
         ],
       },
       {

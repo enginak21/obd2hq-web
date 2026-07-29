@@ -68,14 +68,14 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
         : locale === 'fr'
           ? `Choisissez d’abord votre modèle ${capMake}, puis ouvrez le code défaut, le voyant ou le guide de symptômes. Les pages de code regroupent les contrôles avant remplacement, les alertes de sécurité, les codes OBD2 liés et un niveau de coût estimé. En cas de doute, confirmez le modèle avec les papiers, l’entretien ou un catalogue par VIN.`
           : `Choose your ${capMake} model first, then open the matching trouble code, dashboard light or symptom guide. Code pages combine checks before replacing parts, safe-driving guidance, related OBD2 codes and a practical repair-cost level. If you are not sure about the exact model, confirm it from registration, service records or a VIN-based parts catalog.`;
-  const pageUrl = `https://obd2hq.com/${locale}/${make}`;
+  const pageUrl = `https://www.obd2hq.com/${locale}/${make}`;
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
           { '@type': 'ListItem', position: 2, name: capMake, item: pageUrl },
         ],
       },

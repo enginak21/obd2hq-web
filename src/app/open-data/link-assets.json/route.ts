@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SEO_LAST_REVIEWED } from '@/data/seo';
 
-const BASE_URL = 'https://obd2hq.com';
+const BASE_URL = 'https://www.obd2hq.com';
 
 export async function GET() {
   return NextResponse.json({
@@ -37,7 +37,7 @@ export async function GET() {
         id: 'lookup-widget',
         title: 'Embeddable OBD2 lookup widget',
         url: `${BASE_URL}/widget/obd2hq-lookup.js`,
-        embedCode: '<div data-obd2hq-widget data-locale="en"></div><script src="https://obd2hq.com/widget/obd2hq-lookup.js" async></script>',
+        embedCode: '<div data-obd2hq-widget data-locale="en"></div><script src="https://www.obd2hq.com/widget/obd2hq-lookup.js" async></script>',
         bestFor: ['blogs', 'repair shop sites', 'car community portals'],
       },
     ],

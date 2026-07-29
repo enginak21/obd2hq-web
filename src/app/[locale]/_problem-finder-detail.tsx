@@ -86,9 +86,9 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: labels.home, item: `https://obd2hq.com/${locale}` },
-        { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://obd2hq.com${getProblemFinderHubPath(locale)}` },
-        { '@type': 'ListItem', position: 3, name: intent.titles[locale], item: `https://obd2hq.com${getProblemFinderDetailPath(locale, intent)}` },
+        { '@type': 'ListItem', position: 1, name: labels.home, item: `https://www.obd2hq.com/${locale}` },
+        { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://www.obd2hq.com${getProblemFinderHubPath(locale)}` },
+        { '@type': 'ListItem', position: 3, name: intent.titles[locale], item: `https://www.obd2hq.com${getProblemFinderDetailPath(locale, intent)}` },
       ],
     },
     {
@@ -99,7 +99,7 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
       about: intent.titles[locale],
       author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
       publisher: { '@type': 'Organization', name: 'OBD2HQ' },
-      mainEntityOfPage: `https://obd2hq.com${getProblemFinderDetailPath(locale, intent)}`,
+      mainEntityOfPage: `https://www.obd2hq.com${getProblemFinderDetailPath(locale, intent)}`,
     },
     {
       '@context': 'https://schema.org',

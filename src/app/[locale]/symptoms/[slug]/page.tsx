@@ -51,7 +51,7 @@ export default async function SymptomPage({ params }: { params: Promise<{ locale
       description: localized.description,
       dateModified: '2026-07-14',
       about: symptom.relatedSystems,
-      mainEntityOfPage: `https://obd2hq.com/${locale}/symptoms/${slug}`,
+      mainEntityOfPage: `https://www.obd2hq.com/${locale}/symptoms/${slug}`,
     },
     {
       '@context': 'https://schema.org',

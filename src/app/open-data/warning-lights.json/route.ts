@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getLocalizedWarningLight, warningLights } from '@/data/lights';
 import { SEO_LAST_REVIEWED } from '@/data/seo';
 
-const BASE_URL = 'https://obd2hq.com';
+const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'tr', 'de', 'es', 'fr'] as const;
 
 export async function GET() {

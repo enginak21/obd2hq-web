@@ -171,12 +171,12 @@ export default async function CodePage({ params }: PageProps) {
     "author": {
       "@type": "Organization",
       "name": "OBD2HQ",
-      "url": "https://obd2hq.com"
+      "url": "https://www.obd2hq.com"
     },
     "reviewedBy": {
       "@type": "Organization",
       "name": "OBD2HQ Editorial Team",
-      "url": `https://obd2hq.com/${locale}/reviewers`
+      "url": `https://www.obd2hq.com/${locale}/reviewers`
     }
   };
 
@@ -189,14 +189,14 @@ export default async function CodePage({ params }: PageProps) {
     "author": {
       "@type": "Organization",
       "name": "OBD2HQ Editorial Team",
-      "url": `https://obd2hq.com/${locale}/reviewers`
+      "url": `https://www.obd2hq.com/${locale}/reviewers`
     },
     "publisher": {
       "@type": "Organization",
       "name": "OBD2HQ",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://obd2hq.com/icon.jpg"
+        "url": "https://www.obd2hq.com/icon.jpg"
       }
     },
     "datePublished": "2024-01-01T08:00:00+08:00",
@@ -207,10 +207,10 @@ export default async function CodePage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://obd2hq.com/${locale}` },
-      { "@type": "ListItem", "position": 2, "name": capMake, "item": `https://obd2hq.com/${locale}/${make}` },
-      { "@type": "ListItem", "position": 3, "name": capModel, "item": `https://obd2hq.com/${locale}/${make}/${model}` },
-      { "@type": "ListItem", "position": 4, "name": upperCode, "item": `https://obd2hq.com/${locale}/${make}/${model}/${code}` },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://www.obd2hq.com/${locale}` },
+      { "@type": "ListItem", "position": 2, "name": capMake, "item": `https://www.obd2hq.com/${locale}/${make}` },
+      { "@type": "ListItem", "position": 3, "name": capModel, "item": `https://www.obd2hq.com/${locale}/${make}/${model}` },
+      { "@type": "ListItem", "position": 4, "name": upperCode, "item": `https://www.obd2hq.com/${locale}/${make}/${model}/${code}` },
     ]
   };
 
@@ -458,7 +458,7 @@ export default async function CodePage({ params }: PageProps) {
 
           <section className="pt-8">
             <DisqusComments
-              url={`https://obd2hq.com/${locale}/${make}/${model}/${code}`}
+              url={`https://www.obd2hq.com/${locale}/${make}/${model}/${code}`}
               identifier={`${make}-${model}-${code}`}
               title={t('discussionTitle', { code: upperCode, make: capMake, model: capModel })}
             />

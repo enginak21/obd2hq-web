@@ -202,8 +202,8 @@ export default async function CodeHubPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: copy.h1, item: `https://obd2hq.com${getCodeHubPath(locale, upperCode)}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: copy.h1, item: `https://www.obd2hq.com${getCodeHubPath(locale, upperCode)}` },
     ],
   };
   const faqSchema = {

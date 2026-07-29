@@ -56,8 +56,8 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://obd2hq.com${getProblemFinderHubPath(locale)}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: getProblemFinderHubLabel(locale), item: `https://www.obd2hq.com${getProblemFinderHubPath(locale)}` },
     ],
   };
 
@@ -67,7 +67,7 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
     name: getProblemFinderHubLabel(locale),
     applicationCategory: 'AutomotiveDiagnosticApplication',
     operatingSystem: 'Web',
-    url: `https://obd2hq.com${getProblemFinderHubPath(locale)}`,
+    url: `https://www.obd2hq.com${getProblemFinderHubPath(locale)}`,
     description: metaCopy[locale].description,
   };
 

@@ -55,8 +55,8 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://obd2hq.com/${locale}/vehicles` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: copy.vehicleDatabaseShort, item: `https://www.obd2hq.com/${locale}/vehicles` },
         ],
       },
       {
@@ -66,7 +66,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
           '@type': 'ListItem',
           position: index + 1,
           name: `${variant.year} ${variant.displayName} ${variant.engineCodes.slice(0, 2).join('/')}`,
-          url: `https://obd2hq.com/${locale}/vehicles/${variant.make}/${variant.model}/${variant.year}/${variant.slug}`,
+          url: `https://www.obd2hq.com/${locale}/vehicles/${variant.make}/${variant.model}/${variant.year}/${variant.slug}`,
         })),
       },
     ],

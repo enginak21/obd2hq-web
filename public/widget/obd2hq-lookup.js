@@ -3,7 +3,7 @@
   if (!mount) return;
 
   const locale = mount.getAttribute('data-locale') || 'en';
-  const baseUrl = 'https://obd2hq.com';
+  const baseUrl = 'https://www.obd2hq.com';
   const labels = {
     en: { placeholder: 'Enter an OBD2 code, e.g. P0420', button: 'Open guide' },
     tr: { placeholder: 'OBD2 kodu girin, ?rn. P0420', button: 'Rehberi a?' },
@@ -18,7 +18,7 @@
     `<input aria-label="OBD2 code" placeholder="${copy.placeholder}" style="flex:1;padding:12px;border:1px solid #cbd5e1;border-radius:8px" />`,
     `<button type="submit" style="padding:12px 14px;border:0;border-radius:8px;background:#075bf7;color:#fff;font-weight:700">${copy.button}</button>`,
     '</form>',
-    '<div style="margin-top:6px;font:12px Arial,sans-serif;color:#64748b">Powered by <a href="https://obd2hq.com" rel="noopener">OBD2HQ</a></div>',
+    '<div style="margin-top:6px;font:12px Arial,sans-serif;color:#64748b">Powered by <a href="https://www.obd2hq.com" rel="noopener">OBD2HQ</a></div>',
   ].join('');
 
   mount.querySelector('form').addEventListener('submit', function (event) {

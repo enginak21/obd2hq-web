@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SEO_LAST_REVIEWED } from '@/data/seo';
 
-const BASE_URL = 'https://obd2hq.com';
+const BASE_URL = 'https://www.obd2hq.com';
 
 const checklist = [
   {

@@ -68,11 +68,11 @@ export default async function LightDetailPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-      { '@type': 'ListItem', position: 2, name: capMake, item: `https://obd2hq.com/${locale}/${make}` },
-      { '@type': 'ListItem', position: 3, name: capModel, item: `https://obd2hq.com/${locale}/${make}/${model}` },
-      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://obd2hq.com/${locale}/${make}/${model}/lights` },
-      { '@type': 'ListItem', position: 5, name: lightData.name, item: `https://obd2hq.com/${locale}/${make}/${model}/lights/${light}` },
+      { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: capMake, item: `https://www.obd2hq.com/${locale}/${make}` },
+      { '@type': 'ListItem', position: 3, name: capModel, item: `https://www.obd2hq.com/${locale}/${make}/${model}` },
+      { '@type': 'ListItem', position: 4, name: t('lights'), item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights` },
+      { '@type': 'ListItem', position: 5, name: lightData.name, item: `https://www.obd2hq.com/${locale}/${make}/${model}/lights/${light}` },
     ],
   };
   const articleSchema = {
@@ -83,7 +83,7 @@ export default async function LightDetailPage({ params }: PageProps) {
     dateModified: '2026-07-18',
     author: { '@type': 'Organization', name: 'OBD2HQ Editorial Team' },
     publisher: { '@type': 'Organization', name: 'OBD2HQ' },
-    image: `https://obd2hq.com${lightData.imageSrc}`,
+    image: `https://www.obd2hq.com${lightData.imageSrc}`,
     about: [
       { '@type': 'Thing', name: `${capMake} ${capModel}` },
       { '@type': 'Thing', name: lightData.name },

@@ -113,7 +113,7 @@ export default async function ResourcesPage({ params }: PageProps) {
     '@type': 'CollectionPage',
     name: c.title,
     description: c.meta,
-    url: `https://obd2hq.com/${locale}/resources`,
+    url: `https://www.obd2hq.com/${locale}/resources`,
     publisher: { '@type': 'Organization', name: 'OBD2HQ' },
   };
 

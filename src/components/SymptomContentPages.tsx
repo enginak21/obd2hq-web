@@ -64,14 +64,14 @@ export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) 
     '@type': 'CollectionPage',
     name: copy.title,
     description: copy.description,
-    url: `https://obd2hq.com${getSymptomContentHubPath(locale)}`,
+    url: `https://www.obd2hq.com${getSymptomContentHubPath(locale)}`,
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: publishedSymptomContentGroups.map((group, index) => ({
         '@type': 'ListItem',
         position: index + 1,
         name: group.locales[locale].title,
-        url: `https://obd2hq.com${getSymptomContentDetailPath(group, locale)}`,
+        url: `https://www.obd2hq.com${getSymptomContentDetailPath(group, locale)}`,
       })),
     },
   };
@@ -245,14 +245,14 @@ function buildSchema(locale: SymptomContentLocale, group: SymptomContentGroup, i
         dateModified: '2026-07-17',
         inLanguage: locale,
         about: [group.make, group.symptomKey, ...item.relatedCodes],
-        mainEntityOfPage: `https://obd2hq.com${path}`,
+        mainEntityOfPage: `https://www.obd2hq.com${path}`,
       },
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://obd2hq.com/${locale}` },
-          { '@type': 'ListItem', position: 2, name: hubCopy[locale].eyebrow, item: `https://obd2hq.com${getSymptomContentHubPath(locale)}` },
-          { '@type': 'ListItem', position: 3, name: item.title, item: `https://obd2hq.com${path}` },
+          { '@type': 'ListItem', position: 1, name: 'OBD2HQ', item: `https://www.obd2hq.com/${locale}` },
+          { '@type': 'ListItem', position: 2, name: hubCopy[locale].eyebrow, item: `https://www.obd2hq.com${getSymptomContentHubPath(locale)}` },
+          { '@type': 'ListItem', position: 3, name: item.title, item: `https://www.obd2hq.com${path}` },
         ],
       },
       {
