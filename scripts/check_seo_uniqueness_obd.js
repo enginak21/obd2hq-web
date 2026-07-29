@@ -246,9 +246,25 @@ function checkVehicleCodeSeoUniqueness() {
   }
 }
 
+function checkVehicleCodeTemplateDepth() {
+  const file = 'src/app/[locale]/[make]/[model]/[code]/page.tsx';
+  const content = fs.readFileSync(path.join(ROOT, file), 'utf8');
+  for (const required of [
+    'pageCopy.modelSpecific',
+    'modelInsight.insight',
+    'modelInsight.likelySymptoms',
+    'modelInsight.firstTests',
+    'modelInsight.avoidReplacing',
+    'modelInsight.liveData',
+  ]) {
+    if (!content.includes(required)) fail(`${file} missing duplicate-risk reducer: ${required}`);
+  }
+}
+
 checkObdCodes();
 checkVehicleSpecTitles();
 checkVehicleCodeSeoUniqueness();
+checkVehicleCodeTemplateDepth();
 
 if (failures.length) {
   console.error('SEO uniqueness / OBD data check failed:');

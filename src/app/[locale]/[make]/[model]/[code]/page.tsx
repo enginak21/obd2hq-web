@@ -330,6 +330,34 @@ export default async function CodePage({ params }: PageProps) {
             </p>
           </section>
 
+          <section className="bg-[#101827] border border-cyan-500/20 rounded-2xl p-6 shadow-lg">
+            <h2 className="text-xl font-bold text-white mb-4 flex items-center">
+              <Search className="w-5 h-5 mr-2 text-cyan-300" />
+              {pageCopy.modelSpecific}
+            </h2>
+            <p className="text-slate-300 leading-relaxed">
+              {modelInsight.insight}
+            </p>
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+              <div className="rounded-xl bg-white/5 border border-white/5 p-4">
+                <h3 className="text-xs font-bold uppercase tracking-widest text-cyan-200 mb-3">{pageCopy.likelySymptoms}</h3>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  {modelInsight.likelySymptoms.map(item => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div className="rounded-xl bg-white/5 border border-white/5 p-4">
+                <h3 className="text-xs font-bold uppercase tracking-widest text-green-200 mb-3">{pageCopy.firstTests}</h3>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  {modelInsight.firstTests.slice(0, 4).map(item => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+              <div className="rounded-xl bg-red-500/10 border border-red-500/20 p-4">
+                <h3 className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">{pageCopy.avoidReplacing}</h3>
+                <p className="text-sm text-slate-300">{modelInsight.avoidReplacing}</p>
+              </div>
+            </div>
+          </section>
+
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
               <Search className="w-6 h-6 mr-3 text-amber-500" />
