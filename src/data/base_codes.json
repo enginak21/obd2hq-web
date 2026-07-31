@@ -33585,8 +33585,20 @@
     }
   },
   "P0253": {
-    "title": "Injection Pump Fuel Metering A Control Low",
-    "description": "Code P0253 indicates a problem with the diesel injection pump fuel metering control A.",
+    "title": {
+      "en": "Injection Pump Fuel Metering A Control Low",
+      "tr": "Enjeksiyon Pompas\u0131 Yak\u0131t \u00d6l\u00e7\u00fcm A Kontrol\u00fc D\u00fc\u015f\u00fck",
+      "de": "Einspritzpumpe Kraftstoffdosierung A Steuerung Niedrig",
+      "es": "Control de Medici\u00f3n de Combustible A de Bomba de Inyecci\u00f3n Bajo",
+      "fr": "Commande de Dosage de Carburant A de Pompe d'Injection Basse"
+    },
+    "description": {
+      "en": "Code P0253 indicates that the Powertrain Control Module (PCM) or Engine Control Module (ECM) has detected a voltage or current reading in the fuel metering control circuit 'A' that is below the specified operational range. This circuit is responsible for controlling the fuel quantity actuator (also known as the fuel metering valve or fuel pressure regulator) on the diesel injection pump. This actuator precisely regulates the amount of fuel delivered to the high-pressure pump or directly to the injectors. A 'low' signal typically suggests an open circuit, a short to ground, or a faulty actuator drawing insufficient current, leading to incorrect fuel delivery, poor engine performance, hard starting, or a no-start condition.",
+      "tr": "P0253 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc (PCM) veya Motor Kontrol Mod\u00fcl\u00fc (ECM) taraf\u0131ndan dizel enjeksiyon pompas\u0131ndaki yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresi 'A'da belirtilen \u00e7al\u0131\u015fma aral\u0131\u011f\u0131n\u0131n alt\u0131nda bir voltaj veya ak\u0131m de\u011feri tespit edildi\u011fini g\u00f6sterir. Bu devre, yak\u0131t miktar akt\u00fcat\u00f6r\u00fcn\u00fc (yak\u0131t \u00f6l\u00e7\u00fcm valfi veya yak\u0131t bas\u0131n\u00e7 reg\u00fclat\u00f6r\u00fc olarak da bilinir) kontrol etmekten sorumludur. Bu akt\u00fcat\u00f6r, y\u00fcksek bas\u0131n\u00e7 pompas\u0131na veya do\u011frudan enjekt\u00f6rlere iletilen yak\u0131t miktar\u0131n\u0131 hassas bir \u015fekilde d\u00fczenler. 'D\u00fc\u015f\u00fck' bir sinyal genellikle a\u00e7\u0131k bir devreyi, \u015faseye k\u0131sa devreyi veya yetersiz ak\u0131m \u00e7eken ar\u0131zal\u0131 bir akt\u00fcat\u00f6r\u00fc i\u015faret eder ve bu da yanl\u0131\u015f yak\u0131t da\u011f\u0131t\u0131m\u0131na, zay\u0131f motor performans\u0131na, zor \u00e7al\u0131\u015fmaya veya \u00e7al\u0131\u015fmama durumuna yol a\u00e7ar.",
+      "de": "Der Code P0253 weist darauf hin, dass das Antriebsstrangsteuerger\u00e4t (PCM) oder Motorsteuerger\u00e4t (ECM) einen Spannungs- oder Stromwert im Kraftstoffdosierungs-Steuerkreis 'A' der Dieseleinspritzpumpe festgestellt hat, der unterhalb des spezifizierten Betriebsbereichs liegt. Dieser Kreis ist f\u00fcr die Steuerung des Kraftstoffmengenstellers (auch als Kraftstoffdosierventil oder Kraftstoffdruckregler bekannt) zust\u00e4ndig. Dieser Steller reguliert pr\u00e4zise die Kraftstoffmenge, die zur Hochdruckpumpe oder direkt zu den Einspritzd\u00fcsen geliefert wird. Ein 'niedriges' Signal deutet typischerweise auf einen offenen Stromkreis, einen Masseschluss oder einen fehlerhaften Steller hin, der unzureichenden Strom zieht, was zu einer falschen Kraftstoffzufuhr, schlechter Motorleistung, Startschwierigkeiten oder einem Nichtstart f\u00fchren kann.",
+      "es": "El c\u00f3digo P0253 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) o el M\u00f3dulo de Control del Motor (ECM) ha detectado una lectura de voltaje o corriente en el circuito de control de medici\u00f3n de combustible 'A' que est\u00e1 por debajo del rango operativo especificado. Este circuito es responsable de controlar el actuador de cantidad de combustible (tambi\u00e9n conocido como v\u00e1lvula dosificadora de combustible o regulador de presi\u00f3n de combustible) en la bomba de inyecci\u00f3n di\u00e9sel. Este actuador regula con precisi\u00f3n la cantidad de combustible entregada a la bomba de alta presi\u00f3n o directamente a los inyectores. Una se\u00f1al 'baja' generalmente sugiere un circuito abierto, un cortocircuito a masa o un actuador defectuoso que consume corriente insuficiente, lo que lleva a una entrega incorrecta de combustible, bajo rendimiento del motor, dificultad para arrancar o una condici\u00f3n de no arranque.",
+      "fr": "Le code P0253 indique que le Module de Commande du Groupe Motopropulseur (PCM) ou le Module de Commande Moteur (ECM) a d\u00e9tect\u00e9 une lecture de tension ou de courant dans le circuit de commande de dosage de carburant 'A' qui est inf\u00e9rieure \u00e0 la plage de fonctionnement sp\u00e9cifi\u00e9e. Ce circuit est responsable du contr\u00f4le de l'actionneur de quantit\u00e9 de carburant (\u00e9galement connu sous le nom de valve de dosage de carburant ou r\u00e9gulateur de pression de carburant) sur la pompe d'injection diesel. Cet actionneur r\u00e9gule pr\u00e9cis\u00e9ment la quantit\u00e9 de carburant d\u00e9livr\u00e9e \u00e0 la pompe haute pression ou directement aux injecteurs. Un signal 'bas' sugg\u00e8re g\u00e9n\u00e9ralement un circuit ouvert, un court-circuit \u00e0 la masse, ou un actionneur d\u00e9fectueux tirant un courant insuffisant, entra\u00eenant une alimentation en carburant incorrecte, de mauvaises performances moteur, des difficult\u00e9s de d\u00e9marrage ou une impossibilit\u00e9 de d\u00e9marrer."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_rough_idle",
@@ -33602,11 +33614,106 @@
       "cause_pcm_software"
     ],
     "fixDifficulty": "diff_professional",
-    "estimatedCost": "$300 - $1500"
+    "estimatedCost": "$300 - $1500",
+    "diagnosticSteps": {
+      "en": [
+        "1. Perform a thorough visual inspection of the fuel metering valve (actuator) on the injection pump, its wiring harness, and connectors. Look for any signs of corrosion, fraying, loose connections, or physical damage that could cause an open or short circuit.",
+        "2. Using a digital multimeter (DMM), test the integrity of the fuel metering control circuit. Check for proper voltage supply and ground at the actuator connector. Also, perform continuity and resistance checks on the control wires between the actuator and the PCM/ECM connector to identify any open circuits or shorts to ground/power.",
+        "3. Disconnect the fuel metering valve and measure its internal resistance using a DMM. Compare this reading to the manufacturer's specifications. An out-of-specification resistance value indicates an internal fault within the valve itself.",
+        "4. If the wiring and the actuator test good, inspect the PCM/ECM connector pins for any signs of corrosion, bending, or damage. While less common, a faulty PCM/ECM pin can disrupt the control signal.",
+        "5. Utilize a professional scan tool to monitor live data parameters such as commanded fuel metering valve position/current, actual fuel pressure, and engine RPM. This can help determine if the PCM is sending the correct command signal and if the system is responding as expected."
+      ],
+      "tr": [
+        "1. Enjeksiyon pompas\u0131ndaki yak\u0131t \u00f6l\u00e7\u00fcm valfini (akt\u00fcat\u00f6r), kablo demetini ve konekt\u00f6rlerini kapsaml\u0131 bir g\u00f6rsel incelemeden ge\u00e7irin. A\u00e7\u0131k veya k\u0131sa devreye neden olabilecek herhangi bir korozyon, y\u0131pranma, gev\u015fek ba\u011flant\u0131 veya fiziksel hasar belirtisi aray\u0131n.",
+        "2. Bir dijital multimetre (DMM) kullanarak yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresinin b\u00fct\u00fcnl\u00fc\u011f\u00fcn\u00fc test edin. Akt\u00fcat\u00f6r konekt\u00f6r\u00fcnde do\u011fru voltaj beslemesini ve \u015faseyi kontrol edin. Ayr\u0131ca, a\u00e7\u0131k devreleri veya \u015faseye/g\u00fcce k\u0131sa devreleri tespit etmek i\u00e7in akt\u00fcat\u00f6r ile PCM/ECM konekt\u00f6r\u00fc aras\u0131ndaki kontrol kablolar\u0131nda s\u00fcreklilik ve diren\u00e7 kontrolleri yap\u0131n.",
+        "3. Yak\u0131t \u00f6l\u00e7\u00fcm valfini ay\u0131r\u0131n ve bir DMM kullanarak i\u00e7 direncini \u00f6l\u00e7\u00fcn. Bu de\u011feri \u00fcreticinin spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n. Spesifikasyon d\u0131\u015f\u0131 bir diren\u00e7 de\u011feri, valfin kendisinde dahili bir ar\u0131zay\u0131 g\u00f6sterir.",
+        "4. Kablolama ve akt\u00fcat\u00f6r iyi test edilirse, PCM/ECM konekt\u00f6r pimlerinde herhangi bir korozyon, b\u00fck\u00fclme veya hasar belirtisi olup olmad\u0131\u011f\u0131n\u0131 kontrol edin. Daha az yayg\u0131n olsa da, ar\u0131zal\u0131 bir PCM/ECM pimi kontrol sinyalini bozabilir.",
+        "5. Komut edilen yak\u0131t \u00f6l\u00e7\u00fcm valfi konumu/ak\u0131m\u0131, ger\u00e7ek yak\u0131t bas\u0131nc\u0131 ve motor devri gibi canl\u0131 veri parametrelerini izlemek i\u00e7in profesyonel bir tarama arac\u0131 kullan\u0131n. Bu, PCM'nin do\u011fru komut sinyalini g\u00f6nderip g\u00f6ndermedi\u011fini ve sistemin beklendi\u011fi gibi yan\u0131t verip vermedi\u011fini belirlemeye yard\u0131mc\u0131 olabilir."
+      ],
+      "de": [
+        "1. F\u00fchren Sie eine gr\u00fcndliche Sichtpr\u00fcfung des Kraftstoffdosierventils (Aktuators) an der Einspritzpumpe, seines Kabelbaums und der Steckverbinder durch. Suchen Sie nach Anzeichen von Korrosion, Ausfransungen, lockeren Verbindungen oder physischen Sch\u00e4den, die einen offenen Stromkreis oder Kurzschluss verursachen k\u00f6nnten.",
+        "2. Testen Sie mit einem digitalen Multimeter (DMM) die Integrit\u00e4t des Kraftstoffdosierungs-Steuerkreises. \u00dcberpr\u00fcfen Sie die korrekte Spannungsversorgung und Masse am Aktuatorstecker. F\u00fchren Sie au\u00dferdem Durchgangs- und Widerstandspr\u00fcfungen an den Steuerleitungen zwischen dem Aktuator und dem PCM/ECM-Stecker durch, um offene Stromkreise oder Kurzschl\u00fcsse gegen Masse/Strom zu identifizieren.",
+        "3. Trennen Sie das Kraftstoffdosierventil und messen Sie dessen internen Widerstand mit einem DMM. Vergleichen Sie diesen Wert mit den Herstellerspezifikationen. Ein au\u00dferhalb der Spezifikation liegender Widerstandswert weist auf einen internen Fehler im Ventil selbst hin.",
+        "4. Wenn die Verkabelung und der Aktuator in Ordnung sind, \u00fcberpr\u00fcfen Sie die PCM/ECM-Steckerstifte auf Anzeichen von Korrosion, Biegung oder Besch\u00e4digung. Obwohl seltener, kann ein fehlerhafter PCM/ECM-Stift das Steuersignal st\u00f6ren.",
+        "5. Verwenden Sie ein professionelles Diagnoseger\u00e4t, um Live-Datenparameter wie die Sollposition/-strom des Kraftstoffdosierventils, den tats\u00e4chlichen Kraftstoffdruck und die Motordrehzahl zu \u00fcberwachen. Dies kann helfen festzustellen, ob das PCM das korrekte Steuersignal sendet und ob das System wie erwartet reagiert."
+      ],
+      "es": [
+        "1. Realice una inspecci\u00f3n visual exhaustiva de la v\u00e1lvula dosificadora de combustible (actuador) en la bomba de inyecci\u00f3n, su mazo de cables y conectores. Busque cualquier signo de corrosi\u00f3n, deshilachado, conexiones sueltas o da\u00f1o f\u00edsico que pueda causar un circuito abierto o un cortocircuito.",
+        "2. Utilizando un mult\u00edmetro digital (DMM), pruebe la integridad del circuito de control de medici\u00f3n de combustible. Verifique el suministro de voltaje y la masa adecuados en el conector del actuador. Adem\u00e1s, realice comprobaciones de continuidad y resistencia en los cables de control entre el actuador y el conector del PCM/ECM para identificar cualquier circuito abierto o cortocircuito a masa/alimentaci\u00f3n.",
+        "3. Desconecte la v\u00e1lvula dosificadora de combustible y mida su resistencia interna utilizando un DMM. Compare esta lectura con las especificaciones del fabricante. Un valor de resistencia fuera de especificaci\u00f3n indica una falla interna dentro de la propia v\u00e1lvula.",
+        "4. Si el cableado y el actuador dan buenos resultados, inspeccione los pines del conector del PCM/ECM en busca de signos de corrosi\u00f3n, doblado o da\u00f1o. Aunque es menos com\u00fan, un pin defectuoso del PCM/ECM puede interrumpir la se\u00f1al de control.",
+        "5. Utilice una herramienta de escaneo profesional para monitorear par\u00e1metros de datos en vivo como la posici\u00f3n/corriente comandada de la v\u00e1lvula dosificadora de combustible, la presi\u00f3n real del combustible y las RPM del motor. Esto puede ayudar a determinar si el PCM est\u00e1 enviando la se\u00f1al de comando correcta y si el sistema est\u00e1 respondiendo como se espera."
+      ],
+      "fr": [
+        "1. Effectuez une inspection visuelle approfondie de la valve de dosage de carburant (actionneur) sur la pompe d'injection, de son faisceau de c\u00e2bles et de ses connecteurs. Recherchez tout signe de corrosion, d'effilochage, de connexions desserr\u00e9es ou de dommages physiques pouvant provoquer un circuit ouvert ou un court-circuit.",
+        "2. \u00c0 l'aide d'un multim\u00e8tre num\u00e9rique (DMM), testez l'int\u00e9grit\u00e9 du circuit de commande de dosage de carburant. V\u00e9rifiez l'alimentation en tension et la masse correctes au niveau du connecteur de l'actionneur. Effectuez \u00e9galement des contr\u00f4les de continuit\u00e9 et de r\u00e9sistance sur les fils de commande entre l'actionneur et le connecteur du PCM/ECM pour identifier tout circuit ouvert ou court-circuit \u00e0 la masse/alimentation.",
+        "3. D\u00e9connectez la valve de dosage de carburant et mesurez sa r\u00e9sistance interne \u00e0 l'aide d'un DMM. Comparez cette lecture aux sp\u00e9cifications du fabricant. Une valeur de r\u00e9sistance hors sp\u00e9cification indique une d\u00e9faillance interne de la valve elle-m\u00eame.",
+        "4. Si le c\u00e2blage et l'actionneur sont test\u00e9s comme \u00e9tant en bon \u00e9tat, inspectez les broches du connecteur du PCM/ECM pour d\u00e9tecter tout signe de corrosion, de pliage ou de dommage. Bien que moins courant, une broche PCM/ECM d\u00e9fectueuse peut perturber le signal de commande.",
+        "5. Utilisez un outil de diagnostic professionnel pour surveiller les param\u00e8tres de donn\u00e9es en direct tels que la position/le courant command\u00e9 de la valve de dosage de carburant, la pression de carburant r\u00e9elle et le r\u00e9gime moteur. Cela peut aider \u00e0 d\u00e9terminer si le PCM envoie le signal de commande correct et si le syst\u00e8me r\u00e9agit comme pr\u00e9vu."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Repair or replace damaged wiring and/or connectors leading to the fuel metering valve.",
+        "Replace the faulty fuel metering valve (actuator) on the injection pump.",
+        "Repair any identified open circuits or shorts to ground/power within the fuel metering control circuit.",
+        "In rare cases, replace the PCM/ECM if all other components and wiring are confirmed good and the module is not sending the correct command signal or processing feedback."
+      ],
+      "tr": [
+        "Yak\u0131t \u00f6l\u00e7\u00fcm valfine giden hasarl\u0131 kablolar\u0131 ve/veya konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "Enjeksiyon pompas\u0131ndaki ar\u0131zal\u0131 yak\u0131t \u00f6l\u00e7\u00fcm valfini (akt\u00fcat\u00f6r) de\u011fi\u015ftirin.",
+        "Yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresinde tespit edilen a\u00e7\u0131k devreleri veya \u015faseye/g\u00fcce k\u0131sa devreleri onar\u0131n.",
+        "Nadir durumlarda, di\u011fer t\u00fcm bile\u015fenler ve kablolama iyi durumda onaylan\u0131rsa ve mod\u00fcl do\u011fru komut sinyalini g\u00f6ndermiyorsa veya geri bildirimi i\u015flemiyorsa PCM/ECM'yi de\u011fi\u015ftirin."
+      ],
+      "de": [
+        "Besch\u00e4digte Kabel und/oder Steckverbinder, die zum Kraftstoffdosierventil f\u00fchren, reparieren oder ersetzen.",
+        "Das defekte Kraftstoffdosierventil (Aktuator) an der Einspritzpumpe ersetzen.",
+        "Alle identifizierten offenen Stromkreise oder Kurzschl\u00fcsse gegen Masse/Strom im Kraftstoffdosierungs-Steuerkreis reparieren.",
+        "In seltenen F\u00e4llen das PCM/ECM ersetzen, wenn alle anderen Komponenten und die Verkabelung als intakt best\u00e4tigt wurden und das Modul das korrekte Steuersignal nicht sendet oder die R\u00fcckmeldung nicht verarbeitet."
+      ],
+      "es": [
+        "Reparar o reemplazar el cableado y/o los conectores da\u00f1ados que van a la v\u00e1lvula dosificadora de combustible.",
+        "Reemplazar la v\u00e1lvula dosificadora de combustible (actuador) defectuosa en la bomba de inyecci\u00f3n.",
+        "Reparar cualquier circuito abierto o cortocircuito a masa/alimentaci\u00f3n identificado dentro del circuito de control de medici\u00f3n de combustible.",
+        "En casos raros, reemplazar el PCM/ECM si todos los dem\u00e1s componentes y el cableado est\u00e1n confirmados como buenos y el m\u00f3dulo no env\u00eda la se\u00f1al de comando correcta o no procesa la retroalimentaci\u00f3n."
+      ],
+      "fr": [
+        "R\u00e9parer ou remplacer le c\u00e2blage et/ou les connecteurs endommag\u00e9s menant \u00e0 la valve de dosage de carburant.",
+        "Remplacer la valve de dosage de carburant (actionneur) d\u00e9fectueuse sur la pompe d'injection.",
+        "R\u00e9parer tout circuit ouvert ou court-circuit \u00e0 la masse/alimentation identifi\u00e9 dans le circuit de commande de dosage de carburant.",
+        "Dans de rares cas, remplacer le PCM/ECM si tous les autres composants et le c\u00e2blage sont confirm\u00e9s comme \u00e9tant en bon \u00e9tat et que le module n'envoie pas le signal de commande correct ou ne traite pas le retour d'information."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "A P0253 code indicates a significant issue with fuel metering, which can severely impact engine performance. Symptoms may include reduced engine power, rough idling, stalling, or even a complete no-start condition. These issues can create dangerous situations, especially when driving in traffic or at highway speeds, as the vehicle's responsiveness and reliability are compromised. Continued driving with this fault could also potentially lead to further damage to the injection pump or other critical engine components due to incorrect fuel delivery. It is strongly recommended to diagnose and repair this issue promptly to ensure safe operation and prevent more extensive damage.",
+        "tr": "P0253 kodu, yak\u0131t \u00f6l\u00e7\u00fcm\u00fcnde ciddi bir sorunu i\u015faret eder ve bu da motor performans\u0131n\u0131 ciddi \u015fekilde etkileyebilir. Belirtiler aras\u0131nda motor g\u00fcc\u00fcnde azalma, d\u00fczensiz r\u00f6lanti, stop etme veya tamamen \u00e7al\u0131\u015fmama durumu yer alabilir. Bu sorunlar, \u00f6zellikle trafikte veya otoyol h\u0131zlar\u0131nda s\u00fcr\u00fc\u015f s\u0131ras\u0131nda tehlikeli durumlar yaratabilir, \u00e7\u00fcnk\u00fc arac\u0131n tepki verme yetene\u011fi ve g\u00fcvenilirli\u011fi tehlikeye girer. Bu ar\u0131zayla s\u00fcr\u00fc\u015fe devam etmek, yanl\u0131\u015f yak\u0131t da\u011f\u0131t\u0131m\u0131 nedeniyle enjeksiyon pompas\u0131na veya di\u011fer kritik motor bile\u015fenlerine daha fazla zarar verebilir. G\u00fcvenli \u00e7al\u0131\u015fmay\u0131 sa\u011flamak ve daha kapsaml\u0131 hasar\u0131 \u00f6nlemek i\u00e7in bu sorunun derhal te\u015fhis edilmesi ve onar\u0131lmas\u0131 \u015fiddetle tavsiye edilir.",
+        "de": "Ein P0253-Code weist auf ein erhebliches Problem bei der Kraftstoffdosierung hin, das die Motorleistung stark beeintr\u00e4chtigen kann. Symptome k\u00f6nnen eine reduzierte Motorleistung, unrunder Leerlauf, Abw\u00fcrgen oder sogar ein vollst\u00e4ndiger Nichtstart sein. Diese Probleme k\u00f6nnen gef\u00e4hrliche Situationen schaffen, insbesondere beim Fahren im Verkehr oder bei Autobahngeschwindigkeiten, da die Reaktionsf\u00e4higkeit und Zuverl\u00e4ssigkeit des Fahrzeugs beeintr\u00e4chtigt sind. Weiteres Fahren mit diesem Fehler k\u00f6nnte aufgrund falscher Kraftstoffzufuhr auch zu weiteren Sch\u00e4den an der Einspritzpumpe oder anderen kritischen Motorkomponenten f\u00fchren. Es wird dringend empfohlen, dieses Problem umgehend zu diagnostizieren und zu beheben, um einen sicheren Betrieb zu gew\u00e4hrleisten und umfangreichere Sch\u00e4den zu vermeiden.",
+        "es": "Un c\u00f3digo P0253 indica un problema significativo con la medici\u00f3n de combustible, lo que puede afectar gravemente el rendimiento del motor. Los s\u00edntomas pueden incluir una reducci\u00f3n de la potencia del motor, ralent\u00ed irregular, calado o incluso una condici\u00f3n de no arranque. Estos problemas pueden crear situaciones peligrosas, especialmente al conducir en tr\u00e1fico o a velocidades de autopista, ya que la capacidad de respuesta y la fiabilidad del veh\u00edculo se ven comprometidas. Continuar conduciendo con esta falla tambi\u00e9n podr\u00eda provocar da\u00f1os adicionales a la bomba de inyecci\u00f3n u otros componentes cr\u00edticos del motor debido a una entrega incorrecta de combustible. Se recomienda encarecidamente diagnosticar y reparar este problema de inmediato para garantizar un funcionamiento seguro y prevenir da\u00f1os m\u00e1s extensos.",
+        "fr": "Un code P0253 indique un probl\u00e8me significatif avec le dosage du carburant, ce qui peut gravement affecter les performances du moteur. Les sympt\u00f4mes peuvent inclure une r\u00e9duction de la puissance moteur, un ralenti irr\u00e9gulier, des calages, ou m\u00eame une impossibilit\u00e9 totale de d\u00e9marrer. Ces probl\u00e8mes peuvent cr\u00e9er des situations dangereuses, en particulier lors de la conduite dans la circulation ou \u00e0 vitesse d'autoroute, car la r\u00e9activit\u00e9 et la fiabilit\u00e9 du v\u00e9hicule sont compromises. Continuer \u00e0 rouler avec ce d\u00e9faut pourrait \u00e9galement entra\u00eener des dommages suppl\u00e9mentaires \u00e0 la pompe d'injection ou \u00e0 d'autres composants critiques du moteur en raison d'une alimentation en carburant incorrecte. Il est fortement recommand\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour assurer un fonctionnement s\u00fbr et pr\u00e9venir des dommages plus \u00e9tendus."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$150 - $700",
+      "labor": "$150 - $500"
+    }
   },
   "P0254": {
-    "title": "Injection Pump Fuel Metering A Control High",
-    "description": "Code P0254 indicates a problem with the diesel injection pump fuel metering control A.",
+    "title": {
+      "en": "Injection Pump Fuel Metering A Control High",
+      "tr": "Enjeksiyon Pompas\u0131 Yak\u0131t \u00d6l\u00e7\u00fcm A Kontrol\u00fc Y\u00fcksek",
+      "de": "Einspritzpumpe Kraftstoffdosierung A Steuerung Hoch",
+      "es": "Control de Medici\u00f3n de Combustible de Bomba de Inyecci\u00f3n A Alto",
+      "fr": "Commande de Dosage de Carburant de Pompe d'Injection A \u00c9lev\u00e9e"
+    },
+    "description": {
+      "en": "Code P0254 indicates that the Engine Control Module (ECM) has detected an abnormally high voltage or current signal in the 'A' circuit of the fuel metering control valve on the diesel injection pump. This 'high' signal typically suggests an open circuit, a short to voltage, or an internal fault within the fuel metering control valve itself, causing the ECM to receive a reading outside of its expected operating parameters. The fuel metering control valve is responsible for regulating the amount of fuel delivered to the high-pressure pump, which in turn affects the fuel supplied to the injectors. An incorrect signal can lead to improper fuel delivery, resulting in various engine performance issues.",
+      "tr": "P0254 kodu, Motor Kontrol Mod\u00fcl\u00fc'n\u00fcn (ECM), dizel enjeksiyon pompas\u0131ndaki yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfinin 'A' devresinde anormal derecede y\u00fcksek bir voltaj veya ak\u0131m sinyali tespit etti\u011fini g\u00f6sterir. Bu 'y\u00fcksek' sinyal genellikle a\u00e7\u0131k bir devreyi, voltaja k\u0131sa devreyi veya yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfinin kendisinde dahili bir ar\u0131zay\u0131 i\u015faret eder ve ECM'nin beklenen \u00e7al\u0131\u015fma parametrelerinin d\u0131\u015f\u0131nda bir okuma almas\u0131na neden olur. Yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfi, y\u00fcksek bas\u0131n\u00e7 pompas\u0131na iletilen yak\u0131t miktar\u0131n\u0131 d\u00fczenlemekten sorumludur, bu da enjekt\u00f6rlere sa\u011flanan yak\u0131t\u0131 etkiler. Yanl\u0131\u015f bir sinyal, uygunsuz yak\u0131t da\u011f\u0131t\u0131m\u0131na yol a\u00e7arak \u00e7e\u015fitli motor performans sorunlar\u0131na neden olabilir.",
+      "de": "Der Fehlercode P0254 weist darauf hin, dass das Motorsteuerger\u00e4t (ECM) ein ungew\u00f6hnlich hohes Spannungs- oder Stromsignal im 'A'-Schaltkreis des Kraftstoffdosierregelventils an der Dieseleinspritzpumpe festgestellt hat. Dieses 'hohe' Signal deutet typischerweise auf einen offenen Stromkreis, einen Kurzschluss gegen Spannung oder einen internen Fehler im Kraftstoffdosierregelventil selbst hin, wodurch das ECM einen Wert au\u00dferhalb seiner erwarteten Betriebsparameter empf\u00e4ngt. Das Kraftstoffdosierregelventil ist f\u00fcr die Regulierung der Kraftstoffmenge verantwortlich, die der Hochdruckpumpe zugef\u00fchrt wird, was wiederum den den Einspritzd\u00fcsen zugef\u00fchrten Kraftstoff beeinflusst. Ein falsches Signal kann zu einer fehlerhaften Kraftstoffzufuhr f\u00fchren, was verschiedene Motorleistungsprobleme zur Folge hat.",
+      "es": "El c\u00f3digo P0254 indica que el M\u00f3dulo de Control del Motor (ECM) ha detectado una se\u00f1al de voltaje o corriente anormalmente alta en el circuito 'A' de la v\u00e1lvula de control de medici\u00f3n de combustible en la bomba de inyecci\u00f3n di\u00e9sel. Esta se\u00f1al 'alta' generalmente sugiere un circuito abierto, un cortocircuito a voltaje o una falla interna dentro de la propia v\u00e1lvula de control de medici\u00f3n de combustible, lo que provoca que el ECM reciba una lectura fuera de sus par\u00e1metros de funcionamiento esperados. La v\u00e1lvula de control de medici\u00f3n de combustible es responsable de regular la cantidad de combustible entregada a la bomba de alta presi\u00f3n, lo que a su vez afecta el combustible suministrado a los inyectores. Una se\u00f1al incorrecta puede llevar a una entrega de combustible inadecuada, resultando en varios problemas de rendimiento del motor.",
+      "fr": "Le code P0254 indique que le Module de Commande du Moteur (ECM) a d\u00e9tect\u00e9 un signal de tension ou de courant anormalement \u00e9lev\u00e9 dans le circuit 'A' de la vanne de commande de dosage de carburant sur la pompe d'injection diesel. Ce signal '\u00e9lev\u00e9' sugg\u00e8re g\u00e9n\u00e9ralement un circuit ouvert, un court-circuit \u00e0 la tension, ou une d\u00e9faillance interne de la vanne de commande de dosage de carburant elle-m\u00eame, ce qui am\u00e8ne l'ECM \u00e0 recevoir une lecture en dehors de ses param\u00e8tres de fonctionnement attendus. La vanne de commande de dosage de carburant est responsable de la r\u00e9gulation de la quantit\u00e9 de carburant d\u00e9livr\u00e9e \u00e0 la pompe haute pression, ce qui affecte \u00e0 son tour le carburant fourni aux injecteurs. Un signal incorrect peut entra\u00eener une alimentation en carburant inappropri\u00e9e, provoquant divers probl\u00e8mes de performance moteur."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_rough_idle",
@@ -33622,7 +33729,85 @@
       "cause_pcm_software"
     ],
     "fixDifficulty": "diff_professional",
-    "estimatedCost": "$300 - $1500"
+    "estimatedCost": "$300 - $1500",
+    "diagnosticSteps": {
+      "en": [
+        "1. Visually inspect the wiring harness and connectors leading to the fuel metering control valve on the injection pump. Look for any signs of damage, fraying, corrosion, or loose connections that could cause an open circuit or short to voltage.",
+        "2. Using a digital multimeter (DMM), test the continuity and resistance of the fuel metering control circuit. Check for proper reference voltage (typically 5V) and ground at the connector. Compare readings to manufacturer specifications. An open circuit or short to voltage will be evident here.",
+        "3. Disconnect the fuel metering control valve and test its internal resistance using a DMM. Compare the measured resistance to the vehicle manufacturer's specifications. A reading significantly outside the specified range indicates an internal fault within the valve.",
+        "4. If all wiring and the valve itself test good, monitor the fuel metering control circuit's live data using a capable scan tool. Look for erratic or consistently high voltage readings that do not correlate with engine operation, which could suggest an intermittent wiring issue or, in rare cases, an ECM fault."
+      ],
+      "tr": [
+        "1. Enjeksiyon pompas\u0131ndaki yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfine giden kablo demetini ve konekt\u00f6rleri g\u00f6rsel olarak inceleyin. A\u00e7\u0131k devreye veya voltaja k\u0131sa devreye neden olabilecek herhangi bir hasar, y\u0131pranma, korozyon veya gev\u015fek ba\u011flant\u0131 belirtisi aray\u0131n.",
+        "2. Dijital bir multimetre (DMM) kullanarak yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresinin s\u00fcreklili\u011fini ve direncini test edin. Konekt\u00f6rde do\u011fru referans voltaj\u0131n\u0131 (genellikle 5V) ve topraklamay\u0131 kontrol edin. Okumalar\u0131 \u00fcretici spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n. A\u00e7\u0131k devre veya voltaja k\u0131sa devre burada belirgin olacakt\u0131r.",
+        "3. Yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfini ay\u0131r\u0131n ve bir DMM kullanarak i\u00e7 direncini test edin. \u00d6l\u00e7\u00fclen direnci ara\u00e7 \u00fcreticisinin spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n. Belirtilen aral\u0131\u011f\u0131n \u00f6nemli \u00f6l\u00e7\u00fcde d\u0131\u015f\u0131nda bir okuma, valf i\u00e7inde dahili bir ar\u0131zay\u0131 g\u00f6sterir.",
+        "4. T\u00fcm kablolar ve valf iyi test edilirse, yetenekli bir tarama arac\u0131 kullanarak yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresinin canl\u0131 verilerini izleyin. Motor \u00e7al\u0131\u015fmas\u0131yla ili\u015fkili olmayan d\u00fczensiz veya s\u00fcrekli y\u00fcksek voltaj okumalar\u0131 aray\u0131n; bu, aral\u0131kl\u0131 bir kablolama sorununu veya nadir durumlarda bir ECM ar\u0131zas\u0131n\u0131 g\u00f6sterebilir."
+      ],
+      "de": [
+        "1. \u00dcberpr\u00fcfen Sie den Kabelbaum und die Steckverbinder, die zum Kraftstoffdosierregelventil an der Einspritzpumpe f\u00fchren, visuell. Suchen Sie nach Anzeichen von Besch\u00e4digungen, Ausfransungen, Korrosion oder lockeren Verbindungen, die einen offenen Stromkreis oder einen Kurzschluss gegen Spannung verursachen k\u00f6nnten.",
+        "2. Testen Sie mit einem Digitalmultimeter (DMM) die Durchg\u00e4ngigkeit und den Widerstand des Kraftstoffdosierregelkreises. \u00dcberpr\u00fcfen Sie die korrekte Referenzspannung (typischerweise 5V) und Masse am Stecker. Vergleichen Sie die Messwerte mit den Herstellerspezifikationen. Ein offener Stromkreis oder ein Kurzschluss gegen Spannung wird hier offensichtlich sein.",
+        "3. Trennen Sie das Kraftstoffdosierregelventil und testen Sie seinen internen Widerstand mit einem DMM. Vergleichen Sie den gemessenen Widerstand mit den Spezifikationen des Fahrzeugherstellers. Ein Wert, der deutlich au\u00dferhalb des angegebenen Bereichs liegt, weist auf einen internen Fehler im Ventil hin.",
+        "4. Wenn alle Kabel und das Ventil selbst in Ordnung sind, \u00fcberwachen Sie die Live-Daten des Kraftstoffdosierregelkreises mit einem geeignetenalty Scan-Tool. Suchen Sie nach unregelm\u00e4\u00dfigen oder konstant hohen Spannungswerten, die nicht mit dem Motorbetrieb korrelieren, was auf ein intermittierendes Verdrahtungsproblem oder in seltenen F\u00e4llen auf einen ECM-Fehler hindeuten k\u00f6nnte."
+      ],
+      "es": [
+        "1. Inspeccione visualmente el mazo de cables y los conectores que van a la v\u00e1lvula de control de medici\u00f3n de combustible en la bomba de inyecci\u00f3n. Busque cualquier signo de da\u00f1o, deshilachado, corrosi\u00f3n o conexiones sueltas que puedan causar un circuito abierto o un cortocircuito a voltaje.",
+        "2. Usando un mult\u00edmetro digital (DMM), pruebe la continuidad y la resistencia del circuito de control de medici\u00f3n de combustible. Verifique el voltaje de referencia adecuado (t\u00edpicamente 5V) y la tierra en el conector. Compare las lecturas con las especificaciones del fabricante. Un circuito abierto o un cortocircuito a voltaje ser\u00e1 evidente aqu\u00ed.",
+        "3. Desconecte la v\u00e1lvula de control de medici\u00f3n de combustible y pruebe su resistencia interna usando un DMM. Compare la resistencia medida con las especificaciones del fabricante del veh\u00edculo. Una lectura significativamente fuera del rango especificado indica una falla interna dentro de la v\u00e1lvula.",
+        "4. Si todo el cableado y la v\u00e1lvula misma dan buenos resultados, monitoree los datos en vivo del circuito de control de medici\u00f3n de combustible usando una herramienta de escaneo capaz. Busque lecturas de voltaje err\u00e1ticas o consistentemente altas que no se correlacionen con la operaci\u00f3n del motor, lo que podr\u00eda sugerir un problema de cableado intermitente o, en casos raros, una falla del ECM."
+      ],
+      "fr": [
+        "1. Inspectez visuellement le faisceau de c\u00e2bles et les connecteurs menant \u00e0 la vanne de commande de dosage de carburant sur la pompe d'injection. Recherchez tout signe de dommage, d'effilochage, de corrosion ou de connexions desserr\u00e9es qui pourraient provoquer un circuit ouvert ou un court-circuit \u00e0 la tension.",
+        "2. \u00c0 l'aide d'un multim\u00e8tre num\u00e9rique (DMM), testez la continuit\u00e9 et la r\u00e9sistance du circuit de commande de dosage de carburant. V\u00e9rifiez la tension de r\u00e9f\u00e9rence correcte (g\u00e9n\u00e9ralement 5V) et la masse au niveau du connecteur. Comparez les lectures aux sp\u00e9cifications du fabricant. Un circuit ouvert ou un court-circuit \u00e0 la tension sera \u00e9vident ici.",
+        "3. D\u00e9connectez la vanne de commande de dosage de carburant et testez sa r\u00e9sistance interne \u00e0 l'aide d'un DMM. Comparez la r\u00e9sistance mesur\u00e9e aux sp\u00e9cifications du fabricant du v\u00e9hicule. Une lecture significativement en dehors de la plage sp\u00e9cifi\u00e9e indique une d\u00e9faillance interne de la vanne.",
+        "4. Si tout le c\u00e2blage et la vanne elle-m\u00eame sont en bon \u00e9tat, surveillez les donn\u00e9es en temps r\u00e9el du circuit de commande de dosage de carburant \u00e0 l'aide d'un outil de diagnostic performant. Recherchez des lectures de tension erratiques ou constamment \u00e9lev\u00e9es qui ne correspondent pas au fonctionnement du moteur, ce qui pourrait sugg\u00e9rer un probl\u00e8me de c\u00e2blage intermittent ou, dans de rares cas, une d\u00e9faillance de l'ECM."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty fuel metering control valve/solenoid on the injection pump.",
+        "Repair or replace damaged, corroded, or shorted wiring and/or connectors in the fuel metering control circuit.",
+        "Address any short to voltage in the circuit, which might involve tracing and isolating the fault.",
+        "In rare cases, if all other components test good, the ECM may require reprogramming or replacement."
+      ],
+      "tr": [
+        "Enjeksiyon pompas\u0131ndaki ar\u0131zal\u0131 yak\u0131t \u00f6l\u00e7\u00fcm kontrol valfini/solenoidini de\u011fi\u015ftirin.",
+        "Yak\u0131t \u00f6l\u00e7\u00fcm kontrol devresindeki hasarl\u0131, korozyona u\u011fram\u0131\u015f veya k\u0131sa devre yapm\u0131\u015f kablolar\u0131 ve/veya konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "Devredeki voltaja k\u0131sa devreyi giderin, bu da ar\u0131zay\u0131 izlemeyi ve izole etmeyi gerektirebilir.",
+        "Nadir durumlarda, di\u011fer t\u00fcm bile\u015fenler iyi test edilirse, ECM'nin yeniden programlanmas\u0131 veya de\u011fi\u015ftirilmesi gerekebilir."
+      ],
+      "de": [
+        "Ersetzen Sie das defekte Kraftstoffdosierregelventil/Magnetventil an der Einspritzpumpe.",
+        "Reparieren oder ersetzen Sie besch\u00e4digte, korrodierte oder kurzgeschlossene Kabel und/oder Steckverbinder im Kraftstoffdosierregelkreis.",
+        "Beheben Sie jeden Kurzschluss gegen Spannung im Stromkreis, was das Verfolgen und Isolieren des Fehlers umfassen kann.",
+        "In seltenen F\u00e4llen, wenn alle anderen Komponenten in Ordnung sind, muss das ECM m\u00f6glicherweise neu programmiert oder ersetzt werden."
+      ],
+      "es": [
+        "Reemplazar la v\u00e1lvula/solenoide de control de medici\u00f3n de combustible defectuosa en la bomba de inyecci\u00f3n.",
+        "Reparar o reemplazar el cableado y/o los conectores da\u00f1ados, corro\u00eddos o en cortocircuito en el circuito de control de medici\u00f3n de combustible.",
+        "Abordar cualquier cortocircuito a voltaje en el circuito, lo que podr\u00eda implicar rastrear y aislar la falla.",
+        "En casos raros, si todos los dem\u00e1s componentes funcionan correctamente, el ECM puede requerir reprogramaci\u00f3n o reemplazo."
+      ],
+      "fr": [
+        "Remplacer la vanne/sol\u00e9no\u00efde de commande de dosage de carburant d\u00e9fectueuse sur la pompe d'injection.",
+        "R\u00e9parer ou remplacer le c\u00e2blage et/ou les connecteurs endommag\u00e9s, corrod\u00e9s ou court-circuit\u00e9s dans le circuit de commande de dosage de carburant.",
+        "Traiter tout court-circuit \u00e0 la tension dans le circuit, ce qui pourrait impliquer de tracer et d'isoler la panne.",
+        "Dans de rares cas, si tous les autres composants sont en bon \u00e9tat, l'ECM peut n\u00e9cessiter une reprogrammation ou un remplacement."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with code P0254 can lead to significant and unpredictable engine performance issues. These may include rough idling, reduced engine power, poor acceleration, increased fuel consumption, hard starting, or even a complete no-start condition. Such symptoms can compromise vehicle control and increase the risk of accidents, especially during critical driving maneuvers or in heavy traffic. It is strongly recommended to diagnose and repair this issue promptly to ensure safe and reliable vehicle operation.",
+        "tr": "P0254 koduyla ara\u00e7 kullanmak, \u00f6nemli ve \u00f6ng\u00f6r\u00fclemeyen motor performans sorunlar\u0131na yol a\u00e7abilir. Bunlar aras\u0131nda d\u00fczensiz r\u00f6lanti, motor g\u00fcc\u00fcnde azalma, zay\u0131f h\u0131zlanma, artan yak\u0131t t\u00fcketimi, zor \u00e7al\u0131\u015fma veya hatta tamamen \u00e7al\u0131\u015fmama durumu yer alabilir. Bu t\u00fcr belirtiler ara\u00e7 kontrol\u00fcn\u00fc tehlikeye atabilir ve \u00f6zellikle kritik s\u00fcr\u00fc\u015f manevralar\u0131 s\u0131ras\u0131nda veya yo\u011fun trafikte kaza riskini art\u0131rabilir. G\u00fcvenli ve g\u00fcvenilir ara\u00e7 i\u015fletimi sa\u011flamak i\u00e7in bu sorunun derhal te\u015fhis edilmesi ve onar\u0131lmas\u0131 \u015fiddetle tavsiye edilir.",
+        "de": "Das Fahren mit dem Fehlercode P0254 kann zu erheblichen und unvorhersehbaren Motorleistungsproblemen f\u00fchren. Dazu geh\u00f6ren unruhiger Leerlauf, reduzierte Motorleistung, schlechte Beschleunigung, erh\u00f6hter Kraftstoffverbrauch, Startschwierigkeiten oder sogar ein vollst\u00e4ndiger Startausfall. Solche Symptome k\u00f6nnen die Fahrzeugkontrolle beeintr\u00e4chtigen und das Unfallrisiko erh\u00f6hen, insbesondere bei kritischen Fahrman\u00f6vern oder im dichten Verkehr. Es wird dringend empfohlen, dieses Problem umgehend zu diagnostizieren und zu beheben, um einen sicheren und zuverl\u00e4ssigen Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con el c\u00f3digo P0254 puede provocar problemas de rendimiento del motor significativos e impredecibles. Estos pueden incluir ralent\u00ed irregular, reducci\u00f3n de la potencia del motor, mala aceleraci\u00f3n, aumento del consumo de combustible, dificultad para arrancar o incluso una condici\u00f3n de no arranque completo. Tales s\u00edntomas pueden comprometer el control del veh\u00edculo y aumentar el riesgo de accidentes, especialmente durante maniobras de conducci\u00f3n cr\u00edticas o en tr\u00e1fico pesado. Se recomienda encarecidamente diagnosticar y reparar este problema de inmediato para garantizar un funcionamiento seguro y fiable del veh\u00edculo.",
+        "fr": "Conduire avec le code P0254 peut entra\u00eener des probl\u00e8mes de performance moteur significatifs et impr\u00e9visibles. Ceux-ci peuvent inclure un ralenti irr\u00e9gulier, une puissance moteur r\u00e9duite, une mauvaise acc\u00e9l\u00e9ration, une consommation de carburant accrue, des difficult\u00e9s de d\u00e9marrage, ou m\u00eame une impossibilit\u00e9 totale de d\u00e9marrer. De tels sympt\u00f4mes peuvent compromettre le contr\u00f4le du v\u00e9hicule et augmenter le risque d'accidents, en particulier lors de man\u0153uvres de conduite critiques ou dans un trafic dense. Il est fortement recommand\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour assurer un fonctionnement s\u00fbr et fiable du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$150 - $700 (for fuel metering control valve/solenoid; wiring components are less)",
+      "labor": "$150 - $600 (1.5 to 4 hours at $100-$150/hour, depending on accessibility and diagnostic time)"
+    }
   },
   "P0255": {
     "title": "Injection Pump Fuel Metering A Control Intermittent",
