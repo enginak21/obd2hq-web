@@ -7,7 +7,6 @@ import { redirect } from 'next/navigation';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getLocalizedCodeTitle } from '@/data/code-localization';
 import { findVehicleMatches, formatVehicleName, normalizeCode, normalizeSearchText } from '@/utils/diagnosticSearch';
-import { getAlternates } from '@/utils/seo';
 import { getCodeHubPath } from '@/data/gsc-seo';
 import { getWarningLightsHubPath } from '@/data/navigation';
 
@@ -18,7 +17,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
-    alternates: getAlternates('search', locale),
     robots: {
       index: false,
       follow: true,

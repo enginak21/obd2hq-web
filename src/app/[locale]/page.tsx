@@ -129,7 +129,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
           <div className="mt-8 flex justify-center">
             <Link
-              href={`/${locale}/search`}
+              href={`/${locale}/vehicles`}
               className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-slate-300 hover:text-white transition-all font-medium flex items-center"
             >
               {copy.viewAllMakes}

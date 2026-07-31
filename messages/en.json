@@ -260,7 +260,7 @@
     "story": "The Story",
     "storyP1": "The automotive industry has traditionally kept diagnostic information locked behind expensive proprietary software subscriptions. Mechanics charge hundreds of dollars just to \"plug in the scanner.\" We started OBD2HQ to break this monopoly.",
     "storyP2": "By compiling data on over 48 global car manufacturers and analyzing over 10,000 specific Diagnostic Trouble Codes (DTCs), we've created a search engine specifically for your car's brain. From a simple loose gas cap (P0456) to a catastrophic hybrid battery failure (P0A80), you now have the knowledge to fix it faster.",
-    "metaTitle": "About Us - OBD2HQ",
+    "metaTitle": "About OBD2HQ: Editorial Diagnostic Method and Mission",
     "metaDescription": "Learn about our mission to provide the most accurate OBD2 diagnostic data."
   },
   "ContactPage": {
@@ -271,7 +271,7 @@
     "email": "Email",
     "message": "Message",
     "send": "Send Message",
-    "metaTitle": "Contact Us - OBD2HQ",
+    "metaTitle": "Contact OBD2HQ Support and Editorial Team",
     "metaDescription": "Contact the OBD2HQ editorial team about diagnostic code feedback, vehicle data corrections, technical issues or partnership questions.",
     "namePlaceholder": "John Doe",
     "emailPlaceholder": "john@example.com",
