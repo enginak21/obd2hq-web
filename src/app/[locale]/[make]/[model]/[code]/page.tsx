@@ -9,6 +9,7 @@ import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnosticSteps, getLocalizedSystemContent, getModelSpecificInsight, getRelatedCodes, getRepairTiers } from '@/data/seo';
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
+import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -80,11 +81,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!obdData) return { title: 'Code Not Found' };
   const capMake = formatVehicleName(make);
   const capModel = formatVehicleName(model);
-  return {
+  const shouldIndex = isIndexableVehicleCodePage(make, model, obdData.code);
+  const metadata: Metadata = {
     title: fitSeoTitle(getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
     description: fitSeoDescription(getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
-    alternates: getAlternates(`${make}/${model}/${code}`, resolvedParams.locale)
+    robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: true },
   };
+  if (shouldIndex) {
+    metadata.alternates = getAlternates(`${make}/${model}/${code}`, resolvedParams.locale);
+  }
+  return metadata;
 }
 
 export default async function CodePage({ params }: PageProps) {

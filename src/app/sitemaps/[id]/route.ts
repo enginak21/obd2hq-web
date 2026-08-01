@@ -12,6 +12,7 @@ import { transmissionProfiles } from '@/data/transmission-database';
 import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLocale, publishedProblemFinderIntents } from '@/data/problem-finder';
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
 import { getBrandWarningLightsPath, getCodeHubPath, getOpportunityCodes, type GscOpportunity } from '@/data/gsc-seo';
+import { getIndexableVehicleCodeTargets } from '@/data/indexing-policy';
 import gscOpportunities from '@/data/generated/gsc-opportunities.json';
 import validRoutes from '@/data/valid_routes.json';
 
@@ -19,28 +20,8 @@ const BASE_URL = 'https://www.obd2hq.com';
 const LOCALES = ['en', 'de', 'es', 'tr', 'fr'];
 const LASTMOD = SEO_LAST_REVIEWED.slice(0, 10);
 
-const OPPORTUNITY_CODES = ['P0203', 'P0235', 'P0204', 'P0213', 'P0102'] as const;
 const VALID_CODE_SET = new Set((validRoutes.validCodes as string[]).map((code) => code.toUpperCase()));
 const SITEMAP_HIGH_INTENT_CODES = PRIORITY_CODES.filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
-const SITEMAP_OPPORTUNITY_CODES = OPPORTUNITY_CODES.filter((code) => (
-  VALID_CODE_SET.has(code.toUpperCase()) && !SITEMAP_HIGH_INTENT_CODES.includes(code)
-));
-
-const PRIORITY_CODE_URLS = [
-  { make: 'ford', model: 'focus', code: 'P0213' },
-  { make: 'suzuki', model: 'jimny', code: 'P0235' },
-  { make: 'suzuki', model: 'jimny', code: 'P0203' },
-  { make: 'suzuki', model: 'jimny', code: 'P0204' },
-  { make: 'acura', model: 'tlx', code: 'P0102' },
-  { make: 'toyota', model: 'camry', code: 'P0420' },
-  { make: 'toyota', model: 'camry', code: 'P0300' },
-  { make: 'nissan', model: 'altima', code: 'P0420' },
-  { make: 'nissan', model: 'altima', code: 'P0300' },
-  { make: 'ford', model: 'f-150', code: 'P0420' },
-  { make: 'ford', model: 'f-150', code: 'P0300' },
-  { make: 'honda', model: 'civic', code: 'P0420' },
-  { make: 'honda', model: 'civic', code: 'P0300' },
-] as const;
 
 function getSitemapIdentifiers(): string[] {
   return ['base', 'code-hubs', 'high-intent-codes', 'opportunity-codes', 'gsc-opportunities'];
@@ -145,36 +126,18 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       });
     });
   } else if (idStr === 'high-intent-codes') {
+    const targets = getIndexableVehicleCodeTargets().filter((target) => SITEMAP_HIGH_INTENT_CODES.includes(target.code));
     LOCALES.forEach((locale) => {
-      cars.forEach((car) => {
-        car.models.forEach((model) => {
-          SITEMAP_HIGH_INTENT_CODES.forEach((code) => {
-            urls += urlEntry(`${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`, 'monthly', '0.8');
-          });
-        });
+      targets.forEach(({ make, model, code }) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/${make}/${model}/${code.toLowerCase()}`, 'weekly', '0.9');
       });
     });
   } else if (idStr === 'opportunity-codes') {
-    const emitted = new Set<string>();
+    const targets = getIndexableVehicleCodeTargets().filter((target) => !SITEMAP_HIGH_INTENT_CODES.includes(target.code));
     LOCALES.forEach((locale) => {
-      cars.forEach((car) => {
-        car.models.forEach((model) => {
-          SITEMAP_OPPORTUNITY_CODES.forEach((code) => {
-            const loc = `${BASE_URL}/${locale}/${car.make}/${model}/${code.toLowerCase()}`;
-            if (!emitted.has(loc)) {
-              emitted.add(loc);
-              urls += urlEntry(loc, 'monthly', '0.75');
-            }
-          });
-        });
-      });
-      PRIORITY_CODE_URLS.forEach(({ make, model, code }) => {
-        if (!VALID_CODE_SET.has(code.toUpperCase()) || SITEMAP_HIGH_INTENT_CODES.includes(code)) return;
-        const loc = `${BASE_URL}/${locale}/${make}/${model}/${code.toLowerCase()}`;
-        if (!emitted.has(loc)) {
-          emitted.add(loc);
-          urls += urlEntry(loc, 'weekly', '0.9');
-        }
+      targets.forEach(({ make, model, code }) => {
+        if (!VALID_CODE_SET.has(code)) return;
+        urls += urlEntry(`${BASE_URL}/${locale}/${make}/${model}/${code.toLowerCase()}`, 'weekly', '0.9');
       });
     });
   } else if (idStr === 'gsc-opportunities') {
