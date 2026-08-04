@@ -1,0 +1,359 @@
+[
+  {
+    "href": "/en/ford/warning-lights",
+    "locale": "en",
+    "title": "Ford warning lights guide",
+    "type": "warning_light",
+    "score": 544,
+    "queries": [
+      "ford focus warning lights",
+      "ford focus dash warning lights",
+      "ford focus dashboard warning lights",
+      "ford focus instrument panel warning lights"
+    ]
+  },
+  {
+    "href": "/en/lexus/is/p0125",
+    "locale": "en",
+    "title": "Lexus Is P0125 guide",
+    "type": "gsc_vehicle_code",
+    "score": 296,
+    "queries": [
+      "dtc p0125 lexus",
+      "lexus dtc p0125"
+    ]
+  },
+  {
+    "href": "/en/ford/f-150/lights",
+    "locale": "en",
+    "title": "Ford F 150 warning lights guide",
+    "type": "warning_light",
+    "score": 271,
+    "queries": [
+      "2021 f 150 warning lights",
+      "2026 f 150 warning lights"
+    ]
+  },
+  {
+    "href": "/en/cadillac/warning-lights",
+    "locale": "en",
+    "title": "Cadillac warning lights guide",
+    "type": "warning_light",
+    "score": 269,
+    "queries": [
+      "cadillac vehicle warning lights",
+      "cadillac warning lights"
+    ]
+  },
+  {
+    "href": "/en/suzuki/jimny/p0203",
+    "locale": "en",
+    "title": "Suzuki Jimny P0203 guide",
+    "type": "gsc_vehicle_code",
+    "score": 267,
+    "queries": [
+      "dtc p0203 suzuki",
+      "p0203 suzuki"
+    ]
+  },
+  {
+    "href": "/en/suzuki/jimny/p0234",
+    "locale": "en",
+    "title": "Suzuki Jimny P0234 guide",
+    "type": "gsc_vehicle_code",
+    "score": 261,
+    "queries": [
+      "p0234 suzuki",
+      "dtc p0234 suzuki"
+    ]
+  },
+  {
+    "href": "/en/ford/fiesta/p0216",
+    "locale": "en",
+    "title": "Ford Fiesta P0216 guide",
+    "type": "gsc_vehicle_code",
+    "score": 260,
+    "queries": [
+      "p0216 ford",
+      "ford p0216"
+    ]
+  },
+  {
+    "href": "/en/ford/focus/lights",
+    "locale": "en",
+    "title": "Ford Focus warning lights guide",
+    "type": "warning_light",
+    "score": 245,
+    "queries": [
+      "ford focus dash lights",
+      "dash lights ford focus",
+      "ford focus warning symbols"
+    ]
+  },
+  {
+    "href": "/tr/chevrolet/colorado/p0300",
+    "locale": "tr",
+    "title": "Chevrolet Colorado P0300 rehberi",
+    "type": "gsc_vehicle_code",
+    "score": 189,
+    "queries": [
+      "chevrolet p0300"
+    ]
+  },
+  {
+    "href": "/tr",
+    "locale": "tr",
+    "title": "OBD2HQ arıza teşhis merkezi",
+    "type": "home",
+    "score": 108,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0012",
+    "locale": "tr",
+    "title": "B0012 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0013",
+    "locale": "tr",
+    "title": "B0013 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0016",
+    "locale": "tr",
+    "title": "B0016 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0019",
+    "locale": "tr",
+    "title": "B0019 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0020",
+    "locale": "tr",
+    "title": "B0020 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/tr/kodlar/b0022",
+    "locale": "tr",
+    "title": "B0022 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 100,
+    "queries": []
+  },
+  {
+    "href": "/de/news/the-audi-q7-gets-a-price-hike-while-the-sq7-nears",
+    "locale": "de",
+    "title": "The Audi Q7 Gets A Price Hike While The Sq7 Nears",
+    "type": "news",
+    "score": 172,
+    "queries": [
+      "audi q7 2027 preis"
+    ]
+  },
+  {
+    "href": "/de/news/the-grand-tour-returns-in-september-with-three-new",
+    "locale": "de",
+    "title": "The Grand Tour Returns In September With Three New",
+    "type": "news",
+    "score": 130,
+    "queries": [
+      "throttle house grand tour"
+    ]
+  },
+  {
+    "href": "/de",
+    "locale": "de",
+    "title": "OBD2HQ diagnostic search hub",
+    "type": "home",
+    "score": 104,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0012",
+    "locale": "de",
+    "title": "B0012 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0013",
+    "locale": "de",
+    "title": "B0013 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0016",
+    "locale": "de",
+    "title": "B0016 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0019",
+    "locale": "de",
+    "title": "B0019 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0020",
+    "locale": "de",
+    "title": "B0020 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/hyundai/palisade/p0113",
+    "locale": "es",
+    "title": "Hyundai Palisade P0113 guía",
+    "type": "gsc_vehicle_code",
+    "score": 187,
+    "queries": [
+      "hyundai p0113"
+    ]
+  },
+  {
+    "href": "/es",
+    "locale": "es",
+    "title": "OBD2HQ diagnostic search hub",
+    "type": "home",
+    "score": 104,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0012",
+    "locale": "es",
+    "title": "B0012 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0013",
+    "locale": "es",
+    "title": "B0013 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0016",
+    "locale": "es",
+    "title": "B0016 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0019",
+    "locale": "es",
+    "title": "B0019 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0020",
+    "locale": "es",
+    "title": "B0020 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/b0022",
+    "locale": "es",
+    "title": "B0022 OBD2 code guía",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/news/fords-ceo-still-isnt-satisfied-with-brand-quality",
+    "locale": "fr",
+    "title": "Fords Ceo Still Isnt Satisfied With Brand Quality",
+    "type": "news",
+    "score": 165,
+    "queries": [
+      "jim farley"
+    ]
+  },
+  {
+    "href": "/fr",
+    "locale": "fr",
+    "title": "OBD2HQ diagnostic search hub",
+    "type": "home",
+    "score": 104,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0012",
+    "locale": "fr",
+    "title": "B0012 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0013",
+    "locale": "fr",
+    "title": "B0013 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0016",
+    "locale": "fr",
+    "title": "B0016 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0019",
+    "locale": "fr",
+    "title": "B0019 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0020",
+    "locale": "fr",
+    "title": "B0020 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0022",
+    "locale": "fr",
+    "title": "B0022 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  }
+]

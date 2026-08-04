@@ -1,0 +1,1145 @@
+{
+  "generatedAt": "2026-08-04T16:59:49.575Z",
+  "totalUrls": 28290,
+  "segments": {
+    "warning_light": 1520,
+    "gsc_vehicle_code": 26,
+    "news": 970,
+    "home": 5,
+    "other": 1745,
+    "code_hub": 11115,
+    "problem_finder": 405,
+    "symptom_content": 615,
+    "blog": 15,
+    "vehicle_hub": 11655,
+    "tool": 30,
+    "blog_hub": 5,
+    "vehicle_code": 154,
+    "news_hub": 5,
+    "legal": 25
+  },
+  "focusCount": 80,
+  "topUrls": [
+    {
+      "url": "https://www.obd2hq.com/en/ford/warning-lights",
+      "path": "/en/ford/warning-lights",
+      "locale": "en",
+      "type": "warning_light",
+      "score": 544,
+      "impressions": 129,
+      "clicks": 0,
+      "queries": [
+        "ford focus warning lights",
+        "ford focus dash warning lights",
+        "ford focus dashboard warning lights",
+        "ford focus instrument panel warning lights"
+      ],
+      "recommendedActions": [
+        "Add symbol recognition copy, urgency levels, likely codes and model-year wording where relevant."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/lexus/is/p0125",
+      "path": "/en/lexus/is/p0125",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 296,
+      "impressions": 40,
+      "clicks": 0,
+      "queries": [
+        "dtc p0125 lexus",
+        "lexus dtc p0125"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/f-150/lights",
+      "path": "/en/ford/f-150/lights",
+      "locale": "en",
+      "type": "warning_light",
+      "score": 271,
+      "impressions": 101,
+      "clicks": 0,
+      "queries": [
+        "2021 f 150 warning lights",
+        "2026 f 150 warning lights"
+      ],
+      "recommendedActions": [
+        "Add symbol recognition copy, urgency levels, likely codes and model-year wording where relevant."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/cadillac/warning-lights",
+      "path": "/en/cadillac/warning-lights",
+      "locale": "en",
+      "type": "warning_light",
+      "score": 269,
+      "impressions": 99,
+      "clicks": 0,
+      "queries": [
+        "cadillac vehicle warning lights",
+        "cadillac warning lights"
+      ],
+      "recommendedActions": [
+        "Add symbol recognition copy, urgency levels, likely codes and model-year wording where relevant."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0203",
+      "path": "/en/suzuki/jimny/p0203",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 267,
+      "impressions": 46,
+      "clicks": 1,
+      "queries": [
+        "dtc p0203 suzuki",
+        "p0203 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0234",
+      "path": "/en/suzuki/jimny/p0234",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 261,
+      "impressions": 40,
+      "clicks": 2,
+      "queries": [
+        "p0234 suzuki",
+        "dtc p0234 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/fiesta/p0216",
+      "path": "/en/ford/fiesta/p0216",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 260,
+      "impressions": 39,
+      "clicks": 1,
+      "queries": [
+        "p0216 ford",
+        "ford p0216"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/focus/lights",
+      "path": "/en/ford/focus/lights",
+      "locale": "en",
+      "type": "warning_light",
+      "score": 245,
+      "impressions": 40,
+      "clicks": 0,
+      "queries": [
+        "ford focus dash lights",
+        "dash lights ford focus",
+        "ford focus warning symbols"
+      ],
+      "recommendedActions": [
+        "Add symbol recognition copy, urgency levels, likely codes and model-year wording where relevant."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/ranger/p0110",
+      "path": "/en/ford/ranger/p0110",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 232,
+      "impressions": 51,
+      "clicks": 0,
+      "queries": [
+        "ford p0110"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/buick/warning-lights",
+      "path": "/en/buick/warning-lights",
+      "locale": "en",
+      "type": "warning_light",
+      "score": 210,
+      "impressions": 35,
+      "clicks": 0,
+      "queries": [
+        "buick envision dashboard symbols explained"
+      ],
+      "recommendedActions": [
+        "Add symbol recognition copy, urgency levels, likely codes and model-year wording where relevant."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/honda/cr-v/p0135",
+      "path": "/en/honda/cr-v/p0135",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 210,
+      "impressions": 29,
+      "clicks": 0,
+      "queries": [
+        "honda p0135"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/f-150/p0251",
+      "path": "/en/ford/f-150/p0251",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 209,
+      "impressions": 28,
+      "clicks": 0,
+      "queries": [
+        "ford p0251"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/acura/tlx/p0102",
+      "path": "/en/acura/tlx/p0102",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 206,
+      "impressions": 25,
+      "clicks": 0,
+      "queries": [
+        "dtc p0102 acura"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0201",
+      "path": "/en/suzuki/jimny/p0201",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 205,
+      "impressions": 24,
+      "clicks": 0,
+      "queries": [
+        "dtc p0201 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/mini/countryman/p0538",
+      "path": "/en/mini/countryman/p0538",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 203,
+      "impressions": 22,
+      "clicks": 0,
+      "queries": [
+        "eobd/obdii p0538"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/focus/p0183",
+      "path": "/en/ford/focus/p0183",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 200,
+      "impressions": 19,
+      "clicks": 0,
+      "queries": [
+        "ford p0183-ff"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/mini/countryman/p0509",
+      "path": "/en/mini/countryman/p0509",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 200,
+      "impressions": 19,
+      "clicks": 0,
+      "queries": [
+        "eobd/obdii p0509"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/ranger/p0183",
+      "path": "/en/ford/ranger/p0183",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 199,
+      "impressions": 18,
+      "clicks": 0,
+      "queries": [
+        "dtc p0183 ford"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/mazda/mx-5/p0134",
+      "path": "/en/mazda/mx-5/p0134",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 199,
+      "impressions": 18,
+      "clicks": 0,
+      "queries": [
+        "dtc p0134 mazda"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0238",
+      "path": "/en/suzuki/jimny/p0238",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 199,
+      "impressions": 18,
+      "clicks": 0,
+      "queries": [
+        "dtc p0238 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/f-150/p0172",
+      "path": "/en/ford/f-150/p0172",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 198,
+      "impressions": 17,
+      "clicks": 0,
+      "queries": [
+        "dtc p0172 ford"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0243",
+      "path": "/en/suzuki/jimny/p0243",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 197,
+      "impressions": 16,
+      "clicks": 0,
+      "queries": [
+        "dtc p0243 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/suzuki/jimny/p0235",
+      "path": "/en/suzuki/jimny/p0235",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 195,
+      "impressions": 14,
+      "clicks": 0,
+      "queries": [
+        "dtc p0235 suzuki"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/f-150/p0235",
+      "path": "/en/ford/f-150/p0235",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 193,
+      "impressions": 12,
+      "clicks": 0,
+      "queries": [
+        "ford p0235"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/ranger/p0105",
+      "path": "/en/ford/ranger/p0105",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 192,
+      "impressions": 11,
+      "clicks": 0,
+      "queries": [
+        "dtc p0105 ford"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/fiesta/p0297",
+      "path": "/en/ford/fiesta/p0297",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 191,
+      "impressions": 10,
+      "clicks": 0,
+      "queries": [
+        "dtc p0297 ford"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/volkswagen/jetta/p0106",
+      "path": "/en/volkswagen/jetta/p0106",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 191,
+      "impressions": 10,
+      "clicks": 0,
+      "queries": [
+        "dtc p0106 volkswagen"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/tr/chevrolet/colorado/p0300",
+      "path": "/tr/chevrolet/colorado/p0300",
+      "locale": "tr",
+      "type": "gsc_vehicle_code",
+      "score": 189,
+      "impressions": 10,
+      "clicks": 0,
+      "queries": [
+        "chevrolet p0300"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/es/hyundai/palisade/p0113",
+      "path": "/es/hyundai/palisade/p0113",
+      "locale": "es",
+      "type": "gsc_vehicle_code",
+      "score": 187,
+      "impressions": 12,
+      "clicks": 0,
+      "queries": [
+        "hyundai p0113"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/news/kia-recalls-463000-suvs-a-second-time-for-seat-mot",
+      "path": "/en/news/kia-recalls-463000-suvs-a-second-time-for-seat-mot",
+      "locale": "en",
+      "type": "news",
+      "score": 173,
+      "impressions": 12,
+      "clicks": 0,
+      "queries": [
+        "kia telluride suv fire recall"
+      ],
+      "recommendedActions": [
+        "Add diagnostic context, internal links to warning-light/code pages and concise expert summary."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/de/news/the-audi-q7-gets-a-price-hike-while-the-sq7-nears",
+      "path": "/de/news/the-audi-q7-gets-a-price-hike-while-the-sq7-nears",
+      "locale": "de",
+      "type": "news",
+      "score": 172,
+      "impressions": 17,
+      "clicks": 0,
+      "queries": [
+        "audi q7 2027 preis"
+      ],
+      "recommendedActions": [
+        "Add diagnostic context, internal links to warning-light/code pages and concise expert summary."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/fr/news/fords-ceo-still-isnt-satisfied-with-brand-quality",
+      "path": "/fr/news/fords-ceo-still-isnt-satisfied-with-brand-quality",
+      "locale": "fr",
+      "type": "news",
+      "score": 165,
+      "impressions": 10,
+      "clicks": 0,
+      "queries": [
+        "jim farley"
+      ],
+      "recommendedActions": [
+        "Add diagnostic context, internal links to warning-light/code pages and concise expert summary."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/ford/focus/p0103",
+      "path": "/en/ford/focus/p0103",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 160,
+      "impressions": 14,
+      "clicks": 1,
+      "queries": [
+        "p0103 ford focus"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/bmw/4-series/p0420",
+      "path": "/en/bmw/4-series/p0420",
+      "locale": "en",
+      "type": "gsc_vehicle_code",
+      "score": 153,
+      "impressions": 12,
+      "clicks": 0,
+      "queries": [
+        "bmw p0420 code"
+      ],
+      "recommendedActions": [
+        "Add exact make-code intent wording, model-specific first checks and stronger links back to the code hub."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/de/news/the-grand-tour-returns-in-september-with-three-new",
+      "path": "/de/news/the-grand-tour-returns-in-september-with-three-new",
+      "locale": "de",
+      "type": "news",
+      "score": 130,
+      "impressions": 10,
+      "clicks": 1,
+      "queries": [
+        "throttle house grand tour"
+      ],
+      "recommendedActions": [
+        "Add diagnostic context, internal links to warning-light/code pages and concise expert summary."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en",
+      "path": "/en",
+      "locale": "en",
+      "type": "home",
+      "score": 110,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Review title, meta description, H2 structure and internal links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/tr",
+      "path": "/tr",
+      "locale": "tr",
+      "type": "home",
+      "score": 108,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Review title, meta description, H2 structure and internal links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/de",
+      "path": "/de",
+      "locale": "de",
+      "type": "home",
+      "score": 104,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Review title, meta description, H2 structure and internal links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/es",
+      "path": "/es",
+      "locale": "es",
+      "type": "home",
+      "score": 104,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Review title, meta description, H2 structure and internal links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/fr",
+      "path": "/fr",
+      "locale": "fr",
+      "type": "home",
+      "score": 104,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Review title, meta description, H2 structure and internal links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0012",
+      "path": "/en/codes/b0012",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0013",
+      "path": "/en/codes/b0013",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0016",
+      "path": "/en/codes/b0016",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0019",
+      "path": "/en/codes/b0019",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0020",
+      "path": "/en/codes/b0020",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0022",
+      "path": "/en/codes/b0022",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0023",
+      "path": "/en/codes/b0023",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0026",
+      "path": "/en/codes/b0026",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0028",
+      "path": "/en/codes/b0028",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0033",
+      "path": "/en/codes/b0033",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0040",
+      "path": "/en/codes/b0040",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0042",
+      "path": "/en/codes/b0042",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0044",
+      "path": "/en/codes/b0044",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0051",
+      "path": "/en/codes/b0051",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0079",
+      "path": "/en/codes/b0079",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0081",
+      "path": "/en/codes/b0081",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/b0092",
+      "path": "/en/codes/b0092",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0000",
+      "path": "/en/codes/c0000",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0035",
+      "path": "/en/codes/c0035",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0040",
+      "path": "/en/codes/c0040",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0041",
+      "path": "/en/codes/c0041",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0045",
+      "path": "/en/codes/c0045",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0046",
+      "path": "/en/codes/c0046",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0050",
+      "path": "/en/codes/c0050",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0051",
+      "path": "/en/codes/c0051",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0060",
+      "path": "/en/codes/c0060",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0065",
+      "path": "/en/codes/c0065",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0070",
+      "path": "/en/codes/c0070",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0075",
+      "path": "/en/codes/c0075",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0080",
+      "path": "/en/codes/c0080",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0085",
+      "path": "/en/codes/c0085",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0090",
+      "path": "/en/codes/c0090",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0095",
+      "path": "/en/codes/c0095",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0110",
+      "path": "/en/codes/c0110",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0121",
+      "path": "/en/codes/c0121",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0128",
+      "path": "/en/codes/c0128",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0141",
+      "path": "/en/codes/c0141",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0146",
+      "path": "/en/codes/c0146",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0151",
+      "path": "/en/codes/c0151",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    },
+    {
+      "url": "https://www.obd2hq.com/en/codes/c0156",
+      "path": "/en/codes/c0156",
+      "locale": "en",
+      "type": "code_hub",
+      "score": 102,
+      "impressions": 0,
+      "clicks": 0,
+      "queries": [],
+      "recommendedActions": [
+        "Expand plain-language meaning, symptoms, causes, first checks and related vehicle links."
+      ]
+    }
+  ]
+}

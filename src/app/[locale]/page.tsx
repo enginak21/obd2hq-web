@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import SmartSearch from '@/components/SmartSearch';
 import FindYourFixWizard from '@/components/FindYourFixWizard';
+import DailySeoFocusLinks from '@/components/DailySeoFocusLinks';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 
@@ -92,6 +93,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </div>
 
       <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
+
+      <DailySeoFocusLinks locale={locale} />
 
 
       <div className="w-full max-w-[1600px] flex justify-center items-start">

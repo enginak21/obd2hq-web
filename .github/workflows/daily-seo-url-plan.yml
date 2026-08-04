@@ -1,0 +1,49 @@
+name: Daily SEO URL Plan
+
+on:
+  schedule:
+    - cron: '45 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build daily SEO URL plan
+        run: npm run seo:plan-urls
+
+      - name: Quality checks
+        run: |
+          npm run check:seo-url-plan
+          npm run check:gsc-seo
+          npm run check:seo-contracts
+          npm run check:seo-uniqueness-obd
+          npm run lint
+          npm run build
+
+      - name: Commit daily SEO URL plan
+        run: |
+          if git diff --quiet -- src/data/generated/seo-url-plan.json src/data/generated/seo-focus-links.json reports/seo; then
+            echo "No SEO URL plan changes."
+            exit 0
+          fi
+          git config user.name "obd2hq-seo-bot"
+          git config user.email "actions@github.com"
+          git add src/data/generated/seo-url-plan.json src/data/generated/seo-focus-links.json reports/seo
+          git commit -m "chore: update daily seo url plan"
+          git push
