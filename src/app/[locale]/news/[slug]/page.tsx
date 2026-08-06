@@ -6,6 +6,7 @@ import { getAllNews, getNewsBySlug, getNewsCategoryKey, getNewsRedirectSlug } fr
 import { getLocalized } from '@/data/db';
 import { Calendar, ChevronLeft, Share2 } from 'lucide-react';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
+import { getTopClickNewsFocus } from '@/data/top-click-seo';
 
 function asString(value: string | string[] | null, fallback = '') {
   return typeof value === 'string' ? value : fallback;
@@ -41,8 +42,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const title = asString(getLocalized(article.title, locale), article.slug);
   const description = asString(getLocalized(article.summary, locale));
-  const metaTitle = fitSeoTitle(`${title} - OBD2HQ News`);
-  const metaDescription = fitSeoDescription(description);
+  const topClickFocus = getTopClickNewsFocus(locale, slug);
+  const metaTitle = fitSeoTitle(topClickFocus ? `${topClickFocus.query}: ${title}` : `${title} - OBD2HQ News`);
+  const metaDescription = fitSeoDescription(topClickFocus ? `${topClickFocus.answer} Latest context, host details and what changes for the show.` : description);
 
   return {
     title: metaTitle,
@@ -81,6 +83,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
   const locTitle = asString(getLocalized(article.title, locale), article.slug);
   const locContent = asString(getLocalized(article.content, locale));
   const categoryKey = getNewsCategoryKey(article.category);
+  const topClickFocus = getTopClickNewsFocus(locale, slug);
 
   const dateObj = new Date(article.date);
   const formattedDate = new Intl.DateTimeFormat(locale, {
@@ -180,6 +183,17 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
             ))}
             <h2>{contextHeading}</h2>
             <p>{contextText}</p>
+            {topClickFocus && (
+              <>
+                <h2>{topClickFocus.title}</h2>
+                <p>{topClickFocus.answer}</p>
+                <ul>
+                  {topClickFocus.followUps.map(item => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import { SEO_LAST_REVIEWED, getClusterLinks, getCodePageCopy, getFallbackDiagnos
 import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-localization';
 import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
 import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
+import { getTopClickVehicleFocus } from '@/data/top-click-seo';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -82,9 +83,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capMake = formatVehicleName(make);
   const capModel = formatVehicleName(model);
   const shouldIndex = isIndexableVehicleCodePage(make, model, obdData.code);
+  const topClickFocus = getTopClickVehicleFocus(resolvedParams.locale, make, model, obdData.code);
   const metadata: Metadata = {
-    title: fitSeoTitle(getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
-    description: fitSeoDescription(getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
+    title: fitSeoTitle(topClickFocus ? `${topClickFocus.query}: ${capMake} ${capModel} ${obdData.code} Fix Guide` : getCodeMetaTitle(resolvedParams.locale, obdData.code, capMake, capModel)),
+    description: fitSeoDescription(topClickFocus ? `${topClickFocus.query} explained for ${capMake} ${capModel}: meaning, first checks, parts not to replace first, related codes and repair verification.` : getCodeMetaDescription(resolvedParams.locale, obdData.code, capMake, capModel)),
     robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: true },
   };
   if (shouldIndex) {
@@ -125,6 +127,7 @@ export default async function CodePage({ params }: PageProps) {
   const registryEntry = getObdGoldRegistryEntry(upperCode);
   const registryCopy = getLocalizedRegistryCopy(locale, registryEntry, capMake, capModel);
   const clusterLinks = getClusterLinks(locale, make, model, upperCode);
+  const topClickFocus = getTopClickVehicleFocus(locale, make, model, upperCode);
   const localizedCauses = obdData.causes.map(cause => cause.startsWith('cause_') ? tDb(cause) : cause);
   const localizedSymptoms = obdData.symptoms.map(symptom => symptom.startsWith('symp_') ? tDb(symptom) : symptom);
   const isTurkish = locale === 'tr';
@@ -363,6 +366,35 @@ export default async function CodePage({ params }: PageProps) {
               </div>
             </div>
           </section>
+
+          {topClickFocus && (
+            <section className="bg-[#071d1e] border border-emerald-400/25 rounded-2xl p-6 shadow-lg">
+              <div className="mb-4 inline-flex rounded-full border border-emerald-300/20 bg-emerald-500/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-100">
+                High-intent search answer
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3">{topClickFocus.title}</h2>
+              <p className="text-slate-300 leading-relaxed">{topClickFocus.answer}</p>
+              <div className="mt-5 grid gap-4 md:grid-cols-2">
+                <div className="rounded-xl bg-white/5 border border-white/5 p-4">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-200 mb-3">First checks for this search</h3>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    {topClickFocus.firstChecks.map(item => <li key={item}>{item}</li>)}
+                  </ul>
+                </div>
+                <div className="rounded-xl bg-red-500/10 border border-red-500/20 p-4">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">Do not replace first</h3>
+                  <p className="text-sm text-slate-300">{topClickFocus.avoid}</p>
+                </div>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {topClickFocus.links.map(link => (
+                  <Link key={link.href} href={link.href} className="rounded-full border border-emerald-300/20 bg-emerald-500/10 px-3 py-1 text-sm font-bold text-emerald-100 hover:bg-emerald-500/20">
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">

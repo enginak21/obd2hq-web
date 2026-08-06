@@ -25,6 +25,10 @@ function titleCase(value: string) {
 function getVehicleTargets(code: string) {
   const codeSpecific: Record<string, Array<{ make: string; model: string }>> = {
     P0213: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'f-150' }],
+    P0216: [{ make: 'ford', model: 'fiesta' }, { make: 'ford', model: 'focus' }],
+    P0203: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
+    P0103: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'ranger' }],
+    P0234: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0235: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0243: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0251: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'f-150' }],
@@ -53,6 +57,10 @@ function getVehicleTargets(code: string) {
 function getCoveredSearches(code: string, locale: string) {
   const searches: Record<string, string[]> = {
     P0213: ['p0213', 'p0213 ford', 'ford focus p0213'],
+    P0216: ['p0216 ford', 'ford p0216', 'ford fiesta p0216'],
+    P0203: ['p0203 suzuki', 'dtc p0203 suzuki', 'suzuki jimny p0203'],
+    P0103: ['p0103 ford focus', 'ford focus p0103', 'maf high input ford focus'],
+    P0234: ['p0234 suzuki', 'dtc p0234 suzuki', 'suzuki jimny overboost p0234'],
     P0235: ['p0235 suzuki', 'suzuki jimny p0235', 'turbo boost sensor p0235'],
     P0243: ['p0243 suzuki', 'suzuki jimny p0243', 'wastegate solenoid p0243'],
     P0251: ['p0251 ford', 'ford focus p0251', 'injection pump metering control p0251'],

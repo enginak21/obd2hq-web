@@ -37,6 +37,9 @@ const RELATED_CODE_GROUPS = [
   ['P0455', 'P0442', 'P0456', 'P0440', 'P0441', 'P0457'],
   ['P0128', 'P0115', 'P0116', 'P0117', 'P0118', 'P2181'],
   ['P0101', 'P0102', 'P0103', 'P0113', 'P0171', 'P0174'],
+  ['P0201', 'P0202', 'P0203', 'P0204', 'P0300', 'P0303'],
+  ['P0216', 'P0251', 'P0252', 'P0253', 'P0254', 'P0087'],
+  ['P0234', 'P0235', 'P0299', 'P0106', 'P0107', 'P0108'],
   ['P0700', 'P0715', 'P0720', 'P0730', 'P0740', 'P0750'],
 ];
 
@@ -418,6 +421,42 @@ const PRIORITY_MODEL_INSIGHTS: Record<string, {
     likelySymptoms: ['Cylinder 4 misfire', 'Rough running', 'Poor fuel economy'],
     firstTests: ['Compare injector resistance across cylinders', 'Check injector pulse on cylinder 4', 'Inspect injector harness for rub-through'],
     avoidReplacing: 'ECM or injector rail before confirming the cylinder 4 circuit.',
+  },
+  'suzuki/jimny/P0234': {
+    insight: {
+      en: 'Suzuki Jimny P0234 should be diagnosed as an overboost or boost-control plausibility fault. Confirm MAP/boost data, wastegate control, boost solenoid command, hose routing, and wiring before condemning the turbocharger.',
+      tr: 'Suzuki Jimny P0234, overboost veya boost kontrol tutarlılığı arızası olarak teşhis edilmelidir. Turbo değişiminden önce MAP/boost verisi, wastegate kontrolü, boost solenoidi komutu, hortum bağlantıları ve kablo/soket doğrulanmalıdır.',
+      de: 'Suzuki Jimny P0234 sollte als Overboost- oder Ladedruckregelungsproblem geprüft werden. MAP/Ladedruckdaten, Wastegate, Ladedruckregelventil, Schlauchführung und Verkabelung vor Turbotausch bestätigen.',
+      es: 'Suzuki Jimny P0234 debe diagnosticarse como falla de sobrepresión o control de boost. Confirme datos MAP/boost, wastegate, solenoide, mangueras y cableado antes de culpar al turbo.',
+      fr: 'Suzuki Jimny P0234 doit être diagnostiqué comme un défaut de suralimentation ou de commande boost. Confirmez données MAP/boost, wastegate, solénoïde, durites et câblage avant de remplacer le turbo.',
+    },
+    likelySymptoms: ['Limp mode under load', 'Boost spike or poor acceleration', 'Check engine light on hills or acceleration'],
+    firstTests: ['Compare boost pressure to target boost under controlled load', 'Inspect wastegate actuator and boost-control solenoid plumbing', 'Check MAP/boost sensor 5V reference, ground, and signal', 'Look for related P0235, P0299, or fuel-trim codes'],
+    avoidReplacing: 'Turbocharger before boost-control plumbing, wastegate movement, solenoid command, MAP signal, and wiring are verified.',
+  },
+  'ford/fiesta/P0216': {
+    insight: {
+      en: 'Ford Fiesta P0216 needs fuel delivery and timing-control validation before expensive parts. Freeze-frame fuel pressure, crank/cam sync, pump command, voltage supply, and harness integrity are the highest-value checks.',
+      tr: 'Ford Fiesta P0216 için pahalı parçalardan önce yakıt besleme ve zamanlama kontrolü doğrulanmalıdır. Freeze-frame yakıt basıncı, krank/eksantrik senkronu, pompa komutu, voltaj beslemesi ve kablo bütünlüğü en değerli kontrollerdir.',
+      de: 'Ford Fiesta P0216 erfordert Prüfung von Kraftstoffversorgung und Timing-Regelung vor teuren Teilen. Freeze-Frame, Kraftstoffdruck, Kurbel/Nocken-Sync, Pumpenbefehl, Spannung und Kabel sind wichtig.',
+      es: 'Ford Fiesta P0216 requiere validar combustible y control de sincronización antes de piezas caras. Revise freeze-frame, presión, sincronía cigüeñal/árbol, comando de bomba, voltaje y arnés.',
+      fr: 'Ford Fiesta P0216 demande de valider alimentation carburant et commande de calage avant les pièces coûteuses. Vérifiez freeze-frame, pression, synchronisation, commande pompe, tension et faisceau.',
+    },
+    likelySymptoms: ['Hard starting', 'Reduced power', 'Fuel delivery or timing-related hesitation'],
+    firstTests: ['Save freeze-frame fuel pressure, RPM, load, and temperature', 'Check crankshaft and camshaft synchronization data', 'Inspect fuel filter, fuel pressure behavior, fuses, and grounds', 'Verify pump or injection control command before replacing parts'],
+    avoidReplacing: 'Injection pump, timing parts, or PCM before fuel pressure, timing sync, power, ground, and command data are confirmed.',
+  },
+  'ford/focus/P0103': {
+    insight: {
+      en: 'Ford Focus P0103 should be handled as a high MAF signal diagnosis. Intake leaks, dirty MAF element, aftermarket intake turbulence, signal voltage, ground quality, and fuel trims must be checked before replacing the MAF sensor.',
+      tr: 'Ford Focus P0103, yüksek MAF sinyali teşhisi olarak ele alınmalıdır. MAF değişmeden önce emme kaçağı, kirli sensör elemanı, yan sanayi emme türbülansı, sinyal voltajı, şase kalitesi ve yakıt trimleri kontrol edilmelidir.',
+      de: 'Ford Focus P0103 ist eine Diagnose für hohes MAF-Signal. Ansauglecks, verschmutztes Element, Zubehör-Ansaugung, Signalspannung, Masse und Fuel Trims vor MAF-Tausch prüfen.',
+      es: 'Ford Focus P0103 debe tratarse como diagnóstico de señal MAF alta. Revise fugas de admisión, sensor sucio, turbulencia, voltaje, tierra y fuel trims antes de cambiar el MAF.',
+      fr: 'Ford Focus P0103 doit être traité comme un signal MAF trop élevé. Vérifiez fuite admission, élément sale, turbulence, tension, masse et corrections carburant avant remplacement MAF.',
+    },
+    likelySymptoms: ['Hesitation or surge', 'Rough idle', 'Fuel trim correction and poor economy'],
+    firstTests: ['Inspect the intake duct and air filter housing after the MAF', 'Compare MAF grams/second at idle and 2500 RPM', 'Check MAF power, ground, and signal voltage during a wiggle test', 'Review STFT and LTFT to confirm whether airflow data is believable'],
+    avoidReplacing: 'MAF sensor before intake sealing, sensor contamination, wiring, ground, and fuel-trim data are checked.',
   },
   'acura/tlx/P0102': {
     insight: {

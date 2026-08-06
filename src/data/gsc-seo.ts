@@ -45,6 +45,11 @@ export const BRAND_WARNING_LIGHT_BASES: Record<SupportedLocale, string> = {
 
 export const GSC_SEED_QUERIES = [
   'p0213',
+  'p0234 suzuki',
+  'p0216 ford',
+  'p0203 suzuki',
+  'p0103 ford focus',
+  'throttle house grand tour',
   'p0292',
   'p0282',
   'p0211',
