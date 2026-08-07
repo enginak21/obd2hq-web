@@ -11,6 +11,7 @@ import { getRelatedCodes } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, isKnownCode } from '@/data/gsc-seo';
 import { getTopImpressionCodeFocus } from '@/data/top-impression-seo';
+import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
 
 type PageProps = {
   params: Promise<{
@@ -25,7 +26,7 @@ function titleCase(value: string) {
 
 function getVehicleTargets(code: string) {
   const codeSpecific: Record<string, Array<{ make: string; model: string }>> = {
-    P0213: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'f-150' }],
+    P0213: [{ make: 'ford', model: 'focus' }],
     P0216: [{ make: 'ford', model: 'fiesta' }, { make: 'ford', model: 'focus' }],
     P0203: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0103: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'ranger' }],
@@ -50,7 +51,10 @@ function getVehicleTargets(code: string) {
   const uniquePreferred = preferred.filter((target, index, list) => (
     list.findIndex(item => item.make === target.make && item.model === target.model) === index
   ));
-  const valid = uniquePreferred.filter(target => cars.some(car => car.make === target.make && car.models.includes(target.model)));
+  const valid = uniquePreferred.filter(target => (
+    cars.some(car => car.make === target.make && car.models.includes(target.model)) &&
+    isIndexableVehicleCodePage(target.make, target.model, code)
+  ));
   return valid.slice(0, 5).map(target => ({
     ...target,
     href: `/en/${target.make}/${target.model}/${code.toLowerCase()}`,
@@ -187,7 +191,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const topImpressionFocus = getTopImpressionCodeFocus(locale, upperCode);
   return {
     title: fitSeoTitle(topImpressionFocus ? topImpressionFocus.title : copy.title),
-    description: fitSeoDescription(topImpressionFocus ? `${topImpressionFocus.query} explained with meaning, symptoms, first checks, safe-to-drive advice, cost level and related OBD2 codes.` : copy.meta),
+    description: fitSeoDescription(topImpressionFocus ? `${topImpressionFocus.query} OBD2 guide with meaning, symptoms, causes, first checks, safe-to-drive advice, cost level and related diagnostic pages.` : copy.meta),
     alternates: getCodeHubAlternates(upperCode, locale),
   };
 }
@@ -320,7 +324,7 @@ export default async function CodeHubPage({ params }: PageProps) {
         {topImpressionFocus && (
           <div className="mb-6 rounded-2xl border border-emerald-300/20 bg-emerald-400/10 p-6">
             <div className="inline-flex rounded-full border border-emerald-300/30 bg-black/20 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-emerald-100">
-              High-intent answer
+              Diagnostic summary
             </div>
             <h2 className="mt-4 text-2xl font-bold text-white">{topImpressionFocus.title}</h2>
             <p className="mt-3 max-w-4xl leading-7 text-slate-200">{topImpressionFocus.answer}</p>

@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { cars, getHybridObdData, baseCodes, getLocalized } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -11,6 +11,7 @@ import { getLocalizedCodeDescription, getLocalizedCodeTitle } from '@/data/code-
 import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-registry';
 import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
 import { getTopClickVehicleFocus } from '@/data/top-click-seo';
+import { getCodeHubPath } from '@/data/gsc-seo';
 import { ShieldCheck, AlertTriangle, AlertCircle, Wrench, Search, Clock, BadgeCheck } from 'lucide-react';
 
 interface PageProps {
@@ -104,6 +105,10 @@ export default async function CodePage({ params }: PageProps) {
   if (!obdData || !isValidCar) notFound();
 
   const upperCode = obdData.code;
+  const shouldIndex = isIndexableVehicleCodePage(make, model, upperCode);
+  if (!shouldIndex) {
+    permanentRedirect(getCodeHubPath(locale, upperCode));
+  }
 
   setRequestLocale(locale);
 

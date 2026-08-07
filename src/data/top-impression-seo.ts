@@ -14,8 +14,8 @@ export type TopImpressionCodeFocus = {
 const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
   P0213: {
     query: 'p0213',
-    title: 'P0213 quick answer: cold start injector circuit fault',
-    answer: 'P0213 means the engine computer detected a fault in the cold start injector 1 circuit or control path. The highest-value checks are injector power, PCM command, connector tension, coolant temperature input, and wiring continuity before any injector or control module is replaced.',
+    title: 'P0213 Code: Meaning, Symptoms, Causes and Fixes',
+    answer: 'P0213 is an OBD2 diagnostic trouble code for a cold start injector 1 circuit or control fault. The highest-value checks are injector power, PCM command, connector tension, coolant temperature input, and wiring continuity before any injector or control module is replaced.',
     severity: 'Moderate. It can cause hard cold starts, rough idle after startup, rich/lean correction problems, and misfire-like symptoms when the engine is cold.',
     safeToDrive: 'Usually short local driving is possible if the engine runs normally after warm-up, but diagnose before repeated cold-start failures, fuel smell, stalling, or a flashing check engine light.',
     firstChecks: [
@@ -31,14 +31,14 @@ const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
     relatedSearches: ['p0213 code', 'p0213 symptoms', 'p0213 cold start injector', 'p0213 ford', 'p0213 causes'],
     links: [
       { href: '/en/ford/focus/p0213', label: 'Ford Focus P0213' },
-      { href: '/en/ford/f-150/p0213', label: 'Ford F-150 P0213' },
       { href: '/en/codes/p0216', label: 'P0216 related fuel timing code' },
+      { href: '/en/codes/p0251', label: 'P0251 fuel metering code' },
       { href: '/en/car-problem-finder/car-hard-to-start', label: 'Hard start symptom guide' },
     ],
   },
   P0251: {
     query: 'p0251 ford',
-    title: 'Ford P0251 quick answer: injection pump fuel metering control A',
+    title: 'Ford P0251 Code: Symptoms, Causes and Fuel System Fixes',
     answer: 'Ford P0251 usually points to a diesel fuel metering or injection pump control problem, but the repair should start with fuel supply and pressure validation. A restricted fuel filter, air in fuel, weak pump command, wiring fault, pressure sensor issue, or metering valve fault can all create the same search complaint.',
     severity: 'High when the vehicle has low power, stalls, enters limp mode, or rail pressure cannot follow commanded pressure.',
     safeToDrive: 'Avoid heavy acceleration or towing until fuel pressure behavior is verified. Stop driving if the engine stalls, loses power suddenly, or fuel leaks are present.',
@@ -62,7 +62,7 @@ const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
   },
   P0292: {
     query: 'p0292',
-    title: 'P0292 quick answer: cylinder 11 injector circuit high',
+    title: 'P0292 Code: Cylinder 11 Injector Circuit High',
     answer: 'P0292 means cylinder 11 injector circuit is reading high voltage or excessive resistance. On engines with enough cylinders to use cylinder 11, this is an electrical injector-circuit diagnosis first: connector, harness, injector coil, FICM/driver command, and power feed must be checked before parts are replaced.',
     severity: 'Moderate to high. It can cause rough running, cylinder contribution faults, fuel smell, reduced power, and catalyst or DPF stress if the cylinder is not fueling correctly.',
     safeToDrive: 'Drive only gently if the engine runs smoothly. Do not keep driving with severe misfire, heavy smoke, fuel smell, limp mode, or a flashing check engine light.',
@@ -86,7 +86,7 @@ const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
   },
   P0257: {
     query: 'p0257',
-    title: 'P0257 quick answer: injection pump fuel metering control B range/performance',
+    title: 'P0257 Code: Symptoms, Causes and Injection Pump Checks',
     answer: 'P0257 means the fuel metering control B circuit or actuator response is outside the expected range. Treat it as a fuel pressure control diagnosis: actual pressure, commanded pressure, metering actuator response, wiring, fuel restriction, and related sensor data must line up before replacing the injection pump.',
     severity: 'High when the vehicle has limp mode, low power, hard start, stalling, or rail pressure that cannot follow command.',
     safeToDrive: 'Avoid long drives, towing, or high-load acceleration until fuel pressure control is verified. Stop if the engine stalls, leaks fuel, smokes heavily, or loses power suddenly.',
@@ -110,7 +110,7 @@ const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
   },
   P0283: {
     query: 'p0283',
-    title: 'P0283 quick answer: cylinder 8 injector circuit high',
+    title: 'P0283 Code: Cylinder 8 Injector Circuit High',
     answer: 'P0283 means the cylinder 8 injector circuit is reading high. The usual diagnostic split is injector coil resistance, connector condition, short-to-voltage, open/high-resistance wiring, and driver/FICM control. It should not be treated as a guaranteed bad injector.',
     severity: 'Moderate to high. A dead or uncontrolled cylinder can cause rough idle, misfire, low power, increased fuel use, smoke, and catalyst or DPF stress.',
     safeToDrive: 'Avoid driving if the engine shakes badly, smokes, smells of raw fuel, or the check engine light flashes. Gentle short driving may be possible only if symptoms are mild.',
