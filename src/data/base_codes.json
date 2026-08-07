@@ -39490,8 +39490,20 @@
     }
   },
   "P0306": {
-    "title": "Cylinder 6 Misfire Detected",
-    "description": "Code P0306 indicates the PCM has detected a misfire condition specifically in Cylinder 6.",
+    "title": {
+      "en": "Cylinder 6 Misfire Detected",
+      "tr": "6. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 6 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 6",
+      "fr": "Rat\u00e9 d'allumage du cylindre 6 d\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0306 signifies that the Powertrain Control Module (PCM) has identified a misfire condition specifically within cylinder #6. A misfire occurs when an engine cylinder fails to properly ignite the air/fuel mixture, leading to a loss of power, rough running, and increased emissions. The PCM monitors crankshaft speed fluctuations and exhaust gas oxygen levels to detect these events. If the fluctuations exceed a calibrated threshold for cylinder 6, the P0306 code is set, and the Check Engine Light (CEL) will illuminate, often flashing if the misfire is severe enough to potentially damage the catalytic converter.",
+      "tr": "P0306 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) \u00f6zellikle 6 numaral\u0131 silindirde bir ate\u015fleme hatas\u0131 durumu tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, bir motor silindirinin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi durumunda meydana gelir ve bu da g\u00fc\u00e7 kayb\u0131na, d\u00fczensiz \u00e7al\u0131\u015fmaya ve artan emisyonlara yol a\u00e7ar. PCM, bu olaylar\u0131 tespit etmek i\u00e7in krank mili h\u0131z\u0131 dalgalanmalar\u0131n\u0131 ve egzoz gaz\u0131 oksijen seviyelerini izler. 6. silindir i\u00e7in dalgalanmalar kalibre edilmi\u015f bir e\u015fi\u011fi a\u015farsa, P0306 kodu ayarlan\u0131r ve Motor Ar\u0131za Lambas\u0131 (CEL) yanar; ate\u015fleme hatas\u0131 katalitik konvert\u00f6re zarar verecek kadar \u015fiddetliyse genellikle yan\u0131p s\u00f6ner.",
+      "de": "Der Code P0306 bedeutet, dass das Antriebsstrangsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung speziell im Zylinder Nr. 6 erkannt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein Motorzylinder das Luft-Kraftstoff-Gemisch nicht ordnungsgem\u00e4\u00df z\u00fcndet, was zu Leistungsverlust, unrundem Motorlauf und erh\u00f6hten Emissionen f\u00fchrt. Das PCM \u00fcberwacht Kurbelwellendrehzahlschwankungen und Abgas-Sauerstoffwerte, um diese Ereignisse zu erkennen. \u00dcberschreiten die Schwankungen f\u00fcr Zylinder 6 einen kalibrierten Schwellenwert, wird der Code P0306 gesetzt und die Motorkontrollleuchte (CEL) leuchtet auf, oft blinkend, wenn die Fehlz\u00fcndung stark genug ist, um den Katalysator potenziell zu besch\u00e4digen.",
+      "es": "El c\u00f3digo P0306 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n de fallo de encendido espec\u00edficamente en el cilindro #6. Un fallo de encendido ocurre cuando un cilindro del motor no logra encender correctamente la mezcla de aire/combustible, lo que lleva a una p\u00e9rdida de potencia, un funcionamiento irregular y un aumento de las emisiones. El PCM monitorea las fluctuaciones de la velocidad del cig\u00fce\u00f1al y los niveles de ox\u00edgeno de los gases de escape para detectar estos eventos. Si las fluctuaciones superan un umbral calibrado para el cilindro 6, se establece el c\u00f3digo P0306 y la luz de \"Check Engine\" (CEL) se iluminar\u00e1, a menudo parpadeando si el fallo de encendido es lo suficientemente grave como para da\u00f1ar potencialmente el catalizador.",
+      "fr": "Le code P0306 signifie que le Module de Commande du Groupe Motopropulseur (PCM) a identifi\u00e9 un rat\u00e9 d'allumage sp\u00e9cifiquement dans le cylindre n\u00b06. Un rat\u00e9 d'allumage se produit lorsqu'un cylindre du moteur ne parvient pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une perte de puissance, un fonctionnement irr\u00e9gulier et une augmentation des \u00e9missions. Le PCM surveille les fluctuations de la vitesse du vilebrequin et les niveaux d'oxyg\u00e8ne des gaz d'\u00e9chappement pour d\u00e9tecter ces \u00e9v\u00e9nements. Si les fluctuations d\u00e9passent un seuil calibr\u00e9 pour le cylindre 6, le code P0306 est d\u00e9fini et le t\u00e9moin de v\u00e9rification du moteur (CEL) s'allume, souvent en clignotant si le rat\u00e9 est suffisamment grave pour potentiellement endommager le convertisseur catalytique."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39507,7 +39519,95 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "1. Verify Code and Check for Other Codes: Use an OBD-II scanner to confirm P0306 and check for any other related codes (e.g., fuel trim codes, sensor codes) that might point to a broader issue. Record freeze frame data.",
+        "2. Inspect Ignition System Components for Cylinder 6: Visually inspect the ignition coil, spark plug wire (if applicable), and spark plug for cylinder 6. Look for signs of damage, carbon tracking, cracks, or corrosion. Remove the spark plug to check its condition (fouling, gap, wear). Consider swapping the coil and/or spark plug with an adjacent cylinder (e.g., cylinder 5) to see if the misfire moves.",
+        "3. Check Fuel Delivery to Cylinder 6: Perform a fuel injector balance test or listen to the injector with a stethoscope to ensure it's clicking. Check the fuel injector's electrical connector and wiring for damage. If possible, swap the injector with an adjacent cylinder to see if the misfire follows.",
+        "4. Perform Compression and Leak-Down Test: If ignition and fuel systems check out, a mechanical issue is likely. Conduct a compression test on cylinder 6 and compare it to other cylinders. Follow up with a leak-down test to pinpoint the source of any compression loss (e.g., valves, head gasket, piston rings).",
+        "5. Inspect for Vacuum Leaks: A vacuum leak near cylinder 6's intake runner could lean out the mixture. Use a smoke machine or spray carb cleaner around the intake manifold gaskets and vacuum lines to detect leaks."
+      ],
+      "tr": [
+        "1. Kodu Do\u011frulay\u0131n ve Di\u011fer Kodlar\u0131 Kontrol Edin: P0306'y\u0131 do\u011frulamak ve daha geni\u015f bir soruna i\u015faret edebilecek di\u011fer ilgili kodlar\u0131 (\u00f6rn. yak\u0131t trim kodlar\u0131, sens\u00f6r kodlar\u0131) kontrol etmek i\u00e7in bir OBD-II taray\u0131c\u0131 kullan\u0131n. Donmu\u015f \u00e7er\u00e7eve verilerini kaydedin.",
+        "2. 6. Silindir Ate\u015fleme Sistemi Bile\u015fenlerini \u0130nceleyin: 6. silindirin ate\u015fleme bobini, buji kablosu (varsa) ve bujisini g\u00f6rsel olarak inceleyin. Hasar, karbon izleri, \u00e7atlaklar veya korozyon belirtileri aray\u0131n. Bujiyi \u00e7\u0131kararak durumunu (kirlenme, bo\u015fluk, a\u015f\u0131nma) kontrol edin. Ate\u015fleme hatas\u0131n\u0131n yer de\u011fi\u015ftirip de\u011fi\u015ftirmedi\u011fini g\u00f6rmek i\u00e7in bobini ve/veya bujiyi biti\u015fik bir silindirle (\u00f6rn. 5. silindir) de\u011fi\u015ftirmeyi d\u00fc\u015f\u00fcn\u00fcn.",
+        "3. 6. Silindire Yak\u0131t Beslemesini Kontrol Edin: Yak\u0131t enjekt\u00f6r\u00fc denge testi yap\u0131n veya enjekt\u00f6r\u00fcn t\u0131klay\u0131p t\u0131klamad\u0131\u011f\u0131n\u0131 bir stetoskopla dinleyin. Yak\u0131t enjekt\u00f6r\u00fcn\u00fcn elektrik konekt\u00f6r\u00fcn\u00fc ve kablolar\u0131n\u0131 hasar a\u00e7\u0131s\u0131ndan kontrol edin. M\u00fcmk\u00fcnse, ate\u015fleme hatas\u0131n\u0131n takip edip etmedi\u011fini g\u00f6rmek i\u00e7in enjekt\u00f6r\u00fc biti\u015fik bir silindirle de\u011fi\u015ftirin.",
+        "4. Kompresyon ve Ka\u00e7ak Testi Yap\u0131n: Ate\u015fleme ve yak\u0131t sistemleri kontrol edildiyse, mekanik bir sorun olas\u0131d\u0131r. 6. silindirde bir kompresyon testi yap\u0131n ve di\u011fer silindirlerle kar\u015f\u0131la\u015ft\u0131r\u0131n. Herhangi bir kompresyon kayb\u0131n\u0131n kayna\u011f\u0131n\u0131 (\u00f6rn. valfler, silindir kapak contas\u0131, piston segmanlar\u0131) belirlemek i\u00e7in bir ka\u00e7ak testi ile devam edin.",
+        "5. Vakum Ka\u00e7aklar\u0131n\u0131 \u0130nceleyin: 6. silindirin emme manifoldu yak\u0131n\u0131ndaki bir vakum ka\u00e7a\u011f\u0131 kar\u0131\u015f\u0131m\u0131 fakirle\u015ftirebilir. Emme manifoldu contalar\u0131 ve vakum hatlar\u0131 etraf\u0131nda ka\u00e7aklar\u0131 tespit etmek i\u00e7in bir duman makinesi veya karb\u00fcrat\u00f6r temizleyici sprey kullan\u0131n."
+      ],
+      "de": [
+        "1. Code \u00fcberpr\u00fcfen und nach weiteren Codes suchen: Verwenden Sie einen OBD-II-Scanner, um P0306 zu best\u00e4tigen und nach anderen verwandten Codes (z. B. Kraftstofftrimmcodes, Sensorkodes) zu suchen, die auf ein umfassenderes Problem hinweisen k\u00f6nnten. Freeze-Frame-Daten aufzeichnen.",
+        "2. Z\u00fcndsystemkomponenten f\u00fcr Zylinder 6 \u00fcberpr\u00fcfen: \u00dcberpr\u00fcfen Sie visuell die Z\u00fcndspule, das Z\u00fcndkabel (falls zutreffend) und die Z\u00fcndkerze f\u00fcr Zylinder 6. Suchen Sie nach Anzeichen von Besch\u00e4digungen, Kriechspuren, Rissen oder Korrosion. Entfernen Sie die Z\u00fcndkerze, um ihren Zustand (Verschmutzung, Elektrodenabstand, Verschlei\u00df) zu \u00fcberpr\u00fcfen. Erw\u00e4gen Sie, die Z\u00fcndspule und/oder Z\u00fcndkerze mit einem benachbarten Zylinder (z. B. Zylinder 5) zu tauschen, um zu sehen, ob die Fehlz\u00fcndung wandert.",
+        "3. Kraftstoffzufuhr zu Zylinder 6 pr\u00fcfen: F\u00fchren Sie einen Kraftstoffeinspritzd\u00fcsen-Balance-Test durch oder h\u00f6ren Sie mit einem Stethoskop auf die Einspritzd\u00fcse, um sicherzustellen, dass sie klickt. \u00dcberpr\u00fcfen Sie den elektrischen Anschluss und die Verkabelung der Kraftstoffeinspritzd\u00fcse auf Besch\u00e4digungen. Tauschen Sie, wenn m\u00f6glich, die Einspritzd\u00fcse mit einem benachbarten Zylinder, um zu sehen, ob die Fehlz\u00fcndung folgt.",
+        "4. Kompressions- und Lecktest durchf\u00fchren: Wenn Z\u00fcnd- und Kraftstoffsysteme in Ordnung sind, ist ein mechanisches Problem wahrscheinlich. F\u00fchren Sie einen Kompressionstest an Zylinder 6 durch und vergleichen Sie ihn mit anderen Zylindern. F\u00fchren Sie anschlie\u00dfend einen Lecktest durch, um die Ursache eines Kompressionsverlusts (z. B. Ventile, Zylinderkopfdichtung, Kolbenringe) genau zu bestimmen.",
+        "5. Auf Vakuumlecks pr\u00fcfen: Ein Vakuumleck in der N\u00e4he des Ansaugkanals von Zylinder 6 k\u00f6nnte das Gemisch abmagern. Verwenden Sie eine Nebelmaschine oder spr\u00fchen Sie Vergaserreiniger um die Ansaugkr\u00fcmmerdichtungen und Vakuumleitungen, um Lecks zu erkennen."
+      ],
+      "es": [
+        "1. Verificar el C\u00f3digo y Buscar Otros C\u00f3digos: Utilice un esc\u00e1ner OBD-II para confirmar el P0306 y buscar cualquier otro c\u00f3digo relacionado (por ejemplo, c\u00f3digos de ajuste de combustible, c\u00f3digos de sensor) que puedan indicar un problema m\u00e1s amplio. Registre los datos del cuadro congelado.",
+        "2. Inspeccionar los Componentes del Sistema de Encendido del Cilindro 6: Inspeccione visualmente la bobina de encendido, el cable de la buj\u00eda (si aplica) y la buj\u00eda del cilindro 6. Busque signos de da\u00f1o, carbonizaci\u00f3n, grietas o corrosi\u00f3n. Retire la buj\u00eda para verificar su estado (suciedad, separaci\u00f3n, desgaste). Considere intercambiar la bobina y/o la buj\u00eda con un cilindro adyacente (por ejemplo, el cilindro 5) para ver si el fallo de encendido se traslada.",
+        "3. Verificar la Entrega de Combustible al Cilindro 6: Realice una prueba de equilibrio del inyector de combustible o escuche el inyector con un estetoscopio para asegurarse de que est\u00e9 haciendo clic. Verifique el conector el\u00e9ctrico y el cableado del inyector de combustible en busca de da\u00f1os. Si es posible, intercambie el inyector con un cilindro adyacente para ver si el fallo de encendido lo sigue.",
+        "4. Realizar Pruebas de Compresi\u00f3n y Fugas: Si los sistemas de encendido y combustible est\u00e1n bien, es probable que haya un problema mec\u00e1nico. Realice una prueba de compresi\u00f3n en el cilindro 6 y comp\u00e1rela con otros cilindros. Contin\u00fae con una prueba de fugas para identificar la fuente de cualquier p\u00e9rdida de compresi\u00f3n (por ejemplo, v\u00e1lvulas, junta de culata, anillos de pist\u00f3n).",
+        "5. Inspeccionar en Busca de Fugas de Vac\u00edo: Una fuga de vac\u00edo cerca del conducto de admisi\u00f3n del cilindro 6 podr\u00eda empobrecer la mezcla. Utilice una m\u00e1quina de humo o roc\u00ede limpiador de carburador alrededor de las juntas del colector de admisi\u00f3n y las l\u00edneas de vac\u00edo para detectar fugas."
+      ],
+      "fr": [
+        "1. V\u00e9rifier le Code et Rechercher d'Autres Codes: Utilisez un scanner OBD-II pour confirmer le P0306 et v\u00e9rifier tout autre code connexe (par exemple, codes de correction de carburant, codes de capteur) qui pourrait indiquer un probl\u00e8me plus large. Enregistrez les donn\u00e9es d'arr\u00eat sur image.",
+        "2. Inspecter les Composants du Syst\u00e8me d'Allumage du Cylindre 6: Inspectez visuellement la bobine d'allumage, le fil de bougie (le cas \u00e9ch\u00e9ant) et la bougie d'allumage du cylindre 6. Recherchez des signes de dommages, de tra\u00e7age de carbone, de fissures ou de corrosion. Retirez la bougie pour v\u00e9rifier son \u00e9tat (encrassement, \u00e9cartement, usure). Envisagez d'\u00e9changer la bobine et/ou la bougie avec un cylindre adjacent (par exemple, le cylindre 5) pour voir si le rat\u00e9 se d\u00e9place.",
+        "3. V\u00e9rifier l'Alimentation en Carburant du Cylindre 6: Effectuez un test d'\u00e9quilibre des injecteurs de carburant ou \u00e9coutez l'injecteur avec un st\u00e9thoscope pour vous assurer qu'il clique. V\u00e9rifiez le connecteur \u00e9lectrique et le c\u00e2blage de l'injecteur de carburant pour d\u00e9tecter tout dommage. Si possible, \u00e9changez l'injecteur avec un cylindre adjacent pour voir si le rat\u00e9 suit.",
+        "4. Effectuer un Test de Compression et de Fuite: Si les syst\u00e8mes d'allumage et de carburant sont en bon \u00e9tat, un probl\u00e8me m\u00e9canique est probable. Effectuez un test de compression sur le cylindre 6 et comparez-le aux autres cylindres. Poursuivez avec un test de fuite pour localiser la source de toute perte de compression (par exemple, soupapes, joint de culasse, segments de piston).",
+        "5. Inspecter les Fuites de Vide: Une fuite de vide pr\u00e8s du conduit d'admission du cylindre 6 pourrait appauvrir le m\u00e9lange. Utilisez une machine \u00e0 fum\u00e9e ou vaporisez du nettoyant carburateur autour des joints du collecteur d'admission et des conduites de vide pour d\u00e9tecter les fuites."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the spark plug for cylinder 6.",
+        "Replace the ignition coil (and/or spark plug wire) for cylinder 6.",
+        "Replace or clean the fuel injector for cylinder 6.",
+        "Repair vacuum leaks affecting cylinder 6.",
+        "Address internal engine issues (e.g., valve repair, head gasket replacement, piston ring replacement) if mechanical tests indicate."
+      ],
+      "tr": [
+        "6. silindirin bujisini de\u011fi\u015ftirin.",
+        "6. silindirin ate\u015fleme bobinini (ve/veya buji kablosunu) de\u011fi\u015ftirin.",
+        "6. silindirin yak\u0131t enjekt\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin veya temizleyin.",
+        "6. silindiri etkileyen vakum ka\u00e7aklar\u0131n\u0131 onar\u0131n.",
+        "Mekanik testler g\u00f6steriyorsa, dahili motor sorunlar\u0131n\u0131 giderin (\u00f6rn. valf onar\u0131m\u0131, silindir kapak contas\u0131 de\u011fi\u015fimi, piston segman\u0131 de\u011fi\u015fimi)."
+      ],
+      "de": [
+        "Z\u00fcndkerze f\u00fcr Zylinder 6 ersetzen.",
+        "Z\u00fcndspule (und/oder Z\u00fcndkabel) f\u00fcr Zylinder 6 ersetzen.",
+        "Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 6 ersetzen oder reinigen.",
+        "Vakuumlecks beheben, die Zylinder 6 betreffen.",
+        "Interne Motorprobleme beheben (z. B. Ventilreparatur, Zylinderkopfdichtungswechsel, Kolbenringwechsel), falls mechanische Tests dies anzeigen."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda del cilindro 6.",
+        "Reemplazar la bobina de encendido (y/o el cable de la buj\u00eda) del cilindro 6.",
+        "Reemplazar o limpiar el inyector de combustible del cilindro 6.",
+        "Reparar las fugas de vac\u00edo que afectan al cilindro 6.",
+        "Abordar problemas internos del motor (por ejemplo, reparaci\u00f3n de v\u00e1lvulas, reemplazo de la junta de culata, reemplazo de anillos de pist\u00f3n) si las pruebas mec\u00e1nicas lo indican."
+      ],
+      "fr": [
+        "Remplacer la bougie d'allumage du cylindre 6.",
+        "Remplacer la bobine d'allumage (et/ou le fil de bougie) du cylindre 6.",
+        "Remplacer ou nettoyer l'injecteur de carburant du cylindre 6.",
+        "R\u00e9parer les fuites de vide affectant le cylindre 6.",
+        "R\u00e9soudre les probl\u00e8mes internes du moteur (par exemple, r\u00e9paration de soupapes, remplacement du joint de culasse, remplacement des segments de piston) si les tests m\u00e9caniques l'indiquent."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0306 code is generally not recommended, especially if the Check Engine Light is flashing. A flashing light indicates a severe misfire that is actively dumping unburnt fuel into the exhaust, which can rapidly overheat and permanently damage the catalytic converter, leading to a very expensive repair. Continuous driving can also lead to reduced engine power, rough idling, poor fuel economy, and potential further engine damage. It's best to diagnose and repair the issue promptly.",
+        "tr": "P0306 koduyla ara\u00e7 kullanmak genellikle tavsiye edilmez, \u00f6zellikle Motor Ar\u0131za Lambas\u0131 yan\u0131p s\u00f6n\u00fcyorsa. Yan\u0131p s\u00f6nen bir \u0131\u015f\u0131k, egzoza yanmam\u0131\u015f yak\u0131t\u0131 aktif olarak bo\u015faltan ciddi bir ate\u015fleme hatas\u0131n\u0131 g\u00f6sterir ve bu durum katalitik konvert\u00f6r\u00fc h\u0131zla a\u015f\u0131r\u0131 \u0131s\u0131t\u0131p kal\u0131c\u0131 olarak hasar verebilir, bu da \u00e7ok pahal\u0131 bir onar\u0131ma yol a\u00e7ar. S\u00fcrekli s\u00fcr\u00fc\u015f ayr\u0131ca motor g\u00fcc\u00fcnde azalmaya, d\u00fczensiz r\u00f6lantiye, k\u00f6t\u00fc yak\u0131t ekonomisine ve potansiyel olarak daha fazla motor hasar\u0131na neden olabilir. Sorunu derhal te\u015fhis edip onarmak en iyisidir.",
+        "de": "Das Fahren mit einem P0306-Code wird im Allgemeinen nicht empfohlen, insbesondere wenn die Motorkontrollleuchte blinkt. Ein blinkendes Licht weist auf eine schwere Fehlz\u00fcndung hin, die aktiv unverbrannten Kraftstoff in den Auspuff leitet, was den Katalysator schnell \u00fcberhitzen und dauerhaft besch\u00e4digen kann, was zu einer sehr teuren Reparatur f\u00fchrt. Kontinuierliches Fahren kann auch zu verminderter Motorleistung, unruhigem Leerlauf, schlechtem Kraftstoffverbrauch und potenziellen weiteren Motorsch\u00e4den f\u00fchren. Es ist am besten, das Problem umgehend zu diagnostizieren und zu beheben.",
+        "es": "Conducir con un c\u00f3digo P0306 generalmente no se recomienda, especialmente si la luz de \"Check Engine\" est\u00e1 parpadeando. Una luz parpadeante indica un fallo de encendido grave que est\u00e1 vertiendo activamente combustible sin quemar en el escape, lo que puede sobrecalentar r\u00e1pidamente y da\u00f1ar permanentemente el convertidor catal\u00edtico, lo que lleva a una reparaci\u00f3n muy costosa. La conducci\u00f3n continua tambi\u00e9n puede provocar una reducci\u00f3n de la potencia del motor, un ralent\u00ed irregular, un bajo consumo de combustible y posibles da\u00f1os adicionales al motor. Lo mejor es diagnosticar y reparar el problema r\u00e1pidamente.",
+        "fr": "Conduire avec un code P0306 n'est g\u00e9n\u00e9ralement pas recommand\u00e9, surtout si le t\u00e9moin de v\u00e9rification du moteur clignote. Un voyant clignotant indique un rat\u00e9 d'allumage grave qui d\u00e9verse activement du carburant non br\u00fbl\u00e9 dans l'\u00e9chappement, ce qui peut rapidement surchauffer et endommager de fa\u00e7on permanente le convertisseur catalytique, entra\u00eenant une r\u00e9paration tr\u00e8s co\u00fbteuse. Une conduite continue peut \u00e9galement entra\u00eener une r\u00e9duction de la puissance du moteur, un ralenti irr\u00e9gulier, une mauvaise \u00e9conomie de carburant et d'\u00e9ventuels dommages suppl\u00e9mentaires au moteur. Il est pr\u00e9f\u00e9rable de diagnostiquer et de r\u00e9parer le probl\u00e8me rapidement."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$10 - $350",
+      "labor": "$50 - $450"
+    }
   },
   "P0307": {
     "title": "Cylinder 7 Misfire Detected",
