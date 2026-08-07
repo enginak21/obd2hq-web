@@ -10,6 +10,7 @@ import { getLocalizedRegistryCopy, getObdGoldRegistryEntry } from '@/data/obd-re
 import { getRelatedCodes } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, isKnownCode } from '@/data/gsc-seo';
+import { getTopImpressionCodeFocus } from '@/data/top-impression-seo';
 
 type PageProps = {
   params: Promise<{
@@ -28,6 +29,9 @@ function getVehicleTargets(code: string) {
     P0216: [{ make: 'ford', model: 'fiesta' }, { make: 'ford', model: 'focus' }],
     P0203: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0103: [{ make: 'ford', model: 'focus' }, { make: 'ford', model: 'ranger' }],
+    P0257: [{ make: 'ford', model: 'f-150' }, { make: 'ford', model: 'ranger' }],
+    P0283: [{ make: 'ford', model: 'f-150' }, { make: 'ford', model: 'ranger' }],
+    P0292: [{ make: 'ford', model: 'f-150' }, { make: 'ford', model: 'ranger' }],
     P0234: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0235: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
     P0243: [{ make: 'suzuki', model: 'jimny' }, { make: 'ford', model: 'focus' }],
@@ -64,6 +68,9 @@ function getCoveredSearches(code: string, locale: string) {
     P0235: ['p0235 suzuki', 'suzuki jimny p0235', 'turbo boost sensor p0235'],
     P0243: ['p0243 suzuki', 'suzuki jimny p0243', 'wastegate solenoid p0243'],
     P0251: ['p0251 ford', 'ford focus p0251', 'injection pump metering control p0251'],
+    P0257: ['p0257', 'p0257 symptoms', 'p0257 injection pump', 'p0257 causes'],
+    P0283: ['p0283', 'p0283 symptoms', 'p0283 cylinder 8 injector', 'p0283 causes'],
+    P0292: ['p0292', 'p0292 symptoms', 'p0292 cylinder 11 injector', 'p0292 causes'],
     P0122: ['toyota/lexus error p0122', 'toyota camry p0122', 'lexus rx p0122'],
   };
   const fallback = [`${code.toLowerCase()} code`, `${code.toLowerCase()} symptoms`, `${code.toLowerCase()} causes`];
@@ -177,9 +184,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const upperCode = code.toUpperCase();
   if (!isKnownCode(upperCode)) return { title: 'Code Not Found' };
   const copy = getCodeHubCopy(locale, upperCode);
+  const topImpressionFocus = getTopImpressionCodeFocus(locale, upperCode);
   return {
-    title: fitSeoTitle(copy.title),
-    description: fitSeoDescription(copy.meta),
+    title: fitSeoTitle(topImpressionFocus ? topImpressionFocus.title : copy.title),
+    description: fitSeoDescription(topImpressionFocus ? `${topImpressionFocus.query} explained with meaning, symptoms, first checks, safe-to-drive advice, cost level and related OBD2 codes.` : copy.meta),
     alternates: getCodeHubAlternates(upperCode, locale),
   };
 }
@@ -195,6 +203,7 @@ export default async function CodeHubPage({ params }: PageProps) {
   const labels = codeHubLabels(locale);
   const tDb = await getTranslations({ locale, namespace: 'DB' });
   const registryCopy = getLocalizedRegistryCopy(locale, getObdGoldRegistryEntry(upperCode), 'OBD2', upperCode);
+  const topImpressionFocus = getTopImpressionCodeFocus(locale, upperCode);
   const rawTitle = getLocalized(rawCode.title, locale) || upperCode;
   const rawDescription = getLocalized(rawCode.description, locale) || copy.intro;
   const localizedTitle = getLocalizedCodeTitle(upperCode, locale, String(rawTitle));
@@ -308,6 +317,41 @@ export default async function CodeHubPage({ params }: PageProps) {
       </div>
 
       <section className="mx-auto max-w-6xl px-6 pt-8">
+        {topImpressionFocus && (
+          <div className="mb-6 rounded-2xl border border-emerald-300/20 bg-emerald-400/10 p-6">
+            <div className="inline-flex rounded-full border border-emerald-300/30 bg-black/20 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-emerald-100">
+              High-intent answer
+            </div>
+            <h2 className="mt-4 text-2xl font-bold text-white">{topImpressionFocus.title}</h2>
+            <p className="mt-3 max-w-4xl leading-7 text-slate-200">{topImpressionFocus.answer}</p>
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              <div className="rounded-xl bg-black/20 p-4">
+                <h2 className="text-base font-bold text-white">Severity and driving risk</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.severity}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.safeToDrive}</p>
+              </div>
+              <div className="rounded-xl bg-black/20 p-4">
+                <h2 className="text-base font-bold text-white">First checks before parts</h2>
+                <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
+                  {topImpressionFocus.firstChecks.map(item => <li key={item}>- {item}</li>)}
+                </ul>
+              </div>
+              <div className="rounded-xl bg-black/20 p-4">
+                <h2 className="text-base font-bold text-white">Do not replace first</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.doNotReplace}</p>
+                <h2 className="mt-5 text-base font-bold text-white">Cost level</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.costLevel}</p>
+              </div>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {topImpressionFocus.links.map(link => (
+                <Link key={link.href} href={link.href} className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-sm font-semibold text-emerald-50 hover:border-emerald-200/50">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-[#111827] p-6">
             <h2 className="text-2xl font-bold text-white">{upperCode} {labels.diagnosticPath}</h2>
