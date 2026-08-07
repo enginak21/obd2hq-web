@@ -39610,8 +39610,20 @@
     }
   },
   "P0307": {
-    "title": "Cylinder 7 Misfire Detected",
-    "description": "Code P0307 indicates the PCM has detected a misfire condition specifically in Cylinder 7.",
+    "title": {
+      "en": "Cylinder 7 Misfire Detected",
+      "tr": "7. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 7 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de Encendido Detectado en el Cilindro 7",
+      "fr": "Rat\u00e9 d'Allumage du Cylindre 7 D\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0307 indicates that the Powertrain Control Module (PCM) has detected a misfire condition specifically in Cylinder 7. A misfire occurs when an engine cylinder fails to properly ignite the air/fuel mixture, resulting in incomplete combustion. This can be due to issues with the ignition system (spark plug, coil, wire), the fuel delivery system (injector), or internal engine mechanical problems (compression loss). Symptoms often include a rough idle, reduced engine power, poor acceleration, increased fuel consumption, and the illumination of the Check Engine Light, which may flash if the misfire is severe enough to cause catalytic converter damage.",
+      "tr": "P0307 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) \u00f6zellikle 7. silindirde bir ate\u015fleme hatas\u0131 tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, bir motor silindirinin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi ve bunun sonucunda eksik yanma meydana gelmesi durumudur. Bu durum, ate\u015fleme sistemi (buji, bobin, kablo), yak\u0131t besleme sistemi (enjekt\u00f6r) veya dahili motor mekanik sorunlar\u0131ndan (kompresyon kayb\u0131) kaynaklanabilir. Belirtiler genellikle d\u00fczensiz r\u00f6lanti, motor g\u00fcc\u00fcnde azalma, zay\u0131f h\u0131zlanma, artan yak\u0131t t\u00fcketimi ve Katalitik Konvert\u00f6r'e zarar verecek kadar \u015fiddetliyse yan\u0131p s\u00f6nebilen Motor Ar\u0131za Lambas\u0131'n\u0131n yanmas\u0131d\u0131r.",
+      "de": "Der Code P0307 weist darauf hin, dass das Motorsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung speziell im Zylinder 7 festgestellt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein Motorzylinder das Luft-Kraftstoff-Gemisch nicht ordnungsgem\u00e4\u00df z\u00fcndet, was zu einer unvollst\u00e4ndigen Verbrennung f\u00fchrt. Dies kann auf Probleme mit dem Z\u00fcndsystem (Z\u00fcndkerze, Spule, Kabel), dem Kraftstoffversorgungssystem (Einspritzd\u00fcse) oder internen mechanischen Motorproblemen (Kompressionsverlust) zur\u00fcckzuf\u00fchren sein. Symptome sind h\u00e4ufig ein unruhiger Leerlauf, reduzierte Motorleistung, schlechte Beschleunigung, erh\u00f6hter Kraftstoffverbrauch und das Aufleuchten der Motorkontrollleuchte, die blinken kann, wenn die Fehlz\u00fcndung stark genug ist, um den Katalysator zu besch\u00e4digen.",
+      "es": "El c\u00f3digo P0307 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n de fallo de encendido espec\u00edficamente en el Cilindro 7. Un fallo de encendido ocurre cuando un cilindro del motor no logra encender correctamente la mezcla aire/combustible, lo que resulta en una combusti\u00f3n incompleta. Esto puede deberse a problemas con el sistema de encendido (buj\u00eda, bobina, cable), el sistema de suministro de combustible (inyector) o problemas mec\u00e1nicos internos del motor (p\u00e9rdida de compresi\u00f3n). Los s\u00edntomas a menudo incluyen un ralent\u00ed irregular, reducci\u00f3n de la potencia del motor, mala aceleraci\u00f3n, aumento del consumo de combustible y la iluminaci\u00f3n de la luz de 'Check Engine', que puede parpadear si el fallo de encendido es lo suficientemente grave como para causar da\u00f1os al convertidor catal\u00edtico.",
+      "fr": "Le code P0307 indique que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage sp\u00e9cifiquement dans le Cylindre 7. Un rat\u00e9 d'allumage se produit lorsqu'un cylindre du moteur ne parvient pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une combustion incompl\u00e8te. Cela peut \u00eatre d\u00fb \u00e0 des probl\u00e8mes du syst\u00e8me d'allumage (bougie, bobine, fil), du syst\u00e8me d'alimentation en carburant (injecteur) ou \u00e0 des probl\u00e8mes m\u00e9caniques internes du moteur (perte de compression). Les sympt\u00f4mes incluent souvent un ralenti irr\u00e9gulier, une puissance moteur r\u00e9duite, une mauvaise acc\u00e9l\u00e9ration, une consommation de carburant accrue et l'allumage du t\u00e9moin de v\u00e9rification du moteur, qui peut clignoter si le rat\u00e9 est suffisamment grave pour endommager le convertisseur catalytique."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39627,11 +39639,101 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "1. Verify Code and Initial Inspection: Connect an OBD-II scanner to confirm P0307 and check for any other related codes. Visually inspect the ignition coil, spark plug wire (if applicable), and fuel injector connector for Cylinder 7 for obvious damage, corrosion, or loose connections. Ensure proper cylinder numbering for your specific engine.",
+        "2. Ignition System Diagnosis: With the engine off, remove the ignition coil and spark plug from Cylinder 7. Inspect the spark plug for fouling, wear, or damage. Swap the ignition coil and spark plug with a known good, adjacent cylinder. Clear codes, start the engine, and re-scan. If the misfire moves to the swapped cylinder, replace the faulty component.",
+        "3. Fuel System Diagnosis: If the misfire remains on Cylinder 7, perform a fuel injector test. Check for injector pulse using a noid light and listen for its operation with a stethoscope. For a definitive test, swap the fuel injector from Cylinder 7 with an adjacent cylinder. Clear codes, start the engine, and re-scan. If the misfire moves, replace the faulty injector.",
+        "4. Engine Compression Check: If spark and fuel systems appear functional, perform a compression test on Cylinder 7 and compare it to the manufacturer's specifications and the readings from other cylinders. A significantly low compression reading indicates an internal engine issue (e.g., worn piston rings, bent valve, blown head gasket)."
+      ],
+      "tr": [
+        "1. Kodu Do\u011frulama ve \u0130lk \u0130nceleme: P0307 kodunu do\u011frulamak ve di\u011fer ilgili kodlar\u0131 kontrol etmek i\u00e7in bir OBD-II taray\u0131c\u0131 ba\u011flay\u0131n. 7. silindirin ate\u015fleme bobini, buji kablosu (varsa) ve yak\u0131t enjekt\u00f6r\u00fc konekt\u00f6r\u00fcnde bariz hasar, korozyon veya gev\u015fek ba\u011flant\u0131 olup olmad\u0131\u011f\u0131n\u0131 g\u00f6rsel olarak inceleyin. Motorunuzun silindir numaraland\u0131rmas\u0131n\u0131n do\u011fru oldu\u011fundan emin olun.",
+        "2. Ate\u015fleme Sistemi Te\u015fhisi: Motor kapal\u0131yken, 7. silindirden ate\u015fleme bobinini ve bujiyi \u00e7\u0131kar\u0131n. Bujiyi kirlenme, a\u015f\u0131nma veya hasar a\u00e7\u0131s\u0131ndan inceleyin. Ate\u015fleme bobinini ve bujiyi bilinen iyi, biti\u015fik bir silindirle de\u011fi\u015ftirin. Kodlar\u0131 temizleyin, motoru \u00e7al\u0131\u015ft\u0131r\u0131n ve tekrar taray\u0131n. Ate\u015fleme hatas\u0131 yer de\u011fi\u015ftiren silindire ge\u00e7erse, de\u011fi\u015ftirilen bile\u015fen ar\u0131zal\u0131d\u0131r.",
+        "3. Yak\u0131t Sistemi Te\u015fhisi: Ate\u015fleme hatas\u0131 7. silindirde kalmaya devam ederse, yak\u0131t enjekt\u00f6r\u00fc testi yap\u0131n. Enjekt\u00f6r darbesini bir noid \u0131\u015f\u0131\u011f\u0131 kullanarak kontrol edin ve bir stetoskop ile \u00e7al\u0131\u015fmas\u0131n\u0131 dinleyin. Kesin bir test i\u00e7in, 7. silindirden yak\u0131t enjekt\u00f6r\u00fcn\u00fc biti\u015fik bir silindirle de\u011fi\u015ftirin. Kodlar\u0131 temizleyin, motoru \u00e7al\u0131\u015ft\u0131r\u0131n ve tekrar taray\u0131n. Ate\u015fleme hatas\u0131 yer de\u011fi\u015ftirirse, ar\u0131zal\u0131 enjekt\u00f6r\u00fc de\u011fi\u015ftirin.",
+        "4. Motor Kompresyon Kontrol\u00fc: Ate\u015fleme ve yak\u0131t sistemleri i\u015flevsel g\u00f6r\u00fcn\u00fcyorsa, 7. silindirde bir kompresyon testi yap\u0131n ve bunu \u00fcreticinin spesifikasyonlar\u0131 ve di\u011fer silindirlerden al\u0131nan okumalarla kar\u015f\u0131la\u015ft\u0131r\u0131n. \u00d6nemli \u00f6l\u00e7\u00fcde d\u00fc\u015f\u00fck bir kompresyon okumas\u0131, dahili bir motor sorununu (\u00f6rn. a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, e\u011fik valf, yanm\u0131\u015f silindir kapak contas\u0131) g\u00f6sterir."
+      ],
+      "de": [
+        "1. Code Best\u00e4tigen und Erstinspektion: Schlie\u00dfen Sie einen OBD-II-Scanner an, um P0307 zu best\u00e4tigen und auf andere verwandte Codes zu pr\u00fcfen. \u00dcberpr\u00fcfen Sie visuell die Z\u00fcndspule, das Z\u00fcndkabel (falls zutreffend) und den Kraftstoffeinspritzd\u00fcsenstecker f\u00fcr Zylinder 7 auf offensichtliche Sch\u00e4den, Korrosion oder lose Verbindungen. Stellen Sie die korrekte Zylinderreihenfolge f\u00fcr Ihren spezifischen Motor sicher.",
+        "2. Z\u00fcndsystemdiagnose: Bei ausgeschaltetem Motor die Z\u00fcndspule und Z\u00fcndkerze von Zylinder 7 entfernen. \u00dcberpr\u00fcfen Sie die Z\u00fcndkerze auf Verschmutzung, Verschlei\u00df oder Besch\u00e4digung. Tauschen Sie die Z\u00fcndspule und Z\u00fcndkerze mit einem bekannterma\u00dfen guten, benachbarten Zylinder aus. L\u00f6schen Sie die Codes, starten Sie den Motor und scannen Sie erneut. Wenn die Fehlz\u00fcndung auf den getauschten Zylinder wandert, ist das getauschte Bauteil defekt.",
+        "3. Kraftstoffsystemdiagnose: Bleibt die Fehlz\u00fcndung im Zylinder 7, f\u00fchren Sie einen Kraftstoffeinspritzd\u00fcsentest durch. \u00dcberpr\u00fcfen Sie den Einspritzimpuls mit einer Noid-Leuchte und h\u00f6ren Sie mit einem Stethoskop auf dessen Funktion. F\u00fcr einen definitiven Test tauschen Sie die Kraftstoffeinspritzd\u00fcse von Zylinder 7 mit einer benachbarten D\u00fcse aus. L\u00f6schen Sie die Codes, starten Sie den Motor und scannen Sie erneut. Wenn die Fehlz\u00fcndung wandert, ersetzen Sie die defekte Einspritzd\u00fcse.",
+        "4. Motorkompression pr\u00fcfen: Wenn Z\u00fcnd- und Kraftstoffsysteme funktionsf\u00e4hig erscheinen, f\u00fchren Sie einen Kompressionstest an Zylinder 7 durch und vergleichen Sie ihn mit den Herstellerspezifikationen und den Messwerten anderer Zylinder. Ein deutlich niedriger Kompressionswert deutet auf ein internes Motorproblem hin (z. B. verschlissene Kolbenringe, verbogenes Ventil, durchgebrannte Zylinderkopfdichtung)."
+      ],
+      "es": [
+        "1. Verificar C\u00f3digo e Inspecci\u00f3n Inicial: Conecte un esc\u00e1ner OBD-II para confirmar P0307 y verificar otros c\u00f3digos relacionados. Inspeccione visualmente la bobina de encendido, el cable de la buj\u00eda (si aplica) y el conector del inyector de combustible del Cilindro 7 en busca de da\u00f1os obvios, corrosi\u00f3n o conexiones sueltas. Aseg\u00farese de la numeraci\u00f3n correcta de los cilindros para su motor espec\u00edfico.",
+        "2. Diagn\u00f3stico del Sistema de Encendido: Con el motor apagado, retire la bobina de encendido y la buj\u00eda del Cilindro 7. Inspeccione la buj\u00eda en busca de suciedad, desgaste o da\u00f1os. Intercambie la bobina de encendido y la buj\u00eda con un cilindro adyacente que se sepa que funciona correctamente. Borre los c\u00f3digos, arranque el motor y vuelva a escanear. Si el fallo de encendido se traslada al cilindro intercambiado, el componente intercambiado est\u00e1 defectuoso.",
+        "3. Diagn\u00f3stico del Sistema de Combustible: Si el fallo de encendido permanece en el Cilindro 7, realice una prueba del inyector de combustible. Verifique el pulso del inyector usando una luz estrobosc\u00f3pica (noid light) y escuche su funcionamiento con un estetoscopio. Para una prueba definitiva, intercambie el inyector de combustible del Cilindro 7 con un cilindro adyacente. Borre los c\u00f3digos, arranque el motor y vuelva a escanear. Si el fallo de encendido se traslada, reemplace el inyector defectuoso.",
+        "4. Verificaci\u00f3n de Compresi\u00f3n del Motor: Si los sistemas de encendido y combustible parecen funcionar, realice una prueba de compresi\u00f3n en el Cilindro 7 y comp\u00e1rela con las especificaciones del fabricante y las lecturas de otros cilindros. Una lectura de compresi\u00f3n significativamente baja indica un problema interno del motor (por ejemplo, anillos de pist\u00f3n desgastados, v\u00e1lvula doblada, junta de culata quemada)."
+      ],
+      "fr": [
+        "1. V\u00e9rification du Code et Inspection Initiale: Connectez un scanner OBD-II pour confirmer le code P0307 et v\u00e9rifier tout autre code connexe. Inspectez visuellement la bobine d'allumage, le fil de bougie (le cas \u00e9ch\u00e9ant) et le connecteur de l'injecteur de carburant du Cylindre 7 pour d\u00e9tecter tout dommage \u00e9vident, corrosion ou connexion l\u00e2che. Assurez-vous de la num\u00e9rotation correcte des cylindres pour votre moteur sp\u00e9cifique.",
+        "2. Diagnostic du Syst\u00e8me d'Allumage: Moteur \u00e9teint, retirez la bobine d'allumage et la bougie du Cylindre 7. Inspectez la bougie pour d\u00e9tecter l'encrassement, l'usure ou les dommages. \u00c9changez la bobine d'allumage et la bougie avec un cylindre adjacent dont le bon fonctionnement est connu. Effacez les codes, d\u00e9marrez le moteur et re-scannez. Si le rat\u00e9 d'allumage se d\u00e9place vers le cylindre \u00e9chang\u00e9, le composant \u00e9chang\u00e9 est d\u00e9fectueux.",
+        "3. Diagnostic du Syst\u00e8me de Carburant: Si le rat\u00e9 d'allumage persiste sur le Cylindre 7, effectuez un test de l'injecteur de carburant. V\u00e9rifiez l'impulsion de l'injecteur \u00e0 l'aide d'une lampe stroboscopique (noid light) et \u00e9coutez son fonctionnement avec un st\u00e9thoscope. Pour un test d\u00e9finitif, \u00e9changez l'injecteur de carburant du Cylindre 7 avec un cylindre adjacent. Effacez les codes, d\u00e9marrez le moteur et re-scannez. Si le rat\u00e9 d'allumage se d\u00e9place, remplacez l'injecteur d\u00e9fectueux.",
+        "4. V\u00e9rification de la Compression Moteur: Si les syst\u00e8mes d'allumage et de carburant semblent fonctionnels, effectuez un test de compression sur le Cylindre 7 et comparez-le aux sp\u00e9cifications du fabricant et aux lectures des autres cylindres. Une lecture de compression significativement basse indique un probl\u00e8me moteur interne (par exemple, segments de piston us\u00e9s, soupape tordue, joint de culasse souffl\u00e9)."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty spark plug or spark plug wire for Cylinder 7.",
+        "Replace the defective ignition coil for Cylinder 7.",
+        "Replace the clogged or malfunctioning fuel injector for Cylinder 7.",
+        "Repair internal engine issues (e.g., valve repair, head gasket replacement, piston ring replacement) if low compression is detected."
+      ],
+      "tr": [
+        "7. silindirin ar\u0131zal\u0131 bujisini veya buji kablosunu de\u011fi\u015ftirin.",
+        "7. silindirin ar\u0131zal\u0131 ate\u015fleme bobinini de\u011fi\u015ftirin.",
+        "7. silindirin t\u0131kanm\u0131\u015f veya ar\u0131zal\u0131 yak\u0131t enjekt\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin.",
+        "D\u00fc\u015f\u00fck kompresyon tespit edilirse dahili motor sorunlar\u0131n\u0131 onar\u0131n (\u00f6rn. valf onar\u0131m\u0131, silindir kapak contas\u0131 de\u011fi\u015fimi, piston segman\u0131 de\u011fi\u015fimi)."
+      ],
+      "de": [
+        "Ersetzen Sie die defekte Z\u00fcndkerze oder das Z\u00fcndkabel f\u00fcr Zylinder 7.",
+        "Ersetzen Sie die defekte Z\u00fcndspule f\u00fcr Zylinder 7.",
+        "Ersetzen Sie die verstopfte oder fehlerhafte Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 7.",
+        "Beheben Sie interne Motorprobleme (z. B. Ventilreparatur, Zylinderkopfdichtungswechsel, Kolbenringwechsel), falls eine niedrige Kompression festgestellt wird."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda o el cable de la buj\u00eda defectuosos del Cilindro 7.",
+        "Reemplazar la bobina de encendido defectuosa del Cilindro 7.",
+        "Reemplazar el inyector de combustible obstruido o defectuoso del Cilindro 7.",
+        "Reparar problemas internos del motor (por ejemplo, reparaci\u00f3n de v\u00e1lvulas, reemplazo de la junta de culata, reemplazo de anillos de pist\u00f3n) si se detecta baja compresi\u00f3n."
+      ],
+      "fr": [
+        "Remplacer la bougie d'allumage ou le fil de bougie d\u00e9fectueux du Cylindre 7.",
+        "Remplacer la bobine d'allumage d\u00e9fectueuse du Cylindre 7.",
+        "Remplacer l'injecteur de carburant encrass\u00e9 ou d\u00e9fectueux du Cylindre 7.",
+        "R\u00e9parer les probl\u00e8mes internes du moteur (par exemple, r\u00e9paration de soupapes, remplacement du joint de culasse, remplacement des segments de piston) si une faible compression est d\u00e9tect\u00e9e."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0307 code should be approached with caution. While a single cylinder misfire might not immediately immobilize the vehicle, it significantly reduces engine power and efficiency, making acceleration and maintaining speed difficult, especially in critical driving situations. More importantly, unburnt fuel entering the exhaust system can rapidly overheat and severely damage the catalytic converter, leading to very costly repairs. It is advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe vehicle operation.",
+        "tr": "P0307 koduyla ara\u00e7 kullanmaya dikkatli yakla\u015f\u0131lmal\u0131d\u0131r. Tek bir silindirdeki ate\u015fleme hatas\u0131 arac\u0131 hemen hareketsiz hale getirmese de, motor g\u00fcc\u00fcn\u00fc ve verimlili\u011fini \u00f6nemli \u00f6l\u00e7\u00fcde azalt\u0131r, bu da \u00f6zellikle kritik s\u00fcr\u00fc\u015f durumlar\u0131nda h\u0131zlanmay\u0131 ve h\u0131z\u0131 korumay\u0131 zorla\u015ft\u0131r\u0131r. Daha da \u00f6nemlisi, yanmam\u0131\u015f yak\u0131t\u0131n egzoz sistemine girmesi katalitik konvert\u00f6r\u00fc h\u0131zla a\u015f\u0131r\u0131 \u0131s\u0131tabilir ve ciddi \u015fekilde zarar verebilir, bu da \u00e7ok maliyetli onar\u0131mlara yol a\u00e7ar. Daha fazla hasar\u0131 \u00f6nlemek ve g\u00fcvenli ara\u00e7 kullan\u0131m\u0131n\u0131 sa\u011flamak i\u00e7in bu sorunu derhal te\u015fhis etmek ve onarmak tavsiye edilir.",
+        "de": "Das Fahren mit einem P0307-Code sollte mit Vorsicht erfolgen. Obwohl eine Fehlz\u00fcndung in einem einzelnen Zylinder das Fahrzeug nicht sofort au\u00dfer Gefecht setzen mag, reduziert sie die Motorleistung und -effizienz erheblich, was das Beschleunigen und Halten der Geschwindigkeit erschwert, insbesondere in kritischen Fahrsituationen. Noch wichtiger ist, dass unverbrannter Kraftstoff, der in das Abgassystem gelangt, den Katalysator schnell \u00fcberhitzen und schwer besch\u00e4digen kann, was zu sehr kostspieligen Reparaturen f\u00fchrt. Es ist ratsam, dieses Problem umgehend zu diagnostizieren und zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con un c\u00f3digo P0307 debe abordarse con precauci\u00f3n. Si bien un fallo de encendido en un solo cilindro podr\u00eda no inmovilizar el veh\u00edculo de inmediato, reduce significativamente la potencia y eficiencia del motor, dificultando la aceleraci\u00f3n y el mantenimiento de la velocidad, especialmente en situaciones de conducci\u00f3n cr\u00edticas. M\u00e1s importante a\u00fan, el combustible no quemado que ingresa al sistema de escape puede sobrecalentar r\u00e1pidamente y da\u00f1ar gravemente el convertidor catal\u00edtico, lo que conlleva reparaciones muy costosas. Es aconsejable diagnosticar y reparar este problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro del veh\u00edculo.",
+        "fr": "Conduire avec un code P0307 doit \u00eatre abord\u00e9 avec prudence. Bien qu'un rat\u00e9 d'allumage sur un seul cylindre ne puisse pas immobiliser imm\u00e9diatement le v\u00e9hicule, il r\u00e9duit consid\u00e9rablement la puissance et l'efficacit\u00e9 du moteur, rendant l'acc\u00e9l\u00e9ration et le maintien de la vitesse difficiles, surtout dans des situations de conduite critiques. Plus important encore, le carburant non br\u00fbl\u00e9 qui p\u00e9n\u00e8tre dans le syst\u00e8me d'\u00e9chappement peut rapidement surchauffer et endommager gravement le convertisseur catalytique, entra\u00eenant des r\u00e9parations tr\u00e8s co\u00fbteuses. Il est conseill\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$15 - $400",
+      "labor": "$75 - $600"
+    }
   },
   "P0308": {
-    "title": "Cylinder 8 Misfire Detected",
-    "description": "Code P0308 indicates the PCM has detected a misfire condition specifically in Cylinder 8.",
+    "title": {
+      "en": "Cylinder 8 Misfire Detected",
+      "tr": "8. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 8 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 8",
+      "fr": "Rat\u00e9 d'allumage du cylindre 8 d\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0308 signifies that the Powertrain Control Module (PCM) has identified a misfire event specifically occurring in cylinder #8. A misfire happens when one of the engine's cylinders fails to properly ignite the air/fuel mixture, leading to a loss of power, rough running, and increased emissions. The PCM monitors crankshaft speed fluctuations and exhaust gas composition to detect these irregularities. This code points directly to an issue with the combustion process in cylinder 8, which could stem from problems with the ignition system, fuel delivery, or engine mechanical integrity.",
+      "tr": "P0308 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) \u00f6zellikle 8 numaral\u0131 silindirde bir ate\u015fleme hatas\u0131 durumu tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, motorun silindirlerinden birinin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi durumunda meydana gelir ve bu da g\u00fc\u00e7 kayb\u0131na, d\u00fczensiz \u00e7al\u0131\u015fmaya ve artan emisyonlara yol a\u00e7ar. PCM, bu d\u00fczensizlikleri tespit etmek i\u00e7in krank mili h\u0131z\u0131 dalgalanmalar\u0131n\u0131 ve egzoz gaz\u0131 bile\u015fimini izler. Bu kod, do\u011frudan 8. silindirdeki yanma s\u00fcrecinde bir soruna i\u015faret eder; bu sorun ate\u015fleme sistemi, yak\u0131t da\u011f\u0131t\u0131m\u0131 veya motorun mekanik b\u00fct\u00fcnl\u00fc\u011f\u00fcndeki problemlerden kaynaklanabilir.",
+      "de": "Der Code P0308 bedeutet, dass das Antriebsstrangsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung speziell im Zylinder Nr. 8 festgestellt hat. Eine Fehlz\u00fcndung tritt auf, wenn einer der Motorzylinder das Luft-Kraftstoff-Gemisch nicht richtig z\u00fcndet, was zu Leistungsverlust, unrundem Motorlauf und erh\u00f6hten Emissionen f\u00fchrt. Das PCM \u00fcberwacht Kurbelwellendrehzahlschwankungen und die Abgaszusammensetzung, um diese Unregelm\u00e4\u00dfigkeiten zu erkennen. Dieser Code weist direkt auf ein Problem mit dem Verbrennungsprozess in Zylinder 8 hin, das auf Probleme mit dem Z\u00fcndsystem, der Kraftstoffzufuhr oder der mechanischen Integrit\u00e4t des Motors zur\u00fcckzuf\u00fchren sein k\u00f6nnte.",
+      "es": "El c\u00f3digo P0308 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n de fallo de encendido espec\u00edficamente en el cilindro #8. Un fallo de encendido ocurre cuando uno de los cilindros del motor no logra encender correctamente la mezcla aire/combustible, lo que lleva a una p\u00e9rdida de potencia, un funcionamiento irregular y un aumento de las emisiones. El PCM monitorea las fluctuaciones de la velocidad del cig\u00fce\u00f1al y la composici\u00f3n de los gases de escape para detectar estas irregularidades. Este c\u00f3digo apunta directamente a un problema con el proceso de combusti\u00f3n en el cilindro 8, que podr\u00eda deberse a problemas con el sistema de encendido, la entrega de combustible o la integridad mec\u00e1nica del motor.",
+      "fr": "Le code P0308 signifie que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage sp\u00e9cifiquement dans le cylindre n\u00b08. Un rat\u00e9 d'allumage se produit lorsqu'un des cylindres du moteur ne parvient pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une perte de puissance, un fonctionnement irr\u00e9gulier et une augmentation des \u00e9missions. Le PCM surveille les fluctuations de la vitesse du vilebrequin et la composition des gaz d'\u00e9chappement pour d\u00e9tecter ces irr\u00e9gularit\u00e9s. Ce code pointe directement vers un probl\u00e8me avec le processus de combustion dans le cylindre 8, qui pourrait provenir de probl\u00e8mes avec le syst\u00e8me d'allumage, l'alimentation en carburant ou l'int\u00e9grit\u00e9 m\u00e9canique du moteur."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39647,11 +39749,101 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Verify Code and Inspect Ignition System: Begin by confirming P0308 with a scan tool. Visually inspect the ignition coil, spark plug wire (if applicable), and spark plug for cylinder 8. Look for signs of damage, arcing, or corrosion. If possible, swap the cylinder 8 ignition coil and spark plug with a known good cylinder (e.g., cylinder 6 or 7) and retest. If the misfire moves to the new cylinder, the swapped component is faulty.",
+        "Check Fuel Delivery: With the engine running, use a stethoscope to listen to the fuel injector for cylinder 8 to ensure it's clicking, indicating it's firing. If no click, or a weak click, consider a faulty injector. Perform a fuel pressure test to ensure adequate fuel supply to the rail. If possible, swap the cylinder 8 fuel injector with another cylinder and retest to see if the misfire follows the injector.",
+        "Perform Compression Test: If ignition and fuel systems check out, a mechanical issue is likely. Perform a dry and wet compression test on cylinder 8 and compare it to adjacent cylinders. Low compression could indicate issues with piston rings, valves, or head gasket. A cylinder leak-down test can further pinpoint the exact mechanical fault.",
+        "Inspect Wiring and PCM: If all previous steps yield no definitive fault, carefully inspect the wiring harness and connectors for cylinder 8's ignition coil and fuel injector for any damage, corrosion, or poor connections. As a last resort, and only after ruling out all other possibilities, consider a PCM fault, though this is rare for a single-cylinder misfire."
+      ],
+      "tr": [
+        "Kodu Do\u011frula ve Ate\u015fleme Sistemini \u0130ncele: P0308 kodunu bir tarama arac\u0131yla do\u011frulayarak ba\u015flay\u0131n. 8. silindirin ate\u015fleme bobinini, buji kablosunu (varsa) ve bujiyi g\u00f6rsel olarak inceleyin. Hasar, ark veya korozyon belirtileri aray\u0131n. M\u00fcmk\u00fcnse, 8. silindir ate\u015fleme bobinini ve bujiyi bilinen iyi bir silindirle (\u00f6rn. 6. veya 7. silindir) de\u011fi\u015ftirin ve tekrar test edin. Ate\u015fleme hatas\u0131 yeni silindire ge\u00e7erse, de\u011fi\u015ftirilen bile\u015fen ar\u0131zal\u0131d\u0131r.",
+        "Yak\u0131t Da\u011f\u0131t\u0131m\u0131n\u0131 Kontrol Et: Motor \u00e7al\u0131\u015f\u0131rken, 8. silindirin yak\u0131t enjekt\u00f6r\u00fcn\u00fc dinlemek i\u00e7in bir stetoskop kullan\u0131n ve t\u0131k\u0131rt\u0131 sesi gelip gelmedi\u011fini, yani ate\u015fleme yap\u0131p yapmad\u0131\u011f\u0131n\u0131 kontrol edin. T\u0131k\u0131rt\u0131 yoksa veya zay\u0131fsa, ar\u0131zal\u0131 bir enjekt\u00f6r d\u00fc\u015f\u00fcn\u00fcn. Yak\u0131t ray\u0131na yeterli yak\u0131t beslemesi oldu\u011fundan emin olmak i\u00e7in bir yak\u0131t bas\u0131nc\u0131 testi yap\u0131n. M\u00fcmk\u00fcnse, 8. silindir yak\u0131t enjekt\u00f6r\u00fcn\u00fc ba\u015fka bir silindirle de\u011fi\u015ftirin ve ate\u015fleme hatas\u0131n\u0131n enjekt\u00f6r\u00fc takip edip etmedi\u011fini g\u00f6rmek i\u00e7in tekrar test edin.",
+        "Kompresyon Testi Yap: Ate\u015fleme ve yak\u0131t sistemleri kontrol edildiyse, mekanik bir sorun olas\u0131d\u0131r. 8. silindirde kuru ve \u0131slak kompresyon testi yap\u0131n ve biti\u015fik silindirlerle kar\u015f\u0131la\u015ft\u0131r\u0131n. D\u00fc\u015f\u00fck kompresyon, piston segmanlar\u0131, valfler veya silindir kapak contas\u0131 ile ilgili sorunlar\u0131 g\u00f6sterebilir. Bir silindir ka\u00e7ak testi, tam mekanik ar\u0131zay\u0131 daha da belirleyebilir.",
+        "Kablolama ve PCM'yi \u0130ncele: \u00d6nceki t\u00fcm ad\u0131mlar kesin bir ar\u0131za vermezse, 8. silindirin ate\u015fleme bobini ve yak\u0131t enjekt\u00f6r\u00fc i\u00e7in kablo demetini ve konekt\u00f6rleri herhangi bir hasar, korozyon veya zay\u0131f ba\u011flant\u0131 a\u00e7\u0131s\u0131ndan dikkatlice inceleyin. Son \u00e7are olarak ve di\u011fer t\u00fcm olas\u0131l\u0131klar\u0131 eledikten sonra, bir PCM ar\u0131zas\u0131n\u0131 d\u00fc\u015f\u00fcn\u00fcn, ancak tek silindirli bir ate\u015fleme hatas\u0131 i\u00e7in bu nadirdir."
+      ],
+      "de": [
+        "Code \u00fcberpr\u00fcfen und Z\u00fcndsystem inspizieren: Beginnen Sie mit der Best\u00e4tigung des P0308-Codes mit einem Diagnoseger\u00e4t. \u00dcberpr\u00fcfen Sie visuell die Z\u00fcndspule, das Z\u00fcndkabel (falls zutreffend) und die Z\u00fcndkerze f\u00fcr Zylinder 8. Suchen Sie nach Anzeichen von Besch\u00e4digung, \u00dcberschl\u00e4gen oder Korrosion. Tauschen Sie, wenn m\u00f6glich, die Z\u00fcndspule und die Z\u00fcndkerze von Zylinder 8 mit einem bekannterma\u00dfen funktionierenden Zylinder (z. B. Zylinder 6 oder 7) aus und testen Sie erneut. Wenn die Fehlz\u00fcndung auf den neuen Zylinder wandert, ist die ausgetauschte Komponente defekt.",
+        "Kraftstoffzufuhr pr\u00fcfen: H\u00f6ren Sie bei laufendem Motor mit einem Stethoskop auf das Kraftstoffeinspritzventil f\u00fcr Zylinder 8, um sicherzustellen, dass es klickt, was auf eine Funktion hinweist. Wenn kein Klicken oder ein schwaches Klicken zu h\u00f6ren ist, k\u00f6nnte ein defektes Einspritzventil vorliegen. F\u00fchren Sie einen Kraftstoffdrucktest durch, um eine ausreichende Kraftstoffversorgung zur Rail sicherzustellen. Tauschen Sie, wenn m\u00f6glich, das Kraftstoffeinspritzventil von Zylinder 8 mit einem anderen Zylinder aus und testen Sie erneut, um zu sehen, ob die Fehlz\u00fcndung dem Einspritzventil folgt.",
+        "Kompressionspr\u00fcfung durchf\u00fchren: Wenn Z\u00fcnd- und Kraftstoffsysteme in Ordnung sind, ist ein mechanisches Problem wahrscheinlich. F\u00fchren Sie eine trockene und nasse Kompressionspr\u00fcfung an Zylinder 8 durch und vergleichen Sie die Werte mit den benachbarten Zylindern. Eine niedrige Kompression k\u00f6nnte auf Probleme mit Kolbenringen, Ventilen oder der Zylinderkopfdichtung hinweisen. Ein Zylinder-Lecktest kann den genauen mechanischen Fehler weiter eingrenzen.",
+        "Verkabelung und PCM inspizieren: Wenn alle vorherigen Schritte keinen eindeutigen Fehler ergeben, \u00fcberpr\u00fcfen Sie sorgf\u00e4ltig den Kabelbaum und die Steckverbinder f\u00fcr die Z\u00fcndspule und das Kraftstoffeinspritzventil von Zylinder 8 auf Besch\u00e4digungen, Korrosion oder schlechte Verbindungen. Als letztes Mittel, und erst nachdem alle anderen M\u00f6glichkeiten ausgeschlossen wurden, ziehen Sie einen PCM-Fehler in Betracht, obwohl dies bei einer Einzelzylinder-Fehlz\u00fcndung selten ist."
+      ],
+      "es": [
+        "Verificar C\u00f3digo e Inspeccionar el Sistema de Encendido: Comience confirmando el P0308 con una herramienta de escaneo. Inspeccione visualmente la bobina de encendido, el cable de la buj\u00eda (si aplica) y la buj\u00eda del cilindro 8. Busque signos de da\u00f1o, arcos o corrosi\u00f3n. Si es posible, intercambie la bobina de encendido y la buj\u00eda del cilindro 8 con un cilindro que funcione correctamente (por ejemplo, cilindro 6 o 7) y vuelva a probar. Si el fallo de encendido se mueve al nuevo cilindro, el componente intercambiado est\u00e1 defectuoso.",
+        "Verificar la Entrega de Combustible: Con el motor en marcha, use un estetoscopio para escuchar el inyector de combustible del cilindro 8 y asegurarse de que haga clic, lo que indica que est\u00e1 funcionando. Si no hay clic, o un clic d\u00e9bil, considere un inyector defectuoso. Realice una prueba de presi\u00f3n de combustible para asegurar un suministro adecuado de combustible al riel. Si es posible, intercambie el inyector de combustible del cilindro 8 con otro cilindro y vuelva a probar para ver si el fallo de encendido sigue al inyector.",
+        "Realizar Prueba de Compresi\u00f3n: Si los sistemas de encendido y combustible est\u00e1n bien, es probable que haya un problema mec\u00e1nico. Realice una prueba de compresi\u00f3n en seco y en h\u00famedo en el cilindro 8 y comp\u00e1rela con los cilindros adyacentes. Una compresi\u00f3n baja podr\u00eda indicar problemas con los anillos del pist\u00f3n, las v\u00e1lvulas o la junta de la culata. Una prueba de fugas en el cilindro puede identificar con mayor precisi\u00f3n la falla mec\u00e1nica exacta.",
+        "Inspeccionar el Cableado y el PCM: Si todos los pasos anteriores no arrojan una falla definitiva, inspeccione cuidadosamente el mazo de cables y los conectores de la bobina de encendido y el inyector de combustible del cilindro 8 en busca de da\u00f1os, corrosi\u00f3n o conexiones deficientes. Como \u00faltimo recurso, y solo despu\u00e9s de descartar todas las dem\u00e1s posibilidades, considere una falla del PCM, aunque esto es raro para un fallo de encendido de un solo cilindro."
+      ],
+      "fr": [
+        "V\u00e9rifier le Code et Inspecter le Syst\u00e8me d'Allumage: Commencez par confirmer le P0308 avec un outil de diagnostic. Inspectez visuellement la bobine d'allumage, le fil de bougie (le cas \u00e9ch\u00e9ant) et la bougie d'allumage du cylindre 8. Recherchez des signes de dommages, d'arcs \u00e9lectriques ou de corrosion. Si possible, \u00e9changez la bobine d'allumage et la bougie du cylindre 8 avec un cylindre dont le fonctionnement est connu (par exemple, cylindre 6 ou 7) et refaites un test. Si le rat\u00e9 d'allumage se d\u00e9place vers le nouveau cylindre, le composant \u00e9chang\u00e9 est d\u00e9fectueux.",
+        "V\u00e9rifier l'Alimentation en Carburant: Moteur tournant, utilisez un st\u00e9thoscope pour \u00e9couter l'injecteur de carburant du cylindre 8 afin de vous assurer qu'il clique, indiquant qu'il fonctionne. Si aucun clic, ou un clic faible, envisagez un injecteur d\u00e9fectueux. Effectuez un test de pression de carburant pour assurer une alimentation ad\u00e9quate en carburant \u00e0 la rampe. Si possible, \u00e9changez l'injecteur de carburant du cylindre 8 avec un autre cylindre et refaites un test pour voir si le rat\u00e9 d'allumage suit l'injecteur.",
+        "Effectuer un Test de Compression: Si les syst\u00e8mes d'allumage et de carburant sont en bon \u00e9tat, un probl\u00e8me m\u00e9canique est probable. Effectuez un test de compression \u00e0 sec et humide sur le cylindre 8 et comparez-le aux cylindres adjacents. Une faible compression pourrait indiquer des probl\u00e8mes avec les segments de piston, les soupapes ou le joint de culasse. Un test de fuite de cylindre peut affiner le diagnostic de la panne m\u00e9canique exacte.",
+        "Inspecter le C\u00e2blage et le PCM: Si toutes les \u00e9tapes pr\u00e9c\u00e9dentes ne r\u00e9v\u00e8lent aucune d\u00e9faillance d\u00e9finitive, inspectez attentivement le faisceau de c\u00e2bles et les connecteurs de la bobine d'allumage et de l'injecteur de carburant du cylindre 8 pour d\u00e9tecter tout dommage, corrosion ou mauvaise connexion. En dernier recours, et seulement apr\u00e8s avoir exclu toutes les autres possibilit\u00e9s, envisagez une d\u00e9faillance du PCM, bien que cela soit rare pour un rat\u00e9 d'allumage sur un seul cylindre."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty spark plug and/or ignition coil for cylinder 8.",
+        "Replace the clogged or malfunctioning fuel injector for cylinder 8.",
+        "Repair or replace damaged wiring or connectors to cylinder 8's ignition or fuel system components.",
+        "Address internal engine mechanical issues, such as worn piston rings, burnt valves, or a compromised head gasket."
+      ],
+      "tr": [
+        "8. silindirdeki ar\u0131zal\u0131 bujiyi ve/veya ate\u015fleme bobinini de\u011fi\u015ftirin.",
+        "8. silindirdeki t\u0131kal\u0131 veya ar\u0131zal\u0131 yak\u0131t enjekt\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin.",
+        "8. silindirin ate\u015fleme veya yak\u0131t sistemi bile\u015fenlerine giden hasarl\u0131 kablolar\u0131 veya konekt\u00f6rleri onar\u0131n veya de\u011fi\u015ftirin.",
+        "A\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, yanm\u0131\u015f valfler veya bozulmu\u015f bir silindir kapak contas\u0131 gibi i\u00e7 motor mekanik sorunlar\u0131n\u0131 giderin."
+      ],
+      "de": [
+        "Ersetzen Sie die defekte Z\u00fcndkerze und/oder Z\u00fcndspule f\u00fcr Zylinder 8.",
+        "Ersetzen Sie das verstopfte oder fehlerhafte Kraftstoffeinspritzventil f\u00fcr Zylinder 8.",
+        "Reparieren oder ersetzen Sie besch\u00e4digte Kabel oder Steckverbinder zu den Z\u00fcnd- oder Kraftstoffsystemkomponenten von Zylinder 8.",
+        "Beheben Sie interne mechanische Motorprobleme, wie verschlissene Kolbenringe, verbrannte Ventile oder eine besch\u00e4digte Zylinderkopfdichtung."
+      ],
+      "es": [
+        "Reemplace la buj\u00eda y/o la bobina de encendido defectuosas del cilindro 8.",
+        "Reemplace el inyector de combustible obstruido o que funciona mal del cilindro 8.",
+        "Repare o reemplace el cableado o los conectores da\u00f1ados a los componentes del sistema de encendido o combustible del cilindro 8.",
+        "Aborde los problemas mec\u00e1nicos internos del motor, como anillos de pist\u00f3n desgastados, v\u00e1lvulas quemadas o una junta de culata comprometida."
+      ],
+      "fr": [
+        "Remplacez la bougie d'allumage et/ou la bobine d'allumage d\u00e9fectueuses du cylindre 8.",
+        "Remplacez l'injecteur de carburant bouch\u00e9 ou d\u00e9fectueux du cylindre 8.",
+        "R\u00e9parez ou remplacez le c\u00e2blage ou les connecteurs endommag\u00e9s des composants du syst\u00e8me d'allumage ou de carburant du cylindre 8.",
+        "R\u00e9solvez les probl\u00e8mes m\u00e9caniques internes du moteur, tels que les segments de piston us\u00e9s, les soupapes br\u00fbl\u00e9es ou un joint de culasse compromis."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0308 code is generally not recommended for extended periods. A persistent misfire can lead to significant unburnt fuel entering the exhaust system, which can rapidly overheat and severely damage the catalytic converter, a very expensive component. Additionally, the misfire will cause reduced engine power, rough idling, poor fuel economy, and potentially erratic vehicle behavior, increasing the risk of an accident, especially during critical maneuvers.",
+        "tr": "P0308 koduyla uzun s\u00fcre ara\u00e7 kullan\u0131lmas\u0131 genellikle \u00f6nerilmez. S\u00fcrekli bir ate\u015fleme hatas\u0131, egzoz sistemine \u00f6nemli miktarda yanmam\u0131\u015f yak\u0131t\u0131n girmesine neden olabilir, bu da katalitik konvert\u00f6r\u00fcn h\u0131zla a\u015f\u0131r\u0131 \u0131s\u0131nmas\u0131na ve ciddi \u015fekilde hasar g\u00f6rmesine yol a\u00e7abilir; bu \u00e7ok pahal\u0131 bir bile\u015fendir. Ayr\u0131ca, ate\u015fleme hatas\u0131 motor g\u00fcc\u00fcn\u00fc azaltacak, r\u00f6lantide d\u00fczensizli\u011fe, k\u00f6t\u00fc yak\u0131t ekonomisine ve potansiyel olarak d\u00fczensiz ara\u00e7 davran\u0131\u015f\u0131na neden olarak, \u00f6zellikle kritik manevralar s\u0131ras\u0131nda kaza riskini art\u0131racakt\u0131r.",
+        "de": "Das Fahren mit einem P0308-Code wird im Allgemeinen nicht f\u00fcr l\u00e4ngere Zeitr\u00e4ume empfohlen. Eine anhaltende Fehlz\u00fcndung kann dazu f\u00fchren, dass erhebliche Mengen unverbrannten Kraftstoffs in das Abgassystem gelangen, was den Katalysator, ein sehr teures Bauteil, schnell \u00fcberhitzen und schwer besch\u00e4digen kann. Dar\u00fcber hinaus f\u00fchrt die Fehlz\u00fcndung zu einer reduzierten Motorleistung, unruhigem Leerlauf, schlechtem Kraftstoffverbrauch und potenziell unberechenbarem Fahrzeugverhalten, was das Unfallrisiko erh\u00f6ht, insbesondere bei kritischen Man\u00f6vern.",
+        "es": "Conducir con un c\u00f3digo P0308 generalmente no se recomienda por per\u00edodos prolongados. Un fallo de encendido persistente puede provocar que una cantidad significativa de combustible sin quemar entre en el sistema de escape, lo que puede sobrecalentar r\u00e1pidamente y da\u00f1ar gravemente el convertidor catal\u00edtico, un componente muy costoso. Adem\u00e1s, el fallo de encendido causar\u00e1 una reducci\u00f3n de la potencia del motor, ralent\u00ed irregular, un consumo deficiente de combustible y un comportamiento potencialmente err\u00e1tico del veh\u00edculo, lo que aumenta el riesgo de un accidente, especialmente durante maniobras cr\u00edticas.",
+        "fr": "Conduire avec un code P0308 n'est g\u00e9n\u00e9ralement pas recommand\u00e9 pendant de longues p\u00e9riodes. Un rat\u00e9 d'allumage persistant peut entra\u00eener une quantit\u00e9 significative de carburant non br\u00fbl\u00e9 dans le syst\u00e8me d'\u00e9chappement, ce qui peut rapidement surchauffer et endommager gravement le convertisseur catalytique, un composant tr\u00e8s co\u00fbteux. De plus, le rat\u00e9 d'allumage entra\u00eenera une r\u00e9duction de la puissance du moteur, un ralenti irr\u00e9gulier, une mauvaise \u00e9conomie de carburant et un comportement potentiellement erratique du v\u00e9hicule, augmentant le risque d'accident, en particulier lors de man\u0153uvres critiques."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$20 - $500",
+      "labor": "$100 - $1000+"
+    }
   },
   "P0309": {
-    "title": "Cylinder 9 Misfire Detected",
-    "description": "Code P0309 indicates the PCM has detected a misfire condition specifically in Cylinder 9.",
+    "title": {
+      "en": "Cylinder 9 Misfire Detected",
+      "tr": "9. Silindir Teklemesi Tespit Edildi",
+      "de": "Zylinder 9 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 9",
+      "fr": "Rat\u00e9 d'allumage du cylindre 9 d\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0309 signifies that the Powertrain Control Module (PCM) has identified a misfire condition specifically within engine cylinder #9. A misfire occurs when a cylinder fails to ignite the air/fuel mixture properly, leading to a loss of power, rough running, and increased emissions. The PCM monitors crankshaft speed fluctuations; if a significant deceleration is detected during the power stroke of cylinder 9, it registers a misfire. Common causes include issues with the ignition system (spark plug, ignition coil), fuel delivery (fuel injector), or engine mechanical integrity (compression).",
+      "tr": "P0309 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) motorun 9 numaral\u0131 silindirinde \u00f6zel olarak bir tekleme durumu tespit etti\u011fini g\u00f6sterir. Tekleme, bir silindirin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi sonucu g\u00fc\u00e7 kayb\u0131na, d\u00fczensiz \u00e7al\u0131\u015fmaya ve artan emisyonlara yol a\u00e7ar. PCM, krank mili h\u0131z\u0131 dalgalanmalar\u0131n\u0131 izler; 9. silindirin g\u00fc\u00e7 stroku s\u0131ras\u0131nda \u00f6nemli bir yava\u015flama tespit edilirse, bir tekleme kaydedilir. Yayg\u0131n nedenler aras\u0131nda ate\u015fleme sistemi (buji, ate\u015fleme bobini), yak\u0131t da\u011f\u0131t\u0131m\u0131 (yak\u0131t enjekt\u00f6r\u00fc) veya motorun mekanik b\u00fct\u00fcnl\u00fc\u011f\u00fc (kompresyon) ile ilgili sorunlar bulunur.",
+      "de": "Der Code P0309 bedeutet, dass das Antriebsstrangsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung speziell im Zylinder Nr. 9 des Motors festgestellt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein Zylinder das Luft-Kraftstoff-Gemisch nicht richtig z\u00fcndet, was zu Leistungsverlust, unruhigem Motorlauf und erh\u00f6hten Emissionen f\u00fchrt. Das PCM \u00fcberwacht Schwankungen der Kurbelwellendrehzahl; wird w\u00e4hrend des Arbeitstakts von Zylinder 9 eine signifikante Verlangsamung festgestellt, wird eine Fehlz\u00fcndung registriert. H\u00e4ufige Ursachen sind Probleme mit dem Z\u00fcndsystem (Z\u00fcndkerze, Z\u00fcndspule), der Kraftstoffzufuhr (Kraftstoffeinspritzd\u00fcse) oder der mechanischen Integrit\u00e4t des Motors (Kompression).",
+      "es": "El c\u00f3digo P0309 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n de fallo de encendido espec\u00edficamente en el cilindro #9 del motor. Un fallo de encendido ocurre cuando un cilindro no logra encender la mezcla aire/combustible correctamente, lo que lleva a una p\u00e9rdida de potencia, un funcionamiento irregular y un aumento de las emisiones. El PCM monitorea las fluctuaciones de la velocidad del cig\u00fce\u00f1al; si se detecta una desaceleraci\u00f3n significativa durante la carrera de potencia del cilindro 9, registra un fallo de encendido. Las causas comunes incluyen problemas con el sistema de encendido (buj\u00eda, bobina de encendido), el suministro de combustible (inyector de combustible) o la integridad mec\u00e1nica del motor (compresi\u00f3n).",
+      "fr": "Le code P0309 signifie que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage sp\u00e9cifiquement dans le cylindre n\u00b09 du moteur. Un rat\u00e9 d'allumage se produit lorsqu'un cylindre ne parvient pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une perte de puissance, un fonctionnement irr\u00e9gulier et une augmentation des \u00e9missions. Le PCM surveille les fluctuations de la vitesse du vilebrequin ; si une d\u00e9c\u00e9l\u00e9ration significative est d\u00e9tect\u00e9e pendant la course de puissance du cylindre 9, il enregistre un rat\u00e9 d'allumage. Les causes courantes incluent des probl\u00e8mes avec le syst\u00e8me d'allumage (bougie d'allumage, bobine d'allumage), l'alimentation en carburant (injecteur de carburant) ou l'int\u00e9grit\u00e9 m\u00e9canique du moteur (compression)."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39667,11 +39859,106 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Verify and Inspect: Begin by checking for any other related diagnostic trouble codes (DTCs) that might provide additional clues. Visually inspect cylinder 9's ignition coil and spark plug wire (if applicable) for any signs of damage, corrosion, or loose connections.",
+        "Spark System Test: Swap the ignition coil from cylinder 9 with a known good coil from an adjacent cylinder (e.g., cylinder 8 or 10). Clear the codes and test drive the vehicle. If the misfire moves to the new cylinder (e.g., P0308 or P0310), the coil is faulty. If it remains on cylinder 9, replace the spark plug in cylinder 9 and retest.",
+        "Fuel System Test: If spark components are confirmed good, perform a fuel injector test. This can involve listening to the injector with a stethoscope for proper clicking, checking its electrical resistance, or swapping the fuel injector from cylinder 9 with an adjacent cylinder's injector. If the misfire follows the injector, it's faulty.",
+        "Compression Check: If spark and fuel systems are ruled out, perform a compression test and a leak-down test on cylinder 9. Low compression or excessive leak-down indicates an internal engine mechanical issue, such as a worn piston ring, damaged valve, or blown head gasket.",
+        "Wiring and PCM: As a final step, if all components test good, inspect the wiring harness and connectors leading to cylinder 9's ignition coil and fuel injector for continuity, shorts, or open circuits. In rare cases, a faulty PCM could be the cause, but this is typically a last resort after all other possibilities are exhausted."
+      ],
+      "tr": [
+        "Do\u011frulama ve \u0130nceleme: \u00d6ncelikle, ek ipu\u00e7lar\u0131 sa\u011flayabilecek di\u011fer ilgili ar\u0131za kodlar\u0131n\u0131 (DTC'ler) kontrol edin. 9. silindirin ate\u015fleme bobini ve buji kablosunu (varsa) herhangi bir hasar, korozyon veya gev\u015fek ba\u011flant\u0131 belirtisi a\u00e7\u0131s\u0131ndan g\u00f6rsel olarak inceleyin.",
+        "Ate\u015fleme Sistemi Testi: 9. silindirin ate\u015fleme bobinini, bilinen iyi durumdaki biti\u015fik bir silindirden (\u00f6rn. 8 veya 10. silindir) bir bobinle de\u011fi\u015ftirin. Kodlar\u0131 temizleyin ve arac\u0131 test s\u00fcr\u00fc\u015f\u00fcne \u00e7\u0131kar\u0131n. Tekleme yeni silindire ge\u00e7erse (\u00f6rn. P0308 veya P0310), bobin ar\u0131zal\u0131d\u0131r. 9. silindirde kal\u0131rsa, 9. silindirdeki bujiyi de\u011fi\u015ftirin ve tekrar test edin.",
+        "Yak\u0131t Sistemi Testi: Ate\u015fleme bile\u015fenleri iyi durumda onaylan\u0131rsa, yak\u0131t enjekt\u00f6r\u00fc testi yap\u0131n. Bu, enjekt\u00f6r\u00fcn d\u00fczg\u00fcn t\u0131klay\u0131p t\u0131klamad\u0131\u011f\u0131n\u0131 bir stetoskopla dinlemeyi, elektrik direncini kontrol etmeyi veya 9. silindirin yak\u0131t enjekt\u00f6r\u00fcn\u00fc biti\u015fik bir silindirin enjekt\u00f6r\u00fcyle de\u011fi\u015ftirmeyi i\u00e7erebilir. Tekleme enjekt\u00f6r\u00fc takip ederse, ar\u0131zal\u0131d\u0131r.",
+        "Kompresyon Kontrol\u00fc: Ate\u015fleme ve yak\u0131t sistemleri elenirse, 9. silindirde bir kompresyon testi ve ka\u00e7ak testi yap\u0131n. D\u00fc\u015f\u00fck kompresyon veya a\u015f\u0131r\u0131 ka\u00e7ak, a\u015f\u0131nm\u0131\u015f bir piston segman\u0131, hasarl\u0131 bir valf veya yanm\u0131\u015f bir silindir contas\u0131 gibi dahili bir motor mekanik sorununu g\u00f6sterir.",
+        "Kablolama ve PCM: Son ad\u0131m olarak, t\u00fcm bile\u015fenler iyi test edilirse, 9. silindirin ate\u015fleme bobini ve yak\u0131t enjekt\u00f6r\u00fcne giden kablo demetini ve konekt\u00f6rleri s\u00fcreklilik, k\u0131sa devre veya a\u00e7\u0131k devre a\u00e7\u0131s\u0131ndan inceleyin. Nadir durumlarda, ar\u0131zal\u0131 bir PCM neden olabilir, ancak bu genellikle di\u011fer t\u00fcm olas\u0131l\u0131klar t\u00fckendikten sonra ba\u015fvurulan son \u00e7aredir."
+      ],
+      "de": [
+        "\u00dcberpr\u00fcfen und Inspizieren: Beginnen Sie mit der \u00dcberpr\u00fcfung auf andere verwandte Diagnosefehlercodes (DTCs), die zus\u00e4tzliche Hinweise geben k\u00f6nnten. \u00dcberpr\u00fcfen Sie visuell die Z\u00fcndspule und das Z\u00fcndkerzenkabel (falls zutreffend) von Zylinder 9 auf Anzeichen von Besch\u00e4digung, Korrosion oder lockeren Verbindungen.",
+        "Z\u00fcndsystemtest: Tauschen Sie die Z\u00fcndspule von Zylinder 9 mit einer bekannterma\u00dfen guten Spule von einem benachbarten Zylinder (z.B. Zylinder 8 oder 10). L\u00f6schen Sie die Codes und machen Sie eine Probefahrt. Wenn die Fehlz\u00fcndung auf den neuen Zylinder wandert (z.B. P0308 oder P0310), ist die Spule defekt. Bleibt sie bei Zylinder 9, ersetzen Sie die Z\u00fcndkerze in Zylinder 9 und testen Sie erneut.",
+        "Kraftstoffsystemtest: Wenn die Z\u00fcndkomponenten als gut best\u00e4tigt wurden, f\u00fchren Sie einen Kraftstoffeinspritzd\u00fcsentest durch. Dies kann das Abh\u00f6ren der Einspritzd\u00fcse mit einem Stethoskop auf ordnungsgem\u00e4\u00dfes Klicken, die \u00dcberpr\u00fcfung ihres elektrischen Widerstands oder das Tauschen der Kraftstoffeinspritzd\u00fcse von Zylinder 9 mit der Einspritzd\u00fcse eines benachbarten Zylinders umfassen. Wenn die Fehlz\u00fcndung der Einspritzd\u00fcse folgt, ist diese defekt.",
+        "Kompressionspr\u00fcfung: Wenn Z\u00fcnd- und Kraftstoffsysteme ausgeschlossen sind, f\u00fchren Sie einen Kompressionstest und einen Lecktest an Zylinder 9 durch. Eine niedrige Kompression oder \u00fcberm\u00e4\u00dfige Leckage weist auf ein internes mechanisches Motorproblem hin, wie z.B. einen verschlissenen Kolbenring, ein besch\u00e4digtes Ventil oder eine durchgebrannte Zylinderkopfdichtung.",
+        "Verkabelung und PCM: Als letzten Schritt, wenn alle Komponenten gut getestet wurden, \u00fcberpr\u00fcfen Sie den Kabelbaum und die Steckverbinder, die zur Z\u00fcndspule und Kraftstoffeinspritzd\u00fcse von Zylinder 9 f\u00fchren, auf Durchgang, Kurzschl\u00fcsse oder offene Stromkreise. In seltenen F\u00e4llen k\u00f6nnte ein defektes PCM die Ursache sein, dies ist jedoch in der Regel ein letzter Ausweg, nachdem alle anderen M\u00f6glichkeiten ausgesch\u00f6pft wurden."
+      ],
+      "es": [
+        "Verificar e Inspeccionar: Comience buscando cualquier otro c\u00f3digo de diagn\u00f3stico de problemas (DTC) relacionado que pueda proporcionar pistas adicionales. Inspeccione visualmente la bobina de encendido y el cable de la buj\u00eda (si aplica) del cilindro 9 en busca de signos de da\u00f1o, corrosi\u00f3n o conexiones sueltas.",
+        "Prueba del Sistema de Encendido: Intercambie la bobina de encendido del cilindro 9 con una bobina que se sepa que funciona correctamente de un cilindro adyacente (por ejemplo, cilindro 8 o 10). Borre los c\u00f3digos y realice una prueba de manejo del veh\u00edculo. Si el fallo de encendido se traslada al nuevo cilindro (por ejemplo, P0308 o P0310), la bobina est\u00e1 defectuosa. Si permanece en el cilindro 9, reemplace la buj\u00eda en el cilindro 9 y vuelva a probar.",
+        "Prueba del Sistema de Combustible: Si los componentes de encendido se confirman como buenos, realice una prueba del inyector de combustible. Esto puede implicar escuchar el inyector con un estetoscopio para verificar si hace clic correctamente, verificar su resistencia el\u00e9ctrica o intercambiar el inyector de combustible del cilindro 9 con el inyector de un cilindro adyacente. Si el fallo de encendido sigue al inyector, este est\u00e1 defectuoso.",
+        "Verificaci\u00f3n de Compresi\u00f3n: Si los sistemas de encendido y combustible est\u00e1n descartados, realice una prueba de compresi\u00f3n y una prueba de fugas en el cilindro 9. Una compresi\u00f3n baja o una fuga excesiva indican un problema mec\u00e1nico interno del motor, como un anillo de pist\u00f3n desgastado, una v\u00e1lvula da\u00f1ada o una junta de culata quemada.",
+        "Cableado y PCM: Como \u00faltimo paso, si todos los componentes funcionan correctamente, inspeccione el mazo de cables y los conectores que van a la bobina de encendido y al inyector de combustible del cilindro 9 en busca de continuidad, cortocircuitos o circuitos abiertos. En casos raros, un PCM defectuoso podr\u00eda ser la causa, pero esto suele ser un \u00faltimo recurso despu\u00e9s de agotar todas las dem\u00e1s posibilidades."
+      ],
+      "fr": [
+        "V\u00e9rifier et Inspecter: Commencez par v\u00e9rifier tout autre code de diagnostic (DTC) connexe qui pourrait fournir des indices suppl\u00e9mentaires. Inspectez visuellement la bobine d'allumage et le fil de bougie (le cas \u00e9ch\u00e9ant) du cylindre 9 pour d\u00e9tecter tout signe de dommage, de corrosion ou de connexions desserr\u00e9es.",
+        "Test du Syst\u00e8me d'Allumage: \u00c9changez la bobine d'allumage du cylindre 9 avec une bobine dont le bon fonctionnement est connu, provenant d'un cylindre adjacent (par exemple, cylindre 8 ou 10). Effacez les codes et effectuez un essai routier du v\u00e9hicule. Si le rat\u00e9 d'allumage se d\u00e9place vers le nouveau cylindre (par exemple, P0308 ou P0310), la bobine est d\u00e9fectueuse. S'il reste sur le cylindre 9, remplacez la bougie d'allumage du cylindre 9 et testez \u00e0 nouveau.",
+        "Test du Syst\u00e8me de Carburant: Si les composants d'allumage sont confirm\u00e9s comme \u00e9tant bons, effectuez un test de l'injecteur de carburant. Cela peut impliquer d'\u00e9couter l'injecteur avec un st\u00e9thoscope pour v\u00e9rifier un clic correct, de v\u00e9rifier sa r\u00e9sistance \u00e9lectrique ou d'\u00e9changer l'injecteur de carburant du cylindre 9 avec l'injecteur d'un cylindre adjacent. Si le rat\u00e9 d'allumage suit l'injecteur, celui-ci est d\u00e9fectueux.",
+        "V\u00e9rification de la Compression: Si les syst\u00e8mes d'allumage et de carburant sont exclus, effectuez un test de compression et un test de fuite sur le cylindre 9. Une faible compression ou une fuite excessive indique un probl\u00e8me m\u00e9canique interne du moteur, tel qu'un segment de piston us\u00e9, une soupape endommag\u00e9e ou un joint de culasse souffl\u00e9.",
+        "C\u00e2blage et PCM: En derni\u00e8re \u00e9tape, si tous les composants sont test\u00e9s comme \u00e9tant bons, inspectez le faisceau de c\u00e2bles et les connecteurs menant \u00e0 la bobine d'allumage et \u00e0 l'injecteur de carburant du cylindre 9 pour la continuit\u00e9, les courts-circuits ou les circuits ouverts. Dans de rares cas, un PCM d\u00e9fectueux pourrait \u00eatre la cause, mais c'est g\u00e9n\u00e9ralement un dernier recours apr\u00e8s avoir avoir \u00e9puis\u00e9 toutes les autres possibilit\u00e9s."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty spark plug in cylinder 9.",
+        "Replace the defective ignition coil pack or coil-on-plug unit for cylinder 9.",
+        "Replace the clogged or malfunctioning fuel injector for cylinder 9.",
+        "Address internal engine mechanical issues (e.g., valve repair, head gasket replacement, piston ring replacement) if compression tests indicate a problem."
+      ],
+      "tr": [
+        "9. silindirdeki ar\u0131zal\u0131 bujiyi de\u011fi\u015ftirin.",
+        "9. silindir i\u00e7in ar\u0131zal\u0131 ate\u015fleme bobini paketini veya bobin-\u00fcst\u00fc \u00fcnitesini de\u011fi\u015ftirin.",
+        "9. silindir i\u00e7in t\u0131kanm\u0131\u015f veya ar\u0131zal\u0131 yak\u0131t enjekt\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin.",
+        "Kompresyon testleri bir sorun oldu\u011funu g\u00f6steriyorsa, dahili motor mekanik sorunlar\u0131n\u0131 giderin (\u00f6rn. valf tamiri, silindir contas\u0131 de\u011fi\u015fimi, piston segman\u0131 de\u011fi\u015fimi)."
+      ],
+      "de": [
+        "Ersetzen Sie die defekte Z\u00fcndkerze in Zylinder 9.",
+        "Ersetzen Sie das defekte Z\u00fcndspulenpaket oder die Z\u00fcndspule auf dem Stecker f\u00fcr Zylinder 9.",
+        "Ersetzen Sie die verstopfte oder fehlerhafte Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 9.",
+        "Beheben Sie interne mechanische Motorprobleme (z.B. Ventilreparatur, Zylinderkopfdichtungswechsel, Kolbenringwechsel), wenn Kompressionstests ein Problem anzeigen."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda defectuosa en el cilindro 9.",
+        "Reemplazar el paquete de bobinas de encendido defectuoso o la unidad de bobina sobre buj\u00eda para el cilindro 9.",
+        "Reemplazar el inyector de combustible obstruido o que funciona mal para el cilindro 9.",
+        "Abordar problemas mec\u00e1nicos internos del motor (por ejemplo, reparaci\u00f3n de v\u00e1lvulas, reemplazo de la junta de culata, reemplazo de anillos de pist\u00f3n) si las pruebas de compresi\u00f3n indican un problema."
+      ],
+      "fr": [
+        "Remplacer la bougie d'allumage d\u00e9fectueuse du cylindre 9.",
+        "Remplacer le bloc de bobines d'allumage d\u00e9fectueux ou l'unit\u00e9 de bobine sur bougie pour le cylindre 9.",
+        "Remplacer l'injecteur de carburant bouch\u00e9 ou d\u00e9fectueux pour le cylindre 9.",
+        "R\u00e9soudre les probl\u00e8mes m\u00e9caniques internes du moteur (par exemple, r\u00e9paration de soupape, remplacement du joint de culasse, remplacement des segments de piston) si les tests de compression indiquent un probl\u00e8me."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0309 code can lead to reduced engine power, rough idling, and poor fuel economy. More critically, unburnt fuel entering the exhaust system can overheat and severely damage the catalytic converter, a very expensive component. Prolonged driving with a severe misfire can also cause internal engine damage. It is recommended to diagnose and repair this issue promptly.",
+        "tr": "P0309 koduyla ara\u00e7 kullanmak, motor g\u00fcc\u00fcnde azalmaya, d\u00fczensiz r\u00f6lantiye ve k\u00f6t\u00fc yak\u0131t ekonomisine yol a\u00e7abilir. Daha da \u00f6nemlisi, egzoz sistemine giren yanmam\u0131\u015f yak\u0131t, katalitik konvert\u00f6r\u00fc a\u015f\u0131r\u0131 \u0131s\u0131tabilir ve ciddi \u015fekilde hasar verebilir; bu \u00e7ok pahal\u0131 bir bile\u015fendir. \u015eiddetli bir tekleme ile uzun s\u00fcre ara\u00e7 kullanmak, dahili motor hasar\u0131na da neden olabilir. Bu sorunun derhal te\u015fhis edilmesi ve onar\u0131lmas\u0131 \u00f6nerilir.",
+        "de": "Das Fahren mit einem P0309-Code kann zu reduzierter Motorleistung, unruhigem Leerlauf und schlechtem Kraftstoffverbrauch f\u00fchren. Kritischer ist, dass unverbrannter Kraftstoff, der in das Abgassystem gelangt, den Katalysator \u00fcberhitzen und schwer besch\u00e4digen kann, ein sehr teures Bauteil. L\u00e4ngeres Fahren mit einer schweren Fehlz\u00fcndung kann auch interne Motorsch\u00e4den verursachen. Es wird empfohlen, dieses Problem umgehend zu diagnostizieren und zu beheben.",
+        "es": "Conducir con un c\u00f3digo P0309 puede provocar una reducci\u00f3n de la potencia del motor, un ralent\u00ed irregular y un bajo consumo de combustible. M\u00e1s cr\u00edticamente, el combustible no quemado que ingresa al sistema de escape puede sobrecalentar y da\u00f1ar gravemente el convertidor catal\u00edtico, un componente muy costoso. La conducci\u00f3n prolongada con un fallo de encendido severo tambi\u00e9n puede causar da\u00f1os internos en el motor. Se recomienda diagnosticar y reparar este problema de inmediato.",
+        "fr": "Conduire avec un code P0309 peut entra\u00eener une r\u00e9duction de la puissance du moteur, un ralenti irr\u00e9gulier et une mauvaise \u00e9conomie de carburant. Plus grave encore, le carburant non br\u00fbl\u00e9 qui p\u00e9n\u00e8tre dans le syst\u00e8me d'\u00e9chappement peut surchauffer et endommager gravement le convertisseur catalytique, un composant tr\u00e8s co\u00fbteux. Une conduite prolong\u00e9e avec un rat\u00e9 d'allumage s\u00e9v\u00e8re peut \u00e9galement causer des dommages internes au moteur. Il est recommand\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$15 - $1500+",
+      "labor": "$100 - $1000+"
+    }
   },
   "P0310": {
-    "title": "Cylinder 10 Misfire Detected",
-    "description": "Code P0310 indicates the PCM has detected a misfire condition specifically in Cylinder 10.",
+    "title": {
+      "en": "Cylinder 10 Misfire Detected",
+      "tr": "10. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 10 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 10",
+      "fr": "Rat\u00e9 d'allumage du cylindre 10 d\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0310 indicates that the Powertrain Control Module (PCM) has detected a misfire condition specifically in Cylinder 10. A misfire occurs when one or more cylinders fail to properly ignite the air/fuel mixture, leading to a momentary drop in crankshaft speed. The PCM monitors these variations via the crankshaft position sensor. When the variation exceeds a calibrated threshold for Cylinder 10, the P0310 code is set, and the Check Engine Light (CEL) illuminates. This condition can be caused by issues related to the ignition system, fuel delivery system, or internal mechanical problems specific to Cylinder 10.",
+      "tr": "P0310 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) \u00f6zellikle 10. silindirde bir ate\u015fleme hatas\u0131 durumu tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, bir veya daha fazla silindirin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi sonucu krank mili h\u0131z\u0131nda anl\u0131k bir d\u00fc\u015f\u00fc\u015f meydana geldi\u011finde olu\u015fur. PCM, bu varyasyonlar\u0131 krank mili konum sens\u00f6r\u00fc arac\u0131l\u0131\u011f\u0131yla izler. 10. silindir i\u00e7in varyasyon kalibre edilmi\u015f bir e\u015fi\u011fi a\u015ft\u0131\u011f\u0131nda, P0310 kodu ayarlan\u0131r ve Motor Ar\u0131za Lambas\u0131 (CEL) yanar. Bu durum, 10. silindire \u00f6zg\u00fc ate\u015fleme sistemi, yak\u0131t da\u011f\u0131t\u0131m sistemi veya dahili mekanik sorunlarla ilgili sorunlardan kaynaklanabilir.",
+      "de": "Der Code P0310 weist darauf hin, dass das Motorsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung speziell im Zylinder 10 festgestellt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein oder mehrere Zylinder das Luft-Kraftstoff-Gemisch nicht ordnungsgem\u00e4\u00df z\u00fcnden, was zu einem momentanen Abfall der Kurbelwellendrehzahl f\u00fchrt. Das PCM \u00fcberwacht diese Schwankungen \u00fcber den Kurbelwellenpositionssensor. Wenn die Schwankung f\u00fcr Zylinder 10 einen kalibrierten Schwellenwert \u00fcberschreitet, wird der Code P0310 gesetzt und die Motorkontrollleuchte (CEL) leuchtet auf. Dieser Zustand kann durch Probleme im Z\u00fcndsystem, im Kraftstoffversorgungssystem oder durch interne mechanische Probleme, die spezifisch f\u00fcr Zylinder 10 sind, verursacht werden.",
+      "es": "El c\u00f3digo P0310 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n de fallo de encendido espec\u00edficamente en el cilindro 10. Un fallo de encendido ocurre cuando uno o m\u00e1s cilindros no logran encender correctamente la mezcla aire/combustible, lo que provoca una ca\u00edda moment\u00e1nea en la velocidad del cig\u00fce\u00f1al. El PCM monitorea estas variaciones a trav\u00e9s del sensor de posici\u00f3n del cig\u00fce\u00f1al. Cuando la variaci\u00f3n excede un umbral calibrado para el cilindro 10, se establece el c\u00f3digo P0310 y se enciende la luz de 'Check Engine' (CEL). Esta condici\u00f3n puede ser causada por problemas relacionados con el sistema de encendido, el sistema de suministro de combustible o problemas mec\u00e1nicos internos espec\u00edficos del cilindro 10.",
+      "fr": "Le code P0310 indique que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage sp\u00e9cifiquement dans le cylindre 10. Un rat\u00e9 d'allumage se produit lorsqu'un ou plusieurs cylindres ne parviennent pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une chute momentan\u00e9e de la vitesse du vilebrequin. Le PCM surveille ces variations via le capteur de position du vilebrequin. Lorsque la variation d\u00e9passe un seuil calibr\u00e9 pour le cylindre 10, le code P0310 est d\u00e9fini et le t\u00e9moin de v\u00e9rification du moteur (CEL) s'allume. Cette condition peut \u00eatre caus\u00e9e par des probl\u00e8mes li\u00e9s au syst\u00e8me d'allumage, au syst\u00e8me d'alimentation en carburant ou \u00e0 des probl\u00e8mes m\u00e9caniques internes sp\u00e9cifiques au cylindre 10."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39687,11 +39974,106 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "1. Verify the P0310 code using an OBD-II scanner and check for any other related diagnostic trouble codes (DTCs), paying close attention to freeze frame data which can provide valuable information about engine conditions when the misfire occurred.",
+        "2. Inspect the ignition system components for Cylinder 10: Visually check the spark plug, ignition coil (or coil pack and spark plug wire if applicable) for any signs of damage, carbon tracking, corrosion, or wear. If possible, perform an ignition coil primary and secondary circuit test, or swap the coil with an adjacent cylinder to see if the misfire moves.",
+        "3. Evaluate the fuel delivery system for Cylinder 10: Perform a fuel injector balance test to check for proper fuel delivery. Listen to the injector with a stethoscope to confirm it's clicking, indicating electrical operation. Check the injector's electrical resistance. If accessible, swap the fuel injector with an adjacent cylinder and re-check for the misfire moving to the new cylinder location.",
+        "4. Conduct a compression test on Cylinder 10: A low compression reading indicates a mechanical issue within the cylinder, such as worn piston rings, a damaged valve, or a compromised head gasket. Compare the results with specifications and readings from adjacent cylinders.",
+        "5. Check for vacuum leaks or wiring issues specific to Cylinder 10: Use a smoke machine or carb cleaner to check for vacuum leaks around the intake manifold gasket near Cylinder 10. Inspect the wiring harness and connectors for the ignition coil and fuel injector of Cylinder 10 for any damage, corrosion, or poor connections."
+      ],
+      "tr": [
+        "1. Bir OBD-II taray\u0131c\u0131 kullanarak P0310 kodunu do\u011frulay\u0131n ve di\u011fer ilgili ar\u0131za te\u015fhis kodlar\u0131n\u0131 (DTC'ler) kontrol edin; ate\u015fleme hatas\u0131 meydana geldi\u011finde motor ko\u015fullar\u0131 hakk\u0131nda de\u011ferli bilgiler sa\u011flayabilecek donmu\u015f \u00e7er\u00e7eve verilerine \u00f6zellikle dikkat edin.",
+        "2. 10. silindir i\u00e7in ate\u015fleme sistemi bile\u015fenlerini inceleyin: Buji, ate\u015fleme bobini (veya uygulanabilirse bobin paketi ve buji kablosu) \u00fczerinde herhangi bir hasar, karbon izi, korozyon veya a\u015f\u0131nma belirtisi olup olmad\u0131\u011f\u0131n\u0131 g\u00f6rsel olarak kontrol edin. M\u00fcmk\u00fcnse, bir ate\u015fleme bobini birincil ve ikincil devre testi yap\u0131n veya ate\u015fleme hatas\u0131n\u0131n hareket edip etmedi\u011fini g\u00f6rmek i\u00e7in bobini biti\u015fik bir silindirle de\u011fi\u015ftirin.",
+        "3. 10. silindir i\u00e7in yak\u0131t da\u011f\u0131t\u0131m sistemini de\u011ferlendirin: Do\u011fru yak\u0131t da\u011f\u0131t\u0131m\u0131n\u0131 kontrol etmek i\u00e7in bir yak\u0131t enjekt\u00f6r\u00fc denge testi yap\u0131n. Enjekt\u00f6r\u00fcn t\u0131k\u0131rdad\u0131\u011f\u0131n\u0131, yani elektriksel \u00e7al\u0131\u015ft\u0131\u011f\u0131n\u0131 do\u011frulamak i\u00e7in bir stetoskopla dinleyin. Enjekt\u00f6r\u00fcn elektriksel direncini kontrol edin. Eri\u015filebilir ise, yak\u0131t enjekt\u00f6r\u00fcn\u00fc biti\u015fik bir silindirle de\u011fi\u015ftirin ve ate\u015fleme hatas\u0131n\u0131n yeni silindir konumuna ge\u00e7ip ge\u00e7medi\u011fini tekrar kontrol edin.",
+        "4. 10. silindirde bir kompresyon testi yap\u0131n: D\u00fc\u015f\u00fck bir kompresyon okumas\u0131, silindir i\u00e7inde a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, hasarl\u0131 bir valf veya bozulmu\u015f bir silindir contas\u0131 gibi mekanik bir sorunu g\u00f6sterir. Sonu\u00e7lar\u0131 spesifikasyonlarla ve biti\u015fik silindirlerden al\u0131nan okumalarla kar\u015f\u0131la\u015ft\u0131r\u0131n.",
+        "5. 10. silindire \u00f6zg\u00fc vakum ka\u00e7aklar\u0131 veya kablolama sorunlar\u0131n\u0131 kontrol edin: 10. silindir yak\u0131n\u0131ndaki emme manifoldu contas\u0131 etraf\u0131ndaki vakum ka\u00e7aklar\u0131n\u0131 kontrol etmek i\u00e7in bir duman makinesi veya karb\u00fcrat\u00f6r temizleyici kullan\u0131n. 10. silindirin ate\u015fleme bobini ve yak\u0131t enjekt\u00f6r\u00fc i\u00e7in kablo demetini ve konekt\u00f6rlerini herhangi bir hasar, korozyon veya zay\u0131f ba\u011flant\u0131 a\u00e7\u0131s\u0131ndan inceleyin."
+      ],
+      "de": [
+        "1. Best\u00e4tigen Sie den P0310-Code mit einem OBD-II-Scanner und pr\u00fcfen Sie auf andere verwandte Fehlercodes (DTCs). Achten Sie dabei besonders auf die Freeze-Frame-Daten, die wertvolle Informationen \u00fcber die Motorbedingungen zum Zeitpunkt der Fehlz\u00fcndung liefern k\u00f6nnen.",
+        "2. \u00dcberpr\u00fcfen Sie die Z\u00fcndsystemkomponenten f\u00fcr Zylinder 10: Kontrollieren Sie visuell die Z\u00fcndkerze, die Z\u00fcndspule (oder den Z\u00fcndspulenblock und das Z\u00fcndkabel, falls zutreffend) auf Anzeichen von Besch\u00e4digung, Kriechspuren, Korrosion oder Verschlei\u00df. F\u00fchren Sie, wenn m\u00f6glich, einen Prim\u00e4r- und Sekund\u00e4rkreis-Test der Z\u00fcndspule durch oder tauschen Sie die Spule mit einem benachbarten Zylinder, um zu sehen, ob die Fehlz\u00fcndung wandert.",
+        "3. Bewerten Sie das Kraftstoffversorgungssystem f\u00fcr Zylinder 10: F\u00fchren Sie einen Kraftstoffeinspritzd\u00fcsen-Balance-Test durch, um die ordnungsgem\u00e4\u00dfe Kraftstoffzufuhr zu \u00fcberpr\u00fcfen. H\u00f6ren Sie mit einem Stethoskop auf die Einspritzd\u00fcse, um zu best\u00e4tigen, dass sie klickt, was auf einen elektrischen Betrieb hinweist. \u00dcberpr\u00fcfen Sie den elektrischen Widerstand der Einspritzd\u00fcse. Falls zug\u00e4nglich, tauschen Sie die Kraftstoffeinspritzd\u00fcse mit einem benachbarten Zylinder und pr\u00fcfen Sie erneut, ob die Fehlz\u00fcndung an die neue Zylinderposition wandert.",
+        "4. F\u00fchren Sie einen Kompressionstest an Zylinder 10 durch: Ein niedriger Kompressionswert deutet auf ein mechanisches Problem im Zylinder hin, wie z.B. verschlissene Kolbenringe, ein besch\u00e4digtes Ventil oder eine besch\u00e4digte Zylinderkopfdichtung. Vergleichen Sie die Ergebnisse mit den Spezifikationen und den Messwerten benachbarter Zylinder.",
+        "5. Suchen Sie nach Vakuumlecks oder Verkabelungsproblemen, die spezifisch f\u00fcr Zylinder 10 sind: Verwenden Sie eine Nebelmaschine oder einen Vergaserreiniger, um Vakuumlecks um die Ansaugkr\u00fcmmerdichtung in der N\u00e4he von Zylinder 10 zu \u00fcberpr\u00fcfen. \u00dcberpr\u00fcfen Sie den Kabelbaum und die Steckverbinder f\u00fcr die Z\u00fcndspule und die Kraftstoffeinspritzd\u00fcse von Zylinder 10 auf Besch\u00e4digungen, Korrosion oder schlechte Verbindungen."
+      ],
+      "es": [
+        "1. Verifique el c\u00f3digo P0310 utilizando un esc\u00e1ner OBD-II y busque cualquier otro c\u00f3digo de diagn\u00f3stico de problemas (DTC) relacionado, prestando especial atenci\u00f3n a los datos de cuadro congelado que pueden proporcionar informaci\u00f3n valiosa sobre las condiciones del motor cuando ocurri\u00f3 el fallo de encendido.",
+        "2. Inspeccione los componentes del sistema de encendido del cilindro 10: Revise visualmente la buj\u00eda, la bobina de encendido (o el paquete de bobinas y el cable de la buj\u00eda si aplica) en busca de signos de da\u00f1o, seguimiento de carbono, corrosi\u00f3n o desgaste. Si es posible, realice una prueba del circuito primario y secundario de la bobina de encendido, o intercambie la bobina con un cilindro adyacente para ver si el fallo de encendido se mueve.",
+        "3. Eval\u00fae el sistema de suministro de combustible para el cilindro 10: Realice una prueba de equilibrio del inyector de combustible para verificar la entrega adecuada de combustible. Escuche el inyector con un estetoscopio para confirmar que est\u00e1 haciendo clic, lo que indica un funcionamiento el\u00e9ctrico. Verifique la resistencia el\u00e9ctrica del inyector. Si es accesible, intercambie el inyector de combustible con un cilindro adyacente y vuelva a verificar si el fallo de encendido se mueve a la nueva ubicaci\u00f3n del cilindro.",
+        "4. Realice una prueba de compresi\u00f3n en el cilindro 10: Una lectura de baja compresi\u00f3n indica un problema mec\u00e1nico dentro del cilindro, como anillos de pist\u00f3n desgastados, una v\u00e1lvula da\u00f1ada o una junta de culata comprometida. Compare los resultados con las especificaciones y las lecturas de los cilindros adyacentes.",
+        "5. Verifique si hay fugas de vac\u00edo o problemas de cableado espec\u00edficos del cilindro 10: Use una m\u00e1quina de humo o limpiador de carburador para buscar fugas de vac\u00edo alrededor de la junta del colector de admisi\u00f3n cerca del cilindro 10. Inspeccione el mazo de cables y los conectores de la bobina de encendido y el inyector de combustible del cilindro 10 en busca de da\u00f1os, corrosi\u00f3n o conexiones deficientes."
+      ],
+      "fr": [
+        "1. V\u00e9rifiez le code P0310 \u00e0 l'aide d'un scanner OBD-II et recherchez tout autre code de diagnostic (DTC) connexe, en accordant une attention particuli\u00e8re aux donn\u00e9es d'arr\u00eat sur image qui peuvent fournir des informations pr\u00e9cieuses sur les conditions du moteur au moment du rat\u00e9 d'allumage.",
+        "2. Inspectez les composants du syst\u00e8me d'allumage du cylindre 10 : V\u00e9rifiez visuellement la bougie d'allumage, la bobine d'allumage (ou le bloc de bobines et le fil de bougie si applicable) pour tout signe de dommage, de tra\u00e7age de carbone, de corrosion ou d'usure. Si possible, effectuez un test de circuit primaire et secondaire de la bobine d'allumage, ou \u00e9changez la bobine avec un cylindre adjacent pour voir si le rat\u00e9 d'allumage se d\u00e9place.",
+        "3. \u00c9valuez le syst\u00e8me d'alimentation en carburant du cylindre 10 : Effectuez un test d'\u00e9quilibre des injecteurs de carburant pour v\u00e9rifier la bonne alimentation en carburant. \u00c9coutez l'injecteur avec un st\u00e9thoscope pour confirmer qu'il clique, indiquant un fonctionnement \u00e9lectrique. V\u00e9rifiez la r\u00e9sistance \u00e9lectrique de l'injecteur. Si accessible, \u00e9changez l'injecteur de carburant avec un cylindre adjacent et v\u00e9rifiez \u00e0 nouveau si le rat\u00e9 d'allumage se d\u00e9place vers le nouvel emplacement du cylindre.",
+        "4. Effectuez un test de compression sur le cylindre 10 : Une faible lecture de compression indique un probl\u00e8me m\u00e9canique \u00e0 l'int\u00e9rieur du cylindre, tel que des segments de piston us\u00e9s, une soupape endommag\u00e9e ou un joint de culasse compromis. Comparez les r\u00e9sultats avec les sp\u00e9cifications et les lectures des cylindres adjacents.",
+        "5. V\u00e9rifiez les fuites de vide ou les probl\u00e8mes de c\u00e2blage sp\u00e9cifiques au cylindre 10 : Utilisez une machine \u00e0 fum\u00e9e ou un nettoyant pour carburateur pour v\u00e9rifier les fuites de vide autour du joint du collecteur d'admission pr\u00e8s du cylindre 10. Inspectez le faisceau de c\u00e2bles et les connecteurs de la bobine d'allumage et de l'injecteur de carburant du cylindre 10 pour tout dommage, corrosion ou mauvaise connexion."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the spark plug for Cylinder 10.",
+        "Replace the ignition coil (or coil pack/wire) for Cylinder 10.",
+        "Clean or replace the fuel injector for Cylinder 10.",
+        "Repair internal engine mechanical issues (e.g., valve repair, head gasket replacement, piston ring replacement) if low compression is confirmed."
+      ],
+      "tr": [
+        "10. silindir i\u00e7in bujiyi de\u011fi\u015ftirin.",
+        "10. silindir i\u00e7in ate\u015fleme bobinini (veya bobin paketi/kablolar\u0131n\u0131) de\u011fi\u015ftirin.",
+        "10. silindir i\u00e7in yak\u0131t enjekt\u00f6r\u00fcn\u00fc temizleyin veya de\u011fi\u015ftirin.",
+        "D\u00fc\u015f\u00fck kompresyon do\u011frulan\u0131rsa, dahili motor mekanik sorunlar\u0131n\u0131 onar\u0131n (\u00f6rn. valf onar\u0131m\u0131, silindir contas\u0131 de\u011fi\u015fimi, piston segman\u0131 de\u011fi\u015fimi)."
+      ],
+      "de": [
+        "Ersetzen Sie die Z\u00fcndkerze f\u00fcr Zylinder 10.",
+        "Ersetzen Sie die Z\u00fcndspule (oder den Z\u00fcndspulenblock/Z\u00fcndkabel) f\u00fcr Zylinder 10.",
+        "Reinigen oder ersetzen Sie die Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 10.",
+        "Beheben Sie interne mechanische Motorprobleme (z.B. Ventilreparatur, Zylinderkopfdichtungswechsel, Kolbenringwechsel), falls eine niedrige Kompression best\u00e4tigt wird."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda del cilindro 10.",
+        "Reemplazar la bobina de encendido (o el paquete de bobinas/cable) del cilindro 10.",
+        "Limpiar o reemplazar el inyector de combustible del cilindro 10.",
+        "Reparar problemas mec\u00e1nicos internos del motor (por ejemplo, reparaci\u00f3n de v\u00e1lvulas, reemplazo de la junta de culata, reemplazo de anillos de pist\u00f3n) si se confirma baja compresi\u00f3n."
+      ],
+      "fr": [
+        "Remplacer la bougie d'allumage du cylindre 10.",
+        "Remplacer la bobine d'allumage (ou le bloc de bobines/fil) du cylindre 10.",
+        "Nettoyer ou remplacer l'injecteur de carburant du cylindre 10.",
+        "R\u00e9parer les probl\u00e8mes m\u00e9caniques internes du moteur (par exemple, r\u00e9paration de soupapes, remplacement du joint de culasse, remplacement des segments de piston) si une faible compression est confirm\u00e9e."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0310 code indicates a persistent misfire in Cylinder 10, which can lead to reduced engine power, poor fuel economy, and increased exhaust emissions. More critically, unburnt fuel entering the exhaust system can cause the catalytic converter to overheat and suffer irreversible damage, leading to a very expensive repair. It is advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe vehicle operation.",
+        "tr": "P0310 koduyla ara\u00e7 kullanmak, 10. silindirde s\u00fcrekli bir ate\u015fleme hatas\u0131 oldu\u011funu g\u00f6sterir ve bu durum motor g\u00fcc\u00fcnde azalmaya, yak\u0131t ekonomisinde d\u00fc\u015f\u00fc\u015fe ve egzoz emisyonlar\u0131nda art\u0131\u015fa yol a\u00e7abilir. Daha da \u00f6nemlisi, yanmam\u0131\u015f yak\u0131t\u0131n egzoz sistemine girmesi katalitik konvert\u00f6r\u00fcn a\u015f\u0131r\u0131 \u0131s\u0131nmas\u0131na ve geri d\u00f6n\u00fc\u015f\u00fc olmayan hasar g\u00f6rmesine neden olabilir, bu da \u00e7ok pahal\u0131 bir onar\u0131ma yol a\u00e7ar. Daha fazla hasar\u0131 \u00f6nlemek ve arac\u0131n g\u00fcvenli \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flamak i\u00e7in bu sorunu derhal te\u015fhis edip onarmak tavsiye edilir.",
+        "de": "Das Fahren mit einem P0310-Code weist auf eine anhaltende Fehlz\u00fcndung im Zylinder 10 hin, was zu einer reduzierten Motorleistung, einem schlechteren Kraftstoffverbrauch und erh\u00f6hten Abgasemissionen f\u00fchren kann. Kritischer ist, dass unverbrannter Kraftstoff, der in das Abgassystem gelangt, den Katalysator \u00fcberhitzen und irreversible Sch\u00e4den verursachen kann, was zu einer sehr kostspieligen Reparatur f\u00fchrt. Es ist ratsam, dieses Problem umgehend zu diagnostizieren und zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con un c\u00f3digo P0310 indica un fallo de encendido persistente en el cilindro 10, lo que puede provocar una reducci\u00f3n de la potencia del motor, un bajo rendimiento de combustible y un aumento de las emisiones de escape. M\u00e1s cr\u00edticamente, el combustible no quemado que entra en el sistema de escape puede hacer que el convertidor catal\u00edtico se sobrecaliente y sufra da\u00f1os irreversibles, lo que conlleva una reparaci\u00f3n muy costosa. Es aconsejable diagnosticar y reparar este problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro del veh\u00edculo.",
+        "fr": "Conduire avec un code P0310 indique un rat\u00e9 d'allumage persistant dans le cylindre 10, ce qui peut entra\u00eener une r\u00e9duction de la puissance du moteur, une mauvaise \u00e9conomie de carburant et une augmentation des \u00e9missions d'\u00e9chappement. Plus grave encore, le carburant non br\u00fbl\u00e9 p\u00e9n\u00e9trant dans le syst\u00e8me d'\u00e9chappement peut provoquer une surchauffe et des dommages irr\u00e9versibles au convertisseur catalytique, entra\u00eenant une r\u00e9paration tr\u00e8s co\u00fbteuse. Il est conseill\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$10 - $300",
+      "labor": "$50 - $400"
+    }
   },
   "P0311": {
-    "title": "Cylinder 11 Misfire Detected",
-    "description": "Code P0311 indicates the PCM has detected a misfire condition specifically in Cylinder 11.",
+    "title": {
+      "en": "Cylinder 11 Misfire Detected",
+      "tr": "11. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 11 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 11",
+      "fr": "Rat\u00e9 d'allumage du cylindre 11 d\u00e9tect\u00e9"
+    },
+    "description": {
+      "en": "Code P0311 signifies that the Powertrain Control Module (PCM) has identified a specific misfire condition within Cylinder 11. A misfire occurs when a cylinder fails to ignite the air/fuel mixture properly, leading to a loss of power, increased emissions, and potential damage to the catalytic converter over time. The PCM detects this by monitoring crankshaft speed variations; a sudden deceleration indicates a cylinder not contributing its share of power. This code is specific to the 11th cylinder in the engine's firing order, requiring focused diagnosis on its components.",
+      "tr": "P0311 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) 11. silindirde belirli bir ate\u015fleme hatas\u0131 durumu tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, bir silindirin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi durumunda meydana gelir ve bu da g\u00fc\u00e7 kayb\u0131na, artan emisyonlara ve zamanla katalitik konvert\u00f6re potansiyel hasara yol a\u00e7ar. PCM bunu krank mili h\u0131z\u0131 varyasyonlar\u0131n\u0131 izleyerek tespit eder; ani bir yava\u015flama, bir silindirin g\u00fcce katk\u0131da bulunmad\u0131\u011f\u0131n\u0131 g\u00f6sterir. Bu kod, motorun ate\u015fleme s\u0131ras\u0131ndaki 11. silindire \u00f6zg\u00fcd\u00fcr ve bile\u015fenleri \u00fczerinde odaklanm\u0131\u015f te\u015fhis gerektirir.",
+      "de": "Der Code P0311 bedeutet, dass das Motorsteuerger\u00e4t (PCM) eine spezifische Fehlz\u00fcndung im Zylinder 11 erkannt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein Zylinder das Luft-Kraftstoff-Gemisch nicht ordnungsgem\u00e4\u00df z\u00fcndet, was zu Leistungsverlust, erh\u00f6hten Emissionen und im Laufe der Zeit zu potenziellen Sch\u00e4den am Katalysator f\u00fchrt. Das PCM erkennt dies durch \u00dcberwachung der Kurbelwellendrehzahl\u00e4nderungen; eine pl\u00f6tzliche Verlangsamung deutet darauf hin, dass ein Zylinder nicht seinen Anteil an Leistung liefert. Dieser Code ist spezifisch f\u00fcr den 11. Zylinder in der Z\u00fcndfolge des Motors und erfordert eine gezielte Diagnose seiner Komponenten.",
+      "es": "El c\u00f3digo P0311 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha identificado una condici\u00f3n de fallo de encendido espec\u00edfica en el Cilindro 11. Un fallo de encendido ocurre cuando un cilindro no logra encender la mezcla aire/combustible correctamente, lo que lleva a una p\u00e9rdida de potencia, un aumento de las emisiones y un da\u00f1o potencial al convertidor catal\u00edtico con el tiempo. El PCM detecta esto monitoreando las variaciones de velocidad del cig\u00fce\u00f1al; una desaceleraci\u00f3n repentina indica que un cilindro no est\u00e1 contribuyendo con su parte de potencia. Este c\u00f3digo es espec\u00edfico del und\u00e9cimo cilindro en el orden de encendido del motor, lo que requiere un diagn\u00f3stico enfocado en sus componentes.",
+      "fr": "Le code P0311 signifie que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage sp\u00e9cifique dans le cylindre 11. Un rat\u00e9 d'allumage se produit lorsqu'un cylindre ne parvient pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une perte de puissance, une augmentation des \u00e9missions et des dommages potentiels au convertisseur catalytique \u00e0 long terme. Le PCM d\u00e9tecte cela en surveillant les variations de vitesse du vilebrequin ; une d\u00e9c\u00e9l\u00e9ration soudaine indique qu'un cylindre ne contribue pas \u00e0 la puissance. Ce code est sp\u00e9cifique au 11\u00e8me cylindre dans l'ordre d'allumage du moteur, n\u00e9cessitant un diagnostic cibl\u00e9 sur ses composants."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39707,11 +40089,106 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Perform a thorough visual inspection of Cylinder 11's ignition coil, spark plug wire (if applicable), and fuel injector for any obvious damage, loose connections, or corrosion. Scan for any additional diagnostic trouble codes (DTCs) that might indicate related issues (e.g., fuel trim codes, O2 sensor codes, or misfires on other cylinders).",
+        "**Ignition System Check:** Test the spark plug for Cylinder 11. If accessible, swap the ignition coil from Cylinder 11 with a known good cylinder (e.g., Cylinder 10 or 12) and clear codes. If the misfire moves to the new cylinder, the coil is faulty. Check for proper spark delivery using a spark tester.",
+        "**Fuel System Check:** Test the fuel injector for Cylinder 11. Use a stethoscope to listen for its clicking operation. Check its electrical resistance and verify injector pulse using a noid light. If possible, swap the fuel injector with another cylinder and see if the misfire follows.",
+        "**Compression Test:** Conduct a dry and wet compression test on Cylinder 11. Compare the readings to the manufacturer's specifications and to the compression values of adjacent cylinders. A significant difference (typically more than 10-15%) or low absolute values indicate a mechanical issue (e.g., worn piston rings, bent valve, head gasket leak).",
+        "**Vacuum Leaks & PCM:** Inspect for vacuum leaks around the intake manifold gasket or vacuum lines specifically affecting Cylinder 11. If all other components check out, and the misfire persists, a faulty Powertrain Control Module (PCM) could be a rare possibility, requiring professional diagnosis."
+      ],
+      "tr": [
+        "11. silindirin ate\u015fleme bobini, buji kablosu (varsa) ve yak\u0131t enjekt\u00f6r\u00fcnde belirgin hasar, gev\u015fek ba\u011flant\u0131lar veya korozyon olup olmad\u0131\u011f\u0131n\u0131 g\u00f6rsel olarak kapsaml\u0131 bir \u015fekilde inceleyin. \u0130lgili sorunlar\u0131 (\u00f6rn. yak\u0131t trim kodlar\u0131, O2 sens\u00f6r kodlar\u0131 veya di\u011fer silindirlerdeki ate\u015fleme hatalar\u0131) g\u00f6sterebilecek ek ar\u0131za te\u015fhis kodlar\u0131 (DTC'ler) i\u00e7in tarama yap\u0131n.",
+        "**Ate\u015fleme Sistemi Kontrol\u00fc:** 11. silindirin bujisini test edin. Eri\u015filebilir ise, 11. silindirin ate\u015fleme bobinini bilinen iyi bir silindirin (\u00f6rn. 10. veya 12. silindir) bobiniyle de\u011fi\u015ftirin ve kodlar\u0131 temizleyin. Ate\u015fleme hatas\u0131 yeni silindire ge\u00e7erse, bobin ar\u0131zal\u0131d\u0131r. Bir buji test cihaz\u0131 kullanarak do\u011fru k\u0131v\u0131lc\u0131m iletimini kontrol edin.",
+        "**Yak\u0131t Sistemi Kontrol\u00fc:** 11. silindirin yak\u0131t enjekt\u00f6r\u00fcn\u00fc test edin. T\u0131klama sesini dinlemek i\u00e7in bir stetoskop kullan\u0131n. Elektriksel direncini kontrol edin ve bir noid \u0131\u015f\u0131\u011f\u0131 kullanarak enjekt\u00f6r darbesini do\u011frulay\u0131n. M\u00fcmk\u00fcnse, yak\u0131t enjekt\u00f6r\u00fcn\u00fc ba\u015fka bir silindirle de\u011fi\u015ftirin ve ate\u015fleme hatas\u0131n\u0131n takip edip etmedi\u011fini g\u00f6r\u00fcn.",
+        "**Kompresyon Testi:** 11. silindirde kuru ve \u0131slak kompresyon testi yap\u0131n. Okumalar\u0131 \u00fcreticinin spesifikasyonlar\u0131yla ve biti\u015fik silindirlerin kompresyon de\u011ferleriyle kar\u015f\u0131la\u015ft\u0131r\u0131n. \u00d6nemli bir fark (genellikle %10-15'ten fazla) veya d\u00fc\u015f\u00fck mutlak de\u011ferler mekanik bir sorunu (\u00f6rn. a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, e\u011fik valf, silindir kapak contas\u0131 ka\u00e7a\u011f\u0131) g\u00f6sterir.",
+        "**Vakum Ka\u00e7aklar\u0131 ve PCM:** \u00d6zellikle 11. silindiri etkileyen emme manifoldu contas\u0131 veya vakum hatlar\u0131 etraf\u0131ndaki vakum ka\u00e7aklar\u0131n\u0131 inceleyin. Di\u011fer t\u00fcm bile\u015fenler kontrol edildikten sonra ate\u015fleme hatas\u0131 devam ederse, ar\u0131zal\u0131 bir G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc (PCM) nadir bir olas\u0131l\u0131k olabilir ve profesyonel te\u015fhis gerektirir."
+      ],
+      "de": [
+        "F\u00fchren Sie eine gr\u00fcndliche Sichtpr\u00fcfung der Z\u00fcndspule, des Z\u00fcndkerzenkabels (falls zutreffend) und des Kraftstoffinjektors von Zylinder 11 auf offensichtliche Sch\u00e4den, lose Verbindungen oder Korrosion durch. Scannen Sie nach zus\u00e4tzlichen Diagnosefehlercodes (DTCs), die auf verwandte Probleme hinweisen k\u00f6nnten (z. B. Kraftstofftrimmcodes, O2-Sensorcodes oder Fehlz\u00fcndungen an anderen Zylindern).",
+        "**Z\u00fcndsystempr\u00fcfung:** Testen Sie die Z\u00fcndkerze f\u00fcr Zylinder 11. Wenn zug\u00e4nglich, tauschen Sie die Z\u00fcndspule von Zylinder 11 mit einer bekannterma\u00dfen funktionierenden Z\u00fcndspule eines anderen Zylinders (z. B. Zylinder 10 oder 12) aus und l\u00f6schen Sie die Codes. Wenn die Fehlz\u00fcndung auf den neuen Zylinder wandert, ist die Spule defekt. \u00dcberpr\u00fcfen Sie die korrekte Funkenlieferung mit einem Z\u00fcndkerzentester.",
+        "**Kraftstoffsystempr\u00fcfung:** Testen Sie den Kraftstoffinjektor f\u00fcr Zylinder 11. Verwenden Sie ein Stethoskop, um auf das Klickger\u00e4usch zu achten. \u00dcberpr\u00fcfen Sie seinen elektrischen Widerstand und verifizieren Sie den Injektorimpuls mit einer Noid-Lampe. Tauschen Sie, wenn m\u00f6glich, den Kraftstoffinjektor mit einem anderen Zylinder aus und pr\u00fcfen Sie, ob die Fehlz\u00fcndung mitwandert.",
+        "**Kompressionspr\u00fcfung:** F\u00fchren Sie eine trockene und nasse Kompressionspr\u00fcfung an Zylinder 11 durch. Vergleichen Sie die Messwerte mit den Herstellerspezifikationen und den Kompressionswerten benachbarter Zylindern. Ein signifikanter Unterschied (typischerweise mehr als 10-15 %) oder niedrige absolute Werte weisen auf ein mechanisches Problem hin (z. B. verschlissene Kolbenringe, verbogenes Ventil, Zylinderkopfdichtungsschaden).",
+        "**Vakuumlecks & PCM:** \u00dcberpr\u00fcfen Sie auf Vakuumlecks um die Ansaugkr\u00fcmmerdichtung oder Vakuumleitungen, die speziell Zylinder 11 betreffen. Wenn alle anderen Komponenten in Ordnung sind und die Fehlz\u00fcndung weiterhin besteht, k\u00f6nnte ein fehlerhaftes Motorsteuerger\u00e4t (PCM) eine seltene M\u00f6glichkeit sein, die eine professionelle Diagnose erfordert."
+      ],
+      "es": [
+        "Realice una inspecci\u00f3n visual exhaustiva de la bobina de encendido, el cable de la buj\u00eda (si aplica) y el inyector de combustible del Cilindro 11 en busca de da\u00f1os obvios, conexiones sueltas o corrosi\u00f3n. Escanee en busca de c\u00f3digos de diagn\u00f3stico de problemas (DTC) adicionales que puedan indicar problemas relacionados (por ejemplo, c\u00f3digos de ajuste de combustible, c\u00f3digos de sensor de O2 o fallos de encendido en otros cilindros).",
+        "**Verificaci\u00f3n del Sistema de Encendido:** Pruebe la buj\u00eda del Cilindro 11. Si es accesible, intercambie la bobina de encendido del Cilindro 11 con la de un cilindro que funcione correctamente (por ejemplo, Cilindro 10 o 12) y borre los c\u00f3digos. Si el fallo de encendido se traslada al nuevo cilindro, la bobina est\u00e1 defectuosa. Verifique la entrega adecuada de chispa utilizando un probador de chispa.",
+        "**Verificaci\u00f3n del Sistema de Combustible:** Pruebe el inyector de combustible del Cilindro 11. Use un estetoscopio para escuchar su operaci\u00f3n de clic. Verifique su resistencia el\u00e9ctrica y confirme el pulso del inyector usando una luz \"noid\". Si es posible, intercambie el inyector de combustible con otro cilindro y vea si el fallo de encendido se traslada.",
+        "**Prueba de Compresi\u00f3n:** Realice una prueba de compresi\u00f3n en seco y en h\u00famedo en el Cilindro 11. Compare las lecturas con las especificaciones del fabricante y con los valores de compresi\u00f3n de los cilindros adyacentes. Una diferencia significativa (t\u00edpicamente m\u00e1s del 10-15%) o valores absolutos bajos indican un problema mec\u00e1nico (por ejemplo, anillos de pist\u00f3n desgastados, v\u00e1lvula doblada, fuga en la junta de la culata).",
+        "**Fugas de Vac\u00edo y PCM:** Inspeccione si hay fugas de vac\u00edo alrededor de la junta del colector de admisi\u00f3n o las l\u00edneas de vac\u00edo que afecten espec\u00edficamente al Cilindro 11. Si todos los dem\u00e1s componentes est\u00e1n bien y el fallo de encendido persiste, un M\u00f3dulo de Control del Tren de Potencia (PCM) defectuoso podr\u00eda ser una posibilidad rara, requiriendo un diagn\u00f3stico profesional."
+      ],
+      "fr": [
+        "Effectuez une inspection visuelle approfondie de la bobine d'allumage, du fil de bougie (le cas \u00e9ch\u00e9ant) et de l'injecteur de carburant du cylindre 11 pour d\u00e9tecter tout dommage \u00e9vident, connexion l\u00e2che ou corrosion. Scannez pour d'autres codes de diagnostic (DTC) qui pourraient indiquer des probl\u00e8mes connexes (par exemple, codes de correction de carburant, codes de capteur O2 ou rat\u00e9s d'allumage sur d'autres cylindres).",
+        "**V\u00e9rification du Syst\u00e8me d'Allumage:** Testez la bougie d'allumage du cylindre 11. Si accessible, \u00e9changez la bobine d'allumage du cylindre 11 avec celle d'un cylindre connu pour \u00eatre bon (par exemple, cylindre 10 ou 12) et effacez les codes. Si le rat\u00e9 d'allumage se d\u00e9place vers le nouveau cylindre, la bobine est d\u00e9fectueuse. V\u00e9rifiez la bonne d\u00e9livrance de l'\u00e9tincelle \u00e0 l'aide d'un testeur d'\u00e9tincelles.",
+        "**V\u00e9rification du Syst\u00e8me de Carburant:** Testez l'injecteur de carburant du cylindre 11. Utilisez un st\u00e9thoscope pour \u00e9couter son fonctionnement de clic. V\u00e9rifiez sa r\u00e9sistance \u00e9lectrique et v\u00e9rifiez l'impulsion de l'injecteur \u00e0 l'aide d'une lampe t\u00e9moin (noid light). Si possible, \u00e9changez l'injecteur de carburant avec un autre cylindre et voyez si le rat\u00e9 d'allumage suit.",
+        "**Test de Compression:** Effectuez un test de compression \u00e0 sec et humide sur le cylindre 11. Comparez les lectures aux sp\u00e9cifications du fabricant et aux valeurs de compression des cylindres adjacents. Une diff\u00e9rence significative (g\u00e9n\u00e9ralement plus de 10-15 %) ou des valeurs absolues faibles indiquent un probl\u00e8me m\u00e9canique (par exemple, segments de piston us\u00e9s, soupape tordue, fuite du joint de culasse).",
+        "**Fuites de Vide et PCM:** Inspectez les fuites de vide autour du joint du collecteur d'admission ou des conduites de vide affectant sp\u00e9cifiquement le cylindre 11. Si tous les autres composants sont v\u00e9rifi\u00e9s et que le rat\u00e9 d'allumage persiste, un module de commande du groupe motopropulseur (PCM) d\u00e9fectueux pourrait \u00eatre une rare possibilit\u00e9, n\u00e9cessitant un diagnostic professionnel."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty spark plug for Cylinder 11.",
+        "Replace the defective ignition coil for Cylinder 11.",
+        "Clean or replace the clogged or faulty fuel injector for Cylinder 11.",
+        "Address internal engine mechanical issues, such as repairing a leaking head gasket, replacing worn piston rings, or servicing damaged valves, if indicated by a compression test."
+      ],
+      "tr": [
+        "11. silindirin ar\u0131zal\u0131 bujisini de\u011fi\u015ftirin.",
+        "11. silindirin ar\u0131zal\u0131 ate\u015fleme bobinini de\u011fi\u015ftirin.",
+        "11. silindirin t\u0131kanm\u0131\u015f veya ar\u0131zal\u0131 yak\u0131t enjekt\u00f6r\u00fcn\u00fc temizleyin veya de\u011fi\u015ftirin.",
+        "Kompresyon testi ile tespit edilen i\u00e7 motor mekanik sorunlar\u0131n\u0131 giderin; \u00f6rne\u011fin, s\u0131zd\u0131ran bir silindir kapak contas\u0131n\u0131 onar\u0131n, a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131n\u0131 de\u011fi\u015ftirin veya hasarl\u0131 valflere servis yap\u0131n."
+      ],
+      "de": [
+        "Ersetzen Sie die defekte Z\u00fcndkerze f\u00fcr Zylinder 11.",
+        "Ersetzen Sie die defekte Z\u00fcndspule f\u00fcr Zylinder 11.",
+        "Reinigen oder ersetzen Sie den verstopften oder defekten Kraftstoffinjektor f\u00fcr Zylinder 11.",
+        "Beheben Sie interne mechanische Motorprobleme, wie die Reparatur einer undichten Zylinderkopfdichtung, den Austausch verschlissener Kolbenringe oder die Wartung besch\u00e4digter Ventile, falls dies durch einen Kompressionstest angezeigt wird."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda defectuosa del Cilindro 11.",
+        "Reemplazar la bobina de encendido defectuosa del Cilindro 11.",
+        "Limpiar o reemplazar el inyector de combustible obstruido o defectuoso del Cilindro 11.",
+        "Abordar problemas mec\u00e1nicos internos del motor, como reparar una junta de culata con fugas, reemplazar anillos de pist\u00f3n desgastados o reparar v\u00e1lvulas da\u00f1adas, si lo indica una prueba de compresi\u00f3n."
+      ],
+      "fr": [
+        "Remplacer la bougie d'allumage d\u00e9fectueuse du cylindre 11.",
+        "Remplacer la bobine d'allumage d\u00e9fectueuse du cylindre 11.",
+        "Nettoyer ou remplacer l'injecteur de carburant encrass\u00e9 ou d\u00e9fectueux du cylindre 11.",
+        "R\u00e9soudre les probl\u00e8mes m\u00e9caniques internes du moteur, tels que la r\u00e9paration d'un joint de culasse qui fuit, le remplacement des segments de piston us\u00e9s ou l'entretien des soupapes endommag\u00e9es, si cela est indiqu\u00e9 par un test de compression."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "A P0311 code indicates a misfire in Cylinder 11, which can lead to reduced engine power, rough idling, poor acceleration, and decreased fuel economy. Driving with a persistent misfire can cause unburnt fuel to enter the exhaust system, potentially overheating and severely damaging the catalytic converter, a costly repair. While not immediately catastrophic, it's advisable to diagnose and repair the issue promptly to prevent further damage and ensure safe vehicle operation.",
+        "tr": "P0311 kodu, 11. silindirde bir ate\u015fleme hatas\u0131 oldu\u011funu g\u00f6sterir ve bu durum motor g\u00fcc\u00fcnde azalmaya, d\u00fczensiz r\u00f6lantiye, zay\u0131f h\u0131zlanmaya ve yak\u0131t ekonomisinde d\u00fc\u015f\u00fc\u015fe yol a\u00e7abilir. S\u00fcrekli bir ate\u015fleme hatas\u0131yla ara\u00e7 kullanmak, yanmam\u0131\u015f yak\u0131t\u0131n egzoz sistemine girmesine neden olabilir, bu da katalitik konvert\u00f6r\u00fcn a\u015f\u0131r\u0131 \u0131s\u0131nmas\u0131na ve ciddi \u015fekilde hasar g\u00f6rmesine yol a\u00e7arak pahal\u0131 bir onar\u0131m gerektirebilir. Hemen felaket olmasa da, daha fazla hasar\u0131 \u00f6nlemek ve arac\u0131n g\u00fcvenli \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flamak i\u00e7in sorunu derhal te\u015fhis edip onarmak tavsiye edilir.",
+        "de": "Ein P0311-Code weist auf eine Fehlz\u00fcndung im Zylinder 11 hin, die zu verminderter Motorleistung, unruhigem Leerlauf, schlechter Beschleunigung und erh\u00f6htem Kraftstoffverbrauch f\u00fchren kann. Das Fahren mit einer anhaltenden Fehlz\u00fcndung kann dazu f\u00fchren, dass unverbrannter Kraftstoff in das Abgassystem gelangt, was den Katalysator \u00fcberhitzen und schwer besch\u00e4digen kann, eine kostspielige Reparatur. Obwohl nicht sofort katastrophal, ist es ratsam, das Problem umgehend zu diagnostizieren und zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Un c\u00f3digo P0311 indica un fallo de encendido en el Cilindro 11, lo que puede provocar una reducci\u00f3n de la potencia del motor, un ralent\u00ed irregular, una aceleraci\u00f3n deficiente y una disminuci\u00f3n del ahorro de combustible. Conducir con un fallo de encendido persistente puede hacer que el combustible no quemado entre en el sistema de escape, lo que podr\u00eda sobrecalentar y da\u00f1ar gravemente el convertidor catal\u00edtico, una reparaci\u00f3n costosa. Aunque no es inmediatamente catastr\u00f3fico, es aconsejable diagnosticar y reparar el problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro del veh\u00edculo.",
+        "fr": "Un code P0311 indique un rat\u00e9 d'allumage dans le cylindre 11, ce qui peut entra\u00eener une r\u00e9duction de la puissance du moteur, un ralenti irr\u00e9gulier, une mauvaise acc\u00e9l\u00e9ration et une consommation de carburant accrue. Conduire avec un rat\u00e9 d'allumage persistant peut provoquer l'entr\u00e9e de carburant non br\u00fbl\u00e9 dans le syst\u00e8me d'\u00e9chappement, ce qui peut surchauffer et endommager gravement le convertisseur catalytique, une r\u00e9paration co\u00fbteuse. Bien que non imm\u00e9diatement catastrophique, il est conseill\u00e9 de diagnostiquer et de r\u00e9parer le probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$10 - $350",
+      "labor": "$100 - $500"
+    }
   },
   "P0312": {
-    "title": "Cylinder 12 Misfire Detected",
-    "description": "Code P0312 indicates the PCM has detected a misfire condition specifically in Cylinder 12.",
+    "title": {
+      "en": "Cylinder 12 Misfire Detected",
+      "tr": "12. Silindir Ate\u015fleme Hatas\u0131 Tespit Edildi",
+      "de": "Zylinder 12 Fehlz\u00fcndung erkannt",
+      "es": "Fallo de encendido detectado en el cilindro 12",
+      "fr": "Rat\u00e9 d'allumage d\u00e9tect\u00e9 dans le cylindre 12"
+    },
+    "description": {
+      "en": "Code P0312 indicates that the Powertrain Control Module (PCM) has detected a specific misfire condition in cylinder 12. A misfire occurs when one or more cylinders fail to ignite the air/fuel mixture properly, leading to a loss of power, rough running, and increased emissions. The PCM typically identifies a misfire by monitoring variations in crankshaft rotational speed; a sudden deceleration indicates a cylinder is not contributing its share of power. This code specifically points to cylinder 12, narrowing down the diagnostic focus.",
+      "tr": "P0312 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) 12. silindirde belirli bir ate\u015fleme hatas\u0131 durumu tespit etti\u011fini g\u00f6sterir. Ate\u015fleme hatas\u0131, bir veya daha fazla silindirin hava/yak\u0131t kar\u0131\u015f\u0131m\u0131n\u0131 d\u00fczg\u00fcn bir \u015fekilde ate\u015fleyememesi durumunda meydana gelir ve bu da g\u00fc\u00e7 kayb\u0131na, d\u00fczensiz \u00e7al\u0131\u015fmaya ve artan emisyonlara yol a\u00e7ar. PCM, genellikle krank mili d\u00f6n\u00fc\u015f h\u0131z\u0131ndaki varyasyonlar\u0131 izleyerek bir ate\u015fleme hatas\u0131n\u0131 tan\u0131mlar; ani bir yava\u015flama, bir silindirin g\u00fc\u00e7 \u00fcretimine katk\u0131da bulunmad\u0131\u011f\u0131n\u0131 g\u00f6sterir. Bu kod \u00f6zellikle 12. silindiri i\u015faret ederek te\u015fhis oda\u011f\u0131n\u0131 daralt\u0131r.",
+      "de": "Der Code P0312 zeigt an, dass das Motorsteuerger\u00e4t (PCM) eine spezifische Fehlz\u00fcndung im Zylinder 12 erkannt hat. Eine Fehlz\u00fcndung tritt auf, wenn ein oder mehrere Zylinder die Luft-Kraftstoff-Mischung nicht ordnungsgem\u00e4\u00df z\u00fcnden, was zu Leistungsverlust, unrundem Motorlauf und erh\u00f6hten Emissionen f\u00fchrt. Das PCM identifiziert eine Fehlz\u00fcndung typischerweise durch die \u00dcberwachung von Schwankungen der Kurbelwellendrehzahl; eine pl\u00f6tzliche Verlangsamung deutet darauf hin, dass ein Zylinder seinen Anteil an der Leistung nicht erbringt. Dieser Code weist speziell auf Zylinder 12 hin und grenzt den Diagnosefokus ein.",
+      "es": "El c\u00f3digo P0312 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado una condici\u00f3n espec\u00edfica de fallo de encendido en el cilindro 12. Un fallo de encendido ocurre cuando uno o m\u00e1s cilindros no logran encender la mezcla aire/combustible correctamente, lo que lleva a una p\u00e9rdida de potencia, un funcionamiento irregular y un aumento de las emisiones. El PCM t\u00edpicamente identifica un fallo de encendido monitoreando las variaciones en la velocidad de rotaci\u00f3n del cig\u00fce\u00f1al; una desaceleraci\u00f3n repentina indica que un cilindro no est\u00e1 contribuyendo con su parte de potencia. Este c\u00f3digo apunta espec\u00edficamente al cilindro 12, lo que reduce el enfoque de diagn\u00f3stico.",
+      "fr": "Le code P0312 indique que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 une condition de rat\u00e9 d'allumage sp\u00e9cifique dans le cylindre 12. Un rat\u00e9 d'allumage se produit lorsqu'un ou plusieurs cylindres ne parviennent pas \u00e0 enflammer correctement le m\u00e9lange air/carburant, entra\u00eenant une perte de puissance, un fonctionnement irr\u00e9gulier et une augmentation des \u00e9missions. Le PCM identifie g\u00e9n\u00e9ralement un rat\u00e9 d'allumage en surveillant les variations de la vitesse de rotation du vilebrequin ; une d\u00e9c\u00e9l\u00e9ration soudaine indique qu'un cylindre ne contribue pas \u00e0 sa part de puissance. Ce code pointe sp\u00e9cifiquement vers le cylindre 12, ce qui r\u00e9duit la focalisation du diagnostic."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39727,11 +40204,106 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Verify and Inspect: Begin by checking for any other related diagnostic trouble codes (DTCs) that might provide additional clues (e.g., fuel system codes, ignition system codes). Visually inspect the ignition coil, spark plug wire (if applicable), and fuel injector for cylinder 12 for any obvious damage, loose connections, or signs of arcing/leaks.",
+        "Spark System Test: Swap the ignition coil and spark plug from cylinder 12 with a known good cylinder (e.g., cylinder 11 or 10). Clear the codes and test drive the vehicle. If the misfire moves to the cylinder where the swapped parts were installed, the swapped component (coil or plug) is faulty.",
+        "Fuel System Test: If the misfire remains on cylinder 12 after swapping ignition components, perform a fuel injector test. This can involve listening to the injector with a stethoscope for proper clicking, checking its electrical pulse with a noid light, or swapping the fuel injector with an adjacent cylinder. If the misfire follows the injector, it's faulty.",
+        "Compression Test: If spark and fuel systems for cylinder 12 appear functional, perform a compression test on cylinder 12 and compare it to adjacent cylinders. Low compression indicates a mechanical issue such as a faulty valve, worn piston rings, or a head gasket leak.",
+        "Advanced Diagnostics: If all previous steps yield no definitive fault, consider checking for vacuum leaks affecting cylinder 12, inspecting wiring integrity to the coil and injector, or performing a leak-down test for more precise mechanical fault isolation."
+      ],
+      "tr": [
+        "Do\u011frula ve \u0130ncele: Ek ipu\u00e7lar\u0131 sa\u011flayabilecek di\u011fer ilgili ar\u0131za kodlar\u0131n\u0131 (DTC'ler) (\u00f6rn. yak\u0131t sistemi kodlar\u0131, ate\u015fleme sistemi kodlar\u0131) kontrol ederek ba\u015flay\u0131n. 12. silindir i\u00e7in ate\u015fleme bobini, buji kablosu (varsa) ve yak\u0131t enjekt\u00f6r\u00fcn\u00fc herhangi bir bariz hasar, gev\u015fek ba\u011flant\u0131 veya ark/s\u0131z\u0131nt\u0131 belirtisi a\u00e7\u0131s\u0131ndan g\u00f6rsel olarak inceleyin.",
+        "Ate\u015fleme Sistemi Testi: 12. silindirden ate\u015fleme bobini ve bujiyi bilinen sa\u011flam bir silindirle (\u00f6rn. 11. veya 10. silindir) de\u011fi\u015ftirin. Kodlar\u0131 temizleyin ve arac\u0131 test s\u00fcr\u00fc\u015f\u00fc yap\u0131n. Ate\u015fleme hatas\u0131, de\u011fi\u015ftirilen par\u00e7alar\u0131n tak\u0131ld\u0131\u011f\u0131 silindire ge\u00e7erse, de\u011fi\u015ftirilen bile\u015fen (bobin veya buji) ar\u0131zal\u0131d\u0131r.",
+        "Yak\u0131t Sistemi Testi: Ate\u015fleme bile\u015fenlerini de\u011fi\u015ftirdikten sonra ate\u015fleme hatas\u0131 12. silindirde kal\u0131rsa, yak\u0131t enjekt\u00f6r\u00fc testi yap\u0131n. Bu, enjekt\u00f6r\u00fc stetoskopla dinleyerek d\u00fczg\u00fcn t\u0131klama sesini kontrol etmeyi, noid \u0131\u015f\u0131\u011f\u0131 ile elektrik darbesini kontrol etmeyi veya yak\u0131t enjekt\u00f6r\u00fcn\u00fc biti\u015fik bir silindirle de\u011fi\u015ftirmeyi i\u00e7erebilir. Ate\u015fleme hatas\u0131 enjekt\u00f6r\u00fc takip ederse, enjekt\u00f6r ar\u0131zal\u0131d\u0131r.",
+        "Kompresyon Testi: 12. silindir i\u00e7in ate\u015fleme ve yak\u0131t sistemleri i\u015flevsel g\u00f6r\u00fcn\u00fcyorsa, 12. silindirde bir kompresyon testi yap\u0131n ve biti\u015fik silindirlerle kar\u015f\u0131la\u015ft\u0131r\u0131n. D\u00fc\u015f\u00fck kompresyon, ar\u0131zal\u0131 bir valf, a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131 veya silindir kapak contas\u0131 s\u0131z\u0131nt\u0131s\u0131 gibi mekanik bir sorunu g\u00f6sterir.",
+        "Geli\u015fmi\u015f Te\u015fhisler: \u00d6nceki t\u00fcm ad\u0131mlar kesin bir ar\u0131za vermezse, 12. silindiri etkileyen vakum ka\u00e7aklar\u0131n\u0131 kontrol etmeyi, bobin ve enjekt\u00f6re giden kablo b\u00fct\u00fcnl\u00fc\u011f\u00fcn\u00fc incelemeyi veya daha hassas mekanik ar\u0131za izolasyonu i\u00e7in bir ka\u00e7ak testi yapmay\u0131 d\u00fc\u015f\u00fcn\u00fcn."
+      ],
+      "de": [
+        "\u00dcberpr\u00fcfen und Inspizieren: Beginnen Sie mit der \u00dcberpr\u00fcfung auf andere verwandte Diagnosefehlercodes (DTCs), die zus\u00e4tzliche Hinweise geben k\u00f6nnten (z. B. Kraftstoffsystemcodes, Z\u00fcndsystemcodes). \u00dcberpr\u00fcfen Sie visuell die Z\u00fcndspule, das Z\u00fcndkabel (falls zutreffend) und die Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 12 auf offensichtliche Sch\u00e4den, lose Verbindungen oder Anzeichen von Lichtb\u00f6gen/Lecks.",
+        "Z\u00fcndsystemtest: Tauschen Sie die Z\u00fcndspule und die Z\u00fcndkerze von Zylinder 12 mit einem bekannterma\u00dfen funktionierenden Zylinder (z. B. Zylinder 11 oder 10). L\u00f6schen Sie die Codes und machen Sie eine Probefahrt. Wenn die Fehlz\u00fcndung zu dem Zylinder wandert, in dem die getauschten Teile installiert wurden, ist das getauschte Bauteil (Spule oder Kerze) defekt.",
+        "Kraftstoffsystemtest: Bleibt die Fehlz\u00fcndung nach dem Tausch der Z\u00fcndkomponenten im Zylinder 12 bestehen, f\u00fchren Sie einen Kraftstoffeinspritzd\u00fcsentest durch. Dies kann das Abh\u00f6ren der Einspritzd\u00fcse mit einem Stethoskop auf ordnungsgem\u00e4\u00dfes Klicken, die \u00dcberpr\u00fcfung ihres elektrischen Impulses mit einer Noid-Leuchte oder das Tauschen der Kraftstoffeinspritzd\u00fcse mit einem benachbarten Zylinder umfassen. Wenn die Fehlz\u00fcndung der Einspritzd\u00fcse folgt, ist diese defekt.",
+        "Kompressionspr\u00fcfung: Wenn die Z\u00fcnd- und Kraftstoffsysteme f\u00fcr Zylinder 12 funktionsf\u00e4hig erscheinen, f\u00fchren Sie eine Kompressionspr\u00fcfung an Zylinder 12 durch und vergleichen Sie diese mit benachbarten Zylindern. Eine niedrige Kompression weist auf ein mechanisches Problem hin, wie z. B. ein defektes Ventil, verschlissene Kolbenringe oder eine Zylinderkopfdichtung undichtigkeit.",
+        "Erweiterte Diagnostik: Wenn alle vorherigen Schritte keinen eindeutigen Fehler ergeben, ziehen Sie die \u00dcberpr\u00fcfung auf Vakuumlecks, die Zylinder 12 betreffen, die \u00dcberpr\u00fcfung der Kabelintegrit\u00e4t zur Spule und Einspritzd\u00fcse oder die Durchf\u00fchrung eines Lecktests zur pr\u00e4ziseren Isolierung mechanischer Fehler in Betracht."
+      ],
+      "es": [
+        "Verificar e Inspeccionar: Comience buscando otros c\u00f3digos de diagn\u00f3stico de problemas (DTC) relacionados que puedan proporcionar pistas adicionales (por ejemplo, c\u00f3digos del sistema de combustible, c\u00f3digos del sistema de encendido). Inspeccione visualmente la bobina de encendido, el cable de la buj\u00eda (si aplica) y el inyector de combustible del cilindro 12 en busca de da\u00f1os obvios, conexiones sueltas o signos de arcos/fugas.",
+        "Prueba del Sistema de Encendido: Intercambie la bobina de encendido y la buj\u00eda del cilindro 12 con un cilindro que se sepa que funciona correctamente (por ejemplo, cilindro 11 o 10). Borre los c\u00f3digos y pruebe el veh\u00edculo. Si el fallo de encendido se traslada al cilindro donde se instalaron las piezas intercambiadas, el componente intercambiado (bobina o buj\u00eda) est\u00e1 defectuoso.",
+        "Prueba del Sistema de Combustible: Si el fallo de encendido permanece en el cilindro 12 despu\u00e9s de intercambiar los componentes de encendido, realice una prueba del inyector de combustible. Esto puede implicar escuchar el inyector con un estetoscopio para verificar un clic adecuado, verificar su pulso el\u00e9ctrico con una luz de prueba de inyectores (noid light) o intercambiar el inyector de combustible con un cilindro adyacente. Si el fallo de encendido sigue al inyector, este est\u00e1 defectuoso.",
+        "Prueba de Compresi\u00f3n: Si los sistemas de encendido y combustible del cilindro 12 parecen funcionar, realice una prueba de compresi\u00f3n en el cilindro 12 y comp\u00e1rela con los cilindros adyacentes. Una compresi\u00f3n baja indica un problema mec\u00e1nico como una v\u00e1lvula defectuosa, anillos de pist\u00f3n desgastados o una fuga en la junta de la culata.",
+        "Diagn\u00f3stico Avanzado: Si todos los pasos anteriores no arrojan una falla definitiva, considere verificar si hay fugas de vac\u00edo que afecten al cilindro 12, inspeccionar la integridad del cableado a la bobina y al inyector, o realizar una prueba de fugas para un aislamiento de fallas mec\u00e1nicas m\u00e1s preciso."
+      ],
+      "fr": [
+        "V\u00e9rifier et Inspecter: Commencez par v\u00e9rifier la pr\u00e9sence d'autres codes de diagnostic (DTC) connexes qui pourraient fournir des indices suppl\u00e9mentaires (par exemple, codes du syst\u00e8me de carburant, codes du syst\u00e8me d'allumage). Inspectez visuellement la bobine d'allumage, le fil de bougie (le cas \u00e9ch\u00e9ant) et l'injecteur de carburant du cylindre 12 pour d\u00e9tecter tout dommage \u00e9vident, des connexions desserr\u00e9es ou des signes d'arc \u00e9lectrique/fuites.",
+        "Test du Syst\u00e8me d'Allumage: \u00c9changez la bobine d'allumage et la bougie du cylindre 12 avec un cylindre dont le fonctionnement est connu (par exemple, cylindre 11 ou 10). Effacez les codes et effectuez un essai routier. Si le rat\u00e9 d'allumage se d\u00e9place vers le cylindre o\u00f9 les pi\u00e8ces \u00e9chang\u00e9es ont \u00e9t\u00e9 install\u00e9es, le composant \u00e9chang\u00e9 (bobine ou bougie) est d\u00e9fectueux.",
+        "Test du Syst\u00e8me de Carburant: Si le rat\u00e9 d'allumage persiste sur le cylindre 12 apr\u00e8s l'\u00e9change des composants d'allumage, effectuez un test de l'injecteur de carburant. Cela peut impliquer d'\u00e9couter l'injecteur avec un st\u00e9thoscope pour un clic appropri\u00e9, de v\u00e9rifier son impulsion \u00e9lectrique avec une lampe t\u00e9moin (noid light), ou d'\u00e9changer l'injecteur de carburant avec un cylindre adjacent. Si le rat\u00e9 d'allumage suit l'injecteur, celui-ci est d\u00e9fectueux.",
+        "Test de Compression: Si les syst\u00e8mes d'allumage et de carburant du cylindre 12 semblent fonctionnels, effectuez un test de compression sur le cylindre 12 et comparez-le aux cylindres adjacents. Une faible compression indique un probl\u00e8me m\u00e9canique tel qu'une soupape d\u00e9fectueuse, des segments de piston us\u00e9s ou une fuite du joint de culasse.",
+        "Diagnostics Avanc\u00e9s: Si toutes les \u00e9tapes pr\u00e9c\u00e9dentes ne donnent pas de d\u00e9faut d\u00e9finitif, envisagez de v\u00e9rifier les fuites de vide affectant le cylindre 12, d'inspecter l'int\u00e9grit\u00e9 du c\u00e2blage vers la bobine et l'injecteur, ou d'effectuer un test de fuite pour une isolation plus pr\u00e9cise des d\u00e9fauts m\u00e9caniques."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace the faulty spark plug in cylinder 12.",
+        "Replace the faulty ignition coil for cylinder 12.",
+        "Replace the faulty fuel injector for cylinder 12.",
+        "Repair internal engine mechanical issues (e.g., valve repair, head gasket replacement) if low compression is detected."
+      ],
+      "tr": [
+        "12. silindirdeki ar\u0131zal\u0131 bujiyi de\u011fi\u015ftirin.",
+        "12. silindir i\u00e7in ar\u0131zal\u0131 ate\u015fleme bobinini de\u011fi\u015ftirin.",
+        "12. silindir i\u00e7in ar\u0131zal\u0131 yak\u0131t enjekt\u00f6r\u00fcn\u00fc de\u011fi\u015ftirin.",
+        "D\u00fc\u015f\u00fck kompresyon tespit edilirse i\u00e7 motor mekanik sorunlar\u0131n\u0131 (\u00f6rn. valf onar\u0131m\u0131, silindir kapak contas\u0131 de\u011fi\u015fimi) onar\u0131n."
+      ],
+      "de": [
+        "Ersetzen Sie die defekte Z\u00fcndkerze in Zylinder 12.",
+        "Ersetzen Sie die defekte Z\u00fcndspule f\u00fcr Zylinder 12.",
+        "Ersetzen Sie die defekte Kraftstoffeinspritzd\u00fcse f\u00fcr Zylinder 12.",
+        "Beheben Sie interne mechanische Motorprobleme (z. B. Ventilreparatur, Zylinderkopfdichtungswechsel), wenn eine niedrige Kompression festgestellt wird."
+      ],
+      "es": [
+        "Reemplazar la buj\u00eda defectuosa en el cilindro 12.",
+        "Reemplazar la bobina de encendido defectuosa para el cilindro 12.",
+        "Reemplazar el inyector de combustible defectuoso para el cilindro 12.",
+        "Reparar problemas mec\u00e1nicos internos del motor (por ejemplo, reparaci\u00f3n de v\u00e1lvulas, reemplazo de la junta de la culata) si se detecta baja compresi\u00f3n."
+      ],
+      "fr": [
+        "Remplacer la bougie d\u00e9fectueuse du cylindre 12.",
+        "Remplacer la bobine d'allumage d\u00e9fectueuse du cylindre 12.",
+        "Remplacer l'injecteur de carburant d\u00e9fectueux du cylindre 12.",
+        "R\u00e9parer les probl\u00e8mes m\u00e9caniques internes du moteur (par exemple, r\u00e9paration de soupapes, remplacement du joint de culasse) si une faible compression est d\u00e9tect\u00e9e."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0312 code can lead to reduced engine power, rough idling, and poor fuel economy. More critically, a persistent misfire can cause unburnt fuel to enter the exhaust system, potentially overheating and severely damaging the catalytic converter, which is an expensive repair. It is advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe vehicle operation.",
+        "tr": "P0312 koduyla ara\u00e7 kullanmak, motor g\u00fcc\u00fcnde azalmaya, d\u00fczensiz r\u00f6lantiye ve k\u00f6t\u00fc yak\u0131t ekonomisine yol a\u00e7abilir. Daha da \u00f6nemlisi, s\u00fcrekli bir ate\u015fleme hatas\u0131, yanmam\u0131\u015f yak\u0131t\u0131n egzoz sistemine girmesine neden olarak katalitik konvert\u00f6r\u00fcn a\u015f\u0131r\u0131 \u0131s\u0131nmas\u0131na ve ciddi \u015fekilde hasar g\u00f6rmesine yol a\u00e7abilir ki bu da pahal\u0131 bir onar\u0131md\u0131r. Daha fazla hasar\u0131 \u00f6nlemek ve arac\u0131n g\u00fcvenli \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flamak i\u00e7in bu sorunu derhal te\u015fhis etmek ve onarmak tavsiye edilir.",
+        "de": "Das Fahren mit einem P0312-Code kann zu reduzierter Motorleistung, unrundem Leerlauf und schlechtem Kraftstoffverbrauch f\u00fchren. Kritischer ist, dass eine anhaltende Fehlz\u00fcndung dazu f\u00fchren kann, dass unverbrannter Kraftstoff in das Abgassystem gelangt, was den Katalysator \u00fcberhitzen und schwer besch\u00e4digen kann, was eine teure Reparatur ist. Es ist ratsam, dieses Problem umgehend zu diagnostizieren und zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con un c\u00f3digo P0312 puede provocar una reducci\u00f3n de la potencia del motor, un ralent\u00ed irregular y un consumo deficiente de combustible. M\u00e1s cr\u00edticamente, un fallo de encendido persistente puede hacer que el combustible no quemado entre en el sistema de escape, lo que podr\u00eda sobrecalentar y da\u00f1ar gravemente el catalizador, una reparaci\u00f3n costosa. Es aconsejable diagnosticar y reparar este problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro del veh\u00edculo.",
+        "fr": "Conduire avec un code P0312 peut entra\u00eener une r\u00e9duction de la puissance du moteur, un ralenti irr\u00e9gulier et une mauvaise \u00e9conomie de carburant. Plus grave encore, un rat\u00e9 d'allumage persistant peut provoquer l'entr\u00e9e de carburant non br\u00fbl\u00e9 dans le syst\u00e8me d'\u00e9chappement, ce qui peut surchauffer et endommager gravement le convertisseur catalytique, une r\u00e9paration co\u00fbteuse. Il est conseill\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$15 - $300",
+      "labor": "$100 - $600"
+    }
   },
   "P0313": {
-    "title": "Misfire Detected with Low Fuel",
-    "description": "Code P0313 indicates engine misfires have been detected while the fuel level is very low.",
+    "title": {
+      "en": "Misfire Detected with Low Fuel",
+      "tr": "D\u00fc\u015f\u00fck Yak\u0131t Seviyesinde Tekleme Tespit Edildi",
+      "de": "Z\u00fcndaussetzer bei niedrigem Kraftstoffstand erkannt",
+      "es": "Fallo de encendido detectado con bajo nivel de combustible",
+      "fr": "Rat\u00e9 d'allumage d\u00e9tect\u00e9 avec niveau de carburant bas"
+    },
+    "description": {
+      "en": "Code P0313 signifies that the Powertrain Control Module (PCM) has identified engine misfires specifically when the vehicle's fuel tank level is critically low, typically below 1/8 or 1/4 of a tank. This condition often points to issues with the fuel delivery system struggling to supply adequate fuel pressure or volume under low fuel conditions, potentially due to a failing fuel pump, a clogged fuel filter, or contaminants in the fuel tank being drawn into the system. It's crucial to distinguish this from general misfire codes (P030X) as P0313 specifically links the misfire event to a low fuel state.",
+      "tr": "P0313 kodu, Aktarma Organlar\u0131 Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) arac\u0131n yak\u0131t seviyesi kritik derecede d\u00fc\u015f\u00fckken, genellikle deponun 1/8 veya 1/4'\u00fcnden azken motor teklemesi tespit etti\u011fini g\u00f6sterir. Bu durum genellikle yak\u0131t da\u011f\u0131t\u0131m sisteminin d\u00fc\u015f\u00fck yak\u0131t ko\u015fullar\u0131nda yeterli yak\u0131t bas\u0131nc\u0131 veya hacmi sa\u011flamakta zorland\u0131\u011f\u0131na i\u015faret eder; bu da ar\u0131zal\u0131 bir yak\u0131t pompas\u0131, t\u0131kal\u0131 bir yak\u0131t filtresi veya yak\u0131t deposundaki kirleticilerin sisteme \u00e7ekilmesi nedeniyle olabilir. Bu kodu genel tekleme kodlar\u0131ndan (P030X) ay\u0131rmak \u00f6nemlidir, \u00e7\u00fcnk\u00fc P0313 tekleme olay\u0131n\u0131 \u00f6zellikle d\u00fc\u015f\u00fck yak\u0131t durumuyla ili\u015fkilendirir.",
+      "de": "Der Code P0313 bedeutet, dass das Antriebsstrang-Steuerger\u00e4t (PCM) Motorz\u00fcndaussetzer erkannt hat, insbesondere wenn der Kraftstoffstand des Fahrzeugs kritisch niedrig ist, typischerweise unter 1/8 oder 1/4 des Tanks. Dieser Zustand deutet oft auf Probleme hin, bei denen das Kraftstoffversorgungssystem Schwierigkeiten hat, bei niedrigem Kraftstoffstand ausreichenden Kraftstoffdruck oder -volumen zu liefern, m\u00f6glicherweise aufgrund einer schwachen Kraftstoffpumpe, eines verstopften Kraftstofffilters oder von Verunreinigungen im Kraftstofftank, die in das System gesaugt werden. Es ist entscheidend, diesen Code von allgemeinen Z\u00fcndaussetzer-Codes (P030X) zu unterscheiden, da P0313 das Z\u00fcndaussetzer-Ereignis spezifisch mit einem niedrigen Kraftstoffstand in Verbindung bringt.",
+      "es": "El c\u00f3digo P0313 significa que el M\u00f3dulo de Control del Tren Motriz (PCM) ha detectado fallos de encendido del motor espec\u00edficamente cuando el nivel de combustible del veh\u00edculo es cr\u00edticamente bajo, t\u00edpicamente por debajo de 1/8 o 1/4 del tanque. Esta condici\u00f3n a menudo apunta a problemas con el sistema de suministro de combustible que lucha por proporcionar una presi\u00f3n o volumen de combustible adecuados en condiciones de bajo nivel de combustible, potencialmente debido a una bomba de combustible defectuosa, un filtro de combustible obstruido o contaminantes en el tanque de combustible que son arrastrados al sistema. Es crucial distinguir esto de los c\u00f3digos de fallo de encendido generales (P030X), ya que el P0313 vincula espec\u00edficamente el evento de fallo de encendido con un estado de bajo nivel de combustible.",
+      "fr": "Le code P0313 signifie que le module de commande du groupe motopropulseur (PCM) a d\u00e9tect\u00e9 des rat\u00e9s d'allumage du moteur sp\u00e9cifiquement lorsque le niveau de carburant du v\u00e9hicule est critiquement bas, g\u00e9n\u00e9ralement en dessous de 1/8 ou 1/4 du r\u00e9servoir. Cette condition indique souvent des probl\u00e8mes avec le syst\u00e8me de livraison de carburant qui a du mal \u00e0 fournir une pression ou un volume de carburant ad\u00e9quats dans des conditions de faible niveau de carburant, potentiellement en raison d'une pompe \u00e0 carburant d\u00e9faillante, d'un filtre \u00e0 carburant encrass\u00e9 ou de contaminants dans le r\u00e9servoir de carburant aspir\u00e9s dans le syst\u00e8me. Il est crucial de distinguer ce code des codes de rat\u00e9s d'allumage g\u00e9n\u00e9raux (P030X), car le P0313 lie sp\u00e9cifiquement l'\u00e9v\u00e9nement de rat\u00e9 d'allumage \u00e0 un \u00e9tat de faible niveau de carburant."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39744,11 +40316,106 @@
       "cause_fuel_injector"
     ],
     "fixDifficulty": "diff_easy",
-    "estimatedCost": "$0 - $300"
+    "estimatedCost": "$0 - $300",
+    "diagnosticSteps": {
+      "en": [
+        "Verify Fuel Level and Refuel: The immediate first step is to confirm the fuel level is indeed low and then refuel the vehicle to at least half a tank. Clear the code and test drive to see if the misfire returns. This often resolves the issue if it was simply a lack of fuel.",
+        "Inspect Fuel System for Contamination/Blockage: If misfires persist after refueling, inspect the fuel tank for debris or water contamination. Check the fuel filter for excessive clogging. A restricted fuel filter can severely impede fuel flow, especially when the pump is working harder with low fuel levels.",
+        "Perform Fuel Pressure and Volume Test: Connect a fuel pressure gauge and perform both static and dynamic (under load) fuel pressure tests, paying close attention to readings when the fuel level is low (if possible to replicate safely). Also, conduct a fuel volume test to ensure the pump can deliver the required amount of fuel. Compare readings to manufacturer specifications.",
+        "Evaluate Fuel Pump Performance: If fuel pressure or volume is low, especially when the tank is near empty, the fuel pump itself may be weak, failing, or its in-tank strainer/sock may be clogged. Listen for unusual noises from the fuel pump area.",
+        "Check for Other Misfire-Related Components: If fuel delivery is confirmed adequate, then investigate common misfire causes such as faulty spark plugs, ignition coils, or fuel injectors, as these could be exacerbated by marginal fuel delivery conditions."
+      ],
+      "tr": [
+        "Yak\u0131t Seviyesini Do\u011frulay\u0131n ve Yak\u0131t Doldurun: \u0130lk ad\u0131m, yak\u0131t seviyesinin ger\u00e7ekten d\u00fc\u015f\u00fck oldu\u011funu do\u011frulamak ve ard\u0131ndan araca en az yar\u0131m depo yak\u0131t doldurmakt\u0131r. Kodu temizleyin ve teklemenin geri d\u00f6n\u00fcp d\u00f6nmedi\u011fini g\u00f6rmek i\u00e7in test s\u00fcr\u00fc\u015f\u00fc yap\u0131n. Bu, sorun sadece yak\u0131t eksikli\u011fi ise genellikle \u00e7\u00f6z\u00fcm\u00fc sa\u011flar.",
+        "Yak\u0131t Sistemini Kirlilik/T\u0131kan\u0131kl\u0131k A\u00e7\u0131s\u0131ndan \u0130nceleyin: Yak\u0131t doldurulduktan sonra tekleme devam ederse, yak\u0131t deposunu kir veya su kirlili\u011fi a\u00e7\u0131s\u0131ndan inceleyin. Yak\u0131t filtresini a\u015f\u0131r\u0131 t\u0131kan\u0131kl\u0131k a\u00e7\u0131s\u0131ndan kontrol edin. K\u0131s\u0131tl\u0131 bir yak\u0131t filtresi, \u00f6zellikle pompa d\u00fc\u015f\u00fck yak\u0131t seviyelerinde daha fazla \u00e7al\u0131\u015ft\u0131\u011f\u0131nda yak\u0131t ak\u0131\u015f\u0131n\u0131 ciddi \u015fekilde engelleyebilir.",
+        "Yak\u0131t Bas\u0131nc\u0131 ve Hacim Testi Yap\u0131n: Bir yak\u0131t bas\u0131n\u00e7 g\u00f6stergesi ba\u011flay\u0131n ve hem statik hem de dinamik (y\u00fck alt\u0131nda) yak\u0131t bas\u0131nc\u0131 testleri yap\u0131n, yak\u0131t seviyesi d\u00fc\u015f\u00fckken (g\u00fcvenli bir \u015fekilde tekrarlanabiliyorsa) okumalara \u00f6zellikle dikkat edin. Ayr\u0131ca, pompan\u0131n gerekli miktarda yak\u0131t sa\u011flayabildi\u011finden emin olmak i\u00e7in bir yak\u0131t hacmi testi yap\u0131n. Okumalar\u0131 \u00fcretici spesifikasyonlar\u0131yla kar\u015f\u0131la\u015ft\u0131r\u0131n.",
+        "Yak\u0131t Pompas\u0131 Performans\u0131n\u0131 De\u011ferlendirin: Yak\u0131t bas\u0131nc\u0131 veya hacmi d\u00fc\u015f\u00fckse, \u00f6zellikle depo neredeyse bo\u015fken, yak\u0131t pompas\u0131n\u0131n kendisi zay\u0131f, ar\u0131zal\u0131 veya depo i\u00e7i s\u00fczgeci/\u00e7orab\u0131 t\u0131kal\u0131 olabilir. Yak\u0131t pompas\u0131 b\u00f6lgesinden gelen ola\u011fand\u0131\u015f\u0131 sesleri dinleyin.",
+        "Di\u011fer Tekleme \u0130li\u015fkili Bile\u015fenleri Kontrol Edin: Yak\u0131t da\u011f\u0131t\u0131m\u0131n\u0131n yeterli oldu\u011fu do\u011frulan\u0131rsa, ar\u0131zal\u0131 bujiler, ate\u015fleme bobinleri veya yak\u0131t enjekt\u00f6rleri gibi yayg\u0131n tekleme nedenlerini ara\u015ft\u0131r\u0131n, \u00e7\u00fcnk\u00fc bunlar marjinal yak\u0131t da\u011f\u0131t\u0131m ko\u015fullar\u0131yla \u015fiddetlenebilir."
+      ],
+      "de": [
+        "Kraftstoffstand \u00fcberpr\u00fcfen und tanken: Der erste und wichtigste Schritt ist, den niedrigen Kraftstoffstand zu best\u00e4tigen und das Fahrzeug dann auf mindestens einen halben Tank aufzutanken. L\u00f6schen Sie den Code und machen Sie eine Probefahrt, um zu sehen, ob die Z\u00fcndaussetzer zur\u00fcckkehren. Dies l\u00f6st das Problem oft, wenn es lediglich an Kraftstoffmangel lag.",
+        "Kraftstoffsystem auf Verunreinigungen/Verstopfungen pr\u00fcfen: Wenn die Z\u00fcndaussetzer nach dem Tanken weiterhin bestehen, \u00fcberpr\u00fcfen Sie den Kraftstofftank auf Schmutz oder Wasserverunreinigungen. \u00dcberpr\u00fcfen Sie den Kraftstofffilter auf \u00fcberm\u00e4\u00dfige Verstopfung. Ein eingeschr\u00e4nkter Kraftstofffilter kann den Kraftstofffluss erheblich behindern, insbesondere wenn die Pumpe bei niedrigem Kraftstoffstand st\u00e4rker arbeiten muss.",
+        "Kraftstoffdruck- und Volumenpr\u00fcfung durchf\u00fchren: Schlie\u00dfen Sie ein Kraftstoffdruckmessger\u00e4t an und f\u00fchren Sie sowohl statische als auch dynamische (unter Last) Kraftstoffdruckpr\u00fcfungen durch. Achten Sie dabei besonders auf die Messwerte, wenn der Kraftstoffstand niedrig ist (falls sicher reproduzierbar). F\u00fchren Sie auch eine Kraftstoffvolumenpr\u00fcfung durch, um sicherzustellen, dass die Pumpe die erforderliche Kraftstoffmenge liefern kann. Vergleichen Sie die Messwerte mit den Herstellerspezifikationen.",
+        "Leistung der Kraftstoffpumpe bewerten: Wenn der Kraftstoffdruck oder das Volumen niedrig ist, insbesondere wenn der Tank fast leer ist, kann die Kraftstoffpumpe selbst schwach oder defekt sein oder ihr Sieb/Filter im Tank verstopft sein. Achten Sie auf ungew\u00f6hnliche Ger\u00e4usche aus dem Bereich der Kraftstoffpumpe.",
+        "Andere z\u00fcndaussetzerbezogene Komponenten pr\u00fcfen: Wenn die Kraftstoffversorgung als ausreichend best\u00e4tigt wird, untersuchen Sie g\u00e4ngige Ursachen f\u00fcr Z\u00fcndaussetzer wie fehlerhafte Z\u00fcndkerzen, Z\u00fcndspulen oder Kraftstoffeinspritzd\u00fcsen, da diese durch marginale Kraftstoffversorgungsbedingungen versch\u00e4rft werden k\u00f6nnten."
+      ],
+      "es": [
+        "Verificar el nivel de combustible y repostar: El primer paso inmediato es confirmar que el nivel de combustible es realmente bajo y luego repostar el veh\u00edculo a al menos medio tanque. Borre el c\u00f3digo y realice una prueba de manejo para ver si el fallo de encendido regresa. Esto a menudo resuelve el problema si fue simplemente una falta de combustible.",
+        "Inspeccionar el sistema de combustible en busca de contaminaci\u00f3n/obstrucci\u00f3n: Si los fallos de encendido persisten despu\u00e9s de repostar, inspeccione el tanque de combustible en busca de residuos o contaminaci\u00f3n por agua. Revise el filtro de combustible para detectar una obstrucci\u00f3n excesiva. Un filtro de combustible restringido puede impedir gravemente el flujo de combustible, especialmente cuando la bomba est\u00e1 trabajando m\u00e1s con niveles bajos de combustible.",
+        "Realizar prueba de presi\u00f3n y volumen de combustible: Conecte un man\u00f3metro de presi\u00f3n de combustible y realice pruebas de presi\u00f3n de combustible tanto est\u00e1ticas como din\u00e1micas (bajo carga), prestando especial atenci\u00f3n a las lecturas cuando el nivel de combustible es bajo (si es posible replicar de forma segura). Adem\u00e1s, realice una prueba de volumen de combustible para asegurarse de que la bomba pueda entregar la cantidad de combustible requerida. Compare las lecturas con las especificaciones del fabricante.",
+        "Evaluar el rendimiento de la bomba de combustible: Si la presi\u00f3n o el volumen de combustible son bajos, especialmente cuando el tanque est\u00e1 casi vac\u00edo, la propia bomba de combustible puede estar d\u00e9bil, fallando, o su filtro/calcet\u00edn dentro del tanque puede estar obstruido. Escuche ruidos inusuales en el \u00e1rea de la bomba de combustible.",
+        "Verificar otros componentes relacionados con fallos de encendido: Si se confirma que el suministro de combustible es adecuado, entonces investigue las causas comunes de fallos de encendido, como buj\u00edas defectuosas, bobinas de encendido o inyectores de combustible, ya que estos podr\u00edan verse exacerbados por condiciones marginales de suministro de combustible."
+      ],
+      "fr": [
+        "V\u00e9rifier le niveau de carburant et faire le plein: La premi\u00e8re \u00e9tape imm\u00e9diate consiste \u00e0 confirmer que le niveau de carburant est effectivement bas, puis \u00e0 faire le plein du v\u00e9hicule \u00e0 au moins la moiti\u00e9 du r\u00e9servoir. Effacez le code et effectuez un essai routier pour voir si le rat\u00e9 d'allumage revient. Cela r\u00e9sout souvent le probl\u00e8me s'il s'agissait simplement d'un manque de carburant.",
+        "Inspecter le syst\u00e8me de carburant pour la contamination/l'obstruction: Si les rat\u00e9s d'allumage persistent apr\u00e8s avoir fait le plein, inspectez le r\u00e9servoir de carburant pour d\u00e9tecter des d\u00e9bris ou une contamination par l'eau. V\u00e9rifiez le filtre \u00e0 carburant pour un encrassement excessif. Un filtre \u00e0 carburant restreint peut gravement entraver le d\u00e9bit de carburant, surtout lorsque la pompe travaille plus fort avec des niveaux de carburant bas.",
+        "Effectuer un test de pression et de volume de carburant: Connectez un manom\u00e8tre de pression de carburant et effectuez des tests de pression de carburant statiques et dynamiques (sous charge), en pr\u00eatant une attention particuli\u00e8re aux lectures lorsque le niveau de carburant est bas (si possible de reproduire en toute s\u00e9curit\u00e9). De plus, effectuez un test de volume de carburant pour vous assurer que la pompe peut fournir la quantit\u00e9 de carburant requise. Comparez les lectures aux sp\u00e9cifications du fabricant.",
+        "\u00c9valuer les performances de la pompe \u00e0 carburant: Si la pression ou le volume de carburant est faible, surtout lorsque le r\u00e9servoir est presque vide, la pompe \u00e0 carburant elle-m\u00eame peut \u00eatre faible, d\u00e9faillante, ou son tamis/chaussette dans le r\u00e9servoir peut \u00eatre encrass\u00e9. \u00c9coutez les bruits inhabituels provenant de la zone de la pompe \u00e0 carburant.",
+        "V\u00e9rifier les autres composants li\u00e9s aux rat\u00e9s d'allumage: Si l'alimentation en carburant est confirm\u00e9e comme ad\u00e9quate, alors enqu\u00eatez sur les causes courantes de rat\u00e9s d'allumage telles que des bougies d'allumage, des bobines d'allumage ou des injecteurs de carburant d\u00e9fectueux, car ceux-ci pourraient \u00eatre exacerb\u00e9s par des conditions marginales d'alimentation en carburant."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Refuel the vehicle to an adequate level.",
+        "Replace a clogged or old fuel filter.",
+        "Replace a weak or failing fuel pump assembly.",
+        "Clean the fuel tank and fuel injectors if contamination is present."
+      ],
+      "tr": [
+        "Arac\u0131 yeterli seviyeye kadar yak\u0131tla doldurun.",
+        "T\u0131kal\u0131 veya eski yak\u0131t filtresini de\u011fi\u015ftirin.",
+        "Zay\u0131f veya ar\u0131zal\u0131 yak\u0131t pompas\u0131 tertibat\u0131n\u0131 de\u011fi\u015ftirin.",
+        "Kirlilik varsa yak\u0131t deposunu ve yak\u0131t enjekt\u00f6rlerini temizleyin."
+      ],
+      "de": [
+        "Das Fahrzeug auf einen ausreichenden Stand auftanken.",
+        "Einen verstopften oder alten Kraftstofffilter ersetzen.",
+        "Eine schwache oder defekte Kraftstoffpumpenbaugruppe ersetzen.",
+        "Den Kraftstofftank und die Kraftstoffeinspritzd\u00fcsen reinigen, falls Verunreinigungen vorhanden sind."
+      ],
+      "es": [
+        "Repostar el veh\u00edculo a un nivel adecuado.",
+        "Reemplazar un filtro de combustible obstruido o viejo.",
+        "Reemplazar un conjunto de bomba de combustible d\u00e9bil o defectuoso.",
+        "Limpiar el tanque de combustible y los inyectores de combustible si hay contaminaci\u00f3n."
+      ],
+      "fr": [
+        "Faire le plein du v\u00e9hicule \u00e0 un niveau ad\u00e9quat.",
+        "Remplacer un filtre \u00e0 carburant encrass\u00e9 ou ancien.",
+        "Remplacer un ensemble de pompe \u00e0 carburant faible ou d\u00e9faillant.",
+        "Nettoyer le r\u00e9servoir de carburant et les injecteurs de carburant si une contamination est pr\u00e9sente."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0313 code can lead to significant drivability issues such as rough idling, hesitation, reduced power, and potential stalling. Prolonged misfires can cause severe damage to the catalytic converter due to unburnt fuel entering the exhaust system, leading to costly repairs. It is advisable to address this issue promptly to prevent further damage and ensure safe operation.",
+        "tr": "P0313 koduyla s\u00fcr\u00fc\u015f, d\u00fczensiz r\u00f6lanti, teredd\u00fct, g\u00fc\u00e7 kayb\u0131 ve potansiyel stop etme gibi \u00f6nemli s\u00fcr\u00fc\u015f sorunlar\u0131na yol a\u00e7abilir. Uzun s\u00fcreli tekleme, yanmam\u0131\u015f yak\u0131t\u0131n egzoz sistemine girmesi nedeniyle katalitik konvert\u00f6re ciddi hasar verebilir ve bu da maliyetli onar\u0131mlara yol a\u00e7abilir. Daha fazla hasar\u0131 \u00f6nlemek ve g\u00fcvenli \u00e7al\u0131\u015fmay\u0131 sa\u011flamak i\u00e7in bu sorunu derhal gidermek tavsiye edilir.",
+        "de": "Das Fahren mit einem P0313-Code kann zu erheblichen Fahrbarkeitsproblemen wie unruhigem Leerlauf, Z\u00f6gern, Leistungsverlust und m\u00f6glichem Abw\u00fcrgen f\u00fchren. L\u00e4ngere Z\u00fcndaussetzer k\u00f6nnen den Katalysator aufgrund von unverbranntem Kraftstoff, der in das Abgassystem gelangt, schwer besch\u00e4digen, was zu kostspieligen Reparaturen f\u00fchrt. Es ist ratsam, dieses Problem umgehend zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Betrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con un c\u00f3digo P0313 puede provocar problemas significativos de manejabilidad, como ralent\u00ed irregular, vacilaci\u00f3n, reducci\u00f3n de potencia y posible calado. Los fallos de encendido prolongados pueden causar da\u00f1os graves al convertidor catal\u00edtico debido a la entrada de combustible sin quemar en el sistema de escape, lo que conlleva reparaciones costosas. Es aconsejable abordar este problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro.",
+        "fr": "Conduire avec un code P0313 peut entra\u00eener des probl\u00e8mes de conduite importants tels qu'un ralenti irr\u00e9gulier, des h\u00e9sitations, une puissance r\u00e9duite et un calage potentiel. Des rat\u00e9s d'allumage prolong\u00e9s peuvent causer de graves dommages au convertisseur catalytique en raison du carburant non br\u00fbl\u00e9 entrant dans le syst\u00e8me d'\u00e9chappement, entra\u00eenant des r\u00e9parations co\u00fbteuses. Il est conseill\u00e9 de r\u00e9soudre ce probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$50 - $600",
+      "labor": "$100 - $800"
+    }
   },
   "P0314": {
-    "title": "Single Cylinder Misfire (Cylinder Not Specified)",
-    "description": "Code P0314 indicates a single cylinder misfire was detected but the PCM could not determine which specific cylinder.",
+    "title": {
+      "en": "Single Cylinder Misfire (Cylinder Not Specified)",
+      "tr": "Tek Silindir Ate\u015fleme Hatas\u0131 (Silindir Belirtilmemi\u015f)",
+      "de": "Einzelzylinder-Fehlz\u00fcndung (Zylinder nicht spezifiziert)",
+      "es": "Fallo de Encendido de un Solo Cilindro (Cilindro No Especificado)",
+      "fr": "Rat\u00e9 d'Allumage d'un Seul Cylindre (Cylindre Non Sp\u00e9cifi\u00e9)"
+    },
+    "description": {
+      "en": "Code P0314 indicates that the Powertrain Control Module (PCM) has detected a misfire event occurring in a single cylinder, but it is unable to identify which specific cylinder is experiencing the misfire. This often happens when the misfire is intermittent, not severe enough to trigger a cylinder-specific code (P030X), or when the PCM's misfire detection strategy cannot isolate the exact cylinder due to sensor limitations or specific driving conditions. It suggests a general issue affecting one cylinder's combustion process without providing the precise location.",
+      "tr": "P0314 kodu, G\u00fc\u00e7 Aktar\u0131m Kontrol Mod\u00fcl\u00fc'n\u00fcn (PCM) tek bir silindirde bir ate\u015fleme hatas\u0131 tespit etti\u011fini, ancak hangi silindirin bu hatay\u0131 ya\u015fad\u0131\u011f\u0131n\u0131 belirleyemedi\u011fini g\u00f6sterir. Bu durum genellikle ate\u015fleme hatas\u0131 aral\u0131kl\u0131 oldu\u011funda, silindire \u00f6zg\u00fc bir kodu (P030X) tetikleyecek kadar \u015fiddetli olmad\u0131\u011f\u0131nda veya PCM'nin sens\u00f6r s\u0131n\u0131rlamalar\u0131 veya belirli s\u00fcr\u00fc\u015f ko\u015fullar\u0131 nedeniyle tam silindiri izole edemedi\u011fi durumlarda ortaya \u00e7\u0131kar. Bu, bir silindirin yanma s\u00fcrecini etkileyen genel bir soruna i\u015faret eder, ancak kesin konumunu belirtmez.",
+      "de": "Der Code P0314 zeigt an, dass das Motorsteuerger\u00e4t (PCM) eine Fehlz\u00fcndung in einem einzelnen Zylinder erkannt hat, jedoch nicht in der Lage ist, den spezifischen Zylinder zu identifizieren, der die Fehlz\u00fcndung aufweist. Dies tritt h\u00e4ufig auf, wenn die Fehlz\u00fcndung intermittierend ist, nicht schwerwiegend genug, um einen zylinderspezifischen Code (P030X) auszul\u00f6sen, oder wenn die Fehlz\u00fcndungserkennungsstrategie des PCM den genauen Zylinder aufgrund von Sensorbeschr\u00e4nkungen oder bestimmten Fahrbedingungen nicht isolieren kann. Es deutet auf ein allgemeines Problem hin, das den Verbrennungsprozess eines Zylinders betrifft, ohne den genauen Ort anzugeben.",
+      "es": "El c\u00f3digo P0314 indica que el M\u00f3dulo de Control del Tren de Potencia (PCM) ha detectado un fallo de encendido en un solo cilindro, pero no puede identificar qu\u00e9 cilindro espec\u00edfico est\u00e1 experimentando el fallo. Esto ocurre a menudo cuando el fallo de encendido es intermitente, no lo suficientemente grave como para activar un c\u00f3digo espec\u00edfico de cilindro (P030X), o cuando la estrategia de detecci\u00f3n de fallos de encendido del PCM no puede aislar el cilindro exacto debido a limitaciones del sensor o condiciones de conducci\u00f3n espec\u00edficas. Sugiere un problema general que afecta el proceso de combusti\u00f3n de un cilindro sin proporcionar la ubicaci\u00f3n precisa.",
+      "fr": "Le code P0314 indique que le Module de Commande du Groupe Motopropulseur (PCM) a d\u00e9tect\u00e9 un rat\u00e9 d'allumage se produisant dans un seul cylindre, mais qu'il est incapable d'identifier quel cylindre sp\u00e9cifique est concern\u00e9. Cela se produit souvent lorsque le rat\u00e9 est intermittent, pas assez grave pour d\u00e9clencher un code sp\u00e9cifique \u00e0 un cylindre (P030X), ou lorsque la strat\u00e9gie de d\u00e9tection des rat\u00e9s du PCM ne peut pas isoler le cylindre exact en raison de limitations des capteurs ou de conditions de conduite sp\u00e9cifiques. Il sugg\u00e8re un probl\u00e8me g\u00e9n\u00e9ral affectant le processus de combustion d'un cylindre sans en pr\u00e9ciser l'emplacement exact."
+    },
     "symptoms": [
       "symp_check_engine",
       "symp_misfire_feel",
@@ -39762,7 +40429,95 @@
       "cause_wiring_damage"
     ],
     "fixDifficulty": "diff_moderate",
-    "estimatedCost": "$75 - $600"
+    "estimatedCost": "$75 - $600",
+    "diagnosticSteps": {
+      "en": [
+        "Connect an OBD-II scanner to check for any other pending or stored Diagnostic Trouble Codes (DTCs), especially cylinder-specific misfire codes (P0301-P0308) that might have been logged alongside P0314. Analyze freeze frame data to understand engine conditions (RPM, load, temperature) when the misfire occurred. This can provide crucial clues about when and how the misfire manifests.",
+        "Monitor live engine data, focusing on misfire counters for all cylinders (if available on your scan tool), fuel trims (short and long term), oxygen sensor readings, and engine vacuum. An increase in misfire counts on a specific cylinder, even if not enough to trigger a P030X, can help pinpoint the culprit. Abnormal fuel trims or O2 sensor readings might indicate a lean or rich condition contributing to the misfire.",
+        "Perform a thorough visual inspection of all ignition components (spark plugs, ignition coils, spark plug wires if applicable) and fuel injectors. Look for signs of damage, corrosion, oil fouling, or loose connections. Check for obvious vacuum leaks around the intake manifold, PCV system, and brake booster hose. Ensure the air filter is clean and the MAF sensor is not contaminated.",
+        "If your scan tool supports it, perform a cylinder contribution test or power balance test. This test temporarily disables or reduces fuel/spark to individual cylinders and monitors the RPM drop, helping to identify which cylinder is not contributing equally to engine power. Alternatively, a manual method involves carefully disconnecting individual coil packs or injector connectors (one at a time, with caution) while the engine is running to observe changes in engine idle.",
+        "If the misfire source remains elusive, check fuel pressure and volume at the fuel rail to rule out a weak fuel pump or clogged fuel filter affecting one or more injectors. Perform a compression test on all cylinders to identify any mechanical issues like worn piston rings, burnt valves, or a blown head gasket that could cause a misfire on a specific cylinder."
+      ],
+      "tr": [
+        "OBD-II taray\u0131c\u0131y\u0131 ba\u011flayarak P0314 ile birlikte kaydedilmi\u015f olabilecek di\u011fer bekleyen veya depolanm\u0131\u015f Ar\u0131za Te\u015fhis Kodlar\u0131n\u0131 (DTC'ler), \u00f6zellikle silindire \u00f6zg\u00fc ate\u015fleme hatas\u0131 kodlar\u0131n\u0131 (P0301-P0308) kontrol edin. Ate\u015fleme hatas\u0131n\u0131n meydana geldi\u011fi motor ko\u015fullar\u0131n\u0131 (RPM, y\u00fck, s\u0131cakl\u0131k) anlamak i\u00e7in dondurulmu\u015f veri \u00e7er\u00e7evesini analiz edin. Bu, ate\u015fleme hatas\u0131n\u0131n ne zaman ve nas\u0131l ortaya \u00e7\u0131kt\u0131\u011f\u0131na dair \u00f6nemli ipu\u00e7lar\u0131 sa\u011flayabilir.",
+        "Canl\u0131 motor verilerini izleyin; taray\u0131c\u0131n\u0131zda mevcutsa t\u00fcm silindirler i\u00e7in ate\u015fleme hatas\u0131 saya\u00e7lar\u0131na, yak\u0131t d\u00fczeltmelerine (k\u0131sa ve uzun vadeli), oksijen sens\u00f6r\u00fc okumalar\u0131na ve motor vakumuna odaklan\u0131n. Belirli bir silindirdeki ate\u015fleme hatas\u0131 say\u0131lar\u0131ndaki art\u0131\u015f, P030X'i tetikleyecek kadar olmasa bile, su\u00e7luyu bulmaya yard\u0131mc\u0131 olabilir. Anormal yak\u0131t d\u00fczeltmeleri veya O2 sens\u00f6r\u00fc okumalar\u0131, ate\u015fleme hatas\u0131na katk\u0131da bulunan zay\u0131f veya zengin bir durumu g\u00f6sterebilir.",
+        "T\u00fcm ate\u015fleme bile\u015fenlerini (buji, ate\u015fleme bobinleri, varsa buji kablolar\u0131) ve yak\u0131t enjekt\u00f6rlerini kapsaml\u0131 bir \u015fekilde g\u00f6rsel olarak inceleyin. Hasar, korozyon, ya\u011flanma veya gev\u015fek ba\u011flant\u0131 belirtileri aray\u0131n. Emme manifoldu, PCV sistemi ve fren hidroli\u011fi hortumu \u00e7evresindeki belirgin vakum ka\u00e7aklar\u0131n\u0131 kontrol edin. Hava filtresinin temiz oldu\u011fundan ve MAF sens\u00f6r\u00fcn\u00fcn kirlenmedi\u011finden emin olun.",
+        "Taray\u0131c\u0131n\u0131z destekliyorsa, bir silindir katk\u0131 testi veya g\u00fc\u00e7 denge testi yap\u0131n. Bu test, tek tek silindirlere yak\u0131t/ate\u015flemeyi ge\u00e7ici olarak devre d\u0131\u015f\u0131 b\u0131rak\u0131r veya azalt\u0131r ve RPM d\u00fc\u015f\u00fc\u015f\u00fcn\u00fc izleyerek hangi silindirin motor g\u00fcc\u00fcne e\u015fit katk\u0131da bulunmad\u0131\u011f\u0131n\u0131 belirlemeye yard\u0131mc\u0131 olur. Alternatif olarak, manuel bir y\u00f6ntem, motor \u00e7al\u0131\u015f\u0131rken tek tek bobin paketlerini veya enjekt\u00f6r konekt\u00f6rlerini dikkatlice (birer birer, dikkatle) ay\u0131rarak motor r\u00f6lantisindeki de\u011fi\u015fiklikleri g\u00f6zlemlemeyi i\u00e7erir.",
+        "Ate\u015fleme hatas\u0131n\u0131n kayna\u011f\u0131 hala belirsizse, bir veya daha fazla enjekt\u00f6r\u00fc etkileyen zay\u0131f bir yak\u0131t pompas\u0131 veya t\u0131kal\u0131 yak\u0131t filtresini elemek i\u00e7in yak\u0131t ray\u0131ndaki yak\u0131t bas\u0131nc\u0131n\u0131 ve hacmini kontrol edin. A\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, yanm\u0131\u015f valfler veya patlam\u0131\u015f bir silindir kapa\u011f\u0131 contas\u0131 gibi belirli bir silindirde ate\u015fleme hatas\u0131na neden olabilecek mekanik sorunlar\u0131 belirlemek i\u00e7in t\u00fcm silindirlerde kompresyon testi yap\u0131n."
+      ],
+      "de": [
+        "Schlie\u00dfen Sie einen OBD-II-Scanner an, um nach anderen ausstehenden oder gespeicherten Fehlercodes (DTCs) zu suchen, insbesondere nach zylinderspezifischen Fehlz\u00fcndungscodes (P0301-P0308), die m\u00f6glicherweise zusammen mit P0314 protokolliert wurden. Analysieren Sie die Freeze-Frame-Daten, um die Motorbedingungen (Drehzahl, Last, Temperatur) zum Zeitpunkt der Fehlz\u00fcndung zu verstehen. Dies kann entscheidende Hinweise darauf geben, wann und wie die Fehlz\u00fcndung auftritt.",
+        "\u00dcberwachen Sie die Live-Motordaten und konzentrieren Sie sich dabei auf Fehlz\u00fcndungsz\u00e4hler f\u00fcr alle Zylinder (falls mit Ihrem Scan-Tool verf\u00fcgbar), Kraftstofftrims (kurz- und langfristig), Lambdasondenwerte und Motorunterdruck. Eine Zunahme der Fehlz\u00fcndungsz\u00e4hler an einem bestimmten Zylinder, auch wenn nicht ausreichend, um einen P030X auszul\u00f6sen, kann helfen, den \u00dcbelt\u00e4ter zu identifizieren. Abnormale Kraftstofftrims oder Lambdasondenwerte k\u00f6nnten auf einen mageren oder fetten Zustand hinweisen, der zur Fehlz\u00fcndung beitr\u00e4gt.",
+        "F\u00fchren Sie eine gr\u00fcndliche Sichtpr\u00fcfung aller Z\u00fcndkomponenten (Z\u00fcndkerzen, Z\u00fcndspulen, ggf. Z\u00fcndkabel) und Kraftstoffinjektoren durch. Suchen Sie nach Anzeichen von Besch\u00e4digungen, Korrosion, \u00d6lverschmutzung oder lockeren Verbindungen. \u00dcberpr\u00fcfen Sie auf offensichtliche Vakuumlecks um den Ansaugkr\u00fcmmer, das PCV-System und den Bremskraftverst\u00e4rkerschlauch. Stellen Sie sicher, dass der Luftfilter sauber und der MAF-Sensor nicht verschmutzt ist.",
+        "Wenn Ihr Scan-Tool dies unterst\u00fctzt, f\u00fchren Sie einen Zylinderbeitragstest oder Leistungsbilanztest durch. Dieser Test deaktiviert oder reduziert vor\u00fcbergehend die Kraftstoff-/Z\u00fcndzufuhr zu einzelnen Zylindern und \u00fcberwacht den Drehzahlabfall, um zu identifizieren, welcher Zylinder nicht gleichm\u00e4\u00dfig zur Motorleistung beitr\u00e4gt. Alternativ beinhaltet eine manuelle Methode das vorsichtige Trennen einzelner Z\u00fcndspulen oder Injektorstecker (einer nach dem anderen, mit Vorsicht) bei laufendem Motor, um \u00c4nderungen im Motorleerlauf zu beobachten.",
+        "Wenn die Ursache der Fehlz\u00fcndung weiterhin unklar ist, \u00fcberpr\u00fcfen Sie den Kraftstoffdruck und das Volumen an der Kraftstoffleitung, um eine schwache Kraftstoffpumpe oder einen verstopften Kraftstofffilter auszuschlie\u00dfen, der einen oder mehrere Injektoren beeintr\u00e4chtigen k\u00f6nnte. F\u00fchren Sie einen Kompressionstest an allen Zylindern durch, um mechanische Probleme wie verschlissene Kolbenringe, verbrannte Ventile oder eine durchgebrannte Zylinderkopfdichtung zu identifizieren, die eine Fehlz\u00fcndung an einem bestimmten Zylinder verursachen k\u00f6nnten."
+      ],
+      "es": [
+        "Conecte un esc\u00e1ner OBD-II para verificar cualquier otro C\u00f3digo de Diagn\u00f3stico de Fallas (DTC) pendiente o almacenado, especialmente c\u00f3digos de fallo de encendido espec\u00edficos de cilindro (P0301-P0308) que podr\u00edan haberse registrado junto con P0314. Analice los datos del cuadro congelado para comprender las condiciones del motor (RPM, carga, temperatura) cuando ocurri\u00f3 el fallo de encendido. Esto puede proporcionar pistas cruciales sobre cu\u00e1ndo y c\u00f3mo se manifiesta el fallo.",
+        "Monitoree los datos del motor en vivo, centr\u00e1ndose en los contadores de fallos de encendido para todos los cilindros (si est\u00e1n disponibles en su herramienta de escaneo), los ajustes de combustible (a corto y largo plazo), las lecturas del sensor de ox\u00edgeno y el vac\u00edo del motor. Un aumento en los recuentos de fallos de encendido en un cilindro espec\u00edfico, incluso si no es suficiente para activar un P030X, puede ayudar a identificar al culpable. Los ajustes de combustible o las lecturas del sensor de O2 anormales podr\u00edan indicar una condici\u00f3n pobre o rica que contribuye al fallo de encendido.",
+        "Realice una inspecci\u00f3n visual exhaustiva de todos los componentes de encendido (buj\u00edas, bobinas de encendido, cables de buj\u00eda si aplica) y los inyectores de combustible. Busque signos de da\u00f1o, corrosi\u00f3n, ensuciamiento por aceite o conexiones sueltas. Verifique si hay fugas de vac\u00edo obvias alrededor del colector de admisi\u00f3n, el sistema PCV y la manguera del servofreno. Aseg\u00farese de que el filtro de aire est\u00e9 limpio y que el sensor MAF no est\u00e9 contaminado.",
+        "Si su herramienta de escaneo lo permite, realice una prueba de contribuci\u00f3n de cilindros o una prueba de balance de potencia. Esta prueba deshabilita o reduce temporalmente el combustible/chispa a cilindros individuales y monitorea la ca\u00edda de RPM, ayudando a identificar qu\u00e9 cilindro no est\u00e1 contribuyendo por igual a la potencia del motor. Alternativamente, un m\u00e9todo manual implica desconectar cuidadosamente los paquetes de bobinas individuales o los conectores de los inyectores (uno a la vez, con precauci\u00f3n) mientras el motor est\u00e1 en marcha para observar los cambios en el ralent\u00ed del motor.",
+        "Si la fuente del fallo de encendido sigue siendo dif\u00edcil de encontrar, verifique la presi\u00f3n y el volumen del combustible en el riel de combustible para descartar una bomba de combustible d\u00e9bil o un filtro de combustible obstruido que afecte a uno o m\u00e1s inyectores. Realice una prueba de compresi\u00f3n en todos los cilindros para identificar cualquier problema mec\u00e1nico como anillos de pist\u00f3n desgastados, v\u00e1lvulas quemadas o una junta de culata soplada que podr\u00eda causar un fallo de encendido en un cilindro espec\u00edfico."
+      ],
+      "fr": [
+        "Connectez un scanner OBD-II pour v\u00e9rifier tout autre code de diagnostic (DTC) en attente ou stock\u00e9, en particulier les codes de rat\u00e9 d'allumage sp\u00e9cifiques \u00e0 un cylindre (P0301-P0308) qui auraient pu \u00eatre enregistr\u00e9s avec le P0314. Analysez les donn\u00e9es fig\u00e9es pour comprendre les conditions du moteur (RPM, charge, temp\u00e9rature) au moment o\u00f9 le rat\u00e9 s'est produit. Cela peut fournir des indices cruciaux sur le moment et la mani\u00e8re dont le rat\u00e9 se manifeste.",
+        "Surveillez les donn\u00e9es moteur en temps r\u00e9el, en vous concentrant sur les compteurs de rat\u00e9s pour tous les cylindres (si disponibles sur votre outil de diagnostic), les ajustements de carburant (\u00e0 court et long terme), les lectures des capteurs d'oxyg\u00e8ne et le vide moteur. Une augmentation des comptes de rat\u00e9s sur un cylindre sp\u00e9cifique, m\u00eame si elle n'est pas suffisante pour d\u00e9clencher un P030X, peut aider \u00e0 identifier le coupable. Des ajustements de carburant ou des lectures de capteur O2 anormaux pourraient indiquer une condition pauvre ou riche contribuant au rat\u00e9.",
+        "Effectuez une inspection visuelle approfondie de tous les composants d'allumage (bougies d'allumage, bobines d'allumage, fils de bougie si applicable) et des injecteurs de carburant. Recherchez des signes de dommages, de corrosion, d'encrassement par l'huile ou de connexions desserr\u00e9es. V\u00e9rifiez les fuites de vide \u00e9videntes autour du collecteur d'admission, du syst\u00e8me PCV et du tuyau d'assistance de freinage. Assurez-vous que le filtre \u00e0 air est propre et que le capteur MAF n'est pas contamin\u00e9.",
+        "Si votre outil de diagnostic le permet, effectuez un test de contribution de cylindre ou un test d'\u00e9quilibre de puissance. Ce test d\u00e9sactive ou r\u00e9duit temporairement le carburant/l'\u00e9tincelle vers des cylindres individuels et surveille la chute de r\u00e9gime, aidant \u00e0 identifier quel cylindre ne contribue pas \u00e9galement \u00e0 la puissance du moteur. Alternativement, une m\u00e9thode manuelle consiste \u00e0 d\u00e9connecter soigneusement les bobines d'allumage individuelles ou les connecteurs d'injecteurs (un \u00e0 la fois, avec prudence) pendant que le moteur tourne pour observer les changements au ralenti du moteur.",
+        "Si la source du rat\u00e9 reste insaisissable, v\u00e9rifiez la pression et le volume de carburant au niveau de la rampe d'injection pour exclure une pompe \u00e0 carburant faible ou un filtre \u00e0 carburant obstru\u00e9 affectant un ou plusieurs injecteurs. Effectuez un test de compression sur tous les cylindres pour identifier tout probl\u00e8me m\u00e9canique comme des segments de piston us\u00e9s, des soupapes br\u00fbl\u00e9es ou un joint de culasse souffl\u00e9 qui pourrait causer un rat\u00e9 d'allumage sur un cylindre sp\u00e9cifique."
+      ]
+    },
+    "commonFixes": {
+      "en": [
+        "Replace faulty spark plugs or ignition coils on the identified misfiring cylinder.",
+        "Clean or replace a clogged or faulty fuel injector.",
+        "Repair vacuum leaks in the intake manifold, PCV system, or brake booster hose.",
+        "Address fuel delivery issues such as a weak fuel pump or clogged fuel filter.",
+        "Repair internal engine mechanical issues (e.g., worn piston rings, burnt valve) if compression test indicates a problem."
+      ],
+      "tr": [
+        "Ar\u0131zal\u0131 bujileri veya ate\u015fleme bobinlerini tespit edilen ate\u015fleme hatas\u0131 olan silindirde de\u011fi\u015ftirin.",
+        "T\u0131kal\u0131 veya ar\u0131zal\u0131 bir yak\u0131t enjekt\u00f6r\u00fcn\u00fc temizleyin veya de\u011fi\u015ftirin.",
+        "Emme manifoldu, PCV sistemi veya fren hidroli\u011fi hortumundaki vakum ka\u00e7aklar\u0131n\u0131 onar\u0131n.",
+        "Zay\u0131f yak\u0131t pompas\u0131 veya t\u0131kal\u0131 yak\u0131t filtresi gibi yak\u0131t da\u011f\u0131t\u0131m sorunlar\u0131n\u0131 giderin.",
+        "Kompresyon testi bir sorun oldu\u011funu g\u00f6steriyorsa, i\u00e7 motor mekanik sorunlar\u0131n\u0131 (\u00f6rn. a\u015f\u0131nm\u0131\u015f piston segmanlar\u0131, yanm\u0131\u015f valf) onar\u0131n."
+      ],
+      "de": [
+        "Defekte Z\u00fcndkerzen oder Z\u00fcndspulen am identifizierten Zylinder mit Fehlz\u00fcndung ersetzen.",
+        "Einen verstopften oder defekten Kraftstoffinjektor reinigen oder ersetzen.",
+        "Vakuumlecks im Ansaugkr\u00fcmmer, PCV-System oder Bremskraftverst\u00e4rkerschlauch reparieren.",
+        "Probleme mit der Kraftstoffversorgung beheben, wie z.B. eine schwache Kraftstoffpumpe oder einen verstopften Kraftstofffilter.",
+        "Interne mechanische Motorprobleme (z.B. verschlissene Kolbenringe, verbranntes Ventil) beheben, falls der Kompressionstest ein Problem anzeigt."
+      ],
+      "es": [
+        "Reemplazar las buj\u00edas o bobinas de encendido defectuosas en el cilindro con fallo de encendido identificado.",
+        "Limpiar o reemplazar un inyector de combustible obstruido o defectuoso.",
+        "Reparar fugas de vac\u00edo en el colector de admisi\u00f3n, el sistema PCV o la manguera del servofreno.",
+        "Abordar problemas de suministro de combustible, como una bomba de combustible d\u00e9bil o un filtro de combustible obstruido.",
+        "Reparar problemas mec\u00e1nicos internos del motor (p. ej., anillos de pist\u00f3n desgastados, v\u00e1lvula quemada) si la prueba de compresi\u00f3n indica un problema."
+      ],
+      "fr": [
+        "Remplacer les bougies d'allumage ou les bobines d'allumage d\u00e9fectueuses sur le cylindre identifi\u00e9 comme ayant un rat\u00e9.",
+        "Nettoyer ou remplacer un injecteur de carburant encrass\u00e9 ou d\u00e9fectueux.",
+        "R\u00e9parer les fuites de vide dans le collecteur d'admission, le syst\u00e8me PCV ou le tuyau d'assistance de freinage.",
+        "R\u00e9soudre les probl\u00e8mes d'alimentation en carburant, tels qu'une pompe \u00e0 carburant faible ou un filtre \u00e0 carburant obstru\u00e9.",
+        "R\u00e9parer les probl\u00e8mes m\u00e9caniques internes du moteur (par exemple, segments de piston us\u00e9s, soupape br\u00fbl\u00e9e) si le test de compression indique un probl\u00e8me."
+      ]
+    },
+    "drivingSafety": {
+      "level": "caution",
+      "description": {
+        "en": "Driving with a P0314 code can lead to reduced engine power, poor fuel economy, and increased exhaust emissions. More critically, a persistent misfire can cause unburnt fuel to enter the catalytic converter, leading to its overheating and potential severe, costly damage. It is advisable to diagnose and repair this issue promptly to prevent further damage and ensure safe vehicle operation.",
+        "tr": "P0314 koduyla ara\u00e7 kullanmak, motor g\u00fcc\u00fcnde azalmaya, yak\u0131t ekonomisinde d\u00fc\u015f\u00fc\u015fe ve egzoz emisyonlar\u0131nda art\u0131\u015fa neden olabilir. Daha da \u00f6nemlisi, s\u00fcrekli bir ate\u015fleme hatas\u0131, yanmam\u0131\u015f yak\u0131t\u0131n katalitik konvert\u00f6re girmesine yol a\u00e7arak a\u015f\u0131r\u0131 \u0131s\u0131nmas\u0131na ve potansiyel olarak ciddi, maliyetli hasara neden olabilir. Daha fazla hasar\u0131 \u00f6nlemek ve arac\u0131n g\u00fcvenli \u00e7al\u0131\u015fmas\u0131n\u0131 sa\u011flamak i\u00e7in bu sorunu derhal te\u015fhis edip onarmak tavsiye edilir.",
+        "de": "Das Fahren mit einem P0314-Code kann zu reduzierter Motorleistung, schlechtem Kraftstoffverbrauch und erh\u00f6hten Abgasemissionen f\u00fchren. Kritischer ist, dass eine anhaltende Fehlz\u00fcndung dazu f\u00fchren kann, dass unverbrannter Kraftstoff in den Katalysator gelangt, was zu dessen \u00dcberhitzung und potenziell schweren, kostspieligen Sch\u00e4den f\u00fchren kann. Es ist ratsam, dieses Problem umgehend zu diagnostizieren und zu beheben, um weitere Sch\u00e4den zu vermeiden und einen sicheren Fahrzeugbetrieb zu gew\u00e4hrleisten.",
+        "es": "Conducir con un c\u00f3digo P0314 puede provocar una reducci\u00f3n de la potencia del motor, un bajo consumo de combustible y un aumento de las emisiones de escape. M\u00e1s cr\u00edticamente, un fallo de encendido persistente puede hacer que el combustible no quemado entre en el convertidor catal\u00edtico, lo que provoca su sobrecalentamiento y posibles da\u00f1os graves y costosos. Es aconsejable diagnosticar y reparar este problema r\u00e1pidamente para evitar da\u00f1os mayores y garantizar un funcionamiento seguro del veh\u00edculo.",
+        "fr": "Conduire avec un code P0314 peut entra\u00eener une r\u00e9duction de la puissance du moteur, une mauvaise \u00e9conomie de carburant et une augmentation des \u00e9missions d'\u00e9chappement. Plus grave encore, un rat\u00e9 d'allumage persistant peut provoquer l'entr\u00e9e de carburant non br\u00fbl\u00e9 dans le convertisseur catalytique, entra\u00eenant sa surchauffe et des dommages potentiellement graves et co\u00fbteux. Il est conseill\u00e9 de diagnostiquer et de r\u00e9parer ce probl\u00e8me rapidement pour \u00e9viter d'autres dommages et assurer un fonctionnement s\u00fbr du v\u00e9hicule."
+      }
+    },
+    "costBreakdown": {
+      "parts": "$50 - $600",
+      "labor": "$100 - $500"
+    }
   },
   "P0315": {
     "title": "Crankshaft Position System Variation Not Learned (P0315)",
