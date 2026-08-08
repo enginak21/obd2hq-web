@@ -1,6 +1,6 @@
 # OBD2HQ Phase 2 Recovery Report
 
-Generated: 2026-08-08T21:43:59.911Z
+Generated: 2026-08-08T21:57:19.486Z
 
 Canonical/domain/URL structure changes made: 0
 
@@ -24,19 +24,19 @@ Fallback OBD: 1,847
 
 ## After / Current Audit
 
-Gold: 11720
+Gold: 11900
 
-Silver: 6460
+Silver: 6290
 
-Thin: 9155
+Thin: 9145
 
-Raw Gold OBD: 376
+Raw Gold OBD: 396
 
-Fallback OBD: 1847
+Fallback OBD: 1827
 
 ## Thin Page Distribution
 
-- code_hub: 9145 (99.89%) - Runtime fallback supports the page, but raw code data is not gold-ready yet.
+- code_hub: 9135 (99.89%) - Runtime fallback supports the page, but raw code data is not gold-ready yet.
 - other: 5 (0.05%) - Unclassified or low-signal page type.
 - vehicle_spec: 5 (0.05%) - Vehicle spec URL has no matching local generated spec record.
 
@@ -48,16 +48,16 @@ The file `OBD_GOLD_UPGRADE_QUEUE.csv` contains the first 100 fallback codes rank
 
 Top 10:
 
-- P0110: score 100, system sensor_air_fuel_o2, impressions 51, clicks 0
-- P0203: score 100, system injector_cylinder_fuel_control, impressions 46, clicks 1
-- P0125: score 100, system sensor_air_fuel_o2, impressions 40, clicks 0
-- P0234: score 100, system boost_turbo_fuel_pressure, impressions 40, clicks 2
-- P0216: score 100, system injector_cylinder_fuel_control, impressions 39, clicks 1
-- P0183: score 95, system sensor_air_fuel_o2, impressions 37, clicks 0
-- P0135: score 95, system sensor_air_fuel_o2, impressions 29, clicks 0
-- P0103: score 95, system sensor_air_fuel_o2, impressions 14, clicks 1
-- P0251: score 94, system boost_turbo_fuel_pressure, impressions 28, clicks 0
-- P0201: score 92, system injector_cylinder_fuel_control, impressions 24, clicks 0
+- P0108: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0109: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0111: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0112: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0114: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0115: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0116: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0117: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0118: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0119: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
 
 ## Information Gain Policy
 

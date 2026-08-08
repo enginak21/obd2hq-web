@@ -1,0 +1,802 @@
+{
+  "P0110": {
+    "title": "Intake Air Temperature Sensor Circuit Malfunction",
+    "description": "P0110 indicates that the engine control module sees a fault in the intake air temperature sensor circuit. The diagnostic path should focus on the IAT sensor signal, connector condition, shared MAF/IAT housing where applicable, reference/ground integrity and temperature plausibility in scan data. It should not be treated as an automatic sensor replacement until the circuit and live data are checked.",
+    "system": "powertrain",
+    "subsystem": "air intake measurement",
+    "component": "intake air temperature sensor",
+    "circuit_type": "temperature sensor signal circuit",
+    "severity": "moderate",
+    "driveability": "Usually drivable if symptoms are mild, but diagnose soon because incorrect air temperature data can affect fuel calculation and cold-start behavior.",
+    "ecu_detection_condition": "The ECM detects an intake air temperature signal that is missing, implausible or outside the expected circuit behavior for current operating conditions.",
+    "symptoms": ["symp_check_engine", "symp_hard_start", "symp_hesitation", "symp_fuel_economy", "symp_poor_acceleration"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_pcm_failure", "cause_pcm_software", "cause_maf_sensor"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$80 - $450",
+    "diagnosticSteps": [
+      "Confirm P0110 and save freeze-frame data before clearing the code.",
+      "Compare intake air temperature against ambient temperature on a cold engine; a large mismatch points to sensor, wiring or data plausibility issues.",
+      "Inspect the IAT connector and harness, especially if the IAT is integrated into the MAF sensor housing.",
+      "Check sensor signal, reference and ground circuits with a wiring diagram; do not assume the sensor is failed from the code alone.",
+      "Wiggle-test the harness while watching live IAT data for dropouts or sudden jumps.",
+      "Repair the verified circuit fault or replace the confirmed failed sensor, then clear codes and verify stable IAT data after a drive cycle."
+    ],
+    "commonFixes": [
+      "Repair loose, corroded or oil-contaminated IAT/MAF connector terminals.",
+      "Repair open or shorted IAT signal/ground wiring.",
+      "Replace the IAT or MAF/IAT assembly only after live data and circuit checks support it.",
+      "Clear P0110 and confirm intake temperature data remains plausible from cold start to warm operation."
+    ],
+    "common_mistakes": [
+      "Replacing the MAF assembly without checking whether the IAT circuit shares the same connector.",
+      "Ignoring a cold-engine temperature plausibility check.",
+      "Clearing the code before saving freeze-frame temperature data."
+    ],
+    "do_not_replace_blindly": ["IAT sensor", "MAF sensor assembly", "ECM/PCM"],
+    "freeze_frame_fields": ["intake air temperature", "engine coolant temperature", "ambient temperature", "engine RPM", "vehicle speed"],
+    "live_data_fields": ["IAT sensor temperature", "ECT temperature", "MAF airflow", "short term fuel trim"],
+    "related_codes": ["P0111", "P0112", "P0113", "P0100", "P0102", "P0103"],
+    "applicability_notes": "Generic OBD-II logic applies, but sensor location and whether IAT is integrated into the MAF varies by vehicle.",
+    "source_confidence": "HIGH"
+  },
+  "P0203": {
+    "title": "Injector Circuit/Open - Cylinder 3",
+    "description": "P0203 means the ECM detected an electrical problem in the fuel injector control circuit for cylinder 3. The key diagnostic value is cylinder-specific comparison: injector connector, power feed, control wire, injector resistance/current behavior and ECM driver command should be checked against known-good cylinders before replacing parts.",
+    "system": "powertrain",
+    "subsystem": "fuel injection",
+    "component": "cylinder 3 fuel injector circuit",
+    "circuit_type": "injector power/control circuit",
+    "severity": "high",
+    "driveability": "Avoid extended driving if the engine misfires, shakes, smells of raw fuel or the check engine light flashes.",
+    "ecu_detection_condition": "The ECM detects abnormal electrical behavior in the cylinder 3 injector circuit, such as open circuit, short circuit or missing expected current response.",
+    "symptoms": ["symp_check_engine", "symp_misfire_feel", "symp_rough_idle", "symp_power_loss", "symp_fuel_smell"],
+    "causes": ["cause_fuel_injector", "cause_wiring_damage", "cause_connector_corrosion", "cause_pcm_failure", "cause_fuel_pressure_reg"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$150 - $800",
+    "diagnosticSteps": [
+      "Confirm P0203 and note whether cylinder 3 misfire codes such as P0303 are also present.",
+      "Identify cylinder 3 correctly for the engine layout before unplugging or testing injectors.",
+      "Inspect the cylinder 3 injector connector for spread terminals, corrosion, oil intrusion or harness rub-through.",
+      "Compare injector resistance or current behavior with adjacent cylinders using approved test methods for that injector type.",
+      "Check injector power feed and ECM control pulse with a noid light, scope or manufacturer-approved test tool.",
+      "Repair wiring or replace the confirmed failed injector, then verify cylinder contribution and confirm P0203 does not return."
+    ],
+    "commonFixes": [
+      "Repair cylinder 3 injector connector terminal tension or corrosion.",
+      "Repair open/shorted injector control wiring.",
+      "Replace cylinder 3 injector only after circuit and comparison testing confirms it.",
+      "Address related misfire or fuel pressure faults that may appear with the injector circuit code."
+    ],
+    "common_mistakes": [
+      "Changing spark plugs or coils first when the stored code is injector circuit-specific.",
+      "Testing the wrong cylinder because cylinder numbering was assumed.",
+      "Replacing the injector without checking power feed and ECM control."
+    ],
+    "do_not_replace_blindly": ["cylinder 3 injector", "ignition coil", "spark plug", "ECM/PCM"],
+    "freeze_frame_fields": ["engine RPM", "load", "fuel trims", "misfire counters", "battery voltage"],
+    "live_data_fields": ["cylinder misfire data", "injector pulse command", "fuel trim", "fuel pressure where available"],
+    "related_codes": ["P0201", "P0202", "P0204", "P0303", "P0267", "P0268"],
+    "applicability_notes": "Cylinder numbering and injector access are vehicle-specific; confirm service information before testing.",
+    "source_confidence": "HIGH"
+  },
+  "P0125": {
+    "title": "Insufficient Coolant Temperature for Closed Loop Fuel Control",
+    "description": "P0125 indicates that the ECM did not see engine coolant temperature reach the expected range for closed-loop fuel control within expected operating conditions. Diagnosis should focus on coolant temperature plausibility, thermostat operation, coolant level, sensor signal integrity and warm-up behavior rather than replacing an oxygen sensor first.",
+    "system": "powertrain",
+    "subsystem": "engine temperature and fuel control",
+    "component": "coolant temperature input / thermostat behavior",
+    "circuit_type": "temperature plausibility / fuel control readiness",
+    "severity": "moderate",
+    "driveability": "Usually drivable, but fuel economy and emissions readiness can suffer. Stop if the vehicle overheats or loses coolant.",
+    "ecu_detection_condition": "The ECM determines that coolant temperature is not high enough for expected closed-loop operation under the recorded driving conditions.",
+    "symptoms": ["symp_check_engine", "symp_fuel_economy", "symp_hard_start", "symp_poor_acceleration", "symp_engine_overheat"],
+    "causes": ["cause_thermostat", "cause_ect_sensor", "cause_coolant_leak", "cause_wiring_damage", "cause_connector_corrosion"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$80 - $650",
+    "diagnosticSteps": [
+      "Confirm P0125 and compare freeze-frame coolant temperature, intake temperature and vehicle speed.",
+      "On a cold engine, compare coolant temperature to ambient temperature for sensor plausibility.",
+      "Monitor warm-up rate; a thermostat stuck open often warms slowly and may prevent expected closed-loop behavior.",
+      "Inspect coolant level, leaks, air pockets and thermostat housing condition before replacing sensors.",
+      "Check ECT sensor wiring and connector if live data is implausible or jumps suddenly.",
+      "After repair, verify normal warm-up and readiness monitor completion without P0125 returning."
+    ],
+    "commonFixes": [
+      "Replace a thermostat confirmed stuck open or opening too early.",
+      "Repair low coolant, leaks or trapped air that prevents correct temperature readings.",
+      "Repair ECT sensor wiring or replace the sensor only after plausibility checks fail.",
+      "Verify closed-loop operation and emissions readiness after repair."
+    ],
+    "common_mistakes": [
+      "Replacing oxygen sensors because the code mentions closed-loop fuel control.",
+      "Ignoring coolant level and thermostat behavior.",
+      "Judging the fault without comparing cold ECT to ambient temperature."
+    ],
+    "do_not_replace_blindly": ["oxygen sensors", "coolant temperature sensor", "thermostat", "ECM/PCM"],
+    "freeze_frame_fields": ["coolant temperature", "intake air temperature", "vehicle speed", "run time", "fuel system status"],
+    "live_data_fields": ["ECT temperature", "IAT temperature", "fuel system loop status", "radiator fan command"],
+    "related_codes": ["P0115", "P0116", "P0117", "P0118", "P0128", "P0171"],
+    "applicability_notes": "Warm-up thresholds and closed-loop strategy vary by manufacturer and engine.",
+    "source_confidence": "HIGH"
+  },
+  "P0234": {
+    "title": "Engine Overboost Condition",
+    "description": "P0234 means the ECM detected boost pressure higher than expected for the operating condition. Diagnosis should compare requested boost to actual boost and focus on wastegate/VGT control, boost control solenoid operation, vacuum or pressure control plumbing, MAP/boost sensor plausibility, mechanical sticking and aftermarket tuning.",
+    "system": "powertrain",
+    "subsystem": "turbocharger / boost control",
+    "component": "boost pressure control system",
+    "circuit_type": "boost pressure performance condition",
+    "severity": "high",
+    "driveability": "Use caution. Avoid heavy throttle or towing until diagnosed because overboost can trigger limp mode and may damage engine or turbo components.",
+    "ecu_detection_condition": "Actual boost pressure exceeds the ECM's expected or commanded boost limit for the recorded operating condition.",
+    "symptoms": ["symp_check_engine", "symp_turbo_lag", "symp_power_loss", "symp_black_smoke", "symp_reduced_power_mode"],
+    "causes": ["cause_turbo_wastegate", "cause_turbo_actuator", "cause_intake_leak", "cause_exhaust_leak", "cause_wiring_damage"],
+    "fixDifficulty": "diff_professional",
+    "estimatedCost": "$200 - $2200",
+    "diagnosticSteps": [
+      "Confirm P0234 and save boost/load/RPM freeze-frame data.",
+      "Compare requested boost and actual boost during a controlled test; do not diagnose from the code alone.",
+      "Inspect wastegate or VGT actuator movement for sticking, binding or incorrect adjustment.",
+      "Check boost control solenoid command, vacuum/pressure lines and electrical connector integrity.",
+      "Verify MAP/boost sensor plausibility against key-on and idle readings before condemning the turbo.",
+      "Check for aftermarket tuning, modified boost plumbing or restricted exhaust conditions if actual boost remains high."
+    ],
+    "commonFixes": [
+      "Repair stuck wastegate/VGT control or actuator linkage.",
+      "Repair damaged vacuum/pressure control lines or boost solenoid wiring.",
+      "Replace a confirmed failed boost control solenoid or MAP/boost sensor.",
+      "Correct unsafe aftermarket calibration or boost-control modifications."
+    ],
+    "common_mistakes": [
+      "Replacing the turbocharger before checking actuator control.",
+      "Ignoring requested-vs-actual boost data.",
+      "Missing aftermarket tune or modified boost plumbing."
+    ],
+    "do_not_replace_blindly": ["turbocharger", "boost pressure sensor", "boost control solenoid", "ECM/PCM"],
+    "freeze_frame_fields": ["actual boost", "desired boost", "engine load", "RPM", "throttle position"],
+    "live_data_fields": ["MAP/boost pressure", "desired boost", "wastegate duty cycle", "VGT command", "barometric pressure"],
+    "related_codes": ["P0235", "P0236", "P0237", "P0238", "P0243", "P0299"],
+    "applicability_notes": "Applies only to boosted engines. Control strategy differs for wastegate, VGT and electronically controlled turbo systems.",
+    "source_confidence": "HIGH"
+  },
+  "P0216": {
+    "title": "Injection Timing Control Circuit Malfunction",
+    "description": "P0216 points to an injection timing control fault, most often relevant to diesel fuel injection systems. Diagnosis should focus on timing control command, injection pump or timing actuator control, fuel supply quality, wiring and related crank/cam reference data. Manufacturer procedure matters because injection timing strategy varies widely.",
+    "system": "powertrain",
+    "subsystem": "diesel injection timing",
+    "component": "injection timing control circuit",
+    "circuit_type": "actuator/control circuit",
+    "severity": "high",
+    "driveability": "Use caution. Hard starting, smoke, low power or stalling should be diagnosed before continued driving.",
+    "ecu_detection_condition": "The control module detects that commanded injection timing cannot be achieved or the timing control circuit response is abnormal.",
+    "symptoms": ["symp_check_engine", "symp_hard_start", "symp_power_loss", "symp_black_smoke", "symp_stalling"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_fuel_pump", "cause_fuel_filter", "cause_pcm_failure"],
+    "fixDifficulty": "diff_professional",
+    "estimatedCost": "$200 - $1800",
+    "diagnosticSteps": [
+      "Confirm P0216 and identify whether the vehicle uses a diesel injection pump, electronically controlled timing actuator or another timing strategy.",
+      "Check for low fuel supply, air in fuel, contaminated fuel or restricted filter before condemning timing components.",
+      "Inspect injection timing actuator/pump connector and wiring for corrosion, heat damage or rub-through.",
+      "Compare commanded timing and actual timing data where the scan tool supports it.",
+      "Check crank and cam reference codes or synchronization data because timing control depends on accurate engine position.",
+      "Follow manufacturer test procedure before replacing an injection pump, timing actuator or control module."
+    ],
+    "commonFixes": [
+      "Repair injection timing control wiring or connector faults.",
+      "Correct fuel supply restriction or air intrusion that affects timing control.",
+      "Replace a confirmed failed timing actuator or injection pump component using manufacturer procedure.",
+      "Verify commanded and actual timing stay aligned after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the injection pump without checking fuel supply quality.",
+      "Ignoring crank/cam synchronization or related timing codes.",
+      "Applying gasoline-engine logic to a diesel timing-control fault."
+    ],
+    "do_not_replace_blindly": ["injection pump", "timing actuator", "crank sensor", "ECM/PCM"],
+    "freeze_frame_fields": ["RPM", "engine load", "fuel temperature", "commanded timing", "battery voltage"],
+    "live_data_fields": ["commanded injection timing", "actual timing", "fuel pressure", "crank/cam sync"],
+    "related_codes": ["P0215", "P0251", "P0252", "P0335", "P0340", "P0380"],
+    "applicability_notes": "Meaning and test steps can be diesel/manufacturer-specific. Generic pages should avoid universal pressure or timing values.",
+    "source_confidence": "MEDIUM"
+  },
+  "P0183": {
+    "title": "Fuel Temperature Sensor A Circuit High",
+    "description": "P0183 indicates a high input condition in fuel temperature sensor A circuit. Diagnosis should focus on whether the signal is stuck high due to an open circuit, connector issue, sensor fault or harness problem, and should compare fuel temperature data to ambient and operating conditions rather than assuming actual fuel overheating.",
+    "system": "powertrain",
+    "subsystem": "fuel temperature measurement",
+    "component": "fuel temperature sensor A",
+    "circuit_type": "temperature sensor high input",
+    "severity": "moderate",
+    "driveability": "Usually drivable if no fuel leak, stalling or severe performance symptom exists, but fuel calculation and diesel fuel strategy may be affected.",
+    "ecu_detection_condition": "The ECM sees fuel temperature sensor A signal higher than the expected electrical range or implausibly high for conditions.",
+    "symptoms": ["symp_check_engine", "symp_hard_start", "symp_stalling", "symp_power_loss", "symp_fuel_economy"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_fuel_filter", "cause_pcm_failure", "cause_pcm_software"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $600",
+    "diagnosticSteps": [
+      "Confirm P0183 and save fuel temperature freeze-frame data.",
+      "Compare reported fuel temperature with ambient temperature after a cold soak.",
+      "Inspect the fuel temperature sensor connector and harness for open circuit, corrosion or fluid intrusion.",
+      "Check reference, ground and signal circuits according to the wiring diagram.",
+      "Watch live fuel temperature while moving the harness to find intermittent opens.",
+      "Replace the sensor only if circuit checks and temperature plausibility confirm sensor failure."
+    ],
+    "commonFixes": [
+      "Repair open signal or ground circuit at the fuel temperature sensor.",
+      "Clean or repair corroded sensor connector terminals.",
+      "Replace a confirmed failed fuel temperature sensor or integrated fuel system component.",
+      "Verify realistic fuel temperature readings after repair."
+    ],
+    "common_mistakes": [
+      "Assuming the fuel is actually overheated without checking cold-soak data.",
+      "Replacing a fuel pump assembly before checking the sensor circuit.",
+      "Ignoring harness movement that causes intermittent high readings."
+    ],
+    "do_not_replace_blindly": ["fuel pump", "fuel temperature sensor", "fuel filter housing", "ECM/PCM"],
+    "freeze_frame_fields": ["fuel temperature", "ambient temperature", "coolant temperature", "RPM", "battery voltage"],
+    "live_data_fields": ["fuel temperature sensor A", "fuel pressure where available", "battery voltage", "ambient temperature"],
+    "related_codes": ["P0180", "P0181", "P0182", "P0184", "P0190", "P0193"],
+    "applicability_notes": "Fuel temperature sensor placement varies; on some vehicles it may be integrated into another fuel-system assembly.",
+    "source_confidence": "HIGH"
+  },
+  "P0135": {
+    "title": "O2 Sensor Heater Circuit Malfunction Bank 1 Sensor 1",
+    "description": "P0135 means the ECM detected a problem in the heater circuit for the upstream oxygen sensor on bank 1. The diagnostic path is heater-specific: fuse or power feed, ground/control circuit, connector condition and heater resistance/current behavior should be checked before replacing the sensor.",
+    "system": "powertrain",
+    "subsystem": "oxygen sensor heater",
+    "component": "bank 1 sensor 1 oxygen sensor heater",
+    "circuit_type": "heater power/control circuit",
+    "severity": "moderate",
+    "driveability": "Usually drivable, but emissions readiness and cold-start fuel control can be affected.",
+    "ecu_detection_condition": "The ECM detects abnormal current or voltage behavior in the bank 1 sensor 1 oxygen sensor heater circuit.",
+    "symptoms": ["symp_check_engine", "symp_fuel_economy", "symp_failed_emissions", "symp_hard_start", "symp_rough_idle"],
+    "causes": ["cause_o2_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_pcm_failure", "cause_pcm_software"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$120 - $550",
+    "diagnosticSteps": [
+      "Confirm P0135 and identify bank 1 sensor 1 correctly before testing.",
+      "Check the oxygen sensor heater fuse or shared power feed if multiple heater codes are present.",
+      "Inspect the upstream O2 sensor connector and harness near exhaust heat for melting or rub-through.",
+      "Test heater power, ground/control and heater resistance/current with manufacturer-approved methods.",
+      "Check for exhaust work or harness routing that may have damaged the sensor wiring.",
+      "Replace the O2 sensor only if the heater element is confirmed failed or the circuit tests support replacement."
+    ],
+    "commonFixes": [
+      "Repair melted or shorted O2 heater wiring.",
+      "Repair heater fuse/power feed faults.",
+      "Replace bank 1 sensor 1 only after heater circuit testing confirms sensor failure.",
+      "Verify heater monitor completion after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the wrong oxygen sensor location.",
+      "Diagnosing sensor signal switching instead of the heater circuit.",
+      "Missing a blown heater fuse shared by multiple sensors."
+    ],
+    "do_not_replace_blindly": ["oxygen sensor", "catalytic converter", "ECM/PCM"],
+    "freeze_frame_fields": ["coolant temperature", "run time", "battery voltage", "fuel system status"],
+    "live_data_fields": ["O2 heater command", "O2 heater monitor status", "B1S1 oxygen sensor voltage/current where available", "closed-loop status"],
+    "related_codes": ["P0130", "P0131", "P0132", "P0133", "P0141", "P0155"],
+    "applicability_notes": "Bank and sensor numbering depend on engine layout. Confirm bank 1 before replacement.",
+    "source_confidence": "HIGH"
+  },
+  "P0103": {
+    "title": "Mass or Volume Air Flow Circuit High Input",
+    "description": "P0103 means the ECM sees a mass air flow signal higher than expected or outside circuit range. Diagnosis should focus on MAF signal plausibility, power/ground integrity, intake duct leaks, contaminated sensor element, wiring faults and whether the high signal matches actual airflow conditions.",
+    "system": "powertrain",
+    "subsystem": "air metering",
+    "component": "mass air flow sensor circuit",
+    "circuit_type": "airflow sensor high input",
+    "severity": "moderate",
+    "driveability": "Use caution if the engine hesitates, stalls or runs rich/lean. Gentle driving may be possible if symptoms are mild.",
+    "ecu_detection_condition": "The ECM detects a MAF signal higher than the expected electrical or rational range for the current engine operating condition.",
+    "symptoms": ["symp_check_engine", "symp_poor_acceleration", "symp_hesitation", "symp_fuel_economy", "symp_stalling"],
+    "causes": ["cause_maf_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_vacuum_leak", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $550",
+    "diagnosticSteps": [
+      "Confirm P0103 and compare freeze-frame MAF reading with RPM and load.",
+      "Inspect the air filter box, intake ducting and MAF housing for leaks, loose clamps or incorrect installation.",
+      "Check MAF connector pins for corrosion, spread terminals or oil contamination.",
+      "Compare live MAF data at idle and during gentle acceleration against expected behavior for the engine.",
+      "Check MAF power, ground and signal circuits before replacing the sensor.",
+      "Repair intake or wiring faults first; replace the MAF only after signal and circuit tests confirm failure."
+    ],
+    "commonFixes": [
+      "Repair damaged MAF wiring or connector terminals.",
+      "Correct intake duct leaks or air filter housing problems.",
+      "Clean contamination only with appropriate MAF-safe cleaner when contamination is visible.",
+      "Replace the MAF sensor if circuit and live-data tests confirm the high-input fault."
+    ],
+    "common_mistakes": [
+      "Replacing the MAF without checking intake leaks or connector power/ground.",
+      "Using non-MAF-safe cleaner that damages the sensor.",
+      "Ignoring related IAT or fuel-trim codes."
+    ],
+    "do_not_replace_blindly": ["MAF sensor", "air filter box", "ECM/PCM"],
+    "freeze_frame_fields": ["MAF airflow", "RPM", "engine load", "throttle position", "fuel trims"],
+    "live_data_fields": ["MAF g/s or frequency", "IAT", "STFT/LTFT", "throttle position"],
+    "related_codes": ["P0100", "P0101", "P0102", "P0104", "P0110", "P0172"],
+    "applicability_notes": "Expected MAF values are engine-specific; generic pages should describe plausibility, not universal grams-per-second limits.",
+    "source_confidence": "HIGH"
+  },
+  "P0251": {
+    "title": "Injection Pump Fuel Metering Control A Malfunction",
+    "description": "P0251 indicates a problem with injection pump fuel metering control A, commonly relevant to diesel fuel systems. Diagnosis should focus on fuel supply, metering valve/actuator command, pump control wiring, fuel quality, pressure feedback and related timing or rail-pressure codes. Manufacturer-specific procedures are important.",
+    "system": "powertrain",
+    "subsystem": "diesel fuel metering",
+    "component": "injection pump fuel metering control A",
+    "circuit_type": "fuel metering actuator/control circuit",
+    "severity": "high",
+    "driveability": "Use caution. Hard start, stalling, smoke or loss of power should be diagnosed before continued driving.",
+    "ecu_detection_condition": "The control module detects that the commanded fuel metering control response is abnormal or inconsistent with fuel system feedback.",
+    "symptoms": ["symp_check_engine", "symp_hard_start", "symp_stalling", "symp_power_loss", "symp_black_smoke"],
+    "causes": ["cause_fuel_pump", "cause_fuel_filter", "cause_fuel_pressure_reg", "cause_wiring_damage", "cause_connector_corrosion"],
+    "fixDifficulty": "diff_professional",
+    "estimatedCost": "$200 - $1800",
+    "diagnosticSteps": [
+      "Confirm P0251 and check for related fuel pressure, timing or crank/cam synchronization codes.",
+      "Inspect fuel quality, filter condition and signs of air in the fuel system before replacing metering components.",
+      "Check the injection pump metering control connector and harness for corrosion, rub-through or heat damage.",
+      "Compare commanded fuel metering with pressure or pump feedback data where the scan tool supports it.",
+      "Verify power, ground and control circuits with the correct wiring diagram.",
+      "Follow manufacturer procedure before replacing the metering valve, injection pump or control module."
+    ],
+    "commonFixes": [
+      "Replace a restricted fuel filter or correct fuel supply/air intrusion issues.",
+      "Repair wiring or connector faults at the metering control circuit.",
+      "Replace a confirmed failed metering valve or pump component using the correct service procedure.",
+      "Verify fuel pressure/metering data after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the injection pump before checking fuel filter and air intrusion.",
+      "Ignoring related rail pressure or timing codes.",
+      "Using gasoline-engine injector logic on a diesel metering code."
+    ],
+    "do_not_replace_blindly": ["injection pump", "fuel metering valve", "fuel rail pressure sensor", "ECM/PCM"],
+    "freeze_frame_fields": ["RPM", "load", "fuel pressure", "fuel temperature", "battery voltage"],
+    "live_data_fields": ["commanded fuel metering", "actual fuel pressure", "fuel temperature", "crank/cam sync"],
+    "related_codes": ["P0216", "P0252", "P0253", "P0254", "P0190", "P0191", "P0192", "P0193"],
+    "applicability_notes": "Often diesel/manufacturer-specific. Avoid universal pressure values without vehicle data.",
+    "source_confidence": "MEDIUM"
+  },
+  "P0201": {
+    "title": "Injector Circuit/Open - Cylinder 1",
+    "description": "P0201 means the ECM detected an electrical fault in the injector circuit for cylinder 1. The diagnostic path is cylinder-specific and should compare injector #1 power, control, connector condition and injector electrical behavior against other cylinders before replacing parts.",
+    "system": "powertrain",
+    "subsystem": "fuel injection",
+    "component": "cylinder 1 fuel injector circuit",
+    "circuit_type": "injector power/control circuit",
+    "severity": "high",
+    "driveability": "Avoid extended driving if misfire, raw fuel smell, shaking or flashing check engine light is present.",
+    "ecu_detection_condition": "The ECM detects abnormal injector circuit behavior for cylinder 1, such as open circuit, short circuit or missing current response.",
+    "symptoms": ["symp_check_engine", "symp_misfire_feel", "symp_rough_idle", "symp_power_loss", "symp_fuel_smell"],
+    "causes": ["cause_fuel_injector", "cause_wiring_damage", "cause_connector_corrosion", "cause_pcm_failure", "cause_fuel_pressure_reg"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$150 - $800",
+    "diagnosticSteps": [
+      "Confirm P0201 and check whether P0301 or other cylinder 1 data supports the same cylinder.",
+      "Confirm cylinder 1 location for the specific engine before testing.",
+      "Inspect cylinder 1 injector connector and harness for damage, oil intrusion or spread terminals.",
+      "Compare injector electrical behavior with a known-good cylinder using approved test methods.",
+      "Check injector power feed and ECM control pulse before replacing the injector.",
+      "Repair the verified fault, clear codes and verify cylinder 1 contribution returns to normal."
+    ],
+    "commonFixes": [
+      "Repair cylinder 1 injector connector or harness faults.",
+      "Replace a confirmed failed cylinder 1 injector.",
+      "Repair power feed or ECM control circuit faults.",
+      "Verify misfire counters and fuel trims after repair."
+    ],
+    "common_mistakes": [
+      "Assuming cylinder 1 location without checking engine layout.",
+      "Replacing ignition parts first when the code is injector circuit-specific.",
+      "Skipping injector power and control tests."
+    ],
+    "do_not_replace_blindly": ["cylinder 1 injector", "spark plug", "ignition coil", "ECM/PCM"],
+    "freeze_frame_fields": ["RPM", "load", "fuel trims", "misfire data", "battery voltage"],
+    "live_data_fields": ["injector command", "misfire counters", "fuel pressure where available", "fuel trim"],
+    "related_codes": ["P0202", "P0203", "P0204", "P0301", "P0261", "P0262"],
+    "applicability_notes": "Cylinder numbering and injector test method vary by engine and injector design.",
+    "source_confidence": "HIGH"
+  },
+  "P0113": {
+    "title": "Intake Air Temperature Sensor 1 Circuit High",
+    "description": "P0113 indicates that the ECM sees the intake air temperature sensor 1 signal high, commonly consistent with an open signal/ground path or sensor/circuit issue. Diagnosis should compare cold-engine IAT to ambient temperature, inspect the IAT/MAF connector, and test signal and ground integrity before replacing the sensor.",
+    "system": "powertrain",
+    "subsystem": "air intake measurement",
+    "component": "intake air temperature sensor 1",
+    "circuit_type": "temperature sensor high input",
+    "severity": "moderate",
+    "driveability": "Usually drivable if symptoms are mild, but poor cold-start and fuel calculation issues can occur.",
+    "ecu_detection_condition": "The ECM detects an IAT sensor 1 input higher than the expected electrical range or implausibly high for conditions.",
+    "symptoms": ["symp_check_engine", "symp_hard_start", "symp_hesitation", "symp_fuel_economy", "symp_poor_acceleration"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_maf_sensor", "cause_pcm_failure", "cause_pcm_software"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$80 - $450",
+    "diagnosticSteps": [
+      "Confirm P0113 and save freeze-frame IAT, coolant and ambient context.",
+      "Compare IAT to ambient temperature on a cold engine; a very high reading points to circuit or sensor error.",
+      "Inspect the IAT or MAF/IAT connector for unplugged terminals, corrosion or oil contamination.",
+      "Check signal and ground continuity according to the wiring diagram.",
+      "Move the harness while monitoring IAT live data to locate intermittent opens.",
+      "Repair wiring or replace the confirmed failed sensor and verify stable temperature data."
+    ],
+    "commonFixes": [
+      "Reconnect or repair the IAT/MAF connector.",
+      "Repair an open IAT signal or ground circuit.",
+      "Replace a confirmed failed IAT or MAF/IAT assembly.",
+      "Verify cold-start IAT plausibility after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the MAF assembly without confirming whether IAT is integrated.",
+      "Ignoring a disconnected sensor after air filter service.",
+      "Skipping cold-engine plausibility comparison."
+    ],
+    "do_not_replace_blindly": ["IAT sensor", "MAF sensor", "ECM/PCM"],
+    "freeze_frame_fields": ["IAT", "ECT", "ambient temperature", "RPM", "battery voltage"],
+    "live_data_fields": ["IAT sensor 1", "ECT", "MAF airflow", "fuel trims"],
+    "related_codes": ["P0110", "P0111", "P0112", "P0114", "P0103", "P0104"],
+    "applicability_notes": "IAT may be a standalone sensor or integrated into the MAF depending on vehicle.",
+    "source_confidence": "HIGH"
+  },
+  "P0243": {
+    "title": "Turbocharger Wastegate Solenoid A Malfunction",
+    "description": "P0243 points to an electrical or control fault in turbocharger wastegate solenoid A. Diagnosis should verify the solenoid circuit, command response, vacuum/pressure routing and related boost data before replacing the turbocharger or boost sensor.",
+    "system": "powertrain",
+    "subsystem": "turbocharger boost control",
+    "component": "wastegate solenoid A",
+    "circuit_type": "solenoid control circuit",
+    "severity": "moderate",
+    "driveability": "Avoid hard acceleration if boost control symptoms or limp mode are present.",
+    "ecu_detection_condition": "The ECM detects abnormal electrical behavior or response in the wastegate solenoid A control circuit.",
+    "symptoms": ["symp_check_engine", "symp_turbo_lag", "symp_power_loss", "symp_black_smoke", "symp_reduced_power_mode"],
+    "causes": ["cause_turbo_wastegate", "cause_turbo_actuator", "cause_wiring_damage", "cause_connector_corrosion", "cause_intake_leak"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$120 - $900",
+    "diagnosticSteps": [
+      "Confirm P0243 and check for related underboost or overboost codes.",
+      "Inspect wastegate solenoid A connector, wiring and vacuum/pressure hoses.",
+      "Command the solenoid with a scan tool where supported and listen or test for response.",
+      "Check solenoid power, ground and control circuit continuity with the wiring diagram.",
+      "Verify wastegate actuator movement and hose routing before replacing the solenoid.",
+      "Repair the verified circuit or control fault and confirm commanded boost response."
+    ],
+    "commonFixes": [
+      "Repair wastegate solenoid wiring or connector faults.",
+      "Replace a confirmed failed wastegate solenoid.",
+      "Repair cracked or misrouted boost/vacuum control hoses.",
+      "Verify requested and actual boost after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the turbocharger for a solenoid circuit code.",
+      "Missing broken vacuum/pressure lines.",
+      "Ignoring P0234/P0299 companion codes."
+    ],
+    "do_not_replace_blindly": ["turbocharger", "boost sensor", "wastegate actuator", "ECM/PCM"],
+    "freeze_frame_fields": ["actual boost", "desired boost", "RPM", "load", "battery voltage"],
+    "live_data_fields": ["wastegate solenoid command", "MAP/boost", "desired boost", "barometric pressure"],
+    "related_codes": ["P0234", "P0235", "P0236", "P0237", "P0238", "P0299"],
+    "applicability_notes": "Only applies where the vehicle uses a controlled turbo/wastegate system.",
+    "source_confidence": "HIGH"
+  },
+  "P0134": {
+    "title": "O2 Sensor Circuit No Activity Detected Bank 1 Sensor 1",
+    "description": "P0134 means the ECM does not see expected activity from the upstream oxygen sensor on bank 1. Diagnosis should check sensor signal activity, heater operation, exhaust leaks, wiring and fuel-control context before replacing the sensor or catalytic converter.",
+    "system": "powertrain",
+    "subsystem": "oxygen sensor feedback",
+    "component": "bank 1 sensor 1 oxygen sensor signal",
+    "circuit_type": "oxygen sensor signal inactivity",
+    "severity": "moderate",
+    "driveability": "Usually drivable, but emissions, fuel economy and readiness can be affected.",
+    "ecu_detection_condition": "The ECM detects little or no expected upstream oxygen sensor signal activity under conditions where activity should be present.",
+    "symptoms": ["symp_check_engine", "symp_fuel_economy", "symp_failed_emissions", "symp_rough_idle", "symp_hesitation"],
+    "causes": ["cause_o2_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_exhaust_leak", "cause_pcm_software"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$120 - $700",
+    "diagnosticSteps": [
+      "Confirm P0134 and identify bank 1 sensor 1 correctly.",
+      "Check whether oxygen sensor heater codes are also present because a cold sensor may appear inactive.",
+      "Inspect sensor wiring and connector near exhaust heat.",
+      "Check for exhaust leaks ahead of the sensor that can distort readings.",
+      "Monitor upstream O2 or air-fuel sensor activity with fuel trims during warm closed-loop operation.",
+      "Replace the sensor only if circuit, heater and exhaust checks support a failed sensor."
+    ],
+    "commonFixes": [
+      "Repair O2 sensor signal wiring or connector damage.",
+      "Repair exhaust leaks before the upstream sensor.",
+      "Replace bank 1 sensor 1 if signal inactivity is confirmed.",
+      "Verify closed-loop operation and readiness after repair."
+    ],
+    "common_mistakes": [
+      "Replacing the catalytic converter for an upstream sensor inactivity code.",
+      "Testing the wrong bank or sensor location.",
+      "Ignoring heater or wiring faults."
+    ],
+    "do_not_replace_blindly": ["oxygen sensor", "catalytic converter", "fuel injectors", "ECM/PCM"],
+    "freeze_frame_fields": ["fuel system status", "coolant temperature", "O2 sensor signal", "fuel trims", "RPM"],
+    "live_data_fields": ["B1S1 O2/AF sensor signal", "STFT/LTFT", "heater command", "closed-loop status"],
+    "related_codes": ["P0130", "P0131", "P0132", "P0133", "P0135", "P0171"],
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors rather than narrowband oxygen sensors.",
+    "source_confidence": "HIGH"
+  },
+  "P0105": {
+    "title": "MAP/BARO Pressure Circuit Malfunction",
+    "description": "P0105 indicates a malfunction in the manifold absolute pressure or barometric pressure circuit. Diagnosis should compare MAP/BARO plausibility key-on, idle and load, inspect vacuum/boost routing where applicable, and test signal/reference/ground circuits.",
+    "system": "powertrain",
+    "subsystem": "manifold pressure measurement",
+    "component": "MAP/BARO sensor circuit",
+    "circuit_type": "pressure sensor signal circuit",
+    "severity": "moderate",
+    "driveability": "Use caution if the engine stalls, hesitates or enters reduced power mode.",
+    "ecu_detection_condition": "The ECM detects an abnormal MAP/BARO signal or circuit behavior outside expected operating range.",
+    "symptoms": ["symp_check_engine", "symp_poor_acceleration", "symp_hesitation", "symp_power_loss", "symp_rough_idle"],
+    "causes": ["cause_map_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_vacuum_leak", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $550",
+    "diagnosticSteps": [
+      "Confirm P0105 and compare MAP/BARO data with key-on engine-off barometric pressure behavior.",
+      "Inspect the MAP sensor connector, harness and sensor port for contamination or blockage.",
+      "Check vacuum hose or intake connection if the MAP sensor is hose-mounted.",
+      "Compare MAP changes from idle to snap throttle or gentle load using live data.",
+      "Test reference voltage, ground and signal continuity with a wiring diagram.",
+      "Repair circuit or vacuum/port faults before replacing the sensor."
+    ],
+    "commonFixes": [
+      "Clean a blocked MAP sensor port where serviceable.",
+      "Repair MAP sensor wiring or connector faults.",
+      "Repair vacuum hose or intake leaks affecting sensor reading.",
+      "Replace the MAP/BARO sensor only after signal testing confirms failure."
+    ],
+    "common_mistakes": [
+      "Replacing the sensor without checking a blocked port or vacuum hose.",
+      "Ignoring key-on barometric plausibility.",
+      "Confusing MAP circuit faults with MAF-only diagnosis."
+    ],
+    "do_not_replace_blindly": ["MAP sensor", "MAF sensor", "throttle body", "ECM/PCM"],
+    "freeze_frame_fields": ["MAP pressure", "BARO", "RPM", "throttle position", "load"],
+    "live_data_fields": ["MAP", "BARO", "TPS", "MAF where equipped", "fuel trims"],
+    "related_codes": ["P0106", "P0107", "P0108", "P0109", "P0120", "P0235"],
+    "applicability_notes": "Pressure units and normal values are altitude and engine-specific.",
+    "source_confidence": "HIGH"
+  },
+  "P0106": {
+    "title": "MAP/BARO Pressure Circuit Range/Performance",
+    "description": "P0106 means MAP/BARO pressure data is not plausible for the engine operating condition. The fault may be sensor, wiring, blocked port, vacuum/boost leak, throttle/airflow mismatch or engine mechanical issue; diagnosis should compare pressure response rather than replace the sensor immediately.",
+    "system": "powertrain",
+    "subsystem": "manifold pressure plausibility",
+    "component": "MAP/BARO sensor performance",
+    "circuit_type": "pressure sensor range/performance",
+    "severity": "moderate",
+    "driveability": "Use caution if hesitation, stalling, turbo boost faults or reduced power occur.",
+    "ecu_detection_condition": "The ECM sees MAP/BARO pressure behavior that does not match expected engine load, throttle, RPM or barometric context.",
+    "symptoms": ["symp_check_engine", "symp_poor_acceleration", "symp_hesitation", "symp_power_loss", "symp_rough_idle"],
+    "causes": ["cause_map_sensor", "cause_vacuum_leak", "cause_wiring_damage", "cause_connector_corrosion", "cause_intake_leak"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $650",
+    "diagnosticSteps": [
+      "Confirm P0106 and compare MAP/BARO freeze-frame data with throttle and load.",
+      "Check MAP response key-on, idle and under gentle throttle for smooth, plausible change.",
+      "Inspect for vacuum leaks, intake leaks, blocked MAP port or damaged hose.",
+      "Compare MAP with MAF and throttle data where equipped to detect airflow/pressure mismatch.",
+      "Check sensor reference, ground and signal stability.",
+      "Repair the verified leak, blockage or circuit fault and confirm MAP response stays plausible."
+    ],
+    "commonFixes": [
+      "Repair vacuum or intake leaks.",
+      "Clean or repair a blocked MAP port/hose.",
+      "Repair wiring or connector faults.",
+      "Replace a confirmed failed MAP/BARO sensor."
+    ],
+    "common_mistakes": [
+      "Replacing the MAP sensor without checking leaks or blocked ports.",
+      "Ignoring throttle/MAF correlation codes.",
+      "Using universal pressure numbers without altitude/engine context."
+    ],
+    "do_not_replace_blindly": ["MAP sensor", "MAF sensor", "throttle body", "turbocharger"],
+    "freeze_frame_fields": ["MAP", "BARO", "throttle position", "engine load", "RPM"],
+    "live_data_fields": ["MAP", "BARO", "TPS", "MAF", "short term fuel trim"],
+    "related_codes": ["P0105", "P0107", "P0108", "P0109", "P0120", "P0171"],
+    "applicability_notes": "Range/performance logic is manufacturer-calibrated and should be interpreted with vehicle data.",
+    "source_confidence": "HIGH"
+  },
+  "P0297": {
+    "title": "Vehicle Overspeed Condition",
+    "description": "P0297 indicates the control module recorded a vehicle overspeed condition. Unlike sensor circuit codes, diagnosis should focus on whether the event was real, whether wheel/vehicle speed data is plausible, and whether ABS/TCM/PCM communication or tire size changes affected speed calculation.",
+    "system": "powertrain",
+    "subsystem": "vehicle speed monitoring",
+    "component": "vehicle speed calculation",
+    "circuit_type": "operating condition / plausibility",
+    "severity": "low",
+    "driveability": "If the code was caused by a real overspeed event and no speedometer/ABS symptoms exist, it may not indicate a failed part.",
+    "ecu_detection_condition": "The module recorded vehicle speed above a calibrated limit or saw speed data inconsistent with safe operating assumptions.",
+    "symptoms": ["symp_check_engine", "symp_speedometer_erratic", "symp_cruise_not_working", "symp_reduced_power_mode", "symp_vibration"],
+    "causes": ["cause_vss", "cause_wiring_damage", "cause_connector_corrosion", "cause_pcm_software", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$80 - $600",
+    "diagnosticSteps": [
+      "Confirm P0297 and check whether freeze-frame speed indicates a real overspeed event.",
+      "Check for ABS, wheel speed, transmission or vehicle speed sensor codes.",
+      "Verify tire size and calibration changes if speed data is implausible.",
+      "Compare scan tool vehicle speed with dashboard speed and wheel speed data.",
+      "Inspect vehicle speed sensor or wheel speed sensor circuits only if data is inconsistent.",
+      "Clear and road-test legally and safely to confirm the code does not return."
+    ],
+    "commonFixes": [
+      "Correct tire size or calibration mismatch where applicable.",
+      "Repair vehicle/wheel speed sensor wiring faults.",
+      "Address related ABS/TCM speed-data codes.",
+      "No part replacement may be needed if the recorded event was real and isolated."
+    ],
+    "common_mistakes": [
+      "Replacing a speed sensor without checking whether overspeed was real.",
+      "Ignoring tire size or calibration changes.",
+      "Testing powertrain only while speed data originates from ABS modules."
+    ],
+    "do_not_replace_blindly": ["vehicle speed sensor", "ABS module", "transmission control module", "ECM/PCM"],
+    "freeze_frame_fields": ["vehicle speed", "RPM", "gear commanded", "ABS speed data", "throttle position"],
+    "live_data_fields": ["vehicle speed", "individual wheel speeds", "transmission output speed", "cruise status"],
+    "related_codes": ["P0500", "P0501", "P0720", "P0722", "C0035", "U0121"],
+    "applicability_notes": "May represent a recorded operating event rather than a failed component.",
+    "source_confidence": "MEDIUM"
+  },
+  "P0538": {
+    "title": "A/C Evaporator Temperature Sensor Circuit High",
+    "description": "P0538 indicates a high input condition in the A/C evaporator temperature sensor circuit. Diagnosis should focus on the evaporator temperature sensor signal, connector, wiring and HVAC module/PCM interpretation; it should not be confused with low refrigerant diagnosis unless A/C performance symptoms support it.",
+    "system": "body",
+    "subsystem": "HVAC evaporator temperature sensing",
+    "component": "A/C evaporator temperature sensor",
+    "circuit_type": "temperature sensor high input",
+    "severity": "low",
+    "driveability": "The vehicle is usually drivable, but A/C operation may be disabled or erratic.",
+    "ecu_detection_condition": "The control module detects evaporator temperature sensor voltage/signal higher than expected or implausible for HVAC operation.",
+    "symptoms": ["symp_ac_not_working", "symp_check_engine", "symp_module_warning", "symp_battery_drain", "symp_no_start"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_ac_refrigerant", "cause_ac_compressor", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $700",
+    "diagnosticSteps": [
+      "Confirm P0538 and check HVAC/PCM data for evaporator temperature reading.",
+      "Compare evaporator temperature data to cabin/ambient temperature before A/C operation.",
+      "Inspect the evaporator temperature sensor connector and harness for opens or corrosion.",
+      "Check signal and ground circuits with the correct HVAC wiring diagram.",
+      "Confirm A/C compressor command is not disabled because of implausible evaporator temperature data.",
+      "Replace the sensor only after circuit and plausibility checks confirm failure."
+    ],
+    "commonFixes": [
+      "Repair evaporator temperature sensor wiring or connector faults.",
+      "Replace a confirmed failed evaporator temperature sensor.",
+      "Repair HVAC control circuit issues if sensor data remains implausible.",
+      "Verify A/C command and vent temperature behavior after repair."
+    ],
+    "common_mistakes": [
+      "Adding refrigerant before checking sensor data.",
+      "Replacing the compressor for a sensor circuit high code.",
+      "Ignoring HVAC module data because the code appears in a generic scanner."
+    ],
+    "do_not_replace_blindly": ["A/C compressor", "refrigerant charge", "HVAC control module", "evaporator sensor"],
+    "freeze_frame_fields": ["evaporator temperature", "ambient temperature", "A/C request", "battery voltage"],
+    "live_data_fields": ["evaporator temperature", "A/C clutch command", "ambient temperature", "pressure sensor data"],
+    "related_codes": ["P0530", "P0531", "P0532", "P0533", "P0537", "P0539"],
+    "applicability_notes": "HVAC code routing and sensor access are vehicle-specific.",
+    "source_confidence": "MEDIUM"
+  },
+  "P0509": {
+    "title": "Idle Air Control System Circuit High",
+    "description": "P0509 indicates a high circuit condition in the idle air control system. On vehicles with an IAC valve, diagnosis should focus on IAC control circuit, connector, valve command and idle airflow. On electronic throttle vehicles, manufacturer strategy may differ, so throttle body and idle relearn context matter.",
+    "system": "powertrain",
+    "subsystem": "idle speed control",
+    "component": "idle air control circuit",
+    "circuit_type": "idle control high input/control circuit",
+    "severity": "moderate",
+    "driveability": "Use caution if idle is very high, stalling occurs or shifting into gear feels unsafe.",
+    "ecu_detection_condition": "The ECM detects idle air control circuit behavior higher than expected or inconsistent with commanded idle control.",
+    "symptoms": ["symp_check_engine", "symp_rough_idle", "symp_stalling", "symp_poor_acceleration", "symp_reduced_power_mode"],
+    "causes": ["cause_wiring_damage", "cause_connector_corrosion", "cause_throttle_body", "cause_pcm_failure", "cause_pcm_software"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $700",
+    "diagnosticSteps": [
+      "Confirm P0509 and note actual idle speed, commanded idle and related throttle/IAC codes.",
+      "Identify whether the vehicle uses a separate IAC valve or electronic throttle idle control.",
+      "Inspect IAC/throttle connector and wiring for high resistance, shorts or contamination.",
+      "Check for vacuum leaks or stuck throttle plate that can mimic idle-control faults.",
+      "Command IAC or idle control where supported and compare response.",
+      "Repair wiring, clean/repair throttle/IAC as applicable, and perform relearn if required."
+    ],
+    "commonFixes": [
+      "Repair IAC/throttle control wiring or connector faults.",
+      "Clean a sticking throttle body where service procedure allows.",
+      "Repair vacuum leaks affecting idle control.",
+      "Replace a confirmed failed IAC valve or throttle component and perform relearn."
+    ],
+    "common_mistakes": [
+      "Replacing the IAC valve on a vehicle that uses electronic throttle idle control.",
+      "Ignoring vacuum leaks.",
+      "Skipping idle relearn after cleaning or replacement."
+    ],
+    "do_not_replace_blindly": ["IAC valve", "throttle body", "ECM/PCM"],
+    "freeze_frame_fields": ["RPM", "commanded idle", "throttle position", "IAC command", "coolant temperature"],
+    "live_data_fields": ["actual idle speed", "desired idle", "IAC counts/command", "TPS", "fuel trims"],
+    "related_codes": ["P0505", "P0506", "P0507", "P0511", "P0121", "P0122"],
+    "applicability_notes": "Idle control hardware varies widely; verify system design before parts replacement.",
+    "source_confidence": "HIGH"
+  },
+  "P0104": {
+    "title": "Mass or Volume Air Flow Circuit Intermittent",
+    "description": "P0104 means the ECM detected intermittent or unstable MAF circuit behavior. Diagnosis should emphasize harness movement, connector terminal tension, intake vibration, power/ground stability and live-data dropouts rather than a static sensor replacement decision.",
+    "system": "powertrain",
+    "subsystem": "air metering",
+    "component": "mass air flow sensor circuit",
+    "circuit_type": "intermittent airflow sensor signal",
+    "severity": "moderate",
+    "driveability": "Use caution if the engine hesitates, stalls or surges because intermittent air-metering data can cause sudden drivability changes.",
+    "ecu_detection_condition": "The ECM detects MAF signal dropouts or instability inconsistent with engine operation.",
+    "symptoms": ["symp_check_engine", "symp_hesitation", "symp_stalling", "symp_power_loss", "symp_fuel_economy"],
+    "causes": ["cause_maf_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_vacuum_leak", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $550",
+    "diagnosticSteps": [
+      "Confirm P0104 and inspect freeze-frame conditions where the intermittent event occurred.",
+      "Inspect MAF connector terminal fit, harness strain and airbox mounting.",
+      "Wiggle-test the MAF harness while watching live MAF data for dropouts.",
+      "Check power and ground stability with the engine running and during vibration.",
+      "Inspect intake ducting for movement, leaks or loose clamps that can disturb airflow readings.",
+      "Repair the intermittent wiring/intake fault or replace the confirmed failed MAF sensor."
+    ],
+    "commonFixes": [
+      "Repair loose MAF connector terminals.",
+      "Repair rubbed or broken MAF wiring.",
+      "Correct loose intake ducting or airbox movement.",
+      "Replace MAF only when dropouts persist with good wiring and power/ground."
+    ],
+    "common_mistakes": [
+      "Testing only with the engine off and missing vibration-related faults.",
+      "Replacing the MAF without a harness wiggle test.",
+      "Ignoring loose intake duct clamps."
+    ],
+    "do_not_replace_blindly": ["MAF sensor", "airbox", "ECM/PCM"],
+    "freeze_frame_fields": ["MAF airflow", "RPM", "load", "vehicle speed", "battery voltage"],
+    "live_data_fields": ["MAF signal", "IAT", "fuel trims", "battery voltage"],
+    "related_codes": ["P0100", "P0101", "P0102", "P0103", "P0110", "P0171"],
+    "applicability_notes": "Intermittent faults require dynamic testing; static readings may look normal.",
+    "source_confidence": "HIGH"
+  },
+  "P0107": {
+    "title": "MAP/BARO Pressure Circuit Low Input",
+    "description": "P0107 indicates the MAP/BARO sensor signal is lower than expected electrically or implausibly low for conditions. Diagnosis should focus on signal short to ground, reference/ground faults, connector issues, blocked sensor port and live pressure plausibility.",
+    "system": "powertrain",
+    "subsystem": "manifold pressure measurement",
+    "component": "MAP/BARO sensor circuit",
+    "circuit_type": "pressure sensor low input",
+    "severity": "moderate",
+    "driveability": "Use caution if the engine stalls, hesitates or has poor acceleration.",
+    "ecu_detection_condition": "The ECM detects MAP/BARO voltage or signal lower than the expected range or implausibly low for the operating condition.",
+    "symptoms": ["symp_check_engine", "symp_poor_acceleration", "symp_hesitation", "symp_power_loss", "symp_rough_idle"],
+    "causes": ["cause_map_sensor", "cause_wiring_damage", "cause_connector_corrosion", "cause_vacuum_leak", "cause_pcm_failure"],
+    "fixDifficulty": "diff_moderate",
+    "estimatedCost": "$100 - $550",
+    "diagnosticSteps": [
+      "Confirm P0107 and compare MAP/BARO freeze-frame data with RPM and throttle.",
+      "Check MAP reading key-on engine-off for barometric plausibility.",
+      "Inspect connector, sensor port and vacuum hose if equipped.",
+      "Test reference voltage, ground and signal for short-to-ground or open reference faults.",
+      "Move the harness while watching MAP live data for sudden low readings.",
+      "Repair wiring/port faults or replace the confirmed failed MAP/BARO sensor."
+    ],
+    "commonFixes": [
+      "Repair shorted MAP signal wiring.",
+      "Repair reference or ground circuit faults.",
+      "Clean or repair blocked MAP port/hose.",
+      "Replace a confirmed failed MAP/BARO sensor."
+    ],
+    "common_mistakes": [
+      "Replacing the sensor before testing reference and ground.",
+      "Ignoring a blocked MAP port.",
+      "Using one generic voltage threshold for all vehicles."
+    ],
+    "do_not_replace_blindly": ["MAP sensor", "MAF sensor", "throttle body", "ECM/PCM"],
+    "freeze_frame_fields": ["MAP", "BARO", "RPM", "throttle position", "battery voltage"],
+    "live_data_fields": ["MAP", "BARO", "TPS", "MAF where equipped", "fuel trims"],
+    "related_codes": ["P0105", "P0106", "P0108", "P0109", "P0121", "P0237"],
+    "applicability_notes": "Low input is an electrical clue; confirm wiring before replacing parts.",
+    "source_confidence": "HIGH"
+  }
+}

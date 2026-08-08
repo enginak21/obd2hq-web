@@ -1,4 +1,5 @@
-import baseCodes from './base_codes.json';
+import rawBaseCodes from './base_codes.json';
+import verifiedDtcGold from './verified_dtc_gold.json';
 import aiData from './ai_enriched_data.json';
 import { applyGoldObdFallback } from './obd-gold-content';
 
@@ -44,6 +45,14 @@ export interface CarModel {
   make: string;
   models: string[];
 }
+
+const mergedBaseCodes = {
+  ...(rawBaseCodes as Record<string, Partial<OBD2Code>>),
+  ...(verifiedDtcGold as Record<string, Partial<OBD2Code>>)
+};
+
+export const codes = mergedBaseCodes;
+export const baseCodes = mergedBaseCodes;
 
 export const cars: CarModel[] = [
   { "make": "acura", "models": ["mdx", "rdx", "tlx", "ilx", "integra", "nsx"] },
@@ -91,9 +100,6 @@ export const cars: CarModel[] = [
   { "make": "volkswagen", "models": ["jetta", "passat", "tiguan", "atlas", "golf", "id4", "taos", "arteon", "polo", "touareg"] },
   { "make": "volvo", "models": ["xc90", "xc60", "s60", "xc40", "v60", "s90"] }
 ];
-
-export const codes = baseCodes as Record<string, Partial<OBD2Code>>;
-export { baseCodes };
 
 type LocalizedValue = string | string[] | Record<string, string | string[]>;
 

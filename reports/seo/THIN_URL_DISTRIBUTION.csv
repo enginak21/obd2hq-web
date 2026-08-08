@@ -1,4 +1,4 @@
 page_type,thin_count,percentage,main_failure_reason,recommended_strategy
-code_hub,9145,99.89,"Runtime fallback supports the page, but raw code data is not gold-ready yet.",Build verified raw DTC record first; do not inflate with generic text. Prioritize by GSC and diagnostic usefulness.
+code_hub,9135,99.89,"Runtime fallback supports the page, but raw code data is not gold-ready yet.",Build verified raw DTC record first; do not inflate with generic text. Prioritize by GSC and diagnostic usefulness.
 other,5,0.05,Unclassified or low-signal page type.,Manually map to a known intent or consolidate into a stronger hub.
 vehicle_spec,5,0.05,Vehicle spec URL has no matching local generated spec record.,Enrich required vehicle technical fields or keep out of quality sitemap candidates.
