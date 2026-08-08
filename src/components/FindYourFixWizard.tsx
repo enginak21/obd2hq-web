@@ -73,7 +73,7 @@ export default function FindYourFixWizard({ vehicles, priorityCodes }: FindYourF
               value={model}
               disabled={!selectedVehicle}
               onChange={(event) => setModel(event.target.value)}
-              className="w-full h-12 rounded-2xl bg-[#0a0f1c] border border-white/10 px-4 text-white disabled:text-slate-600 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+              className="w-full h-12 rounded-2xl bg-[#0a0f1c] border border-white/10 px-4 text-white disabled:text-slate-400 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             >
               <option value="">{t('selectModel')}</option>
               {selectedVehicle?.models.map(candidate => (

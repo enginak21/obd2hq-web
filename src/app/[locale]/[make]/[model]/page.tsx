@@ -248,7 +248,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 {tModel('prev')}
               </Link>
             ) : (
-              <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-600 font-bold cursor-not-allowed">
+              <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-400 font-bold cursor-not-allowed">
                 {tModel('prev')}
               </span>
             )}
@@ -265,7 +265,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
                 {tModel('next')}
               </Link>
             ) : (
-              <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-600 font-bold cursor-not-allowed">
+              <span className="px-6 py-3 bg-[#131b2f]/50 border border-white/5 rounded-xl text-slate-400 font-bold cursor-not-allowed">
                 {tModel('next')}
               </span>
             )}

@@ -282,7 +282,7 @@ export default async function SearchPage({
 
         {hasSearchQuery && !exactCodeMatch && matchedModels.length === 0 && (
           <div className="text-center py-16">
-            <SearchIcon className="w-16 h-16 text-slate-600 mx-auto mb-6" />
+            <SearchIcon className="w-16 h-16 text-slate-400 mx-auto mb-6" />
             <h2 className="text-2xl font-bold text-white mb-2">{t('noResults')}</h2>
             <p className="text-slate-400 max-w-md mx-auto">
               {t('noResultsDesc', { query: rawQuery })}

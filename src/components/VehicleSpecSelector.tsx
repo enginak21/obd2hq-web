@@ -81,7 +81,7 @@ export default function VehicleSpecSelector({ locale, items }: VehicleSpecSelect
             <Link
               href={selected ? `/${locale}/vehicles/${selected.make}/${selected.model}/${selected.year}/${selected.slug}` : '#'}
               aria-disabled={!selected}
-              className={`flex h-12 w-full items-center justify-center rounded-2xl px-5 font-black transition-colors lg:w-14 ${selected ? 'bg-blue-600 text-white hover:bg-blue-500' : 'pointer-events-none bg-slate-800 text-slate-600'}`}
+              className={`flex h-12 w-full items-center justify-center rounded-2xl px-5 font-black transition-colors lg:w-14 ${selected ? 'bg-blue-600 text-white hover:bg-blue-500' : 'pointer-events-none bg-slate-800 text-slate-400'}`}
             >
               <ArrowRight className="h-5 w-5" />
               <span className="sr-only">{labels.openFullPage}</span>
@@ -156,7 +156,7 @@ function SelectBox({
         value={value}
         onChange={event => onChange(event.target.value)}
         disabled={disabled}
-        className="h-12 w-full rounded-2xl border border-white/10 bg-[#0a0f1c] px-4 text-sm font-bold text-white outline-none transition-colors focus:border-blue-400 disabled:cursor-not-allowed disabled:text-slate-600"
+        className="h-12 w-full rounded-2xl border border-white/10 bg-[#0a0f1c] px-4 text-sm font-bold text-white outline-none transition-colors focus:border-blue-400 disabled:cursor-not-allowed disabled:text-slate-400"
       >
         <option value="">{placeholder}</option>
         {options.map(option => <option key={option.value} value={option.value}>{option.label}</option>)}

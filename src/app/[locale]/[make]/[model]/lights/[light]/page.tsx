@@ -242,7 +242,7 @@ export default async function LightDetailPage({ params }: PageProps) {
 
 
         <div className="space-y-6">
-          <div className="w-full h-[250px] bg-[#0d1425] border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-slate-600 text-sm font-medium tracking-wide">
+          <div className="w-full h-[250px] bg-[#0d1425] border border-dashed border-white/10 rounded-3xl flex flex-col items-center justify-center text-slate-400 text-sm font-medium tracking-wide">
             <span>{t('advertisement')}</span>
           </div>
         </div>
