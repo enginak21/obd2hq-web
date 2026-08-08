@@ -49,6 +49,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: metaTitle,
     description: metaDescription,
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: getAlternates(`news/${slug}`, locale),
     openGraph: {
       title,
@@ -81,7 +85,6 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
   }
 
   const locTitle = asString(getLocalized(article.title, locale), article.slug);
-  const locContent = asString(getLocalized(article.content, locale));
   const categoryKey = getNewsCategoryKey(article.category);
   const topClickFocus = getTopClickNewsFocus(locale, slug);
 
@@ -91,18 +94,18 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     month: 'long',
     day: 'numeric'
   }).format(dateObj);
-  const contentParagraphs = locContent.split('\n\n').map((paragraph) => paragraph.trim()).filter(Boolean);
-  const overviewHeading = locale === 'tr' ? 'Haberin özeti' : locale === 'de' ? 'Kurzüberblick' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'Résumé de l’article' : 'Article summary';
+  const articleSummary = asString(getLocalized(article.summary, locale));
+  const overviewHeading = locale === 'tr' ? 'Haberin ?zeti' : locale === 'de' ? 'Kurz?bersicht' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'R?sum? de l?article' : 'Article summary';
   const contextHeading = locale === 'tr' ? 'OBD2HQ notu' : locale === 'de' ? 'OBD2HQ-Einordnung' : locale === 'es' ? 'Nota de OBD2HQ' : locale === 'fr' ? 'Note OBD2HQ' : 'OBD2HQ context';
   const contextText = locale === 'tr'
-    ? 'Bu haber, araç sahiplerinin bakım maliyeti, güvenlik teknolojileri, servis erişimi ve ikinci el değerini etkileyebilecek gelişmeleri izlemek için hazırlanır. Teknik bir arıza rehberi değildir; arıza ışığı veya belirti yaşıyorsanız ilgili OBD2 kodu, araç profili veya Arıza Bulucu sayfasından teşhis akışına geçin.'
+    ? 'Bu haber sayfas? Google dizini i?in kullan?lmaz. OBD2HQ haberleri ara? sahipleri i?in k?sa ba?lam ve ilgili te?his y?nlendirmesi olarak sunar; d?? haber kaynaklar?ndan t?retilmi? uzun metinleri indexlenebilir i?erik olarak yay?nlamaz.'
     : locale === 'de'
-      ? 'Diese Meldung hilft Fahrzeughaltern, Entwicklungen zu Wartungskosten, Sicherheitstechnik, Servicezugang und Wiederverkaufswert einzuordnen. Sie ersetzt keine Fehlerdiagnose; bei Warnleuchten oder Symptomen öffnen Sie den passenden OBD2-Code, das Fahrzeugprofil oder den Problemfinder.'
+      ? 'Diese Nachrichtenseite wird nicht f?r den Google-Index verwendet. OBD2HQ zeigt Nachrichten als kurze Einordnung f?r Fahrzeughalter und verlinkt bei Bedarf auf Diagnoseinhalte; aus externen Quellen abgeleitete Langtexte werden nicht als indexierbarer Inhalt ver?ffentlicht.'
       : locale === 'es'
-        ? 'Esta noticia ayuda a propietarios a seguir cambios que pueden afectar coste de mantenimiento, seguridad, acceso a servicio y valor usado. No sustituye un diagnóstico; si hay una luz o síntoma, abre el código OBD2, perfil del vehículo o buscador de fallas.'
+        ? 'Esta p?gina de noticia no se usa para el ?ndice de Google. OBD2HQ muestra noticias como contexto breve para propietarios y enlaza a gu?as de diagn?stico cuando corresponde; los textos largos derivados de fuentes externas no se publican como contenido indexable.'
         : locale === 'fr'
-          ? 'Cette actualité aide les propriétaires à suivre les évolutions pouvant influencer coût d’entretien, sécurité, accès au service et valeur d’occasion. Elle ne remplace pas un diagnostic; en cas de voyant ou symptôme, ouvrez le code OBD2, le profil véhicule ou l’outil de panne.'
-          : 'This article helps vehicle owners track changes that may affect maintenance cost, safety technology, service access and resale value. It is not a diagnostic procedure; if you have a warning light or symptom, open the matching OBD2 code, vehicle profile or car problem finder.';
+          ? 'Cette page d?actualit? n?est pas destin?e ? l?index Google. OBD2HQ pr?sente les nouvelles comme un bref contexte pour les propri?taires et renvoie vers les contenus de diagnostic utiles; les longs textes d?riv?s de sources externes ne sont pas publi?s comme contenu indexable.'
+          : 'This news page is not used for Google indexing. OBD2HQ presents news as short owner-focused context and points readers to diagnostic content when useful; long text derived from external news sources is not published as indexable content.';
 
   const newsSchema = {
     "@context": "https://schema.org",
@@ -178,9 +181,7 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
 
           <div className="prose prose-invert prose-lg max-w-none prose-p:text-slate-300 prose-p:font-light prose-p:leading-relaxed prose-headings:text-white prose-a:text-blue-400">
             <h2>{overviewHeading}</h2>
-            {contentParagraphs.map((paragraph: string, idx: number) => (
-              <p key={idx}>{paragraph}</p>
-            ))}
+            <p>{articleSummary}</p>
             <h2>{contextHeading}</h2>
             <p>{contextText}</p>
             {topClickFocus && (

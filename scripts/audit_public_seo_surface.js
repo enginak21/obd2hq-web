@@ -85,6 +85,19 @@ for (const file of files) {
   }
 }
 
+const newsDetailPage = read('src/app/[locale]/news/[slug]/page.tsx');
+if (!newsDetailPage.includes('index: false') || !newsDetailPage.includes('follow: true')) {
+  fail('News detail pages must stay noindex, follow unless every article is verified as original reporting.');
+}
+if (newsDetailPage.includes('article.content') || newsDetailPage.includes('contentParagraphs')) {
+  fail('News detail pages must not render long source-derived article bodies.');
+}
+
+const sitemapRoute = read('src/app/sitemaps/[id]/route.ts');
+if (sitemapRoute.includes('/news/${article.slug}') || sitemapRoute.includes('getAllNews().forEach')) {
+  fail('Source-derived news detail URLs must not be submitted in sitemap.');
+}
+
 if (failures.length) {
   console.error('Public SEO surface audit failed:');
   failures.slice(0, 120).forEach((message) => console.error(`- ${message}`));
