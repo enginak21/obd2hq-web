@@ -55,7 +55,7 @@ const CODE_FOCUS: Record<string, TopImpressionCodeFocus> = {
     relatedSearches: ['p0251 ford', 'ford p0251', 'p0251 ford focus', 'p0251 ford f150', 'p0251 injection pump'],
     links: [
       { href: '/en/ford/f-150/p0251', label: 'Ford F-150 P0251' },
-      { href: '/en/ford/focus/p0251', label: 'Ford Focus P0251' },
+      { href: '/en/codes/p0251', label: 'P0251 code hub' },
       { href: '/en/codes/p0216', label: 'P0216 injection timing' },
       { href: '/en/ford/warning-lights', label: 'Ford warning lights' },
     ],

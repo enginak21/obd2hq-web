@@ -15,6 +15,7 @@
     "check:seo-url-plan": "node scripts/check_seo_url_plan.js",
     "check:seo-uniqueness-obd": "node scripts/check_seo_uniqueness_obd.js",
     "audit:indexable-urls": "node scripts/audit_indexable_url_policy.js",
+    "audit:public-seo": "node scripts/audit_public_seo_surface.js",
     "check:seo-contracts": "node scripts/check_seo_contracts.js",
     "audit:obd-gold": "node scripts/audit_obd_gold_coverage.js",
     "problem-finder:learn": "node scripts/process_problem_finder_queries.js",

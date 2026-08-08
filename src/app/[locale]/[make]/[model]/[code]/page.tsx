@@ -375,7 +375,7 @@ export default async function CodePage({ params }: PageProps) {
           {topClickFocus && (
             <section className="bg-[#071d1e] border border-emerald-400/25 rounded-2xl p-6 shadow-lg">
               <div className="mb-4 inline-flex rounded-full border border-emerald-300/20 bg-emerald-500/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-emerald-100">
-                High-intent search answer
+                Diagnostic summary
               </div>
               <h2 className="text-2xl font-bold text-white mb-3">{topClickFocus.title}</h2>
               <p className="text-slate-300 leading-relaxed">{topClickFocus.answer}</p>

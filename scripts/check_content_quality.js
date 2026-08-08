@@ -5,9 +5,14 @@ const { spawnSync } = require('child_process');
 const roots = ['src', 'messages'];
 const textFileExtensions = new Set(['.ts', '.tsx', '.json']);
 const mojibakePattern = new RegExp([
-  '\\u00c3',
-  '\\u00c2',
-  '\\u00e2\\u20ac',
+  'Ã.',
+  'Ä±',
+  'Ä°',
+  'ÄŸ',
+  'Ä',
+  'ÅŸ',
+  'Å',
+  'â€',
   '\\u00ef\\u00bf\\u00bd',
   '\\ufffd',
   'Ara\\?lar',

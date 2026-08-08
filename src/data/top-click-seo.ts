@@ -31,7 +31,7 @@ const VEHICLE_FOCUS: Record<string, TopClickVehicleFocus> = {
     links: [
       { href: '/en/codes/p0234', label: 'P0234 code hub' },
       { href: '/en/suzuki/jimny/p0235', label: 'Suzuki Jimny P0235' },
-      { href: '/en/suzuki/jimny/p0299', label: 'Suzuki Jimny P0299' },
+      { href: '/en/codes/p0299', label: 'P0299 underboost code' },
       { href: '/en/suzuki/jimny/lights', label: 'Suzuki Jimny warning lights' },
     ],
   },
@@ -87,8 +87,8 @@ const VEHICLE_FOCUS: Record<string, TopClickVehicleFocus> = {
     avoid: 'Do not replace the MAF sensor until intake leaks, dirty sensing element, wiring, and fuel-trim behavior have been verified.',
     links: [
       { href: '/en/codes/p0103', label: 'P0103 code hub' },
-      { href: '/en/ford/focus/p0101', label: 'Ford Focus P0101' },
-      { href: '/en/ford/focus/p0102', label: 'Ford Focus P0102' },
+      { href: '/en/codes/p0101', label: 'P0101 MAF performance code' },
+      { href: '/en/codes/p0102', label: 'P0102 MAF low input code' },
       { href: '/en/ford/focus/lights', label: 'Ford Focus warning lights' },
     ],
   },
