@@ -66,7 +66,7 @@ export default function Navbar() {
           <Link href={symptomHubPath} className="hover:text-white transition-colors">{t('symptoms')}</Link>
           <Link href={problemFinderPath} className="hover:text-white transition-colors">{t('tools')}</Link>
           <Link href={warningLightsPath} className="hover:text-white transition-colors">{t('warningLights')}</Link>
-          <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-400">{t('news')}</Link>
+          <Link href={`/${locale}/news`} className="hover:text-white transition-colors text-blue-200">{t('news')}</Link>
           <Link href={`/${locale}/about`} className="hover:text-white transition-colors">{t('aboutUs')}</Link>
           <div className="w-px h-5 bg-white/10 mx-2"></div>
           <LanguageSwitcher />
@@ -114,7 +114,7 @@ export default function Navbar() {
             <AlertTriangle className="w-5 h-5" />
             {t('warningLights')}
           </Link>
-          <Link href={`/${locale}/news`} className="text-blue-400 hover:text-white font-medium px-1" onClick={() => setIsMenuOpen(false)}>{t('news')}</Link>
+          <Link href={`/${locale}/news`} className="text-blue-200 hover:text-white font-medium px-1" onClick={() => setIsMenuOpen(false)}>{t('news')}</Link>
           <Link href={`/${locale}/about`} className="text-slate-300 hover:text-white font-medium px-1" onClick={() => setIsMenuOpen(false)}>{t('aboutUs')}</Link>
           <Link href={`/${locale}/contact`} className="text-slate-300 hover:text-white font-medium px-1" onClick={() => setIsMenuOpen(false)}>{t('contact')}</Link>
         </div>
