@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-genai python-dotenv
 
+
       - name: Run OBD2 Codes Enrichment Bot
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
