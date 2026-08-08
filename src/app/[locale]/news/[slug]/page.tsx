@@ -95,16 +95,16 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     day: 'numeric'
   }).format(dateObj);
   const articleSummary = asString(getLocalized(article.summary, locale));
-  const overviewHeading = locale === 'tr' ? 'Haberin ?zeti' : locale === 'de' ? 'Kurz?bersicht' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'R?sum? de l?article' : 'Article summary';
+  const overviewHeading = locale === 'tr' ? 'Haberin özeti' : locale === 'de' ? 'Kurzübersicht' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'Résumé de l’article' : 'Article summary';
   const contextHeading = locale === 'tr' ? 'OBD2HQ notu' : locale === 'de' ? 'OBD2HQ-Einordnung' : locale === 'es' ? 'Nota de OBD2HQ' : locale === 'fr' ? 'Note OBD2HQ' : 'OBD2HQ context';
   const contextText = locale === 'tr'
-    ? 'Bu haber sayfas? Google dizini i?in kullan?lmaz. OBD2HQ haberleri ara? sahipleri i?in k?sa ba?lam ve ilgili te?his y?nlendirmesi olarak sunar; d?? haber kaynaklar?ndan t?retilmi? uzun metinleri indexlenebilir i?erik olarak yay?nlamaz.'
+    ? 'Bu haber sayfası Google dizini için kullanılmaz. OBD2HQ haberleri araç sahipleri için kısa bağlam ve ilgili teşhis yönlendirmesi olarak sunar; dış haber kaynaklarından türetilmiş uzun metinleri indexlenebilir içerik olarak yayınlamaz.'
     : locale === 'de'
-      ? 'Diese Nachrichtenseite wird nicht f?r den Google-Index verwendet. OBD2HQ zeigt Nachrichten als kurze Einordnung f?r Fahrzeughalter und verlinkt bei Bedarf auf Diagnoseinhalte; aus externen Quellen abgeleitete Langtexte werden nicht als indexierbarer Inhalt ver?ffentlicht.'
+      ? 'Diese Nachrichtenseite wird nicht für den Google-Index verwendet. OBD2HQ zeigt Nachrichten als kurze Einordnung für Fahrzeughalter und verlinkt bei Bedarf auf Diagnoseinhalte; aus externen Quellen abgeleitete Langtexte werden nicht als indexierbarer Inhalt veröffentlicht.'
       : locale === 'es'
-        ? 'Esta p?gina de noticia no se usa para el ?ndice de Google. OBD2HQ muestra noticias como contexto breve para propietarios y enlaza a gu?as de diagn?stico cuando corresponde; los textos largos derivados de fuentes externas no se publican como contenido indexable.'
+        ? 'Esta página de noticia no se usa para el índice de Google. OBD2HQ muestra noticias como contexto breve para propietarios y enlaza a guías de diagnóstico cuando corresponde; los textos largos derivados de fuentes externas no se publican como contenido indexable.'
         : locale === 'fr'
-          ? 'Cette page d?actualit? n?est pas destin?e ? l?index Google. OBD2HQ pr?sente les nouvelles comme un bref contexte pour les propri?taires et renvoie vers les contenus de diagnostic utiles; les longs textes d?riv?s de sources externes ne sont pas publi?s comme contenu indexable.'
+          ? 'Cette page d’actualité n’est pas destinée à l’index Google. OBD2HQ présente les nouvelles comme un bref contexte pour les propriétaires et renvoie vers les contenus de diagnostic utiles; les longs textes dérivés de sources externes ne sont pas publiés comme contenu indexable.'
           : 'This news page is not used for Google indexing. OBD2HQ presents news as short owner-focused context and points readers to diagnostic content when useful; long text derived from external news sources is not published as indexable content.';
 
   const newsSchema = {
