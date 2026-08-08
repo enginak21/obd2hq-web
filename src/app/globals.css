@@ -67,9 +67,22 @@ body {
 }
 
 .hero-visual-home {
-  --hero-image: url("/images/site/diagnostic-hero.webp");
   --hero-opacity: 0.72;
   --hero-position: center;
+}
+
+.hero-visual-image {
+  z-index: 0;
+  opacity: 0.56;
+  object-position: center;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+.hero-visual-home::before {
+  background:
+    linear-gradient(90deg, rgba(10, 15, 28, 0.98) 0%, rgba(10, 15, 28, 0.86) 45%, rgba(10, 15, 28, 0.72) 100%),
+    radial-gradient(circle at 72% 30%, rgba(37, 99, 235, 0.24), transparent 36%);
 }
 
 .hero-visual-code {
@@ -108,7 +121,7 @@ body {
   --hero-position: center;
 }
 
-.hero-visual-home::before {
+.hero-visual-home .hero-visual-image {
   animation: heroDiagnosticDrift 18s ease-in-out infinite alternate;
 }
 
@@ -124,7 +137,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-visual-home::before {
+  .hero-visual-home .hero-visual-image {
     animation: none;
   }
 }
@@ -140,7 +153,8 @@ body {
     opacity: 0.42;
   }
 
-  .hero-visual-home::before {
+  .hero-visual-home .hero-visual-image {
     opacity: 0.56;
+    object-position: 62% center;
   }
 }

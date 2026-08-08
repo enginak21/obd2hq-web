@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between border-t border-white/5 pt-8 text-xs text-slate-500 md:flex-row">
+        <div className="flex flex-col items-center justify-between border-t border-white/5 pt-8 text-xs text-slate-400 md:flex-row">
           <p>&copy; {new Date().getFullYear()} Max Ajans ile tüm hakları saklıdır.</p>
           <p className="mt-2 md:mt-0">{t('builtFor')}</p>
         </div>

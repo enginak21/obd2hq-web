@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { cars } from '@/data/db';
 import { Car, ShieldCheck, Wrench, Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
@@ -54,6 +55,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
 
       <div className="hero-visual hero-visual-home relative overflow-hidden border-b border-white/5 w-full">
+        <Image
+          src="/images/site/diagnostic-hero.webp"
+          alt=""
+          aria-hidden="true"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          className="hero-visual-image object-cover"
+        />
 
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] opacity-30 pointer-events-none"></div>
@@ -69,7 +80,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">{t('title2')}</span>
           </h1>
 
-          <p className="text-lg sm:text-2xl text-slate-400 max-w-3xl mb-4 font-light leading-relaxed">
+          <p className="text-lg sm:text-2xl text-slate-200 max-w-3xl mb-4 font-light leading-relaxed">
             {t('subtitle')}
           </p>
 
@@ -100,7 +111,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <div className="w-full max-w-[1600px] flex justify-center items-start">
 
 
-        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
+        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-400 text-xs mt-12 mx-4 shrink-0 text-center px-4">
           {t('leftAd')}
         </aside>
 
@@ -110,7 +121,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <Car className="w-8 h-8 mr-3 text-blue-500" />
               {t('browseByMake')}
             </h2>
-            <p className="text-slate-500 font-medium text-sm mt-2 sm:mt-0">{t('selectBrand')}</p>
+            <p className="text-slate-300 font-medium text-sm mt-2 sm:mt-0">{t('selectBrand')}</p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -140,13 +151,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
 
 
-          <div className="w-full h-[90px] bg-[#131b2f] border border-white/5 rounded-xl flex items-center justify-center text-slate-600 text-sm font-medium tracking-wide mt-16 shadow-inner hidden sm:flex">
+          <div className="w-full h-[90px] bg-[#131b2f] border border-white/5 rounded-xl flex items-center justify-center text-slate-400 text-sm font-medium tracking-wide mt-16 shadow-inner hidden sm:flex">
             {t('leaderboardAd')}
           </div>
         </div>
 
 
-        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-600 text-xs mt-12 mx-4 shrink-0 text-center px-4">
+        <aside className="hidden 2xl:flex w-[160px] h-[600px] sticky top-28 bg-[#131b2f] border border-white/5 rounded-2xl items-center justify-center text-slate-400 text-xs mt-12 mx-4 shrink-0 text-center px-4">
           {t('rightAd')}
         </aside>
       </div>
