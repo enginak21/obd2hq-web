@@ -12,6 +12,7 @@ import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLoc
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
 import { getBrandWarningLightsPath, getCodeHubPath, getOpportunityCodes, type GscOpportunity } from '@/data/gsc-seo';
 import { getIndexableVehicleCodeTargets } from '@/data/indexing-policy';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 import gscOpportunities from '@/data/generated/gsc-opportunities.json';
 import validRoutes from '@/data/valid_routes.json';
 
@@ -45,8 +46,6 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
   if (idStr === 'base') {
     LOCALES.forEach((locale) => {
       urls += urlEntry(`${BASE_URL}/${locale}`, 'daily', '1.0');
-      urls += urlEntry(`${BASE_URL}/${locale}/about`, 'monthly', '0.5');
-      urls += urlEntry(`${BASE_URL}/${locale}/contact`, 'monthly', '0.5');
       urls += urlEntry(`${BASE_URL}/${locale}/blog`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/news`, 'daily', '0.9');
       urls += urlEntry(`${BASE_URL}/${locale}/symptoms`, 'weekly', '0.9');
@@ -74,11 +73,6 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       urls += urlEntry(`${BASE_URL}/${locale}/calculators`, 'weekly', '0.8');
       urls += urlEntry(`${BASE_URL}/${locale}/resources`, 'monthly', '0.86');
       urls += urlEntry(`${BASE_URL}/${locale}/warning-lights`, 'weekly', '0.88');
-      urls += urlEntry(`${BASE_URL}/${locale}/editorial-policy`, 'yearly', '0.4');
-      urls += urlEntry(`${BASE_URL}/${locale}/reviewers`, 'yearly', '0.4');
-      urls += urlEntry(`${BASE_URL}/${locale}/privacy`, 'yearly', '0.3');
-      urls += urlEntry(`${BASE_URL}/${locale}/terms`, 'yearly', '0.3');
-      urls += urlEntry(`${BASE_URL}/${locale}/disclaimer`, 'yearly', '0.3');
       getBlogPosts(locale).forEach((post) => {
         urls += urlEntry(`${BASE_URL}/${locale}/blog/${post.slug}`, 'monthly', '0.8', post.date);
       });
@@ -111,6 +105,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
   } else if (idStr === 'code-hubs') {
     LOCALES.forEach((locale) => {
       Array.from(VALID_CODE_SET).sort().forEach((code) => {
+        if (!isCodeHubSitemapEligible(code)) return;
         urls += urlEntry(`${BASE_URL}${getCodeHubPath(locale, code)}`, 'monthly', '0.82');
       });
     });
@@ -141,6 +136,7 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
 
     LOCALES.forEach((locale) => {
       gscCodes.forEach((code) => {
+        if (!isCodeHubSitemapEligible(code)) return;
         urls += urlEntry(`${BASE_URL}${getCodeHubPath(locale, code)}`, 'weekly', '0.9');
       });
       gscMakeWarnings.forEach((make) => {

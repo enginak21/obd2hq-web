@@ -20,6 +20,7 @@ NEWS_DIR = os.path.join(os.path.dirname(__file__), "..", "src", "data", "news")
 os.makedirs(NEWS_DIR, exist_ok=True)
 
 MAX_DAILY_MASTER = 3
+NEWS_POLICY_TIMEZONE = timezone.utc
 
 RSS_FEEDS = [
     "https://www.autoblog.com/category/news/rss.xml",
@@ -77,6 +78,25 @@ def get_existing_news_titles():
                 except:
                     pass
     return existing
+
+def get_existing_master_count_for_policy_day(policy_day=None):
+    if policy_day is None:
+        policy_day = datetime.now(NEWS_POLICY_TIMEZONE).date().isoformat()
+
+    count = 0
+    if os.path.exists(NEWS_DIR):
+        for fname in os.listdir(NEWS_DIR):
+            if not fname.endswith('.json'):
+                continue
+            try:
+                with open(os.path.join(NEWS_DIR, fname), 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                published_at = str(data.get('date', ''))
+                if published_at[:10] == policy_day:
+                    count += 1
+            except Exception:
+                pass
+    return count
 
 def check_topical_relevance(title, description):
     prompt = f"""Evaluate if this news article is strictly relevant to the topical authority of OBD2HQ (OBD2, vehicle diagnostics, automotive repair technology, ECU, engine tech, emissions, sensors, ADAS, EVs, hybrid diagnostics, major automotive technical developments, recalls).
@@ -170,6 +190,13 @@ def translate_article(en_data):
 def fetch_and_process():
     print(f"Starting Quality-First Daily News Bot at {datetime.now(timezone.utc).isoformat()}...")
     existing_news = get_existing_news_titles()
+    policy_day = datetime.now(NEWS_POLICY_TIMEZONE).date().isoformat()
+    already_published_today = get_existing_master_count_for_policy_day(policy_day)
+    remaining_today = max(0, MAX_DAILY_MASTER - already_published_today)
+
+    if remaining_today <= 0:
+        print(f"Calendar-day news limit reached for {policy_day}: {already_published_today}/{MAX_DAILY_MASTER}. Publishing 0 additional master articles.")
+        return 0, 0
     
     discovered = []
     for feed_url in RSS_FEEDS:
@@ -199,8 +226,8 @@ def fetch_and_process():
             
     published_count = 0
     for item in discovered:
-        if published_count >= MAX_DAILY_MASTER:
-            print(f"Max daily limit of {MAX_DAILY_MASTER} reached. Stopping.")
+        if published_count >= remaining_today:
+            print(f"Calendar-day remaining limit of {remaining_today} reached. Stopping.")
             break
             
         print(f"\n--- Processing: {item['title']} ---")
@@ -230,7 +257,7 @@ def fetch_and_process():
             
         final_data = {
             "id": item['slug'],
-            "date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "date": datetime.now(NEWS_POLICY_TIMEZONE).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "image": item['image_url'] if item['image_url'] else "default-news.jpg",
             "category": en_master.get('category', 'industry_news'),
             "slug": item['slug'],
@@ -267,7 +294,8 @@ def git_sync_and_push():
         os.system("git rebase --abort")
         sys.exit(1)
     
-    if os.system("git diff --quiet") == 0 and os.system("git diff --staged --quiet") == 0 and os.system("git ls-files --others --exclude-standard") == "":
+    has_untracked_news = os.popen("git ls-files --others --exclude-standard src/data/news/*.json").read().strip()
+    if os.system("git diff --quiet -- src/data/news") == 0 and os.system("git diff --staged --quiet -- src/data/news") == 0 and not has_untracked_news:
         print("No new articles to commit.")
         return
         

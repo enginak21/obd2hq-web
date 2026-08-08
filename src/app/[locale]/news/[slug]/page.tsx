@@ -30,6 +30,8 @@ export async function generateStaticParams() {
   return params;
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const { locale, slug } = await params;
   const article = getNewsBySlug(slug);
@@ -37,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!article) {
     const redirectSlug = getNewsRedirectSlug(slug);
     if (redirectSlug) permanentRedirect(`/${locale}/news/${redirectSlug}`);
-    return {};
+    notFound();
   }
 
   const title = asString(getLocalized(article.title, locale), article.slug);

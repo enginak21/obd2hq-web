@@ -110,6 +110,28 @@ function containsUnsupportedPrecision(data) {
   return /\b\d+(?:\.\d+)?\s?(?:psi|bar|kpa|ohm|volt|volts|rpm|celsius|fahrenheit|degrees)\b/i.test(scopedText);
 }
 
+function cappedRatio(actual, target, weight) {
+  if (!target) return 0;
+  return Math.round(Math.min(actual / target, 1) * weight * 10) / 10;
+}
+
+function informationGainScore(data, requiredStrings) {
+  const descriptionLength = text(data.description).length;
+  return Math.round((
+    cappedRatio(requiredStrings.filter(field => text(data[field])).length, requiredStrings.length, 30) +
+    cappedRatio(descriptionLength, 420, 10) +
+    cappedRatio(arrayLength(data.symptoms), 5, 8) +
+    cappedRatio(arrayLength(data.causes), 5, 8) +
+    cappedRatio(arrayLength(data.diagnosticSteps), 6, 12) +
+    cappedRatio(arrayLength(data.commonFixes), 4, 6) +
+    cappedRatio(arrayLength(data.common_mistakes), 3, 6) +
+    cappedRatio(arrayLength(data.do_not_replace_blindly), 3, 5) +
+    cappedRatio(arrayLength(data.freeze_frame_fields), 4, 4) +
+    cappedRatio(arrayLength(data.live_data_fields), 4, 4) +
+    cappedRatio(arrayLength(data.related_codes), 5, 7)
+  ) * 10) / 10;
+}
+
 function scoreRecord(code, data) {
   const issues = [];
   const requiredStrings = [
@@ -139,16 +161,7 @@ function scoreRecord(code, data) {
     if (!allCodes[relatedCode]) issues.push(`related code missing: ${relatedCode}`);
   }
 
-  const informationGain =
-    requiredStrings.filter(field => text(data[field])).length * 4 +
-    arrayLength(data.symptoms) * 2 +
-    arrayLength(data.causes) * 2 +
-    arrayLength(data.diagnosticSteps) * 3 +
-    arrayLength(data.commonFixes) * 2 +
-    arrayLength(data.common_mistakes) * 2 +
-    arrayLength(data.freeze_frame_fields) +
-    arrayLength(data.live_data_fields) +
-    arrayLength(data.related_codes);
+  const informationGain = informationGainScore(data, requiredStrings);
 
   if (informationGain < 80) issues.push('information gain below 80');
 
