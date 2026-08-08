@@ -18,7 +18,7 @@ export default function Footer() {
                 <Activity className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-black tracking-tight text-white">
-                OBD2<span className="text-blue-500">HQ</span>
+                OBD2<span className="text-blue-300">HQ</span>
               </span>
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-slate-400">

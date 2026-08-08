@@ -38,7 +38,7 @@ export default function Navbar() {
             <span className="text-[11px] font-black tracking-tight text-blue-100">OBD</span>
           </div>
           <span className="text-xl sm:text-2xl font-black text-white tracking-tight">
-            OBD2<span className="text-blue-500">HQ</span>
+            OBD2<span className="text-blue-300">HQ</span>
           </span>
         </Link>
 
