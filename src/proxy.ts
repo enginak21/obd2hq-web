@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import validRoutes from './data/valid_routes.json';
 import newsRedirects from './data/news_redirects.json';
+import { isIndexableVehicleCodePage } from './data/indexing-policy';
 
 const locales = ['en', 'de', 'es', 'tr', 'fr'];
 const symptomContentBasePaths: Record<string, string> = {
@@ -129,6 +130,11 @@ export function proxy(request: NextRequest) {
           if (code !== 'lights') {
             if (!validRoutes.validCodes.includes(code.toUpperCase())) {
               return notFoundResponse();
+            }
+            if (segments.length === 4 && !isIndexableVehicleCodePage(make, model, code)) {
+              const url = request.nextUrl.clone();
+              url.pathname = `/${locale}/${codeHubBasePaths[locale]}/${code.toLowerCase()}`;
+              return NextResponse.redirect(url, 308);
             }
           }
         }

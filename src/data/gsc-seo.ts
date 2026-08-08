@@ -1,6 +1,7 @@
 import { baseCodes, cars } from './db';
 import gscOpportunities from './generated/gsc-opportunities.json';
 import { SEO_LAST_REVIEWED, SUPPORTED_LOCALES, getCodeCategoryLabel, getCodeSystem } from './seo';
+import { isIndexableVehicleCodePage } from './indexing-policy';
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
@@ -174,7 +175,10 @@ export function mapQueryToTargetUrl(query: string, locale = 'en') {
       lexus: 'rx',
     };
     const model = preferredModels[make] || cars.find(car => car.make === make)?.models[0];
-    return model ? `/${locale}/${make}/${model}/${codes[0].toLowerCase()}` : getCodeHubPath(locale, codes[0]);
+    if (model && isIndexableVehicleCodePage(make, model, codes[0])) {
+      return `/${locale}/${make}/${model}/${codes[0].toLowerCase()}`;
+    }
+    return getCodeHubPath(locale, codes[0]);
   }
 
   if (codes[0]) return getCodeHubPath(locale, codes[0]);

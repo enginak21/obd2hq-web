@@ -48,6 +48,7 @@ assertIncludes('src/app/[locale]/_code-hub-page.tsx', "'@type': 'BreadcrumbList'
 assertIncludes('src/app/[locale]/_code-hub-page.tsx', 'getTranslations({ locale, namespace: \'DB\' })', 'localized DB token rendering');
 assertIncludes('src/app/[locale]/_code-hub-page.tsx', 'isIndexableVehicleCodePage(target.make, target.model, code)', 'code hub noindex vehicle link guard');
 assertIncludes('src/app/[locale]/[make]/[model]/[code]/page.tsx', 'permanentRedirect(getCodeHubPath(locale, upperCode))', 'non-indexable vehicle code redirect');
+assertIncludes('src/proxy.ts', 'isIndexableVehicleCodePage(make, model, code)', 'middleware non-indexable vehicle code redirect');
 
 assertIncludes('src/data/gsc-seo.ts', "languages['x-default']", 'x-default hreflang');
 assertIncludes('src/app/sitemap.xml/route.ts', "'code-hubs'", 'code-hubs sitemap index entry');

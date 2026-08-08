@@ -46,6 +46,31 @@ const knownMakes = [
   'acura', 'audi', 'bmw', 'buick', 'cadillac', 'chevrolet', 'ford', 'honda', 'hyundai', 'kia',
   'lexus', 'mazda', 'mercedes-benz', 'mitsubishi', 'nissan', 'renault', 'suzuki', 'toyota', 'volkswagen',
 ];
+const codeHubBases = { en: 'codes', tr: 'kodlar', de: 'codes', es: 'codigos', fr: 'codes' };
+const editorialVehicleCodeTargets = new Set([
+  'ford/focus/P0213',
+  'suzuki/jimny/P0235',
+  'suzuki/jimny/P0203',
+  'suzuki/jimny/P0204',
+  'suzuki/jimny/P0234',
+  'suzuki/jimny/P0201',
+  'suzuki/jimny/P0243',
+  'ford/fiesta/P0216',
+  'ford/focus/P0103',
+  'ford/ranger/P0110',
+  'ford/f-150/P0251',
+  'acura/tlx/P0102',
+  'honda/cr-v/P0135',
+  'lexus/is/P0125',
+  'toyota/camry/P0420',
+  'toyota/camry/P0300',
+  'nissan/altima/P0420',
+  'nissan/altima/P0300',
+  'ford/f-150/P0420',
+  'ford/f-150/P0300',
+  'honda/civic/P0420',
+  'honda/civic/P0300',
+]);
 
 function base64Url(input) {
   return Buffer.from(input).toString('base64').replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
@@ -88,10 +113,29 @@ function targetUrlFor(query) {
   if (intentType === 'make_code' && make && codes[0]) {
     const preferredModels = { ford: 'focus', suzuki: 'jimny', toyota: 'camry', lexus: 'rx' };
     const model = preferredModels[make];
-    return model ? `/en/${make}/${model}/${codes[0].toLowerCase()}` : `/en/codes/${codes[0].toLowerCase()}`;
+    if (model && editorialVehicleCodeTargets.has(`${make}/${model}/${codes[0]}`)) {
+      return `/en/${make}/${model}/${codes[0].toLowerCase()}`;
+    }
+    return `/en/codes/${codes[0].toLowerCase()}`;
   }
   if (codes[0]) return `/en/codes/${codes[0].toLowerCase()}`;
   return '/en/search';
+}
+
+function codeHubPath(locale, code) {
+  return `/${locale}/${codeHubBases[locale] || codeHubBases.en}/${code.toLowerCase()}`;
+}
+
+function canonicalizeTargetUrl(candidate, fallback) {
+  const target = candidate || fallback;
+  const parts = target.split('/').filter(Boolean);
+  if (parts.length === 4 && /^[a-z]{2}$/.test(parts[0]) && /^[pcbu][0-9a-f]{4}$/i.test(parts[3])) {
+    const [, make, model, codeRaw] = parts;
+    const code = codeRaw.toUpperCase();
+    if (editorialVehicleCodeTargets.has(`${make}/${model}/${code}`)) return target;
+    return codeHubPath(parts[0], code);
+  }
+  return target;
 }
 
 function recommendedAction(intentType) {
@@ -150,9 +194,10 @@ function normalizeRows(rows28, rows7) {
     .map(row => {
       const intentType = classifyQuery(row.query);
       const canonicalTarget = targetUrlFor(row.query);
-      const targetUrl = intentType === 'warning_light_make' || intentType === 'warning_light_model_year'
+      const rawTargetUrl = intentType === 'warning_light_make' || intentType === 'warning_light_model_year'
         ? canonicalTarget
         : row.page || canonicalTarget;
+      const targetUrl = canonicalizeTargetUrl(rawTargetUrl, canonicalTarget);
       const opportunity = {
         query: row.query,
         targetUrl,

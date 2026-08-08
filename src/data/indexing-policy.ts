@@ -1,6 +1,3 @@
-import gscOpportunities from './generated/gsc-opportunities.json';
-import type { GscOpportunity } from './gsc-seo';
-
 export type VehicleCodeTarget = {
   locale?: string;
   make: string;
@@ -44,28 +41,12 @@ function normalizeTarget(target: VehicleCodeTarget): VehicleCodeTarget {
   };
 }
 
-function parseVehicleCodeTarget(url: string): VehicleCodeTarget | null {
-  const parts = url.split('/').filter(Boolean);
-  if (parts.length !== 4) return null;
-  const [locale, make, model, code] = parts;
-  if (!/^[a-z]{2}$/.test(locale) || !/^[pcbu][0-9a-f]{4}$/i.test(code)) return null;
-  return normalizeTarget({ locale, make, model, code, priority: 'gsc' });
-}
-
 export function getIndexableVehicleCodeTargets() {
   const targets = new Map<string, VehicleCodeTarget>();
 
   editorialPriorityTargets.map(normalizeTarget).forEach((target) => {
     targets.set(`${target.make}/${target.model}/${target.code}`, target);
   });
-
-  (gscOpportunities as GscOpportunity[])
-    .filter((opportunity) => opportunity.intentType === 'make_code' || opportunity.intentType === 'mixed_error')
-    .map((opportunity) => parseVehicleCodeTarget(opportunity.targetUrl))
-    .filter((target): target is VehicleCodeTarget => Boolean(target))
-    .forEach((target) => {
-      targets.set(`${target.make}/${target.model}/${target.code}`, target);
-    });
 
   return Array.from(targets.values()).sort((a, b) => (
     a.make.localeCompare(b.make) ||
