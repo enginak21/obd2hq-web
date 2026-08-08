@@ -2,15 +2,14 @@ name: Automated Content Generation
 
 on:
   schedule:
-    # Run every 4 hours to exhaust quota slowly and get latest news
     - cron: '0 */4 * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   generate_content:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Need write permission to push to the repo
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -26,12 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-genai python-dotenv
 
-      - name: Run Daily News Bot
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          python scripts/daily_news_bot.py || true
-
       - name: Run OBD2 Codes Enrichment Bot
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -42,13 +35,12 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add src/data/news/ src/data/base_codes.json
+          git add src/data/base_codes.json
           
-          # Check if there are any changes to commit
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: auto-generate news and enrich obd2 codes"
+            git commit -m "chore: auto-enrich obd2 codes"
             git push
             echo "Successfully committed and pushed new AI content!"
           fi
