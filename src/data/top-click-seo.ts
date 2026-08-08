@@ -92,6 +92,44 @@ const VEHICLE_FOCUS: Record<string, TopClickVehicleFocus> = {
       { href: '/en/ford/focus/lights', label: 'Ford Focus warning lights' },
     ],
   },
+  'suzuki/jimny/P0235': {
+    query: 'p0235 suzuki',
+    targetPath: '/en/suzuki/jimny/p0235',
+    title: 'Quick answer for Suzuki Jimny P0235 searches',
+    answer: 'On a Suzuki Jimny, P0235 should be treated as a boost pressure sensor circuit and boost-control diagnosis. Confirm the sensor reading, 5V reference, ground, signal wire, connector condition, pressure hoses and wastegate control before replacing the boost sensor or turbocharger.',
+    firstChecks: [
+      'Compare boost or MAP pressure key-on engine-off against atmospheric pressure.',
+      'Check boost sensor 5V reference, ground and signal voltage while moving the harness gently.',
+      'Inspect intercooler hoses, intake pipes, vacuum lines and actuator plumbing for leaks or wrong routing.',
+      'Look for related overboost, underboost or wastegate codes such as P0234, P0243 and P0299.',
+    ],
+    avoid: 'Do not replace the turbocharger first. A sensor connector, wiring fault, hose leak or wastegate control issue can create the same P0235 complaint.',
+    links: [
+      { href: '/en/codes/p0235', label: 'P0235 code hub' },
+      { href: '/en/suzuki/jimny/p0234', label: 'Suzuki Jimny P0234' },
+      { href: '/en/suzuki/jimny/p0243', label: 'Suzuki Jimny P0243' },
+      { href: '/en/car-problem-finder/loss-of-power', label: 'Loss of power guide' },
+    ],
+  },
+  'ford/f-150/P0251': {
+    query: 'p0251 ford',
+    targetPath: '/en/ford/f-150/p0251',
+    title: 'Quick answer for Ford F-150 P0251 searches',
+    answer: 'For Ford F-150 P0251 searches, the safest path is fuel metering control diagnosis before pump replacement. Verify low-pressure fuel supply, filter condition, air intrusion, commanded versus actual rail pressure, metering valve command, wiring and related crank/cam or fuel pressure codes.',
+    firstChecks: [
+      'Record freeze-frame data for RPM, load, fuel pressure command and actual fuel pressure.',
+      'Check fuel filter restriction, air in fuel, low-pressure supply and visible leaks.',
+      'Compare commanded and actual fuel pressure at idle and during a controlled load test.',
+      'Inspect pump metering valve wiring, connector condition, fuse feed and ground quality.',
+    ],
+    avoid: 'Do not replace the high-pressure pump first. Confirm supply fuel, wiring, metering command and sensor plausibility before expensive fuel-system repair.',
+    links: [
+      { href: '/en/codes/p0251', label: 'P0251 code hub' },
+      { href: '/en/codes/p0216', label: 'P0216 injection timing' },
+      { href: '/en/ford/f-150/lights', label: 'Ford F-150 warning lights' },
+      { href: '/en/car-problem-finder/loss-of-power', label: 'Loss of power guide' },
+    ],
+  },
 };
 
 const NEWS_FOCUS: Record<string, TopClickNewsFocus> = {

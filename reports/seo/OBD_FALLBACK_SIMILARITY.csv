@@ -1,0 +1,2224 @@
+code,raw_gold,runtime_fallback_needed,quality_score,similarity_risk,gsc_impressions,gsc_clicks,recommended_action
+B0012,yes,no,82,low,0,0,Use as gold code hub source.
+B0013,yes,no,82,low,0,0,Use as gold code hub source.
+B0016,yes,no,82,low,0,0,Use as gold code hub source.
+B0019,yes,no,82,low,0,0,Use as gold code hub source.
+B0020,yes,no,82,low,0,0,Use as gold code hub source.
+B0022,yes,no,82,low,0,0,Use as gold code hub source.
+B0023,yes,no,82,low,0,0,Use as gold code hub source.
+B0026,yes,no,82,low,0,0,Use as gold code hub source.
+B0028,yes,no,82,low,0,0,Use as gold code hub source.
+B0033,yes,no,82,low,0,0,Use as gold code hub source.
+B0040,yes,no,82,low,0,0,Use as gold code hub source.
+B0042,yes,no,82,low,0,0,Use as gold code hub source.
+B0044,yes,no,82,low,0,0,Use as gold code hub source.
+B0051,yes,no,82,low,0,0,Use as gold code hub source.
+B0079,yes,no,82,low,0,0,Use as gold code hub source.
+B0081,yes,no,82,low,0,0,Use as gold code hub source.
+B0092,yes,no,82,low,0,0,Use as gold code hub source.
+C0000,yes,no,82,low,0,0,Use as gold code hub source.
+C0035,yes,no,82,low,0,0,Use as gold code hub source.
+C0040,yes,no,82,low,0,0,Use as gold code hub source.
+C0041,yes,no,82,low,0,0,Use as gold code hub source.
+C0045,yes,no,82,low,0,0,Use as gold code hub source.
+C0046,yes,no,82,low,0,0,Use as gold code hub source.
+C0050,yes,no,82,low,0,0,Use as gold code hub source.
+C0051,yes,no,82,low,0,0,Use as gold code hub source.
+C0060,yes,no,82,low,0,0,Use as gold code hub source.
+C0065,yes,no,82,low,0,0,Use as gold code hub source.
+C0070,yes,no,82,low,0,0,Use as gold code hub source.
+C0075,yes,no,82,low,0,0,Use as gold code hub source.
+C0080,yes,no,82,low,0,0,Use as gold code hub source.
+C0085,yes,no,82,low,0,0,Use as gold code hub source.
+C0090,yes,no,82,low,0,0,Use as gold code hub source.
+C0095,yes,no,82,low,0,0,Use as gold code hub source.
+C0110,yes,no,82,low,0,0,Use as gold code hub source.
+C0121,yes,no,82,low,0,0,Use as gold code hub source.
+C0128,yes,no,82,low,0,0,Use as gold code hub source.
+C0141,yes,no,82,low,0,0,Use as gold code hub source.
+C0146,yes,no,82,low,0,0,Use as gold code hub source.
+C0151,yes,no,82,low,0,0,Use as gold code hub source.
+C0156,yes,no,82,low,0,0,Use as gold code hub source.
+C0161,yes,no,82,low,0,0,Use as gold code hub source.
+C0221,yes,no,82,low,0,0,Use as gold code hub source.
+C0222,yes,no,82,low,0,0,Use as gold code hub source.
+C0223,yes,no,82,low,0,0,Use as gold code hub source.
+C0225,yes,no,82,low,0,0,Use as gold code hub source.
+C0226,yes,no,82,low,0,0,Use as gold code hub source.
+C0227,yes,no,82,low,0,0,Use as gold code hub source.
+C0229,yes,no,82,low,0,0,Use as gold code hub source.
+C0235,yes,no,82,low,0,0,Use as gold code hub source.
+C0236,yes,no,82,low,0,0,Use as gold code hub source.
+C0237,yes,no,82,low,0,0,Use as gold code hub source.
+C0238,yes,no,82,low,0,0,Use as gold code hub source.
+C0241,yes,no,82,low,0,0,Use as gold code hub source.
+C0245,yes,no,82,low,0,0,Use as gold code hub source.
+C0254,yes,no,82,low,0,0,Use as gold code hub source.
+C0265,yes,no,82,low,0,0,Use as gold code hub source.
+C0266,yes,no,82,low,0,0,Use as gold code hub source.
+C0267,yes,no,82,low,0,0,Use as gold code hub source.
+C0268,yes,no,82,low,0,0,Use as gold code hub source.
+C0269,yes,no,82,low,0,0,Use as gold code hub source.
+C0271,yes,no,82,low,0,0,Use as gold code hub source.
+C0272,yes,no,82,low,0,0,Use as gold code hub source.
+C0273,yes,no,82,low,0,0,Use as gold code hub source.
+C0274,yes,no,82,low,0,0,Use as gold code hub source.
+C0279,yes,no,82,low,0,0,Use as gold code hub source.
+C0281,yes,no,82,low,0,0,Use as gold code hub source.
+C0283,yes,no,82,low,0,0,Use as gold code hub source.
+C0284,yes,no,82,low,0,0,Use as gold code hub source.
+C0286,yes,no,82,low,0,0,Use as gold code hub source.
+C0287,yes,no,82,low,0,0,Use as gold code hub source.
+C0288,yes,no,82,low,0,0,Use as gold code hub source.
+C0290,yes,no,82,low,0,0,Use as gold code hub source.
+C0291,yes,no,82,low,0,0,Use as gold code hub source.
+C0292,yes,no,82,low,0,0,Use as gold code hub source.
+C0297,yes,no,82,low,0,0,Use as gold code hub source.
+C0298,yes,no,82,low,0,0,Use as gold code hub source.
+C0300,yes,no,82,low,0,0,Use as gold code hub source.
+C0305,yes,no,82,low,0,0,Use as gold code hub source.
+C0306,yes,no,82,low,0,0,Use as gold code hub source.
+C0308,yes,no,82,low,0,0,Use as gold code hub source.
+C0309,yes,no,82,low,0,0,Use as gold code hub source.
+C0310,yes,no,82,low,0,0,Use as gold code hub source.
+C0315,yes,no,82,low,0,0,Use as gold code hub source.
+C0321,yes,no,82,low,0,0,Use as gold code hub source.
+C0323,yes,no,82,low,0,0,Use as gold code hub source.
+C0324,yes,no,82,low,0,0,Use as gold code hub source.
+C0327,yes,no,82,low,0,0,Use as gold code hub source.
+C0357,yes,no,82,low,0,0,Use as gold code hub source.
+C0359,yes,no,82,low,0,0,Use as gold code hub source.
+C0362,yes,no,82,low,0,0,Use as gold code hub source.
+C0367,yes,no,82,low,0,0,Use as gold code hub source.
+C0374,yes,no,82,low,0,0,Use as gold code hub source.
+C0376,yes,no,82,low,0,0,Use as gold code hub source.
+C0379,yes,no,82,low,0,0,Use as gold code hub source.
+C0387,yes,no,82,low,0,0,Use as gold code hub source.
+C0472,yes,no,82,low,0,0,Use as gold code hub source.
+C0473,yes,no,82,low,0,0,Use as gold code hub source.
+C0495,yes,no,82,low,0,0,Use as gold code hub source.
+C0498,yes,no,82,low,0,0,Use as gold code hub source.
+C0499,yes,no,82,low,0,0,Use as gold code hub source.
+C0503,yes,no,82,low,0,0,Use as gold code hub source.
+C0504,yes,no,82,low,0,0,Use as gold code hub source.
+C0550,yes,no,82,low,0,0,Use as gold code hub source.
+C0559,yes,no,82,low,0,0,Use as gold code hub source.
+C0563,yes,no,82,low,0,0,Use as gold code hub source.
+C0577,yes,no,82,low,0,0,Use as gold code hub source.
+C0578,yes,no,82,low,0,0,Use as gold code hub source.
+C0579,yes,no,82,low,0,0,Use as gold code hub source.
+C0582,yes,no,82,low,0,0,Use as gold code hub source.
+C0583,yes,no,82,low,0,0,Use as gold code hub source.
+C0584,yes,no,82,low,0,0,Use as gold code hub source.
+C0587,yes,no,82,low,0,0,Use as gold code hub source.
+C0588,yes,no,82,low,0,0,Use as gold code hub source.
+C0589,yes,no,82,low,0,0,Use as gold code hub source.
+C0592,yes,no,82,low,0,0,Use as gold code hub source.
+C0593,yes,no,82,low,0,0,Use as gold code hub source.
+C0594,yes,no,82,low,0,0,Use as gold code hub source.
+C0611,yes,no,82,low,0,0,Use as gold code hub source.
+C0615,yes,no,82,low,0,0,Use as gold code hub source.
+C0620,yes,no,82,low,0,0,Use as gold code hub source.
+C0625,yes,no,82,low,0,0,Use as gold code hub source.
+C0628,yes,no,82,low,0,0,Use as gold code hub source.
+C0630,yes,no,82,low,0,0,Use as gold code hub source.
+C0635,yes,no,82,low,0,0,Use as gold code hub source.
+C0638,yes,no,82,low,0,0,Use as gold code hub source.
+C0640,yes,no,82,low,0,0,Use as gold code hub source.
+C0643,yes,no,82,low,0,0,Use as gold code hub source.
+C0655,yes,no,82,low,0,0,Use as gold code hub source.
+C0657,yes,no,82,low,0,0,Use as gold code hub source.
+C0658,yes,no,82,low,0,0,Use as gold code hub source.
+C0660,yes,no,82,low,0,0,Use as gold code hub source.
+C0662,yes,no,82,low,0,0,Use as gold code hub source.
+C0663,yes,no,82,low,0,0,Use as gold code hub source.
+C0665,yes,no,82,low,0,0,Use as gold code hub source.
+C0690,yes,no,82,low,0,0,Use as gold code hub source.
+C0691,yes,no,82,low,0,0,Use as gold code hub source.
+C0693,yes,no,82,low,0,0,Use as gold code hub source.
+C0695,yes,no,82,low,0,0,Use as gold code hub source.
+C0696,yes,no,82,low,0,0,Use as gold code hub source.
+C0710,yes,no,82,low,0,0,Use as gold code hub source.
+C0750,yes,no,82,low,0,0,Use as gold code hub source.
+C0755,yes,no,82,low,0,0,Use as gold code hub source.
+C0760,yes,no,82,low,0,0,Use as gold code hub source.
+C0765,yes,no,82,low,0,0,Use as gold code hub source.
+C0800,yes,no,82,low,0,0,Use as gold code hub source.
+C0896,yes,no,82,low,0,0,Use as gold code hub source.
+P0100,yes,no,82,low,0,0,Use as gold code hub source.
+P0101,yes,no,82,low,0,0,Use as gold code hub source.
+P0102,yes,no,83,low,25,0,Use as gold code hub source.
+P0103,no,yes,59,high,14,1,Upgrade raw record before treating as high-confidence index target.
+P0104,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0105,no,yes,59,high,11,0,Upgrade raw record before treating as high-confidence index target.
+P0106,no,yes,59,high,10,0,Upgrade raw record before treating as high-confidence index target.
+P0107,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0108,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0109,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0110,no,yes,61,high,51,0,Upgrade raw record before treating as high-confidence index target.
+P0111,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0112,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0113,no,yes,59,high,25,0,Upgrade raw record before treating as high-confidence index target.
+P0114,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0115,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0116,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0117,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0118,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0119,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0120,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0121,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0122,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0123,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0124,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0125,no,yes,60,high,40,0,Upgrade raw record before treating as high-confidence index target.
+P0126,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0127,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0128,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0129,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0130,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0131,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0132,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0133,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0134,no,yes,59,high,18,0,Upgrade raw record before treating as high-confidence index target.
+P0135,no,yes,59,high,29,0,Upgrade raw record before treating as high-confidence index target.
+P0136,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0137,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0138,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0139,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0140,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0141,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0142,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0143,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0144,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0145,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0146,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0147,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0148,yes,no,82,low,0,0,Use as gold code hub source.
+P0149,yes,no,82,low,0,0,Use as gold code hub source.
+P0150,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0151,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0152,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0153,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0154,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0155,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0156,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0157,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0158,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0159,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0160,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0161,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0162,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0163,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0164,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0165,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0166,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0167,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0168,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0169,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0170,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0171,yes,no,82,low,0,0,Use as gold code hub source.
+P0172,yes,no,83,low,17,0,Use as gold code hub source.
+P0173,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0174,yes,no,82,low,0,0,Use as gold code hub source.
+P0175,yes,no,82,low,0,0,Use as gold code hub source.
+P0176,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0177,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0178,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0179,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0180,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0181,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0182,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0183,no,yes,60,high,37,0,Upgrade raw record before treating as high-confidence index target.
+P0184,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0185,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0186,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0187,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0188,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0189,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0190,yes,no,82,low,0,0,Use as gold code hub source.
+P0191,yes,no,82,low,0,0,Use as gold code hub source.
+P0192,yes,no,82,low,0,0,Use as gold code hub source.
+P0193,yes,no,82,low,0,0,Use as gold code hub source.
+P0194,yes,no,82,low,0,0,Use as gold code hub source.
+P0195,yes,no,82,low,0,0,Use as gold code hub source.
+P0196,yes,no,82,low,0,0,Use as gold code hub source.
+P0197,yes,no,82,low,0,0,Use as gold code hub source.
+P0198,yes,no,82,low,0,0,Use as gold code hub source.
+P0199,yes,no,82,low,0,0,Use as gold code hub source.
+P0200,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0201,no,yes,59,high,24,0,Upgrade raw record before treating as high-confidence index target.
+P0202,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0203,no,yes,60,high,46,1,Upgrade raw record before treating as high-confidence index target.
+P0204,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0205,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0206,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0207,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0208,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0209,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0210,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0211,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0212,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0213,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0214,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0215,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0216,no,yes,60,high,39,1,Upgrade raw record before treating as high-confidence index target.
+P0217,yes,no,82,low,0,0,Use as gold code hub source.
+P0218,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0219,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0220,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0221,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0222,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0223,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0224,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0225,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0226,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0227,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0228,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0229,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0230,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0231,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0232,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0233,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0234,no,yes,60,high,40,2,Upgrade raw record before treating as high-confidence index target.
+P0235,yes,no,83,low,26,0,Use as gold code hub source.
+P0236,yes,no,82,low,0,0,Use as gold code hub source.
+P0237,yes,no,82,low,0,0,Use as gold code hub source.
+P0238,yes,no,83,low,18,0,Use as gold code hub source.
+P0239,yes,no,82,low,0,0,Use as gold code hub source.
+P0240,yes,no,82,low,0,0,Use as gold code hub source.
+P0241,yes,no,82,low,0,0,Use as gold code hub source.
+P0242,yes,no,82,low,0,0,Use as gold code hub source.
+P0243,no,yes,59,high,16,0,Upgrade raw record before treating as high-confidence index target.
+P0244,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0245,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0246,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0247,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0248,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0249,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0250,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0251,no,yes,59,high,28,0,Upgrade raw record before treating as high-confidence index target.
+P0252,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0253,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0254,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0255,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0256,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0257,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0258,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0259,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0260,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0261,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0262,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0263,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0264,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0265,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0266,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0267,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0268,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0269,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0270,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0271,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0272,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0273,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0274,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0275,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0276,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0277,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0278,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0279,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0280,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0281,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0282,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0283,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0284,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0285,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0286,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0287,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0288,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0289,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0290,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0291,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0292,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0293,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0294,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0295,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0296,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0297,no,yes,59,high,10,0,Upgrade raw record before treating as high-confidence index target.
+P0298,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0299,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0300,yes,no,83,low,10,0,Use as gold code hub source.
+P0301,yes,no,82,low,0,0,Use as gold code hub source.
+P0302,yes,no,82,low,0,0,Use as gold code hub source.
+P0303,yes,no,82,low,0,0,Use as gold code hub source.
+P0304,yes,no,82,low,0,0,Use as gold code hub source.
+P0305,yes,no,82,low,0,0,Use as gold code hub source.
+P0306,yes,no,82,low,0,0,Use as gold code hub source.
+P0307,yes,no,82,low,0,0,Use as gold code hub source.
+P0308,yes,no,82,low,0,0,Use as gold code hub source.
+P0309,yes,no,82,low,0,0,Use as gold code hub source.
+P0310,yes,no,82,low,0,0,Use as gold code hub source.
+P0311,yes,no,82,low,0,0,Use as gold code hub source.
+P0312,yes,no,82,low,0,0,Use as gold code hub source.
+P0313,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0314,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0315,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0316,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0317,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0318,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0319,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0320,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0321,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0322,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0323,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0324,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0325,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0326,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0327,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0328,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0329,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0330,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0331,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0332,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0333,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0334,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0335,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0336,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0337,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0338,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0339,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0340,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0341,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0342,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0343,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0344,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0345,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0346,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0347,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0348,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0349,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0350,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0351,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0352,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0353,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0354,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0355,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0356,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0357,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0358,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0359,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0360,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0361,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0362,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0363,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0364,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0365,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0366,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0367,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0368,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0369,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0370,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0371,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0372,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0373,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0374,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0375,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0376,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0377,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0378,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0379,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0380,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0381,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0382,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0383,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0384,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0385,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0386,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0387,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0388,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0389,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0390,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0391,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0392,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0393,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0394,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0395,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0396,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0397,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0398,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0399,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0400,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0401,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0402,yes,no,82,low,0,0,Use as gold code hub source.
+P0403,yes,no,82,low,0,0,Use as gold code hub source.
+P0404,yes,no,82,low,0,0,Use as gold code hub source.
+P0405,yes,no,82,low,0,0,Use as gold code hub source.
+P0406,yes,no,82,low,0,0,Use as gold code hub source.
+P0407,yes,no,82,low,0,0,Use as gold code hub source.
+P0408,yes,no,82,low,0,0,Use as gold code hub source.
+P0409,yes,no,82,low,0,0,Use as gold code hub source.
+P0410,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0411,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0412,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0413,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0414,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0415,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0416,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0417,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0418,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0419,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0420,yes,no,83,low,12,0,Use as gold code hub source.
+P0421,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0422,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0423,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0424,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0425,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0426,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0427,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0428,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0429,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0430,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0431,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0432,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0433,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0434,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0435,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0436,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0437,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0438,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0439,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0440,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0441,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0442,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0443,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0444,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0445,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0446,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0447,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0448,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0449,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0450,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0451,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0452,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0453,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0454,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0455,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0456,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0457,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0458,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0459,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0460,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0461,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0462,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0463,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0464,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0465,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0466,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0467,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0468,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0469,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0470,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0471,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0472,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0473,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0474,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0475,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0476,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0477,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0478,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0479,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0480,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0481,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0482,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0483,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0484,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0485,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0486,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0487,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0488,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0489,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0490,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0491,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0492,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0493,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0494,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0495,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0496,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0497,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0498,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0499,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0500,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0501,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0502,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0503,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0504,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0505,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0506,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0507,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0508,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0509,no,yes,59,high,19,0,Upgrade raw record before treating as high-confidence index target.
+P0510,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0511,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0512,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0513,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0514,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0515,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0516,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0517,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0518,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0519,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0520,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0521,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0522,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0523,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0524,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0525,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0526,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0527,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0528,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0529,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0530,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0531,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0532,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0533,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0534,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0535,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0536,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0537,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0538,no,yes,59,high,22,0,Upgrade raw record before treating as high-confidence index target.
+P0539,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0540,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0541,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0542,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0543,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0544,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0545,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0546,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0547,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0548,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0549,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0550,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0551,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0552,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0553,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0554,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0555,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0556,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0557,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0558,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0559,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0560,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0561,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0562,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0563,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0564,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0565,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0566,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0567,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0568,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0569,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0570,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0571,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0572,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0573,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0574,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0575,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0576,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0577,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0578,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0579,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0580,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0581,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0582,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0583,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0584,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0585,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0586,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0587,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0588,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0589,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0590,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0591,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0592,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0593,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0594,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0595,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0596,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0597,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0598,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0599,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0600,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0601,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0602,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0603,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0604,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0605,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0606,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0607,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0608,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0609,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0610,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0611,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0612,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0613,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0614,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0615,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0616,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0617,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0618,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0619,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0620,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0621,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0622,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0623,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0624,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0625,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0626,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0627,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0628,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0629,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0630,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0631,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0632,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0633,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0634,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0635,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0636,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0637,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0638,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0639,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0640,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0641,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0642,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0643,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0644,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0645,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0646,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0647,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0648,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0649,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0650,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0651,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0652,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0653,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0654,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0655,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0656,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0657,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0658,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0659,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0660,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0661,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0662,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0663,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0664,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0665,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0666,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0667,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0668,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0669,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0670,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0671,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0672,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0673,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0674,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0675,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0676,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0677,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0678,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0679,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0680,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0681,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0682,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0683,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0684,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0685,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0686,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0687,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0688,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0689,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0690,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0691,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0692,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0693,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0694,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0695,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0696,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0697,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0698,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0699,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0700,yes,no,82,low,0,0,Use as gold code hub source.
+P0701,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0702,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0703,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0704,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0705,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0706,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0707,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0708,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0709,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0710,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0711,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0712,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0713,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0714,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0715,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0716,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0717,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0718,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0719,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0720,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0721,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0722,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0723,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0724,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0725,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0726,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0727,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0728,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0729,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0730,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0731,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0732,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0733,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0734,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0735,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0736,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0737,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0738,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0739,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0740,yes,no,82,low,0,0,Use as gold code hub source.
+P0741,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0742,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0743,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0744,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0745,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0746,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0747,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0748,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0749,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0750,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0751,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0752,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0753,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0754,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0755,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0756,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0757,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0758,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0759,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0760,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0761,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0762,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0763,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0764,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0765,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0766,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0767,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0768,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0769,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0770,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0771,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0772,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0773,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0774,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0775,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0776,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0777,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0778,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0779,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0780,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0781,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0782,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0783,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0784,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0785,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0786,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0787,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0788,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0789,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0790,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0791,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0792,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0793,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0794,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0795,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0796,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0797,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0798,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0799,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0800,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0801,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0802,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0803,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0804,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0805,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0806,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0807,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0808,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0809,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0810,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0811,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0812,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0813,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0814,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0815,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0816,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0817,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0818,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0819,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0820,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0821,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0822,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0823,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0824,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0825,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0826,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0827,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0828,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0829,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0830,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0831,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0832,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0833,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0834,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0835,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0836,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0837,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0838,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0839,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0840,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0841,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0842,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0843,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0844,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0845,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0846,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0847,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0848,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0849,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0850,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0851,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0852,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0853,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0854,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0855,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0856,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0857,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0858,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0859,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0860,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0861,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0862,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0863,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0864,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0865,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0866,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0867,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0868,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0869,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0870,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0871,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0872,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0873,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0874,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0875,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0876,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0877,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0878,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0879,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0880,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0881,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0882,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0883,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0884,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0885,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0886,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0887,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0888,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0889,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0890,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0891,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0892,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0893,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0894,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0895,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0896,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0897,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0898,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0899,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0900,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0901,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0902,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0903,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0904,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0905,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0906,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0907,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0908,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0909,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0910,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0911,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0912,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0913,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0914,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0915,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0916,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0917,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0918,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0919,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0920,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0921,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0922,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0923,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0924,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0925,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0926,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0927,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0928,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0929,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0930,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0931,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0932,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0933,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0934,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0935,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0936,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0937,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0938,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0939,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0940,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0941,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0942,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0943,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0944,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0945,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0946,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0947,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0948,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0949,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0950,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0951,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0952,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0953,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0954,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0955,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0956,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0957,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0958,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0959,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0960,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0961,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0962,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0963,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0964,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0965,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0966,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0967,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0968,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0969,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0970,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0971,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0972,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0973,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0974,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0975,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0976,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0977,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0978,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0979,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0980,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0981,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0982,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0983,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0984,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0985,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0986,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0987,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0988,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0989,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0990,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0991,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0992,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0993,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0994,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0995,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0996,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0997,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0998,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0999,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2000,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2001,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2002,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2003,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2004,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2005,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2006,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2007,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2008,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2009,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2010,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2011,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2012,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2013,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2014,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2015,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2016,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2017,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2018,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2019,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2020,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2021,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2022,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2023,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2024,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2025,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2026,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2027,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2028,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2029,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2030,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2031,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2032,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2033,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2034,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2035,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2036,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2037,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2038,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2039,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2040,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2041,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2042,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2043,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2044,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2045,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2046,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2047,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2048,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2049,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2050,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2051,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2052,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2053,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2054,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2055,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2056,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2057,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2058,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2059,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2060,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2061,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2062,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2063,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2064,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2065,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2066,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2067,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2068,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2069,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2070,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2071,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2072,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2073,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2074,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2075,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2076,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2077,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2078,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2079,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2080,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2081,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2082,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2083,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2084,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2085,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2086,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2087,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2088,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2089,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2090,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2091,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2092,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2093,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2094,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2095,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2096,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2097,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2098,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2099,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2100,yes,no,82,low,0,0,Use as gold code hub source.
+P2101,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2102,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2103,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2104,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2105,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2106,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2107,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2108,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2109,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2110,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2111,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2112,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2113,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2114,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2115,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2116,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2117,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2118,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2119,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2120,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2121,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2122,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2123,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2124,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2125,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2126,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2127,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2128,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2129,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2130,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2131,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2132,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2133,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2134,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2135,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2136,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2137,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2138,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2139,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2140,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2141,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2142,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2143,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2144,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2145,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2146,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2147,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2148,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2149,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2150,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2151,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2152,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2153,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2154,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2155,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2156,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2157,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2158,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2159,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2160,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2161,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2162,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2163,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2164,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2165,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2166,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2167,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2168,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2169,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2170,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2171,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2172,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2173,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2174,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2175,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2176,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2177,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2178,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2179,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2180,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2181,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2182,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2183,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2184,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2185,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2186,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2187,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2188,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2189,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2190,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2191,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2192,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2193,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2194,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2195,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2196,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2197,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2198,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2199,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2200,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2201,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2202,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2203,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2204,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2205,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2206,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2207,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2208,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2209,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2210,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2211,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2212,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2213,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2214,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2215,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2216,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2217,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2218,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2219,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2220,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2221,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2222,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2223,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2224,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2225,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2226,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2227,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2228,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2229,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2230,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2231,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2232,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2233,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2234,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2235,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2236,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2237,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2238,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2239,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2240,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2241,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2242,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2243,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2244,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2245,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2246,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2247,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2248,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2249,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2250,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2251,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2252,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2253,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2254,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2255,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2256,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2257,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2258,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2259,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2260,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2261,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2262,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2263,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2264,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2265,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2266,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2267,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2268,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2269,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2270,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2271,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2272,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2273,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2274,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2275,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2276,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2277,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2278,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2279,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2280,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2281,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2282,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2283,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2284,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2285,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2286,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2287,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2288,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2289,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2290,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2291,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2292,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2293,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2294,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2295,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2296,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2297,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2298,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2299,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2300,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2301,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2302,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2303,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2304,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2305,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2306,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2307,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2308,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2309,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2310,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2311,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2312,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2313,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2314,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2315,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2316,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2317,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2318,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2319,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2320,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2321,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2322,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2323,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2324,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2325,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2326,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2327,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2328,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2329,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2330,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2331,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2332,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2333,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2334,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2335,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2336,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2337,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2338,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2339,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2340,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2341,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2342,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2343,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2344,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2345,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2346,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2347,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2348,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2349,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2350,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2351,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2352,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2353,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2354,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2355,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2356,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2357,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2358,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2359,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2360,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2361,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2362,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2363,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2364,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2365,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2366,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2367,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2368,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2369,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2370,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2371,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2372,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2373,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2374,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2375,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2376,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2377,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2378,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2379,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2380,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2381,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2382,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2383,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2384,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2385,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2386,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2387,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2388,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2389,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2390,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2391,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2392,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2393,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2394,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2395,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2396,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2397,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2398,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2399,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2400,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2401,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2402,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2403,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2404,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2405,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2406,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2407,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2408,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2409,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2410,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2411,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2412,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2413,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2414,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2415,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2416,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2417,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2418,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2419,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2420,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2421,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2422,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2423,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2424,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2425,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2426,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2427,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2428,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2429,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2430,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2431,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2432,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2433,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2434,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2435,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2436,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2437,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2438,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2439,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2440,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2441,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2442,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2443,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2444,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2445,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2446,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2447,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2448,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2449,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2450,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2451,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2452,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2453,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2454,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2455,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2456,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2457,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2458,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2459,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2460,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2461,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2462,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2463,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2464,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2465,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2466,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2467,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2468,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2469,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2470,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2471,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2472,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2473,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2474,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2475,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2476,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2477,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2478,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2479,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2480,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2481,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2482,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2483,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2484,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2485,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2486,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2487,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2488,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2489,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2490,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2491,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2492,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2493,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2494,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2495,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2496,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2497,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2498,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2499,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2500,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2501,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2502,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2503,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2504,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2505,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2506,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2507,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2508,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2509,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2510,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2511,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2512,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2513,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2514,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2515,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2516,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2517,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2518,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2519,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2520,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2521,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2522,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2523,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2524,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2525,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2526,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2527,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2528,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2529,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2530,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2531,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2532,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2533,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2534,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2535,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2536,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2537,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2538,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2539,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2540,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2541,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2542,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2543,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2544,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2545,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2546,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2547,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2548,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2549,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2550,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2551,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2552,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2553,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2554,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2555,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2556,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2557,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2558,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2559,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2560,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2561,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2562,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2563,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2564,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2565,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2566,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2567,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2568,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2569,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2570,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2571,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2572,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2573,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2574,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2575,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2576,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2577,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2578,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2579,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2580,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2581,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2582,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2583,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2584,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2585,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2586,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2587,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2588,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2589,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2590,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2591,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2592,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2593,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2594,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2595,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2596,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2597,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2598,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2599,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2600,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2601,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2602,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2603,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2604,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2605,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2606,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2607,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2608,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2609,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2610,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2611,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2612,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2613,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2614,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2615,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2616,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2617,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2618,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2619,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2620,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2621,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2622,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2623,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2624,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2625,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2626,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2627,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2628,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2629,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2630,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2631,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2632,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2633,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2634,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2635,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2636,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2637,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2638,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2639,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2640,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2641,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2642,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2643,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2644,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2645,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2646,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2647,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2648,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2649,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2650,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2651,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2652,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2653,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2654,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2655,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2656,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2657,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2658,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2659,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2660,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2661,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2662,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2663,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2664,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2665,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2666,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2667,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2668,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2669,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2670,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2671,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2672,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2673,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2674,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2675,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2676,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2677,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2678,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2679,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2680,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2681,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2682,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2683,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2684,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2685,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2686,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2687,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2688,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2689,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2690,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2691,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2692,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2693,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2694,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2695,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2696,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2697,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2698,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2699,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2700,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2701,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2702,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2703,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2704,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2705,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2706,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2707,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2708,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2709,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2710,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2711,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2712,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2713,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2714,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2715,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2716,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2717,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2718,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2719,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2720,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2721,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2722,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2723,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2724,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2725,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2726,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2727,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2728,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2729,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2730,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2731,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2732,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2733,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2734,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2735,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2736,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2737,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2738,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2739,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2740,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2741,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2742,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2743,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2744,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2745,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2746,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2747,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2748,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2749,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2750,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2751,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2752,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2753,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2754,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2755,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2756,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2757,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2758,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2759,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2760,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2761,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2762,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2763,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2764,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2765,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2766,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2767,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2768,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2769,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2770,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2771,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2772,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2773,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2774,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2775,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2776,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2777,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2778,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2779,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2780,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2781,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2782,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2783,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2784,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2785,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2786,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2787,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2788,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2789,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2790,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2791,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2792,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2793,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2794,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2795,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2796,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2797,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2798,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2799,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2800,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2801,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2802,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2803,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2804,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2805,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2806,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2807,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2808,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2809,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2810,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2811,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2812,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2813,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2814,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2815,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2816,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2817,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2818,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2819,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2820,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2821,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2822,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2823,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2824,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2825,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2826,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2827,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2828,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2829,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2830,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2831,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2832,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2833,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2834,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2835,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2836,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2837,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2838,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2839,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2840,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2841,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2842,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2843,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2844,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2845,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2846,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2847,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2848,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2849,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2850,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2851,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2852,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2853,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2854,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2855,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2856,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2857,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2858,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2859,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2860,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2861,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2862,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2863,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2864,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2865,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2866,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2867,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2868,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2869,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2870,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2871,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2872,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2873,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2874,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2875,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2876,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2877,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2878,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2879,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2880,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2881,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2882,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2883,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2884,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2885,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2886,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2887,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2888,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2889,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2890,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2891,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2892,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2893,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2894,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2895,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2896,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2897,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2898,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2899,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2900,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2901,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2902,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2903,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2904,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2905,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2906,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2907,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2908,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2909,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2910,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2911,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2912,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2913,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2914,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2915,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2916,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2917,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2918,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2919,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2920,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2921,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2922,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2923,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2924,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2925,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2926,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2927,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2928,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2929,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2930,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2931,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2932,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2933,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2934,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2935,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2936,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2937,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2938,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2939,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2940,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2941,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2942,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2943,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2944,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2945,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2946,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2947,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2948,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2949,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2950,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2951,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2952,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2953,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2954,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2955,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2956,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2957,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2958,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2959,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2960,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2961,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2962,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2963,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2964,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2965,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2966,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2967,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2968,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2969,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2970,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2971,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2972,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2973,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2974,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2975,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2976,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2977,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2978,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2979,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2980,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2981,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2982,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2983,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2984,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2985,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2986,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2987,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2988,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2989,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2990,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2991,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2992,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2993,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2994,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2995,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2996,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2997,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2998,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P2999,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+U0001,yes,no,82,low,0,0,Use as gold code hub source.
+U0002,yes,no,82,low,0,0,Use as gold code hub source.
+U0003,yes,no,82,low,0,0,Use as gold code hub source.
+U0004,yes,no,82,low,0,0,Use as gold code hub source.
+U0005,yes,no,82,low,0,0,Use as gold code hub source.
+U0006,yes,no,82,low,0,0,Use as gold code hub source.
+U0007,yes,no,82,low,0,0,Use as gold code hub source.
+U0008,yes,no,82,low,0,0,Use as gold code hub source.
+U0009,yes,no,82,low,0,0,Use as gold code hub source.
+U0010,yes,no,82,low,0,0,Use as gold code hub source.
+U0011,yes,no,82,low,0,0,Use as gold code hub source.
+U0012,yes,no,82,low,0,0,Use as gold code hub source.
+U0013,yes,no,82,low,0,0,Use as gold code hub source.
+U0014,yes,no,82,low,0,0,Use as gold code hub source.
+U0015,yes,no,82,low,0,0,Use as gold code hub source.
+U0016,yes,no,82,low,0,0,Use as gold code hub source.
+U0017,yes,no,82,low,0,0,Use as gold code hub source.
+U0018,yes,no,82,low,0,0,Use as gold code hub source.
+U0019,yes,no,82,low,0,0,Use as gold code hub source.
+U0020,yes,no,82,low,0,0,Use as gold code hub source.
+U0021,yes,no,82,low,0,0,Use as gold code hub source.
+U0022,yes,no,82,low,0,0,Use as gold code hub source.
+U0023,yes,no,82,low,0,0,Use as gold code hub source.
+U0024,yes,no,82,low,0,0,Use as gold code hub source.
+U0025,yes,no,82,low,0,0,Use as gold code hub source.
+U0026,yes,no,82,low,0,0,Use as gold code hub source.
+U0027,yes,no,82,low,0,0,Use as gold code hub source.
+U0028,yes,no,82,low,0,0,Use as gold code hub source.
+U0029,yes,no,82,low,0,0,Use as gold code hub source.
+U0030,yes,no,82,low,0,0,Use as gold code hub source.
+U0031,yes,no,82,low,0,0,Use as gold code hub source.
+U0032,yes,no,82,low,0,0,Use as gold code hub source.
+U0033,yes,no,82,low,0,0,Use as gold code hub source.
+U0034,yes,no,82,low,0,0,Use as gold code hub source.
+U0035,yes,no,82,low,0,0,Use as gold code hub source.
+U0036,yes,no,82,low,0,0,Use as gold code hub source.
+U0037,yes,no,82,low,0,0,Use as gold code hub source.
+U0038,yes,no,82,low,0,0,Use as gold code hub source.
+U0039,yes,no,82,low,0,0,Use as gold code hub source.
+U0040,yes,no,82,low,0,0,Use as gold code hub source.
+U0041,yes,no,82,low,0,0,Use as gold code hub source.
+U0042,yes,no,82,low,0,0,Use as gold code hub source.
+U0043,yes,no,82,low,0,0,Use as gold code hub source.
+U0044,yes,no,82,low,0,0,Use as gold code hub source.
+U0045,yes,no,82,low,0,0,Use as gold code hub source.
+U0046,yes,no,82,low,0,0,Use as gold code hub source.
+U0047,yes,no,82,low,0,0,Use as gold code hub source.
+U0048,yes,no,82,low,0,0,Use as gold code hub source.
+U0049,yes,no,82,low,0,0,Use as gold code hub source.
+U0050,yes,no,82,low,0,0,Use as gold code hub source.
+U0051,yes,no,82,low,0,0,Use as gold code hub source.
+U0052,yes,no,82,low,0,0,Use as gold code hub source.
+U0053,yes,no,82,low,0,0,Use as gold code hub source.
+U0054,yes,no,82,low,0,0,Use as gold code hub source.
+U0055,yes,no,82,low,0,0,Use as gold code hub source.
+U0056,yes,no,82,low,0,0,Use as gold code hub source.
+U0057,yes,no,82,low,0,0,Use as gold code hub source.
+U0058,yes,no,82,low,0,0,Use as gold code hub source.
+U0059,yes,no,82,low,0,0,Use as gold code hub source.
+U0060,yes,no,82,low,0,0,Use as gold code hub source.
+U0061,yes,no,82,low,0,0,Use as gold code hub source.
+U0062,yes,no,82,low,0,0,Use as gold code hub source.
+U0063,yes,no,82,low,0,0,Use as gold code hub source.
+U0064,yes,no,82,low,0,0,Use as gold code hub source.
+U0065,yes,no,82,low,0,0,Use as gold code hub source.
+U0066,yes,no,82,low,0,0,Use as gold code hub source.
+U0067,yes,no,82,low,0,0,Use as gold code hub source.
+U0068,yes,no,82,low,0,0,Use as gold code hub source.
+U0069,yes,no,82,low,0,0,Use as gold code hub source.
+U0070,yes,no,82,low,0,0,Use as gold code hub source.
+U0071,yes,no,82,low,0,0,Use as gold code hub source.
+U0072,yes,no,82,low,0,0,Use as gold code hub source.
+U0100,yes,no,82,low,0,0,Use as gold code hub source.
+U0101,yes,no,82,low,0,0,Use as gold code hub source.
+U0102,yes,no,82,low,0,0,Use as gold code hub source.
+U0103,yes,no,82,low,0,0,Use as gold code hub source.
+U0104,yes,no,82,low,0,0,Use as gold code hub source.
+U0105,yes,no,82,low,0,0,Use as gold code hub source.
+U0106,yes,no,82,low,0,0,Use as gold code hub source.
+U0107,yes,no,82,low,0,0,Use as gold code hub source.
+U0108,yes,no,82,low,0,0,Use as gold code hub source.
+U0109,yes,no,82,low,0,0,Use as gold code hub source.
+U010A,yes,no,82,low,0,0,Use as gold code hub source.
+U010B,yes,no,82,low,0,0,Use as gold code hub source.
+U010C,yes,no,82,low,0,0,Use as gold code hub source.
+U010D,yes,no,82,low,0,0,Use as gold code hub source.
+U010E,yes,no,82,low,0,0,Use as gold code hub source.
+U010F,yes,no,82,low,0,0,Use as gold code hub source.
+U0110,yes,no,82,low,0,0,Use as gold code hub source.
+U0111,yes,no,82,low,0,0,Use as gold code hub source.
+U0112,yes,no,82,low,0,0,Use as gold code hub source.
+U0113,yes,no,82,low,0,0,Use as gold code hub source.
+U0114,yes,no,82,low,0,0,Use as gold code hub source.
+U0115,yes,no,82,low,0,0,Use as gold code hub source.
+U0121,yes,no,82,low,0,0,Use as gold code hub source.
+U0126,yes,no,82,low,0,0,Use as gold code hub source.
+U0140,yes,no,82,low,0,0,Use as gold code hub source.
+U0151,yes,no,82,low,0,0,Use as gold code hub source.
+U0155,yes,no,82,low,0,0,Use as gold code hub source.
+U0164,yes,no,82,low,0,0,Use as gold code hub source.
+U0184,yes,no,82,low,0,0,Use as gold code hub source.
+U0235,yes,no,82,low,0,0,Use as gold code hub source.
+U0288,yes,no,82,low,0,0,Use as gold code hub source.
+U0289,yes,no,82,low,0,0,Use as gold code hub source.
+U0290,yes,no,82,low,0,0,Use as gold code hub source.
+U0291,yes,no,82,low,0,0,Use as gold code hub source.
+U0292,yes,no,82,low,0,0,Use as gold code hub source.
+U0293,yes,no,82,low,0,0,Use as gold code hub source.
+U0294,yes,no,82,low,0,0,Use as gold code hub source.
+U0295,yes,no,82,low,0,0,Use as gold code hub source.
+U0296,yes,no,82,low,0,0,Use as gold code hub source.
+U0297,yes,no,82,low,0,0,Use as gold code hub source.
+U0298,yes,no,82,low,0,0,Use as gold code hub source.
+U0299,yes,no,82,low,0,0,Use as gold code hub source.
+U029A,yes,no,82,low,0,0,Use as gold code hub source.
+U029B,yes,no,82,low,0,0,Use as gold code hub source.
+U029C,yes,no,82,low,0,0,Use as gold code hub source.
+U029D,yes,no,82,low,0,0,Use as gold code hub source.
+U029E,yes,no,82,low,0,0,Use as gold code hub source.
+U0300,yes,no,82,low,0,0,Use as gold code hub source.
+U0301,yes,no,82,low,0,0,Use as gold code hub source.
+U0302,yes,no,82,low,0,0,Use as gold code hub source.
+U0303,yes,no,82,low,0,0,Use as gold code hub source.
+U0304,yes,no,82,low,0,0,Use as gold code hub source.
+U0305,yes,no,82,low,0,0,Use as gold code hub source.
+U0306,yes,no,82,low,0,0,Use as gold code hub source.
+U0307,yes,no,82,low,0,0,Use as gold code hub source.
+U0308,yes,no,82,low,0,0,Use as gold code hub source.
+U0309,yes,no,82,low,0,0,Use as gold code hub source.
+U0310,yes,no,82,low,0,0,Use as gold code hub source.
+U0311,yes,no,82,low,0,0,Use as gold code hub source.
+U0312,yes,no,82,low,0,0,Use as gold code hub source.
+U0313,yes,no,82,low,0,0,Use as gold code hub source.
+U0314,yes,no,82,low,0,0,Use as gold code hub source.
+U0315,yes,no,82,low,0,0,Use as gold code hub source.
+U0316,yes,no,82,low,0,0,Use as gold code hub source.
+U0317,yes,no,82,low,0,0,Use as gold code hub source.
+U0318,yes,no,82,low,0,0,Use as gold code hub source.
+U0319,yes,no,82,low,0,0,Use as gold code hub source.
+U0320,yes,no,82,low,0,0,Use as gold code hub source.
+U0321,yes,no,82,low,0,0,Use as gold code hub source.
+U0322,yes,no,82,low,0,0,Use as gold code hub source.
+U0323,yes,no,82,low,0,0,Use as gold code hub source.
+U0324,yes,no,82,low,0,0,Use as gold code hub source.
+U0325,yes,no,82,low,0,0,Use as gold code hub source.
+U0326,yes,no,82,low,0,0,Use as gold code hub source.
+U0327,yes,no,82,low,0,0,Use as gold code hub source.
+U0328,yes,no,82,low,0,0,Use as gold code hub source.
+U0329,yes,no,82,low,0,0,Use as gold code hub source.
+U0330,yes,no,82,low,0,0,Use as gold code hub source.
+U0331,yes,no,82,low,0,0,Use as gold code hub source.
+U0400,yes,no,82,low,0,0,Use as gold code hub source.
+U0401,yes,no,82,low,0,0,Use as gold code hub source.
+U0402,yes,no,82,low,0,0,Use as gold code hub source.
+U0403,yes,no,82,low,0,0,Use as gold code hub source.
+U0404,yes,no,82,low,0,0,Use as gold code hub source.
+U0405,yes,no,82,low,0,0,Use as gold code hub source.
+U0406,yes,no,82,low,0,0,Use as gold code hub source.
+U0407,yes,no,82,low,0,0,Use as gold code hub source.
+U0408,yes,no,82,low,0,0,Use as gold code hub source.
+U0409,yes,no,82,low,0,0,Use as gold code hub source.
+U0410,yes,no,82,low,0,0,Use as gold code hub source.
+U0411,yes,no,82,low,0,0,Use as gold code hub source.
+U0412,yes,no,82,low,0,0,Use as gold code hub source.
+U0413,yes,no,82,low,0,0,Use as gold code hub source.
+U0414,yes,no,82,low,0,0,Use as gold code hub source.
+U0415,yes,no,82,low,0,0,Use as gold code hub source.
+U0416,yes,no,82,low,0,0,Use as gold code hub source.
+U0417,yes,no,82,low,0,0,Use as gold code hub source.
+U0418,yes,no,82,low,0,0,Use as gold code hub source.
+U0419,yes,no,82,low,0,0,Use as gold code hub source.
+U0420,yes,no,82,low,0,0,Use as gold code hub source.
+U0421,yes,no,82,low,0,0,Use as gold code hub source.
+U0422,yes,no,82,low,0,0,Use as gold code hub source.
+U0423,yes,no,82,low,0,0,Use as gold code hub source.
+U0424,yes,no,82,low,0,0,Use as gold code hub source.
+U0428,yes,no,82,low,0,0,Use as gold code hub source.

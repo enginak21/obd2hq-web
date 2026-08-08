@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-08T21:27:24.704Z",
+  "sitemapUrls": 27370,
+  "indexQualityPass": 18180,
+  "indexQualityFail": 9190,
+  "classifications": {
+    "total": 27370,
+    "indexQualityPass": 18180,
+    "indexQualityFail": 9190,
+    "THIN": 9155,
+    "UTILITY": 35,
+    "SILVER": 6460,
+    "GOLD": 11720
+  },
+  "fallbackSummary": {
+    "total": 2223,
+    "rawGold": 376,
+    "fallback": 1847,
+    "highSimilarityRisk": 1847,
+    "withImpressions": 24,
+    "withClicks": 4
+  },
+  "vehicleSummary": {
+    "total": 110,
+    "VALID": 110
+  }
+}

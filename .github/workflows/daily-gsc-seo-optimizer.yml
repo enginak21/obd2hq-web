@@ -40,6 +40,8 @@ jobs:
           npm run check:symptom-content
           npm run check:seo-uniqueness-obd
           npm run check:seo-contracts
+          npm run check:canonical-freeze
+          npm run seo:recovery-audit
           npm run audit:obd-gold
           npm run lint
           npm run build
