@@ -1,5 +1,6 @@
 import rawBaseCodes from './base_codes.json';
 import verifiedDtcGold from './verified_dtc_gold.json';
+import verifiedDtcGoldBatch02 from './verified_dtc_gold_batch02.json';
 import aiData from './ai_enriched_data.json';
 import { applyGoldObdFallback } from './obd-gold-content';
 
@@ -48,7 +49,8 @@ export interface CarModel {
 
 const mergedBaseCodes = {
   ...(rawBaseCodes as Record<string, Partial<OBD2Code>>),
-  ...(verifiedDtcGold as Record<string, Partial<OBD2Code>>)
+  ...(verifiedDtcGold as Record<string, Partial<OBD2Code>>),
+  ...(verifiedDtcGoldBatch02 as Record<string, Partial<OBD2Code>>)
 };
 
 export const codes = mergedBaseCodes;

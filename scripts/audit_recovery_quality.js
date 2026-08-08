@@ -8,7 +8,8 @@ const LOCALES = new Set(['en', 'de', 'es', 'tr', 'fr']);
 
 const rawBaseCodes = require(path.join(ROOT, 'src/data/base_codes.json'));
 const verifiedDtcGold = require(path.join(ROOT, 'src/data/verified_dtc_gold.json'));
-const baseCodes = { ...rawBaseCodes, ...verifiedDtcGold };
+const verifiedDtcGoldBatch02 = require(path.join(ROOT, 'src/data/verified_dtc_gold_batch02.json'));
+const baseCodes = { ...rawBaseCodes, ...verifiedDtcGold, ...verifiedDtcGoldBatch02 };
 const validRoutes = require(path.join(ROOT, 'src/data/valid_routes.json'));
 const gscOpportunities = require(path.join(ROOT, 'src/data/generated/gsc-opportunities.json'));
 const vehicleSpecs = require(path.join(ROOT, 'src/data/generated/vehicle-specs.json'));

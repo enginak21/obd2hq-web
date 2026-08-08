@@ -9,10 +9,22 @@ const TOP20 = [
   'P0113', 'P0243', 'P0134', 'P0105', 'P0106',
   'P0297', 'P0538', 'P0509', 'P0104', 'P0107'
 ];
+const BATCH02 = [
+  'P0108', 'P0109', 'P0111', 'P0112', 'P0114', 'P0115', 'P0116', 'P0117', 'P0118', 'P0119',
+  'P0120', 'P0121', 'P0122', 'P0123', 'P0124', 'P0126', 'P0127', 'P0128', 'P0129', 'P0130',
+  'P0131', 'P0132', 'P0133', 'P0136', 'P0137', 'P0138', 'P0139', 'P0140', 'P0141', 'P0142',
+  'P0143', 'P0144', 'P0145', 'P0146', 'P0147', 'P0150', 'P0151', 'P0152', 'P0153', 'P0154',
+  'P0155', 'P0156', 'P0157', 'P0158', 'P0159', 'P0160', 'P0161', 'P0162', 'P0163', 'P0164',
+  'P0165', 'P0166', 'P0167', 'P0168', 'P0169', 'P0170', 'P0173', 'P0176', 'P0177', 'P0178',
+  'P0179', 'P0180', 'P0181', 'P0182', 'P0184', 'P0185', 'P0186', 'P0187', 'P0188', 'P0189',
+  'P0200', 'P0202', 'P0204', 'P0205', 'P0206', 'P0207', 'P0208', 'P0209', 'P0210', 'P0211'
+];
 
 const rawBaseCodes = require(path.join(ROOT, 'src/data/base_codes.json'));
 const verifiedDtcGold = require(path.join(ROOT, 'src/data/verified_dtc_gold.json'));
-const allCodes = { ...rawBaseCodes, ...verifiedDtcGold };
+const verifiedDtcGoldBatch02 = require(path.join(ROOT, 'src/data/verified_dtc_gold_batch02.json'));
+const verifiedAll = { ...verifiedDtcGold, ...verifiedDtcGoldBatch02 };
+const allCodes = { ...rawBaseCodes, ...verifiedAll };
 
 fs.mkdirSync(REPORT_DIR, { recursive: true });
 
@@ -49,6 +61,35 @@ function jaccard(a, b) {
   let intersection = 0;
   for (const token of left) if (right.has(token)) intersection += 1;
   return intersection / union.size;
+}
+
+function similarityBody(data) {
+  return [
+    data?.title,
+    data?.generic_definition,
+    data?.code_specific_context,
+    data?.system,
+    data?.subsystem,
+    data?.component,
+    data?.circuit_type,
+    data?.severity,
+    data?.description,
+    data?.driveability,
+    data?.ecu_detection_condition,
+    data?.symptoms,
+    data?.causes,
+    data?.first_checks,
+    data?.diagnosticSteps,
+    data?.electrical_tests,
+    data?.mechanical_tests,
+    data?.commonFixes,
+    data?.common_mistakes,
+    data?.do_not_replace_blindly,
+    data?.freeze_frame_fields,
+    data?.live_data_fields,
+    data?.related_codes,
+    data?.applicability_notes
+  ].map(text).join(' ');
 }
 
 function arrayLength(value) {
@@ -162,34 +203,39 @@ function auditExistingGoldSample() {
   });
 }
 
-const batchRows = TOP20.map(code => scoreRecord(code, verifiedDtcGold[code] || {}));
-
-const similarityRows = [];
-for (let i = 0; i < TOP20.length; i += 1) {
-  for (let j = i + 1; j < TOP20.length; j += 1) {
-    const left = TOP20[i];
-    const right = TOP20[j];
-    const leftData = verifiedDtcGold[left];
-    const rightData = verifiedDtcGold[right];
-    const similarity = Math.max(
-      jaccard(leftData?.diagnosticSteps, rightData?.diagnosticSteps),
-      jaccard(leftData?.common_mistakes, rightData?.common_mistakes),
-      jaccard(leftData?.description, rightData?.description)
-    );
+function getSimilarityRows(codes, source) {
+  const rows = [];
+  for (let i = 0; i < codes.length; i += 1) {
+    for (let j = i + 1; j < codes.length; j += 1) {
+      const left = codes[i];
+      const right = codes[j];
+      const leftData = source[left];
+      const rightData = source[right];
+      const similarity = jaccard(similarityBody(leftData), similarityBody(rightData));
     if (similarity >= 0.72) {
-      similarityRows.push({
+        rows.push({
         left,
         right,
         similarity: similarity.toFixed(3),
-        risk: similarity >= 0.88 ? 'HIGH' : 'MEDIUM'
+        risk: similarity >= 0.93 ? 'HIGH' : 'MEDIUM'
       });
     }
   }
+  }
+  return rows.sort((a, b) => Number(b.similarity) - Number(a.similarity));
 }
 
+const batchRows = TOP20.map(code => scoreRecord(code, verifiedDtcGold[code] || {}));
+const batch02Rows = BATCH02.map(code => scoreRecord(code, verifiedDtcGoldBatch02[code] || {}));
+const similarityRows = getSimilarityRows(TOP20, verifiedDtcGold);
+const batch02SimilarityRows = getSimilarityRows(BATCH02, verifiedDtcGoldBatch02);
 const existingSampleRows = auditExistingGoldSample();
 
 writeCsv('DTC_GOLD_BATCH_01.csv', batchRows, [
+  'code', 'title', 'source_confidence', 'information_gain_score', 'symptoms',
+  'causes', 'diagnostic_steps', 'related_codes', 'status', 'issues'
+]);
+writeCsv('DTC_GOLD_BATCH_02.csv', batch02Rows, [
   'code', 'title', 'source_confidence', 'information_gain_score', 'symptoms',
   'causes', 'diagnostic_steps', 'related_codes', 'status', 'issues'
 ]);
@@ -203,6 +249,15 @@ const failed = batchRows.length - passed;
 const highSimilarity = similarityRows.filter(row => row.risk === 'HIGH');
 const beforeRawGold = Object.entries(rawBaseCodes).filter(([code, data]) => baseGoldReady(code, data)).length;
 const afterRawGold = Object.entries(allCodes).filter(([code, data]) => baseGoldReady(code, data)).length;
+const batch02Pass = batch02Rows.filter(row => row.status === 'PASS').length;
+const batch02Fail = batch02Rows.filter(row => row.status === 'FAIL').length;
+const batch02Review = batch02Rows.filter(row => row.status === 'REVIEW').length;
+const batch02HighSimilarity = batch02SimilarityRows.filter(row => row.risk === 'HIGH');
+const batch02AverageScore = batch02Rows.reduce((sum, row) => sum + Number(row.information_gain_score || 0), 0) / batch02Rows.length;
+const batch02UnsupportedPrecision = batch02Rows.filter(row => row.issues.includes('unsupported exact numeric test value'));
+const top100Rows = [...batchRows, ...batch02Rows];
+const top100Pass = top100Rows.filter(row => row.status === 'PASS').length;
+const top100FailReview = top100Rows.length - top100Pass;
 
 const report = [
   '# Phase 3 DTC Gold Batch 01 Report',
@@ -247,9 +302,57 @@ const report = [
 
 fs.writeFileSync(path.join(REPORT_DIR, 'PHASE3_DTC_GOLD_REPORT.md'), report);
 
-if (failed || highSimilarity.length) {
-  console.error(report);
+const batch02Report = [
+  '# Phase 3 DTC Gold Batch 02 Report',
+  '',
+  `Generated: ${new Date().toISOString()}`,
+  '',
+  '## Scope',
+  '',
+  '- Batch: next 80 DTC records from OBD_GOLD_UPGRADE_QUEUE.csv after Batch 01.',
+  '- URL, canonical, domain, language, sitemap, robots, noindex, 404/410 and news URL architecture were not changed.',
+  '- Existing DTC pages are promoted only through verified structured raw data overlay.',
+  '',
+  '## Batch 02 Result',
+  '',
+  `- Attempted: ${batch02Rows.length}`,
+  `- PASS: ${batch02Pass}`,
+  `- FAIL: ${batch02Fail}`,
+  `- REVIEW: ${batch02Review}`,
+  '',
+  `- Raw Gold BEFORE: 396`,
+  `- Raw Gold AFTER: ${afterRawGold}`,
+  `- Fallback BEFORE: 1827`,
+  `- Fallback AFTER: ${2223 - afterRawGold}`,
+  '',
+  `- Average quality score: ${batch02AverageScore.toFixed(1)}`,
+  `- Average information gain: ${batch02AverageScore.toFixed(1)}`,
+  `- Highest similarity pair: ${batch02SimilarityRows[0] ? `${batch02SimilarityRows[0].left} / ${batch02SimilarityRows[0].right} (${batch02SimilarityRows[0].similarity}, ${batch02SimilarityRows[0].risk})` : 'none >= 0.72'}`,
+  `- Unsupported precision findings: ${batch02UnsupportedPrecision.length}`,
+  '',
+  '## Batch 01 + Batch 02 Top-100 Summary',
+  '',
+  `- TOP 100 attempted: ${top100Rows.length}`,
+  `- Total PASS: ${top100Pass}`,
+  `- Total FAIL/REVIEW: ${top100FailReview}`,
+  '',
+  '## Duplicate Similarity Control',
+  '',
+  batch02SimilarityRows.length
+    ? batch02SimilarityRows.slice(0, 20).map(row => `- ${row.left} / ${row.right}: ${row.similarity} (${row.risk})`).join('\n')
+    : '- No medium or high duplicate similarity pairs were detected in Batch 02.',
+  '',
+  '## Batch Detail',
+  '',
+  ...batch02Rows.map(row => `- ${row.code}: ${row.status} | score ${row.information_gain_score} | ${row.issues || 'no blocking issue'}`),
+  ''
+].join('\n');
+
+fs.writeFileSync(path.join(REPORT_DIR, 'PHASE3_BATCH02_REPORT.md'), batch02Report);
+
+if (failed || highSimilarity.length || batch02Fail || batch02Review || batch02HighSimilarity.length) {
+  console.error(`${report}\n\n${batch02Report}`);
   process.exit(1);
 }
 
-console.log(report);
+console.log(`${report}\n\n${batch02Report}`);

@@ -153,88 +153,88 @@ P0104,yes,no,82,low,0,0,Use as gold code hub source.
 P0105,yes,no,83,low,11,0,Use as gold code hub source.
 P0106,yes,no,83,low,10,0,Use as gold code hub source.
 P0107,yes,no,82,low,0,0,Use as gold code hub source.
-P0108,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0109,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0108,yes,no,82,low,0,0,Use as gold code hub source.
+P0109,yes,no,82,low,0,0,Use as gold code hub source.
 P0110,yes,no,85,low,51,0,Use as gold code hub source.
-P0111,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0112,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0111,yes,no,82,low,0,0,Use as gold code hub source.
+P0112,yes,no,82,low,0,0,Use as gold code hub source.
 P0113,yes,no,83,low,25,0,Use as gold code hub source.
-P0114,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0115,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0116,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0117,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0118,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0119,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0120,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0121,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0122,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0123,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0124,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0114,yes,no,82,low,0,0,Use as gold code hub source.
+P0115,yes,no,82,low,0,0,Use as gold code hub source.
+P0116,yes,no,82,low,0,0,Use as gold code hub source.
+P0117,yes,no,82,low,0,0,Use as gold code hub source.
+P0118,yes,no,82,low,0,0,Use as gold code hub source.
+P0119,yes,no,82,low,0,0,Use as gold code hub source.
+P0120,yes,no,82,low,0,0,Use as gold code hub source.
+P0121,yes,no,82,low,0,0,Use as gold code hub source.
+P0122,yes,no,82,low,0,0,Use as gold code hub source.
+P0123,yes,no,82,low,0,0,Use as gold code hub source.
+P0124,yes,no,82,low,0,0,Use as gold code hub source.
 P0125,yes,no,84,low,40,0,Use as gold code hub source.
-P0126,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0127,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0128,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0129,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0130,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0131,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0132,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0133,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0126,yes,no,82,low,0,0,Use as gold code hub source.
+P0127,yes,no,82,low,0,0,Use as gold code hub source.
+P0128,yes,no,82,low,0,0,Use as gold code hub source.
+P0129,yes,no,82,low,0,0,Use as gold code hub source.
+P0130,yes,no,82,low,0,0,Use as gold code hub source.
+P0131,yes,no,82,low,0,0,Use as gold code hub source.
+P0132,yes,no,82,low,0,0,Use as gold code hub source.
+P0133,yes,no,82,low,0,0,Use as gold code hub source.
 P0134,yes,no,83,low,18,0,Use as gold code hub source.
 P0135,yes,no,83,low,29,0,Use as gold code hub source.
-P0136,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0137,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0138,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0139,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0140,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0141,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0142,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0143,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0144,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0145,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0146,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0147,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0136,yes,no,82,low,0,0,Use as gold code hub source.
+P0137,yes,no,82,low,0,0,Use as gold code hub source.
+P0138,yes,no,82,low,0,0,Use as gold code hub source.
+P0139,yes,no,82,low,0,0,Use as gold code hub source.
+P0140,yes,no,82,low,0,0,Use as gold code hub source.
+P0141,yes,no,82,low,0,0,Use as gold code hub source.
+P0142,yes,no,82,low,0,0,Use as gold code hub source.
+P0143,yes,no,82,low,0,0,Use as gold code hub source.
+P0144,yes,no,82,low,0,0,Use as gold code hub source.
+P0145,yes,no,82,low,0,0,Use as gold code hub source.
+P0146,yes,no,82,low,0,0,Use as gold code hub source.
+P0147,yes,no,82,low,0,0,Use as gold code hub source.
 P0148,yes,no,82,low,0,0,Use as gold code hub source.
 P0149,yes,no,82,low,0,0,Use as gold code hub source.
-P0150,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0151,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0152,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0153,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0154,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0155,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0156,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0157,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0158,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0159,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0160,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0161,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0162,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0163,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0164,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0165,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0166,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0167,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0168,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0169,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0170,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0150,yes,no,82,low,0,0,Use as gold code hub source.
+P0151,yes,no,82,low,0,0,Use as gold code hub source.
+P0152,yes,no,82,low,0,0,Use as gold code hub source.
+P0153,yes,no,82,low,0,0,Use as gold code hub source.
+P0154,yes,no,82,low,0,0,Use as gold code hub source.
+P0155,yes,no,82,low,0,0,Use as gold code hub source.
+P0156,yes,no,82,low,0,0,Use as gold code hub source.
+P0157,yes,no,82,low,0,0,Use as gold code hub source.
+P0158,yes,no,82,low,0,0,Use as gold code hub source.
+P0159,yes,no,82,low,0,0,Use as gold code hub source.
+P0160,yes,no,82,low,0,0,Use as gold code hub source.
+P0161,yes,no,82,low,0,0,Use as gold code hub source.
+P0162,yes,no,82,low,0,0,Use as gold code hub source.
+P0163,yes,no,82,low,0,0,Use as gold code hub source.
+P0164,yes,no,82,low,0,0,Use as gold code hub source.
+P0165,yes,no,82,low,0,0,Use as gold code hub source.
+P0166,yes,no,82,low,0,0,Use as gold code hub source.
+P0167,yes,no,82,low,0,0,Use as gold code hub source.
+P0168,yes,no,82,low,0,0,Use as gold code hub source.
+P0169,yes,no,82,low,0,0,Use as gold code hub source.
+P0170,yes,no,82,low,0,0,Use as gold code hub source.
 P0171,yes,no,82,low,0,0,Use as gold code hub source.
 P0172,yes,no,83,low,17,0,Use as gold code hub source.
-P0173,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0173,yes,no,82,low,0,0,Use as gold code hub source.
 P0174,yes,no,82,low,0,0,Use as gold code hub source.
 P0175,yes,no,82,low,0,0,Use as gold code hub source.
-P0176,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0177,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0178,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0179,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0180,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0181,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0182,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0176,yes,no,82,low,0,0,Use as gold code hub source.
+P0177,yes,no,82,low,0,0,Use as gold code hub source.
+P0178,yes,no,82,low,0,0,Use as gold code hub source.
+P0179,yes,no,82,low,0,0,Use as gold code hub source.
+P0180,yes,no,82,low,0,0,Use as gold code hub source.
+P0181,yes,no,82,low,0,0,Use as gold code hub source.
+P0182,yes,no,82,low,0,0,Use as gold code hub source.
 P0183,yes,no,84,low,37,0,Use as gold code hub source.
-P0184,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0185,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0186,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0187,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0188,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0189,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0184,yes,no,82,low,0,0,Use as gold code hub source.
+P0185,yes,no,82,low,0,0,Use as gold code hub source.
+P0186,yes,no,82,low,0,0,Use as gold code hub source.
+P0187,yes,no,82,low,0,0,Use as gold code hub source.
+P0188,yes,no,82,low,0,0,Use as gold code hub source.
+P0189,yes,no,82,low,0,0,Use as gold code hub source.
 P0190,yes,no,82,low,0,0,Use as gold code hub source.
 P0191,yes,no,82,low,0,0,Use as gold code hub source.
 P0192,yes,no,82,low,0,0,Use as gold code hub source.
@@ -245,18 +245,18 @@ P0196,yes,no,82,low,0,0,Use as gold code hub source.
 P0197,yes,no,82,low,0,0,Use as gold code hub source.
 P0198,yes,no,82,low,0,0,Use as gold code hub source.
 P0199,yes,no,82,low,0,0,Use as gold code hub source.
-P0200,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0200,yes,no,82,low,0,0,Use as gold code hub source.
 P0201,yes,no,83,low,24,0,Use as gold code hub source.
-P0202,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0202,yes,no,82,low,0,0,Use as gold code hub source.
 P0203,yes,no,84,low,46,1,Use as gold code hub source.
-P0204,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0205,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0206,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0207,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0208,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0209,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0210,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
-P0211,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
+P0204,yes,no,82,low,0,0,Use as gold code hub source.
+P0205,yes,no,82,low,0,0,Use as gold code hub source.
+P0206,yes,no,82,low,0,0,Use as gold code hub source.
+P0207,yes,no,82,low,0,0,Use as gold code hub source.
+P0208,yes,no,82,low,0,0,Use as gold code hub source.
+P0209,yes,no,82,low,0,0,Use as gold code hub source.
+P0210,yes,no,82,low,0,0,Use as gold code hub source.
+P0211,yes,no,82,low,0,0,Use as gold code hub source.
 P0212,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
 P0213,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.
 P0214,no,yes,58,high,0,0,Upgrade raw record before treating as high-confidence index target.

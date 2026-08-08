@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-08T21:57:14.258Z",
+  "generatedAt": "2026-08-08T22:11:31.422Z",
   "sitemapUrls": 27370,
-  "indexQualityPass": 18190,
-  "indexQualityFail": 9180,
+  "indexQualityPass": 18590,
+  "indexQualityFail": 8780,
   "classifications": {
     "total": 27370,
-    "indexQualityPass": 18190,
-    "indexQualityFail": 9180,
-    "THIN": 9145,
+    "indexQualityPass": 18590,
+    "indexQualityFail": 8780,
+    "THIN": 8745,
     "UTILITY": 35,
-    "SILVER": 6290,
+    "SILVER": 6690,
     "GOLD": 11900
   },
   "fallbackSummary": {
     "total": 2223,
-    "rawGold": 396,
-    "fallback": 1827,
-    "highSimilarityRisk": 1827,
+    "rawGold": 476,
+    "fallback": 1747,
+    "highSimilarityRisk": 1747,
     "withImpressions": 24,
     "withClicks": 4
   },

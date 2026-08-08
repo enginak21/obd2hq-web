@@ -1,6 +1,6 @@
 # OBD2HQ Phase 2 Recovery Report
 
-Generated: 2026-08-08T21:57:19.486Z
+Generated: 2026-08-08T22:11:37.454Z
 
 Canonical/domain/URL structure changes made: 0
 
@@ -26,19 +26,19 @@ Fallback OBD: 1,847
 
 Gold: 11900
 
-Silver: 6290
+Silver: 6690
 
-Thin: 9145
+Thin: 8745
 
-Raw Gold OBD: 396
+Raw Gold OBD: 476
 
-Fallback OBD: 1827
+Fallback OBD: 1747
 
 ## Thin Page Distribution
 
-- code_hub: 9135 (99.89%) - Runtime fallback supports the page, but raw code data is not gold-ready yet.
-- other: 5 (0.05%) - Unclassified or low-signal page type.
-- vehicle_spec: 5 (0.05%) - Vehicle spec URL has no matching local generated spec record.
+- code_hub: 8735 (99.89%) - Runtime fallback supports the page, but raw code data is not gold-ready yet.
+- other: 5 (0.06%) - Unclassified or low-signal page type.
+- vehicle_spec: 5 (0.06%) - Vehicle spec URL has no matching local generated spec record.
 
 Main finding: thin pages are overwhelmingly concentrated in the fallback code hub template, not spread evenly across the whole site.
 
@@ -48,16 +48,16 @@ The file `OBD_GOLD_UPGRADE_QUEUE.csv` contains the first 100 fallback codes rank
 
 Top 10:
 
-- P0108: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0109: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0111: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0112: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0114: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0115: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0116: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0117: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0118: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
-- P0119: score 60, system sensor_air_fuel_o2, impressions 0, clicks 0
+- P0212: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0213: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0214: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0215: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0218: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0219: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0220: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0221: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0222: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
+- P0223: score 60, system injector_cylinder_fuel_control, impressions 0, clicks 0
 
 ## Information Gain Policy
 

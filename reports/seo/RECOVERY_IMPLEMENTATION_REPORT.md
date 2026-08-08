@@ -1,6 +1,6 @@
 # OBD2HQ Recovery Implementation Report
 
-Generated: 2026-08-08T21:57:14.257Z
+Generated: 2026-08-08T22:11:31.420Z
 
 ## Recovery Scope
 
@@ -11,18 +11,18 @@ This implementation adds recovery guards and quality reporting without bulk-remo
 | Metric | Before | After / Current |
 |---|---:|---:|
 | Sitemap URLs | 27,370 observed in live sitemap | 27370 audited |
-| Index quality pass candidates | unknown | 18190 |
-| Index quality fail/review candidates | unknown | 9180 |
+| Index quality pass candidates | unknown | 18590 |
+| Index quality fail/review candidates | unknown | 8780 |
 | Gold URLs | unknown | 11900 |
-| Silver URLs | unknown | 6290 |
-| Thin URLs | unknown | 9145 |
+| Silver URLs | unknown | 6690 |
+| Thin URLs | unknown | 8745 |
 | Duplicate URLs | unknown | 0 |
 | Invalid URLs | unknown | 0 |
 | Utility/no-ranking URLs | unknown | 35 |
 | OBD codes | 2,223 | 2223 audited |
-| Raw-gold OBD codes | 376 | 396 |
-| Runtime fallback OBD codes | 1,847 | 1827 |
-| Fallback high similarity risk | unknown | 1827 |
+| Raw-gold OBD codes | 376 | 476 |
+| Runtime fallback OBD codes | 1,847 | 1747 |
+| Fallback high similarity risk | unknown | 1747 |
 | Fallback codes with GSC impressions | unknown | 24 |
 | Fallback codes with GSC clicks | unknown | 4 |
 | Vehicle + DTC URLs | 110 | 110 audited |
