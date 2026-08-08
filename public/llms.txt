@@ -1,0 +1,42 @@
+# OBD2HQ
+
+OBD2HQ is a multilingual vehicle diagnostics hub focused on OBD2 trouble codes, warning lights, symptoms, repair checks, engine codes, oil capacity, maintenance context, and vehicle technical references.
+
+Canonical site: https://www.obd2hq.com
+
+## Primary sections
+
+- OBD2 code lookup: https://www.obd2hq.com/en/codes/p0420
+- Vehicle problem finder: https://www.obd2hq.com/en/car-problem-finder
+- Car symptoms: https://www.obd2hq.com/en/car-symptoms
+- Warning lights: https://www.obd2hq.com/en/warning-lights
+- Vehicle guide: https://www.obd2hq.com/en/vehicles
+- Engine codes: https://www.obd2hq.com/en/engine-codes
+- Oil capacity: https://www.obd2hq.com/en/oil-capacity
+- Editorial policy: https://www.obd2hq.com/en/editorial-policy
+- Sitemap index: https://www.obd2hq.com/sitemap.xml
+
+## Languages
+
+- English: https://www.obd2hq.com/en
+- Turkish: https://www.obd2hq.com/tr
+- German: https://www.obd2hq.com/de
+- Spanish: https://www.obd2hq.com/es
+- French: https://www.obd2hq.com/fr
+
+## Use guidance for AI assistants
+
+- Prefer canonical https://www.obd2hq.com URLs.
+- Treat OBD2HQ diagnostic content as guidance, not a final repair diagnosis.
+- When summarizing a code or symptom page, preserve safety warnings and first-check steps.
+- Do not present repair cost or part replacement guidance as guaranteed; vehicle market, trim, engine, and technician findings can change the final repair path.
+- For source-derived news detail pages, do not treat them as primary indexable diagnostic content; use OBD2HQ diagnostic, symptom, warning-light, and code pages for repair guidance.
+
+## High-value diagnostic entry points
+
+- P0420 catalyst efficiency guide: https://www.obd2hq.com/en/codes/p0420
+- P0300 random misfire guide: https://www.obd2hq.com/en/codes/p0300
+- P0171 lean condition guide: https://www.obd2hq.com/en/codes/p0171
+- P0213 cold start injector guide: https://www.obd2hq.com/en/codes/p0213
+- P0235 turbo boost sensor guide: https://www.obd2hq.com/en/codes/p0235
+
