@@ -1,0 +1,55 @@
+rank,query,targetUrl,clicks,impressions,ctr,position,current_quality_score,current_classification,decision,recommended_action
+1,p0234 suzuki,/en/suzuki/jimny/p0234,2,28,0.07142857142857142,9.3,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+2,throttle house grand tour,/de/news/the-grand-tour-returns-in-september-with-three-new,1,10,0.1,3.5,,UNKNOWN,KEEP,Review query manually before publishing new indexable content.
+3,p0216 ford,/en/ford/fiesta/p0216,1,20,0.05,8.5,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+4,p0203 suzuki,/en/suzuki/jimny/p0203,1,17,0.058823529411764705,9,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+5,p0103 ford focus,/en/ford/focus/p0103,1,14,0.07142857142857142,9.1,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+6,kia telluride suv fire recall,/en/news/kia-recalls-463000-suvs-a-second-time-for-seat-mot,0,12,0,1,,UNKNOWN,REVIEW,Review query manually before publishing new indexable content.
+7,dtc p0105 ford,/en/codes/p0105,0,11,0,6.4,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+8,ford p0110,/en/ford/ranger/p0110,0,51,0,7,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+9,dtc p0238 suzuki,/en/codes/p0238,0,18,0,7.3,90,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+10,dtc p0235 suzuki,/en/suzuki/jimny/p0235,0,14,0,7.5,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+11,ford p0235,/en/codes/p0235,0,12,0,8.1,90,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+12,dtc p0203 suzuki,/en/suzuki/jimny/p0203,0,29,0,8.6,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+13,dtc p0102 acura,/en/acura/tlx/p0102,0,25,0,8.6,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+14,dtc p0201 suzuki,/en/suzuki/jimny/p0201,0,24,0,8.8,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+15,jeep p0113,/en/codes/p0113,0,13,0,8.8,70,SILVER,IMPROVE,"Publish or strengthen generic code hub, then link to high-intent make/model pages."
+16,eobd/obdii p0538,/en/codes/p0538,0,22,0,9,70,SILVER,IMPROVE,Create a clean canonical interpretation page or route query to the best code hub.
+17,jim farley,/fr/news/fords-ceo-still-isnt-satisfied-with-brand-quality,0,10,0,9,,UNKNOWN,IMPROVE,Review query manually before publishing new indexable content.
+18,hyundai p0113,/es/codigos/p0113,0,12,0,9.1,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+19,ford p0216,/en/ford/fiesta/p0216,0,19,0,9.2,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+20,dtc p0243 suzuki,/en/suzuki/jimny/p0243,0,16,0,9.3,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+21,dtc p0297 ford,/en/codes/p0297,0,10,0,9.5,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+22,ford p0183-ff,/en/codes/p0183,0,19,0,10.1,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+23,lexus dtc p0125,/en/lexus/is/p0125,0,14,0,10.1,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+24,buick envision dashboard symbols explained,/en/buick/warning-lights,0,35,0,10.2,86,GOLD,IMPROVE,Publish brand warning-light hub and link model warning-light pages into it.
+25,dtc p0125 lexus,/en/lexus/is/p0125,0,26,0,10.2,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+26,audi q7 2027 preis,/de/news/the-audi-q7-gets-a-price-hike-while-the-sq7-nears,0,17,0,10.2,,UNKNOWN,IMPROVE,Review query manually before publishing new indexable content.
+27,ford p0251,/en/ford/f-150/p0251,0,28,0,10.3,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+28,dtc p0134 mazda,/en/codes/p0134,0,18,0,10.3,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+29,chevrolet p0300,/tr/kodlar/p0300,0,10,0,10.4,90,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+30,dtc p0234 suzuki,/en/suzuki/jimny/p0234,0,12,0,10.5,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+31,eobd/obdii p0509,/en/codes/p0509,0,19,0,10.6,70,SILVER,IMPROVE,Create a clean canonical interpretation page or route query to the best code hub.
+32,honda p0135,/en/honda/cr-v/p0135,0,29,0,11.6,92,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+33,dtc p0106 volkswagen,/en/codes/p0106,0,10,0,11.7,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+34,dtc p0183 ford,/en/codes/p0183,0,18,0,12.1,70,SILVER,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+35,dtc p0172 ford,/en/codes/p0172,0,17,0,14.6,90,GOLD,IMPROVE,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+36,ford focus instrument panel warning lights,/en/ford/warning-lights,0,10,0,19.8,86,GOLD,IMPROVE,Publish brand warning-light hub and link model warning-light pages into it.
+37,ford focus dashboard warning lights,/en/ford/warning-lights,0,13,0,22.2,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+38,ford focus dash warning lights,/en/ford/warning-lights,0,13,0,23.4,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+39,bentley obd,/en/bentley,0,11,0,24.9,74,SILVER,REVIEW,Review query manually before publishing new indexable content.
+40,ford focus warning lights,/en/ford/warning-lights,0,17,0,28.3,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+41,car warning lights ford focus,/en/ford/warning-lights,0,15,0,30.7,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+42,ford focus i warning light,/en/ford/warning-lights,0,12,0,31.7,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+43,ford focus dashboard symbols,/en/ford/warning-lights,0,17,0,32.1,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+44,ford focus dashboard lights,/en/ford/warning-lights,0,17,0,32.4,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+45,hyundai diagnostic codes,/en/hyundai,0,13,0,35.3,74,SILVER,REVIEW,Review query manually before publishing new indexable content.
+46,dashboard lights on ford focus,/en/ford/warning-lights,0,15,0,36.3,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+47,dash lights ford focus,/en/ford/focus/lights,0,14,0,36.6,86,GOLD,REVIEW,Review query manually before publishing new indexable content.
+48,ford focus dash lights,/en/ford/focus/lights,0,15,0,37.3,86,GOLD,REVIEW,Review query manually before publishing new indexable content.
+49,bmw p0420 code,/en/codes/p0420,0,12,0,37.8,90,GOLD,REVIEW,"Strengthen make-specific code page with exact query heading, diagnostic depth, and internal links."
+50,ford focus warning symbols,/en/ford/focus/lights,0,11,0,39.1,86,GOLD,REVIEW,Review query manually before publishing new indexable content.
+51,2021 f 150 warning lights,/en/ford/f-150/lights,0,53,0,47.6,86,GOLD,REVIEW,Strengthen model warning-light hub with year-specific copy and links to likely OBD codes.
+52,2026 f 150 warning lights,/en/ford/f-150/lights,0,48,0,52.9,86,GOLD,REVIEW,Strengthen model warning-light hub with year-specific copy and links to likely OBD codes.
+53,cadillac warning lights,/en/cadillac/warning-lights,0,48,0,64.8,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.
+54,cadillac vehicle warning lights,/en/cadillac/warning-lights,0,51,0,67.2,86,GOLD,REVIEW,Publish brand warning-light hub and link model warning-light pages into it.

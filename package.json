@@ -12,6 +12,7 @@
     "check:symptom-content": "node scripts/check_symptom_content_quality.js",
     "check:gsc-seo": "node scripts/check_gsc_seo.js",
     "check:canonical-freeze": "node scripts/check_canonical_freeze.js",
+    "seo:phase2-recovery": "node scripts/phase2_content_recovery.js",
     "seo:plan-urls": "node scripts/plan_seo_urls.js",
     "seo:recovery-audit": "node scripts/audit_recovery_quality.js",
     "check:seo-url-plan": "node scripts/check_seo_url_plan.js",
