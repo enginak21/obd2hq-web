@@ -19,6 +19,8 @@ NEWS_DIR = os.path.join(os.path.dirname(__file__), "..", "src", "data", "news")
 
 os.makedirs(NEWS_DIR, exist_ok=True)
 
+MAX_DAILY_MASTER = 3
+
 RSS_FEEDS = [
     "https://www.autoblog.com/category/news/rss.xml",
     "https://www.motor1.com/rss/news/all/"
@@ -46,7 +48,6 @@ def call_gemini(prompt, temperature=0.7):
             result = json.loads(response.read().decode('utf-8'))
             text = result['candidates'][0]['content']['parts'][0]['text'].strip()
             
-            # Clean Markdown JSON wrappers
             if text.startswith('```json'): text = text[7:]
             if text.startswith('```'): text = text[3:]
             if text.endswith('```'): text = text[:-3]
@@ -78,9 +79,8 @@ def get_existing_news_titles():
     return existing
 
 def check_topical_relevance(title, description):
-    prompt = f"""Evaluate if this news article is highly relevant to an OBD2, vehicle diagnostics, automotive technology, and car repair website.
-    Relevant topics: OBD, ECU, diagnostics, vehicle repair, recalls, engine tech, EV/hybrid diagnostics, emissions, sensors, ADAS, major tech developments.
-    Irrelevant topics: General gossip, politics, sports, crypto, general phones/gaming, celebrity cars, finance, standard car reviews without deep tech focus.
+    prompt = f"""Evaluate if this news article is strictly relevant to the topical authority of OBD2HQ (OBD2, vehicle diagnostics, automotive repair technology, ECU, engine tech, emissions, sensors, ADAS, EVs, hybrid diagnostics, major automotive technical developments, recalls).
+    General automotive news (just mentioning a car), gossip, sports, crypto, finance, or generic phone/gaming tech MUST be rejected.
     
     Title: {title}
     Snippet: {description}
@@ -97,13 +97,13 @@ def check_duplicate(title, existing_titles):
         return False
         
     recent_titles = [e['title'] for e in existing_titles[-30:]]
-    prompt = f"""Compare the NEW article against the EXISTING articles to check if it covers the exact same event, announcement, or subject.
+    prompt = f"""Compare the NEW article against the EXISTING articles to check if it covers the exact same event (Same-Event Clustering) or has deep semantic similarity (announcing the same product/recall/tech).
     NEW Title: {title}
     
     EXISTING Titles:
     {json.dumps(recent_titles, indent=2)}
     
-    Return strictly JSON: {{"is_duplicate": boolean}}
+    Return strictly JSON: {{"is_duplicate": boolean, "reason": "short explanation"}}
     """
     res = call_gemini(prompt, 0.1)
     if res and isinstance(res, dict):
@@ -111,16 +111,16 @@ def check_duplicate(title, existing_titles):
     return False
 
 def generate_english_master(title, description, source_url):
-    prompt = f"""Write a highly professional, factual, and deeply informative English master article based on this snippet.
+    prompt = f"""Write a highly factual, Information-Gain focused English master article based on this snippet.
     Title: {title}
     Source URL: {source_url}
     Snippet: {description}
     
-    CRITICAL QUALITY RULES:
-    1. Information Gain: Extract actual facts. Do not just spin words. Add relevant context about OBD2, automotive technology, or diagnostic implications if applicable. Do NOT invent facts.
-    2. Source Attribution: Acknowledge the source naturally (e.g., "According to reports...", "As recently detailed...").
-    3. NO BOILERPLATE: Absolutely no copy-paste sentences like "Does this affect service access". Write from scratch.
-    4. Length: 4 to 5 rich paragraphs.
+    CRITICAL QUALITY RULES (SAFE MODE):
+    1. Information Gain: Extract verifiable facts. Add relevant OBD2HQ context. Do not invent facts not in the source.
+    2. Source Attribution: Clearly attribute the source (do not hide it) but do not use long direct quotes.
+    3. Template Protection: DO NOT use repetitive structures (e.g. "In this article, we will explore...", "The practical question is...", "Conclusion:"). 
+    4. Write naturally, as if analyzing the event freshly without boilerplate intros or forced FAQs.
     
     Return strictly JSON:
     {{
@@ -130,14 +130,14 @@ def generate_english_master(title, description, source_url):
         "category": "choose one: brand_news, modified_cars, chronic_issues, industry_news"
     }}
     """
-    return call_gemini(prompt, 0.7)
+    return call_gemini(prompt, 0.6)
 
 def check_quality_gate(en_data):
     prompt = f"""Rate the quality of this automotive news article on a scale of 0 to 100.
     Criteria:
-    - Information Gain & Factual Confidence (Does it sound real and informative?)
-    - Source/News Value (Is it a meaningful update?)
-    - No Boilerplate/Spam (Does it read like a premium article, free of repetitive AI fluff?)
+    - Fact Consistency & Information Gain: Does it provide real value and verifiable facts?
+    - Template Phrase Repetition: Check if the text sounds like generic AI boilerplate or repeats cliche structures. If it does, score it very low.
+    - Original Structure: Does it read like a genuine, uniquely structured news report?
     
     Article Title: {en_data['title']}
     Article Content: {en_data['content']}
@@ -170,17 +170,15 @@ def translate_article(en_data):
 def fetch_and_process():
     print(f"Starting Quality-First Daily News Bot at {datetime.now(timezone.utc).isoformat()}...")
     existing_news = get_existing_news_titles()
-    print(f"Loaded {len(existing_news)} existing articles for duplicate checking.")
     
     discovered = []
     for feed_url in RSS_FEEDS:
-        print(f"Fetching {feed_url}...")
         try:
             req = urllib.request.Request(feed_url, headers={'User-Agent': 'Mozilla/5.0'})
             response = urllib.request.urlopen(req)
             xml_data = response.read()
             root = ET.fromstring(xml_data)
-            for item in root.findall('.//item')[:20]: # Check up to 20 items per feed
+            for item in root.findall('.//item')[:15]: 
                 title = item.find('title').text if item.find('title') is not None else ''
                 link = item.find('link').text if item.find('link') is not None else ''
                 description = item.find('description').text if item.find('description') is not None else ''
@@ -197,49 +195,39 @@ def fetch_and_process():
                 slug = slugify(title)[:60].strip('-')
                 discovered.append({'title': title, 'link': link, 'description': description, 'slug': slug, 'image_url': image_url})
         except Exception as e:
-            print(f"Error reading RSS: {e}")
+            pass
             
-    print(f"Discovered {len(discovered)} items.")
-    
     published_count = 0
     for item in discovered:
+        if published_count >= MAX_DAILY_MASTER:
+            print(f"Max daily limit of {MAX_DAILY_MASTER} reached. Stopping.")
+            break
+            
         print(f"\n--- Processing: {item['title']} ---")
         
-        # 1. Topical Check
         is_relevant, reason = check_topical_relevance(item['title'], item['description'])
         if not is_relevant:
             print(f"REJECTED: Off-topic ({reason})")
             continue
             
-        # 2. Duplicate Check
         if check_duplicate(item['title'], existing_news):
-            print("REJECTED: Duplicate event/subject.")
+            print("REJECTED: Same-Event / Semantic Duplicate.")
             continue
             
-        print("PASSED Topical & Duplicate filters. Generating Master EN...")
-        
-        # 3. Gen Master
         en_master = generate_english_master(item['title'], item['description'], item['link'])
         if not en_master:
-            print("FAILED to generate Master EN.")
             continue
             
-        # 4. Quality Gate
         score, q_reason = check_quality_gate(en_master)
         print(f"Quality Score: {score}/100. Reason: {q_reason}")
         if score < 80:
             print("REJECTED: Failed Quality Gate.")
             continue
             
-        print("PASSED Quality Gate. Translating...")
-        
-        # 5. Translate
         final_translations = translate_article(en_master)
         if not final_translations:
-            print("FAILED Translation.")
             continue
             
-        # Compile final JSON
         final_data = {
             "id": item['slug'],
             "date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -259,32 +247,41 @@ def fetch_and_process():
         published_count += 1
         existing_news.append({"slug": item['slug'], "title": en_master['title']})
         
-        time.sleep(5) # Rate limit protection
+        time.sleep(5) 
 
-    print(f"\nWorkflow complete. Discovered: {len(discovered)}, Published: {published_count}")
     return len(discovered), published_count
 
 def git_sync_and_push():
-    print("\nStarting Git Conflict Protection Sync...")
+    print("\nStarting Git Agent Conflict Protection Sync...")
     os.system("git config --global user.name 'AI Quality Bot'")
     os.system("git config --global user.email 'bot@example.com'")
     
-    # Pre-sync
-    os.system("git fetch")
-    os.system("git pull --rebase origin main")
+    res_fetch = os.system("git fetch")
+    if res_fetch != 0:
+        print("Git fetch failed. Aborting push to avoid conflicts.")
+        sys.exit(1)
+        
+    res_pull = os.system("git pull --rebase origin main")
+    if res_pull != 0:
+        print("Git pull rebase failed. Conflict detected. Aborting to let another agent resolve.")
+        os.system("git rebase --abort")
+        sys.exit(1)
     
-    # Check changes
     if os.system("git diff --quiet") == 0 and os.system("git diff --staged --quiet") == 0 and os.system("git ls-files --others --exclude-standard") == "":
         print("No new articles to commit.")
         return
         
     os.system("git add src/data/news/*.json")
-    os.system("git commit -m 'feat(news): Auto-publish quality-checked news'")
+    os.system("git commit -m 'feat(news): Auto-publish safe mode quality-checked news'")
     
-    # Final pull before push to avoid conflict
-    os.system("git pull --rebase origin main")
-    res = os.system("git push origin main")
-    if res == 0:
+    # Final pull before push to avoid tiny race conditions
+    res_final_pull = os.system("git pull --rebase origin main")
+    if res_final_pull != 0:
+         os.system("git rebase --abort")
+         sys.exit(1)
+         
+    res_push = os.system("git push origin main")
+    if res_push == 0:
         print("Successfully pushed high-quality news to production.")
     else:
         print("Push failed. Check git logs.")
