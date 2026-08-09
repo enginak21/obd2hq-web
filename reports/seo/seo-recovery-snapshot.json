@@ -1,23 +1,22 @@
 {
-  "generatedAt": "2026-08-08T22:11:31.422Z",
-  "sitemapUrls": 27370,
+  "generatedAt": "2026-08-09T04:25:15.339Z",
+  "sitemapUrls": 18600,
   "indexQualityPass": 18590,
-  "indexQualityFail": 8780,
+  "indexQualityFail": 10,
   "classifications": {
-    "total": 27370,
+    "total": 18600,
     "indexQualityPass": 18590,
-    "indexQualityFail": 8780,
-    "THIN": 8745,
-    "UTILITY": 35,
-    "SILVER": 6690,
-    "GOLD": 11900
+    "indexQualityFail": 10,
+    "THIN": 10,
+    "SILVER": 6685,
+    "GOLD": 11905
   },
   "fallbackSummary": {
     "total": 2223,
     "rawGold": 476,
     "fallback": 1747,
     "highSimilarityRisk": 1747,
-    "withImpressions": 24,
+    "withImpressions": 25,
     "withClicks": 4
   },
   "vehicleSummary": {
