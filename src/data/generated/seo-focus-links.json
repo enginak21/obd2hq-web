@@ -4,11 +4,11 @@
     "locale": "en",
     "title": "Ford warning lights guide",
     "type": "warning_light",
-    "score": 544,
+    "score": 542,
     "queries": [
       "ford focus warning lights",
-      "ford focus dash warning lights",
       "ford focus dashboard warning lights",
+      "ford focus dash warning lights",
       "ford focus instrument panel warning lights"
     ]
   },
@@ -24,11 +24,22 @@
     ]
   },
   {
+    "href": "/en/codes/p0183",
+    "locale": "en",
+    "title": "P0183 OBD2 code guide",
+    "type": "code_hub",
+    "score": 289,
+    "queries": [
+      "ford p0183-ff",
+      "dtc p0183 ford"
+    ]
+  },
+  {
     "href": "/en/ford/f-150/lights",
     "locale": "en",
     "title": "Ford F 150 warning lights guide",
     "type": "warning_light",
-    "score": 271,
+    "score": 270,
     "queries": [
       "2021 f 150 warning lights",
       "2026 f 150 warning lights"
@@ -57,17 +68,6 @@
     ]
   },
   {
-    "href": "/en/suzuki/jimny/p0234",
-    "locale": "en",
-    "title": "Suzuki Jimny P0234 guide",
-    "type": "gsc_vehicle_code",
-    "score": 261,
-    "queries": [
-      "p0234 suzuki",
-      "dtc p0234 suzuki"
-    ]
-  },
-  {
     "href": "/en/ford/fiesta/p0216",
     "locale": "en",
     "title": "Ford Fiesta P0216 guide",
@@ -79,23 +79,22 @@
     ]
   },
   {
-    "href": "/en/ford/focus/lights",
+    "href": "/en/suzuki/jimny/p0234",
     "locale": "en",
-    "title": "Ford Focus warning lights guide",
-    "type": "warning_light",
-    "score": 245,
+    "title": "Suzuki Jimny P0234 guide",
+    "type": "gsc_vehicle_code",
+    "score": 260,
     "queries": [
-      "ford focus dash lights",
-      "dash lights ford focus",
-      "ford focus warning symbols"
+      "p0234 suzuki",
+      "dtc p0234 suzuki"
     ]
   },
   {
-    "href": "/tr/chevrolet/colorado/p0300",
+    "href": "/tr/kodlar/p0300",
     "locale": "tr",
-    "title": "Chevrolet Colorado P0300 rehberi",
-    "type": "gsc_vehicle_code",
-    "score": 189,
+    "title": "P0300 OBD2 arıza kodu rehberi",
+    "type": "code_hub",
+    "score": 185,
     "queries": [
       "chevrolet p0300"
     ]
@@ -157,26 +156,6 @@
     "queries": []
   },
   {
-    "href": "/de/news/the-audi-q7-gets-a-price-hike-while-the-sq7-nears",
-    "locale": "de",
-    "title": "The Audi Q7 Gets A Price Hike While The Sq7 Nears",
-    "type": "news",
-    "score": 172,
-    "queries": [
-      "audi q7 2027 preis"
-    ]
-  },
-  {
-    "href": "/de/news/the-grand-tour-returns-in-september-with-three-new",
-    "locale": "de",
-    "title": "The Grand Tour Returns In September With Three New",
-    "type": "news",
-    "score": 130,
-    "queries": [
-      "throttle house grand tour"
-    ]
-  },
-  {
     "href": "/de",
     "locale": "de",
     "title": "OBD2HQ diagnostic search hub",
@@ -225,11 +204,27 @@
     "queries": []
   },
   {
-    "href": "/es/hyundai/palisade/p0113",
+    "href": "/de/codes/b0022",
+    "locale": "de",
+    "title": "B0022 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/de/codes/b0023",
+    "locale": "de",
+    "title": "B0023 OBD2 code Ratgeber",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/es/codigos/p0113",
     "locale": "es",
-    "title": "Hyundai Palisade P0113 guía",
-    "type": "gsc_vehicle_code",
-    "score": 187,
+    "title": "P0113 OBD2 code guía",
+    "type": "code_hub",
+    "score": 183,
     "queries": [
       "hyundai p0113"
     ]
@@ -291,16 +286,6 @@
     "queries": []
   },
   {
-    "href": "/fr/news/fords-ceo-still-isnt-satisfied-with-brand-quality",
-    "locale": "fr",
-    "title": "Fords Ceo Still Isnt Satisfied With Brand Quality",
-    "type": "news",
-    "score": 165,
-    "queries": [
-      "jim farley"
-    ]
-  },
-  {
     "href": "/fr",
     "locale": "fr",
     "title": "OBD2HQ diagnostic search hub",
@@ -352,6 +337,14 @@
     "href": "/fr/codes/b0022",
     "locale": "fr",
     "title": "B0022 OBD2 code guide",
+    "type": "code_hub",
+    "score": 96,
+    "queries": []
+  },
+  {
+    "href": "/fr/codes/b0023",
+    "locale": "fr",
+    "title": "B0023 OBD2 code guide",
     "type": "code_hub",
     "score": 96,
     "queries": []
