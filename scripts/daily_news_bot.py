@@ -16,6 +16,7 @@ except ModuleNotFoundError:
 load_dotenv()
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 NEWS_DIR = os.path.join(os.path.dirname(__file__), "..", "src", "data", "news")
+ACTIVE_NEWS_SLUGS_FILE = os.path.join(os.path.dirname(__file__), "..", "src", "data", "active_news_slugs.json")
 
 os.makedirs(NEWS_DIR, exist_ok=True)
 
@@ -97,6 +98,18 @@ def get_existing_master_count_for_policy_day(policy_day=None):
             except Exception:
                 pass
     return count
+
+def sync_active_news_slugs():
+    slugs = []
+    if os.path.exists(NEWS_DIR):
+        slugs = sorted(
+            os.path.splitext(fname)[0]
+            for fname in os.listdir(NEWS_DIR)
+            if fname.endswith('.json')
+        )
+    with open(ACTIVE_NEWS_SLUGS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(slugs, f, ensure_ascii=False, indent=2)
+        f.write('\n')
 
 def check_topical_relevance(title, description):
     prompt = f"""Evaluate if this news article is strictly relevant to the topical authority of OBD2HQ (OBD2, vehicle diagnostics, automotive repair technology, ECU, engine tech, emissions, sensors, ADAS, EVs, hybrid diagnostics, major automotive technical developments, recalls).
@@ -273,6 +286,7 @@ def fetch_and_process():
         print(f"PUBLISHED! Saved as {item['slug']}.json")
         published_count += 1
         existing_news.append({"slug": item['slug'], "title": en_master['title']})
+        sync_active_news_slugs()
         
         time.sleep(5) 
 
@@ -299,7 +313,7 @@ def git_sync_and_push():
         print("No new articles to commit.")
         return
         
-    os.system("git add src/data/news/*.json")
+    os.system("git add src/data/news/*.json src/data/active_news_slugs.json")
     os.system("git commit -m 'feat(news): Auto-publish safe mode quality-checked news'")
     
     # Final pull before push to avoid tiny race conditions

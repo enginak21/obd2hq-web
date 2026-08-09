@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import validRoutes from './data/valid_routes.json';
 import newsRedirects from './data/news_redirects.json';
+import activeNewsSlugs from './data/active_news_slugs.json';
 import { isIndexableVehicleCodePage } from './data/indexing-policy';
 
 const locales = ['en', 'de', 'es', 'tr', 'fr'];
@@ -38,6 +39,7 @@ const brandWarningBasePaths: Record<string, string> = {
   fr: 'voyants-tableau-bord',
 };
 const brandWarningBaseSet = new Set(Object.values(brandWarningBasePaths));
+const activeNewsSlugSet = new Set(activeNewsSlugs as string[]);
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -78,10 +80,13 @@ export function proxy(request: NextRequest) {
     const make = segments[1];
     if (locales.includes(locale) && make === 'news' && segments.length === 3) {
       const redirectSlug = (newsRedirects as Record<string, string>)[segments[2]];
-      if (redirectSlug) {
+      if (redirectSlug && activeNewsSlugSet.has(redirectSlug)) {
         const url = request.nextUrl.clone();
         url.pathname = `/${locale}/news/${redirectSlug}`;
         return NextResponse.redirect(url, 308);
+      }
+      if (!activeNewsSlugSet.has(segments[2])) {
+        return notFoundResponse();
       }
     }
     if (locales.includes(locale) && symptomContentBaseSet.has(make) && symptomContentBasePaths[locale] !== make) {

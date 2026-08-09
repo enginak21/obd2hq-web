@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: metaTitle,
     description: metaDescription,
     robots: {
-      index: false,
+      index: true,
       follow: true,
     },
     alternates: getAlternates(`news/${slug}`, locale),
@@ -97,17 +97,17 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ lo
     day: 'numeric'
   }).format(dateObj);
   const articleSummary = asString(getLocalized(article.summary, locale));
-  const overviewHeading = locale === 'tr' ? 'Haberin özeti' : locale === 'de' ? 'Kurzübersicht' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'Résumé de l’article' : 'Article summary';
+  const overviewHeading = locale === 'tr' ? 'Haberin \u00f6zeti' : locale === 'de' ? 'Kurzübersicht' : locale === 'es' ? 'Resumen de la noticia' : locale === 'fr' ? 'Résumé de l\u2019article' : 'Article summary';
   const contextHeading = locale === 'tr' ? 'OBD2HQ notu' : locale === 'de' ? 'OBD2HQ-Einordnung' : locale === 'es' ? 'Nota de OBD2HQ' : locale === 'fr' ? 'Note OBD2HQ' : 'OBD2HQ context';
   const contextText = locale === 'tr'
-    ? 'Bu haber sayfası Google dizini için kullanılmaz. OBD2HQ haberleri araç sahipleri için kısa bağlam ve ilgili teşhis yönlendirmesi olarak sunar; dış haber kaynaklarından türetilmiş uzun metinleri indexlenebilir içerik olarak yayınlamaz.'
+    ? 'Bu aktif haber sayfas\u0131 kalite kontrol\u00fcnden ge\u00e7mi\u015f k\u0131sa otomotiv ba\u011flam\u0131 sunar. OBD2HQ haberleri ara\u00e7 sahipleri i\u00e7in te\u015fhis, servis eri\u015fimi, tamir hakk\u0131 ve ara\u00e7 teknolojisi etkileriyle birlikte de\u011ferlendirir.'
     : locale === 'de'
-      ? 'Diese Nachrichtenseite wird nicht für den Google-Index verwendet. OBD2HQ zeigt Nachrichten als kurze Einordnung für Fahrzeughalter und verlinkt bei Bedarf auf Diagnoseinhalte; aus externen Quellen abgeleitete Langtexte werden nicht als indexierbarer Inhalt veröffentlicht.'
+      ? 'Diese aktive Nachrichtenseite hat die Qualitätsprüfung bestanden. OBD2HQ ordnet Nachrichten für Fahrzeughalter mit Blick auf Diagnose, Servicezugang, Reparaturrecht und Fahrzeugtechnik ein.'
       : locale === 'es'
-        ? 'Esta página de noticia no se usa para el índice de Google. OBD2HQ muestra noticias como contexto breve para propietarios y enlaza a guías de diagnóstico cuando corresponde; los textos largos derivados de fuentes externas no se publican como contenido indexable.'
+        ? 'Esta noticia activa ha pasado el control de calidad. OBD2HQ la resume para propietarios con contexto sobre diagnóstico, acceso al servicio, derecho a reparar y tecnología del vehículo.'
         : locale === 'fr'
-          ? 'Cette page d’actualité n’est pas destinée à l’index Google. OBD2HQ présente les nouvelles comme un bref contexte pour les propriétaires et renvoie vers les contenus de diagnostic utiles; les longs textes dérivés de sources externes ne sont pas publiés comme contenu indexable.'
-          : 'This news page is not used for Google indexing. OBD2HQ presents news as short owner-focused context and points readers to diagnostic content when useful; long text derived from external news sources is not published as indexable content.';
+          ? 'Cette actualité active a passé le contrôle qualité. OBD2HQ la présente avec un contexte utile pour le diagnostic, l\u2019accès au service, le droit à la réparation et la technologie automobile.'
+          : 'This active news page has passed the quality gate. OBD2HQ frames each story around diagnostics, service access, right-to-repair impact and vehicle technology context for owners.';
 
   const newsSchema = {
     "@context": "https://schema.org",

@@ -13,6 +13,7 @@
     "check:gsc-seo": "node scripts/check_gsc_seo.js",
     "check:dtc-gold-quality": "node scripts/check_dtc_gold_quality.js",
     "check:sitemap-quality": "node scripts/check_sitemap_quality.js",
+    "check:news-routing": "node scripts/check_news_routing_policy.js",
     "check:canonical-freeze": "node scripts/check_canonical_freeze.js",
     "seo:phase2-recovery": "node scripts/phase2_content_recovery.js",
     "seo:recovery-final": "node scripts/recovery_implementation_final_audit.js",

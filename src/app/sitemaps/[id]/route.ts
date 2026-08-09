@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { cars } from '@/data/db';
 import { getBlogPosts } from '@/data/blog';
+import { getAllNews } from '@/data/news';
 import { PRIORITY_CODES, SEO_LAST_REVIEWED } from '@/data/seo';
 import { symptomGuides } from '@/data/symptoms';
 import { automotiveTools } from '@/data/automotive-tools';
@@ -10,7 +11,7 @@ import { engineProfiles } from '@/data/engine-database';
 import { transmissionProfiles } from '@/data/transmission-database';
 import { getProblemFinderDetailPath, getProblemFinderHubPath, isProblemFinderLocale, publishedProblemFinderIntents } from '@/data/problem-finder';
 import { getSymptomContentDetailPath, getSymptomContentHubPath, isSymptomContentLocale, publishedSymptomContentGroups } from '@/data/symptom-content';
-import { getBrandWarningLightsPath, getCodeHubPath, getOpportunityCodes, type GscOpportunity } from '@/data/gsc-seo';
+import { getBrandWarningLightsPath, getCodeHubPath, type GscOpportunity } from '@/data/gsc-seo';
 import { getIndexableVehicleCodeTargets } from '@/data/indexing-policy';
 import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 import gscOpportunities from '@/data/generated/gsc-opportunities.json';
@@ -76,6 +77,9 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
       getBlogPosts(locale).forEach((post) => {
         urls += urlEntry(`${BASE_URL}/${locale}/blog/${post.slug}`, 'monthly', '0.8', post.date);
       });
+      getAllNews().forEach((article) => {
+        urls += urlEntry(`${BASE_URL}/${locale}/news/${article.slug}`, 'weekly', '0.78', article.date.slice(0, 10));
+      });
       symptomGuides.forEach((symptom) => {
         urls += urlEntry(`${BASE_URL}/${locale}/symptoms/${symptom.slug}`, 'weekly', '0.85');
       });
@@ -126,7 +130,6 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     });
   } else if (idStr === 'gsc-opportunities') {
     const typedOpportunities = gscOpportunities as GscOpportunity[];
-    const gscCodes = getOpportunityCodes(typedOpportunities);
     const gscMakeWarnings = Array.from(new Set(
       typedOpportunities
         .filter(opportunity => opportunity.intentType === 'warning_light_make')
@@ -135,10 +138,6 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     ));
 
     LOCALES.forEach((locale) => {
-      gscCodes.forEach((code) => {
-        if (!isCodeHubSitemapEligible(code)) return;
-        urls += urlEntry(`${BASE_URL}${getCodeHubPath(locale, code)}`, 'weekly', '0.9');
-      });
       gscMakeWarnings.forEach((make) => {
         urls += urlEntry(`${BASE_URL}${getBrandWarningLightsPath(locale, make)}`, 'weekly', '0.86');
       });
