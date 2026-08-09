@@ -1,4 +1,4 @@
-name: Daily GSC SEO Optimizer
+name: Daily GSC Recovery Monitor
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  optimize:
+  monitor:
     runs-on: ubuntu-latest
     env:
       GSC_CLIENT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
@@ -29,31 +29,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch Search Console opportunities
-        run: node scripts/fetch_gsc_opportunities.js
+      - name: Fetch observe-only Search Console recovery snapshot
+        run: node scripts/fetch_gsc_recovery_snapshot.js
 
       - name: Quality checks
         run: |
-          npm run check:gsc-seo
-          npm run check:content
-          npm run check:problem-finder
-          npm run check:symptom-content
-          npm run check:seo-uniqueness-obd
-          npm run check:seo-contracts
+          npm run check:news-routing
+          npm run check:sitemap-quality
           npm run check:canonical-freeze
-          npm run seo:recovery-audit
-          npm run audit:obd-gold
-          npm run lint
-          npm run build
 
-      - name: Commit GSC opportunity updates
+      - name: Commit observe-only recovery snapshot
         run: |
-          if git diff --quiet -- src/data/generated/gsc-opportunities.json reports/seo; then
-            echo "No GSC SEO changes."
+          if git diff --quiet -- reports/seo/recovery-monitor; then
+            echo "No GSC recovery snapshot changes."
             exit 0
           fi
-          git config user.name "obd2hq-seo-bot"
+          git config user.name "obd2hq-recovery-monitor"
           git config user.email "actions@github.com"
-          git add src/data/generated/gsc-opportunities.json reports/seo
-          git commit -m "chore: update daily gsc seo opportunities"
+          git add reports/seo/recovery-monitor
+          git commit -m "chore: update daily gsc recovery snapshot"
           git push

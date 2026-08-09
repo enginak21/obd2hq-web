@@ -25,6 +25,7 @@
     "audit:public-seo": "node scripts/audit_public_seo_surface.js",
     "check:seo-contracts": "node scripts/check_seo_contracts.js",
     "audit:obd-gold": "node scripts/audit_obd_gold_coverage.js",
+    "monitor:gsc-recovery": "node scripts/fetch_gsc_recovery_snapshot.js",
     "problem-finder:learn": "node scripts/process_problem_finder_queries.js",
     "symptoms:generate": "node scripts/generate_symptom_content.js",
     "catalog:vehicles": "node scripts/build_vehicle_catalog.js",
