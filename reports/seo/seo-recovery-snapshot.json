@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-08-09T04:50:15.181Z",
-  "sitemapUrls": 18605,
-  "indexQualityPass": 18595,
-  "indexQualityFail": 10,
+  "generatedAt": "2026-08-10T05:09:36.939Z",
+  "sitemapUrls": 18500,
+  "indexQualityPass": 18470,
+  "indexQualityFail": 30,
   "classifications": {
-    "total": 18605,
-    "indexQualityPass": 18595,
-    "indexQualityFail": 10,
+    "total": 18500,
+    "indexQualityPass": 18470,
+    "indexQualityFail": 30,
     "THIN": 10,
     "SILVER": 6685,
-    "GOLD": 11910
+    "UTILITY": 20,
+    "GOLD": 11785
   },
   "fallbackSummary": {
     "total": 2223,

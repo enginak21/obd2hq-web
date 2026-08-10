@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-09T04:50:12.218Z",
-  "totalUrls": 18480,
+  "generatedAt": "2026-08-10T05:09:33.214Z",
+  "totalUrls": 18500,
   "segments": {
     "warning_light": 1520,
     "gsc_vehicle_code": 12,
@@ -11,6 +11,7 @@
     "symptom_content": 615,
     "blog": 15,
     "vehicle_hub": 11655,
+    "news": 20,
     "tool": 30,
     "blog_hub": 5,
     "vehicle_code": 98,

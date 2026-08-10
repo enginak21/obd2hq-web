@@ -1,6 +1,6 @@
 # OBD2HQ Recovery Implementation Report
 
-Generated: 2026-08-09T04:50:15.181Z
+Generated: 2026-08-10T05:09:36.939Z
 
 ## Recovery Scope
 
@@ -10,15 +10,15 @@ This implementation adds recovery guards and quality reporting without bulk-remo
 
 | Metric | Before | After / Current |
 |---|---:|---:|
-| Sitemap URLs | 27,370 observed in live sitemap | 18605 audited |
-| Index quality pass candidates | unknown | 18595 |
-| Index quality fail/review candidates | unknown | 10 |
-| Gold URLs | unknown | 11910 |
+| Sitemap URLs | 27,370 observed in live sitemap | 18500 audited |
+| Index quality pass candidates | unknown | 18470 |
+| Index quality fail/review candidates | unknown | 30 |
+| Gold URLs | unknown | 11785 |
 | Silver URLs | unknown | 6685 |
 | Thin URLs | unknown | 10 |
 | Duplicate URLs | unknown | 0 |
 | Invalid URLs | unknown | 0 |
-| Utility/no-ranking URLs | unknown | 0 |
+| Utility/no-ranking URLs | unknown | 20 |
 | OBD codes | 2,223 | 2223 audited |
 | Raw-gold OBD codes | 376 | 476 |
 | Runtime fallback OBD codes | 1,847 | 1747 |
