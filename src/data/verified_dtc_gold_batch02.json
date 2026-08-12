@@ -2307,7 +2307,7 @@
     "code_specific_context": "P0137 source definition: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 2). Code P0137 indicates that the Powertrain Control Module (PCM) has detected a persistently low voltage signal from the downstream oxygen sensor (Sensor 2) on Bank 1. Bank 1 refers to the engine bank that contains cylinder #1. Sensor 2 is located after the catalytic converter, monitoring its efficiency. A low voltage signal typically suggests a lean condition, a faulty sensor, an exhaust leak, or an issue with the sensor's wiring or connection, preventing it from reporting accurate oxygen levels in the exhaust gases. This can lead to increased emissions and potentially affect fuel economy. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0137 is an oxygen or air-fuel sensor low signal for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location.",
+    "description": "P0137 is an oxygen or air-fuel sensor low signal for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location. For P0137, the downstream Bank 1 Sensor 2 signal is low; focus on post-catalyst oxygen content on the cylinder-one bank, exhaust leaks ahead of the rear sensor and signal-ground integrity after the catalyst.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 1 Sensor 2",
@@ -2333,6 +2333,7 @@
       "Confirm Bank 1 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Check Bank 1 post-catalyst sensor response separately from upstream fuel-control sensors so catalyst-monitor data is not misread as fuel control.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -2340,6 +2341,7 @@
       "Identify bank 1 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for lean bias, exhaust leaks, signal shorts or an inactive sensor before replacing parts.",
+      "Check Bank 1 post-catalyst sensor response separately from upstream fuel-control sensors so catalyst-monitor data is not misread as fuel control.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -2364,7 +2366,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0137.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Treating Bank 1 Sensor 2 low voltage as an upstream mixture-control sensor failure."
     ],
     "do_not_replace_blindly": [
       "Bank 1 Sensor 2 oxygen sensor",
@@ -2394,7 +2397,7 @@
       "P0171",
       "P0172"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 1 Sensor 2 is a downstream catalyst-monitor position on the cylinder-one bank, not the primary fuel-control sensor.",
     "source_confidence": "HIGH"
   },
   "P0138": {
@@ -2404,7 +2407,7 @@
     "code_specific_context": "P0138 source definition: O2 Sensor Circuit High Voltage (Bank 1, Sensor 2). Code P0138 indicates that the Powertrain Control Module (PCM) has detected a persistently high voltage signal from the downstream oxygen sensor (Sensor 2) on Bank 1. This sensor is located after the catalytic converter and is primarily responsible for monitoring the converter's efficiency by measuring the oxygen content in the exhaust gases. A consistently high voltage (typically above 0.9 volts) suggests that the exhaust gas is very rich in fuel, or there is an electrical fault in the sensor circuit itself, or the sensor is contaminated/failing. This can lead to increased emissions, reduced fuel economy, and potential long-term damage to the catalytic converter. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0138 is an oxygen or air-fuel sensor high signal for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location.",
+    "description": "P0138 is an oxygen or air-fuel sensor high signal for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location. For P0138, Bank 1 Sensor 2 is biased high; separate a rich exhaust condition from a signal short or contaminated downstream sensor before assuming the catalyst is failed.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 1 Sensor 2",
@@ -2430,6 +2433,7 @@
       "Confirm Bank 1 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Compare Bank 1 Sensor 2 high signal behavior with fuel trims and upstream sensor activity to identify rich bias versus circuit high fault.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -2437,6 +2441,7 @@
       "Identify bank 1 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for rich bias, signal short-to-feed, contamination or fuel control issues.",
+      "Compare Bank 1 Sensor 2 high signal behavior with fuel trims and upstream sensor activity to identify rich bias versus circuit high fault.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -2461,7 +2466,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0138.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Condemning the catalytic converter because the downstream Bank 1 signal stays high without proving why."
     ],
     "do_not_replace_blindly": [
       "Bank 1 Sensor 2 oxygen sensor",
@@ -2491,7 +2497,7 @@
       "P0171",
       "P0172"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. A high downstream signal on Bank 1 needs rich-condition and signal-short separation before catalyst conclusions.",
     "source_confidence": "HIGH"
   },
   "P0139": {
@@ -2598,7 +2604,7 @@
     "code_specific_context": "P0140 source definition: O2 Sensor Circuit No Activity Detected (Bank 1, Sensor 2). Code P0140 indicates that the Powertrain Control Module (PCM) has not detected any voltage fluctuations or activity from the downstream oxygen sensor (Sensor 2) on Bank 1. This sensor is located after the catalytic converter and is primarily responsible for monitoring the catalytic converter's efficiency by measuring the oxygen content in the exhaust gases. A lack of activity suggests the sensor is either faulty, its wiring is compromised, or there's an issue with the PCM's ability to read its signal. This can lead to increased emissions and potentially affect fuel economy, as the PCM might not accurately assess the catalyst's performance. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0140 is an oxygen or air-fuel sensor no activity for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location.",
+    "description": "P0140 is an oxygen or air-fuel sensor no activity for Bank 1 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location. P0140 is a no-activity concern for Bank 1 Sensor 2; the key evidence is a flat downstream signal that does not respond when operating conditions change, rather than simply low or high voltage.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 1 Sensor 2",
@@ -2624,6 +2630,7 @@
       "Confirm Bank 1 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Graph Bank 1 Sensor 2 during controlled changes and confirm the signal is inactive rather than merely slow or biased.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -2631,6 +2638,7 @@
       "Identify bank 1 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check for fixed signal, open signal circuit, heater readiness and connector damage.",
+      "Graph Bank 1 Sensor 2 during controlled changes and confirm the signal is inactive rather than merely slow or biased.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -2655,7 +2663,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0140.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Confusing no activity with a lean or rich downstream sensor code."
     ],
     "do_not_replace_blindly": [
       "Bank 1 Sensor 2 oxygen sensor",
@@ -2685,7 +2694,7 @@
       "P0171",
       "P0172"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. P0140 is about Bank 1 downstream signal inactivity; prove lack of movement before replacing parts.",
     "source_confidence": "HIGH"
   },
   "P0141": {
@@ -2889,7 +2898,7 @@
     "code_specific_context": "P0143 source definition: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 3). Code P0143 indicates that the Powertrain Control Module (PCM) has detected a low voltage signal from the third oxygen sensor (Sensor 3) in Bank 1. Bank 1 refers to the side of the engine that contains cylinder #1. Sensor 3 is typically located downstream of the secondary catalytic converter, if present, or simply the third sensor in the exhaust stream for that bank. This sensor's primary role is to monitor the efficiency of the secondary catalytic converter and provide feedback on the exhaust gas composition after the final stage of emissions treatment. A consistently low voltage signal (often near 0 volts) suggests an issue such as a faulty sensor, an open circuit or short to ground in the sensor's wiring, a significant exhaust leak near the sensor, or a severe lean condition in the exhaust stream. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0143 is an oxygen or air-fuel sensor low signal for Bank 1 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location.",
+    "description": "P0143 is an oxygen or air-fuel sensor low signal for Bank 1 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location. P0143 targets a low signal on Bank 1 Sensor 3 where a third oxygen sensor exists, usually on applications with additional catalyst monitoring. Confirm that Sensor 3 is present and downstream of the relevant catalyst section before diagnosis.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 1 Sensor 3",
@@ -2915,6 +2924,7 @@
       "Confirm Bank 1 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Verify Bank 1 Sensor 3 physical location because many vehicles do not use a third oxygen sensor on that bank.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -2922,6 +2932,7 @@
       "Identify bank 1 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for lean bias, exhaust leaks, signal shorts or an inactive sensor before replacing parts.",
+      "Verify Bank 1 Sensor 3 physical location because many vehicles do not use a third oxygen sensor on that bank.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -2946,7 +2957,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0143.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Testing Bank 1 Sensor 2 when the code identifies Sensor 3."
     ],
     "do_not_replace_blindly": [
       "Bank 1 Sensor 3 oxygen sensor",
@@ -2976,7 +2988,7 @@
       "P0171",
       "P0172"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Sensor 3 applicability is vehicle-specific; identify the extra downstream catalyst-monitor sensor before testing.",
     "source_confidence": "MEDIUM"
   },
   "P0144": {
@@ -2986,7 +2998,7 @@
     "code_specific_context": "P0144 source definition: O2 Sensor Circuit High Voltage (Bank 1, Sensor 3). Code P0144 indicates that the Powertrain Control Module (PCM) has detected a consistently high voltage signal from the third oxygen sensor in Bank 1. Bank 1 refers to the engine bank containing cylinder #1. Sensor 3 is typically located after the secondary catalytic converter, if present, or is simply the third sensor in the exhaust stream for monitoring purposes. A high voltage signal usually suggests a rich exhaust condition or, more commonly with this specific code, a short to voltage in the sensor's signal circuit, a faulty sensor, or an issue with the sensor's internal heater circuit causing an erroneous reading. This sensor's primary role is to monitor the efficiency of the catalytic converter and contribute to fuel trim adjustments in some systems. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0144 is an oxygen or air-fuel sensor high signal for Bank 1 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location.",
+    "description": "P0144 is an oxygen or air-fuel sensor high signal for Bank 1 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 1 must be confirmed by cylinder-one location. P0144 is the high-signal counterpart for Bank 1 Sensor 3. Diagnosis should prove whether the extra downstream sensor is seeing a true rich/catalyst-monitor condition or a signal circuit pulled high.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 1 Sensor 3",
@@ -3012,6 +3024,7 @@
       "Confirm Bank 1 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Confirm Bank 1 Sensor 3 high signal with wiring checks and catalyst-monitor context before replacing the extra downstream sensor.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -3019,6 +3032,7 @@
       "Identify bank 1 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for rich bias, signal short-to-feed, contamination or fuel control issues.",
+      "Confirm Bank 1 Sensor 3 high signal with wiring checks and catalyst-monitor context before replacing the extra downstream sensor.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -3043,7 +3057,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0144.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Assuming Sensor 3 high signal has the same cause as an upstream rich mixture code."
     ],
     "do_not_replace_blindly": [
       "Bank 1 Sensor 3 oxygen sensor",
@@ -3073,7 +3088,7 @@
       "P0171",
       "P0172"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 1 Sensor 3 high signal is an extra downstream monitor fault path and should not be merged with Sensor 2 diagnostics.",
     "source_confidence": "MEDIUM"
   },
   "P0145": {
@@ -3665,7 +3680,7 @@
     "code_specific_context": "P0153 source definition: O2 Sensor Circuit Slow Response (Bank 2, Sensor 1). Code P0153 indicates that the Powertrain Control Module (PCM) has detected that the upstream oxygen sensor on Bank 2 (the engine bank not containing cylinder #1) is responding too slowly to changes in the exhaust gas oxygen content. This sensor, also known as Sensor 1, is crucial for monitoring the air-fuel ratio before the catalytic converter. A slow response means the sensor is not switching quickly enough between rich and lean voltage signals, which can lead to inaccurate fuel trim adjustments, reduced fuel efficiency, increased emissions, and potentially damage the catalytic converter over time. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0153 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 1. This sensor position is used for fuel-control feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0153 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 1. This sensor position is used for fuel-control feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0153 is Bank 2 Sensor 1 slow response, so the focus is the upstream fuel-control sensor on the bank opposite cylinder one. Exhaust leaks, aging sensor response and bank-specific fuel trim imbalance matter more than downstream catalyst behavior.",
     "system": "powertrain",
     "subsystem": "fuel control oxygen sensing",
     "component": "oxygen sensor Bank 2 Sensor 1",
@@ -3691,6 +3706,7 @@
       "Confirm Bank 2 Sensor 1 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Graph Bank 2 Sensor 1 switching response with bank-specific fuel trims during steady and transient operation.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -3698,6 +3714,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check sensor response in context with exhaust leaks, aging sensor behavior and fuel trim movement.",
+      "Graph Bank 2 Sensor 1 switching response with bank-specific fuel trims during steady and transient operation.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -3722,7 +3739,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0153.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Testing the downstream Bank 2 sensor when the slow-response code is for Sensor 1."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 1 oxygen sensor",
@@ -3752,7 +3770,7 @@
       "P0132",
       "P0133"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 1 controls fueling on the opposite bank; response speed must be judged with bank-specific fuel trim data.",
     "source_confidence": "HIGH"
   },
   "P0154": {
@@ -3956,7 +3974,7 @@
     "code_specific_context": "P0156 source definition: O2 Sensor Circuit Malfunction (Bank 2, Sensor 2). Code P0156 indicates that the Powertrain Control Module (PCM) has detected an electrical circuit malfunction in the downstream oxygen sensor (Sensor 2) on Bank 2. This sensor is located after the catalytic converter on the engine bank that does not contain cylinder #1. Its primary role is to monitor the efficiency of the catalytic converter by measuring the oxygen content in the exhaust gases post-catalyst. A \"circuit malfunction\" means the PCM is not receiving a consistent, expected voltage signal from the sensor, or there's an issue with its heater circuit, leading to an inability to accurately assess catalytic converter performance and adjust fuel trim. This can result in increased emissions and reduced fuel economy. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0156 is an oxygen or air-fuel sensor circuit malfunction for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0156 is an oxygen or air-fuel sensor circuit malfunction for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0156 indicates a Bank 2 Sensor 2 circuit malfunction. This is the downstream monitor on the opposite bank, so diagnosis should emphasize rear-sensor wiring, exhaust leaks near the Bank 2 catalyst and correct bank identification.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 2",
@@ -3982,6 +4000,7 @@
       "Confirm Bank 2 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Inspect Bank 2 downstream sensor harness routing around the catalyst and floor heat shielding before testing the sensor itself.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -3989,6 +4008,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check signal circuit integrity, connector condition and exhaust influence.",
+      "Inspect Bank 2 downstream sensor harness routing around the catalyst and floor heat shielding before testing the sensor itself.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4013,7 +4033,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0156.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Replacing an upstream Bank 2 sensor for a downstream Sensor 2 circuit fault."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 2 oxygen sensor",
@@ -4043,7 +4064,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 2 is downstream of the opposite-bank catalyst and has a different role from Bank 2 Sensor 1.",
     "source_confidence": "HIGH"
   },
   "P0157": {
@@ -4053,7 +4074,7 @@
     "code_specific_context": "P0157 source definition: O2 Sensor Circuit Low Voltage (Bank 2, Sensor 2). Code P0157 indicates that the Powertrain Control Module (PCM) has detected a consistently low voltage signal from the downstream oxygen sensor on Bank 2. Bank 2 refers to the engine side that does not contain cylinder #1, and Sensor 2 is the post-catalytic converter sensor, responsible for monitoring the efficiency of the catalytic converter. A low voltage signal typically suggests a lean exhaust condition, a faulty sensor, or an issue within the sensor's wiring or connector, preventing it from reporting accurate oxygen levels. This can lead to increased emissions and potentially damage the catalytic converter over time. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0157 is an oxygen or air-fuel sensor low signal for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0157 is an oxygen or air-fuel sensor low signal for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0157 is low voltage at Bank 2 Sensor 2. Confirm the opposite-bank downstream sensor is not being pulled low by wiring damage, exhaust oxygen intrusion or a false lean condition before ordering parts.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 2",
@@ -4079,6 +4100,7 @@
       "Confirm Bank 2 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Compare Bank 2 Sensor 2 low signal with Bank 2 upstream fuel trim and inspect for leaks ahead of the downstream sensor.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4086,6 +4108,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for lean bias, exhaust leaks, signal shorts or an inactive sensor before replacing parts.",
+      "Compare Bank 2 Sensor 2 low signal with Bank 2 upstream fuel trim and inspect for leaks ahead of the downstream sensor.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4110,7 +4133,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0157.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Calling the catalyst failed when the Bank 2 downstream signal is low from wiring or exhaust leakage."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 2 oxygen sensor",
@@ -4140,7 +4164,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 2 low voltage is a downstream monitor issue on the bank opposite cylinder one.",
     "source_confidence": "HIGH"
   },
   "P0158": {
@@ -4150,7 +4174,7 @@
     "code_specific_context": "P0158 source definition: O2 Sensor Circuit High Voltage (Bank 2, Sensor 2). Code P0158 indicates that the Powertrain Control Module (PCM) has detected a consistently high voltage signal from the downstream oxygen sensor on Bank 2 (the side of the engine opposite to cylinder #1). This sensor, known as Sensor 2, is located after the catalytic converter and is primarily responsible for monitoring the converter's efficiency by measuring the oxygen content in the exhaust gases. A consistently high voltage (typically above 0.9 volts for a zirconium dioxide sensor) suggests either a rich exhaust condition exiting the catalytic converter, a short to voltage in the sensor's signal circuit, or an internal fault within the sensor itself. This condition can lead to increased emissions, reduced fuel economy, and potential damage to the catalytic converter over time. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0158 is an oxygen or air-fuel sensor high signal for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0158 is an oxygen or air-fuel sensor high signal for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0158 is high voltage at Bank 2 Sensor 2. The useful distinction is whether the downstream monitor is stuck rich, shorted high or responding to a true Bank 2 fuel-control condition.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 2",
@@ -4176,6 +4200,7 @@
       "Confirm Bank 2 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Evaluate Bank 2 Sensor 2 high signal alongside Bank 2 fuel trims and sensor ground integrity.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4183,6 +4208,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for rich bias, signal short-to-feed, contamination or fuel control issues.",
+      "Evaluate Bank 2 Sensor 2 high signal alongside Bank 2 fuel trims and sensor ground integrity.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4207,7 +4233,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0158.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Replacing the Bank 2 downstream sensor before checking for a signal circuit pulled high."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 2 oxygen sensor",
@@ -4237,7 +4264,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 2 high signal requires rich-bias and circuit-high separation on the opposite bank.",
     "source_confidence": "HIGH"
   },
   "P0159": {
@@ -4247,7 +4274,7 @@
     "code_specific_context": "P0159 source definition: O2 Sensor Circuit Slow Response (Bank 2, Sensor 2). Code P0159 indicates that the Powertrain Control Module (PCM) has detected that the downstream oxygen sensor (Sensor 2) on Bank 2 is responding too slowly to changes in the exhaust gas oxygen content. This sensor is located after the catalytic converter on the engine bank that does not contain cylinder #1. Its primary function is to monitor the efficiency of the catalytic converter by comparing its readings to the upstream sensor. A slow response suggests the sensor may be degraded, contaminated, or failing to accurately reflect the exhaust gas composition, potentially leading to increased emissions and reduced fuel efficiency. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0159 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0159 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0159 is a slow response from Bank 2 Sensor 2, not a simple low or high signal. The downstream monitor should be evaluated for delayed movement after operating changes and possible catalyst/exhaust context.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 2",
@@ -4273,6 +4300,7 @@
       "Confirm Bank 2 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Graph Bank 2 Sensor 2 response timing after controlled throttle or load changes without using universal time thresholds.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4280,6 +4308,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check sensor response in context with exhaust leaks, aging sensor behavior and fuel trim movement.",
+      "Graph Bank 2 Sensor 2 response timing after controlled throttle or load changes without using universal time thresholds.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4304,7 +4333,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0159.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Treating a slow downstream Bank 2 sensor as a fixed low-voltage fault."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 2 oxygen sensor",
@@ -4334,7 +4364,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. P0159 is about delayed downstream response on Bank 2 Sensor 2; movement quality matters more than one snapshot value.",
     "source_confidence": "HIGH"
   },
   "P0160": {
@@ -4344,7 +4374,7 @@
     "code_specific_context": "P0160 source definition: O2 Sensor Circuit No Activity Detected (Bank 2, Sensor 2). Code P0160 indicates that the Powertrain Control Module (PCM) has not detected any voltage activity or fluctuation from the downstream oxygen sensor on Bank 2, Sensor 2. This sensor is located after the catalytic converter on the engine bank that does not contain cylinder #1. Its primary function is to monitor the efficiency of the catalytic converter by comparing its readings with the upstream O2 sensor. A lack of activity suggests the sensor is either faulty, its wiring is compromised, there's an exhaust leak affecting its readings, or the PCM isn't receiving a signal. This can lead to increased emissions and potentially impact fuel economy. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0160 is an oxygen or air-fuel sensor no activity for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0160 is an oxygen or air-fuel sensor no activity for Bank 2 Sensor 2. This sensor position is used for catalyst monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0160 is no activity from Bank 2 Sensor 2. Confirm a flat signal, sensor heater readiness and wiring continuity before concluding the downstream sensor has failed.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 2",
@@ -4370,6 +4400,7 @@
       "Confirm Bank 2 Sensor 2 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Confirm Bank 2 Sensor 2 remains inactive while other oxygen sensor data changes normally.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4377,6 +4408,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check for fixed signal, open signal circuit, heater readiness and connector damage.",
+      "Confirm Bank 2 Sensor 2 remains inactive while other oxygen sensor data changes normally.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4401,7 +4433,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0160.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Replacing the sensor before proving the signal is truly inactive rather than slow."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 2 oxygen sensor",
@@ -4431,7 +4464,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 2 no-activity diagnostics should prove a flat downstream signal on the opposite bank.",
     "source_confidence": "HIGH"
   },
   "P0161": {
@@ -4538,7 +4571,7 @@
     "code_specific_context": "P0162 source definition: O2 Sensor Circuit Malfunction (Bank 2, Sensor 3). Code P0162 indicates that the Powertrain Control Module (PCM) has detected an electrical circuit malfunction in the third oxygen sensor (post-catalytic converter) on Bank 2. Bank 2 refers to the engine side that does not contain cylinder #1. Sensor 3 is typically a downstream sensor, responsible for monitoring the efficiency of the catalytic converter. A \"circuit malfunction\" means the PCM is not receiving the expected voltage signal or activity from the sensor, or it detects an open or short circuit within the sensor's wiring or the sensor itself. This could be due to a faulty sensor, damaged wiring, a poor connection, or an issue with the sensor's heater circuit. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0162 is an oxygen or air-fuel sensor circuit malfunction for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0162 is an oxygen or air-fuel sensor circuit malfunction for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0162 is a Bank 2 Sensor 3 circuit malfunction where an additional downstream sensor exists. The first step is confirming Sensor 3 equipment and its catalyst-monitor role on Bank 2.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 3",
@@ -4564,6 +4597,7 @@
       "Confirm Bank 2 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Verify Bank 2 Sensor 3 exists and identify the correct connector before testing any Bank 2 downstream sensor.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4571,6 +4605,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check signal circuit integrity, connector condition and exhaust influence.",
+      "Verify Bank 2 Sensor 3 exists and identify the correct connector before testing any Bank 2 downstream sensor.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4595,7 +4630,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0162.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Confusing Bank 2 Sensor 3 with the more common Bank 2 Sensor 2 position."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 3 oxygen sensor",
@@ -4625,7 +4661,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Sensor 3 on Bank 2 is application-specific and must be physically identified before circuit diagnosis.",
     "source_confidence": "MEDIUM"
   },
   "P0163": {
@@ -4635,7 +4671,7 @@
     "code_specific_context": "P0163 source definition: O2 Sensor Circuit Low Voltage (Bank 2, Sensor 3). Code P0163 indicates that the Powertrain Control Module (PCM) has detected a consistently low voltage signal from the third oxygen sensor (post-catalytic converter) on Bank 2. Bank 2 refers to the engine side that does not contain cylinder #1. Sensor 3 is typically the downstream sensor, responsible for monitoring the efficiency of the catalytic converter by comparing exhaust gas composition after the catalyst. A low voltage signal suggests either a fault within the sensor itself, an issue with its wiring/connector, an exhaust leak allowing ambient air in, or a problem with the PCM's ability to read the sensor's output. This sensor's primary role is emissions monitoring, not direct fuel trim control, but its malfunction can still impact overall engine management and catalytic converter health. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0163 is an oxygen or air-fuel sensor low signal for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0163 is an oxygen or air-fuel sensor low signal for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0163 indicates Bank 2 Sensor 3 low voltage. Because this is an extra downstream position, separate an actual low exhaust oxygen signal from wiring pulled low or incorrect sensor-position identification.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 3",
@@ -4661,6 +4697,7 @@
       "Confirm Bank 2 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Check Bank 2 Sensor 3 low signal only after confirming the third-sensor connector and harness route.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4668,6 +4705,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for lean bias, exhaust leaks, signal shorts or an inactive sensor before replacing parts.",
+      "Check Bank 2 Sensor 3 low signal only after confirming the third-sensor connector and harness route.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4692,7 +4730,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0163.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Using Bank 2 Sensor 2 live data to diagnose a Sensor 3 low-voltage code."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 3 oxygen sensor",
@@ -4722,7 +4761,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. P0163 is a low-voltage fault for the extra Bank 2 downstream sensor, not the standard Sensor 2 circuit.",
     "source_confidence": "MEDIUM"
   },
   "P0164": {
@@ -4732,7 +4771,7 @@
     "code_specific_context": "P0164 source definition: O2 Sensor Circuit High Voltage (Bank 2, Sensor 3). Code P0164 indicates that the Powertrain Control Module (PCM) has detected a consistently high voltage signal from the third oxygen sensor on Bank 2. Bank 2 refers to the engine side that does not contain cylinder #1, and Sensor 3 is the post-catalytic converter sensor, primarily responsible for monitoring the efficiency of the catalytic converter. A high voltage reading (typically above 0.9 volts for a zirconia sensor) suggests either a rich exhaust condition (less common for a post-cat sensor unless the catalytic converter is severely compromised or there's a significant upstream issue), a short to voltage in the sensor's signal wire, or an internal fault within the O2 sensor itself. This condition can lead to inaccurate fuel trim adjustments, compromised emissions control, and potential catalytic converter damage over time. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0164 is an oxygen or air-fuel sensor high signal for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0164 is an oxygen or air-fuel sensor high signal for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0164 is Bank 2 Sensor 3 high voltage. Diagnosis should look for signal circuit high, rich downstream context and third-sensor equipment confirmation before any catalyst assumption.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 3",
@@ -4758,6 +4797,7 @@
       "Confirm Bank 2 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Confirm Bank 2 Sensor 3 high signal at the correct connector and compare with other downstream sensors only after location is verified.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4765,6 +4805,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Look for rich bias, signal short-to-feed, contamination or fuel control issues.",
+      "Confirm Bank 2 Sensor 3 high signal at the correct connector and compare with other downstream sensors only after location is verified.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4789,7 +4830,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0164.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Assuming a high Sensor 3 signal means the same thing as a high upstream mixture sensor."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 3 oxygen sensor",
@@ -4819,7 +4861,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. Bank 2 Sensor 3 high signal is an extra monitor circuit condition with application-specific wiring.",
     "source_confidence": "MEDIUM"
   },
   "P0165": {
@@ -4829,7 +4871,7 @@
     "code_specific_context": "P0165 source definition: O2 Sensor Circuit Slow Response (Bank 2, Sensor 3). Code P0165 indicates that the Powertrain Control Module (PCM) has detected a slow response time from the downstream oxygen sensor (Sensor 3) on Bank 2. Bank 2 refers to the engine side that does not contain cylinder #1. Sensor 3 is typically located after the secondary catalytic converter, if present, or the main catalytic converter if it's the third sensor in the exhaust stream. Its primary function is to monitor the efficiency of the catalytic converter by comparing its readings with the upstream sensor. A \"slow response\" means the sensor's voltage signal is not fluctuating quickly enough or within the expected parameters, suggesting it's not accurately reflecting the oxygen content in the exhaust gases. This can be due to a faulty sensor, exhaust leaks, wiring issues, or a failing catalytic converter. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0165 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered.",
+    "description": "P0165 is an oxygen or air-fuel sensor slow response for Bank 2 Sensor 3. This sensor position is used for post-catalyst auxiliary monitoring feedback, so diagnosis should separate sensor signal behavior from exhaust leaks, wiring damage, heater supply/control faults, fuel trim bias and wrong-bank identification. Bank 2 must be confirmed on the opposite engine bank before any sensor is ordered. P0165 is slow response from Bank 2 Sensor 3. It requires proving delayed movement at the extra downstream sensor position, not simply observing a stable catalyst-monitor signal.",
     "system": "powertrain",
     "subsystem": "catalyst oxygen monitoring",
     "component": "oxygen sensor Bank 2 Sensor 3",
@@ -4855,6 +4897,7 @@
       "Confirm Bank 2 Sensor 3 identity.",
       "Inspect exhaust leaks near the sensor.",
       "Check connector heat damage and harness routing.",
+      "Graph Bank 2 Sensor 3 response during operating changes and compare it with expected downstream monitor behavior for that vehicle.",
       "Compare live sensor behavior with fuel trim and engine state."
     ],
     "diagnosticSteps": [
@@ -4862,6 +4905,7 @@
       "Identify bank 2 physically before touching the sensor or harness.",
       "Graph sensor activity together with short and long fuel trims.",
       "Check sensor response in context with exhaust leaks, aging sensor behavior and fuel trim movement.",
+      "Graph Bank 2 Sensor 3 response during operating changes and compare it with expected downstream monitor behavior for that vehicle.",
       "Inspect wiring for melted insulation, water intrusion and poor terminal grip.",
       "Repair exhaust, wiring or fuel-control issues before replacing the confirmed failed sensor."
     ],
@@ -4886,7 +4930,8 @@
     "common_mistakes": [
       "Replacing the wrong bank or sensor position for P0165.",
       "Ignoring exhaust leaks that distort oxygen content.",
-      "Replacing the sensor without checking fuel trim context."
+      "Replacing the sensor without checking fuel trim context.",
+      "Calling normal downstream catalyst-monitor stability a slow-response fault without a controlled test."
     ],
     "do_not_replace_blindly": [
       "Bank 2 Sensor 3 oxygen sensor",
@@ -4916,7 +4961,7 @@
       "P0131",
       "P0132"
     ],
-    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout.",
+    "applicability_notes": "Some vehicles use wideband air-fuel sensors upstream and narrowband oxygen sensors downstream; bank and sensor naming must be verified by vehicle layout. P0165 requires application-specific Sensor 3 response evaluation on Bank 2.",
     "source_confidence": "MEDIUM"
   },
   "P0166": {
@@ -5884,7 +5929,7 @@
     "code_specific_context": "P0180 source definition: Fuel Temperature Sensor 1 Circuit Malfunction. Code P0180 signifies a detected electrical fault within the circuit of Fuel Temperature Sensor 1. This sensor plays a crucial role in providing the Powertrain Control Module (PCM) with real-time data on the fuel's temperature. The PCM utilizes this information to precisely adjust fuel injection timing and quantity, optimize fuel-air mixture, and manage evaporative emissions, ensuring efficient combustion and proper engine operation across varying fuel temperatures. A malfunction in this circuit can lead to incorrect fuel delivery calculations, potentially affecting fuel economy, engine performance, and emissions. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0180 indicates fuel temperature sensor 1 circuit malfunction. Diagnosis should separate true fuel condition from sensor/circuit plausibility: review freeze-frame load and temperature, compare related fuel temperature or composition data, inspect tank/rail harness routing, and check fuel trim context before replacing a pump, injector or sensor assembly.",
+    "description": "P0180 identifies a circuit fault in fuel temperature sensor 1, commonly the primary fuel temperature input used by the ECM for density, fueling or emissions plausibility. The diagnostic path should first establish where sensor 1 is located on that vehicle, then compare its reading against ambient, fuel system context and wiring condition. It should not be blended with sensor 2 faults or treated as a fuel pump failure without circuit proof.",
     "system": "powertrain",
     "subsystem": "fuel temperature monitoring",
     "component": "fuel temperature sensor 1 circuit",
@@ -5907,18 +5952,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Save freeze-frame fuel system data.",
-      "Inspect harness routing near tank, rail or fuel module.",
-      "Compare related fuel temperature/composition data where available.",
-      "Confirm whether the vehicle actually uses this sensor strategy."
+      "Confirm the vehicle uses fuel temperature sensor 1 strategy.",
+      "Identify whether sensor 1 is rail-mounted, tank-module integrated or part of a composition sensor.",
+      "Compare cold-soak sensor 1 data with ambient, coolant and intake temperatures.",
+      "Inspect the primary fuel temperature circuit after any tank, rail or fuel-module service."
     ],
     "diagnosticSteps": [
-      "Confirm P0180 and record fuel trim, load and temperature context.",
-      "Verify whether the sensor is standalone or integrated into a fuel module.",
-      "Inspect connectors and harnesses exposed to heat, fuel vapor, road debris or tank service.",
-      "Compare fuel temperature data with ambient and operating context for plausibility.",
-      "Check circuit integrity using vehicle service information and avoid universal test thresholds.",
-      "Repair wiring, fuel quality or airflow/fuel-control causes before replacing confirmed failed components."
+      "Confirm P0180 and locate fuel temperature sensor 1 before testing any shared fuel module connector.",
+      "Compare sensor 1 temperature against ambient, coolant and intake data on a cold soak.",
+      "Inspect the sensor 1 circuit path for tank-top corrosion, rail harness chafing or disturbed connectors after fuel system service.",
+      "Check reference, ground and signal integrity for sensor 1 using the correct service diagram.",
+      "Watch live fuel temperature data while gently moving the sensor 1 harness to find intermittent dropouts.",
+      "Repair the verified circuit fault or replace the confirmed failed sensor/module, then confirm stable temperature plausibility after a drive cycle."
     ],
     "electrical_tests": [
       "sensor feed check",
@@ -5939,9 +5984,9 @@
       "Replace integrated sensor/module only after circuit testing."
     ],
     "common_mistakes": [
-      "Replacing injectors or pump without fuel system data.",
-      "Ignoring wiring damage near fuel components.",
-      "Using one fixed value instead of vehicle-specific service information."
+      "Replacing a fuel pump assembly before identifying whether sensor 1 is external, rail-mounted or module-integrated.",
+      "Ignoring a disturbed tank-top connector after recent fuel service.",
+      "Comparing sensor 1 to sensor 2 without confirming they measure the same fuel path."
     ],
     "do_not_replace_blindly": [
       "fuel temperature sensor",
@@ -5971,7 +6016,7 @@
       "P0186",
       "P0187"
     ],
-    "applicability_notes": "Fuel sensor availability and location are vehicle-specific; some generic codes are only meaningful on vehicles equipped with the relevant strategy.",
+    "applicability_notes": "Fuel temperature sensor 1 may be standalone, rail-mounted or integrated into a fuel module depending on fuel system design.",
     "source_confidence": "HIGH"
   },
   "P0181": {
@@ -6272,7 +6317,7 @@
     "code_specific_context": "P0185 source definition: Fuel Temperature Sensor 2 Circuit Malfunction. Code P0185 signifies a detected issue within the electrical circuit of Fuel Temperature Sensor 2. This sensor plays a crucial role in providing the Powertrain Control Module (PCM) with real-time fuel temperature data. The PCM utilizes this information to precisely adjust fuel injection timing, fuel pressure, and air-fuel mixture, optimizing combustion efficiency, reducing emissions, and ensuring proper engine performance across varying fuel temperatures. A malfunction in this circuit can lead to incorrect fuel calculations, potentially causing poor fuel economy, rough idling, hesitation, or difficulty starting, as the PCM may resort to a default fuel temperature value. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0185 indicates fuel temperature sensor 2 circuit malfunction. Diagnosis should separate true fuel condition from sensor/circuit plausibility: review freeze-frame load and temperature, compare related fuel temperature or composition data, inspect tank/rail harness routing, and check fuel trim context before replacing a pump, injector or sensor assembly.",
+    "description": "P0185 identifies a circuit fault in fuel temperature sensor 2, a secondary fuel temperature input used on vehicles with more than one fuel temperature measurement point or module channel. Diagnosis should prove whether sensor 2 is a separate circuit, a second channel inside a fuel module or part of a fuel composition strategy before comparing it to sensor 1 or replacing fuel delivery parts.",
     "system": "powertrain",
     "subsystem": "fuel temperature monitoring",
     "component": "fuel temperature sensor 2 circuit",
@@ -6295,18 +6340,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Save freeze-frame fuel system data.",
-      "Inspect harness routing near tank, rail or fuel module.",
-      "Compare related fuel temperature/composition data where available.",
-      "Confirm whether the vehicle actually uses this sensor strategy."
+      "Confirm that the vehicle reports a distinct fuel temperature sensor 2 input.",
+      "Identify whether sensor 2 is a second module channel, separate harness branch or composition-related circuit.",
+      "Inspect secondary fuel temperature routing for water entry, pin fit or underbody damage.",
+      "Compare sensor 2 to sensor 1 only after confirming both should track the same fuel condition."
     ],
     "diagnosticSteps": [
-      "Confirm P0185 and record fuel trim, load and temperature context.",
-      "Verify whether the sensor is standalone or integrated into a fuel module.",
-      "Inspect connectors and harnesses exposed to heat, fuel vapor, road debris or tank service.",
-      "Compare fuel temperature data with ambient and operating context for plausibility.",
-      "Check circuit integrity using vehicle service information and avoid universal test thresholds.",
-      "Repair wiring, fuel quality or airflow/fuel-control causes before replacing confirmed failed components."
+      "Confirm P0185 and verify the vehicle actually reports a distinct fuel temperature sensor 2 input.",
+      "Identify whether sensor 2 shares reference or ground with sensor 1 before disconnecting components.",
+      "Inspect the secondary circuit at module connectors, underbody routing or fuel composition hardware where equipped.",
+      "Check sensor 2 reference, ground and signal integrity according to the correct circuit diagram.",
+      "Compare live data from sensor 2 against sensor 1 only after confirming they should track the same fuel condition.",
+      "Repair the verified secondary circuit fault or replace the confirmed failed module/sensor after repeatable evidence."
     ],
     "electrical_tests": [
       "sensor feed check",
@@ -6327,9 +6372,9 @@
       "Replace integrated sensor/module only after circuit testing."
     ],
     "common_mistakes": [
-      "Replacing injectors or pump without fuel system data.",
-      "Ignoring wiring damage near fuel components.",
-      "Using one fixed value instead of vehicle-specific service information."
+      "Assuming sensor 2 has the same location and behavior as sensor 1.",
+      "Replacing the fuel pump module before checking shared reference and ground paths.",
+      "Ignoring water intrusion in secondary or underbody fuel-system connectors."
     ],
     "do_not_replace_blindly": [
       "fuel temperature sensor",
@@ -6359,7 +6404,7 @@
       "P0186",
       "P0187"
     ],
-    "applicability_notes": "Fuel sensor availability and location are vehicle-specific; some generic codes are only meaningful on vehicles equipped with the relevant strategy.",
+    "applicability_notes": "Fuel temperature sensor 2 is application-specific and may not exist as a separate serviceable part on every vehicle.",
     "source_confidence": "MEDIUM"
   },
   "P0186": {
@@ -6854,7 +6899,7 @@
     "code_specific_context": "P0202 source definition: Injector Circuit Malfunction - Cylinder 2. Code P0202 signifies that the Powertrain Control Module (PCM) has detected an electrical malfunction within the fuel injector circuit specifically for cylinder #2. This means the PCM is not observing the expected voltage drop or resistance characteristics when it attempts to activate the injector. It could indicate an open circuit (no continuity), a short to ground, a short to voltage, or an internal fault within the injector's coil winding, preventing proper fuel delivery to the cylinder. This typically results in a misfire condition for cylinder #2. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0202 is an injector circuit fault for cylinder 2. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0202 is an injector circuit fault for cylinder 2. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there. P0202 also deserves a two-cylinder comparison on inline engines because cylinder 2 is often close to shared injector feed splices and coil harness routing; check for localized connector disturbance before suspecting a common fuel supply issue.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 2",
@@ -6880,6 +6925,7 @@
       "Confirm cylinder 2 and any paired misfire code.",
       "Inspect injector connector lock and terminal tension.",
       "Check harness routing near heat and moving components.",
+      "Compare cylinder 2 injector control with cylinder 1 and 3 to separate a local branch fault from a shared feed problem.",
       "Compare command and cylinder contribution data where available."
     ],
     "diagnosticSteps": [
@@ -6887,6 +6933,7 @@
       "Verify cylinder 2 numbering on the engine before testing.",
       "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
       "Check injector circuit continuity and driver control using vehicle service information.",
+      "Compare cylinder 2 injector control with cylinder 1 and 3 to separate a local branch fault from a shared feed problem.",
       "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
       "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
     ],
@@ -6911,7 +6958,8 @@
     "common_mistakes": [
       "Replacing spark plugs for an injector circuit code.",
       "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Replacing an injector without checking connector tension and harness damage.",
+      "Calling it a fuel pressure fault when only the cylinder 2 electrical branch fails comparison testing."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -6941,7 +6989,7 @@
       "P0206",
       "P0207"
     ],
-    "applicability_notes": "Cylinder numbering and injector access vary by engine layout.",
+    "applicability_notes": "Cylinder numbering and injector access vary by engine layout. Cylinder 2 is commonly an accessible comparison cylinder on inline engines; use nearby known-good circuits to prove local branch failure.",
     "source_confidence": "HIGH"
   },
   "P0204": {
@@ -6951,7 +6999,7 @@
     "code_specific_context": "P0204 source definition: Injector Circuit Malfunction - Cylinder 4. Code P0204 indicates that the Powertrain Control Module (PCM) has detected an electrical malfunction within the fuel injector circuit for cylinder #4. This means the PCM is not seeing the expected resistance or voltage drop across the injector circuit during its operation. This could be due to an open circuit, a short to ground, a short to voltage, or excessively high/low resistance within the injector coil itself or its wiring. Symptoms often include a noticeable engine misfire, rough idle, reduced engine power, increased fuel consumption, and the illumination of the Check Engine Light. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0204 is an injector circuit fault for cylinder 4. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0204 is an injector circuit fault for cylinder 4. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there. P0204 often appears on four-cylinder applications where cylinder 4 sits at the belt, transmission or rear end of the engine depending on layout. The useful diagnostic split is end-cylinder harness strain, connector access and whether the fault follows the injector when swapped under an approved test plan.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 4",
@@ -6977,6 +7025,7 @@
       "Confirm cylinder 4 and any paired misfire code.",
       "Inspect injector connector lock and terminal tension.",
       "Check harness routing near heat and moving components.",
+      "Inspect cylinder 4 as an end-cylinder circuit for harness tension, cover contact or service-related connector disturbance.",
       "Compare command and cylinder contribution data where available."
     ],
     "diagnosticSteps": [
@@ -6984,6 +7033,7 @@
       "Verify cylinder 4 numbering on the engine before testing.",
       "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
       "Check injector circuit continuity and driver control using vehicle service information.",
+      "Inspect cylinder 4 as an end-cylinder circuit for harness tension, cover contact or service-related connector disturbance.",
       "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
       "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
     ],
@@ -7008,7 +7058,8 @@
     "common_mistakes": [
       "Replacing spark plugs for an injector circuit code.",
       "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Replacing an injector without checking connector tension and harness damage.",
+      "Assuming cylinder 4 is the same physical end of the engine on transverse and longitudinal layouts."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7038,7 +7089,7 @@
       "P0206",
       "P0207"
     ],
-    "applicability_notes": "Cylinder numbering and injector access vary by engine layout.",
+    "applicability_notes": "Cylinder numbering and injector access vary by engine layout. Cylinder 4 diagnostics should account for end-cylinder harness routing and layout-specific access before parts replacement.",
     "source_confidence": "HIGH"
   },
   "P0205": {
@@ -7048,7 +7099,7 @@
     "code_specific_context": "P0205 source definition: Injector Circuit Malfunction - Cylinder 5. Code P0205 signifies that the Powertrain Control Module (PCM) has detected an electrical fault within the fuel injector circuit specifically for cylinder #5. This could manifest as an open circuit, a short to ground, a short to voltage, or an incorrect resistance reading from the injector itself. The PCM monitors the voltage drop across the injector driver and expects to see a specific range when the injector is commanded on and off. When this expected voltage or resistance is not met, P0205 is set. Symptoms often include a misfire on cylinder 5, rough idle, reduced engine performance, poor fuel economy, and the illumination of the Check Engine Light. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0205 is an injector circuit fault for cylinder 5. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0205 is an injector circuit fault for cylinder 5. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there. P0205 generally applies to engines with five or more cylinders and should start with engine applicability. On inline-five, V6 and V8 layouts, cylinder 5 may be the first cylinder on a second bank or an extension of the main injector loom, so bank mapping changes the test path.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 5",
@@ -7074,6 +7125,7 @@
       "Confirm cylinder 5 and any paired misfire code.",
       "Inspect injector connector lock and terminal tension.",
       "Check harness routing near heat and moving components.",
+      "Verify whether cylinder 5 is on a second bank or extended injector loom before choosing the comparison injector.",
       "Compare command and cylinder contribution data where available."
     ],
     "diagnosticSteps": [
@@ -7081,6 +7133,7 @@
       "Verify cylinder 5 numbering on the engine before testing.",
       "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
       "Check injector circuit continuity and driver control using vehicle service information.",
+      "Verify whether cylinder 5 is on a second bank or extended injector loom before choosing the comparison injector.",
       "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
       "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
     ],
@@ -7105,7 +7158,8 @@
     "common_mistakes": [
       "Replacing spark plugs for an injector circuit code.",
       "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Replacing an injector without checking connector tension and harness damage.",
+      "Using a four-cylinder injector workflow on a vehicle where cylinder 5 changes bank and harness routing."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7135,7 +7189,7 @@
       "P0206",
       "P0207"
     ],
-    "applicability_notes": "Cylinder numbering and injector access vary by engine layout.",
+    "applicability_notes": "Cylinder numbering and injector access vary by engine layout. Cylinder 5 may mark a transition to another bank or loom section; confirm layout before interpreting injector circuit tests.",
     "source_confidence": "HIGH"
   },
   "P0206": {
@@ -7145,7 +7199,7 @@
     "code_specific_context": "P0206 source definition: Injector Circuit Malfunction - Cylinder 6. Code P0206 signifies a detected electrical fault within the fuel injector circuit specifically for cylinder 6. The Powertrain Control Module (PCM) monitors the voltage and resistance of the injector driver circuit. When the PCM detects an unexpected open, short, or out-of-range resistance in this circuit, it sets code P0206. This typically results in a misfire on cylinder 6, leading to symptoms such as rough idling, reduced engine power, poor fuel economy, and potentially a flashing Check Engine Light. Prolonged operation with this fault can damage the catalytic converter due to unburnt fuel entering the exhaust. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0206 is an injector circuit fault for cylinder 6. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0206 isolates the injector control circuit for cylinder 6. This cylinder is often on the second bank or rear section of V-type engines, so the diagnostic value is in confirming bank layout, harness branch routing and connector access before any injector is removed. Treat it as an electrical command/feedback problem first, then use misfire and fuel data only to confirm the effect of the circuit fault.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 6",
@@ -7168,18 +7222,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Confirm cylinder 6 and any paired misfire code.",
-      "Inspect injector connector lock and terminal tension.",
-      "Check harness routing near heat and moving components.",
-      "Compare command and cylinder contribution data where available."
+      "Confirm cylinder 6 location from the firing order and bank layout.",
+      "Inspect the cylinder 6 harness branch where it leaves the main injector loom.",
+      "Check connector lock, terminal drag and heat exposure before unplugging adjacent injectors.",
+      "Compare cylinder 6 command and contribution against the closest same-bank cylinders."
     ],
     "diagnosticSteps": [
-      "Confirm P0206 and note whether a matching cylinder misfire is stored.",
-      "Verify cylinder 6 numbering on the engine before testing.",
-      "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
-      "Check injector circuit continuity and driver control using vehicle service information.",
-      "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
-      "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
+      "Confirm P0206 and record whether P0306 or bank-specific fuel trim movement is present.",
+      "Verify cylinder 6 numbering from service information because V6 and V8 layouts vary by manufacturer.",
+      "Inspect the cylinder 6 injector branch for heat hardening, rear-bank access damage, oil saturation or loom rub-through.",
+      "Check power feed and ECM driver control at cylinder 6, then compare the same test at a nearby known-good injector.",
+      "Use contribution or balance data to confirm the electrical fault is affecting cylinder 6 instead of a mechanical compression issue.",
+      "Repair the verified harness or connector fault, or replace the injector only after the cylinder 6 circuit fails comparison testing."
     ],
     "electrical_tests": [
       "injector connector inspection",
@@ -7200,9 +7254,9 @@
       "Repair ECM driver circuit only after wiring and injector tests pass."
     ],
     "common_mistakes": [
-      "Replacing spark plugs for an injector circuit code.",
-      "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Assuming cylinder 6 is on the same side across all V-engine layouts.",
+      "Removing intake components before checking whether the fault can be proven at an accessible harness connector.",
+      "Replacing ignition parts because a companion P0306 is present while ignoring the injector circuit code."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7232,7 +7286,7 @@
       "P0205",
       "P0207"
     ],
-    "applicability_notes": "Cylinder numbering and injector access vary by engine layout.",
+    "applicability_notes": "Cylinder 6 location is highly engine-layout dependent; bank identification and harness access should be verified before parts removal.",
     "source_confidence": "HIGH"
   },
   "P0207": {
@@ -7339,7 +7393,7 @@
     "code_specific_context": "P0208 source definition: Injector Circuit Malfunction - Cylinder 8. Code P0208 signifies a detected electrical fault within the fuel injector circuit specifically for cylinder #8. The Powertrain Control Module (PCM) monitors the voltage and resistance of the injector driver circuit. When the PCM detects an unexpected open circuit, short circuit, or out-of-range resistance in the injector's coil or wiring, it sets this diagnostic trouble code. This typically results in a misfire on cylinder 8, leading to rough idling, reduced engine performance, increased fuel consumption, and potentially a flashing Check Engine Light. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0208 is an injector circuit fault for cylinder 8. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0208 points to the injector control circuit for cylinder 8, most often on engines with eight or more cylinders. Because cylinder 8 can sit at the end of a bank near heat, covers or stretched harness sections, diagnosis should emphasize cylinder identification, bank-end harness inspection and driver command comparison rather than a generic injector swap.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 8",
@@ -7362,18 +7416,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Confirm cylinder 8 and any paired misfire code.",
-      "Inspect injector connector lock and terminal tension.",
-      "Check harness routing near heat and moving components.",
-      "Compare command and cylinder contribution data where available."
+      "Confirm that the engine has a cylinder 8 and identify its bank/end position.",
+      "Inspect the bank-end injector harness for heat damage, tight bends or previous service disturbance.",
+      "Check the cylinder 8 connector for terminal spread caused by difficult access.",
+      "Compare cylinder 8 command, misfire and fuel trim clues with the opposite-bank end cylinder."
     ],
     "diagnosticSteps": [
-      "Confirm P0208 and note whether a matching cylinder misfire is stored.",
-      "Verify cylinder 8 numbering on the engine before testing.",
-      "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
-      "Check injector circuit continuity and driver control using vehicle service information.",
-      "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
-      "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
+      "Confirm P0208 and verify the vehicle actually uses a cylinder 8 before applying this diagnostic path.",
+      "Locate cylinder 8 by bank and firing order, then inspect the bank-end harness routing before disconnecting parts.",
+      "Check the injector connector for pin drag, locking-tab damage and wiring strain at the rear or outer bank position.",
+      "Test cylinder 8 power feed and control pulse against a known-good injector on the same bank.",
+      "Review misfire counters and fuel trims to separate an electrical injector fault from a compression or valve-train problem.",
+      "Repair the proven circuit fault or replace the confirmed failed injector, then verify the bank-end harness remains stable during a wiggle test."
     ],
     "electrical_tests": [
       "injector connector inspection",
@@ -7394,9 +7448,9 @@
       "Repair ECM driver circuit only after wiring and injector tests pass."
     ],
     "common_mistakes": [
-      "Replacing spark plugs for an injector circuit code.",
-      "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Applying P0208 diagnostics to an engine that does not have eight cylinders.",
+      "Missing harness stretch or heat damage at the end of the injector bank.",
+      "Replacing cylinder 8 injector without comparing same-bank injector command."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7426,7 +7480,7 @@
       "P0205",
       "P0206"
     ],
-    "applicability_notes": "Cylinder numbering and injector access vary by engine layout.",
+    "applicability_notes": "P0208 is only physically applicable where a cylinder 8 exists; V8, V10 and larger layouts need bank-specific identification.",
     "source_confidence": "HIGH"
   },
   "P0209": {
@@ -7436,7 +7490,7 @@
     "code_specific_context": "P0209 source definition: Injector Circuit Malfunction - Cylinder 9. Code P0209 signifies a detected electrical fault within the fuel injector circuit specifically for cylinder 9. The Powertrain Control Module (PCM) monitors the voltage and resistance of the injector driver circuit. When the PCM detects an unexpected open, short, or out-of-range resistance in this circuit, it sets code P0209. This typically results in a misfire condition for cylinder 9, leading to rough engine operation, reduced power, and increased emissions. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0209 is an injector circuit fault for cylinder 9. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0209 is specific to the injector circuit for cylinder 9, so it normally applies only to V10, V12 or other high-cylinder-count applications. The first diagnostic question is whether the engine configuration supports a cylinder 9 at all; after that, focus on the correct bank harness, injector driver channel and service access points rather than using a generic four- or six-cylinder misfire workflow.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 9",
@@ -7459,18 +7513,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Confirm cylinder 9 and any paired misfire code.",
-      "Inspect injector connector lock and terminal tension.",
-      "Check harness routing near heat and moving components.",
-      "Compare command and cylinder contribution data where available."
+      "Confirm the engine has cylinder 9 and identify its exact bank.",
+      "Check whether the fault is on a high-cylinder-count harness branch or shared injector sub-loom.",
+      "Inspect connectors disturbed by intake, cover or bank-access service.",
+      "Compare cylinder 9 command with another injector on the same high-number bank."
     ],
     "diagnosticSteps": [
-      "Confirm P0209 and note whether a matching cylinder misfire is stored.",
-      "Verify cylinder 9 numbering on the engine before testing.",
-      "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
-      "Check injector circuit continuity and driver control using vehicle service information.",
-      "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
-      "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
+      "Confirm P0209 and verify the engine family includes a cylinder 9 before diagnosing parts.",
+      "Use firing order and bank diagrams to locate cylinder 9, then identify the matching ECM driver channel.",
+      "Inspect the high-number bank injector sub-loom for connector strain, heat exposure or pin damage.",
+      "Check cylinder 9 power feed and control circuit against a same-bank known-good injector.",
+      "Review misfire data only after the circuit fault is proven, because many scan tools may map high-cylinder data differently.",
+      "Repair the verified wiring, connector or injector fault and repeat the command test to confirm the cylinder 9 circuit is stable."
     ],
     "electrical_tests": [
       "injector connector inspection",
@@ -7491,9 +7545,9 @@
       "Repair ECM driver circuit only after wiring and injector tests pass."
     ],
     "common_mistakes": [
-      "Replacing spark plugs for an injector circuit code.",
-      "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Diagnosing P0209 on an engine layout that does not contain a cylinder 9.",
+      "Using generic cylinder numbering instead of the vehicle firing-order diagram.",
+      "Replacing bank components before proving the cylinder 9 driver channel and harness branch."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7523,7 +7577,7 @@
       "P0205",
       "P0206"
     ],
-    "applicability_notes": "High cylinder-number injector codes apply only to engines with that cylinder count; verify engine configuration before diagnosis.",
+    "applicability_notes": "P0209 is a high-cylinder-count application code; confirm cylinder 9 exists and map the correct bank before testing.",
     "source_confidence": "MEDIUM"
   },
   "P0210": {
@@ -7630,7 +7684,7 @@
     "code_specific_context": "P0211 source definition: Injector Circuit Malfunction - Cylinder 11. Code P0211 signifies that the Powertrain Control Module (PCM) has detected an electrical anomaly within the fuel injector circuit specifically for cylinder 11. This typically means the PCM observed an unexpected resistance, an open circuit, a short to ground, or a short to voltage in the injector's control circuit, preventing it from operating correctly or at all. This can lead to a misfire condition for cylinder 11, impacting engine performance and emissions. Diagnostic focus for this recovery record must stay tied to this exact DTC definition and should not be merged with adjacent sibling codes.",
     "fixDifficulty": "diff_moderate",
     "estimatedCost": "Vehicle-specific after confirmed diagnosis",
-    "description": "P0211 is an injector circuit fault for cylinder 11. The key is to prove whether the ECM is seeing an open/shorted injector driver path, a connector/harness fault, a failed injector coil or a cylinder-specific wiring branch issue. Do not treat this as a fuel pressure or spark-plug code unless supporting misfire data points there.",
+    "description": "P0211 targets the injector circuit for cylinder 11, which makes engine applicability the first filter. On V12 or specialty engines the cylinder 11 injector may be buried under covers or routed through a long sub-harness, so diagnosis should prove the correct bank, connector path and ECM driver channel before any injector or control module decision is made.",
     "system": "powertrain",
     "subsystem": "fuel injection electrical control",
     "component": "fuel injector circuit cylinder 11",
@@ -7653,18 +7707,18 @@
       "cause_fuel_contamination"
     ],
     "first_checks": [
-      "Confirm cylinder 11 and any paired misfire code.",
-      "Inspect injector connector lock and terminal tension.",
-      "Check harness routing near heat and moving components.",
-      "Compare command and cylinder contribution data where available."
+      "Confirm that cylinder 11 exists on the engine being diagnosed.",
+      "Map cylinder 11 to the correct bank and injector sub-harness.",
+      "Inspect long harness runs, cover pinch points and high-bank connector access.",
+      "Compare cylinder 11 driver command with its bank-paired injector where service data supports it."
     ],
     "diagnosticSteps": [
-      "Confirm P0211 and note whether a matching cylinder misfire is stored.",
-      "Verify cylinder 11 numbering on the engine before testing.",
-      "Inspect injector connector fit, corrosion, pin drag and harness rub-through.",
-      "Check injector circuit continuity and driver control using vehicle service information.",
-      "Compare injector command, misfire counters and fuel trim behavior to avoid chasing a mechanical misfire.",
-      "Repair wiring/connector faults or replace the confirmed failed injector after electrical proof."
+      "Confirm P0211 and validate that the engine platform uses an injector circuit for cylinder 11.",
+      "Locate cylinder 11 from manufacturer bank/firing-order information before unplugging nearby injectors.",
+      "Inspect the cylinder 11 harness path for cover pinch damage, stretched wiring or connector locking issues.",
+      "Check power feed and ECM control at cylinder 11, then compare with a known-good injector on the same bank.",
+      "Use cylinder contribution data carefully because high-cylinder-count engines can report bank or cylinder order differently by scan tool.",
+      "Repair the proven circuit defect or replace the confirmed failed injector, then verify the same driver channel no longer flags a fault."
     ],
     "electrical_tests": [
       "injector connector inspection",
@@ -7685,9 +7739,9 @@
       "Repair ECM driver circuit only after wiring and injector tests pass."
     ],
     "common_mistakes": [
-      "Replacing spark plugs for an injector circuit code.",
-      "Skipping cylinder numbering verification.",
-      "Replacing an injector without checking connector tension and harness damage."
+      "Treating P0211 as a generic misfire on engines that do not have a cylinder 11.",
+      "Testing the wrong bank because cylinder numbering was assumed.",
+      "Replacing the ECM before confirming the long injector sub-harness and connector path."
     ],
     "do_not_replace_blindly": [
       "fuel injector",
@@ -7717,7 +7771,7 @@
       "P0205",
       "P0206"
     ],
-    "applicability_notes": "High cylinder-number injector codes apply only to engines with that cylinder count; verify engine configuration before diagnosis.",
+    "applicability_notes": "P0211 is only applicable on engines with cylinder 11; high-cylinder layouts require manufacturer-specific bank and harness identification.",
     "source_confidence": "MEDIUM"
   }
 }

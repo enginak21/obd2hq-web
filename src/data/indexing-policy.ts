@@ -1,3 +1,5 @@
+import { RAW_GOLD_CODE_SET } from './sitemap-policy';
+
 export type VehicleCodeTarget = {
   locale?: string;
   make: string;
@@ -45,6 +47,7 @@ export function getIndexableVehicleCodeTargets() {
   const targets = new Map<string, VehicleCodeTarget>();
 
   editorialPriorityTargets.map(normalizeTarget).forEach((target) => {
+    if (!RAW_GOLD_CODE_SET.has(target.code)) return;
     targets.set(`${target.make}/${target.model}/${target.code}`, target);
   });
 

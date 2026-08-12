@@ -39,6 +39,83 @@
     "applicability_notes": "Generic OBD-II logic applies, but sensor location and whether IAT is integrated into the MAF varies by vehicle.",
     "source_confidence": "HIGH"
   },
+  "P0213": {
+    "title": "Cold Start Injector 1 Circuit Malfunction",
+    "description": "P0213 means the engine control module detected an electrical or control fault related to cold start injector 1. This is not the same as a normal port injector misfire code: diagnosis should focus on whether the vehicle is equipped with a separate cold start injector, the injector power and control circuit, connector condition, cold-start enrichment command and fuel delivery during cold cranking. Do not replace regular injectors, pumps or the ECM until the cold-start circuit and application are confirmed.",
+    "system": "powertrain",
+    "subsystem": "cold start fuel enrichment",
+    "component": "cold start injector 1",
+    "circuit_type": "cold start injector power/control circuit",
+    "severity": "moderate",
+    "driveability": "Usually drivable after the engine is warm, but hard starting, stalling or rough running during cold starts should be diagnosed soon. Use extra caution in cold weather or if the engine stalls in traffic.",
+    "ecu_detection_condition": "The ECM detects missing, implausible or abnormal electrical response from the cold start injector 1 control circuit during conditions where cold-start enrichment may be monitored.",
+    "symptoms": [
+      "symp_check_engine",
+      "symp_hard_start",
+      "symp_stalling_cold",
+      "symp_rough_idle",
+      "symp_fuel_smell"
+    ],
+    "causes": [
+      "cause_fuel_injector",
+      "cause_wiring_damage",
+      "cause_connector_corrosion",
+      "cause_fuel_pressure_reg",
+      "cause_pcm_failure"
+    ],
+    "fixDifficulty": "diff_hard",
+    "estimatedCost": "Vehicle-specific after confirmed diagnosis",
+    "diagnosticSteps": [
+      "Confirm P0213 and save freeze-frame data, especially coolant temperature, intake temperature, cranking state and battery voltage.",
+      "Verify from service information whether the vehicle uses a separate cold start injector or an equivalent cold-start enrichment circuit before testing parts.",
+      "Inspect the cold start injector connector and nearby harness for loose terminals, corrosion, oil intrusion, heat damage or previous repair splices.",
+      "Check the injector power feed and ECM control side with the correct wiring diagram; avoid universal resistance or voltage assumptions.",
+      "Compare cold-start command, injector activation and fuel delivery behavior with scan-tool output tests or manufacturer-approved test methods where available.",
+      "Repair the verified connector, wiring, injector or control fault, then retest after a true cold soak to confirm P0213 does not return."
+    ],
+    "commonFixes": [
+      "Repair corroded, loose or damaged cold start injector connector terminals.",
+      "Repair open, shorted or high-resistance wiring in the cold-start injector circuit.",
+      "Replace cold start injector 1 only after circuit command and application checks support it.",
+      "Correct fuel delivery issues that affect cold cranking after confirming the injector circuit is not the primary fault."
+    ],
+    "common_mistakes": [
+      "Replacing normal cylinder injectors when the code points to the cold-start enrichment injector circuit.",
+      "Testing the system without confirming that the specific vehicle actually uses a separate cold start injector.",
+      "Clearing the code before saving cold-start freeze-frame data.",
+      "Replacing the ECM before checking connector fit, harness damage and control command."
+    ],
+    "do_not_replace_blindly": [
+      "regular fuel injectors",
+      "fuel pump",
+      "cold start injector",
+      "ECM/PCM"
+    ],
+    "freeze_frame_fields": [
+      "engine coolant temperature",
+      "intake air temperature",
+      "battery voltage",
+      "engine RPM",
+      "fuel system status"
+    ],
+    "live_data_fields": [
+      "cold-start enrichment command where available",
+      "injector command/output test status",
+      "ECT temperature",
+      "IAT temperature",
+      "battery voltage during cranking"
+    ],
+    "related_codes": [
+      "P0214",
+      "P0201",
+      "P0202",
+      "P0300",
+      "P0171",
+      "P0172"
+    ],
+    "applicability_notes": "Some modern vehicles do not use a separate cold start injector. Confirm the actual fuel system layout before condemning parts.",
+    "source_confidence": "HIGH"
+  },
   "P0203": {
     "title": "Injector Circuit/Open - Cylinder 3",
     "description": "P0203 means the ECM detected an electrical problem in the fuel injector control circuit for cylinder 3. The key diagnostic value is cylinder-specific comparison: injector connector, power feed, control wire, injector resistance/current behavior and ECM driver command should be checked against known-good cylinders before replacing parts.",

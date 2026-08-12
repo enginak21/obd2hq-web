@@ -1,6 +1,6 @@
 # Phase 3 DTC Gold Batch 01 Report
 
-Generated: 2026-08-08T22:44:05.904Z
+Generated: 2026-08-12T19:31:05.474Z
 
 ## Scope
 
@@ -14,8 +14,8 @@ Generated: 2026-08-08T22:44:05.904Z
 - Passed gold quality gate: 20
 - Failed gold quality gate: 0
 - Raw gold count before verified overlay: 376
-- Raw gold count after verified overlay: 476
-- Net raw gold increase: 100
+- Raw gold count after verified overlay: 477
+- Net raw gold increase: 101
 
 ## Duplicate Similarity Check
 

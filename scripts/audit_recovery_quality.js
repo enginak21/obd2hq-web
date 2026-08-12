@@ -217,17 +217,18 @@ function classifyUrl(url) {
     const [, make, model, codeRaw] = parts;
     const code = codeRaw.toUpperCase();
     const key = `${make}/${model}/${code}`;
+    const isRawGold = rawGoldCodes.has(code);
     const validity = vehicleDtcValidity(make, model, code);
     const hasGsc = Boolean(gscByTarget.get(relative)?.length);
-    const score = editorialTargets.has(key) && validity.status === 'VALID' ? 86 + (hasGsc ? 6 : 0) : validity.status === 'INVALID' ? 20 : 58;
+    const score = editorialTargets.has(key) && validity.status === 'VALID' && isRawGold ? 86 + (hasGsc ? 6 : 0) : validity.status === 'INVALID' ? 20 : 58;
     return {
       page_type: pageType,
       language,
       quality_score: score,
       classification: validity.status === 'INVALID' ? 'INVALID' : score >= 85 ? 'GOLD' : score >= 70 ? 'SILVER' : 'THIN',
       indexable: validity.status === 'INVALID' ? 'no' : score >= 70 ? 'yes' : 'review',
-      reason: validity.reason,
-      recommended_action: score >= 70 ? 'Keep as recovery target; add verified vehicle-specific information only.' : 'Route intent to the general code hub until verified vehicle-specific value exists.',
+      reason: isRawGold ? validity.reason : `${validity.reason} Raw DTC record is not Gold-ready; hold vehicle-code indexing.`,
+      recommended_action: score >= 70 ? 'Keep as recovery target; add verified vehicle-specific information only.' : 'Keep crawlable via canonical code hub path only after raw DTC Gold upgrade.',
     };
   }
   if (pageType === 'vehicle_spec') {
@@ -298,6 +299,7 @@ async function main() {
   const vehicleTargets = [];
   for (const key of editorialTargets) {
     const [make, model, code] = key.split('/');
+    if (!rawGoldCodes.has(code)) continue;
     for (const locale of LOCALES) {
       const validity = vehicleDtcValidity(make, model, code);
       vehicleTargets.push({

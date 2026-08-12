@@ -37,6 +37,14 @@ if (!codeHubPage.includes('robots: indexableCodeHub ? { index: true, follow: tru
   failures.push('Fallback code hubs must remain 200/follow but noindex until raw Gold eligible.');
 }
 
+const indexingPolicy = fs.readFileSync(path.join(ROOT, 'src/data/indexing-policy.ts'), 'utf8');
+if (!indexingPolicy.includes("import { RAW_GOLD_CODE_SET } from './sitemap-policy';")) {
+  failures.push('Vehicle-DTC indexing policy must import the raw Gold DTC set.');
+}
+if (!indexingPolicy.includes('if (!RAW_GOLD_CODE_SET.has(target.code)) return;')) {
+  failures.push('Vehicle-DTC pages must not become indexable until the raw DTC record is Gold-ready.');
+}
+
 const forbiddenUtilityPaths = [
   '/about',
   '/contact',

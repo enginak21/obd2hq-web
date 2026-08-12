@@ -1,6 +1,6 @@
 # Phase 3 DTC Gold Batch 02 Report
 
-Generated: 2026-08-08T22:44:05.905Z
+Generated: 2026-08-12T19:31:05.475Z
 
 ## Scope
 
@@ -16,13 +16,13 @@ Generated: 2026-08-08T22:44:05.905Z
 - REVIEW: 0
 
 - Raw Gold BEFORE: 396
-- Raw Gold AFTER: 476
+- Raw Gold AFTER: 477
 - Fallback BEFORE: 1827
-- Fallback AFTER: 1747
+- Fallback AFTER: 1746
 
-- Average quality score: 98.5
-- Average information gain: 98.5
-- Highest similarity pair: P0206 / P0208 (0.905, MEDIUM)
+- Average quality score: 98.9
+- Average information gain: 98.9
+- Highest similarity pair: P0187 / P0188 (0.822, MEDIUM)
 - Unsupported precision findings: 0
 
 ## Batch 01 + Batch 02 Top-100 Summary
@@ -33,26 +33,26 @@ Generated: 2026-08-08T22:44:05.905Z
 
 ## Duplicate Similarity Control
 
-- P0206 / P0208: 0.905 (MEDIUM)
-- P0180 / P0185: 0.894 (MEDIUM)
-- P0208 / P0209: 0.890 (MEDIUM)
-- P0210 / P0211: 0.881 (MEDIUM)
-- P0204 / P0205: 0.872 (MEDIUM)
-- P0209 / P0211: 0.870 (MEDIUM)
-- P0158 / P0164: 0.866 (MEDIUM)
-- P0209 / P0210: 0.858 (MEDIUM)
-- P0137 / P0157: 0.857 (MEDIUM)
-- P0206 / P0209: 0.854 (MEDIUM)
-- P0138 / P0158: 0.850 (MEDIUM)
-- P0207 / P0208: 0.847 (MEDIUM)
-- P0156 / P0162: 0.846 (MEDIUM)
-- P0159 / P0160: 0.846 (MEDIUM)
-- P0137 / P0140: 0.845 (MEDIUM)
-- P0157 / P0162: 0.845 (MEDIUM)
-- P0143 / P0144: 0.840 (MEDIUM)
-- P0156 / P0160: 0.839 (MEDIUM)
-- P0162 / P0165: 0.838 (MEDIUM)
-- P0157 / P0163: 0.836 (MEDIUM)
+- P0187 / P0188: 0.822 (MEDIUM)
+- P0122 / P0123: 0.813 (MEDIUM)
+- P0131 / P0132: 0.812 (MEDIUM)
+- P0141 / P0147: 0.812 (MEDIUM)
+- P0137 / P0157: 0.809 (MEDIUM)
+- P0126 / P0128: 0.807 (MEDIUM)
+- P0136 / P0139: 0.801 (MEDIUM)
+- P0115 / P0119: 0.800 (MEDIUM)
+- P0176 / P0177: 0.799 (MEDIUM)
+- P0131 / P0133: 0.796 (MEDIUM)
+- P0115 / P0116: 0.795 (MEDIUM)
+- P0131 / P0151: 0.794 (MEDIUM)
+- P0156 / P0162: 0.794 (MEDIUM)
+- P0158 / P0164: 0.793 (MEDIUM)
+- P0170 / P0173: 0.792 (MEDIUM)
+- P0116 / P0119: 0.791 (MEDIUM)
+- P0120 / P0122: 0.791 (MEDIUM)
+- P0176 / P0179: 0.789 (MEDIUM)
+- P0121 / P0123: 0.788 (MEDIUM)
+- P0207 / P0210: 0.788 (MEDIUM)
 
 ## Batch Detail
 
@@ -80,33 +80,33 @@ Generated: 2026-08-08T22:44:05.905Z
 - P0132: PASS | score 98.1 | no blocking issue
 - P0133: PASS | score 98.1 | no blocking issue
 - P0136: PASS | score 98.5 | no blocking issue
-- P0137: PASS | score 98.2 | no blocking issue
-- P0138: PASS | score 98.3 | no blocking issue
+- P0137: PASS | score 100 | no blocking issue
+- P0138: PASS | score 100 | no blocking issue
 - P0139: PASS | score 98.3 | no blocking issue
-- P0140: PASS | score 98.3 | no blocking issue
+- P0140: PASS | score 100 | no blocking issue
 - P0141: PASS | score 98.5 | no blocking issue
 - P0142: PASS | score 98.8 | no blocking issue
-- P0143: PASS | score 98.6 | no blocking issue
-- P0144: PASS | score 98.6 | no blocking issue
+- P0143: PASS | score 100 | no blocking issue
+- P0144: PASS | score 100 | no blocking issue
 - P0145: PASS | score 98.7 | no blocking issue
 - P0146: PASS | score 98.6 | no blocking issue
 - P0147: PASS | score 98.8 | no blocking issue
 - P0150: PASS | score 99 | no blocking issue
 - P0151: PASS | score 98.8 | no blocking issue
 - P0152: PASS | score 98.9 | no blocking issue
-- P0153: PASS | score 98.9 | no blocking issue
+- P0153: PASS | score 100 | no blocking issue
 - P0154: PASS | score 98.9 | no blocking issue
 - P0155: PASS | score 99.1 | no blocking issue
-- P0156: PASS | score 99.2 | no blocking issue
-- P0157: PASS | score 99 | no blocking issue
-- P0158: PASS | score 99 | no blocking issue
-- P0159: PASS | score 99.1 | no blocking issue
-- P0160: PASS | score 99 | no blocking issue
+- P0156: PASS | score 100 | no blocking issue
+- P0157: PASS | score 100 | no blocking issue
+- P0158: PASS | score 100 | no blocking issue
+- P0159: PASS | score 100 | no blocking issue
+- P0160: PASS | score 100 | no blocking issue
 - P0161: PASS | score 99.2 | no blocking issue
-- P0162: PASS | score 99.6 | no blocking issue
-- P0163: PASS | score 99.4 | no blocking issue
-- P0164: PASS | score 99.4 | no blocking issue
-- P0165: PASS | score 99.4 | no blocking issue
+- P0162: PASS | score 100 | no blocking issue
+- P0163: PASS | score 100 | no blocking issue
+- P0164: PASS | score 100 | no blocking issue
+- P0165: PASS | score 100 | no blocking issue
 - P0166: PASS | score 99.4 | no blocking issue
 - P0167: PASS | score 99.6 | no blocking issue
 - P0168: PASS | score 98 | no blocking issue
@@ -117,22 +117,22 @@ Generated: 2026-08-08T22:44:05.905Z
 - P0177: PASS | score 98.4 | no blocking issue
 - P0178: PASS | score 98.2 | no blocking issue
 - P0179: PASS | score 98.2 | no blocking issue
-- P0180: PASS | score 98.5 | no blocking issue
+- P0180: PASS | score 100 | no blocking issue
 - P0181: PASS | score 98.4 | no blocking issue
 - P0182: PASS | score 98.2 | no blocking issue
 - P0184: PASS | score 98.3 | no blocking issue
-- P0185: PASS | score 98.5 | no blocking issue
+- P0185: PASS | score 99.4 | no blocking issue
 - P0186: PASS | score 98.4 | no blocking issue
 - P0187: PASS | score 98.2 | no blocking issue
 - P0188: PASS | score 98.2 | no blocking issue
 - P0189: PASS | score 98.3 | no blocking issue
 - P0200: PASS | score 98.3 | no blocking issue
-- P0202: PASS | score 97.8 | no blocking issue
-- P0204: PASS | score 97.8 | no blocking issue
-- P0205: PASS | score 97.8 | no blocking issue
-- P0206: PASS | score 97.8 | no blocking issue
+- P0202: PASS | score 100 | no blocking issue
+- P0204: PASS | score 100 | no blocking issue
+- P0205: PASS | score 100 | no blocking issue
+- P0206: PASS | score 99.6 | no blocking issue
 - P0207: PASS | score 97.8 | no blocking issue
-- P0208: PASS | score 97.8 | no blocking issue
-- P0209: PASS | score 97.8 | no blocking issue
+- P0208: PASS | score 98.5 | no blocking issue
+- P0209: PASS | score 99.5 | no blocking issue
 - P0210: PASS | score 97.9 | no blocking issue
-- P0211: PASS | score 97.9 | no blocking issue
+- P0211: PASS | score 98.5 | no blocking issue
