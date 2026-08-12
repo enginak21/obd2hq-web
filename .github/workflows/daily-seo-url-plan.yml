@@ -1,8 +1,6 @@
 name: Daily SEO URL Plan
 
 on:
-  schedule:
-    - cron: '45 3 * * *'
   workflow_dispatch:
 
 permissions:

@@ -119,13 +119,13 @@ function codeHubPath(locale, code) {
 
 function isCodeHubSitemapEligible(code, rawGoldSet, gscSignalSet) {
   const upper = code.toUpperCase();
-  return rawGoldSet.has(upper) || gscSignalSet.has(upper);
+  return rawGoldSet.has(upper);
 }
 
 function codeHubDecision(code, rawGoldSet, gscSignalSet) {
   const upper = code.toUpperCase();
   if (rawGoldSet.has(upper)) return { decision: 'SITEMAP_KEEP', reason: 'verified_raw_gold' };
-  if (gscSignalSet.has(upper)) return { decision: 'SITEMAP_KEEP_GOLD_UPGRADE_PRIORITY', reason: 'fallback_with_gsc_signal' };
+  if (gscSignalSet.has(upper)) return { decision: 'SITEMAP_HOLD_FOR_GOLD_UPGRADE', reason: 'fallback_with_gsc_signal_held_for_gold_upgrade' };
   return { decision: 'SITEMAP_REMOVE_KEEP_CRAWLABLE', reason: 'fallback_without_gsc_signal' };
 }
 

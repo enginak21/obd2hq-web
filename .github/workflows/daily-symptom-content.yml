@@ -1,8 +1,6 @@
 name: Daily symptom content
 
 on:
-  schedule:
-    - cron: '15 2 * * *'
   workflow_dispatch:
     inputs:
       limit:

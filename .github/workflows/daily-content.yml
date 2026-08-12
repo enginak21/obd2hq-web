@@ -1,13 +1,6 @@
 name: Automated Content Generation
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/daily_news_bot.py'
-  schedule:
-    - cron: '0 */4 * * *'
   workflow_dispatch:
 
 jobs:

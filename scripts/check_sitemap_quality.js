@@ -29,6 +29,14 @@ if (!sitemapRoute.includes('isCodeHubSitemapEligible(code)')) {
   failures.push('Sitemap route does not apply code hub eligibility policy.');
 }
 
+const codeHubPage = fs.readFileSync(path.join(ROOT, 'src/app/[locale]/_code-hub-page.tsx'), 'utf8');
+if (!codeHubPage.includes('isCodeHubSitemapEligible(upperCode)')) {
+  failures.push('Code hub metadata does not reuse sitemap eligibility for index control.');
+}
+if (!codeHubPage.includes('robots: indexableCodeHub ? { index: true, follow: true } : { index: false, follow: true }')) {
+  failures.push('Fallback code hubs must remain 200/follow but noindex until raw Gold eligible.');
+}
+
 const forbiddenUtilityPaths = [
   '/about',
   '/contact',
@@ -124,5 +132,5 @@ if (failures.length) {
 
 console.log('Sitemap quality policy check passed.');
 console.log(`Verified raw Gold code hubs: ${rawGoldSet.size}`);
-console.log(`Fallback code hubs with GSC signal: ${[...gscSignalSet].filter((code) => !rawGoldSet.has(code)).length}`);
+console.log(`Fallback code hubs with GSC signal held for Gold upgrade: ${[...gscSignalSet].filter((code) => !rawGoldSet.has(code)).length}`);
 console.log(`Fallback code hubs removed from sitemap eligibility: ${sampleIneligible.length}+ sample confirmed`);

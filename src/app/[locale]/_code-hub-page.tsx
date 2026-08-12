@@ -12,6 +12,7 @@ import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
 import { getCodeHubAlternates, getCodeHubCopy, getCodeHubPath, isKnownCode } from '@/data/gsc-seo';
 import { getTopImpressionCodeFocus } from '@/data/top-impression-seo';
 import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 type PageProps = {
   params: Promise<{
@@ -189,10 +190,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isKnownCode(upperCode)) return { title: 'Code Not Found' };
   const copy = getCodeHubCopy(locale, upperCode);
   const topImpressionFocus = getTopImpressionCodeFocus(locale, upperCode);
+  const indexableCodeHub = isCodeHubSitemapEligible(upperCode);
   return {
     title: fitSeoTitle(topImpressionFocus ? topImpressionFocus.title : copy.title),
     description: fitSeoDescription(topImpressionFocus ? `${topImpressionFocus.query} OBD2 guide with meaning, symptoms, causes, first checks, safe-to-drive advice, cost level and related diagnostic pages.` : copy.meta),
     alternates: getCodeHubAlternates(upperCode, locale),
+    robots: indexableCodeHub ? { index: true, follow: true } : { index: false, follow: true },
   };
 }
 

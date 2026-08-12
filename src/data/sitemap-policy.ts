@@ -59,12 +59,12 @@ export const GSC_SIGNAL_CODE_SET = new Set(
 
 export function isCodeHubSitemapEligible(code: string): boolean {
   const upper = code.toUpperCase();
-  return RAW_GOLD_CODE_SET.has(upper) || GSC_SIGNAL_CODE_SET.has(upper);
+  return RAW_GOLD_CODE_SET.has(upper);
 }
 
 export function getCodeHubSitemapReason(code: string): string {
   const upper = code.toUpperCase();
   if (RAW_GOLD_CODE_SET.has(upper)) return 'verified_raw_gold';
-  if (GSC_SIGNAL_CODE_SET.has(upper)) return 'fallback_with_gsc_signal';
+  if (GSC_SIGNAL_CODE_SET.has(upper)) return 'fallback_with_gsc_signal_held_for_gold_upgrade';
   return 'fallback_without_gsc_signal';
 }

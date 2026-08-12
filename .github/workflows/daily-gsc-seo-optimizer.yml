@@ -1,8 +1,6 @@
 name: Daily GSC Recovery Monitor
 
 on:
-  schedule:
-    - cron: '10 3 * * *'
   workflow_dispatch:
 
 permissions:
