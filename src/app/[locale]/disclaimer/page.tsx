@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
+import TrustPageContent from '@/components/TrustPageContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -36,6 +37,7 @@ export default async function DisclaimerPage({ params }: { params: Promise<{ loc
         <p className="text-slate-300 leading-relaxed">
           {t('riskText')}
         </p>
+        <TrustPageContent kind="disclaimer" locale={locale} />
       </div>
     </main>
   );

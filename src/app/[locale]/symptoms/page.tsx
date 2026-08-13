@@ -62,7 +62,7 @@ export default async function SymptomsHubPage({ params }: { params: Promise<{ lo
                       <AlertTriangle className="w-3.5 h-3.5 text-amber-300" />
                       {symptom.severity}
                     </div>
-                    <h2 className="text-2xl font-black text-white group-hover:text-blue-100">{localized.title}</h2>
+                    <p className="text-2xl font-black text-white group-hover:text-blue-100">{localized.title}</p>
                     <p className="mt-3 text-slate-400 leading-relaxed">{localized.description}</p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-blue-400 shrink-0 mt-2 group-hover:translate-x-1 transition-transform" />

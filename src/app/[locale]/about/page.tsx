@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { ShieldCheck, Target, Users } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
+import TrustPageContent from '@/components/TrustPageContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -71,6 +72,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             {t('storyP2')}
           </p>
         </section>
+        <TrustPageContent kind="about" locale={locale} />
       </div>
     </main>
   );

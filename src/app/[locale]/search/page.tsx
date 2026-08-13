@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     description: t('metaDescription'),
     robots: {
       index: false,
-      follow: true,
+      follow: false,
     },
   };
 }

@@ -290,7 +290,7 @@
   },
   "PrivacyPage": {
     "title": "Privacy Policy",
-    "metaTitle": "Privacy Policy - OBD2HQ",
+    "metaTitle": "OBD2HQ Privacy Policy, Cookies and Data Protection",
     "metaDescription": "Learn how OBD2HQ handles analytics, cookies, advertising partners and diagnostic search data while keeping the site accessible.",
     "lastUpdated": "Last updated:",
     "h1": "1. Information Collection",
@@ -302,7 +302,7 @@
   },
   "TermsPage": {
     "title": "Terms of Service",
-    "metaTitle": "Terms of Service - OBD2HQ",
+    "metaTitle": "OBD2HQ Terms of Service for Diagnostic Guides",
     "metaDescription": "Review the terms for using OBD2HQ diagnostic guides, OBD2 code lookup, vehicle data, warning light pages and educational content.",
     "lastUpdated": "Last updated:",
     "h1": "1. Acceptance of Terms",
@@ -443,6 +443,8 @@
     "team": "OBD2HQ Team"
   },
   "EditorialPolicyPage": {
+    "metaTitle": "OBD2HQ Editorial Policy and Diagnostic Review Method",
+    "metaDescription": "How OBD2HQ reviews OBD2 codes, vehicle symptoms, repair guidance and editorial quality before publishing diagnostic content.",
     "badge": "Editorial Guidelines",
     "title": "Our Editorial Policy",
     "subtitle": "Trust is the foundation of OBD2HQ. When a warning light illuminates on your dashboard, you need accurate, unbiased, and actionable information. Here is how we ensure our data meets the highest standards.",
@@ -460,6 +462,8 @@
     "returnHome": "Return to Homepage"
   },
   "ReviewersPage": {
+    "metaTitle": "OBD2HQ Editorial Team and Diagnostic Review Process",
+    "metaDescription": "Meet the OBD2HQ editorial approach for reviewing diagnostic code data, symptom guides, repair advice and vehicle reference information.",
     "badge": "Editorially Reviewed",
     "title": "The OBD2HQ Editorial Team",
     "subtitle": "Our mission is to democratize automotive diagnostics. Every piece of diagnostic data on OBD2HQ is cross-referenced against service information, technical service bulletins, and aggregated real-world repair data.",

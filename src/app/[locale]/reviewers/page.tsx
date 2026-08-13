@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { ShieldCheck, BookOpen, Users, Mail } from 'lucide-react';
 import { getAlternates } from '@/utils/seo';
+import TrustPageContent from '@/components/TrustPageContent';
 
 interface PageProps {
   params: Promise<{
@@ -94,6 +95,7 @@ export default async function ReviewersPage({ params }: PageProps) {
             {t('contact')}
           </Link>
         </div>
+        <TrustPageContent kind="reviewers" locale={locale} />
 
       </div>
     </main>

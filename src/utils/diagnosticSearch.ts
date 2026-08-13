@@ -70,6 +70,10 @@ export function getDiagnosticSearchTarget(locale: string, query: string, vehicle
     return `/${locale}/${parsed.make}`;
   }
 
+  if (parsed.code) {
+    return `/${locale}/codes/${parsed.code.toLowerCase()}`;
+  }
+
   return `/${locale}/search?q=${encodeURIComponent(query.trim())}`;
 }
 

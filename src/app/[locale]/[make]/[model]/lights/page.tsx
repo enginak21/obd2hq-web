@@ -205,7 +205,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
                 </span>
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                {t('title')}
+                {capMake} {capModel} {t('title')}
               </h1>
               <p className="text-lg text-slate-400 max-w-2xl font-light">
                 {t('subtitle', { make: capMake, model: capModel })}
@@ -220,7 +220,7 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
         <section className="mb-8 rounded-3xl border border-white/5 bg-[#131b2f] p-6">
           <h2 className="text-2xl font-bold text-white">{introTitle}</h2>
           <p className="mt-3 leading-7 text-slate-400">{introText}</p>
-          <h2 className="mt-6 text-xl font-bold text-white">{priorityTitle}</h2>
+          <h3 className="mt-6 text-xl font-bold text-white">{priorityTitle}</h3>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {priorityItems.map(item => (
               <li key={item} className="rounded-2xl bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-300">{item}</li>

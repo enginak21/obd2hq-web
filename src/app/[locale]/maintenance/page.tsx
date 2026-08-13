@@ -41,7 +41,7 @@ export default async function MaintenancePage({ params }: { params: Promise<{ lo
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-5">
         {vehicleKnowledgeProfiles.map(vehicle => (
           <Link key={`${vehicle.make}-${vehicle.model}`} href={`/${locale}/vehicles/${vehicle.make}/${vehicle.model}`} className="rounded-3xl border border-white/5 bg-[#131b2f] p-6 hover:border-green-400/40 transition-all">
-            <h2 className="text-2xl font-black text-white capitalize">{vehicle.make.replace('-', ' ')} {vehicle.model.replace('-', ' ')}</h2>
+            <p className="text-2xl font-black text-white capitalize">{vehicle.make.replace('-', ' ')} {vehicle.model.replace('-', ' ')}</p>
             <ul className="mt-4 space-y-2 text-slate-300">
               {vehicle.maintenance.slice(0, 4).map(item => <li key={item}>- {item}</li>)}
             </ul>

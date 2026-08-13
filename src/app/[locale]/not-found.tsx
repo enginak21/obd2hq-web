@@ -34,7 +34,7 @@ export default async function NotFound() {
           <span>{t('returnHome')}</span>
         </Link>
         <Link
-          href="/search?q="
+          href={`/${locale}/codes/p0420`}
           className="flex-1 flex items-center justify-center space-x-2 bg-[#131b2f] hover:bg-[#1a233a] border border-white/10 text-white font-bold py-4 rounded-xl transition-all"
         >
           <Search className="w-5 h-5 text-blue-400" />

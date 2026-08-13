@@ -31,7 +31,7 @@ const VEHICLE_FOCUS: Record<string, TopClickVehicleFocus> = {
     links: [
       { href: '/en/codes/p0234', label: 'P0234 code hub' },
       { href: '/en/suzuki/jimny/p0235', label: 'Suzuki Jimny P0235' },
-      { href: '/en/codes/p0299', label: 'P0299 underboost code' },
+      { href: '/en/codes/p0235', label: 'P0235 boost sensor code' },
       { href: '/en/suzuki/jimny/lights', label: 'Suzuki Jimny warning lights' },
     ],
   },

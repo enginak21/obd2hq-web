@@ -95,7 +95,7 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
               <div className="mb-5 rounded-2xl bg-white/5 p-3 w-fit text-green-300">
                 {tool.category === 'calculator' ? <Calculator className="w-6 h-6" /> : <ScanSearch className="w-6 h-6" />}
               </div>
-              <h2 className="text-2xl font-black text-white">{localized.title}</h2>
+              <p className="text-2xl font-black text-white">{localized.title}</p>
               <p className="mt-3 text-slate-400 leading-relaxed">{localized.description}</p>
               <div className="mt-6 flex items-center justify-between text-sm font-bold text-green-300">
                 {copy.openTool}

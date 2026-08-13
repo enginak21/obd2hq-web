@@ -26,7 +26,7 @@ export default function VehicleSeoHub({ locale, eyebrow, title, description, met
         {cards.map(card => (
           <Link key={card.href} href={`/${locale}${card.href}`} className="rounded-3xl border border-white/5 bg-[#131b2f] p-6 hover:border-blue-400/40 transition-all">
             <p className="text-xs font-black uppercase tracking-widest text-slate-500">{card.years}</p>
-            <h2 className="mt-3 text-2xl font-black text-white">{card.name}</h2>
+            <p className="mt-3 text-2xl font-black text-white">{card.name}</p>
             <p className="mt-3 text-sm text-slate-300">{metricLabel}: {card.metric}</p>
             <div className="mt-4 flex flex-wrap gap-2">
               {card.tags.slice(0, 5).map(tag => <span key={tag} className="rounded-lg bg-white/5 px-2.5 py-1 text-xs font-bold text-slate-300">{tag}</span>)}

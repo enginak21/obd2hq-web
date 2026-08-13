@@ -517,7 +517,7 @@ export function getClusterLinks(locale: string, make: string, model: string, cod
     ? { label: upperCode === 'P0420' ? 'How to fix P0420' : 'P0420 catalyst guide', href: `/${locale}/blog/${locale === 'tr' ? 'p0420-ariza-kodu-nasil-cozulur' : 'how-to-fix-p0420'}` }
     : system === 'misfire'
       ? { label: 'P0300 symptoms guide', href: `/${locale}/blog/${p0300Slugs[locale] || p0300Slugs.en}` }
-      : { label: 'OBD2 code lookup', href: `/${locale}/search?q=${upperCode}` };
+      : { label: `${upperCode} OBD2 code guide`, href: `/${locale}/codes/${upperCode.toLowerCase()}` };
 
   return [
     pillar,

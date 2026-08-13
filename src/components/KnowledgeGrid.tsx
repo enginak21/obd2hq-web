@@ -16,7 +16,7 @@ export function KnowledgeCard({
     <Link href={href} className="group rounded-3xl border border-white/5 bg-[#131b2f] p-6 hover:border-blue-500/40 hover:bg-[#17213a] transition-all">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-black text-white">{title}</h2>
+          <p className="text-2xl font-black text-white">{title}</p>
           <p className="mt-3 text-slate-400 leading-relaxed">{description}</p>
         </div>
         <ArrowRight className="w-5 h-5 text-blue-400 shrink-0 mt-2 group-hover:translate-x-1 transition-transform" />

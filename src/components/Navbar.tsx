@@ -9,6 +9,8 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { getProblemFinderHubPath } from '@/data/problem-finder';
 import { getSymptomContentHubPath } from '@/data/symptom-content-routing';
 import { getWarningLightsHubPath } from '@/data/navigation';
+import { getCodeHubPath } from '@/data/gsc-seo';
+import { normalizeCode } from '@/utils/diagnosticSearch';
 
 export default function Navbar() {
   const [query, setQuery] = useState('');
@@ -24,7 +26,8 @@ export default function Navbar() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim().length > 2) {
-      router.push(`/${locale}/search?q=${encodeURIComponent(query.trim())}`);
+      const code = normalizeCode(query);
+      router.push(code ? getCodeHubPath(locale, code) : `/${locale}/search?q=${encodeURIComponent(query.trim())}`);
     }
   };
 

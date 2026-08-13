@@ -11,6 +11,7 @@ import {
   getDiagnosticSearchTarget,
   normalizeCode,
 } from '@/utils/diagnosticSearch';
+import { getCodeHubPath } from '@/data/gsc-seo';
 import { getWarningLightsHubPath } from '@/data/navigation';
 
 type SmartSearchProps = {
@@ -79,7 +80,7 @@ export default function SmartSearch({ vehicles, priorityCodes, variant = 'hero' 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {normalizedCode && (
                   <Link
-                    href={`/${locale}/search?q=${normalizedCode}`}
+                    href={getCodeHubPath(locale, normalizedCode)}
                     className="flex items-center justify-between rounded-xl bg-amber-500/10 border border-amber-500/20 px-4 py-3 text-amber-200 hover:bg-amber-500/15 transition-colors"
                   >
                     <span className="font-bold">{t('foundCode', { code: normalizedCode })}</span>

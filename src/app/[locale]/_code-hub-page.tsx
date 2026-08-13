@@ -194,7 +194,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: fitSeoTitle(topImpressionFocus ? topImpressionFocus.title : copy.title),
     description: fitSeoDescription(topImpressionFocus ? `${topImpressionFocus.query} OBD2 guide with meaning, symptoms, causes, first checks, safe-to-drive advice, cost level and related diagnostic pages.` : copy.meta),
-    alternates: getCodeHubAlternates(upperCode, locale),
+    alternates: indexableCodeHub ? getCodeHubAlternates(upperCode, locale) : undefined,
     robots: indexableCodeHub ? { index: true, follow: true } : { index: false, follow: true },
   };
 }
@@ -276,7 +276,7 @@ export default async function CodeHubPage({ params }: PageProps) {
               <h2 className="text-2xl font-bold text-white">{localizedTitle}</h2>
               <p className="mt-3 leading-7 text-slate-300">{localizedDescription}</p>
               <div className="mt-5 rounded-xl border border-blue-400/20 bg-blue-500/10 p-4">
-                <h2 className="text-base font-bold text-blue-100">{registryCopy.title}</h2>
+                <h3 className="text-base font-bold text-blue-100">{registryCopy.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-300">{registryCopy.source}</p>
                 <div className="mt-3 grid gap-2 sm:grid-cols-2">
                   <span className="rounded-lg bg-black/20 px-3 py-2 text-sm text-slate-300">{registryCopy.family}</span>
@@ -287,13 +287,13 @@ export default async function CodeHubPage({ params }: PageProps) {
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-xl bg-black/20 p-4">
-              <h2 className="text-lg font-bold text-white">{labels.firstChecks}</h2>
+              <h3 className="text-lg font-bold text-white">{labels.firstChecks}</h3>
               <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
                 {copy.firstChecks.map(item => <li key={item}>- {item}</li>)}
               </ul>
             </div>
             <div className="rounded-xl bg-black/20 p-4">
-              <h2 className="text-lg font-bold text-white">{labels.relatedCodes}</h2>
+              <h3 className="text-lg font-bold text-white">{labels.relatedCodes}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {relatedCodes.map(related => (
                   <Link key={related} href={getCodeHubPath(locale, related)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-blue-100 hover:bg-blue-500/20">
@@ -333,20 +333,20 @@ export default async function CodeHubPage({ params }: PageProps) {
             <p className="mt-3 max-w-4xl leading-7 text-slate-200">{topImpressionFocus.answer}</p>
             <div className="mt-6 grid gap-4 lg:grid-cols-3">
               <div className="rounded-xl bg-black/20 p-4">
-                <h2 className="text-base font-bold text-white">Severity and driving risk</h2>
+                <h3 className="text-base font-bold text-white">Severity and driving risk</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.severity}</p>
                 <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.safeToDrive}</p>
               </div>
               <div className="rounded-xl bg-black/20 p-4">
-                <h2 className="text-base font-bold text-white">First checks before parts</h2>
+                <h3 className="text-base font-bold text-white">First checks before parts</h3>
                 <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-300">
                   {topImpressionFocus.firstChecks.map(item => <li key={item}>- {item}</li>)}
                 </ul>
               </div>
               <div className="rounded-xl bg-black/20 p-4">
-                <h2 className="text-base font-bold text-white">Do not replace first</h2>
+                <h3 className="text-base font-bold text-white">Do not replace first</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.doNotReplace}</p>
-                <h2 className="mt-5 text-base font-bold text-white">Cost level</h2>
+                <h3 className="mt-5 text-base font-bold text-white">Cost level</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">{topImpressionFocus.costLevel}</p>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { SymptomContentHub } from '@/components/SymptomContentPages';
 import { getSymptomHubAlternates, getSymptomContentBasePath, isSymptomContentLocale, type SymptomContentLocale } from '@/data/symptom-content';
 
 const titles: Record<SymptomContentLocale, string> = {
-  en: 'Car Symptom Guides: Causes, OBD2 Codes and First Checks - OBD2HQ',
+  en: 'Car Symptom Guides, Causes and OBD2 Codes - OBD2HQ',
   tr: 'Araç Arıza Belirtileri: Nedenler, OBD2 Kodları ve İlk Kontroller - OBD2HQ',
   de: 'Auto Symptome: Ursachen, OBD2-Codes und erste Prüfungen - OBD2HQ',
   es: 'Síntomas del Coche: Causas, Códigos OBD2 y Primeras Revisiones - OBD2HQ',
