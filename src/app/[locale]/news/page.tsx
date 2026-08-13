@@ -19,14 +19,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     tr: 'Otomobil Gazetesi ve Haberler - OBD2HQ',
     de: 'Automobilnachrichten - OBD2HQ',
     es: 'Noticias Automotrices - OBD2HQ',
-    fr: 'Actualites automobiles - OBD2HQ'
+    fr: 'Actualités automobiles - OBD2HQ'
   };
   const descriptions: Record<string, string> = {
     en: 'Latest automotive news, recalls, diagnostic technology, new model releases and issues that matter to car owners.',
-    tr: 'Guncel otomobil haberleri, geri cagirmalar, teshis teknolojileri, yeni model gelismeleri ve arac sahiplerini ilgilendiren sorunlar.',
+    tr: 'Güncel otomobil haberleri, geri çağırmalar, teşhis teknolojileri, yeni model gelişmeleri ve araç sahiplerini ilgilendiren sorunlar.',
     de: 'Aktuelle Autonachrichten, Rueckrufe, Diagnosetechnik, neue Modelle und wichtige Themen fuer Fahrzeughalter.',
     es: 'Noticias automotrices, retiradas, tecnologia de diagnostico, nuevos modelos y temas importantes para propietarios.',
-    fr: 'Actualites automobiles, rappels, technologie de diagnostic, nouveaux modeles et sujets importants pour les proprietaires.'
+    fr: 'Actualités automobiles, rappels, technologie de diagnostic, nouveaux modèles et sujets importants pour les propriétaires.'
   };
 
   return {
@@ -44,6 +44,24 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
 
   const articles = getAllNews();
   const pageUrl = `https://www.obd2hq.com/${locale}/news`;
+  const editorialIntro = locale === 'tr'
+    ? 'OBD2HQ haberleri yalnızca gündem akışı değildir. Her aktif haber; servis erişimi, teşhis teknolojisi, tamir hakkı, emisyon sistemleri ve araç sahiplerinin gerçek arıza kararları üzerindeki etkisiyle birlikte değerlendirilir.'
+    : locale === 'de'
+      ? 'OBD2HQ News ist kein allgemeiner Nachrichtenstrom. Jede aktive Meldung wird nach Servicezugang, Diagnosetechnik, Reparaturrecht, Emissionssystemen und praktischer Bedeutung für Fahrzeughalter eingeordnet.'
+      : locale === 'es'
+        ? 'Las noticias de OBD2HQ no son un feed genérico. Cada noticia activa se interpreta por su impacto en diagnóstico, acceso al servicio, derecho a reparar, emisiones y decisiones reales del propietario.'
+        : locale === 'fr'
+          ? 'Les actualités OBD2HQ ne sont pas un simple flux généraliste. Chaque sujet actif est relié au diagnostic, à l’accès service, au droit à la réparation, aux émissions et aux décisions pratiques des conducteurs.'
+          : 'OBD2HQ News is not a generic automotive feed. Every active story is framed through diagnostics, service access, right-to-repair, emissions systems and the practical decisions vehicle owners may need to make.';
+  const editorialChecks = locale === 'tr'
+    ? ['Konu otomotiv teşhisi veya servis erişimiyle bağlantılı mı?', 'Araç sahibine uygulanabilir bir karar veya takip noktası veriyor mu?', 'Haber, arıza kodu ve ikaz ışığı rehberleriyle anlamlı şekilde bağlanıyor mu?']
+    : locale === 'de'
+      ? ['Hat das Thema Bezug zu Diagnose oder Servicezugang?', 'Gibt es eine praktische Entscheidung für Fahrzeughalter?', 'Verbindet sich die Meldung sinnvoll mit Fehlercodes oder Warnleuchten?']
+      : locale === 'es'
+        ? ['¿Está relacionado con diagnóstico o acceso al servicio?', '¿Aporta una decisión práctica para el propietario?', '¿Conecta con códigos OBD2 o luces de advertencia?']
+        : locale === 'fr'
+          ? ['Le sujet concerne-t-il le diagnostic ou l’accès service ?', 'Aide-t-il le conducteur à prendre une décision concrète ?', 'Se relie-t-il aux codes OBD2 ou aux voyants ?']
+          : ['Is the topic tied to diagnostics or service access?', 'Does it give owners a practical decision or follow-up point?', 'Does it connect naturally to OBD2 codes or warning lights?'];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -100,6 +118,9 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
             <p className="text-lg text-slate-400 max-w-2xl font-light">
               {t('description')}
             </p>
+            <p className="mt-5 text-base text-slate-300 max-w-3xl leading-7">
+              {editorialIntro}
+            </p>
           </div>
         </div>
       </header>
@@ -115,8 +136,11 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
         ) : (
           <section aria-labelledby="news-list-heading">
             <h2 id="news-list-heading" className="mb-6 text-2xl font-bold text-white">
-              {locale === 'tr' ? 'Son otomobil haberleri' : locale === 'de' ? 'Neueste Automobilnachrichten' : locale === 'es' ? 'Ultimas noticias automotrices' : locale === 'fr' ? 'Dernieres actualites automobiles' : 'Latest automotive news'}
+              {locale === 'tr' ? 'Son otomobil haberleri' : locale === 'de' ? 'Neueste Automobilnachrichten' : locale === 'es' ? 'Últimas noticias automotrices' : locale === 'fr' ? 'Dernières actualités automobiles' : 'Latest automotive news'}
             </h2>
+            <div className="mb-8 grid gap-3 rounded-3xl border border-white/5 bg-[#131b2f] p-6 text-sm text-slate-300 md:grid-cols-3">
+              {editorialChecks.map(item => <p key={item} className="rounded-2xl bg-white/[0.03] px-4 py-3 leading-6">{item}</p>)}
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => {
               const locTitle = asString(getLocalized(article.title, locale), article.slug);
@@ -143,7 +167,7 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                       width={640}
                       height={360}
                       quality={68}
-                      unoptimized={article.image.startsWith('http')}
+                      unoptimized={true}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

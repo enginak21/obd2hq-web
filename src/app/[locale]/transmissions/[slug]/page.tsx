@@ -29,7 +29,8 @@ export default async function TransmissionPage({ params }: { params: Promise<{ l
   const transmission = getTransmissionProfile(slug);
   if (!transmission) notFound();
   const copy = getKnowledgeUiCopy(locale);
-  const guideTitle = locale === 'tr' ? 'Şanzıman bilgisini nasıl doğrulayın?' : locale === 'de' ? 'So prüfen Sie die Getriebedaten' : locale === 'es' ? 'Cómo verificar los datos de la transmisión' : locale === 'fr' ? 'Comment vérifier les données de transmission' : 'How to verify this transmission data';
+
+  const guideTitle = locale === 'tr' ? 'Şanzıman bilgisini nasıl doğrulamalısın?' : locale === 'de' ? 'So prüfen Sie die Getriebedaten' : locale === 'es' ? 'Cómo verificar los datos de la transmisión' : locale === 'fr' ? 'Comment vérifier les données de transmission' : 'How to verify this transmission data';
   const guideText = locale === 'tr'
     ? `${transmission.maker} ${transmission.family} profili yağ tipi, servis aralığı ve arıza kodu yorumlama için başlangıç rehberidir. Şanzıman kodunu VIN destekli parça kataloğu, servis etiketi veya üretici bakım verisiyle doğrulayın. Aynı ailede tork kapasitesi, yazılım kalibrasyonu, filtre tipi ve yağ değişim prosedürü modele, pazara ve üretim yılına göre değişebilir.`
     : locale === 'de'
@@ -48,6 +49,17 @@ export default async function TransmissionPage({ params }: { params: Promise<{ l
         : locale === 'fr'
           ? 'Pour une panne de boîte, vérifiez d’abord niveau et état du fluide, fuites, tension batterie et codes mémorisés. Avant d’accuser solénoïdes, mécatronique, embrayage ou convertisseur, contrôlez données en direct et historique.'
           : 'For transmission faults, check fluid level and condition, leaks, battery voltage and stored codes together first. Before blaming solenoids, mechatronics, clutches or the torque converter, confirm live data and service history.';
+  const repairTitle = locale === 'tr' ? 'Tamire başlamadan önce kontrol sırası' : locale === 'de' ? 'Prüfreihenfolge vor der Reparatur' : locale === 'es' ? 'Orden de revisión antes de reparar' : locale === 'fr' ? 'Ordre de contrôle avant réparation' : 'First checks before repair';
+  const repairItems = locale === 'tr'
+    ? ['Sıvı seviyesi ve rengi kontrol edilmeden kavrama, selenoid veya mekatronik değişimine geçilmemelidir.', 'Düşük akü voltajı ve zayıf şase bağlantısı bazı şanzıman kodlarını taklit edebilir.', 'Adaptasyon, yazılım güncellemesi veya servis prosedürü gerektiren modellerde mekanik arıza kararı acele verilmemelidir.', 'Onarım sonrası test sürüşü, sıcaklık takibi ve tekrar tarama aynı raporda birlikte doğrulanmalıdır.']
+    : locale === 'de'
+      ? ['Vor Kupplungs-, Magnetventil- oder Mechatronikarbeiten immer Flüssigkeitsstand und Zustand prüfen.', 'Niedrige Batteriespannung oder schlechte Massepunkte können Getriebefehler imitieren.', 'Bei Modellen mit Adaptions- oder Softwareprozedur sollte kein vorschnelles mechanisches Urteil gefällt werden.', 'Nach der Reparatur Probefahrt, Temperaturüberwachung und erneutes Auslesen zusammen dokumentieren.']
+      : locale === 'es'
+        ? ['Antes de cambiar embragues, solenoides o mecatrónica, revisa nivel y estado del fluido.', 'Bajo voltaje o mala masa pueden imitar fallas de transmisión.', 'Si el modelo requiere adaptación o actualización, evita concluir una falla mecánica demasiado pronto.', 'Después de reparar, confirma con prueba, temperatura y nuevo escaneo.']
+        : locale === 'fr'
+          ? ['Avant embrayage, solénoïde ou mécatronique, vérifiez toujours niveau et état du fluide.', 'Une tension basse ou une mauvaise masse peut imiter une panne de boîte.', 'Si le modèle demande adaptation ou mise à jour, évitez un verdict mécanique trop rapide.', 'Après réparation, confirmez par essai, température et nouveau scan.']
+          : ['Check fluid level and condition before replacing clutches, solenoids or mechatronic parts.', 'Low voltage or poor grounds can imitate transmission faults.', 'If the unit needs adaptation or software procedures, avoid rushing to a mechanical diagnosis.', 'After repair, confirm with a road test, temperature monitoring and a fresh scan.'];
+
   return (
     <main className="min-h-screen bg-[#0a0f1c] text-slate-200 pb-24">
       <section className="hero-visual hero-visual-vehicle border-b border-white/5 bg-[#0d1425]">
@@ -63,6 +75,10 @@ export default async function TransmissionPage({ params }: { params: Promise<{ l
             <h2 className="text-2xl font-black text-white">{guideTitle}</h2>
             <p className="mt-4 leading-7 text-slate-300">{guideText}</p>
             <p className="mt-4 leading-7 text-slate-300">{diagnosticText}</p>
+            <h2 className="mt-7 text-xl font-black text-white">{repairTitle}</h2>
+            <ul className="mt-4 space-y-3 text-slate-300">
+              {repairItems.map(item => <li key={item} className="rounded-2xl bg-white/[0.03] px-4 py-3">{item}</li>)}
+            </ul>
           </section>
           <Panel title={copy.applications} items={transmission.applications} />
           <Panel title={copy.fluidServiceNotes} items={[`${copy.fluidLabel}: ${transmission.fluid}`, ...transmission.serviceNotes]} />

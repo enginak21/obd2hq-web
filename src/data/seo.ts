@@ -3,6 +3,11 @@ export const SUPPORTED_LOCALES = ['en', 'de', 'es', 'tr', 'fr'] as const;
 export const PRIORITY_CODES = ['P0420', 'P0300', 'P0171', 'P0455', 'P0442', 'P0128', 'P0135', 'P0174', 'P0430', 'P0101', 'P0113', 'P0102'];
 export const SEO_LAST_REVIEWED = '2026-08-01T12:00:00.000Z';
 
+function getLocalizedCodeHubHref(locale: string, code: string) {
+  const base = locale === 'tr' ? 'kodlar' : locale === 'es' ? 'codigos' : 'codes';
+  return `/${locale}/${base}/${code.toLowerCase()}`;
+}
+
 export const CODE_CATEGORIES = [
   { label: 'Engine', codes: ['P0300', 'P0301', 'P0302', 'P0303', 'P0304', 'P0507'] },
   { label: 'Emissions', codes: ['P0420', 'P0430', 'P0455', 'P0442', 'P0456', 'P0401'] },
@@ -517,14 +522,14 @@ export function getClusterLinks(locale: string, make: string, model: string, cod
     ? { label: upperCode === 'P0420' ? 'How to fix P0420' : 'P0420 catalyst guide', href: `/${locale}/blog/${locale === 'tr' ? 'p0420-ariza-kodu-nasil-cozulur' : 'how-to-fix-p0420'}` }
     : system === 'misfire'
       ? { label: 'P0300 symptoms guide', href: `/${locale}/blog/${p0300Slugs[locale] || p0300Slugs.en}` }
-      : { label: `${upperCode} OBD2 code guide`, href: `/${locale}/codes/${upperCode.toLowerCase()}` };
+      : { label: `${upperCode} OBD2 code guide`, href: getLocalizedCodeHubHref(locale, upperCode) };
 
   return [
     pillar,
     { label: `${make.replace('-', ' ')} ${model.replace('-', ' ')} warning lights`, href: `/${locale}/${make}/${model}/lights` },
     ...getRelatedCodes(upperCode, PRIORITY_CODES, 3).map(related => ({
       label: `${related} related code`,
-      href: `/${locale}/${make}/${model}/${related.toLowerCase()}`,
+      href: getLocalizedCodeHubHref(locale, related),
     })),
   ];
 }

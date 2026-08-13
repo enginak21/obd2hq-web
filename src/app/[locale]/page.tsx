@@ -60,11 +60,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <Image
           src="/images/site/diagnostic-hero.webp"
           alt="OBD2HQ diagnostic dashboard with code search and vehicle troubleshooting"
-          fill
+          width={1600}
+          height={900}
           priority
           fetchPriority="high"
           sizes="100vw"
-          className="hero-visual-image object-cover"
+          className="hero-visual-image absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>

@@ -607,12 +607,15 @@ export default async function CodePage({ params }: PageProps) {
           <div className="bg-[#131b2f] border border-white/5 rounded-3xl p-8 shadow-lg">
             <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">{t('relatedCodes', { make: capMake })}</h3>
             <div className="flex flex-col space-y-3">
-              {relatedCodes.map(c => (
-                <Link key={c} href={`/${locale}/${make}/${model}/${c.toLowerCase()}`} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
+              {relatedCodes.map(c => {
+                const relatedHref = isIndexableVehicleCodePage(make, model, c) ? `/${locale}/${make}/${model}/${c.toLowerCase()}` : getCodeHubPath(locale, c);
+                return (
+                <Link key={c} href={relatedHref} className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-transparent hover:border-white/10 group">
                   <span className="font-bold text-blue-400 group-hover:text-blue-300">{c}</span>
                   <span className="text-xs text-slate-500 group-hover:text-white">{tExtra('viewDetails')}</span>
                 </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
 
