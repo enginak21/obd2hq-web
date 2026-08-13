@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 const contactGuides: Record<string, { title: string; text: string; items: string[]; note: string }> = {
   en: {
@@ -100,6 +101,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <p className="mt-5 rounded-2xl border border-amber-300/20 bg-amber-300/10 p-4 text-sm leading-6 text-amber-100">{guide.note}</p>
         </section>
       </div>
+      <CrawlDepthContent kind="contact" />
     </main>
   );
 }

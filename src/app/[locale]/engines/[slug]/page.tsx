@@ -5,6 +5,7 @@ import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { engineProfiles, getEngineProfile } from '@/data/engine-database';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
 import { getCodeHubPath } from '@/data/gsc-seo';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 export function generateStaticParams() {
   return engineProfiles.flatMap(engine => ['en', 'tr', 'de', 'es', 'fr'].map(locale => ({ locale, slug: engine.slug })));
@@ -72,7 +73,13 @@ export default async function EnginePage({ params }: { params: Promise<{ locale:
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.relatedCodes}</h2>
             <div className="grid grid-cols-2 gap-3">
-              {engine.relatedCodes.map(code => <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200">{code}</Link>)}
+              {engine.relatedCodes.map(code => (
+                isCodeHubSitemapEligible(code) ? (
+                  <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200">{code}</Link>
+                ) : (
+                  <span key={code} className="rounded-2xl bg-white/5 px-4 py-3 text-center font-black text-slate-300">{code}</span>
+                )
+              ))}
             </div>
           </div>
         </aside>

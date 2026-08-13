@@ -69,6 +69,13 @@ function normalizeCodeTitle(code: string, title: string) {
 
 function getVehicleCodeH1(locale: string, make: string, model: string, code: string, title: string) {
   const normalizedTitle = normalizeCodeTitle(code, title);
+  if (normalizedTitle.length > 34) {
+    if (locale === 'tr') return `${make} ${model} ${code} arıza rehberi`;
+    if (locale === 'de') return `${make} ${model} ${code} Diagnoseleitfaden`;
+    if (locale === 'es') return `${make} ${model} ${code}: guía de diagnóstico`;
+    if (locale === 'fr') return `${make} ${model} ${code} : guide diagnostic`;
+    return `${make} ${model} ${code} Diagnostic Guide`;
+  }
   const cleanTitle = normalizedTitle || (locale === 'tr' ? 'detaylı' : locale === 'de' ? 'detaillierte' : locale === 'es' ? 'guía detallada' : locale === 'fr' ? 'guide détaillé' : 'detailed guide');
   if (locale === 'tr') return `${make} ${model} ${code}: ${cleanTitle} arıza teşhisi`;
   if (locale === 'de') return `${make} ${model} ${code}: ${cleanTitle} Diagnose`;

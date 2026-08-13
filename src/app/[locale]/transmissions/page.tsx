@@ -3,6 +3,7 @@ import { getAlternates } from '@/utils/seo';
 import { KnowledgeCard, KnowledgeHero } from '@/components/KnowledgeGrid';
 import { transmissionProfiles } from '@/data/transmission-database';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -42,6 +43,7 @@ export default async function TransmissionsPage({ params }: { params: Promise<{ 
           <KnowledgeCard key={transmission.slug} href={`/${locale}/transmissions/${transmission.slug}`} title={`${transmission.maker} ${transmission.family}`} description={`${transmission.type}, ${transmission.gears}. ${copy.applicationsLabel}: ${transmission.applications.slice(0, 3).join(', ')}.`} tags={[transmission.type, transmission.gears, ...transmission.relatedCodes]} />
         ))}
       </section>
+      <CrawlDepthContent kind="transmissions" />
     </main>
   );
 }

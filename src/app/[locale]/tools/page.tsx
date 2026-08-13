@@ -4,6 +4,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import { automotiveTools, localizeTool } from '@/data/automotive-tools';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -105,6 +106,7 @@ export default async function ToolsHubPage({ params }: { params: Promise<{ local
           );
         })}
       </section>
+      <CrawlDepthContent kind="tools" />
     </main>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAlternates } from '@/utils/seo';
 import TrustPageContent from '@/components/TrustPageContent';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -36,6 +37,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
         </p>
         <TrustPageContent kind="terms" locale={locale} />
       </div>
+      <CrawlDepthContent kind="terms" />
     </main>
   );
 }

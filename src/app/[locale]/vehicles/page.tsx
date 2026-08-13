@@ -5,6 +5,7 @@ import VehicleSpecSelector, { type VehicleSpecSelectorItem } from '@/components/
 import { indexedVehicleSpecRecords } from '@/data/vehicle-spec-records';
 import { getVehicleSpecQualityLabel } from '@/data/vehicle-quality';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -87,6 +88,7 @@ export default async function VehiclesPage({ params }: { params: Promise<{ local
         </div>
       </section>
       <VehicleSpecSelector locale={locale} items={selectorItems} />
+      <CrawlDepthContent kind="vehicles" />
     </main>
   );
 }

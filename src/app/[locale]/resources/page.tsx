@@ -4,6 +4,7 @@ import { Download, FileJson, FileText, Gauge, Image as ImageIcon, Link2, Wrench 
 import { baseCodes } from '@/data/db';
 import { SEO_LAST_REVIEWED } from '@/data/seo';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -159,6 +160,7 @@ export default async function ResourcesPage({ params }: PageProps) {
         </div>
         <p className="mt-6 rounded-2xl border border-amber-300/20 bg-amber-400/10 p-4 text-sm leading-6 text-amber-50">{c.attribution}</p>
       </section>
+      <CrawlDepthContent kind="resources" />
     </main>
   );
 }

@@ -9,6 +9,7 @@ import { getLocalizedCodeTitle } from '@/data/code-localization';
 import { findVehicleMatches, formatVehicleName, normalizeCode, normalizeSearchText } from '@/utils/diagnosticSearch';
 import { getCodeHubPath } from '@/data/gsc-seo';
 import { getWarningLightsHubPath } from '@/data/navigation';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -103,6 +104,7 @@ export default async function SearchPage({
     .map(make => cars.find(car => car.make === make))
     .filter((car): car is (typeof cars)[number] => Boolean(car));
   const hasSearchQuery = rawQuery.trim().length > 0;
+  const indexablePriorityCodes = PRIORITY_CODES.filter(isCodeHubSitemapEligible);
   const searchGuideTitle = locale === 'tr' ? 'Nasıl arama yapmalısınız?' : locale === 'de' ? 'So suchen Sie richtig' : locale === 'es' ? 'Cómo buscar mejor' : locale === 'fr' ? 'Comment mieux chercher' : 'How to search effectively';
   const searchGuideText = locale === 'tr'
     ? 'OBD kodunu biliyorsanız P0420, P0300 veya P0171 gibi doğrudan yazın. Kodu bilmiyorsanız “Toyota Camry motor ışığı”, “Renault gaz yemiyor” veya “BMW motorundan ses geliyor” gibi araç ve belirtiyi birlikte girin. Arama, kodu, marka/model eşleşmesini ve ilgili arıza bulucu rehberlerini aynı akışta yönlendirmek için tasarlanmıştır.'
@@ -141,7 +143,7 @@ export default async function SearchPage({
               <h2 className="text-3xl font-black text-white">{tExtra('searchHubTitle')}</h2>
               <p className="mt-4 max-w-2xl text-slate-400 leading-relaxed">{tExtra('searchHubDesc')}</p>
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                {PRIORITY_CODES.slice(0, 6).map(code => (
+                {indexablePriorityCodes.slice(0, 6).map(code => (
                   <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl border border-blue-500/10 bg-blue-500/10 px-4 py-3 text-center font-black text-blue-100 hover:border-blue-400/40">
                     {code}
                   </Link>
@@ -288,7 +290,7 @@ export default async function SearchPage({
               {t('noResultsDesc', { query: rawQuery })}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2">
-              {PRIORITY_CODES.slice(0, 6).map(code => (
+              {indexablePriorityCodes.slice(0, 6).map(code => (
                 <Link key={code} href={getCodeHubPath(locale, code)} className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-4 py-2 text-sm font-bold text-slate-300 hover:text-white hover:border-blue-500/40 transition-colors">
                   <Wrench className="w-4 h-4 text-blue-400" />
                   {code}

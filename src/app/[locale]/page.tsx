@@ -10,6 +10,7 @@ import FindYourFixWizard from '@/components/FindYourFixWizard';
 import DailySeoFocusLinks from '@/components/DailySeoFocusLinks';
 import { PRIORITY_CODES } from '@/data/seo';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 export function generateStaticParams() {
   return ['en', 'de', 'es', 'tr', 'fr'].map((locale) => ({ locale }));
@@ -30,6 +31,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale, namespace: 'HomePage' });
   const copy = getKnowledgeUiCopy(locale);
   const vehicleOptions = cars.map(({ make, models }) => ({ make, models }));
+  const indexablePriorityCodes = PRIORITY_CODES.filter(isCodeHubSitemapEligible);
 
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -57,8 +59,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <div className="hero-visual hero-visual-home relative overflow-hidden border-b border-white/5 w-full">
         <Image
           src="/images/site/diagnostic-hero.webp"
-          alt=""
-          aria-hidden="true"
+          alt="OBD2HQ diagnostic dashboard with code search and vehicle troubleshooting"
           fill
           priority
           fetchPriority="high"
@@ -84,7 +85,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             {t('subtitle')}
           </p>
 
-          <SmartSearch vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
+          <SmartSearch vehicles={vehicleOptions} priorityCodes={indexablePriorityCodes} />
 
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-300">
@@ -103,7 +104,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </div>
 
-      <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={PRIORITY_CODES} />
+      <FindYourFixWizard vehicles={vehicleOptions} priorityCodes={indexablePriorityCodes} />
 
       <DailySeoFocusLinks locale={locale} />
 
@@ -134,9 +135,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <div className="w-16 h-16 mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                   <BrandLogo make={car.make} className="w-full h-full text-slate-400 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-sm font-bold text-slate-300 group-hover:text-white uppercase tracking-wider text-center">
+                <p className="text-sm font-bold text-slate-300 group-hover:text-white uppercase tracking-wider text-center">
                   {car.make.replace('-', ' ')}
-                </h3>
+                </p>
               </Link>
             ))}
           </div>

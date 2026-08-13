@@ -15,6 +15,7 @@ import {
 } from '@/data/problem-finder';
 import { getCodeHubPath } from '@/data/gsc-seo';
 import { fitSeoDescription, fitSeoTitle } from '@/utils/seo';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 const sectionLabels: Record<ProblemFinderLocale, {
   causes: string;
@@ -46,7 +47,7 @@ export async function generateProblemFinderDetailMetadata(locale: string, slug: 
   const intent = getProblemFinderIntentBySlug(locale, slug);
   if (!intent) return {};
   return {
-    title: fitSeoTitle(intent.titles[locale]),
+    title: fitSeoTitle(`${intent.titles[locale]} | First Checks - OBD2HQ`),
     description: fitSeoDescription(getDescription(intent, locale)),
     alternates: {
       canonical: getProblemFinderDetailPath(locale, intent),
@@ -139,7 +140,11 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{intent.plainExplanation[locale]}</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {intent.relatedCodes.map((code) => (
-              <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-blue-500/15 px-3 py-1 text-sm font-black text-blue-200">{code}</Link>
+              isCodeHubSitemapEligible(code) ? (
+                <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-blue-500/15 px-3 py-1 text-sm font-black text-blue-200">{code}</Link>
+              ) : (
+                <span key={code} className="rounded-full bg-white/10 px-3 py-1 text-sm font-black text-slate-300">{code}</span>
+              )
             ))}
           </div>
         </header>
@@ -176,7 +181,11 @@ export default function ProblemFinderDetailPage({ locale, slug }: { locale: stri
               <h2 className="text-lg font-black text-white">{labels.codes}</h2>
               <div className="mt-3 flex flex-wrap gap-2">
                 {intent.relatedCodes.map((code) => (
-                  <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-black text-slate-200">{code}</Link>
+                  isCodeHubSitemapEligible(code) ? (
+                    <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-black text-slate-200">{code}</Link>
+                  ) : (
+                    <span key={code} className="rounded-full bg-white/10 px-3 py-1 text-sm font-black text-slate-300">{code}</span>
+                  )
                 ))}
               </div>
             </section>

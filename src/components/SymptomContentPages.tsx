@@ -9,6 +9,7 @@ import {
   type SymptomContentLocale,
 } from '@/data/symptom-content';
 import { getCodeHubPath } from '@/data/gsc-seo';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 const hubCopy = {
   en: {
@@ -103,7 +104,7 @@ export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) 
                       <AlertTriangle className="w-3.5 h-3.5 text-amber-300" />
                       {item.severity}
                     </div>
-                    <h2 className="text-2xl font-black text-white group-hover:text-amber-100">{item.title}</h2>
+                    <p className="text-2xl font-black text-white group-hover:text-amber-100">{item.title}</p>
                     <p className="mt-3 text-slate-400 leading-relaxed">{item.metaDescription}</p>
                   </div>
                   <ArrowRight className="w-5 h-5 text-amber-300 shrink-0 mt-2 group-hover:translate-x-1 transition-transform" />
@@ -146,10 +147,10 @@ export function SymptomContentDetail({ locale, group }: { locale: SymptomContent
               <p className="mt-6 text-lg text-slate-400 leading-relaxed max-w-3xl">{item.intro}</p>
             </div>
             <aside className="rounded-3xl border border-red-400/20 bg-red-500/10 p-5">
-              <h2 className="text-lg font-black text-red-100 flex items-center gap-2">
+              <p className="text-lg font-black text-red-100 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5" />
                 {copy.drive}
-              </h2>
+              </p>
               <p className="mt-3 text-sm leading-relaxed text-red-100/80">{item.driveAdvice}</p>
             </aside>
           </div>
@@ -198,9 +199,15 @@ function NumberedBlock({ title, items }: { title: string; items: string[] }) {
 function CodeLinks({ title, locale, codes }: { title: string; locale: string; codes: string[] }) {
   return (
     <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
-      <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</h2>
+      <p className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</p>
       <div className="grid grid-cols-2 gap-3">
-        {codes.map(code => <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">{code}</Link>)}
+        {codes.map(code => (
+          isCodeHubSitemapEligible(code) ? (
+            <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">{code}</Link>
+          ) : (
+            <span key={code} className="rounded-2xl bg-white/5 px-4 py-3 text-center font-black text-slate-300">{code}</span>
+          )
+        ))}
       </div>
     </section>
   );
@@ -209,7 +216,7 @@ function CodeLinks({ title, locale, codes }: { title: string; locale: string; co
 function GuideLinks({ title, links }: { title: string; links: { label: string; href: string }[] }) {
   return (
     <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
-      <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</h2>
+      <p className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</p>
       <div className="space-y-3">
         {links.map(link => <Link key={link.href} href={link.href} className="flex items-center justify-between rounded-2xl bg-white/[0.03] px-4 py-3 text-slate-200 hover:bg-white/[0.06]"><span className="font-bold">{link.label}</span><ArrowRight className="w-4 h-4 text-blue-300" /></Link>)}
       </div>
@@ -220,7 +227,7 @@ function GuideLinks({ title, links }: { title: string; links: { label: string; h
 function FaqBlock({ title, faq }: { title: string; faq: { q: string; a: string }[] }) {
   return (
     <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
-      <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</h2>
+      <p className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{title}</p>
       <div className="space-y-3">
         {faq.map(item => (
           <article key={item.q} className="rounded-2xl bg-white/[0.03] px-4 py-3">

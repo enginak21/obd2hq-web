@@ -154,9 +154,9 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                       {formattedDate}
                     </div>
 
-                    <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
+                    <p className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-400 transition-colors">
                       {locTitle}
-                    </h2>
+                    </p>
 
                     <p className="text-sm text-slate-400 line-clamp-3 mb-6 flex-1 font-light leading-relaxed">
                       {locSummary}

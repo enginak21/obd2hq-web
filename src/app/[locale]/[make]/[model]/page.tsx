@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, getCodeCategoryLabel, PRIORITY_CODES } from '@/data/seo';
 import validRoutes from '@/data/valid_routes.json';
+import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
 
 interface PageProps {
   params: Promise<{
@@ -74,7 +75,11 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
   let currentPage = parseInt(pageParam || '1', 10);
   if (isNaN(currentPage) || currentPage < 1) currentPage = 1;
 
-  const allCodes = Object.keys(codes).filter((code) => VALID_CODE_SET.has(code.toUpperCase()));
+  const allCodes = Object.keys(codes).filter((code) => (
+    VALID_CODE_SET.has(code.toUpperCase()) &&
+    isIndexableVehicleCodePage(make, model, code.toUpperCase())
+  ));
+  const priorityCodes = DISPLAY_PRIORITY_CODES.filter((code) => isIndexableVehicleCodePage(make, model, code));
   const totalCodes = allCodes.length;
   const totalPages = Math.ceil(totalCodes / PAGE_SIZE);
 
@@ -165,7 +170,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             {tModel('topCodes', { make: capMake, model: capModel })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {DISPLAY_PRIORITY_CODES.slice(0, 10).map((code) => (
+            {priorityCodes.slice(0, 10).map((code) => (
               <Link
                 key={code}
                 href={`/${locale}/${make}/${model}/${code.toLowerCase()}`}
@@ -188,9 +193,9 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {CODE_CATEGORIES.map(category => (
                 <div key={category.label} className="bg-white/5 rounded-2xl p-4 border border-white/5">
-                  <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">{category.label}</h3>
+                  <p className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">{category.label}</p>
                   <div className="flex flex-wrap gap-2">
-                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).map(code => (
+                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase()) && isIndexableVehicleCodePage(make, model, code.toUpperCase())).map(code => (
                       <Link key={code} href={`/${locale}/${make}/${model}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-[#0a0f1c] hover:bg-blue-500/10 hover:text-blue-300 rounded-lg px-3 py-2 transition-colors">
                         {code}
                       </Link>

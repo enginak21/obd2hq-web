@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!group) return {};
   const localized = group.locales[locale];
   return {
-    title: fitSeoTitle(localized.title),
+    title: fitSeoTitle(`${localized.title} | Diagnostic Guide - OBD2HQ`),
     description: fitSeoDescription(localized.metaDescription),
     alternates: getSymptomContentAlternates(group, locale),
   };

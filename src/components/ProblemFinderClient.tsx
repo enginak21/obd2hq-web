@@ -11,6 +11,7 @@ import {
   publishedProblemFinderIntents,
 } from '@/data/problem-finder';
 import { getCodeHubPath } from '@/data/gsc-seo';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 const ui = {
   en: {
@@ -290,7 +291,11 @@ export default function ProblemFinderClient({ locale }: { locale: ProblemFinderL
                   <p className="text-xs font-black uppercase tracking-wide text-slate-500">{copy.codes}</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {selected.relatedCodes.map((code) => (
-                      <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-blue-500/15 px-3 py-1 text-sm font-black text-blue-200">{code}</Link>
+                      isCodeHubSitemapEligible(code) ? (
+                        <Link key={code} href={getCodeHubPath(locale, code)} className="rounded-full bg-blue-500/15 px-3 py-1 text-sm font-black text-blue-200">{code}</Link>
+                      ) : (
+                        <span key={code} className="rounded-full bg-white/10 px-3 py-1 text-sm font-black text-slate-300">{code}</span>
+                      )
                     ))}
                   </div>
                 </div>

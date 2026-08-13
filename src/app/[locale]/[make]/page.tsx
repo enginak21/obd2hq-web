@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+﻿import { notFound } from 'next/navigation';
 import { cars } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -7,6 +7,9 @@ import { Car, ChevronRight } from 'lucide-react';
 import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, PRIORITY_CODES } from '@/data/seo';
 import validRoutes from '@/data/valid_routes.json';
+import { getCodeHubPath } from '@/data/gsc-seo';
+import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
+import { isCodeHubSitemapEligible } from '@/data/sitemap-policy';
 
 interface PageProps {
   params: Promise<{
@@ -39,7 +42,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!carData) return { title: 'Not Found' };
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
-
   return {
     title: fitSeoTitle(`${capMake} OBD2 Codes & Dashboard Warning Lights`),
     description: fitSeoDescription(`Complete diagnostic guide for ${capMake} OBD2 codes, warning lights, symptoms and safe first repair checks.`),
@@ -58,15 +60,21 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
   if (!carData) notFound();
 
   const capMake = make.charAt(0).toUpperCase() + make.slice(1);
-  const guideTitle = locale === 'tr' ? `${capMake} sayfasını nasıl kullanmalısınız?` : locale === 'de' ? `So nutzen Sie die ${capMake}-Seite` : locale === 'es' ? `Cómo usar la página de ${capMake}` : locale === 'fr' ? `Comment utiliser la page ${capMake}` : `How to use the ${capMake} hub`;
+  const hrefForCode = (code: string) => {
+    const targetModel = carData.models.find((candidate) => isIndexableVehicleCodePage(make, candidate, code));
+    if (targetModel) return `/${locale}/${make}/${targetModel}/${code.toLowerCase()}`;
+    if (isCodeHubSitemapEligible(code)) return getCodeHubPath(locale, code);
+    return null;
+  };
+  const guideTitle = locale === 'tr' ? `${capMake} sayfasÄ±nÄ± nasÄ±l kullanmalÄ±sÄ±nÄ±z?` : locale === 'de' ? `So nutzen Sie die ${capMake}-Seite` : locale === 'es' ? `CÃ³mo usar la pÃ¡gina de ${capMake}` : locale === 'fr' ? `Comment utiliser la page ${capMake}` : `How to use the ${capMake} hub`;
   const guideText = locale === 'tr'
-    ? `${capMake} için önce modelinizi seçin, ardından arıza kodu, gösterge ışığı veya belirti rehberine ilerleyin. Kod sayfaları parça değiştirmeden önce yapılacak kontrolleri, güvenli sürüş uyarılarını, ilgili OBD2 kodlarını ve tahmini masraf seviyesini birlikte verir. Modelinizden emin değilseniz ruhsat, servis kaydı veya VIN destekli parça kataloğuyla doğrulama yapın.`
+    ? `${capMake} iÃ§in Ã¶nce modelinizi seÃ§in, ardÄ±ndan arÄ±za kodu, gÃ¶sterge Ä±ÅŸÄ±ÄŸÄ± veya belirti rehberine ilerleyin. Kod sayfalarÄ± parÃ§a deÄŸiÅŸtirmeden Ã¶nce yapÄ±lacak kontrolleri, gÃ¼venli sÃ¼rÃ¼ÅŸ uyarÄ±larÄ±nÄ±, ilgili OBD2 kodlarÄ±nÄ± ve tahmini masraf seviyesini birlikte verir. Modelinizden emin deÄŸilseniz ruhsat, servis kaydÄ± veya VIN destekli parÃ§a kataloÄŸuyla doÄŸrulama yapÄ±n.`
     : locale === 'de'
-      ? `Wählen Sie zuerst Ihr ${capMake}-Modell und öffnen Sie danach den passenden Fehlercode, die Warnleuchte oder den Symptomleitfaden. Die Code-Seiten zeigen Prüfungen vor dem Teiletausch, Sicherheitshinweise, verwandte OBD2-Codes und eine grobe Kostenstufe. Wenn das Modell unsicher ist, prüfen Sie es über Fahrzeugpapiere, Serviceunterlagen oder VIN-basierten Teilekatalog.`
+      ? `WÃ¤hlen Sie zuerst Ihr ${capMake}-Modell und Ã¶ffnen Sie danach den passenden Fehlercode, die Warnleuchte oder den Symptomleitfaden. Die Code-Seiten zeigen PrÃ¼fungen vor dem Teiletausch, Sicherheitshinweise, verwandte OBD2-Codes und eine grobe Kostenstufe. Wenn das Modell unsicher ist, prÃ¼fen Sie es Ã¼ber Fahrzeugpapiere, Serviceunterlagen oder VIN-basierten Teilekatalog.`
       : locale === 'es'
-        ? `Elige primero tu modelo ${capMake} y después abre el código, la luz del tablero o la guía de síntomas. Las páginas de códigos reúnen pruebas antes de cambiar piezas, avisos de seguridad, códigos OBD2 relacionados y nivel aproximado de coste. Si no estás seguro del modelo, confírmalo con documentación, historial de servicio o catálogo por VIN.`
+        ? `Elige primero tu modelo ${capMake} y despuÃ©s abre el cÃ³digo, la luz del tablero o la guÃ­a de sÃ­ntomas. Las pÃ¡ginas de cÃ³digos reÃºnen pruebas antes de cambiar piezas, avisos de seguridad, cÃ³digos OBD2 relacionados y nivel aproximado de coste. Si no estÃ¡s seguro del modelo, confÃ­rmalo con documentaciÃ³n, historial de servicio o catÃ¡logo por VIN.`
         : locale === 'fr'
-          ? `Choisissez d’abord votre modèle ${capMake}, puis ouvrez le code défaut, le voyant ou le guide de symptômes. Les pages de code regroupent les contrôles avant remplacement, les alertes de sécurité, les codes OBD2 liés et un niveau de coût estimé. En cas de doute, confirmez le modèle avec les papiers, l’entretien ou un catalogue par VIN.`
+          ? `Choisissez dâ€™abord votre modÃ¨le ${capMake}, puis ouvrez le code dÃ©faut, le voyant ou le guide de symptÃ´mes. Les pages de code regroupent les contrÃ´les avant remplacement, les alertes de sÃ©curitÃ©, les codes OBD2 liÃ©s et un niveau de coÃ»t estimÃ©. En cas de doute, confirmez le modÃ¨le avec les papiers, lâ€™entretien ou un catalogue par VIN.`
           : `Choose your ${capMake} model first, then open the matching trouble code, dashboard light or symptom guide. Code pages combine checks before replacing parts, safe-driving guidance, related OBD2 codes and a practical repair-cost level. If you are not sure about the exact model, confirm it from registration, service records or a VIN-based parts catalog.`;
   const pageUrl = `https://www.obd2hq.com/${locale}/${make}`;
   const schema = {
@@ -134,9 +142,9 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
               href={`/${locale}/${make}/${model}`}
               className="bg-[#131b2f] border border-white/5 hover:border-blue-500/50 hover:bg-[#1a233a] rounded-2xl p-5 flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(37,99,235,0.2)] group"
             >
-              <h3 className="text-lg font-bold text-slate-300 group-hover:text-white uppercase tracking-wider">
+              <p className="text-lg font-bold text-slate-300 group-hover:text-white uppercase tracking-wider">
                 {model.replace('-', ' ')}
-              </h3>
+              </p>
               <div className="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
                 <ChevronRight className="w-4 h-4 text-blue-400" />
               </div>
@@ -150,17 +158,20 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             {tMake('topCodes', { make: capMake })}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {DISPLAY_PRIORITY_CODES.slice(0, 8).map((code) => (
+            {DISPLAY_PRIORITY_CODES.slice(0, 8).map((code) => {
+              const href = hrefForCode(code);
+              if (!href) return null;
+              return (
               <Link
                 key={code}
-                href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`}
+                href={href}
                 className="group flex items-center justify-center py-4 bg-[#131b2f] border border-red-500/10 hover:border-red-500/50 hover:bg-[#1a233a] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_20px_-10px_rgba(239,68,68,0.2)]"
               >
                 <span className="text-slate-300 group-hover:text-red-400 text-sm font-bold tracking-wider">
                   {code}
                 </span>
               </Link>
-            ))}
+            );})}
           </div>
         </div>
 
@@ -178,13 +189,16 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
             <div className="space-y-4">
               {CODE_CATEGORIES.map(category => (
                 <div key={category.label} className="border-t border-white/5 pt-4">
-                  <h3 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-2">{category.label}</h3>
+                  <p className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-2">{category.label}</p>
                   <div className="flex flex-wrap gap-2">
-                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).slice(0, 4).map(code => (
-                      <Link key={code} href={`/${locale}/${make}/${carData.models[0]}/${code.toLowerCase()}`} className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-white/10 rounded-lg px-3 py-2 transition-colors">
+                    {category.codes.filter(code => VALID_CODE_SET.has(code.toUpperCase())).slice(0, 4).map(code => {
+                      const href = hrefForCode(code);
+                      if (!href) return null;
+                      return (
+                      <Link key={code} href={href} className="text-xs font-bold text-slate-300 bg-white/5 hover:bg-white/10 rounded-lg px-3 py-2 transition-colors">
                         {code}
                       </Link>
-                    ))}
+                    );})}
                   </div>
                 </div>
               ))}

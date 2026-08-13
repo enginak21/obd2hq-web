@@ -15,7 +15,7 @@ import {
 
 const metaCopy: Record<ProblemFinderLocale, { title: string; description: string }> = {
   en: {
-    title: 'Car Problem Finder: Diagnose Symptoms Without an OBD Code',
+    title: 'Car Problem Finder - OBD2HQ',
     description: 'Describe what your car is doing and get likely causes, first checks, safety advice and related OBD2 codes.',
   },
   tr: {
@@ -93,7 +93,7 @@ export default function ProblemFinderHubPage({ locale }: { locale: string }) {
                 href={getProblemFinderDetailPath(locale, intent)}
                 className="rounded-2xl border border-white/10 bg-[#111a2b] p-5 hover:border-blue-400/40"
               >
-                <h3 className="text-lg font-black text-white">{intent.titles[locale]}</h3>
+                <p className="text-lg font-black text-white">{intent.titles[locale]}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-400">{intent.plainExplanation[locale]}</p>
               </Link>
             ))}

@@ -1,5 +1,6 @@
 import { getBrandWarningLightsPath, getCodeHubPath } from './gsc-seo';
 import { getProblemFinderHubPath } from './problem-finder';
+import { isCodeHubSitemapEligible } from './sitemap-policy';
 import { getSymptomContentHubPath } from './symptom-content-routing';
 
 const locales = ['en', 'tr', 'de', 'es', 'fr'] as const;
@@ -197,10 +198,12 @@ export function getFooterLinkGroups(locale: string) {
     },
     {
       title: l.popularCodes,
-      links: ['P0420', 'P0300', 'P0171', 'P0455', 'P0213', 'P0235'].map((code) => ({
-        label: code,
-        href: getCodeHubPath(current, code),
-      })),
+      links: ['P0420', 'P0300', 'P0171', 'P0455', 'P0213', 'P0235']
+        .filter(isCodeHubSitemapEligible)
+        .map((code) => ({
+          label: code,
+          href: getCodeHubPath(current, code),
+        })),
     },
     {
       title: l.ownership,

@@ -296,9 +296,15 @@ export default async function CodeHubPage({ params }: PageProps) {
               <h3 className="text-lg font-bold text-white">{labels.relatedCodes}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {relatedCodes.map(related => (
-                  <Link key={related} href={getCodeHubPath(locale, related)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-blue-100 hover:bg-blue-500/20">
-                    {related}
-                  </Link>
+                  isCodeHubSitemapEligible(related) ? (
+                    <Link key={related} href={getCodeHubPath(locale, related)} className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-blue-100 hover:bg-blue-500/20">
+                      {related}
+                    </Link>
+                  ) : (
+                    <span key={related} className="rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-slate-300">
+                      {related}
+                    </span>
+                  )
                 ))}
               </div>
             </div>

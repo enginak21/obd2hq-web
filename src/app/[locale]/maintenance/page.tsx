@@ -4,6 +4,7 @@ import { getAlternates } from '@/utils/seo';
 import { vehicleKnowledgeProfiles } from '@/data/vehicle-knowledge';
 import { KnowledgeHero } from '@/components/KnowledgeGrid';
 import { getKnowledgeUiCopy } from '@/data/knowledge-ui';
+import CrawlDepthContent from '@/components/CrawlDepthContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -48,6 +49,7 @@ export default async function MaintenancePage({ params }: { params: Promise<{ lo
           </Link>
         ))}
       </section>
+      <CrawlDepthContent kind="maintenance" />
     </main>
   );
 }
