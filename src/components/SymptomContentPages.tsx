@@ -57,6 +57,16 @@ const detailCopy = {
   fr: { drive: 'Conseil de conduite', causes: 'Causes probables', checks: 'Premiers contrôles', steps: 'Parcours diagnostic', mistakes: 'Erreurs fréquentes', codes: 'Codes OBD2 liés', links: 'Guides liés', faq: 'FAQ' },
 };
 
+function compactHeading(title: string, slug: string) {
+  if (title.length <= 66) return title;
+  const words = slug
+    .split('-')
+    .filter(Boolean)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1));
+  const compact = `${words.slice(0, 5).join(' ')} Diagnosis`;
+  return compact.length <= 66 ? compact : `${words.slice(0, 4).join(' ')} Guide`;
+}
+
 export function SymptomContentHub({ locale }: { locale: SymptomContentLocale }) {
   const copy = hubCopy[locale];
 
@@ -143,7 +153,7 @@ export function SymptomContentDetail({ locale, group }: { locale: SymptomContent
                 <ShieldAlert className="w-4 h-4" />
                 {item.severity}
               </div>
-              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white">{item.title}</h1>
+              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white">{compactHeading(item.title, item.slug)}</h1>
               <p className="mt-6 text-lg text-slate-400 leading-relaxed max-w-3xl">{item.intro}</p>
             </div>
             <aside className="rounded-3xl border border-red-400/20 bg-red-500/10 p-5">

@@ -16,17 +16,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const titles: Record<string, string> = {
     en: 'Automotive News & Gazette - OBD2HQ',
-    tr: 'Otomobil Gazetesi & Haberler - OBD2HQ',
-    de: 'Automobilnachrichten & Zeitung - OBD2HQ',
-    es: 'Noticias Automotrices y Gaceta - OBD2HQ',
-    fr: 'Actualités automobiles - OBD2HQ'
+    tr: 'Otomobil Gazetesi ve Haberler - OBD2HQ',
+    de: 'Automobilnachrichten - OBD2HQ',
+    es: 'Noticias Automotrices - OBD2HQ',
+    fr: 'Actualites automobiles - OBD2HQ'
   };
   const descriptions: Record<string, string> = {
     en: 'Latest automotive news, recalls, diagnostic technology, new model releases and issues that matter to car owners.',
-    tr: 'Güncel otomobil haberleri, geri çağırmalar, teşhis teknolojileri, yeni model gelişmeleri ve araç sahiplerini ilgilendiren sorunlar.',
-    de: 'Aktuelle Autonachrichten, Rückrufe, Diagnosetechnik, neue Modelle und wichtige Themen für Fahrzeughalter.',
-    es: 'Noticias automotrices, retiradas, tecnología de diagnóstico, nuevos modelos y temas importantes para propietarios.',
-    fr: 'Actualités automobiles, rappels, technologie de diagnostic, nouveaux modèles et sujets importants pour les propriétaires.'
+    tr: 'Guncel otomobil haberleri, geri cagirmalar, teshis teknolojileri, yeni model gelismeleri ve arac sahiplerini ilgilendiren sorunlar.',
+    de: 'Aktuelle Autonachrichten, Rueckrufe, Diagnosetechnik, neue Modelle und wichtige Themen fuer Fahrzeughalter.',
+    es: 'Noticias automotrices, retiradas, tecnologia de diagnostico, nuevos modelos y temas importantes para propietarios.',
+    fr: 'Actualites automobiles, rappels, technologie de diagnostic, nouveaux modeles et sujets importants pour les proprietaires.'
   };
 
   return {
@@ -113,7 +113,11 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
             <p className="text-slate-400">{t('noNewsDesc')}</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <section aria-labelledby="news-list-heading">
+            <h2 id="news-list-heading" className="mb-6 text-2xl font-bold text-white">
+              {locale === 'tr' ? 'Son otomobil haberleri' : locale === 'de' ? 'Neueste Automobilnachrichten' : locale === 'es' ? 'Ultimas noticias automotrices' : locale === 'fr' ? 'Dernieres actualites automobiles' : 'Latest automotive news'}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => {
               const locTitle = asString(getLocalized(article.title, locale), article.slug);
               const locSummary = asString(getLocalized(article.summary, locale));
@@ -136,10 +140,12 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                     <Image
                       src={article.image}
                       alt={locTitle}
-                      fill
+                      width={640}
+                      height={360}
+                      quality={68}
                       unoptimized={article.image.startsWith('http')}
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-black/70 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider rounded-lg border border-white/10">
@@ -170,7 +176,8 @@ export default async function NewsPortalPage({ params }: { params: Promise<{ loc
                 </Link>
               );
             })}
-          </div>
+            </div>
+          </section>
         )}
       </div>
     </main>

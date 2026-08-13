@@ -25,6 +25,14 @@ function titleCase(value: string) {
   return value.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
 }
 
+function compactCodeHeading(code: string, title: string) {
+  const value = title.trim();
+  if (value.length <= 68) return value;
+  const beforeParen = value.split('(')[0]?.trim();
+  if (beforeParen && beforeParen.length >= 12 && beforeParen.length <= 68) return beforeParen;
+  return `${code} diagnostic meaning and first checks`;
+}
+
 function getVehicleTargets(code: string) {
   const codeSpecific: Record<string, Array<{ make: string; model: string }>> = {
     P0213: [{ make: 'ford', model: 'focus' }],
@@ -273,7 +281,7 @@ export default async function CodeHubPage({ params }: PageProps) {
           <div className="flex items-start gap-3">
             <BadgeCheck className="mt-1 text-green-300" />
             <div>
-              <h2 className="text-2xl font-bold text-white">{localizedTitle}</h2>
+              <h2 className="text-2xl font-bold text-white">{compactCodeHeading(upperCode, localizedTitle)}</h2>
               <p className="mt-3 leading-7 text-slate-300">{localizedDescription}</p>
               <div className="mt-5 rounded-xl border border-blue-400/20 bg-blue-500/10 p-4">
                 <h3 className="text-base font-bold text-blue-100">{registryCopy.title}</h3>

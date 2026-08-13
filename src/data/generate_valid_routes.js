@@ -14,7 +14,7 @@ const cars = [
   { "make": "aston-martin", "models": ["vantage", "db11", "dbs", "dbx", "valkyrie"] },
   { "make": "audi", "models": ["a3", "a4", "a5", "a6", "q3", "q5", "q7", "q8", "etron", "tt", "r8"] },
   { "make": "bentley", "models": ["continental", "bentayga", "flying-spur", "mulsanne"] },
-  { "make": "bmw", "models": ["3-series", "4-series", "5-series", "x1", "x3", "x5", "x7", "m3", "m5", "i4", "iX"] },
+  { "make": "bmw", "models": ["3-series", "4-series", "5-series", "x1", "x3", "x5", "x7", "m3", "m5", "i4", "ix"] },
   { "make": "buick", "models": ["envision", "encore", "enclave", "regal", "lacrosse"] },
   { "make": "cadillac", "models": ["escalade", "xt4", "xt5", "xt6", "ct4", "ct5", "lyriq"] },
   { "make": "chevrolet", "models": ["silverado", "equinox", "tahoe", "malibu", "camaro", "corvette", "colorado", "suburban", "traverse", "trailblazer"] },

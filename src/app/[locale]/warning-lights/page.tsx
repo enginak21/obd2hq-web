@@ -174,8 +174,8 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {lights.map((light) => (
                 <article key={light.id} className="overflow-hidden rounded-2xl border border-white/10 bg-black/20">
-                  <div className="relative h-36 bg-slate-950">
-                    <Image src={light.imageSrc} alt={light.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+                  <div className="h-36 bg-slate-950">
+                    <Image src={light.imageSrc} alt={light.name} width={640} height={360} quality={58} sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
                   </div>
                   <div className="p-4">
                     <h2 className="text-lg font-black text-white">{light.name}</h2>

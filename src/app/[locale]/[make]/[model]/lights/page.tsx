@@ -263,9 +263,11 @@ export default async function LightsDirectoryPage({ params }: PageProps) {
                   <Image
                     src={light.imageSrc}
                     alt={`${capMake} ${capModel} ${light.name} dashboard warning light`}
-                    fill
+                    width={640}
+                    height={400}
+                    quality={58}
                     sizes="(min-width: 1024px) 320px, (min-width: 768px) 45vw, 100vw"
-                    className="object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#131b2f] via-transparent to-transparent" />
                   <div

@@ -163,10 +163,12 @@ export default async function LightDetailPage({ params }: PageProps) {
                 <Image
                   src={lightData.imageSrc}
                   alt={`${capMake} ${capModel} ${lightData.name} dashboard warning light`}
-                  fill
+                  width={720}
+                  height={540}
                   priority
+                  quality={58}
                   sizes="(min-width: 768px) 360px, 100vw"
-                  className="object-cover"
+                  className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1c] via-transparent to-transparent" />
                 <div

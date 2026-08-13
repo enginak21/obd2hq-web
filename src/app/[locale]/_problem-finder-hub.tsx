@@ -15,7 +15,7 @@ import {
 
 const metaCopy: Record<ProblemFinderLocale, { title: string; description: string }> = {
   en: {
-    title: 'Car Problem Finder - OBD2HQ',
+    title: 'Car Problem Finder by Symptom - OBD2HQ',
     description: 'Describe what your car is doing and get likely causes, first checks, safety advice and related OBD2 codes.',
   },
   tr: {

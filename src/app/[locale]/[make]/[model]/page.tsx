@@ -3,7 +3,7 @@ import { cars, codes } from '@/data/db';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-import { getAlternates } from '@/utils/seo';
+import { fitSeoDescription, fitSeoTitle, getAlternates } from '@/utils/seo';
 import { CODE_CATEGORIES, getCodeCategoryLabel, PRIORITY_CODES } from '@/data/seo';
 import validRoutes from '@/data/valid_routes.json';
 import { isIndexableVehicleCodePage } from '@/data/indexing-policy';
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const capModel = model.charAt(0).toUpperCase() + model.slice(1);
 
   return {
-    title: `1996-2026 ${capMake} ${capModel} OBD2 Codes & Warning Lights`,
-    description: `Complete diagnostic data for ${capMake} ${capModel} (1996-2026). Search all OBD2 trouble codes and dashboard warning light meanings.`,
+    title: fitSeoTitle(`${capMake} ${capModel} OBD2 Codes & Warning Lights`),
+    description: fitSeoDescription(`${capMake} ${capModel} diagnostic hub with OBD2 codes, warning lights, symptoms, safe first checks and repair paths.`),
     alternates: getAlternates(`${make}/${model}`, resolvedParams.locale)
   };
 }
@@ -216,6 +216,30 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
             </Link>
           </section>
         </div>
+
+        <section className="mb-12 rounded-3xl border border-blue-400/10 bg-[#101827] p-8">
+          <h2 className="text-2xl font-bold text-white mb-4">How to use this {capMake} {capModel} hub</h2>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div>
+              <p className="text-sm font-black uppercase tracking-widest text-blue-300">Start with symptoms</p>
+              <p className="mt-3 leading-7 text-slate-300">
+                If the driver only knows that the {capModel} is shaking, losing power, hard to start or showing a dashboard warning, begin with the warning-light page and then compare the related OBD2 codes.
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-black uppercase tracking-widest text-blue-300">Confirm the code</p>
+              <p className="mt-3 leading-7 text-slate-300">
+                A code is a direction, not a parts order. Read freeze-frame data, check wiring and connectors, inspect fluids or vacuum leaks, and verify live data before replacing sensors, injectors or emissions parts.
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-black uppercase tracking-widest text-blue-300">Choose the safest path</p>
+              <p className="mt-3 leading-7 text-slate-300">
+                Red warning lights, overheating, oil-pressure alerts, brake warnings, fuel smell or flashing check-engine lights should be treated as urgent. Stop safely and inspect the critical system before continuing to drive.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-white/5 pb-4">
           <h2 className="text-2xl font-bold text-white flex items-center mb-4 sm:mb-0">
