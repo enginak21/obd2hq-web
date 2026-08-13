@@ -153,10 +153,10 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
         </div>
 
         <div className="mt-16">
-          <h2 className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
+          <p className="text-2xl font-bold text-white mb-6 flex items-center border-b border-white/5 pb-4">
             <svg className="w-6 h-6 mr-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             {tMake('topCodes', { make: capMake })}
-          </h2>
+          </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {DISPLAY_PRIORITY_CODES.slice(0, 8).map((code) => {
               const href = hrefForCode(code);
@@ -176,13 +176,13 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
         </div>
 
         <section className="mt-16 rounded-3xl border border-white/5 bg-[#131b2f] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">{guideTitle}</h2>
+          <p className="text-2xl font-bold text-white mb-4">{guideTitle}</p>
           <p className="text-slate-400 leading-7">{guideText}</p>
         </section>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">{tMake('diagnosticAreas', { make: capMake })}</h2>
+            <p className="text-2xl font-bold text-white mb-4">{tMake('diagnosticAreas', { make: capMake })}</p>
             <p className="text-slate-400 leading-relaxed mb-6">
               {tMake('diagnosticAreasDesc')}
             </p>
@@ -206,7 +206,7 @@ export default async function MakeDirectoryPage({ params }: PageProps) {
           </section>
 
           <section className="bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">{tMake('warningLightsTitle', { make: capMake })}</h2>
+            <p className="text-2xl font-bold text-white mb-4">{tMake('warningLightsTitle', { make: capMake })}</p>
             <p className="text-slate-400 leading-relaxed mb-6">
               {tMake('warningLightsDesc')}
             </p>

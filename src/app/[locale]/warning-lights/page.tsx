@@ -15,7 +15,7 @@ type PageProps = {
 
 const copy = {
   en: {
-    title: 'Dashboard Warning Lights: Meanings, Urgency and First Checks',
+    title: 'Dashboard Warning Lights: Meanings and First Checks',
     description: 'Identify dashboard warning lights by symbol, urgency and first checks. Learn when to stop, what to scan, and which OBD2 codes may be related.',
     eyebrow: 'Warning light hub',
     urgentTitle: 'Start with urgency, not parts',
@@ -26,7 +26,7 @@ const copy = {
     cta: 'Open guide',
   },
   tr: {
-    title: 'Gösterge Uyarı Işıkları: Anlamları, Aciliyet ve İlk Kontroller',
+    title: 'Gösterge Uyarı Işıkları ve İlk Kontroller',
     description: 'Gösterge uyarı ışıklarını sembole, aciliyet seviyesine ve ilk kontrollere göre bulun. Ne zaman durmanız, neyi okutmanız ve hangi OBD2 kodlarının ilişkili olabileceğini görün.',
     eyebrow: 'Uyarı ışıkları merkezi',
     urgentTitle: 'Parçadan önce aciliyeti belirleyin',
@@ -37,7 +37,7 @@ const copy = {
     cta: 'Rehberi aç',
   },
   de: {
-    title: 'Warnleuchten im Auto: Bedeutung, Dringlichkeit und erste Prüfungen',
+    title: 'Warnleuchten im Auto: Bedeutung und erste Prüfungen',
     description: 'Warnleuchten nach Symbol, Dringlichkeit und ersten Prüfungen verstehen. Erkennen Sie, wann Sie anhalten sollten und welche OBD2-Codes passen können.',
     eyebrow: 'Warnleuchten-Zentrale',
     urgentTitle: 'Erst Dringlichkeit klären, dann Teile prüfen',
@@ -178,7 +178,7 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
                     <Image src={light.imageSrc} alt={light.name} width={640} height={360} quality={58} sizes="(max-width: 768px) 100vw, 50vw" className="h-full w-full object-cover" />
                   </div>
                   <div className="p-4">
-                    <h2 className="text-lg font-black text-white">{light.name}</h2>
+                    <p className="text-lg font-black text-white">{light.name}</p>
                     <p className="mt-2 line-clamp-4 text-sm leading-6 text-slate-300">{light.description}</p>
                   </div>
                 </article>
@@ -188,7 +188,7 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
 
           <aside className="space-y-6">
             <section className="rounded-3xl border border-white/10 bg-[#111827] p-6">
-              <h2 className="text-lg font-black text-white">{c.vehicles}</h2>
+              <p className="text-lg font-black text-white">{c.vehicles}</p>
               <div className="mt-4 grid gap-3">
                 {vehicleLinks.map((link) => (
                   <Link key={link.href} href={link.href} className="flex items-center justify-between rounded-2xl bg-white/[0.04] px-4 py-3 text-sm font-bold text-slate-200 hover:bg-white/[0.08]">
@@ -200,7 +200,7 @@ export default async function WarningLightsHubPage({ params }: PageProps) {
             </section>
 
             <section className="rounded-3xl border border-white/10 bg-[#111827] p-6">
-              <h2 className="text-lg font-black text-white">{c.codes}</h2>
+              <p className="text-lg font-black text-white">{c.codes}</p>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 {codeLinks.map((link) => (
                   <Link key={link.code} href={link.href} className="rounded-2xl bg-blue-500/10 px-4 py-3 text-center font-black text-blue-200 hover:bg-blue-500/20">

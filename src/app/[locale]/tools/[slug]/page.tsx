@@ -105,7 +105,7 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
           <section className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
             <h2 className="text-2xl font-black text-white">{practicalTitle}</h2>
             <p className="mt-4 leading-7 text-slate-300">{practicalText}</p>
-            <h2 className="mt-7 text-xl font-black text-white">{decisionTitle}</h2>
+            <p className="mt-7 text-xl font-black text-white">{decisionTitle}</p>
             <ul className="mt-4 space-y-3 text-slate-300">
               {decisionItems.map(item => <li key={item} className="rounded-2xl bg-white/[0.03] px-4 py-3">{item}</li>)}
             </ul>
@@ -114,11 +114,11 @@ export default async function ToolPage({ params }: { params: Promise<{ locale: s
 
         <aside className="space-y-6">
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
-            <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.bestFor}</h2>
+            <p className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.bestFor}</p>
             <p className="text-slate-300 leading-relaxed">{localized.primaryUse}</p>
           </div>
           <div className="rounded-3xl border border-white/5 bg-[#131b2f] p-6">
-            <h2 className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.searchDemand}</h2>
+            <p className="text-sm font-black uppercase tracking-widest text-slate-400 mb-4">{copy.searchDemand}</p>
             <ul className="space-y-2 text-sm text-slate-300">
               {localized.relatedQueries.map(query => <li key={query}>- {query}</li>)}
             </ul>

@@ -37,6 +37,9 @@ export default async function DisclaimerPage({ params }: { params: Promise<{ loc
         <p className="text-slate-300 leading-relaxed">
           {t('riskText')}
         </p>
+        <p className="text-slate-300 leading-relaxed">
+          Treat every guide as a structured starting point. Confirm the fault with scan data, visual inspection, wiring checks and safe road-test conditions before buying parts. If the car has brake loss, steering change, overheating, oil pressure warning, fuel smell, heavy smoke or a flashing engine light, stop safely and use professional help.
+        </p>
         <TrustPageContent kind="disclaimer" locale={locale} />
       </div>
     </main>

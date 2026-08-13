@@ -156,7 +156,7 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
         </section>
 
         <section className="mt-8 rounded-2xl border border-white/10 bg-[#111827] p-6">
-          <h2 className="flex items-center gap-2 text-2xl font-bold text-white"><ShieldCheck size={22} /> Warning lights by symbol</h2>
+          <h2 className="flex items-center gap-2 text-2xl font-bold text-white"><ShieldCheck size={22} /> {displayMake} warning lights by symbol</h2>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {lights.map(light => (
               <article key={light.id} className="overflow-hidden rounded-2xl border border-white/10 bg-black/20">
@@ -164,7 +164,7 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
                   <Image src={light.imageSrc} alt={light.name} width={640} height={360} quality={58} sizes="(max-width: 768px) 100vw, 33vw" className="h-full w-full object-cover" />
                 </div>
                 <div className="p-4">
-                  <h2 className="text-lg font-bold text-white">{light.name}</h2>
+                  <p className="text-lg font-bold text-white">{light.name}</p>
                   <p className="mt-2 line-clamp-4 text-sm leading-6 text-slate-300">{light.description}</p>
                 </div>
               </article>
@@ -173,7 +173,7 @@ export default async function BrandWarningLightsPage({ params }: PageProps) {
         </section>
 
         <section className="mt-8 rounded-2xl border border-white/10 bg-[#111827] p-6">
-          <h2 className="text-2xl font-bold text-white">{displayMake} model warning-light guides</h2>
+          <p className="text-2xl font-bold text-white">{displayMake} model warning-light guides</p>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {modelLinks.map(link => (
               <Link key={link.href} href={link.href} className="rounded-xl border border-white/10 bg-black/20 p-4 text-sm font-semibold text-slate-100 hover:border-blue-400/40">

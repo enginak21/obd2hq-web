@@ -90,9 +90,12 @@ export default async function EditorialPolicyPage({ params }: PageProps) {
         </section>
 
         <section className="bg-red-900/10 border border-red-500/20 rounded-2xl p-6 mt-12">
-          <h3 className="text-xl font-bold text-red-400 mb-3">{t('disclaimerTitle')}</h3>
+          <p className="text-xl font-bold text-red-400 mb-3">{t('disclaimerTitle')}</p>
           <p className="text-slate-300 text-base">
             {t('disclaimerText')}
+          </p>
+          <p className="mt-4 text-slate-300 text-base">
+            OBD2HQ keeps diagnostic claims practical and testable. We avoid exact voltage, pressure, resistance, temperature, failure-rate or repair-cost claims unless a source and vehicle context support that level of detail.
           </p>
         </section>
 

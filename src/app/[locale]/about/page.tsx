@@ -38,7 +38,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <div className="bg-blue-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
               <Target className="w-8 h-8 text-blue-500" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">{t('mission')}</h3>
+            <p className="text-xl font-bold text-white mb-3">{t('mission')}</p>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t('missionDesc')}
             </p>
@@ -47,7 +47,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <div className="bg-green-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
               <ShieldCheck className="w-8 h-8 text-green-500" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">{t('verified')}</h3>
+            <p className="text-xl font-bold text-white mb-3">{t('verified')}</p>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t('verifiedDesc')}
             </p>
@@ -56,7 +56,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <div className="bg-amber-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-amber-500" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">{t('everyone')}</h3>
+            <p className="text-xl font-bold text-white mb-3">{t('everyone')}</p>
             <p className="text-slate-400 text-sm leading-relaxed">
               {t('everyoneDesc')}
             </p>
@@ -70,6 +70,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </p>
           <p className="text-slate-300 leading-relaxed mt-4">
             {t('storyP2')}
+          </p>
+          <p className="text-slate-300 leading-relaxed mt-4">
+            OBD2HQ keeps the experience focused on simple repair decisions. The site avoids fake expert profiles, marks safety limits clearly and separates verified diagnostic guidance from general background information.
           </p>
         </section>
         <TrustPageContent kind="about" locale={locale} />

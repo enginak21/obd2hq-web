@@ -68,7 +68,7 @@ export default function TrustPageContent({ kind, locale }: { kind: TrustPageKind
 
   return (
     <section className="mt-10 rounded-3xl border border-white/5 bg-[#101827] p-6">
-      <h2 className="text-2xl font-bold text-white">{copy.heading}</h2>
+      <p className="text-2xl font-bold text-white">{copy.heading}</p>
       <div className="mt-4 space-y-4 text-slate-300 leading-7">
         {copy.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
       </div>

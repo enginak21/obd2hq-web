@@ -186,7 +186,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
 
         <div className="mb-12 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <section className="lg:col-span-2 bg-[#131b2f] border border-white/5 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">{tModel('problemGroups', { make: capMake, model: capModel })}</h2>
+            <p className="text-2xl font-bold text-white mb-4">{tModel('problemGroups', { make: capMake, model: capModel })}</p>
             <p className="text-slate-400 leading-relaxed mb-6">
               {tModel('problemGroupsDesc')}
             </p>
@@ -207,7 +207,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
           </section>
 
           <section className="bg-amber-500/10 border border-amber-500/20 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-4">{tModel('dashboardLights')}</h2>
+            <p className="text-2xl font-bold text-white mb-4">{tModel('dashboardLights')}</p>
             <p className="text-slate-400 leading-relaxed mb-6">
               {tModel('warningLightsDesc')}
             </p>
@@ -218,7 +218,7 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
         </div>
 
         <section className="mb-12 rounded-3xl border border-blue-400/10 bg-[#101827] p-8">
-          <h2 className="text-2xl font-bold text-white mb-4">How to use this {capMake} {capModel} hub</h2>
+          <p className="text-2xl font-bold text-white mb-4">How to use this {capMake} {capModel} hub</p>
           <div className="grid gap-6 lg:grid-cols-3">
             <div>
               <p className="text-sm font-black uppercase tracking-widest text-blue-300">Start with symptoms</p>
@@ -242,10 +242,10 @@ export default async function ModelDirectoryPage({ params, searchParams }: PageP
         </section>
 
         <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-white/5 pb-4">
-          <h2 className="text-2xl font-bold text-white flex items-center mb-4 sm:mb-0">
+          <p className="text-2xl font-bold text-white flex items-center mb-4 sm:mb-0">
             <svg className="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
             {tModel('powertrain')}
-          </h2>
+          </p>
           <span className="text-sm text-slate-500 font-medium bg-[#131b2f] px-3 py-1 rounded-full border border-white/5">
             {tModel('showing', { start: startIndex + 1, end: Math.min(endIndex, totalCodes), total: totalCodes.toLocaleString() })}
           </span>

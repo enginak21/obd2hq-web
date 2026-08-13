@@ -310,7 +310,7 @@ export default async function CodePage({ params }: PageProps) {
             <div className="flex items-start">
               <BadgeCheck className="w-6 h-6 text-blue-400 mr-3 shrink-0 mt-0.5" />
               <div>
-                <h2 className="text-lg font-bold text-white mb-2">{registryCopy.title}</h2>
+                <p className="text-lg font-bold text-white mb-2">{registryCopy.title}</p>
                 <p className="text-slate-300 leading-relaxed text-sm">{registryCopy.source}</p>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <div className="rounded-xl bg-white/5 px-4 py-3 text-sm text-slate-300">{registryCopy.family}</div>
@@ -361,19 +361,19 @@ export default async function CodePage({ params }: PageProps) {
             </p>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               <div className="rounded-xl bg-white/5 border border-white/5 p-4">
-                <h3 className="text-xs font-bold uppercase tracking-widest text-cyan-200 mb-3">{pageCopy.likelySymptoms}</h3>
+                <p className="text-xs font-bold uppercase tracking-widest text-cyan-200 mb-3">{pageCopy.likelySymptoms}</p>
                 <ul className="space-y-2 text-sm text-slate-300">
                   {modelInsight.likelySymptoms.map(item => <li key={item}>{item}</li>)}
                 </ul>
               </div>
               <div className="rounded-xl bg-white/5 border border-white/5 p-4">
-                <h3 className="text-xs font-bold uppercase tracking-widest text-green-200 mb-3">{pageCopy.firstTests}</h3>
+                <p className="text-xs font-bold uppercase tracking-widest text-green-200 mb-3">{pageCopy.firstTests}</p>
                 <ul className="space-y-2 text-sm text-slate-300">
                   {modelInsight.firstTests.slice(0, 4).map(item => <li key={item}>{item}</li>)}
                 </ul>
               </div>
               <div className="rounded-xl bg-red-500/10 border border-red-500/20 p-4">
-                <h3 className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">{pageCopy.avoidReplacing}</h3>
+                <p className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">{pageCopy.avoidReplacing}</p>
                 <p className="text-sm text-slate-300">{modelInsight.avoidReplacing}</p>
               </div>
             </div>
@@ -388,13 +388,13 @@ export default async function CodePage({ params }: PageProps) {
               <p className="text-slate-300 leading-relaxed">{topClickFocus.answer}</p>
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 <div className="rounded-xl bg-white/5 border border-white/5 p-4">
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-emerald-200 mb-3">First checks for this search</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-200 mb-3">First checks for this search</p>
                   <ul className="space-y-2 text-sm text-slate-300">
                     {topClickFocus.firstChecks.map(item => <li key={item}>{item}</li>)}
                   </ul>
                 </div>
                 <div className="rounded-xl bg-red-500/10 border border-red-500/20 p-4">
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">Do not replace first</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-red-200 mb-3">Do not replace first</p>
                   <p className="text-sm text-slate-300">{topClickFocus.avoid}</p>
                 </div>
               </div>

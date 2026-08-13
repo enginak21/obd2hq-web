@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             {linkGroups.map((group) => (
               <div key={group.title}>
-                <h4 className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-white">{group.title}</h4>
+                <p className="mb-4 text-sm font-black uppercase tracking-[0.18em] text-white">{group.title}</p>
                 <ul className="space-y-3 text-sm text-slate-400">
                   {group.links.map((link) => (
                     <li key={`${group.title}-${link.href}`}>
