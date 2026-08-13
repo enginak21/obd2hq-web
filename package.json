@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "package:cpanel": "next build && node scripts/package_cpanel_standalone.js",
     "start": "next start",
     "lint": "eslint",
     "check:content": "node scripts/check_content_quality.js",
